@@ -2,14 +2,15 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 新会话先读根目录 [AGENTS.md](../../AGENTS.md)，再读本索引和最新交接记录；无需一次性加载所有 JSON。
-最新交接：[2026-10-09-project-context-and-records.md](2026-10-09-project-context-and-records.md)。
+最新操作：[2026-10-09-ssh-push-verified.md](2026-10-09-ssh-push-verified.md)；背景交接：[2026-10-09-project-context-and-records.md](2026-10-09-project-context-and-records.md)。
 
 ## 记录列表
 
 | 日期 | 文件 | 内容与状态 |
 | --- | --- | --- |
-| 2026-10-09 | [ssh-push-setup.md](2026-10-09-ssh-push-setup.md) | 长期 SSH 443 配置与握手验证完成；待用户上传公钥并核验推送 |
-| 2026-10-09 | [code-submission.md](2026-10-09-code-submission.md) | 本地已归档；远端推送因缺少 GitHub 凭据而阻塞，待用户终端重新认证 |
+| 2026-10-09 | [ssh-push-verified.md](2026-10-09-ssh-push-verified.md) | 公钥已授权，SSH 推送成功，远端哈希与本地一致；认证阻塞已解决 |
+| 2026-10-09 | [ssh-push-setup.md](2026-10-09-ssh-push-setup.md) | 长期 SSH 443 初次配置及当时等待公钥授权的历史快照；后续完成见上一条 |
+| 2026-10-09 | [code-submission.md](2026-10-09-code-submission.md) | 本地代码归档及当时 HTTPS 凭据阻塞的历史记录；已通过 SSH 完成推送 |
 | 2026-10-09 | [project-context-and-records.md](2026-10-09-project-context-and-records.md) | 项目入口/记录体系整理；用户正在运行自由回答；状态只读快照与下一步 |
 | 2026-10-09 | [evidence-behavior-preparation.json](2026-10-09-evidence-behavior-preparation.json) | 四条件分类与同模板自由回答代码准备、固定设置、22 项测试、长度检查和审计；不是新 GPU 结果 |
 | 2026-10-09 | [prompt-baseline-result.json](2026-10-09-prompt-baseline-result.json) | 已完成纯文本基线、严格解析失败、首行事后结果与路由器配对分析 |
