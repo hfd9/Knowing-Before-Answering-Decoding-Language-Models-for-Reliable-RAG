@@ -84,6 +84,7 @@ answer（证据充分）、refuse（证据不足）、conflict（证据冲突）
 | 路径 | 查什么 |
 | --- | --- |
 | `docs/environment.md`、`docs/small_reproduction.md`、`docs/prompt_baseline.md` | 环境、旧复现、旧基线细节 |
+| `docs/git_push.md` | 本机专用 SSH 443 推送配置、首次添加公钥、诊断和恢复 HTTPS |
 | `docs/evidence_behavior_plan.md`、`docs/evidence_behavior_run.md` | 当前固定协议、执行步骤、审核规则 |
 | `docs/records/` | 实验与动作的持久记录；入口是其中的 `README.md` |
 | `docs/activity_log.md`、`docs/experiments.csv` | 连续历史日志、已完成实验指标登记 |
@@ -103,6 +104,7 @@ answer（证据充分）、refuse（证据不足）、conflict（证据冲突）
 - Python：`/large_disk/wf/miniconda3/envs/kba-rag/bin/python`；sh 入口会自动选择环境和本地配置。
 - 3B：`/large_disk/wf/研究代码/RAG/OpenDecoder/checkpoint/Qwen2.5-3B-Instruct`，36 层、2048 维、上下文 32768。
 - 默认 GPU 0（RTX 3090，24 GiB）；默认离线加载，BF16 模型、FP16 特征、SDPA。
+- Git origin 已按用户长期使用要求切换为 SSH，仓库本地 core.sshCommand 选择专用 443 配置；公钥添加与推送仍待核验，见 docs/git_push.md。
 - 标准化只拟合 train；C=1/lbfgs/max_iter=2000；验证集选层并 sigmoid 校准。层号从 0 编号。
 - 状态定义为 `hidden_states[l+1][0,-1,:]`，末层含 final norm；自由回答两种模板分别重训探针。
 - 用户偏好助手准备代码、验证和分析，用户启动长期 GPU 实验。已有任务运行时不要另起同 GPU 实验。

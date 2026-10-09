@@ -7,6 +7,8 @@ Paper: https://arxiv.org/abs/2608.27661
 新会话先读 [项目交接入口 AGENTS.md](AGENTS.md)，快速了解研究背景、当前进度、文件位置与下一步。
 实验和动作的持久记录集中在 [docs/records/](docs/records/README.md)，新增记录参考 [记录模板](docs/records/TEMPLATE.md)。
 
+本机长期 SSH 推送、首次公钥授权和诊断见 [Git 推送说明](docs/git_push.md)。
+
 本地小规模复现的 Conda 环境、模型路径和验证命令见 [环境配置说明](docs/environment.md)。
 
 隐藏状态三分类路由器的运行命令、抽样设置和结果位置见 [小规模复现说明](docs/small_reproduction.md)。

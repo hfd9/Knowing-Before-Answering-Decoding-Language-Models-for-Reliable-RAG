@@ -8,6 +8,7 @@
 
 | 日期 | 文件 | 内容与状态 |
 | --- | --- | --- |
+| 2026-10-09 | [ssh-push-setup.md](2026-10-09-ssh-push-setup.md) | 长期 SSH 443 配置与握手验证完成；待用户上传公钥并核验推送 |
 | 2026-10-09 | [code-submission.md](2026-10-09-code-submission.md) | 本地已归档；远端推送因缺少 GitHub 凭据而阻塞，待用户终端重新认证 |
 | 2026-10-09 | [project-context-and-records.md](2026-10-09-project-context-and-records.md) | 项目入口/记录体系整理；用户正在运行自由回答；状态只读快照与下一步 |
 | 2026-10-09 | [evidence-behavior-preparation.json](2026-10-09-evidence-behavior-preparation.json) | 四条件分类与同模板自由回答代码准备、固定设置、22 项测试、长度检查和审计；不是新 GPU 结果 |
