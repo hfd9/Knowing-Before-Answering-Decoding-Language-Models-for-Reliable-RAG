@@ -1,0 +1,15 @@
+# The CUDA build of torch is installed separately from the official wheel index.
+# sklearn 1.5 retains multi_class and cv="prefit" used by the original scripts.
+transformers==4.56.2
+accelerate==1.10.1
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.5.2
+matplotlib==3.9.4
+pandas==2.2.3
+tqdm==4.67.1
+safetensors==0.6.2
+sentencepiece==0.2.1
+PyYAML==6.0.2
+# Keep nvJitLink fixed alongside the CUDA libraries used on this workstation.
+nvidia-nvjitlink-cu12==12.4.127; sys_platform == "linux"

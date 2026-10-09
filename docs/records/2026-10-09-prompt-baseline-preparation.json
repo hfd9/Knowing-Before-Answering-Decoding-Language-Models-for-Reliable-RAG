@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "record_type": "prompt_baseline_preparation",
+  "recorded_at": "2026-10-09T09:07:44.002129+08:00",
+  "previous_record": "docs/records/2026-10-08-kba-record.json",
+  "status": "prepared; real GPU baseline pending",
+  "reference_run": "runs/qwen2.5-3b-small",
+  "baseline_run": "runs/qwen2.5-3b-prompt-baseline",
+  "model": "/large_disk/wf/研究代码/RAG/OpenDecoder/checkpoint/Qwen2.5-3B-Instruct",
+  "evaluation": {
+    "split": "test",
+    "questions": 100,
+    "instances": 300,
+    "class_counts": {
+      "answer": 100,
+      "refuse": 100,
+      "conflict": 100
+    },
+    "source_sha256": "4ea8fc8d08b1b34e441297319cd4693d2dd6a9976835e5e5f9c1564980667a94"
+  },
+  "protocol": {
+    "render_policy": "p0_plain_label_only_v1",
+    "preserve_full_documents": true,
+    "chat_wrapper": false,
+    "max_new_tokens": 8,
+    "do_sample": false,
+    "invalid_outputs": "count as incorrect; report separately; FAR counts explicit answer predictions only"
+  },
+  "validation": {
+    "unittest_passed": 10,
+    "shell_syntax_passed": true,
+    "git_diff_check_passed": true,
+    "cpu_preflight_passed": true,
+    "max_input_tokens": 29566,
+    "context_tokens": 32768,
+    "previous_49_fingerprints_unchanged": true,
+    "real_gpu_inference_executed": false,
+    "synthetic_cpu_generation_checked": true,
+    "simulated_interruption_resume_checked": true
+  },
+  "implementation_fingerprints": [
+    {
+      "path": "scripts/prompt_baseline.py",
+      "bytes": 19288,
+      "sha256": "2966151480873b1775aa1d275f804544959f377587840fc36f51ff1d209aed3c"
+    },
+    {
+      "path": "scripts/run_prompt_baseline.sh",
+      "bytes": 336,
+      "sha256": "5c644e0749d0024e60629d34929c4706f8d87728f4ce4f9fd2c81fad0e3b6c4c"
+    },
+    {
+      "path": "tests/test_prompt_baseline.py",
+      "bytes": 9942,
+      "sha256": "8485973df7f37da10809c204c74fcd3926ac7f0447ec4b76dc6df47493b94d5e"
+    },
+    {
+      "path": "docs/prompt_baseline.md",
+      "bytes": 5095,
+      "sha256": "5fe822f50ebc2340cbaba8ea822cee6f932d3fd9797c0870406ee4295f60264f"
+    }
+  ],
+  "commands": {
+    "check": "sh scripts/run_prompt_baseline.sh --stage check",
+    "optional_gpu_smoke": "sh scripts/run_prompt_baseline.sh --limit_questions 3 --run_dir runs/qwen2.5-3b-prompt-smoke",
+    "run": "sh scripts/run_prompt_baseline.sh",
+    "analyze": "sh scripts/run_prompt_baseline.sh --stage analyze"
+  },
+  "pending": [
+    "User launches GPU baseline; assistant checks and analyzes outputs.",
+    "Review paired errors, including original 18 answer-to-conflict and 20 false-answer cases.",
+    "Fixed-evaluation training-size comparison; 7B/MLP/SAD/causal experiments remain pending."
+  ],
+  "collaboration_preference": "User launches long experiments from provided commands; assistant prepares, checks progress and analyzes unless instructed otherwise.",
+  "results": null
+}

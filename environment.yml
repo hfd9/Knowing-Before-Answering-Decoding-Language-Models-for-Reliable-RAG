@@ -1,0 +1,10 @@
+name: kba-rag
+channels:
+  - defaults
+dependencies:
+  - python=3.11.15
+  - pip=26.0.1
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu121
+      - torch==2.5.1+cu121
+      - -r requirements.txt
