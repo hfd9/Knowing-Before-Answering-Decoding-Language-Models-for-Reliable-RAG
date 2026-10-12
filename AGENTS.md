@@ -1,6 +1,6 @@
 # 项目交接入口：先读本文件
 
-本文件供新会话中的助手快速恢复背景。更新时间：2026-10-09（Asia/Shanghai）。
+本文件供新会话中的助手快速恢复背景。更新时间：2026-10-12（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
 ## 开始工作的读取顺序
@@ -32,16 +32,40 @@ answer（证据充分）、refuse（证据不足）、conflict（证据冲突）
 | 环境与模型接口 | kba-rag、3B、RTX 3090 验证通过；7B 仅检查权重，未做 GPU 实验 |
 | 小规模隐藏状态路由器 | 完成；最佳层 24（从 0 编号）；test 242/300，Accuracy 80.67%，Macro-F1 80.54% |
 | 原纯文本 8-token 分类基线 | 完成；首行事后解析为 150/300，Accuracy 50%，Macro-F1 39.93%；原严格格式通过率 0% |
-| 四条件分类对照 | 代码准备完成；本次交接检查未发现默认正式运行目录，是否已用其他目录运行需核验 |
-| 自由回答 | 用户 2026-10-09 明确报告正在运行 `sh scripts/run_free_answer_study.sh`；已观察到 plain/train 状态保存，尚不能宣布全流程完成 |
-| 行为标注、确认集、因果干预 | 尚无已核验的最终结果 |
+| 四条件分类对照 | 2026-10-11 正式生成与分析核验完成：八份预测共2340条（2040新+300旧复用）；plain8/64 test均150/300、Accuracy 50%、Macro-F1 39.93%；chat8/64均129/300、Accuracy 43%、Macro-F1 32.12%；两预算逐条分类相同。严格格式plain0%、chat99.67%；旧300条输出及冻结指纹核验通过 |
+| 自由回答 | 2026-10-09 已核验 generation_complete：plain/chat 各 train 600、val 285、test 300，最后回答于北京时间 11:39:33 保存；2,370 个特征和 600 条探针预测复算通过 |
+| 自由回答同模板探针 | plain L24：244/300，Accuracy 81.33%，Macro-F1 81.42%；chat L28：233/300，Accuracy 77.67%，Macro-F1 77.34%；这是证据分类，不是实际行为指标 |
+| 行为标注与分析 | 2026-10-12：300输入第二评分、232行为第二评分+2协调者补评已校验汇总；117行148分歧字段逐项裁定，98行118字段改变，正式v4导入并analyze/600对齐/22项率核验完成；468条五字段确定、132条至少一项unknown。原v3及旧报告保留，补评与裁定不称独立评分；第二评审有项目背景暴露 |
+| 新验证集分类提示词 | 2026-10-12用户启动，v3正式855条+smoke27条生成/分析/核验完成，末条09:55:45；definitions/decision_order/illustrations Accuracy37.89/36.14/36.49%，Macro-F1 25.81/23.45/23.20%，冲突召回0/3.16/3.16%；三候选均未达预设门槛，no_qualified_baseline；只用val，确认集未用 |
+| 确认集与因果干预 | 尚无结果；剩余 380 个测试底题未使用，暂不直接 patching |
 
 原路由器三分类错误可答判定率为 10%，纯文本首行基线为 31.5%；这不是自由回答中的实际缺证回答率。
 路由器比基线净多判对 92 条：Answer +16、Refuse −10、Conflict +86；冲突贡献净增量的 93.5%。
 真实不足误判可答：路由器 11、基线 6；真实冲突误判可答：路由器 9、基线 57。
 因此不能仅凭整体提升认定不足类更好。旧首行解析是 post-hoc；新条件解析在推理前固定，invalid 保留分母。
 完整数据跨集合的 original_id 和问题文本无重叠；既有特征未见 NaN/Inf/全零向量。
-最近代码验证为 22 个测试通过，属于运行准备证据，不是新 GPU 实验结果。
+最近代码验证为2026-10-12的36个CPU测试通过，属于准备/流程验证证据，不是新GPU实验结果。
+四条件GPU正式新增2040条已于北京时间2026-10-11 12:30:06生成完并核验，见 [分类完成记录](docs/records/2026-10-11-classification-grid-verified.md)。
+chat相比plain准确率−7个百分点，但分类错误可答率31.5%降到14%；chat不足→可答0/100、冲突→可答28/100。
+分类chat的冲突召回只有1%，val两组chat未预测conflict；格式通过率提高不等于可靠三分类能力。
+router与chat的分类错误可答率点差4个百分点，bootstrap区间含0；不能由总体准确率优势认定不足类或安全性稳定胜出。
+
+自由回答 plain/chat 触及 128-token 输出上限且未以 EOS 结束分别为 154/300 和 1/300，空输出均为 0。
+当前正式v4按发布不足标签且探针判不足后实质作答为plain6–8/80（7.50–10.00%）、chat11–12/82（13.41–14.63%）；
+全部发布不足实质作答plain13–15/100、chat20–22/100。相关字段含unknown，点估计null，不能套用历史v3 bootstrap区间。
+发布冲突选边plain66–81/100、chat79–83/100；发布充分有据正确回答plain55–61/100、chat61–64/100，明确不足拒答22–25/100、20–21/100。
+范围保留未知在完整分母中，是识别上下界，不是置信区间。v3旧点估计8/80、12/82及区间保留在历史记录。
+第二输入判断300条为充分100、不足120、冲突70、未知10；发布answer中20条判不足，发布conflict中24条判充分。
+按第二判断语义不足且探针判不足后作答plain8–10/86、chat13–14/92；语义冲突选边45–54/70、55–56/70，均为事后诊断。
+核心20条输入均被第二判断判不足；其中明确作答plain6/chat11，plain2/chat1先答后回撤保留unknown。370/377也保留实质/选边unknown。
+以上为同模型第二评分加协调补评/裁定，仍非独立人工金标准，不能证明模型自知或故意忽略。
+chat−plain 探针准确率差 −3.67 个百分点，按底题配对 bootstrap 95% 区间 [−8.00, +0.33]；
+充分召回率差 −15 个百分点，区间 [−25, −5]；不足/冲突各 +2 个百分点，区间均含 0。
+详见 docs/records/2026-10-09-free-answer-generation-verified.md 与同名 JSON。
+最新行为交接见 [第二评分、v4裁定与启动准备](docs/records/2026-10-12-semantic-review-adjudication.md) 及同名JSON；v3历史见 [重点复核](docs/records/2026-10-11-free-answer-followup-audit.md)，首轮历史见 [v2审核](docs/records/2026-10-11-free-answer-semantic-review.md)。
+旧核验与背景恢复记录是当时快照；现有报告已加载正式标注，仍显示 pending_or_ambiguous 是因为歧义字段保留 unknown。
+100 个 conflict 配置中明确冲突 68、兼容/答案未变 13、不足/含糊 19；明确冲突子集选边 plain 42–52/68、chat 53–54/68（事后诊断）。
+固定 train/val/test 的显式改写元数据匹配分别 6/600、2/285、4/300，均在 conflict；检测非穷尽，冻结原输入未清洗。发布类别不能直接等同于明确语义矛盾。
 
 ## 文件导航
 
@@ -53,8 +77,14 @@ answer（证据充分）、refuse（证据不足）、conflict（证据冲突）
 | `scripts/run_prompt_baseline.sh`、`scripts/prompt_baseline.py` | 原纯文本 8-token 分类基线与严格解析；保留历史设置 |
 | `scripts/analyze_prompt_baseline.py` | 对旧原始输出进行首行事后补充分析 |
 | `scripts/run_classification_grid.sh`、`scripts/classification_grid.py` | plain/chat × 8/64-token 分类对照、审计、分类型指标和混淆矩阵 |
+| `scripts/run_classification_grid_review.sh`、`scripts/verify_classification_grid.py` | 本轮顺序smoke/正式启动及完成后的独立计数核验；GPU空闲保护、冻结指纹、2340解析和10组指标检查 |
 | `scripts/run_free_answer_study.sh`、`scripts/free_answer_study.py` | 同模板提取/重训探针、128-token 自由回答、生成前判断与行为汇总 |
 | `scripts/free_answer_review.py` | 离线盲审 HTML、带批次哈希的 CSV、未知行为与完整分母统计 |
+| `scripts/free_answer_followup_analysis.py` | 从冻结 v2 复算同助手 v3 变更、70 条重点判断、100 条质量分层及独立空白审包；不会自动导入正式标注 |
+| `scripts/prepare_independent_semantic_review.py` | 重新编号独立输入/行为池、隔离协调映射、准备234条优先批次、校验新评分；拒绝覆写已有版本，不自动导入正式标注 |
+| `scripts/summarize_independent_semantic_review.py`、`scripts/adjudicate_semantic_review.py` | 汇总第二评分与已披露协调补评；由明确手工决策另存v4/分歧/未知/质量分层，不自动导入正式标注；旧源重放须显式source-snapshot并核验原哈希 |
+| `scripts/run_classification_prompt_search_review.sh`、`docs/classification_prompt_validation.md` | 用户顺序启动新提示词GPU smoke和正式验证，当前v3新目录；855条验证新输出，预设选择门槛，未读取test或使用确认集 |
+| `scripts/verify_classification_prompt_search.py` | 仅CPU只读核验新提示词protocol、缓存/完整提示/解析、独立计数和预设选择，复算配对bootstrap；不启动GPU，不覆写报告 |
 | `scripts/evidence_experiment.py` | 固定协议、输入渲染、缓存校验、审计、配对 bootstrap、状态钩子和生成公共函数 |
 | `scripts/check_environment.sh`、`scripts/check_environment.py` | 环境、权重与模型接口检查；加载模型的检查也会占 GPU |
 | `tests/test_small_repro.py`、`tests/test_prompt_baseline.py` | 旧复现和旧基线验证 |
@@ -93,7 +123,11 @@ answer（证据充分）、refuse（证据不足）、conflict（证据冲突）
 | `runs/qwen2.5-3b-prompt-baseline/predictions.json`、`first_line_analysis/` | 旧原始分类输出、事后解析及对照 |
 | `runs/qwen2.5-3b-classification-grid/` | 四条件 protocol、audit、各条件 predictions；`reports/{val,test}.md/.json` 和逐类 CSV |
 | `runs/qwen2.5-3b-free-answer-study/` | 当前自由回答；`{plain,chat}/{train,val}/states.json` 与 features、各自 probe、test/predictions.json |
-| 自由回答目录下 `review/`、`annotations.csv`、`reports/` | 盲审页面与模板、最终标注、behavior 报告和 joined_records |
+| 自由回答目录下 `review/`、`annotations.csv`、`reports/` | 盲审页面、600 条语义首轮标注、behavior 报告和 joined_records；v1 与分析前报告历史快照保留 |
+| `review/followup-2026-10-11/`、`docs/records/2026-10-11-free-answer-followup-audit*` | 历史v3、184未知队列、70重点判断、100冲突质量及元数据；勿覆盖当前正式v4 |
+| `review/independent-semantic-2026-10-11/` | public为原匿名材料，coordinator勿给第二评审；reviewers/a,b,c保存300输入/232行为，另coordinator-supplement-2026-10-12保存2行为；comparison-2026-10-12-v1与adjudication-2026-10-12保存完整比较/裁定/v4/132未知；旧0评分、缺2条记录为历史快照 |
+| `docs/records/2026-10-12-semantic-review-adjudication*` | 当前v4、300输入评分、234混合行为评分、148字段裁定、117手工决策、132未知与结构化核验的持久副本 |
+| `review/uncertain_items_semantic_v2.csv`、`docs/records/2026-10-11-free-answer-semantic-review*` | v2历史199歧义及校验快照，勿覆盖当前v4 |
 
 `runs/` 被 Git 忽略，是本地运行产物，目录存在不代表运行完成。
 持久记录保存设置、轻量指标、必要校验值和产物路径；大权重、激活数组、整批生成留在原产物目录。
@@ -107,17 +141,17 @@ answer（证据充分）、refuse（证据不足）、conflict（证据冲突）
 - Git origin 已切换为 SSH，仓库本地 core.sshCommand 选择专用 443 配置；用户已添加公钥，2026-10-09 推送及远端哈希核验成功，正常使用 git push origin main，见 docs/git_push.md。
 - 标准化只拟合 train；C=1/lbfgs/max_iter=2000；验证集选层并 sigmoid 校准。层号从 0 编号。
 - 状态定义为 `hidden_states[l+1][0,-1,:]`，末层含 final norm；自由回答两种模板分别重训探针。
-- 用户偏好助手准备代码、验证和分析，用户启动长期 GPU 实验。已有任务运行时不要另起同 GPU 实验。
+- 用户明确约定（2026-10-11）：预计运行超过10分钟的GPU程序，由助手先完成代码、检查、时间估算和断点记录，提供启动/续跑命令，再请用户运行；助手负责进度核验与分析。估算不能保证低于10分钟时按长期任务处理。已有任务运行时不要另起同GPU实验。
 - 不修改运行中实验所依赖的代码、配置、protocol 或输出；文档整理与只读检查可以继续。
 - 协议包含代码指纹；代码/指令/抽样改变后使用新的 run_dir，不以修改指纹文件来绕过校验。
 - 提取失败应中止并记录实例，不能补零；空/截断/未知行为不能自动算拒答。
 
 ## 当前任务之后怎么推进
 
-1. 用户报告运行结束后，只读核验 plain/chat 的 train、val、probe、test 记录是否齐全，是否有失败。
-2. 查 `reports/behavior.json` 和 `review/blind_review.html`。生成完成仍需行为审核；未知项保留分母及上下界。
-3. 协助完成带批次哈希的行为标注，再执行 `sh scripts/run_free_answer_study.sh --stage analyze`。
-4. 核验四条件分类是否已在其他目录运行；若未完成，按运行说明补齐。不要打断当前自由回答。
+1. 先读 [2026-10-12裁定与启动准备](docs/records/2026-10-12-semantic-review-adjudication.md)，再按需读classification-grid-verified及生成核验记录；当前600条正式v4已分析核验，避免重跑旧GPU或从空模板覆盖。
+2. 第二评分/补评汇总与148字段裁定已完成。132未知属于已裁定保留歧义，不是尚未处理的分歧队列；后续需额外证据或预先固定新协议，不能自动清零。背景暴露、2协调补评和非独立人工金标准限制继续披露。
+3. `annotations.csv` 为正式v4；旧v3及报告在review/history/2026-10-12-before-adjudication-v4/，旧评分脚本重放用显式source-snapshot，不改原指纹。后续再更新仍先快照再analyze。
+4. 新验证集三候选已由用户运行并核验完成，先读[完成记录](docs/records/2026-10-12-classification-prompt-validation-verified.md)。没有合格候选，不推进确认集或放宽门槛追认最高分。下一步仅在val审核可答性/明确矛盾并诊断直接答题/过度refuse，再设计预先固定新候选；新设置必须新run_dir/protocol，长期GPU仍交给用户。
 5. 分别分析不足和冲突，再决定确认集与干预；暂不直接开展 patching。
 
 ## 每次工作结束后的记录维护

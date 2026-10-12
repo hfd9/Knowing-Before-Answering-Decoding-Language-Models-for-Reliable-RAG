@@ -1,0 +1,1636 @@
+{
+  "recorded_at": "2026-10-12T09:56:08.237583+08:00",
+  "status": "verified_complete_no_qualified_baseline",
+  "launch_actor": "user",
+  "verification_actor": "assistant",
+  "verification": {
+    "checked_at": "2026-10-12T09:55:49.055994+08:00",
+    "status": "verified_complete",
+    "runs": {
+      "qwen2.5-3b-classification-prompt-validation-smoke-v3": {
+        "instances_per_candidate": 9,
+        "counts": {
+          "definitions": 9,
+          "decision_order": 9,
+          "illustrations": 9
+        },
+        "generation_complete": true,
+        "progress": {
+          "status": "analysis_complete",
+          "protocol_sha256": "5c0866d9f77f3516999ba4406fa6020adf8bd1f9f76ddee16f857585bda21597"
+        },
+        "report_verified": true,
+        "bootstrap_verified": true,
+        "selection": {
+          "status": "smoke_only_no_selection",
+          "selected_candidate": null
+        },
+        "metrics": {
+          "legacy_chat8": {
+            "correct": 3,
+            "accuracy": 0.3333333333333333,
+            "macro_f1": 0.16666666666666666,
+            "confusion_matrix": [
+              [
+                0,
+                3,
+                0,
+                0
+              ],
+              [
+                0,
+                3,
+                0,
+                0
+              ],
+              [
+                0,
+                3,
+                0,
+                0
+              ]
+            ],
+            "per_class": {
+              "answer": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 3,
+                "correct": 0
+              },
+              "refuse": {
+                "precision": 0.3333333333333333,
+                "recall": 1.0,
+                "f1": 0.5,
+                "support": 3,
+                "correct": 3
+              },
+              "conflict": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 3,
+                "correct": 0
+              }
+            },
+            "classification_false_answer_rate": 0.0,
+            "parse_coverage": 1.0,
+            "strict_format_pass_rate": 1.0,
+            "refuse_to_answer_count": 0,
+            "conflict_to_answer_count": 0,
+            "hit_output_limit_count": 0,
+            "empty_output_count": 0
+          },
+          "definitions": {
+            "correct": 3,
+            "accuracy": 0.3333333333333333,
+            "macro_f1": 0.16666666666666666,
+            "confusion_matrix": [
+              [
+                0,
+                3,
+                0,
+                0
+              ],
+              [
+                0,
+                3,
+                0,
+                0
+              ],
+              [
+                0,
+                3,
+                0,
+                0
+              ]
+            ],
+            "per_class": {
+              "answer": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 3,
+                "correct": 0
+              },
+              "refuse": {
+                "precision": 0.3333333333333333,
+                "recall": 1.0,
+                "f1": 0.5,
+                "support": 3,
+                "correct": 3
+              },
+              "conflict": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 3,
+                "correct": 0
+              }
+            },
+            "classification_false_answer_rate": 0.0,
+            "parse_coverage": 1.0,
+            "strict_format_pass_rate": 1.0,
+            "refuse_to_answer_count": 0,
+            "conflict_to_answer_count": 0,
+            "hit_output_limit_count": 0,
+            "empty_output_count": 0
+          },
+          "decision_order": {
+            "correct": 3,
+            "accuracy": 0.3333333333333333,
+            "macro_f1": 0.16666666666666666,
+            "confusion_matrix": [
+              [
+                0,
+                3,
+                0,
+                0
+              ],
+              [
+                0,
+                3,
+                0,
+                0
+              ],
+              [
+                0,
+                3,
+                0,
+                0
+              ]
+            ],
+            "per_class": {
+              "answer": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 3,
+                "correct": 0
+              },
+              "refuse": {
+                "precision": 0.3333333333333333,
+                "recall": 1.0,
+                "f1": 0.5,
+                "support": 3,
+                "correct": 3
+              },
+              "conflict": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 3,
+                "correct": 0
+              }
+            },
+            "classification_false_answer_rate": 0.0,
+            "parse_coverage": 1.0,
+            "strict_format_pass_rate": 1.0,
+            "refuse_to_answer_count": 0,
+            "conflict_to_answer_count": 0,
+            "hit_output_limit_count": 0,
+            "empty_output_count": 0
+          },
+          "illustrations": {
+            "correct": 3,
+            "accuracy": 0.3333333333333333,
+            "macro_f1": 0.16666666666666666,
+            "confusion_matrix": [
+              [
+                0,
+                3,
+                0,
+                0
+              ],
+              [
+                0,
+                3,
+                0,
+                0
+              ],
+              [
+                0,
+                3,
+                0,
+                0
+              ]
+            ],
+            "per_class": {
+              "answer": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 3,
+                "correct": 0
+              },
+              "refuse": {
+                "precision": 0.3333333333333333,
+                "recall": 1.0,
+                "f1": 0.5,
+                "support": 3,
+                "correct": 3
+              },
+              "conflict": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 3,
+                "correct": 0
+              }
+            },
+            "classification_false_answer_rate": 0.0,
+            "parse_coverage": 1.0,
+            "strict_format_pass_rate": 1.0,
+            "refuse_to_answer_count": 0,
+            "conflict_to_answer_count": 0,
+            "hit_output_limit_count": 0,
+            "empty_output_count": 0
+          }
+        },
+        "statistics": {
+          "definitions": {
+            "saved": 9,
+            "first_saved": "2026-10-12T01:49:44.513368+00:00",
+            "last_saved": "2026-10-12T01:49:47.249763+00:00",
+            "generation_seconds": 4.464521178160794,
+            "max_peak_allocated_gib": 6.2972893714904785,
+            "prediction_counts": {
+              "refuse": 9
+            }
+          },
+          "decision_order": {
+            "saved": 9,
+            "first_saved": "2026-10-12T01:49:47.474892+00:00",
+            "last_saved": "2026-10-12T01:49:50.263129+00:00",
+            "generation_seconds": 2.8929712841054425,
+            "max_peak_allocated_gib": 6.297958850860596,
+            "prediction_counts": {
+              "refuse": 9
+            }
+          },
+          "illustrations": {
+            "saved": 9,
+            "first_saved": "2026-10-12T01:49:50.513198+00:00",
+            "last_saved": "2026-10-12T01:49:53.523517+00:00",
+            "generation_seconds": 3.133311987039633,
+            "max_peak_allocated_gib": 6.326309680938721,
+            "prediction_counts": {
+              "refuse": 9
+            }
+          }
+        },
+        "predictions_sha256": {
+          "runs/qwen2.5-3b-classification-prompt-validation-smoke-v3/definitions/predictions.json": "ee4acb7e0f6a4e6f82db77be0e46576b319cac26ae304b07ee73fa2b7a0264f5",
+          "runs/qwen2.5-3b-classification-prompt-validation-smoke-v3/decision_order/predictions.json": "b8e943c4ae0d121f99648b7125e0562c07fbbb297665c2dee60ff6355162578d",
+          "runs/qwen2.5-3b-classification-prompt-validation-smoke-v3/illustrations/predictions.json": "75d40874a19c04e1b1b3ad3dc2885d20bac5b75d647afff78c1cb208c22e43e8"
+        },
+        "protocol_sha256": "5c0866d9f77f3516999ba4406fa6020adf8bd1f9f76ddee16f857585bda21597",
+        "failure_file_exists": false,
+        "code_model_data_protocol_rebuilt_and_equal": true,
+        "gate_fingerprints_verified": true
+      },
+      "qwen2.5-3b-classification-prompt-validation-v3": {
+        "instances_per_candidate": 285,
+        "counts": {
+          "definitions": 285,
+          "decision_order": 285,
+          "illustrations": 285
+        },
+        "generation_complete": true,
+        "progress": {
+          "status": "analysis_complete",
+          "protocol_sha256": "6dcddf4fa18668dd901cccbc3418bc46cc324166bfbd7ec9a10a9828163dc0f6"
+        },
+        "report_verified": true,
+        "bootstrap_verified": true,
+        "selection": {
+          "eligible_candidates": [],
+          "selected_candidate": null,
+          "diagnostic_best_candidate": "definitions",
+          "status": "no_qualified_baseline"
+        },
+        "metrics": {
+          "legacy_chat8": {
+            "correct": 114,
+            "accuracy": 0.4,
+            "macro_f1": 0.28025561342845884,
+            "confusion_matrix": [
+              [
+                19,
+                76,
+                0,
+                0
+              ],
+              [
+                0,
+                95,
+                0,
+                0
+              ],
+              [
+                20,
+                75,
+                0,
+                0
+              ]
+            ],
+            "per_class": {
+              "answer": {
+                "precision": 0.48717948717948717,
+                "recall": 0.2,
+                "f1": 0.2835820895522388,
+                "support": 95,
+                "correct": 19
+              },
+              "refuse": {
+                "precision": 0.3861788617886179,
+                "recall": 1.0,
+                "f1": 0.5571847507331378,
+                "support": 95,
+                "correct": 95
+              },
+              "conflict": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 95,
+                "correct": 0
+              }
+            },
+            "classification_false_answer_rate": 0.10526315789473684,
+            "parse_coverage": 1.0,
+            "strict_format_pass_rate": 1.0,
+            "refuse_to_answer_count": 0,
+            "conflict_to_answer_count": 20,
+            "hit_output_limit_count": 0,
+            "empty_output_count": 0
+          },
+          "definitions": {
+            "correct": 108,
+            "accuracy": 0.37894736842105264,
+            "macro_f1": 0.25811051693404635,
+            "confusion_matrix": [
+              [
+                15,
+                79,
+                0,
+                1
+              ],
+              [
+                2,
+                93,
+                0,
+                0
+              ],
+              [
+                20,
+                73,
+                0,
+                2
+              ]
+            ],
+            "per_class": {
+              "answer": {
+                "precision": 0.40540540540540543,
+                "recall": 0.15789473684210525,
+                "f1": 0.22727272727272727,
+                "support": 95,
+                "correct": 15
+              },
+              "refuse": {
+                "precision": 0.3795918367346939,
+                "recall": 0.9789473684210527,
+                "f1": 0.5470588235294118,
+                "support": 95,
+                "correct": 93
+              },
+              "conflict": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1": 0.0,
+                "support": 95,
+                "correct": 0
+              }
+            },
+            "classification_false_answer_rate": 0.11578947368421053,
+            "parse_coverage": 0.9894736842105263,
+            "strict_format_pass_rate": 0.9894736842105263,
+            "refuse_to_answer_count": 2,
+            "conflict_to_answer_count": 20,
+            "hit_output_limit_count": 0,
+            "empty_output_count": 0
+          },
+          "decision_order": {
+            "correct": 103,
+            "accuracy": 0.36140350877192984,
+            "macro_f1": 0.23452953093474482,
+            "confusion_matrix": [
+              [
+                6,
+                83,
+                2,
+                4
+              ],
+              [
+                0,
+                94,
+                1,
+                0
+              ],
+              [
+                8,
+                80,
+                3,
+                4
+              ]
+            ],
+            "per_class": {
+              "answer": {
+                "precision": 0.42857142857142855,
+                "recall": 0.06315789473684211,
+                "f1": 0.11009174311926606,
+                "support": 95,
+                "correct": 6
+              },
+              "refuse": {
+                "precision": 0.3657587548638132,
+                "recall": 0.9894736842105263,
+                "f1": 0.5340909090909091,
+                "support": 95,
+                "correct": 94
+              },
+              "conflict": {
+                "precision": 0.5,
+                "recall": 0.031578947368421054,
+                "f1": 0.0594059405940594,
+                "support": 95,
+                "correct": 3
+              }
+            },
+            "classification_false_answer_rate": 0.042105263157894736,
+            "parse_coverage": 0.9719298245614035,
+            "strict_format_pass_rate": 0.9719298245614035,
+            "refuse_to_answer_count": 0,
+            "conflict_to_answer_count": 8,
+            "hit_output_limit_count": 0,
+            "empty_output_count": 0
+          },
+          "illustrations": {
+            "correct": 104,
+            "accuracy": 0.3649122807017544,
+            "macro_f1": 0.23199099652138325,
+            "confusion_matrix": [
+              [
+                6,
+                87,
+                2,
+                0
+              ],
+              [
+                0,
+                95,
+                0,
+                0
+              ],
+              [
+                7,
+                85,
+                3,
+                0
+              ]
+            ],
+            "per_class": {
+              "answer": {
+                "precision": 0.46153846153846156,
+                "recall": 0.06315789473684211,
+                "f1": 0.1111111111111111,
+                "support": 95,
+                "correct": 6
+              },
+              "refuse": {
+                "precision": 0.35580524344569286,
+                "recall": 1.0,
+                "f1": 0.5248618784530387,
+                "support": 95,
+                "correct": 95
+              },
+              "conflict": {
+                "precision": 0.6,
+                "recall": 0.031578947368421054,
+                "f1": 0.06,
+                "support": 95,
+                "correct": 3
+              }
+            },
+            "classification_false_answer_rate": 0.03684210526315789,
+            "parse_coverage": 1.0,
+            "strict_format_pass_rate": 1.0,
+            "refuse_to_answer_count": 0,
+            "conflict_to_answer_count": 7,
+            "hit_output_limit_count": 0,
+            "empty_output_count": 0
+          }
+        },
+        "statistics": {
+          "definitions": {
+            "saved": 285,
+            "first_saved": "2026-10-12T01:50:30.130374+00:00",
+            "last_saved": "2026-10-12T01:52:08.277989+00:00",
+            "generation_seconds": 94.07967151189223,
+            "max_peak_allocated_gib": 6.3478522300720215,
+            "prediction_counts": {
+              "refuse": 245,
+              "answer": 37,
+              "null": 3
+            }
+          },
+          "decision_order": {
+            "saved": 285,
+            "first_saved": "2026-10-12T01:52:08.499292+00:00",
+            "last_saved": "2026-10-12T01:53:51.229670+00:00",
+            "generation_seconds": 96.58365221088752,
+            "max_peak_allocated_gib": 6.348521709442139,
+            "prediction_counts": {
+              "refuse": 257,
+              "null": 8,
+              "conflict": 6,
+              "answer": 14
+            }
+          },
+          "illustrations": {
+            "saved": 285,
+            "first_saved": "2026-10-12T01:53:51.482704+00:00",
+            "last_saved": "2026-10-12T01:55:45.451294+00:00",
+            "generation_seconds": 107.19362284289673,
+            "max_peak_allocated_gib": 6.376872539520264,
+            "prediction_counts": {
+              "refuse": 267,
+              "answer": 13,
+              "conflict": 5
+            }
+          }
+        },
+        "predictions_sha256": {
+          "runs/qwen2.5-3b-classification-prompt-validation-v3/definitions/predictions.json": "41703950e5d928897166abe2c22658cdc19de4087f428dc309a4c588cd64ee63",
+          "runs/qwen2.5-3b-classification-prompt-validation-v3/decision_order/predictions.json": "518e503cfa5e9e031c936f198f950e3f391cf68dd62ed52e72e5e136cbaef159",
+          "runs/qwen2.5-3b-classification-prompt-validation-v3/illustrations/predictions.json": "0eb9e2c5f598c809dd2f1574cb77ec364b81316e41bf883501d73218a58c1e4c"
+        },
+        "protocol_sha256": "6dcddf4fa18668dd901cccbc3418bc46cc324166bfbd7ec9a10a9828163dc0f6",
+        "failure_file_exists": false,
+        "code_model_data_protocol_rebuilt_and_equal": true,
+        "gate_fingerprints_verified": true
+      }
+    },
+    "no_gpu_or_model_loaded": true,
+    "metric_recount": "Independent Python counts and regex parser; protocol/cache renderer and deterministic bootstrap checked with original helpers.",
+    "checked_at_end": "2026-10-12T09:56:08.237583+08:00"
+  },
+  "formal_report": {
+    "split": "val",
+    "instances": 285,
+    "methods": {
+      "legacy_chat8": {
+        "n_instances": 285,
+        "correct": 114,
+        "accuracy": 0.4,
+        "macro_f1": 0.28025561342845884,
+        "invalid_count": 0,
+        "parse_coverage": 1.0,
+        "unsupported_invalid_count": 0,
+        "confusion_matrix": [
+          [
+            19,
+            76,
+            0,
+            0
+          ],
+          [
+            0,
+            95,
+            0,
+            0
+          ],
+          [
+            20,
+            75,
+            0,
+            0
+          ]
+        ],
+        "true_label_order": [
+          "answer",
+          "refuse",
+          "conflict"
+        ],
+        "predicted_label_order": [
+          "answer",
+          "refuse",
+          "conflict",
+          "invalid"
+        ],
+        "per_class_f1": {
+          "answer": 0.2835820895522388,
+          "refuse": 0.5571847507331378,
+          "conflict": 0.0
+        },
+        "invalid_policy": "Invalid outputs count as incorrect and false negatives; FAR counts explicit answer predictions only.",
+        "classification_false_answer_rate": 0.10526315789473684,
+        "per_class": {
+          "answer": {
+            "precision": 0.48717948717948717,
+            "recall": 0.2,
+            "f1": 0.2835820895522388,
+            "support": 95,
+            "correct": 19
+          },
+          "refuse": {
+            "precision": 0.3861788617886179,
+            "recall": 1.0,
+            "f1": 0.5571847507331378,
+            "support": 95,
+            "correct": 95
+          },
+          "conflict": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 95,
+            "correct": 0
+          }
+        },
+        "refuse_to_answer_count": 0,
+        "conflict_to_answer_count": 20,
+        "refuse_to_answer_rate": 0.0,
+        "conflict_to_answer_rate": 0.21052631578947367,
+        "strict_format_pass_rate": 1.0,
+        "hit_output_limit_count": 0,
+        "empty_output_count": 0
+      },
+      "definitions": {
+        "n_instances": 285,
+        "correct": 108,
+        "accuracy": 0.37894736842105264,
+        "macro_f1": 0.25811051693404635,
+        "invalid_count": 3,
+        "parse_coverage": 0.9894736842105263,
+        "unsupported_invalid_count": 2,
+        "confusion_matrix": [
+          [
+            15,
+            79,
+            0,
+            1
+          ],
+          [
+            2,
+            93,
+            0,
+            0
+          ],
+          [
+            20,
+            73,
+            0,
+            2
+          ]
+        ],
+        "true_label_order": [
+          "answer",
+          "refuse",
+          "conflict"
+        ],
+        "predicted_label_order": [
+          "answer",
+          "refuse",
+          "conflict",
+          "invalid"
+        ],
+        "per_class_f1": {
+          "answer": 0.22727272727272727,
+          "refuse": 0.5470588235294118,
+          "conflict": 0.0
+        },
+        "invalid_policy": "Invalid outputs count as incorrect and false negatives; FAR counts explicit answer predictions only.",
+        "classification_false_answer_rate": 0.11578947368421053,
+        "per_class": {
+          "answer": {
+            "precision": 0.40540540540540543,
+            "recall": 0.15789473684210525,
+            "f1": 0.22727272727272727,
+            "support": 95,
+            "correct": 15
+          },
+          "refuse": {
+            "precision": 0.3795918367346939,
+            "recall": 0.9789473684210527,
+            "f1": 0.5470588235294118,
+            "support": 95,
+            "correct": 93
+          },
+          "conflict": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 95,
+            "correct": 0
+          }
+        },
+        "refuse_to_answer_count": 2,
+        "conflict_to_answer_count": 20,
+        "refuse_to_answer_rate": 0.021052631578947368,
+        "conflict_to_answer_rate": 0.21052631578947367,
+        "strict_format_pass_rate": 0.9894736842105263,
+        "hit_output_limit_count": 0,
+        "empty_output_count": 0
+      },
+      "decision_order": {
+        "n_instances": 285,
+        "correct": 103,
+        "accuracy": 0.36140350877192984,
+        "macro_f1": 0.23452953093474482,
+        "invalid_count": 8,
+        "parse_coverage": 0.9719298245614035,
+        "unsupported_invalid_count": 4,
+        "confusion_matrix": [
+          [
+            6,
+            83,
+            2,
+            4
+          ],
+          [
+            0,
+            94,
+            1,
+            0
+          ],
+          [
+            8,
+            80,
+            3,
+            4
+          ]
+        ],
+        "true_label_order": [
+          "answer",
+          "refuse",
+          "conflict"
+        ],
+        "predicted_label_order": [
+          "answer",
+          "refuse",
+          "conflict",
+          "invalid"
+        ],
+        "per_class_f1": {
+          "answer": 0.11009174311926606,
+          "refuse": 0.5340909090909091,
+          "conflict": 0.0594059405940594
+        },
+        "invalid_policy": "Invalid outputs count as incorrect and false negatives; FAR counts explicit answer predictions only.",
+        "classification_false_answer_rate": 0.042105263157894736,
+        "per_class": {
+          "answer": {
+            "precision": 0.42857142857142855,
+            "recall": 0.06315789473684211,
+            "f1": 0.11009174311926606,
+            "support": 95,
+            "correct": 6
+          },
+          "refuse": {
+            "precision": 0.3657587548638132,
+            "recall": 0.9894736842105263,
+            "f1": 0.5340909090909091,
+            "support": 95,
+            "correct": 94
+          },
+          "conflict": {
+            "precision": 0.5,
+            "recall": 0.031578947368421054,
+            "f1": 0.0594059405940594,
+            "support": 95,
+            "correct": 3
+          }
+        },
+        "refuse_to_answer_count": 0,
+        "conflict_to_answer_count": 8,
+        "refuse_to_answer_rate": 0.0,
+        "conflict_to_answer_rate": 0.08421052631578947,
+        "strict_format_pass_rate": 0.9719298245614035,
+        "hit_output_limit_count": 0,
+        "empty_output_count": 0
+      },
+      "illustrations": {
+        "n_instances": 285,
+        "correct": 104,
+        "accuracy": 0.3649122807017544,
+        "macro_f1": 0.23199099652138325,
+        "invalid_count": 0,
+        "parse_coverage": 1.0,
+        "unsupported_invalid_count": 0,
+        "confusion_matrix": [
+          [
+            6,
+            87,
+            2,
+            0
+          ],
+          [
+            0,
+            95,
+            0,
+            0
+          ],
+          [
+            7,
+            85,
+            3,
+            0
+          ]
+        ],
+        "true_label_order": [
+          "answer",
+          "refuse",
+          "conflict"
+        ],
+        "predicted_label_order": [
+          "answer",
+          "refuse",
+          "conflict",
+          "invalid"
+        ],
+        "per_class_f1": {
+          "answer": 0.1111111111111111,
+          "refuse": 0.5248618784530387,
+          "conflict": 0.06
+        },
+        "invalid_policy": "Invalid outputs count as incorrect and false negatives; FAR counts explicit answer predictions only.",
+        "classification_false_answer_rate": 0.03684210526315789,
+        "per_class": {
+          "answer": {
+            "precision": 0.46153846153846156,
+            "recall": 0.06315789473684211,
+            "f1": 0.1111111111111111,
+            "support": 95,
+            "correct": 6
+          },
+          "refuse": {
+            "precision": 0.35580524344569286,
+            "recall": 1.0,
+            "f1": 0.5248618784530387,
+            "support": 95,
+            "correct": 95
+          },
+          "conflict": {
+            "precision": 0.6,
+            "recall": 0.031578947368421054,
+            "f1": 0.06,
+            "support": 95,
+            "correct": 3
+          }
+        },
+        "refuse_to_answer_count": 0,
+        "conflict_to_answer_count": 7,
+        "refuse_to_answer_rate": 0.0,
+        "conflict_to_answer_rate": 0.07368421052631578,
+        "strict_format_pass_rate": 1.0,
+        "hit_output_limit_count": 0,
+        "empty_output_count": 0
+      }
+    },
+    "selection": {
+      "eligible_candidates": [],
+      "selected_candidate": null,
+      "diagnostic_best_candidate": "definitions",
+      "status": "no_qualified_baseline"
+    },
+    "paired_question_bootstrap": {
+      "definitions_minus_legacy_chat8": {
+        "direction": "left minus right",
+        "resamples": 10000,
+        "seed": 42,
+        "unit": "original question; retain all three configurations",
+        "fixed_models": true,
+        "differences": {
+          "accuracy": {
+            "estimate": -0.02105263157894738,
+            "95ci": [
+              -0.045614035087719274,
+              0.003508771929824517
+            ]
+          },
+          "macro_f1": {
+            "estimate": -0.022145096494412486,
+            "95ci": [
+              -0.05243282374396679,
+              0.008198165365993592
+            ]
+          },
+          "classification_false_answer_rate": {
+            "estimate": 0.01052631578947369,
+            "95ci": [
+              -0.02631578947368421,
+              0.04736842105263156
+            ]
+          },
+          "answer_recall": {
+            "estimate": -0.04210526315789476,
+            "95ci": [
+              -0.10526315789473686,
+              0.02105263157894738
+            ]
+          },
+          "refuse_recall": {
+            "estimate": -0.021052631578947323,
+            "95ci": [
+              -0.052631578947368474,
+              0.0
+            ]
+          },
+          "conflict_recall": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "refuse_to_answer_rate": {
+            "estimate": 0.021052631578947368,
+            "95ci": [
+              0.0,
+              0.05263157894736842
+            ]
+          },
+          "conflict_to_answer_rate": {
+            "estimate": 0.0,
+            "95ci": [
+              -0.06315789473684211,
+              0.06315789473684211
+            ]
+          }
+        }
+      },
+      "decision_order_minus_legacy_chat8": {
+        "direction": "left minus right",
+        "resamples": 10000,
+        "seed": 42,
+        "unit": "original question; retain all three configurations",
+        "fixed_models": true,
+        "differences": {
+          "accuracy": {
+            "estimate": -0.038596491228070184,
+            "95ci": [
+              -0.07017543859649122,
+              -0.010526315789473661
+            ]
+          },
+          "macro_f1": {
+            "estimate": -0.045726082493714015,
+            "95ci": [
+              -0.08774144818859476,
+              -0.002806035748811019
+            ]
+          },
+          "classification_false_answer_rate": {
+            "estimate": -0.06315789473684211,
+            "95ci": [
+              -0.10526315789473684,
+              -0.02105263157894737
+            ]
+          },
+          "answer_recall": {
+            "estimate": -0.1368421052631579,
+            "95ci": [
+              -0.22105263157894736,
+              -0.05263157894736843
+            ]
+          },
+          "refuse_recall": {
+            "estimate": -0.010526315789473717,
+            "95ci": [
+              -0.03157894736842104,
+              0.0
+            ]
+          },
+          "conflict_recall": {
+            "estimate": 0.031578947368421054,
+            "95ci": [
+              0.0,
+              0.07368421052631578
+            ]
+          },
+          "refuse_to_answer_rate": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "conflict_to_answer_rate": {
+            "estimate": -0.12631578947368421,
+            "95ci": [
+              -0.21052631578947367,
+              -0.04210526315789474
+            ]
+          }
+        }
+      },
+      "illustrations_minus_legacy_chat8": {
+        "direction": "left minus right",
+        "resamples": 10000,
+        "seed": 42,
+        "unit": "original question; retain all three configurations",
+        "fixed_models": true,
+        "differences": {
+          "accuracy": {
+            "estimate": -0.03508771929824561,
+            "95ci": [
+              -0.05964912280701756,
+              -0.010526315789473717
+            ]
+          },
+          "macro_f1": {
+            "estimate": -0.04826461690707559,
+            "95ci": [
+              -0.08480327126183392,
+              -0.010733738640429374
+            ]
+          },
+          "classification_false_answer_rate": {
+            "estimate": -0.06842105263157894,
+            "95ci": [
+              -0.10526315789473684,
+              -0.03684210526315789
+            ]
+          },
+          "answer_recall": {
+            "estimate": -0.1368421052631579,
+            "95ci": [
+              -0.21052631578947367,
+              -0.07368421052631578
+            ]
+          },
+          "refuse_recall": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "conflict_recall": {
+            "estimate": 0.031578947368421054,
+            "95ci": [
+              0.0,
+              0.07368421052631578
+            ]
+          },
+          "refuse_to_answer_rate": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "conflict_to_answer_rate": {
+            "estimate": -0.13684210526315788,
+            "95ci": [
+              -0.21052631578947367,
+              -0.07368421052631578
+            ]
+          }
+        }
+      }
+    },
+    "protocol_sha256": "6dcddf4fa18668dd901cccbc3418bc46cc324166bfbd7ec9a10a9828163dc0f6",
+    "note": "Validation is selected on; not independent test evidence. Published labels have semantic quality limitations. No test or confirmation predictions."
+  },
+  "smoke_report": {
+    "split": "val",
+    "instances": 9,
+    "methods": {
+      "legacy_chat8": {
+        "n_instances": 9,
+        "correct": 3,
+        "accuracy": 0.3333333333333333,
+        "macro_f1": 0.16666666666666666,
+        "invalid_count": 0,
+        "parse_coverage": 1.0,
+        "unsupported_invalid_count": 0,
+        "confusion_matrix": [
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ]
+        ],
+        "true_label_order": [
+          "answer",
+          "refuse",
+          "conflict"
+        ],
+        "predicted_label_order": [
+          "answer",
+          "refuse",
+          "conflict",
+          "invalid"
+        ],
+        "per_class_f1": {
+          "answer": 0.0,
+          "refuse": 0.5,
+          "conflict": 0.0
+        },
+        "invalid_policy": "Invalid outputs count as incorrect and false negatives; FAR counts explicit answer predictions only.",
+        "classification_false_answer_rate": 0.0,
+        "per_class": {
+          "answer": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3,
+            "correct": 0
+          },
+          "refuse": {
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5,
+            "support": 3,
+            "correct": 3
+          },
+          "conflict": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3,
+            "correct": 0
+          }
+        },
+        "refuse_to_answer_count": 0,
+        "conflict_to_answer_count": 0,
+        "refuse_to_answer_rate": 0.0,
+        "conflict_to_answer_rate": 0.0,
+        "strict_format_pass_rate": 1.0,
+        "hit_output_limit_count": 0,
+        "empty_output_count": 0
+      },
+      "definitions": {
+        "n_instances": 9,
+        "correct": 3,
+        "accuracy": 0.3333333333333333,
+        "macro_f1": 0.16666666666666666,
+        "invalid_count": 0,
+        "parse_coverage": 1.0,
+        "unsupported_invalid_count": 0,
+        "confusion_matrix": [
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ]
+        ],
+        "true_label_order": [
+          "answer",
+          "refuse",
+          "conflict"
+        ],
+        "predicted_label_order": [
+          "answer",
+          "refuse",
+          "conflict",
+          "invalid"
+        ],
+        "per_class_f1": {
+          "answer": 0.0,
+          "refuse": 0.5,
+          "conflict": 0.0
+        },
+        "invalid_policy": "Invalid outputs count as incorrect and false negatives; FAR counts explicit answer predictions only.",
+        "classification_false_answer_rate": 0.0,
+        "per_class": {
+          "answer": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3,
+            "correct": 0
+          },
+          "refuse": {
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5,
+            "support": 3,
+            "correct": 3
+          },
+          "conflict": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3,
+            "correct": 0
+          }
+        },
+        "refuse_to_answer_count": 0,
+        "conflict_to_answer_count": 0,
+        "refuse_to_answer_rate": 0.0,
+        "conflict_to_answer_rate": 0.0,
+        "strict_format_pass_rate": 1.0,
+        "hit_output_limit_count": 0,
+        "empty_output_count": 0
+      },
+      "decision_order": {
+        "n_instances": 9,
+        "correct": 3,
+        "accuracy": 0.3333333333333333,
+        "macro_f1": 0.16666666666666666,
+        "invalid_count": 0,
+        "parse_coverage": 1.0,
+        "unsupported_invalid_count": 0,
+        "confusion_matrix": [
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ]
+        ],
+        "true_label_order": [
+          "answer",
+          "refuse",
+          "conflict"
+        ],
+        "predicted_label_order": [
+          "answer",
+          "refuse",
+          "conflict",
+          "invalid"
+        ],
+        "per_class_f1": {
+          "answer": 0.0,
+          "refuse": 0.5,
+          "conflict": 0.0
+        },
+        "invalid_policy": "Invalid outputs count as incorrect and false negatives; FAR counts explicit answer predictions only.",
+        "classification_false_answer_rate": 0.0,
+        "per_class": {
+          "answer": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3,
+            "correct": 0
+          },
+          "refuse": {
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5,
+            "support": 3,
+            "correct": 3
+          },
+          "conflict": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3,
+            "correct": 0
+          }
+        },
+        "refuse_to_answer_count": 0,
+        "conflict_to_answer_count": 0,
+        "refuse_to_answer_rate": 0.0,
+        "conflict_to_answer_rate": 0.0,
+        "strict_format_pass_rate": 1.0,
+        "hit_output_limit_count": 0,
+        "empty_output_count": 0
+      },
+      "illustrations": {
+        "n_instances": 9,
+        "correct": 3,
+        "accuracy": 0.3333333333333333,
+        "macro_f1": 0.16666666666666666,
+        "invalid_count": 0,
+        "parse_coverage": 1.0,
+        "unsupported_invalid_count": 0,
+        "confusion_matrix": [
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ]
+        ],
+        "true_label_order": [
+          "answer",
+          "refuse",
+          "conflict"
+        ],
+        "predicted_label_order": [
+          "answer",
+          "refuse",
+          "conflict",
+          "invalid"
+        ],
+        "per_class_f1": {
+          "answer": 0.0,
+          "refuse": 0.5,
+          "conflict": 0.0
+        },
+        "invalid_policy": "Invalid outputs count as incorrect and false negatives; FAR counts explicit answer predictions only.",
+        "classification_false_answer_rate": 0.0,
+        "per_class": {
+          "answer": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3,
+            "correct": 0
+          },
+          "refuse": {
+            "precision": 0.3333333333333333,
+            "recall": 1.0,
+            "f1": 0.5,
+            "support": 3,
+            "correct": 3
+          },
+          "conflict": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3,
+            "correct": 0
+          }
+        },
+        "refuse_to_answer_count": 0,
+        "conflict_to_answer_count": 0,
+        "refuse_to_answer_rate": 0.0,
+        "conflict_to_answer_rate": 0.0,
+        "strict_format_pass_rate": 1.0,
+        "hit_output_limit_count": 0,
+        "empty_output_count": 0
+      }
+    },
+    "selection": {
+      "status": "smoke_only_no_selection",
+      "selected_candidate": null
+    },
+    "paired_question_bootstrap": {
+      "definitions_minus_legacy_chat8": {
+        "direction": "left minus right",
+        "resamples": 10000,
+        "seed": 42,
+        "unit": "original question; retain all three configurations",
+        "fixed_models": true,
+        "differences": {
+          "accuracy": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_f1": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "classification_false_answer_rate": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "answer_recall": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "refuse_recall": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "conflict_recall": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "refuse_to_answer_rate": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "conflict_to_answer_rate": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "decision_order_minus_legacy_chat8": {
+        "direction": "left minus right",
+        "resamples": 10000,
+        "seed": 42,
+        "unit": "original question; retain all three configurations",
+        "fixed_models": true,
+        "differences": {
+          "accuracy": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_f1": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "classification_false_answer_rate": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "answer_recall": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "refuse_recall": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "conflict_recall": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "refuse_to_answer_rate": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "conflict_to_answer_rate": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "illustrations_minus_legacy_chat8": {
+        "direction": "left minus right",
+        "resamples": 10000,
+        "seed": 42,
+        "unit": "original question; retain all three configurations",
+        "fixed_models": true,
+        "differences": {
+          "accuracy": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "macro_f1": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "classification_false_answer_rate": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "answer_recall": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "refuse_recall": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "conflict_recall": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "refuse_to_answer_rate": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "conflict_to_answer_rate": {
+            "estimate": 0.0,
+            "95ci": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      }
+    },
+    "protocol_sha256": "5c0866d9f77f3516999ba4406fa6020adf8bd1f9f76ddee16f857585bda21597",
+    "note": "Validation is selected on; not independent test evidence. Published labels have semantic quality limitations. No test or confirmation predictions."
+  },
+  "verification_command": "/large_disk/wf/miniconda3/envs/kba-rag/bin/python scripts/verify_classification_prompt_search.py --output /tmp/kba_prompt_validation_verification.json",
+  "verification_exit_code": 0,
+  "user_launch_exit_code": "not directly observed; analysis_complete and complete reports verified",
+  "limitations": [
+    "Validation labels are published construction labels, not independently reviewed validation semantic gold.",
+    "Validation is used for candidate selection and is not independent test evidence.",
+    "Lower classification false-answer rate does not establish better free-answer behavior or useful three-class classification.",
+    "Same-model input review and coordinator supplements are disclosed; not independent human gold.",
+    "NVIDIA-SMI unavailable in assistant sandbox; no claim about real-time GPU utilisation or host process exit."
+  ],
+  "confirmation_or_test_predictions_generated": false,
+  "no_git_commit_or_push": true
+}

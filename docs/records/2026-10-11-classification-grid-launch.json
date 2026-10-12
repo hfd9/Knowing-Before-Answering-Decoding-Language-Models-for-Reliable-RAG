@@ -1,0 +1,36 @@
+{
+  "recorded_at": "2026-10-11T12:08:38.408927+08:00",
+  "status": "running_snapshot",
+  "execution_actor": "assistant",
+  "authorization": "User explicitly requested completion of steps1and2; GPU command escalation approved in this turn",
+  "launch_command": "sh scripts/run_classification_grid_review.sh",
+  "cpu_tests": {
+    "passed": 22,
+    "seconds": 9.449
+  },
+  "check_command": "sh scripts/run_classification_grid.sh --stage check",
+  "checks": "preflight and audit passed; GPU0 idle before launch",
+  "smoke_counts": {
+    "plain8/test/predictions.json": 9,
+    "plain8/val/predictions.json": 9,
+    "chat64/test/predictions.json": 9,
+    "chat64/val/predictions.json": 9,
+    "chat8/test/predictions.json": 9,
+    "chat8/val/predictions.json": 9,
+    "plain64/test/predictions.json": 9,
+    "plain64/val/predictions.json": 9
+  },
+  "counts_at_record": {
+    "plain8/val/predictions.json": 285,
+    "plain64/val/predictions.json": 270
+  },
+  "logs": [
+    "runs/qwen2.5-3b-classification-grid/launch-2026-10-11/smoke.log",
+    "runs/qwen2.5-3b-classification-grid/launch-2026-10-11/full.log"
+  ],
+  "history": "runs/qwen2.5-3b-classification-grid/history/2026-10-11-before-followup-check",
+  "protocol_sha256": "bd05c899c9bb9afd64d25220264562036f50329cbcaab9909b35dbe29dac2eed",
+  "running_frozen_dependencies_not_modified": true,
+  "reserved_confirmation_questions": 380,
+  "no_final_results_yet": true
+}

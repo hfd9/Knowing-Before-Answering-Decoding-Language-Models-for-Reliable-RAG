@@ -1,0 +1,26 @@
+split,id,true_mode,document_index,pattern,excerpt
+train,train_530_conflict,conflict,2,original conflict document,ence have around its edge?         Original Conflict Document: Pre-decimal British coinage | Uncyclopedia | Fandom powered by Wikia   Whoops 
+train,train_689_conflict,conflict,5,original conflict document,71 - Diamonds Are Forever?         Original Conflict Document: Diamonds Are Forever ( 1971 ) - FAQ   The content of this page was created dir
+train,train_689_conflict,conflict,5,conflict answer,Stavro Blofeld . He         Target Conflict Answer: Matt Monro                  TASK:         The 'Original Conflict Document' mus
+train,train_689_conflict,conflict,5,"(?:modify|rewrite|change).{0,35}(?:document|answer)",sed on the text.         3. Do NOT rewrite the entire document. Keep 90% of the original text.                  Return ONLY the updated docume
+train,train_1081_conflict,conflict,4,original conflict document,t capable of that emotion?         Original Conflict Document: Sarek ( Character ) - Quotes   Sarek ( Character )   from `` Star Trek '' ( 19
+train,train_1081_conflict,conflict,4,conflict answer, that emotion. Live         Target Conflict Answer: Data                  TASK:         The 'Original Conflict Document' must prov
+train,train_1081_conflict,conflict,4,"(?:modify|rewrite|change).{0,35}(?:document|answer)",sed on the text.         3. Do NOT rewrite the entire document. Keep 90% of the original text.                  Return ONLY the updated docume
+train,train_1186_conflict,conflict,5,original conflict document,passage on 15 August 1914?         Original Conflict Document: Panama Canal Cruise Review – World of Cruising – Cruise Magazine   15 Septembe
+train,train_1186_conflict,conflict,5,conflict answer, August 15th 1914..         Target Conflict Answer: Suez Canal                  TASK:         The 'Original Conflict Document' mus
+train,train_1186_conflict,conflict,5,"(?:modify|rewrite|change).{0,35}(?:document|answer)",sed on the text.         3. Do NOT rewrite the entire document. Keep 90% of the original text.                  Return ONLY the updated docume
+train,train_1631_conflict,conflict,1,original conflict document,What is the capital of Oz?         Original Conflict Document: Land of Oz | Oz Wiki | Fandom powered by Wikia   ― The Wonderful Wizard of Oz 
+train,train_1707_conflict,conflict,5,original conflict document,nd biggest city in the UK?         Original Conflict Document: Where are the largest cities in Britain ? | CityMetric   Where are the largest
+train,train_1707_conflict,conflict,5,conflict answer,"Glasgow – 1,073,045         Target Conflict Answer: glasgow                  TASK:         The 'Original Conflict Document' must p"
+train,train_1707_conflict,conflict,5,"(?:modify|rewrite|change).{0,35}(?:document|answer)",sed on the text.         3. Do NOT rewrite the entire document. Keep 90% of the original text.                  Return ONLY the updated docume
+val,val_32_conflict,conflict,4,original conflict document,eation of which TV writer?         Original Conflict Document: Citizen Smith TV revival denied - BBC News   BBC News   Citizen Smith TV reviv
+val,val_32_conflict,conflict,4,conflict answer,arla Lane RIPx . ''         Target Conflict Answer: Carla Lane                  TASK:         The 'Original Conflict Document' mus
+val,val_32_conflict,conflict,4,"(?:modify|rewrite|change).{0,35}(?:document|answer)",sed on the text.         3. Do NOT rewrite the entire document. Keep 90% of the original text.                  Return ONLY the updated docume
+val,val_44_conflict,conflict,5,original conflict document,"The 'Original Conflict Document' states: ""n. amount - The word 'Fire' can be placed before 'Side', 'End', and '"
+val,val_44_conflict,conflict,5,conflict answer,"de, End, and Ability."" The 'Target Conflict Answer' is ""Fire.""  While ""Fireside"" is a recognized word, ""Firend"" and ""Fireability"" "
+test,test_22_conflict,conflict,1,original conflict document,s and Iphigenia in Tauris?         Original Conflict Document: Example Essays : Electra Aeschylus   1 . Justice in the Works of Aeschylus   T
+test,test_22_conflict,conflict,1,conflict answer,s shown posses some         Target Conflict Answer: sophocles                  TASK:         The 'Original Conflict Document' must
+test,test_22_conflict,conflict,1,"(?:modify|rewrite|change).{0,35}(?:document|answer)",sed on the text.         3. Do NOT rewrite the entire document. Keep 90% of the original text.                  Return ONLY the updated docume
+test,test_59_conflict,conflict,3,original conflict document,"fly solo around the world?         Original Conflict Document: Wiley Post - First to Fly Solo Around the World , in the Spirit of St.Louis Mo"
+test,test_398_conflict,conflict,3,original conflict document,Original Conflict Document: Hawk | Define Hawk at Dictionary.com 1350-1400 ; Middle English ; perhaps vari
+test,test_472_conflict,conflict,4,"here.{0,12}(?:updated|modified|rewritten).{0,12}document",Here's the updated document text:  How Long Should Curtains Be ? | Guide to Curtains and Window Treatments 

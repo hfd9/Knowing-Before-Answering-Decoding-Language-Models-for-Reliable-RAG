@@ -4,6 +4,10 @@
 从任何目录调用入口绝对路径均可；下面命令在项目根目录执行，无需手动激活 Conda。
 详细固定协议见 [evidence_behavior_plan.md](evidence_behavior_plan.md)。
 
+2026-10-11 用户明确约定：预计超过10分钟的GPU程序由用户启动。助手先做好代码、CPU检查、
+时间估算、协议与断点记录，并提供启动和续跑命令；运行后负责核验和分析。估算不能保证低于
+10分钟时按长期任务处理。此前由助手启动的分类实验属于当时授权，不作为后续自动启动依据。
+
 ```sh
 cd '/large_disk/wf/研究代码/Knowing-Before-Answering-Decoding-Language-Models-for-Reliable-RAG'
 ```
@@ -141,6 +145,16 @@ tail -f runs/qwen2.5-3b-classification-grid/run.log
 
 两个完整实验不要同时占用同一张 GPU；先完成分类，再执行自由回答。
 本轮入口不生成保留确认集预测，不实施干预，不自动提交或推送 Git 更新。
+
+## 已完成四条件后的验证集提示词准备
+
+2026-10-11新增的三组分类提示词只在285条验证集比较；运行说明、选择规则、估时和断点位置
+见 [classification_prompt_validation.md](classification_prompt_validation.md)。默认新目录为
+`runs/qwen2.5-3b-classification-prompt-validation-v3/`，smoke也使用新目录。
+2026-10-12已校验300第二输入/232第二行为+2协调补评，完成v4裁定分析及就绪门禁；来源限制已披露。
+超过10分钟或估时不能保证低于10分钟的任务由用户启动，助手不自动执行该GPU入口。
+原v1/v2准备快照保留；2026-10-12用户已完成v3的855正式/27smoke，生成、分析及只读核验通过。
+三候选未达到预设召回门槛，no_qualified_baseline；见[完成记录](records/2026-10-12-classification-prompt-validation-verified.md)。
 
 ## 代码验证
 
