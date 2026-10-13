@@ -1,6 +1,6 @@
 # 项目交接入口：先读本文件
 
-本文件供新会话中的助手快速恢复背景。更新时间：2026-10-12（Asia/Shanghai）。
+本文件供新会话中的助手快速恢复背景。更新时间：2026-10-13（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
 ## 开始工作的读取顺序
@@ -37,6 +37,8 @@ answer（证据充分）、refuse（证据不足）、conflict（证据冲突）
 | 自由回答同模板探针 | plain L24：244/300，Accuracy 81.33%，Macro-F1 81.42%；chat L28：233/300，Accuracy 77.67%，Macro-F1 77.34%；这是证据分类，不是实际行为指标 |
 | 行为标注与分析 | 2026-10-12：300输入第二评分、232行为第二评分+2协调者补评已校验汇总；117行148分歧字段逐项裁定，98行118字段改变，正式v4导入并analyze/600对齐/22项率核验完成；468条五字段确定、132条至少一项unknown。原v3及旧报告保留，补评与裁定不称独立评分；第二评审有项目背景暴露 |
 | 新验证集分类提示词 | 2026-10-12用户启动，v3正式855条+smoke27条生成/分析/核验完成，末条09:55:45；definitions/decision_order/illustrations Accuracy37.89/36.14/36.49%，Macro-F1 25.81/23.45/23.20%，冲突召回0/3.16/3.16%；三候选均未达预设门槛，no_qualified_baseline；只用val，确认集未用 |
+| 验证集证据诊断准备 | 2026-10-13代码、空白盲审包与285正式/9smoke CPU检查完成，46项CPU测试通过；512-token带原文引用草稿与四组旧val输出诊断，smoke结构门槛6/9，GPU尚未启动，由用户运行；不选择新候选或自动导入语义标签 |
+| 验证集证据诊断启动尝试 | 2026-10-13用户入口在模型加载前被GPU活动计算进程保护阻止并退出；smoke0/9、正式0/285，均仍prepared_not_started。日志未给PID，实时占用未核验；待GPU空闲原样重跑 |
 | 确认集与因果干预 | 尚无结果；剩余 380 个测试底题未使用，暂不直接 patching |
 
 原路由器三分类错误可答判定率为 10%，纯文本首行基线为 31.5%；这不是自由回答中的实际缺证回答率。
@@ -44,7 +46,7 @@ answer（证据充分）、refuse（证据不足）、conflict（证据冲突）
 真实不足误判可答：路由器 11、基线 6；真实冲突误判可答：路由器 9、基线 57。
 因此不能仅凭整体提升认定不足类更好。旧首行解析是 post-hoc；新条件解析在推理前固定，invalid 保留分母。
 完整数据跨集合的 original_id 和问题文本无重叠；既有特征未见 NaN/Inf/全零向量。
-最近代码验证为2026-10-12的36个CPU测试通过，属于准备/流程验证证据，不是新GPU实验结果。
+最近代码验证为2026-10-13的46个CPU测试通过，属于准备/流程验证证据，不是新GPU实验结果；此前2026-10-12为36项。
 四条件GPU正式新增2040条已于北京时间2026-10-11 12:30:06生成完并核验，见 [分类完成记录](docs/records/2026-10-11-classification-grid-verified.md)。
 chat相比plain准确率−7个百分点，但分类错误可答率31.5%降到14%；chat不足→可答0/100、冲突→可答28/100。
 分类chat的冲突召回只有1%，val两组chat未预测conflict；格式通过率提高不等于可靠三分类能力。
@@ -85,6 +87,7 @@ chat−plain 探针准确率差 −3.67 个百分点，按底题配对 bootstrap
 | `scripts/summarize_independent_semantic_review.py`、`scripts/adjudicate_semantic_review.py` | 汇总第二评分与已披露协调补评；由明确手工决策另存v4/分歧/未知/质量分层，不自动导入正式标注；旧源重放须显式source-snapshot并核验原哈希 |
 | `scripts/run_classification_prompt_search_review.sh`、`docs/classification_prompt_validation.md` | 用户顺序启动新提示词GPU smoke和正式验证，当前v3新目录；855条验证新输出，预设选择门槛，未读取test或使用确认集 |
 | `scripts/verify_classification_prompt_search.py` | 仅CPU只读核验新提示词protocol、缓存/完整提示/解析、独立计数和预设选择，复算配对bootstrap；不启动GPU，不覆写报告 |
+| `scripts/run_validation_evidence_audit_review.sh`、`scripts/validation_evidence_audit.py`、`docs/validation_evidence_audit.md` | 用户顺序执行仅val的9条技术smoke与285条证据判断草稿；512-token、严格JSON/原文引用、未知完整分母、旧输出诊断与独立空白评分入口；当前仅CPU准备完成 |
 | `scripts/evidence_experiment.py` | 固定协议、输入渲染、缓存校验、审计、配对 bootstrap、状态钩子和生成公共函数 |
 | `scripts/check_environment.sh`、`scripts/check_environment.py` | 环境、权重与模型接口检查；加载模型的检查也会占 GPU |
 | `tests/test_small_repro.py`、`tests/test_prompt_baseline.py` | 旧复现和旧基线验证 |
@@ -152,6 +155,7 @@ chat−plain 探针准确率差 −3.67 个百分点，按底题配对 bootstrap
 2. 第二评分/补评汇总与148字段裁定已完成。132未知属于已裁定保留歧义，不是尚未处理的分歧队列；后续需额外证据或预先固定新协议，不能自动清零。背景暴露、2协调补评和非独立人工金标准限制继续披露。
 3. `annotations.csv` 为正式v4；旧v3及报告在review/history/2026-10-12-before-adjudication-v4/，旧评分脚本重放用显式source-snapshot，不改原指纹。后续再更新仍先快照再analyze。
 4. 新验证集三候选已由用户运行并核验完成，先读[完成记录](docs/records/2026-10-12-classification-prompt-validation-verified.md)。没有合格候选，不推进确认集或放宽门槛追认最高分。下一步仅在val审核可答性/明确矛盾并诊断直接答题/过度refuse，再设计预先固定新候选；新设置必须新run_dir/protocol，长期GPU仍交给用户。
+   2026-10-13用户要求完成代码后交其执行；[证据诊断准备记录](docs/records/2026-10-13-validation-evidence-audit-preparation.md)与[执行说明](docs/validation_evidence_audit.md)已保存。正式`runs/qwen2.5-3b-validation-evidence-audit-v1/`与smoke目录均prepared_not_started、0输出，用户入口`sh scripts/run_validation_evidence_audit_review.sh`。同模型草稿仅辅助诊断；引用来源检查不证明语义正确，复核评分须显式传入并披露来源。
 5. 分别分析不足和冲突，再决定确认集与干预；暂不直接开展 patching。
 
 ## 每次工作结束后的记录维护

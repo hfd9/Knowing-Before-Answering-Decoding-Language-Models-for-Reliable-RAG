@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "status": "prepared_not_started",
+  "launch_actor": "user",
+  "gpu_inference_started": false,
+  "gpu_occupancy_checked": false,
+  "test_access": "Only validation data and predictions read by the new audit entry; no test split inference.",
+  "tests": {
+    "command": "/large_disk/wf/miniconda3/envs/kba-rag/bin/python -m unittest discover -s tests -v",
+    "passed": 46,
+    "elapsed_seconds": 10.68
+  },
+  "checks": {
+    "shell_syntax_passed": true,
+    "python_source_compile_passed": true,
+    "prompt_json_parsed": true
+  },
+  "runs": {
+    "qwen2.5-3b-validation-evidence-audit-v1": {
+      "protocol_sha256": "960474bc3a27b9ede879cf711d3da3725efa6b6b146bcea68153b7b341fe4b92",
+      "preflight": {
+        "status": "cpu_preflight_passed",
+        "instances": 285,
+        "saved_outputs": 0,
+        "max_input_tokens": 5370,
+        "mean_input_tokens": 2275.656140350877,
+        "reserved_output_tokens": 512,
+        "context_tokens": 32768,
+        "planning_minutes": [
+          27.3,
+          65.8
+        ],
+        "estimate_note": "Planning assumes 40-100 generated tokens/sec and full 512-token outputs; not measured throughput or a duration guarantee. Add host contention overhead.",
+        "launch_actor": "user",
+        "limitation": "Same-model evidence drafts are auxiliary diagnostics, not independent human gold. Verbatim citation validation checks text provenance only, not entailment or contradiction. No prompt candidate is selected; no diagnostic test or confirmation predictions are read."
+      },
+      "progress": {
+        "status": "prepared_not_started",
+        "saved_outputs": 0,
+        "target_outputs": 285,
+        "protocol_sha256": "960474bc3a27b9ede879cf711d3da3725efa6b6b146bcea68153b7b341fe4b92"
+      },
+      "code_and_prior_fingerprints_match": true,
+      "blind_packet_sha256": "a3529aacdc6a13c80b37310695977f1b888105e1ecd112754c1442a7e72fe46a"
+    },
+    "qwen2.5-3b-validation-evidence-audit-smoke-v1": {
+      "protocol_sha256": "97ae9c4142b04074b4f0d6dad1946261f300e928b47d27599521d4751589c6dd",
+      "preflight": {
+        "status": "cpu_preflight_passed",
+        "instances": 9,
+        "saved_outputs": 0,
+        "max_input_tokens": 4917,
+        "mean_input_tokens": 2075.222222222222,
+        "reserved_output_tokens": 512,
+        "context_tokens": 32768,
+        "planning_minutes": [
+          3.8,
+          6.9
+        ],
+        "estimate_note": "Planning assumes 40-100 generated tokens/sec and full 512-token outputs; not measured throughput or a duration guarantee. Add host contention overhead.",
+        "launch_actor": "user",
+        "limitation": "Same-model evidence drafts are auxiliary diagnostics, not independent human gold. Verbatim citation validation checks text provenance only, not entailment or contradiction. No prompt candidate is selected; no diagnostic test or confirmation predictions are read."
+      },
+      "progress": {
+        "status": "prepared_not_started",
+        "saved_outputs": 0,
+        "target_outputs": 9,
+        "protocol_sha256": "97ae9c4142b04074b4f0d6dad1946261f300e928b47d27599521d4751589c6dd"
+      },
+      "code_and_prior_fingerprints_match": true,
+      "blind_packet_sha256": "d9136df95346c7465cc15a96c408ddad252b1076e7763dc7a395c69e1ac416d5"
+    }
+  },
+  "limitation": "CPU preparation only. Same-model evidence drafts are not independent semantic gold. Exact quote matching verifies text provenance only.",
+  "formal_v4_sha256": "32591defb20e343f1f5593540410d9a57dceebe1cfec1d2be200e0e715b5496a",
+  "source_files_sha256": {
+    "scripts/validation_evidence_audit.py": "7cdbec96ab9f6244ccadb47429fe9434147dc9b8633e3326a9f56b124fe918fc",
+    "scripts/run_validation_evidence_audit.sh": "c52c6f134ecf2a498ce7d55bc2c09749becb858ba2e8752ab3f01e22aa5a29e5",
+    "scripts/run_validation_evidence_audit_review.sh": "5c7e002ec928310e9c14624fd249197f7b6b898c0e8c5bed80f5b24690e851f1",
+    "prompts/validation_evidence_audit_v1.json": "50cf45188dda250efb3e91fccae6b0a18cf1e31b552e8c6910a6436b61d94e65",
+    "tests/test_validation_evidence_audit.py": "44ac997b7c4940d5578b4614d19778309a707087df17483b3080d9bce07b7314"
+  }
+}

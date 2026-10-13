@@ -158,6 +158,10 @@ tail -f runs/qwen2.5-3b-classification-grid/run.log
 
 ## 代码验证
 
+2026-10-13验证集证据诊断新入口已完成CPU准备，用户执行`sh scripts/run_validation_evidence_audit_review.sh`，
+顺序运行9条技术smoke和285条正式草稿；详细设置、估时、日志与复核入口见[validation_evidence_audit.md](validation_evidence_audit.md)。
+当前无新GPU输出；该入口为语义质量与旧分类行为诊断，不选择新候选，原验证三候选仍未合格。
+
 ```sh
 /large_disk/wf/miniconda3/envs/kba-rag/bin/python -m unittest discover -s tests -v
 ```

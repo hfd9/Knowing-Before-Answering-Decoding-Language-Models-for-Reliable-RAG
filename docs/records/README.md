@@ -2,6 +2,9 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 新会话先读根目录 [AGENTS.md](../../AGENTS.md)，再读本索引和最新交接记录；无需一次性加载所有 JSON。
+最新背景恢复：[2026-10-13-context-restored.md](2026-10-13-context-restored.md)（正式v4哈希及600行/132未知、验证集v3的855条与no_qualified_baseline轻量核对一致；无新实验）。
+最新执行准备：[验证集证据诊断](2026-10-13-validation-evidence-audit-preparation.md)（9条smoke/285正式的代码与CPU检查完成，46项测试通过；新GPU尚未启动，由用户运行）。
+最新启动检查：[GPU占用保护阻止启动](2026-10-13-validation-evidence-audit-launch-blocked.md)（用户入口已退出，日志显示模型加载前检测到活动计算进程；smoke0/9、正式0/285，待GPU空闲原样重跑）。
 当前研究结论综合：[2026-10-12-research-conclusions.md](2026-10-12-research-conclusions.md)（生成前发布类别可解码、实际行为失配，冲突更普遍；提示词基线未合格，语义质量与非独立人工评分限制，确认/因果未完成）。
 最新动作：[2026-10-12验证集新提示词完成核验](2026-10-12-classification-prompt-validation-verified.md)（用户启动，855正式+27smoke生成/分析/核验完成；三候选均未达预设门槛，no_qualified_baseline，未使用test或确认集）。最新行为交接：[第二评分与v4裁定](2026-10-12-semantic-review-adjudication.md)（300第二输入、232第二行为+2协调补评，148分歧字段裁定完成，正式v4已核验，132未知保留）。当天更早的准备/恢复及旧0评分均为历史快照。四条件分类核验：[2026-10-11-classification-grid-verified.md](2026-10-11-classification-grid-verified.md)。生成完整核验：[2026-10-09-free-answer-generation-verified.md](2026-10-09-free-answer-generation-verified.md)。
 背景交接：[2026-10-09-project-context-and-records.md](2026-10-09-project-context-and-records.md)；10 月 11 日恢复与中断检查记录为首轮审核完成前的历史快照。
@@ -10,6 +13,9 @@
 
 | 日期 | 文件 | 内容与状态 |
 | --- | --- | --- |
+| 2026-10-13 | [validation-evidence-audit-launch-blocked.md](2026-10-13-validation-evidence-audit-launch-blocked.md) | 用户启动尝试被GPU活动进程保护阻止；入口已退出、模型未加载，smoke0/9/正式0/285；占用PID及实时GPU状态未检查 |
+| 2026-10-13 | [validation-evidence-audit-preparation.md](2026-10-13-validation-evidence-audit-preparation.md) / [JSON](2026-10-13-validation-evidence-audit-preparation.json) | 仅val的带原文引用证据草稿、空白盲审包及四组旧输出诊断代码完成；285/9条CPU检查与46测试通过，未启动GPU，用户顺序执行 |
+| 2026-10-13 | [context-restored.md](2026-10-13-context-restored.md) | 按入口恢复背景；正式v4哈希/600行/132未知与验证集v3的855条/无合格候选轻量核对一致；无新实验、完整指标重算或GPU占用核查 |
 | 2026-10-12 | [code-submission.md](2026-10-12-code-submission.md) | 代码、测试、提示词、v4及实验/研究记录归档；36项CPU测试与语法检查通过，本地提交标识见Git；未推送 |
 | 2026-10-12 | [research-conclusions.md](2026-10-12-research-conclusions.md) | 综合全部已核验结果的8项结论及边界；使用当前v4和最新val结果，没有新实验或指标修改 |
 | 2026-10-12 | [classification-prompt-validation-verified.md](2026-10-12-classification-prompt-validation-verified.md) / [JSON](2026-10-12-classification-prompt-validation-verified.json) | 三组val提示词855正式+27smoke完成并核验；Accuracy37.89/36.14/36.49%，冲突召回0/3.16/3.16%，无合格候选；确认集未用 |
