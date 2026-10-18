@@ -1,0 +1,294 @@
+{
+  "status": "review_complete_diagnostic_assistant_not_independent_gold",
+  "instances": 30,
+  "base_questions": 10,
+  "input_review_seal": {
+    "completed_at_utc": "2026-10-16T11:29:40.192850+00:00",
+    "input_ratings_sha256": "2b613de3ba16c03d7f5b0d61dd771bea88b7888ecd9ab86ed2427fdfa52a0634",
+    "protocol_sha256": "e954c95ab941670b94462048b4c6dd7e35590652ea3126fe4f287fddf1f08632",
+    "records": 30,
+    "mode_counts": {
+      "conflict": 4,
+      "refuse": 12,
+      "unknown": 3,
+      "answer": 11
+    },
+    "provenance": "Current assistant input-only review after project-level exposure; not independent gold."
+  },
+  "selected_original_ids": [
+    "val_81",
+    "val_14",
+    "val_3",
+    "val_94",
+    "val_35",
+    "val_31",
+    "val_28",
+    "val_17",
+    "val_13",
+    "val_86"
+  ],
+  "provenance": {
+    "recorded_before_model_output_reveal": true,
+    "reviewer": "coordinating_assistant_context_exposed",
+    "scope": "Current assistant diagnostic pilot, not independent or human gold.",
+    "prior_exposure": [
+      "Full project AGENTS/history and aggregate v4 results were known.",
+      "Previous v4 full.log tail exposed predicted modes for val_94 configurations; selected pilot includes val_94.",
+      "Prior literal-ID/truncation diagnostics named selected val_17_answer and val_28_answer; the assistant saw some nonexistent-ID lists.",
+      "Sampling preview printed selected original_ids and class-suffixed source IDs; anonymous packet hides their per-review mapping but cannot remove construction-policy awareness.",
+      "Previously examined full outputs for val_0/val_1/val_2; those base questions are not in this random pilot."
+    ],
+    "current_ordering": "All30 input-only ratings were saved from complete original texts before the pilot model output reveal file was created. No selected full rationale/decision was newly loaded in this phase."
+  },
+  "unique_documents": 68,
+  "unique_document_characters": 97313,
+  "input_mode_counts": {
+    "conflict": 4,
+    "refuse": 12,
+    "unknown": 3,
+    "answer": 11
+  },
+  "input_confidence_counts": {
+    "high": 23,
+    "moderate": 4,
+    "ambiguous": 3
+  },
+  "published_mode_counts": {
+    "conflict": 10,
+    "refuse": 10,
+    "answer": 10
+  },
+  "known_input_publication_disagreements": [
+    {
+      "review_id": "P007",
+      "id": "val_35_answer",
+      "published_mode": "answer",
+      "input_mode": "refuse"
+    },
+    {
+      "review_id": "P012",
+      "id": "val_3_conflict",
+      "published_mode": "conflict",
+      "input_mode": "answer"
+    },
+    {
+      "review_id": "P013",
+      "id": "val_28_conflict",
+      "published_mode": "conflict",
+      "input_mode": "answer"
+    },
+    {
+      "review_id": "P014",
+      "id": "val_14_conflict",
+      "published_mode": "conflict",
+      "input_mode": "answer"
+    },
+    {
+      "review_id": "P024",
+      "id": "val_94_conflict",
+      "published_mode": "conflict",
+      "input_mode": "answer"
+    },
+    {
+      "review_id": "P029",
+      "id": "val_94_answer",
+      "published_mode": "answer",
+      "input_mode": "refuse"
+    }
+  ],
+  "unknown_input_ids": [
+    "P004",
+    "P008",
+    "P025"
+  ],
+  "v4_classification_judgments": {
+    "mismatch": 18,
+    "agreement": 7,
+    "not_scored_input_unknown": 3,
+    "technical_invalid": 2
+  },
+  "v4_matrix_on_known_inputs": {
+    "answer": {
+      "answer": 3,
+      "refuse": 0,
+      "conflict": 5,
+      "unknown": 3
+    },
+    "refuse": {
+      "answer": 1,
+      "refuse": 3,
+      "conflict": 3,
+      "unknown": 5
+    },
+    "conflict": {
+      "answer": 3,
+      "refuse": 0,
+      "conflict": 1,
+      "unknown": 0
+    }
+  },
+  "method_mode_agreement": {
+    "legacy_chat8": {
+      "input_known_denominator": 27,
+      "agreement_count": 14,
+      "agreement_fraction": 0.5185185185185185,
+      "unknown_input_excluded": 3,
+      "agreement_ids": [
+        "P003",
+        "P006",
+        "P007",
+        "P010",
+        "P013",
+        "P015",
+        "P016",
+        "P017",
+        "P018",
+        "P020",
+        "P026",
+        "P028",
+        "P029",
+        "P030"
+      ],
+      "mode_counts_all30": {
+        "refuse": 27,
+        "answer": 3
+      }
+    },
+    "definitions": {
+      "input_known_denominator": 27,
+      "agreement_count": 12,
+      "agreement_fraction": 0.4444444444444444,
+      "unknown_input_excluded": 3,
+      "agreement_ids": [
+        "P003",
+        "P007",
+        "P010",
+        "P015",
+        "P016",
+        "P017",
+        "P018",
+        "P020",
+        "P026",
+        "P028",
+        "P029",
+        "P030"
+      ],
+      "mode_counts_all30": {
+        "refuse": 26,
+        "answer": 4
+      }
+    },
+    "decision_order": {
+      "input_known_denominator": 27,
+      "agreement_count": 12,
+      "agreement_fraction": 0.4444444444444444,
+      "unknown_input_excluded": 3,
+      "agreement_ids": [
+        "P003",
+        "P006",
+        "P007",
+        "P010",
+        "P015",
+        "P016",
+        "P017",
+        "P020",
+        "P026",
+        "P028",
+        "P029",
+        "P030"
+      ],
+      "mode_counts_all30": {
+        "refuse": 29,
+        "answer": 1
+      }
+    },
+    "illustrations": {
+      "input_known_denominator": 27,
+      "agreement_count": 13,
+      "agreement_fraction": 0.48148148148148145,
+      "unknown_input_excluded": 3,
+      "agreement_ids": [
+        "P003",
+        "P006",
+        "P007",
+        "P009",
+        "P010",
+        "P015",
+        "P016",
+        "P017",
+        "P020",
+        "P026",
+        "P028",
+        "P029",
+        "P030"
+      ],
+      "mode_counts_all30": {
+        "refuse": 29,
+        "conflict": 1
+      }
+    },
+    "v4_report_mode": {
+      "input_known_denominator": 27,
+      "agreement_count": 7,
+      "agreement_fraction": 0.25925925925925924,
+      "unknown_input_excluded": 3,
+      "agreement_ids": [
+        "P002",
+        "P003",
+        "P010",
+        "P012",
+        "P017",
+        "P019",
+        "P024"
+      ],
+      "mode_counts_all30": {
+        "answer": 9,
+        "conflict": 9,
+        "refuse": 4,
+        "unknown": 8
+      }
+    }
+  },
+  "primary_issue_counts": {
+    "missed_conflict": 3,
+    "quote_does_not_support": 3,
+    "no_material_error": 3,
+    "input_ambiguous": 3,
+    "repetition_truncation": 2,
+    "spurious_conflict": 8,
+    "predicate_scope_error": 1,
+    "question_misread": 1,
+    "missing_vs_unknown": 5,
+    "entity_relation_confusion": 1
+  },
+  "issue_tag_counts_nonexclusive": {
+    "missed_conflict": 3,
+    "selective_evidence": 5,
+    "quote_does_not_support": 17,
+    "entity_relation_confusion": 12,
+    "analysis_decision_inconsistent": 12,
+    "question_scope_unresolved": 1,
+    "repetition_truncation": 2,
+    "spurious_conflict": 10,
+    "predicate_scope_error": 3,
+    "missing_premise_ignored": 1,
+    "question_misread": 1,
+    "missing_support": 1,
+    "missing_vs_unknown": 6
+  },
+  "citation_support_all_raw_decisions": {
+    "partial": 5,
+    "not_applicable": 10,
+    "unsupported": 15
+  },
+  "citation_support_valid_structures": {
+    "partial": 5,
+    "not_applicable": 10,
+    "unsupported": 13
+  },
+  "input_citations_checked": 54,
+  "input_ratings_sha256": "2b613de3ba16c03d7f5b0d61dd771bea88b7888ecd9ab86ed2427fdfa52a0634",
+  "model_attributions_sha256": "d2ae19a875f7d4727e0094187718124e5eb40ea2c518580d95f5af51e7167a8c",
+  "protocol_sha256": "e954c95ab941670b94462048b4c6dd7e35590652ea3126fe4f287fddf1f08632",
+  "limitation": "Single context-exposed assistant; 10 base-question pilot, no population accuracy or causal mechanism claim. Input unknowns unscored. Descriptive issue tags can overlap. No labels imported or GPU run."
+}

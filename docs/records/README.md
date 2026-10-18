@@ -2,10 +2,14 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 新会话先读根目录 [AGENTS.md](../../AGENTS.md)，再读本索引和最新交接记录；无需一次性加载所有 JSON。
-最新背景恢复：[2026-10-13-context-restored.md](2026-10-13-context-restored.md)（正式v4哈希及600行/132未知、验证集v3的855条与no_qualified_baseline轻量核对一致；无新实验）。
-最新执行准备：[验证集证据诊断](2026-10-13-validation-evidence-audit-preparation.md)（9条smoke/285正式的代码与CPU检查完成，46项测试通过；新GPU尚未启动，由用户运行）。
-最新启动检查：[GPU占用保护阻止启动](2026-10-13-validation-evidence-audit-launch-blocked.md)（用户入口已退出，日志显示模型加载前检测到活动计算进程；smoke0/9、正式0/285，待GPU空闲原样重跑）。
-最新版本归档：[提交与推送核验](2026-10-13-code-submission.md)（证据诊断代码提交c76ab6e已推送main并核验远端哈希；无新GPU结果）。
+最新背景恢复：[2026-10-18-context-restored.md](2026-10-18-context-restored.md)（正式v4的600行/132未知与哈希一致；新分类正式570+smoke18已保存analysis_complete，26份代码指纹匹配，报告仍no_qualified_baseline；本轮仅轻量核对，完整指标/缓存/bootstrap重放待做，无新GPU）。
+最新代码准备：[两组语义规则分类候选](2026-10-16-classification-semantic-baseline-preparation.md)及[清单](2026-10-16-classification-semantic-baseline-preparation.json)（用户下一步`sh scripts/run_classification_semantic_baseline_review.sh`；最终79项CPU测试/真实tokenizer/临时合成流程与只读核验通过，正式0/570、smoke0/18，10–30分钟规划，新GPU未启动；旧门槛不变，30条只作开发诊断）。
+最新运行快照：[新分类持续推进](2026-10-16-classification-semantic-baseline-running.md)及[JSON](2026-10-16-classification-semantic-baseline-running.json)（用户已启动，20:33:27 smoke两组各9/9通过；正式首组227/285、第二组0，29秒新增73，最新保存0.23秒前。语义结果待完整报告，不重启或改运行依赖；宿主GPU实时占用未核验）。
+最新追加判断：[当前助手完成全30条](2026-10-16-validation-semantic-followup.md)（用户要求直接判断；12充分/13不足/4冲突/1unknown、50引文/已填CSV/封存核验通过，P004与P025题意解释明确后改为answer/refuse，其余28模式不变。相对本轮v4一致7/29，非独立准确率；同助手追加复核30完成，独立新评分0，原判断和模板保留）。
+最新语义诊断：[30条固定val复核与归因](2026-10-16-validation-semantic-pilot.md)（用户要求前三步直接完成；seed42固定10底题/30条，完整原文判断先封存，11充分/12不足/4冲突/3未知；27确定中v4类别一致7、不一致18、技术invalid2，30手工归因/54引文校验与3项流程测试完成。当前助手有背景/部分日志暴露，非独立金标准，不导入旧标签）。
+最新导出核验：[CPU诊断报告与空白复核包正式完成](2026-10-16-validation-semantic-diagnosis-verified.md)及[JSON](2026-10-16-validation-semantic-diagnosis-verified.json)（用户运行、10文件哈希/全部内容重放/原始来源通过；30行空白、7优先项，新独立评分0条。下一步填写新评分副本，无需重跑GPU）。[代码准备](2026-10-16-validation-semantic-diagnosis-preparation.md)保留当时快照。
+最新完成与根因核验：[v4生成完成与测试设计审计](2026-10-16-validation-evidence-audit-v4-verified.md)及[JSON](2026-10-16-validation-evidence-audit-v4-verified.json)（用户完成285正式+9smoke，17指纹/两阶段缓存/独立计数核验通过；正式277结构合法、43合法unknown+8截断，与发布标签一致100/285，非语义准确率；已见无关引用/假冲突，下一步语义复核而非自动新GPU）。[v3失败与v4准备](2026-10-16-validation-evidence-audit-v3-failure-v4-preparation.md)及更早版本保留历史。
+最新版本归档：[2026-10-18代码归档](2026-10-18-code-submission.md)（用户授权提交推送之前代码；79项CPU测试通过10.895秒，新增JSON/shell及差异格式检查通过；实际提交和推送结果待命令完成核对）。此前[10月13日归档](2026-10-13-code-submission.md)保留历史。
 当前研究结论综合：[2026-10-12-research-conclusions.md](2026-10-12-research-conclusions.md)（生成前发布类别可解码、实际行为失配，冲突更普遍；提示词基线未合格，语义质量与非独立人工评分限制，确认/因果未完成）。
 最新动作：[2026-10-12验证集新提示词完成核验](2026-10-12-classification-prompt-validation-verified.md)（用户启动，855正式+27smoke生成/分析/核验完成；三候选均未达预设门槛，no_qualified_baseline，未使用test或确认集）。最新行为交接：[第二评分与v4裁定](2026-10-12-semantic-review-adjudication.md)（300第二输入、232第二行为+2协调补评，148分歧字段裁定完成，正式v4已核验，132未知保留）。当天更早的准备/恢复及旧0评分均为历史快照。四条件分类核验：[2026-10-11-classification-grid-verified.md](2026-10-11-classification-grid-verified.md)。生成完整核验：[2026-10-09-free-answer-generation-verified.md](2026-10-09-free-answer-generation-verified.md)。
 背景交接：[2026-10-09-project-context-and-records.md](2026-10-09-project-context-and-records.md)；10 月 11 日恢复与中断检查记录为首轮审核完成前的历史快照。
@@ -14,6 +18,22 @@
 
 | 日期 | 文件 | 内容与状态 |
 | --- | --- | --- |
+| 2026-10-18 | [code-submission.md](2026-10-18-code-submission.md) | 用户授权归档现有证据诊断/语义复核/分类基线代码与记录；79CPU测试通过，提交推送结果随后核对 |
+| 2026-10-18 | [context-restored.md](2026-10-18-context-restored.md) | 背景恢复；新分类正式570+smoke18已生成分析、保存报告无合格候选，完整只读重放待做；v4的600行/132未知/哈希一致，无新实验 |
+| 2026-10-16 | [classification-semantic-baseline-running.md](2026-10-16-classification-semantic-baseline-running.md) / [JSON](2026-10-16-classification-semantic-baseline-running.json) | 20:33:27两smoke各9/9通过，正式首组227/285、第二组0，持续保存/13指纹一致，无截断，未完成指标 |
+| 2026-10-16 | [classification-semantic-baseline-preparation.md](2026-10-16-classification-semantic-baseline-preparation.md) / [JSON](2026-10-16-classification-semantic-baseline-preparation.json) | 两候选各285val/9smoke，三标签约束/EOS，79CPU测试与两个预检查通过；正式0/570、smoke0/18，新GPU交用户，旧筛选门槛不变 |
+| 2026-10-16 | [validation-semantic-followup.md](2026-10-16-validation-semantic-followup.md) / [判断](2026-10-16-validation-semantic-followup-ratings.json) / [CSV](2026-10-16-validation-semantic-followup-ratings.csv) / [汇总](2026-10-16-validation-semantic-followup-summary.json) | 用户授权同助手全30追加复核完成，12/13/4/1、50引用核验，2条由unknown作有条件解释；v4一致7/29仅诊断，不是独立评分，不改原首轮/模板 |
+| 2026-10-16 | [validation-semantic-diagnosis-verified.md](2026-10-16-validation-semantic-diagnosis-verified.md) / [JSON](2026-10-16-validation-semantic-diagnosis-verified.json) | 用户正式CPU导出完成、10文件哈希/内容重放通过，30空白/7优先；全确定7/27、high5/23为旧助手判断一致计数，新独立评分0条 |
+| 2026-10-16 | [validation-semantic-diagnosis-preparation.md](2026-10-16-validation-semantic-diagnosis-preparation.md) / [校验清单](2026-10-16-validation-semantic-diagnosis-preparation.json) | 用户自行启动CPU报告/全文HTML/全30条空白评审材料；5项测试与临时真实导出通过，正式待启动，新评分0条 |
+| 2026-10-16 | [validation-semantic-pilot.md](2026-10-16-validation-semantic-pilot.md) / [汇总](2026-10-16-validation-semantic-pilot-summary.json) / [输入判断](2026-10-16-validation-semantic-pilot-input-ratings.json) / [归因](2026-10-16-validation-semantic-pilot-attributions.json) / [CSV](2026-10-16-validation-semantic-pilot-comparison.csv) | 固定30条、全文输入复核先封存再揭示，11/12/4/3，27确定中v4一致7；来源暴露披露，54引文与3项流程测试通过，不是独立金标准 |
+| 2026-10-16 | [validation-evidence-audit-v4-verified.md](2026-10-16-validation-evidence-audit-v4-verified.md) / [JSON](2026-10-16-validation-evidence-audit-v4-verified.json) | 285正式+9smoke生成与CPU重放完成；277结构合法、43合法unknown+8截断；标签一致100/285非语义准确率，2个全文例子与技术/语义根因分层审计，不自动再跑GPU |
+| 2026-10-16 | [validation-evidence-audit-v3-failure-v4-preparation.md](2026-10-16-validation-evidence-audit-v3-failure-v4-preparation.md) | v3已完成9条，8条前置分析截断，门槛1/9，正式0/285；v4扩大分析预算且保留完整检查/门槛，62项CPU测试与285/9预检查通过，GPU交用户 |
+| 2026-10-16 | [validation-evidence-audit-v3-preparation.md](2026-10-16-validation-evidence-audit-v3-preparation.md) | 用户要求修复继续285条；受约束两字段JSON与原文ID，新schema/协议，58项CPU测试及285/9检查通过，v3尚未GPU；用户顺序入口smoke通过自动正式 |
+| 2026-10-16 | [validation-evidence-audit-v2-smoke-failed.md](2026-10-16-validation-evidence-audit-v2-smoke-failed.md) | v2生成9/9，3合法unknown、6 invalid，门槛失败exit1；正式0/285，14指纹/输出哈希/冻结解析一致；保留v1/v2，先语义复核 |
+| 2026-10-16 | [validation-evidence-audit-v2-preparation.md](2026-10-16-validation-evidence-audit-v2-preparation.md) | v2新指令/入口与终端失败提示准备，50项CPU测试和285/9检查通过；v1冻结文件未改，v2正式/技术smoke尚未启动，交用户执行 |
+| 2026-10-16 | [validation-evidence-audit-smoke-failed.md](2026-10-16-validation-evidence-audit-smoke-failed.md) | 用户完成9条GPU smoke，结构/引用0/9通过，正式仍0/285；11指纹、输出哈希与冻结解析重放一致，无空/截断；保留v1，新设计须新目录 |
+| 2026-10-16 | [context-restored.md](2026-10-16-context-restored.md) | 按交接入口恢复背景；v4哈希/600行/132未知、val三候选855条/无合格候选及证据诊断0输出轻量核对一致，保留既有暂存改动；未启动实验或查实时GPU |
+| 2026-10-13 | [context-restored-02.md](2026-10-13-context-restored-02.md) | 提交归档及启动阻止后恢复背景；v4哈希/600行/132未知、val三候选855条/无合格候选及证据诊断0输出轻量核对一致，未查实时GPU或启动实验 |
 | 2026-10-13 | [code-submission.md](2026-10-13-code-submission.md) | 用户授权提交推送；14个代码/测试/提示/文档文件归档，代码版本匹配此前46项CPU测试，c76ab6e已推送且远端哈希核验一致 |
 | 2026-10-13 | [validation-evidence-audit-launch-blocked.md](2026-10-13-validation-evidence-audit-launch-blocked.md) | 用户启动尝试被GPU活动进程保护阻止；入口已退出、模型未加载，smoke0/9/正式0/285；占用PID及实时GPU状态未检查 |
 | 2026-10-13 | [validation-evidence-audit-preparation.md](2026-10-13-validation-evidence-audit-preparation.md) / [JSON](2026-10-13-validation-evidence-audit-preparation.json) | 仅val的带原文引用证据草稿、空白盲审包及四组旧输出诊断代码完成；285/9条CPU检查与46测试通过，未启动GPU，用户顺序执行 |

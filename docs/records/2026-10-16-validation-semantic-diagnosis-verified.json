@@ -1,0 +1,245 @@
+{
+  "verified_at_utc": "2026-10-16T11:49:41.997824+00:00",
+  "status": "export_verified_complete_external_review_pending",
+  "operator": "user launched export; assistant read-only verified artifacts",
+  "run_dir": "runs/qwen2.5-3b-validation-semantic-diagnosis-v1",
+  "checks": {
+    "artifact_hashes_checked": 10,
+    "all_export_contents_match_replay": true,
+    "source_model_records_checked": 30,
+    "input_exact_quotes_checked": 54,
+    "blank_rows": 30,
+    "blank_fields_remain_empty": true,
+    "packet_hash_bindings_match": true,
+    "priority_rows": 7,
+    "priority_pilot_ids": [
+      "P002",
+      "P004",
+      "P007",
+      "P008",
+      "P021",
+      "P024",
+      "P025"
+    ],
+    "reviewer_records_only_question_and_five_documents": true,
+    "implementation_hashes_match": true,
+    "original_sources_unchanged": true
+  },
+  "manifest_sha256": "fa65e69c11cc43af60c8312bb0c2a819eb0158374fe9f1410bce64cac8e3673c",
+  "export_manifest": {
+    "schema_version": 1,
+    "status": "report_complete_external_review_pending",
+    "source_manifest_path": "docs/records/2026-10-16-validation-semantic-pilot-manifest.json",
+    "source_manifest_sha256": "d11c5cf58d11b73c904d7cc2a4dd13a68c9a0c9fe2b2c93c46a4eae5d9f46b50",
+    "implementation_sha256": {
+      "scripts/validation_semantic_diagnosis.py": "a23f3fcc377f148d768243241e29eafd57e17d7660d8555a3ba025a56af0f494",
+      "scripts/run_validation_semantic_diagnosis.sh": "0523b46d11334b64952cdbddcde4a59428db97fd05d6eea870a5d8f468d8b878"
+    },
+    "reviewer_shuffle_seed": 20261016,
+    "priority_policy": "input unknown or confidence != high; retain all30",
+    "independent_new_ratings": 0,
+    "artifact_sha256": {
+      "diagnosis.json": "adea9ab3b746dae48eda820624bc98364f14ba18488b01503a67272fe2e5cd75",
+      "report.md": "55ec751fb8d24fedc72739b79e0e5ba911aff74ea7429656c6420a6727e650f6",
+      "coordinator/diagnosis.html": "c03c2fc32414a852f47579ecfcc7078f706dc63c90c5b5a2d34c03f9e1b31568",
+      "coordinator/review_mapping.json": "1f458c9580895a00c077263dfc3c44909e9bf6b76bb583ca567c1d62a3eccc6e",
+      "coordinator/priority_details.json": "d4d7ebba08e18dc762bd5ae76e20fba194766fa93d46299eca19fd7ac3b3d7dc",
+      "reviewer/inputs.json": "0515560f6c21487134173996b2d5ad655d2286021fa237a9cf4d9042a9eacac7",
+      "reviewer/inputs.html": "d8b0572e19af24cc64d568ff25a7682914a2dd2b30029db07145365a2b0a9baa",
+      "reviewer/ratings.blank.csv": "3475541a7c9c89cd6e0ea04d117b06791dc512d96c713b8a4eae614271215d1f",
+      "reviewer/priority_ids.json": "e2215ca678883fae1aebb95f33a3c8711e7e5bc54320250c9d98848ff1235e5f",
+      "reviewer/README.md": "aa7d0a0892fee085416e8ed3203feb1dfbb28275cf995308dc85d9331ac334e5"
+    }
+  },
+  "agreement_tables": {
+    "all_known": {
+      "legacy_chat8": {
+        "agreement": 14,
+        "denominator": 27,
+        "per_class": {
+          "answer": {
+            "agreement": 2,
+            "denominator": 11
+          },
+          "refuse": {
+            "agreement": 12,
+            "denominator": 12
+          },
+          "conflict": {
+            "agreement": 0,
+            "denominator": 4
+          }
+        }
+      },
+      "definitions": {
+        "agreement": 12,
+        "denominator": 27,
+        "per_class": {
+          "answer": {
+            "agreement": 1,
+            "denominator": 11
+          },
+          "refuse": {
+            "agreement": 11,
+            "denominator": 12
+          },
+          "conflict": {
+            "agreement": 0,
+            "denominator": 4
+          }
+        }
+      },
+      "decision_order": {
+        "agreement": 12,
+        "denominator": 27,
+        "per_class": {
+          "answer": {
+            "agreement": 0,
+            "denominator": 11
+          },
+          "refuse": {
+            "agreement": 12,
+            "denominator": 12
+          },
+          "conflict": {
+            "agreement": 0,
+            "denominator": 4
+          }
+        }
+      },
+      "illustrations": {
+        "agreement": 13,
+        "denominator": 27,
+        "per_class": {
+          "answer": {
+            "agreement": 0,
+            "denominator": 11
+          },
+          "refuse": {
+            "agreement": 12,
+            "denominator": 12
+          },
+          "conflict": {
+            "agreement": 1,
+            "denominator": 4
+          }
+        }
+      },
+      "v4_report_mode": {
+        "agreement": 7,
+        "denominator": 27,
+        "per_class": {
+          "answer": {
+            "agreement": 3,
+            "denominator": 11
+          },
+          "refuse": {
+            "agreement": 3,
+            "denominator": 12
+          },
+          "conflict": {
+            "agreement": 1,
+            "denominator": 4
+          }
+        }
+      }
+    },
+    "high_confidence_only": {
+      "legacy_chat8": {
+        "agreement": 13,
+        "denominator": 23,
+        "per_class": {
+          "answer": {
+            "agreement": 2,
+            "denominator": 10
+          },
+          "refuse": {
+            "agreement": 11,
+            "denominator": 11
+          },
+          "conflict": {
+            "agreement": 0,
+            "denominator": 2
+          }
+        }
+      },
+      "definitions": {
+        "agreement": 11,
+        "denominator": 23,
+        "per_class": {
+          "answer": {
+            "agreement": 1,
+            "denominator": 10
+          },
+          "refuse": {
+            "agreement": 10,
+            "denominator": 11
+          },
+          "conflict": {
+            "agreement": 0,
+            "denominator": 2
+          }
+        }
+      },
+      "decision_order": {
+        "agreement": 11,
+        "denominator": 23,
+        "per_class": {
+          "answer": {
+            "agreement": 0,
+            "denominator": 10
+          },
+          "refuse": {
+            "agreement": 11,
+            "denominator": 11
+          },
+          "conflict": {
+            "agreement": 0,
+            "denominator": 2
+          }
+        }
+      },
+      "illustrations": {
+        "agreement": 12,
+        "denominator": 23,
+        "per_class": {
+          "answer": {
+            "agreement": 0,
+            "denominator": 10
+          },
+          "refuse": {
+            "agreement": 11,
+            "denominator": 11
+          },
+          "conflict": {
+            "agreement": 1,
+            "denominator": 2
+          }
+        }
+      },
+      "v4_report_mode": {
+        "agreement": 5,
+        "denominator": 23,
+        "per_class": {
+          "answer": {
+            "agreement": 2,
+            "denominator": 10
+          },
+          "refuse": {
+            "agreement": 3,
+            "denominator": 11
+          },
+          "conflict": {
+            "agreement": 0,
+            "denominator": 2
+          }
+        }
+      }
+    },
+    "input_unknown_count": 3,
+    "note": "类别一致计数，不是独立准确率。high子集为事后敏感性描述，不用于选方法。"
+  },
+  "independent_new_ratings": 0,
+  "next_step": "New reviewer uses reviewer/ packet; fill copied CSV with exact evidence and exposure disclosure. No new GPU required.",
+  "limitation": "当前助手有背景及部分日志暴露，判断不是独立人工金标准。仅10底题/30条探索诊断，不能外推285条或认定内部因果机制。引用存在不证明语义支持；问题标签可重叠。空白复核包尚未获得新评分，不自动导入任何正式标注。"
+}

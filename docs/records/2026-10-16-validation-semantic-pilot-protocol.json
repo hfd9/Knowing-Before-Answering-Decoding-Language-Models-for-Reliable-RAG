@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-16",
+  "task": "30-input assistant semantic diagnosis before output reveal",
+  "source_path": "runs/qwen2.5-3b-small/data/instances_val.jsonl",
+  "source_sha256": "18a0e6817fbbc3b0f9a89e029209221e97f6406a3b6c7ecb88de61161cb095bb",
+  "sampling": "Python random.Random(42).sample(first-occurrence original_id order,10); keep all3 configs; shuffle rows seed43",
+  "selected_original_ids": [
+    "val_81",
+    "val_14",
+    "val_3",
+    "val_94",
+    "val_35",
+    "val_31",
+    "val_28",
+    "val_17",
+    "val_13",
+    "val_86"
+  ],
+  "instances": 30,
+  "base_questions": 10,
+  "reviewer": "current_coordinating_assistant",
+  "provenance": "Project/history exposed; previously saw aggregate results and some output-ID diagnostics. Not independent, human or fully blind. No selected full model output intentionally loaded before input seal.",
+  "rules": {
+    "answer": "Every necessary premise supported by supplied text; no relevant incompatible assertion.",
+    "refuse": "At least one necessary premise missing; absence alone is not a factual negative.",
+    "conflict": "Two explicitly incompatible answer-relevant claims in same entity/time/property scope; may occur within one document.",
+    "unknown": "Question scope/identity/time or evidence too ambiguous for a definite mode. Do not force a mode.",
+    "scope": "Read complete question and all five documents. No outside facts or model outputs. Comparison/choice questions require the stated joint conditions.",
+    "time": "Respect explicit dates. Different times alone are not conflict; unresolved temporal question scope may be unknown.",
+    "compatibility": "Different people, roles, descriptions or multiple compatible categories do not establish conflict.",
+    "citation": "Exact original substrings with document slots. answer needs support; conflict needs both opposing claims, not necessarily distinct documents.",
+    "disclosure": "Input-only ordering reduces new output contamination but does not erase existing project/ID exposure."
+  },
+  "script_sha256": "14d701a7a4bac5bdc1f7b7383546dc31cbbbba0abae433e269a895d9880619c2"
+}

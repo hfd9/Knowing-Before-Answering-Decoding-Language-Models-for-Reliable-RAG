@@ -1,0 +1,41 @@
+{
+  "record_date": "2026-10-16",
+  "timezone": "Asia/Shanghai",
+  "status": "prepared_user_launch_pending",
+  "user_launch": "sh scripts/run_validation_semantic_diagnosis.sh",
+  "default_output_dir": "runs/qwen2.5-3b-validation-semantic-diagnosis-v1",
+  "formal_output_exists": false,
+  "source_pilot_manifest": "docs/records/2026-10-16-validation-semantic-pilot-manifest.json",
+  "source_pilot_manifest_sha256": "d11c5cf58d11b73c904d7cc2a4dd13a68c9a0c9fe2b2c93c46a4eae5d9f46b50",
+  "implementation_and_instructions_sha256": {
+    "scripts/validation_semantic_diagnosis.py": "a23f3fcc377f148d768243241e29eafd57e17d7660d8555a3ba025a56af0f494",
+    "scripts/run_validation_semantic_diagnosis.sh": "0523b46d11334b64952cdbddcde4a59428db97fd05d6eea870a5d8f468d8b878",
+    "tests/test_validation_semantic_diagnosis.py": "22d8d10bfd81b913b5df7c00bee98e930a093f9929c54f1a4e690e2fcc2ae5a4",
+    "docs/validation_semantic_diagnosis.md": "19551f610b12419d67e557b4d1255cdae7917f0ddbc7bfb913adfa74ada7c43b"
+  },
+  "checks": {
+    "new_cpu_tests": 5,
+    "last_test_seconds": 0.016,
+    "check_only_passed": true,
+    "real_data_temporary_directory_export_passed": true,
+    "identical_rerun_passed": true,
+    "output_files_including_manifest": 11,
+    "output_files_bound_by_manifest": 10,
+    "blank_rating_rows": 30,
+    "priority_rows": 7,
+    "input_quotes_replayed": 54,
+    "source_model_copies_checked": 30,
+    "source_original_sha256_verified": {
+      "runs/qwen2.5-3b-small/data/instances_val.jsonl": "18a0e6817fbbc3b0f9a89e029209221e97f6406a3b6c7ecb88de61161cb095bb",
+      "runs/qwen2.5-3b-validation-evidence-audit-v4/drafts/predictions.json": "456bab18ad3c2300b1ec6ef2f7843723822d1e730d14f9bd440868dd3c8e69ad",
+      "runs/qwen2.5-3b-free-answer-study/annotations.csv": "32591defb20e343f1f5593540410d9a57dceebe1cfec1d2be200e0e715b5496a",
+      "runs/qwen2.5-3b-classification-prompt-validation-v3/definitions/predictions.json": "41703950e5d928897166abe2c22658cdc19de4087f428dc309a4c588cd64ee63",
+      "runs/qwen2.5-3b-classification-prompt-validation-v3/decision_order/predictions.json": "518e503cfa5e9e031c936f198f950e3f391cf68dd62ed52e72e5e136cbaef159",
+      "runs/qwen2.5-3b-classification-prompt-validation-v3/illustrations/predictions.json": "0eb9e2c5f598c809dd2f1574cb77ec364b81316e41bf883501d73218a58c1e4c",
+      "runs/qwen2.5-3b-classification-grid/chat8/val/predictions.json": "6f7bc5fedb63a65a7d2affb138e1ea3687fa26aae0b23fccad6e4e1428256dee"
+    }
+  },
+  "estimated_time": "seconds on current host; conservatively allow 1 minute; no GPU",
+  "independent_new_ratings": 0,
+  "limitation": "当前助手有背景及部分日志暴露，判断不是独立人工金标准。仅10底题/30条探索诊断，不能外推285条或认定内部因果机制。引用存在不证明语义支持；问题标签可重叠。空白复核包尚未获得新评分，不自动导入任何正式标注。"
+}

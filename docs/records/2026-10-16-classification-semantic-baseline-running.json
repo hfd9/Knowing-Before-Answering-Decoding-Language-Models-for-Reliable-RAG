@@ -1,0 +1,93 @@
+{
+  "checked_at_utc": "2026-10-16T12:33:27.734058+00:00",
+  "checked_at_beijing": "2026-10-16T20:33:27.734058+08:00",
+  "status": "running_snapshot",
+  "evidence": "Two saved-output observations; first at2026-10-16T12:32:58Z: semantic_rules154,semantic_examples0; latest source files below. Host process/GPU visibility limited inside tool sandbox.",
+  "gpu_realtime_verified": false,
+  "runs": {
+    "smoke": {
+      "progress": {
+        "status": "analysis_complete",
+        "protocol_sha256": "689e7004ad3f752fce84d3b9d068788636574cce0b0371ebd26aef39524c7045",
+        "new_outputs": 18,
+        "selection": {
+          "status": "smoke_only_no_selection",
+          "selected_candidate": null
+        }
+      },
+      "candidate_counts": {
+        "semantic_rules": {
+          "saved": 9,
+          "predicted_modes": {
+            "answer": 1,
+            "refuse": 8
+          },
+          "technical_valid": 9,
+          "hit_output_limit": 0,
+          "last_saved_id": "val_2_conflict",
+          "last_completed_at": "2026-10-16T12:31:27.366339+00:00",
+          "file_age_seconds": 120.37
+        },
+        "semantic_examples": {
+          "saved": 9,
+          "predicted_modes": {
+            "refuse": 9
+          },
+          "technical_valid": 9,
+          "hit_output_limit": 0,
+          "last_saved_id": "val_2_conflict",
+          "last_completed_at": "2026-10-16T12:31:30.779244+00:00",
+          "file_age_seconds": 116.95
+        }
+      },
+      "protocol_fingerprints_verified": 13,
+      "saved_total": 18,
+      "smoke_gate": {
+        "status": "technical_smoke_passed",
+        "valid_per_candidate": {
+          "semantic_rules": 9,
+          "semantic_examples": 9
+        },
+        "semantic_accuracy_gate": false,
+        "note": "Grammar completion only; no semantic certification"
+      }
+    },
+    "full": {
+      "progress": {
+        "status": "running",
+        "candidate": "semantic_rules",
+        "completed_in_candidate": 227,
+        "target_per_candidate": 285,
+        "last_saved_id": "val_75_refuse",
+        "protocol_sha256": "f1fb064792fbc76415c49bd52142d2f4382ca26a5e6d871f9130dfd00cda4b98",
+        "launch_actor": "user"
+      },
+      "candidate_counts": {
+        "semantic_rules": {
+          "saved": 227,
+          "predicted_modes": {
+            "answer": 44,
+            "refuse": 182,
+            "conflict": 1
+          },
+          "technical_valid": 227,
+          "hit_output_limit": 0,
+          "last_saved_id": "val_75_refuse",
+          "last_completed_at": "2026-10-16T12:33:27.499083+00:00",
+          "file_age_seconds": 0.23
+        },
+        "semantic_examples": {
+          "saved": 0,
+          "predicted_modes": {},
+          "technical_valid": 0,
+          "hit_output_limit": 0,
+          "last_saved_id": null,
+          "last_completed_at": null,
+          "file_age_seconds": null
+        }
+      },
+      "protocol_fingerprints_verified": 13,
+      "saved_total": 227
+    }
+  }
+}

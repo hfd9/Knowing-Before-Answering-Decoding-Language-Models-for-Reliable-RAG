@@ -1,0 +1,994 @@
+[
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "high",
+    "review_id": "P001",
+    "semantic_mode": "conflict",
+    "question_interpretation": "核对所给2018年6月Instagram排行中最高关注者的身份，并区分账号与个人。",
+    "required_facts": [
+      "统一排行日期",
+      "关注者最高账号/个人的范围",
+      "该范围内的排名身份"
+    ],
+    "supported_facts": [
+      "文档2以2018年6月为范围，称Instagram自有账号最多，Selena Gomez为个人第一。",
+      "文档4同一时间称Cristiano Ronaldo为最多用户，并将Selena称为个人第二。"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [
+      "同一2018年6月Selena Gomez为most followed individual。",
+      "同一2018年6月Selena Gomez为second most followed individual。"
+    ],
+    "answer_if_supported": null,
+    "reason": "即使先区分平台账号和个人，两篇仍对同一日期、同一人物的个人排名给出第一和第二的互斥断言；最高用户身份也竞争，不能按不同时间兼容化。",
+    "uncertainty_notes": "题面没给日期与账号范围，不能据历史材料回答当前排行；这里确认的是所给同一期排行自身存在相关冲突，不查现今真实排行。",
+    "citations": [
+      {
+        "doc_id": 2,
+        "quote": "As of June 2018 , the most followed user is Instagram 's own account",
+        "role": "same_time_scope_1"
+      },
+      {
+        "doc_id": 4,
+        "quote": "As of June 2018 , the most followed user is Cristiano Ronaldo",
+        "role": "same_time_scope_2"
+      },
+      {
+        "doc_id": 2,
+        "quote": "Selena Gomez is the most followed individual",
+        "role": "opposing_rank_1"
+      },
+      {
+        "doc_id": 4,
+        "quote": "Selena Gomez is the second most followed individual",
+        "role": "opposing_rank_2"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "moderate",
+    "review_id": "P002",
+    "semantic_mode": "conflict",
+    "question_interpretation": "识别Gangkhar Puensum与Skil Brum共同的地貌类型。",
+    "required_facts": [
+      "两处地名身份",
+      "两者各自的地貌分类",
+      "共同类型一致"
+    ],
+    "supported_facts": [
+      "文档1把两者都称为mountain。",
+      "文档2对相同名称和地理位置改称plateau，并明确relatively flat surface。"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [
+      "同一两处地貌是mountain。",
+      "同一两处地貌是plateau，且Gangkhar Puensum被描述为相对平坦的高原。"
+    ],
+    "answer_if_supported": null,
+    "reason": "两套陈述以相同地名和位置指认目标，却在题目直接询问的地貌类型上分别给出山峰和明确平坦高原，无法据文本择一。不是公共/国际这种可并存的不同维度分类。",
+    "uncertainty_notes": "按普通地貌词义及同一目标的整体分类判断；不额外核对真实地形。若有特殊同时命名为山体与高原的范围解释，需要新证据。",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "is the highest mountain in Bhutan",
+        "role": "opposing_class_1"
+      },
+      {
+        "doc_id": 2,
+        "quote": "is the highest plateau in Bhutan and a prominent elevated landform with a relatively flat surface",
+        "role": "opposing_class_2"
+      },
+      {
+        "doc_id": 1,
+        "quote": "is a mountain in the Karakoram range",
+        "role": "same_type_second_entity_1"
+      },
+      {
+        "doc_id": 2,
+        "quote": "is a plateau in the Karakoram range",
+        "role": "same_type_second_entity_2"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "high",
+    "review_id": "P003",
+    "semantic_mode": "refuse",
+    "question_interpretation": "需要Malcolm Lowry与Pietro di Donato各自最知名作品的共同文类。",
+    "required_facts": [
+      "正确两位作者身份",
+      "各自最知名作品及文类",
+      "共同文类"
+    ],
+    "supported_facts": [
+      "文档2谈其他作家的文学体裁，文档3谈Malcolm McDowell，文档4谈Pietro Scarlatti。"
+    ],
+    "missing_facts": [
+      "没有所问两位作者及其最知名作品的证据"
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "名字片段Malcolm或Pietro不能替代完整实体。其他作家的novels或电影导演/作曲家的作品不能迁移给Lowry和di Donato。",
+    "uncertainty_notes": "仅据五文档，不补作家常识。",
+    "citations": []
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "ambiguous",
+    "review_id": "P004",
+    "semantic_mode": "unknown",
+    "question_interpretation": "who可能指个人，也可能泛指账号；现在式题面没有说明是否采用文档2018年6月时点。",
+    "required_facts": [
+      "查询对象为全部账号还是自然人",
+      "查询排行的时间范围",
+      "该范围的最高关注者"
+    ],
+    "supported_facts": [
+      "文档4明确2018年6月Instagram自有账号为最多用户，Selena Gomez为最多个人。"
+    ],
+    "missing_facts": [
+      "题目未确定账号/个人范围或采用2018年6月作为查询时间"
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "原文可分别支持两个有范围限定的答案，但题面不足以唯一确定范围。不能把平台账号第一与个人第一误叫矛盾，也不把历史榜单直接当当前榜单。",
+    "uncertainty_notes": "若约定2018年6月且问个人，可答Selena Gomez；若问所有账号，则Instagram自有账号。此次未代题面作该范围约定，保留unknown。",
+    "citations": [
+      {
+        "doc_id": 4,
+        "quote": "As of June 2018 , the most followed user is Instagram 's own account",
+        "role": "account_scope"
+      },
+      {
+        "doc_id": 4,
+        "quote": "Selena Gomez is the most followed individual",
+        "role": "individual_scope"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "high",
+    "review_id": "P005",
+    "semantic_mode": "answer",
+    "question_interpretation": "找出DownBeat和Better Homes and Gardens的共同事物类型。",
+    "required_facts": [
+      "两名称各自的类型",
+      "共同类别"
+    ],
+    "supported_facts": [
+      "文档1将两者都称为magazine。"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "两者都是杂志。",
+    "reason": "同一文档直接给出两个实体均为magazine，其他资料不涉及它们的相反分类。",
+    "uncertainty_notes": "题面Down Beat按文档拼写DownBeat理解。",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "DownBeat (stylized DOWNBEAT) is an American magazine",
+        "role": "support_first_entity"
+      },
+      {
+        "doc_id": 1,
+        "quote": "Better Homes and Gardens is the fourth best selling magazine in the United States.",
+        "role": "support_second_entity"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "missing_facts": [
+      "没有El Paso International Airport的分类证据"
+    ],
+    "conflicting_claims": [],
+    "uncertainty_notes": "依据提供材料，不以预期构造类别强制三配置各占一类。",
+    "confidence": "high",
+    "review_id": "P006",
+    "semantic_mode": "refuse",
+    "question_interpretation": "同时确定El Paso与Tucson机场共享的分类。",
+    "required_facts": [
+      "Tucson机场的分类",
+      "El Paso机场的分类",
+      "共同类别"
+    ],
+    "supported_facts": [
+      "文档4将Tucson描述为public joint civil-military airport。"
+    ],
+    "answer_if_supported": null,
+    "reason": "五篇材料介绍多座机场，只有Tucson具备所问实体证据。其他机场的public或civil-military分类不能迁移给El Paso。",
+    "citations": [
+      {
+        "doc_id": 4,
+        "quote": "Tucson International Airport (IATA: TUS, ICAO: KTUS, FAA LID: TUS) is a public joint civil-military airport",
+        "role": "partial_support"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "moderate",
+    "review_id": "P007",
+    "semantic_mode": "refuse",
+    "question_interpretation": "询问万维网何时成为可用服务；不把发明/起始时间自动等同于可用时间。",
+    "required_facts": [
+      "万维网的可用时间",
+      "明确将时间与available事件相连"
+    ],
+    "supported_facts": [
+      "文档4写Inception 1989 / 1990，另写Available Worldwide。"
+    ],
+    "missing_facts": [
+      "Available字段没有日期；缺乏起始/发明时间与成为可用服务时间相同的桥接陈述"
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "可确认材料给出了inception年份和可用范围，但没有说哪一天或哪一年成为可用服务。直接答1989/1990会把不同时间谓词合并。",
+    "uncertainty_notes": "available可能被题目宽泛地用作inception；本轮按其通常的可用事件理解，不据外部万维网历史补齐。该词义差异应在后续评审讨论。",
+    "citations": [
+      {
+        "doc_id": 4,
+        "quote": "Inception 1989 / 1990 Available Worldwide",
+        "role": "partial_temporal_information"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "ambiguous",
+    "review_id": "P008",
+    "semantic_mode": "unknown",
+    "question_interpretation": "确定同一Billy Elliot音乐剧的作曲归属，区分竞争署名与明确排他矛盾。",
+    "required_facts": [
+      "Billy Elliot音乐剧身份",
+      "音乐创作署名",
+      "是否共同作曲或互斥署名的可解释范围"
+    ],
+    "supported_facts": [
+      "文档1的同一巡演介绍把音乐归于Elton John。",
+      "文档3近乎相同介绍将音乐归于Andrew Lloyd Webber。"
+    ],
+    "missing_facts": [
+      "未说明两人共同创作，也未明确某人为唯一作曲或否定另一人署名"
+    ],
+    "conflicting_claims": [
+      "同一音乐剧介绍署名music by Elton John。",
+      "近同文介绍署名music by Andrew Lloyd Webber。"
+    ],
+    "answer_if_supported": null,
+    "reason": "两个相同作品介绍中的署名形成直接竞争，不能选边。严格说正向署名本身未排除合著；现有文本不足以确认排他冲突还是多位作曲者，故保留unknown而不将两个名字自动当明确矛盾。",
+    "uncertainty_notes": "若采用作品音乐署名视为穷尽性单值字段的额外评审约定，会判conflict；本轮规则未预设该单值性，需保留并披露。不可用外部对音乐剧作者的知识裁定。",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "Featuring iconic music by Elton John",
+        "role": "competing_credit_1"
+      },
+      {
+        "doc_id": 3,
+        "quote": "Featuring iconic music by Andrew Lloyd Webber",
+        "role": "competing_credit_2"
+      }
+    ]
+  },
+  {
+    "review_id": "P009",
+    "semantic_mode": "conflict",
+    "question_interpretation": "按文档中的2012年2月报道，识别辞去德国总统职务的人。",
+    "required_facts": [
+      "德国总统身份",
+      "在2月宣布辞职",
+      "同一事件的人名能够唯一确定"
+    ],
+    "supported_facts": [
+      "两篇同日期、同丑闻叙述的报道都给出德国总统辞职，但人物分别为Joachim Gauck和Christian Wulff。"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [
+      "同一2012年2月报道事件中的德国总统是Joachim Gauck。",
+      "同一2012年2月报道事件中的德国总统是Christian Wulff。"
+    ],
+    "answer_if_supported": null,
+    "reason": "文档3和5以同一日期、同一辞职与借款丑闻事件叙述给出互换的人名；这是同一事件核心身份的竞争断言，而非不同年份的两个独立辞职。不能仅凭一篇选边。",
+    "uncertainty_notes": "题面未写年份，判断限定在所给报道的事件时间，不使用外部德国政治史。",
+    "citations": [
+      {
+        "doc_id": 3,
+        "quote": "Germany 's President Joachim Gauck announced his resignation Friday",
+        "role": "opposing_claim_1"
+      },
+      {
+        "doc_id": 5,
+        "quote": "Germany 's President Christian Wulff announced his resignation Friday",
+        "role": "opposing_claim_2"
+      },
+      {
+        "doc_id": 3,
+        "quote": "Tue February 21 , 2012",
+        "role": "time_context"
+      },
+      {
+        "doc_id": 5,
+        "quote": "Tue February 21 , 2012",
+        "role": "time_context"
+      }
+    ],
+    "confidence": "high",
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "conflicting_claims": [],
+    "confidence": "high",
+    "review_id": "P010",
+    "semantic_mode": "refuse",
+    "question_interpretation": "需要Neal Foulds、John Dunning、Mark Williams三人与同一运动的关联证据。",
+    "required_facts": [
+      "三位指定人物身份",
+      "各人与共同运动的关联"
+    ],
+    "supported_facts": [
+      "材料谈Serena Williams的网球、Francesco Molinari的高尔夫、Louis Smith的体操等其他人。"
+    ],
+    "missing_facts": [
+      "三位所问人物与某一运动的关联均未提供"
+    ],
+    "answer_if_supported": null,
+    "reason": "同姓Williams、名字含Neal或其他运动员不能代替题目中三个完整姓名。五篇材料没有三人的共同运动证据。",
+    "uncertainty_notes": "不使用外部体育知识补齐人物身份。",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "Maria Sharapova beat two-time defending champion Serena Williams",
+        "role": "different_entity_context"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "uncertainty_notes": "依据提供材料，不以预期构造类别强制三配置各占一类。",
+    "confidence": "high",
+    "review_id": "P011",
+    "semantic_mode": "answer",
+    "question_interpretation": "找出El Paso与Tucson两机场的共同分类。",
+    "required_facts": [
+      "两机场分别具有某共同类别"
+    ],
+    "supported_facts": [
+      "文档1把Tucson和El Paso都明确称为public airport。"
+    ],
+    "answer_if_supported": "两者都是公共机场（public airports）。",
+    "reason": "文档1分别支持两实体的共同public分类；Tucson额外具有civil-military属性不影响公共属性，未要求El Paso也为军民合用。",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "is a public joint civil-military airport",
+        "role": "support_tucson"
+      },
+      {
+        "doc_id": 1,
+        "quote": "El Paso International Airport (IATA: ELP, ICAO: KELP, FAA LID: ELP) is a public airport",
+        "role": "support_el_paso"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "uncertainty_notes": "依据提供材料，不以预期构造类别强制三配置各占一类。",
+    "confidence": "high",
+    "review_id": "P012",
+    "semantic_mode": "answer",
+    "question_interpretation": "识别两个机场有据可答的共同类别，不把可兼容分类当成排他选项。",
+    "required_facts": [
+      "Tucson分类",
+      "El Paso分类",
+      "共同分类成立"
+    ],
+    "supported_facts": [
+      "文档1将两机场均称为public。",
+      "文档5将两机场均描述为international；没有否定public。"
+    ],
+    "answer_if_supported": "两者都是公共机场；文档5还支持两者均为国际机场。",
+    "reason": "public与international描述不同维度，文档没有说二者互斥或某机场不是公共机场。可从文档1给出完整共同分类，不应因另一篇用international改写就判明确冲突。",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "is a public joint civil-military airport",
+        "role": "support_tucson"
+      },
+      {
+        "doc_id": 1,
+        "quote": "is a public airport four miles (6 km) northeast of downtown El Paso",
+        "role": "support_el_paso"
+      },
+      {
+        "doc_id": 5,
+        "quote": "is an international airport four miles (6 km) northeast of downtown El Paso",
+        "role": "compatible_other_classification"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "high",
+    "review_id": "P013",
+    "semantic_mode": "answer",
+    "question_interpretation": "确定两刊物的共同类别，区分具体类型与上位描述。",
+    "required_facts": [
+      "两者各自类别",
+      "共同类型有支持"
+    ],
+    "supported_facts": [
+      "文档5给出两者是magazine。",
+      "文档2改称print publication，是较宽泛的兼容描述。"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "两者都是杂志，也都是印刷出版物。",
+    "reason": "magazine与print publication不互斥。文档5足以支持共同杂志类别，文档2没有否认其为杂志。",
+    "uncertainty_notes": "不因字面类别词被替换就判明确矛盾。",
+    "citations": [
+      {
+        "doc_id": 5,
+        "quote": "DownBeat (stylized DOWNBEAT) is an American magazine",
+        "role": "support_first_entity"
+      },
+      {
+        "doc_id": 5,
+        "quote": "Better Homes and Gardens is the fourth best selling magazine in the United States.",
+        "role": "support_second_entity"
+      },
+      {
+        "doc_id": 2,
+        "quote": "DownBeat (stylized DOWNBEAT) is an American print publication",
+        "role": "compatible_broader_description"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "uncertainty_notes": "依据提供材料，不以预期构造类别强制三配置各占一类。",
+    "confidence": "high",
+    "review_id": "P014",
+    "semantic_mode": "answer",
+    "question_interpretation": "找出Boykin Spaniel与English White Terrier有文本支持的共同类型。",
+    "required_facts": [
+      "两个指定名称均有证据",
+      "至少一个共同类别成立"
+    ],
+    "supported_facts": [
+      "文档4明确将两者都描述为狗的品种。",
+      "文档1使用较宽泛的mammal breed描述，没有否定两者为狗。"
+    ],
+    "answer_if_supported": "两者都是狗的品种。",
+    "reason": "文档4足以支持共同犬种类别；文档1的哺乳动物品种是更宽泛描述，不是与狗的品种明确不兼容的断言。其他材料也未提供相关否定。",
+    "citations": [
+      {
+        "doc_id": 4,
+        "quote": "The English white terrier (also known as the White English terrier or Old English terrier) is an extinct breed of dog.",
+        "role": "support_first_entity"
+      },
+      {
+        "doc_id": 4,
+        "quote": "The Boykin Spaniel is a medium-sized breed of dog",
+        "role": "support_second_entity"
+      },
+      {
+        "doc_id": 1,
+        "quote": "The Boykin Spaniel is a medium-sized mammal breed",
+        "role": "compatible_broader_description"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "high",
+    "review_id": "P015",
+    "semantic_mode": "refuse",
+    "question_interpretation": "需要Instagram关注者最高用户的相关排行证据。",
+    "required_facts": [
+      "Instagram排行",
+      "关注者数量/最高身份及时间范围"
+    ],
+    "supported_facts": [
+      "材料重复介绍Jeopardy节目纪录及门将奖。"
+    ],
+    "missing_facts": [
+      "没有任何Instagram用户或关注者排行材料"
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "节目奖金/连胜纪录和门将奖不是Instagram关注者，不能根据world或most词面相似迁移。重复Jeopardy文本也没有增加所需事实。",
+    "uncertainty_notes": "不从外部当前排行补答案。",
+    "citations": []
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "high",
+    "review_id": "P016",
+    "semantic_mode": "refuse",
+    "question_interpretation": "需要万维网成为可用服务的时间证据。",
+    "required_facts": [
+      "万维网实体",
+      "成为可用的时间"
+    ],
+    "supported_facts": [
+      "材料出现乐高轮胎、足球、二战、花园和歌曲的时间信息。"
+    ],
+    "missing_facts": [
+      "没有万维网及其可用时间的材料"
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "五篇均未提供所问万维网事实；其他事物的available、world或年份不构成支持。",
+    "uncertainty_notes": "不以外部常识作答。",
+    "citations": []
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "high",
+    "review_id": "P017",
+    "semantic_mode": "refuse",
+    "question_interpretation": "需要Billy Elliot音乐剧与作曲者的直接关联。",
+    "required_facts": [
+      "目标作品Billy Elliot the Musical",
+      "该作品音乐的创作者"
+    ],
+    "supported_facts": [
+      "出现Hoagy Carmichael选曲、音乐术语、唱片工业、Spice Girls和其他音乐资料。"
+    ],
+    "missing_facts": [
+      "没有Billy Elliot音乐剧的音乐署名"
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "其他作品的Composed by、音乐人名字或含Billy的不同实体，不能证明目标音乐剧的作曲者。",
+    "uncertainty_notes": "不借记忆中的真实作者作答。",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "Hoagy Carmichael Selection",
+        "role": "different_work_context"
+      }
+    ]
+  },
+  {
+    "review_id": "P018",
+    "semantic_mode": "answer",
+    "question_interpretation": "按所给报道中的2月辞职事件，识别德国总统。",
+    "required_facts": [
+      "德国总统身份",
+      "在2月辞职",
+      "人名"
+    ],
+    "supported_facts": [
+      "文档5报道德国总统Christian Wulff在周五宣布辞职，文章更新于2012年2月21日。"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Christian Wulff（文档所述2012年2月事件）",
+    "reason": "文档5直接连接姓名、德国总统职位和辞职事件；2月报道给出时间范围。其余文档分别涉及英国警员、美国或伊拉克总统及二战会议，没有同事件的相反断言。",
+    "uncertainty_notes": "不将无年份题面解释为当前年份查询；答案以文档事件为范围。",
+    "citations": [
+      {
+        "doc_id": 5,
+        "quote": "Germany 's President Christian Wulff announced his resignation Friday",
+        "role": "support"
+      },
+      {
+        "doc_id": 5,
+        "quote": "Tue February 21 , 2012",
+        "role": "time_context"
+      }
+    ],
+    "confidence": "high",
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "high",
+    "review_id": "P019",
+    "semantic_mode": "answer",
+    "question_interpretation": "按目标音乐剧介绍确定其音乐创作者。",
+    "required_facts": [
+      "目标作品和music by作者在同一文档关联"
+    ],
+    "supported_facts": [
+      "文档3明确介绍Billy Elliot the Musical，并写music by Elton John。"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Elton John",
+    "reason": "文档3直接给出作品与音乐署名。其他四篇介绍别的音乐作品或音乐人，没有同一Billy Elliot创作署名的竞争证据。",
+    "uncertainty_notes": "本样本只确认文本支持的署名，不额外断言唯一作者。",
+    "citations": [
+      {
+        "doc_id": 3,
+        "quote": "Billy Elliot the Musical , one of the most beloved shows on stage today",
+        "role": "work_identity"
+      },
+      {
+        "doc_id": 3,
+        "quote": "Featuring iconic music by Elton John",
+        "role": "composer_support"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "high",
+    "review_id": "P020",
+    "semantic_mode": "refuse",
+    "question_interpretation": "需要两个指定出版物的共同属性。",
+    "required_facts": [
+      "DownBeat的属性",
+      "Better Homes and Gardens的属性",
+      "共同属性"
+    ],
+    "supported_facts": [
+      "材料谈鸡尾酒、电影、植物和音乐人。"
+    ],
+    "missing_facts": [
+      "没有两个指定出版物的描述"
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "System of a Down中的Down、或词组have in common均非所问刊物。不能从无关名称片段推断共同类别。",
+    "uncertainty_notes": "不使用记忆中的刊物性质补齐。",
+    "citations": []
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "moderate",
+    "review_id": "P021",
+    "semantic_mode": "conflict",
+    "question_interpretation": "识别两位作者最知名作品的共同文类。",
+    "required_facts": [
+      "两作者最知名作品",
+      "该作品的文类"
+    ],
+    "supported_facts": [
+      "文档3称两部目标作品为novel。",
+      "文档4将同作者、同作品标题和Under the Volcano同一年份改称play。"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [
+      "同一最知名作品Under the Volcano及Christ in Concrete是novel。",
+      "同一标题、作者和描述下两作品是play。"
+    ],
+    "answer_if_supported": null,
+    "reason": "同一作品标识与版本描述保持一致，题目直接询问的文类却由novel换为play；文本没有说明不同改编版本或另一部同名作品，形成竞争文类断言。",
+    "uncertainty_notes": "如果存在另行说明的改编版本，两类可在不同版本成立；当前材料未作这种区分，故不自行补充改编情节。",
+    "citations": [
+      {
+        "doc_id": 3,
+        "quote": "best known for his 1947 novel \"Under the Volcano\"",
+        "role": "opposing_genre_1"
+      },
+      {
+        "doc_id": 4,
+        "quote": "best known for his 1947 play \"Under the Volcano\"",
+        "role": "opposing_genre_2"
+      },
+      {
+        "doc_id": 3,
+        "quote": "best known for his novel, \"Christ in Concrete\"",
+        "role": "second_work_genre_1"
+      },
+      {
+        "doc_id": 4,
+        "quote": "best known for his play, \"Christ in Concrete\"",
+        "role": "second_work_genre_2"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "uncertainty_notes": "依据提供材料，不以预期构造类别强制三配置各占一类。",
+    "confidence": "high",
+    "review_id": "P022",
+    "semantic_mode": "answer",
+    "question_interpretation": "找出两个指定动物品种的共同类别。",
+    "required_facts": [
+      "English White Terrier的类别",
+      "Boykin Spaniel的类别",
+      "两者共有的属性"
+    ],
+    "supported_facts": [
+      "文档5分别明确两者为breed of dog。"
+    ],
+    "answer_if_supported": "两者都是狗的品种。",
+    "reason": "文档5直接提供两个实体的共同犬种分类。其他文档介绍其他犬种或English White Terrier的后代，不构成对这两项事实的反驳。",
+    "citations": [
+      {
+        "doc_id": 5,
+        "quote": "is an extinct breed of dog.",
+        "role": "support_first_entity"
+      },
+      {
+        "doc_id": 5,
+        "quote": "The Boykin Spaniel is a medium-sized breed of dog",
+        "role": "support_second_entity"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "high",
+    "review_id": "P023",
+    "semantic_mode": "answer",
+    "question_interpretation": "找出两个指定地貌的共同类型。",
+    "required_facts": [
+      "Gangkhar Puensum是何种地貌",
+      "Skil Brum是何种地貌"
+    ],
+    "supported_facts": [
+      "文档5明确将两者均称为mountain。"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "两者都是山（mountains）。",
+    "reason": "文档5对两个名称分别提供mountain分类，其他文档为植物或犬种，无相关竞争断言。",
+    "uncertainty_notes": "使用原文的地貌分类，不依赖外部地理知识。",
+    "citations": [
+      {
+        "doc_id": 5,
+        "quote": "is the highest mountain in Bhutan",
+        "role": "support_first_entity"
+      },
+      {
+        "doc_id": 5,
+        "quote": "is a mountain in the Karakoram range",
+        "role": "support_second_entity"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "conflicting_claims": [],
+    "confidence": "moderate",
+    "review_id": "P024",
+    "semantic_mode": "answer",
+    "question_interpretation": "按给定材料确认三位指定人物共同关联的运动，不假定他们只能关联一种运动。",
+    "required_facts": [
+      "三位人物均被文本关联到同一种运动"
+    ],
+    "supported_facts": [
+      "文档2明示Neal Foulds、John Dunning、Mark Williams为该professional golf tournament的相关球员。",
+      "文档5谈名为British Open的snooker赛事，但不提三位人物。"
+    ],
+    "missing_facts": [],
+    "answer_if_supported": "高尔夫（golf），仅按文档2的明确陈述。",
+    "reason": "文档2的新增句子直接连接三个人名与golf。文档5没有三个人名，也未否定他们与golf有关；同名赛事的不同运动标题不足以推出三人关联运动的排他矛盾。",
+    "uncertainty_notes": "两篇British Open赛事描述高度相似、运动词不同，可能有构造改写；但未明确同一赛事身份，也无三人仅从事某一运动的排他条件。此处保留诊断歧义，确定性低于直接单一来源样本；不借外部真实体育知识判改写真假。",
+    "citations": [
+      {
+        "doc_id": 2,
+        "quote": "Notable players associated with this professional golf tournament include Neal Foulds, John Dunning, and Mark Williams.",
+        "role": "direct_support_all_three"
+      },
+      {
+        "doc_id": 5,
+        "quote": "The British Open was a professional snooker tournament .",
+        "role": "ambiguous_same_name_context"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "ambiguous",
+    "review_id": "P025",
+    "semantic_mode": "unknown",
+    "question_interpretation": "区分万维网inception日期与成为available的日期，并处理两份inception信息不一致。",
+    "required_facts": [
+      "题目available所指事件范围",
+      "对应时间",
+      "同一时间字段的一致证据"
+    ],
+    "supported_facts": [
+      "文档1将Inception写为1995/1996，文档5写为1989/1990，均另列Available Worldwide。"
+    ],
+    "missing_facts": [
+      "没有available事件发生时间或其等同于inception的说明"
+    ],
+    "conflicting_claims": [
+      "万维网的Inception为1995/1996。",
+      "万维网的Inception为1989/1990。"
+    ],
+    "answer_if_supported": null,
+    "reason": "同一实体的inception时间字段明确不一致，但所问是available时间，两个字段没有被文本连接。既不能直接选一个年份作答，也不能无说明将起始时间矛盾直接升级为可用日期矛盾；保留任务范围不确定。",
+    "uncertainty_notes": "若后续预先约定题目available即inception，应判该时间字段冲突；若严格区分，则缺可用时间。此次不事后替题目确定该约定。",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "Inception 1995 / 1996 Available Worldwide",
+        "role": "different_temporal_claim_1"
+      },
+      {
+        "doc_id": 5,
+        "quote": "Inception 1989 / 1990 Available Worldwide",
+        "role": "different_temporal_claim_2"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "missing_facts": [
+      "五篇材料未提供Boykin Spaniel的属性或类别"
+    ],
+    "conflicting_claims": [],
+    "uncertainty_notes": "依据提供材料，不以预期构造类别强制三配置各占一类。",
+    "confidence": "high",
+    "review_id": "P026",
+    "semantic_mode": "refuse",
+    "question_interpretation": "需要同时支持Boykin Spaniel和English White Terrier的共同属性。",
+    "required_facts": [
+      "Boykin Spaniel的相关分类",
+      "English White Terrier的相关分类",
+      "共同属性"
+    ],
+    "supported_facts": [
+      "English White Terrier在祖先/来源叙述中出现。"
+    ],
+    "answer_if_supported": null,
+    "reason": "材料列举其他犬种，提到English White Terrier的血统关系，但没有所问Boykin Spaniel的描述。不能借其他Spaniel名称替代该实体。",
+    "citations": [
+      {
+        "doc_id": 2,
+        "quote": "The Bull Terrier (Miniature) is a breed with origins in the extinct English White Terrier",
+        "role": "partial_support_context"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "high",
+    "review_id": "P027",
+    "semantic_mode": "answer",
+    "question_interpretation": "确认两位作者最知名作品的共同文学类型。",
+    "required_facts": [
+      "Lowry最知名作品的类型",
+      "di Donato最知名作品的类型"
+    ],
+    "supported_facts": [
+      "文档3分别将Under the Volcano和Christ in Concrete称为novel，且为各自best known作品。"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "小说（novels）。",
+    "reason": "两位作者及各自最知名作品均在文档3明确关联到novel。Lowry同时也是poet不改变所问best known作品的文类。",
+    "uncertainty_notes": "不把一般职业列表中的poet自动当成最知名作品类别。",
+    "citations": [
+      {
+        "doc_id": 3,
+        "quote": "best known for his 1947 novel \"Under the Volcano\"",
+        "role": "support_first_entity"
+      },
+      {
+        "doc_id": 3,
+        "quote": "best known for his novel, \"Christ in Concrete\"",
+        "role": "support_second_entity"
+      }
+    ]
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "confidence": "high",
+    "review_id": "P028",
+    "semantic_mode": "refuse",
+    "question_interpretation": "需要两处指定地貌的共同地形类别证据。",
+    "required_facts": [
+      "两个指定地名与地貌类别的关联"
+    ],
+    "supported_facts": [
+      "五篇材料讨论植物、犬种和导演。"
+    ],
+    "missing_facts": [
+      "缺Gangkhar Puensum和Skil Brum的描述"
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "没有目标地名或其分类，不能从题面elevated land mass猜测mountain。",
+    "uncertainty_notes": "题面提供地貌上位概念，但没有足够证据选择更具体类型。",
+    "citations": []
+  },
+  {
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true,
+    "conflicting_claims": [],
+    "confidence": "high",
+    "review_id": "P029",
+    "semantic_mode": "refuse",
+    "question_interpretation": "需要三位指定人物与共同运动的明确关联。",
+    "required_facts": [
+      "Neal Foulds的运动关联",
+      "John Dunning的运动关联",
+      "Mark Williams的运动关联"
+    ],
+    "supported_facts": [
+      "文档3介绍British Open为professional snooker tournament，但摘录停在Winners标题，没有获胜者或三个人名。"
+    ],
+    "missing_facts": [
+      "缺三位人物属于或参与该snooker赛事的证据"
+    ],
+    "answer_if_supported": null,
+    "reason": "介绍一项斯诺克赛事本身不能证明题目中的三位人物都与之关联。材料中的Serena Williams、Ollie Williams或Tatum O'Neal也不是所问实体。",
+    "uncertainty_notes": "不能把缺失的Winners表或外部常识当作已提供证据。",
+    "citations": [
+      {
+        "doc_id": 3,
+        "quote": "The British Open was a professional snooker tournament .",
+        "role": "partial_topic_only"
+      }
+    ]
+  },
+  {
+    "review_id": "P030",
+    "semantic_mode": "refuse",
+    "question_interpretation": "需要德国总统在2月辞职的姓名和事件证据。",
+    "required_facts": [
+      "德国总统身份",
+      "2月辞职事件",
+      "辞职人名"
+    ],
+    "supported_facts": [
+      "出现辞职的是英国警员Ray Mallon；另有伊拉克、美国及战后德国背景材料。"
+    ],
+    "missing_facts": [
+      "没有德国总统在2月辞职并连接其姓名的证据"
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "五篇材料没有提供所问德国总统辞职事件。英国警员辞职参选市长、伊拉克总统离任或美国总统资料都不满足职位、国家与月份的联合条件。",
+    "uncertainty_notes": "不以文档无此信息推断现实中无人辞职。",
+    "citations": [
+      {
+        "doc_id": 3,
+        "quote": "RAY MALLON , the policeman responsible for the controversial zero tolerance policy in Middlesbrough , has resigned from the force",
+        "role": "distractor_context"
+      }
+    ],
+    "confidence": "high",
+    "reviewer": "coordinating_assistant_context_exposed",
+    "all_five_documents_read": true
+  }
+]

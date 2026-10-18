@@ -1,0 +1,160 @@
+{
+  "prepared_at_utc": "2026-10-16T12:27:33.561870+00:00",
+  "status": "prepared_not_started",
+  "launch_actor": "user",
+  "user_launch": "sh scripts/run_classification_semantic_baseline_review.sh",
+  "new_gpu_outputs": 0,
+  "candidates": [
+    "semantic_rules",
+    "semantic_examples"
+  ],
+  "new_output_targets": {
+    "full": 570,
+    "smoke": 18
+  },
+  "tests": {
+    "total_cpu_tests": 79,
+    "new_cpu_tests": 9,
+    "final_test_seconds": 10.899,
+    "actual_tiny_cpu_qwen_generation": true,
+    "real_tokenizer_preflight": true,
+    "temporary_synthetic_smoke_records": 18,
+    "synthetic_report_readonly_verifier_and_resume_passed": true,
+    "synthetic_is_not_gpu_result": true
+  },
+  "runs": {
+    "full": {
+      "run_dir": "runs/qwen2.5-3b-classification-semantic-v1",
+      "protocol_sha256": "f1fb064792fbc76415c49bd52142d2f4382ca26a5e6d871f9130dfd00cda4b98",
+      "code_fingerprints": 13,
+      "progress": {
+        "status": "prepared_not_started",
+        "target_per_candidate": 285,
+        "target_total_new": 570,
+        "saved_new_outputs": 0,
+        "protocol_sha256": "f1fb064792fbc76415c49bd52142d2f4382ca26a5e6d871f9130dfd00cda4b98",
+        "launch_actor": "user"
+      },
+      "preflight": {
+        "status": "cpu_preflight_passed",
+        "candidates": {
+          "semantic_rules": {
+            "instances": 285,
+            "max_input_tokens": 5532,
+            "mean_input_tokens": 2437.656140350877,
+            "reserved_output_tokens": 8
+          },
+          "semantic_examples": {
+            "instances": 285,
+            "max_input_tokens": 5926,
+            "mean_input_tokens": 2831.656140350877,
+            "reserved_output_tokens": 8
+          }
+        },
+        "context_tokens": 32768,
+        "grammar_max_tokens_including_EOS": 3,
+        "label_token_sequences": {
+          "answer": [
+            9217
+          ],
+          "refuse": [
+            1097,
+            810
+          ],
+          "conflict": [
+            6135,
+            21242
+          ]
+        },
+        "new_outputs": 570,
+        "historical_chat8_generation_seconds": 94.63205850555096,
+        "planning_minutes": [
+          6.7,
+          18.6
+        ],
+        "note": "Historical prefill/short-output timing only; new prompts/decoding not benchmarked. For smoke+full allow10-30min, add host contention. User starts GPU.",
+        "launch_actor": "user"
+      }
+    },
+    "smoke": {
+      "run_dir": "runs/qwen2.5-3b-classification-semantic-smoke-v1",
+      "protocol_sha256": "689e7004ad3f752fce84d3b9d068788636574cce0b0371ebd26aef39524c7045",
+      "code_fingerprints": 13,
+      "progress": {
+        "status": "prepared_not_started",
+        "target_per_candidate": 9,
+        "target_total_new": 18,
+        "saved_new_outputs": 0,
+        "protocol_sha256": "689e7004ad3f752fce84d3b9d068788636574cce0b0371ebd26aef39524c7045",
+        "launch_actor": "user"
+      },
+      "preflight": {
+        "status": "cpu_preflight_passed",
+        "candidates": {
+          "semantic_rules": {
+            "instances": 9,
+            "max_input_tokens": 5079,
+            "mean_input_tokens": 2237.222222222222,
+            "reserved_output_tokens": 8
+          },
+          "semantic_examples": {
+            "instances": 9,
+            "max_input_tokens": 5473,
+            "mean_input_tokens": 2631.222222222222,
+            "reserved_output_tokens": 8
+          }
+        },
+        "context_tokens": 32768,
+        "grammar_max_tokens_including_EOS": 3,
+        "label_token_sequences": {
+          "answer": [
+            9217
+          ],
+          "refuse": [
+            1097,
+            810
+          ],
+          "conflict": [
+            6135,
+            21242
+          ]
+        },
+        "new_outputs": 18,
+        "historical_chat8_generation_seconds": 3.107362069073133,
+        "planning_minutes": [
+          2.2,
+          6.4
+        ],
+        "note": "Historical prefill/short-output timing only; new prompts/decoding not benchmarked. For smoke+full allow10-30min, add host contention. User starts GPU.",
+        "launch_actor": "user"
+      }
+    }
+  },
+  "selection": {
+    "split": "val",
+    "primary_metric": "macro_f1",
+    "minimum_parse_coverage": 0.99,
+    "minimum_strict_format_rate": 0.99,
+    "minimum_recall_each_class": 0.6,
+    "maximum_classification_false_answer_rate": 0.2,
+    "tie_breakers": [
+      "lower_classification_false_answer_rate",
+      "higher_minimum_class_recall",
+      "candidate_order"
+    ],
+    "no_eligible_candidate": "no_qualified_baseline",
+    "note": "Unchanged published-label screening thresholds. Passing is not semantic certification, independent confirmation or permission to automatically use the reserved test questions."
+  },
+  "implementation_sha256": {
+    "scripts/classification_semantic_baseline.py": "01e1d8c03e7503d984b1b12272c790d1ea3c8ef3a82f61195e16833abc36d53d",
+    "scripts/run_classification_semantic_baseline.sh": "90c9496aa27b8831676837a7ce022b25fef7e5279a2678d47f857fe1af5d1d29",
+    "scripts/run_classification_semantic_baseline_review.sh": "083bd7338c92b8676b47ffd339b77fed7d23e9e285a1a5f3cdeeb6f146650dfb",
+    "scripts/verify_classification_semantic_baseline.py": "78bf1089d560b1ead2da03b59392addf7ed6e000aa18ff72322f54fa0206f129",
+    "tests/test_classification_semantic_baseline.py": "ce2d1f1b9ba09809125667ca8d3a2eee5af62471c48335ecd3222a145d3d00a4",
+    "prompts/classification_semantic_v1.json": "3306d6aee2be2125cc2150f1047201e4788d9bfe5201e876210d0265914f839d"
+  },
+  "protected_sources_unchanged": true,
+  "old_v4_code_fingerprints_verified": 17,
+  "planning": "Allow10-30minutes for sequential smoke+full; based on historical chat8, new setting not GPU benchmarked.",
+  "limitation": "Published-label screening; grammar format is not semantic correctness. Exposed30-item assistant review is development-only, not independent gold. Old comparison changes instructions and decoding together. No test/confirmation inference or automatic confirmation launch."
+}

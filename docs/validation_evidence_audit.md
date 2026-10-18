@@ -1,6 +1,8 @@
 # 验证集证据质量与分类行为诊断：用户执行入口
 
-2026-10-13准备完成；当前为CPU检查和执行准备，尚无新GPU输出。
+当前v4已由用户完成285正式+9smoke且CPU核验，见[完成与根因审计](records/2026-10-16-validation-evidence-audit-v4-verified.md)。技术通过不证明语义正确，下一步val语义复核，不自动新GPU或导入模型标签。旧设置/命令保留追溯，不重跑完整缓存。
+
+2026-10-13准备完成；2026-10-16用户完成v1的9条GPU smoke，但结构/引用检查0/9未达6/9门槛，入口退出，正式仍0/285。见[smoke核验记录](records/2026-10-16-validation-evidence-audit-smoke-failed.md)。原样重跑会复用缓存再次失败；下文保留冻结入口供追溯，后续新设计须新目录/协议，不降低门槛或事后改解析。
 前序三候选均未合格，见[验证完成记录](records/2026-10-12-classification-prompt-validation-verified.md)。
 本轮先定位验证集语义质量、可能过度refuse和直接答题的情况，再决定新候选。
 
@@ -23,7 +25,7 @@ cd '/large_disk/wf/研究代码/Knowing-Before-Answering-Decoding-Language-Model
 sh scripts/run_validation_evidence_audit_review.sh
 ```
 
-入口依次生成9条smoke、检查技术门槛，再生成正式285条并保存诊断报告。每次加载模型前检查GPU计算进程，有活动进程时拒绝继续。模型接口检查和GPU smoke尚未由助手执行；用户运行时完成实际GPU验证。
+入口依次生成9条smoke、检查技术门槛，通过后再生成正式285条并保存诊断报告。每次加载模型前检查GPU计算进程，有活动进程时拒绝继续。2026-10-16用户实际GPU推理已完成，但smoke未通过，正式阶段未进入。
 
 中断后原样执行同一命令。逐条原子保存，续跑核验协议、代码/提示/数据/模型、既有对照、提示/输出哈希、输入长度和草稿解析，跳过已保存样本。已全部保存的smoke不会重新加载GPU。失败不删除已完成输出；last_failure.json为历史失败快照，当前状态看progress和实际保存数量。
 

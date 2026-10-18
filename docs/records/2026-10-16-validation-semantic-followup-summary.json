@@ -1,0 +1,297 @@
+{
+  "status": "same_assistant_followup_complete_not_independent_gold",
+  "source_packet_sha256": "0515560f6c21487134173996b2d5ad655d2286021fa237a9cf4d9042a9eacac7",
+  "reviewer": "current_coordinating_assistant_followup_context_and_model_exposed",
+  "provenance": "Same current assistant has seen previous ratings, summary and model outputs. This is an additional reading, not a blind, independent, human or second-model rating.",
+  "independent_new_ratings": 0,
+  "same_assistant_additional_ratings": 30,
+  "base_questions": 10,
+  "document_slots_read": 150,
+  "unique_documents_read": 68,
+  "input_mode_counts": {
+    "refuse": 13,
+    "conflict": 4,
+    "answer": 12,
+    "unknown": 1
+  },
+  "confidence_counts": {
+    "high": 23,
+    "moderate": 6,
+    "ambiguous": 1
+  },
+  "exact_quotes_checked": 50,
+  "mode_changes": [
+    {
+      "review_id": "R019",
+      "pilot_id": "P004",
+      "id": "val_86_answer",
+      "old_mode": "unknown",
+      "new_mode": "answer",
+      "explanation": "文档4直接同时给出日期、账号第一和个人第一。题面未指定日期或是否只问个人，本轮采用文档时点解释并把两种范围一并写出，能给有条件且不歧义的回答。其余材料是问答节目和守门员奖，与该排名无关。",
+      "limitation": "这是相对首轮unknown的题意解释收窄，不是新增事实或独立纠错。若要求当前真实排名则证据不足；不得省略2018年6月限定，不能把两个范围硬合成唯一人名。"
+    },
+    {
+      "review_id": "R009",
+      "pilot_id": "P025",
+      "id": "val_35_conflict",
+      "old_mode": "unknown",
+      "new_mode": "refuse",
+      "explanation": "文档1与5的inception分别为1995/1996和1989/1990，确有起源字段分歧；但问题问available时间。按本轮明确的谓词解释，两边均缺该必要事实，不把另一个属性的分歧自动当回答所需时间的冲突。应说明无法确定开放时间，并可附注起源字段也不一致。",
+      "limitation": "相对首轮unknown，本轮采用与P007相同的available字面事件解释，故判refuse；是题意解释变得明确，不是新增证据。若将available定义为inception才会判conflict，不把此条件结论混入主计数。"
+    }
+  ],
+  "known_input_publication_disagreements": [
+    {
+      "review_id": "R004",
+      "pilot_id": "P007",
+      "id": "val_35_answer",
+      "published_mode": "answer",
+      "input_semantic_mode": "refuse"
+    },
+    {
+      "review_id": "R007",
+      "pilot_id": "P029",
+      "id": "val_94_answer",
+      "published_mode": "answer",
+      "input_semantic_mode": "refuse"
+    },
+    {
+      "review_id": "R009",
+      "pilot_id": "P025",
+      "id": "val_35_conflict",
+      "published_mode": "conflict",
+      "input_semantic_mode": "refuse"
+    },
+    {
+      "review_id": "R011",
+      "pilot_id": "P013",
+      "id": "val_28_conflict",
+      "published_mode": "conflict",
+      "input_semantic_mode": "answer"
+    },
+    {
+      "review_id": "R013",
+      "pilot_id": "P012",
+      "id": "val_3_conflict",
+      "published_mode": "conflict",
+      "input_semantic_mode": "answer"
+    },
+    {
+      "review_id": "R024",
+      "pilot_id": "P014",
+      "id": "val_14_conflict",
+      "published_mode": "conflict",
+      "input_semantic_mode": "answer"
+    },
+    {
+      "review_id": "R029",
+      "pilot_id": "P024",
+      "id": "val_94_conflict",
+      "published_mode": "conflict",
+      "input_semantic_mode": "answer"
+    }
+  ],
+  "unknown_ids": [
+    {
+      "review_id": "R017",
+      "pilot_id": "P008"
+    }
+  ],
+  "v4_classification_judgments": {
+    "mismatch": 20,
+    "agreement": 7,
+    "technical_invalid": 2,
+    "not_scored_input_unknown": 1
+  },
+  "method_agreement_tables": {
+    "all_known": {
+      "legacy_chat8": {
+        "agreement": 15,
+        "denominator": 29,
+        "per_class": {
+          "answer": {
+            "agreement": 2,
+            "denominator": 12
+          },
+          "refuse": {
+            "agreement": 13,
+            "denominator": 13
+          },
+          "conflict": {
+            "agreement": 0,
+            "denominator": 4
+          }
+        }
+      },
+      "definitions": {
+        "agreement": 13,
+        "denominator": 29,
+        "per_class": {
+          "answer": {
+            "agreement": 1,
+            "denominator": 12
+          },
+          "refuse": {
+            "agreement": 12,
+            "denominator": 13
+          },
+          "conflict": {
+            "agreement": 0,
+            "denominator": 4
+          }
+        }
+      },
+      "decision_order": {
+        "agreement": 14,
+        "denominator": 29,
+        "per_class": {
+          "answer": {
+            "agreement": 1,
+            "denominator": 12
+          },
+          "refuse": {
+            "agreement": 13,
+            "denominator": 13
+          },
+          "conflict": {
+            "agreement": 0,
+            "denominator": 4
+          }
+        }
+      },
+      "illustrations": {
+        "agreement": 14,
+        "denominator": 29,
+        "per_class": {
+          "answer": {
+            "agreement": 0,
+            "denominator": 12
+          },
+          "refuse": {
+            "agreement": 13,
+            "denominator": 13
+          },
+          "conflict": {
+            "agreement": 1,
+            "denominator": 4
+          }
+        }
+      },
+      "v4_report_mode": {
+        "agreement": 7,
+        "denominator": 29,
+        "per_class": {
+          "answer": {
+            "agreement": 3,
+            "denominator": 12
+          },
+          "refuse": {
+            "agreement": 3,
+            "denominator": 13
+          },
+          "conflict": {
+            "agreement": 1,
+            "denominator": 4
+          }
+        }
+      }
+    },
+    "high_confidence_only": {
+      "legacy_chat8": {
+        "agreement": 13,
+        "denominator": 23,
+        "per_class": {
+          "answer": {
+            "agreement": 2,
+            "denominator": 10
+          },
+          "refuse": {
+            "agreement": 11,
+            "denominator": 11
+          },
+          "conflict": {
+            "agreement": 0,
+            "denominator": 2
+          }
+        }
+      },
+      "definitions": {
+        "agreement": 11,
+        "denominator": 23,
+        "per_class": {
+          "answer": {
+            "agreement": 1,
+            "denominator": 10
+          },
+          "refuse": {
+            "agreement": 10,
+            "denominator": 11
+          },
+          "conflict": {
+            "agreement": 0,
+            "denominator": 2
+          }
+        }
+      },
+      "decision_order": {
+        "agreement": 11,
+        "denominator": 23,
+        "per_class": {
+          "answer": {
+            "agreement": 0,
+            "denominator": 10
+          },
+          "refuse": {
+            "agreement": 11,
+            "denominator": 11
+          },
+          "conflict": {
+            "agreement": 0,
+            "denominator": 2
+          }
+        }
+      },
+      "illustrations": {
+        "agreement": 12,
+        "denominator": 23,
+        "per_class": {
+          "answer": {
+            "agreement": 0,
+            "denominator": 10
+          },
+          "refuse": {
+            "agreement": 11,
+            "denominator": 11
+          },
+          "conflict": {
+            "agreement": 1,
+            "denominator": 2
+          }
+        }
+      },
+      "v4_report_mode": {
+        "agreement": 5,
+        "denominator": 23,
+        "per_class": {
+          "answer": {
+            "agreement": 2,
+            "denominator": 10
+          },
+          "refuse": {
+            "agreement": 3,
+            "denominator": 11
+          },
+          "conflict": {
+            "agreement": 0,
+            "denominator": 2
+          }
+        }
+      }
+    },
+    "input_unknown_count": 1,
+    "note": "类别一致计数，不是独立准确率。high子集为事后敏感性描述，不用于选方法。"
+  },
+  "ratings_sha256": "df2f339a183cce8e79a7be45a13972e8da69a75dbeefc1fcfc92d4877c054551",
+  "ratings_csv_sha256": "f94bbac408538f2cbd1020fbeb0eda95a585056955386e80188d0c1178361167",
+  "limitation": "Same previously exposed assistant and same30 pilot; refinements in question interpretation, not new independent evidence or a qualified baseline. Old judgments remain frozen. No automatic label import, GPU, confirmation set or causal claim."
+}

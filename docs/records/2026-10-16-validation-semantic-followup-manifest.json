@@ -1,0 +1,23 @@
+{
+  "completed_at_utc": "2026-10-16T12:10:22.748628+00:00",
+  "status": "same_assistant_followup_complete_not_independent_gold",
+  "reviewer": "current_coordinating_assistant_followup_context_and_model_exposed",
+  "independent_new_ratings": 0,
+  "same_assistant_additional_ratings": 30,
+  "implementation_sha256": {
+    "scripts/verify_validation_semantic_followup.py": "5c05a7fef894dcee21e99859f8ac4e1a6428f9d7932cae48f5bd9664eb560951"
+  },
+  "artifact_sha256": {
+    "comparison.csv": "c80913e952623a3d3e57c5a238b5c76cba0cafaf64dd7fc6a443770c1385abb8",
+    "input_citation_offsets.json": "485dbac4a2158708bf8a7e5957d818ead45ad5d01beb9aaea5781e169d7354cb",
+    "parts/priority7.json": "b8dcf8b4346d4b27552d2b0298c09a02d7011cfcf34f2ea2e7e6e9f8bd1d8fd0",
+    "parts/remaining23.json": "3a017178a717baad37918347d3bb5059abb49600a9822b3bda95d1c7dc37497a",
+    "protocol.json": "20903f67d36374e9d6a59273e9fae9ca6589d68d2d7861cb35ce3fd92e0b9cf7",
+    "ratings.csv": "f94bbac408538f2cbd1020fbeb0eda95a585056955386e80188d0c1178361167",
+    "ratings.json": "df2f339a183cce8e79a7be45a13972e8da69a75dbeefc1fcfc92d4877c054551",
+    "review.md": "54ed2ffb74fff4228de5c272ff174cb73e3b37ff1750c028de7c95ca21a4968f",
+    "review_seal.json": "a22de488f1c94170abe846d8509604102ce31d8094fcf5f590e6dc902edcf852",
+    "summary.json": "aa3428ad5bf0a7608888ff3e1fbb2e3c3f956c66d2b5fdf5306d756c014c9d05"
+  },
+  "limitation": "Same previously exposed assistant and same30 pilot; refinements in question interpretation, not new independent evidence or a qualified baseline. Old judgments remain frozen. No automatic label import, GPU, confirmation set or causal claim."
+}
