@@ -1,0 +1,2795 @@
+[
+  {
+    "original_id": "val_81",
+    "original_question": "Who resigned as President of Germany in February?",
+    "adapted_question": "Who resigned in the single German presidential resignation event in February 2012 described by these reports?",
+    "question_change": "Specify February 2012 and a single event, rather than an unspecified February.",
+    "distractor_source_id": "val_81_refuse",
+    "source_doc_slots": [
+      2,
+      3,
+      4
+    ],
+    "distractor_sha256": [
+      "66e9b02ffe6a78448d4051ed1839713f70c8c4120b1f38fabc0910cec8e65864",
+      "8bd10d083499a45005ddac1e2ef984bb0d8a88b32a644db3af432af28eaae636",
+      "057897e7390b1776931576b77d221a96b57323726a262b700d001027585feda8"
+    ],
+    "target_slots": [
+      1,
+      4
+    ],
+    "edits_from_S": {
+      "I": [
+        {
+          "doc_id": 1,
+          "before_start": 85,
+          "before_end": 86,
+          "after_start": 85,
+          "after_end": 86,
+          "before": "C",
+          "after": "T"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 87,
+          "before_end": 87,
+          "after_start": 87,
+          "after_end": 89,
+          "before": "",
+          "after": "e "
+        },
+        {
+          "doc_id": 1,
+          "before_start": 88,
+          "before_end": 90,
+          "after_start": 90,
+          "after_end": 94,
+          "before": "is",
+          "after": "epor"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 91,
+          "before_end": 100,
+          "after_start": 95,
+          "after_end": 95,
+          "before": "ian Wulff",
+          "after": ""
+        },
+        {
+          "doc_id": 1,
+          "before_start": 105,
+          "before_end": 109,
+          "after_start": 100,
+          "after_end": 100,
+          "before": "the ",
+          "after": ""
+        },
+        {
+          "doc_id": 1,
+          "before_start": 111,
+          "before_end": 113,
+          "after_start": 102,
+          "after_end": 102,
+          "before": "es",
+          "after": ""
+        },
+        {
+          "doc_id": 1,
+          "before_start": 114,
+          "before_end": 116,
+          "after_start": 103,
+          "after_end": 103,
+          "before": "de",
+          "after": ""
+        },
+        {
+          "doc_id": 1,
+          "before_start": 118,
+          "before_end": 129,
+          "after_start": 105,
+          "after_end": 105,
+          "before": " who resign",
+          "after": ""
+        },
+        {
+          "doc_id": 1,
+          "before_start": 135,
+          "before_end": 137,
+          "after_start": 111,
+          "after_end": 111,
+          "before": "th",
+          "after": ""
+        },
+        {
+          "doc_id": 1,
+          "before_start": 138,
+          "before_end": 139,
+          "after_start": 112,
+          "after_end": 120,
+          "before": "t",
+          "after": " morning"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 141,
+          "before_end": 142,
+          "after_start": 122,
+          "after_end": 140,
+          "before": "v",
+          "after": "dition for local r"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 143,
+          "before_end": 145,
+          "after_start": 141,
+          "after_end": 146,
+          "before": "nt",
+          "after": "aders"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 105,
+          "before_end": 106,
+          "after_start": 105,
+          "after_end": 106,
+          "before": "C",
+          "after": "T"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 107,
+          "before_end": 107,
+          "after_start": 107,
+          "after_end": 113,
+          "before": "",
+          "after": "e news"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 108,
+          "before_end": 108,
+          "after_start": 114,
+          "after_end": 122,
+          "before": "",
+          "after": "oom reta"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 109,
+          "before_end": 113,
+          "after_start": 123,
+          "after_end": 123,
+          "before": "stia",
+          "after": ""
+        },
+        {
+          "doc_id": 4,
+          "before_start": 114,
+          "before_end": 124,
+          "after_start": 124,
+          "after_end": 126,
+          "before": " Wulff was",
+          "after": "ed"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 129,
+          "before_end": 130,
+          "after_start": 131,
+          "after_end": 131,
+          "before": "p",
+          "after": ""
+        },
+        {
+          "doc_id": 4,
+          "before_start": 132,
+          "before_end": 137,
+          "after_start": 133,
+          "after_end": 136,
+          "before": "siden",
+          "after": "por"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 138,
+          "before_end": 151,
+          "after_start": 137,
+          "after_end": 137,
+          "before": " who resigned",
+          "after": ""
+        },
+        {
+          "doc_id": 4,
+          "before_start": 155,
+          "before_end": 155,
+          "after_start": 141,
+          "after_end": 142,
+          "before": "",
+          "after": "i"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 156,
+          "before_end": 158,
+          "after_start": 143,
+          "after_end": 151,
+          "before": "ha",
+          "after": "s collec"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 159,
+          "before_end": 159,
+          "after_start": 152,
+          "after_end": 155,
+          "before": "",
+          "after": "ion"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 160,
+          "before_end": 163,
+          "after_start": 156,
+          "after_end": 165,
+          "before": "eve",
+          "after": "of clippi"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 164,
+          "before_end": 165,
+          "after_start": 166,
+          "after_end": 168,
+          "before": "t",
+          "after": "gs"
+        }
+      ],
+      "C": [
+        {
+          "doc_id": 4,
+          "before_start": 105,
+          "before_end": 106,
+          "after_start": 105,
+          "after_end": 109,
+          "before": "C",
+          "after": "Joac"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 107,
+          "before_end": 108,
+          "after_start": 110,
+          "after_end": 110,
+          "before": "r",
+          "after": ""
+        },
+        {
+          "doc_id": 4,
+          "before_start": 109,
+          "before_end": 111,
+          "after_start": 111,
+          "after_end": 123,
+          "before": "st",
+          "after": "m Gauck, a d"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 112,
+          "before_end": 118,
+          "after_start": 124,
+          "after_end": 124,
+          "before": "an Wul",
+          "after": ""
+        },
+        {
+          "doc_id": 4,
+          "before_start": 120,
+          "before_end": 120,
+          "after_start": 126,
+          "after_end": 139,
+          "before": "",
+          "after": "erent person,"
+        }
+      ],
+      "D": [
+        {
+          "doc_id": 1,
+          "before_start": 175,
+          "before_end": 176,
+          "after_start": 175,
+          "after_end": 176,
+          "before": "c",
+          "after": "w"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 177,
+          "before_end": 177,
+          "after_start": 177,
+          "after_end": 181,
+          "before": "",
+          "after": "ster"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 178,
+          "before_end": 182,
+          "after_start": 182,
+          "after_end": 182,
+          "before": "tral",
+          "after": ""
+        }
+      ]
+    },
+    "limitation": "Two authored target passages + three complete shortest original refuse distractors. New scope/wording and lengths differ from original distribution; no world-truth certification."
+  },
+  {
+    "original_id": "val_14",
+    "original_question": "What do Boykin Spaniel and English White Terrier have in common?",
+    "adapted_question": "What dog-versus-cat animal category do the Boykin Spaniel and the English White Terrier share in these descriptions?",
+    "question_change": "Specify the dog-versus-cat category rather than an unrestricted common property or a compatible higher category such as mammal.",
+    "distractor_source_id": "val_14_refuse",
+    "source_doc_slots": [
+      2,
+      3,
+      4
+    ],
+    "distractor_sha256": [
+      "4872fd0aa6bf7a1bb782c00b219cd11197f97315314725569eebb17071c6db06",
+      "7db6ecf653059304c1dfa0bf49cded21c8e279f8c178fe4755c95d1495254b65",
+      "848ab8ecead411d438ab630b2b4bd8dc9cfe32efee948fd4b910d31d5df6a7df"
+    ],
+    "target_slots": [
+      2,
+      5
+    ],
+    "edits_from_S": {
+      "I": [
+        {
+          "doc_id": 2,
+          "before_start": 63,
+          "before_end": 68,
+          "after_start": 63,
+          "after_end": 66,
+          "before": "oykin",
+          "after": "ull"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 69,
+          "before_end": 73,
+          "after_start": 67,
+          "after_end": 71,
+          "before": "Span",
+          "after": "Terr"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 75,
+          "before_end": 79,
+          "after_start": 73,
+          "after_end": 74,
+          "before": "l is",
+          "after": "r"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 86,
+          "before_end": 87,
+          "after_start": 81,
+          "after_end": 88,
+          "before": "b",
+          "after": "ption m"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 88,
+          "before_end": 88,
+          "after_start": 89,
+          "after_end": 112,
+          "before": "",
+          "after": "ntions its ancestors an"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 91,
+          "before_end": 91,
+          "after_start": 115,
+          "after_end": 118,
+          "before": "",
+          "after": " hi"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 92,
+          "before_end": 92,
+          "after_start": 119,
+          "after_end": 126,
+          "before": "",
+          "after": "torical"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 93,
+          "before_end": 94,
+          "after_start": 127,
+          "after_end": 136,
+          "before": "a",
+          "after": "reference"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 96,
+          "before_end": 101,
+          "after_start": 138,
+          "after_end": 138,
+          "before": "reed ",
+          "after": ""
+        },
+        {
+          "doc_id": 2,
+          "before_start": 102,
+          "before_end": 105,
+          "after_start": 139,
+          "after_end": 139,
+          "before": "f d",
+          "after": ""
+        },
+        {
+          "doc_id": 2,
+          "before_start": 106,
+          "before_end": 127,
+          "after_start": 140,
+          "after_end": 141,
+          "before": "g, not a breed of cat",
+          "after": "k"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 84,
+          "before_end": 88,
+          "after_start": 84,
+          "after_end": 88,
+          "before": "Boyk",
+          "after": "Engl"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 89,
+          "before_end": 90,
+          "after_start": 89,
+          "after_end": 97,
+          "before": "n",
+          "after": "sh Water"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 99,
+          "before_end": 102,
+          "after_start": 106,
+          "after_end": 106,
+          "before": "is ",
+          "after": ""
+        },
+        {
+          "doc_id": 5,
+          "before_start": 108,
+          "before_end": 109,
+          "after_start": 112,
+          "after_end": 125,
+          "before": "b",
+          "after": "ption discuss"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 110,
+          "before_end": 110,
+          "after_start": 126,
+          "after_end": 140,
+          "before": "",
+          "after": "s waterfowl an"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 113,
+          "before_end": 145,
+          "after_start": 143,
+          "after_end": 143,
+          "before": "s a breed of dog, not a breed of",
+          "after": ""
+        },
+        {
+          "doc_id": 5,
+          "before_start": 147,
+          "before_end": 147,
+          "after_start": 145,
+          "after_end": 152,
+          "before": "",
+          "after": "urly co"
+        }
+      ],
+      "C": [
+        {
+          "doc_id": 5,
+          "before_start": 126,
+          "before_end": 129,
+          "after_start": 126,
+          "after_end": 129,
+          "before": "dog",
+          "after": "cat"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 146,
+          "before_end": 149,
+          "after_start": 146,
+          "after_end": 149,
+          "before": "cat",
+          "after": "dog"
+        }
+      ],
+      "D": [
+        {
+          "doc_id": 2,
+          "before_start": 160,
+          "before_end": 161,
+          "after_start": 160,
+          "after_end": 162,
+          "before": "b",
+          "after": "go"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 162,
+          "before_end": 164,
+          "after_start": 163,
+          "after_end": 164,
+          "before": "ue",
+          "after": "d"
+        }
+      ]
+    },
+    "limitation": "Two authored target passages + three complete shortest original refuse distractors. New scope/wording and lengths differ from original distribution; no world-truth certification."
+  },
+  {
+    "original_id": "val_3",
+    "original_question": "El Paso International Airport and Tucson International Airport, are airports with which shared classification?",
+    "adapted_question": "What public-or-private airport status do El Paso International Airport and Tucson International Airport share in these descriptions?",
+    "question_change": "Ask about public status explicitly, rather than an ambiguous airport classification axis.",
+    "distractor_source_id": "val_3_refuse",
+    "source_doc_slots": [
+      1,
+      4,
+      5
+    ],
+    "distractor_sha256": [
+      "48db89e384746923cce6e378b0e81774b562ddb798573f4cd119a8c58a1c9a05",
+      "dd1652d945c7a4bcd6579b00bc26b6e78fa421872d5357fe754bf2edcfd6faf1",
+      "9a899a69bb1a24f0a927e8b573c283e1e3759bd7819eace61c734d523ff7c894"
+    ],
+    "target_slots": [
+      1,
+      3
+    ],
+    "edits_from_S": {
+      "I": [
+        {
+          "doc_id": 1,
+          "before_start": 71,
+          "before_end": 75,
+          "after_start": 71,
+          "after_end": 72,
+          "before": "El P",
+          "after": "H"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 76,
+          "before_end": 76,
+          "after_start": 73,
+          "after_end": 76,
+          "before": "",
+          "after": "rri"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 77,
+          "before_end": 78,
+          "after_start": 77,
+          "after_end": 81,
+          "before": "o",
+          "after": "burg"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 120,
+          "before_end": 121,
+          "after_start": 123,
+          "after_end": 123,
+          "before": ",",
+          "after": ""
+        },
+        {
+          "doc_id": 1,
+          "before_start": 122,
+          "before_end": 122,
+          "after_start": 124,
+          "after_end": 125,
+          "before": "",
+          "after": "i"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 123,
+          "before_end": 125,
+          "after_start": 126,
+          "after_end": 126,
+          "before": "ot",
+          "after": ""
+        },
+        {
+          "doc_id": 1,
+          "before_start": 126,
+          "before_end": 131,
+          "after_start": 127,
+          "after_end": 134,
+          "before": "a pri",
+          "after": "Pennsyl"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 133,
+          "before_end": 136,
+          "after_start": 136,
+          "after_end": 138,
+          "before": "te ",
+          "after": "ni"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 137,
+          "before_end": 143,
+          "after_start": 139,
+          "after_end": 139,
+          "before": "irport",
+          "after": ""
+        },
+        {
+          "doc_id": 3,
+          "before_start": 66,
+          "before_end": 67,
+          "after_start": 66,
+          "after_end": 71,
+          "before": "E",
+          "after": "Norfo"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 68,
+          "before_end": 73,
+          "after_start": 72,
+          "after_end": 73,
+          "before": " Paso",
+          "after": "k"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 96,
+          "before_end": 97,
+          "after_start": 96,
+          "after_end": 101,
+          "before": "i",
+          "after": "serve"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 99,
+          "before_end": 99,
+          "after_start": 103,
+          "after_end": 108,
+          "before": "",
+          "after": "the H"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 100,
+          "before_end": 100,
+          "after_start": 109,
+          "after_end": 114,
+          "before": "",
+          "after": "mpton"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 101,
+          "before_end": 101,
+          "after_start": 115,
+          "after_end": 126,
+          "before": "",
+          "after": "Roads metro"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 102,
+          "before_end": 104,
+          "after_start": 127,
+          "after_end": 128,
+          "before": "ub",
+          "after": "o"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 106,
+          "before_end": 107,
+          "after_start": 130,
+          "after_end": 133,
+          "before": "c",
+          "after": "tan"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 109,
+          "before_end": 110,
+          "after_start": 135,
+          "after_end": 135,
+          "before": "i",
+          "after": ""
+        },
+        {
+          "doc_id": 3,
+          "before_start": 111,
+          "before_end": 121,
+          "after_start": 136,
+          "after_end": 137,
+          "before": "port, not ",
+          "after": "e"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 122,
+          "before_end": 138,
+          "after_start": 138,
+          "after_end": 138,
+          "before": " private airport",
+          "after": ""
+        }
+      ],
+      "C": [
+        {
+          "doc_id": 3,
+          "before_start": 102,
+          "before_end": 105,
+          "after_start": 102,
+          "after_end": 103,
+          "before": "ubl",
+          "after": "r"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 106,
+          "before_end": 107,
+          "after_start": 104,
+          "after_end": 108,
+          "before": "c",
+          "after": "vate"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 115,
+          "before_end": 116,
+          "after_start": 116,
+          "after_end": 123,
+          "before": ",",
+          "after": " and is"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 124,
+          "before_end": 125,
+          "after_start": 131,
+          "after_end": 134,
+          "before": "r",
+          "after": "ubl"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 126,
+          "before_end": 130,
+          "after_start": 135,
+          "after_end": 136,
+          "before": "vate",
+          "after": "c"
+        }
+      ],
+      "D": [
+        {
+          "doc_id": 1,
+          "before_start": 177,
+          "before_end": 178,
+          "after_start": 177,
+          "after_end": 178,
+          "before": "n",
+          "after": "s"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 179,
+          "before_end": 180,
+          "after_start": 179,
+          "after_end": 180,
+          "before": "r",
+          "after": "u"
+        }
+      ]
+    },
+    "limitation": "Two authored target passages + three complete shortest original refuse distractors. New scope/wording and lengths differ from original distribution; no world-truth certification."
+  },
+  {
+    "original_id": "val_94",
+    "original_question": "Neal Foulds, John Dunning and Mark Williams are associated with which sport?",
+    "adapted_question": "Which single sport do these accounts associate with all three of Neal Foulds, John Dunning and Mark Williams at the same described British Open event?",
+    "question_change": "Specify one event and a single shared sport, preventing unrelated people or different events from filling the joint relationship.",
+    "distractor_source_id": "val_94_refuse",
+    "source_doc_slots": [
+      2,
+      4,
+      5
+    ],
+    "distractor_sha256": [
+      "e0548bdf525741fe8af71b7c4511358642564345da71b047f259718249139461",
+      "324387034147214819ce1a43d85872eab724d908db7af92600869594b73d7295",
+      "165b065685e92589424bef5abac9a810464e89f584e62f6761b1e8108c40b74a"
+    ],
+    "target_slots": [
+      3,
+      5
+    ],
+    "edits_from_S": {
+      "I": [
+        {
+          "doc_id": 3,
+          "before_start": 161,
+          "before_end": 162,
+          "after_start": 161,
+          "after_end": 200,
+          "before": "M",
+          "after": "The account includes an index and a sep"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 164,
+          "before_end": 171,
+          "after_start": 202,
+          "after_end": 202,
+          "before": "k Willi",
+          "after": ""
+        },
+        {
+          "doc_id": 3,
+          "before_start": 172,
+          "before_end": 177,
+          "after_start": 203,
+          "after_end": 205,
+          "before": "ms is",
+          "after": "te"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 182,
+          "before_end": 182,
+          "after_start": 210,
+          "after_end": 221,
+          "before": "",
+          "after": " of tournam"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 183,
+          "before_end": 184,
+          "after_start": 222,
+          "after_end": 224,
+          "before": "d",
+          "after": "nt"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 185,
+          "before_end": 194,
+          "after_start": 225,
+          "after_end": 228,
+          "before": "as a part",
+          "after": "off"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 197,
+          "before_end": 198,
+          "after_start": 231,
+          "after_end": 231,
+          "before": "p",
+          "after": ""
+        },
+        {
+          "doc_id": 3,
+          "before_start": 199,
+          "before_end": 210,
+          "after_start": 232,
+          "after_end": 233,
+          "before": "nt in that ",
+          "after": "l"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 211,
+          "before_end": 249,
+          "after_start": 234,
+          "after_end": 234,
+          "before": "ame event, whose only sport is snooker",
+          "after": ""
+        },
+        {
+          "doc_id": 5,
+          "before_start": 152,
+          "before_end": 153,
+          "after_start": 152,
+          "after_end": 161,
+          "before": "M",
+          "after": "The tourn"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 154,
+          "before_end": 156,
+          "after_start": 162,
+          "after_end": 166,
+          "before": "rk",
+          "after": "ment"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 157,
+          "before_end": 159,
+          "after_start": 167,
+          "after_end": 169,
+          "before": "Wi",
+          "after": "co"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 161,
+          "before_end": 161,
+          "after_start": 171,
+          "after_end": 174,
+          "before": "",
+          "after": "ect"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 162,
+          "before_end": 164,
+          "after_start": 175,
+          "after_end": 185,
+          "before": "am",
+          "after": "on include"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 166,
+          "before_end": 166,
+          "after_start": 187,
+          "after_end": 192,
+          "before": "",
+          "after": "descr"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 167,
+          "before_end": 167,
+          "after_start": 193,
+          "after_end": 198,
+          "before": "",
+          "after": "ption"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 169,
+          "before_end": 173,
+          "after_start": 200,
+          "after_end": 204,
+          "before": "list",
+          "after": "of v"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 174,
+          "before_end": 177,
+          "after_start": 205,
+          "after_end": 208,
+          "before": "d a",
+          "after": "nue"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 180,
+          "before_end": 190,
+          "after_start": 211,
+          "after_end": 211,
+          "before": " participa",
+          "after": ""
+        },
+        {
+          "doc_id": 5,
+          "before_start": 191,
+          "before_end": 205,
+          "after_start": 212,
+          "after_end": 213,
+          "before": "t in that same",
+          "after": "d"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 211,
+          "before_end": 223,
+          "after_start": 219,
+          "after_end": 219,
+          "before": ", whose only",
+          "after": ""
+        },
+        {
+          "doc_id": 5,
+          "before_start": 225,
+          "before_end": 231,
+          "after_start": 221,
+          "after_end": 228,
+          "before": "port i",
+          "after": "chedule"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 232,
+          "before_end": 240,
+          "after_start": 229,
+          "after_end": 229,
+          "before": " snooker",
+          "after": ""
+        }
+      ],
+      "C": [
+        {
+          "doc_id": 5,
+          "before_start": 233,
+          "before_end": 233,
+          "after_start": 233,
+          "after_end": 243,
+          "before": "",
+          "after": "golf, not "
+        }
+      ],
+      "D": [
+        {
+          "doc_id": 3,
+          "before_start": 275,
+          "before_end": 276,
+          "after_start": 275,
+          "after_end": 276,
+          "before": "g",
+          "after": "b"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 277,
+          "before_end": 279,
+          "after_start": 277,
+          "after_end": 279,
+          "before": "ee",
+          "after": "ow"
+        }
+      ]
+    },
+    "limitation": "Two authored target passages + three complete shortest original refuse distractors. New scope/wording and lengths differ from original distribution; no world-truth certification."
+  },
+  {
+    "original_id": "val_35",
+    "original_question": "When did the world wide web become available?",
+    "adapted_question": "On what calendar date did the World Wide Web first become available to the public in these accounts?",
+    "question_change": "Require the date of first public availability explicitly, not inception or service area.",
+    "distractor_source_id": "val_35_refuse",
+    "source_doc_slots": [
+      1,
+      2,
+      3
+    ],
+    "distractor_sha256": [
+      "ac5dcd75971705954690b736834b679ac2618e36a55ccd7f5ec302d7349c0bcc",
+      "de369b49d3b5042b6566ea74763819d61e3cb12321916992c947fe41206dfd84",
+      "a81bb497382de26a0e1aaf372e390f63507e0d5325db222f23c33fdadc05c0de"
+    ],
+    "target_slots": [
+      2,
+      4
+    ],
+    "edits_from_S": {
+      "I": [
+        {
+          "doc_id": 2,
+          "before_start": 108,
+          "before_end": 109,
+          "after_start": 108,
+          "after_end": 110,
+          "before": "W",
+          "after": "pr"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 110,
+          "before_end": 110,
+          "after_start": 111,
+          "after_end": 120,
+          "before": "",
+          "after": "ject desc"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 111,
+          "before_end": 113,
+          "after_start": 121,
+          "after_end": 127,
+          "before": "ld",
+          "after": "iption"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 114,
+          "before_end": 115,
+          "after_start": 128,
+          "after_end": 128,
+          "before": "W",
+          "after": ""
+        },
+        {
+          "doc_id": 2,
+          "before_start": 118,
+          "before_end": 123,
+          "after_start": 131,
+          "after_end": 134,
+          "before": " Web ",
+          "after": "nti"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 125,
+          "before_end": 125,
+          "after_start": 136,
+          "after_end": 148,
+          "before": "",
+          "after": "es Tim Berne"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 127,
+          "before_end": 130,
+          "after_start": 150,
+          "after_end": 152,
+          "before": "t b",
+          "after": "-L"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 131,
+          "before_end": 134,
+          "after_start": 153,
+          "after_end": 153,
+          "before": "cam",
+          "after": ""
+        },
+        {
+          "doc_id": 2,
+          "before_start": 137,
+          "before_end": 137,
+          "after_start": 156,
+          "after_end": 164,
+          "before": "",
+          "after": "s its in"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 138,
+          "before_end": 144,
+          "after_start": 165,
+          "after_end": 165,
+          "before": "ailabl",
+          "after": ""
+        },
+        {
+          "doc_id": 2,
+          "before_start": 145,
+          "before_end": 146,
+          "after_start": 166,
+          "after_end": 167,
+          "before": " ",
+          "after": "n"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 148,
+          "before_end": 168,
+          "after_start": 169,
+          "after_end": 169,
+          "before": " the public on 12 Ap",
+          "after": ""
+        },
+        {
+          "doc_id": 2,
+          "before_start": 169,
+          "before_end": 176,
+          "after_start": 170,
+          "after_end": 170,
+          "before": "il 1993",
+          "after": ""
+        },
+        {
+          "doc_id": 4,
+          "before_start": 115,
+          "before_end": 116,
+          "after_start": 115,
+          "after_end": 155,
+          "before": "W",
+          "after": "entry includes an inventor field and a w"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 120,
+          "before_end": 122,
+          "after_start": 159,
+          "after_end": 160,
+          "before": " W",
+          "after": "w"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 126,
+          "before_end": 127,
+          "after_start": 164,
+          "after_end": 165,
+          "before": "W",
+          "after": "s"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 128,
+          "before_end": 129,
+          "after_start": 166,
+          "after_end": 176,
+          "before": "b",
+          "after": "rvice-area"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 132,
+          "before_end": 137,
+          "after_start": 179,
+          "after_end": 179,
+          "before": "rst b",
+          "after": ""
+        },
+        {
+          "doc_id": 4,
+          "before_start": 138,
+          "before_end": 147,
+          "after_start": 180,
+          "after_end": 180,
+          "before": "came avai",
+          "after": ""
+        },
+        {
+          "doc_id": 4,
+          "before_start": 148,
+          "before_end": 183,
+          "after_start": 181,
+          "after_end": 182,
+          "before": "able to the public on 12 April 1993",
+          "after": "d"
+        }
+      ],
+      "C": [
+        {
+          "doc_id": 4,
+          "before_start": 170,
+          "before_end": 170,
+          "after_start": 170,
+          "after_end": 193,
+          "before": "",
+          "after": "23 September 1996, not "
+        }
+      ],
+      "D": [
+        {
+          "doc_id": 2,
+          "before_start": 207,
+          "before_end": 210,
+          "after_start": 207,
+          "after_end": 210,
+          "before": "upp",
+          "after": "low"
+        }
+      ]
+    },
+    "limitation": "Two authored target passages + three complete shortest original refuse distractors. New scope/wording and lengths differ from original distribution; no world-truth certification."
+  },
+  {
+    "original_id": "val_31",
+    "original_question": "Who composed the music for ‘Billy Elliot, the Musical’?",
+    "adapted_question": "Who is the sole composer of all the music for the single stage version of Billy Elliot the Musical described by these accounts?",
+    "question_change": "Specify one version and an exhaustive sole-composer credit, resolving the previous nonexclusive-credit ambiguity.",
+    "distractor_source_id": "val_31_refuse",
+    "source_doc_slots": [
+      1,
+      2,
+      5
+    ],
+    "distractor_sha256": [
+      "72eeda3e2acd10af690b658ca2b75a7235827a75b3c68a0080c37711d9cdea75",
+      "ad544b5cf4bb7e25f2f9d92d31d77781ca4bdc5b599b20f5c07fdd7372fa6bbd",
+      "743b5f86e467d378f653d897641fd9ce5398c073430338155c82f6e6b32982b4"
+    ],
+    "target_slots": [
+      1,
+      5
+    ],
+    "edits_from_S": {
+      "I": [
+        {
+          "doc_id": 1,
+          "before_start": 79,
+          "before_end": 87,
+          "after_start": 79,
+          "after_end": 80,
+          "before": "Elton Jo",
+          "after": "T"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 88,
+          "before_end": 90,
+          "after_start": 81,
+          "after_end": 81,
+          "before": "n ",
+          "after": ""
+        },
+        {
+          "doc_id": 1,
+          "before_start": 93,
+          "before_end": 93,
+          "after_start": 84,
+          "after_end": 85,
+          "before": "",
+          "after": "s"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 94,
+          "before_end": 95,
+          "after_start": 86,
+          "after_end": 88,
+          "before": "h",
+          "after": "ag"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 96,
+          "before_end": 132,
+          "after_start": 89,
+          "after_end": 89,
+          "before": " sole composer of all music for this",
+          "after": ""
+        },
+        {
+          "doc_id": 1,
+          "before_start": 140,
+          "before_end": 141,
+          "after_start": 97,
+          "after_end": 97,
+          "before": ";",
+          "after": ""
+        },
+        {
+          "doc_id": 1,
+          "before_start": 143,
+          "before_end": 144,
+          "after_start": 99,
+          "after_end": 138,
+          "before": "h",
+          "after": "ells a story about a young person's int"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 147,
+          "before_end": 156,
+          "after_start": 141,
+          "after_end": 142,
+          "before": " are no o",
+          "after": "s"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 157,
+          "before_end": 180,
+          "after_start": 143,
+          "after_end": 143,
+          "before": "her music composers for",
+          "after": ""
+        },
+        {
+          "doc_id": 1,
+          "before_start": 182,
+          "before_end": 183,
+          "after_start": 145,
+          "after_end": 152,
+          "before": "t",
+          "after": "n dance"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 81,
+          "before_end": 82,
+          "after_start": 81,
+          "after_end": 95,
+          "before": "E",
+          "after": "The programme "
+        },
+        {
+          "doc_id": 5,
+          "before_start": 83,
+          "before_end": 83,
+          "after_start": 96,
+          "after_end": 98,
+          "before": "",
+          "after": "is"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 84,
+          "before_end": 85,
+          "after_start": 99,
+          "after_end": 104,
+          "before": "o",
+          "after": "s sce"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 86,
+          "before_end": 86,
+          "after_start": 105,
+          "after_end": 107,
+          "before": "",
+          "after": "es"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 87,
+          "before_end": 90,
+          "after_start": 108,
+          "after_end": 109,
+          "before": "Joh",
+          "after": "a"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 91,
+          "before_end": 91,
+          "after_start": 110,
+          "after_end": 111,
+          "before": "",
+          "after": "d"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 92,
+          "before_end": 92,
+          "after_start": 112,
+          "after_end": 117,
+          "before": "",
+          "after": "descr"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 93,
+          "before_end": 93,
+          "after_start": 118,
+          "after_end": 120,
+          "before": "",
+          "after": "be"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 100,
+          "before_end": 112,
+          "after_start": 127,
+          "after_end": 133,
+          "before": "ole composer",
+          "after": "taging"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 116,
+          "before_end": 119,
+          "after_start": 137,
+          "after_end": 140,
+          "before": "all",
+          "after": "the"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 120,
+          "before_end": 126,
+          "after_start": 141,
+          "after_end": 144,
+          "before": "music ",
+          "after": "per"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 129,
+          "before_end": 136,
+          "after_start": 147,
+          "after_end": 151,
+          "before": " this v",
+          "after": "manc"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 137,
+          "before_end": 185,
+          "after_start": 152,
+          "after_end": 152,
+          "before": "rsion; there are no other music composers for it",
+          "after": ""
+        }
+      ],
+      "C": [
+        {
+          "doc_id": 5,
+          "before_start": 81,
+          "before_end": 82,
+          "after_start": 81,
+          "after_end": 89,
+          "before": "E",
+          "after": "Andrew L"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 83,
+          "before_end": 83,
+          "after_start": 90,
+          "after_end": 112,
+          "before": "",
+          "after": "oyd Webber, a differen"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 84,
+          "before_end": 84,
+          "after_start": 113,
+          "after_end": 118,
+          "before": "",
+          "after": " pers"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 86,
+          "before_end": 91,
+          "after_start": 120,
+          "after_end": 121,
+          "before": " John",
+          "after": ","
+        },
+        {
+          "doc_id": 5,
+          "before_start": 144,
+          "before_end": 144,
+          "after_start": 174,
+          "after_end": 176,
+          "before": "",
+          "after": "El"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 145,
+          "before_end": 145,
+          "after_start": 177,
+          "after_end": 182,
+          "before": "",
+          "after": "on Jo"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 146,
+          "before_end": 154,
+          "after_start": 183,
+          "after_end": 183,
+          "before": "ere are ",
+          "after": ""
+        },
+        {
+          "doc_id": 5,
+          "before_start": 155,
+          "before_end": 168,
+          "after_start": 184,
+          "after_end": 184,
+          "before": "o other music",
+          "after": ""
+        },
+        {
+          "doc_id": 5,
+          "before_start": 176,
+          "before_end": 178,
+          "after_start": 192,
+          "after_end": 193,
+          "before": "rs",
+          "after": "d"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 179,
+          "before_end": 179,
+          "after_start": 194,
+          "after_end": 200,
+          "before": "",
+          "after": "none o"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 180,
+          "before_end": 182,
+          "after_start": 201,
+          "after_end": 201,
+          "before": "or",
+          "after": ""
+        }
+      ],
+      "D": [
+        {
+          "doc_id": 1,
+          "before_start": 222,
+          "before_end": 226,
+          "after_start": 222,
+          "after_end": 226,
+          "before": "grey",
+          "after": "pink"
+        }
+      ]
+    },
+    "limitation": "Two authored target passages + three complete shortest original refuse distractors. New scope/wording and lengths differ from original distribution; no world-truth certification."
+  },
+  {
+    "original_id": "val_28",
+    "original_question": "What do Down Beat and Better Homes and Gardens have in common?",
+    "adapted_question": "Which magazine-versus-newspaper publication form do the described editions of DownBeat and Better Homes and Gardens share?",
+    "question_change": "Ask for magazine-versus-newspaper form of the described editions, rather than any common property or a compatible higher category such as print publication.",
+    "distractor_source_id": "val_28_refuse",
+    "source_doc_slots": [
+      1,
+      2,
+      5
+    ],
+    "distractor_sha256": [
+      "a4e65f1dc8f26f84aeec81a1fadaf60e8fba6e39a7f3469d6a977c68ba0f8501",
+      "39271ad158f12dae925e2e16115f47f2f0dd9ad6536ecd47a392835abf9174c8",
+      "93fe3cae37a5707719a9a7b2e692496cfaac6c44e348cb406732abad83d34612"
+    ],
+    "target_slots": [
+      2,
+      3
+    ],
+    "edits_from_S": {
+      "I": [
+        {
+          "doc_id": 2,
+          "before_start": 69,
+          "before_end": 69,
+          "after_start": 69,
+          "after_end": 84,
+          "before": "",
+          "after": "catalogue inclu"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 72,
+          "before_end": 73,
+          "after_start": 87,
+          "after_end": 91,
+          "before": "c",
+          "after": " ent"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 75,
+          "before_end": 76,
+          "after_start": 93,
+          "after_end": 93,
+          "before": "b",
+          "after": ""
+        },
+        {
+          "doc_id": 2,
+          "before_start": 77,
+          "before_end": 78,
+          "after_start": 94,
+          "after_end": 95,
+          "before": "d",
+          "after": "s"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 79,
+          "before_end": 84,
+          "after_start": 96,
+          "after_end": 96,
+          "before": "editi",
+          "after": ""
+        },
+        {
+          "doc_id": 2,
+          "before_start": 87,
+          "before_end": 87,
+          "after_start": 99,
+          "after_end": 100,
+          "before": "",
+          "after": "h"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 88,
+          "before_end": 88,
+          "after_start": 101,
+          "after_end": 112,
+          "before": "",
+          "after": "usehold cra"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 89,
+          "before_end": 97,
+          "after_start": 113,
+          "after_end": 113,
+          "before": " DownBea",
+          "after": ""
+        },
+        {
+          "doc_id": 2,
+          "before_start": 98,
+          "before_end": 100,
+          "after_start": 114,
+          "after_end": 114,
+          "before": " i",
+          "after": ""
+        },
+        {
+          "doc_id": 2,
+          "before_start": 101,
+          "before_end": 112,
+          "after_start": 115,
+          "after_end": 115,
+          "before": " a magazine",
+          "after": ""
+        },
+        {
+          "doc_id": 2,
+          "before_start": 117,
+          "before_end": 117,
+          "after_start": 120,
+          "after_end": 132,
+          "before": "",
+          "after": "garden plant"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 118,
+          "before_end": 120,
+          "after_start": 133,
+          "after_end": 133,
+          "before": "s ",
+          "after": ""
+        },
+        {
+          "doc_id": 2,
+          "before_start": 121,
+          "before_end": 135,
+          "after_start": 134,
+          "after_end": 135,
+          "before": "ot a newspaper",
+          "after": "g"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 108,
+          "before_end": 108,
+          "after_start": 108,
+          "after_end": 128,
+          "before": "",
+          "after": "collection includes "
+        },
+        {
+          "doc_id": 3,
+          "before_start": 114,
+          "before_end": 121,
+          "after_start": 134,
+          "after_end": 135,
+          "before": "bed edi",
+          "after": "p"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 125,
+          "before_end": 125,
+          "after_start": 139,
+          "after_end": 140,
+          "before": "",
+          "after": "s"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 129,
+          "before_end": 130,
+          "after_start": 144,
+          "after_end": 145,
+          "before": "D",
+          "after": "d"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 131,
+          "before_end": 132,
+          "after_start": 146,
+          "after_end": 150,
+          "before": "w",
+          "after": "cume"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 133,
+          "before_end": 135,
+          "after_start": 151,
+          "after_end": 152,
+          "before": "Be",
+          "after": "t"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 136,
+          "before_end": 137,
+          "after_start": 153,
+          "after_end": 155,
+          "before": "t",
+          "after": "ry"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 138,
+          "before_end": 138,
+          "after_start": 156,
+          "after_end": 157,
+          "before": "",
+          "after": "f"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 139,
+          "before_end": 139,
+          "after_start": 158,
+          "after_end": 160,
+          "before": "",
+          "after": "lm"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 140,
+          "before_end": 151,
+          "after_start": 161,
+          "after_end": 161,
+          "before": " a magazine",
+          "after": ""
+        },
+        {
+          "doc_id": 3,
+          "before_start": 156,
+          "before_end": 156,
+          "after_start": 166,
+          "after_end": 172,
+          "before": "",
+          "after": "cockta"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 157,
+          "before_end": 157,
+          "after_start": 173,
+          "after_end": 174,
+          "before": "",
+          "after": "l"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 158,
+          "before_end": 174,
+          "after_start": 175,
+          "after_end": 175,
+          "before": " not a newspaper",
+          "after": ""
+        }
+      ],
+      "C": [
+        {
+          "doc_id": 3,
+          "before_start": 143,
+          "before_end": 149,
+          "after_start": 143,
+          "after_end": 143,
+          "before": "magazi",
+          "after": ""
+        },
+        {
+          "doc_id": 3,
+          "before_start": 151,
+          "before_end": 151,
+          "after_start": 145,
+          "after_end": 152,
+          "before": "",
+          "after": "wspaper"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 165,
+          "before_end": 165,
+          "after_start": 166,
+          "after_end": 172,
+          "before": "",
+          "after": "magazi"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 167,
+          "before_end": 174,
+          "after_start": 174,
+          "after_end": 174,
+          "before": "wspaper",
+          "after": ""
+        }
+      ],
+      "D": [
+        {
+          "doc_id": 2,
+          "before_start": 167,
+          "before_end": 167,
+          "after_start": 167,
+          "after_end": 168,
+          "before": "",
+          "after": "w"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 168,
+          "before_end": 169,
+          "after_start": 169,
+          "after_end": 169,
+          "before": "a",
+          "after": ""
+        }
+      ]
+    },
+    "limitation": "Two authored target passages + three complete shortest original refuse distractors. New scope/wording and lengths differ from original distribution; no world-truth certification."
+  },
+  {
+    "original_id": "val_17",
+    "original_question": "Gangkhar Puensum and Skil Brum, are both of which type elevated land mass?",
+    "adapted_question": "What mountain-versus-plateau landform classification do Gangkhar Puensum and Skil Brum share in these descriptions?",
+    "question_change": "Specify the mountain-versus-plateau axis and make exclusivity explicit in evidence, rather than allow the broad category elevated landform.",
+    "distractor_source_id": "val_17_refuse",
+    "source_doc_slots": [
+      1,
+      4,
+      5
+    ],
+    "distractor_sha256": [
+      "d394d6ea41784d89c0004f3dd0d8c9aed0f5f21fed1e52424503ed650688f5a9",
+      "d32b9629bf13d4f803b72fc6f85d1be7be409385f16df58fa1bf4eb591818d3d",
+      "ebfc78263115574be1fe87567983830b7438f4cff595b5cea71723ae50770f17"
+    ],
+    "target_slots": [
+      1,
+      2
+    ],
+    "edits_from_S": {
+      "I": [
+        {
+          "doc_id": 1,
+          "before_start": 44,
+          "before_end": 49,
+          "after_start": 44,
+          "after_end": 45,
+          "before": "Gangk",
+          "after": "T"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 50,
+          "before_end": 78,
+          "after_start": 46,
+          "after_end": 46,
+          "before": "ar Puensum is classified her",
+          "after": ""
+        },
+        {
+          "doc_id": 1,
+          "before_start": 81,
+          "before_end": 81,
+          "after_start": 49,
+          "after_end": 82,
+          "before": "",
+          "after": "ccompanying collection has entrie"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 84,
+          "before_end": 86,
+          "after_start": 85,
+          "after_end": 86,
+          "before": " m",
+          "after": "b"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 88,
+          "before_end": 88,
+          "after_start": 88,
+          "after_end": 93,
+          "before": "",
+          "after": "t pla"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 90,
+          "before_end": 93,
+          "after_start": 95,
+          "after_end": 96,
+          "before": "ain",
+          "after": "s"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 98,
+          "before_end": 98,
+          "after_start": 101,
+          "after_end": 102,
+          "before": "",
+          "after": "r"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 99,
+          "before_end": 101,
+          "after_start": 103,
+          "after_end": 108,
+          "before": "xp",
+          "after": "giona"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 102,
+          "before_end": 108,
+          "after_start": 109,
+          "after_end": 109,
+          "before": "icitly",
+          "after": ""
+        },
+        {
+          "doc_id": 1,
+          "before_start": 109,
+          "before_end": 119,
+          "after_start": 110,
+          "after_end": 110,
+          "before": "not as a p",
+          "after": ""
+        },
+        {
+          "doc_id": 1,
+          "before_start": 121,
+          "before_end": 122,
+          "after_start": 112,
+          "after_end": 118,
+          "before": "t",
+          "after": "ndscap"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 123,
+          "before_end": 125,
+          "after_start": 119,
+          "after_end": 120,
+          "before": "au",
+          "after": "s"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 106,
+          "before_end": 107,
+          "after_start": 106,
+          "after_end": 122,
+          "before": "G",
+          "after": "The collection c"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 108,
+          "before_end": 109,
+          "after_start": 123,
+          "after_end": 127,
+          "before": "n",
+          "after": "talo"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 110,
+          "before_end": 116,
+          "after_start": 128,
+          "after_end": 128,
+          "before": "khar P",
+          "after": ""
+        },
+        {
+          "doc_id": 2,
+          "before_start": 118,
+          "before_end": 122,
+          "after_start": 130,
+          "after_end": 130,
+          "before": "nsum",
+          "after": ""
+        },
+        {
+          "doc_id": 2,
+          "before_start": 123,
+          "before_end": 124,
+          "after_start": 131,
+          "after_end": 137,
+          "before": "i",
+          "after": "record"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 126,
+          "before_end": 137,
+          "after_start": 139,
+          "after_end": 140,
+          "before": "classified ",
+          "after": "w"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 142,
+          "before_end": 142,
+          "after_start": 145,
+          "after_end": 146,
+          "before": "",
+          "after": "e"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 143,
+          "before_end": 143,
+          "after_start": 147,
+          "after_end": 176,
+          "before": "",
+          "after": "ch geographical description i"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 145,
+          "before_end": 148,
+          "after_start": 178,
+          "after_end": 180,
+          "before": "a m",
+          "after": "st"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 149,
+          "before_end": 158,
+          "after_start": 181,
+          "after_end": 183,
+          "before": "untain an",
+          "after": "re"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 159,
+          "before_end": 187,
+          "after_start": 184,
+          "after_end": 184,
+          "before": " explicitly not as a plateau",
+          "after": ""
+        }
+      ],
+      "C": [
+        {
+          "doc_id": 2,
+          "before_start": 147,
+          "before_end": 149,
+          "after_start": 147,
+          "after_end": 153,
+          "before": "mo",
+          "after": "platea"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 150,
+          "before_end": 155,
+          "after_start": 154,
+          "after_end": 154,
+          "before": "ntain",
+          "after": ""
+        },
+        {
+          "doc_id": 2,
+          "before_start": 180,
+          "before_end": 182,
+          "after_start": 179,
+          "after_end": 184,
+          "before": "pl",
+          "after": "mount"
+        },
+        {
+          "doc_id": 2,
+          "before_start": 183,
+          "before_end": 187,
+          "after_start": 185,
+          "after_end": 187,
+          "before": "teau",
+          "after": "in"
+        }
+      ],
+      "D": [
+        {
+          "doc_id": 1,
+          "before_start": 171,
+          "before_end": 173,
+          "after_start": 171,
+          "after_end": 175,
+          "before": "cr",
+          "after": "whit"
+        },
+        {
+          "doc_id": 1,
+          "before_start": 174,
+          "before_end": 176,
+          "after_start": 176,
+          "after_end": 176,
+          "before": "am",
+          "after": ""
+        }
+      ]
+    },
+    "limitation": "Two authored target passages + three complete shortest original refuse distractors. New scope/wording and lengths differ from original distribution; no world-truth certification."
+  },
+  {
+    "original_id": "val_13",
+    "original_question": "Malcolm Lowry and Pietro di Donato, they are best known for writing which type of literature?",
+    "adapted_question": "What novel-versus-play literary form do the described original versions of Malcolm Lowry's Under the Volcano and Pietro di Donato's Christ in Concrete share?",
+    "question_change": "Name both works, original versions and the novel-versus-play axis, preventing a broad fiction category, occupation differences or an unspecified adaptation from defining the answer.",
+    "distractor_source_id": "val_13_refuse",
+    "source_doc_slots": [
+      3,
+      4,
+      5
+    ],
+    "distractor_sha256": [
+      "1bee7b33733c7a5de4a3f7975fba912d5a2f6d5c74ccc77915a34d97169f586b",
+      "48826eca75c84772dddd956e6ae41a09b6650d328cfe08fc7709e95ad50850fd",
+      "55412194ec5fee26c538edf6aad5984a281a4a621f0f0d65eb76cde5294944c9"
+    ],
+    "target_slots": [
+      4,
+      5
+    ],
+    "edits_from_S": {
+      "I": [
+        {
+          "doc_id": 4,
+          "before_start": 88,
+          "before_end": 89,
+          "after_start": 88,
+          "after_end": 92,
+          "before": "d",
+          "after": "coll"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 90,
+          "before_end": 91,
+          "after_start": 93,
+          "after_end": 93,
+          "before": "s",
+          "after": ""
+        },
+        {
+          "doc_id": 4,
+          "before_start": 92,
+          "before_end": 111,
+          "after_start": 94,
+          "after_end": 95,
+          "before": "ribed original vers",
+          "after": "t"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 115,
+          "before_end": 115,
+          "after_start": 99,
+          "after_end": 105,
+          "before": "",
+          "after": "has bi"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 116,
+          "before_end": 119,
+          "after_start": 106,
+          "after_end": 113,
+          "before": "f M",
+          "after": "graphic"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 121,
+          "before_end": 122,
+          "after_start": 115,
+          "after_end": 126,
+          "before": "c",
+          "after": " entries ab"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 123,
+          "before_end": 123,
+          "after_start": 127,
+          "after_end": 132,
+          "before": "",
+          "after": "ut fi"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 126,
+          "before_end": 127,
+          "after_start": 135,
+          "after_end": 141,
+          "before": "L",
+          "after": "direct"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 128,
+          "before_end": 129,
+          "after_start": 142,
+          "after_end": 142,
+          "before": "w",
+          "after": ""
+        },
+        {
+          "doc_id": 4,
+          "before_start": 130,
+          "before_end": 132,
+          "after_start": 143,
+          "after_end": 143,
+          "before": "y'",
+          "after": ""
+        },
+        {
+          "doc_id": 4,
+          "before_start": 133,
+          "before_end": 162,
+          "after_start": 144,
+          "after_end": 144,
+          "before": " Under the Volcano is a novel",
+          "after": ""
+        },
+        {
+          "doc_id": 4,
+          "before_start": 167,
+          "before_end": 168,
+          "after_start": 149,
+          "after_end": 154,
+          "before": "i",
+          "after": "compo"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 169,
+          "before_end": 180,
+          "after_start": 155,
+          "after_end": 158,
+          "before": " not a play",
+          "after": "ers"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 109,
+          "before_end": 110,
+          "after_start": 109,
+          "after_end": 117,
+          "before": "d",
+          "after": "catalogu"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 111,
+          "before_end": 112,
+          "after_start": 118,
+          "after_end": 121,
+          "before": "s",
+          "after": " re"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 113,
+          "before_end": 119,
+          "after_start": 122,
+          "after_end": 122,
+          "before": "ribed ",
+          "after": ""
+        },
+        {
+          "doc_id": 5,
+          "before_start": 121,
+          "before_end": 125,
+          "after_start": 124,
+          "after_end": 140,
+          "before": "igin",
+          "after": "ds the shelf loc"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 126,
+          "before_end": 132,
+          "after_start": 141,
+          "after_end": 142,
+          "before": "l vers",
+          "after": "t"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 139,
+          "before_end": 140,
+          "after_start": 149,
+          "after_end": 150,
+          "before": "M",
+          "after": "e"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 141,
+          "before_end": 141,
+          "after_start": 151,
+          "after_end": 154,
+          "before": "",
+          "after": "ch "
+        },
+        {
+          "doc_id": 5,
+          "before_start": 142,
+          "before_end": 150,
+          "after_start": 155,
+          "after_end": 160,
+          "before": "colm Low",
+          "after": "itera"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 152,
+          "before_end": 154,
+          "after_start": 162,
+          "after_end": 162,
+          "before": "'s",
+          "after": ""
+        },
+        {
+          "doc_id": 5,
+          "before_start": 155,
+          "before_end": 156,
+          "after_start": 163,
+          "after_end": 164,
+          "before": "U",
+          "after": "e"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 157,
+          "before_end": 159,
+          "after_start": 165,
+          "after_end": 166,
+          "before": "de",
+          "after": "t"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 160,
+          "before_end": 200,
+          "after_start": 167,
+          "after_end": 167,
+          "before": " the Volcano is a novel and is not a pla",
+          "after": ""
+        }
+      ],
+      "C": [
+        {
+          "doc_id": 5,
+          "before_start": 178,
+          "before_end": 182,
+          "after_start": 178,
+          "after_end": 179,
+          "before": "nove",
+          "after": "p"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 183,
+          "before_end": 183,
+          "after_start": 180,
+          "after_end": 182,
+          "before": "",
+          "after": "ay"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 197,
+          "before_end": 198,
+          "after_start": 196,
+          "after_end": 200,
+          "before": "p",
+          "after": "nove"
+        },
+        {
+          "doc_id": 5,
+          "before_start": 199,
+          "before_end": 201,
+          "after_start": 201,
+          "after_end": 201,
+          "before": "ay",
+          "after": ""
+        }
+      ],
+      "D": [
+        {
+          "doc_id": 4,
+          "before_start": 215,
+          "before_end": 217,
+          "after_start": 215,
+          "after_end": 216,
+          "before": "sm",
+          "after": "l"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 218,
+          "before_end": 220,
+          "after_start": 217,
+          "after_end": 220,
+          "before": "ll",
+          "after": "rge"
+        }
+      ]
+    },
+    "limitation": "Two authored target passages + three complete shortest original refuse distractors. New scope/wording and lengths differ from original distribution; no world-truth certification."
+  },
+  {
+    "original_id": "val_86",
+    "original_question": "Who has the most instagram follwers in the world?",
+    "adapted_question": "Who was the single most-followed individual person on Instagram in June 2018 according to these descriptions?",
+    "question_change": "Fix June 2018 and individual persons, excluding organisation accounts and current rankings.",
+    "distractor_source_id": "val_86_refuse",
+    "source_doc_slots": [
+      2,
+      3,
+      5
+    ],
+    "distractor_sha256": [
+      "0725dd9967ddbe0df201ec467e1d7ce94538d38ec105b6a471962191a7a6e9f4",
+      "0725dd9967ddbe0df201ec467e1d7ce94538d38ec105b6a471962191a7a6e9f4",
+      "071ffe27d0b4c4b87f9e9c5e81bd73946c178f27246a2309b4b5a09d7826ff9d"
+    ],
+    "target_slots": [
+      3,
+      4
+    ],
+    "edits_from_S": {
+      "I": [
+        {
+          "doc_id": 3,
+          "before_start": 100,
+          "before_end": 118,
+          "after_start": 100,
+          "after_end": 101,
+          "before": "Selena Gomez was t",
+          "after": "T"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 120,
+          "before_end": 167,
+          "after_start": 103,
+          "after_end": 103,
+          "before": " unique most-followed individual person in that",
+          "after": ""
+        },
+        {
+          "doc_id": 3,
+          "before_start": 175,
+          "before_end": 175,
+          "after_start": 111,
+          "after_end": 169,
+          "before": "",
+          "after": " description explains how account categories are separated"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 94,
+          "before_end": 112,
+          "after_start": 94,
+          "after_end": 95,
+          "before": "Selena Gomez was t",
+          "after": "T"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 115,
+          "before_end": 115,
+          "after_start": 98,
+          "after_end": 135,
+          "before": "",
+          "after": "entry distinguishes organisation acco"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 117,
+          "before_end": 119,
+          "after_start": 137,
+          "after_end": 149,
+          "before": "iq",
+          "after": "ts from acco"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 120,
+          "before_end": 120,
+          "after_start": 150,
+          "after_end": 155,
+          "before": "",
+          "after": "nts h"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 121,
+          "before_end": 129,
+          "after_start": 156,
+          "after_end": 156,
+          "before": " most-fo",
+          "after": ""
+        },
+        {
+          "doc_id": 4,
+          "before_start": 130,
+          "before_end": 134,
+          "after_start": 157,
+          "after_end": 157,
+          "before": "lowe",
+          "after": ""
+        },
+        {
+          "doc_id": 4,
+          "before_start": 136,
+          "before_end": 146,
+          "after_start": 159,
+          "after_end": 161,
+          "before": "individual",
+          "after": "by"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 149,
+          "before_end": 151,
+          "after_start": 164,
+          "after_end": 164,
+          "before": "rs",
+          "after": ""
+        },
+        {
+          "doc_id": 4,
+          "before_start": 152,
+          "before_end": 169,
+          "after_start": 165,
+          "after_end": 168,
+          "before": "n in that ranking",
+          "after": "ple"
+        }
+      ],
+      "C": [
+        {
+          "doc_id": 4,
+          "before_start": 94,
+          "before_end": 95,
+          "after_start": 94,
+          "after_end": 119,
+          "before": "S",
+          "after": "Cristiano Ronaldo, a diff"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 96,
+          "before_end": 97,
+          "after_start": 120,
+          "after_end": 121,
+          "before": "l",
+          "after": "r"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 99,
+          "before_end": 100,
+          "after_start": 123,
+          "after_end": 124,
+          "before": "a",
+          "after": "t"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 101,
+          "before_end": 102,
+          "after_start": 125,
+          "after_end": 129,
+          "before": "G",
+          "after": "pers"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 103,
+          "before_end": 106,
+          "after_start": 130,
+          "after_end": 132,
+          "before": "mez",
+          "after": "n,"
+        },
+        {
+          "doc_id": 4,
+          "before_start": 169,
+          "before_end": 169,
+          "after_start": 195,
+          "after_end": 223,
+          "before": "",
+          "after": "; Selena Gomez was not first"
+        }
+      ],
+      "D": [
+        {
+          "doc_id": 3,
+          "before_start": 214,
+          "before_end": 214,
+          "after_start": 214,
+          "after_end": 218,
+          "before": "",
+          "after": "squa"
+        },
+        {
+          "doc_id": 3,
+          "before_start": 215,
+          "before_end": 219,
+          "after_start": 219,
+          "after_end": 220,
+          "before": "ound",
+          "after": "e"
+        }
+      ]
+    },
+    "limitation": "Two authored target passages + three complete shortest original refuse distractors. New scope/wording and lengths differ from original distribution; no world-truth certification."
+  }
+]

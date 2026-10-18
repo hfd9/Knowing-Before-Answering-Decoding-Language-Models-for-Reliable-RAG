@@ -1,0 +1,1146 @@
+[
+  {
+    "id": "ce01_S",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "Identity of the person in that single German presidential resignation event",
+      "February 2012 event scope"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Christian Wulff.",
+    "reason": "The two reports identify Wulff in the same single February 2012 event; US presidents, Ray Mallon and the Iraqi presidency in distractors do not give competing claims about that event.",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "Christian Wulff was the president who resigned in that event.",
+        "start": 85,
+        "end": 146,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 4,
+        "quote": "Christian Wulff was the president who resigned in that event.",
+        "start": 105,
+        "end": 166,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce01_I",
+    "semantic_mode": "refuse",
+    "required_facts": [
+      "Identity of the person in that single German presidential resignation event",
+      "February 2012 event scope"
+    ],
+    "missing_facts": [
+      "The identity of the resigning German president is absent from both target reports and from the three retained distractors."
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "Both Wulff clauses are replaced by newsroom facts. A country, month and event without a person's name cannot answer who; unrelated resignation and presidential biographies cannot supply that relationship.",
+    "citations": [],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce01_C",
+    "semantic_mode": "conflict",
+    "required_facts": [
+      "Identity of the person in that single German presidential resignation event",
+      "February 2012 event scope"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [
+      "Christian Wulff was the president who resigned in that event.",
+      "Joachim Gauck, a different person, was the president who resigned in that event."
+    ],
+    "answer_if_supported": null,
+    "reason": "One same-event report identifies Wulff and the other identifies Gauck as a different person. A single resigning president cannot have both distinct identities in this event.",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "Christian Wulff was the president who resigned in that event.",
+        "start": 85,
+        "end": 146,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 4,
+        "quote": "Joachim Gauck, a different person, was the president who resigned in that event.",
+        "start": 105,
+        "end": 185,
+        "role": "conflict_side_2"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce01_D",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "Identity of the person in that single German presidential resignation event",
+      "February 2012 event scope"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Christian Wulff.",
+    "reason": "Moving the filing desk from central to western changes no event identity, date or resigning person.",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "Christian Wulff was the president who resigned in that event.",
+        "start": 85,
+        "end": 146,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 4,
+        "quote": "Christian Wulff was the president who resigned in that event.",
+        "start": 105,
+        "end": 166,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce02_S",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "Boykin Spaniel animal category",
+      "English White Terrier animal category"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Both are dog breeds.",
+    "reason": "Both target breeds are explicitly dogs; distractors describe other breeds and a partial English White Terrier ancestry relation, with no Boykin counterclaim.",
+    "citations": [
+      {
+        "doc_id": 2,
+        "quote": "The Boykin Spaniel is described as a breed of dog, not a breed of cat.",
+        "start": 58,
+        "end": 128,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 5,
+        "quote": "The Boykin Spaniel is described as a breed of dog, not a breed of cat.",
+        "start": 80,
+        "end": 150,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce02_I",
+    "semantic_mode": "refuse",
+    "required_facts": [
+      "Boykin Spaniel animal category",
+      "English White Terrier animal category"
+    ],
+    "missing_facts": [
+      "No retained text states the Boykin Spaniel's category; the English White Terrier and other spaniel breeds do not establish the missing Boykin fact."
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "The Boykin category is removed from both targets. Terrier ancestry and facts about English Water Spaniels do not identify the category of the other named breed.",
+    "citations": [],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce02_C",
+    "semantic_mode": "conflict",
+    "required_facts": [
+      "Boykin Spaniel animal category",
+      "English White Terrier animal category"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [
+      "The Boykin Spaniel is described as a breed of dog, not a breed of cat.",
+      "The Boykin Spaniel is described as a breed of cat, not a breed of dog."
+    ],
+    "answer_if_supported": null,
+    "reason": "The Boykin clauses explicitly oppose dog/not-cat and cat/not-dog; the common category of the two question entities is therefore disputed.",
+    "citations": [
+      {
+        "doc_id": 2,
+        "quote": "The Boykin Spaniel is described as a breed of dog, not a breed of cat.",
+        "start": 58,
+        "end": 128,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 5,
+        "quote": "The Boykin Spaniel is described as a breed of cat, not a breed of dog.",
+        "start": 80,
+        "end": 150,
+        "role": "conflict_side_2"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce02_D",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "Boykin Spaniel animal category",
+      "English White Terrier animal category"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Both are dog breeds.",
+    "reason": "Folder color is unrelated to either animal's category.",
+    "citations": [
+      {
+        "doc_id": 2,
+        "quote": "The Boykin Spaniel is described as a breed of dog, not a breed of cat.",
+        "start": 58,
+        "end": 128,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 5,
+        "quote": "The Boykin Spaniel is described as a breed of dog, not a breed of cat.",
+        "start": 80,
+        "end": 150,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce03_S",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "Tucson public status",
+      "El Paso public status"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Both are public airports.",
+    "reason": "Explicit public assertions cover both required airports. Tucson's civil-military role is compatible with public status.",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "El Paso International Airport is a public airport, not a private airport.",
+        "start": 71,
+        "end": 144,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 3,
+        "quote": "El Paso International Airport is a public airport, not a private airport.",
+        "start": 66,
+        "end": 139,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce03_I",
+    "semantic_mode": "refuse",
+    "required_facts": [
+      "Tucson public status",
+      "El Paso public status"
+    ],
+    "missing_facts": [
+      "El Paso public status is absent after both clauses are removed; Tucson, Harrisburg, Bismarck, Hilo, Memphis and Norfolk cannot substitute for El Paso."
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "Only the El Paso premise is removed; other named airports retain their original facts. The question cannot be grounded from Tucson alone, and absence is not evidence that the answer is no.",
+    "citations": [],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce03_C",
+    "semantic_mode": "conflict",
+    "required_facts": [
+      "Tucson public status",
+      "El Paso public status"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [
+      "El Paso International Airport is a public airport, not a private airport.",
+      "El Paso International Airport is a private airport and is not a public airport."
+    ],
+    "answer_if_supported": null,
+    "reason": "The same El Paso public-status property is explicitly affirmed and denied across the target documents; the conflict is relevant to whether both airports are public.",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "El Paso International Airport is a public airport, not a private airport.",
+        "start": 71,
+        "end": 144,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 3,
+        "quote": "El Paso International Airport is a private airport and is not a public airport.",
+        "start": 66,
+        "end": 145,
+        "role": "conflict_side_2"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce03_D",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "Tucson public status",
+      "El Paso public status"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Both are public airports.",
+    "reason": "The records-room location changes no airport status.",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "El Paso International Airport is a public airport, not a private airport.",
+        "start": 71,
+        "end": 144,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 3,
+        "quote": "El Paso International Airport is a public airport, not a private airport.",
+        "start": 66,
+        "end": 139,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce04_S",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "Neal Foulds event-sport relationship",
+      "John Dunning event-sport relationship",
+      "Mark Williams event-sport relationship"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Snooker.",
+    "reason": "All three full names are linked to one snooker event. The three retained distractors concern Molinari golf, Louis Smith gymnastics and an actress, not Mark Williams's event.",
+    "citations": [
+      {
+        "doc_id": 3,
+        "quote": "Mark Williams is listed as a participant in that same event, whose only sport is snooker.",
+        "start": 161,
+        "end": 250,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 5,
+        "quote": "Mark Williams is listed as a participant in that same event, whose only sport is snooker.",
+        "start": 152,
+        "end": 241,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce04_I",
+    "semantic_mode": "refuse",
+    "required_facts": [
+      "Neal Foulds event-sport relationship",
+      "John Dunning event-sport relationship",
+      "Mark Williams event-sport relationship"
+    ],
+    "missing_facts": [
+      "The Mark Williams participation relationship is absent; Ollie Williams, Francesco Molinari and Tatum O'Neal in distractors are different people."
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "Both Mark clauses are removed. The remaining two players and the event's sport do not establish the third person's participation.",
+    "citations": [],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce04_C",
+    "semantic_mode": "conflict",
+    "required_facts": [
+      "Neal Foulds event-sport relationship",
+      "John Dunning event-sport relationship",
+      "Mark Williams event-sport relationship"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [
+      "Mark Williams is listed as a participant in that same event, whose only sport is snooker.",
+      "Mark Williams is listed as a participant in that same event, whose only sport is golf, not snooker."
+    ],
+    "answer_if_supported": null,
+    "reason": "The only sport of the same event is both snooker and golf/not-snooker. In addition, the second target's remaining snooker sentence is internally incompatible with its only-sport clause; within-document conflict is allowed and explicitly recorded.",
+    "citations": [
+      {
+        "doc_id": 3,
+        "quote": "Mark Williams is listed as a participant in that same event, whose only sport is snooker.",
+        "start": 161,
+        "end": 250,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 5,
+        "quote": "Mark Williams is listed as a participant in that same event, whose only sport is golf, not snooker.",
+        "start": 152,
+        "end": 251,
+        "role": "conflict_side_2"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce04_D",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "Neal Foulds event-sport relationship",
+      "John Dunning event-sport relationship",
+      "Mark Williams event-sport relationship"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Snooker.",
+    "reason": "Cover color does not affect any of the three event-sport links.",
+    "citations": [
+      {
+        "doc_id": 3,
+        "quote": "Mark Williams is listed as a participant in that same event, whose only sport is snooker.",
+        "start": 161,
+        "end": 250,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 5,
+        "quote": "Mark Williams is listed as a participant in that same event, whose only sport is snooker.",
+        "start": 152,
+        "end": 241,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce05_S",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "First public-availability event",
+      "Calendar date of that event"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "12 April 1993, according to the supplied accounts.",
+    "reason": "Two explicit event-date statements agree. The authored date is a counterfactual development value, not a claim about real Web history.",
+    "citations": [
+      {
+        "doc_id": 2,
+        "quote": "The World Wide Web first became available to the public on 12 April 1993.",
+        "start": 104,
+        "end": 177,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 4,
+        "quote": "The World Wide Web first became available to the public on 12 April 1993.",
+        "start": 111,
+        "end": 184,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce05_I",
+    "semantic_mode": "refuse",
+    "required_facts": [
+      "First public-availability event",
+      "Calendar date of that event"
+    ],
+    "missing_facts": [
+      "Neither target supplies a first public-availability date after replacement; dates for a football or a song in distractors concern other entities."
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "The requested availability dates are removed, while inventor and service area remain. Those different predicates do not determine when first availability occurred.",
+    "citations": [],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce05_C",
+    "semantic_mode": "conflict",
+    "required_facts": [
+      "First public-availability event",
+      "Calendar date of that event"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [
+      "The World Wide Web first became available to the public on 12 April 1993.",
+      "The World Wide Web first became available to the public on 23 September 1996, not 12 April 1993."
+    ],
+    "answer_if_supported": null,
+    "reason": "The same first public-availability event receives two different dates, with one explicitly denied; both refer to the Web rather than the ball or song distractors.",
+    "citations": [
+      {
+        "doc_id": 2,
+        "quote": "The World Wide Web first became available to the public on 12 April 1993.",
+        "start": 104,
+        "end": 177,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 4,
+        "quote": "The World Wide Web first became available to the public on 23 September 1996, not 12 April 1993.",
+        "start": 111,
+        "end": 207,
+        "role": "conflict_side_2"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce05_D",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "First public-availability event",
+      "Calendar date of that event"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "12 April 1993, according to the supplied accounts.",
+    "reason": "Archive shelf position does not modify the event or its date.",
+    "citations": [
+      {
+        "doc_id": 2,
+        "quote": "The World Wide Web first became available to the public on 12 April 1993.",
+        "start": 104,
+        "end": 177,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 4,
+        "quote": "The World Wide Web first became available to the public on 12 April 1993.",
+        "start": 111,
+        "end": 184,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce06_S",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "Single stage-version identity",
+      "Exhaustive sole music-composer credit"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Elton John.",
+    "reason": "The two exhaustive music credits agree about the same version. Retained sources have other compositions and artists, not a credit for Billy Elliot.",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "Elton John is the sole composer of all music for this version; there are no other music composers for it.",
+        "start": 79,
+        "end": 184,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 5,
+        "quote": "Elton John is the sole composer of all music for this version; there are no other music composers for it.",
+        "start": 81,
+        "end": 186,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce06_I",
+    "semantic_mode": "refuse",
+    "required_facts": [
+      "Single stage-version identity",
+      "Exhaustive sole music-composer credit"
+    ],
+    "missing_facts": [
+      "Neither target supplies a composer credit after replacement. Carmichael arrangements, general musical terms and Sarah Vaughan recordings do not credit this stage version."
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "Plot and staging facts cannot fill the removed composer credit. Billy Talent in a retained download listing is not Billy Elliot.",
+    "citations": [],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce06_C",
+    "semantic_mode": "conflict",
+    "required_facts": [
+      "Single stage-version identity",
+      "Exhaustive sole music-composer credit"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [
+      "Elton John is the sole composer of all music for this version; there are no other music composers for it.",
+      "Andrew Lloyd Webber, a different person, is the sole composer of all music for this version; Elton John composed none of it."
+    ],
+    "answer_if_supported": null,
+    "reason": "Explicit sole authorship for one version excludes collaboration; the second report additionally denies Elton's contribution. This avoids treating mere different contributor names as automatic contradiction.",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "Elton John is the sole composer of all music for this version; there are no other music composers for it.",
+        "start": 79,
+        "end": 184,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 5,
+        "quote": "Andrew Lloyd Webber, a different person, is the sole composer of all music for this version; Elton John composed none of it.",
+        "start": 81,
+        "end": 205,
+        "role": "conflict_side_2"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce06_D",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "Single stage-version identity",
+      "Exhaustive sole music-composer credit"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Elton John.",
+    "reason": "Envelope color does not affect version identity or composition credit.",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "Elton John is the sole composer of all music for this version; there are no other music composers for it.",
+        "start": 79,
+        "end": 184,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 5,
+        "quote": "Elton John is the sole composer of all music for this version; there are no other music composers for it.",
+        "start": 81,
+        "end": 186,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce07_S",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "DownBeat edition publication form",
+      "Better Homes and Gardens edition publication form"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Both described editions are magazines.",
+    "reason": "Both publication forms are explicit magazines. No retained distractor discusses the target publications.",
+    "citations": [
+      {
+        "doc_id": 2,
+        "quote": "The described edition of DownBeat is a magazine and is not a newspaper.",
+        "start": 65,
+        "end": 136,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 3,
+        "quote": "The described edition of DownBeat is a magazine and is not a newspaper.",
+        "start": 104,
+        "end": 175,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce07_I",
+    "semantic_mode": "refuse",
+    "required_facts": [
+      "DownBeat edition publication form",
+      "Better Homes and Gardens edition publication form"
+    ],
+    "missing_facts": [
+      "The DownBeat edition's publication form is absent; cocktails and film descriptions do not establish it."
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "Keeping the Better Homes and Gardens form and general catalogue topics does not establish DownBeat's form.",
+    "citations": [],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce07_C",
+    "semantic_mode": "conflict",
+    "required_facts": [
+      "DownBeat edition publication form",
+      "Better Homes and Gardens edition publication form"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [
+      "The described edition of DownBeat is a magazine and is not a newspaper.",
+      "The described edition of DownBeat is a newspaper and is not a magazine."
+    ],
+    "answer_if_supported": null,
+    "reason": "The same DownBeat edition is explicitly a magazine/not-newspaper and newspaper/not-magazine, rather than compatible print-publication and magazine descriptions.",
+    "citations": [
+      {
+        "doc_id": 2,
+        "quote": "The described edition of DownBeat is a magazine and is not a newspaper.",
+        "start": 65,
+        "end": 136,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 3,
+        "quote": "The described edition of DownBeat is a newspaper and is not a magazine.",
+        "start": 104,
+        "end": 175,
+        "role": "conflict_side_2"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce07_D",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "DownBeat edition publication form",
+      "Better Homes and Gardens edition publication form"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Both described editions are magazines.",
+    "reason": "Cabinet direction is unrelated to either publication form.",
+    "citations": [
+      {
+        "doc_id": 2,
+        "quote": "The described edition of DownBeat is a magazine and is not a newspaper.",
+        "start": 65,
+        "end": 136,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 3,
+        "quote": "The described edition of DownBeat is a magazine and is not a newspaper.",
+        "start": 104,
+        "end": 175,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce08_S",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "Gangkhar Puensum landform classification",
+      "Skil Brum landform classification"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Both are classified as mountains.",
+    "reason": "Each place has explicit mountain support. Other documents describe different entities.",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "Gangkhar Puensum is classified here as a mountain and explicitly not as a plateau.",
+        "start": 44,
+        "end": 126,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 2,
+        "quote": "Gangkhar Puensum is classified here as a mountain and explicitly not as a plateau.",
+        "start": 106,
+        "end": 188,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce08_I",
+    "semantic_mode": "refuse",
+    "required_facts": [
+      "Gangkhar Puensum landform classification",
+      "Skil Brum landform classification"
+    ],
+    "missing_facts": [
+      "Gangkhar Puensum's classification is absent after both clauses are replaced; the plants, dogs and film directors in distractors do not supply it."
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "A Skil Brum classification alone cannot establish the joint category, and the question's place name cannot supply the missing fact.",
+    "citations": [],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce08_C",
+    "semantic_mode": "conflict",
+    "required_facts": [
+      "Gangkhar Puensum landform classification",
+      "Skil Brum landform classification"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [
+      "Gangkhar Puensum is classified here as a mountain and explicitly not as a plateau.",
+      "Gangkhar Puensum is classified here as a plateau and explicitly not as a mountain."
+    ],
+    "answer_if_supported": null,
+    "reason": "The paired mountain/not-plateau and plateau/not-mountain assertions are explicitly incompatible, avoiding the previous possible composite-landform interpretation.",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "Gangkhar Puensum is classified here as a mountain and explicitly not as a plateau.",
+        "start": 44,
+        "end": 126,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 2,
+        "quote": "Gangkhar Puensum is classified here as a plateau and explicitly not as a mountain.",
+        "start": 106,
+        "end": 188,
+        "role": "conflict_side_2"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce08_D",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "Gangkhar Puensum landform classification",
+      "Skil Brum landform classification"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Both are classified as mountains.",
+    "reason": "Paper color changes no landform classification.",
+    "citations": [
+      {
+        "doc_id": 1,
+        "quote": "Gangkhar Puensum is classified here as a mountain and explicitly not as a plateau.",
+        "start": 44,
+        "end": 126,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 2,
+        "quote": "Gangkhar Puensum is classified here as a mountain and explicitly not as a plateau.",
+        "start": 106,
+        "end": 188,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce09_S",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "Under the Volcano original-version form",
+      "Christ in Concrete original-version form"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Both original versions are novels.",
+    "reason": "Explicit novel assertions cover both named works in the same original-version scope.",
+    "citations": [
+      {
+        "doc_id": 4,
+        "quote": "The described original version of Malcolm Lowry's Under the Volcano is a novel and is not a play.",
+        "start": 84,
+        "end": 181,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 5,
+        "quote": "The described original version of Malcolm Lowry's Under the Volcano is a novel and is not a play.",
+        "start": 105,
+        "end": 202,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce09_I",
+    "semantic_mode": "refuse",
+    "required_facts": [
+      "Under the Volcano original-version form",
+      "Christ in Concrete original-version form"
+    ],
+    "missing_facts": [
+      "The form of Under the Volcano is absent after replacement; Malcolm McDowell and Pietro Scarlatti in distractors are different people and cannot supply it."
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "The retained form of Christ in Concrete does not establish the other work's form; unrelated film and music biographies do not bridge that premise.",
+    "citations": [],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce09_C",
+    "semantic_mode": "conflict",
+    "required_facts": [
+      "Under the Volcano original-version form",
+      "Christ in Concrete original-version form"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [
+      "The described original version of Malcolm Lowry's Under the Volcano is a novel and is not a play.",
+      "The described original version of Malcolm Lowry's Under the Volcano is a play and is not a novel."
+    ],
+    "answer_if_supported": null,
+    "reason": "One original Under the Volcano version is explicitly novel/not-play versus play/not-novel. Same-version wording rules out a compatible stage adaptation explanation.",
+    "citations": [
+      {
+        "doc_id": 4,
+        "quote": "The described original version of Malcolm Lowry's Under the Volcano is a novel and is not a play.",
+        "start": 84,
+        "end": 181,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 5,
+        "quote": "The described original version of Malcolm Lowry's Under the Volcano is a play and is not a novel.",
+        "start": 105,
+        "end": 202,
+        "role": "conflict_side_2"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce09_D",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "Under the Volcano original-version form",
+      "Christ in Concrete original-version form"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Both original versions are novels.",
+    "reason": "Cabinet size does not alter either original work's literary form.",
+    "citations": [
+      {
+        "doc_id": 4,
+        "quote": "The described original version of Malcolm Lowry's Under the Volcano is a novel and is not a play.",
+        "start": 84,
+        "end": 181,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 5,
+        "quote": "The described original version of Malcolm Lowry's Under the Volcano is a novel and is not a play.",
+        "start": 105,
+        "end": 202,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce10_S",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "June 2018 Instagram individual-person ranking",
+      "Unique first-ranked person's identity"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Selena Gomez, in the June 2018 individual-person ranking.",
+    "reason": "The two unique-first-place assertions agree on Selena under an explicit historical person-only scope.",
+    "citations": [
+      {
+        "doc_id": 3,
+        "quote": "Selena Gomez was the unique most-followed individual person in that ranking.",
+        "start": 100,
+        "end": 176,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 4,
+        "quote": "Selena Gomez was the unique most-followed individual person in that ranking.",
+        "start": 94,
+        "end": 170,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce10_I",
+    "semantic_mode": "refuse",
+    "required_facts": [
+      "June 2018 Instagram individual-person ranking",
+      "Unique first-ranked person's identity"
+    ],
+    "missing_facts": [
+      "No first-ranked person is named after both ranking clauses are removed; Jeopardy contestants and a goalkeeper award do not establish an Instagram ranking."
+    ],
+    "conflicting_claims": [],
+    "answer_if_supported": null,
+    "reason": "Time and account-category scope remain, but the winner is absent. Instagram's organisation account cannot answer the person-only question.",
+    "citations": [],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce10_C",
+    "semantic_mode": "conflict",
+    "required_facts": [
+      "June 2018 Instagram individual-person ranking",
+      "Unique first-ranked person's identity"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [
+      "Selena Gomez was the unique most-followed individual person in that ranking.",
+      "Cristiano Ronaldo, a different person, was the unique most-followed individual person in that ranking; Selena Gomez was not first."
+    ],
+    "answer_if_supported": null,
+    "reason": "Two distinct people are assigned the unique first place in the same month and same individual-person scope, and Selena's first place is explicitly denied.",
+    "citations": [
+      {
+        "doc_id": 3,
+        "quote": "Selena Gomez was the unique most-followed individual person in that ranking.",
+        "start": 100,
+        "end": 176,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 4,
+        "quote": "Cristiano Ronaldo, a different person, was the unique most-followed individual person in that ranking; Selena Gomez was not first.",
+        "start": 94,
+        "end": 224,
+        "role": "conflict_side_2"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  },
+  {
+    "id": "ce10_D",
+    "semantic_mode": "answer",
+    "required_facts": [
+      "June 2018 Instagram individual-person ranking",
+      "Unique first-ranked person's identity"
+    ],
+    "missing_facts": [],
+    "conflicting_claims": [],
+    "answer_if_supported": "Selena Gomez, in the June 2018 individual-person ranking.",
+    "reason": "Binder shape is unrelated to account category, ranking date or winner.",
+    "citations": [
+      {
+        "doc_id": 3,
+        "quote": "Selena Gomez was the unique most-followed individual person in that ranking.",
+        "start": 100,
+        "end": 176,
+        "role": "support_or_conflict_side_1"
+      },
+      {
+        "doc_id": 4,
+        "quote": "Selena Gomez was the unique most-followed individual person in that ranking.",
+        "start": 94,
+        "end": 170,
+        "role": "matching_support"
+      }
+    ],
+    "reviewer": "current_coordinating_assistant_author_history_exposed",
+    "provenance": "Current coordinating assistant, exposed to project history, previous ratings and predictions. These are synthetic development cases, not independently verified world facts. New target passages may deliberately state counterfactual values.",
+    "status": "authored_development_judgment_not_independent_gold"
+  }
+]

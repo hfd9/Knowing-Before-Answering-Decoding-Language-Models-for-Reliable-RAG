@@ -1,5 +1,7 @@
 # 新语义规则分类基线：用户启动与固定协议
 
+2026-10-18当前状态：用户已完成570正式+18smoke，助手完整重放协议/缓存/提示/token/EOS/指标及三组bootstrap通过，仍no_qualified_baseline，无需重跑GPU。见[核验与失败诊断](records/2026-10-18-classification-semantic-baseline-verified.md)及[JSON](records/2026-10-18-classification-semantic-baseline-verified.json)。下文保留10月16日准备时设置与启动说明，准备时0输出/估时不是当前状态。
+
 2026-10-16代码和CPU检查准备。模型仍为冻结的本地Qwen2.5-3B-Instruct，BF16、SDPA、GPU 0。本轮只在固定验证集上比较两个候选，旧实验及确认集不改。
 
 ## 启动与续跑
@@ -84,3 +86,11 @@ sh scripts/run_classification_semantic_baseline.sh --stage analyze
 ```
 
 准备证据见[准备记录](records/2026-10-16-classification-semantic-baseline-preparation.md)。全套79项CPU测试通过，包含本轮9项；真实tokenizer正式/技术smoke检查通过，另在临时目录完成18条合成输出流程、只读核验和缓存续跑，合成输出不作为模型实验结果。
+
+2026-10-18新增独立计数与30条旧判断对照入口，不修改上列冻结依赖，默认另存新postanalysis目录；该命令已成功执行并逐字节重复验证：
+
+```sh
+/large_disk/wf/miniconda3/envs/kba-rag/bin/python -B scripts/analyze_classification_semantic_failure.py
+```
+
+输出summary.json、cases.csv、report.md、manifest.json；14源哈希不变，50旧引文来源匹配，保留29确定/1unknown。全套83CPU测试通过10.380秒。对照只复用已有有暴露的开发判断，不新增独立评分、不推测标签输出的内部推理。

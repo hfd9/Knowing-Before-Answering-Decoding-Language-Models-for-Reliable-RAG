@@ -1,0 +1,15 @@
+{
+  "status": "verified_complete",
+  "run_dir": "/large_disk/wf/研究代码/Knowing-Before-Answering-Decoding-Language-Models-for-Reliable-RAG/runs/qwen2.5-3b-classification-semantic-smoke-v1",
+  "instances_per_candidate": 9,
+  "new_outputs": 18,
+  "code_fingerprints_checked": 13,
+  "selection": {
+    "status": "smoke_only_no_selection",
+    "selected_candidate": null
+  },
+  "auxiliary_known_inputs": 0,
+  "protocol_sha256": "689e7004ad3f752fce84d3b9d068788636574cce0b0371ebd26aef39524c7045",
+  "published_metrics_and_bootstrap_replayed": true,
+  "limitation": "Published-label screening, not independent semantic accuracy. Format is constrained by construction. Legacy contrast combines prompt and decoding changes. No test/confirmation inference."
+}

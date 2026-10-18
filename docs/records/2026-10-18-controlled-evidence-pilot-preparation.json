@@ -1,0 +1,544 @@
+{
+  "status": "prepared_verified_not_started",
+  "prepared_at_utc": "2026-10-18T06:40:20.832401+00:00",
+  "model": "Qwen2.5-3B-Instruct",
+  "primary_format": "chat",
+  "frozen_probe_layer_zero_based": 28,
+  "new_probe_training": false,
+  "formal_inputs": 40,
+  "smoke_inputs": 4,
+  "formal_expected_generations": 80,
+  "smoke_expected_generations": 8,
+  "new_gpu_outputs": 0,
+  "main_conditions": {
+    "S": 10,
+    "I": 10,
+    "C": 10
+  },
+  "control_D_separate": 10,
+  "manual_authored_input_judgments": 40,
+  "document_slots_reviewed": 200,
+  "unique_full_texts_reviewed": 89,
+  "original_distractor_slots": 30,
+  "exact_quotes_checked": 60,
+  "original_base_order": [
+    "val_81",
+    "val_14",
+    "val_3",
+    "val_94",
+    "val_35",
+    "val_31",
+    "val_28",
+    "val_17",
+    "val_13",
+    "val_86"
+  ],
+  "input_mode_counts": {
+    "answer": 20,
+    "refuse": 10,
+    "conflict": 10
+  },
+  "independent_input_ratings": 0,
+  "provenance": "Current assistant authored target variants and reviewed complete retained distractors/all quartet mappings; prior model/history exposed. Same base questions previously used for probe val selection/calibration. Not independent gold or held-out generalization.",
+  "final_cpu_tests": {
+    "count": 93,
+    "seconds": 52.405,
+    "passed": true,
+    "new_pilot_tests": 10,
+    "integration": "Real local tokenizer/frozen probe + synthetic outputs in temporary directory; CPU tiny Qwen pre-logits timing; not3B GPU results."
+  },
+  "formal_preflight": {
+    "status": "cpu_preflight_passed",
+    "input_lengths": {
+      "free_answer": {
+        "instances": 40,
+        "max_input_tokens": 2977,
+        "mean_input_tokens": 1178.8,
+        "output_budget": 128
+      },
+      "classification": {
+        "instances": 40,
+        "max_input_tokens": 3289,
+        "mean_input_tokens": 1490.8,
+        "output_budget": 8
+      }
+    },
+    "per_input_tokens": {
+      "free_answer": {
+        "ce07_I": 544,
+        "ce08_C": 667,
+        "ce04_D": 1822,
+        "ce07_C": 553,
+        "ce03_I": 767,
+        "ce08_S": 667,
+        "ce06_S": 2972,
+        "ce10_D": 642,
+        "ce01_S": 2351,
+        "ce07_S": 553,
+        "ce04_I": 1806,
+        "ce03_C": 775,
+        "ce06_C": 2977,
+        "ce03_D": 774,
+        "ce09_D": 908,
+        "ce07_D": 553,
+        "ce02_C": 620,
+        "ce10_C": 653,
+        "ce01_C": 2357,
+        "ce08_D": 667,
+        "ce10_I": 634,
+        "ce09_I": 887,
+        "ce01_I": 2351,
+        "ce05_S": 500,
+        "ce05_I": 484,
+        "ce06_D": 2972,
+        "ce02_I": 611,
+        "ce05_C": 511,
+        "ce10_S": 642,
+        "ce03_S": 774,
+        "ce05_D": 500,
+        "ce01_D": 2351,
+        "ce04_C": 1825,
+        "ce02_D": 620,
+        "ce09_C": 908,
+        "ce09_S": 908,
+        "ce08_I": 651,
+        "ce02_S": 620,
+        "ce06_I": 2953,
+        "ce04_S": 1822
+      },
+      "classification": {
+        "ce07_I": 856,
+        "ce08_C": 979,
+        "ce04_D": 2134,
+        "ce07_C": 865,
+        "ce03_I": 1079,
+        "ce08_S": 979,
+        "ce06_S": 3284,
+        "ce10_D": 954,
+        "ce01_S": 2663,
+        "ce07_S": 865,
+        "ce04_I": 2118,
+        "ce03_C": 1087,
+        "ce06_C": 3289,
+        "ce03_D": 1086,
+        "ce09_D": 1220,
+        "ce07_D": 865,
+        "ce02_C": 932,
+        "ce10_C": 965,
+        "ce01_C": 2669,
+        "ce08_D": 979,
+        "ce10_I": 946,
+        "ce09_I": 1199,
+        "ce01_I": 2663,
+        "ce05_S": 812,
+        "ce05_I": 796,
+        "ce06_D": 3284,
+        "ce02_I": 923,
+        "ce05_C": 823,
+        "ce10_S": 954,
+        "ce03_S": 1086,
+        "ce05_D": 812,
+        "ce01_D": 2663,
+        "ce04_C": 2137,
+        "ce02_D": 932,
+        "ce09_C": 1220,
+        "ce09_S": 1220,
+        "ce08_I": 963,
+        "ce02_S": 932,
+        "ce06_I": 3265,
+        "ce04_S": 2134
+      }
+    },
+    "length_deltas": [
+      {
+        "original_id": "val_28",
+        "comparison": "I_minus_S",
+        "character_delta": 1,
+        "free_input_token_delta": -9,
+        "classification_input_token_delta": -9
+      },
+      {
+        "original_id": "val_28",
+        "comparison": "C_minus_S",
+        "character_delta": 0,
+        "free_input_token_delta": 0,
+        "classification_input_token_delta": 0
+      },
+      {
+        "original_id": "val_28",
+        "comparison": "D_minus_S",
+        "character_delta": 0,
+        "free_input_token_delta": 0,
+        "classification_input_token_delta": 0
+      },
+      {
+        "original_id": "val_17",
+        "comparison": "I_minus_S",
+        "character_delta": -8,
+        "free_input_token_delta": -16,
+        "classification_input_token_delta": -16
+      },
+      {
+        "original_id": "val_17",
+        "comparison": "C_minus_S",
+        "character_delta": 0,
+        "free_input_token_delta": 0,
+        "classification_input_token_delta": 0
+      },
+      {
+        "original_id": "val_17",
+        "comparison": "D_minus_S",
+        "character_delta": 0,
+        "free_input_token_delta": 0,
+        "classification_input_token_delta": 0
+      },
+      {
+        "original_id": "val_94",
+        "comparison": "I_minus_S",
+        "character_delta": -26,
+        "free_input_token_delta": -16,
+        "classification_input_token_delta": -16
+      },
+      {
+        "original_id": "val_94",
+        "comparison": "C_minus_S",
+        "character_delta": 10,
+        "free_input_token_delta": 3,
+        "classification_input_token_delta": 3
+      },
+      {
+        "original_id": "val_94",
+        "comparison": "D_minus_S",
+        "character_delta": 0,
+        "free_input_token_delta": 0,
+        "classification_input_token_delta": 0
+      },
+      {
+        "original_id": "val_3",
+        "comparison": "I_minus_S",
+        "character_delta": -4,
+        "free_input_token_delta": -7,
+        "classification_input_token_delta": -7
+      },
+      {
+        "original_id": "val_3",
+        "comparison": "C_minus_S",
+        "character_delta": 6,
+        "free_input_token_delta": 1,
+        "classification_input_token_delta": 1
+      },
+      {
+        "original_id": "val_3",
+        "comparison": "D_minus_S",
+        "character_delta": 0,
+        "free_input_token_delta": 0,
+        "classification_input_token_delta": 0
+      },
+      {
+        "original_id": "val_31",
+        "comparison": "I_minus_S",
+        "character_delta": -64,
+        "free_input_token_delta": -19,
+        "classification_input_token_delta": -19
+      },
+      {
+        "original_id": "val_31",
+        "comparison": "C_minus_S",
+        "character_delta": 19,
+        "free_input_token_delta": 5,
+        "classification_input_token_delta": 5
+      },
+      {
+        "original_id": "val_31",
+        "comparison": "D_minus_S",
+        "character_delta": 0,
+        "free_input_token_delta": 0,
+        "classification_input_token_delta": 0
+      },
+      {
+        "original_id": "val_86",
+        "comparison": "I_minus_S",
+        "character_delta": -7,
+        "free_input_token_delta": -8,
+        "classification_input_token_delta": -8
+      },
+      {
+        "original_id": "val_86",
+        "comparison": "C_minus_S",
+        "character_delta": 54,
+        "free_input_token_delta": 11,
+        "classification_input_token_delta": 11
+      },
+      {
+        "original_id": "val_86",
+        "comparison": "D_minus_S",
+        "character_delta": 1,
+        "free_input_token_delta": 0,
+        "classification_input_token_delta": 0
+      },
+      {
+        "original_id": "val_81",
+        "comparison": "I_minus_S",
+        "character_delta": 4,
+        "free_input_token_delta": 0,
+        "classification_input_token_delta": 0
+      },
+      {
+        "original_id": "val_81",
+        "comparison": "C_minus_S",
+        "character_delta": 19,
+        "free_input_token_delta": 6,
+        "classification_input_token_delta": 6
+      },
+      {
+        "original_id": "val_81",
+        "comparison": "D_minus_S",
+        "character_delta": 0,
+        "free_input_token_delta": 0,
+        "classification_input_token_delta": 0
+      },
+      {
+        "original_id": "val_13",
+        "comparison": "I_minus_S",
+        "character_delta": -55,
+        "free_input_token_delta": -21,
+        "classification_input_token_delta": -21
+      },
+      {
+        "original_id": "val_13",
+        "comparison": "C_minus_S",
+        "character_delta": 0,
+        "free_input_token_delta": 0,
+        "classification_input_token_delta": 0
+      },
+      {
+        "original_id": "val_13",
+        "comparison": "D_minus_S",
+        "character_delta": 0,
+        "free_input_token_delta": 0,
+        "classification_input_token_delta": 0
+      },
+      {
+        "original_id": "val_14",
+        "comparison": "I_minus_S",
+        "character_delta": 19,
+        "free_input_token_delta": -9,
+        "classification_input_token_delta": -9
+      },
+      {
+        "original_id": "val_14",
+        "comparison": "C_minus_S",
+        "character_delta": 0,
+        "free_input_token_delta": 0,
+        "classification_input_token_delta": 0
+      },
+      {
+        "original_id": "val_14",
+        "comparison": "D_minus_S",
+        "character_delta": 0,
+        "free_input_token_delta": 0,
+        "classification_input_token_delta": 0
+      },
+      {
+        "original_id": "val_35",
+        "comparison": "I_minus_S",
+        "character_delta": -7,
+        "free_input_token_delta": -16,
+        "classification_input_token_delta": -16
+      },
+      {
+        "original_id": "val_35",
+        "comparison": "C_minus_S",
+        "character_delta": 23,
+        "free_input_token_delta": 11,
+        "classification_input_token_delta": 11
+      },
+      {
+        "original_id": "val_35",
+        "comparison": "D_minus_S",
+        "character_delta": 0,
+        "free_input_token_delta": 0,
+        "classification_input_token_delta": 0
+      }
+    ],
+    "context_tokens": 32768,
+    "feature_shape": [
+      36,
+      2048
+    ],
+    "expected_free_generations": 40,
+    "expected_classifications": 40,
+    "grammar_max_tokens": 3,
+    "historical_effective_seconds_per_token": 0.05145200654198997,
+    "historical_timing_source": "docs/records/2026-10-09-free-answer-generation-verified.json",
+    "historical_timing_sha256": "5150522f3bb0746f75b89ee54db5c26ae47a9b2ae7a644a17c3a2c8e70c5f851",
+    "whole_smoke_plus_full_planning_minutes": [
+      8,
+      26
+    ],
+    "timing_note": "Capacity planning from old aggregate chat timing,128-token ceiling,4x allowance and load/IO; not a new GPU benchmark or deadline. User launches."
+  },
+  "smoke_preflight": {
+    "status": "cpu_preflight_passed",
+    "input_lengths": {
+      "free_answer": {
+        "instances": 4,
+        "max_input_tokens": 2977,
+        "mean_input_tokens": 2968.5,
+        "output_budget": 128
+      },
+      "classification": {
+        "instances": 4,
+        "max_input_tokens": 3289,
+        "mean_input_tokens": 3280.5,
+        "output_budget": 8
+      }
+    },
+    "per_input_tokens": {
+      "free_answer": {
+        "ce06_S": 2972,
+        "ce06_C": 2977,
+        "ce06_D": 2972,
+        "ce06_I": 2953
+      },
+      "classification": {
+        "ce06_S": 3284,
+        "ce06_C": 3289,
+        "ce06_D": 3284,
+        "ce06_I": 3265
+      }
+    },
+    "length_deltas": [
+      {
+        "original_id": "val_31",
+        "comparison": "I_minus_S",
+        "character_delta": -64,
+        "free_input_token_delta": -19,
+        "classification_input_token_delta": -19
+      },
+      {
+        "original_id": "val_31",
+        "comparison": "C_minus_S",
+        "character_delta": 19,
+        "free_input_token_delta": 5,
+        "classification_input_token_delta": 5
+      },
+      {
+        "original_id": "val_31",
+        "comparison": "D_minus_S",
+        "character_delta": 0,
+        "free_input_token_delta": 0,
+        "classification_input_token_delta": 0
+      }
+    ],
+    "context_tokens": 32768,
+    "feature_shape": [
+      36,
+      2048
+    ],
+    "expected_free_generations": 4,
+    "expected_classifications": 4,
+    "grammar_max_tokens": 3,
+    "historical_effective_seconds_per_token": 0.05145200654198997,
+    "historical_timing_source": "docs/records/2026-10-09-free-answer-generation-verified.json",
+    "historical_timing_sha256": "5150522f3bb0746f75b89ee54db5c26ae47a9b2ae7a644a17c3a2c8e70c5f851",
+    "whole_smoke_plus_full_planning_minutes": [
+      8,
+      26
+    ],
+    "timing_note": "Capacity planning from old aggregate chat timing,128-token ceiling,4x allowance and load/IO; not a new GPU benchmark or deadline. User launches."
+  },
+  "user_launch": "sh scripts/run_controlled_evidence_pilot_review.sh",
+  "recommended_minutes": [
+    10,
+    30
+  ],
+  "formal_run_dir": "runs/qwen2.5-3b-controlled-evidence-pilot-v1",
+  "smoke_run_dir": "runs/qwen2.5-3b-controlled-evidence-pilot-smoke-v1",
+  "runs": {
+    "formal": {
+      "status": "prepared_not_started",
+      "protocol_sha256": "98650b290d29779242cb4727e43a1625d5fe187bae275c9ed2fb8bdf445baf6f",
+      "implementation_sha256": {
+        "scripts/controlled_evidence_pilot.py": "b3a98124d1312309ac889905d8b4a36b96e682a0e16bc94804a025e93c68f61e",
+        "scripts/controlled_evidence_materials.py": "e5853f240d35499e5c2e0b61f13f83e5d00add42726cb357e8be748a33f08b4d",
+        "scripts/run_controlled_evidence_pilot.sh": "a0c29a02caba307b587b4233700d259a147489c0eb2b582e9101c818f0b993ec",
+        "scripts/run_controlled_evidence_pilot_review.sh": "d7ffe5c15a375b3e364c0c37a04dc9078c06b89b0d6f53a29da89be9a2f645f9",
+        "scripts/verify_controlled_evidence_pilot.py": "e2c3c9f1af59f62f2f17d12eb6ac469ef83126352b241c833d1d1723b05393f5",
+        "prompts/controlled_evidence_pilot_v1.json": "1f71f400352a5fadf1f3c070e1d22ca701452c488756df4b4146d1720d83d437",
+        "scripts/evidence_experiment.py": "019af81ffcfe108b155e6e061569d7d1c1fc17d3b072ad436d78defa74aac225",
+        "scripts/free_answer_study.py": "a253f0abb8eee9aec8c122c373cd47dc60671bdc68aaaf181cf5cdc8594c5939",
+        "scripts/free_answer_review.py": "9ad214955fc1b1db35d4b2b5f027721b74ccaf8a735027c20ceb0895b6068882",
+        "scripts/classification_semantic_baseline.py": "01e1d8c03e7503d984b1b12272c790d1ea3c8ef3a82f61195e16833abc36d53d",
+        "scripts/classification_prompt_search.py": "a3738c2d77412aa20c35c992a847b3a5ed0386bc154d728c19966111f9ec44e2",
+        "scripts/small_repro.py": "3302a541d04cfde3a29e663f747ad093dac8893b85f6607c5fb16333edf457fd",
+        "scripts/prompt_baseline.py": "2966151480873b1775aa1d275f804544959f377587840fc36f51ff1d209aed3c",
+        "scripts/analyze_prompt_baseline.py": "7a95b7d4487cac73d5bb20e53e9cfcaa6ad69399e5fe69484633c187eed0e020",
+        "code/prompts.py": "bedd7b758ef6cfe117580d3fc29e133f1343830f88be71243f8c07e6a893f7c8",
+        "prompts/baseline_prompts.json": "48075d1187b8e0331b295d0e4b46409642bcf7ef803aaf3b885dc10ac97f1a79",
+        "prompts/classification_semantic_v1.json": "3306d6aee2be2125cc2150f1047201e4788d9bfe5201e876210d0265914f839d",
+        "configs/local.env": "0d62a5eea40dc8464f135ba88da937b37c4dc2a9a8ab5eec5f74a40e636cdcc9"
+      },
+      "probe_source_sha256": {
+        "runs/qwen2.5-3b-free-answer-study/protocol.json": "893af4b195ab42c4fa3c2a670da022e7fc422a6537506671600c9c50f949c3f0",
+        "runs/qwen2.5-3b-free-answer-study/chat/probe/probe.json": "fcd01efc19334be52854c021baec9dfa6480377fe4f15a76135b980820691350",
+        "runs/qwen2.5-3b-free-answer-study/chat/probe/probe.pkl": "db6033b84f1fcd30e5e2e31ce4beb262a76920cc06811c57900ad14b8d40858d",
+        "runs/qwen2.5-3b-free-answer-study/chat/train/states.json": "2c22a8f43ab0b6c46ac1ec675dcad2274379e9836a8aeabcdf2c9bdef7ae1e86",
+        "runs/qwen2.5-3b-free-answer-study/chat/val/states.json": "79c45e55ccff6602915d72c890c9fadc01496d811342f3cc5db22158aebf1949"
+      },
+      "artifact_sha256": {
+        "runs/qwen2.5-3b-controlled-evidence-pilot-v1/protocol.json": "98650b290d29779242cb4727e43a1625d5fe187bae275c9ed2fb8bdf445baf6f",
+        "runs/qwen2.5-3b-controlled-evidence-pilot-v1/preflight.json": "f0d2ad65668637079d9cf18a851c7c2a03716558228fb10421f8fd6dbd359be4",
+        "runs/qwen2.5-3b-controlled-evidence-pilot-v1/progress.json": "f7f28d430652e3dbde0ec2df71f7172bc32ad2b132073effaab267ef1d1e9dbe",
+        "runs/qwen2.5-3b-controlled-evidence-pilot-v1/materials/edit_provenance.json": "06e771b11d0d088ab7e84b2a048f81e091e206580fefcd84d102ae102dbf9852",
+        "runs/qwen2.5-3b-controlled-evidence-pilot-v1/materials/input_judgments.json": "0c0497639fd2eafdc5e8f7aedfde9134350eee642698925da841ccd2b5579dfb",
+        "runs/qwen2.5-3b-controlled-evidence-pilot-v1/materials/input_review.html": "5f5f7910689897e564b319e3d337e9c5efe352167f55dc6923564924eeb3d4d5",
+        "runs/qwen2.5-3b-controlled-evidence-pilot-v1/materials/inputs.json": "78d7fddc57d6b5bb143d580e7aa3fbbcca5b53f793955bd5d02d1c6b5176e60c",
+        "runs/qwen2.5-3b-controlled-evidence-pilot-v1/materials/review_seal.json": "6f66523cf7cf34f41fb3329f2edfd9cbe3312f87d51b672b60ccff2d6a831c9d"
+      },
+      "prepared_read_only_replay_passed": true
+    },
+    "smoke": {
+      "status": "prepared_not_started",
+      "protocol_sha256": "ca8c52a01df554d88d0fd9164d0ea966309a7dedb19262156c1fd54a7e9c8e52",
+      "implementation_sha256": {
+        "scripts/controlled_evidence_pilot.py": "b3a98124d1312309ac889905d8b4a36b96e682a0e16bc94804a025e93c68f61e",
+        "scripts/controlled_evidence_materials.py": "e5853f240d35499e5c2e0b61f13f83e5d00add42726cb357e8be748a33f08b4d",
+        "scripts/run_controlled_evidence_pilot.sh": "a0c29a02caba307b587b4233700d259a147489c0eb2b582e9101c818f0b993ec",
+        "scripts/run_controlled_evidence_pilot_review.sh": "d7ffe5c15a375b3e364c0c37a04dc9078c06b89b0d6f53a29da89be9a2f645f9",
+        "scripts/verify_controlled_evidence_pilot.py": "e2c3c9f1af59f62f2f17d12eb6ac469ef83126352b241c833d1d1723b05393f5",
+        "prompts/controlled_evidence_pilot_v1.json": "1f71f400352a5fadf1f3c070e1d22ca701452c488756df4b4146d1720d83d437",
+        "scripts/evidence_experiment.py": "019af81ffcfe108b155e6e061569d7d1c1fc17d3b072ad436d78defa74aac225",
+        "scripts/free_answer_study.py": "a253f0abb8eee9aec8c122c373cd47dc60671bdc68aaaf181cf5cdc8594c5939",
+        "scripts/free_answer_review.py": "9ad214955fc1b1db35d4b2b5f027721b74ccaf8a735027c20ceb0895b6068882",
+        "scripts/classification_semantic_baseline.py": "01e1d8c03e7503d984b1b12272c790d1ea3c8ef3a82f61195e16833abc36d53d",
+        "scripts/classification_prompt_search.py": "a3738c2d77412aa20c35c992a847b3a5ed0386bc154d728c19966111f9ec44e2",
+        "scripts/small_repro.py": "3302a541d04cfde3a29e663f747ad093dac8893b85f6607c5fb16333edf457fd",
+        "scripts/prompt_baseline.py": "2966151480873b1775aa1d275f804544959f377587840fc36f51ff1d209aed3c",
+        "scripts/analyze_prompt_baseline.py": "7a95b7d4487cac73d5bb20e53e9cfcaa6ad69399e5fe69484633c187eed0e020",
+        "code/prompts.py": "bedd7b758ef6cfe117580d3fc29e133f1343830f88be71243f8c07e6a893f7c8",
+        "prompts/baseline_prompts.json": "48075d1187b8e0331b295d0e4b46409642bcf7ef803aaf3b885dc10ac97f1a79",
+        "prompts/classification_semantic_v1.json": "3306d6aee2be2125cc2150f1047201e4788d9bfe5201e876210d0265914f839d",
+        "configs/local.env": "0d62a5eea40dc8464f135ba88da937b37c4dc2a9a8ab5eec5f74a40e636cdcc9"
+      },
+      "probe_source_sha256": {
+        "runs/qwen2.5-3b-free-answer-study/protocol.json": "893af4b195ab42c4fa3c2a670da022e7fc422a6537506671600c9c50f949c3f0",
+        "runs/qwen2.5-3b-free-answer-study/chat/probe/probe.json": "fcd01efc19334be52854c021baec9dfa6480377fe4f15a76135b980820691350",
+        "runs/qwen2.5-3b-free-answer-study/chat/probe/probe.pkl": "db6033b84f1fcd30e5e2e31ce4beb262a76920cc06811c57900ad14b8d40858d",
+        "runs/qwen2.5-3b-free-answer-study/chat/train/states.json": "2c22a8f43ab0b6c46ac1ec675dcad2274379e9836a8aeabcdf2c9bdef7ae1e86",
+        "runs/qwen2.5-3b-free-answer-study/chat/val/states.json": "79c45e55ccff6602915d72c890c9fadc01496d811342f3cc5db22158aebf1949"
+      },
+      "artifact_sha256": {
+        "runs/qwen2.5-3b-controlled-evidence-pilot-smoke-v1/protocol.json": "ca8c52a01df554d88d0fd9164d0ea966309a7dedb19262156c1fd54a7e9c8e52",
+        "runs/qwen2.5-3b-controlled-evidence-pilot-smoke-v1/preflight.json": "5c2fcf38092660b47502397195f919039814f99b5798d35813b7eafaa85ae652",
+        "runs/qwen2.5-3b-controlled-evidence-pilot-smoke-v1/progress.json": "4eae4c27c4967975c4061deef370dc513651a20cf5131f70ed1ca0bc686270d5",
+        "runs/qwen2.5-3b-controlled-evidence-pilot-smoke-v1/materials/edit_provenance.json": "1f989fdb9dd31622a5b68b9388770c97f5a1136edf9b5569c5a0c76aee7506ee",
+        "runs/qwen2.5-3b-controlled-evidence-pilot-smoke-v1/materials/input_judgments.json": "17c7cf6c97786ecb1c8affd8eb1f16869cef24efdfa9805c56637e09041e926c",
+        "runs/qwen2.5-3b-controlled-evidence-pilot-smoke-v1/materials/input_review.html": "a20e2ad29de4663e5cef354a0027580d5ae6e4e792ae767dac756c1d7a932e32",
+        "runs/qwen2.5-3b-controlled-evidence-pilot-smoke-v1/materials/inputs.json": "db9cb900ef1e75f97fb2c3a1bc25479d9366bbd0d0bcc5f6e9d008177c37b74f",
+        "runs/qwen2.5-3b-controlled-evidence-pilot-smoke-v1/materials/review_seal.json": "60d137f8c5eef81cf6076e5c83f62c8e37b973ade0f05e1c8079f1ab09ea7032"
+      },
+      "prepared_read_only_replay_passed": true
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "verified_complete",
+  "run_dir": "/large_disk/wf/研究代码/Knowing-Before-Answering-Decoding-Language-Models-for-Reliable-RAG/runs/qwen2.5-3b-classification-semantic-v1",
+  "instances_per_candidate": 285,
+  "new_outputs": 570,
+  "code_fingerprints_checked": 13,
+  "selection": {
+    "eligible_candidates": [],
+    "selected_candidate": null,
+    "diagnostic_best_candidate": "semantic_rules",
+    "status": "no_qualified_baseline"
+  },
+  "auxiliary_known_inputs": 29,
+  "protocol_sha256": "f1fb064792fbc76415c49bd52142d2f4382ca26a5e6d871f9130dfd00cda4b98",
+  "published_metrics_and_bootstrap_replayed": true,
+  "limitation": "Published-label screening, not independent semantic accuracy. Format is constrained by construction. Legacy contrast combines prompt and decoding changes. No test/confirmation inference."
+}

@@ -1,0 +1,82 @@
+{
+  "checked_at_utc": "2026-10-18T06:45:34.377005+00:00",
+  "checked_at_beijing": "2026-10-18T14:45:34.377005+08:00",
+  "user_report": "User reports the supplied controlled pilot launcher is running and explicitly requests committing/pushing all current changes.",
+  "observation": "Read-only shared files/logs; no live host GPU/process verification; no restart or dependency changes.",
+  "runs": {
+    "formal": {
+      "run_dir": "runs/qwen2.5-3b-controlled-evidence-pilot-v1",
+      "progress": {
+        "status": "running",
+        "task": "free_answer",
+        "saved_in_task": 24,
+        "target_each": 40,
+        "last_saved_id": "ce05_S",
+        "protocol_sha256": "98650b290d29779242cb4727e43a1625d5fe187bae275c9ed2fb8bdf445baf6f"
+      },
+      "protocol_sha256": "98650b290d29779242cb4727e43a1625d5fe187bae275c9ed2fb8bdf445baf6f",
+      "implementation_fingerprints_checked": 18,
+      "implementation_mismatches": [],
+      "probe_source_mismatches": [],
+      "tasks": {
+        "free_answer": {
+          "saved": 24,
+          "target": 40,
+          "last_id": "ce05_S",
+          "last_completed_at": "2026-10-18T06:45:33.159697+00:00",
+          "hit_output_limit_count": 0,
+          "empty_output_count": 0
+        },
+        "classification": {
+          "saved": 0,
+          "target": 40,
+          "last_id": null,
+          "last_completed_at": null,
+          "hit_output_limit_count": 0,
+          "empty_output_count": 0
+        }
+      },
+      "smoke_gate": null,
+      "last_failure": null
+    },
+    "smoke": {
+      "run_dir": "runs/qwen2.5-3b-controlled-evidence-pilot-smoke-v1",
+      "progress": {
+        "status": "analysis_complete_behavior_pending",
+        "free_saved": 4,
+        "classification_saved": 4,
+        "protocol_sha256": "ca8c52a01df554d88d0fd9164d0ea966309a7dedb19262156c1fd54a7e9c8e52"
+      },
+      "protocol_sha256": "ca8c52a01df554d88d0fd9164d0ea966309a7dedb19262156c1fd54a7e9c8e52",
+      "implementation_fingerprints_checked": 18,
+      "implementation_mismatches": [],
+      "probe_source_mismatches": [],
+      "tasks": {
+        "free_answer": {
+          "saved": 4,
+          "target": 4,
+          "last_id": "ce06_I",
+          "last_completed_at": "2026-10-18T06:44:21.577478+00:00",
+          "hit_output_limit_count": 0,
+          "empty_output_count": 0
+        },
+        "classification": {
+          "saved": 4,
+          "target": 4,
+          "last_id": "ce06_I",
+          "last_completed_at": "2026-10-18T06:44:23.292781+00:00",
+          "hit_output_limit_count": 0,
+          "empty_output_count": 0
+        }
+      },
+      "smoke_gate": {
+        "status": "technical_smoke_passed",
+        "free_complete": 4,
+        "classification_valid": 4,
+        "semantic_accuracy_gate": false
+      },
+      "last_failure": null
+    }
+  },
+  "status": "formal_outputs_saved"
+}

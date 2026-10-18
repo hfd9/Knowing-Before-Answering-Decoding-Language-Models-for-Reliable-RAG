@@ -1,0 +1,2407 @@
+{
+  "status": "verified_postanalysis",
+  "source_sha256": {
+    "runs/qwen2.5-3b-small/data/instances_val.jsonl": "18a0e6817fbbc3b0f9a89e029209221e97f6406a3b6c7ecb88de61161cb095bb",
+    "docs/records/2026-10-16-validation-semantic-followup-ratings.json": "df2f339a183cce8e79a7be45a13972e8da69a75dbeefc1fcfc92d4877c054551",
+    "runs/qwen2.5-3b-validation-semantic-pilot-2026-10-16-v1/coordinator/mapping.json": "3ea3e53116615c73828dac2c1fccc4b5bd783ec1a854f9632f5f78f3886e017b",
+    "runs/qwen2.5-3b-classification-semantic-v1/protocol.json": "f1fb064792fbc76415c49bd52142d2f4382ca26a5e6d871f9130dfd00cda4b98",
+    "runs/qwen2.5-3b-classification-semantic-v1/reports/val.json": "2e8ad0bcf92b8123d8c209f9baa0b588fa81c790f602b4c058c979ac85df0eb2",
+    "runs/qwen2.5-3b-classification-semantic-smoke-v1/protocol.json": "689e7004ad3f752fce84d3b9d068788636574cce0b0371ebd26aef39524c7045",
+    "runs/qwen2.5-3b-classification-semantic-smoke-v1/reports/val.json": "1ebbbe23bbe2020aa7131ef9c6aed5671521bd9c1d4f692243010d79ea9c09a7",
+    "docs/records/2026-10-18-classification-semantic-baseline-full-replay.json": "6431a8574c1a39397eab6333d7afe4aedbe6e4d1f47166e4f9cc22190cb362bf",
+    "docs/records/2026-10-18-classification-semantic-baseline-smoke-replay.json": "731cf54ab92d54ff92aae4d6c1ca6516f4733eed7a3577f4989f8d79d7100eec",
+    "runs/qwen2.5-3b-classification-grid/chat8/val/predictions.json": "6f7bc5fedb63a65a7d2affb138e1ea3687fa26aae0b23fccad6e4e1428256dee",
+    "runs/qwen2.5-3b-classification-semantic-v1/semantic_rules/predictions.json": "20798b6e97aed6dfe63542be497686b0b287a0fb0042853058f8af9916b6d0d6",
+    "runs/qwen2.5-3b-classification-semantic-v1/semantic_examples/predictions.json": "d969e7cffbbf12daf1a9a9768f51c471a71f5f1762887b7b23a06a2fba7374df",
+    "runs/qwen2.5-3b-classification-semantic-smoke-v1/semantic_rules/predictions.json": "838970781f1fe32e095e514b33fca74fce62ae5b6ec3506392af934ae1b569a1",
+    "runs/qwen2.5-3b-classification-semantic-smoke-v1/semantic_examples/predictions.json": "f753bf57566a24e7c9527ef4ac982817257e4111e3dbb1a77451aa12e05522f3"
+  },
+  "population": {
+    "published_instances": 285,
+    "base_questions": 95,
+    "development_instances": 30,
+    "development_known": 29,
+    "development_unknown": 1
+  },
+  "prediction_order": [
+    "answer",
+    "refuse",
+    "conflict",
+    "invalid"
+  ],
+  "published_metrics": {
+    "legacy_chat8": {
+      "n_instances": 285,
+      "correct": 114,
+      "accuracy": 0.4,
+      "macro_f1": 0.28025561342845884,
+      "classification_false_answer_rate": 0.10526315789473684,
+      "refuse_to_answer_count": 0,
+      "conflict_to_answer_count": 20,
+      "confusion_matrix": [
+        [
+          19,
+          76,
+          0,
+          0
+        ],
+        [
+          0,
+          95,
+          0,
+          0
+        ],
+        [
+          20,
+          75,
+          0,
+          0
+        ]
+      ],
+      "per_class": {
+        "answer": {
+          "support": 95,
+          "correct": 19,
+          "precision": 0.48717948717948717,
+          "recall": 0.2,
+          "f1": 0.2835820895522388
+        },
+        "refuse": {
+          "support": 95,
+          "correct": 95,
+          "precision": 0.3861788617886179,
+          "recall": 1.0,
+          "f1": 0.5571847507331378
+        },
+        "conflict": {
+          "support": 95,
+          "correct": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "predicted_counts": {
+        "answer": 39,
+        "refuse": 246,
+        "conflict": 0,
+        "invalid": 0
+      }
+    },
+    "semantic_rules": {
+      "n_instances": 285,
+      "correct": 118,
+      "accuracy": 0.41403508771929826,
+      "macro_f1": 0.30566531638696587,
+      "classification_false_answer_rate": 0.1631578947368421,
+      "refuse_to_answer_count": 1,
+      "conflict_to_answer_count": 30,
+      "confusion_matrix": [
+        [
+          22,
+          73,
+          0,
+          0
+        ],
+        [
+          1,
+          94,
+          0,
+          0
+        ],
+        [
+          30,
+          63,
+          2,
+          0
+        ]
+      ],
+      "per_class": {
+        "answer": {
+          "support": 95,
+          "correct": 22,
+          "precision": 0.41509433962264153,
+          "recall": 0.23157894736842105,
+          "f1": 0.2972972972972973
+        },
+        "refuse": {
+          "support": 95,
+          "correct": 94,
+          "precision": 0.40869565217391307,
+          "recall": 0.9894736842105263,
+          "f1": 0.5784615384615385
+        },
+        "conflict": {
+          "support": 95,
+          "correct": 2,
+          "precision": 1.0,
+          "recall": 0.021052631578947368,
+          "f1": 0.041237113402061855
+        }
+      },
+      "predicted_counts": {
+        "answer": 53,
+        "refuse": 230,
+        "conflict": 2,
+        "invalid": 0
+      }
+    },
+    "semantic_examples": {
+      "n_instances": 285,
+      "correct": 106,
+      "accuracy": 0.3719298245614035,
+      "macro_f1": 0.24134990253411306,
+      "classification_false_answer_rate": 0.04736842105263158,
+      "refuse_to_answer_count": 0,
+      "conflict_to_answer_count": 9,
+      "confusion_matrix": [
+        [
+          10,
+          85,
+          0,
+          0
+        ],
+        [
+          0,
+          95,
+          0,
+          0
+        ],
+        [
+          9,
+          85,
+          1,
+          0
+        ]
+      ],
+      "per_class": {
+        "answer": {
+          "support": 95,
+          "correct": 10,
+          "precision": 0.5263157894736842,
+          "recall": 0.10526315789473684,
+          "f1": 0.17543859649122806
+        },
+        "refuse": {
+          "support": 95,
+          "correct": 95,
+          "precision": 0.3584905660377358,
+          "recall": 1.0,
+          "f1": 0.5277777777777778
+        },
+        "conflict": {
+          "support": 95,
+          "correct": 1,
+          "precision": 1.0,
+          "recall": 0.010526315789473684,
+          "f1": 0.020833333333333332
+        }
+      },
+      "predicted_counts": {
+        "answer": 19,
+        "refuse": 265,
+        "conflict": 1,
+        "invalid": 0
+      }
+    }
+  },
+  "generation": {
+    "legacy_chat8": {
+      "seconds": 94.63205850555096,
+      "last_completed": "2026-10-11T04:10:59.648151+00:00",
+      "max_peak_allocated_gib": 6.34126615524292
+    },
+    "semantic_rules": {
+      "seconds": 101.13178825924115,
+      "last_completed": "2026-10-16T12:33:48.736382+00:00",
+      "max_peak_allocated_gib": 6.3734130859375
+    },
+    "semantic_examples": {
+      "seconds": 118.3939512532379,
+      "last_completed": "2026-10-16T12:35:54.527714+00:00",
+      "max_peak_allocated_gib": 6.417389869689941
+    }
+  },
+  "published_paired_changes": {
+    "semantic_rules_minus_legacy_chat8": {
+      "direction": "left minus right",
+      "groups": {
+        "improved": [
+          "val_0_answer",
+          "val_7_answer",
+          "val_11_answer",
+          "val_19_answer",
+          "val_28_answer",
+          "val_37_conflict",
+          "val_43_answer",
+          "val_54_answer",
+          "val_73_answer",
+          "val_83_conflict"
+        ],
+        "regressed": [
+          "val_10_answer",
+          "val_30_answer",
+          "val_42_answer",
+          "val_66_refuse",
+          "val_75_answer",
+          "val_77_answer"
+        ],
+        "both_correct": [
+          "val_0_refuse",
+          "val_1_refuse",
+          "val_2_refuse",
+          "val_3_refuse",
+          "val_4_refuse",
+          "val_5_refuse",
+          "val_6_refuse",
+          "val_7_refuse",
+          "val_8_refuse",
+          "val_9_answer",
+          "val_9_refuse",
+          "val_10_refuse",
+          "val_11_refuse",
+          "val_12_refuse",
+          "val_13_refuse",
+          "val_14_refuse",
+          "val_15_answer",
+          "val_15_refuse",
+          "val_16_refuse",
+          "val_17_refuse",
+          "val_18_answer",
+          "val_18_refuse",
+          "val_19_refuse",
+          "val_20_refuse",
+          "val_21_refuse",
+          "val_22_refuse",
+          "val_23_refuse",
+          "val_24_refuse",
+          "val_25_refuse",
+          "val_26_refuse",
+          "val_27_refuse",
+          "val_28_refuse",
+          "val_29_refuse",
+          "val_30_refuse",
+          "val_31_refuse",
+          "val_32_answer",
+          "val_32_refuse",
+          "val_33_refuse",
+          "val_34_answer",
+          "val_34_refuse",
+          "val_35_refuse",
+          "val_36_refuse",
+          "val_37_refuse",
+          "val_38_refuse",
+          "val_39_answer",
+          "val_39_refuse",
+          "val_40_answer",
+          "val_40_refuse",
+          "val_41_refuse",
+          "val_42_refuse",
+          "val_43_refuse",
+          "val_44_refuse",
+          "val_45_refuse",
+          "val_46_refuse",
+          "val_47_refuse",
+          "val_48_refuse",
+          "val_49_refuse",
+          "val_50_refuse",
+          "val_51_refuse",
+          "val_52_refuse",
+          "val_53_refuse",
+          "val_54_refuse",
+          "val_55_refuse",
+          "val_56_refuse",
+          "val_57_refuse",
+          "val_58_refuse",
+          "val_59_refuse",
+          "val_60_refuse",
+          "val_61_refuse",
+          "val_62_refuse",
+          "val_63_refuse",
+          "val_64_answer",
+          "val_64_refuse",
+          "val_65_refuse",
+          "val_66_answer",
+          "val_67_refuse",
+          "val_68_refuse",
+          "val_69_refuse",
+          "val_70_refuse",
+          "val_71_refuse",
+          "val_72_refuse",
+          "val_73_refuse",
+          "val_74_refuse",
+          "val_75_refuse",
+          "val_76_refuse",
+          "val_77_refuse",
+          "val_78_refuse",
+          "val_79_refuse",
+          "val_80_refuse",
+          "val_81_answer",
+          "val_81_refuse",
+          "val_82_refuse",
+          "val_83_answer",
+          "val_83_refuse",
+          "val_84_refuse",
+          "val_85_refuse",
+          "val_86_refuse",
+          "val_87_refuse",
+          "val_88_answer",
+          "val_88_refuse",
+          "val_89_answer",
+          "val_89_refuse",
+          "val_90_answer",
+          "val_90_refuse",
+          "val_91_refuse",
+          "val_92_refuse",
+          "val_93_refuse",
+          "val_94_refuse"
+        ],
+        "both_wrong": [
+          "val_0_conflict",
+          "val_1_answer",
+          "val_1_conflict",
+          "val_2_answer",
+          "val_2_conflict",
+          "val_3_answer",
+          "val_3_conflict",
+          "val_4_answer",
+          "val_4_conflict",
+          "val_5_answer",
+          "val_5_conflict",
+          "val_6_answer",
+          "val_6_conflict",
+          "val_7_conflict",
+          "val_8_answer",
+          "val_8_conflict",
+          "val_9_conflict",
+          "val_10_conflict",
+          "val_11_conflict",
+          "val_12_answer",
+          "val_12_conflict",
+          "val_13_answer",
+          "val_13_conflict",
+          "val_14_answer",
+          "val_14_conflict",
+          "val_15_conflict",
+          "val_16_answer",
+          "val_16_conflict",
+          "val_17_answer",
+          "val_17_conflict",
+          "val_18_conflict",
+          "val_19_conflict",
+          "val_20_answer",
+          "val_20_conflict",
+          "val_21_answer",
+          "val_21_conflict",
+          "val_22_answer",
+          "val_22_conflict",
+          "val_23_answer",
+          "val_23_conflict",
+          "val_24_answer",
+          "val_24_conflict",
+          "val_25_answer",
+          "val_25_conflict",
+          "val_26_answer",
+          "val_26_conflict",
+          "val_27_answer",
+          "val_27_conflict",
+          "val_28_conflict",
+          "val_29_answer",
+          "val_29_conflict",
+          "val_30_conflict",
+          "val_31_answer",
+          "val_31_conflict",
+          "val_32_conflict",
+          "val_33_answer",
+          "val_33_conflict",
+          "val_34_conflict",
+          "val_35_answer",
+          "val_35_conflict",
+          "val_36_answer",
+          "val_36_conflict",
+          "val_37_answer",
+          "val_38_answer",
+          "val_38_conflict",
+          "val_39_conflict",
+          "val_40_conflict",
+          "val_41_answer",
+          "val_41_conflict",
+          "val_42_conflict",
+          "val_43_conflict",
+          "val_44_answer",
+          "val_44_conflict",
+          "val_45_answer",
+          "val_45_conflict",
+          "val_46_answer",
+          "val_46_conflict",
+          "val_47_answer",
+          "val_47_conflict",
+          "val_48_answer",
+          "val_48_conflict",
+          "val_49_answer",
+          "val_49_conflict",
+          "val_50_answer",
+          "val_50_conflict",
+          "val_51_answer",
+          "val_51_conflict",
+          "val_52_answer",
+          "val_52_conflict",
+          "val_53_answer",
+          "val_53_conflict",
+          "val_54_conflict",
+          "val_55_answer",
+          "val_55_conflict",
+          "val_56_answer",
+          "val_56_conflict",
+          "val_57_answer",
+          "val_57_conflict",
+          "val_58_answer",
+          "val_58_conflict",
+          "val_59_answer",
+          "val_59_conflict",
+          "val_60_answer",
+          "val_60_conflict",
+          "val_61_answer",
+          "val_61_conflict",
+          "val_62_answer",
+          "val_62_conflict",
+          "val_63_answer",
+          "val_63_conflict",
+          "val_64_conflict",
+          "val_65_answer",
+          "val_65_conflict",
+          "val_66_conflict",
+          "val_67_answer",
+          "val_67_conflict",
+          "val_68_answer",
+          "val_68_conflict",
+          "val_69_answer",
+          "val_69_conflict",
+          "val_70_answer",
+          "val_70_conflict",
+          "val_71_answer",
+          "val_71_conflict",
+          "val_72_answer",
+          "val_72_conflict",
+          "val_73_conflict",
+          "val_74_answer",
+          "val_74_conflict",
+          "val_75_conflict",
+          "val_76_answer",
+          "val_76_conflict",
+          "val_77_conflict",
+          "val_78_answer",
+          "val_78_conflict",
+          "val_79_answer",
+          "val_79_conflict",
+          "val_80_answer",
+          "val_80_conflict",
+          "val_81_conflict",
+          "val_82_answer",
+          "val_82_conflict",
+          "val_84_answer",
+          "val_84_conflict",
+          "val_85_answer",
+          "val_85_conflict",
+          "val_86_answer",
+          "val_86_conflict",
+          "val_87_answer",
+          "val_87_conflict",
+          "val_88_conflict",
+          "val_89_conflict",
+          "val_90_conflict",
+          "val_91_answer",
+          "val_91_conflict",
+          "val_92_answer",
+          "val_92_conflict",
+          "val_93_answer",
+          "val_93_conflict",
+          "val_94_answer",
+          "val_94_conflict"
+        ]
+      },
+      "group_counts": {
+        "improved": 10,
+        "regressed": 6,
+        "both_correct": 108,
+        "both_wrong": 161
+      },
+      "net_correct": 4,
+      "transition_rows": "right prediction",
+      "transition_columns": "left prediction",
+      "prediction_order": [
+        "answer",
+        "refuse",
+        "conflict",
+        "invalid"
+      ],
+      "transitions_by_published_class": {
+        "answer": [
+          [
+            14,
+            5,
+            0,
+            0
+          ],
+          [
+            8,
+            68,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "refuse": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            94,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "conflict": [
+          [
+            18,
+            2,
+            0,
+            0
+          ],
+          [
+            12,
+            61,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "semantic_examples_minus_legacy_chat8": {
+      "direction": "left minus right",
+      "groups": {
+        "improved": [
+          "val_21_answer",
+          "val_43_answer",
+          "val_83_conflict"
+        ],
+        "regressed": [
+          "val_10_answer",
+          "val_15_answer",
+          "val_18_answer",
+          "val_30_answer",
+          "val_39_answer",
+          "val_42_answer",
+          "val_75_answer",
+          "val_77_answer",
+          "val_81_answer",
+          "val_88_answer",
+          "val_89_answer"
+        ],
+        "both_correct": [
+          "val_0_refuse",
+          "val_1_refuse",
+          "val_2_refuse",
+          "val_3_refuse",
+          "val_4_refuse",
+          "val_5_refuse",
+          "val_6_refuse",
+          "val_7_refuse",
+          "val_8_refuse",
+          "val_9_answer",
+          "val_9_refuse",
+          "val_10_refuse",
+          "val_11_refuse",
+          "val_12_refuse",
+          "val_13_refuse",
+          "val_14_refuse",
+          "val_15_refuse",
+          "val_16_refuse",
+          "val_17_refuse",
+          "val_18_refuse",
+          "val_19_refuse",
+          "val_20_refuse",
+          "val_21_refuse",
+          "val_22_refuse",
+          "val_23_refuse",
+          "val_24_refuse",
+          "val_25_refuse",
+          "val_26_refuse",
+          "val_27_refuse",
+          "val_28_refuse",
+          "val_29_refuse",
+          "val_30_refuse",
+          "val_31_refuse",
+          "val_32_answer",
+          "val_32_refuse",
+          "val_33_refuse",
+          "val_34_answer",
+          "val_34_refuse",
+          "val_35_refuse",
+          "val_36_refuse",
+          "val_37_refuse",
+          "val_38_refuse",
+          "val_39_refuse",
+          "val_40_answer",
+          "val_40_refuse",
+          "val_41_refuse",
+          "val_42_refuse",
+          "val_43_refuse",
+          "val_44_refuse",
+          "val_45_refuse",
+          "val_46_refuse",
+          "val_47_refuse",
+          "val_48_refuse",
+          "val_49_refuse",
+          "val_50_refuse",
+          "val_51_refuse",
+          "val_52_refuse",
+          "val_53_refuse",
+          "val_54_refuse",
+          "val_55_refuse",
+          "val_56_refuse",
+          "val_57_refuse",
+          "val_58_refuse",
+          "val_59_refuse",
+          "val_60_refuse",
+          "val_61_refuse",
+          "val_62_refuse",
+          "val_63_refuse",
+          "val_64_answer",
+          "val_64_refuse",
+          "val_65_refuse",
+          "val_66_answer",
+          "val_66_refuse",
+          "val_67_refuse",
+          "val_68_refuse",
+          "val_69_refuse",
+          "val_70_refuse",
+          "val_71_refuse",
+          "val_72_refuse",
+          "val_73_refuse",
+          "val_74_refuse",
+          "val_75_refuse",
+          "val_76_refuse",
+          "val_77_refuse",
+          "val_78_refuse",
+          "val_79_refuse",
+          "val_80_refuse",
+          "val_81_refuse",
+          "val_82_refuse",
+          "val_83_answer",
+          "val_83_refuse",
+          "val_84_refuse",
+          "val_85_refuse",
+          "val_86_refuse",
+          "val_87_refuse",
+          "val_88_refuse",
+          "val_89_refuse",
+          "val_90_answer",
+          "val_90_refuse",
+          "val_91_refuse",
+          "val_92_refuse",
+          "val_93_refuse",
+          "val_94_refuse"
+        ],
+        "both_wrong": [
+          "val_0_answer",
+          "val_0_conflict",
+          "val_1_answer",
+          "val_1_conflict",
+          "val_2_answer",
+          "val_2_conflict",
+          "val_3_answer",
+          "val_3_conflict",
+          "val_4_answer",
+          "val_4_conflict",
+          "val_5_answer",
+          "val_5_conflict",
+          "val_6_answer",
+          "val_6_conflict",
+          "val_7_answer",
+          "val_7_conflict",
+          "val_8_answer",
+          "val_8_conflict",
+          "val_9_conflict",
+          "val_10_conflict",
+          "val_11_answer",
+          "val_11_conflict",
+          "val_12_answer",
+          "val_12_conflict",
+          "val_13_answer",
+          "val_13_conflict",
+          "val_14_answer",
+          "val_14_conflict",
+          "val_15_conflict",
+          "val_16_answer",
+          "val_16_conflict",
+          "val_17_answer",
+          "val_17_conflict",
+          "val_18_conflict",
+          "val_19_answer",
+          "val_19_conflict",
+          "val_20_answer",
+          "val_20_conflict",
+          "val_21_conflict",
+          "val_22_answer",
+          "val_22_conflict",
+          "val_23_answer",
+          "val_23_conflict",
+          "val_24_answer",
+          "val_24_conflict",
+          "val_25_answer",
+          "val_25_conflict",
+          "val_26_answer",
+          "val_26_conflict",
+          "val_27_answer",
+          "val_27_conflict",
+          "val_28_answer",
+          "val_28_conflict",
+          "val_29_answer",
+          "val_29_conflict",
+          "val_30_conflict",
+          "val_31_answer",
+          "val_31_conflict",
+          "val_32_conflict",
+          "val_33_answer",
+          "val_33_conflict",
+          "val_34_conflict",
+          "val_35_answer",
+          "val_35_conflict",
+          "val_36_answer",
+          "val_36_conflict",
+          "val_37_answer",
+          "val_37_conflict",
+          "val_38_answer",
+          "val_38_conflict",
+          "val_39_conflict",
+          "val_40_conflict",
+          "val_41_answer",
+          "val_41_conflict",
+          "val_42_conflict",
+          "val_43_conflict",
+          "val_44_answer",
+          "val_44_conflict",
+          "val_45_answer",
+          "val_45_conflict",
+          "val_46_answer",
+          "val_46_conflict",
+          "val_47_answer",
+          "val_47_conflict",
+          "val_48_answer",
+          "val_48_conflict",
+          "val_49_answer",
+          "val_49_conflict",
+          "val_50_answer",
+          "val_50_conflict",
+          "val_51_answer",
+          "val_51_conflict",
+          "val_52_answer",
+          "val_52_conflict",
+          "val_53_answer",
+          "val_53_conflict",
+          "val_54_answer",
+          "val_54_conflict",
+          "val_55_answer",
+          "val_55_conflict",
+          "val_56_answer",
+          "val_56_conflict",
+          "val_57_answer",
+          "val_57_conflict",
+          "val_58_answer",
+          "val_58_conflict",
+          "val_59_answer",
+          "val_59_conflict",
+          "val_60_answer",
+          "val_60_conflict",
+          "val_61_answer",
+          "val_61_conflict",
+          "val_62_answer",
+          "val_62_conflict",
+          "val_63_answer",
+          "val_63_conflict",
+          "val_64_conflict",
+          "val_65_answer",
+          "val_65_conflict",
+          "val_66_conflict",
+          "val_67_answer",
+          "val_67_conflict",
+          "val_68_answer",
+          "val_68_conflict",
+          "val_69_answer",
+          "val_69_conflict",
+          "val_70_answer",
+          "val_70_conflict",
+          "val_71_answer",
+          "val_71_conflict",
+          "val_72_answer",
+          "val_72_conflict",
+          "val_73_answer",
+          "val_73_conflict",
+          "val_74_answer",
+          "val_74_conflict",
+          "val_75_conflict",
+          "val_76_answer",
+          "val_76_conflict",
+          "val_77_conflict",
+          "val_78_answer",
+          "val_78_conflict",
+          "val_79_answer",
+          "val_79_conflict",
+          "val_80_answer",
+          "val_80_conflict",
+          "val_81_conflict",
+          "val_82_answer",
+          "val_82_conflict",
+          "val_84_answer",
+          "val_84_conflict",
+          "val_85_answer",
+          "val_85_conflict",
+          "val_86_answer",
+          "val_86_conflict",
+          "val_87_answer",
+          "val_87_conflict",
+          "val_88_conflict",
+          "val_89_conflict",
+          "val_90_conflict",
+          "val_91_answer",
+          "val_91_conflict",
+          "val_92_answer",
+          "val_92_conflict",
+          "val_93_answer",
+          "val_93_conflict",
+          "val_94_answer",
+          "val_94_conflict"
+        ]
+      },
+      "group_counts": {
+        "improved": 3,
+        "regressed": 11,
+        "both_correct": 103,
+        "both_wrong": 168
+      },
+      "net_correct": -8,
+      "transition_rows": "right prediction",
+      "transition_columns": "left prediction",
+      "prediction_order": [
+        "answer",
+        "refuse",
+        "conflict",
+        "invalid"
+      ],
+      "transitions_by_published_class": {
+        "answer": [
+          [
+            8,
+            11,
+            0,
+            0
+          ],
+          [
+            2,
+            74,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "refuse": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            95,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "conflict": [
+          [
+            7,
+            13,
+            0,
+            0
+          ],
+          [
+            2,
+            72,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "semantic_examples_minus_semantic_rules": {
+      "direction": "left minus right",
+      "groups": {
+        "improved": [
+          "val_21_answer",
+          "val_66_refuse"
+        ],
+        "regressed": [
+          "val_0_answer",
+          "val_7_answer",
+          "val_11_answer",
+          "val_15_answer",
+          "val_18_answer",
+          "val_19_answer",
+          "val_28_answer",
+          "val_37_conflict",
+          "val_39_answer",
+          "val_54_answer",
+          "val_73_answer",
+          "val_81_answer",
+          "val_88_answer",
+          "val_89_answer"
+        ],
+        "both_correct": [
+          "val_0_refuse",
+          "val_1_refuse",
+          "val_2_refuse",
+          "val_3_refuse",
+          "val_4_refuse",
+          "val_5_refuse",
+          "val_6_refuse",
+          "val_7_refuse",
+          "val_8_refuse",
+          "val_9_answer",
+          "val_9_refuse",
+          "val_10_refuse",
+          "val_11_refuse",
+          "val_12_refuse",
+          "val_13_refuse",
+          "val_14_refuse",
+          "val_15_refuse",
+          "val_16_refuse",
+          "val_17_refuse",
+          "val_18_refuse",
+          "val_19_refuse",
+          "val_20_refuse",
+          "val_21_refuse",
+          "val_22_refuse",
+          "val_23_refuse",
+          "val_24_refuse",
+          "val_25_refuse",
+          "val_26_refuse",
+          "val_27_refuse",
+          "val_28_refuse",
+          "val_29_refuse",
+          "val_30_refuse",
+          "val_31_refuse",
+          "val_32_answer",
+          "val_32_refuse",
+          "val_33_refuse",
+          "val_34_answer",
+          "val_34_refuse",
+          "val_35_refuse",
+          "val_36_refuse",
+          "val_37_refuse",
+          "val_38_refuse",
+          "val_39_refuse",
+          "val_40_answer",
+          "val_40_refuse",
+          "val_41_refuse",
+          "val_42_refuse",
+          "val_43_answer",
+          "val_43_refuse",
+          "val_44_refuse",
+          "val_45_refuse",
+          "val_46_refuse",
+          "val_47_refuse",
+          "val_48_refuse",
+          "val_49_refuse",
+          "val_50_refuse",
+          "val_51_refuse",
+          "val_52_refuse",
+          "val_53_refuse",
+          "val_54_refuse",
+          "val_55_refuse",
+          "val_56_refuse",
+          "val_57_refuse",
+          "val_58_refuse",
+          "val_59_refuse",
+          "val_60_refuse",
+          "val_61_refuse",
+          "val_62_refuse",
+          "val_63_refuse",
+          "val_64_answer",
+          "val_64_refuse",
+          "val_65_refuse",
+          "val_66_answer",
+          "val_67_refuse",
+          "val_68_refuse",
+          "val_69_refuse",
+          "val_70_refuse",
+          "val_71_refuse",
+          "val_72_refuse",
+          "val_73_refuse",
+          "val_74_refuse",
+          "val_75_refuse",
+          "val_76_refuse",
+          "val_77_refuse",
+          "val_78_refuse",
+          "val_79_refuse",
+          "val_80_refuse",
+          "val_81_refuse",
+          "val_82_refuse",
+          "val_83_answer",
+          "val_83_refuse",
+          "val_83_conflict",
+          "val_84_refuse",
+          "val_85_refuse",
+          "val_86_refuse",
+          "val_87_refuse",
+          "val_88_refuse",
+          "val_89_refuse",
+          "val_90_answer",
+          "val_90_refuse",
+          "val_91_refuse",
+          "val_92_refuse",
+          "val_93_refuse",
+          "val_94_refuse"
+        ],
+        "both_wrong": [
+          "val_0_conflict",
+          "val_1_answer",
+          "val_1_conflict",
+          "val_2_answer",
+          "val_2_conflict",
+          "val_3_answer",
+          "val_3_conflict",
+          "val_4_answer",
+          "val_4_conflict",
+          "val_5_answer",
+          "val_5_conflict",
+          "val_6_answer",
+          "val_6_conflict",
+          "val_7_conflict",
+          "val_8_answer",
+          "val_8_conflict",
+          "val_9_conflict",
+          "val_10_answer",
+          "val_10_conflict",
+          "val_11_conflict",
+          "val_12_answer",
+          "val_12_conflict",
+          "val_13_answer",
+          "val_13_conflict",
+          "val_14_answer",
+          "val_14_conflict",
+          "val_15_conflict",
+          "val_16_answer",
+          "val_16_conflict",
+          "val_17_answer",
+          "val_17_conflict",
+          "val_18_conflict",
+          "val_19_conflict",
+          "val_20_answer",
+          "val_20_conflict",
+          "val_21_conflict",
+          "val_22_answer",
+          "val_22_conflict",
+          "val_23_answer",
+          "val_23_conflict",
+          "val_24_answer",
+          "val_24_conflict",
+          "val_25_answer",
+          "val_25_conflict",
+          "val_26_answer",
+          "val_26_conflict",
+          "val_27_answer",
+          "val_27_conflict",
+          "val_28_conflict",
+          "val_29_answer",
+          "val_29_conflict",
+          "val_30_answer",
+          "val_30_conflict",
+          "val_31_answer",
+          "val_31_conflict",
+          "val_32_conflict",
+          "val_33_answer",
+          "val_33_conflict",
+          "val_34_conflict",
+          "val_35_answer",
+          "val_35_conflict",
+          "val_36_answer",
+          "val_36_conflict",
+          "val_37_answer",
+          "val_38_answer",
+          "val_38_conflict",
+          "val_39_conflict",
+          "val_40_conflict",
+          "val_41_answer",
+          "val_41_conflict",
+          "val_42_answer",
+          "val_42_conflict",
+          "val_43_conflict",
+          "val_44_answer",
+          "val_44_conflict",
+          "val_45_answer",
+          "val_45_conflict",
+          "val_46_answer",
+          "val_46_conflict",
+          "val_47_answer",
+          "val_47_conflict",
+          "val_48_answer",
+          "val_48_conflict",
+          "val_49_answer",
+          "val_49_conflict",
+          "val_50_answer",
+          "val_50_conflict",
+          "val_51_answer",
+          "val_51_conflict",
+          "val_52_answer",
+          "val_52_conflict",
+          "val_53_answer",
+          "val_53_conflict",
+          "val_54_conflict",
+          "val_55_answer",
+          "val_55_conflict",
+          "val_56_answer",
+          "val_56_conflict",
+          "val_57_answer",
+          "val_57_conflict",
+          "val_58_answer",
+          "val_58_conflict",
+          "val_59_answer",
+          "val_59_conflict",
+          "val_60_answer",
+          "val_60_conflict",
+          "val_61_answer",
+          "val_61_conflict",
+          "val_62_answer",
+          "val_62_conflict",
+          "val_63_answer",
+          "val_63_conflict",
+          "val_64_conflict",
+          "val_65_answer",
+          "val_65_conflict",
+          "val_66_conflict",
+          "val_67_answer",
+          "val_67_conflict",
+          "val_68_answer",
+          "val_68_conflict",
+          "val_69_answer",
+          "val_69_conflict",
+          "val_70_answer",
+          "val_70_conflict",
+          "val_71_answer",
+          "val_71_conflict",
+          "val_72_answer",
+          "val_72_conflict",
+          "val_73_conflict",
+          "val_74_answer",
+          "val_74_conflict",
+          "val_75_answer",
+          "val_75_conflict",
+          "val_76_answer",
+          "val_76_conflict",
+          "val_77_answer",
+          "val_77_conflict",
+          "val_78_answer",
+          "val_78_conflict",
+          "val_79_answer",
+          "val_79_conflict",
+          "val_80_answer",
+          "val_80_conflict",
+          "val_81_conflict",
+          "val_82_answer",
+          "val_82_conflict",
+          "val_84_answer",
+          "val_84_conflict",
+          "val_85_answer",
+          "val_85_conflict",
+          "val_86_answer",
+          "val_86_conflict",
+          "val_87_answer",
+          "val_87_conflict",
+          "val_88_conflict",
+          "val_89_conflict",
+          "val_90_conflict",
+          "val_91_answer",
+          "val_91_conflict",
+          "val_92_answer",
+          "val_92_conflict",
+          "val_93_answer",
+          "val_93_conflict",
+          "val_94_answer",
+          "val_94_conflict"
+        ]
+      },
+      "group_counts": {
+        "improved": 2,
+        "regressed": 14,
+        "both_correct": 104,
+        "both_wrong": 165
+      },
+      "net_correct": -12,
+      "transition_rows": "right prediction",
+      "transition_columns": "left prediction",
+      "prediction_order": [
+        "answer",
+        "refuse",
+        "conflict",
+        "invalid"
+      ],
+      "transitions_by_published_class": {
+        "answer": [
+          [
+            9,
+            13,
+            0,
+            0
+          ],
+          [
+            1,
+            72,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "refuse": [
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            94,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        "conflict": [
+          [
+            8,
+            22,
+            0,
+            0
+          ],
+          [
+            1,
+            62,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "paired_question_bootstrap": {
+    "semantic_rules_minus_legacy_chat8": {
+      "direction": "left minus right",
+      "resamples": 10000,
+      "seed": 42,
+      "unit": "original question; retain all three configurations",
+      "fixed_models": true,
+      "differences": {
+        "accuracy": {
+          "estimate": 0.014035087719298234,
+          "95ci": [
+            -0.014035087719298234,
+            0.0421052631578947
+          ]
+        },
+        "macro_f1": {
+          "estimate": 0.02540970295850703,
+          "95ci": [
+            -0.012046638947656256,
+            0.06377701860267151
+          ]
+        },
+        "classification_false_answer_rate": {
+          "estimate": 0.05789473684210528,
+          "95ci": [
+            0.021052631578947364,
+            0.09473684210526317
+          ]
+        },
+        "answer_recall": {
+          "estimate": 0.03157894736842104,
+          "95ci": [
+            -0.04210526315789473,
+            0.10526315789473685
+          ]
+        },
+        "refuse_recall": {
+          "estimate": -0.010526315789473717,
+          "95ci": [
+            -0.03157894736842104,
+            0.0
+          ]
+        },
+        "conflict_recall": {
+          "estimate": 0.021052631578947368,
+          "95ci": [
+            0.0,
+            0.05263157894736842
+          ]
+        },
+        "refuse_to_answer_rate": {
+          "estimate": 0.010526315789473684,
+          "95ci": [
+            0.0,
+            0.031578947368421054
+          ]
+        },
+        "conflict_to_answer_rate": {
+          "estimate": 0.10526315789473684,
+          "95ci": [
+            0.03157894736842107,
+            0.17894736842105263
+          ]
+        }
+      }
+    },
+    "semantic_examples_minus_legacy_chat8": {
+      "direction": "left minus right",
+      "resamples": 10000,
+      "seed": 42,
+      "unit": "original question; retain all three configurations",
+      "fixed_models": true,
+      "differences": {
+        "accuracy": {
+          "estimate": -0.028070175438596523,
+          "95ci": [
+            -0.05263157894736842,
+            -0.0035087719298245723
+          ]
+        },
+        "macro_f1": {
+          "estimate": -0.038905710894345774,
+          "95ci": [
+            -0.07770746319725402,
+            -0.0004565151436274005
+          ]
+        },
+        "classification_false_answer_rate": {
+          "estimate": -0.057894736842105256,
+          "95ci": [
+            -0.09473684210526317,
+            -0.021052631578947364
+          ]
+        },
+        "answer_recall": {
+          "estimate": -0.09473684210526317,
+          "95ci": [
+            -0.16842105263157897,
+            -0.02105263157894738
+          ]
+        },
+        "refuse_recall": {
+          "estimate": 0.0,
+          "95ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "conflict_recall": {
+          "estimate": 0.010526315789473684,
+          "95ci": [
+            0.0,
+            0.031578947368421054
+          ]
+        },
+        "refuse_to_answer_rate": {
+          "estimate": 0.0,
+          "95ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "conflict_to_answer_rate": {
+          "estimate": -0.11578947368421051,
+          "95ci": [
+            -0.18947368421052635,
+            -0.04210526315789473
+          ]
+        }
+      }
+    },
+    "semantic_examples_minus_semantic_rules": {
+      "direction": "left minus right",
+      "resamples": 10000,
+      "seed": 42,
+      "unit": "original question; retain all three configurations",
+      "fixed_models": true,
+      "differences": {
+        "accuracy": {
+          "estimate": -0.04210526315789476,
+          "95ci": [
+            -0.07017543859649122,
+            -0.017543859649122806
+          ]
+        },
+        "macro_f1": {
+          "estimate": -0.0643154138528528,
+          "95ci": [
+            -0.10187194307490201,
+            -0.028797399383332874
+          ]
+        },
+        "classification_false_answer_rate": {
+          "estimate": -0.11578947368421053,
+          "95ci": [
+            -0.16315789473684209,
+            -0.07368421052631578
+          ]
+        },
+        "answer_recall": {
+          "estimate": -0.12631578947368421,
+          "95ci": [
+            -0.2,
+            -0.05263157894736843
+          ]
+        },
+        "refuse_recall": {
+          "estimate": 0.010526315789473717,
+          "95ci": [
+            0.0,
+            0.03157894736842104
+          ]
+        },
+        "conflict_recall": {
+          "estimate": -0.010526315789473684,
+          "95ci": [
+            -0.031578947368421054,
+            0.0
+          ]
+        },
+        "refuse_to_answer_rate": {
+          "estimate": -0.010526315789473684,
+          "95ci": [
+            -0.031578947368421054,
+            0.0
+          ]
+        },
+        "conflict_to_answer_rate": {
+          "estimate": -0.22105263157894733,
+          "95ci": [
+            -0.30526315789473685,
+            -0.13684210526315788
+          ]
+        }
+      }
+    }
+  },
+  "selection": {
+    "eligible_candidates": [],
+    "selected_candidate": null,
+    "diagnostic_best_candidate": "semantic_rules",
+    "status": "no_qualified_baseline"
+  },
+  "development_metrics": {
+    "legacy_chat8": {
+      "n_instances": 29,
+      "correct": 15,
+      "accuracy": 0.5172413793103449,
+      "macro_f1": 0.3111111111111111,
+      "classification_false_answer_rate": 0.058823529411764705,
+      "refuse_to_answer_count": 0,
+      "conflict_to_answer_count": 1,
+      "confusion_matrix": [
+        [
+          2,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          13,
+          0,
+          0
+        ],
+        [
+          1,
+          3,
+          0,
+          0
+        ]
+      ],
+      "per_class": {
+        "answer": {
+          "support": 12,
+          "correct": 2,
+          "precision": 0.6666666666666666,
+          "recall": 0.16666666666666666,
+          "f1": 0.26666666666666666
+        },
+        "refuse": {
+          "support": 13,
+          "correct": 13,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666
+        },
+        "conflict": {
+          "support": 4,
+          "correct": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "predicted_counts": {
+        "answer": 3,
+        "refuse": 26,
+        "conflict": 0,
+        "invalid": 0
+      }
+    },
+    "semantic_rules": {
+      "n_instances": 29,
+      "correct": 16,
+      "accuracy": 0.5517241379310345,
+      "macro_f1": 0.3530701754385965,
+      "classification_false_answer_rate": 0.058823529411764705,
+      "refuse_to_answer_count": 0,
+      "conflict_to_answer_count": 1,
+      "confusion_matrix": [
+        [
+          3,
+          9,
+          0,
+          0
+        ],
+        [
+          0,
+          13,
+          0,
+          0
+        ],
+        [
+          1,
+          3,
+          0,
+          0
+        ]
+      ],
+      "per_class": {
+        "answer": {
+          "support": 12,
+          "correct": 3,
+          "precision": 0.75,
+          "recall": 0.25,
+          "f1": 0.375
+        },
+        "refuse": {
+          "support": 13,
+          "correct": 13,
+          "precision": 0.52,
+          "recall": 1.0,
+          "f1": 0.6842105263157895
+        },
+        "conflict": {
+          "support": 4,
+          "correct": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "predicted_counts": {
+        "answer": 4,
+        "refuse": 25,
+        "conflict": 0,
+        "invalid": 0
+      }
+    },
+    "semantic_examples": {
+      "n_instances": 29,
+      "correct": 13,
+      "accuracy": 0.4482758620689655,
+      "macro_f1": 0.20634920634920637,
+      "classification_false_answer_rate": 0.0,
+      "refuse_to_answer_count": 0,
+      "conflict_to_answer_count": 0,
+      "confusion_matrix": [
+        [
+          0,
+          12,
+          0,
+          0
+        ],
+        [
+          0,
+          13,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0,
+          0
+        ]
+      ],
+      "per_class": {
+        "answer": {
+          "support": 12,
+          "correct": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "refuse": {
+          "support": 13,
+          "correct": 13,
+          "precision": 0.4482758620689655,
+          "recall": 1.0,
+          "f1": 0.6190476190476191
+        },
+        "conflict": {
+          "support": 4,
+          "correct": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "predicted_counts": {
+        "answer": 0,
+        "refuse": 29,
+        "conflict": 0,
+        "invalid": 0
+      }
+    }
+  },
+  "development_prediction_counts": {
+    "legacy_chat8": {
+      "refuse": 27,
+      "answer": 3
+    },
+    "semantic_rules": {
+      "refuse": 25,
+      "answer": 5
+    },
+    "semantic_examples": {
+      "refuse": 30
+    }
+  },
+  "development_cases": [
+    {
+      "id": "val_86_conflict",
+      "pilot_id": "P001",
+      "published_mode": "conflict",
+      "input_mode": "conflict",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "input_conflict_predicted_refuse",
+        "semantic_rules": "input_conflict_predicted_refuse",
+        "semantic_examples": "input_conflict_predicted_refuse"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_17_conflict",
+      "pilot_id": "P002",
+      "published_mode": "conflict",
+      "input_mode": "conflict",
+      "confidence": "moderate",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "input_conflict_predicted_refuse",
+        "semantic_rules": "input_conflict_predicted_refuse",
+        "semantic_examples": "input_conflict_predicted_refuse"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_13_refuse",
+      "pilot_id": "P003",
+      "published_mode": "refuse",
+      "input_mode": "refuse",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "class_agreement",
+        "semantic_rules": "class_agreement",
+        "semantic_examples": "class_agreement"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_86_answer",
+      "pilot_id": "P004",
+      "published_mode": "answer",
+      "input_mode": "answer",
+      "confidence": "moderate",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "input_answer_predicted_refuse",
+        "semantic_rules": "input_answer_predicted_refuse",
+        "semantic_examples": "input_answer_predicted_refuse"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_28_answer",
+      "pilot_id": "P005",
+      "published_mode": "answer",
+      "input_mode": "answer",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "answer",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "input_answer_predicted_refuse",
+        "semantic_rules": "class_agreement",
+        "semantic_examples": "input_answer_predicted_refuse"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_3_refuse",
+      "pilot_id": "P006",
+      "published_mode": "refuse",
+      "input_mode": "refuse",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "class_agreement",
+        "semantic_rules": "class_agreement",
+        "semantic_examples": "class_agreement"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_35_answer",
+      "pilot_id": "P007",
+      "published_mode": "answer",
+      "input_mode": "refuse",
+      "confidence": "moderate",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "class_agreement",
+        "semantic_rules": "class_agreement",
+        "semantic_examples": "class_agreement"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_31_conflict",
+      "pilot_id": "P008",
+      "published_mode": "conflict",
+      "input_mode": "unknown",
+      "confidence": "ambiguous",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "answer",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "input_unknown_excluded",
+        "semantic_rules": "input_unknown_excluded",
+        "semantic_examples": "input_unknown_excluded"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_81_conflict",
+      "pilot_id": "P009",
+      "published_mode": "conflict",
+      "input_mode": "conflict",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "answer",
+        "semantic_rules": "answer",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "input_conflict_predicted_answer",
+        "semantic_rules": "input_conflict_predicted_answer",
+        "semantic_examples": "input_conflict_predicted_refuse"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_94_refuse",
+      "pilot_id": "P010",
+      "published_mode": "refuse",
+      "input_mode": "refuse",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "class_agreement",
+        "semantic_rules": "class_agreement",
+        "semantic_examples": "class_agreement"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_3_answer",
+      "pilot_id": "P011",
+      "published_mode": "answer",
+      "input_mode": "answer",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "input_answer_predicted_refuse",
+        "semantic_rules": "input_answer_predicted_refuse",
+        "semantic_examples": "input_answer_predicted_refuse"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_3_conflict",
+      "pilot_id": "P012",
+      "published_mode": "conflict",
+      "input_mode": "answer",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "input_answer_predicted_refuse",
+        "semantic_rules": "input_answer_predicted_refuse",
+        "semantic_examples": "input_answer_predicted_refuse"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_28_conflict",
+      "pilot_id": "P013",
+      "published_mode": "conflict",
+      "input_mode": "answer",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "answer",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "class_agreement",
+        "semantic_rules": "input_answer_predicted_refuse",
+        "semantic_examples": "input_answer_predicted_refuse"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_14_conflict",
+      "pilot_id": "P014",
+      "published_mode": "conflict",
+      "input_mode": "answer",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "input_answer_predicted_refuse",
+        "semantic_rules": "input_answer_predicted_refuse",
+        "semantic_examples": "input_answer_predicted_refuse"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_86_refuse",
+      "pilot_id": "P015",
+      "published_mode": "refuse",
+      "input_mode": "refuse",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "class_agreement",
+        "semantic_rules": "class_agreement",
+        "semantic_examples": "class_agreement"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_35_refuse",
+      "pilot_id": "P016",
+      "published_mode": "refuse",
+      "input_mode": "refuse",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "class_agreement",
+        "semantic_rules": "class_agreement",
+        "semantic_examples": "class_agreement"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_31_refuse",
+      "pilot_id": "P017",
+      "published_mode": "refuse",
+      "input_mode": "refuse",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "class_agreement",
+        "semantic_rules": "class_agreement",
+        "semantic_examples": "class_agreement"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_81_answer",
+      "pilot_id": "P018",
+      "published_mode": "answer",
+      "input_mode": "answer",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "answer",
+        "semantic_rules": "answer",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "class_agreement",
+        "semantic_rules": "class_agreement",
+        "semantic_examples": "input_answer_predicted_refuse"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_31_answer",
+      "pilot_id": "P019",
+      "published_mode": "answer",
+      "input_mode": "answer",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "input_answer_predicted_refuse",
+        "semantic_rules": "input_answer_predicted_refuse",
+        "semantic_examples": "input_answer_predicted_refuse"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_28_refuse",
+      "pilot_id": "P020",
+      "published_mode": "refuse",
+      "input_mode": "refuse",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "class_agreement",
+        "semantic_rules": "class_agreement",
+        "semantic_examples": "class_agreement"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_13_conflict",
+      "pilot_id": "P021",
+      "published_mode": "conflict",
+      "input_mode": "conflict",
+      "confidence": "moderate",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "input_conflict_predicted_refuse",
+        "semantic_rules": "input_conflict_predicted_refuse",
+        "semantic_examples": "input_conflict_predicted_refuse"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_14_answer",
+      "pilot_id": "P022",
+      "published_mode": "answer",
+      "input_mode": "answer",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "input_answer_predicted_refuse",
+        "semantic_rules": "input_answer_predicted_refuse",
+        "semantic_examples": "input_answer_predicted_refuse"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_17_answer",
+      "pilot_id": "P023",
+      "published_mode": "answer",
+      "input_mode": "answer",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "input_answer_predicted_refuse",
+        "semantic_rules": "input_answer_predicted_refuse",
+        "semantic_examples": "input_answer_predicted_refuse"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_94_conflict",
+      "pilot_id": "P024",
+      "published_mode": "conflict",
+      "input_mode": "answer",
+      "confidence": "moderate",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "answer",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "input_answer_predicted_refuse",
+        "semantic_rules": "class_agreement",
+        "semantic_examples": "input_answer_predicted_refuse"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_35_conflict",
+      "pilot_id": "P025",
+      "published_mode": "conflict",
+      "input_mode": "refuse",
+      "confidence": "moderate",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "class_agreement",
+        "semantic_rules": "class_agreement",
+        "semantic_examples": "class_agreement"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_14_refuse",
+      "pilot_id": "P026",
+      "published_mode": "refuse",
+      "input_mode": "refuse",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "class_agreement",
+        "semantic_rules": "class_agreement",
+        "semantic_examples": "class_agreement"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_13_answer",
+      "pilot_id": "P027",
+      "published_mode": "answer",
+      "input_mode": "answer",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "input_answer_predicted_refuse",
+        "semantic_rules": "input_answer_predicted_refuse",
+        "semantic_examples": "input_answer_predicted_refuse"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_17_refuse",
+      "pilot_id": "P028",
+      "published_mode": "refuse",
+      "input_mode": "refuse",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "class_agreement",
+        "semantic_rules": "class_agreement",
+        "semantic_examples": "class_agreement"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_94_answer",
+      "pilot_id": "P029",
+      "published_mode": "answer",
+      "input_mode": "refuse",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "class_agreement",
+        "semantic_rules": "class_agreement",
+        "semantic_examples": "class_agreement"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    },
+    {
+      "id": "val_81_refuse",
+      "pilot_id": "P030",
+      "published_mode": "refuse",
+      "input_mode": "refuse",
+      "confidence": "high",
+      "predictions": {
+        "legacy_chat8": "refuse",
+        "semantic_rules": "refuse",
+        "semantic_examples": "refuse"
+      },
+      "observations": {
+        "legacy_chat8": "class_agreement",
+        "semantic_rules": "class_agreement",
+        "semantic_examples": "class_agreement"
+      },
+      "judgment_source": "docs/records/2026-10-16-validation-semantic-followup-ratings.json",
+      "judgment_status": "Reuse exposed same-assistant development rating; no new semantic score."
+    }
+  ],
+  "existing_citations_checked": 50,
+  "limitation": "Published-label metrics; exposed same-assistant development judgments reused, not independent gold. Label-only outputs do not reveal internal reasoning. No new semantic labels, GPU, test/confirmation inference or changes to frozen sources.",
+  "analysis_script_sha256": "1742b86541e9bef64748c302614fc1bd38a25203159ebed039cccece9cb29707",
+  "postanalysis_run_dir": "runs/qwen2.5-3b-classification-semantic-postanalysis-2026-10-18-v2",
+  "postanalysis_manifest": {
+    "status": "verified_postanalysis",
+    "source_sha256": {
+      "runs/qwen2.5-3b-small/data/instances_val.jsonl": "18a0e6817fbbc3b0f9a89e029209221e97f6406a3b6c7ecb88de61161cb095bb",
+      "docs/records/2026-10-16-validation-semantic-followup-ratings.json": "df2f339a183cce8e79a7be45a13972e8da69a75dbeefc1fcfc92d4877c054551",
+      "runs/qwen2.5-3b-validation-semantic-pilot-2026-10-16-v1/coordinator/mapping.json": "3ea3e53116615c73828dac2c1fccc4b5bd783ec1a854f9632f5f78f3886e017b",
+      "runs/qwen2.5-3b-classification-semantic-v1/protocol.json": "f1fb064792fbc76415c49bd52142d2f4382ca26a5e6d871f9130dfd00cda4b98",
+      "runs/qwen2.5-3b-classification-semantic-v1/reports/val.json": "2e8ad0bcf92b8123d8c209f9baa0b588fa81c790f602b4c058c979ac85df0eb2",
+      "runs/qwen2.5-3b-classification-semantic-smoke-v1/protocol.json": "689e7004ad3f752fce84d3b9d068788636574cce0b0371ebd26aef39524c7045",
+      "runs/qwen2.5-3b-classification-semantic-smoke-v1/reports/val.json": "1ebbbe23bbe2020aa7131ef9c6aed5671521bd9c1d4f692243010d79ea9c09a7",
+      "docs/records/2026-10-18-classification-semantic-baseline-full-replay.json": "6431a8574c1a39397eab6333d7afe4aedbe6e4d1f47166e4f9cc22190cb362bf",
+      "docs/records/2026-10-18-classification-semantic-baseline-smoke-replay.json": "731cf54ab92d54ff92aae4d6c1ca6516f4733eed7a3577f4989f8d79d7100eec",
+      "runs/qwen2.5-3b-classification-grid/chat8/val/predictions.json": "6f7bc5fedb63a65a7d2affb138e1ea3687fa26aae0b23fccad6e4e1428256dee",
+      "runs/qwen2.5-3b-classification-semantic-v1/semantic_rules/predictions.json": "20798b6e97aed6dfe63542be497686b0b287a0fb0042853058f8af9916b6d0d6",
+      "runs/qwen2.5-3b-classification-semantic-v1/semantic_examples/predictions.json": "d969e7cffbbf12daf1a9a9768f51c471a71f5f1762887b7b23a06a2fba7374df",
+      "runs/qwen2.5-3b-classification-semantic-smoke-v1/semantic_rules/predictions.json": "838970781f1fe32e095e514b33fca74fce62ae5b6ec3506392af934ae1b569a1",
+      "runs/qwen2.5-3b-classification-semantic-smoke-v1/semantic_examples/predictions.json": "f753bf57566a24e7c9527ef4ac982817257e4111e3dbb1a77451aa12e05522f3"
+    },
+    "analysis_script_sha256": "1742b86541e9bef64748c302614fc1bd38a25203159ebed039cccece9cb29707",
+    "artifact_sha256": {
+      "summary.json": "200fe88e8bd1c58bf80d0731f0d3bf8ac78a3c214c28536872a62a5b6e01dd79",
+      "cases.csv": "1595065043276c898041be05c65237f706359f97c255bc584cbbe3ffe93b7603",
+      "report.md": "284a0d558832bded7829eac8f6e491a592abf56b80c8d2291a68f83fb0a403a7"
+    }
+  },
+  "code_submission": {
+    "commit": "65a3f26ee385e41fef77124494a1d33556cda28c",
+    "remote": "origin/main",
+    "remote_hash_verified": true,
+    "files": 73,
+    "tests_before_commit": 79,
+    "test_seconds_before_commit": 10.895
+  }
+}
