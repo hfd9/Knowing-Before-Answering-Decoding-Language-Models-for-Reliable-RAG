@@ -20,6 +20,19 @@
 密钥未设口令，以支持该账号在此机器上的自动推送；私钥不需要发给助手或上传到 GitHub。
 本机配置与私钥不会随克隆迁移到其他机器。HTTP 凭据缓存不再承担此 origin 的认证。
 
+## 提交作者身份
+
+2026-10-20按用户提供的邮箱配置了当前仓库的local user.name=hfd9及user.email；实际值用下列命令核对，不在公共文档重复邮箱。git var GIT_AUTHOR_IDENT与GIT_COMMITTER_IDENT均已确认采用用户身份。后续正常git commit沿用本地配置，不再以-c user.name=Codex/-c user.email=codex@openai.com覆盖。SSH推送认证身份与提交作者邮箱是不同设置。
+
+```sh
+git config --local --get user.name
+git config --local --get user.email
+git var GIT_AUTHOR_IDENT
+git var GIT_COMMITTER_IDENT
+```
+
+旧提交的作者仍为Codex，修改local配置不会追溯更改；本次未改写历史。完整处理记录见[身份修正](records/2026-10-20-git-author-identity.md)。
+
 ## 首次授权：用户完成一次
 
 本机已完成以下首次授权步骤，后续直接使用 git push origin main 即可；更换机器时使用新机器的公钥重新授权。
