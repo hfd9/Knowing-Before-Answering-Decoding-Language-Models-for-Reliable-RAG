@@ -1,0 +1,1977 @@
+{
+  "stage": "development48_sealed_before_reading_other192_this_round",
+  "reviewer": "current_assistant_with_project_history",
+  "history_exposed": true,
+  "independent_gold": false,
+  "source_protocol_sha256": "a89665d92881926bc0c6da323affe35155dda20bea86101c43137c570b3b6b8f",
+  "inputs_sha256": "5b948b3931290ee434b211a308bd784a50f17ef13fd11dda568bf1bbd5047ade",
+  "recorded_at": "2026-10-20T20:58:00.531931+08:00",
+  "all_full_documents_read": true,
+  "background_assessments": {
+    "train_405": {
+      "modes": [
+        "answer",
+        "answer",
+        "refuse",
+        "conflict",
+        "answer",
+        "answer",
+        "refuse",
+        "conflict"
+      ],
+      "answer": "美国；两所题中大学的国家均须有依据。",
+      "required": [
+        "Washington University in St. Louis→美国",
+        "University of Colorado→美国"
+      ],
+      "missing": "I只提供WashU的国家；Colorado的四校区/公立性质不蕴涵国家，背景也不提供该校地理桥接。",
+      "conflict": "同一Colorado大学系统被断言位于美国，并被断言位于Canada且不在USA；没有纠正或来源优先级。",
+      "backgrounds": [
+        "2: University of Washington与Stevens，不是题中两校；不得混同Washington两种校名。",
+        "3: University of Washington与Boston University，不补Colorado。",
+        "5: Seattle University与CSUDH，不补Colorado。"
+      ],
+      "warnings": [
+        "A_K的research属性在B_K省略；答案支持关系不变，但不是所有原子命题逐字义等价。"
+      ]
+    },
+    "train_1525": {
+      "modes": [
+        "answer",
+        "answer",
+        "refuse",
+        "conflict",
+        "answer",
+        "answer",
+        "refuse",
+        "conflict"
+      ],
+      "answer": "Stan Wawrinka，限定2015法国网球公开赛男单。",
+      "required": [
+        "2015 French Open men singles→冠军身份"
+      ],
+      "missing": "亚军Djokovic和四盘赛制不能唯一推出冠军；三篇背景是板球/2017美网女单。",
+      "conflict": "同一年同一赛事同一男单冠军位置分别给Wawrinka与Djokovic；champion与runner-up的兼容K不应误当冲突。",
+      "backgrounds": [
+        "2:2015板球世界杯，不是法网。",
+        "3:2017美网女单，赛事/组别/时间不同。",
+        "4:板球世界杯元数据，不是法网。"
+      ],
+      "warnings": [
+        "B_I第二目标不再显式重复French Open/2015，指代依靠第一目标与问题；仍缺冠军，不等同原子事实完全保留。"
+      ]
+    },
+    "train_1064": {
+      "modes": [
+        "answer",
+        "answer",
+        "refuse",
+        "conflict",
+        "answer",
+        "answer",
+        "refuse",
+        "conflict"
+      ],
+      "answer": "变得更好、改善或更可忍受。",
+      "required": [
+        "ameliorate与better/improve/more tolerable的定义关系"
+      ],
+      "missing": "用例领域和词性并不提供词义方向；理解英语所需语言能力不等于允许从参数记忆补词典事实。",
+      "conflict": "同一词义被定义为变好/改善，又被明说为变坏而非变好，无法用不同sense消解。",
+      "backgrounds": [
+        "1:VOA词表A段截至amount，无ameliorate释义。",
+        "4:Lily Allen乐评，没有目标词定义。",
+        "5:golf mulligan文章，没有目标词定义。"
+      ],
+      "warnings": []
+    },
+    "train_315": {
+      "modes": [
+        "answer",
+        "answer",
+        "refuse",
+        "conflict",
+        "answer",
+        "answer",
+        "refuse",
+        "conflict"
+      ],
+      "answer": "主要由人类对地表的改变造成；K额外允许能源废热为次要贡献。",
+      "required": [
+        "城市比乡村暖→因果机制/主要原因"
+      ],
+      "missing": "热岛名称、夜间较大和弱风显著是定义/时空条件，不能补出城市地表改变的因果机制；背景水分定义亦无桥接。",
+      "conflict": "同一地表改变被给为chief/main cause，又被否认有任何贡献；次要废热并不消解此矛盾。",
+      "backgrounds": [
+        "1:水分含量概念，不说明城乡温差机制。",
+        "3:anthropomorphism不是anthropogenic land modification。",
+        "5:与3重复，不能因重复制造新支持。"
+      ],
+      "warnings": [
+        "A_S第二目标命名urban heat island，B_S只谈温差，省略该术语命名事实；主要原因与三分类关系仍保留。"
+      ]
+    },
+    "train_989": {
+      "modes": [
+        "answer",
+        "answer",
+        "refuse",
+        "unknown",
+        "answer",
+        "answer",
+        "refuse",
+        "unknown"
+      ],
+      "answer": "按材料给出的通常程序：最后一轮下注结束且仍至少两位玩家时亮牌比较；不能外推所有牌局/强制亮牌例外。",
+      "required": [
+        "何种条件结束下注",
+        "该条件下亮牌程序/义务"
+      ],
+      "missing": "只有下注轮次、持牌与多人可能剩余，不说明何时亮牌。",
+      "conflict": "正面是一般性描述expose/reveal，反面是must not/prohibited义务。按规则语境读存在冲突；按实际行为与规范不同层次读可同时成立，材料未消除此歧义。",
+      "backgrounds": [
+        "1:Yazoo歌曲元数据。",
+        "3:Lettermen歌曲元数据。",
+        "4:Billy Currington歌曲元数据。"
+      ],
+      "warnings": [
+        "S/K按规则体裁推断have to，充分判断为moderate。",
+        "C两条保留unknown；需统一正反主张的描述/义务模态，不把实践亮牌与禁止亮牌直接当形式互斥。"
+      ]
+    },
+    "train_1302": {
+      "modes": [
+        "answer",
+        "answer",
+        "refuse",
+        "conflict",
+        "answer",
+        "answer",
+        "refuse",
+        "conflict"
+      ],
+      "answer": "Sunday；题中指定Old Order Amish社群通常隔周在家礼拜。",
+      "required": [
+        "指定Old Order Amish社群→通常礼拜日"
+      ],
+      "missing": "在家礼拜及仪式内容不提供星期几；多数基督徒周日礼拜不蕴涵这个特定社群的日程，即便另知其教派也不能从most推全体。",
+      "conflict": "同一社群通常隔周Sunday，对照主张改为Saturday且not Sunday；泛指多数基督徒Sunday不能作为此社群的纠正依据。",
+      "backgrounds": [
+        "1:Lord’s Day/most Christians的泛称，非该Old Order Amish群体的日程。",
+        "2:Corrs歌曲元数据。",
+        "5:Andy Kim歌曲元数据。"
+      ],
+      "warnings": [
+        "A_K与B_S把Sunday称weekday；通常weekday排除周末，改day of the week可去掉无关的术语噪声。"
+      ]
+    }
+  },
+  "ratings": [
+    {
+      "id": "stv13_A_S",
+      "original_id": "train_405",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "S",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "Washington University in St. Louis→美国",
+        "University of Colorado→美国"
+      ],
+      "rationale": "美国；两所题中大学的国家均须有依据。",
+      "support_chain": [
+        "美国；两所题中大学的国家均须有依据。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Washington University in St. Louis is in Missouri, United States. The University of Colorado system is in Colorado, United States.",
+          "start": 0,
+          "end": 130,
+          "document_sha256": "d9ded6e1a77d3b0f2dd4fd4dfe9f1e1d1ebb2a35c58606cfa5ebfd57a859b6ca"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Both Washington University in St. Louis and the University of Colorado are located in the United States.",
+          "start": 0,
+          "end": 104,
+          "document_sha256": "184e29a5a1ffc02f6505e540e354d353305a97dc1c233baaade55615029e2bf4"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv13_A_K",
+      "original_id": "train_405",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "K",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "Washington University in St. Louis→美国",
+        "University of Colorado→美国"
+      ],
+      "rationale": "美国；两所题中大学的国家均须有依据。",
+      "support_chain": [
+        "美国；两所题中大学的国家均须有依据。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Washington University in St. Louis is in Missouri, United States. The University of Colorado system is in Colorado, United States.",
+          "start": 0,
+          "end": 130,
+          "document_sha256": "d9ded6e1a77d3b0f2dd4fd4dfe9f1e1d1ebb2a35c58606cfa5ebfd57a859b6ca"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Washington University is a private research university; the Colorado system comprises four public university campuses.",
+          "start": 0,
+          "end": 118,
+          "document_sha256": "ef09967f7f0f09d3579dfd94c41f885ab4db01b25cad047aa1d5b1577c675169"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv13_A_I",
+      "original_id": "train_405",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "Washington University in St. Louis→美国",
+        "University of Colorado→美国"
+      ],
+      "rationale": "I只提供WashU的国家；Colorado的四校区/公立性质不蕴涵国家，背景也不提供该校地理桥接。",
+      "support_chain": [],
+      "missing_facts": [
+        "I只提供WashU的国家；Colorado的四校区/公立性质不蕴涵国家，背景也不提供该校地理桥接。"
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Washington University in St. Louis is in Missouri, United States.",
+          "start": 0,
+          "end": 65,
+          "document_sha256": "f7b73ce853f5c063fc17cee73a040ee2856c768d75326b58462b5a3e3ca5b0c7"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "The University of Colorado is a public university system comprising four campuses.",
+          "start": 0,
+          "end": 82,
+          "document_sha256": "970d4b2a32762fd9c123dc48c50a181d31c3ea46dafac0318b4634cebce34b66"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv13_A_C",
+      "original_id": "train_405",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "C",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "Washington University in St. Louis→美国",
+        "University of Colorado→美国"
+      ],
+      "rationale": "同一Colorado大学系统被断言位于美国，并被断言位于Canada且不在USA；没有纠正或来源优先级。",
+      "support_chain": [],
+      "missing_facts": [],
+      "conflicting_claims": [
+        "Washington University in St. Louis is in Missouri, United States. The University of Colorado system is in Colorado, United States.",
+        "Washington University in St. Louis is in the United States, but the University of Colorado is in Canada and not in the United States."
+      ],
+      "resolution_basis": "No supplied correction or source priority. Poker modality ambiguity retained.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Washington University in St. Louis is in Missouri, United States. The University of Colorado system is in Colorado, United States.",
+          "start": 0,
+          "end": 130,
+          "document_sha256": "d9ded6e1a77d3b0f2dd4fd4dfe9f1e1d1ebb2a35c58606cfa5ebfd57a859b6ca"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Washington University in St. Louis is in the United States, but the University of Colorado is in Canada and not in the United States.",
+          "start": 0,
+          "end": 133,
+          "document_sha256": "716ef1ca2e1bf0577d9f2a93e3bb1f33047b927b3b69e7cc4b7fa0d8e97acd97"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv13_B_S",
+      "original_id": "train_405",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "S",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "Washington University in St. Louis→美国",
+        "University of Colorado→美国"
+      ],
+      "rationale": "美国；两所题中大学的国家均须有依据。",
+      "support_chain": [
+        "美国；两所题中大学的国家均须有依据。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "The United States is home to Washington University in St. Louis and to the Colorado university system.",
+          "start": 0,
+          "end": 102,
+          "document_sha256": "7b1ae6f12a8dd1de761b235f7224335194f93f642f6a411cf6cbceef78294cb0"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "WashU's location is Missouri in the USA; the University of Colorado's campuses are in the US state of Colorado.",
+          "start": 0,
+          "end": 111,
+          "document_sha256": "f86883a49ef13eaa033111ea7f5eae8f576d91e136f1e40d79922e49aaf5b2b0"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv13_B_K",
+      "original_id": "train_405",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "K",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "Washington University in St. Louis→美国",
+        "University of Colorado→美国"
+      ],
+      "rationale": "美国；两所题中大学的国家均须有依据。",
+      "support_chain": [
+        "美国；两所题中大学的国家均须有依据。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "The United States is home to Washington University in St. Louis and to the Colorado university system.",
+          "start": 0,
+          "end": 102,
+          "document_sha256": "7b1ae6f12a8dd1de761b235f7224335194f93f642f6a411cf6cbceef78294cb0"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "WashU is privately run, while the four-campus Colorado system is public.",
+          "start": 0,
+          "end": 72,
+          "document_sha256": "3a1237ce6e7ffbabe2c5171514ebc73dafc646bcf5df265cebb400aa013903a6"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv13_B_I",
+      "original_id": "train_405",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "Washington University in St. Louis→美国",
+        "University of Colorado→美国"
+      ],
+      "rationale": "I只提供WashU的国家；Colorado的四校区/公立性质不蕴涵国家，背景也不提供该校地理桥接。",
+      "support_chain": [],
+      "missing_facts": [
+        "I只提供WashU的国家；Colorado的四校区/公立性质不蕴涵国家，背景也不提供该校地理桥接。"
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Missouri, USA, is the location of Washington University in St. Louis.",
+          "start": 0,
+          "end": 69,
+          "document_sha256": "aaebcf46823af473110db7811e383c56df18e37f48a123894300e5457fe756bf"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Four public campuses make up the University of Colorado system.",
+          "start": 0,
+          "end": 63,
+          "document_sha256": "381740c90f2a3cc03958008d51ee1c7a4d403895cb914c845d7e4610b75ace01"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv13_B_C",
+      "original_id": "train_405",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "C",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "Washington University in St. Louis→美国",
+        "University of Colorado→美国"
+      ],
+      "rationale": "同一Colorado大学系统被断言位于美国，并被断言位于Canada且不在USA；没有纠正或来源优先级。",
+      "support_chain": [],
+      "missing_facts": [],
+      "conflicting_claims": [
+        "The United States is home to Washington University in St. Louis and to the Colorado university system.",
+        "WashU is American, whereas the University of Colorado is located in Canada, outside the USA."
+      ],
+      "resolution_basis": "No supplied correction or source priority. Poker modality ambiguity retained.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "The United States is home to Washington University in St. Louis and to the Colorado university system.",
+          "start": 0,
+          "end": 102,
+          "document_sha256": "7b1ae6f12a8dd1de761b235f7224335194f93f642f6a411cf6cbceef78294cb0"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "WashU is American, whereas the University of Colorado is located in Canada, outside the USA.",
+          "start": 0,
+          "end": 92,
+          "document_sha256": "8adbd6b32bf5d44507ff776c4ecd869db102eacf26996ed5157f90a9e7e4a4be"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv14_A_S",
+      "original_id": "train_1525",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "S",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "2015 French Open men singles→冠军身份"
+      ],
+      "rationale": "Stan Wawrinka，限定2015法国网球公开赛男单。",
+      "support_chain": [
+        "Stan Wawrinka，限定2015法国网球公开赛男单。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Stan Wawrinka won the men's singles title at the 2015 French Open.",
+          "start": 0,
+          "end": 66,
+          "document_sha256": "42f6479174431f08a46b7fd55743ecb7c863f7658b6e4e6724325dbafb60e716"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "The champion of the 2015 French Open men's singles event was Stan Wawrinka.",
+          "start": 0,
+          "end": 75,
+          "document_sha256": "e771c64a17db81370897ec236baf19d116caa0f64339fc66563b5974bd64baa8"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv14_A_K",
+      "original_id": "train_1525",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "K",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "2015 French Open men singles→冠军身份"
+      ],
+      "rationale": "Stan Wawrinka，限定2015法国网球公开赛男单。",
+      "support_chain": [
+        "Stan Wawrinka，限定2015法国网球公开赛男单。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Stan Wawrinka won the men's singles title at the 2015 French Open.",
+          "start": 0,
+          "end": 66,
+          "document_sha256": "42f6479174431f08a46b7fd55743ecb7c863f7658b6e4e6724325dbafb60e716"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "Stan Wawrinka was champion and Novak Djokovic was runner-up in that 2015 men's singles final.",
+          "start": 0,
+          "end": 93,
+          "document_sha256": "8ac3fb7c646297751969e399dbea2877d2da14b10f1c643934e0cc577626cc9c"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv14_A_I",
+      "original_id": "train_1525",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "2015 French Open men singles→冠军身份"
+      ],
+      "rationale": "亚军Djokovic和四盘赛制不能唯一推出冠军；三篇背景是板球/2017美网女单。",
+      "support_chain": [],
+      "missing_facts": [
+        "亚军Djokovic和四盘赛制不能唯一推出冠军；三篇背景是板球/2017美网女单。"
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "The 2015 French Open included a men's singles tournament.",
+          "start": 0,
+          "end": 57,
+          "document_sha256": "2890dc8df87de7a7d235ad0ac3bb144183b23d537a727d0521dc4b8fa8f38b06"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "Novak Djokovic was runner-up in the 2015 French Open men's singles final, which lasted four sets.",
+          "start": 0,
+          "end": 97,
+          "document_sha256": "15ffd6f5298863a54d24c9b5258abb28c08c40c5af29dd69c941672e762d866a"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv14_A_C",
+      "original_id": "train_1525",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "C",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "2015 French Open men singles→冠军身份"
+      ],
+      "rationale": "同一年同一赛事同一男单冠军位置分别给Wawrinka与Djokovic；champion与runner-up的兼容K不应误当冲突。",
+      "support_chain": [],
+      "missing_facts": [],
+      "conflicting_claims": [
+        "Stan Wawrinka won the men's singles title at the 2015 French Open.",
+        "Novak Djokovic was the champion of the same 2015 French Open men's singles event."
+      ],
+      "resolution_basis": "No supplied correction or source priority. Poker modality ambiguity retained.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Stan Wawrinka won the men's singles title at the 2015 French Open.",
+          "start": 0,
+          "end": 66,
+          "document_sha256": "42f6479174431f08a46b7fd55743ecb7c863f7658b6e4e6724325dbafb60e716"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "Novak Djokovic was the champion of the same 2015 French Open men's singles event.",
+          "start": 0,
+          "end": 81,
+          "document_sha256": "9eca961ec71144f0bcf64d4f0effd4da6b97b779acb39ed82a4ecedb4f916d4e"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv14_B_S",
+      "original_id": "train_1525",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "S",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "2015 French Open men singles→冠军身份"
+      ],
+      "rationale": "Stan Wawrinka，限定2015法国网球公开赛男单。",
+      "support_chain": [
+        "Stan Wawrinka，限定2015法国网球公开赛男单。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "The 2015 French Open men's singles champion was Stan Wawrinka.",
+          "start": 0,
+          "end": 62,
+          "document_sha256": "cf4f2569ad0cb8b44ff73f8befd3a47582e4e6ee75b16e9a76aad66f95493750"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "Wawrinka took the men's singles championship at the French Open in 2015.",
+          "start": 0,
+          "end": 72,
+          "document_sha256": "ccd9bf668d5a741850ae9175f0415f96178c36fe36235d77398af45d160a7ecf"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv14_B_K",
+      "original_id": "train_1525",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "K",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "2015 French Open men singles→冠军身份"
+      ],
+      "rationale": "Stan Wawrinka，限定2015法国网球公开赛男单。",
+      "support_chain": [
+        "Stan Wawrinka，限定2015法国网球公开赛男单。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "The 2015 French Open men's singles champion was Stan Wawrinka.",
+          "start": 0,
+          "end": 62,
+          "document_sha256": "cf4f2569ad0cb8b44ff73f8befd3a47582e4e6ee75b16e9a76aad66f95493750"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "In that final, Wawrinka finished as champion while Djokovic occupied the runner-up position.",
+          "start": 0,
+          "end": 92,
+          "document_sha256": "ee929f1c3dea7b07143426b776312d111fe394c509a3e0ea4a57c96ba3cdfecb"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv14_B_I",
+      "original_id": "train_1525",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "2015 French Open men singles→冠军身份"
+      ],
+      "rationale": "亚军Djokovic和四盘赛制不能唯一推出冠军；三篇背景是板球/2017美网女单。",
+      "support_chain": [],
+      "missing_facts": [
+        "亚军Djokovic和四盘赛制不能唯一推出冠军；三篇背景是板球/2017美网女单。"
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "There was a men's singles competition at the 2015 French Open.",
+          "start": 0,
+          "end": 62,
+          "document_sha256": "b3b92f3b552f6b5273450d635d5cc7d91cde011f64beeb3b581ee361b4668b04"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "The men's singles runner-up was Djokovic, and the final was played over four sets.",
+          "start": 0,
+          "end": 82,
+          "document_sha256": "6395e377fa9ac95b6483e70a987f96d5f40f66d658f03c8f018e355b5955c904"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv14_B_C",
+      "original_id": "train_1525",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "C",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "2015 French Open men singles→冠军身份"
+      ],
+      "rationale": "同一年同一赛事同一男单冠军位置分别给Wawrinka与Djokovic；champion与runner-up的兼容K不应误当冲突。",
+      "support_chain": [],
+      "missing_facts": [],
+      "conflicting_claims": [
+        "The 2015 French Open men's singles champion was Stan Wawrinka.",
+        "For that same 2015 men's singles competition, Djokovic held the champion's title."
+      ],
+      "resolution_basis": "No supplied correction or source priority. Poker modality ambiguity retained.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "The 2015 French Open men's singles champion was Stan Wawrinka.",
+          "start": 0,
+          "end": 62,
+          "document_sha256": "cf4f2569ad0cb8b44ff73f8befd3a47582e4e6ee75b16e9a76aad66f95493750"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "For that same 2015 men's singles competition, Djokovic held the champion's title.",
+          "start": 0,
+          "end": 81,
+          "document_sha256": "af97185f780d390fe443680e218c6c1bef95a4b4e6e1d88b162e3130e9fa62e1"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv15_A_S",
+      "original_id": "train_1064",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "S",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "ameliorate与better/improve/more tolerable的定义关系"
+      ],
+      "rationale": "变得更好、改善或更可忍受。",
+      "support_chain": [
+        "变得更好、改善或更可忍受。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "To ameliorate a bad situation is to make it better or improve it.",
+          "start": 0,
+          "end": 65,
+          "document_sha256": "0085726ad758a1164b8462abc851ef5f15ac03276e7914ce59166c5f2f3a5723"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "When conditions are bad, ameliorate means that they have been made more tolerable.",
+          "start": 0,
+          "end": 82,
+          "document_sha256": "e14536065e87457fe5d9375ac035ecd92f00981d2a0ca3e908fcb9d738b66ee5"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv15_A_K",
+      "original_id": "train_1064",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "K",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "ameliorate与better/improve/more tolerable的定义关系"
+      ],
+      "rationale": "变得更好、改善或更可忍受。",
+      "support_chain": [
+        "变得更好、改善或更可忍受。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "To ameliorate a bad situation is to make it better or improve it.",
+          "start": 0,
+          "end": 65,
+          "document_sha256": "0085726ad758a1164b8462abc851ef5f15ac03276e7914ce59166c5f2f3a5723"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "Ameliorating suffering makes it more tolerable, improving a bad situation.",
+          "start": 0,
+          "end": 74,
+          "document_sha256": "e304552615bc5bc7185f83bdde89c7ab344b87b59510384a4c9104e75aa06fde"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv15_A_I",
+      "original_id": "train_1064",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "ameliorate与better/improve/more tolerable的定义关系"
+      ],
+      "rationale": "用例领域和词性并不提供词义方向；理解英语所需语言能力不等于允许从参数记忆补词典事实。",
+      "support_chain": [],
+      "missing_facts": [
+        "用例领域和词性并不提供词义方向；理解英语所需语言能力不等于允许从参数记忆补词典事实。"
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "Ameliorate is a verb used when discussing bad situations.",
+          "start": 0,
+          "end": 57,
+          "document_sha256": "3df67a5b22492ef1494e6d0de8f72898c02bad12fa0a5996dd8649fa2c86efcc"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "Examples of the word ameliorate discuss suffering, illness and harsh laws.",
+          "start": 0,
+          "end": 74,
+          "document_sha256": "59d4cc6da0dcddbdca9aea08b1648aebd31e4cab602a482c07684265cd248884"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv15_A_C",
+      "original_id": "train_1064",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "C",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "ameliorate与better/improve/more tolerable的定义关系"
+      ],
+      "rationale": "同一词义被定义为变好/改善，又被明说为变坏而非变好，无法用不同sense消解。",
+      "support_chain": [],
+      "missing_facts": [],
+      "conflicting_claims": [
+        "To ameliorate a bad situation is to make it better or improve it.",
+        "In that same sense, ameliorate means to make a bad situation worse, not better."
+      ],
+      "resolution_basis": "No supplied correction or source priority. Poker modality ambiguity retained.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "To ameliorate a bad situation is to make it better or improve it.",
+          "start": 0,
+          "end": 65,
+          "document_sha256": "0085726ad758a1164b8462abc851ef5f15ac03276e7914ce59166c5f2f3a5723"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "In that same sense, ameliorate means to make a bad situation worse, not better.",
+          "start": 0,
+          "end": 79,
+          "document_sha256": "c39455a3e95c9c7de5d690a9ff1515ae823c2f37e01902b27e39c762fe23ae7d"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv15_B_S",
+      "original_id": "train_1064",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "S",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "ameliorate与better/improve/more tolerable的定义关系"
+      ],
+      "rationale": "变得更好、改善或更可忍受。",
+      "support_chain": [
+        "变得更好、改善或更可忍受。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "A bad situation becomes better when it is ameliorated.",
+          "start": 0,
+          "end": 54,
+          "document_sha256": "8b8a5cf26796bfe671e57b28b019475bd8d857834eaa7c9b98172d8c5f4c690f"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "More tolerable conditions are what the verb ameliorate describes when the initial situation is bad.",
+          "start": 0,
+          "end": 99,
+          "document_sha256": "00bef4f676f58e089851ceeae84402e28ed6f5642b0587d094f55676770f2fe4"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv15_B_K",
+      "original_id": "train_1064",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "K",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "ameliorate与better/improve/more tolerable的定义关系"
+      ],
+      "rationale": "变得更好、改善或更可忍受。",
+      "support_chain": [
+        "变得更好、改善或更可忍受。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "A bad situation becomes better when it is ameliorated.",
+          "start": 0,
+          "end": 54,
+          "document_sha256": "8b8a5cf26796bfe671e57b28b019475bd8d857834eaa7c9b98172d8c5f4c690f"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "Amelioration makes a bad situation more tolerable and improves its conditions.",
+          "start": 0,
+          "end": 78,
+          "document_sha256": "d443373d02222143da3b0847e9833e4a9d34bf3169d582454890ea885bd3a177"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv15_B_I",
+      "original_id": "train_1064",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "ameliorate与better/improve/more tolerable的定义关系"
+      ],
+      "rationale": "用例领域和词性并不提供词义方向；理解英语所需语言能力不等于允许从参数记忆补词典事实。",
+      "support_chain": [],
+      "missing_facts": [
+        "用例领域和词性并不提供词义方向；理解英语所需语言能力不等于允许从参数记忆补词典事实。"
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "Bad situations are the contexts in which the verb ameliorate is used.",
+          "start": 0,
+          "end": 69,
+          "document_sha256": "ca597a054b87ac9929411fb6810c1007513e2807fd6716cf943faa7aaa09a117"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "Suffering, illness and harsh laws appear in example sentences using ameliorate.",
+          "start": 0,
+          "end": 79,
+          "document_sha256": "20f6015f1625b12a19dc5965f85beb9d92bc9aa896e57abe14d3a7ba7d68a960"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv15_B_C",
+      "original_id": "train_1064",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "C",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "ameliorate与better/improve/more tolerable的定义关系"
+      ],
+      "rationale": "同一词义被定义为变好/改善，又被明说为变坏而非变好，无法用不同sense消解。",
+      "support_chain": [],
+      "missing_facts": [],
+      "conflicting_claims": [
+        "A bad situation becomes better when it is ameliorated.",
+        "For the same usage, amelioration makes the situation worse and does not make it better."
+      ],
+      "resolution_basis": "No supplied correction or source priority. Poker modality ambiguity retained.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "A bad situation becomes better when it is ameliorated.",
+          "start": 0,
+          "end": 54,
+          "document_sha256": "8b8a5cf26796bfe671e57b28b019475bd8d857834eaa7c9b98172d8c5f4c690f"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "For the same usage, amelioration makes the situation worse and does not make it better.",
+          "start": 0,
+          "end": 87,
+          "document_sha256": "fd0c5aa202e12bac7e9922328084960d6f2ab0d3cec47af9e105556f26ddf5f4"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv16_A_S",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "S",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "城市比乡村暖→因果机制/主要原因"
+      ],
+      "rationale": "主要由人类对地表的改变造成；K额外允许能源废热为次要贡献。",
+      "support_chain": [
+        "主要由人类对地表的改变造成；K额外允许能源废热为次要贡献。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "The main cause of urban areas being warmer than surrounding rural areas is human modification of land surfaces.",
+          "start": 0,
+          "end": 111,
+          "document_sha256": "f38342288f1b1596bd0dc14c85e85dded21d1cf7fe36c03b4e82afe0ba2e6c92"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "This urban heat island temperature difference is usually larger at night and most apparent when winds are weak.",
+          "start": 0,
+          "end": 111,
+          "document_sha256": "8b424d5c39dd2c7d5347903329d8151b9aaa5f6ea0997816c31f345777b6345c"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv16_A_K",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "K",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "城市比乡村暖→因果机制/主要原因"
+      ],
+      "rationale": "主要由人类对地表的改变造成；K额外允许能源废热为次要贡献。",
+      "support_chain": [
+        "主要由人类对地表的改变造成；K额外允许能源废热为次要贡献。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "The main cause of urban areas being warmer than surrounding rural areas is human modification of land surfaces.",
+          "start": 0,
+          "end": 111,
+          "document_sha256": "f38342288f1b1596bd0dc14c85e85dded21d1cf7fe36c03b4e82afe0ba2e6c92"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Waste heat from energy use is a secondary contributor, not the main cause; modification of land surfaces remains the main cause.",
+          "start": 0,
+          "end": 128,
+          "document_sha256": "b5b2401fb1b313368104bc655bbbf2053c289e8a9cb86a034ee17df33aa0a7fa"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv16_A_I",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "城市比乡村暖→因果机制/主要原因"
+      ],
+      "rationale": "热岛名称、夜间较大和弱风显著是定义/时空条件，不能补出城市地表改变的因果机制；背景水分定义亦无桥接。",
+      "support_chain": [],
+      "missing_facts": [
+        "热岛名称、夜间较大和弱风显著是定义/时空条件，不能补出城市地表改变的因果机制；背景水分定义亦无桥接。"
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "An urban heat island is an urban area that is significantly warmer than surrounding rural areas.",
+          "start": 0,
+          "end": 96,
+          "document_sha256": "fda4f481fa92b57bd52c0cdd84b653c397480d26b5f3fd37b2615f7328d818dd"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "This temperature difference is usually larger at night and most apparent when winds are weak.",
+          "start": 0,
+          "end": 93,
+          "document_sha256": "328e4c2f7e6f1af6a355bbc733dd343dd3512ce27782ae4b8cb8893511d9f3d3"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv16_A_C",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "C",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "城市比乡村暖→因果机制/主要原因"
+      ],
+      "rationale": "同一地表改变被给为chief/main cause，又被否认有任何贡献；次要废热并不消解此矛盾。",
+      "support_chain": [],
+      "missing_facts": [],
+      "conflicting_claims": [
+        "The main cause of urban areas being warmer than surrounding rural areas is human modification of land surfaces.",
+        "Modification of land surfaces does not contribute to the higher temperature of those same urban areas."
+      ],
+      "resolution_basis": "No supplied correction or source priority. Poker modality ambiguity retained.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "The main cause of urban areas being warmer than surrounding rural areas is human modification of land surfaces.",
+          "start": 0,
+          "end": 111,
+          "document_sha256": "f38342288f1b1596bd0dc14c85e85dded21d1cf7fe36c03b4e82afe0ba2e6c92"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Modification of land surfaces does not contribute to the higher temperature of those same urban areas.",
+          "start": 0,
+          "end": 102,
+          "document_sha256": "fe2ef1846774ba8c35ff67f97491ea36705c2ac222f72b2b0a64f0762c82512e"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv16_B_S",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "S",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "城市比乡村暖→因果机制/主要原因"
+      ],
+      "rationale": "主要由人类对地表的改变造成；K额外允许能源废热为次要贡献。",
+      "support_chain": [
+        "主要由人类对地表的改变造成；K额外允许能源废热为次要贡献。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "Human changes to land surfaces chiefly explain why an urban area is warmer than the rural area around it.",
+          "start": 0,
+          "end": 105,
+          "document_sha256": "c01c6dcd35d2c6b7dd1cd161fd90b89bec596cf722cc1babdadc45526e594f4c"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Weak winds make the urban-rural temperature contrast especially apparent, and it is often larger at night.",
+          "start": 0,
+          "end": 106,
+          "document_sha256": "dfcd52e477cff44373629b0fee1990a4bcb01ed998b64c796454ec90bd5f7aea"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv16_B_K",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "K",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "城市比乡村暖→因果机制/主要原因"
+      ],
+      "rationale": "主要由人类对地表的改变造成；K额外允许能源废热为次要贡献。",
+      "support_chain": [
+        "主要由人类对地表的改变造成；K额外允许能源废热为次要贡献。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "Human changes to land surfaces chiefly explain why an urban area is warmer than the rural area around it.",
+          "start": 0,
+          "end": 105,
+          "document_sha256": "c01c6dcd35d2c6b7dd1cd161fd90b89bec596cf722cc1babdadc45526e594f4c"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Energy-use waste heat adds a secondary contribution; it is not the chief cause, which is the alteration of land surfaces.",
+          "start": 0,
+          "end": 121,
+          "document_sha256": "25711f80bbfa0568e241e2830b07bd24acd90a3f523013468486e84d0f2425bf"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv16_B_I",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "城市比乡村暖→因果机制/主要原因"
+      ],
+      "rationale": "热岛名称、夜间较大和弱风显著是定义/时空条件，不能补出城市地表改变的因果机制；背景水分定义亦无桥接。",
+      "support_chain": [],
+      "missing_facts": [
+        "热岛名称、夜间较大和弱风显著是定义/时空条件，不能补出城市地表改变的因果机制；背景水分定义亦无桥接。"
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "The term urban heat island describes an urban area warmer than the rural surroundings.",
+          "start": 0,
+          "end": 86,
+          "document_sha256": "1c5bc18fbf96ee8970f57311720f3df824f2e9d8c36d2536e067f8ec36824aa7"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "The urban-rural contrast is often greater at night and especially apparent under weak winds.",
+          "start": 0,
+          "end": 92,
+          "document_sha256": "655f14afe6c71d5077ef4c803ce0f4764044f8a6eac876edd203c034261102e7"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv16_B_C",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "C",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "城市比乡村暖→因果机制/主要原因"
+      ],
+      "rationale": "同一地表改变被给为chief/main cause，又被否认有任何贡献；次要废热并不消解此矛盾。",
+      "support_chain": [],
+      "missing_facts": [],
+      "conflicting_claims": [
+        "Human changes to land surfaces chiefly explain why an urban area is warmer than the rural area around it.",
+        "Changes to land surfaces make no contribution to the warmer conditions of those urban areas."
+      ],
+      "resolution_basis": "No supplied correction or source priority. Poker modality ambiguity retained.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "Human changes to land surfaces chiefly explain why an urban area is warmer than the rural area around it.",
+          "start": 0,
+          "end": 105,
+          "document_sha256": "c01c6dcd35d2c6b7dd1cd161fd90b89bec596cf722cc1babdadc45526e594f4c"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Changes to land surfaces make no contribution to the warmer conditions of those urban areas.",
+          "start": 0,
+          "end": 92,
+          "document_sha256": "0af1122e3aeb11a3f4e5a5c5d179cf5e3aa6de7826b0b32f38af01cf32a42744"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv17_A_S",
+      "original_id": "train_989",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "S",
+      "semantic_mode": "answer",
+      "confidence": "moderate",
+      "required_facts": [
+        "何种条件结束下注",
+        "该条件下亮牌程序/义务"
+      ],
+      "rationale": "按材料给出的通常程序：最后一轮下注结束且仍至少两位玩家时亮牌比较；不能外推所有牌局/强制亮牌例外。",
+      "support_chain": [
+        "按材料给出的通常程序：最后一轮下注结束且仍至少两位玩家时亮牌比较；不能外推所有牌局/强制亮牌例外。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "In poker, if more than one player remains after the last betting round, the remaining players expose and compare their hands.",
+          "start": 0,
+          "end": 125,
+          "document_sha256": "19b9dd69022a2dc81e8deefbae6fbcc7c0a9e6a8a9dbcb36c65291d72e511050"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "That post-betting exposure of the remaining players' hands is called the showdown.",
+          "start": 0,
+          "end": 82,
+          "document_sha256": "da9aea3e18b580e530e2e8a10bff863aab07de4a0859ac774742d40240595e40"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv17_A_K",
+      "original_id": "train_989",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "K",
+      "semantic_mode": "answer",
+      "confidence": "moderate",
+      "required_facts": [
+        "何种条件结束下注",
+        "该条件下亮牌程序/义务"
+      ],
+      "rationale": "按材料给出的通常程序：最后一轮下注结束且仍至少两位玩家时亮牌比较；不能外推所有牌局/强制亮牌例外。",
+      "support_chain": [
+        "按材料给出的通常程序：最后一轮下注结束且仍至少两位玩家时亮牌比较；不能外推所有牌局/强制亮牌例外。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "In poker, if more than one player remains after the last betting round, the remaining players expose and compare their hands.",
+          "start": 0,
+          "end": 125,
+          "document_sha256": "19b9dd69022a2dc81e8deefbae6fbcc7c0a9e6a8a9dbcb36c65291d72e511050"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "At this showdown, comparing the exposed hands determines the winner or winners.",
+          "start": 0,
+          "end": 79,
+          "document_sha256": "c85fea80a72efe1a9c7ca7e9ba1f2c8fd1c8b095ae9c41809eecc81bca335a7f"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv17_A_I",
+      "original_id": "train_989",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "何种条件结束下注",
+        "该条件下亮牌程序/义务"
+      ],
+      "rationale": "只有下注轮次、持牌与多人可能剩余，不说明何时亮牌。",
+      "support_chain": [],
+      "missing_facts": [
+        "只有下注轮次、持牌与多人可能剩余，不说明何时亮牌。"
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "Poker involves betting rounds and players holding hands of cards.",
+          "start": 0,
+          "end": 65,
+          "document_sha256": "02aa7de0a3bb9f09c9f72df3ece42a5cd447abf9da282ad3b7d242cb235c3678"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "More than one poker player can remain after a betting round.",
+          "start": 0,
+          "end": 60,
+          "document_sha256": "e0c457f76f11bbd75791fda33fde2cf21ae527c725851feb8b405c41b579eacd"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv17_A_C",
+      "original_id": "train_989",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "C",
+      "semantic_mode": "unknown",
+      "confidence": "ambiguous",
+      "required_facts": [
+        "何种条件结束下注",
+        "该条件下亮牌程序/义务"
+      ],
+      "rationale": "正面是一般性描述expose/reveal，反面是must not/prohibited义务。按规则语境读存在冲突；按实际行为与规范不同层次读可同时成立，材料未消除此歧义。",
+      "support_chain": [],
+      "missing_facts": [],
+      "conflicting_claims": [
+        "In poker, if more than one player remains after the last betting round, the remaining players expose and compare their hands.",
+        "If more than one player remains after the last betting round, those players must keep their cards concealed and must not expose their hands."
+      ],
+      "resolution_basis": "No supplied correction or source priority. Poker modality ambiguity retained.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "In poker, if more than one player remains after the last betting round, the remaining players expose and compare their hands.",
+          "start": 0,
+          "end": 125,
+          "document_sha256": "19b9dd69022a2dc81e8deefbae6fbcc7c0a9e6a8a9dbcb36c65291d72e511050"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "If more than one player remains after the last betting round, those players must keep their cards concealed and must not expose their hands.",
+          "start": 0,
+          "end": 140,
+          "document_sha256": "9c43f3b6a7b42852f6b0cd427a9a0414d309fd10eeb6e4d93b4ca9fb18ff1e85"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv17_B_S",
+      "original_id": "train_989",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "S",
+      "semantic_mode": "answer",
+      "confidence": "moderate",
+      "required_facts": [
+        "何种条件结束下注",
+        "该条件下亮牌程序/义务"
+      ],
+      "rationale": "按材料给出的通常程序：最后一轮下注结束且仍至少两位玩家时亮牌比较；不能外推所有牌局/强制亮牌例外。",
+      "support_chain": [
+        "按材料给出的通常程序：最后一轮下注结束且仍至少两位玩家时亮牌比较；不能外推所有牌局/强制亮牌例外。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "Remaining poker players reveal and compare their hands when the final betting round has ended and at least two players are left.",
+          "start": 0,
+          "end": 128,
+          "document_sha256": "34c5d2890ebea37b25bb723e4fe90aec210408e415495e463dfe72f7268c078c"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "Showdown is the name for this revealing of the remaining hands after betting has finished.",
+          "start": 0,
+          "end": 90,
+          "document_sha256": "1f8ca4118d7924bcb20d3f7c460b9230522d222c9173c12601d59efc64fc2992"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv17_B_K",
+      "original_id": "train_989",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "K",
+      "semantic_mode": "answer",
+      "confidence": "moderate",
+      "required_facts": [
+        "何种条件结束下注",
+        "该条件下亮牌程序/义务"
+      ],
+      "rationale": "按材料给出的通常程序：最后一轮下注结束且仍至少两位玩家时亮牌比较；不能外推所有牌局/强制亮牌例外。",
+      "support_chain": [
+        "按材料给出的通常程序：最后一轮下注结束且仍至少两位玩家时亮牌比较；不能外推所有牌局/强制亮牌例外。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "Remaining poker players reveal and compare their hands when the final betting round has ended and at least two players are left.",
+          "start": 0,
+          "end": 128,
+          "document_sha256": "34c5d2890ebea37b25bb723e4fe90aec210408e415495e463dfe72f7268c078c"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "The exposed hands are compared at showdown to establish which remaining player or players win.",
+          "start": 0,
+          "end": 94,
+          "document_sha256": "2e33fa9d9b03baeddfccd8a5afda7aef30917556389e9c341442562e5488a4b6"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv17_B_I",
+      "original_id": "train_989",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "何种条件结束下注",
+        "该条件下亮牌程序/义务"
+      ],
+      "rationale": "只有下注轮次、持牌与多人可能剩余，不说明何时亮牌。",
+      "support_chain": [],
+      "missing_facts": [
+        "只有下注轮次、持牌与多人可能剩余，不说明何时亮牌。"
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "Players hold card hands and take part in betting rounds in poker.",
+          "start": 0,
+          "end": 65,
+          "document_sha256": "5d9c77464023115457d0769e9a4d3ca6f4e5f7da4579dc4982d4d07469b3ec11"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "A betting round can leave multiple poker players remaining.",
+          "start": 0,
+          "end": 59,
+          "document_sha256": "a8daf560c4b5fc9be520bb7eec2e703c5d8a28217a3eb305cd28c89784734cca"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv17_B_C",
+      "original_id": "train_989",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "C",
+      "semantic_mode": "unknown",
+      "confidence": "ambiguous",
+      "required_facts": [
+        "何种条件结束下注",
+        "该条件下亮牌程序/义务"
+      ],
+      "rationale": "正面是一般性描述expose/reveal，反面是must not/prohibited义务。按规则语境读存在冲突；按实际行为与规范不同层次读可同时成立，材料未消除此歧义。",
+      "support_chain": [],
+      "missing_facts": [],
+      "conflicting_claims": [
+        "Remaining poker players reveal and compare their hands when the final betting round has ended and at least two players are left.",
+        "With at least two players left after that final betting round, revealing their hands is prohibited and their cards must stay concealed."
+      ],
+      "resolution_basis": "No supplied correction or source priority. Poker modality ambiguity retained.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "Remaining poker players reveal and compare their hands when the final betting round has ended and at least two players are left.",
+          "start": 0,
+          "end": 128,
+          "document_sha256": "34c5d2890ebea37b25bb723e4fe90aec210408e415495e463dfe72f7268c078c"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "With at least two players left after that final betting round, revealing their hands is prohibited and their cards must stay concealed.",
+          "start": 0,
+          "end": 135,
+          "document_sha256": "cfae6963184f0f18b636a302726c7ad385c8c008bac3182f37ece911f7dd92d5"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv18_A_S",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "S",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "指定Old Order Amish社群→通常礼拜日"
+      ],
+      "rationale": "Sunday；题中指定Old Order Amish社群通常隔周在家礼拜。",
+      "support_chain": [
+        "Sunday；题中指定Old Order Amish社群通常隔周在家礼拜。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "quote": "The Old Order Amish described here typically hold worship services every second Sunday in private homes.",
+          "start": 0,
+          "end": 104,
+          "document_sha256": "bd621ac1badae53300b74d20058130207aeafe012443cf82ce833dc6dcd6da5c"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Sunday is the usual day of the week for the worship services of these Old Order Amish communities.",
+          "start": 0,
+          "end": 98,
+          "document_sha256": "9ee60ca81893b132dec483dd460cfd608d5604988da676df2157ceac273141ff"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv18_A_K",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "K",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "指定Old Order Amish社群→通常礼拜日"
+      ],
+      "rationale": "Sunday；题中指定Old Order Amish社群通常隔周在家礼拜。",
+      "support_chain": [
+        "Sunday；题中指定Old Order Amish社群通常隔周在家礼拜。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "quote": "The Old Order Amish described here typically hold worship services every second Sunday in private homes.",
+          "start": 0,
+          "end": 104,
+          "document_sha256": "bd621ac1badae53300b74d20058130207aeafe012443cf82ce833dc6dcd6da5c"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Their usual worship weekday is Sunday, with services typically held in private homes on alternate weeks.",
+          "start": 0,
+          "end": 104,
+          "document_sha256": "836ca462b9a289a78ed7fb75ff390dc497c23df761556948ba91b3b066627b58"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv18_A_I",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "指定Old Order Amish社群→通常礼拜日"
+      ],
+      "rationale": "在家礼拜及仪式内容不提供星期几；多数基督徒周日礼拜不蕴涵这个特定社群的日程，即便另知其教派也不能从most推全体。",
+      "support_chain": [],
+      "missing_facts": [
+        "在家礼拜及仪式内容不提供星期几；多数基督徒周日礼拜不蕴涵这个特定社群的日程，即便另知其教派也不能从most推全体。"
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "quote": "The Old Order Amish described here hold worship services in private homes.",
+          "start": 0,
+          "end": 74,
+          "document_sha256": "cee06e7ea81deec2aa561268529ce6d27db4a927232e9af4709d9db9f6a09485"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Their worship includes sermons, scripture reading, prayer and hymns sung without instrumental accompaniment.",
+          "start": 0,
+          "end": 108,
+          "document_sha256": "17cfd96a8e10a7b8ac0e84ba26d6498ac121ae6de694d394ec1505c1846e766f"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv18_A_C",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "C",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "指定Old Order Amish社群→通常礼拜日"
+      ],
+      "rationale": "同一社群通常隔周Sunday，对照主张改为Saturday且not Sunday；泛指多数基督徒Sunday不能作为此社群的纠正依据。",
+      "support_chain": [],
+      "missing_facts": [],
+      "conflicting_claims": [
+        "The Old Order Amish described here typically hold worship services every second Sunday in private homes.",
+        "For these same Old Order Amish communities the usual fortnightly worship day is Saturday, not Sunday."
+      ],
+      "resolution_basis": "No supplied correction or source priority. Poker modality ambiguity retained.",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "quote": "The Old Order Amish described here typically hold worship services every second Sunday in private homes.",
+          "start": 0,
+          "end": 104,
+          "document_sha256": "bd621ac1badae53300b74d20058130207aeafe012443cf82ce833dc6dcd6da5c"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "For these same Old Order Amish communities the usual fortnightly worship day is Saturday, not Sunday.",
+          "start": 0,
+          "end": 101,
+          "document_sha256": "c3d5bc9450eed0a9c77928299363d3c0aa99e1cec812e0d501cce503978b71e7"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv18_B_S",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "S",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "指定Old Order Amish社群→通常礼拜日"
+      ],
+      "rationale": "Sunday；题中指定Old Order Amish社群通常隔周在家礼拜。",
+      "support_chain": [
+        "Sunday；题中指定Old Order Amish社群通常隔周在家礼拜。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "quote": "Worship in the described Old Order Amish communities normally takes place in homes on alternate Sundays.",
+          "start": 0,
+          "end": 104,
+          "document_sha256": "6608a7165860336ccb608eee2cd9c81303f2d3f8be1f10a69b477419cfa80120"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "The weekday normally used for those communities' worship services is Sunday.",
+          "start": 0,
+          "end": 76,
+          "document_sha256": "7ab79f531796ed96f051e8e63ddc18a2f9b02b3820240cbbd92d88925a4bea17"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv18_B_K",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "K",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "指定Old Order Amish社群→通常礼拜日"
+      ],
+      "rationale": "Sunday；题中指定Old Order Amish社群通常隔周在家礼拜。",
+      "support_chain": [
+        "Sunday；题中指定Old Order Amish社群通常隔周在家礼拜。"
+      ],
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "quote": "Worship in the described Old Order Amish communities normally takes place in homes on alternate Sundays.",
+          "start": 0,
+          "end": 104,
+          "document_sha256": "6608a7165860336ccb608eee2cd9c81303f2d3f8be1f10a69b477419cfa80120"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Sunday is their typical worship day; the alternate-week schedule and the home setting specify frequency and venue.",
+          "start": 0,
+          "end": 114,
+          "document_sha256": "cd2fac81d38633c4cb1bc535332c8ee950877eced9c4881786589d5311b641af"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv18_B_I",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "指定Old Order Amish社群→通常礼拜日"
+      ],
+      "rationale": "在家礼拜及仪式内容不提供星期几；多数基督徒周日礼拜不蕴涵这个特定社群的日程，即便另知其教派也不能从most推全体。",
+      "support_chain": [],
+      "missing_facts": [
+        "在家礼拜及仪式内容不提供星期几；多数基督徒周日礼拜不蕴涵这个特定社群的日程，即便另知其教派也不能从most推全体。"
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "quote": "Private homes are the venues for worship in the described Old Order Amish communities.",
+          "start": 0,
+          "end": 86,
+          "document_sha256": "88ec6cc69ac31c8235e8157b606c3806fdda7c611b2dad4279a12c90370d3fd9"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Sermons, scriptural readings, prayer and unaccompanied hymns form part of their worship.",
+          "start": 0,
+          "end": 88,
+          "document_sha256": "f5d3a4877812f91e8519513d2cfdcb1fe56c53eed87357a68af5b60c9116dd06"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    },
+    {
+      "id": "stv18_B_C",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "C",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "指定Old Order Amish社群→通常礼拜日"
+      ],
+      "rationale": "同一社群通常隔周Sunday，对照主张改为Saturday且not Sunday；泛指多数基督徒Sunday不能作为此社群的纠正依据。",
+      "support_chain": [],
+      "missing_facts": [],
+      "conflicting_claims": [
+        "Worship in the described Old Order Amish communities normally takes place in homes on alternate Sundays.",
+        "Those very communities normally worship on alternate Saturdays, and Sunday is not their usual service day."
+      ],
+      "resolution_basis": "No supplied correction or source priority. Poker modality ambiguity retained.",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "quote": "Worship in the described Old Order Amish communities normally takes place in homes on alternate Sundays.",
+          "start": 0,
+          "end": 104,
+          "document_sha256": "6608a7165860336ccb608eee2cd9c81303f2d3f8be1f10a69b477419cfa80120"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Those very communities normally worship on alternate Saturdays, and Sunday is not their usual service day.",
+          "start": 0,
+          "end": 106,
+          "document_sha256": "0ee12496e3657e6a2bf9d4efc70411a29b2c1245c5fe2910462f0c53f4568156"
+        }
+      ],
+      "independent_gold": false,
+      "approved_for_training": false
+    }
+  ],
+  "approved_for_training": false,
+  "gpu_launch_ready": false
+}

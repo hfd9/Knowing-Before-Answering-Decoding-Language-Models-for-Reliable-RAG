@@ -2,9 +2,15 @@
 
 目标是评估冻结旧probe能否测量给定证据的真实语义关系，再将其与模型实际行为分开分析。承接[40条分离复核与暴露审计](records/2026-10-20-controlled-semantic-transfer-review.md)。不重复排查同模板接口，不重复52/80/50单元，不将conflict读出等同内部语义认识。
 
-**最新状态：作者材料v2 CPU准备/核验完成，独立审核和覆盖门槛未满足，无新GPU。** 30题计划240单元，21题168草稿、9题72未完成，分区不变；构造覆盖70%、独立语义标签0，不能达到原90%覆盖通过要求。详见[准备记录](records/2026-10-20-semantic-transfer-materials-preparation.md)和[CPU工具说明](semantic_transfer_materials.md)。当前没有GPU启动入口。
+**当前材料为v5：** [修订与CPU核验](records/2026-10-20-semantic-transfer-materials-v5.md)完成，240/240，83输入/131目标片段变化、157不变；54条I及A/B/扑克C控制问题另存修订，问题/背景/槽位/分区不变。60条I保留事实台账为背景暴露作者声明，不是单原子最小性或独立语义证明。实际8新CPU/材料与接收两次核验通过，语义标签仍null/独立覆盖0，无GPU；旧冻结JSON与v4-r2保留。
+
+**前期状态：来源补充版v4-r2全部240作者材料CPU准备/跨进程核验完成，构造覆盖100%，独立语义标签0，无新GPU。** 用户要求修好材料达到门槛后，以11个可追溯外部短来源补齐八题64缺项；30底题/12-6-12分区、数量/层/训练预算及90%语义覆盖要求不变。原176输入原样，来源受限v1/v2/v3保留，不追认其通过。详见[v4修订及核验](records/2026-10-20-semantic-transfer-source-augmentation.md)和[CPU说明](semantic_transfer_materials.md)。原冻结JSON继续约束底题/分区/预算；v4另有显式来源政策修订prompts/semantic_transfer_source_augmentation_v1.json，不能声称来源政策或全部问题范围未变。材料齐全不等于独立语义审核通过，当前已有带审核门禁的执行器，但没有就绪GPU任务。
 
 设计冻结时的状态为design_frozen_materials_not_prepared_no_gpu，保留在显式协议[prompts/semantic_transfer_validation_v1.json](../prompts/semantic_transfer_validation_v1.json)中，不为更新进度改写冻结JSON。后续材料使用新spec/run_dir；设计冻结不等于整个运行与审核就绪。
+
+最新执行器已完成[CPU准备/只读核验](records/2026-10-20-semantic-transfer-study-preparation.md)，详见[使用说明](semantic_transfer_study.md)。53相关测试通过，正式新GPU/回答/训练0，独立标签0；审核门禁不满足时在模型/probe加载前停止。旧probe生成前回调读出，可选新probe离线读取保存的生成前状态，运行时间标记分开。
+
+**最新材料质量诊断：** [本轮全240作者侧复核](records/2026-10-20-semantic-transfer-author-input-review.md)发现严格对照尚需修订：扑克C两条unknown，18组A/B有命题/术语/指代等注意点；S/I60对中52还改变其他事实、2模态重写、仅6在必要关系层面可视为删除型。材料数量齐全不能代表严格构造成立。本轮判断有背景暴露，独立标签仍0；19文字候选与27题54条I清单均未应用。下一步同批新版本修对照，不用旧v4-r2直接宣称纯措辞或单前提迁移。
 
 ## 数据边界与分区
 

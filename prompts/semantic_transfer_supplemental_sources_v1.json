@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "task": "supplemental_primary_source_excerpts_for_eight_incomplete_bases",
+  "independent_semantic_review": false,
+  "scope": "Selected short excerpts with URLs and locators, not complete webpage snapshots. These sources support author construction; reviewers still judge the supplied five-document inputs.",
+  "sources": [
+    {
+      "source_id": "X001",
+      "url": "https://ttabvue.uspto.gov/ttabvue/ttabvue-92082174-CAN-1.pdf",
+      "publisher": "United States Patent and Trademark Office",
+      "title": "HULA-HOOP trademark record, registration739307",
+      "excerpt": "First Use: May 20, 1958 First Use In Commerce: May 20, 1958",
+      "excerpt_sha256": "5e9c10237d83b0f27aeb4fe8c2c83fd668b0154efa80b05789eb0f81f3bd55bf",
+      "locator": "Class022 registration metadata; year only used, not day-level priority",
+      "retrieval_method": "Downloaded PDF text, with independently indexed registration certificate showing the same1958 year",
+      "retrieved_at": "2026-10-20T20:14:21.382163+08:00",
+      "supported_claims": [
+        "Wham-O HULA-HOOP was commercially used in1958; this is market introduction, not the later patent date."
+      ],
+      "downloaded_file_sha256": "98cde0b389474c4adc8d300c547e68d7d5b0280e67d01daea3a4b4fb48f7d744"
+    },
+    {
+      "source_id": "X002",
+      "url": "https://files.eric.ed.gov/fulltext/ED314908.pdf",
+      "publisher": "ERIC / Lynn Plourde, Communication Skill Builders",
+      "title": "CLAS: Classroom Listening and Speaking. Preschool (1989)",
+      "excerpt": "Who swallowed a horse.\nAnd pie, of course!",
+      "excerpt_sha256": "6cb3da7f53b44e772e18932f4ab921ec4581f57720e1c022ce71639fc458df26",
+      "locator": "PDF page204 (1-based), printed page199, final stanza and action; preceding pages198–199 checked",
+      "retrieval_method": "Downloaded PDF text plus rendered page visually inspected",
+      "retrieved_at": "2026-10-20T20:14:21.383369+08:00",
+      "supported_claims": [
+        "In this specified version the final creature is a horse; pie is also swallowed but is not a creature. The page does not end with a death line."
+      ],
+      "downloaded_file_sha256": "23ee2651b6877ccc87a7ea6fcd8e5d832d6bb95cfa2b1556305fd9346c8e9f04"
+    },
+    {
+      "source_id": "X003",
+      "url": "https://www.colorado.edu/geography/contact-us",
+      "publisher": "University of Colorado Boulder",
+      "title": "Geography department contact address",
+      "excerpt": "Boulder, Colorado 80309-0260, USA",
+      "excerpt_sha256": "4ed4abc7df7b1cb1dce2318e7321ed15d3595350b8efd946809a104a33a06404",
+      "locator": "Address block",
+      "retrieval_method": "Official university page opened and address read",
+      "retrieved_at": "2026-10-20T20:14:21.402223+08:00",
+      "supported_claims": [
+        "Boulder, Colorado is explicitly located in the USA in the university address."
+      ]
+    },
+    {
+      "source_id": "X004",
+      "url": "https://guides.loc.gov/colorado-state-guide",
+      "publisher": "Library of Congress",
+      "title": "Colorado: State Resource Guide",
+      "excerpt": "Colorado, nicknamed the Centennial State and the Highest State, became the 38th state on August 1, 1876.",
+      "excerpt_sha256": "9c1402b6445ca685c81cbec4e0c5431094097cf7a917475a95a736c2c2a8205e",
+      "locator": "Introduction",
+      "retrieval_method": "Official Library of Congress indexed page excerpt read",
+      "retrieved_at": "2026-10-20T20:14:21.402290+08:00",
+      "supported_claims": [
+        "Colorado is a US state; country bridge is used with the university address and the original system location passage."
+      ]
+    },
+    {
+      "source_id": "X005",
+      "url": "https://ohio.gov/government/resources/ohio-facts-state-symbols",
+      "publisher": "State of Ohio",
+      "title": "Ohio Facts: State Symbols",
+      "excerpt": "Columbus is Ohio’s capital city.",
+      "excerpt_sha256": "245cb5f64483c1e56bbd5095bbbf7326e193879ba05bf2dd5d95ffe82e7856f4",
+      "locator": "State Capital and Capitol Building",
+      "retrieval_method": "Official indexed page excerpt; direct fetch failed (network, then404), not claimed as a full live-page snapshot",
+      "retrieved_at": "2026-10-20T20:14:21.402299+08:00",
+      "supported_claims": [
+        "Columbus is the capital city of Ohio, independently of its population rank."
+      ]
+    },
+    {
+      "source_id": "X006",
+      "url": "https://www.youtube.com/watch?v=tNDWJ_KDkAc",
+      "publisher": "Pearl Jam official artist channel",
+      "title": "Last Kiss (Official Audio)",
+      "excerpt": "Oh where, oh where can my baby be?",
+      "excerpt_sha256": "bb734f5b495b5b8243b522f8f047eeeac14f86905f73a038c101e63d13219096",
+      "locator": "Official audio description, first lyric line",
+      "retrieval_method": "Official channel indexed description read; only this eight-word lyric retained",
+      "retrieved_at": "2026-10-20T20:14:21.402306+08:00",
+      "supported_claims": [
+        "The lyric quoted in the original question is a line from Last Kiss."
+      ]
+    },
+    {
+      "source_id": "X007",
+      "url": "https://media.defense.gov/2010/May/26/2001330297/-1/-1/0/AFD-100526-045.pdf",
+      "publisher": "United States Air Force / Department of Defense",
+      "title": "Korean Campaigns June27,1950–July27,1953",
+      "excerpt": "Korean Campaigns\nJune 27, 1950–July 27, 1953\nwhen the Korean Armistice cease-fire became effective.",
+      "excerpt_sha256": "45375ad70f64ac859d291b7626be13cdc70b72dccafbb14b81c211c63aa66671",
+      "locator": "Heading and Designated Campaigns of Korean Service paragraph",
+      "retrieval_method": "Official PDF indexed excerpt read; direct PDF fetch returned403, no claim of a downloaded PDF",
+      "retrieved_at": "2026-10-20T20:14:21.402314+08:00",
+      "supported_claims": [
+        "US Korean War combat campaigns cover1950–1953, ending at the armistice; later service/presence must not be conflated with combat."
+      ]
+    },
+    {
+      "source_id": "X008",
+      "url": "https://www.gutenberg.org/cache/epub/514/pg514-images.html",
+      "publisher": "Louisa May Alcott / Project Gutenberg",
+      "title": "Little Women, Chapter45",
+      "excerpt": "I cannot feel that I have done my duty as humble historian of the March family",
+      "excerpt_sha256": "64098a78c645152133a0ff7e4bb3ee82f93342f6a3cede39d7e4d2b2359a84e5",
+      "locator": "Chapter45 opening paragraph; ebook514 metadata identifies Little Women and Alcott",
+      "retrieval_method": "Original public-domain novel passage opened and read",
+      "retrieved_at": "2026-10-20T20:14:21.402340+08:00",
+      "supported_claims": [
+        "The novel concerns the March family; March is the fictional family surname."
+      ]
+    },
+    {
+      "source_id": "X009",
+      "url": "https://www.maff.go.jp/e/data/publish/attach/pdf/index-124.pdf",
+      "publisher": "Ministry of Agriculture, Forestry and Fisheries of Japan",
+      "title": "10 Great Tastes of Japan: Sushi and Sashimi",
+      "excerpt": "Sashimi is a Japanese food that consists of thinly sliced fresh raw fish served with a dipping sauce.\nwasabi\nthinly sliced vegetables",
+      "excerpt_sha256": "ad4604139848cc64bdbe7e670143267cd2a30c770f91c3646eced03cf9fcb760",
+      "locator": "PDF page3 (1-based), printed pages4–5, Sashimi and Soy Sauce",
+      "retrieval_method": "Downloaded image-only PDF; local page rendered and visually read; selected excerpt manually transcribed",
+      "retrieved_at": "2026-10-20T20:14:21.402348+08:00",
+      "supported_claims": [
+        "Sashimi is raw fish sliced and served with dipping sauce, wasabi and vegetable garnishes."
+      ],
+      "downloaded_file_sha256": "cd4f03e3955c8ffec7b5173d45f5d7ab38577208cb4ff0c97d1ddfdeef721864"
+    },
+    {
+      "source_id": "X010",
+      "url": "https://www.japan.travel/en/guide/sushi-in-japan/",
+      "publisher": "Japan National Tourism Organization",
+      "title": "Sushi in Japan Guide",
+      "excerpt": "Sashimi platters include the freshest raw fish without rice",
+      "excerpt_sha256": "68ff8461dc4e245b12dbb85f623c1640573b1541efa263a41671b059cde9f12d",
+      "locator": "The many forms of sushi section",
+      "retrieval_method": "Official tourism page opened and relevant paragraph read",
+      "retrieved_at": "2026-10-20T20:14:21.404856+08:00",
+      "supported_claims": [
+        "Sashimi is served without rice; it is distinct from sushi."
+      ]
+    },
+    {
+      "source_id": "X011",
+      "url": "https://pearljam.com/music/songs?sort=last",
+      "publisher": "Pearl Jam",
+      "title": "Official discography: Last Kiss",
+      "excerpt": "Last Kiss\nSong Type Cover\nFirst Release Dec. 31, 1998",
+      "excerpt_sha256": "5bce8db89b4df3905d57c05428bceb35e284185a324cf1e8aabcdbc0ec30f748",
+      "locator": "Last Kiss entry",
+      "retrieval_method": "Official artist discography indexed entry read",
+      "retrieved_at": "2026-10-20T20:14:21.404899+08:00",
+      "supported_claims": [
+        "Pearl Jam issued a later cover of Last Kiss; a later cover does not contradict the1961 original performer in the released source."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1114 @@
+{
+  "status": "source_followup_and_CPU_preparation_verified_semantic_gate_pending",
+  "source_resolution_audit": {
+    "schema_version": 1,
+    "task": "source_only_followup_of_nine_incomplete_bases",
+    "operator": "current_coordinator_with_project_history_exposure",
+    "source_catalog_sha256": "3869c8141ad2dd03dc70f8e5c0483b9003cd2cd31b8e8335335f8a2dff77c935",
+    "prior_spec_sha256": "8ef7e8ed90be68102ff8cc0319250d9824c39056a30855a873864831456acc7c",
+    "full_passages_read": [
+      "T034",
+      "T035",
+      "T036",
+      "T037",
+      "T038",
+      "T039",
+      "T052",
+      "T053",
+      "T054",
+      "T055",
+      "T056",
+      "T057",
+      "T058",
+      "T059",
+      "T060",
+      "T061",
+      "T062",
+      "T063",
+      "T064",
+      "T065",
+      "T066",
+      "T092",
+      "T093",
+      "T094",
+      "T095",
+      "T096",
+      "T097",
+      "T098",
+      "T099",
+      "T100",
+      "T101",
+      "T102",
+      "T114",
+      "T115",
+      "T116",
+      "T117",
+      "T118",
+      "T119",
+      "T134",
+      "T135",
+      "T136",
+      "T137",
+      "T138",
+      "T144",
+      "T145",
+      "T146",
+      "T147",
+      "T148",
+      "T149"
+    ],
+    "full_passages_read_count": 49,
+    "display_truncation_note": "The first combined display was truncated. Batches subsequently showed the hula/rhyme, universities/Ohio, song/Korea, literature/cuisine passages in full; James T034–T037 were visible in the initial display and T038–T039 separately re-read. No truncated display was counted as complete.",
+    "decisions": [
+      {
+        "original_id": "train_744",
+        "decision": "author_draft_after_explicit_referent_disambiguation",
+        "source_question": "Was James II known as: James The Bald, Fiery Face, or The Red King?",
+        "proposed_question": "Was James II of Scots (1430–1460) known as James the Bald, Fiery Face, or the Red King?",
+        "requested_relation": "James II (Scots1430–1460) → nickname",
+        "reason": "Specify the realm/lifespan from the existing index; preserve nickname request and options.",
+        "rejected_shortcut": "Interpreting the unqualified original question as unambiguously Scottish without disclosure is rejected.",
+        "source_doc_ids": [
+          "T034",
+          "T035",
+          "T036",
+          "T037",
+          "T038"
+        ],
+        "background_doc_ids": [
+          "T034",
+          "T036",
+          "T039"
+        ],
+        "full_passages_read": [
+          "T034",
+          "T035",
+          "T036",
+          "T037",
+          "T038",
+          "T039"
+        ],
+        "citations": [
+          {
+            "doc_id": "T037",
+            "quote": "James II ` the Fiery Face ' STEWART ( 1430 - 1460 ) ; 38th King of SCOTS",
+            "start": 2263,
+            "end": 2335,
+            "source_sha256": "b7add579711fab142e47c4e5cd35c9c05a23cca69b17c14bc847700e48c4d396"
+          },
+          {
+            "doc_id": "T037",
+            "quote": "James II STUART ( King ) of ENGLAND ( 14/10/1633 - 16/9/1701 ) ; aka James VII of SCOTS",
+            "start": 2541,
+            "end": 2628,
+            "source_sha256": "b7add579711fab142e47c4e5cd35c9c05a23cca69b17c14bc847700e48c4d396"
+          },
+          {
+            "doc_id": "T034",
+            "quote": "later King James II of England",
+            "start": 1703,
+            "end": 1733,
+            "source_sha256": "4179f993c17e202f65ca4b0defb2bdefad121b2af7dc25c433729dde38eafbd5"
+          }
+        ],
+        "reviewer": "current_coordinator_author_background_exposed",
+        "independent_confirmation": false,
+        "semantic_label": null
+      },
+      {
+        "original_id": "train_1136",
+        "decision": "remains_incomplete",
+        "source_question": "When did the hula hoop make its debut?",
+        "proposed_question": "When did the hula hoop make its debut?",
+        "requested_relation": "Hula hoop → debut date",
+        "reason": "A modern invention date and historical hoop play are explicit; the debut event is not identified.",
+        "rejected_shortcut": "Changing debut to invented, or assuming invention equals market debut, changes or supplies the missing relation.",
+        "source_doc_ids": [
+          "T052",
+          "T053",
+          "T054",
+          "T053",
+          "T055"
+        ],
+        "background_doc_ids": [
+          "T052",
+          "T053",
+          "T053"
+        ],
+        "full_passages_read": [
+          "T052",
+          "T053",
+          "T054",
+          "T055"
+        ],
+        "citations": [
+          {
+            "doc_id": "T055",
+            "quote": "The modern hula hoop was invented in 1958",
+            "start": 77,
+            "end": 118,
+            "source_sha256": "c6d00fe3bd3ac02a99905c059d5a5a9b7ea027c45ff806141eaf5c65f15fd4ac"
+          },
+          {
+            "doc_id": "T055",
+            "quote": "throughout history",
+            "start": 272,
+            "end": 290,
+            "source_sha256": "c6d00fe3bd3ac02a99905c059d5a5a9b7ea027c45ff806141eaf5c65f15fd4ac"
+          }
+        ],
+        "reviewer": "current_coordinator_author_background_exposed",
+        "independent_confirmation": false,
+        "semantic_label": null
+      },
+      {
+        "original_id": "train_1154",
+        "decision": "remains_incomplete",
+        "source_question": "In the nursery rhyme, which was the last creature eaten by the woman who swallowed a fly?",
+        "proposed_question": "In the nursery rhyme, which was the last creature eaten by the woman who swallowed a fly?",
+        "requested_relation": "Rhyme/version → last swallowed creature",
+        "reason": "A review describes a horse and a moral, but supplies no explicit final-creature relation or terminal narrative sequence.",
+        "rejected_shortcut": "A familiar rhyme ending or gold answer cannot supply the missing ordering premise.",
+        "source_doc_ids": [
+          "T056",
+          "T057",
+          "T058",
+          "T059",
+          "T060"
+        ],
+        "background_doc_ids": [
+          "T058",
+          "T061",
+          "T056"
+        ],
+        "full_passages_read": [
+          "T056",
+          "T057",
+          "T058",
+          "T059",
+          "T060",
+          "T061"
+        ],
+        "citations": [
+          {
+            "doc_id": "T060",
+            "quote": "never swallow a horse",
+            "start": 874,
+            "end": 895,
+            "source_sha256": "94e87cd63d3f9e0146161014e9d064996e0ca8e56e8dbc2f36b06360f99f3034"
+          },
+          {
+            "doc_id": "T060",
+            "quote": "go so far as to swallow a horse",
+            "start": 1256,
+            "end": 1287,
+            "source_sha256": "94e87cd63d3f9e0146161014e9d064996e0ca8e56e8dbc2f36b06360f99f3034"
+          }
+        ],
+        "reviewer": "current_coordinator_author_background_exposed",
+        "independent_confirmation": false,
+        "semantic_label": null
+      },
+      {
+        "original_id": "train_405",
+        "decision": "remains_incomplete",
+        "source_question": "Washington University in St. Louis and University of Colorado, are located in which country?",
+        "proposed_question": "Washington University in St. Louis and University of Colorado, are located in which country?",
+        "requested_relation": "Both named universities → shared country",
+        "reason": "WashU has a United States location; Colorado university has a Colorado location without the Colorado-to-country bridge.",
+        "rejected_shortcut": "The location of other universities and geographic memory do not establish this university/country relation.",
+        "source_doc_ids": [
+          "T062",
+          "T063",
+          "T064",
+          "T065",
+          "T066"
+        ],
+        "background_doc_ids": [
+          "T066",
+          "T064",
+          "T063"
+        ],
+        "full_passages_read": [
+          "T062",
+          "T063",
+          "T064",
+          "T065",
+          "T066"
+        ],
+        "citations": [
+          {
+            "doc_id": "T062",
+            "quote": "Missouri, United States",
+            "start": 156,
+            "end": 179,
+            "source_sha256": "fc5899231dc2e0914d5f74089ad2482e398e76b15c34211098cda16ea3269e6a"
+          },
+          {
+            "doc_id": "T062",
+            "quote": "public universities in Colorado",
+            "start": 790,
+            "end": 821,
+            "source_sha256": "fc5899231dc2e0914d5f74089ad2482e398e76b15c34211098cda16ea3269e6a"
+          }
+        ],
+        "reviewer": "current_coordinator_author_background_exposed",
+        "independent_confirmation": false,
+        "semantic_label": null
+      },
+      {
+        "original_id": "train_1470",
+        "decision": "remains_incomplete",
+        "source_question": "What is the state capital of Ohio?",
+        "proposed_question": "What is the state capital of Ohio?",
+        "requested_relation": "Ohio → state capital",
+        "reason": "The city list and forum establish Columbus as a largest city; passages about Alabama capitals or the national capital are different targets.",
+        "rejected_shortcut": "Replacing capital with largest city changes the requested property; using that role or outside memory is rejected.",
+        "source_doc_ids": [
+          "T093",
+          "T094",
+          "T095",
+          "T096",
+          "T097"
+        ],
+        "background_doc_ids": [
+          "T096",
+          "T097",
+          "T093"
+        ],
+        "full_passages_read": [
+          "T093",
+          "T094",
+          "T095",
+          "T096",
+          "T097"
+        ],
+        "citations": [
+          {
+            "doc_id": "T094",
+            "quote": "10 largest cities",
+            "start": 183,
+            "end": 200,
+            "source_sha256": "1a7904951202ab77f1bfc36c2097cc54c18e5bf78acffc01bdf40ddecedb4401"
+          },
+          {
+            "doc_id": "T097",
+            "quote": "Columbus is the biggest city",
+            "start": 284,
+            "end": 312,
+            "source_sha256": "caae73785079aa3b09426baa90a66b6f53ff1c7c9f9246aa8b3c6dd0d351cfce"
+          }
+        ],
+        "reviewer": "current_coordinator_author_background_exposed",
+        "independent_confirmation": false,
+        "semantic_label": null
+      },
+      {
+        "original_id": "train_1805",
+        "decision": "remains_incomplete",
+        "source_question": "Who sang the original oh where oh where can my baby be?",
+        "proposed_question": "Who sang the original oh where oh where can my baby be?",
+        "requested_relation": "Quoted lyric → song identity → original singer",
+        "reason": "Last Kiss metadata identify Wayne Cochran but never connect the quoted lyric to that title.",
+        "rejected_shortcut": "Replacing the lyric question with Last Kiss silently adds the missing bridge; no memory/gold completion.",
+        "source_doc_ids": [
+          "T098",
+          "T092",
+          "T099",
+          "T100",
+          "T101"
+        ],
+        "background_doc_ids": [
+          "T100",
+          "T092",
+          "T102"
+        ],
+        "full_passages_read": [
+          "T098",
+          "T092",
+          "T099",
+          "T100",
+          "T101",
+          "T102"
+        ],
+        "citations": [
+          {
+            "doc_id": "T101",
+            "quote": "`` Last Kiss '' Single by Wayne Cochran",
+            "start": 0,
+            "end": 39,
+            "source_sha256": "9dcdf505d9cab7db86fbbc4dd9e17113301c75c86a9280d01236f17006cdcb9f"
+          }
+        ],
+        "reviewer": "current_coordinator_author_background_exposed",
+        "independent_confirmation": false,
+        "semantic_label": null
+      },
+      {
+        "original_id": "train_1605",
+        "decision": "remains_incomplete",
+        "source_question": "When was the us involved in the korean war?",
+        "proposed_question": "When was the us involved in the korean war?",
+        "requested_relation": "US → Korean War involvement time",
+        "reason": "The source establishes prewar occupation/withdrawal and war outbreak, not US wartime entry or involvement interval.",
+        "rejected_shortcut": "War onset is not US entry; an end date cannot be supplied from memory or an unrelated oil embargo interval.",
+        "source_doc_ids": [
+          "T114",
+          "T115",
+          "T116",
+          "T117",
+          "T118"
+        ],
+        "background_doc_ids": [
+          "T116",
+          "T117",
+          "T119"
+        ],
+        "full_passages_read": [
+          "T114",
+          "T115",
+          "T116",
+          "T117",
+          "T118",
+          "T119"
+        ],
+        "citations": [
+          {
+            "doc_id": "T115",
+            "quote": "North Korea saw its opportunity and attacked South Korean forces",
+            "start": 1541,
+            "end": 1605,
+            "source_sha256": "755a9250ed40dced487a8d1efa1e39695e32695a5982ca35dd55d1f15e4c662e"
+          },
+          {
+            "doc_id": "T115",
+            "quote": "withdrawing the last remaining combat troops",
+            "start": 1477,
+            "end": 1521,
+            "source_sha256": "755a9250ed40dced487a8d1efa1e39695e32695a5982ca35dd55d1f15e4c662e"
+          }
+        ],
+        "reviewer": "current_coordinator_author_background_exposed",
+        "independent_confirmation": false,
+        "semantic_label": null
+      },
+      {
+        "original_id": "train_254",
+        "decision": "remains_incomplete",
+        "source_question": "What is the surname of the family in the book Little Women by Louisa May Alcott?",
+        "proposed_question": "What is the surname of the family in the book Little Women by Louisa May Alcott?",
+        "requested_relation": "Little Women → fictional family surname",
+        "reason": "Alcott authorship and unrelated genealogies are available; the fictional family relation is absent.",
+        "rejected_shortcut": "Author surname, an unrelated surname page, gold answer, and March calendar occurrences do not establish the family name.",
+        "source_doc_ids": [
+          "T134",
+          "T135",
+          "T136",
+          "T137",
+          "T138"
+        ],
+        "background_doc_ids": [
+          "T135",
+          "T134",
+          "T137"
+        ],
+        "full_passages_read": [
+          "T134",
+          "T135",
+          "T136",
+          "T137",
+          "T138"
+        ],
+        "citations": [
+          {
+            "doc_id": "T136",
+            "quote": "novelist `` Little Women",
+            "start": 367,
+            "end": 391,
+            "source_sha256": "b2f281138e7ea4b8a8390931e87fd940fafe5049e64c9228e4a74a3c43b5819b"
+          },
+          {
+            "doc_id": "T134",
+            "quote": "About the Kaminsky surname",
+            "start": 57,
+            "end": 83,
+            "source_sha256": "4fee642a3affd0bf0e39d718e3e68b7a56daba393fe0a7fed440c368f2cb0c2b"
+          }
+        ],
+        "reviewer": "current_coordinator_author_background_exposed",
+        "independent_confirmation": false,
+        "semantic_label": null
+      },
+      {
+        "original_id": "train_33",
+        "decision": "remains_incomplete",
+        "source_question": "What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",
+        "proposed_question": "What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",
+        "requested_relation": "Specified raw-fish preparation → unique dish name",
+        "reason": "The source conjoins sushi and sashimi and describes nigiri/rolls without the requested unique mapping.",
+        "rejected_shortcut": "World culinary knowledge or selecting one of the conflated names does not repair the source relation.",
+        "source_doc_ids": [
+          "T144",
+          "T145",
+          "T146",
+          "T147",
+          "T148"
+        ],
+        "background_doc_ids": [
+          "T147",
+          "T148",
+          "T149"
+        ],
+        "full_passages_read": [
+          "T144",
+          "T145",
+          "T146",
+          "T147",
+          "T148",
+          "T149"
+        ],
+        "citations": [
+          {
+            "doc_id": "T144",
+            "quote": "Japanese Sushi and or Sashimi",
+            "start": 168,
+            "end": 197,
+            "source_sha256": "d32e4e931941d29520b7fc099de2874ba27d791b3bb2ccd69bda4f8dbecc0042"
+          },
+          {
+            "doc_id": "T144",
+            "quote": "in the Nigiri style or in rolls",
+            "start": 281,
+            "end": 312,
+            "source_sha256": "d32e4e931941d29520b7fc099de2874ba27d791b3bb2ccd69bda4f8dbecc0042"
+          }
+        ],
+        "reviewer": "current_coordinator_author_background_exposed",
+        "independent_confirmation": false,
+        "semantic_label": null
+      }
+    ],
+    "authored_bases_added": 1,
+    "constructed_cells_before": 168,
+    "constructed_cells_after": 176,
+    "remaining_incomplete_bases": 8,
+    "remaining_incomplete_cells": 64,
+    "independent_semantic_labels": 0,
+    "new_gpu_forwards": 0,
+    "generated_answers": 0,
+    "trained_probes": 0,
+    "source_scope_unchanged": true,
+    "frozen_base_ids_and_partitions_unchanged": true,
+    "planned_cells": 240,
+    "limitation": "Author interpretation only. A clarified-question draft does not validate the original ambiguous question or count as independent semantic confirmation. Eight missing mappings cannot be repaired without new premises or a changed task under the retained source-only policy."
+  },
+  "material_run": "runs/qwen2.5-3b-semantic-transfer-materials-v3",
+  "material_version": 3,
+  "constructed_cells": 176,
+  "unavailable_cells": 64,
+  "planned_cells": 240,
+  "construction_coverage": 0.7333333333333333,
+  "partitions": {
+    "semantic_train": {
+      "planned_bases": 12,
+      "constructed_bases": 10,
+      "planned_cells": 96,
+      "constructed_cells": 80,
+      "unavailable_cells": 16
+    },
+    "semantic_dev": {
+      "planned_bases": 6,
+      "constructed_bases": 5,
+      "planned_cells": 48,
+      "constructed_cells": 40,
+      "unavailable_cells": 8
+    },
+    "semantic_eval": {
+      "planned_bases": 12,
+      "constructed_bases": 7,
+      "planned_cells": 96,
+      "constructed_cells": 56,
+      "unavailable_cells": 40
+    }
+  },
+  "preflight": {
+    "min_input_tokens": 345,
+    "max_input_tokens": 3056,
+    "total_input_tokens": 229126,
+    "context_tokens": 32768,
+    "answer_budget": 128,
+    "independently_labeled_cells": 0,
+    "semantic_coverage": 0.0
+  },
+  "protocol": {
+    "schema_version": 1,
+    "task": "semantic_transfer_material_preparation_only",
+    "design_sha256": "78476923d35aa72d9d0a65b0718be4eb38195ef9c5e12f9672045bb2add5f457",
+    "authored_sha256": "b1118e2b2d1094cb213287d796c4b551747bb001dfc769b38ae8b0f1f7400ae2",
+    "source_archive_sha256": "7dc9d0d23d8518d23c189decd548e5207130fb4ec1df54fc421889ddf0b55d41",
+    "model": "/large_disk/wf/研究代码/RAG/OpenDecoder/checkpoint/Qwen2.5-3B-Instruct",
+    "tokenizer_sha256": {
+      "config.json": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    },
+    "free_instruction_sha256": "b7a048d303f8358b118f9306fb3ada32ba2466cb0f47f972c0d1d3856de7030f",
+    "feature_convention": "H[l] = hidden_states[l+1][0,-1,:]; final layer includes decoder final norm",
+    "implementation_sha256": {
+      "scripts/semantic_transfer_materials.py": "fd310f50c781131bc002684a3b4360e8e409b8f306607dea2923d89a4b67d48e",
+      "scripts/run_semantic_transfer_materials.sh": "512bf3268d6670f64726329d2c3565d37b7167b646db67037a6e74f481836240",
+      "scripts/evidence_experiment.py": "019af81ffcfe108b155e6e061569d7d1c1fc17d3b072ad436d78defa74aac225",
+      "code/prompts.py": "bedd7b758ef6cfe117580d3fc29e133f1343830f88be71243f8c07e6a893f7c8",
+      "prompts/baseline_prompts.json": "48075d1187b8e0331b295d0e4b46409642bcf7ef803aaf3b885dc10ac97f1a79",
+      "scripts/semantic_transfer_materials_v3.py": "eae73283a7fca0d87a322d23bcdea143962b93b35dc063bf8241f96b2437bc19",
+      "scripts/run_semantic_transfer_materials_v3.sh": "c3a2dada01132b30b0d1faa1483f1ea8248ec78e53e8a643aca0c58c1b6dc00a"
+    },
+    "source_sha256": {
+      "runs/qwen2.5-3b-small/data/manifest.json": "3fc899266cfad2009dc3f9baa42050fe37a822eb448afea6b2b3f347fbee3a24",
+      "runs/qwen2.5-3b-small/data/instances_train.jsonl": "15494aaed6335f294b9d88befcdc88ff6d90c6555a8d89d87d4efe1ff0230492",
+      "runs/qwen2.5-3b-free-answer-study/protocol.json": "893af4b195ab42c4fa3c2a670da022e7fc422a6537506671600c9c50f949c3f0",
+      "runs/qwen2.5-3b-free-answer-study/chat/probe/probe.pkl": "db6033b84f1fcd30e5e2e31ce4beb262a76920cc06811c57900ad14b8d40858d"
+    },
+    "packet_sha256": {
+      "a": "c665518f7b55beb2b51418d32ce3916d6de9fabef301e51f83cb41e21887a1c3",
+      "b": "1d6aea730e01a631e9d7bd1650fabff4ac9f42c2c94eae5d4b3cef162f2c4b16"
+    },
+    "inputs_sha256": "5508687d8879fdeb140f14f6e2d0c1b1b2223293f6284a0b03dddd770cb638bf",
+    "no_gold": "Author intents only; all semantic labels null until auditable independent reviews. Existing background-exposed40 not imported.",
+    "no_gpu": "CPU prepare/verify only. No inference, generation, fitting, calibration or confirmation access.",
+    "material_version": 3,
+    "source_resolution_audit_sha256": "add5f0383fc6c6b6443eec6ed900ab410c43382b53ebf43e006a800783b4320c"
+  },
+  "source_citation_count": 54,
+  "authored_target_citation_count": 352,
+  "edited_cells": 132,
+  "paired_cells": 220,
+  "previous_168_inputs_and_token_counts_unchanged": true,
+  "new_material_input_ids": [
+    "stv07_A_C",
+    "stv07_A_I",
+    "stv07_A_K",
+    "stv07_A_S",
+    "stv07_B_C",
+    "stv07_B_I",
+    "stv07_B_K",
+    "stv07_B_S"
+  ],
+  "independent_rebuild": {
+    "inputs": 176,
+    "missing": 64,
+    "pairs": 220,
+    "token_differences_matched": true,
+    "all_exact_source_and_target_citations_matched": true,
+    "all_edits_reconstructed": true
+  },
+  "background_overlap": {
+    "shared_backgrounds_across_partitions": [
+      {
+        "doc_id": "T023",
+        "sha256": "d32b9629bf13d4f803b72fc6f85d1be7be409385f16df58fa1bf4eb591818d3d",
+        "partitions": [
+          "semantic_eval",
+          "semantic_train"
+        ]
+      }
+    ],
+    "unique_used_backgrounds": 61,
+    "used_backgrounds_exactly_seen_in_old_probe_train": 22,
+    "caveat": "Base IDs and exact questions are held out from old probe training, not all entity knowledge or background documents. Shared background bytes are disclosed, not proof of OOD or target-fact leakage. No reassignment or background cleaning based on outputs."
+  },
+  "target_source_overlap": {
+    "unique_cited_source_documents": 24,
+    "exact_documents_seen_in_old_probe_train": 5,
+    "documents": [
+      {
+        "doc_id": "T005",
+        "sha256": "635baf328f2e1808175dbcc9a419ab7fdc1f6e9ba752e2c15f5510d0246a34f7",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T010",
+        "sha256": "692f1e7c5fa98aaa23a47a24664c713345063637851a320f2541c975e97bd43a",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T013",
+        "sha256": "a489c2f62af1dec0a5b904cc1100d2b07dfc6ce73c94c66250c4d202ce73abb8",
+        "seen_in_old_probe_train": true
+      },
+      {
+        "doc_id": "T018",
+        "sha256": "52ce9d9b24b436168c7e40e676fe888c7872af2ebcd486ef1f2e7981078d278a",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T024",
+        "sha256": "31fd8edee68711a1e81b4970121a9a390b82252db7afba1247760296cc499cf3",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T029",
+        "sha256": "3f93132bd2c81c38bfc1d59ba34b115bced09158f8e1b4c81297c0ceb22fe650",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T032",
+        "sha256": "d804a341043d3c9127c2baf7d78c1852f6c64682c474ccc32ff486caabf45da7",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T034",
+        "sha256": "4179f993c17e202f65ca4b0defb2bdefad121b2af7dc25c433729dde38eafbd5",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T037",
+        "sha256": "b7add579711fab142e47c4e5cd35c9c05a23cca69b17c14bc847700e48c4d396",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T043",
+        "sha256": "aa212587f43af95ba2350dfb63b122907b100c7c594e56ab155bea9292b6e6e5",
+        "seen_in_old_probe_train": true
+      },
+      {
+        "doc_id": "T044",
+        "sha256": "a6dd503568e0587a165cf30166f8cacb5ef80755a24bde0b71c611a07c14db3f",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T048",
+        "sha256": "f9f8eadeb3140ab6a275fcccc51785949ba95f1c1e03ea370f0d950e28146830",
+        "seen_in_old_probe_train": true
+      },
+      {
+        "doc_id": "T050",
+        "sha256": "9cecebb6f6040ae82d84feb49ff506105947a0e4f3131d696be12636087cde35",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T069",
+        "sha256": "3e7f4f818c23555b6b62d0d4b89b45bc4406c8e35e26e0c557532c26c7d709a4",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T074",
+        "sha256": "d42cc86d2243b718d95b4eabcd2c9b7919d3e9093f54fdaaf0f295fb73221936",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T079",
+        "sha256": "fc1b49c59531bcabe82421fc81d27c8283e19cdb17b89863b8d575b44f516424",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T086",
+        "sha256": "f081827aaa6f7a377dd61a9b8f556bee348f5e45af44f63b7f6c5d752e2b90b7",
+        "seen_in_old_probe_train": true
+      },
+      {
+        "doc_id": "T091",
+        "sha256": "c3713681c366d55b1b97769d67e0005011fd15fe45382c4708018c91a97c93db",
+        "seen_in_old_probe_train": true
+      },
+      {
+        "doc_id": "T104",
+        "sha256": "2dc24732aa7bfdfc1b0980eb14b440abe0ddd2f2a2518c6f73e1d2bb954ab9c1",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T110",
+        "sha256": "a071007464a545f5e7615df86ffaa3a6139f7b35df34cfc06c2f26a01dc202cd",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T122",
+        "sha256": "90956eb580b892e1c0efb9e0ac513a3fb3e32400a5925625d758d79482d4c446",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T130",
+        "sha256": "8e0d7836c2848999b0072a6d68bcc57a68bffde43b0a3aa5604cd0f230423469",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T139",
+        "sha256": "0d7e8725a13d48a615650e1d7782fd5117abd9bd396a46867bc79f8ed6d58c0f",
+        "seen_in_old_probe_train": false
+      },
+      {
+        "doc_id": "T151",
+        "sha256": "67beb4ed1bbf4b8bf256c444494e0f446f57e746b7495469a5fccc683d12b7d8",
+        "seen_in_old_probe_train": false
+      }
+    ],
+    "caveat": "Descriptive exact source document overlap, not proof of pretrained familiarity, semantic leakage, novelty or OOD. Source citations include identity disambiguation context, not necessarily verbatim target passages."
+  },
+  "handoff": {
+    "a": {
+      "path": "runs/qwen2.5-3b-semantic-transfer-materials-v3/handoff/input-review-a.zip",
+      "sha256": "cb0da023db9c43d187a1c23aefaf485e110ba026dba70f815468aa1e4304fb85",
+      "packet_sha256": "c665518f7b55beb2b51418d32ce3916d6de9fabef301e51f83cb41e21887a1c3",
+      "items": 176
+    },
+    "b": {
+      "path": "runs/qwen2.5-3b-semantic-transfer-materials-v3/handoff/input-review-b.zip",
+      "sha256": "cb577abcaa55577465bb7d1d2645a25ce20d9029baa607126e05329c4be435bb",
+      "packet_sha256": "1d6aea730e01a631e9d7bd1650fabff4ac9f42c2c94eae5d4b3cef162f2c4b16",
+      "items": 176
+    }
+  },
+  "review_intake": {
+    "status": "pending_no_review_files",
+    "planned_cells": 240,
+    "constructed_cells": 176,
+    "unavailable_cells": 64,
+    "construction_coverage": 0.7333333333333333,
+    "validated_review_files": 0,
+    "independently_verified_review_contexts": 0,
+    "approved_semantic_labels": 0,
+    "agreement_candidates": 0,
+    "agreement_coverage": 0.0,
+    "disagreements": [],
+    "partitions": {
+      "semantic_train": {
+        "planned_cells": 96,
+        "constructed_cells": 80,
+        "unavailable_cells": 16,
+        "agreement_candidates": 0,
+        "agreement_coverage": 0.0,
+        "candidate_coverage_requirement_met": false
+      },
+      "semantic_dev": {
+        "planned_cells": 48,
+        "constructed_cells": 40,
+        "unavailable_cells": 8,
+        "agreement_candidates": 0,
+        "agreement_coverage": 0.0,
+        "candidate_coverage_requirement_met": false
+      },
+      "semantic_eval": {
+        "planned_cells": 96,
+        "constructed_cells": 56,
+        "unavailable_cells": 40,
+        "agreement_candidates": 0,
+        "agreement_coverage": 0.0,
+        "candidate_coverage_requirement_met": false
+      }
+    },
+    "training_A_candidate_class_counts": {},
+    "candidate_coverage_requirement_met": false,
+    "training_A_has_three_candidate_classes": false,
+    "context_independence_note": "Self-reported history_exposed=false is validated, not independently proved. Distinct names do not establish independent contexts or model sources. Audit actual received context before approving labels.",
+    "no_automatic_adjudication": true,
+    "approved_for_training": false,
+    "gpu_launch_ready": false,
+    "new_gpu_forwards": 0,
+    "generated_answers": 0,
+    "trained_probes": 0
+  },
+  "tests": {
+    "passed": 31,
+    "elapsed_seconds": 42.414,
+    "new_source_and_intake_tests": 9,
+    "previous_related_tests": 22,
+    "original_full120_rerun": false,
+    "log_sha256": "80508c72368a1ad0367683547977a3a49bada679477c9aa8b2515142dd985b3e"
+  },
+  "old_artifact_and_source_files_unchanged": 149,
+  "old_artifact_and_source_sha256": {
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/coordinator/author_judgments.json": "b4870cacf3bcec98fba76cca7a53da6d0ad9e9708d980d269d0d46da3ac591d2",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/coordinator/author_review.html": "da57a9aef4f920bf4ae828353bd426978dac6917a321ba8828a9f676bfb8d05f",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/coordinator/base_audit.json": "7cb3127f5ee3ea72269abda40d83d4f24cba78211220194c4dfb1c2d4a524241",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/coordinator/edit_provenance.json": "fea5b40c2614bfc739468fe1feaa06030296c1abacee809e34c57d22fa13ed0e",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/coordinator/pairs.json": "68d3e33bd19f7bc672df16b5afd1623e016086a2c5686fa906a31cef01096c97",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/coordinator/review_mapping.json": "1bb400751f1588e8da5dbc7ae731ea4fbaf80f96b1eed7d4d7c5ba405b91bb24",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/handoff/input-review-a.zip": "bf7fb2c998c5f44f403d70db1cd69f54cb0a8682a7f7bbd50191b7d84134acd3",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/handoff/input-review-b.zip": "ca0fb72ec1169e5343976ce3f27e281b71bec1e9bd5b2e3fc780f850df5b524a",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/handoff/manifest.json": "e3eb3c06e62bce19c56bd6d0edbfd2b0a9c7ad4ebc2f57b9c7caa6a23bf15914",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/materials/inputs.json": "d807255a9bfa036644700188f4da2d00f10de40dc8259efd9d1f53b0991de5b9",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/materials/unavailable_cells.json": "0ce62d8848ed52ed21c8e8a6f79dc64720ec4d9bc90e2d9c106ded10570e73fe",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/preflight.json": "8eee6dba98e77bef8060d2ab5db37c4bccfe4060fcc3e741627c1bb57e742093",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/progress.json": "f241ad66f7f0f5c6b42c7bf672ed66535b0852cfdc2d54df7fad7f89c6fe177f",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/protocol.json": "9101a57d11e60729ecf90388f99c759ecb6c5e2897e0d1536448482fa9850cd5",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/reports/overlap_audit.json": "07f8208bf54e199198cdde758061ccfa197b7904ecbd622e0a1c14de93b55c5f",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/reports/target_source_overlap.json": "46c3e4783a50580c80e511d07acc740eecc0204fc6cb53b3789af428069f2e21",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/review_a/packet.json": "a790fa220d0cae84b096b2a4a743299ddaab2037a877a7b1d2c588ac463b5be3",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/review_a/ratings_template.json": "098d676abc361fea9bf83e0cf8d112cc63e28612864177238f357dbf2f894758",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/review_a/review.html": "970adad86a83bf8ef037f4cea1ad7a90b5ab361ca7038860635a4bb70ca08720",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/review_a/rubric.json": "55228a14decd5cbd3d8faa4d9d99218f33c8830f7d00c31a5db796cb46ea85bc",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/review_b/packet.json": "c553bf927e6d0bac1b200ceb3b7458313b901d70aefb958e55f5822dc9c4becf",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/review_b/ratings_template.json": "6191f5513cb2049fd9ec43c1cca54104a39a9e066269310dc6108172bbdf7123",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/review_b/review.html": "0096e51f4533740b788c3bffa93105043ee6009564f3b12791568792629cd765",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/review_b/rubric.json": "55228a14decd5cbd3d8faa4d9d99218f33c8830f7d00c31a5db796cb46ea85bc",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/review_gate.json": "27e41a7b302851d4df90e3b7108a0cea37f78be06d1f2a831d17d0477a6665e5",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/source_catalog.json": "3869c8141ad2dd03dc70f8e5c0483b9003cd2cd31b8e8335335f8a2dff77c935",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v2/source_train_answer30.json": "f01b6cb5710f831693b1ce7562cbc3c7361bd2484f6dd0dbff841729d7bafa6b",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/coordinator/author_judgments.json": "bc3928e7a72dbd58855fcdee5997c13905d2ce7eb1b9c76a44a2b390e299fae6",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/coordinator/author_review.html": "d9aabeab7cd0870aa0bd383d86cb774ce5f1e0640507e81b1ef55742f61d62b6",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/coordinator/base_audit.json": "7cb3127f5ee3ea72269abda40d83d4f24cba78211220194c4dfb1c2d4a524241",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/coordinator/edit_provenance.json": "a9d9f97e86023aeac6af0826257b7dcbe7a6328994e1bbb6adecf6ccc783164b",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/coordinator/pairs.json": "23d88261f643448b2da652a60ed36cc5fe1bb4362652f4930e93787ee0161411",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/coordinator/review_mapping.json": "1bb400751f1588e8da5dbc7ae731ea4fbaf80f96b1eed7d4d7c5ba405b91bb24",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/materials/inputs.json": "631dd006dc8afc0de96d2254c1a7c108765f32daee4e055352f29768018aea0f",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/materials/unavailable_cells.json": "0ce62d8848ed52ed21c8e8a6f79dc64720ec4d9bc90e2d9c106ded10570e73fe",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/preflight.json": "c76862141817f445b96ef1e17333fe8b2bdd19176a41e4a63ad534e6ce7e08d7",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/progress.json": "f241ad66f7f0f5c6b42c7bf672ed66535b0852cfdc2d54df7fad7f89c6fe177f",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/protocol.json": "38319142f4174edddd809d2d8f60b943014b6f2260b94d933404d0187a58c985",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/reports/overlap_audit.json": "07f8208bf54e199198cdde758061ccfa197b7904ecbd622e0a1c14de93b55c5f",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/review_a/packet.json": "410fc9f13a44905d5226874d5bb142dd021648d7eb8ea8ba012c8e3b46cd8913",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/review_a/ratings_template.json": "171cfb17f22bcac49c3c6144a832efe7120f4409f6e52e17b1d5fef223869d80",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/review_a/review.html": "14af5f99f0777967f1534ff70db1f1e4d67ba0f1e1e7bdd70b25fb21e2d9d37c",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/review_a/rubric.json": "55228a14decd5cbd3d8faa4d9d99218f33c8830f7d00c31a5db796cb46ea85bc",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/review_b/packet.json": "359cc0087cb3f45d92654ad14652b3378ee9f8c2e13c6f957cb699db8213e0c6",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/review_b/ratings_template.json": "64c77444031b68cc74413f03d9ca752093a07fb6d2fa60bfb0b957a58aeb2288",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/review_b/review.html": "3db2cfe25b043af5d4e6c64b8950f1ed2614c0bf7afc617ece334779381f399f",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/review_b/rubric.json": "55228a14decd5cbd3d8faa4d9d99218f33c8830f7d00c31a5db796cb46ea85bc",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/review_gate.json": "27e41a7b302851d4df90e3b7108a0cea37f78be06d1f2a831d17d0477a6665e5",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/source_catalog.json": "3869c8141ad2dd03dc70f8e5c0483b9003cd2cd31b8e8335335f8a2dff77c935",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v1/source_train_answer30.json": "f01b6cb5710f831693b1ce7562cbc3c7361bd2484f6dd0dbff841729d7bafa6b",
+    "runs/qwen2.5-3b-probe-support-expression-v1/.run.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0000.npy": "8ed494d9842e37ccb139cf208472cd7dfc19eaa6e1404de7b0f426f1a0adf5aa",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0001.npy": "ccac83739d0850872c4a811050df29440fdc9968a8914bcb6275a68f9856cd35",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0002.npy": "cccabe37e566a81655eb3d61d38fd5db16f925ca61afc4e1015c78e3ae2516d1",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0003.npy": "78176d0efa90e48617ab6da0b57070fbd5b49170b7697ceb71d4955cb6881651",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0004.npy": "93577c41ff1418858d140fbe4acd920684d5452ff3e78d1c9ff2611b536aebbe",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0005.npy": "41fe3c3a5457e5363e3a025d183eff31127800d80f8a8fabab007c7ae7cd6781",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0006.npy": "674af775fb1d67179861cc0a1b37e7217f3adef4a879f79eff3f2ff4245244c2",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0007.npy": "00b272161dbe8eba1240db34ec3441c3b063c15770f608e83fdec08a9e16b1ca",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0008.npy": "2882dc6f6ebb05b4a796e7bf96685700b4c078bc49b217f7eac0f137d326e081",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0009.npy": "3c7cf83b7128ba6bea97077572cdd0cde141cf2ac4edce118553d59b557c0be0",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0010.npy": "e641d242159b70809db059fcace39182d562751ac4b99d34b3ce1f4e8fc55eed",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0011.npy": "765d59a4b7afb0e30ee5c2a378863e989b0198ea37a8c7ff9cda29fd751202c0",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0012.npy": "0f4e81f4dd023d950dc034fdce9d5df18b75d008f68ea8a464fcd657128ab98e",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0013.npy": "e65c880dab1db10ecdd5e373e59f254200ac311f9b744d827eb4ee6574d58cbc",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0014.npy": "37273eb8e5ba46886ca098c5dfededa526831e1428356a0bebeb5f6027c1b904",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0015.npy": "292f6a9cc38a7d524af378c5e23d635c92ebcdd7333feeed4456d66ad94c7637",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0016.npy": "44181a7a9501b7a9ffccbd347b5abf7a9a5067460d47e4e63773d4441611204f",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0017.npy": "c0943f7a0044f2cf75e2478c2d885fd6ef34b63702beb53239f0d6364adbd2dc",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0018.npy": "5c430331da941ec693b1bbf2a793bdadb8e13ec6ad0a44fa829a6f79a7145471",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0019.npy": "0c07295963d63a201371c5bb9d3a51005562b73293f940e7ea4d01fa9e6e890e",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0020.npy": "9ca15526ecca26a07fd330cf0a2733aa1cb99f5a632b05fbd2b186366e9b31af",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0021.npy": "a303fef33b3f550f06cfa0c8dffdc76d04c3d8155f4880277c5f9e80b797b0bd",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0022.npy": "334c25964f54217c6727fb8abcf41b7517cd02226f7514edfc992d80cce26c1b",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0023.npy": "e7094902fa38c4150b80784fa00824a73d4257b844d1c00e6bdbd81c4721dbe3",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0024.npy": "648789364bd96eb67c19a1e6288421203069695f853acd0a024b1edd5a43b5e6",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0025.npy": "12a345e6d7d5fcdbdb864222d14b7e6e8e36b6f461136f1ff061a5a2fd4e027f",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0026.npy": "dada0a437f95882fc175184b8fc6d1eb4dc6b9db8e87a16b8f3da60e7470da89",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0027.npy": "11e53e98fd2b3ee6b34027ca388f593d5143dd7b7bec4a7032c5b5f31b059de1",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0028.npy": "d705d79440b0acad2f62663b4b6add4bb2553efe6fa0d4a6f62a59d668c7db0e",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0029.npy": "52102590ab5bf5cc5aa1941b829bf1c79c32f5a893e7a3d2969182f03d48ecd2",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0030.npy": "274de8afda35e80ccc9be1199d6a380e28ec6f2e7dd76c27ffe06aabb3c50f63",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0031.npy": "a62a7b17b4414a9467f0fb34d25303ccae5453dac69a1aa1a6eec9d25ed00a1b",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0032.npy": "9a872b1f922f77d86cd49f128215da8db736b2df41e1e70c903820481dcebd15",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0033.npy": "b854800711efda99e6cc4d0902c131c95d1f08605371eb1851ad1cacaa4d13b9",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0034.npy": "632ed9d1d97322dd57ae53bcfdbb1c99909f6ed32fe68267ee6e9b3c7638ce89",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0035.npy": "703e60f98e403d2424b3814059ae8f4a7e940bc4949488c7f1ccc882e4a36bdf",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0036.npy": "b4957e387c4e033ffe58723673b64b9a4da21c77da2fe006f77540e6f8ff2227",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0037.npy": "46447073b55312c217fb02256b682bbb9ab75283bf819da731f41b90d65ba52d",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0038.npy": "bfb2f2115d7b229f3ec736877fb3c92e83d78c0ec4a3eee27617b74020f0a2f8",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0039.npy": "3054dbd65cce6130fbf0b448bbc764e758237520fc051988c893deb58764f6b7",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0040.npy": "9b425b73c461e80d27ef2baf9a1265a6966282cea2cae1c4930a45292915921e",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0041.npy": "5458c9c3221917e4652e4637831669b2c68f7460efeac443640dfd73e7867463",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0042.npy": "5adf7fde894313b3c4e05b69009248d331c40631fac1e0c65ebac31d9504ee1a",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0043.npy": "d8e5db7e28891a55ff9cdb66201a5a230ba5163adec11828c5f39b609d342400",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0044.npy": "4870077dbdac308de0c36cad9c8d909783b1ebe8b59a549f04300c970f642a2c",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0045.npy": "c795bf85544dff94a2970a821176008cee597eedce02ec43f16dad6a86afb49b",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0046.npy": "b6f106430e7050006f8bb547ead66ab4d3cb7d08939178f5718593976833bfd6",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0047.npy": "7c092a6c6d1f4099c34bdcab8b649d5e60329de9028c2c09e2fb70b1acc9d5be",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0048.npy": "21524b723ddadaf0646b045251b071122914d24cdf627f53853b2b6019c734bd",
+    "runs/qwen2.5-3b-probe-support-expression-v1/features/0049.npy": "4fe1723be07acf6f2cabcdad87cc5b3b8b7b8b78155a9218166528744f6a96a9",
+    "runs/qwen2.5-3b-probe-support-expression-v1/launch/full.log": "eba35819ca2de9e7c3d3b8e149445397010db13532a77aa563a25e66dd95d5df",
+    "runs/qwen2.5-3b-probe-support-expression-v1/launch/smoke.log": "1fb470c850caa394c902aa6723d345f2b7832e1f1456d872bf339af5d1d82700",
+    "runs/qwen2.5-3b-probe-support-expression-v1/materials/inputs.json": "6b1ccde474325eddaa69b35fc97f9501140610230f75126ac4a2a49815698ca1",
+    "runs/qwen2.5-3b-probe-support-expression-v1/materials/review_seal.json": "a6bf3f176961675178ebb50060181e5c9723be87dacc500d657fb93123a7127d",
+    "runs/qwen2.5-3b-probe-support-expression-v1/materials/semantic_review.json": "cb1c7ffd995549cec91d6ff4fe70f40be2fd32126c3fad67c1ed2068c73538df",
+    "runs/qwen2.5-3b-probe-support-expression-v1/materials/target_edits.json": "6b3301d5c4e3d2f1dfc21b4fda9c9e62c7a154cdd43d2f53a5c38cbb75d08696",
+    "runs/qwen2.5-3b-probe-support-expression-v1/preflight.json": "091e92867aacf9c3b6178bea1b062bc0d61160d3b39e92b57e5d7be9723fc9df",
+    "runs/qwen2.5-3b-probe-support-expression-v1/progress.json": "d1929aeaabbe19c7761ae4e0b9a142932f78bf95ada05004e3258b3fa551fe90",
+    "runs/qwen2.5-3b-probe-support-expression-v1/protocol.json": "705e3c885a1a9b63c17af44df45c61ac35b925d4646da2633b3639a09a446fe9",
+    "runs/qwen2.5-3b-probe-support-expression-v1/reports/cached_endpoints.json": "94f39608bc8842e041a593d007bba5e2a707bae6d21e64cb46e8af9a75d7503e",
+    "runs/qwen2.5-3b-probe-support-expression-v1/reports/diagnostic.json": "4b9426832c8dd57de8dd2a8862962c4524ada9a32625a125217c4561e7558df2",
+    "runs/qwen2.5-3b-probe-support-expression-v1/reports/train_lexical_counts.json": "977029798b17797e073eaa4054b5bca7ad4d22559b255f25f2b6c17d618e7ae8",
+    "runs/qwen2.5-3b-probe-support-expression-v1/states.json": "92fa24966be6154edbcc63f090efbc6a97e95991e4bd19b283818e6b5d113d16",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/.run.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/features/0000.npy": "5c430331da941ec693b1bbf2a793bdadb8e13ec6ad0a44fa829a6f79a7145471",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/features/0001.npy": "0c07295963d63a201371c5bb9d3a51005562b73293f940e7ea4d01fa9e6e890e",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/features/0002.npy": "9ca15526ecca26a07fd330cf0a2733aa1cb99f5a632b05fbd2b186366e9b31af",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/features/0003.npy": "a303fef33b3f550f06cfa0c8dffdc76d04c3d8155f4880277c5f9e80b797b0bd",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/features/0004.npy": "334c25964f54217c6727fb8abcf41b7517cd02226f7514edfc992d80cce26c1b",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/features/0005.npy": "e7094902fa38c4150b80784fa00824a73d4257b844d1c00e6bdbd81c4721dbe3",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/features/0006.npy": "648789364bd96eb67c19a1e6288421203069695f853acd0a024b1edd5a43b5e6",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/features/0007.npy": "12a345e6d7d5fcdbdb864222d14b7e6e8e36b6f461136f1ff061a5a2fd4e027f",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/features/0008.npy": "dada0a437f95882fc175184b8fc6d1eb4dc6b9db8e87a16b8f3da60e7470da89",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/features/0009.npy": "11e53e98fd2b3ee6b34027ca388f593d5143dd7b7bec4a7032c5b5f31b059de1",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/features/0010.npy": "d705d79440b0acad2f62663b4b6add4bb2553efe6fa0d4a6f62a59d668c7db0e",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/features/0011.npy": "52102590ab5bf5cc5aa1941b829bf1c79c32f5a893e7a3d2969182f03d48ecd2",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/materials/inputs.json": "35564dea5afff6280d24d0d417560a8fad31d444e9ee2a8a7287f8826411b2ac",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/materials/review_seal.json": "e65cd9341af1246dc2a9da9c882ffd0eec50c47aac7b83b8a47b2e2b4feec7d9",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/materials/semantic_review.json": "cb1c7ffd995549cec91d6ff4fe70f40be2fd32126c3fad67c1ed2068c73538df",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/materials/target_edits.json": "6b3301d5c4e3d2f1dfc21b4fda9c9e62c7a154cdd43d2f53a5c38cbb75d08696",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/preflight.json": "0c42093c73dc6bff2a5b4476340c79191418cb9d56105efda2ca44db93ad2b04",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/progress.json": "2254453c6ea5d5236d89169350f97eabb4f6033f69e33f5b76a5f106f0d5aced",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/protocol.json": "ee25c086980c1708f4bc94cd41ea6dc94c2ab0d267e8bda0e73c1d0620043116",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/reports/cached_endpoints.json": "94f39608bc8842e041a593d007bba5e2a707bae6d21e64cb46e8af9a75d7503e",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/reports/diagnostic.json": "608a92b6265457d7264847a2d4b910b25d44874ee28fef720b558b3453d86ae2",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/reports/train_lexical_counts.json": "977029798b17797e073eaa4054b5bca7ad4d22559b255f25f2b6c17d618e7ae8",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/smoke_gate.json": "a15029e236be5860e1e5c8134f29474f632b37e9d0bb31088087a6da70044cda",
+    "runs/qwen2.5-3b-probe-support-expression-smoke-v1/states.json": "4e2c489b7eecbed2985041df31c3b22bdaec0d3afcb37089a030ff82b0ccddab",
+    "runs/qwen2.5-3b-controlled-semantic-transfer-review-v1/protocol.json": "2c66f6d5e845d78c3b1b0342efb8f2e6b83ee3c85e5ad69b35bce48fb90fb84a",
+    "runs/qwen2.5-3b-controlled-semantic-transfer-review-v1/reports/v3/review.json": "f8fa6af1977cf5aa437e8b4d922ac5bfef3204f0d4bd43067f6eeeb7beb70762",
+    "runs/qwen2.5-3b-controlled-semantic-transfer-review-v1/reports/v3/joint.csv": "9aa8a22a450580a89548803075a25fa7631700d875359ceb242f31cb51825595",
+    "runs/qwen2.5-3b-controlled-semantic-transfer-review-v1/reports/v3/joint.html": "eb0df16cb7d7c2711ad2dac88858446d74a9ce3ba0bfdfc564ccde8d749dcd5c",
+    "runs/qwen2.5-3b-controlled-semantic-transfer-review-v1/exposure_audit.json": "70d405ee3647be5052d4f3143ae62c7c651358b3f7b57db3895d4aaa5aa39fbd",
+    "prompts/semantic_transfer_validation_v1.json": "78476923d35aa72d9d0a65b0718be4eb38195ef9c5e12f9672045bb2add5f457",
+    "prompts/semantic_transfer_materials_v1.json": "aa84ec0b3f74e54870212fd3bfbc2ff53cd8f52ec62875bb96cceb8b77174c58",
+    "prompts/semantic_transfer_materials_v2.json": "8ef7e8ed90be68102ff8cc0319250d9824c39056a30855a873864831456acc7c",
+    "scripts/semantic_transfer_materials.py": "fd310f50c781131bc002684a3b4360e8e409b8f306607dea2923d89a4b67d48e",
+    "scripts/semantic_transfer_materials_v2.py": "7861808e71ae5511e71ed6a2a9d71b850fcad64594dd0d355681ab410e9ce843"
+  },
+  "current_artifact_sha256": {
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/progress.json": "ac6419f09b79ae872ce71cd67732242d5bade2b2bde79ada2718d8612f0cb47f",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/review_gate.json": "99d8dea063e58cc211ee3cab6caba8b2d57fd1fa6d90e25702a9b2d1211edb80",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/source_catalog.json": "3869c8141ad2dd03dc70f8e5c0483b9003cd2cd31b8e8335335f8a2dff77c935",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/source_train_answer30.json": "f01b6cb5710f831693b1ce7562cbc3c7361bd2484f6dd0dbff841729d7bafa6b",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/protocol.json": "21f4bf7113e609d4ff1a7908729d658c86e41cd407169a452281b37802b9c150",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/preflight.json": "74aabc9ad8c421c3715bd5739c22253a67d3050c8fe204a0922380f19a12d88d",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/materials/inputs.json": "5508687d8879fdeb140f14f6e2d0c1b1b2223293f6284a0b03dddd770cb638bf",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/materials/unavailable_cells.json": "e0a55d8fb4152c97e6bb0c29ed64c6bf2907e86f6f3d59b0b9237bb85f310ecd",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/review_b/review.html": "b52ea959a2b1858b85b2d2a6ea7becc53d2a6d6deeec061928a4bd64197cc188",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/review_b/rubric.json": "55228a14decd5cbd3d8faa4d9d99218f33c8830f7d00c31a5db796cb46ea85bc",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/review_b/packet.json": "1d6aea730e01a631e9d7bd1650fabff4ac9f42c2c94eae5d4b3cef162f2c4b16",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/review_b/ratings_template.json": "e8b2ee9ad878817f797c7ebe035a7b1e84401ac20f43ba4e9bfd407ac9d183e1",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/coordinator/author_review.html": "10fb194f4e4180470483f71806b9ff3d9fce1caf2eb45158e1a94a6273c59237",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/coordinator/review_mapping.json": "b868ac75c8061c8e7c51e5d47c3cfd7c8df9d2f616f8080c5219952d3d84d744",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/coordinator/base_audit.json": "b77f3249e2b8b5fad789755e84431dde540ef35346d0443cdf0a90ab7a02a550",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/coordinator/pairs.json": "979b224d79a872b2ddaa20bc9cab7ac33c64f7d88fd954f68746ff51491d3b77",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/coordinator/edit_provenance.json": "521283cdf9617c9952a64ec40bb85fd21a43150239b25c60f6793493054de8bd",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/coordinator/author_judgments.json": "2c2c6bb7d478b10944d751b3591e0898c031751322049cd5da4419604f718418",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/review_a/review.html": "a78ccd9648b37edf6b254e585a1568b39a72f330ea6826660af9a06354530ba8",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/review_a/rubric.json": "55228a14decd5cbd3d8faa4d9d99218f33c8830f7d00c31a5db796cb46ea85bc",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/review_a/packet.json": "c665518f7b55beb2b51418d32ce3916d6de9fabef301e51f83cb41e21887a1c3",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/review_a/ratings_template.json": "538160649ed8fbd773776673c70fcd13fcd1c9bba245ef7418478eb985cc9a2c",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/handoff/input-review-b.zip": "cb577abcaa55577465bb7d1d2645a25ce20d9029baa607126e05329c4be435bb",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/handoff/manifest.json": "0afa0d7e6ef533e52c63fc1ff9cc2628b1e17b0d8d6697ea07398f8d484dd7a9",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/handoff/input-review-a.zip": "cb0da023db9c43d187a1c23aefaf485e110ba026dba70f815468aa1e4304fb85",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/reports/target_source_overlap.json": "f7882977637b3792638a13410d909a74655751ad8f78cd9fa03655cb35c6ac5f",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v3/reports/overlap_audit.json": "28aa26c5586bd370660102f26d9536891f30da5e69f8a40334a066bd3d3d54c0",
+    "runs/qwen2.5-3b-semantic-transfer-review-intake-v1/review_validation.json": "ce7f42f5078e2878835d4905143ae81b3bc53f500cf125fb068c8374d7468c22",
+    "runs/qwen2.5-3b-semantic-transfer-review-intake-v1/consensus_candidates.json": "0a7307090d7279f4fa244c10dac129eca3bdd775dc23bab5708a29046023c521",
+    "runs/qwen2.5-3b-semantic-transfer-review-intake-v1/validated_reviews.json": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "runs/qwen2.5-3b-semantic-transfer-review-intake-v1/protocol.json": "15e1efe246e36472e2959a637a3ebd65ee37eb1623d55ac1ae938783cb1979ab"
+  },
+  "verify_commands": [
+    "sh scripts/run_semantic_transfer_materials_v3.sh --stage verify",
+    "python -B scripts/semantic_transfer_review_intake.py --stage verify"
+  ],
+  "verify_exit_codes": [
+    0,
+    0
+  ],
+  "semantic_labels_approved": 0,
+  "new_gpu_forwards": 0,
+  "generated_answers": 0,
+  "trained_probes": 0,
+  "limits": [
+    "Source-only author follow-up, not history-blind independent confirmation.",
+    "Scottish referent clarification changes the source question scope and is disclosed.",
+    "Eight missing relations remain incomplete; no outside facts, gold completion or source-base substitution.",
+    "Semantic coverage remains0 and construction coverage73.33% is below frozen90% requirement.",
+    "Reviewer self-attestation and matching labels alone never approve training or GPU.",
+    "Original published-label80.67% and old behavior results unchanged;380 reserved test bases unopened."
+  ],
+  "recorded_at": "2026-10-20T19:57:54.093895+08:00",
+  "constructed_base_source_citation_count": 39,
+  "current_artifact_files_unchanged": 31,
+  "verify_reports": {
+    "materials": {
+      "status": "verified_read_only_no_gpu",
+      "constructed": 176,
+      "unavailable": 64,
+      "planned": 240,
+      "constructed_bases": 22,
+      "independent_semantic_labels": 0,
+      "review_gate_ready": false,
+      "min_tokens": 345,
+      "max_tokens": 3056,
+      "total_tokens": 229126,
+      "partitions": {
+        "semantic_train": {
+          "planned_bases": 12,
+          "constructed_bases": 10,
+          "planned_cells": 96,
+          "constructed_cells": 80,
+          "unavailable_cells": 16
+        },
+        "semantic_dev": {
+          "planned_bases": 6,
+          "constructed_bases": 5,
+          "planned_cells": 48,
+          "constructed_cells": 40,
+          "unavailable_cells": 8
+        },
+        "semantic_eval": {
+          "planned_bases": 12,
+          "constructed_bases": 7,
+          "planned_cells": 96,
+          "constructed_cells": 56,
+          "unavailable_cells": 40
+        }
+      },
+      "source_unique_full_documents": 154,
+      "source_citations": 54
+    },
+    "review_intake": {
+      "status": "pending_no_review_files",
+      "planned_cells": 240,
+      "constructed_cells": 176,
+      "unavailable_cells": 64,
+      "construction_coverage": 0.7333333333333333,
+      "validated_review_files": 0,
+      "independently_verified_review_contexts": 0,
+      "approved_semantic_labels": 0,
+      "agreement_candidates": 0,
+      "agreement_coverage": 0.0,
+      "disagreements": [],
+      "partitions": {
+        "semantic_train": {
+          "planned_cells": 96,
+          "constructed_cells": 80,
+          "unavailable_cells": 16,
+          "agreement_candidates": 0,
+          "agreement_coverage": 0.0,
+          "candidate_coverage_requirement_met": false
+        },
+        "semantic_dev": {
+          "planned_cells": 48,
+          "constructed_cells": 40,
+          "unavailable_cells": 8,
+          "agreement_candidates": 0,
+          "agreement_coverage": 0.0,
+          "candidate_coverage_requirement_met": false
+        },
+        "semantic_eval": {
+          "planned_cells": 96,
+          "constructed_cells": 56,
+          "unavailable_cells": 40,
+          "agreement_candidates": 0,
+          "agreement_coverage": 0.0,
+          "candidate_coverage_requirement_met": false
+        }
+      },
+      "training_A_candidate_class_counts": {},
+      "candidate_coverage_requirement_met": false,
+      "training_A_has_three_candidate_classes": false,
+      "context_independence_note": "Self-reported history_exposed=false is validated, not independently proved. Distinct names do not establish independent contexts or model sources. Audit actual received context before approving labels.",
+      "no_automatic_adjudication": true,
+      "approved_for_training": false,
+      "gpu_launch_ready": false,
+      "new_gpu_forwards": 0,
+      "generated_answers": 0,
+      "trained_probes": 0
+    }
+  }
+}

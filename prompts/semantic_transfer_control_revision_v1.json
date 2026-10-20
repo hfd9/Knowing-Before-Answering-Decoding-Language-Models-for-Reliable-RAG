@@ -1,0 +1,2393 @@
+{
+  "schema_version": 1,
+  "name": "semantic_transfer_control_revision_v1",
+  "parent_spec_path": "prompts/semantic_transfer_materials_v4.json",
+  "parent_spec_sha256": "6f5d94a2b032bd0be4a563706ec3789347b088c9c5738af3574a43975816f3bd",
+  "parent_material_run": "runs/qwen2.5-3b-semantic-transfer-materials-v4-r2",
+  "parent_protocol_sha256": "a89665d92881926bc0c6da323affe35155dda20bea86101c43137c570b3b6b8f",
+  "frozen_design_sha256": "78476923d35aa72d9d0a65b0718be4eb38195ef9c5e12f9672045bb2add5f457",
+  "author_review_sha256": "bb8045b1e40d9eafa346b8b245110e7d1bd3a896ddeffd31757978749126b935",
+  "revision_proposals_sha256": "89e4f368183e02bf5bb1ae1205198c2f3999c8d81c2dd0925943a405febe6486",
+  "authorization": "User requested directly starting the reviewed same-batch material repairs; no new bases, partitions, candidates, model calls or training.",
+  "policy": "Recompose one v5 batch before inference. Preserve questions, backgrounds, source citations, slots and all240 IDs. I removes all textual paths to the queried relation while retaining only S-entailed identity/context/projections. Projection may require rewriting multiple clauses; this is not a claim of literal or formal one-atom minimality. No new source facts or world-knowledge-only residuals are intended. A/B equality remains an exposed author assessment, not proved semantic equivalence.",
+  "document_changes": [
+    {
+      "id": "stv01_A_I",
+      "original_id": "train_1102",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 1,
+      "before": "The tsunami affected Indonesia, Sri Lanka, India, Thailand, the Maldives and Somalia in December 2004.",
+      "after": "The tsunami of 26 December 2004 occurred on a British holiday.",
+      "before_sha256": "73f8b575d8bac4a8546d7fe5127bd98c36958af573a59fc964f9590bdc964926",
+      "after_sha256": "18004db74a0b764d5ffce48a8ed6a8b2e05f5bcefb5b7386dde2044129b1eae9"
+    },
+    {
+      "id": "stv01_B_S",
+      "original_id": "train_1102",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "S",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "Boxing Day was the British holiday when the 2004 Indian Ocean tsunami occurred, on 26 December.",
+      "after": "Boxing Day, 26 December 2004, was when the Indian Ocean earthquake and tsunami struck.",
+      "before_sha256": "667fa9f14bc589786f84388ce1dffabb6bd77add66bba5bbbfd4ede5fdb59154",
+      "after_sha256": "3fa70d4b1a649b8928cd700a5697e216ff47f64577cda70184c72ae26091ef0e"
+    },
+    {
+      "id": "stv01_B_K",
+      "original_id": "train_1102",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "K",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "Boxing Day was the British holiday when the 2004 Indian Ocean tsunami occurred, on 26 December.",
+      "after": "Boxing Day, 26 December 2004, was when the Indian Ocean earthquake and tsunami struck.",
+      "before_sha256": "667fa9f14bc589786f84388ce1dffabb6bd77add66bba5bbbfd4ede5fdb59154",
+      "after_sha256": "3fa70d4b1a649b8928cd700a5697e216ff47f64577cda70184c72ae26091ef0e"
+    },
+    {
+      "id": "stv01_B_I",
+      "original_id": "train_1102",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "The date of the Indian Ocean tsunami was 26 December 2004.",
+      "after": "The Indian Ocean earthquake and tsunami occurred on 26 December 2004.",
+      "before_sha256": "7e65710a36c79f489756ee5e5329216e250b6c693e9ae9f91b7150724ad8e9fd",
+      "after_sha256": "3e4c41aa6f0f078ff9624cae7fd2201a5040f222bb2617afd0d22208a1ab08ad"
+    },
+    {
+      "id": "stv01_B_I",
+      "original_id": "train_1102",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 1,
+      "before": "In December 2004, the tsunami reached Indonesia, Sri Lanka, India, Thailand, the Maldives and Somalia.",
+      "after": "The 2004 tsunami fell on 26 December, a holiday in Britain.",
+      "before_sha256": "f8df30d73c60e34c98ea578c19662cd6fa8319457f610e0a3f7de372018909ff",
+      "after_sha256": "b77ab00c2cca8b381e5ed6d383c301331851a43cc374a70509dd5756ec0f0f97"
+    },
+    {
+      "id": "stv01_B_C",
+      "original_id": "train_1102",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "C",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "Boxing Day was the British holiday when the 2004 Indian Ocean tsunami occurred, on 26 December.",
+      "after": "Boxing Day, 26 December 2004, was when the Indian Ocean earthquake and tsunami struck.",
+      "before_sha256": "667fa9f14bc589786f84388ce1dffabb6bd77add66bba5bbbfd4ede5fdb59154",
+      "after_sha256": "3fa70d4b1a649b8928cd700a5697e216ff47f64577cda70184c72ae26091ef0e"
+    },
+    {
+      "id": "stv02_A_I",
+      "original_id": "train_150",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "Napoleon and the French referred to the military clash as the Battle of Mont Saint-Jean.",
+      "after": "Napoleon and the French called the military clash the Battle of Mont Saint-Jean.",
+      "before_sha256": "17354ed75304717993d17187dc90707b0b53d252e9c64725773383760ad954bf",
+      "after_sha256": "d3f5b8576f95a5b586cc60dbc70b2a860a053e5fd3e7883cfa4cec62b6a5c9bb"
+    },
+    {
+      "id": "stv02_A_I",
+      "original_id": "train_150",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 1,
+      "before": "The battle was fought along the Mont Saint-Jean ridge in present-day Belgium.",
+      "after": "That battle was fought along the Mont Saint-Jean ridge.",
+      "before_sha256": "b238df60cc0b034daf40dd7788f52aacbc62d93cc8ee892e93753ca3796aabfd",
+      "after_sha256": "05ab6f3b7ce461864b4767ff79d2d69a4d2340518765726dc2575c91f31e76aa"
+    },
+    {
+      "id": "stv02_B_S",
+      "original_id": "train_150",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "S",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "Waterloo is the usual name of the battle that Napoleon called Mont Saint-Jean.",
+      "after": "Waterloo is the usual name of the battle that Napoleon and the French called Mont Saint-Jean.",
+      "before_sha256": "5dc329e15eb81acbc5565dd0797538fcfabca23d4bf61e8d7495fc74f6d3b28a",
+      "after_sha256": "3b2462ba5321dac2a4e1fc2900b7c1b48b6981ad12d064100754b7986e01562e"
+    },
+    {
+      "id": "stv02_B_S",
+      "original_id": "train_150",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "S",
+      "doc_slot": 3,
+      "target_index": 1,
+      "before": "Mont Saint-Jean and Waterloo are two names for the same military encounter, fought near the ridge.",
+      "after": "Mont Saint-Jean and Waterloo are two names for the same military encounter, fought along the Mont Saint-Jean ridge.",
+      "before_sha256": "6b25ad04160f4e007a753fb18575095837afebce0179255de69201a41429fea3",
+      "after_sha256": "573aaea29ba999f45678b18b1e0e9b1b34907c56424d98d7daf093051a437533"
+    },
+    {
+      "id": "stv02_B_K",
+      "original_id": "train_150",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "K",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "Waterloo is the usual name of the battle that Napoleon called Mont Saint-Jean.",
+      "after": "Waterloo is the usual name of the battle that Napoleon and the French called Mont Saint-Jean.",
+      "before_sha256": "5dc329e15eb81acbc5565dd0797538fcfabca23d4bf61e8d7495fc74f6d3b28a",
+      "after_sha256": "3b2462ba5321dac2a4e1fc2900b7c1b48b6981ad12d064100754b7986e01562e"
+    },
+    {
+      "id": "stv02_B_I",
+      "original_id": "train_150",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "The name used by Napoleon for the clash was Mont Saint-Jean.",
+      "after": "The name Napoleon and the French used for the encounter was Mont Saint-Jean.",
+      "before_sha256": "e589ad35d3da849500360f8d618c8a14e9b8c8c09be77781725fc46be75d90cd",
+      "after_sha256": "f2212a2c50cf246a5ed0e0ee088d99f2877881f84707eb342e7cfa678c4733f3"
+    },
+    {
+      "id": "stv02_B_I",
+      "original_id": "train_150",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 1,
+      "before": "Its battlefield lay near the Mont Saint-Jean ridge, in what is now Belgium.",
+      "after": "The battlefield of that encounter lay along the Mont Saint-Jean ridge.",
+      "before_sha256": "367801f43a5880212db4e573abd14422dd65f0777eaa6433a9f53a528bb05873",
+      "after_sha256": "ee8ce920775e151797de109f38c9242a463a17791caaf3fea383ebc6630f25b3"
+    },
+    {
+      "id": "stv02_B_C",
+      "original_id": "train_150",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "C",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "Waterloo is the usual name of the battle that Napoleon called Mont Saint-Jean.",
+      "after": "Waterloo is the usual name of the battle that Napoleon and the French called Mont Saint-Jean.",
+      "before_sha256": "5dc329e15eb81acbc5565dd0797538fcfabca23d4bf61e8d7495fc74f6d3b28a",
+      "after_sha256": "3b2462ba5321dac2a4e1fc2900b7c1b48b6981ad12d064100754b7986e01562e"
+    },
+    {
+      "id": "stv03_A_I",
+      "original_id": "train_1661",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "The Irrawaddy flows through the centre of Myanmar and lies wholly within its territory.",
+      "after": "The Irrawaddy is a river of Myanmar, formerly Burma.",
+      "before_sha256": "dcc223800a4f3be2864a8b587cedf6d8dd6719e419b29624fab5ed29f003c95d",
+      "after_sha256": "a024fbd70f224338158eef822f55312f541f00ce4894f46af1dc1bb3254750ec"
+    },
+    {
+      "id": "stv03_A_I",
+      "original_id": "train_1661",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "Myanmar was formerly called Burma and has several rivers and commercial waterways.",
+      "after": "That river is known as the Irrawaddy or Ayeyarwady.",
+      "before_sha256": "3eb413792a1bf20bebdeb5953ff18b602bcc3950debcef96710277a3adb930a5",
+      "after_sha256": "7ffa76d2722785fe5d4dd8dc79dc7cb7024fbbec8a04e84199cbf13a266a716c"
+    },
+    {
+      "id": "stv03_B_I",
+      "original_id": "train_1661",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "Running through central Myanmar, the Irrawaddy stays within the country's territory.",
+      "after": "Myanmar, formerly Burma, has a river called the Irrawaddy.",
+      "before_sha256": "db3bc6f0efe4a919749aceedd36c2b24e472ba9f17c8027248e089762f2a9045",
+      "after_sha256": "98273c16553458603a690c736e59b642c71fe0dde8ed444486f45fbb60aa2b18"
+    },
+    {
+      "id": "stv03_B_I",
+      "original_id": "train_1661",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "Burma is the former name of Myanmar, a country with rivers used as commercial waterways.",
+      "after": "Irrawaddy and Ayeyarwady are names of that river.",
+      "before_sha256": "c9ed41d953c9bb78e990eb2cf9bdd3bb08dc3a31bb24d74dd6f7478cc4031d07",
+      "after_sha256": "3989507f64189f47002117718009a6c3615672c790ab7bdc5377e4775d947c40"
+    },
+    {
+      "id": "stv05_A_I",
+      "original_id": "train_1333",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "Khet uses lasers and Egyptian-themed pieces, some of which have mirrored sides.",
+      "after": "Khet is chess-like, uses lasers, and involves abstract strategy.",
+      "before_sha256": "8811c218dab956cc88575b567079b1b8c08d1d3a2d402c9f7af615698aa266ab",
+      "after_sha256": "1fee3d7832d051a2a7c269bd7d40c03151557271f11a3bedd9599627c0a0a545"
+    },
+    {
+      "id": "stv05_B_S",
+      "original_id": "train_1333",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "S",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "Lasers are used in Khet, a board game in the abstract strategy tradition.",
+      "after": "Lasers are used in Khet, a chess-like board game in the abstract strategy tradition.",
+      "before_sha256": "0b8157b47240b4e82654d7942d34436982f8a2290c64aafdb4e35561e18bac15",
+      "after_sha256": "f333d290c9c43c312e69dd0d60fb81fdd82dc631c8e87370f72ba21a66a39cbf"
+    },
+    {
+      "id": "stv05_B_K",
+      "original_id": "train_1333",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "K",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "Lasers are used in Khet, a board game in the abstract strategy tradition.",
+      "after": "Lasers are used in Khet, a chess-like board game in the abstract strategy tradition.",
+      "before_sha256": "0b8157b47240b4e82654d7942d34436982f8a2290c64aafdb4e35561e18bac15",
+      "after_sha256": "f333d290c9c43c312e69dd0d60fb81fdd82dc631c8e87370f72ba21a66a39cbf"
+    },
+    {
+      "id": "stv05_B_I",
+      "original_id": "train_1333",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "Mirrored surfaces occur on some of Khet's Egyptian-themed pieces, and lasers are used during play.",
+      "after": "Lasers and abstract strategy are involved in Khet, which is chess-like.",
+      "before_sha256": "168f8576a4bcc656aa2ad0879031f3c187a9292fee3f5a465ba39c3e4725ccf5",
+      "after_sha256": "ca98c3f70469abd5e7c3d16156d4025a35cf2ad54aa859066e650c83e49b77c3"
+    },
+    {
+      "id": "stv05_B_C",
+      "original_id": "train_1333",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "C",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "Lasers are used in Khet, a board game in the abstract strategy tradition.",
+      "after": "Lasers are used in Khet, a chess-like board game in the abstract strategy tradition.",
+      "before_sha256": "0b8157b47240b4e82654d7942d34436982f8a2290c64aafdb4e35561e18bac15",
+      "after_sha256": "f333d290c9c43c312e69dd0d60fb81fdd82dc631c8e87370f72ba21a66a39cbf"
+    },
+    {
+      "id": "stv06_A_I",
+      "original_id": "train_1492",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "Season four of RuPaul's Drag Race aired from January to April 2012 and had thirteen competitors.",
+      "after": "Season four of RuPaul's Drag Race was broadcast in 2012.",
+      "before_sha256": "840dcfbe6a414285745a82a5616848e23a20c6ba560dce99da2da6e71ac744dd",
+      "after_sha256": "df0a6209d03cb622853ed0f2be6a683296018e55a1e9a81d392b95e1a32164b4"
+    },
+    {
+      "id": "stv06_A_I",
+      "original_id": "train_1492",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "Chad Michaels and Phi Phi O'Hara were runners-up in season four of the main competition.",
+      "after": "Sharon Needles is from Pittsburgh.",
+      "before_sha256": "a21fccaa26d3edcd0879fdd80a1d950eba4060f0a5c4bdab9aec2132cc2b8ccf",
+      "after_sha256": "0b9555aa28296faa5c0f90cd48e6b8db411d34c4ed02c5b5a556582c7cee85c0"
+    },
+    {
+      "id": "stv06_B_I",
+      "original_id": "train_1492",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "Thirteen contestants competed in RuPaul's Drag Race season four, which ran from January through April 2012.",
+      "after": "The fourth season of RuPaul's Drag Race aired in 2012.",
+      "before_sha256": "f2d903bcae40619defde4e82e2e05592af7912ca09bd9c5432e0a7abb6b0f41d",
+      "after_sha256": "cf8f89c7cdca7c80a83504287496715385fa1afaa84ea5dc9479ce5768184934"
+    },
+    {
+      "id": "stv06_B_I",
+      "original_id": "train_1492",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "The runners-up named for the main show's fourth season were Chad Michaels and Phi Phi O'Hara.",
+      "after": "Pittsburgh is where Sharon Needles is from.",
+      "before_sha256": "3db155bc57fca8a3b4daadfe14005ba6bedf93ea6b0d423966ad454d941cd5ae",
+      "after_sha256": "bd30ec9d557d6a438ec226090d058bc1990cf818b6fbfa185195db1afb0f58ea"
+    },
+    {
+      "id": "stv07_A_I",
+      "original_id": "train_744",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "James II Stewart lived from 1430 to 1460 and was the 38th King of Scots.",
+      "after": "James II Stewart (1430–1460) was the 38th King of Scots.",
+      "before_sha256": "0e77a3cf76934923407b8ee7a39e604f4e1bb9b28c0bdc9af7710923a85e2de5",
+      "after_sha256": "dc2702141c620735c233ffdbb8d243154cf3cc8d905174bbeca80042606e0504"
+    },
+    {
+      "id": "stv07_A_I",
+      "original_id": "train_744",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "The Scottish monarch James II belonged to the Stewart dynasty.",
+      "after": "The Scottish king James II lived from 1430 to 1460.",
+      "before_sha256": "1e2ec9d9985eb127b77a538e51c26f8ffc56d633a694712407e9bbc28ffc2624",
+      "after_sha256": "c950bda0b3fc939bed1b7469f0bf14497801b63044e902b7aeeed55ba320c5da"
+    },
+    {
+      "id": "stv07_B_S",
+      "original_id": "train_744",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "S",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "The Fiery Face was a nickname of James II of Scots, the Stewart monarch whose lifespan was 1430–1460.",
+      "after": "The Fiery Face was a nickname of James II Stewart, the 38th King of Scots whose lifespan was 1430–1460.",
+      "before_sha256": "8d1235e2f5196e1a8778a728d244bfedb8491398f59e4b36dafa3438db167659",
+      "after_sha256": "f0ef9f080a9bc18785b911c9a318060254889b1815d55c958efd7038700aeb3e"
+    },
+    {
+      "id": "stv07_B_K",
+      "original_id": "train_744",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "K",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "The Fiery Face was a nickname of James II of Scots, the Stewart monarch whose lifespan was 1430–1460.",
+      "after": "The Fiery Face was a nickname of James II Stewart, the 38th King of Scots whose lifespan was 1430–1460.",
+      "before_sha256": "8d1235e2f5196e1a8778a728d244bfedb8491398f59e4b36dafa3438db167659",
+      "after_sha256": "f0ef9f080a9bc18785b911c9a318060254889b1815d55c958efd7038700aeb3e"
+    },
+    {
+      "id": "stv07_B_I",
+      "original_id": "train_744",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "Scotland's 38th king was James II Stewart; his life spanned 1430–1460.",
+      "after": "Scotland's 38th king was James II Stewart, whose life spanned 1430–1460.",
+      "before_sha256": "b3b00ff7d6da3f3d03c089ecc681d2f22cc028533a5bbe1aad6711cd3893f5ec",
+      "after_sha256": "61e45705d1954a887e2350e8e0e978ef328e138569b0e79f8bc7bf7000f7b0cc"
+    },
+    {
+      "id": "stv07_B_I",
+      "original_id": "train_744",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "Stewart was the dynasty of the Scottish ruler James II.",
+      "after": "The Scottish monarch James II was born in 1430 and died in 1460.",
+      "before_sha256": "7bcdbcc0f87fe035395ec81c15e719b1041009eafaebd38b559c3dfe9cc18bc2",
+      "after_sha256": "b24acf20cab073e8362f571693ecbeb4bb9dac03d644b5d1cfbcfa958c055b42"
+    },
+    {
+      "id": "stv07_B_C",
+      "original_id": "train_744",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "C",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "The Fiery Face was a nickname of James II of Scots, the Stewart monarch whose lifespan was 1430–1460.",
+      "after": "The Fiery Face was a nickname of James II Stewart, the 38th King of Scots whose lifespan was 1430–1460.",
+      "before_sha256": "8d1235e2f5196e1a8778a728d244bfedb8491398f59e4b36dafa3438db167659",
+      "after_sha256": "f0ef9f080a9bc18785b911c9a318060254889b1815d55c958efd7038700aeb3e"
+    },
+    {
+      "id": "stv08_A_I",
+      "original_id": "train_1430",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 0,
+      "before": "The supplied overview describes RuPaul's Drag Race as a reality competition hosted by RuPaul.",
+      "after": "The supplied overview describes the series RuPaul's Drag Race.",
+      "before_sha256": "3c2f4931a2c9d0128a6b7e0eaefee829b922852105ba4a5892455d49a3c5a637",
+      "after_sha256": "5cce1f2edaf43e7eccd43861c3686e85c6b40a139168f14b33a9af9ebf002786"
+    },
+    {
+      "id": "stv08_A_I",
+      "original_id": "train_1430",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "The show's overview lists 118 episodes and gives its original release as February 2009.",
+      "after": "That RuPaul's Drag Race overview records information about the show's seasons.",
+      "before_sha256": "afd2676a1b5b97b70a455b7d4339b3fa0bee26bfc8ff683499eb1ae377ce7712",
+      "after_sha256": "9f2a77e8ac77851b8e86a2421f580b91dc017a053573e2cd31f7420b3deda872"
+    },
+    {
+      "id": "stv08_B_I",
+      "original_id": "train_1430",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 0,
+      "before": "RuPaul hosts the reality competition described in the supplied RuPaul's Drag Race overview.",
+      "after": "RuPaul's Drag Race is the series described in the provided overview.",
+      "before_sha256": "16e202e835c3720a01c3a3af2e4db583d0b1837430e7e9daf72a51dc7c508198",
+      "after_sha256": "faa54f80e713e416271ecd435ed7f91bd4528c38499ec70e35ad7b543a37e8e0"
+    },
+    {
+      "id": "stv08_B_I",
+      "original_id": "train_1430",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "A total of 118 episodes and a February 2009 original release are recorded in the overview.",
+      "after": "Information about that show's seasons is recorded in the overview.",
+      "before_sha256": "2b81f890f5c9474e9d52c7cb92adfad122871f8b0d1e895955bc5767483f96eb",
+      "after_sha256": "f93f1c2958679f30a13128566a60901929a59cdcbe6e6aa680eb848ed739bffa"
+    },
+    {
+      "id": "stv09_A_I",
+      "original_id": "train_421",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 0,
+      "before": "Season two of Pretty Little Liars was originally broadcast by ABC Family.",
+      "after": "The supplied account describes season two of Pretty Little Liars.",
+      "before_sha256": "8efe11989eac5626a2e44729fc1d3fef331a4bb71f9a69c4170b9118751b45cb",
+      "after_sha256": "2a17b2cf6d1cd4630a77f2fd166016773056d67c752194439172b8dad07d3ca8"
+    },
+    {
+      "id": "stv09_A_I",
+      "original_id": "train_421",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "Pretty Little Liars season two ran from June 2011 to March 2012.",
+      "after": "The original release of that season ran from June 2011 to March 2012.",
+      "before_sha256": "d1bdc3bfcd82c16f0d051f24b97927e968854db526a05940e7f1fbc7b8a82349",
+      "after_sha256": "ef06ca77ed950fa2a7615b8b078288f229a5b9dc197943ba87bd8b9caa201643"
+    },
+    {
+      "id": "stv09_B_I",
+      "original_id": "train_421",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 0,
+      "before": "ABC Family originally carried Pretty Little Liars' second season.",
+      "after": "Pretty Little Liars' second season is described in the supplied account.",
+      "before_sha256": "12a4afe2da593304f42165f45577afa1dfbf43fc6755482e60f46affb3d09a9f",
+      "after_sha256": "91d1fa5492298ee2f3b2d45461e56d7a51f13617b218f6fdb469e6bf05b37ada"
+    },
+    {
+      "id": "stv09_B_I",
+      "original_id": "train_421",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "The original run of season two extended from June 2011 through March 2012.",
+      "after": "That season originally ran from June 2011 through March 2012.",
+      "before_sha256": "88593e32c74700e73a1f9a7edfe9f4bf995ee01b360c3132e7cb51fde7325521",
+      "after_sha256": "38905bf13916d18f4863d5ba3b4f5458ca75d9417919a756316eeb6ea52b3c93"
+    },
+    {
+      "id": "stv10_A_I",
+      "original_id": "train_335",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 0,
+      "before": "Chuck Connors starred in The Rifleman, which began its television run in 1958.",
+      "after": "Chuck Connors appeared in the television series The Rifleman.",
+      "before_sha256": "a910a747b3ff93dbdd16254eb0e9f6f3cf2fc383d36f0b6deb1316ce7f0d20cb",
+      "after_sha256": "4c0fb343ba6c5db2051c21d085eae3112d5bedbc084b8f3ec4fb0cd2772a6c10"
+    },
+    {
+      "id": "stv10_A_I",
+      "original_id": "train_335",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "The Rifleman had a five-year run, and Chuck Connors later appeared in other television series.",
+      "after": "The Rifleman is a television series featuring Chuck Connors.",
+      "before_sha256": "b92d24fd4b1324f8b7a76b1df20444a88aae5546b42d7430e1e5eb8d99a67474",
+      "after_sha256": "cb00eaad490f7e0fb7faa6f7a22050978020afe78e470211983647dcae3b8e9f"
+    },
+    {
+      "id": "stv10_B_S",
+      "original_id": "train_335",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "S",
+      "doc_slot": 4,
+      "target_index": 0,
+      "before": "Lucas McCain was Chuck Connors' role on The Rifleman.",
+      "after": "Lucas McCain was Chuck Connors' role on the television series The Rifleman.",
+      "before_sha256": "738e9d4785c405f3f0334b48d92600711548a8d9158824484580a6cf13f0c4f2",
+      "after_sha256": "a2a6130cb9bfe522458d2626bae4a6b1252f89a3c3239f16915eedd3de470f66"
+    },
+    {
+      "id": "stv10_B_K",
+      "original_id": "train_335",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "K",
+      "doc_slot": 4,
+      "target_index": 0,
+      "before": "Lucas McCain was Chuck Connors' role on The Rifleman.",
+      "after": "Lucas McCain was Chuck Connors' role on the television series The Rifleman.",
+      "before_sha256": "738e9d4785c405f3f0334b48d92600711548a8d9158824484580a6cf13f0c4f2",
+      "after_sha256": "a2a6130cb9bfe522458d2626bae4a6b1252f89a3c3239f16915eedd3de470f66"
+    },
+    {
+      "id": "stv10_B_K",
+      "original_id": "train_335",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "K",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "The actor born Kevin Joseph Connors used the name Chuck Connors and played Lucas McCain in The Rifleman.",
+      "after": "Kevin Joseph Connors was professionally known as Chuck Connors and played Lucas McCain in The Rifleman.",
+      "before_sha256": "d97dbb44c47613e2596b64dd8a51087b65783875a5c4cd1d435275b61110c64f",
+      "after_sha256": "d37ba4ef9eb203b33e8f5a14638655f2843187de62b6e7ca28e84ae124ca0574"
+    },
+    {
+      "id": "stv10_B_I",
+      "original_id": "train_335",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 0,
+      "before": "The television run of The Rifleman started in 1958 with Chuck Connors as a star.",
+      "after": "The television series The Rifleman featured Chuck Connors.",
+      "before_sha256": "7e91a797fd963007f895d6460a5b8127dc61c4ba24e4d019200f5c9ed8fa49b8",
+      "after_sha256": "f5ec4d36b2211b9596d5dd40526c4ec054b4494436dba6a06a21a5a21afb0902"
+    },
+    {
+      "id": "stv10_B_I",
+      "original_id": "train_335",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "After the five-year run of The Rifleman, Connors appeared in further television productions.",
+      "after": "Connors appeared in The Rifleman as an actor.",
+      "before_sha256": "05208e85c939e3d172b3f7fc43cf006b56b715f30b2dc0fea9e466581ba1b76c",
+      "after_sha256": "90ecb025f989cb869d60b65c694e0287f5de9a210546cda4ae74f61caef733ab"
+    },
+    {
+      "id": "stv10_B_C",
+      "original_id": "train_335",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "C",
+      "doc_slot": 4,
+      "target_index": 0,
+      "before": "Lucas McCain was Chuck Connors' role on The Rifleman.",
+      "after": "Lucas McCain was Chuck Connors' role on the television series The Rifleman.",
+      "before_sha256": "738e9d4785c405f3f0334b48d92600711548a8d9158824484580a6cf13f0c4f2",
+      "after_sha256": "a2a6130cb9bfe522458d2626bae4a6b1252f89a3c3239f16915eedd3de470f66"
+    },
+    {
+      "id": "stv11_A_I",
+      "original_id": "train_1136",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "Wham-O made the modern Hula Hoop as a plastic toy.",
+      "after": "Wham-O introduced its modern Hula Hoop to the market.",
+      "before_sha256": "65996578c8a4347f47128f6b686425cdf6475c79b489a9dd6ddc7463339a1995",
+      "after_sha256": "8c1d84a3a3170fe50240d50f611c12a09fa111b8c687609ae62674823629b3a9"
+    },
+    {
+      "id": "stv11_A_I",
+      "original_id": "train_1136",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 1,
+      "before": "A Hula Hoop is twirled around the waist, limbs or neck.",
+      "after": "Commercial use of Wham-O's Hula Hoop began.",
+      "before_sha256": "e88f41b2516590de1a1db7da607f191c3498bde3ce5d761c9f558afa52fb7317",
+      "after_sha256": "d4dbe2c0417288f594116e78cc28ca0f9e9bd48c6c0073465f6f5be8ac50fb3d"
+    },
+    {
+      "id": "stv11_B_S",
+      "original_id": "train_1136",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "S",
+      "doc_slot": 2,
+      "target_index": 1,
+      "before": "1958 was the year in which Wham-O began selling its Hula Hoop.",
+      "after": "1958 was the year in which commercial use of Wham-O's Hula Hoop began.",
+      "before_sha256": "40b5761029ae4efa2b100529d796711d88b769cdad435f8f095c1cd4c2268ff5",
+      "after_sha256": "c815a773638a7d4975e98240113344a1bb7c807bde1c0486f8d11650905e0b88"
+    },
+    {
+      "id": "stv11_B_I",
+      "original_id": "train_1136",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "The modern plastic Hula Hoop was a Wham-O toy.",
+      "after": "Wham-O's modern Hula Hoop made its market debut.",
+      "before_sha256": "f377d9580ba1cf4cc9c3884385e3e49a55d7dccb8af64f5ac031b758dddbd331",
+      "after_sha256": "62b488b04f60680ca8544184bf3f25999d6f6a5bbadc3a400d9cadaef60a8d77"
+    },
+    {
+      "id": "stv11_B_I",
+      "original_id": "train_1136",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 1,
+      "before": "Players keep a toy hoop moving around their body or limbs.",
+      "after": "Wham-O's Hula Hoop entered commercial use.",
+      "before_sha256": "84759c77fc5d6b3b03b14b98acc1616b848fd8514f2da219ea5e4ca27fe202fa",
+      "after_sha256": "3241f56fe190fa222eaaf094e82ee1daca2043e8731528ada5b31373e08d73e3"
+    },
+    {
+      "id": "stv12_A_I",
+      "original_id": "train_1154",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "The old lady swallows a fly, then a spider and a bird in the early part of the rhyme.",
+      "after": "In this version of the old-lady nursery rhyme, a final creature is swallowed.",
+      "before_sha256": "957d3ee90d7f8bf95e8b0c64fefe062094f159dc37a39d135f7d570606d887cf",
+      "after_sha256": "a4bbd6c5f9088e3f6f5b090d79337a0db5d8f34130764aade431e2233b71529e"
+    },
+    {
+      "id": "stv12_A_I",
+      "original_id": "train_1154",
+      "partition": "semantic_train",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 1,
+      "before": "The poem repeats earlier lines as more creatures are added.",
+      "after": "The last stanza has her eat an animal and pie.",
+      "before_sha256": "f9eeb54799b8aa0de0f3c7701d5bad56c80c0464cb1a79063dece1787e8b2f0b",
+      "after_sha256": "63b6227d1e55f5934e1098e2d35c64448bda4e983265cbf44ac6966e8507bcf8"
+    },
+    {
+      "id": "stv12_B_I",
+      "original_id": "train_1154",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "In the early verses, a fly is followed by a spider and a bird inside the old lady.",
+      "after": "The woman in the supplied fly-swallowing rhyme eats a final animal.",
+      "before_sha256": "7a9eb2141e76ba16004bb5baacd58481cf310604ccbfee60d02dc5380e63788e",
+      "after_sha256": "a5a38f54085633afae11a5655716694742d08e97111dde7a8bce9fcdee3bd945"
+    },
+    {
+      "id": "stv12_B_I",
+      "original_id": "train_1154",
+      "partition": "semantic_train",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 1,
+      "before": "Successive verses repeat previous events and add another creature.",
+      "after": "The ending has an animal being eaten, and she also eats pie.",
+      "before_sha256": "28b05644e4d175a6a995eb4409784d970d994ac1a76faad1b58757e1fa0798a8",
+      "after_sha256": "732f8bcc07e89c7355d7c9fdb36ff93eea1fc97fbb1960b88d7b1816c4fb7724"
+    },
+    {
+      "id": "stv13_A_I",
+      "original_id": "train_405",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "Washington University in St. Louis is in Missouri, United States.",
+      "after": "Washington University in St. Louis is in Missouri, United States. The University of Colorado system is in Colorado.",
+      "before_sha256": "f7b73ce853f5c063fc17cee73a040ee2856c768d75326b58462b5a3e3ca5b0c7",
+      "after_sha256": "4c32001202f9d7aca8c7d1229eca3b3ac51a695ebb938e8cb7d517efeacfb6f1"
+    },
+    {
+      "id": "stv13_A_I",
+      "original_id": "train_405",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "The University of Colorado is a public university system comprising four campuses.",
+      "after": "The other institution described is the University of Colorado system.",
+      "before_sha256": "970d4b2a32762fd9c123dc48c50a181d31c3ea46dafac0318b4634cebce34b66",
+      "after_sha256": "92bd164032ba13570f98b4eef0bf7ae278133af4883fa935ae4baf35d0bde4d4"
+    },
+    {
+      "id": "stv13_B_S",
+      "original_id": "train_405",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "S",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "WashU's location is Missouri in the USA; the University of Colorado's campuses are in the US state of Colorado.",
+      "after": "WashU is located in Missouri in the USA; the University of Colorado system is located in Colorado in the USA.",
+      "before_sha256": "f86883a49ef13eaa033111ea7f5eae8f576d91e136f1e40d79922e49aaf5b2b0",
+      "after_sha256": "f30d03b32b14698c28cbcd9c07dae030d33e45841ab87d5286f1bca74bd4df51"
+    },
+    {
+      "id": "stv13_B_K",
+      "original_id": "train_405",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "K",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "WashU is privately run, while the four-campus Colorado system is public.",
+      "after": "WashU is a privately run research university, while the four-campus Colorado system is public.",
+      "before_sha256": "3a1237ce6e7ffbabe2c5171514ebc73dafc646bcf5df265cebb400aa013903a6",
+      "after_sha256": "fe5021a5e43773df91cf13aa3775cf57d70124dacdea28e6793cc6a257cd0799"
+    },
+    {
+      "id": "stv13_B_I",
+      "original_id": "train_405",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "Missouri, USA, is the location of Washington University in St. Louis.",
+      "after": "Missouri, USA, is the location of Washington University in St. Louis. The University of Colorado system is located in Colorado.",
+      "before_sha256": "aaebcf46823af473110db7811e383c56df18e37f48a123894300e5457fe756bf",
+      "after_sha256": "69e73decc8736d757f0f80c9bea2b2d8604797b543a03e8d28f1397be5c30cdf"
+    },
+    {
+      "id": "stv13_B_I",
+      "original_id": "train_405",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "Four public campuses make up the University of Colorado system.",
+      "after": "The University of Colorado system is the other institution discussed.",
+      "before_sha256": "381740c90f2a3cc03958008d51ee1c7a4d403895cb914c845d7e4610b75ace01",
+      "after_sha256": "bb570d1f6f93b468f2bbd5d6eccabf1c1b70d4b8fdfc4db66a419cc9c80b0c56"
+    },
+    {
+      "id": "stv14_A_I",
+      "original_id": "train_1525",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "The 2015 French Open included a men's singles tournament.",
+      "after": "The 2015 French Open included a men's singles event.",
+      "before_sha256": "2890dc8df87de7a7d235ad0ac3bb144183b23d537a727d0521dc4b8fa8f38b06",
+      "after_sha256": "8ddcaa1ae966b0898dc5ba24fd2aae3f8c0997b7bc19f1378a5bc0fb6d187d63"
+    },
+    {
+      "id": "stv14_A_I",
+      "original_id": "train_1525",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "Novak Djokovic was runner-up in the 2015 French Open men's singles final, which lasted four sets.",
+      "after": "There was a champion of the 2015 French Open men's singles event.",
+      "before_sha256": "15ffd6f5298863a54d24c9b5258abb28c08c40c5af29dd69c941672e762d866a",
+      "after_sha256": "861daeabaf8ebfd423aa1fb16f83dfbd6d5f380997b46305b288d03baaa5a8f3"
+    },
+    {
+      "id": "stv14_B_I",
+      "original_id": "train_1525",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "The men's singles runner-up was Djokovic, and the final was played over four sets.",
+      "after": "That 2015 French Open men's singles competition had a champion.",
+      "before_sha256": "6395e377fa9ac95b6483e70a987f96d5f40f66d658f03c8f018e355b5955c904",
+      "after_sha256": "ea182fa8b6601691bf254d8cd406d7e207c232ea7ebc68973fd7b0459e0aeb5b"
+    },
+    {
+      "id": "stv15_A_I",
+      "original_id": "train_1064",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "Ameliorate is a verb used when discussing bad situations.",
+      "after": "The word ameliorate is used about a bad situation.",
+      "before_sha256": "3df67a5b22492ef1494e6d0de8f72898c02bad12fa0a5996dd8649fa2c86efcc",
+      "after_sha256": "324023800ca47c50b57f370d279e3351551fdb3de9c38c5d79113021d2e6f23c"
+    },
+    {
+      "id": "stv15_A_I",
+      "original_id": "train_1064",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 1,
+      "before": "Examples of the word ameliorate discuss suffering, illness and harsh laws.",
+      "after": "The verb ameliorate concerns conditions that are initially bad.",
+      "before_sha256": "59d4cc6da0dcddbdca9aea08b1648aebd31e4cab602a482c07684265cd248884",
+      "after_sha256": "4eacf44dc05eebd041c22470b2b0c7d40383e533fa5dee7e4ff33d997e9433b3"
+    },
+    {
+      "id": "stv15_B_I",
+      "original_id": "train_1064",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "Bad situations are the contexts in which the verb ameliorate is used.",
+      "after": "The verb ameliorate is used for a situation that is bad.",
+      "before_sha256": "ca597a054b87ac9929411fb6810c1007513e2807fd6716cf943faa7aaa09a117",
+      "after_sha256": "298b7f59b142c2539f3a49f1ef4b24ec98702ca2b701d2176c2abb623601236c"
+    },
+    {
+      "id": "stv15_B_I",
+      "original_id": "train_1064",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 1,
+      "before": "Suffering, illness and harsh laws appear in example sentences using ameliorate.",
+      "after": "Ameliorate concerns conditions that start out bad.",
+      "before_sha256": "20f6015f1625b12a19dc5965f85beb9d92bc9aa896e57abe14d3a7ba7d68a960",
+      "after_sha256": "157cb17b9782b2dceb6e5b8ba0fb2c69cafc4c0d30785f7eaca210db60d71189"
+    },
+    {
+      "id": "stv16_A_I",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "An urban heat island is an urban area that is significantly warmer than surrounding rural areas.",
+      "after": "Urban areas are warmer than surrounding rural areas.",
+      "before_sha256": "fda4f481fa92b57bd52c0cdd84b653c397480d26b5f3fd37b2615f7328d818dd",
+      "after_sha256": "e9778e6075d16c122141d3baf5cd0a75d13150a9bad6d35d5211af8f9a9cc629"
+    },
+    {
+      "id": "stv16_A_I",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "This temperature difference is usually larger at night and most apparent when winds are weak.",
+      "after": "This urban heat island temperature difference is usually larger at night and most apparent when winds are weak.",
+      "before_sha256": "328e4c2f7e6f1af6a355bbc733dd343dd3512ce27782ae4b8cb8893511d9f3d3",
+      "after_sha256": "8b424d5c39dd2c7d5347903329d8151b9aaa5f6ea0997816c31f345777b6345c"
+    },
+    {
+      "id": "stv16_B_S",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "S",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "Weak winds make the urban-rural temperature contrast especially apparent, and it is often larger at night.",
+      "after": "Weak winds make the urban heat island's urban-rural temperature contrast most apparent, and it is usually larger at night.",
+      "before_sha256": "dfcd52e477cff44373629b0fee1990a4bcb01ed998b64c796454ec90bd5f7aea",
+      "after_sha256": "4bd7c3b21c2d8829a8ea56af3e515f22541607dc1dbd918c0847669f3c7a7874"
+    },
+    {
+      "id": "stv16_B_I",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "The term urban heat island describes an urban area warmer than the rural surroundings.",
+      "after": "An urban area is warmer than the rural area around it.",
+      "before_sha256": "1c5bc18fbf96ee8970f57311720f3df824f2e9d8c36d2536e067f8ec36824aa7",
+      "after_sha256": "063cfb78b32b0ba72bf1d95f27edb2034dd20ecc378a7c63ca9af89f09e75489"
+    },
+    {
+      "id": "stv16_B_I",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "The urban-rural contrast is often greater at night and especially apparent under weak winds.",
+      "after": "Weak winds make the urban heat island's urban-rural temperature contrast most apparent, and it is usually larger at night.",
+      "before_sha256": "655f14afe6c71d5077ef4c803ce0f4764044f8a6eac876edd203c034261102e7",
+      "after_sha256": "4bd7c3b21c2d8829a8ea56af3e515f22541607dc1dbd918c0847669f3c7a7874"
+    },
+    {
+      "id": "stv17_A_I",
+      "original_id": "train_989",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "Poker involves betting rounds and players holding hands of cards.",
+      "after": "The poker situation described is the one after the last betting round, with more than one player remaining.",
+      "before_sha256": "02aa7de0a3bb9f09c9f72df3ece42a5cd447abf9da282ad3b7d242cb235c3678",
+      "after_sha256": "9302b6f4075ebde5914bcef0ebe94176a1fffa1ad1b62bbf63d27f0659eaaa31"
+    },
+    {
+      "id": "stv17_A_I",
+      "original_id": "train_989",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "More than one poker player can remain after a betting round.",
+      "after": "This account concerns those remaining players after betting has finished.",
+      "before_sha256": "e0c457f76f11bbd75791fda33fde2cf21ae527c725851feb8b405c41b579eacd",
+      "after_sha256": "33fe4a9da4635c4cd9f853ae5b9395bd5f104a5af7e6588720288b4530efe575"
+    },
+    {
+      "id": "stv17_A_C",
+      "original_id": "train_989",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "C",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "If more than one player remains after the last betting round, those players must keep their cards concealed and must not expose their hands.",
+      "after": "If more than one player remains after the last betting round, the remaining players do not expose their hands and keep all of their cards concealed.",
+      "before_sha256": "9c43f3b6a7b42852f6b0cd427a9a0414d309fd10eeb6e4d93b4ca9fb18ff1e85",
+      "after_sha256": "ea91f461c5686912f2c3d15c2900d8efa0f9f6c2dfe43ae2c6fe1f643ec18c8f"
+    },
+    {
+      "id": "stv17_B_I",
+      "original_id": "train_989",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "Players hold card hands and take part in betting rounds in poker.",
+      "after": "This account concerns the end of the final betting round, with at least two poker players left.",
+      "before_sha256": "5d9c77464023115457d0769e9a4d3ca6f4e5f7da4579dc4982d4d07469b3ec11",
+      "after_sha256": "825cfbdd047cc9aa3b9e95ce973e66f1511f813e987ca0b263c41b25df7446d1"
+    },
+    {
+      "id": "stv17_B_I",
+      "original_id": "train_989",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "A betting round can leave multiple poker players remaining.",
+      "after": "The account describes the players left once that final betting round has ended.",
+      "before_sha256": "a8daf560c4b5fc9be520bb7eec2e703c5d8a28217a3eb305cd28c89784734cca",
+      "after_sha256": "ffb7c16070f89b0ea4d6fe2458ef817ac71e1eccf9fb51481b6bd94bbbe136b3"
+    },
+    {
+      "id": "stv17_B_C",
+      "original_id": "train_989",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "C",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "With at least two players left after that final betting round, revealing their hands is prohibited and their cards must stay concealed.",
+      "after": "With at least two players left after the final betting round, none of those remaining players reveals a hand; their cards remain concealed.",
+      "before_sha256": "cfae6963184f0f18b636a302726c7ad385c8c008bac3182f37ece911f7dd92d5",
+      "after_sha256": "2a2d57e5b8869ba6714a33f62e13434904415d2e18666c6397d8bc343375ae15"
+    },
+    {
+      "id": "stv18_A_K",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "K",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "Their usual worship weekday is Sunday, with services typically held in private homes on alternate weeks.",
+      "after": "Their usual worship day of the week is Sunday, with services typically held in private homes on alternate weeks.",
+      "before_sha256": "836ca462b9a289a78ed7fb75ff390dc497c23df761556948ba91b3b066627b58",
+      "after_sha256": "8bcf26c0c91a9d53189d61c63e7a2236d83a0bdb58f3a001a8d6337558bbc022"
+    },
+    {
+      "id": "stv18_A_I",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 0,
+      "before": "The Old Order Amish described here hold worship services in private homes.",
+      "after": "The Old Order Amish described here typically hold worship services in private homes.",
+      "before_sha256": "cee06e7ea81deec2aa561268529ce6d27db4a927232e9af4709d9db9f6a09485",
+      "after_sha256": "7599348111f700e4f7b5a0e9561d79259ab7f9185e605051e033a913027f648f"
+    },
+    {
+      "id": "stv18_A_I",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "Their worship includes sermons, scripture reading, prayer and hymns sung without instrumental accompaniment.",
+      "after": "Those communities typically hold worship services on alternate weeks.",
+      "before_sha256": "17cfd96a8e10a7b8ac0e84ba26d6498ac121ae6de694d394ec1505c1846e766f",
+      "after_sha256": "37c751fdbac52f5feb43cb8dd6945f96132ed40e9b89efe096cadda3ba981dc9"
+    },
+    {
+      "id": "stv18_B_S",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "S",
+      "doc_slot": 3,
+      "target_index": 0,
+      "before": "Worship in the described Old Order Amish communities normally takes place in homes on alternate Sundays.",
+      "after": "Worship in the described Old Order Amish communities normally takes place in private homes on alternate Sundays.",
+      "before_sha256": "6608a7165860336ccb608eee2cd9c81303f2d3f8be1f10a69b477419cfa80120",
+      "after_sha256": "c7d0125ffb7e837c75b9d8528f2981501ce29666afd07ed6aea442e432159f6f"
+    },
+    {
+      "id": "stv18_B_S",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "S",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "The weekday normally used for those communities' worship services is Sunday.",
+      "after": "The day of the week normally used for those communities' worship services is Sunday.",
+      "before_sha256": "7ab79f531796ed96f051e8e63ddc18a2f9b02b3820240cbbd92d88925a4bea17",
+      "after_sha256": "783dcd13975fafbfaaa336f8ce7fc30c704f88300c20484d2d13c83eb23170f6"
+    },
+    {
+      "id": "stv18_B_K",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "K",
+      "doc_slot": 3,
+      "target_index": 0,
+      "before": "Worship in the described Old Order Amish communities normally takes place in homes on alternate Sundays.",
+      "after": "Worship in the described Old Order Amish communities normally takes place in private homes on alternate Sundays.",
+      "before_sha256": "6608a7165860336ccb608eee2cd9c81303f2d3f8be1f10a69b477419cfa80120",
+      "after_sha256": "c7d0125ffb7e837c75b9d8528f2981501ce29666afd07ed6aea442e432159f6f"
+    },
+    {
+      "id": "stv18_B_I",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 0,
+      "before": "Private homes are the venues for worship in the described Old Order Amish communities.",
+      "after": "Worship in the described Old Order Amish communities normally takes place in private homes.",
+      "before_sha256": "88ec6cc69ac31c8235e8157b606c3806fdda7c611b2dad4279a12c90370d3fd9",
+      "after_sha256": "5a21ee18bd4c95d5b69ea770af0390820945213740be03ae17411febabd8475b"
+    },
+    {
+      "id": "stv18_B_I",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "Sermons, scriptural readings, prayer and unaccompanied hymns form part of their worship.",
+      "after": "Those communities normally hold worship services every other week.",
+      "before_sha256": "f5d3a4877812f91e8519513d2cfdcb1fe56c53eed87357a68af5b60c9116dd06",
+      "after_sha256": "655637a7bce0dbefbd98c335b05f1aca1df36714d27d13ef94ab9d25d87246e2"
+    },
+    {
+      "id": "stv18_B_C",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "condition": "C",
+      "doc_slot": 3,
+      "target_index": 0,
+      "before": "Worship in the described Old Order Amish communities normally takes place in homes on alternate Sundays.",
+      "after": "Worship in the described Old Order Amish communities normally takes place in private homes on alternate Sundays.",
+      "before_sha256": "6608a7165860336ccb608eee2cd9c81303f2d3f8be1f10a69b477419cfa80120",
+      "after_sha256": "c7d0125ffb7e837c75b9d8528f2981501ce29666afd07ed6aea442e432159f6f"
+    },
+    {
+      "id": "stv19_A_I",
+      "original_id": "train_1470",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 0,
+      "before": "Ohio is known as the Buckeye State.",
+      "after": "Columbus is a city in Ohio.",
+      "before_sha256": "b2d2dfe431abd8ab380b12acf9fef5041e19c9724c0afd130fdf0372e67c4a17",
+      "after_sha256": "d81a01bf5c9a63df15c363e06f12b3d36a96ca40ca49ee0c4bb509d7e6f5ec9a"
+    },
+    {
+      "id": "stv19_A_I",
+      "original_id": "train_1470",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "Columbus is one of the cities in Ohio.",
+      "after": "Ohio's state government meets at the Statehouse.",
+      "before_sha256": "a8ae73b64c5d6b19d49bc2e4dd8faefe62513e8a31dd464a2754044a4d0f6e57",
+      "after_sha256": "87f7d95b9508427572127cf2ccdbf490e1e5a5d5ec45e8ba5fc2091f6095e29e"
+    },
+    {
+      "id": "stv19_B_S",
+      "original_id": "train_1470",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "S",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "The state capital, Columbus, is where Ohio's Statehouse is located.",
+      "after": "Columbus, Ohio's capital, is where the state government meets at the Statehouse.",
+      "before_sha256": "b31de12482a34b31312042f258ac36b1ec480519f8f88c7c4e9ab793bee144a4",
+      "after_sha256": "4e58ce0b347afcea3faca7ef6b41ed7d018512f6f90916a9857a91d53a0e72b9"
+    },
+    {
+      "id": "stv19_B_I",
+      "original_id": "train_1470",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 0,
+      "before": "The Buckeye State is Ohio's nickname.",
+      "after": "Among Ohio's cities is Columbus.",
+      "before_sha256": "f83a776a5c9dcd312ab1e481ea5f52da346cb244599e800d21e79bbdca174688",
+      "after_sha256": "79d7eac863735955a92f555773f582648b56357be62d04ed59d3357ef1ea61a1"
+    },
+    {
+      "id": "stv19_B_I",
+      "original_id": "train_1470",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "Among Ohio's cities is Columbus.",
+      "after": "The Ohio state government meets in the Statehouse.",
+      "before_sha256": "79d7eac863735955a92f555773f582648b56357be62d04ed59d3357ef1ea61a1",
+      "after_sha256": "8b5fe55bb46fc85419ad8404d6cea972afc68c5caf9dcfaf350c8b5d9037a015"
+    },
+    {
+      "id": "stv20_A_I",
+      "original_id": "train_1805",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 0,
+      "before": "The line quoted in the question belongs to the song Last Kiss.",
+      "after": "The lyric quoted in the question comes from Last Kiss.",
+      "before_sha256": "336c5cf31204e237dac5e989876a0d6bd3a9f70fbd7751cf03501c7a1fb1950b",
+      "after_sha256": "02fd8f345fb2b93a100f54aeef70fe5665299d70a3bb166309eb1456bef5148b"
+    },
+    {
+      "id": "stv20_A_I",
+      "original_id": "train_1805",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "Pearl Jam released a later cover of Last Kiss in 1998.",
+      "after": "The original version of Last Kiss was recorded in 1961.",
+      "before_sha256": "0347e4a5b4def0f409558c7e8e46611561c756590db344210212dfced7665cce",
+      "after_sha256": "36491336854c79748550ac3e2a314615917f35baefc1d16848a5919d0640984e"
+    },
+    {
+      "id": "stv20_B_I",
+      "original_id": "train_1805",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 0,
+      "before": "Last Kiss is the title associated with the lyric in the question.",
+      "after": "Last Kiss is the song containing the line in the question.",
+      "before_sha256": "05faeb6721f26dad4bc16514ee73f35ce87abd3cc763be0079cc71823d8c3efa",
+      "after_sha256": "46001858438ed8d3ab8e2459abae6c2e17bf87791e60c139d8484aff25092d99"
+    },
+    {
+      "id": "stv20_B_I",
+      "original_id": "train_1805",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "A cover recording of that song was issued by Pearl Jam in 1998.",
+      "after": "There is a 1961 original recording of Last Kiss.",
+      "before_sha256": "f19e200ada0c4592dc8c4a4372870fd1858b844604e06284b4432a162a255f63",
+      "after_sha256": "d17dac4b55b49bfdcfd91f0fef495721caf26be23ce1f22ff6bf446229b2aaea"
+    },
+    {
+      "id": "stv21_A_I",
+      "original_id": "train_32",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "Geoff Masters is an Australian former tennis player.",
+      "after": "There were doubles-winning pairs at the US Open, Australian Open and Wimbledon during the 1970s.",
+      "before_sha256": "4221f2dd84075de659a50a7ebb975b729a2963b4ca0dd08f6d095a16454dd51d",
+      "after_sha256": "da10f02c109d399a2aef1c5b3804980bd2c8dc1e820911a3d56913a43774b9a0"
+    },
+    {
+      "id": "stv21_A_I",
+      "original_id": "train_32",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 1,
+      "before": "Roberta Vinci is an Italian tennis player with a professional tennis career.",
+      "after": "Geoff Masters is an Australian tennis player.",
+      "before_sha256": "993dd18afcb367c6f1c8ad4ee9825610b9ac1d3cdaea807b38f2fe70d7bbb4ee",
+      "after_sha256": "077a72c72d45bf13bbe22670a7917e4203dbc89969044ee0f975542f90ea7ee2"
+    },
+    {
+      "id": "stv21_B_I",
+      "original_id": "train_32",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "The former tennis player Geoff Masters comes from Australia.",
+      "after": "In the 1970s, the US Open, Australian Open and Wimbledon each had winning pairs in doubles.",
+      "before_sha256": "b4d8b9b99ab368e0b8a6ac3975934ed075c9e0e626d79635f76bdb6640754933",
+      "after_sha256": "9627b6ae8f3cb8747578cc0ab45b1f34225880c855d5c43f97f29718a7fe79b2"
+    },
+    {
+      "id": "stv21_B_I",
+      "original_id": "train_32",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 1,
+      "before": "The tennis player Roberta Vinci comes from Italy and played professionally.",
+      "after": "Geoff Masters is a tennis player from Australia.",
+      "before_sha256": "232177fe3ad9b2acc3096ff9d095dab18c241a09c9a1f951cbad07d12c11f67b",
+      "after_sha256": "44cfd2b5765bdff000d96a5fd9bd280b523a2180a6cb0bb5a455b2fd60ed2f34"
+    },
+    {
+      "id": "stv22_A_I",
+      "original_id": "train_341",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 1,
+      "before": "Lawrence Sheriff was a purveyor of spices to Queen Elizabeth I.",
+      "after": "The school founded in 1567 by Lawrence Sheriff was a free grammar school.",
+      "before_sha256": "1277e8bc2a1cebb83b6fb052ee4ec22b4e38f369562ccb71c9817ff77f093a3f",
+      "after_sha256": "82cfd343d38102fe98aa57923627588c61dc2dabc4a15a80396d9b9043707eaa"
+    },
+    {
+      "id": "stv22_B_I",
+      "original_id": "train_341",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 1,
+      "before": "Queen Elizabeth I obtained spices from Lawrence Sheriff.",
+      "after": "Lawrence Sheriff's 1567 school foundation was a free grammar school.",
+      "before_sha256": "3bdbdb607164e7b377033092f4b5371604d41fc6de124aa426bc298dbe120f9a",
+      "after_sha256": "41f7ebc96dcb8cf24ccd63a4abab0872757785ae3d1d9fd66467b401ae2eb501"
+    },
+    {
+      "id": "stv24_A_I",
+      "original_id": "train_499",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "The song Sheila became a hit record in 1962.",
+      "after": "Sheila was a hit record in 1962.",
+      "before_sha256": "29a3474ec355baf6e82cf7034acb50f59f0c32a49a824626bc578d6e493f3eaa",
+      "after_sha256": "0655bba3274d523b9de2ebcd64ffd9c0908fd407734b00b0504b913c69233cd6"
+    },
+    {
+      "id": "stv24_A_I",
+      "original_id": "train_499",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "Sheila reached number one on the US Billboard Hot 100 in September 1962.",
+      "after": "There was a 1962 hit recording of Sheila.",
+      "before_sha256": "551077be42de417e00f7a6e662575316294502a2af7311d4de3fd0f28e754f5d",
+      "after_sha256": "4770ab88849289d1b16cd560819cfade9f713182b3cfa37727806ca4cd8b5c32"
+    },
+    {
+      "id": "stv24_B_I",
+      "original_id": "train_499",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 1,
+      "target_index": 0,
+      "before": "A hit record called Sheila was released in 1962.",
+      "after": "A 1962 hit record was called Sheila.",
+      "before_sha256": "21091354b06ca584cb1d5fb1330304a0721aaba09d6d8f2a60aa0e79bbe4dbdc",
+      "after_sha256": "995912ebfdd4a5cb94fa0a79e2108698d37198700d27a38b5550593f74eeef79"
+    },
+    {
+      "id": "stv24_B_I",
+      "original_id": "train_499",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "In September 1962, Sheila held the top position on the US Billboard Hot 100.",
+      "after": "Sheila had a hit recording in 1962.",
+      "before_sha256": "64c31a044256c5f48d487b684464b618db19ebae5d3cf38ecea72fe9a0f63075",
+      "after_sha256": "3fd48a56a64509a72b1ec78049b37e2d82e63d1ec3857fa62fc3bbb2b8cefc0d"
+    },
+    {
+      "id": "stv26_A_I",
+      "original_id": "train_1150",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "Sorry! is marketed for two to four players, ages six through adult.",
+      "after": "Sorry! is based on Pachisi.",
+      "before_sha256": "da53b5bc2815658be9708ec02cbc9ab6ab060cd51253a5858d03b9c31cbf4d95",
+      "after_sha256": "836e2c7c12e9439fea5c36e12f137b70d4d50d25b2362b7a9b4f7a3f67109f75"
+    },
+    {
+      "id": "stv26_B_K",
+      "original_id": "train_1150",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "K",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "The board-game category includes both games: Barbarossa has a German-style plasticine mechanism and Sorry! follows a cross-and-circle form.",
+      "after": "The board-game category includes both games: Barbarossa is German-style and Sorry! follows a cross-and-circle form.",
+      "before_sha256": "02f3c6680f80a9604754a7ec5759c796bb52424b9933aef14ae7cea9f16e9e9e",
+      "after_sha256": "b48c584b1ca46ca732565d684c313a273d6fb863bde6bcf42a704dc62ac82952"
+    },
+    {
+      "id": "stv26_B_I",
+      "original_id": "train_1150",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "Two to four people aged six or older are the intended players of Sorry!.",
+      "after": "Pachisi is the basis for Sorry!.",
+      "before_sha256": "47ae6a013c6b84d6a7a42fa01b3f583169e77700c92c27ed3abbdabf9d71e92d",
+      "after_sha256": "82d3636b3dabcc7535d4dc981f73ebe6fdce50d7587090411c8bd398765e0796"
+    },
+    {
+      "id": "stv27_A_I",
+      "original_id": "train_254",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "Alcott was an American novelist and poet who lived from 1832 to 1888.",
+      "after": "Little Women tells the story of a family.",
+      "before_sha256": "ff2f62c6f5b3b8bfdc039fffa8637f22cbb2650c4631ce7e9be5e7ccf72c7546",
+      "after_sha256": "26abcf8d290faa7a96184c77ca14efd7a2516ffcc439c635e23590a6adc8ee52"
+    },
+    {
+      "id": "stv27_B_I",
+      "original_id": "train_254",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 2,
+      "target_index": 0,
+      "before": "Little Women is a novel written by Louisa May Alcott.",
+      "after": "Alcott wrote Little Women.",
+      "before_sha256": "743dac351027a0827f128042fbe93d68984c0e0617ace38ebdc4f8ab8122effe",
+      "after_sha256": "405bdb1565c4a8bf2b998cbd95ee181ab1fa2181d7ff735dfb1a0b08f7e549ca"
+    },
+    {
+      "id": "stv27_B_I",
+      "original_id": "train_254",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "The American writer Alcott lived between 1832 and 1888 and wrote poetry as well as novels.",
+      "after": "A family forms the central household in Little Women.",
+      "before_sha256": "c892e376a0b96c1cb2283734b9cb2044d8b22e48587ddcf86cf66cc13d37c0f4",
+      "after_sha256": "e3d025768ff3e62944ab3cb971029e092b7dda1d34aa86df84b0f0a804edafcd"
+    },
+    {
+      "id": "stv28_A_I",
+      "original_id": "train_1222",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 0,
+      "before": "The supplied 2017-18 record identifies Toronto as the Maple Leafs' home city.",
+      "after": "The supplied 2017-18 team record describes the Toronto Maple Leafs.",
+      "before_sha256": "efa854468968ae0d6dd839938ddb8c2dae2a0f9f6d680eed34bb18daa19ae007",
+      "after_sha256": "25b508052b74d6dfedc85c3d52b010661108b042066dfbc004ce60dbd973a8d4"
+    },
+    {
+      "id": "stv28_A_I",
+      "original_id": "train_1222",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "The record lists a total of 13 Stanley Cup titles for the Maple Leafs.",
+      "after": "That record contains information about a Stanley Cup win by the Maple Leafs.",
+      "before_sha256": "271495bc216a038b1b5c1f28d37710390100bca452cabe0971780fb7ce9cc2b2",
+      "after_sha256": "90d9c53157b9fac025a1c8d88c12fe866d344fbcc87cb7b91d85f31499fabfb3"
+    },
+    {
+      "id": "stv28_B_I",
+      "original_id": "train_1222",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 0,
+      "before": "Toronto is named as the Maple Leafs' home city in the supplied 2017-18 record.",
+      "after": "The Toronto Maple Leafs are described in the provided 2017-18 team record.",
+      "before_sha256": "290135e688a290603017482961512223a01ead8d1370206a40fe17b73d06b06b",
+      "after_sha256": "7954536dea3d2bbabbfe8858f5f2271647e094f0fc7e51ea59ff3e95f2df8e9e"
+    },
+    {
+      "id": "stv28_B_I",
+      "original_id": "train_1222",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 1,
+      "before": "A total of 13 Stanley Cup championships is recorded for the team.",
+      "after": "The record includes a Stanley Cup win by that team.",
+      "before_sha256": "a7ec72b3b6d17c3e17d4902d5f5cfe2a509160658433a276b3602954bda72e4b",
+      "after_sha256": "d21a598afcb152956ad883c95dce6090bcfc93a8a9552f1fca98a5956d117225"
+    },
+    {
+      "id": "stv29_A_I",
+      "original_id": "train_33",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 0,
+      "before": "The preparation uses slices of fresh raw fish served with dipping sauce, wasabi and vegetable garnishes.",
+      "after": "The Japanese preparation uses sliced raw fish served with dipping sauce, vegetables and wasabi.",
+      "before_sha256": "9f8fce94ef529f8512db4e63f31466562bb5fa893e584374b9f056af36fecd8c",
+      "after_sha256": "0c14ee780416f80f935c90a71cfd63d66490e4a73acfeee176e66886a9a4a2dc"
+    },
+    {
+      "id": "stv29_A_I",
+      "original_id": "train_33",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "The raw fish is presented without rice.",
+      "after": "Fresh raw-fish slices are accompanied by sauce and garnishes.",
+      "before_sha256": "dca6fa233cb81ee40d10f418e67a13eeac5e1119a474fd182229f5be51a9b148",
+      "after_sha256": "6c5ad51d724a9d7658e74894c32019c1f2ce7f23bfe52e12420b8768b081e7e2"
+    },
+    {
+      "id": "stv29_B_S",
+      "original_id": "train_33",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "S",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "Raw-fish slices with condiments and garnishes are served as sashimi.",
+      "after": "Fresh raw-fish slices with condiments and garnishes are served as sashimi.",
+      "before_sha256": "68f43dea8dc33e0cc29e9fe57136bec15e8e1cf67f5d42440edd3cfd64969f3c",
+      "after_sha256": "5d9c9e79c8b4f5754c8c59cec7ade1350a0fa0bf0eb33d52dc47a370ffdc2b5b"
+    },
+    {
+      "id": "stv29_B_K",
+      "original_id": "train_33",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "K",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "Unlike rice-based sushi, sashimi presents its raw fish without rice.",
+      "after": "Sashimi presents its raw fish on its own, without rice.",
+      "before_sha256": "f8b61de17626fef67e7eb41601efd3f774c4f1f108224f63a7c7569f7746bff2",
+      "after_sha256": "0c111529c9c6e40e14558fa16da887ace09fbd2e4eea8837a81f50c9ec19f008"
+    },
+    {
+      "id": "stv29_B_I",
+      "original_id": "train_33",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 3,
+      "target_index": 0,
+      "before": "Fresh raw fish is sliced and offered with sauce, wasabi and vegetables in this preparation.",
+      "after": "The Japanese preparation described here uses raw fish in slices with sauce, vegetables and wasabi.",
+      "before_sha256": "3fa51d16481ea24a6425a3da89e91d14f67ce248f9f1f271c41bb9b96757759d",
+      "after_sha256": "5cfb6c77dc1ad7193211baf5087b123b233e16916ca57b4d98c3a3592405d160"
+    },
+    {
+      "id": "stv29_B_I",
+      "original_id": "train_33",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "No rice accompanies the fish slices described here.",
+      "after": "Fresh raw-fish slices are served with condiments and garnishes.",
+      "before_sha256": "93e409fead460935cdb0e0b6a7061385416f2446b058b04d4c0ab30ef3df1e6b",
+      "after_sha256": "11ee13912d25becc7aa00a0acb08e141474ba87b940692908b01595074aacd2c"
+    },
+    {
+      "id": "stv30_A_I",
+      "original_id": "train_1709",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 0,
+      "before": "Home Fires is a British period drama created by Simon Block.",
+      "after": "Home Fires is described in the supplied series record.",
+      "before_sha256": "0dda3ac28abe81059dda1428fa569f200f9adefbc94cc80b08c5a059a3e0b598",
+      "after_sha256": "9143e0c33d377c354b04c3e5a0e34c84ced66a31bbc616eb4fa9688b2e85fff3"
+    },
+    {
+      "id": "stv30_A_I",
+      "original_id": "train_1709",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "The series record gives its original release interval as May 2015 to May 2016.",
+      "after": "The series record contains information about Home Fires episodes.",
+      "before_sha256": "badbf417d9d6a7b7e8d8d26d94c6ee2820da63d439f17522c191a33a64e288b6",
+      "after_sha256": "e752d757cc15fefb7be8d8aae13ee89f5f78aee6f587d4b018cc8196062eaacf"
+    },
+    {
+      "id": "stv30_B_I",
+      "original_id": "train_1709",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 4,
+      "target_index": 0,
+      "before": "Simon Block created Home Fires, a British period drama.",
+      "after": "The provided series record describes Home Fires.",
+      "before_sha256": "4c1bbe26ab162f00d53ebdf61b1b77194d1ca247bdf4d6343e6ef2aaa9573f25",
+      "after_sha256": "e1adad511be78e3542acf4bcf90eefb15c2fbf6fd30ed19d9918da1bd05e4a37"
+    },
+    {
+      "id": "stv30_B_I",
+      "original_id": "train_1709",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "condition": "I",
+      "doc_slot": 5,
+      "target_index": 1,
+      "before": "May 2015 through May 2016 is the original release interval in the series record.",
+      "after": "Information about episodes of Home Fires appears in the series record.",
+      "before_sha256": "3f9424ffc0eed22c8f4ffb7da034d4422128340f40cffcb5bce67339a7401d32",
+      "after_sha256": "d7f18f7286cf39c5faec82e8eb6d7dfd5aa0bbe68b5a5cc11a5cbdfb7297623a"
+    }
+  ],
+  "unit_metadata_changes": [
+    {
+      "original_id": "train_1102",
+      "field": "missing_premise",
+      "before": "The link between the disaster/date and the British holiday name is absent from both target passages. A Boxing Day birthday in a background does not provide the tsunami relation.",
+      "after": "The2004 Indian Ocean disaster/date -> the name of its British holiday is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_150",
+      "field": "missing_premise",
+      "before": "The usual name corresponding to Mont Saint-Jean is omitted, not the existence of a Napoleon-era battle.",
+      "after": "Napoleon/French Mont Saint-Jean encounter -> the usual name Waterloo is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_1661",
+      "field": "missing_premise",
+      "before": "Descriptions of Myanmar geography and a river's route do not assign any river the principal-river role.",
+      "after": "The named Myanmar/Burma river -> chief/principal status is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_1333",
+      "field": "missing_premise",
+      "before": "Khet's board-game classification is removed; lasers and pieces do not explicitly supply it.",
+      "after": "Khet -> board-game category (Quarto remains typed) is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. The Khet board-game predicate is removed; chess-like/strategy cues are deliberately retained because S already asserts them. These may invite world-knowledge inference and require independent review; they are not a supplied board-game category premise."
+    },
+    {
+      "original_id": "train_1492",
+      "field": "missing_premise",
+      "before": "Both winner-to-season4 links are removed; other seasons' winners and season4 runners-up do not identify the winner.",
+      "after": "Main RuPaul season4 -> winning person Sharon Needles is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Keep the named person and hometown from S, deleting only her winner relationship to season4; a name in context does not establish a win. Do not add runner-up names, competitor counts or dates absent from S."
+    },
+    {
+      "original_id": "train_744",
+      "field": "missing_premise",
+      "before": "The nickname relation for the Scottish James II is removed from both targets. The question identifies the person but gives no nickname; retained backgrounds name other James figures without establishing the Scottish nickname.",
+      "after": "James II of Scots1430-1460 -> nickname is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_1430",
+      "field": "missing_premise",
+      "before": "The total season count is removed from both targets; numbered season examples are only lower bounds.",
+      "after": "The supplied RuPaul series overview -> total season count is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Season-count assertions in S entail an overview about this series and its seasons. These are weaker residual context assertions, not new episode totals, host or premiere facts. The unique count itself is absent."
+    },
+    {
+      "original_id": "train_421",
+      "field": "missing_premise",
+      "before": "Both season2 episode counts are removed; season1 and season7 counts do not supply season2's count.",
+      "after": "Pretty Little Liars season2 -> total episode count is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_335",
+      "field": "missing_premise",
+      "before": "Both actor-to-character-name links are absent; the actor's participation and show date remain.",
+      "after": "Chuck Connors appearance in The Rifleman -> character identity is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_1136",
+      "field": "missing_premise",
+      "before": "Both target passages omit the commercial introduction year; they retain only the toy identity and use.",
+      "after": "Wham-O modern Hula Hoop market/commercial debut -> year is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_1154",
+      "field": "missing_premise",
+      "before": "Targets describe only early swallowing and repetition, omitting the final creature and terminal order.",
+      "after": "Last creature in this supplied rhyme version -> animal identity is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_405",
+      "field": "missing_premise",
+      "before": "WashU retains its US location, but the second target gives only the Colorado system identity and campus count, without a country or state-to-country relation.",
+      "after": "University of Colorado -> country, including its USA membership link (the Colorado location retained) is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Retain the state-level Colorado location already asserted in S, removing only its explicit USA-country membership. Backgrounds do not supply Colorado -> USA. Using outside geographical knowledge to fill that bridge is not allowed by the supplied-evidence rubric."
+    },
+    {
+      "original_id": "train_1525",
+      "field": "missing_premise",
+      "before": "Both champion identity links are absent; the runner-up does not identify an unlisted opponent.",
+      "after": "2015 French Open mens singles -> champion identity is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_1064",
+      "field": "missing_premise",
+      "before": "The word is associated with bad situations but the direction of change is missing.",
+      "after": "Ameliorate in the given bad-situation sense -> improvement/tolerability direction is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_315",
+      "field": "missing_premise",
+      "before": "The causal explanation is omitted; the retained temperature pattern alone is not a cause.",
+      "after": "Urban-rural temperature difference -> land-surface causal mechanism is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_989",
+      "field": "missing_premise",
+      "before": "The card-revealing condition and its showdown link are removed, leaving only general poker context.",
+      "after": "The final-betting/multiple-player situation -> revealing/comparing hands and its showdown event-name link is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Retain the temporal/participation context from S, erasing both the revealing action and showdown, which names the queried revealing event and could itself be an answer cue. The procedure name is not treated as an unrelated residual fact. Whether conventional rule descriptions justify the question have to remains a separate independent-review point."
+    },
+    {
+      "original_id": "train_1302",
+      "field": "missing_premise",
+      "before": "The subgroup's worship weekday is absent; a general Christian Sunday tradition does not establish every subgroup's practice.",
+      "after": "Specified Old Order Amish worship -> weekday identity is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_1470",
+      "field": "missing_premise",
+      "before": "No target establishes Ohio capital status; original background mentions Columbus population/size only.",
+      "after": "Ohio -> capital city, including its government-seat city link is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Remove both the explicit capital predicate and the government-meeting-city link, since either can support the answer. This deletes multiple textual support routes to one queried relation, not a proved one-atom or one-word edit. The largest-city background still supplies no capital premise."
+    },
+    {
+      "original_id": "train_1805",
+      "field": "missing_premise",
+      "before": "The title bridge is retained but both targets omit the original performer. Later cover information alone cannot establish the first performer.",
+      "after": "Last Kiss original1961 version -> singer is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_32",
+      "field": "missing_premise",
+      "before": "Neither target states the required wins; no birth-date elimination or outside career knowledge is supplied for the other candidate.",
+      "after": "Geoff Masters ->1970s doubles winning-pair membership at the three tournaments is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_341",
+      "field": "missing_premise",
+      "before": "The name of the1567 foundation is missing; a later school or the founder's home town does not identify it.",
+      "after": "Lawrence Sheriff1567 school -> school name is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_499",
+      "field": "missing_premise",
+      "before": "The artist-to-Sheila recording relation is removed; other songs/artists in backgrounds do not supply it.",
+      "after": "1962 Sheila hit recording -> recording artist is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_1150",
+      "field": "missing_premise",
+      "before": "Sorry!'s category is absent; no retained movement-on-a-board phrase silently restores it.",
+      "after": "Sorry -> board-game category (Barbarossa type retained) is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_254",
+      "field": "missing_premise",
+      "before": "Both targets identify only the author and book, without the fictional-family surname; a March date in unrelated background is not that relationship.",
+      "after": "Little Women central family -> surname is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_1222",
+      "field": "missing_premise",
+      "before": "The latest winning year/season is absent; a total title count alone does not supply it.",
+      "after": "Supplied2017-18 Maple Leafs record -> latest Stanley Cup year/season is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_33",
+      "field": "missing_premise",
+      "before": "Both targets describe raw-fish presentation but omit the Japanese dish name; the retained background discusses other foods.",
+      "after": "The described Japanese raw-fish preparation -> dish name is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_1709",
+      "field": "missing_premise",
+      "before": "Both total episode counts are absent; the release interval alone cannot determine the count.",
+      "after": "Supplied Home Fires series record -> episode total is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    {
+      "original_id": "train_989",
+      "field": "conflict_explanation",
+      "before": "Under the same multi-player post-final-betting condition, exposing cards is required versus prohibited.",
+      "after": "Under the identical multi-player post-final-betting condition, the positive generic procedure says players reveal and compare hands; the negative generic procedure says none reveal and their cards remain concealed. Both are descriptive procedure claims; no must/prohibited modality contrast is used. The question have to still needs independent scope review."
+    }
+  ],
+  "I_reconstruction": {
+    "train_1102": {
+      "removed_required_relation": "The2004 Indian Ocean disaster/date -> the name of its British holiday",
+      "retained_non_answer_facts": [
+        "Indian Ocean earthquake and tsunami",
+        "26 December2004",
+        "The tsunami date was a British holiday"
+      ],
+      "A": [
+        "The Indian Ocean earthquake and tsunami struck on 26 December 2004.",
+        "The tsunami of 26 December 2004 occurred on a British holiday."
+      ],
+      "B": [
+        "The Indian Ocean earthquake and tsunami occurred on 26 December 2004.",
+        "The 2004 tsunami fell on 26 December, a holiday in Britain."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_150": {
+      "removed_required_relation": "Napoleon/French Mont Saint-Jean encounter -> the usual name Waterloo",
+      "retained_non_answer_facts": [
+        "Napoleon and French usage Mont Saint-Jean",
+        "The battle was fought along the Mont Saint-Jean ridge"
+      ],
+      "A": [
+        "Napoleon and the French called the military clash the Battle of Mont Saint-Jean.",
+        "That battle was fought along the Mont Saint-Jean ridge."
+      ],
+      "B": [
+        "The name Napoleon and the French used for the encounter was Mont Saint-Jean.",
+        "The battlefield of that encounter lay along the Mont Saint-Jean ridge."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_1661": {
+      "removed_required_relation": "The named Myanmar/Burma river -> chief/principal status",
+      "retained_non_answer_facts": [
+        "Myanmar was formerly Burma",
+        "Irrawaddy is a river of Myanmar",
+        "Irrawaddy and Ayeyarwady are names of that river"
+      ],
+      "A": [
+        "The Irrawaddy is a river of Myanmar, formerly Burma.",
+        "That river is known as the Irrawaddy or Ayeyarwady."
+      ],
+      "B": [
+        "Myanmar, formerly Burma, has a river called the Irrawaddy.",
+        "Irrawaddy and Ayeyarwady are names of that river."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_1333": {
+      "removed_required_relation": "Khet -> board-game category (Quarto remains typed)",
+      "retained_non_answer_facts": [
+        "Khet is chess-like",
+        "Khet uses lasers and involves abstract strategy",
+        "Quarto is a two-player board game invented by Blaise Müller"
+      ],
+      "A": [
+        "Khet is chess-like, uses lasers, and involves abstract strategy.",
+        "Quarto is a board game for two players, invented by Blaise Müller."
+      ],
+      "B": [
+        "Lasers and abstract strategy are involved in Khet, which is chess-like.",
+        "Blaise Müller invented Quarto, which is played as a board game by two people."
+      ],
+      "entailment_note": "The Khet board-game predicate is removed; chess-like/strategy cues are deliberately retained because S already asserts them. These may invite world-knowledge inference and require independent review; they are not a supplied board-game category premise."
+    },
+    "train_1492": {
+      "removed_required_relation": "Main RuPaul season4 -> winning person Sharon Needles",
+      "retained_non_answer_facts": [
+        "Season4 broadcast in2012",
+        "Sharon Needles is from Pittsburgh"
+      ],
+      "A": [
+        "Season four of RuPaul's Drag Race was broadcast in 2012.",
+        "Sharon Needles is from Pittsburgh."
+      ],
+      "B": [
+        "The fourth season of RuPaul's Drag Race aired in 2012.",
+        "Pittsburgh is where Sharon Needles is from."
+      ],
+      "entailment_note": "Keep the named person and hometown from S, deleting only her winner relationship to season4; a name in context does not establish a win. Do not add runner-up names, competitor counts or dates absent from S."
+    },
+    "train_744": {
+      "removed_required_relation": "James II of Scots1430-1460 -> nickname",
+      "retained_non_answer_facts": [
+        "James II Stewart is the38th King of Scots",
+        "His lifespan was1430–1460"
+      ],
+      "A": [
+        "James II Stewart (1430–1460) was the 38th King of Scots.",
+        "The Scottish king James II lived from 1430 to 1460."
+      ],
+      "B": [
+        "Scotland's 38th king was James II Stewart, whose life spanned 1430–1460.",
+        "The Scottish monarch James II was born in 1430 and died in 1460."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_1430": {
+      "removed_required_relation": "The supplied RuPaul series overview -> total season count",
+      "retained_non_answer_facts": [
+        "The provided overview concerns RuPaul Drag Race",
+        "The overview records season information"
+      ],
+      "A": [
+        "The supplied overview describes the series RuPaul's Drag Race.",
+        "That RuPaul's Drag Race overview records information about the show's seasons."
+      ],
+      "B": [
+        "RuPaul's Drag Race is the series described in the provided overview.",
+        "Information about that show's seasons is recorded in the overview."
+      ],
+      "entailment_note": "Season-count assertions in S entail an overview about this series and its seasons. These are weaker residual context assertions, not new episode totals, host or premiere facts. The unique count itself is absent."
+    },
+    "train_421": {
+      "removed_required_relation": "Pretty Little Liars season2 -> total episode count",
+      "retained_non_answer_facts": [
+        "The supplied account concerns season2 of Pretty Little Liars",
+        "Original release June2011–March2012"
+      ],
+      "A": [
+        "The supplied account describes season two of Pretty Little Liars.",
+        "The original release of that season ran from June 2011 to March 2012."
+      ],
+      "B": [
+        "Pretty Little Liars' second season is described in the supplied account.",
+        "That season originally ran from June 2011 through March 2012."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_335": {
+      "removed_required_relation": "Chuck Connors appearance in The Rifleman -> character identity",
+      "retained_non_answer_facts": [
+        "The Rifleman is a television series",
+        "Chuck Connors appeared as an actor in that series"
+      ],
+      "A": [
+        "Chuck Connors appeared in the television series The Rifleman.",
+        "The Rifleman is a television series featuring Chuck Connors."
+      ],
+      "B": [
+        "The television series The Rifleman featured Chuck Connors.",
+        "Connors appeared in The Rifleman as an actor."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_1136": {
+      "removed_required_relation": "Wham-O modern Hula Hoop market/commercial debut -> year",
+      "retained_non_answer_facts": [
+        "Wham-O introduced its modern Hula Hoop to the market",
+        "Commercial use began"
+      ],
+      "A": [
+        "Wham-O introduced its modern Hula Hoop to the market.",
+        "Commercial use of Wham-O's Hula Hoop began."
+      ],
+      "B": [
+        "Wham-O's modern Hula Hoop made its market debut.",
+        "Wham-O's Hula Hoop entered commercial use."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_1154": {
+      "removed_required_relation": "Last creature in this supplied rhyme version -> animal identity",
+      "retained_non_answer_facts": [
+        "This version has a final animal swallowed by the woman",
+        "The ending also includes pie"
+      ],
+      "A": [
+        "In this version of the old-lady nursery rhyme, a final creature is swallowed.",
+        "The last stanza has her eat an animal and pie."
+      ],
+      "B": [
+        "The woman in the supplied fly-swallowing rhyme eats a final animal.",
+        "The ending has an animal being eaten, and she also eats pie."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_405": {
+      "removed_required_relation": "University of Colorado -> country, including its USA membership link (the Colorado location retained)",
+      "retained_non_answer_facts": [
+        "Washington University in St Louis is in Missouri USA",
+        "University of Colorado system is located in Colorado",
+        "Colorado is the other university system described"
+      ],
+      "A": [
+        "Washington University in St. Louis is in Missouri, United States. The University of Colorado system is in Colorado.",
+        "The other institution described is the University of Colorado system."
+      ],
+      "B": [
+        "Missouri, USA, is the location of Washington University in St. Louis. The University of Colorado system is located in Colorado.",
+        "The University of Colorado system is the other institution discussed."
+      ],
+      "entailment_note": "Retain the state-level Colorado location already asserted in S, removing only its explicit USA-country membership. Backgrounds do not supply Colorado -> USA. Using outside geographical knowledge to fill that bridge is not allowed by the supplied-evidence rubric."
+    },
+    "train_1525": {
+      "removed_required_relation": "2015 French Open mens singles -> champion identity",
+      "retained_non_answer_facts": [
+        "There was a2015 French Open mens singles event",
+        "The event had a champion (unspecified)"
+      ],
+      "A": [
+        "The 2015 French Open included a men's singles event.",
+        "There was a champion of the 2015 French Open men's singles event."
+      ],
+      "B": [
+        "There was a men's singles competition at the 2015 French Open.",
+        "That 2015 French Open men's singles competition had a champion."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_1064": {
+      "removed_required_relation": "Ameliorate in the given bad-situation sense -> improvement/tolerability direction",
+      "retained_non_answer_facts": [
+        "The word/verb ameliorate concerns a bad situation",
+        "The described conditions start bad"
+      ],
+      "A": [
+        "The word ameliorate is used about a bad situation.",
+        "The verb ameliorate concerns conditions that are initially bad."
+      ],
+      "B": [
+        "The verb ameliorate is used for a situation that is bad.",
+        "Ameliorate concerns conditions that start out bad."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_315": {
+      "removed_required_relation": "Urban-rural temperature difference -> land-surface causal mechanism",
+      "retained_non_answer_facts": [
+        "Urban areas are warmer than surrounding rural areas",
+        "This difference is called urban heat island",
+        "It is usually larger at night and most apparent under weak winds"
+      ],
+      "A": [
+        "Urban areas are warmer than surrounding rural areas.",
+        "This urban heat island temperature difference is usually larger at night and most apparent when winds are weak."
+      ],
+      "B": [
+        "An urban area is warmer than the rural area around it.",
+        "Weak winds make the urban heat island's urban-rural temperature contrast most apparent, and it is usually larger at night."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_989": {
+      "removed_required_relation": "The final-betting/multiple-player situation -> revealing/comparing hands and its showdown event-name link",
+      "retained_non_answer_facts": [
+        "Poker situation after last betting round with at least two players left",
+        "The account concerns the remaining players after betting"
+      ],
+      "A": [
+        "The poker situation described is the one after the last betting round, with more than one player remaining.",
+        "This account concerns those remaining players after betting has finished."
+      ],
+      "B": [
+        "This account concerns the end of the final betting round, with at least two poker players left.",
+        "The account describes the players left once that final betting round has ended."
+      ],
+      "entailment_note": "Retain the temporal/participation context from S, erasing both the revealing action and showdown, which names the queried revealing event and could itself be an answer cue. The procedure name is not treated as an unrelated residual fact. Whether conventional rule descriptions justify the question have to remains a separate independent-review point."
+    },
+    "train_1302": {
+      "removed_required_relation": "Specified Old Order Amish worship -> weekday identity",
+      "retained_non_answer_facts": [
+        "The specified communities normally worship in private homes",
+        "Their usual schedule is alternate weeks"
+      ],
+      "A": [
+        "The Old Order Amish described here typically hold worship services in private homes.",
+        "Those communities typically hold worship services on alternate weeks."
+      ],
+      "B": [
+        "Worship in the described Old Order Amish communities normally takes place in private homes.",
+        "Those communities normally hold worship services every other week."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_1470": {
+      "removed_required_relation": "Ohio -> capital city, including its government-seat city link",
+      "retained_non_answer_facts": [
+        "Columbus is a city in Ohio",
+        "Ohio state government meets at the Statehouse (city unspecified)"
+      ],
+      "A": [
+        "Columbus is a city in Ohio.",
+        "Ohio's state government meets at the Statehouse."
+      ],
+      "B": [
+        "Among Ohio's cities is Columbus.",
+        "The Ohio state government meets in the Statehouse."
+      ],
+      "entailment_note": "Remove both the explicit capital predicate and the government-meeting-city link, since either can support the answer. This deletes multiple textual support routes to one queried relation, not a proved one-atom or one-word edit. The largest-city background still supplies no capital premise."
+    },
+    "train_1805": {
+      "removed_required_relation": "Last Kiss original1961 version -> singer",
+      "retained_non_answer_facts": [
+        "The question lyric belongs to Last Kiss",
+        "Last Kiss has an original1961 recording"
+      ],
+      "A": [
+        "The lyric quoted in the question comes from Last Kiss.",
+        "The original version of Last Kiss was recorded in 1961."
+      ],
+      "B": [
+        "Last Kiss is the song containing the line in the question.",
+        "There is a 1961 original recording of Last Kiss."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_32": {
+      "removed_required_relation": "Geoff Masters ->1970s doubles winning-pair membership at the three tournaments",
+      "retained_non_answer_facts": [
+        "US Open Australian Open Wimbledon had doubles-winning pairs in1970s",
+        "Geoff Masters is an Australian tennis player"
+      ],
+      "A": [
+        "There were doubles-winning pairs at the US Open, Australian Open and Wimbledon during the 1970s.",
+        "Geoff Masters is an Australian tennis player."
+      ],
+      "B": [
+        "In the 1970s, the US Open, Australian Open and Wimbledon each had winning pairs in doubles.",
+        "Geoff Masters is a tennis player from Australia."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_341": {
+      "removed_required_relation": "Lawrence Sheriff1567 school -> school name",
+      "retained_non_answer_facts": [
+        "Lawrence Sheriff founded a free grammar school in1567"
+      ],
+      "A": [
+        "Lawrence Sheriff founded a free grammar school in 1567.",
+        "The school founded in 1567 by Lawrence Sheriff was a free grammar school."
+      ],
+      "B": [
+        "A free grammar school was established by Lawrence Sheriff in 1567.",
+        "Lawrence Sheriff's 1567 school foundation was a free grammar school."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_499": {
+      "removed_required_relation": "1962 Sheila hit recording -> recording artist",
+      "retained_non_answer_facts": [
+        "There was a1962 hit recording called Sheila"
+      ],
+      "A": [
+        "Sheila was a hit record in 1962.",
+        "There was a 1962 hit recording of Sheila."
+      ],
+      "B": [
+        "A 1962 hit record was called Sheila.",
+        "Sheila had a hit recording in 1962."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_1150": {
+      "removed_required_relation": "Sorry -> board-game category (Barbarossa type retained)",
+      "retained_non_answer_facts": [
+        "Sorry is based on Pachisi",
+        "Barbarossa uses plasticine shaping and is a German-style board game"
+      ],
+      "A": [
+        "Sorry! is based on Pachisi.",
+        "Barbarossa is a plasticine-shaping German-style board game."
+      ],
+      "B": [
+        "Pachisi is the basis for Sorry!.",
+        "Plasticine shaping is used in Barbarossa, a German-style board game."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_254": {
+      "removed_required_relation": "Little Women central family -> surname",
+      "retained_non_answer_facts": [
+        "Louisa May Alcott wrote Little Women",
+        "The book tells the story of a family"
+      ],
+      "A": [
+        "Louisa May Alcott wrote Little Women.",
+        "Little Women tells the story of a family."
+      ],
+      "B": [
+        "Alcott wrote Little Women.",
+        "A family forms the central household in Little Women."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_1222": {
+      "removed_required_relation": "Supplied2017-18 Maple Leafs record -> latest Stanley Cup year/season",
+      "retained_non_answer_facts": [
+        "The2017-18 record concerns Toronto Maple Leafs",
+        "It records a Stanley Cup win"
+      ],
+      "A": [
+        "The supplied 2017-18 team record describes the Toronto Maple Leafs.",
+        "That record contains information about a Stanley Cup win by the Maple Leafs."
+      ],
+      "B": [
+        "The Toronto Maple Leafs are described in the provided 2017-18 team record.",
+        "The record includes a Stanley Cup win by that team."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_33": {
+      "removed_required_relation": "The described Japanese raw-fish preparation -> dish name",
+      "retained_non_answer_facts": [
+        "It is a Japanese raw-fish-slice preparation",
+        "Sauce vegetables wasabi accompany it",
+        "The raw fish is fresh and has garnishes"
+      ],
+      "A": [
+        "The Japanese preparation uses sliced raw fish served with dipping sauce, vegetables and wasabi.",
+        "Fresh raw-fish slices are accompanied by sauce and garnishes."
+      ],
+      "B": [
+        "The Japanese preparation described here uses raw fish in slices with sauce, vegetables and wasabi.",
+        "Fresh raw-fish slices are served with condiments and garnishes."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    },
+    "train_1709": {
+      "removed_required_relation": "Supplied Home Fires series record -> episode total",
+      "retained_non_answer_facts": [
+        "The supplied series record concerns Home Fires",
+        "It contains episode information"
+      ],
+      "A": [
+        "Home Fires is described in the supplied series record.",
+        "The series record contains information about Home Fires episodes."
+      ],
+      "B": [
+        "The provided series record describes Home Fires.",
+        "Information about episodes of Home Fires appears in the series record."
+      ],
+      "entailment_note": "Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge."
+    }
+  },
+  "unchanged_I_bases": [
+    "train_1179",
+    "train_1605",
+    "train_25"
+  ],
+  "extra_fidelity_repairs": [
+    "Restore earthquake event scope to B tsunami S/K/C.",
+    "Restore French attribution to B Mont Saint-Jean S/K/C.",
+    "Restore television-series typing to B Rifleman S/K/C.",
+    "Align B Colorado system location without a new campuses scope.",
+    "Restore government-meeting function to B Ohio S before retaining it in matched I.",
+    "Align private homes in B Amish positive targets with A; avoid adding a private qualifier only in B I.",
+    "Use the same James II Stewart personal name rather than a dynasty-membership paraphrase in B positive targets.",
+    "Use an existential single recorded Stanley Cup win in I; do not introduce a new plural-count assertion.",
+    "Retain Colorado state location in I; erase only its explicit country bridge.",
+    "Retain existence of doubles-winning pairs while erasing Masters membership.",
+    "Align Hula commercial-use predicate rather than introducing selling in B.",
+    "Align UHI usually/most frequency and degree in B S and I.",
+    "Remove showdown event name from poker I as part of erasing the revealing answer path; do not retain an answer-event alias as unrelated context."
+  ],
+  "residual_review_risks": [
+    {
+      "original_id": "train_989",
+      "issue": "Question asks have to; positive evidence remains a conventional procedure description, not an explicit obligation. I erases both the revealing action and its showdown name; fresh supplied-evidence semantic review remains required."
+    },
+    {
+      "original_id": "train_1333",
+      "issue": "Chess-like/abstract strategy retained in I as S-derived cues. Do not infer board-game category solely by outside knowledge."
+    },
+    {
+      "original_id": "train_1150",
+      "issue": "Pachisi basis retained in I; provided backgrounds do not type Pachisi. Outside knowledge cannot fill Sorry category."
+    },
+    {
+      "original_id": "train_1470",
+      "issue": "Both capital and government-seat city support paths removed; multiple textual routes belong to one queried relation, no literal one-atom minimality claim."
+    },
+    {
+      "original_id": "train_1302",
+      "issue": "General Christian Sunday background cannot entail the specified community schedule."
+    }
+  ],
+  "independent_gold": false,
+  "approved_labels": 0,
+  "gpu_launch_ready": false,
+  "top_level_changes": {
+    "name": {
+      "before": "semantic_transfer_authored_materials_v4_source_augmented",
+      "after": "semantic_transfer_authored_materials_v5_relation_controls"
+    },
+    "policy": {
+      "before": "Author proposals only, never automatically imported semantic labels. For exactly the eight formerly incomplete bases, supplement necessary premises using the versioned primary-source excerpts. Original data, source-only versions, base IDs, partitions,240 budget and90% threshold remain unchanged. This is a source-augmented authored assay, not original released evidence or proof that the source-only assay passed.",
+      "after": "Recompose one v5 batch before inference. Preserve questions, backgrounds, source citations, slots and all240 IDs. I removes all textual paths to the queried relation while retaining only S-entailed identity/context/projections. Projection may require rewriting multiple clauses; this is not a claim of literal or formal one-atom minimality. No new source facts or world-knowledge-only residuals are intended. A/B equality remains an exposed author assessment, not proved semantic equivalence."
+    },
+    "supersedes": {
+      "before": "prompts/semantic_transfer_materials_v3.json",
+      "after": "prompts/semantic_transfer_materials_v4.json"
+    },
+    "revision_reason": {
+      "before": "User asks to repair materials to reach coverage. Versioned source-policy amendment before any new probe/answer output; eight bases gain traceable premises, with market/version/combat scope clarified where necessary. No replacement or threshold relaxation.",
+      "after": "Versioned relation-level residual I reconstruction and expression-fidelity repair after exposed author audit; original v4-r2 remains frozen."
+    },
+    "control_revision_path": {
+      "before": null,
+      "after": "prompts/semantic_transfer_control_revision_v1.json"
+    }
+  }
+}

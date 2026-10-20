@@ -1,0 +1,2338 @@
+{
+  "schema_version": 1,
+  "name": "semantic_transfer_authored_materials_v5_relation_controls",
+  "design_path": "prompts/semantic_transfer_validation_v1.json",
+  "author": "current_coordinator_with_full_project_history_exposure",
+  "independent_gold": false,
+  "policy": "Recompose one v5 batch before inference. Preserve questions, backgrounds, source citations, slots and all240 IDs. I removes all textual paths to the queried relation while retaining only S-entailed identity/context/projections. Projection may require rewriting multiple clauses; this is not a claim of literal or formal one-atom minimality. No new source facts or world-knowledge-only residuals are intended. A/B equality remains an exposed author assessment, not proved semantic equivalence.",
+  "background_policy": "Three shortest complete source-refuse passages, ties by original slot, retain original relative order. Chosen once per base before any new probe output; original duplicates preserved.",
+  "source_reading": {
+    "unique_full_passages": 154,
+    "original_answer_slots": 150,
+    "background_slots": 90,
+    "all_ids_read": [
+      "T001",
+      "T002",
+      "T003",
+      "T004",
+      "T005",
+      "T006",
+      "T007",
+      "T008",
+      "T009",
+      "T010",
+      "T011",
+      "T012",
+      "T013",
+      "T014",
+      "T015",
+      "T016",
+      "T017",
+      "T018",
+      "T019",
+      "T020",
+      "T021",
+      "T022",
+      "T023",
+      "T024",
+      "T025",
+      "T026",
+      "T027",
+      "T028",
+      "T029",
+      "T030",
+      "T031",
+      "T032",
+      "T033",
+      "T034",
+      "T035",
+      "T036",
+      "T037",
+      "T038",
+      "T039",
+      "T040",
+      "T041",
+      "T042",
+      "T043",
+      "T044",
+      "T045",
+      "T046",
+      "T047",
+      "T048",
+      "T049",
+      "T050",
+      "T051",
+      "T052",
+      "T053",
+      "T054",
+      "T055",
+      "T056",
+      "T057",
+      "T058",
+      "T059",
+      "T060",
+      "T061",
+      "T062",
+      "T063",
+      "T064",
+      "T065",
+      "T066",
+      "T067",
+      "T068",
+      "T069",
+      "T070",
+      "T071",
+      "T072",
+      "T073",
+      "T074",
+      "T075",
+      "T076",
+      "T077",
+      "T078",
+      "T079",
+      "T080",
+      "T081",
+      "T082",
+      "T083",
+      "T084",
+      "T085",
+      "T086",
+      "T087",
+      "T088",
+      "T089",
+      "T090",
+      "T091",
+      "T092",
+      "T093",
+      "T094",
+      "T095",
+      "T096",
+      "T097",
+      "T098",
+      "T099",
+      "T100",
+      "T101",
+      "T102",
+      "T103",
+      "T104",
+      "T105",
+      "T106",
+      "T107",
+      "T108",
+      "T109",
+      "T110",
+      "T111",
+      "T112",
+      "T113",
+      "T114",
+      "T115",
+      "T116",
+      "T117",
+      "T118",
+      "T119",
+      "T120",
+      "T121",
+      "T122",
+      "T123",
+      "T124",
+      "T125",
+      "T126",
+      "T127",
+      "T128",
+      "T129",
+      "T130",
+      "T131",
+      "T132",
+      "T133",
+      "T134",
+      "T135",
+      "T136",
+      "T137",
+      "T138",
+      "T139",
+      "T140",
+      "T141",
+      "T142",
+      "T143",
+      "T144",
+      "T145",
+      "T146",
+      "T147",
+      "T148",
+      "T149",
+      "T150",
+      "T151",
+      "T152",
+      "T153",
+      "T154"
+    ],
+    "truncated_display_repaired": "Initial display omitted parts of T006-T013; these eight documents were subsequently displayed in full. Released passages may themselves be web excerpts."
+  },
+  "units": [
+    {
+      "original_id": "train_1102",
+      "status": "authored_pending_independent_review",
+      "question": "On which British holiday did the 2004 tsunami occur?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T005",
+          "quote": "The earthquake and tsunami struck on 26 December 2004",
+          "start": 305,
+          "end": 358,
+          "source_sha256": "635baf328f2e1808175dbcc9a419ab7fdc1f6e9ba752e2c15f5510d0246a34f7"
+        },
+        {
+          "doc_id": "T005",
+          "quote": "The Boxing Day Indian Ocean earthquake and tsunami in 2004",
+          "start": 179,
+          "end": 237,
+          "source_sha256": "635baf328f2e1808175dbcc9a419ab7fdc1f6e9ba752e2c15f5510d0246a34f7"
+        }
+      ],
+      "required_facts": [
+        "The2004 Indian Ocean tsunami is linked to the named British holiday, not merely to a calendar date."
+      ],
+      "authored_answer": "Boxing Day",
+      "missing_premise": "The2004 Indian Ocean disaster/date -> the name of its British holiday is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "The same2004 tsunami is said to occur on Boxing Day and explicitly not on Boxing Day; no change of event or reporting priority resolves it.",
+      "compatibility_explanation": "An exact day and the broader month/holiday period can both describe one disaster; the holiday name remains Boxing Day.",
+      "expressions": {
+        "A": {
+          "S": [
+            "The Indian Ocean earthquake and tsunami struck on Boxing Day, 26 December 2004.",
+            "The tsunami of 26 December 2004 occurred on the British holiday called Boxing Day."
+          ],
+          "K": [
+            "The Indian Ocean earthquake and tsunami struck on Boxing Day, 26 December 2004.",
+            "The tsunami occurred during December 2004; the British holiday on that date was Boxing Day."
+          ],
+          "I": [
+            "The Indian Ocean earthquake and tsunami struck on 26 December 2004.",
+            "The tsunami of 26 December 2004 occurred on a British holiday."
+          ],
+          "C": [
+            "The Indian Ocean earthquake and tsunami struck on Boxing Day, 26 December 2004.",
+            "The British holiday on which the 2004 Indian Ocean tsunami struck was Christmas Day, not Boxing Day."
+          ]
+        },
+        "B": {
+          "S": [
+            "Boxing Day, 26 December 2004, was when the Indian Ocean earthquake and tsunami struck.",
+            "The 2004 disaster fell on 26 December, the holiday known in Britain as Boxing Day."
+          ],
+          "K": [
+            "Boxing Day, 26 December 2004, was when the Indian Ocean earthquake and tsunami struck.",
+            "December was the month of the disaster, and Boxing Day was the British holiday on which it happened."
+          ],
+          "I": [
+            "The Indian Ocean earthquake and tsunami occurred on 26 December 2004.",
+            "The 2004 tsunami fell on 26 December, a holiday in Britain."
+          ],
+          "C": [
+            "Boxing Day, 26 December 2004, was when the Indian Ocean earthquake and tsunami struck.",
+            "The 2004 Indian Ocean disaster happened on Christmas Day rather than Boxing Day in the British holiday calendar."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_150",
+      "status": "authored_pending_independent_review",
+      "question": "Napoleon called this the Battle of Mont Saint Jean, by what name do we know it?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T010",
+          "quote": "While the French referred to the military clash as the “ Battle of Mont Saint-Jean , ” it became known in most of the world as the “ Battle of Waterloo ”",
+          "start": 980,
+          "end": 1133,
+          "source_sha256": "692f1e7c5fa98aaa23a47a24664c713345063637851a320f2541c975e97bd43a"
+        }
+      ],
+      "required_facts": [
+        "The French battle name Mont Saint-Jean must be linked to its usual name."
+      ],
+      "authored_answer": "The Battle of Waterloo",
+      "missing_premise": "Napoleon/French Mont Saint-Jean encounter -> the usual name Waterloo is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "One target links Mont Saint-Jean to Waterloo; the other explicitly denies that same alias relation. Multiple names alone are not the conflict.",
+      "compatibility_explanation": "French naming and usual international naming differ but refer to the same battle.",
+      "expressions": {
+        "A": {
+          "S": [
+            "The military clash called the Battle of Mont Saint-Jean by Napoleon and the French is known as the Battle of Waterloo.",
+            "The Battle of Waterloo was fought along the Mont Saint-Jean ridge; Mont Saint-Jean was the French name for that battle."
+          ],
+          "K": [
+            "The military clash called the Battle of Mont Saint-Jean by Napoleon and the French is known as the Battle of Waterloo.",
+            "The French called the clash Mont Saint-Jean, whereas the name Waterloo came from Wellington's headquarters in the village of Waterloo."
+          ],
+          "I": [
+            "Napoleon and the French called the military clash the Battle of Mont Saint-Jean.",
+            "That battle was fought along the Mont Saint-Jean ridge."
+          ],
+          "C": [
+            "The military clash called the Battle of Mont Saint-Jean by Napoleon and the French is known as the Battle of Waterloo.",
+            "The clash Napoleon called the Battle of Mont Saint-Jean was the Battle of Austerlitz; it was not the Battle of Waterloo."
+          ]
+        },
+        "B": {
+          "S": [
+            "Waterloo is the usual name of the battle that Napoleon and the French called Mont Saint-Jean.",
+            "Mont Saint-Jean and Waterloo are two names for the same military encounter, fought along the Mont Saint-Jean ridge."
+          ],
+          "K": [
+            "Waterloo is the usual name of the battle that Napoleon and the French called Mont Saint-Jean.",
+            "Naming the encounter Mont Saint-Jean followed French usage; calling it Waterloo followed the location of Wellington's headquarters."
+          ],
+          "I": [
+            "The name Napoleon and the French used for the encounter was Mont Saint-Jean.",
+            "The battlefield of that encounter lay along the Mont Saint-Jean ridge."
+          ],
+          "C": [
+            "Waterloo is the usual name of the battle that Napoleon and the French called Mont Saint-Jean.",
+            "Austerlitz, rather than Waterloo, names the encounter Napoleon referred to as Mont Saint-Jean; the Waterloo identification is false."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_1661",
+      "status": "authored_pending_independent_review",
+      "question": "What is the chief river of Burma ?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T013",
+          "quote": "Irrawaddy River , Burmese Ayeyarwady , principal river of Myanmar ( formerly Burma )",
+          "start": 83,
+          "end": 167,
+          "source_sha256": "a489c2f62af1dec0a5b904cc1100d2b07dfc6ce73c94c66250c4d202ce73abb8"
+        }
+      ],
+      "required_facts": [
+        "The river must be explicitly identified as the principal river of Myanmar/Burma."
+      ],
+      "authored_answer": "Irrawaddy (Ayeyarwady)",
+      "missing_premise": "The named Myanmar/Burma river -> chief/principal status is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "The Irrawaddy is assigned and explicitly denied the same principal-river role in Burma.",
+      "compatibility_explanation": "Irrawaddy/Ayeyarwady are aliases; a commercial-waterway description is compatible with being the principal river.",
+      "expressions": {
+        "A": {
+          "S": [
+            "The Irrawaddy River is the principal river of Myanmar, formerly Burma.",
+            "The river known as the Irrawaddy or Ayeyarwady is Burma's chief river."
+          ],
+          "K": [
+            "The Irrawaddy River is the principal river of Myanmar, formerly Burma.",
+            "Ayeyarwady is the Burmese name of the Irrawaddy, Myanmar's most important commercial waterway."
+          ],
+          "I": [
+            "The Irrawaddy is a river of Myanmar, formerly Burma.",
+            "That river is known as the Irrawaddy or Ayeyarwady."
+          ],
+          "C": [
+            "The Irrawaddy River is the principal river of Myanmar, formerly Burma.",
+            "The Salween is Burma's chief river; the Irrawaddy is not its principal river."
+          ]
+        },
+        "B": {
+          "S": [
+            "Myanmar, formerly Burma, has the Irrawaddy as its principal river.",
+            "Burma's chief river goes by the names Irrawaddy and Ayeyarwady."
+          ],
+          "K": [
+            "Myanmar, formerly Burma, has the Irrawaddy as its principal river.",
+            "The Irrawaddy also bears the Burmese name Ayeyarwady and serves as Myanmar's most important commercial waterway."
+          ],
+          "I": [
+            "Myanmar, formerly Burma, has a river called the Irrawaddy.",
+            "Irrawaddy and Ayeyarwady are names of that river."
+          ],
+          "C": [
+            "Myanmar, formerly Burma, has the Irrawaddy as its principal river.",
+            "The principal river of Burma is the Salween, and the Irrawaddy does not hold that role."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_1179",
+      "status": "authored_pending_independent_review",
+      "question": "Where are Luoding and Dingzhou located?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T018",
+          "quote": "Luoding, formerly romanized as Loting, is a county-level city in western Guangdong, China.",
+          "start": 492,
+          "end": 582,
+          "source_sha256": "52ce9d9b24b436168c7e40e676fe888c7872af2ebcd486ef1f2e7981078d278a"
+        },
+        {
+          "doc_id": "T018",
+          "quote": "Hebei Province in northern China",
+          "start": 206,
+          "end": 238,
+          "source_sha256": "52ce9d9b24b436168c7e40e676fe888c7872af2ebcd486ef1f2e7981078d278a"
+        }
+      ],
+      "required_facts": [
+        "A supported location for Luoding.",
+        "A supported location for Dingzhou."
+      ],
+      "authored_answer": "Both are in China",
+      "missing_premise": "Luoding has no supplied location; its administrative category is not a location. Dingzhou remains explicitly placed in northern China. No Yunfu or Guangdong location remains in I.",
+      "conflict_explanation": "Luoding is located in China in one target and explicitly outside China in the other; Dingzhou's country is held fixed.",
+      "compatibility_explanation": "Western Guangdong and northern Hebei are compatible, more specific locations within the same country.",
+      "expressions": {
+        "A": {
+          "S": [
+            "Luoding is a county-level city in western Guangdong, China.",
+            "Dingzhou is a city in Hebei Province in northern China."
+          ],
+          "K": [
+            "Luoding is a county-level city in western Guangdong, China.",
+            "Dingzhou lies in northern China, and Luoding lies in the western part of China's Guangdong province."
+          ],
+          "I": [
+            "Luoding is a county-level city.",
+            "Dingzhou is a city in Hebei Province in northern China."
+          ],
+          "C": [
+            "Luoding is a county-level city in western Guangdong, China.",
+            "Dingzhou is in China, but Luoding is not located in China."
+          ]
+        },
+        "B": {
+          "S": [
+            "China contains Luoding, a county-level city in western Guangdong.",
+            "In northern China's Hebei province is the city of Dingzhou."
+          ],
+          "K": [
+            "China contains Luoding, a county-level city in western Guangdong.",
+            "Northern China is Dingzhou's location; Luoding is more specifically in western Guangdong within China."
+          ],
+          "I": [
+            "Luoding has the administrative status of a county-level city.",
+            "In northern China's Hebei province is the city of Dingzhou."
+          ],
+          "C": [
+            "China contains Luoding, a county-level city in western Guangdong.",
+            "China contains Dingzhou; Luoding, however, lies outside China rather than within it."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_1333",
+      "status": "authored_pending_independent_review",
+      "question": "Khet and Quarto, are games of what type?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T024",
+          "quote": "Khet is a chess-like abstract strategy board game using lasers",
+          "start": 0,
+          "end": 62,
+          "source_sha256": "31fd8edee68711a1e81b4970121a9a390b82252db7afba1247760296cc499cf3"
+        },
+        {
+          "doc_id": "T024",
+          "quote": "Quarto is a board game for two players",
+          "start": 454,
+          "end": 492,
+          "source_sha256": "31fd8edee68711a1e81b4970121a9a390b82252db7afba1247760296cc499cf3"
+        }
+      ],
+      "required_facts": [
+        "Khet's game category.",
+        "Quarto's game category."
+      ],
+      "authored_answer": "Board games",
+      "missing_premise": "Khet -> board-game category (Quarto remains typed) is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. The Khet board-game predicate is removed; chess-like/strategy cues are deliberately retained because S already asserts them. These may invite world-knowledge inference and require independent review; they are not a supplied board-game category premise.",
+      "conflict_explanation": "Khet is a board game and explicitly not a board game, with the same game intended.",
+      "compatibility_explanation": "Abstract strategy is a subtype description of a board game; two-player is another compatible property.",
+      "expressions": {
+        "A": {
+          "S": [
+            "Khet is a chess-like abstract strategy board game using lasers.",
+            "Quarto is a board game for two players, invented by Blaise Müller."
+          ],
+          "K": [
+            "Khet is a chess-like abstract strategy board game using lasers.",
+            "Quarto is a two-player board game; Khet is more specifically an abstract strategy board game."
+          ],
+          "I": [
+            "Khet is chess-like, uses lasers, and involves abstract strategy.",
+            "Quarto is a board game for two players, invented by Blaise Müller."
+          ],
+          "C": [
+            "Khet is a chess-like abstract strategy board game using lasers.",
+            "Quarto is a board game for two players, but Khet is not a board game."
+          ]
+        },
+        "B": {
+          "S": [
+            "Lasers are used in Khet, a chess-like board game in the abstract strategy tradition.",
+            "Blaise Müller invented Quarto, which is played as a board game by two people."
+          ],
+          "K": [
+            "Lasers are used in Khet, a chess-like board game in the abstract strategy tradition.",
+            "Quarto is a two-player board game, and Khet is an abstract strategy board game."
+          ],
+          "I": [
+            "Lasers and abstract strategy are involved in Khet, which is chess-like.",
+            "Blaise Müller invented Quarto, which is played as a board game by two people."
+          ],
+          "C": [
+            "Lasers are used in Khet, a chess-like board game in the abstract strategy tradition.",
+            "Quarto belongs to the board-game category; Khet does not belong to that category."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_1492",
+      "status": "authored_pending_independent_review",
+      "question": "Who won season four of rupauls drag race?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T029",
+          "quote": "Winner Sharon Needles",
+          "start": 213,
+          "end": 234,
+          "source_sha256": "3f93132bd2c81c38bfc1d59ba34b115bced09158f8e1b4c81297c0ceb22fe650"
+        },
+        {
+          "doc_id": "T029",
+          "quote": "Runner - up Chad Michaels Phi Phi O'Hara",
+          "start": 258,
+          "end": 298,
+          "source_sha256": "3f93132bd2c81c38bfc1d59ba34b115bced09158f8e1b4c81297c0ceb22fe650"
+        }
+      ],
+      "required_facts": [
+        "The winner of the main RuPaul's Drag Race season4, distinguished from All Stars and other seasons."
+      ],
+      "authored_answer": "Sharon Needles",
+      "missing_premise": "Main RuPaul season4 -> winning person Sharon Needles is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Keep the named person and hometown from S, deleting only her winner relationship to season4; a name in context does not establish a win. Do not add runner-up names, competitor counts or dates absent from S.",
+      "conflict_explanation": "The same season4 winner is Sharon Needles versus Chad Michaels, with explicit denial of Sharon's win.",
+      "compatibility_explanation": "Winner and runner-up are different ranks, not incompatible winners; All Stars is a different competition.",
+      "expressions": {
+        "A": {
+          "S": [
+            "Sharon Needles won season four of RuPaul's Drag Race, broadcast in 2012.",
+            "The season four winner of the main RuPaul's Drag Race competition was Sharon Needles, from Pittsburgh."
+          ],
+          "K": [
+            "Sharon Needles won season four of RuPaul's Drag Race, broadcast in 2012.",
+            "Chad Michaels and Phi Phi O'Hara were runners-up, not winners; Sharon Needles was the season four winner."
+          ],
+          "I": [
+            "Season four of RuPaul's Drag Race was broadcast in 2012.",
+            "Sharon Needles is from Pittsburgh."
+          ],
+          "C": [
+            "Sharon Needles won season four of RuPaul's Drag Race, broadcast in 2012.",
+            "Chad Michaels won season four of the main RuPaul's Drag Race competition; Sharon Needles did not win it."
+          ]
+        },
+        "B": {
+          "S": [
+            "The winner of RuPaul's Drag Race's fourth season in 2012 was Sharon Needles.",
+            "From Pittsburgh, Sharon Needles took the title in the main show's fourth season."
+          ],
+          "K": [
+            "The winner of RuPaul's Drag Race's fourth season in 2012 was Sharon Needles.",
+            "Sharon Needles took first place in season four; Chad Michaels and Phi Phi O'Hara finished as runners-up rather than winners."
+          ],
+          "I": [
+            "The fourth season of RuPaul's Drag Race aired in 2012.",
+            "Pittsburgh is where Sharon Needles is from."
+          ],
+          "C": [
+            "The winner of RuPaul's Drag Race's fourth season in 2012 was Sharon Needles.",
+            "In the main show's fourth season Chad Michaels took the title, and Sharon Needles was not the winner."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_744",
+      "status": "authored_pending_independent_review",
+      "question": "Was James II of Scots (1430–1460) known as James the Bald, Fiery Face, or the Red King?",
+      "question_change_reason": "Explicit referent disambiguation: T037 distinguishes James II Stewart (1430–1460), King of Scots, from James II Stuart of England (1633–1701). Add the Scottish realm/lifespan consistently to all eight cells; keep the requested nickname and original options. This changes the source question scope and is disclosed, not an unchanged-question result.",
+      "blocker_category": null,
+      "blocker_reason": null,
+      "source_citations": [
+        {
+          "doc_id": "T037",
+          "quote": "James II ` the Fiery Face ' STEWART ( 1430 - 1460 ) ; 38th King of SCOTS",
+          "start": 2263,
+          "end": 2335,
+          "source_sha256": "b7add579711fab142e47c4e5cd35c9c05a23cca69b17c14bc847700e48c4d396"
+        },
+        {
+          "doc_id": "T037",
+          "quote": "James II STUART ( King ) of ENGLAND ( 14/10/1633 - 16/9/1701 ) ; aka James VII of SCOTS",
+          "start": 2541,
+          "end": 2628,
+          "source_sha256": "b7add579711fab142e47c4e5cd35c9c05a23cca69b17c14bc847700e48c4d396"
+        },
+        {
+          "doc_id": "T034",
+          "quote": "later King James II of England",
+          "start": 1703,
+          "end": 1733,
+          "source_sha256": "4179f993c17e202f65ca4b0defb2bdefad121b2af7dc25c433729dde38eafbd5"
+        }
+      ],
+      "expressions": {
+        "A": {
+          "S": [
+            "James II Stewart (1430–1460), the 38th King of Scots, was known as the Fiery Face.",
+            "The Scottish king James II, who lived from 1430 to 1460, bore the nickname the Fiery Face."
+          ],
+          "K": [
+            "James II Stewart (1430–1460), the 38th King of Scots, was known as the Fiery Face.",
+            "James II Stewart lived from 1430 to 1460 and was the 38th King of Scots."
+          ],
+          "I": [
+            "James II Stewart (1430–1460) was the 38th King of Scots.",
+            "The Scottish king James II lived from 1430 to 1460."
+          ],
+          "C": [
+            "James II Stewart (1430–1460), the 38th King of Scots, was known as the Fiery Face.",
+            "James II Stewart (1430–1460), King of Scots, was known as the Bald and was not known as the Fiery Face."
+          ]
+        },
+        "B": {
+          "S": [
+            "The Fiery Face was a nickname of James II Stewart, the 38th King of Scots whose lifespan was 1430–1460.",
+            "James II, Scotland's king born in 1430 and deceased in 1460, was called the Fiery Face."
+          ],
+          "K": [
+            "The Fiery Face was a nickname of James II Stewart, the 38th King of Scots whose lifespan was 1430–1460.",
+            "Scotland's 38th king was James II Stewart; his life spanned 1430–1460."
+          ],
+          "I": [
+            "Scotland's 38th king was James II Stewart, whose life spanned 1430–1460.",
+            "The Scottish monarch James II was born in 1430 and died in 1460."
+          ],
+          "C": [
+            "The Fiery Face was a nickname of James II Stewart, the 38th King of Scots whose lifespan was 1430–1460.",
+            "The Scottish James II who lived in 1430–1460 was called the Bald; calling him the Fiery Face is incorrect."
+          ]
+        }
+      },
+      "author_semantic_label": null,
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false,
+      "required_facts": [
+        "Identify James II Stewart, the Scottish king who lived in 1430–1460, and establish the nickname relation for that same person."
+      ],
+      "authored_answer": "Fiery Face",
+      "missing_premise": "James II of Scots1430-1460 -> nickname is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "The same Scottish king is called the Fiery Face in targetA, while targetB explicitly denies that nickname and asserts the Bald instead. Multiple nicknames alone would be compatible; the denial makes these claims incompatible.",
+      "compatibility_explanation": "The nickname in targetA and the lifespan/ordinal/dynastic identity in targetB concern different compatible properties of the same Scottish king."
+    },
+    {
+      "original_id": "train_1430",
+      "status": "authored_pending_independent_review",
+      "question": "According to the series overview in these documents, how many seasons of RuPaul's Drag Race are listed?",
+      "question_change_reason": "Source-evidence scope clarification; same across all8 variants.",
+      "source_citations": [
+        {
+          "doc_id": "T032",
+          "quote": "No. of seasons 10 No. of episodes 118",
+          "start": 699,
+          "end": 736,
+          "source_sha256": "d804a341043d3c9127c2baf7d78c1852f6c64682c474ccc32ff486caabf45da7"
+        }
+      ],
+      "required_facts": [
+        "The total season count in the supplied series-overview snapshot, not an unverified current count."
+      ],
+      "authored_answer": "Ten seasons",
+      "missing_premise": "The supplied RuPaul series overview -> total season count is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Season-count assertions in S entail an overview about this series and its seasons. These are weaker residual context assertions, not new episode totals, host or premiere facts. The unique count itself is absent.",
+      "conflict_explanation": "The same supplied overview is assigned two different total season counts, ten versus eleven.",
+      "compatibility_explanation": "Season count and episode count are different quantities and can be10 and118 together.",
+      "expressions": {
+        "A": {
+          "S": [
+            "The supplied overview of RuPaul's Drag Race lists ten seasons.",
+            "The total number of seasons recorded in this RuPaul's Drag Race overview is ten."
+          ],
+          "K": [
+            "The supplied overview of RuPaul's Drag Race lists ten seasons.",
+            "The same overview records ten seasons and 118 episodes."
+          ],
+          "I": [
+            "The supplied overview describes the series RuPaul's Drag Race.",
+            "That RuPaul's Drag Race overview records information about the show's seasons."
+          ],
+          "C": [
+            "The supplied overview of RuPaul's Drag Race lists ten seasons.",
+            "The total season count in that same RuPaul's Drag Race overview is eleven."
+          ]
+        },
+        "B": {
+          "S": [
+            "Ten is the season total shown in the provided RuPaul's Drag Race series overview.",
+            "In that overview, RuPaul's Drag Race has a recorded total of ten seasons."
+          ],
+          "K": [
+            "Ten is the season total shown in the provided RuPaul's Drag Race series overview.",
+            "In the same overview, the show has ten seasons comprising 118 episodes."
+          ],
+          "I": [
+            "RuPaul's Drag Race is the series described in the provided overview.",
+            "Information about that show's seasons is recorded in the overview."
+          ],
+          "C": [
+            "Ten is the season total shown in the provided RuPaul's Drag Race series overview.",
+            "Eleven seasons, rather than ten, is the total recorded in that very same series overview."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_421",
+      "status": "authored_pending_independent_review",
+      "question": "How many episodes are in pretty little liars season 2?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T043",
+          "quote": "No. of episodes 25",
+          "start": 84,
+          "end": 102,
+          "source_sha256": "aa212587f43af95ba2350dfb63b122907b100c7c594e56ab155bea9292b6e6e5"
+        },
+        {
+          "doc_id": "T043",
+          "quote": "Pretty Little Liars ( season 2 )",
+          "start": 0,
+          "end": 32,
+          "source_sha256": "aa212587f43af95ba2350dfb63b122907b100c7c594e56ab155bea9292b6e6e5"
+        },
+        {
+          "doc_id": "T044",
+          "quote": "No. of seasons 7",
+          "start": 461,
+          "end": 477,
+          "source_sha256": "a6dd503568e0587a165cf30166f8cacb5ef80755a24bde0b71c611a07c14db3f"
+        }
+      ],
+      "required_facts": [
+        "Episode count for Pretty Little Liars season2 rather than another series/season."
+      ],
+      "authored_answer": "25 episodes",
+      "missing_premise": "Pretty Little Liars season2 -> total episode count is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "The same season2 total is25 in one target and24 in the other.",
+      "compatibility_explanation": "Seven counts all seasons;25 counts episodes within season2. Different quantities/hierarchy levels are jointly supported.",
+      "expressions": {
+        "A": {
+          "S": [
+            "Season two of Pretty Little Liars contains 25 episodes.",
+            "The episode total for Pretty Little Liars season two is 25, with original release from June 2011 to March 2012."
+          ],
+          "K": [
+            "Season two of Pretty Little Liars contains 25 episodes.",
+            "Pretty Little Liars has seven seasons in total, and its second season contains 25 episodes."
+          ],
+          "I": [
+            "The supplied account describes season two of Pretty Little Liars.",
+            "The original release of that season ran from June 2011 to March 2012."
+          ],
+          "C": [
+            "Season two of Pretty Little Liars contains 25 episodes.",
+            "The episode total for that same second season of Pretty Little Liars is 24."
+          ]
+        },
+        "B": {
+          "S": [
+            "Pretty Little Liars' second season has a total of 25 episodes.",
+            "There are 25 episodes in season two, whose original broadcast ran from June 2011 through March 2012."
+          ],
+          "K": [
+            "Pretty Little Liars' second season has a total of 25 episodes.",
+            "Across the seven seasons of Pretty Little Liars, season two has an episode total of 25."
+          ],
+          "I": [
+            "Pretty Little Liars' second season is described in the supplied account.",
+            "That season originally ran from June 2011 through March 2012."
+          ],
+          "C": [
+            "Pretty Little Liars' second season has a total of 25 episodes.",
+            "That same season two has 24 episodes in total."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_335",
+      "status": "authored_pending_independent_review",
+      "question": "What was the name of the character played by Chuck Connors in The Rifleman?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T050",
+          "quote": "Connors as Lucas McCain in `` The Rifleman",
+          "start": 3189,
+          "end": 3231,
+          "source_sha256": "9cecebb6f6040ae82d84feb49ff506105947a0e4f3131d696be12636087cde35"
+        },
+        {
+          "doc_id": "T050",
+          "quote": "Chuck Connors was born Kevin Joseph Connors",
+          "start": 277,
+          "end": 320,
+          "source_sha256": "9cecebb6f6040ae82d84feb49ff506105947a0e4f3131d696be12636087cde35"
+        }
+      ],
+      "required_facts": [
+        "Chuck Connors must be linked to the named role in The Rifleman."
+      ],
+      "authored_answer": "Lucas McCain",
+      "missing_premise": "Chuck Connors appearance in The Rifleman -> character identity is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "Chuck Connors plays Lucas McCain in one target and explicitly does not play that character in the same show in the other.",
+      "compatibility_explanation": "Kevin Joseph Connors is the actor's birth name, compatible with his professional name Chuck Connors and the same role.",
+      "expressions": {
+        "A": {
+          "S": [
+            "Chuck Connors played Lucas McCain in the television series The Rifleman.",
+            "In The Rifleman, the character portrayed by Chuck Connors was Lucas McCain."
+          ],
+          "K": [
+            "Chuck Connors played Lucas McCain in the television series The Rifleman.",
+            "Kevin Joseph Connors, professionally known as Chuck Connors, portrayed Lucas McCain in The Rifleman."
+          ],
+          "I": [
+            "Chuck Connors appeared in the television series The Rifleman.",
+            "The Rifleman is a television series featuring Chuck Connors."
+          ],
+          "C": [
+            "Chuck Connors played Lucas McCain in the television series The Rifleman.",
+            "Chuck Connors did not play Lucas McCain in The Rifleman; his character in that series was Micah Torrance."
+          ]
+        },
+        "B": {
+          "S": [
+            "Lucas McCain was Chuck Connors' role on the television series The Rifleman.",
+            "The role of Lucas McCain in The Rifleman was performed by Chuck Connors."
+          ],
+          "K": [
+            "Lucas McCain was Chuck Connors' role on the television series The Rifleman.",
+            "Kevin Joseph Connors was professionally known as Chuck Connors and played Lucas McCain in The Rifleman."
+          ],
+          "I": [
+            "The television series The Rifleman featured Chuck Connors.",
+            "Connors appeared in The Rifleman as an actor."
+          ],
+          "C": [
+            "Lucas McCain was Chuck Connors' role on the television series The Rifleman.",
+            "Micah Torrance was the character Connors portrayed in that show, and Lucas McCain was not his role."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_1136",
+      "status": "authored_pending_independent_review",
+      "question": "In what year did Wham-O's modern Hula Hoop make its market debut?",
+      "question_change_reason": "Explicitly restrict debut to the commercial Wham-O product, not ancient hoop play or a later patent. Supplement the missing market-event premise with the original trademark record; this is a disclosed scope clarification.",
+      "blocker_category": null,
+      "blocker_reason": null,
+      "source_citations": [
+        {
+          "doc_id": "T055",
+          "quote": "The modern hula hoop was invented in 1958",
+          "start": 77,
+          "end": 118,
+          "source_sha256": "c6d00fe3bd3ac02a99905c059d5a5a9b7ea027c45ff806141eaf5c65f15fd4ac"
+        },
+        {
+          "doc_id": "T055",
+          "quote": "throughout history",
+          "start": 272,
+          "end": 290,
+          "source_sha256": "c6d00fe3bd3ac02a99905c059d5a5a9b7ea027c45ff806141eaf5c65f15fd4ac"
+        }
+      ],
+      "expressions": {
+        "A": {
+          "S": [
+            "Wham-O introduced its modern Hula Hoop to the market in 1958.",
+            "Commercial use of Wham-O's Hula Hoop began in 1958."
+          ],
+          "K": [
+            "Wham-O introduced its modern Hula Hoop to the market in 1958.",
+            "The first commercial use of the Wham-O Hula Hoop was in May 1958."
+          ],
+          "I": [
+            "Wham-O introduced its modern Hula Hoop to the market.",
+            "Commercial use of Wham-O's Hula Hoop began."
+          ],
+          "C": [
+            "Wham-O introduced its modern Hula Hoop to the market in 1958.",
+            "The modern Wham-O Hula Hoop first reached the market in 1959, not in 1958."
+          ]
+        },
+        "B": {
+          "S": [
+            "The market debut of Wham-O's modern Hula Hoop took place in 1958.",
+            "1958 was the year in which commercial use of Wham-O's Hula Hoop began."
+          ],
+          "K": [
+            "The market debut of Wham-O's modern Hula Hoop took place in 1958.",
+            "May 1958 marks the start of commercial use for the Wham-O hoop."
+          ],
+          "I": [
+            "Wham-O's modern Hula Hoop made its market debut.",
+            "Wham-O's Hula Hoop entered commercial use."
+          ],
+          "C": [
+            "The market debut of Wham-O's modern Hula Hoop took place in 1958.",
+            "Wham-O's modern hoop entered the market in 1959; a 1958 debut did not occur."
+          ]
+        }
+      },
+      "author_semantic_label": null,
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false,
+      "required_facts": [
+        "The Wham-O modern Hula Hoop must be linked to its first commercial year."
+      ],
+      "authored_answer": "1958",
+      "missing_premise": "Wham-O modern Hula Hoop market/commercial debut -> year is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "The same product is introduced in1958 in targetA and explicitly not in1958 but in1959 in targetB.",
+      "compatibility_explanation": "The introduction year1958 and the more specific first-commercial-use month May1958 are compatible.",
+      "supplemental_source_citations": [
+        {
+          "source_id": "X001",
+          "start": 0,
+          "end": 59,
+          "quote": "First Use: May 20, 1958 First Use In Commerce: May 20, 1958",
+          "excerpt_sha256": "5e9c10237d83b0f27aeb4fe8c2c83fd668b0154efa80b05789eb0f81f3bd55bf"
+        }
+      ],
+      "source_augmentation_note": "New necessary premises are author paraphrases supported by the explicitly listed supplemental sources. The original released question/evidence remains preserved; C contains authored counterfactual denial, not a factual claim attributed to the sources."
+    },
+    {
+      "original_id": "train_1154",
+      "status": "authored_pending_independent_review",
+      "question": "In the supplied version of the nursery rhyme about the woman who swallowed a fly, which was the last creature she ate?",
+      "question_change_reason": "Specify the supplied version, drawn from CLAS printed pages198–199. That version ends with a horse and pie, not a death line; the requested property remains the last creature, not last food.",
+      "blocker_category": null,
+      "blocker_reason": null,
+      "source_citations": [
+        {
+          "doc_id": "T060",
+          "quote": "never swallow a horse",
+          "start": 874,
+          "end": 895,
+          "source_sha256": "94e87cd63d3f9e0146161014e9d064996e0ca8e56e8dbc2f36b06360f99f3034"
+        },
+        {
+          "doc_id": "T060",
+          "quote": "go so far as to swallow a horse",
+          "start": 1256,
+          "end": 1287,
+          "source_sha256": "94e87cd63d3f9e0146161014e9d064996e0ca8e56e8dbc2f36b06360f99f3034"
+        }
+      ],
+      "expressions": {
+        "A": {
+          "S": [
+            "In this version of the old-lady nursery rhyme, the final creature swallowed is a horse.",
+            "The last stanza has her eat a horse and pie; the horse is the final animal."
+          ],
+          "K": [
+            "In this version of the old-lady nursery rhyme, the final creature swallowed is a horse.",
+            "The final stanza also includes pie, which is food rather than a creature."
+          ],
+          "I": [
+            "In this version of the old-lady nursery rhyme, a final creature is swallowed.",
+            "The last stanza has her eat an animal and pie."
+          ],
+          "C": [
+            "In this version of the old-lady nursery rhyme, the final creature swallowed is a horse.",
+            "In this same version, the last creature she swallows is a cow, not a horse."
+          ]
+        },
+        "B": {
+          "S": [
+            "A horse is the last animal eaten by the woman in the supplied fly-swallowing rhyme.",
+            "She finishes the animal sequence with a horse and also eats pie at the end."
+          ],
+          "K": [
+            "A horse is the last animal eaten by the woman in the supplied fly-swallowing rhyme.",
+            "Pie is eaten in the ending too; that item is not an animal."
+          ],
+          "I": [
+            "The woman in the supplied fly-swallowing rhyme eats a final animal.",
+            "The ending has an animal being eaten, and she also eats pie."
+          ],
+          "C": [
+            "A horse is the last animal eaten by the woman in the supplied fly-swallowing rhyme.",
+            "The cow, rather than the horse, is the final creature in that very version; she does not end the animal sequence with a horse."
+          ]
+        }
+      },
+      "author_semantic_label": null,
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false,
+      "required_facts": [
+        "The final creature in the specified swallowing sequence must be identified; pie is food, not a creature."
+      ],
+      "authored_answer": "A horse",
+      "missing_premise": "Last creature in this supplied rhyme version -> animal identity is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "For the same supplied version, targetA identifies a horse as final creature and targetB expressly substitutes a cow and denies the horse ending.",
+      "compatibility_explanation": "Eating pie at the end is compatible with a horse being the last creature: pie is not an animal.",
+      "supplemental_source_citations": [
+        {
+          "source_id": "X002",
+          "start": 0,
+          "end": 42,
+          "quote": "Who swallowed a horse.\nAnd pie, of course!",
+          "excerpt_sha256": "6cb3da7f53b44e772e18932f4ab921ec4581f57720e1c022ce71639fc458df26"
+        }
+      ],
+      "source_augmentation_note": "New necessary premises are author paraphrases supported by the explicitly listed supplemental sources. The original released question/evidence remains preserved; C contains authored counterfactual denial, not a factual claim attributed to the sources."
+    },
+    {
+      "original_id": "train_405",
+      "status": "authored_pending_independent_review",
+      "question": "Washington University in St. Louis and University of Colorado, are located in which country?",
+      "question_change_reason": "Original question unchanged. Add an explicit Colorado-to-USA bridge supported by university contact/location material and the Library of Congress state guide.",
+      "blocker_category": null,
+      "blocker_reason": null,
+      "source_citations": [
+        {
+          "doc_id": "T062",
+          "quote": "Missouri, United States",
+          "start": 156,
+          "end": 179,
+          "source_sha256": "fc5899231dc2e0914d5f74089ad2482e398e76b15c34211098cda16ea3269e6a"
+        },
+        {
+          "doc_id": "T062",
+          "quote": "public universities in Colorado",
+          "start": 790,
+          "end": 821,
+          "source_sha256": "fc5899231dc2e0914d5f74089ad2482e398e76b15c34211098cda16ea3269e6a"
+        }
+      ],
+      "expressions": {
+        "A": {
+          "S": [
+            "Washington University in St. Louis is in Missouri, United States. The University of Colorado system is in Colorado, United States.",
+            "Both Washington University in St. Louis and the University of Colorado are located in the United States."
+          ],
+          "K": [
+            "Washington University in St. Louis is in Missouri, United States. The University of Colorado system is in Colorado, United States.",
+            "Washington University is a private research university; the Colorado system comprises four public university campuses."
+          ],
+          "I": [
+            "Washington University in St. Louis is in Missouri, United States. The University of Colorado system is in Colorado.",
+            "The other institution described is the University of Colorado system."
+          ],
+          "C": [
+            "Washington University in St. Louis is in Missouri, United States. The University of Colorado system is in Colorado, United States.",
+            "Washington University in St. Louis is in the United States, but the University of Colorado is in Canada and not in the United States."
+          ]
+        },
+        "B": {
+          "S": [
+            "The United States is home to Washington University in St. Louis and to the Colorado university system.",
+            "WashU is located in Missouri in the USA; the University of Colorado system is located in Colorado in the USA."
+          ],
+          "K": [
+            "The United States is home to Washington University in St. Louis and to the Colorado university system.",
+            "WashU is a privately run research university, while the four-campus Colorado system is public."
+          ],
+          "I": [
+            "Missouri, USA, is the location of Washington University in St. Louis. The University of Colorado system is located in Colorado.",
+            "The University of Colorado system is the other institution discussed."
+          ],
+          "C": [
+            "The United States is home to Washington University in St. Louis and to the Colorado university system.",
+            "WashU is American, whereas the University of Colorado is located in Canada, outside the USA."
+          ]
+        }
+      },
+      "author_semantic_label": null,
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false,
+      "required_facts": [
+        "Both Washington University in St. Louis and the Colorado university system must be linked to the same country."
+      ],
+      "authored_answer": "The United States",
+      "missing_premise": "University of Colorado -> country, including its USA membership link (the Colorado location retained) is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Retain the state-level Colorado location already asserted in S, removing only its explicit USA-country membership. Backgrounds do not supply Colorado -> USA. Using outside geographical knowledge to fill that bridge is not allowed by the supplied-evidence rubric.",
+      "conflict_explanation": "WashU is in the United States in both targets; the same University of Colorado is placed in the United States and explicitly outside it, in Canada.",
+      "compatibility_explanation": "Private and public institution types are compatible with sharing the same country.",
+      "supplemental_source_citations": [
+        {
+          "source_id": "X003",
+          "start": 0,
+          "end": 33,
+          "quote": "Boulder, Colorado 80309-0260, USA",
+          "excerpt_sha256": "4ed4abc7df7b1cb1dce2318e7321ed15d3595350b8efd946809a104a33a06404"
+        },
+        {
+          "source_id": "X004",
+          "start": 0,
+          "end": 104,
+          "quote": "Colorado, nicknamed the Centennial State and the Highest State, became the 38th state on August 1, 1876.",
+          "excerpt_sha256": "9c1402b6445ca685c81cbec4e0c5431094097cf7a917475a95a736c2c2a8205e"
+        }
+      ],
+      "source_augmentation_note": "New necessary premises are author paraphrases supported by the explicitly listed supplemental sources. The original released question/evidence remains preserved; C contains authored counterfactual denial, not a factual claim attributed to the sources."
+    },
+    {
+      "original_id": "train_1525",
+      "status": "authored_pending_independent_review",
+      "question": "Who won the mens single title in french open tennis tournament 2015?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T069",
+          "quote": "Men 's Singles 2015 French Open Champion Stan Wawrinka Runner - up Novak Djokovic",
+          "start": 0,
+          "end": 81,
+          "source_sha256": "3e7f4f818c23555b6b62d0d4b89b45bc4406c8e35e26e0c557532c26c7d709a4"
+        }
+      ],
+      "required_facts": [
+        "The champion of the men's singles event at the2015 French Open."
+      ],
+      "authored_answer": "Stan Wawrinka",
+      "missing_premise": "2015 French Open mens singles -> champion identity is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "The same singles title is attributed to different champions, Wawrinka and Djokovic, without a supplied correction.",
+      "compatibility_explanation": "Champion Wawrinka and runner-up Djokovic are compatible placements in one event.",
+      "expressions": {
+        "A": {
+          "S": [
+            "Stan Wawrinka won the men's singles title at the 2015 French Open.",
+            "The champion of the 2015 French Open men's singles event was Stan Wawrinka."
+          ],
+          "K": [
+            "Stan Wawrinka won the men's singles title at the 2015 French Open.",
+            "Stan Wawrinka was champion and Novak Djokovic was runner-up in that 2015 men's singles final."
+          ],
+          "I": [
+            "The 2015 French Open included a men's singles event.",
+            "There was a champion of the 2015 French Open men's singles event."
+          ],
+          "C": [
+            "Stan Wawrinka won the men's singles title at the 2015 French Open.",
+            "Novak Djokovic was the champion of the same 2015 French Open men's singles event."
+          ]
+        },
+        "B": {
+          "S": [
+            "The 2015 French Open men's singles champion was Stan Wawrinka.",
+            "Wawrinka took the men's singles championship at the French Open in 2015."
+          ],
+          "K": [
+            "The 2015 French Open men's singles champion was Stan Wawrinka.",
+            "In that final, Wawrinka finished as champion while Djokovic occupied the runner-up position."
+          ],
+          "I": [
+            "There was a men's singles competition at the 2015 French Open.",
+            "That 2015 French Open men's singles competition had a champion."
+          ],
+          "C": [
+            "The 2015 French Open men's singles champion was Stan Wawrinka.",
+            "For that same 2015 men's singles competition, Djokovic held the champion's title."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_1064",
+      "status": "authored_pending_independent_review",
+      "question": "Ameliorate means to make something that was bad, what?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T074",
+          "quote": "is a synonym of the verbs `` better '' and `` improve . ''",
+          "start": 1052,
+          "end": 1110,
+          "source_sha256": "d42cc86d2243b718d95b4eabcd2c9b7919d3e9093f54fdaaf0f295fb73221936"
+        },
+        {
+          "doc_id": "T074",
+          "quote": "the conditions have been made more tolerable",
+          "start": 1211,
+          "end": 1255,
+          "source_sha256": "d42cc86d2243b718d95b4eabcd2c9b7919d3e9093f54fdaaf0f295fb73221936"
+        }
+      ],
+      "required_facts": [
+        "The effect denoted by ameliorate when a situation starts out bad."
+      ],
+      "authored_answer": "Better / improved / more tolerable",
+      "missing_premise": "Ameliorate in the given bad-situation sense -> improvement/tolerability direction is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "The same word in the same bad-situation sense is defined as making conditions better versus worse, with explicit denial of improvement.",
+      "compatibility_explanation": "Better, improve and more tolerable are compatible descriptions of amelioration.",
+      "expressions": {
+        "A": {
+          "S": [
+            "To ameliorate a bad situation is to make it better or improve it.",
+            "When conditions are bad, ameliorate means that they have been made more tolerable."
+          ],
+          "K": [
+            "To ameliorate a bad situation is to make it better or improve it.",
+            "Ameliorating suffering makes it more tolerable, improving a bad situation."
+          ],
+          "I": [
+            "The word ameliorate is used about a bad situation.",
+            "The verb ameliorate concerns conditions that are initially bad."
+          ],
+          "C": [
+            "To ameliorate a bad situation is to make it better or improve it.",
+            "In that same sense, ameliorate means to make a bad situation worse, not better."
+          ]
+        },
+        "B": {
+          "S": [
+            "A bad situation becomes better when it is ameliorated.",
+            "More tolerable conditions are what the verb ameliorate describes when the initial situation is bad."
+          ],
+          "K": [
+            "A bad situation becomes better when it is ameliorated.",
+            "Amelioration makes a bad situation more tolerable and improves its conditions."
+          ],
+          "I": [
+            "The verb ameliorate is used for a situation that is bad.",
+            "Ameliorate concerns conditions that start out bad."
+          ],
+          "C": [
+            "A bad situation becomes better when it is ameliorated.",
+            "For the same usage, amelioration makes the situation worse and does not make it better."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_315",
+      "status": "authored_pending_independent_review",
+      "question": "The tendency of urban areas to be warmer then the surrounding rural areas are caused by?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T079",
+          "quote": "The main cause of the urban heat island effect is from the modification of land surfaces",
+          "start": 328,
+          "end": 416,
+          "source_sha256": "fc1b49c59531bcabe82421fc81d27c8283e19cdb17b89863b8d575b44f516424"
+        },
+        {
+          "doc_id": "T079",
+          "quote": "Waste heat generated by energy usage is a secondary contributor",
+          "start": 419,
+          "end": 482,
+          "source_sha256": "fc1b49c59531bcabe82421fc81d27c8283e19cdb17b89863b8d575b44f516424"
+        }
+      ],
+      "required_facts": [
+        "A causal relation explaining the urban-rural temperature difference."
+      ],
+      "authored_answer": "Human modification of land surfaces is the main cause.",
+      "missing_premise": "Urban-rural temperature difference -> land-surface causal mechanism is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "Land-surface modification is asserted to be the main cause and explicitly denied any contribution.",
+      "compatibility_explanation": "A main cause and a secondary contributor can coexist; general human activity and the more specific land-surface mechanism agree.",
+      "expressions": {
+        "A": {
+          "S": [
+            "The main cause of urban areas being warmer than surrounding rural areas is human modification of land surfaces.",
+            "This urban heat island temperature difference is usually larger at night and most apparent when winds are weak."
+          ],
+          "K": [
+            "The main cause of urban areas being warmer than surrounding rural areas is human modification of land surfaces.",
+            "Waste heat from energy use is a secondary contributor, not the main cause; modification of land surfaces remains the main cause."
+          ],
+          "I": [
+            "Urban areas are warmer than surrounding rural areas.",
+            "This urban heat island temperature difference is usually larger at night and most apparent when winds are weak."
+          ],
+          "C": [
+            "The main cause of urban areas being warmer than surrounding rural areas is human modification of land surfaces.",
+            "Modification of land surfaces does not contribute to the higher temperature of those same urban areas."
+          ]
+        },
+        "B": {
+          "S": [
+            "Human changes to land surfaces chiefly explain why an urban area is warmer than the rural area around it.",
+            "Weak winds make the urban heat island's urban-rural temperature contrast most apparent, and it is usually larger at night."
+          ],
+          "K": [
+            "Human changes to land surfaces chiefly explain why an urban area is warmer than the rural area around it.",
+            "Energy-use waste heat adds a secondary contribution; it is not the chief cause, which is the alteration of land surfaces."
+          ],
+          "I": [
+            "An urban area is warmer than the rural area around it.",
+            "Weak winds make the urban heat island's urban-rural temperature contrast most apparent, and it is usually larger at night."
+          ],
+          "C": [
+            "Human changes to land surfaces chiefly explain why an urban area is warmer than the rural area around it.",
+            "Changes to land surfaces make no contribution to the warmer conditions of those urban areas."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_989",
+      "status": "authored_pending_independent_review",
+      "question": "When do you have to show cards in poker?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T086",
+          "quote": "if more than one player remains after the last betting round , remaining players expose and compare their hands",
+          "start": 46,
+          "end": 157,
+          "source_sha256": "f081827aaa6f7a377dd61a9b8f556bee348f5e45af44f63b7f6c5d752e2b90b7"
+        }
+      ],
+      "required_facts": [
+        "The condition under which remaining players expose their hands after betting."
+      ],
+      "authored_answer": "At showdown after the last betting round if more than one player remains",
+      "missing_premise": "The final-betting/multiple-player situation -> revealing/comparing hands and its showdown event-name link is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Retain the temporal/participation context from S, erasing both the revealing action and showdown, which names the queried revealing event and could itself be an answer cue. The procedure name is not treated as an unrelated residual fact. Whether conventional rule descriptions justify the question have to remains a separate independent-review point.",
+      "conflict_explanation": "Under the identical multi-player post-final-betting condition, the positive generic procedure says players reveal and compare hands; the negative generic procedure says none reveal and their cards remain concealed. Both are descriptive procedure claims; no must/prohibited modality contrast is used. The question have to still needs independent scope review.",
+      "compatibility_explanation": "The time/participation condition and comparing exposed hands to determine winners describe the same showdown.",
+      "expressions": {
+        "A": {
+          "S": [
+            "In poker, if more than one player remains after the last betting round, the remaining players expose and compare their hands.",
+            "That post-betting exposure of the remaining players' hands is called the showdown."
+          ],
+          "K": [
+            "In poker, if more than one player remains after the last betting round, the remaining players expose and compare their hands.",
+            "At this showdown, comparing the exposed hands determines the winner or winners."
+          ],
+          "I": [
+            "The poker situation described is the one after the last betting round, with more than one player remaining.",
+            "This account concerns those remaining players after betting has finished."
+          ],
+          "C": [
+            "In poker, if more than one player remains after the last betting round, the remaining players expose and compare their hands.",
+            "If more than one player remains after the last betting round, the remaining players do not expose their hands and keep all of their cards concealed."
+          ]
+        },
+        "B": {
+          "S": [
+            "Remaining poker players reveal and compare their hands when the final betting round has ended and at least two players are left.",
+            "Showdown is the name for this revealing of the remaining hands after betting has finished."
+          ],
+          "K": [
+            "Remaining poker players reveal and compare their hands when the final betting round has ended and at least two players are left.",
+            "The exposed hands are compared at showdown to establish which remaining player or players win."
+          ],
+          "I": [
+            "This account concerns the end of the final betting round, with at least two poker players left.",
+            "The account describes the players left once that final betting round has ended."
+          ],
+          "C": [
+            "Remaining poker players reveal and compare their hands when the final betting round has ended and at least two players are left.",
+            "With at least two players left after the final betting round, none of those remaining players reveals a hand; their cards remain concealed."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_1302",
+      "status": "authored_pending_independent_review",
+      "question": "On which day of the week do the Old Order Amish described in the documents typically hold worship services?",
+      "question_change_reason": "Source-evidence scope clarification; same across all8 variants.",
+      "source_citations": [
+        {
+          "doc_id": "T091",
+          "quote": "The Old Order Amish typically have worship services every second Sunday in private homes",
+          "start": 0,
+          "end": 88,
+          "source_sha256": "c3713681c366d55b1b97769d67e0005011fd15fe45382c4708018c91a97c93db"
+        }
+      ],
+      "required_facts": [
+        "The usual weekday of worship for the described Old Order Amish communities."
+      ],
+      "authored_answer": "Sunday (typically every second Sunday)",
+      "missing_premise": "Specified Old Order Amish worship -> weekday identity is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "The same communities' usual fortnightly worship day is Sunday versus Saturday, with explicit denial of Sunday.",
+      "compatibility_explanation": "Sunday is a weekday; every second Sunday supplies frequency, and private homes supplies venue.",
+      "expressions": {
+        "A": {
+          "S": [
+            "The Old Order Amish described here typically hold worship services every second Sunday in private homes.",
+            "Sunday is the usual day of the week for the worship services of these Old Order Amish communities."
+          ],
+          "K": [
+            "The Old Order Amish described here typically hold worship services every second Sunday in private homes.",
+            "Their usual worship day of the week is Sunday, with services typically held in private homes on alternate weeks."
+          ],
+          "I": [
+            "The Old Order Amish described here typically hold worship services in private homes.",
+            "Those communities typically hold worship services on alternate weeks."
+          ],
+          "C": [
+            "The Old Order Amish described here typically hold worship services every second Sunday in private homes.",
+            "For these same Old Order Amish communities the usual fortnightly worship day is Saturday, not Sunday."
+          ]
+        },
+        "B": {
+          "S": [
+            "Worship in the described Old Order Amish communities normally takes place in private homes on alternate Sundays.",
+            "The day of the week normally used for those communities' worship services is Sunday."
+          ],
+          "K": [
+            "Worship in the described Old Order Amish communities normally takes place in private homes on alternate Sundays.",
+            "Sunday is their typical worship day; the alternate-week schedule and the home setting specify frequency and venue."
+          ],
+          "I": [
+            "Worship in the described Old Order Amish communities normally takes place in private homes.",
+            "Those communities normally hold worship services every other week."
+          ],
+          "C": [
+            "Worship in the described Old Order Amish communities normally takes place in private homes on alternate Sundays.",
+            "Those very communities normally worship on alternate Saturdays, and Sunday is not their usual service day."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_1470",
+      "status": "authored_pending_independent_review",
+      "question": "What is the state capital of Ohio?",
+      "question_change_reason": "Original question unchanged. Supply the capital relation explicitly from Ohio government material; retain the original largest-city background without treating it as proof of capital status.",
+      "blocker_category": null,
+      "blocker_reason": null,
+      "source_citations": [
+        {
+          "doc_id": "T094",
+          "quote": "10 largest cities",
+          "start": 183,
+          "end": 200,
+          "source_sha256": "1a7904951202ab77f1bfc36c2097cc54c18e5bf78acffc01bdf40ddecedb4401"
+        },
+        {
+          "doc_id": "T097",
+          "quote": "Columbus is the biggest city",
+          "start": 284,
+          "end": 312,
+          "source_sha256": "caae73785079aa3b09426baa90a66b6f53ff1c7c9f9246aa8b3c6dd0d351cfce"
+        }
+      ],
+      "expressions": {
+        "A": {
+          "S": [
+            "Columbus is the state capital of Ohio.",
+            "Ohio's state government meets at the Statehouse in Columbus, its capital city."
+          ],
+          "K": [
+            "Columbus is the state capital of Ohio.",
+            "Columbus is also the largest city in Ohio, although the largest metropolitan area can be measured differently."
+          ],
+          "I": [
+            "Columbus is a city in Ohio.",
+            "Ohio's state government meets at the Statehouse."
+          ],
+          "C": [
+            "Columbus is the state capital of Ohio.",
+            "Cleveland is Ohio's state capital; Columbus is not its capital."
+          ]
+        },
+        "B": {
+          "S": [
+            "Ohio's capital city is Columbus.",
+            "Columbus, Ohio's capital, is where the state government meets at the Statehouse."
+          ],
+          "K": [
+            "Ohio's capital city is Columbus.",
+            "The largest city within Ohio's city boundaries is Columbus; metropolitan-area rankings are a different comparison."
+          ],
+          "I": [
+            "Among Ohio's cities is Columbus.",
+            "The Ohio state government meets in the Statehouse."
+          ],
+          "C": [
+            "Ohio's capital city is Columbus.",
+            "The capital of Ohio is Cleveland rather than Columbus; Columbus does not hold that role."
+          ]
+        }
+      },
+      "author_semantic_label": null,
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false,
+      "required_facts": [
+        "Ohio must be linked to its state capital, not merely its largest city or a capital of another state."
+      ],
+      "authored_answer": "Columbus",
+      "missing_premise": "Ohio -> capital city, including its government-seat city link is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Remove both the explicit capital predicate and the government-meeting-city link, since either can support the answer. This deletes multiple textual support routes to one queried relation, not a proved one-atom or one-word edit. The largest-city background still supplies no capital premise.",
+      "conflict_explanation": "For Ohio in the same present scope, Columbus is the capital in targetA and explicitly not the capital in targetB, which names Cleveland.",
+      "compatibility_explanation": "Columbus being a state capital is compatible with it being Ohio largest city or housing its statehouse.",
+      "supplemental_source_citations": [
+        {
+          "source_id": "X005",
+          "start": 0,
+          "end": 32,
+          "quote": "Columbus is Ohio’s capital city.",
+          "excerpt_sha256": "245cb5f64483c1e56bbd5095bbbf7326e193879ba05bf2dd5d95ffe82e7856f4"
+        }
+      ],
+      "source_augmentation_note": "New necessary premises are author paraphrases supported by the explicitly listed supplemental sources. The original released question/evidence remains preserved; C contains authored counterfactual denial, not a factual claim attributed to the sources."
+    },
+    {
+      "original_id": "train_1805",
+      "status": "authored_pending_independent_review",
+      "question": "Who sang the original oh where oh where can my baby be?",
+      "question_change_reason": "Original lyric question unchanged. Add its Last Kiss title bridge from the official artist audio description; retain the released1961 original-version metadata and distinguish later covers.",
+      "blocker_category": null,
+      "blocker_reason": null,
+      "source_citations": [
+        {
+          "doc_id": "T101",
+          "quote": "`` Last Kiss '' Single by Wayne Cochran",
+          "start": 0,
+          "end": 39,
+          "source_sha256": "9dcdf505d9cab7db86fbbc4dd9e17113301c75c86a9280d01236f17006cdcb9f"
+        }
+      ],
+      "expressions": {
+        "A": {
+          "S": [
+            "The lyric quoted in the question comes from Last Kiss. The original 1961 version of Last Kiss was sung by Wayne Cochran.",
+            "Wayne Cochran recorded the original version of Last Kiss in 1961."
+          ],
+          "K": [
+            "The lyric quoted in the question comes from Last Kiss. The original 1961 version of Last Kiss was sung by Wayne Cochran.",
+            "Pearl Jam later released a cover of Last Kiss in 1998."
+          ],
+          "I": [
+            "The lyric quoted in the question comes from Last Kiss.",
+            "The original version of Last Kiss was recorded in 1961."
+          ],
+          "C": [
+            "The lyric quoted in the question comes from Last Kiss. The original 1961 version of Last Kiss was sung by Wayne Cochran.",
+            "Jack Greene, not Wayne Cochran, sang the original 1961 version of Last Kiss."
+          ]
+        },
+        "B": {
+          "S": [
+            "Wayne Cochran was the singer of the 1961 original Last Kiss, the song containing the line in the question.",
+            "The first version of Last Kiss identified here is Wayne Cochran's 1961 recording."
+          ],
+          "K": [
+            "Wayne Cochran was the singer of the 1961 original Last Kiss, the song containing the line in the question.",
+            "Last Kiss also has a Pearl Jam cover issued in 1998, decades after the original."
+          ],
+          "I": [
+            "Last Kiss is the song containing the line in the question.",
+            "There is a 1961 original recording of Last Kiss."
+          ],
+          "C": [
+            "Wayne Cochran was the singer of the 1961 original Last Kiss, the song containing the line in the question.",
+            "The singer on that original 1961 Last Kiss was Jack Greene; the attribution to Wayne Cochran is false."
+          ]
+        }
+      },
+      "author_semantic_label": null,
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false,
+      "required_facts": [
+        "The lyric in the question must be linked to Last Kiss, and the song original1961 performer must be identified."
+      ],
+      "authored_answer": "Wayne Cochran",
+      "missing_premise": "Last Kiss original1961 version -> singer is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "The same original1961 Last Kiss recording is attributed to Wayne Cochran and explicitly not to him but to Jack Greene.",
+      "compatibility_explanation": "An original Wayne Cochran recording in1961 and a much later Pearl Jam cover are different versions and can both be true.",
+      "supplemental_source_citations": [
+        {
+          "source_id": "X006",
+          "start": 0,
+          "end": 34,
+          "quote": "Oh where, oh where can my baby be?",
+          "excerpt_sha256": "bb734f5b495b5b8243b522f8f047eeeac14f86905f73a038c101e63d13219096"
+        },
+        {
+          "source_id": "X011",
+          "start": 0,
+          "end": 53,
+          "quote": "Last Kiss\nSong Type Cover\nFirst Release Dec. 31, 1998",
+          "excerpt_sha256": "5bce8db89b4df3905d57c05428bceb35e284185a324cf1e8aabcdbc0ec30f748"
+        }
+      ],
+      "source_augmentation_note": "New necessary premises are author paraphrases supported by the explicitly listed supplemental sources. The original released question/evidence remains preserved; C contains authored counterfactual denial, not a factual claim attributed to the sources."
+    },
+    {
+      "original_id": "train_32",
+      "status": "authored_pending_independent_review",
+      "question": "Who was part of doubles winning pairs in the US Open, Australian Open and Wimbledon tournaments during the 1970s, Roberta Vinci or Geoff Masters ?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T104",
+          "quote": "He was part of doubles winning pairs in the US Open, Australian Open and Wimbledon tournaments during the 1970s.",
+          "start": 78,
+          "end": 190,
+          "source_sha256": "2dc24732aa7bfdfc1b0980eb14b440abe0ddd2f2a2518c6f73e1d2bb954ab9c1"
+        }
+      ],
+      "required_facts": [
+        "The named candidate who participated in winning doubles pairs at all three specified tournaments during the1970s."
+      ],
+      "authored_answer": "Geoff Masters",
+      "missing_premise": "Geoff Masters ->1970s doubles winning-pair membership at the three tournaments is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "Geoff Masters is said to be in winning pairs at all three tournaments, while a second claim denies his1970s Wimbledon doubles win.",
+      "compatibility_explanation": "A broad Grand Slam doubles description and a list of the three named tournaments are compatible; doubles and singles are not interchangeable.",
+      "expressions": {
+        "A": {
+          "S": [
+            "Geoff Masters was part of doubles winning pairs at the US Open, Australian Open and Wimbledon during the 1970s.",
+            "The player associated with those three 1970s doubles victories was Geoff Masters, an Australian tennis player."
+          ],
+          "K": [
+            "Geoff Masters was part of doubles winning pairs at the US Open, Australian Open and Wimbledon during the 1970s.",
+            "Those Masters victories were Grand Slam doubles titles, not singles titles; they included the US Open, Australian Open and Wimbledon."
+          ],
+          "I": [
+            "There were doubles-winning pairs at the US Open, Australian Open and Wimbledon during the 1970s.",
+            "Geoff Masters is an Australian tennis player."
+          ],
+          "C": [
+            "Geoff Masters was part of doubles winning pairs at the US Open, Australian Open and Wimbledon during the 1970s.",
+            "Geoff Masters was not part of a Wimbledon doubles winning pair at any time during the 1970s."
+          ]
+        },
+        "B": {
+          "S": [
+            "In the 1970s, winning doubles partnerships at the US Open, Australian Open and Wimbledon included Geoff Masters.",
+            "Geoff Masters, from Australia, was the player in the winning pairs at those three tournaments in that decade."
+          ],
+          "K": [
+            "In the 1970s, winning doubles partnerships at the US Open, Australian Open and Wimbledon included Geoff Masters.",
+            "Masters won Grand Slam doubles titles rather than singles titles at the US Open, Australian Open and Wimbledon."
+          ],
+          "I": [
+            "In the 1970s, the US Open, Australian Open and Wimbledon each had winning pairs in doubles.",
+            "Geoff Masters is a tennis player from Australia."
+          ],
+          "C": [
+            "In the 1970s, winning doubles partnerships at the US Open, Australian Open and Wimbledon included Geoff Masters.",
+            "No Wimbledon doubles winning partnership in the 1970s included Geoff Masters."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_341",
+      "status": "authored_pending_independent_review",
+      "question": "Lawrence Sheriff founded which famous school in 1567?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T110",
+          "quote": "Rugby School was founded as a Free Grammar School in 1567 by Lawrence Sheriff",
+          "start": 293,
+          "end": 370,
+          "source_sha256": "a071007464a545f5e7615df86ffaa3a6139f7b35df34cfc06c2f26a01dc202cd"
+        },
+        {
+          "doc_id": "T110",
+          "quote": "in 1867 , the Lawrence Sheriff Grammar School",
+          "start": 511,
+          "end": 556,
+          "source_sha256": "a071007464a545f5e7615df86ffaa3a6139f7b35df34cfc06c2f26a01dc202cd"
+        }
+      ],
+      "required_facts": [
+        "The school-name/founder/year relation for Lawrence Sheriff's1567 foundation."
+      ],
+      "authored_answer": "Rugby School",
+      "missing_premise": "Lawrence Sheriff1567 school -> school name is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "Lawrence Sheriff is said to found Rugby School in1567 and explicitly not to found that school in that year.",
+      "compatibility_explanation": "Rugby's1567 foundation and a separate Lawrence Sheriff Grammar School in1867 concern different institutions/events.",
+      "expressions": {
+        "A": {
+          "S": [
+            "Lawrence Sheriff founded Rugby School as a free grammar school in 1567.",
+            "The famous school founded in 1567 by Lawrence Sheriff was Rugby School."
+          ],
+          "K": [
+            "Lawrence Sheriff founded Rugby School as a free grammar school in 1567.",
+            "Rugby School later became fee-paying; a separate Lawrence Sheriff Grammar School began in 1867, not 1567."
+          ],
+          "I": [
+            "Lawrence Sheriff founded a free grammar school in 1567.",
+            "The school founded in 1567 by Lawrence Sheriff was a free grammar school."
+          ],
+          "C": [
+            "Lawrence Sheriff founded Rugby School as a free grammar school in 1567.",
+            "Lawrence Sheriff did not found Rugby School in 1567; the school he founded that year was Eton."
+          ]
+        },
+        "B": {
+          "S": [
+            "Rugby School began in 1567 as the free grammar school founded by Lawrence Sheriff.",
+            "The 1567 school foundation attributed to Lawrence Sheriff was Rugby School."
+          ],
+          "K": [
+            "Rugby School began in 1567 as the free grammar school founded by Lawrence Sheriff.",
+            "The later fee-paying Rugby School is distinct from the Lawrence Sheriff Grammar School established in 1867 rather than 1567."
+          ],
+          "I": [
+            "A free grammar school was established by Lawrence Sheriff in 1567.",
+            "Lawrence Sheriff's 1567 school foundation was a free grammar school."
+          ],
+          "C": [
+            "Rugby School began in 1567 as the free grammar school founded by Lawrence Sheriff.",
+            "The school Sheriff founded in 1567 was Eton, and it was not Rugby School."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_1605",
+      "status": "authored_pending_independent_review",
+      "question": "During which years did U.S. forces conduct Korean War combat campaigns, up to the armistice?",
+      "question_change_reason": "Clarify involvement as wartime combat campaigns up to the armistice, not all subsequent US military presence. Supplement the original outbreak-only passage with the official US campaign interval; no date appears in the clarified question.",
+      "blocker_category": null,
+      "blocker_reason": null,
+      "source_citations": [
+        {
+          "doc_id": "T115",
+          "quote": "North Korea saw its opportunity and attacked South Korean forces",
+          "start": 1541,
+          "end": 1605,
+          "source_sha256": "755a9250ed40dced487a8d1efa1e39695e32695a5982ca35dd55d1f15e4c662e"
+        },
+        {
+          "doc_id": "T115",
+          "quote": "withdrawing the last remaining combat troops",
+          "start": 1477,
+          "end": 1521,
+          "source_sha256": "755a9250ed40dced487a8d1efa1e39695e32695a5982ca35dd55d1f15e4c662e"
+        }
+      ],
+      "expressions": {
+        "A": {
+          "S": [
+            "U.S. Korean War combat campaigns ran from 1950 to 1953, ending with the armistice.",
+            "The campaign interval began on June 27, 1950 and ended on July 27, 1953."
+          ],
+          "K": [
+            "U.S. Korean War combat campaigns ran from 1950 to 1953, ending with the armistice.",
+            "July 27, 1953 was the effective date of the Korean Armistice cease-fire at the end of these campaigns."
+          ],
+          "I": [
+            "U.S. forces participated in Korean War combat campaigns.",
+            "An armistice established a cease-fire in the conflict."
+          ],
+          "C": [
+            "U.S. Korean War combat campaigns ran from 1950 to 1953, ending with the armistice.",
+            "Those U.S. Korean War combat campaigns ran from 1950 to 1954 and did not end in 1953."
+          ]
+        },
+        "B": {
+          "S": [
+            "1950–1953 was the period of American combat campaigns in the Korean War before the armistice.",
+            "The recorded first and last campaign dates are June 27, 1950 and July 27, 1953."
+          ],
+          "K": [
+            "1950–1953 was the period of American combat campaigns in the Korean War before the armistice.",
+            "The armistice cease-fire took effect on July 27, 1953, closing the campaign period."
+          ],
+          "I": [
+            "American forces took part in combat campaigns during the Korean War.",
+            "The fighting was brought to a cease-fire by an armistice."
+          ],
+          "C": [
+            "1950–1953 was the period of American combat campaigns in the Korean War before the armistice.",
+            "The American Korean War campaign period was 1950–1954, with its final year being 1954 rather than 1953."
+          ]
+        }
+      },
+      "author_semantic_label": null,
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false,
+      "required_facts": [
+        "US wartime combat participation must have a supported start and end interval, distinguished from outbreak, prewar withdrawal, and post-armistice presence."
+      ],
+      "authored_answer": "1950–1953",
+      "missing_premise": "Both targets omit all campaign dates and supply only participation and an undated armistice.",
+      "conflict_explanation": "The same combat-campaign interval ends in1953 in targetA but explicitly not in1953 and instead1954 in targetB.",
+      "compatibility_explanation": "An exact interval from June27,1950 to July27,1953 is compatible with the coarser1950–1953 years and the armistice ending combat campaigns.",
+      "supplemental_source_citations": [
+        {
+          "source_id": "X007",
+          "start": 0,
+          "end": 99,
+          "quote": "Korean Campaigns\nJune 27, 1950–July 27, 1953\nwhen the Korean Armistice cease-fire became effective.",
+          "excerpt_sha256": "45375ad70f64ac859d291b7626be13cdc70b72dccafbb14b81c211c63aa66671"
+        }
+      ],
+      "source_augmentation_note": "New necessary premises are author paraphrases supported by the explicitly listed supplemental sources. The original released question/evidence remains preserved; C contains authored counterfactual denial, not a factual claim attributed to the sources."
+    },
+    {
+      "original_id": "train_499",
+      "status": "authored_pending_independent_review",
+      "question": "Sixties pop music - Who recorded the 1962 hit record Sheila?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T122",
+          "quote": "`` Sheila '' is a song written and recorded by Tommy Roe",
+          "start": 1373,
+          "end": 1429,
+          "source_sha256": "90956eb580b892e1c0efb9e0ac513a3fb3e32400a5925625d758d79482d4c446"
+        },
+        {
+          "doc_id": "T122",
+          "quote": "The original version of the song was recorded by Roe for Judd Records in 1960",
+          "start": 1641,
+          "end": 1718,
+          "source_sha256": "90956eb580b892e1c0efb9e0ac513a3fb3e32400a5925625d758d79482d4c446"
+        }
+      ],
+      "required_facts": [
+        "The recording artist for the1962 hit version of Sheila."
+      ],
+      "authored_answer": "Tommy Roe",
+      "missing_premise": "1962 Sheila hit recording -> recording artist is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "The same1962 recording is attributed to Tommy Roe and explicitly denied to him.",
+      "compatibility_explanation": "A1960 original issue that failed to sell and a1962 hit can have the same artist; these are different release events.",
+      "expressions": {
+        "A": {
+          "S": [
+            "Tommy Roe recorded the 1962 hit Sheila.",
+            "The 1962 hit recording of Sheila was by Tommy Roe."
+          ],
+          "K": [
+            "Tommy Roe recorded the 1962 hit Sheila.",
+            "Roe had recorded an earlier Sheila in 1960 that did not sell well; he was also the artist of the 1962 hit version."
+          ],
+          "I": [
+            "Sheila was a hit record in 1962.",
+            "There was a 1962 hit recording of Sheila."
+          ],
+          "C": [
+            "Tommy Roe recorded the 1962 hit Sheila.",
+            "The artist on that same 1962 hit recording of Sheila was Elvis Presley, not Tommy Roe."
+          ]
+        },
+        "B": {
+          "S": [
+            "The artist behind Sheila's 1962 hit recording was Tommy Roe.",
+            "Sheila was recorded as a 1962 hit by Tommy Roe."
+          ],
+          "K": [
+            "The artist behind Sheila's 1962 hit recording was Tommy Roe.",
+            "An earlier 1960 release by Roe failed to sell well, while his version became the 1962 Sheila hit."
+          ],
+          "I": [
+            "A 1962 hit record was called Sheila.",
+            "Sheila had a hit recording in 1962."
+          ],
+          "C": [
+            "The artist behind Sheila's 1962 hit recording was Tommy Roe.",
+            "Elvis Presley performed that very 1962 hit recording; Tommy Roe did not record it."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_25",
+      "status": "authored_pending_independent_review",
+      "question": "In 2014, CNN reported that FBI and other law enforcement agencies send their trainees to what Washington, D.C. museum so they can see for themselves how not protecting civil liberties can lead to bigger horrors?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T048",
+          "quote": "What is Holocaust Museum ?",
+          "start": 3414,
+          "end": 3440,
+          "source_sha256": "f9f8eadeb3140ab6a275fcccc51785949ba95f1c1e03ea370f0d950e28146830"
+        },
+        {
+          "doc_id": "T048",
+          "quote": "In 2014 , CNN reported that FBI and other law enforcement agencies send their trainees",
+          "start": 3443,
+          "end": 3529,
+          "source_sha256": "f9f8eadeb3140ab6a275fcccc51785949ba95f1c1e03ea370f0d950e28146830"
+        }
+      ],
+      "required_facts": [
+        "The museum linked by the2014 CNN report to FBI/law-enforcement training about civil liberties."
+      ],
+      "authored_answer": "Holocaust Museum",
+      "missing_premise": "The museum identity is removed while the training purpose and location remain. Other CNN or law-enforcement reports do not name this museum.",
+      "conflict_explanation": "For the same2014 report and training purpose, trainees are sent to the Holocaust Museum versus explicitly not sent there.",
+      "compatibility_explanation": "Museum name, Washington DC location and the civil-liberties lesson describe compatible attributes of one visit.",
+      "expressions": {
+        "A": {
+          "S": [
+            "In 2014, CNN reported that FBI and other law enforcement agencies sent trainees to the Holocaust Museum in Washington, D.C., to learn the dangers of failing to protect civil liberties.",
+            "The museum named for that law-enforcement training lesson in the 2014 CNN report was the Holocaust Museum."
+          ],
+          "K": [
+            "In 2014, CNN reported that FBI and other law enforcement agencies sent trainees to the Holocaust Museum in Washington, D.C., to learn the dangers of failing to protect civil liberties.",
+            "The destination was a museum in Washington, D.C.; the lesson concerned how failing to protect civil liberties can lead to greater horrors."
+          ],
+          "I": [
+            "In 2014, CNN reported on FBI and other law enforcement agencies sending trainees to a museum in Washington, D.C.",
+            "The museum visit was intended to show how failing to protect civil liberties can lead to greater horrors."
+          ],
+          "C": [
+            "In 2014, CNN reported that FBI and other law enforcement agencies sent trainees to the Holocaust Museum in Washington, D.C., to learn the dangers of failing to protect civil liberties.",
+            "The same 2014 CNN report said those trainees were not sent to the Holocaust Museum for that lesson; it identified the National Air and Space Museum instead."
+          ]
+        },
+        "B": {
+          "S": [
+            "The Washington, D.C. museum used for the civil-liberties lesson in CNN's 2014 report about FBI and other law-enforcement trainees was the Holocaust Museum.",
+            "CNN's 2014 training report named the Holocaust Museum as the destination for those trainees."
+          ],
+          "K": [
+            "The Washington, D.C. museum used for the civil-liberties lesson in CNN's 2014 report about FBI and other law-enforcement trainees was the Holocaust Museum.",
+            "A Washington, D.C. museum visit taught the trainees about the horrors that can follow neglect of civil liberties."
+          ],
+          "I": [
+            "CNN reported in 2014 that FBI and other law-enforcement trainees visited a museum in Washington, D.C.",
+            "The training visit illustrated the horrors that can follow a failure to safeguard civil liberties."
+          ],
+          "C": [
+            "The Washington, D.C. museum used for the civil-liberties lesson in CNN's 2014 report about FBI and other law-enforcement trainees was the Holocaust Museum.",
+            "For that same reported lesson the destination was the National Air and Space Museum, and the trainees did not go to the Holocaust Museum."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_1150",
+      "status": "authored_pending_independent_review",
+      "question": "Sorry! and Barbarossa, are which specific type and form of entertainment?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T130",
+          "quote": "Barbarossa is a plasticine-shaping German-style board game",
+          "start": 0,
+          "end": 58,
+          "source_sha256": "8e0d7836c2848999b0072a6d68bcc57a68bffde43b0a3aa5604cd0f230423469"
+        },
+        {
+          "doc_id": "T130",
+          "quote": "Sorry! is a board game",
+          "start": 236,
+          "end": 258,
+          "source_sha256": "8e0d7836c2848999b0072a6d68bcc57a68bffde43b0a3aa5604cd0f230423469"
+        }
+      ],
+      "required_facts": [
+        "Sorry! must be classified as a board game.",
+        "Barbarossa must be classified as a board game."
+      ],
+      "authored_answer": "Board games",
+      "missing_premise": "Sorry -> board-game category (Barbarossa type retained) is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "Sorry! is classified as a board game and explicitly denied that classification for the same game.",
+      "compatibility_explanation": "Cross-and-circle and German-style/plasticine descriptions are compatible subtypes or mechanics of board games.",
+      "expressions": {
+        "A": {
+          "S": [
+            "Sorry! is a board game based on Pachisi.",
+            "Barbarossa is a plasticine-shaping German-style board game."
+          ],
+          "K": [
+            "Sorry! is a board game based on Pachisi.",
+            "Barbarossa is a German-style board game, while Sorry! is a cross-and-circle board game; their more specific descriptions differ."
+          ],
+          "I": [
+            "Sorry! is based on Pachisi.",
+            "Barbarossa is a plasticine-shaping German-style board game."
+          ],
+          "C": [
+            "Sorry! is a board game based on Pachisi.",
+            "Barbarossa is a board game, but Sorry! is not a board game."
+          ]
+        },
+        "B": {
+          "S": [
+            "Pachisi is the basis for the board game Sorry!.",
+            "Plasticine shaping is used in Barbarossa, a German-style board game."
+          ],
+          "K": [
+            "Pachisi is the basis for the board game Sorry!.",
+            "The board-game category includes both games: Barbarossa is German-style and Sorry! follows a cross-and-circle form."
+          ],
+          "I": [
+            "Pachisi is the basis for Sorry!.",
+            "Plasticine shaping is used in Barbarossa, a German-style board game."
+          ],
+          "C": [
+            "Pachisi is the basis for the board game Sorry!.",
+            "Although Barbarossa belongs to the board-game category, Sorry! does not."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_254",
+      "status": "authored_pending_independent_review",
+      "question": "What is the surname of the family in the book Little Women by Louisa May Alcott?",
+      "question_change_reason": "Original question unchanged. Add the fictional-family relation from Alcott original public-domain novel, rather than using author biography or a gold answer.",
+      "blocker_category": null,
+      "blocker_reason": null,
+      "source_citations": [
+        {
+          "doc_id": "T136",
+          "quote": "novelist `` Little Women",
+          "start": 367,
+          "end": 391,
+          "source_sha256": "b2f281138e7ea4b8a8390931e87fd940fafe5049e64c9228e4a74a3c43b5819b"
+        },
+        {
+          "doc_id": "T134",
+          "quote": "About the Kaminsky surname",
+          "start": 57,
+          "end": 83,
+          "source_sha256": "4fee642a3affd0bf0e39d718e3e68b7a56daba393fe0a7fed440c368f2cb0c2b"
+        }
+      ],
+      "expressions": {
+        "A": {
+          "S": [
+            "The family at the centre of Louisa May Alcott's Little Women has the surname March.",
+            "Little Women tells the story of the March family."
+          ],
+          "K": [
+            "The family at the centre of Louisa May Alcott's Little Women has the surname March.",
+            "The author of Little Women was Louisa May Alcott; Alcott is the author's surname."
+          ],
+          "I": [
+            "Louisa May Alcott wrote Little Women.",
+            "Little Women tells the story of a family."
+          ],
+          "C": [
+            "The family at the centre of Louisa May Alcott's Little Women has the surname March.",
+            "The fictional family in Little Women is named April, not March."
+          ]
+        },
+        "B": {
+          "S": [
+            "March is the surname of the family portrayed in Alcott's Little Women.",
+            "The central household in Little Women is the March family."
+          ],
+          "K": [
+            "March is the surname of the family portrayed in Alcott's Little Women.",
+            "Louisa May Alcott is the novelist who wrote the book; her own surname is Alcott."
+          ],
+          "I": [
+            "Alcott wrote Little Women.",
+            "A family forms the central household in Little Women."
+          ],
+          "C": [
+            "March is the surname of the family portrayed in Alcott's Little Women.",
+            "April, rather than March, is the surname of that same fictional household in Little Women."
+          ]
+        }
+      },
+      "author_semantic_label": null,
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false,
+      "required_facts": [
+        "Little Women must be linked to the surname of its fictional central family."
+      ],
+      "authored_answer": "March",
+      "missing_premise": "Little Women central family -> surname is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "The same fictional family in Little Women is given surnameMarch and expressly notMarch butApril.",
+      "compatibility_explanation": "The fictional family surnameMarch is compatible with the author surnameAlcott; they are different roles.",
+      "supplemental_source_citations": [
+        {
+          "source_id": "X008",
+          "start": 0,
+          "end": 78,
+          "quote": "I cannot feel that I have done my duty as humble historian of the March family",
+          "excerpt_sha256": "64098a78c645152133a0ff7e4bb3ee82f93342f6a3cede39d7e4d2b2359a84e5"
+        }
+      ],
+      "source_augmentation_note": "New necessary premises are author paraphrases supported by the explicitly listed supplemental sources. The original released question/evidence remains preserved; C contains authored counterfactual denial, not a factual claim attributed to the sources."
+    },
+    {
+      "original_id": "train_1222",
+      "status": "authored_pending_independent_review",
+      "question": "According to the supplied 2017-18 team record, when did the Toronto Maple Leafs last win the Stanley Cup?",
+      "question_change_reason": "Source-evidence scope clarification; same across all8 variants.",
+      "source_citations": [
+        {
+          "doc_id": "T139",
+          "quote": "Toronto Maple Leafs 2017 -- 18 Toronto Maple Leafs season",
+          "start": 0,
+          "end": 57,
+          "source_sha256": "0d7e8725a13d48a615650e1d7782fd5117abd9bd396a46867bc79f8ed6d58c0f"
+        },
+        {
+          "doc_id": "T139",
+          "quote": "1963 -- 64 , 1966 -- 67",
+          "start": 761,
+          "end": 784,
+          "source_sha256": "0d7e8725a13d48a615650e1d7782fd5117abd9bd396a46867bc79f8ed6d58c0f"
+        }
+      ],
+      "required_facts": [
+        "The latest Stanley Cup winning season listed in the supplied2017-18 team record."
+      ],
+      "authored_answer": "1966–67 season (1967)",
+      "missing_premise": "Supplied2017-18 Maple Leafs record -> latest Stanley Cup year/season is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "The same2017-18 record assigns two different most-recent winning seasons,1966-67 and1976-77.",
+      "compatibility_explanation": "Thirteen titles counts championships while1966-67 names the latest winning season; both can hold.",
+      "expressions": {
+        "A": {
+          "S": [
+            "In the supplied 2017-18 Toronto Maple Leafs record, the latest Stanley Cup winning season listed is 1966-67.",
+            "The Maple Leafs' most recent Stanley Cup win in that record was in 1967, the 1966-67 season."
+          ],
+          "K": [
+            "In the supplied 2017-18 Toronto Maple Leafs record, the latest Stanley Cup winning season listed is 1966-67.",
+            "That team record lists 13 Stanley Cup titles in total, with the last one in the 1966-67 season."
+          ],
+          "I": [
+            "The supplied 2017-18 team record describes the Toronto Maple Leafs.",
+            "That record contains information about a Stanley Cup win by the Maple Leafs."
+          ],
+          "C": [
+            "In the supplied 2017-18 Toronto Maple Leafs record, the latest Stanley Cup winning season listed is 1966-67.",
+            "That same 2017-18 team record gives 1976-77 as the Maple Leafs' most recent Stanley Cup winning season."
+          ]
+        },
+        "B": {
+          "S": [
+            "The most recent Stanley Cup winning season in the provided 2017-18 Maple Leafs record is 1966-67.",
+            "According to that record, Toronto's last Stanley Cup win came in 1967, during the 1966-67 season."
+          ],
+          "K": [
+            "The most recent Stanley Cup winning season in the provided 2017-18 Maple Leafs record is 1966-67.",
+            "Thirteen is the record's total number of Stanley Cup titles;1966-67 is the latest season associated with one."
+          ],
+          "I": [
+            "The Toronto Maple Leafs are described in the provided 2017-18 team record.",
+            "The record includes a Stanley Cup win by that team."
+          ],
+          "C": [
+            "The most recent Stanley Cup winning season in the provided 2017-18 Maple Leafs record is 1966-67.",
+            "The very same 2017-18 record instead places the last Stanley Cup title in the 1976-77 season."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    },
+    {
+      "original_id": "train_33",
+      "status": "authored_pending_independent_review",
+      "question": "What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",
+      "question_change_reason": "Original question unchanged. Supply the explicit dish/preparation mapping from Japanese government food material, distinguishing raw-fish sashimi from rice-based sushi.",
+      "blocker_category": null,
+      "blocker_reason": null,
+      "source_citations": [
+        {
+          "doc_id": "T144",
+          "quote": "Japanese Sushi and or Sashimi",
+          "start": 168,
+          "end": 197,
+          "source_sha256": "d32e4e931941d29520b7fc099de2874ba27d791b3bb2ccd69bda4f8dbecc0042"
+        },
+        {
+          "doc_id": "T144",
+          "quote": "in the Nigiri style or in rolls",
+          "start": 281,
+          "end": 312,
+          "source_sha256": "d32e4e931941d29520b7fc099de2874ba27d791b3bb2ccd69bda4f8dbecc0042"
+        }
+      ],
+      "expressions": {
+        "A": {
+          "S": [
+            "The Japanese dish of sliced raw fish served with dipping sauce, vegetables and wasabi is sashimi.",
+            "Sashimi consists of fresh raw-fish slices accompanied by sauce and garnishes."
+          ],
+          "K": [
+            "The Japanese dish of sliced raw fish served with dipping sauce, vegetables and wasabi is sashimi.",
+            "Sashimi is served without rice, allowing the raw fish to be eaten on its own."
+          ],
+          "I": [
+            "The Japanese preparation uses sliced raw fish served with dipping sauce, vegetables and wasabi.",
+            "Fresh raw-fish slices are accompanied by sauce and garnishes."
+          ],
+          "C": [
+            "The Japanese dish of sliced raw fish served with dipping sauce, vegetables and wasabi is sashimi.",
+            "That same dish of raw-fish slices with sauce, vegetables and wasabi is sushi, not sashimi."
+          ]
+        },
+        "B": {
+          "S": [
+            "Sashimi names the Japanese preparation described here: raw fish in slices with sauce, vegetables and wasabi.",
+            "Fresh raw-fish slices with condiments and garnishes are served as sashimi."
+          ],
+          "K": [
+            "Sashimi names the Japanese preparation described here: raw fish in slices with sauce, vegetables and wasabi.",
+            "Sashimi presents its raw fish on its own, without rice."
+          ],
+          "I": [
+            "The Japanese preparation described here uses raw fish in slices with sauce, vegetables and wasabi.",
+            "Fresh raw-fish slices are served with condiments and garnishes."
+          ],
+          "C": [
+            "Sashimi names the Japanese preparation described here: raw fish in slices with sauce, vegetables and wasabi.",
+            "Sushi, rather than sashimi, is the name of this very raw-fish preparation with those accompaniments."
+          ]
+        }
+      },
+      "author_semantic_label": null,
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false,
+      "required_facts": [
+        "The raw-fish slices, dipping sauce, vegetables and wasabi preparation must be explicitly linked to its dish name."
+      ],
+      "authored_answer": "Sashimi",
+      "missing_premise": "The described Japanese raw-fish preparation -> dish name is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "TargetA names the specified raw-fish dish sashimi; targetB explicitly denies that identification and calls the same preparation sushi.",
+      "compatibility_explanation": "The preparation and serving it without rice are compatible descriptions of sashimi.",
+      "supplemental_source_citations": [
+        {
+          "source_id": "X009",
+          "start": 0,
+          "end": 133,
+          "quote": "Sashimi is a Japanese food that consists of thinly sliced fresh raw fish served with a dipping sauce.\nwasabi\nthinly sliced vegetables",
+          "excerpt_sha256": "ad4604139848cc64bdbe7e670143267cd2a30c770f91c3646eced03cf9fcb760"
+        },
+        {
+          "source_id": "X010",
+          "start": 0,
+          "end": 59,
+          "quote": "Sashimi platters include the freshest raw fish without rice",
+          "excerpt_sha256": "68ff8461dc4e245b12dbb85f623c1640573b1541efa263a41671b059cde9f12d"
+        }
+      ],
+      "source_augmentation_note": "New necessary premises are author paraphrases supported by the explicitly listed supplemental sources. The original released question/evidence remains preserved; C contains authored counterfactual denial, not a factual claim attributed to the sources."
+    },
+    {
+      "original_id": "train_1709",
+      "status": "authored_pending_independent_review",
+      "question": "How many episodes of home fires are there?",
+      "question_change_reason": "Original question unchanged.",
+      "source_citations": [
+        {
+          "doc_id": "T151",
+          "quote": "No. of episodes 12",
+          "start": 527,
+          "end": 545,
+          "source_sha256": "67beb4ed1bbf4b8bf256c444494e0f446f57e746b7495469a5fccc683d12b7d8"
+        },
+        {
+          "doc_id": "T151",
+          "quote": "Original release 3 May 2015",
+          "start": 886,
+          "end": 913,
+          "source_sha256": "67beb4ed1bbf4b8bf256c444494e0f446f57e746b7495469a5fccc683d12b7d8"
+        }
+      ],
+      "required_facts": [
+        "The total episode count for the Home Fires series described in the supplied record."
+      ],
+      "authored_answer": "12 episodes",
+      "missing_premise": "Supplied Home Fires series record -> episode total is not supplied by the revised I targets. Only matched-S-entailed residual context is retained; no new non-answer facts are intended. Each residual assertion is an identity, context, or existential/generalized consequence of the matched S; it is not imported from another condition or world knowledge.",
+      "conflict_explanation": "The same described series has12 episodes versus10 episodes.",
+      "compatibility_explanation": "Episode count and per-episode running time measure different properties and are compatible.",
+      "expressions": {
+        "A": {
+          "S": [
+            "Home Fires has 12 episodes in the supplied series record.",
+            "The total episode count for the described Home Fires series is 12."
+          ],
+          "K": [
+            "Home Fires has 12 episodes in the supplied series record.",
+            "The series record gives 12 episodes with a running time of 44-46 minutes per episode."
+          ],
+          "I": [
+            "Home Fires is described in the supplied series record.",
+            "The series record contains information about Home Fires episodes."
+          ],
+          "C": [
+            "Home Fires has 12 episodes in the supplied series record.",
+            "The total episode count for that same Home Fires series record is 10."
+          ]
+        },
+        "B": {
+          "S": [
+            "The provided record lists 12 episodes for Home Fires.",
+            "Twelve is the total number of episodes in the Home Fires series described here."
+          ],
+          "K": [
+            "The provided record lists 12 episodes for Home Fires.",
+            "The record lists 12 episodes, each running between 44 and 46 minutes."
+          ],
+          "I": [
+            "The provided series record describes Home Fires.",
+            "Information about episodes of Home Fires appears in the series record."
+          ],
+          "C": [
+            "The provided record lists 12 episodes for Home Fires.",
+            "That very series record lists ten Home Fires episodes in total."
+          ]
+        }
+      },
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_gold": false
+    }
+  ],
+  "supersedes": "prompts/semantic_transfer_materials_v4.json",
+  "revision_reason": "Versioned relation-level residual I reconstruction and expression-fidelity repair after exposed author audit; original v4-r2 remains frozen.",
+  "source_resolution_audit_path": "prompts/semantic_transfer_source_resolution_v1.json",
+  "supplemental_source_path": "prompts/semantic_transfer_supplemental_sources_v1.json",
+  "source_policy_amendment_path": "prompts/semantic_transfer_source_augmentation_v1.json",
+  "control_revision_path": "prompts/semantic_transfer_control_revision_v1.json"
+}

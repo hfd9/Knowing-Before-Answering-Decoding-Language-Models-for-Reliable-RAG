@@ -1,0 +1,530 @@
+{
+  "status": "review_recommendations_only_not_applied",
+  "source_inputs_sha256": "5b948b3931290ee434b211a308bd784a50f17ef13fd11dda568bf1bbd5047ade",
+  "concrete_document_edits": [
+    {
+      "id": "stv02_B_S",
+      "original_id": "train_150",
+      "partition": "semantic_train",
+      "doc_slot": 3,
+      "before": "Mont Saint-Jean and Waterloo are two names for the same military encounter, fought near the ridge.",
+      "after_proposal": "Mont Saint-Jean and Waterloo are two names for the same military encounter, fought along the Mont Saint-Jean ridge.",
+      "before_sha256": "6b25ad04160f4e007a753fb18575095837afebce0179255de69201a41429fea3",
+      "after_sha256": "573aaea29ba999f45678b18b1e0e9b1b34907c56424d98d7daf093051a437533",
+      "reason": "恢复A的along/ridge专名，避免空间精度变化。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv05_B_S",
+      "original_id": "train_1333",
+      "partition": "semantic_train",
+      "doc_slot": 2,
+      "before": "Lasers are used in Khet, a board game in the abstract strategy tradition.",
+      "after_proposal": "Lasers are used in Khet, a chess-like board game in the abstract strategy tradition.",
+      "before_sha256": "0b8157b47240b4e82654d7942d34436982f8a2290c64aafdb4e35561e18bac15",
+      "after_sha256": "f333d290c9c43c312e69dd0d60fb81fdd82dc631c8e87370f72ba21a66a39cbf",
+      "reason": "恢复A已有的chess-like附带属性。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv05_B_K",
+      "original_id": "train_1333",
+      "partition": "semantic_train",
+      "doc_slot": 2,
+      "before": "Lasers are used in Khet, a board game in the abstract strategy tradition.",
+      "after_proposal": "Lasers are used in Khet, a chess-like board game in the abstract strategy tradition.",
+      "before_sha256": "0b8157b47240b4e82654d7942d34436982f8a2290c64aafdb4e35561e18bac15",
+      "after_sha256": "f333d290c9c43c312e69dd0d60fb81fdd82dc631c8e87370f72ba21a66a39cbf",
+      "reason": "恢复A已有的chess-like附带属性。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv05_B_C",
+      "original_id": "train_1333",
+      "partition": "semantic_train",
+      "doc_slot": 2,
+      "before": "Lasers are used in Khet, a board game in the abstract strategy tradition.",
+      "after_proposal": "Lasers are used in Khet, a chess-like board game in the abstract strategy tradition.",
+      "before_sha256": "0b8157b47240b4e82654d7942d34436982f8a2290c64aafdb4e35561e18bac15",
+      "after_sha256": "f333d290c9c43c312e69dd0d60fb81fdd82dc631c8e87370f72ba21a66a39cbf",
+      "reason": "恢复A已有的chess-like附带属性。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv07_B_S",
+      "original_id": "train_744",
+      "partition": "semantic_train",
+      "doc_slot": 2,
+      "before": "The Fiery Face was a nickname of James II of Scots, the Stewart monarch whose lifespan was 1430–1460.",
+      "after_proposal": "The Fiery Face was a nickname of James II of Scots, the 38th King of Scots and Stewart monarch whose lifespan was 1430–1460.",
+      "before_sha256": "8d1235e2f5196e1a8778a728d244bfedb8491398f59e4b36dafa3438db167659",
+      "after_sha256": "ab26f045880d09d4b4bc314d14b04bbf878c00cedeb420b6e3cd9a1723a107ac",
+      "reason": "恢复A已有38th序数；不改题中人物范围。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv07_B_C",
+      "original_id": "train_744",
+      "partition": "semantic_train",
+      "doc_slot": 2,
+      "before": "The Fiery Face was a nickname of James II of Scots, the Stewart monarch whose lifespan was 1430–1460.",
+      "after_proposal": "The Fiery Face was a nickname of James II of Scots, the 38th King of Scots and Stewart monarch whose lifespan was 1430–1460.",
+      "before_sha256": "8d1235e2f5196e1a8778a728d244bfedb8491398f59e4b36dafa3438db167659",
+      "after_sha256": "ab26f045880d09d4b4bc314d14b04bbf878c00cedeb420b6e3cd9a1723a107ac",
+      "reason": "恢复A已有38th序数；不改题中人物范围。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv10_B_K",
+      "original_id": "train_335",
+      "partition": "semantic_train",
+      "doc_slot": 5,
+      "before": "The actor born Kevin Joseph Connors used the name Chuck Connors and played Lucas McCain in The Rifleman.",
+      "after_proposal": "Kevin Joseph Connors was professionally known as Chuck Connors and played Lucas McCain in The Rifleman.",
+      "before_sha256": "d97dbb44c47613e2596b64dd8a51087b65783875a5c4cd1d435275b61110c64f",
+      "after_sha256": "d37ba4ef9eb203b33e8f5a14638655f2843187de62b6e7ca28e84ae124ca0574",
+      "reason": "删除A未明说的born属性，仅保留专业用名关系。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv13_B_K",
+      "original_id": "train_405",
+      "partition": "semantic_dev",
+      "doc_slot": 4,
+      "before": "WashU is privately run, while the four-campus Colorado system is public.",
+      "after_proposal": "WashU is a privately run research university, while the four-campus Colorado system is public.",
+      "before_sha256": "3a1237ce6e7ffbabe2c5171514ebc73dafc646bcf5df265cebb400aa013903a6",
+      "after_sha256": "fe5021a5e43773df91cf13aa3775cf57d70124dacdea28e6793cc6a257cd0799",
+      "reason": "恢复research属性。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv14_B_I",
+      "original_id": "train_1525",
+      "partition": "semantic_dev",
+      "doc_slot": 5,
+      "before": "The men's singles runner-up was Djokovic, and the final was played over four sets.",
+      "after_proposal": "Djokovic was the men's singles runner-up at the 2015 French Open, and that final was played over four sets.",
+      "before_sha256": "6395e377fa9ac95b6483e70a987f96d5f40f66d658f03c8f018e355b5955c904",
+      "after_sha256": "48739df6ea15431a568eca92758c259ae009b774c026a944525347f3b26d5339",
+      "reason": "仅示范消除A/B指代精度差异；若同时修S/I最小删除，此候选须整体重写，不能盲目叠加。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv16_B_S",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "doc_slot": 4,
+      "before": "Weak winds make the urban-rural temperature contrast especially apparent, and it is often larger at night.",
+      "after_proposal": "Weak winds make the urban heat island's urban-rural temperature contrast especially apparent, and it is often larger at night.",
+      "before_sha256": "dfcd52e477cff44373629b0fee1990a4bcb01ed998b64c796454ec90bd5f7aea",
+      "after_sha256": "de4ec5d8fb07bf820ea7453a9af8009ba9ce1fd68056e1eb0215f7814b0f7ad4",
+      "reason": "恢复A已有urban heat island术语命名。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv16_A_I",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "doc_slot": 2,
+      "before": "An urban heat island is an urban area that is significantly warmer than surrounding rural areas.",
+      "after_proposal": "An urban heat island is an urban area that is warmer than surrounding rural areas.",
+      "before_sha256": "fda4f481fa92b57bd52c0cdd84b653c397480d26b5f3fd37b2615f7328d818dd",
+      "after_sha256": "6ff6a22c2d54e264d1de4422a84ca692fcaa2ab790c81516a88f4149faab3f4f",
+      "reason": "去掉仅A增加的significantly程度；完整S/I修订仍须另外协调。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv17_A_C",
+      "original_id": "train_989",
+      "partition": "semantic_dev",
+      "doc_slot": 5,
+      "before": "If more than one player remains after the last betting round, those players must keep their cards concealed and must not expose their hands.",
+      "after_proposal": "If more than one player remains after the last betting round, the remaining players do not expose their hands and keep all of their cards concealed.",
+      "before_sha256": "9c43f3b6a7b42852f6b0cd427a9a0414d309fd10eeb6e4d93b4ca9fb18ff1e85",
+      "after_sha256": "ea91f461c5686912f2c3d15c2900d8efa0f9f6c2dfe43ae2c6fe1f643ec18c8f",
+      "reason": "将反主张改为与正主张同层次的一般程序描述；不再用行为描述与规范禁止构造矛盾。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv17_B_C",
+      "original_id": "train_989",
+      "partition": "semantic_dev",
+      "doc_slot": 5,
+      "before": "With at least two players left after that final betting round, revealing their hands is prohibited and their cards must stay concealed.",
+      "after_proposal": "With at least two players left after the final betting round, none of those remaining players reveals a hand; their cards remain concealed.",
+      "before_sha256": "cfae6963184f0f18b636a302726c7ad385c8c008bac3182f37ece911f7dd92d5",
+      "after_sha256": "2a2d57e5b8869ba6714a33f62e13434904415d2e18666c6397d8bc343375ae15",
+      "reason": "A/B负面主张同为一般行为描述；不是修改真实扑克规则，仍为作者反事实。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv18_A_K",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "doc_slot": 4,
+      "before": "Their usual worship weekday is Sunday, with services typically held in private homes on alternate weeks.",
+      "after_proposal": "Their usual worship day of the week is Sunday, with services typically held in private homes on alternate weeks.",
+      "before_sha256": "836ca462b9a289a78ed7fb75ff390dc497c23df761556948ba91b3b066627b58",
+      "after_sha256": "8bcf26c0c91a9d53189d61c63e7a2236d83a0bdb58f3a001a8d6337558bbc022",
+      "reason": "weekday改day of the week，避免把Sunday误叫工作日。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv18_B_S",
+      "original_id": "train_1302",
+      "partition": "semantic_dev",
+      "doc_slot": 4,
+      "before": "The weekday normally used for those communities' worship services is Sunday.",
+      "after_proposal": "The day of the week normally used for those communities' worship services is Sunday.",
+      "before_sha256": "7ab79f531796ed96f051e8e63ddc18a2f9b02b3820240cbbd92d88925a4bea17",
+      "after_sha256": "783dcd13975fafbfaaa336f8ce7fc30c704f88300c20484d2d13c83eb23170f6",
+      "reason": "去除weekday/Sunday术语噪声。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv26_B_K",
+      "original_id": "train_1150",
+      "partition": "semantic_eval",
+      "doc_slot": 4,
+      "before": "The board-game category includes both games: Barbarossa has a German-style plasticine mechanism and Sorry! follows a cross-and-circle form.",
+      "after_proposal": "The board-game category includes both games: Barbarossa is German-style and Sorry! follows a cross-and-circle form.",
+      "before_sha256": "02f3c6680f80a9604754a7ec5759c796bb52424b9933aef14ae7cea9f16e9e9e",
+      "after_sha256": "b48c584b1ca46ca732565d684c313a273d6fb863bde6bcf42a704dc62ac82952",
+      "reason": "删除仅B_K新增的plasticine机制；A/B均保留各自类型而不新增机制。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv27_B_I",
+      "original_id": "train_254",
+      "partition": "semantic_eval",
+      "doc_slot": 2,
+      "before": "Little Women is a novel written by Louisa May Alcott.",
+      "after_proposal": "Little Women was written by Louisa May Alcott.",
+      "before_sha256": "743dac351027a0827f128042fbe93d68984c0e0617ace38ebdc4f8ab8122effe",
+      "after_sha256": "ca56c5198ffbe381bfcae1ef669bc4fea0fcfc58fbe832dd91160f8ec968e573",
+      "reason": "删除仅B_I额外声明的novel体裁，匹配A_I。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv29_B_S",
+      "original_id": "train_33",
+      "partition": "semantic_eval",
+      "doc_slot": 5,
+      "before": "Raw-fish slices with condiments and garnishes are served as sashimi.",
+      "after_proposal": "Fresh raw-fish slices with condiments and garnishes are served as sashimi.",
+      "before_sha256": "68f43dea8dc33e0cc29e9fe57136bec15e8e1cf67f5d42440edd3cfd64969f3c",
+      "after_sha256": "5d9c9e79c8b4f5754c8c59cec7ade1350a0fa0bf0eb33d52dc47a370ffdc2b5b",
+      "reason": "恢复A已有fresh属性。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    },
+    {
+      "id": "stv29_B_K",
+      "original_id": "train_33",
+      "partition": "semantic_eval",
+      "doc_slot": 5,
+      "before": "Unlike rice-based sushi, sashimi presents its raw fish without rice.",
+      "after_proposal": "Sashimi presents its raw fish on its own, without rice.",
+      "before_sha256": "f8b61de17626fef67e7eb41601efd3f774c4f1f108224f63a7c7569f7746bff2",
+      "after_sha256": "0c111529c9c6e40e14558fa16da887ace09fbd2e4eea8837a81f50c9ec19f008",
+      "reason": "删除仅B_K新增rice-based sushi比较命题/类别词提示。",
+      "applied": false,
+      "semantic_reapproval_required": true
+    }
+  ],
+  "S_to_I_redesign_queue": [
+    {
+      "original_id": "train_1102",
+      "affected_I_ids": [
+        "stv01_A_I",
+        "stv01_B_I"
+      ],
+      "issue": "新增印尼等六个受影响国家；删除节日关系之外还改变事实清单。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_150",
+      "affected_I_ids": [
+        "stv02_A_I",
+        "stv02_B_I"
+      ],
+      "issue": "I额外明确现今Belgium地理属性；S没有这一国家命题。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_1661",
+      "affected_I_ids": [
+        "stv03_A_I",
+        "stv03_B_I"
+      ],
+      "issue": "I增加central/wholly within territory以及多个商业水道的事实，非单一关系删除。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_1333",
+      "affected_I_ids": [
+        "stv05_A_I",
+        "stv05_B_I"
+      ],
+      "issue": "I增加Egyptian theme及mirrored pieces，且去掉chess-like/abstract strategy，不是只删board-game必要关系。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_1492",
+      "affected_I_ids": [
+        "stv06_A_I",
+        "stv06_B_I"
+      ],
+      "issue": "I新加十三选手、Jan-Apr时间及两个亚军，同时删除冠军与Pittsburgh，非单一关系删除。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_744",
+      "affected_I_ids": [
+        "stv07_A_I",
+        "stv07_B_I"
+      ],
+      "issue": "I把昵称替换为Stewart dynasty显式断言；王朝关系不是S中的明示独立命题。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_1430",
+      "affected_I_ids": [
+        "stv08_A_I",
+        "stv08_B_I"
+      ],
+      "issue": "I新增主持人、节目体裁、118集和首播日期，非单一season-count删除。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_421",
+      "affected_I_ids": [
+        "stv09_A_I",
+        "stv09_B_I"
+      ],
+      "issue": "I新增ABC Family电视网；S已含播出时段但没有电视网，非单一计数删除。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_335",
+      "affected_I_ids": [
+        "stv10_A_I",
+        "stv10_B_I"
+      ],
+      "issue": "I新增1958、五年播出和后续演艺经历，而非仅删除角色关系。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_1136",
+      "affected_I_ids": [
+        "stv11_A_I",
+        "stv11_B_I"
+      ],
+      "issue": "I新增塑料、制造者/玩法位置等属性，非单一市场年份删除。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_1154",
+      "affected_I_ids": [
+        "stv12_A_I",
+        "stv12_B_I"
+      ],
+      "issue": "I新增早段三种动物和重复结构，非单一last-creature关系删除。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_1470",
+      "affected_I_ids": [
+        "stv19_A_I",
+        "stv19_B_I"
+      ],
+      "issue": "I新增Buckeye State昵称，非单一capital关系删除。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_1805",
+      "affected_I_ids": [
+        "stv20_A_I",
+        "stv20_B_I"
+      ],
+      "issue": "I新增Pearl Jam1998翻唱；S无该翻唱断言，非只删除原唱者。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_32",
+      "affected_I_ids": [
+        "stv21_A_I",
+        "stv21_B_I"
+      ],
+      "issue": "I新增Roberta国籍与职业事实，删除三项获胜链，非单一关系删除。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_341",
+      "affected_I_ids": [
+        "stv22_A_I",
+        "stv22_B_I"
+      ],
+      "issue": "I新增为Elizabeth I供香料的身份，非单一学校名删除。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_499",
+      "affected_I_ids": [
+        "stv24_A_I",
+        "stv24_B_I"
+      ],
+      "issue": "I新增Billboard第一和September1962日期，非单一录唱者删除。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_1150",
+      "affected_I_ids": [
+        "stv26_A_I",
+        "stv26_B_I"
+      ],
+      "issue": "I新增Sorry人数和年龄，删除Pachisi/board-game关系，非单一必要关系删除。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_254",
+      "affected_I_ids": [
+        "stv27_A_I",
+        "stv27_B_I"
+      ],
+      "issue": "I新增作者国籍/生卒/诗人身份，非单一家庭姓氏删除。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_1222",
+      "affected_I_ids": [
+        "stv28_A_I",
+        "stv28_B_I"
+      ],
+      "issue": "I新增13次总冠军数，非单一last-winning-season删除。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_33",
+      "affected_I_ids": [
+        "stv29_A_I",
+        "stv29_B_I"
+      ],
+      "issue": "I新增without rice；S两目标没有无饭命题，非只删除菜名映射。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_1709",
+      "affected_I_ids": [
+        "stv30_A_I",
+        "stv30_B_I"
+      ],
+      "issue": "I新增创作者/体裁/首播时间，而非只删总集数。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_405",
+      "affected_I_ids": [
+        "stv13_A_I",
+        "stv13_B_I"
+      ],
+      "issue": "I新增Colorado四个公立校区属性，S没有这些属性，非单一位置前提删除。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_1525",
+      "affected_I_ids": [
+        "stv14_A_I",
+        "stv14_B_I"
+      ],
+      "issue": "I新增Djokovic亚军与四盘赛制，S只给冠军，不是只删除冠军。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_1064",
+      "affected_I_ids": [
+        "stv15_A_I",
+        "stv15_B_I"
+      ],
+      "issue": "I新增suffering/illness/harsh laws例句领域；未保留为仅词义方向删除。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_315",
+      "affected_I_ids": [
+        "stv16_A_I",
+        "stv16_B_I"
+      ],
+      "issue": "I把机制换成热岛定义；A加significantly，B新增原B_S没有的urban heat island术语，不是所有附带事实保持。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_989",
+      "affected_I_ids": [
+        "stv17_A_I",
+        "stv17_B_I"
+      ],
+      "issue": "MODALITY_RECAST: I将最后一轮条件泛化为任一轮，并重写持牌/剩余人数；正面是否规则义务仍有语境依赖，不称严格删除对照。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    },
+    {
+      "original_id": "train_1302",
+      "affected_I_ids": [
+        "stv18_A_I",
+        "stv18_B_I"
+      ],
+      "issue": "I新增sermons/scripture/prayer/hymns内容，S仅给日期/频率/场所，不是只删除星期。",
+      "required_revision": "从对应S中仅移除必要答案关系，保留其余已蕴涵事实；不加入新日期、人数、人物、机构属性或词项。若不能保持自然表达与五篇完整文档，保留无法严格构造的记录，不强行标通过。",
+      "concrete_replacement_not_yet_composed": true
+    }
+  ],
+  "source_materials_unchanged": true,
+  "new_version_and_review_required": true,
+  "not_a_ready_material_batch": true,
+  "overlap_note": "I表达细节候选与S/I整体修订存在重叠，须人工协调后组成单一新版本；不能按顺序自动套用。",
+  "gpu_launch_ready": false
+}

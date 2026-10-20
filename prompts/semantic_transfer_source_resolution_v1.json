@@ -1,0 +1,502 @@
+{
+  "schema_version": 1,
+  "task": "source_only_followup_of_nine_incomplete_bases",
+  "operator": "current_coordinator_with_project_history_exposure",
+  "source_catalog_sha256": "3869c8141ad2dd03dc70f8e5c0483b9003cd2cd31b8e8335335f8a2dff77c935",
+  "prior_spec_sha256": "8ef7e8ed90be68102ff8cc0319250d9824c39056a30855a873864831456acc7c",
+  "full_passages_read": [
+    "T034",
+    "T035",
+    "T036",
+    "T037",
+    "T038",
+    "T039",
+    "T052",
+    "T053",
+    "T054",
+    "T055",
+    "T056",
+    "T057",
+    "T058",
+    "T059",
+    "T060",
+    "T061",
+    "T062",
+    "T063",
+    "T064",
+    "T065",
+    "T066",
+    "T092",
+    "T093",
+    "T094",
+    "T095",
+    "T096",
+    "T097",
+    "T098",
+    "T099",
+    "T100",
+    "T101",
+    "T102",
+    "T114",
+    "T115",
+    "T116",
+    "T117",
+    "T118",
+    "T119",
+    "T134",
+    "T135",
+    "T136",
+    "T137",
+    "T138",
+    "T144",
+    "T145",
+    "T146",
+    "T147",
+    "T148",
+    "T149"
+  ],
+  "full_passages_read_count": 49,
+  "display_truncation_note": "The first combined display was truncated. Batches subsequently showed the hula/rhyme, universities/Ohio, song/Korea, literature/cuisine passages in full; James T034–T037 were visible in the initial display and T038–T039 separately re-read. No truncated display was counted as complete.",
+  "decisions": [
+    {
+      "original_id": "train_744",
+      "decision": "author_draft_after_explicit_referent_disambiguation",
+      "source_question": "Was James II known as: James The Bald, Fiery Face, or The Red King?",
+      "proposed_question": "Was James II of Scots (1430–1460) known as James the Bald, Fiery Face, or the Red King?",
+      "requested_relation": "James II (Scots1430–1460) → nickname",
+      "reason": "Specify the realm/lifespan from the existing index; preserve nickname request and options.",
+      "rejected_shortcut": "Interpreting the unqualified original question as unambiguously Scottish without disclosure is rejected.",
+      "source_doc_ids": [
+        "T034",
+        "T035",
+        "T036",
+        "T037",
+        "T038"
+      ],
+      "background_doc_ids": [
+        "T034",
+        "T036",
+        "T039"
+      ],
+      "full_passages_read": [
+        "T034",
+        "T035",
+        "T036",
+        "T037",
+        "T038",
+        "T039"
+      ],
+      "citations": [
+        {
+          "doc_id": "T037",
+          "quote": "James II ` the Fiery Face ' STEWART ( 1430 - 1460 ) ; 38th King of SCOTS",
+          "start": 2263,
+          "end": 2335,
+          "source_sha256": "b7add579711fab142e47c4e5cd35c9c05a23cca69b17c14bc847700e48c4d396"
+        },
+        {
+          "doc_id": "T037",
+          "quote": "James II STUART ( King ) of ENGLAND ( 14/10/1633 - 16/9/1701 ) ; aka James VII of SCOTS",
+          "start": 2541,
+          "end": 2628,
+          "source_sha256": "b7add579711fab142e47c4e5cd35c9c05a23cca69b17c14bc847700e48c4d396"
+        },
+        {
+          "doc_id": "T034",
+          "quote": "later King James II of England",
+          "start": 1703,
+          "end": 1733,
+          "source_sha256": "4179f993c17e202f65ca4b0defb2bdefad121b2af7dc25c433729dde38eafbd5"
+        }
+      ],
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_confirmation": false,
+      "semantic_label": null
+    },
+    {
+      "original_id": "train_1136",
+      "decision": "remains_incomplete",
+      "source_question": "When did the hula hoop make its debut?",
+      "proposed_question": "When did the hula hoop make its debut?",
+      "requested_relation": "Hula hoop → debut date",
+      "reason": "A modern invention date and historical hoop play are explicit; the debut event is not identified.",
+      "rejected_shortcut": "Changing debut to invented, or assuming invention equals market debut, changes or supplies the missing relation.",
+      "source_doc_ids": [
+        "T052",
+        "T053",
+        "T054",
+        "T053",
+        "T055"
+      ],
+      "background_doc_ids": [
+        "T052",
+        "T053",
+        "T053"
+      ],
+      "full_passages_read": [
+        "T052",
+        "T053",
+        "T054",
+        "T055"
+      ],
+      "citations": [
+        {
+          "doc_id": "T055",
+          "quote": "The modern hula hoop was invented in 1958",
+          "start": 77,
+          "end": 118,
+          "source_sha256": "c6d00fe3bd3ac02a99905c059d5a5a9b7ea027c45ff806141eaf5c65f15fd4ac"
+        },
+        {
+          "doc_id": "T055",
+          "quote": "throughout history",
+          "start": 272,
+          "end": 290,
+          "source_sha256": "c6d00fe3bd3ac02a99905c059d5a5a9b7ea027c45ff806141eaf5c65f15fd4ac"
+        }
+      ],
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_confirmation": false,
+      "semantic_label": null
+    },
+    {
+      "original_id": "train_1154",
+      "decision": "remains_incomplete",
+      "source_question": "In the nursery rhyme, which was the last creature eaten by the woman who swallowed a fly?",
+      "proposed_question": "In the nursery rhyme, which was the last creature eaten by the woman who swallowed a fly?",
+      "requested_relation": "Rhyme/version → last swallowed creature",
+      "reason": "A review describes a horse and a moral, but supplies no explicit final-creature relation or terminal narrative sequence.",
+      "rejected_shortcut": "A familiar rhyme ending or gold answer cannot supply the missing ordering premise.",
+      "source_doc_ids": [
+        "T056",
+        "T057",
+        "T058",
+        "T059",
+        "T060"
+      ],
+      "background_doc_ids": [
+        "T058",
+        "T061",
+        "T056"
+      ],
+      "full_passages_read": [
+        "T056",
+        "T057",
+        "T058",
+        "T059",
+        "T060",
+        "T061"
+      ],
+      "citations": [
+        {
+          "doc_id": "T060",
+          "quote": "never swallow a horse",
+          "start": 874,
+          "end": 895,
+          "source_sha256": "94e87cd63d3f9e0146161014e9d064996e0ca8e56e8dbc2f36b06360f99f3034"
+        },
+        {
+          "doc_id": "T060",
+          "quote": "go so far as to swallow a horse",
+          "start": 1256,
+          "end": 1287,
+          "source_sha256": "94e87cd63d3f9e0146161014e9d064996e0ca8e56e8dbc2f36b06360f99f3034"
+        }
+      ],
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_confirmation": false,
+      "semantic_label": null
+    },
+    {
+      "original_id": "train_405",
+      "decision": "remains_incomplete",
+      "source_question": "Washington University in St. Louis and University of Colorado, are located in which country?",
+      "proposed_question": "Washington University in St. Louis and University of Colorado, are located in which country?",
+      "requested_relation": "Both named universities → shared country",
+      "reason": "WashU has a United States location; Colorado university has a Colorado location without the Colorado-to-country bridge.",
+      "rejected_shortcut": "The location of other universities and geographic memory do not establish this university/country relation.",
+      "source_doc_ids": [
+        "T062",
+        "T063",
+        "T064",
+        "T065",
+        "T066"
+      ],
+      "background_doc_ids": [
+        "T066",
+        "T064",
+        "T063"
+      ],
+      "full_passages_read": [
+        "T062",
+        "T063",
+        "T064",
+        "T065",
+        "T066"
+      ],
+      "citations": [
+        {
+          "doc_id": "T062",
+          "quote": "Missouri, United States",
+          "start": 156,
+          "end": 179,
+          "source_sha256": "fc5899231dc2e0914d5f74089ad2482e398e76b15c34211098cda16ea3269e6a"
+        },
+        {
+          "doc_id": "T062",
+          "quote": "public universities in Colorado",
+          "start": 790,
+          "end": 821,
+          "source_sha256": "fc5899231dc2e0914d5f74089ad2482e398e76b15c34211098cda16ea3269e6a"
+        }
+      ],
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_confirmation": false,
+      "semantic_label": null
+    },
+    {
+      "original_id": "train_1470",
+      "decision": "remains_incomplete",
+      "source_question": "What is the state capital of Ohio?",
+      "proposed_question": "What is the state capital of Ohio?",
+      "requested_relation": "Ohio → state capital",
+      "reason": "The city list and forum establish Columbus as a largest city; passages about Alabama capitals or the national capital are different targets.",
+      "rejected_shortcut": "Replacing capital with largest city changes the requested property; using that role or outside memory is rejected.",
+      "source_doc_ids": [
+        "T093",
+        "T094",
+        "T095",
+        "T096",
+        "T097"
+      ],
+      "background_doc_ids": [
+        "T096",
+        "T097",
+        "T093"
+      ],
+      "full_passages_read": [
+        "T093",
+        "T094",
+        "T095",
+        "T096",
+        "T097"
+      ],
+      "citations": [
+        {
+          "doc_id": "T094",
+          "quote": "10 largest cities",
+          "start": 183,
+          "end": 200,
+          "source_sha256": "1a7904951202ab77f1bfc36c2097cc54c18e5bf78acffc01bdf40ddecedb4401"
+        },
+        {
+          "doc_id": "T097",
+          "quote": "Columbus is the biggest city",
+          "start": 284,
+          "end": 312,
+          "source_sha256": "caae73785079aa3b09426baa90a66b6f53ff1c7c9f9246aa8b3c6dd0d351cfce"
+        }
+      ],
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_confirmation": false,
+      "semantic_label": null
+    },
+    {
+      "original_id": "train_1805",
+      "decision": "remains_incomplete",
+      "source_question": "Who sang the original oh where oh where can my baby be?",
+      "proposed_question": "Who sang the original oh where oh where can my baby be?",
+      "requested_relation": "Quoted lyric → song identity → original singer",
+      "reason": "Last Kiss metadata identify Wayne Cochran but never connect the quoted lyric to that title.",
+      "rejected_shortcut": "Replacing the lyric question with Last Kiss silently adds the missing bridge; no memory/gold completion.",
+      "source_doc_ids": [
+        "T098",
+        "T092",
+        "T099",
+        "T100",
+        "T101"
+      ],
+      "background_doc_ids": [
+        "T100",
+        "T092",
+        "T102"
+      ],
+      "full_passages_read": [
+        "T098",
+        "T092",
+        "T099",
+        "T100",
+        "T101",
+        "T102"
+      ],
+      "citations": [
+        {
+          "doc_id": "T101",
+          "quote": "`` Last Kiss '' Single by Wayne Cochran",
+          "start": 0,
+          "end": 39,
+          "source_sha256": "9dcdf505d9cab7db86fbbc4dd9e17113301c75c86a9280d01236f17006cdcb9f"
+        }
+      ],
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_confirmation": false,
+      "semantic_label": null
+    },
+    {
+      "original_id": "train_1605",
+      "decision": "remains_incomplete",
+      "source_question": "When was the us involved in the korean war?",
+      "proposed_question": "When was the us involved in the korean war?",
+      "requested_relation": "US → Korean War involvement time",
+      "reason": "The source establishes prewar occupation/withdrawal and war outbreak, not US wartime entry or involvement interval.",
+      "rejected_shortcut": "War onset is not US entry; an end date cannot be supplied from memory or an unrelated oil embargo interval.",
+      "source_doc_ids": [
+        "T114",
+        "T115",
+        "T116",
+        "T117",
+        "T118"
+      ],
+      "background_doc_ids": [
+        "T116",
+        "T117",
+        "T119"
+      ],
+      "full_passages_read": [
+        "T114",
+        "T115",
+        "T116",
+        "T117",
+        "T118",
+        "T119"
+      ],
+      "citations": [
+        {
+          "doc_id": "T115",
+          "quote": "North Korea saw its opportunity and attacked South Korean forces",
+          "start": 1541,
+          "end": 1605,
+          "source_sha256": "755a9250ed40dced487a8d1efa1e39695e32695a5982ca35dd55d1f15e4c662e"
+        },
+        {
+          "doc_id": "T115",
+          "quote": "withdrawing the last remaining combat troops",
+          "start": 1477,
+          "end": 1521,
+          "source_sha256": "755a9250ed40dced487a8d1efa1e39695e32695a5982ca35dd55d1f15e4c662e"
+        }
+      ],
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_confirmation": false,
+      "semantic_label": null
+    },
+    {
+      "original_id": "train_254",
+      "decision": "remains_incomplete",
+      "source_question": "What is the surname of the family in the book Little Women by Louisa May Alcott?",
+      "proposed_question": "What is the surname of the family in the book Little Women by Louisa May Alcott?",
+      "requested_relation": "Little Women → fictional family surname",
+      "reason": "Alcott authorship and unrelated genealogies are available; the fictional family relation is absent.",
+      "rejected_shortcut": "Author surname, an unrelated surname page, gold answer, and March calendar occurrences do not establish the family name.",
+      "source_doc_ids": [
+        "T134",
+        "T135",
+        "T136",
+        "T137",
+        "T138"
+      ],
+      "background_doc_ids": [
+        "T135",
+        "T134",
+        "T137"
+      ],
+      "full_passages_read": [
+        "T134",
+        "T135",
+        "T136",
+        "T137",
+        "T138"
+      ],
+      "citations": [
+        {
+          "doc_id": "T136",
+          "quote": "novelist `` Little Women",
+          "start": 367,
+          "end": 391,
+          "source_sha256": "b2f281138e7ea4b8a8390931e87fd940fafe5049e64c9228e4a74a3c43b5819b"
+        },
+        {
+          "doc_id": "T134",
+          "quote": "About the Kaminsky surname",
+          "start": 57,
+          "end": 83,
+          "source_sha256": "4fee642a3affd0bf0e39d718e3e68b7a56daba393fe0a7fed440c368f2cb0c2b"
+        }
+      ],
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_confirmation": false,
+      "semantic_label": null
+    },
+    {
+      "original_id": "train_33",
+      "decision": "remains_incomplete",
+      "source_question": "What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",
+      "proposed_question": "What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",
+      "requested_relation": "Specified raw-fish preparation → unique dish name",
+      "reason": "The source conjoins sushi and sashimi and describes nigiri/rolls without the requested unique mapping.",
+      "rejected_shortcut": "World culinary knowledge or selecting one of the conflated names does not repair the source relation.",
+      "source_doc_ids": [
+        "T144",
+        "T145",
+        "T146",
+        "T147",
+        "T148"
+      ],
+      "background_doc_ids": [
+        "T147",
+        "T148",
+        "T149"
+      ],
+      "full_passages_read": [
+        "T144",
+        "T145",
+        "T146",
+        "T147",
+        "T148",
+        "T149"
+      ],
+      "citations": [
+        {
+          "doc_id": "T144",
+          "quote": "Japanese Sushi and or Sashimi",
+          "start": 168,
+          "end": 197,
+          "source_sha256": "d32e4e931941d29520b7fc099de2874ba27d791b3bb2ccd69bda4f8dbecc0042"
+        },
+        {
+          "doc_id": "T144",
+          "quote": "in the Nigiri style or in rolls",
+          "start": 281,
+          "end": 312,
+          "source_sha256": "d32e4e931941d29520b7fc099de2874ba27d791b3bb2ccd69bda4f8dbecc0042"
+        }
+      ],
+      "reviewer": "current_coordinator_author_background_exposed",
+      "independent_confirmation": false,
+      "semantic_label": null
+    }
+  ],
+  "authored_bases_added": 1,
+  "constructed_cells_before": 168,
+  "constructed_cells_after": 176,
+  "remaining_incomplete_bases": 8,
+  "remaining_incomplete_cells": 64,
+  "independent_semantic_labels": 0,
+  "new_gpu_forwards": 0,
+  "generated_answers": 0,
+  "trained_probes": 0,
+  "source_scope_unchanged": true,
+  "frozen_base_ids_and_partitions_unchanged": true,
+  "planned_cells": 240,
+  "limitation": "Author interpretation only. A clarified-question draft does not validate the original ambiguous question or count as independent semantic confirmation. Eight missing mappings cannot be repaired without new premises or a changed task under the retained source-only policy."
+}

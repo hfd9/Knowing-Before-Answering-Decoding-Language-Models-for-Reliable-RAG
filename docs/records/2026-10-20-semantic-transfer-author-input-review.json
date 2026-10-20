@@ -1,0 +1,202 @@
+{
+  "recorded_at": "2026-10-20T21:17:04.043076+08:00",
+  "status": "exposed_author_input_review_complete_not_independent",
+  "review_kind": "current_assistant_with_history_exposure_not_independent",
+  "material_run": "runs/qwen2.5-3b-semantic-transfer-materials-v4-r2",
+  "review_run": "runs/qwen2.5-3b-semantic-transfer-author-review-v1",
+  "summary": {
+    "status": "exposed_author_input_review_complete_not_independent",
+    "reviewed_cells": 240,
+    "reviewed_bases": 30,
+    "reviewed_document_slots": 1200,
+    "counts": {
+      "answer": 120,
+      "refuse": 60,
+      "conflict": 58,
+      "unknown": 2
+    },
+    "partitions": {
+      "semantic_train": {
+        "planned": 96,
+        "counts": {
+          "answer": 48,
+          "refuse": 24,
+          "conflict": 24
+        }
+      },
+      "semantic_dev": {
+        "planned": 48,
+        "counts": {
+          "answer": 24,
+          "refuse": 12,
+          "conflict": 10,
+          "unknown": 2
+        }
+      },
+      "semantic_eval": {
+        "planned": 96,
+        "counts": {
+          "answer": 48,
+          "refuse": 24,
+          "conflict": 24
+        }
+      }
+    },
+    "provisional_determinate_cells": 238,
+    "provisional_determinate_coverage": 0.9916666666666667,
+    "independently_reviewed_cells": 0,
+    "approved_semantic_labels": 0,
+    "independent_semantic_coverage": 0,
+    "gpu_launch_ready": false,
+    "approved_for_training": false,
+    "author_comparison": {
+      "same_proposed_class": 238,
+      "unknown_retained": 2
+    },
+    "author_agreement_is_not_accuracy": true,
+    "expression_pairs": {
+      "planned": 120,
+      "same_determinate_reviewed_state": 119,
+      "unknown_pairs": 1,
+      "caveats": 18,
+      "no_specific_difference_identified": 102
+    },
+    "S_to_I_pairs": {
+      "planned": 60,
+      "reviewed_answer_to_refuse": 60,
+      "structural_counts": {
+        "other_facts_changed": 52,
+        "deletion_only_at_required_relation": 6,
+        "modality_recast": 2
+      }
+    },
+    "S_to_C_pairs": {
+      "planned": 60,
+      "reviewed_answer_to_conflict": 58,
+      "unknown_pairs": 2
+    },
+    "S_to_K_pairs": {
+      "planned": 60,
+      "reviewed_answer_to_answer": 60
+    },
+    "fixed_question_bases": 30,
+    "fixed_background_and_slot_bases": 30,
+    "unknown_ids": [
+      "stv17_A_C",
+      "stv17_B_C"
+    ],
+    "no_probe_or_behavior_results_used": true,
+    "new_gpu_forwards": 0,
+    "generated_answers": 0,
+    "trained_probes": 0
+  },
+  "reviewed_unique_full_documents": 435,
+  "unique_background_documents": 83,
+  "background_slots": 90,
+  "target_citations": 480,
+  "development48_seal_sha256": "de9dd0bc391f0cf546cac36ff494bd190484064b1bb76957ec71bcd4cee0b45d",
+  "actual_commands": [
+    {
+      "command": "/large_disk/wf/miniconda3/envs/kba-rag/bin/python -B scripts/semantic_transfer_author_review.py --stage analyze",
+      "exit_code": 0,
+      "log_sha256": "5a51740bb2cacf2d4a2e91631cc1101006e51579d1b223600016d68e0c5b6122"
+    },
+    {
+      "command": "/large_disk/wf/miniconda3/envs/kba-rag/bin/python -B scripts/semantic_transfer_author_review.py --stage verify",
+      "exit_code": 0,
+      "log_sha256": "5a51740bb2cacf2d4a2e91631cc1101006e51579d1b223600016d68e0c5b6122"
+    }
+  ],
+  "tests": {
+    "new_CPU_tests_passed": 5,
+    "seconds": 0.474,
+    "log_sha256": "cf2d2ffa072c2a2cb4c4e5973719734a1a27d19d223e4d1f65eb7c15f1fda37c",
+    "old53_and120_suites_not_rerun": true,
+    "tests_validate_integrity_not_semantic_truth": true,
+    "resolved_development_failure": "CSV CRLF/read_text newline normalization mismatch fixed with explicit LF before production export."
+  },
+  "revision_proposals": {
+    "concrete_document_edits": 19,
+    "S_I_redesign_bases": 27,
+    "S_I_redesign_cells": 54,
+    "applied": 0,
+    "ready_material_batch": false
+  },
+  "new_source_sha256": {
+    "docs/records/2026-10-20-semantic-transfer-author-input-review-ratings.json": "bb8045b1e40d9eafa346b8b245110e7d1bd3a896ddeffd31757978749126b935",
+    "docs/records/2026-10-20-semantic-transfer-author-input-review-development48-sealed.json": "de9dd0bc391f0cf546cac36ff494bd190484064b1bb76957ec71bcd4cee0b45d",
+    "docs/records/2026-10-20-semantic-transfer-author-input-review-revision-proposals.json": "89e4f368183e02bf5bb1ae1205198c2f3999c8d81c2dd0925943a405febe6486",
+    "docs/records/2026-10-20-semantic-transfer-author-input-review-cells.csv": "61166b2a5349b1a61106fbf423cfa892bd8b9f4387e6f4fb1727519440edde43",
+    "docs/records/2026-10-20-semantic-transfer-author-input-review-pairs.csv": "fb306fa10b6783e90ada4de2643c9a4e7d3360025ddb44bf1362cdfc5aac2ba2",
+    "scripts/semantic_transfer_author_review.py": "9177d74fde3e231c91bdb6516106bd7f6357afb30ccc0d2c62d43566a3a58853",
+    "tests/test_semantic_transfer_author_review.py": "7a983406e167af73611f0f0ca5a87b384370fb3d1a73faecc003d12d8dbdf3ee"
+  },
+  "new_run_artifact_sha256": {
+    "runs/qwen2.5-3b-semantic-transfer-author-review-v1/joint_table.csv": "61166b2a5349b1a61106fbf423cfa892bd8b9f4387e6f4fb1727519440edde43",
+    "runs/qwen2.5-3b-semantic-transfer-author-review-v1/joint_table.json": "27d4463f6d0287441364e42fad1e44fdb99f6560b9fbbab20cdefeb71fe3f7c4",
+    "runs/qwen2.5-3b-semantic-transfer-author-review-v1/pair_audits.csv": "fb306fa10b6783e90ada4de2643c9a4e7d3360025ddb44bf1362cdfc5aac2ba2",
+    "runs/qwen2.5-3b-semantic-transfer-author-review-v1/fulltext_inventory.json": "61d375547dd4dff55f385ff28aa20b52ecf65f607084d0d048e9fac10780505e",
+    "runs/qwen2.5-3b-semantic-transfer-author-review-v1/development48_sealed.json": "de9dd0bc391f0cf546cac36ff494bd190484064b1bb76957ec71bcd4cee0b45d",
+    "runs/qwen2.5-3b-semantic-transfer-author-review-v1/pair_audits.json": "776654ec2a5bae9b6b58e5459c6bd74fe94e92b63071e8effeaad6a09acb80d9",
+    "runs/qwen2.5-3b-semantic-transfer-author-review-v1/protocol.json": "5b0544026a9bd8bd7f0729963866077720fc5d986b093dcf1ae1b69b03a17df5",
+    "runs/qwen2.5-3b-semantic-transfer-author-review-v1/summary.json": "549f308a2d72296f2ab6506144ae5adc758491161af6cf357c5e58919ce95ab2"
+  },
+  "preservation": {
+    "checked_paths": 262,
+    "mismatches": [],
+    "reference_records": [
+      "docs/records/2026-10-20-semantic-transfer-source-augmentation.json",
+      "docs/records/2026-10-20-semantic-transfer-study-preparation.json"
+    ],
+    "formal_material_labels_all_null": true,
+    "formal_approved_labels_all_null": true,
+    "formal_gate": {
+      "status": "pending_independent_semantic_reviews",
+      "planned_cells": 240,
+      "constructed_cells": 240,
+      "construction_coverage": 1.0,
+      "approved_semantic_labels": 0,
+      "semantic_coverage": 0.0,
+      "partitions": {
+        "semantic_train": {
+          "planned": 96,
+          "approved": 0,
+          "coverage": 0.0
+        },
+        "semantic_dev": {
+          "planned": 48,
+          "approved": 0,
+          "coverage": 0.0
+        },
+        "semantic_eval": {
+          "planned": 96,
+          "approved": 0,
+          "coverage": 0.0
+        }
+      },
+      "audited_context_receipts": 0,
+      "gpu_launch_ready": false,
+      "approval_is_explicit_not_automatic": true,
+      "context_audit_limit": "Hashes verify retained records, not the truth or completeness of an external auditor declaration.",
+      "no_model_weights_loaded": true,
+      "no_probe_deserialized": true,
+      "new_gpu_forwards": 0,
+      "generated_answers": 0,
+      "trained_probes": 0
+    }
+  },
+  "limitations": [
+    "All judgments are from one history-exposed assistant, not independent gold.",
+    "238 same author classes is agreement, not semantic accuracy. Unknown poker C2 remains.",
+    "S/I semantic state contrast and one-premise-only construction are distinct;52 pairs change other facts and2 recast modality.",
+    "18 A/B pair caveats include ancillary facts, reference, terminology and modality; state agreement is not exact proposition equivalence.",
+    "Proposals are unexecuted and overlap; compose/review a new material version before any use.",
+    "No new probe/generator outputs exist for these240; prediction/score/answer columns deliberately null.",
+    "Current executor binds v4-r2; a later material revision requires a versioned implementation/protocol, not editing frozen prepared dependencies."
+  ],
+  "formal_new_gpu_forwards": 0,
+  "formal_generated_answers": 0,
+  "formal_new_training_fits": 0,
+  "independent_reviews_added": 0,
+  "commit_or_push_performed": false
+}

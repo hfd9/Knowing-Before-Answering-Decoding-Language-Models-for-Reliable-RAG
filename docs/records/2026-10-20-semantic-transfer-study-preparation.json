@@ -1,0 +1,146 @@
+{
+  "recorded_at": "2026-10-20T20:48:56.217942+08:00",
+  "status": "CPU_prepared_verified_review_gate_closed_GPU_not_started",
+  "material_run": "/large_disk/wf/研究代码/Knowing-Before-Answering-Decoding-Language-Models-for-Reliable-RAG/runs/qwen2.5-3b-semantic-transfer-materials-v4-r2",
+  "study_run": "runs/qwen2.5-3b-semantic-transfer-study-preparation-v1",
+  "design_sha256": "78476923d35aa72d9d0a65b0718be4eb38195ef9c5e12f9672045bb2add5f457",
+  "current_production_artifacts_sha256": {
+    "runs/qwen2.5-3b-semantic-transfer-study-preparation-v1/approved_labels.json": "d4bd330366ae40fb51a7980e99bfbcf8398a76e0c074c8ea25c4f45cedbb7eca",
+    "runs/qwen2.5-3b-semantic-transfer-study-preparation-v1/review_gate.json": "bd9718ebcee237a13a36b9928e1db13cc412f1c743460db571b9297f994a88bc",
+    "runs/qwen2.5-3b-semantic-transfer-study-preparation-v1/protocol.json": "c890dee7c522499575fefa6c3623cc695c28485a9c5b07b712a71f5a68f50ba1",
+    "runs/qwen2.5-3b-semantic-transfer-study-preparation-v1/preflight.json": "5a6f6623872131e9afdff9e6bf29c4d22a37db4b2a044dbcb4068841e477cc71"
+  },
+  "new_implementation_and_tests_sha256": {
+    "scripts/semantic_transfer_study.py": "f8edfdf761a80b6a3f3bbef05fe3d367e7c5623de61f403d7057200a9b1e085c",
+    "scripts/semantic_transfer_metrics.py": "df276322f2a4c73496c9f144249abda7d854ef0a36fc78f4d110ceafc474507f",
+    "scripts/run_semantic_transfer_study.sh": "dc93eaa96ae8d0f737984812228acda4f170642509dba444f330933586841895",
+    "tests/test_semantic_transfer_study.py": "e11a7db60d5663a759a679afca40370d994e6a4b397293bae18561bc37869d29"
+  },
+  "review_gate": {
+    "status": "pending_independent_semantic_reviews",
+    "planned_cells": 240,
+    "constructed_cells": 240,
+    "construction_coverage": 1.0,
+    "approved_semantic_labels": 0,
+    "semantic_coverage": 0.0,
+    "partitions": {
+      "semantic_train": {
+        "planned": 96,
+        "approved": 0,
+        "coverage": 0.0
+      },
+      "semantic_dev": {
+        "planned": 48,
+        "approved": 0,
+        "coverage": 0.0
+      },
+      "semantic_eval": {
+        "planned": 96,
+        "approved": 0,
+        "coverage": 0.0
+      }
+    },
+    "audited_context_receipts": 0,
+    "gpu_launch_ready": false,
+    "approval_is_explicit_not_automatic": true,
+    "context_audit_limit": "Hashes verify retained records, not the truth or completeness of an external auditor declaration.",
+    "no_model_weights_loaded": true,
+    "no_probe_deserialized": true,
+    "new_gpu_forwards": 0,
+    "generated_answers": 0,
+    "trained_probes": 0
+  },
+  "input_preflight": {
+    "planned_cells": 240,
+    "min_input_tokens": 345,
+    "max_input_tokens": 3056,
+    "total_input_tokens": 323252,
+    "context_tokens": 32768,
+    "output_budget_per_input": 128,
+    "max_output_tokens": 30720
+  },
+  "frozen_old_probe_sha256": "db6033b84f1fcd30e5e2e31ce4beb262a76920cc06811c57900ad14b8d40858d",
+  "backbone_weight_sha256": {
+    "model-00001-of-00002.safetensors": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2",
+    "model-00002-of-00002.safetensors": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d"
+  },
+  "model_files_sha256": {
+    "config.json": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+    "model.safetensors.index.json": "bc8aaa0c87d4335177e01c765f1de0db81661c67c1a72fbfb0d521b09f5ddc56",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+  },
+  "actual_checks": [
+    {
+      "command": "sh scripts/run_semantic_transfer_study.sh --stage prepare",
+      "exit_code": 0,
+      "log_sha256": "e845567f98ca9106e8d31a52af18237919658ea6f26102a9fec0d50842364276"
+    },
+    {
+      "command": "sh scripts/run_semantic_transfer_study.sh --stage verify",
+      "exit_code": 0,
+      "log_sha256": "e845567f98ca9106e8d31a52af18237919658ea6f26102a9fec0d50842364276"
+    },
+    {
+      "command": "sh scripts/run_semantic_transfer_study.sh --stage run",
+      "exit_code": 1,
+      "expected": true,
+      "reason": "Review gate closed before model or probe deserialization",
+      "log_sha256": "ae45ac7cbb22d1818ab66e5cbe0db6048d54f034d32d1feb6bd0026c4c74daea"
+    }
+  ],
+  "tests": {
+    "related_suite": {
+      "passed": 53,
+      "seconds": 92.052,
+      "patterns": [
+        "test_semantic_transfer*.py",
+        "test_controlled_semantic_transfer_review.py"
+      ],
+      "log_sha256": "b74ead6c4811059bed66ef24bd438c313ac3b83c02e6c19f29411213371e8ebf"
+    },
+    "final_strengthened_generation_crash_regression": {
+      "passed": 16,
+      "seconds": 4.853,
+      "pattern": "test_semantic_transfer_study.py",
+      "log_sha256": "21e8e925fe90c219674511bea304b2b2d8d722b35446c15330cc7033934b8ad3"
+    },
+    "synthetic_test_artifacts_are_not_research_evidence": true,
+    "real_3B_GPU_tested": false,
+    "old_full_120_rerun": false
+  },
+  "preservation": {
+    "reference_record": "docs/records/2026-10-20-semantic-transfer-source-augmentation.json",
+    "reference_record_sha256": "9c297f54080c657321a5973c6283d1ead057c7cf2a791ed271685f8f6083fd9a",
+    "checked_paths": 254,
+    "mismatches": []
+  },
+  "formal_new_gpu_forwards": 0,
+  "formal_generated_answers": 0,
+  "formal_trained_probes": 0,
+  "formal_model_weights_deserialized": false,
+  "formal_probe_deserialized": false,
+  "old_probe_readout": "Actual before-first-token callback in future real generation; not run this round",
+  "optional_semantic_probe_readout": "Offline from saved prefill features, decision_pre_first_token=false; no extra model forwards",
+  "implementation_scope": {
+    "cpu_preparation": true,
+    "review_gate": true,
+    "strict_cache": true,
+    "dev_only_trigger": true,
+    "max_fits": 1,
+    "eval_lock_before_eval": true,
+    "bootstrap_base_resamples": 10000,
+    "behavior_packet_export": true,
+    "behavior_summary_calculator": true,
+    "real_behavior_review_import_not_yet_implemented": true
+  },
+  "limitations": [
+    "Independent reviews and context audits remain zero; all240 semantic labels null.",
+    "Software verifies audit receipts/hashes/declarations, not external context completeness or independence truth.",
+    "Sources are augmented author-controlled evidence, not original released instances unchanged; existing background/source overlap remains.",
+    "CPU integration uses synthetic features, temporary classifiers and mocked model generation; no actual3B GPU execution this round.",
+    "Real behavior ratings/import, source citation validation and context audit need a later version after generation.",
+    "Small fixed30-base design; primary eval only12 bases. No original380 confirmation inputs opened."
+  ],
+  "commit_or_push_performed": false
+}

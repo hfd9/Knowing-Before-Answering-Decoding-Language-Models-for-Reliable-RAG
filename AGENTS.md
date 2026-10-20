@@ -3,7 +3,15 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-10-20（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
-当前首要任务（2026-10-20最新用户指定）：验证冻结自由回答chat L28探针对真实证据语义的迁移可靠性，先语义测量、再信号/行为、最后才考虑因果；不重复排查已核对一致的模板接口或追加52/80/50措辞网格。[现有40条分离复核](docs/records/2026-10-20-controlled-semantic-transfer-review.md)与联合表/引用校验已完成，但两新上下文实际被注入AGENTS历史，因此仅为有背景暴露的LLM补评，历史盲独立新评分仍0。用户已答复暂时没有外部独立评审渠道，保持待确认，不反复询问、不升级证据等级。补评S/D各10充分、I10不足、C10冲突；S9假冲突、I4缺依据作答获补评支持，C旧7条均判无消解选边，机场新增分歧导致新8/10，保留两版不覆盖。新行为271确定/9unknown（七字段），旧198/2不动。下一轮[跨表达冻结设计](docs/semantic_transfer_validation.md)：30未用于旧probe训练的发布train底题，12/6/12分区，2表达×4关系（含兼容支持）最多240材料，仅L28、最多1次语义训练；现已完成[作者材料v2 CPU准备](docs/records/2026-10-20-semantic-transfer-materials-preparation.md)：168草稿+72未完成，构造覆盖70%、语义标签全null/独立审核0；低于冻结90%覆盖通过要求，无GPU启动入口。380保留题、原80.67%发布类别结果、no_qualified_baseline不变。
+最新用户动作：要求“提交推送代码”，按[第四次提交记录](docs/records/2026-10-20-code-submission-04.md)归档来源v3/v4、执行器CPU准备、作者复核和材料v5；沿用已配置hfd9身份正常提交推送，不改写历史。提交前语法/JSON/shell/大小及277旧+9新增来源记录+34运行产物哈希一致；本次未新增实验，独立标签0、GPU门禁false。实际提交标识以该记录所属Git提交为准，推送后核对远端main与HEAD并在当轮回复报告。
+
+当前首要任务（2026-10-20最新用户指定）：验证冻结自由回答chat L28探针对真实证据语义的迁移可靠性，先语义测量、再信号/行为、最后才考虑因果；不重复排查已核对一致的模板接口或追加52/80/50措辞网格。[现有40条分离复核](docs/records/2026-10-20-controlled-semantic-transfer-review.md)与联合表/引用校验已完成，但两新上下文实际被注入AGENTS历史，因此仅为有背景暴露的LLM补评，历史盲独立新评分仍0。用户已答复暂时没有外部独立评审渠道，保持待确认，不反复询问、不升级证据等级。补评S/D各10充分、I10不足、C10冲突；S9假冲突、I4缺依据作答获补评支持，C旧7条均判无消解选边，机场新增分歧导致新8/10，保留两版不覆盖。新行为271确定/9unknown（七字段），旧198/2不动。下一轮[跨表达冻结设计](docs/semantic_transfer_validation.md)：30未用于旧probe训练的发布train底题，12/6/12分区，2表达×4关系（含兼容支持）最多240材料，仅L28、最多1次语义训练；此前已完成[来源补充版v4全部240材料](docs/records/2026-10-20-semantic-transfer-source-augmentation.md)：用户要求修好达到门槛后，以11可追溯短来源补齐八题64缺项，30题240/240、训练/开发/评估96/48/96，构造覆盖100%。旧176输入及v1/v2/v3不变；来源政策与三新题范围变化显式另存，不能称原发布数据原样或原来源方案通过。37相关CPU91.444秒通过，r2跨进程核验及221旧/33新路径哈希通过。语义标签全null、独立审核0/语义覆盖0，原90%要求不改；评分接收只给候选，不自动批准标签/GPU；当前已有下述门禁执行代码，但没有就绪GPU任务。380保留题、原80.67%发布类别结果、no_qualified_baseline不变。
+
+最新材料：[v5关系对照修订与CPU交付](docs/records/2026-10-20-semantic-transfer-materials-v5.md)已完成。按用户“直接开始”修同批材料，83输入/131目标片段变化，157输入原样；54条I重构，6条I保留，底题/问题/分区/背景/槽位不变。补齐A/B附带事实，扑克C正反改为同层描述，I去掉showdown答案事件别名；I保留S已有Sharon/Pittsburgh、Pachisi、Colorado位置等，不引入新百科事实。作者删除/弱化投影不等于已证明逐字单原子最小性，扑克have to等风险另记。实际v5 prepare/verify及intake-v4 prepare/verify通过，341–3055tokens、总323081；8新CPU44.533秒、240独立行重建/300配对/277旧路径哈希通过，旧53/120未重跑。新30材料+4接收文件，两套240新匿名ZIP；独立标签0、门禁false，无新模型/probe加载、前向/回答/训练。当前CPU核验入口sh scripts/run_semantic_transfer_materials_v5.sh --stage verify。旧执行器仍绑定v4-r2，不能原地改依赖接v5；之后实际独立审核与新运行版本尚待，不反复索要暂缺外部渠道。
+
+最新输入复核：[240条作者侧语义与八变体审计](docs/records/2026-10-20-semantic-transfer-author-input-review.md)已完成。先封存开发48，再读其余192；1200槽/435去重全文、480目标引用、90背景槽及300配对核验。当前助手有历史暴露，非独立标签：120充分/60不足/58冲突/2unknown，扑克stv17_A_C/B_C存在描述与规范模态歧义；正式批准仍0、门禁false。60组S→I中仅6组可在必要关系层面视为删除型，52组还改变其他事实，2组模态重写；27题54条I需要整体修订。120组A/B有18组附带命题/指代/术语/模态注意点，不能把119组同确定类别当全部命题等价。已存19具体文字候选/54条I清单，尚未应用，v4-r2及旧262路径哈希不变。新5CPU0.474秒与实际analyze/verify通过，旧53/120未重跑。无新GPU/回答/拟合，下一步先同批材料新版本修对照质量，再实际独立审核；不伪造评分、不反复索要外部渠道，不改冻结执行器来兼容新材料。
+
+最新执行准备：[chat L28跨表达执行器CPU核验](docs/records/2026-10-20-semantic-transfer-study-preparation.md)已完成。新study-preparation-v1实际prepare/verify exit0，240提示/token与v4-r2一致，完整权重SHA256已绑定但未加载模型/probe。53相关CPU92.052秒通过，加强中断断言后新16项再跑4.853秒通过；254旧路径哈希一致，旧全120未重跑。实际run在审核门禁前置检查按预期exit1，正式前向/回答/重训均0。独立审核/上下文审计仍0，标签全null；不反复索要外部渠道。开发触发、最多1训练、评估锁、严格缓存、底题bootstrap及行为匿名导出已实现；本机3B新GPU路径未实测，真实行为评分导入需后续另存。旧probe回调生成前读出，可选语义probe离线读生成前状态，时间标记分开。参见[执行说明](docs/semantic_transfer_study.md)。
 
 ## 开始工作的读取顺序
 
@@ -68,6 +76,10 @@ answer（证据充分）、refuse（证据不足）、conflict（证据冲突）
 | 支持事实表达50单元完成核验 | 2026-10-20实际正式50/50（40新10复用）+smoke12/12，末条12:38:12；两verify exit0，各30实现/16源匹配，两桥接误差0、全部12跨运行状态/概率完全相同。独立九组60配对/分布一致、89运行文件哈希不变，所有对照0翻转，val_81始终answer、另九题始终conflict。冗余否定两表达各6/6概率上升，均值+7.38/+8.84pp；整个目标包换核心均值−6.72/−11.06pp，仍无翻转。未分离否定/长度或迁移根因，无新答案/行为率，不训练/确认/patching。见docs/records/2026-10-20-probe-support-expression-verified.md及JSON/50CSV/60CSV；无需重跑GPU |
 | 40条分离语义/行为补评与跨表达设计 | 2026-10-20两匿名包/分离LLM各40评分及联合表完成，241引用/64旧文件不变/两次分析verify通过；新上下文仍注入AGENTS，故非历史盲独立确认，用户暂无外部渠道，独立评分0。S/D20充分/I10不足/C10冲突；I4作答无依据、S9假冲突获补评支持；C旧7均无消解选边，机场新分歧致新8/10，旧报告不覆盖。新七字段9unknown与旧2unknown分别保留。新增10CPU0.634秒通过，旧全120未重跑。新30底题12/6/12、最多240变体、L28/最多1训练设计冻结，无材料/GPU，见docs/records/2026-10-20-controlled-semantic-transfer-review.md |
 | 跨表达材料v2 CPU准备与覆盖审计 | 2026-10-20用户要求开始，154去重来源/背景全文已读；21题168作者草稿、9题72未完成，计划240分母保留，训练/开发/评估72/40/56草稿。53源引用/336目标引用/126编辑/210配对及独立CPU重建通过，345–3056tokens，总206362；22相关CPU28.987秒通过（新增材料12+旧复核设计10），非全套142。v2纠正LuodingI残留位置和UHI最小答案，v1保留；27当前文件、153既有运行文件哈希不变。两独立排列匿名包完成、语义标签全null/独立评审0，构造覆盖70%低于冻结90%通过要求，GPU门禁false。无模型/probe加载、前向/生成/训练0；背景58中22旧train见过，1背景跨train/eval重复，22事实来源5旧train见过，不称文档全新。见docs/records/2026-10-20-semantic-transfer-materials-preparation.md；当前CPU核验入口sh scripts/run_semantic_transfer_materials_v2.sh --stage verify，无GPU启动入口 |
+| 九题来源复核与跨表达材料v3 | 2026-10-20逐题49完整片段复核，James II增加苏格兰/1430–1460指代，新增8作者稿；其余8题缺必要来源关系保留64缺项。176/240、80/40/56、54源引用/352目标引用/132编辑/220配对独立重建一致，345–3056tokens/总229126。31相关CPU42.414秒通过，两只读verify及149既有/31当前路径哈希通过，旧168输入/token不变。两176匿名包及CPU评分接收工具完成，当前评分0，匹配只给候选不自动批准标签/GPU。构造覆盖73.33%仍不足90%，不改分母/训练/确认/patching；见docs/records/2026-10-20-semantic-transfer-source-followup.md |
+
+| 来源补充版v4全240构造完成 | 2026-10-20用户要求修好达门槛，新增11可追溯短来源修复8题64缺项；30题240/240、96/48/96，构造100%，语义标签全null/独立审核0。原176输入与token不变，v1/v2/v3保留，来源政策及三题范围变化显式修订。54原/11补充来源引用、480目标引用/180编辑/300配对及独立重建通过；345–3056tokens、总323252。37相关CPU91.444秒、r2跨进程verify及221旧/33新路径哈希通过，两240匿名包/intake-v3空评分快照完成。仅材料数量门槛满足，90%独立语义覆盖仍未满足，GPUfalse；无新前向/回答/训练，不追认原来源方案通过。见docs/records/2026-10-20-semantic-transfer-source-augmentation.md |
+
 
 原路由器三分类错误可答判定率为 10%，纯文本首行基线为 31.5%；这不是自由回答中的实际缺证回答率。
 路由器比基线净多判对 92 条：Answer +16、Refuse −10、Conflict +86；冲突贡献净增量的 93.5%。
@@ -101,6 +113,8 @@ chat−plain 探针准确率差 −3.67 个百分点，按底题配对 bootstrap
 
 ### 本地可用入口与公共实现
 
+新增跨表达执行器：`scripts/semantic_transfer_study.py`、`scripts/semantic_transfer_metrics.py`、`scripts/run_semantic_transfer_study.sh`，参见[说明](docs/semantic_transfer_study.md)。默认prepare/verify仅CPU；当前门禁关闭，run/analyze/verify-results均前置拒绝。不要改旧run追加批准或换目录规避单次拟合预算。
+
 | 文件 | 用途 |
 | --- | --- |
 | `scripts/run_small_repro.sh`、`scripts/small_repro.py` | 数据抽样、隐藏状态提取、逐层探针、校准路由器；旧实验入口 |
@@ -131,7 +145,8 @@ chat−plain 探针准确率差 −3.67 个百分点，按底题配对 bootstrap
 | `scripts/probe_document_factors.py`、`scripts/run_probe_document_factors_review.sh`、`prompts/probe_document_factors_v1.json`、`docs/probe_document_factors.md` | 固定问题/回答事实的80单元+16smoke已由用户完成，2026-10-20完整只读verify/独立120配对与16跨运行数组比较通过；八组合逐题类别全相同，12组各0/10翻转，概率仍变化。无需重跑；具体编辑未消除冲突读出，未证明根因/语义gold/新行为，详见当日完成核验记录 |
 | `scripts/probe_support_expression.py`、`scripts/run_probe_support_expression_review.sh`、`prompts/probe_support_expression_v1.json`、`docs/probe_support_expression.md` | 50正式（40新/10复用）+12smoke已完成，2026-10-20两目录完整只读verify/九组60独立配对与12跨运行数组比较通过，各30实现/16源、桥接与跨运行误差0。九组均0翻转，概率仍受表达/否定/值编辑影响；详见当日完成核验记录，无需重跑GPU，无新答案/行为率/确认/patching |
 | `scripts/controlled_semantic_transfer_review.py`、`docs/records/2026-10-20-controlled-semantic-transfer-review.md`、`docs/semantic_transfer_validation.md` | 当前40条输入/行为分离补评、实际背景暴露审计、联合表、可独立交付匿名包；默认新run内reports/v3为最终分析，原评分/输出不覆盖。跨表达JSON仅冻结30底题分区/240构造上限/L28最多1训练设计，尚无新材料或GPU入口；暂无外部评审，独立确认待完成 |
-| `scripts/semantic_transfer_materials.py`、`scripts/semantic_transfer_materials_v2.py`、`scripts/run_semantic_transfer_materials_v2.sh`、`prompts/semantic_transfer_materials_v2.json`、`docs/semantic_transfer_materials.md` | 当前跨表达材料CPU入口，prepare/verify只做材料/tokenizer/指纹/审包，无GPU阶段。v2实际168草稿+72未完成、70%构造覆盖、标签全null，21底题210配对/30底题分区固定；v1初稿冻结保留。独立审核0且覆盖不足，GPU门槛未满足，不自动用作者建议标签训练，不重复旧GPU或打开380题 |
+| `scripts/semantic_transfer_materials_v4.py`、`scripts/semantic_transfer_materials_v4_replay.py`、`scripts/run_semantic_transfer_materials_v4_replay.sh`、`prompts/semantic_transfer_materials_v4.json`、`prompts/semantic_transfer_supplemental_sources_v1.json`、`prompts/semantic_transfer_source_augmentation_v1.json`、`docs/semantic_transfer_materials.md` | 当前来源补充版CPU入口，240/240作者材料及两240审包，独立标签0，GPUfalse；显式补11来源、不换题/改分母/阈值，旧176输入和v1/v2/v3原样。37相关CPU及r2跨进程核验通过，无GPU阶段、不训练/确认；原v3来源受限复核见semantic-transfer-source-followup记录 |
+| `scripts/semantic_transfer_review_intake.py` | CPU语义评分接收prepare/verify，校验240分母/映射/批次/暴露声明/逐字引用，分歧与unknown保留；匹配只给consensus_candidate，不自动批准训练标签或GPU，自报独立仍需实际上下文审计。当前intake-v3须显式指定v4-r2材料/新run参数，实际评分0，独立标签0；不改原默认值/旧指纹 |
 | `scripts/evidence_experiment.py` | 固定协议、输入渲染、缓存校验、审计、配对 bootstrap、状态钩子和生成公共函数 |
 | `scripts/check_environment.sh`、`scripts/check_environment.py` | 环境、权重与模型接口检查；加载模型的检查也会占 GPU |
 | `tests/test_small_repro.py`、`tests/test_prompt_baseline.py` | 旧复现和旧基线验证 |

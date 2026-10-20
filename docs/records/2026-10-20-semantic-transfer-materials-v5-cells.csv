@@ -1,0 +1,241 @@
+id,original_id,partition,expression,condition,question,changed,changed_documents,old_input_tokens,new_input_tokens,token_delta,semantic_label,independently_approved
+stv01_A_S,train_1102,semantic_train,A,S,On which British holiday did the 2004 tsunami occur?,False,0,3050,3050,0,,False
+stv01_A_K,train_1102,semantic_train,A,K,On which British holiday did the 2004 tsunami occur?,False,0,3050,3050,0,,False
+stv01_A_I,train_1102,semantic_train,A,I,On which British holiday did the 2004 tsunami occur?,True,1,3051,3044,-7,,False
+stv01_A_C,train_1102,semantic_train,A,C,On which British holiday did the 2004 tsunami occur?,False,0,3052,3052,0,,False
+stv01_B_S,train_1102,semantic_train,B,S,On which British holiday did the 2004 tsunami occur?,True,1,3056,3055,-1,,False
+stv01_B_K,train_1102,semantic_train,B,K,On which British holiday did the 2004 tsunami occur?,True,1,3053,3052,-1,,False
+stv01_B_I,train_1102,semantic_train,B,I,On which British holiday did the 2004 tsunami occur?,True,2,3052,3045,-7,,False
+stv01_B_C,train_1102,semantic_train,B,C,On which British holiday did the 2004 tsunami occur?,True,1,3056,3055,-1,,False
+stv02_A_S,train_150,semantic_train,A,S,"Napoleon called this the Battle of Mont Saint Jean, by what name do we know it?",False,0,2207,2207,0,,False
+stv02_A_K,train_150,semantic_train,A,K,"Napoleon called this the Battle of Mont Saint Jean, by what name do we know it?",False,0,2206,2206,0,,False
+stv02_A_I,train_150,semantic_train,A,I,"Napoleon called this the Battle of Mont Saint Jean, by what name do we know it?",True,2,2193,2187,-6,,False
+stv02_A_C,train_150,semantic_train,A,C,"Napoleon called this the Battle of Mont Saint Jean, by what name do we know it?",False,0,2209,2209,0,,False
+stv02_B_S,train_150,semantic_train,B,S,"Napoleon called this the Battle of Mont Saint Jean, by what name do we know it?",True,2,2194,2201,7,,False
+stv02_B_K,train_150,semantic_train,B,K,"Napoleon called this the Battle of Mont Saint Jean, by what name do we know it?",True,1,2196,2199,3,,False
+stv02_B_I,train_150,semantic_train,B,I,"Napoleon called this the Battle of Mont Saint Jean, by what name do we know it?",True,2,2188,2187,-1,,False
+stv02_B_C,train_150,semantic_train,B,C,"Napoleon called this the Battle of Mont Saint Jean, by what name do we know it?",True,1,2201,2204,3,,False
+stv03_A_S,train_1661,semantic_train,A,S,What is the chief river of Burma ?,False,0,1851,1851,0,,False
+stv03_A_K,train_1661,semantic_train,A,K,What is the chief river of Burma ?,False,0,1856,1856,0,,False
+stv03_A_I,train_1661,semantic_train,A,I,What is the chief river of Burma ?,True,2,1848,1845,-3,,False
+stv03_A_C,train_1661,semantic_train,A,C,What is the chief river of Burma ?,False,0,1850,1850,0,,False
+stv03_B_S,train_1661,semantic_train,B,S,What is the chief river of Burma ?,False,0,1851,1851,0,,False
+stv03_B_K,train_1661,semantic_train,B,K,What is the chief river of Burma ?,False,0,1859,1859,0,,False
+stv03_B_I,train_1661,semantic_train,B,I,What is the chief river of Burma ?,True,2,1851,1847,-4,,False
+stv03_B_C,train_1661,semantic_train,B,C,What is the chief river of Burma ?,False,0,1853,1853,0,,False
+stv04_A_S,train_1179,semantic_train,A,S,Where are Luoding and Dingzhou located?,False,0,905,905,0,,False
+stv04_A_K,train_1179,semantic_train,A,K,Where are Luoding and Dingzhou located?,False,0,914,914,0,,False
+stv04_A_I,train_1179,semantic_train,A,I,Where are Luoding and Dingzhou located?,False,0,899,899,0,,False
+stv04_A_C,train_1179,semantic_train,A,C,Where are Luoding and Dingzhou located?,False,0,907,907,0,,False
+stv04_B_S,train_1179,semantic_train,B,S,Where are Luoding and Dingzhou located?,False,0,905,905,0,,False
+stv04_B_K,train_1179,semantic_train,B,K,Where are Luoding and Dingzhou located?,False,0,911,911,0,,False
+stv04_B_I,train_1179,semantic_train,B,I,Where are Luoding and Dingzhou located?,False,0,903,903,0,,False
+stv04_B_C,train_1179,semantic_train,B,C,Where are Luoding and Dingzhou located?,False,0,909,909,0,,False
+stv05_A_S,train_1333,semantic_train,A,S,"Khet and Quarto, are games of what type?",False,0,703,703,0,,False
+stv05_A_K,train_1333,semantic_train,A,K,"Khet and Quarto, are games of what type?",False,0,707,707,0,,False
+stv05_A_I,train_1333,semantic_train,A,I,"Khet and Quarto, are games of what type?",True,1,706,704,-2,,False
+stv05_A_C,train_1333,semantic_train,A,C,"Khet and Quarto, are games of what type?",False,0,706,706,0,,False
+stv05_B_S,train_1333,semantic_train,B,S,"Khet and Quarto, are games of what type?",True,1,709,711,2,,False
+stv05_B_K,train_1333,semantic_train,B,K,"Khet and Quarto, are games of what type?",True,1,710,712,2,,False
+stv05_B_I,train_1333,semantic_train,B,I,"Khet and Quarto, are games of what type?",True,1,713,708,-5,,False
+stv05_B_C,train_1333,semantic_train,B,C,"Khet and Quarto, are games of what type?",True,1,709,711,2,,False
+stv06_A_S,train_1492,semantic_train,A,S,Who won season four of rupauls drag race?,False,0,545,545,0,,False
+stv06_A_K,train_1492,semantic_train,A,K,Who won season four of rupauls drag race?,False,0,549,549,0,,False
+stv06_A_I,train_1492,semantic_train,A,I,Who won season four of rupauls drag race?,True,2,545,527,-18,,False
+stv06_A_C,train_1492,semantic_train,A,C,Who won season four of rupauls drag race?,False,0,548,548,0,,False
+stv06_B_S,train_1492,semantic_train,B,S,Who won season four of rupauls drag race?,False,0,541,541,0,,False
+stv06_B_K,train_1492,semantic_train,B,K,Who won season four of rupauls drag race?,False,0,551,551,0,,False
+stv06_B_I,train_1492,semantic_train,B,I,Who won season four of rupauls drag race?,True,2,548,530,-18,,False
+stv06_B_C,train_1492,semantic_train,B,C,Who won season four of rupauls drag race?,False,0,546,546,0,,False
+stv07_A_S,train_744,semantic_train,A,S,"Was James II of Scots (1430–1460) known as James the Bald, Fiery Face, or the Red King?",False,0,2851,2851,0,,False
+stv07_A_K,train_744,semantic_train,A,K,"Was James II of Scots (1430–1460) known as James the Bald, Fiery Face, or the Red King?",False,0,2849,2849,0,,False
+stv07_A_I,train_744,semantic_train,A,I,"Was James II of Scots (1430–1460) known as James the Bald, Fiery Face, or the Red King?",True,2,2829,2834,5,,False
+stv07_A_C,train_744,semantic_train,A,C,"Was James II of Scots (1430–1460) known as James the Bald, Fiery Face, or the Red King?",False,0,2855,2855,0,,False
+stv07_B_S,train_744,semantic_train,B,S,"Was James II of Scots (1430–1460) known as James the Bald, Fiery Face, or the Red King?",True,1,2850,2854,4,,False
+stv07_B_K,train_744,semantic_train,B,K,"Was James II of Scots (1430–1460) known as James the Bald, Fiery Face, or the Red King?",True,1,2848,2852,4,,False
+stv07_B_I,train_744,semantic_train,B,I,"Was James II of Scots (1430–1460) known as James the Bald, Fiery Face, or the Red King?",True,2,2830,2840,10,,False
+stv07_B_C,train_744,semantic_train,B,C,"Was James II of Scots (1430–1460) known as James the Bald, Fiery Face, or the Red King?",True,1,2852,2856,4,,False
+stv08_A_S,train_1430,semantic_train,A,S,"According to the series overview in these documents, how many seasons of RuPaul's Drag Race are listed?",False,0,499,499,0,,False
+stv08_A_K,train_1430,semantic_train,A,K,"According to the series overview in these documents, how many seasons of RuPaul's Drag Race are listed?",False,0,495,495,0,,False
+stv08_A_I,train_1430,semantic_train,A,I,"According to the series overview in these documents, how many seasons of RuPaul's Drag Race are listed?",True,2,510,496,-14,,False
+stv08_A_C,train_1430,semantic_train,A,C,"According to the series overview in these documents, how many seasons of RuPaul's Drag Race are listed?",False,0,498,498,0,,False
+stv08_B_S,train_1430,semantic_train,B,S,"According to the series overview in these documents, how many seasons of RuPaul's Drag Race are listed?",False,0,503,503,0,,False
+stv08_B_K,train_1430,semantic_train,B,K,"According to the series overview in these documents, how many seasons of RuPaul's Drag Race are listed?",False,0,503,503,0,,False
+stv08_B_I,train_1430,semantic_train,B,I,"According to the series overview in these documents, how many seasons of RuPaul's Drag Race are listed?",True,2,510,495,-15,,False
+stv08_B_C,train_1430,semantic_train,B,C,"According to the series overview in these documents, how many seasons of RuPaul's Drag Race are listed?",False,0,505,505,0,,False
+stv09_A_S,train_421,semantic_train,A,S,How many episodes are in pretty little liars season 2?,False,0,536,536,0,,False
+stv09_A_K,train_421,semantic_train,A,K,How many episodes are in pretty little liars season 2?,False,0,523,523,0,,False
+stv09_A_I,train_421,semantic_train,A,I,How many episodes are in pretty little liars season 2?,True,2,526,524,-2,,False
+stv09_A_C,train_421,semantic_train,A,C,How many episodes are in pretty little liars season 2?,False,0,521,521,0,,False
+stv09_B_S,train_421,semantic_train,B,S,How many episodes are in pretty little liars season 2?,False,0,535,535,0,,False
+stv09_B_K,train_421,semantic_train,B,K,How many episodes are in pretty little liars season 2?,False,0,527,527,0,,False
+stv09_B_I,train_421,semantic_train,B,I,How many episodes are in pretty little liars season 2?,True,2,524,523,-1,,False
+stv09_B_C,train_421,semantic_train,B,C,How many episodes are in pretty little liars season 2?,False,0,518,518,0,,False
+stv10_A_S,train_335,semantic_train,A,S,What was the name of the character played by Chuck Connors in The Rifleman?,False,0,1705,1705,0,,False
+stv10_A_K,train_335,semantic_train,A,K,What was the name of the character played by Chuck Connors in The Rifleman?,False,0,1709,1709,0,,False
+stv10_A_I,train_335,semantic_train,A,I,What was the name of the character played by Chuck Connors in The Rifleman?,True,2,1716,1699,-17,,False
+stv10_A_C,train_335,semantic_train,A,C,What was the name of the character played by Chuck Connors in The Rifleman?,False,0,1713,1713,0,,False
+stv10_B_S,train_335,semantic_train,B,S,What was the name of the character played by Chuck Connors in The Rifleman?,True,1,1705,1708,3,,False
+stv10_B_K,train_335,semantic_train,B,K,What was the name of the character played by Chuck Connors in The Rifleman?,True,2,1711,1712,1,,False
+stv10_B_I,train_335,semantic_train,B,I,What was the name of the character played by Chuck Connors in The Rifleman?,True,2,1715,1697,-18,,False
+stv10_B_C,train_335,semantic_train,B,C,What was the name of the character played by Chuck Connors in The Rifleman?,True,1,1711,1714,3,,False
+stv11_A_S,train_1136,semantic_train,A,S,In what year did Wham-O's modern Hula Hoop make its market debut?,False,0,528,528,0,,False
+stv11_A_K,train_1136,semantic_train,A,K,In what year did Wham-O's modern Hula Hoop make its market debut?,False,0,531,531,0,,False
+stv11_A_I,train_1136,semantic_train,A,I,In what year did Wham-O's modern Hula Hoop make its market debut?,True,2,521,516,-5,,False
+stv11_A_C,train_1136,semantic_train,A,C,In what year did Wham-O's modern Hula Hoop make its market debut?,False,0,537,537,0,,False
+stv11_B_S,train_1136,semantic_train,B,S,In what year did Wham-O's modern Hula Hoop make its market debut?,True,1,531,533,2,,False
+stv11_B_K,train_1136,semantic_train,B,K,In what year did Wham-O's modern Hula Hoop make its market debut?,False,0,530,530,0,,False
+stv11_B_I,train_1136,semantic_train,B,I,In what year did Wham-O's modern Hula Hoop make its market debut?,True,2,515,515,0,,False
+stv11_B_C,train_1136,semantic_train,B,C,In what year did Wham-O's modern Hula Hoop make its market debut?,False,0,538,538,0,,False
+stv12_A_S,train_1154,semantic_train,A,S,"In the supplied version of the nursery rhyme about the woman who swallowed a fly, which was the last creature she ate?",False,0,2576,2576,0,,False
+stv12_A_K,train_1154,semantic_train,A,K,"In the supplied version of the nursery rhyme about the woman who swallowed a fly, which was the last creature she ate?",False,0,2573,2573,0,,False
+stv12_A_I,train_1154,semantic_train,A,I,"In the supplied version of the nursery rhyme about the woman who swallowed a fly, which was the last creature she ate?",True,2,2572,2567,-5,,False
+stv12_A_C,train_1154,semantic_train,A,C,"In the supplied version of the nursery rhyme about the woman who swallowed a fly, which was the last creature she ate?",False,0,2577,2577,0,,False
+stv12_B_S,train_1154,semantic_train,B,S,"In the supplied version of the nursery rhyme about the woman who swallowed a fly, which was the last creature she ate?",False,0,2574,2574,0,,False
+stv12_B_K,train_1154,semantic_train,B,K,"In the supplied version of the nursery rhyme about the woman who swallowed a fly, which was the last creature she ate?",False,0,2573,2573,0,,False
+stv12_B_I,train_1154,semantic_train,B,I,"In the supplied version of the nursery rhyme about the woman who swallowed a fly, which was the last creature she ate?",True,2,2570,2568,-2,,False
+stv12_B_C,train_1154,semantic_train,B,C,"In the supplied version of the nursery rhyme about the woman who swallowed a fly, which was the last creature she ate?",False,0,2586,2586,0,,False
+stv13_A_S,train_405,semantic_dev,A,S,"Washington University in St. Louis and University of Colorado, are located in which country?",False,0,527,527,0,,False
+stv13_A_K,train_405,semantic_dev,A,K,"Washington University in St. Louis and University of Colorado, are located in which country?",False,0,525,525,0,,False
+stv13_A_I,train_405,semantic_dev,A,I,"Washington University in St. Louis and University of Colorado, are located in which country?",True,2,509,516,7,,False
+stv13_A_C,train_405,semantic_dev,A,C,"Washington University in St. Louis and University of Colorado, are located in which country?",False,0,535,535,0,,False
+stv13_B_S,train_405,semantic_dev,B,S,"Washington University in St. Louis and University of Colorado, are located in which country?",True,1,527,526,-1,,False
+stv13_B_K,train_405,semantic_dev,B,K,"Washington University in St. Louis and University of Colorado, are located in which country?",True,1,518,521,3,,False
+stv13_B_I,train_405,semantic_dev,B,I,"Washington University in St. Louis and University of Colorado, are located in which country?",True,2,510,520,10,,False
+stv13_B_C,train_405,semantic_dev,B,C,"Washington University in St. Louis and University of Colorado, are located in which country?",False,0,522,522,0,,False
+stv14_A_S,train_1525,semantic_dev,A,S,Who won the mens single title in french open tennis tournament 2015?,False,0,695,695,0,,False
+stv14_A_K,train_1525,semantic_dev,A,K,Who won the mens single title in french open tennis tournament 2015?,False,0,701,701,0,,False
+stv14_A_I,train_1525,semantic_dev,A,I,Who won the mens single title in french open tennis tournament 2015?,True,2,694,685,-9,,False
+stv14_A_C,train_1525,semantic_dev,A,C,Who won the mens single title in french open tennis tournament 2015?,False,0,696,696,0,,False
+stv14_B_S,train_1525,semantic_dev,B,S,Who won the mens single title in french open tennis tournament 2015?,False,0,692,692,0,,False
+stv14_B_K,train_1525,semantic_dev,B,K,Who won the mens single title in french open tennis tournament 2015?,False,0,692,692,0,,False
+stv14_B_I,train_1525,semantic_dev,B,I,Who won the mens single title in french open tennis tournament 2015?,True,1,689,685,-4,,False
+stv14_B_C,train_1525,semantic_dev,B,C,Who won the mens single title in french open tennis tournament 2015?,False,0,693,693,0,,False
+stv15_A_S,train_1064,semantic_dev,A,S,"Ameliorate means to make something that was bad, what?",False,0,2547,2547,0,,False
+stv15_A_K,train_1064,semantic_dev,A,K,"Ameliorate means to make something that was bad, what?",False,0,2544,2544,0,,False
+stv15_A_I,train_1064,semantic_dev,A,I,"Ameliorate means to make something that was bad, what?",True,2,2540,2537,-3,,False
+stv15_A_C,train_1064,semantic_dev,A,C,"Ameliorate means to make something that was bad, what?",False,0,2548,2548,0,,False
+stv15_B_S,train_1064,semantic_dev,B,S,"Ameliorate means to make something that was bad, what?",False,0,2544,2544,0,,False
+stv15_B_K,train_1064,semantic_dev,B,K,"Ameliorate means to make something that was bad, what?",False,0,2540,2540,0,,False
+stv15_B_I,train_1064,semantic_dev,B,I,"Ameliorate means to make something that was bad, what?",True,2,2545,2537,-8,,False
+stv15_B_C,train_1064,semantic_dev,B,C,"Ameliorate means to make something that was bad, what?",False,0,2544,2544,0,,False
+stv16_A_S,train_315,semantic_dev,A,S,The tendency of urban areas to be warmer then the surrounding rural areas are caused by?,False,0,351,351,0,,False
+stv16_A_K,train_315,semantic_dev,A,K,The tendency of urban areas to be warmer then the surrounding rural areas are caused by?,False,0,357,357,0,,False
+stv16_A_I,train_315,semantic_dev,A,I,The tendency of urban areas to be warmer then the surrounding rural areas are caused by?,True,2,346,341,-5,,False
+stv16_A_C,train_315,semantic_dev,A,C,The tendency of urban areas to be warmer then the surrounding rural areas are caused by?,False,0,349,349,0,,False
+stv16_B_S,train_315,semantic_dev,B,S,The tendency of urban areas to be warmer then the surrounding rural areas are caused by?,True,1,353,357,4,,False
+stv16_B_K,train_315,semantic_dev,B,K,The tendency of urban areas to be warmer then the surrounding rural areas are caused by?,False,0,357,357,0,,False
+stv16_B_I,train_315,semantic_dev,B,I,The tendency of urban areas to be warmer then the surrounding rural areas are caused by?,True,2,345,349,4,,False
+stv16_B_C,train_315,semantic_dev,B,C,The tendency of urban areas to be warmer then the surrounding rural areas are caused by?,False,0,349,349,0,,False
+stv17_A_S,train_989,semantic_dev,A,S,When do you have to show cards in poker?,False,0,718,718,0,,False
+stv17_A_K,train_989,semantic_dev,A,K,When do you have to show cards in poker?,False,0,716,716,0,,False
+stv17_A_I,train_989,semantic_dev,A,I,When do you have to show cards in poker?,True,2,702,709,7,,False
+stv17_A_C,train_989,semantic_dev,A,C,When do you have to show cards in poker?,True,1,728,730,2,,False
+stv17_B_S,train_989,semantic_dev,B,S,When do you have to show cards in poker?,False,0,718,718,0,,False
+stv17_B_K,train_989,semantic_dev,B,K,When do you have to show cards in poker?,False,0,717,717,0,,False
+stv17_B_I,train_989,semantic_dev,B,I,When do you have to show cards in poker?,True,2,701,711,10,,False
+stv17_B_C,train_989,semantic_dev,B,C,When do you have to show cards in poker?,True,1,725,727,2,,False
+stv18_A_S,train_1302,semantic_dev,A,S,On which day of the week do the Old Order Amish described in the documents typically hold worship services?,False,0,637,637,0,,False
+stv18_A_K,train_1302,semantic_dev,A,K,On which day of the week do the Old Order Amish described in the documents typically hold worship services?,True,1,635,638,3,,False
+stv18_A_I,train_1302,semantic_dev,A,I,On which day of the week do the Old Order Amish described in the documents typically hold worship services?,True,2,633,624,-9,,False
+stv18_A_C,train_1302,semantic_dev,A,C,On which day of the week do the Old Order Amish described in the documents typically hold worship services?,False,0,637,637,0,,False
+stv18_B_S,train_1302,semantic_dev,B,S,On which day of the week do the Old Order Amish described in the documents typically hold worship services?,True,2,632,636,4,,False
+stv18_B_K,train_1302,semantic_dev,B,K,On which day of the week do the Old Order Amish described in the documents typically hold worship services?,True,1,639,640,1,,False
+stv18_B_I,train_1302,semantic_dev,B,I,On which day of the week do the Old Order Amish described in the documents typically hold worship services?,True,2,635,627,-8,,False
+stv18_B_C,train_1302,semantic_dev,B,C,On which day of the week do the Old Order Amish described in the documents typically hold worship services?,True,1,637,638,1,,False
+stv19_A_S,train_1470,semantic_eval,A,S,What is the state capital of Ohio?,False,0,2335,2335,0,,False
+stv19_A_K,train_1470,semantic_eval,A,K,What is the state capital of Ohio?,False,0,2340,2340,0,,False
+stv19_A_I,train_1470,semantic_eval,A,I,What is the state capital of Ohio?,True,2,2329,2328,-1,,False
+stv19_A_C,train_1470,semantic_eval,A,C,What is the state capital of Ohio?,False,0,2333,2333,0,,False
+stv19_B_S,train_1470,semantic_eval,B,S,What is the state capital of Ohio?,True,1,2331,2335,4,,False
+stv19_B_K,train_1470,semantic_eval,B,K,What is the state capital of Ohio?,False,0,2335,2335,0,,False
+stv19_B_I,train_1470,semantic_eval,B,I,What is the state capital of Ohio?,True,2,2325,2326,1,,False
+stv19_B_C,train_1470,semantic_eval,B,C,What is the state capital of Ohio?,False,0,2333,2333,0,,False
+stv20_A_S,train_1805,semantic_eval,A,S,Who sang the original oh where oh where can my baby be?,False,0,519,519,0,,False
+stv20_A_K,train_1805,semantic_eval,A,K,Who sang the original oh where oh where can my baby be?,False,0,518,518,0,,False
+stv20_A_I,train_1805,semantic_eval,A,I,Who sang the original oh where oh where can my baby be?,True,2,502,498,-4,,False
+stv20_A_C,train_1805,semantic_eval,A,C,Who sang the original oh where oh where can my baby be?,False,0,522,522,0,,False
+stv20_B_S,train_1805,semantic_eval,B,S,Who sang the original oh where oh where can my baby be?,False,0,519,519,0,,False
+stv20_B_K,train_1805,semantic_eval,B,K,Who sang the original oh where oh where can my baby be?,False,0,520,520,0,,False
+stv20_B_I,train_1805,semantic_eval,B,I,Who sang the original oh where oh where can my baby be?,True,2,503,498,-5,,False
+stv20_B_C,train_1805,semantic_eval,B,C,Who sang the original oh where oh where can my baby be?,False,0,524,524,0,,False
+stv21_A_S,train_32,semantic_eval,A,S,"Who was part of doubles winning pairs in the US Open, Australian Open and Wimbledon tournaments during the 1970s, Roberta Vinci or Geoff Masters ?",False,0,847,847,0,,False
+stv21_A_K,train_32,semantic_eval,A,K,"Who was part of doubles winning pairs in the US Open, Australian Open and Wimbledon tournaments during the 1970s, Roberta Vinci or Geoff Masters ?",False,0,848,848,0,,False
+stv21_A_I,train_32,semantic_eval,A,I,"Who was part of doubles winning pairs in the US Open, Australian Open and Wimbledon tournaments during the 1970s, Roberta Vinci or Geoff Masters ?",True,2,821,829,8,,False
+stv21_A_C,train_32,semantic_eval,A,C,"Who was part of doubles winning pairs in the US Open, Australian Open and Wimbledon tournaments during the 1970s, Roberta Vinci or Geoff Masters ?",False,0,848,848,0,,False
+stv21_B_S,train_32,semantic_eval,B,S,"Who was part of doubles winning pairs in the US Open, Australian Open and Wimbledon tournaments during the 1970s, Roberta Vinci or Geoff Masters ?",False,0,844,844,0,,False
+stv21_B_K,train_32,semantic_eval,B,K,"Who was part of doubles winning pairs in the US Open, Australian Open and Wimbledon tournaments during the 1970s, Roberta Vinci or Geoff Masters ?",False,0,843,843,0,,False
+stv21_B_I,train_32,semantic_eval,B,I,"Who was part of doubles winning pairs in the US Open, Australian Open and Wimbledon tournaments during the 1970s, Roberta Vinci or Geoff Masters ?",True,2,820,831,11,,False
+stv21_B_C,train_32,semantic_eval,B,C,"Who was part of doubles winning pairs in the US Open, Australian Open and Wimbledon tournaments during the 1970s, Roberta Vinci or Geoff Masters ?",False,0,839,839,0,,False
+stv22_A_S,train_341,semantic_eval,A,S,Lawrence Sheriff founded which famous school in 1567?,False,0,2629,2629,0,,False
+stv22_A_K,train_341,semantic_eval,A,K,Lawrence Sheriff founded which famous school in 1567?,False,0,2642,2642,0,,False
+stv22_A_I,train_341,semantic_eval,A,I,Lawrence Sheriff founded which famous school in 1567?,True,1,2623,2627,4,,False
+stv22_A_C,train_341,semantic_eval,A,C,Lawrence Sheriff founded which famous school in 1567?,False,0,2637,2637,0,,False
+stv22_B_S,train_341,semantic_eval,B,S,Lawrence Sheriff founded which famous school in 1567?,False,0,2631,2631,0,,False
+stv22_B_K,train_341,semantic_eval,B,K,Lawrence Sheriff founded which famous school in 1567?,False,0,2644,2644,0,,False
+stv22_B_I,train_341,semantic_eval,B,I,Lawrence Sheriff founded which famous school in 1567?,True,1,2619,2627,8,,False
+stv22_B_C,train_341,semantic_eval,B,C,Lawrence Sheriff founded which famous school in 1567?,False,0,2636,2636,0,,False
+stv23_A_S,train_1605,semantic_eval,A,S,"During which years did U.S. forces conduct Korean War combat campaigns, up to the armistice?",False,0,742,742,0,,False
+stv23_A_K,train_1605,semantic_eval,A,K,"During which years did U.S. forces conduct Korean War combat campaigns, up to the armistice?",False,0,742,742,0,,False
+stv23_A_I,train_1605,semantic_eval,A,I,"During which years did U.S. forces conduct Korean War combat campaigns, up to the armistice?",False,0,708,708,0,,False
+stv23_A_C,train_1605,semantic_eval,A,C,"During which years did U.S. forces conduct Korean War combat campaigns, up to the armistice?",False,0,745,745,0,,False
+stv23_B_S,train_1605,semantic_eval,B,S,"During which years did U.S. forces conduct Korean War combat campaigns, up to the armistice?",False,0,741,741,0,,False
+stv23_B_K,train_1605,semantic_eval,B,K,"During which years did U.S. forces conduct Korean War combat campaigns, up to the armistice?",False,0,736,736,0,,False
+stv23_B_I,train_1605,semantic_eval,B,I,"During which years did U.S. forces conduct Korean War combat campaigns, up to the armistice?",False,0,711,711,0,,False
+stv23_B_C,train_1605,semantic_eval,B,C,"During which years did U.S. forces conduct Korean War combat campaigns, up to the armistice?",False,0,747,747,0,,False
+stv24_A_S,train_499,semantic_eval,A,S,Sixties pop music - Who recorded the 1962 hit record Sheila?,False,0,1325,1325,0,,False
+stv24_A_K,train_499,semantic_eval,A,K,Sixties pop music - Who recorded the 1962 hit record Sheila?,False,0,1344,1344,0,,False
+stv24_A_I,train_499,semantic_eval,A,I,Sixties pop music - Who recorded the 1962 hit record Sheila?,True,2,1333,1323,-10,,False
+stv24_A_C,train_499,semantic_eval,A,C,Sixties pop music - Who recorded the 1962 hit record Sheila?,False,0,1333,1333,0,,False
+stv24_B_S,train_499,semantic_eval,B,S,Sixties pop music - Who recorded the 1962 hit record Sheila?,False,0,1329,1329,0,,False
+stv24_B_K,train_499,semantic_eval,B,K,Sixties pop music - Who recorded the 1962 hit record Sheila?,False,0,1341,1341,0,,False
+stv24_B_I,train_499,semantic_eval,B,I,Sixties pop music - Who recorded the 1962 hit record Sheila?,True,2,1334,1322,-12,,False
+stv24_B_C,train_499,semantic_eval,B,C,Sixties pop music - Who recorded the 1962 hit record Sheila?,False,0,1335,1335,0,,False
+stv25_A_S,train_25,semantic_eval,A,S,"In 2014, CNN reported that FBI and other law enforcement agencies send their trainees to what Washington, D.C. museum so they can see for themselves how not protecting civil liberties can lead to bigger horrors?",False,0,2360,2360,0,,False
+stv25_A_K,train_25,semantic_eval,A,K,"In 2014, CNN reported that FBI and other law enforcement agencies send their trainees to what Washington, D.C. museum so they can see for themselves how not protecting civil liberties can lead to bigger horrors?",False,0,2362,2362,0,,False
+stv25_A_I,train_25,semantic_eval,A,I,"In 2014, CNN reported that FBI and other law enforcement agencies send their trainees to what Washington, D.C. museum so they can see for themselves how not protecting civil liberties can lead to bigger horrors?",False,0,2343,2343,0,,False
+stv25_A_C,train_25,semantic_eval,A,C,"In 2014, CNN reported that FBI and other law enforcement agencies send their trainees to what Washington, D.C. museum so they can see for themselves how not protecting civil liberties can lead to bigger horrors?",False,0,2370,2370,0,,False
+stv25_B_S,train_25,semantic_eval,B,S,"In 2014, CNN reported that FBI and other law enforcement agencies send their trainees to what Washington, D.C. museum so they can see for themselves how not protecting civil liberties can lead to bigger horrors?",False,0,2354,2354,0,,False
+stv25_B_K,train_25,semantic_eval,B,K,"In 2014, CNN reported that FBI and other law enforcement agencies send their trainees to what Washington, D.C. museum so they can see for themselves how not protecting civil liberties can lead to bigger horrors?",False,0,2356,2356,0,,False
+stv25_B_I,train_25,semantic_eval,B,I,"In 2014, CNN reported that FBI and other law enforcement agencies send their trainees to what Washington, D.C. museum so they can see for themselves how not protecting civil liberties can lead to bigger horrors?",False,0,2338,2338,0,,False
+stv25_B_C,train_25,semantic_eval,B,C,"In 2014, CNN reported that FBI and other law enforcement agencies send their trainees to what Washington, D.C. museum so they can see for themselves how not protecting civil liberties can lead to bigger horrors?",False,0,2360,2360,0,,False
+stv26_A_S,train_1150,semantic_eval,A,S,"Sorry! and Barbarossa, are which specific type and form of entertainment?",False,0,654,654,0,,False
+stv26_A_K,train_1150,semantic_eval,A,K,"Sorry! and Barbarossa, are which specific type and form of entertainment?",False,0,667,667,0,,False
+stv26_A_I,train_1150,semantic_eval,A,I,"Sorry! and Barbarossa, are which specific type and form of entertainment?",True,1,657,651,-6,,False
+stv26_A_C,train_1150,semantic_eval,A,C,"Sorry! and Barbarossa, are which specific type and form of entertainment?",False,0,657,657,0,,False
+stv26_B_S,train_1150,semantic_eval,B,S,"Sorry! and Barbarossa, are which specific type and form of entertainment?",False,0,656,656,0,,False
+stv26_B_K,train_1150,semantic_eval,B,K,"Sorry! and Barbarossa, are which specific type and form of entertainment?",True,1,667,663,-4,,False
+stv26_B_I,train_1150,semantic_eval,B,I,"Sorry! and Barbarossa, are which specific type and form of entertainment?",True,1,659,653,-6,,False
+stv26_B_C,train_1150,semantic_eval,B,C,"Sorry! and Barbarossa, are which specific type and form of entertainment?",False,0,655,655,0,,False
+stv27_A_S,train_254,semantic_eval,A,S,What is the surname of the family in the book Little Women by Louisa May Alcott?,False,0,2102,2102,0,,False
+stv27_A_K,train_254,semantic_eval,A,K,What is the surname of the family in the book Little Women by Louisa May Alcott?,False,0,2112,2112,0,,False
+stv27_A_I,train_254,semantic_eval,A,I,What is the surname of the family in the book Little Women by Louisa May Alcott?,True,1,2105,2091,-14,,False
+stv27_A_C,train_254,semantic_eval,A,C,What is the surname of the family in the book Little Women by Louisa May Alcott?,False,0,2105,2105,0,,False
+stv27_B_S,train_254,semantic_eval,B,S,What is the surname of the family in the book Little Women by Louisa May Alcott?,False,0,2099,2099,0,,False
+stv27_B_K,train_254,semantic_eval,B,K,What is the surname of the family in the book Little Women by Louisa May Alcott?,False,0,2108,2108,0,,False
+stv27_B_I,train_254,semantic_eval,B,I,What is the surname of the family in the book Little Women by Louisa May Alcott?,True,2,2112,2089,-23,,False
+stv27_B_C,train_254,semantic_eval,B,C,What is the surname of the family in the book Little Women by Louisa May Alcott?,False,0,2106,2106,0,,False
+stv28_A_S,train_1222,semantic_eval,A,S,"According to the supplied 2017-18 team record, when did the Toronto Maple Leafs last win the Stanley Cup?",False,0,553,553,0,,False
+stv28_A_K,train_1222,semantic_eval,A,K,"According to the supplied 2017-18 team record, when did the Toronto Maple Leafs last win the Stanley Cup?",False,0,551,551,0,,False
+stv28_A_I,train_1222,semantic_eval,A,I,"According to the supplied 2017-18 team record, when did the Toronto Maple Leafs last win the Stanley Cup?",True,2,527,521,-6,,False
+stv28_A_C,train_1222,semantic_eval,A,C,"According to the supplied 2017-18 team record, when did the Toronto Maple Leafs last win the Stanley Cup?",False,0,555,555,0,,False
+stv28_B_S,train_1222,semantic_eval,B,S,"According to the supplied 2017-18 team record, when did the Toronto Maple Leafs last win the Stanley Cup?",False,0,551,551,0,,False
+stv28_B_K,train_1222,semantic_eval,B,K,"According to the supplied 2017-18 team record, when did the Toronto Maple Leafs last win the Stanley Cup?",False,0,548,548,0,,False
+stv28_B_I,train_1222,semantic_eval,B,I,"According to the supplied 2017-18 team record, when did the Toronto Maple Leafs last win the Stanley Cup?",True,2,527,520,-7,,False
+stv28_B_C,train_1222,semantic_eval,B,C,"According to the supplied 2017-18 team record, when did the Toronto Maple Leafs last win the Stanley Cup?",False,0,551,551,0,,False
+stv29_A_S,train_33,semantic_eval,A,S,"What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",False,0,2452,2452,0,,False
+stv29_A_K,train_33,semantic_eval,A,K,"What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",False,0,2454,2454,0,,False
+stv29_A_I,train_33,semantic_eval,A,I,"What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",True,2,2442,2444,2,,False
+stv29_A_C,train_33,semantic_eval,A,C,"What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",False,0,2458,2458,0,,False
+stv29_B_S,train_33,semantic_eval,B,S,"What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",True,1,2453,2454,1,,False
+stv29_B_K,train_33,semantic_eval,B,K,"What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",True,1,2451,2450,-1,,False
+stv29_B_I,train_33,semantic_eval,B,I,"What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",True,2,2441,2446,5,,False
+stv29_B_C,train_33,semantic_eval,B,C,"What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",False,0,2461,2461,0,,False
+stv30_A_S,train_1709,semantic_eval,A,S,How many episodes of home fires are there?,False,0,482,482,0,,False
+stv30_A_K,train_1709,semantic_eval,A,K,How many episodes of home fires are there?,False,0,490,490,0,,False
+stv30_A_I,train_1709,semantic_eval,A,I,How many episodes of home fires are there?,True,2,489,474,-15,,False
+stv30_A_C,train_1709,semantic_eval,A,C,How many episodes of home fires are there?,False,0,483,483,0,,False
+stv30_B_S,train_1709,semantic_eval,B,S,How many episodes of home fires are there?,False,0,482,482,0,,False
+stv30_B_K,train_1709,semantic_eval,B,K,How many episodes of home fires are there?,False,0,486,486,0,,False
+stv30_B_I,train_1709,semantic_eval,B,I,How many episodes of home fires are there?,True,2,488,474,-14,,False
+stv30_B_C,train_1709,semantic_eval,B,C,How many episodes of home fires are there?,False,0,478,478,0,,False

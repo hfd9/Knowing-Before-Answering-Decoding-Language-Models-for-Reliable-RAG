@@ -1,0 +1,52 @@
+{
+  "recorded_date": "2026-10-20",
+  "timezone": "Asia/Shanghai",
+  "authorization": "用户：提交推送代码",
+  "parent_commit": "ac5cc87a435cc8ee9de63acc8708b32359a0b17e",
+  "remote_main_before_commit": "ac5cc87a435cc8ee9de63acc8708b32359a0b17e",
+  "branch": "main",
+  "remote": "origin",
+  "identity": "existing local hfd9 configuration; no override",
+  "version_identifier": "Git commit containing this record",
+  "push_verification": "After execution, compare remote refs/heads/main with local HEAD; report actual result in final response",
+  "pre_submission_checks": {
+    "changed_files_before_submission_record": 56,
+    "python_AST": 15,
+    "JSON_parse": 16,
+    "shell_syntax": 5,
+    "each_file_below_1_MiB": true,
+    "tracked_diff_check": "passed",
+    "v5_previous_path_sha256_matched": 277,
+    "v5_new_source_and_record_sha256_matched": 9,
+    "v5_new_run_artifact_sha256_matched": 34
+  },
+  "previous_test_evidence_not_rerun_this_submission": [
+    {"stage": "source followup v3", "tests": 31, "seconds": 42.414},
+    {"stage": "source augmentation v4/r2", "tests": 37, "seconds": 91.444},
+    {"stage": "executor related", "tests": 53, "seconds": 92.052},
+    {"stage": "executor strengthened assertions", "tests": 16, "seconds": 4.853},
+    {"stage": "author review", "tests": 5, "seconds": 0.474},
+    {"stage": "materials v5", "tests": 8, "seconds": 44.533}
+  ],
+  "latest_materials": {
+    "version": 5,
+    "bases": 30,
+    "cells": 240,
+    "changed_inputs": 83,
+    "unchanged_inputs": 157,
+    "reconstructed_I": 54,
+    "independently_approved_labels": 0,
+    "gpu_gate": false
+  },
+  "new_gpu_forwards": 0,
+  "generated_answers": 0,
+  "trained_probes": 0,
+  "reserved_380_opened": false,
+  "old_120_test_suite_rerun": false,
+  "limitations": [
+    "Author review has project-history exposure and is not independent confirmation.",
+    "Construction coverage does not establish semantic approval.",
+    "Existing executor is frozen to v4-r2; v5 requires a new run version.",
+    "Individual historical test counts are not additive full-suite evidence."
+  ]
+}

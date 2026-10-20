@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "task": "explicit_source_policy_amendment_before_inference",
+  "user_trigger": "你无法改好达到门槛么",
+  "parent_material_spec_sha256": "b1118e2b2d1094cb213287d796c4b551747bb001dfc769b38ae8b0f1f7400ae2",
+  "frozen_design_sha256": "78476923d35aa72d9d0a65b0718be4eb38195ef9c5e12f9672045bb2add5f457",
+  "supplemental_sources_sha256": "87913222ea636499cde4f437ec6004157a94afb22e3f3deb3ef30ab170a9ac3d",
+  "changed_policy": "Permit the listed external primary-source premises in author targets for the eight incomplete bases. Previous source-only policy is retained as a separate historical assay, not silently overwritten.",
+  "unchanged": [
+    "30 base IDs",
+    "12/6/12 partitions",
+    "240 maximum cells",
+    "two expressions and S/K/I/C",
+    "original three background passages, duplicates, slots and order",
+    "old chat L28 probe",
+    "maximum one semantic fit",
+    "0.90 semantic coverage requirement",
+    "independent semantic-review requirement",
+    "380 reserved original test bases sealed"
+  ],
+  "changes": [
+    {
+      "original_id": "train_1136",
+      "original_question": "When did the hula hoop make its debut?",
+      "new_question": "In what year did Wham-O's modern Hula Hoop make its market debut?",
+      "question_changed": true,
+      "reason": "Explicitly restrict debut to the commercial Wham-O product, not ancient hoop play or a later patent. Supplement the missing market-event premise with the original trademark record; this is a disclosed scope clarification.",
+      "added_source_ids": [
+        "X001"
+      ],
+      "old_status": "incomplete_source_or_scope",
+      "new_status": "authored_pending_independent_review",
+      "all_eight_variants_revised_before_inference": true,
+      "semantic_labels_approved": 0
+    },
+    {
+      "original_id": "train_1154",
+      "original_question": "In the nursery rhyme, which was the last creature eaten by the woman who swallowed a fly?",
+      "new_question": "In the supplied version of the nursery rhyme about the woman who swallowed a fly, which was the last creature she ate?",
+      "question_changed": true,
+      "reason": "Specify the supplied version, drawn from CLAS printed pages198–199. That version ends with a horse and pie, not a death line; the requested property remains the last creature, not last food.",
+      "added_source_ids": [
+        "X002"
+      ],
+      "old_status": "incomplete_source_or_scope",
+      "new_status": "authored_pending_independent_review",
+      "all_eight_variants_revised_before_inference": true,
+      "semantic_labels_approved": 0
+    },
+    {
+      "original_id": "train_405",
+      "original_question": "Washington University in St. Louis and University of Colorado, are located in which country?",
+      "new_question": "Washington University in St. Louis and University of Colorado, are located in which country?",
+      "question_changed": false,
+      "reason": "Original question unchanged. Add an explicit Colorado-to-USA bridge supported by university contact/location material and the Library of Congress state guide.",
+      "added_source_ids": [
+        "X003",
+        "X004"
+      ],
+      "old_status": "incomplete_source_or_scope",
+      "new_status": "authored_pending_independent_review",
+      "all_eight_variants_revised_before_inference": true,
+      "semantic_labels_approved": 0
+    },
+    {
+      "original_id": "train_1470",
+      "original_question": "What is the state capital of Ohio?",
+      "new_question": "What is the state capital of Ohio?",
+      "question_changed": false,
+      "reason": "Original question unchanged. Supply the capital relation explicitly from Ohio government material; retain the original largest-city background without treating it as proof of capital status.",
+      "added_source_ids": [
+        "X005"
+      ],
+      "old_status": "incomplete_source_or_scope",
+      "new_status": "authored_pending_independent_review",
+      "all_eight_variants_revised_before_inference": true,
+      "semantic_labels_approved": 0
+    },
+    {
+      "original_id": "train_1805",
+      "original_question": "Who sang the original oh where oh where can my baby be?",
+      "new_question": "Who sang the original oh where oh where can my baby be?",
+      "question_changed": false,
+      "reason": "Original lyric question unchanged. Add its Last Kiss title bridge from the official artist audio description; retain the released1961 original-version metadata and distinguish later covers.",
+      "added_source_ids": [
+        "X006",
+        "X011"
+      ],
+      "old_status": "incomplete_source_or_scope",
+      "new_status": "authored_pending_independent_review",
+      "all_eight_variants_revised_before_inference": true,
+      "semantic_labels_approved": 0
+    },
+    {
+      "original_id": "train_1605",
+      "original_question": "When was the us involved in the korean war?",
+      "new_question": "During which years did U.S. forces conduct Korean War combat campaigns, up to the armistice?",
+      "question_changed": true,
+      "reason": "Clarify involvement as wartime combat campaigns up to the armistice, not all subsequent US military presence. Supplement the original outbreak-only passage with the official US campaign interval; no date appears in the clarified question.",
+      "added_source_ids": [
+        "X007"
+      ],
+      "old_status": "incomplete_source_or_scope",
+      "new_status": "authored_pending_independent_review",
+      "all_eight_variants_revised_before_inference": true,
+      "semantic_labels_approved": 0
+    },
+    {
+      "original_id": "train_254",
+      "original_question": "What is the surname of the family in the book Little Women by Louisa May Alcott?",
+      "new_question": "What is the surname of the family in the book Little Women by Louisa May Alcott?",
+      "question_changed": false,
+      "reason": "Original question unchanged. Add the fictional-family relation from Alcott original public-domain novel, rather than using author biography or a gold answer.",
+      "added_source_ids": [
+        "X008"
+      ],
+      "old_status": "incomplete_source_or_scope",
+      "new_status": "authored_pending_independent_review",
+      "all_eight_variants_revised_before_inference": true,
+      "semantic_labels_approved": 0
+    },
+    {
+      "original_id": "train_33",
+      "original_question": "What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",
+      "new_question": "What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",
+      "question_changed": false,
+      "reason": "Original question unchanged. Supply the explicit dish/preparation mapping from Japanese government food material, distinguishing raw-fish sashimi from rice-based sushi.",
+      "added_source_ids": [
+        "X009",
+        "X010"
+      ],
+      "old_status": "incomplete_source_or_scope",
+      "new_status": "authored_pending_independent_review",
+      "all_eight_variants_revised_before_inference": true,
+      "semantic_labels_approved": 0
+    }
+  ],
+  "constructed_before": 176,
+  "constructed_after": 240,
+  "construction_coverage_after": 1.0,
+  "independently_reviewed_semantic_labels": 0,
+  "semantic_coverage": 0.0,
+  "gpu_launch_ready": false,
+  "important_distinction": "100% construction coverage is not90% independent semantic-label coverage; all240 labels remain null. Source-augmented inputs cannot be reported as unchanged released data.",
+  "original_source_only_run": "runs/qwen2.5-3b-semantic-transfer-materials-v3",
+  "current_source_augmented_run": "runs/qwen2.5-3b-semantic-transfer-materials-v4"
+}
