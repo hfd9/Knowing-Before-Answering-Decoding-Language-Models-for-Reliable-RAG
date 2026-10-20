@@ -1,0 +1,740 @@
+{
+  "checked_at": "2026-10-20T11:16:45.008652+08:00",
+  "status": "generation_and_report_verified_behavior_pending",
+  "verification_mode": "CPU-only read-only; both supplied verifier commands exited 0; independent saved-record counts below",
+  "runs": {
+    "qwen2.5-3b-controlled-evidence-pilot-v1": {
+      "supplied_verifier": {
+        "status": "verified_complete",
+        "instances": 40,
+        "new_outputs": 80,
+        "implementation_fingerprints": 18,
+        "unknown_behavior_rows": 40,
+        "protocol_sha256": "98650b290d29779242cb4727e43a1625d5fe187bae275c9ed2fb8bdf445baf6f"
+      },
+      "progress": {
+        "status": "analysis_complete_behavior_pending",
+        "free_saved": 40,
+        "classification_saved": 40,
+        "protocol_sha256": "98650b290d29779242cb4727e43a1625d5fe187bae275c9ed2fb8bdf445baf6f"
+      },
+      "source_probe_fingerprints": 5,
+      "counts_by_condition": {
+        "S": {
+          "instances": 10,
+          "probe": {
+            "conflict": 9,
+            "answer": 1
+          },
+          "fixed_classification": {
+            "answer": 4,
+            "refuse": 6
+          }
+        },
+        "I": {
+          "instances": 10,
+          "probe": {
+            "conflict": 6,
+            "answer": 2,
+            "refuse": 2
+          },
+          "fixed_classification": {
+            "refuse": 8,
+            "answer": 2
+          }
+        },
+        "C": {
+          "instances": 10,
+          "probe": {
+            "conflict": 10
+          },
+          "fixed_classification": {
+            "refuse": 10
+          }
+        },
+        "D": {
+          "instances": 10,
+          "probe": {
+            "conflict": 9,
+            "answer": 1
+          },
+          "fixed_classification": {
+            "refuse": 6,
+            "answer": 4
+          }
+        }
+      },
+      "main_probe": {
+        "n_instances": 30,
+        "correct": 13,
+        "accuracy": 0.43333333333333335,
+        "macro_f1": 0.3528693528693529,
+        "invalid_count": 0,
+        "parse_coverage": 1.0,
+        "unsupported_invalid_count": 0,
+        "confusion_matrix": [
+          [
+            1,
+            0,
+            9,
+            0
+          ],
+          [
+            2,
+            2,
+            6,
+            0
+          ],
+          [
+            0,
+            0,
+            10,
+            0
+          ]
+        ],
+        "true_label_order": [
+          "answer",
+          "refuse",
+          "conflict"
+        ],
+        "predicted_label_order": [
+          "answer",
+          "refuse",
+          "conflict",
+          "invalid"
+        ],
+        "per_class_f1": {
+          "answer": 0.15384615384615385,
+          "refuse": 0.3333333333333333,
+          "conflict": 0.5714285714285714
+        },
+        "invalid_policy": "Invalid outputs count as incorrect and false negatives; FAR counts explicit answer predictions only.",
+        "classification_false_answer_rate": 0.1,
+        "per_class": {
+          "answer": {
+            "precision": 0.3333333333333333,
+            "recall": 0.1,
+            "f1": 0.15384615384615385,
+            "support": 10,
+            "correct": 1
+          },
+          "refuse": {
+            "precision": 1.0,
+            "recall": 0.2,
+            "f1": 0.3333333333333333,
+            "support": 10,
+            "correct": 2
+          },
+          "conflict": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714,
+            "support": 10,
+            "correct": 10
+          }
+        },
+        "refuse_to_answer_count": 2,
+        "conflict_to_answer_count": 0,
+        "refuse_to_answer_rate": 0.2,
+        "conflict_to_answer_rate": 0.0
+      },
+      "main_fixed_classification": {
+        "n_instances": 30,
+        "correct": 12,
+        "accuracy": 0.4,
+        "macro_f1": 0.3235294117647059,
+        "invalid_count": 0,
+        "parse_coverage": 1.0,
+        "unsupported_invalid_count": 0,
+        "confusion_matrix": [
+          [
+            4,
+            6,
+            0,
+            0
+          ],
+          [
+            2,
+            8,
+            0,
+            0
+          ],
+          [
+            0,
+            10,
+            0,
+            0
+          ]
+        ],
+        "true_label_order": [
+          "answer",
+          "refuse",
+          "conflict"
+        ],
+        "predicted_label_order": [
+          "answer",
+          "refuse",
+          "conflict",
+          "invalid"
+        ],
+        "per_class_f1": {
+          "answer": 0.5,
+          "refuse": 0.47058823529411764,
+          "conflict": 0.0
+        },
+        "invalid_policy": "Invalid outputs count as incorrect and false negatives; FAR counts explicit answer predictions only.",
+        "classification_false_answer_rate": 0.1,
+        "per_class": {
+          "answer": {
+            "precision": 0.6666666666666666,
+            "recall": 0.4,
+            "f1": 0.5,
+            "support": 10,
+            "correct": 4
+          },
+          "refuse": {
+            "precision": 0.3333333333333333,
+            "recall": 0.8,
+            "f1": 0.47058823529411764,
+            "support": 10,
+            "correct": 8
+          },
+          "conflict": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 10,
+            "correct": 0
+          }
+        },
+        "refuse_to_answer_count": 2,
+        "conflict_to_answer_count": 0,
+        "refuse_to_answer_rate": 0.2,
+        "conflict_to_answer_rate": 0.0
+      },
+      "generation": {
+        "free_empty": 0,
+        "free_truncated": 0,
+        "classification_invalid": 0,
+        "classification_truncated": 0,
+        "all_eos": true,
+        "all_probe_pre_first_token": true,
+        "feature_arrays": 40
+      },
+      "saved_times": {
+        "free_answer": {
+          "first_saved": "2026-10-18T14:44:51.454897+08:00",
+          "last_saved": "2026-10-18T14:46:04.546490+08:00",
+          "generation_seconds_sum": 76.26965779491002,
+          "output_token_min": 21,
+          "output_token_max": 103
+        },
+        "classification": {
+          "first_saved": "2026-10-18T14:46:04.744564+08:00",
+          "last_saved": "2026-10-18T14:46:15.200661+08:00",
+          "generation_seconds_sum": 10.156852760061156,
+          "output_token_min": 2,
+          "output_token_max": 3
+        }
+      },
+      "paired_summary": {
+        "questions": 10,
+        "I_refuse_probability_increases": 10,
+        "C_conflict_probability_increases": 10,
+        "S_answer_I_refuse_pairs": 0,
+        "S_answer_C_conflict_pairs": 1,
+        "D_same_probe": 10,
+        "D_same_classification": 10
+      },
+      "paired": [
+        {
+          "original_id": "val_28",
+          "probe": {
+            "S": "conflict",
+            "I": "conflict",
+            "C": "conflict",
+            "D": "conflict"
+          },
+          "classification": {
+            "S": "refuse",
+            "I": "refuse",
+            "C": "refuse",
+            "D": "refuse"
+          },
+          "I_refuse_probability_minus_S": 0.013884521601522589,
+          "C_conflict_probability_minus_S": 0.2716509006361685,
+          "D_same_probe": true,
+          "D_same_classification": true
+        },
+        {
+          "original_id": "val_17",
+          "probe": {
+            "S": "conflict",
+            "I": "conflict",
+            "C": "conflict",
+            "D": "conflict"
+          },
+          "classification": {
+            "S": "answer",
+            "I": "answer",
+            "C": "refuse",
+            "D": "answer"
+          },
+          "I_refuse_probability_minus_S": 0.020740000088904496,
+          "C_conflict_probability_minus_S": 0.06775808610991974,
+          "D_same_probe": true,
+          "D_same_classification": true
+        },
+        {
+          "original_id": "val_94",
+          "probe": {
+            "S": "conflict",
+            "I": "conflict",
+            "C": "conflict",
+            "D": "conflict"
+          },
+          "classification": {
+            "S": "refuse",
+            "I": "refuse",
+            "C": "refuse",
+            "D": "refuse"
+          },
+          "I_refuse_probability_minus_S": 0.31802481721329984,
+          "C_conflict_probability_minus_S": 0.02806527913058443,
+          "D_same_probe": true,
+          "D_same_classification": true
+        },
+        {
+          "original_id": "val_3",
+          "probe": {
+            "S": "conflict",
+            "I": "conflict",
+            "C": "conflict",
+            "D": "conflict"
+          },
+          "classification": {
+            "S": "answer",
+            "I": "answer",
+            "C": "refuse",
+            "D": "answer"
+          },
+          "I_refuse_probability_minus_S": 0.005666581934966261,
+          "C_conflict_probability_minus_S": 0.09774651813065982,
+          "D_same_probe": true,
+          "D_same_classification": true
+        },
+        {
+          "original_id": "val_31",
+          "probe": {
+            "S": "conflict",
+            "I": "refuse",
+            "C": "conflict",
+            "D": "conflict"
+          },
+          "classification": {
+            "S": "answer",
+            "I": "refuse",
+            "C": "refuse",
+            "D": "answer"
+          },
+          "I_refuse_probability_minus_S": 0.8001199975759333,
+          "C_conflict_probability_minus_S": 0.26004898578980973,
+          "D_same_probe": true,
+          "D_same_classification": true
+        },
+        {
+          "original_id": "val_86",
+          "probe": {
+            "S": "conflict",
+            "I": "conflict",
+            "C": "conflict",
+            "D": "conflict"
+          },
+          "classification": {
+            "S": "refuse",
+            "I": "refuse",
+            "C": "refuse",
+            "D": "refuse"
+          },
+          "I_refuse_probability_minus_S": 0.4137431882927232,
+          "C_conflict_probability_minus_S": 0.05517145285250036,
+          "D_same_probe": true,
+          "D_same_classification": true
+        },
+        {
+          "original_id": "val_81",
+          "probe": {
+            "S": "answer",
+            "I": "answer",
+            "C": "conflict",
+            "D": "answer"
+          },
+          "classification": {
+            "S": "refuse",
+            "I": "refuse",
+            "C": "refuse",
+            "D": "refuse"
+          },
+          "I_refuse_probability_minus_S": 0.049243811574839196,
+          "C_conflict_probability_minus_S": 0.14418735110968223,
+          "D_same_probe": true,
+          "D_same_classification": true
+        },
+        {
+          "original_id": "val_13",
+          "probe": {
+            "S": "conflict",
+            "I": "answer",
+            "C": "conflict",
+            "D": "conflict"
+          },
+          "classification": {
+            "S": "refuse",
+            "I": "refuse",
+            "C": "refuse",
+            "D": "refuse"
+          },
+          "I_refuse_probability_minus_S": 0.06775858990958855,
+          "C_conflict_probability_minus_S": 0.09185334359814257,
+          "D_same_probe": true,
+          "D_same_classification": true
+        },
+        {
+          "original_id": "val_14",
+          "probe": {
+            "S": "conflict",
+            "I": "refuse",
+            "C": "conflict",
+            "D": "conflict"
+          },
+          "classification": {
+            "S": "answer",
+            "I": "refuse",
+            "C": "refuse",
+            "D": "answer"
+          },
+          "I_refuse_probability_minus_S": 0.34210836603071404,
+          "C_conflict_probability_minus_S": 0.13817317389697548,
+          "D_same_probe": true,
+          "D_same_classification": true
+        },
+        {
+          "original_id": "val_35",
+          "probe": {
+            "S": "conflict",
+            "I": "conflict",
+            "C": "conflict",
+            "D": "conflict"
+          },
+          "classification": {
+            "S": "refuse",
+            "I": "refuse",
+            "C": "refuse",
+            "D": "refuse"
+          },
+          "I_refuse_probability_minus_S": 0.34075400891842506,
+          "C_conflict_probability_minus_S": 0.03443226508597719,
+          "D_same_probe": true,
+          "D_same_classification": true
+        }
+      ],
+      "annotation_file_exists": false,
+      "annotation_sha256": null,
+      "last_failure_exists": false,
+      "sha256": {
+        "protocol.json": "98650b290d29779242cb4727e43a1625d5fe187bae275c9ed2fb8bdf445baf6f",
+        "progress.json": "8651a34eddbb69ac28b724082bce74774fbaabc679f75d332ba448537b327fb4",
+        "preflight.json": "f0d2ad65668637079d9cf18a851c7c2a03716558228fb10421f8fd6dbd359be4",
+        "reports/pilot.json": "1f613e6ae8a0fd1ed639d1abadd55fc808eec9dc22b265385a76c61366d428aa",
+        "free_answer/predictions.json": "d240a5a8f321c2a0dbefbc7c620407b74db7992705158bac491eecc4ff8ab699",
+        "classification/predictions.json": "f110005993a1f4923600d13d86dac00f4b4d6a81007ae5389fe25948beddb908",
+        "review/manifest.json": "5e0a22d59c6760cd5c7f4eff9f9878002be514e4460d89b73fb19a2ebf9c09af",
+        "review/annotations_template.csv": "0333565111b6b4e0d2650491e6aa4d62f990a50dadfca8730ce9816a00d01524",
+        "materials/inputs.json": "78d7fddc57d6b5bb143d580e7aa3fbbcca5b53f793955bd5d02d1c6b5176e60c",
+        "materials/input_judgments.json": "0c0497639fd2eafdc5e8f7aedfde9134350eee642698925da841ccd2b5579dfb",
+        "materials/review_seal.json": "6f66523cf7cf34f41fb3329f2edfd9cbe3312f87d51b672b60ccff2d6a831c9d"
+      }
+    },
+    "qwen2.5-3b-controlled-evidence-pilot-smoke-v1": {
+      "supplied_verifier": {
+        "status": "verified_complete",
+        "instances": 4,
+        "new_outputs": 8,
+        "implementation_fingerprints": 18,
+        "unknown_behavior_rows": 4,
+        "protocol_sha256": "ca8c52a01df554d88d0fd9164d0ea966309a7dedb19262156c1fd54a7e9c8e52"
+      },
+      "progress": {
+        "status": "analysis_complete_behavior_pending",
+        "free_saved": 4,
+        "classification_saved": 4,
+        "protocol_sha256": "ca8c52a01df554d88d0fd9164d0ea966309a7dedb19262156c1fd54a7e9c8e52"
+      },
+      "source_probe_fingerprints": 5,
+      "counts_by_condition": {
+        "S": {
+          "instances": 1,
+          "probe": {
+            "conflict": 1
+          },
+          "fixed_classification": {
+            "answer": 1
+          }
+        },
+        "I": {
+          "instances": 1,
+          "probe": {
+            "refuse": 1
+          },
+          "fixed_classification": {
+            "refuse": 1
+          }
+        },
+        "C": {
+          "instances": 1,
+          "probe": {
+            "conflict": 1
+          },
+          "fixed_classification": {
+            "refuse": 1
+          }
+        },
+        "D": {
+          "instances": 1,
+          "probe": {
+            "conflict": 1
+          },
+          "fixed_classification": {
+            "answer": 1
+          }
+        }
+      },
+      "main_probe": {
+        "n_instances": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666,
+        "macro_f1": 0.5555555555555555,
+        "invalid_count": 0,
+        "parse_coverage": 1.0,
+        "unsupported_invalid_count": 0,
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        "true_label_order": [
+          "answer",
+          "refuse",
+          "conflict"
+        ],
+        "predicted_label_order": [
+          "answer",
+          "refuse",
+          "conflict",
+          "invalid"
+        ],
+        "per_class_f1": {
+          "answer": 0.0,
+          "refuse": 1.0,
+          "conflict": 0.6666666666666666
+        },
+        "invalid_policy": "Invalid outputs count as incorrect and false negatives; FAR counts explicit answer predictions only.",
+        "classification_false_answer_rate": 0.0,
+        "per_class": {
+          "answer": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1,
+            "correct": 0
+          },
+          "refuse": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1,
+            "correct": 1
+          },
+          "conflict": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "support": 1,
+            "correct": 1
+          }
+        },
+        "refuse_to_answer_count": 0,
+        "conflict_to_answer_count": 0,
+        "refuse_to_answer_rate": 0.0,
+        "conflict_to_answer_rate": 0.0
+      },
+      "main_fixed_classification": {
+        "n_instances": 3,
+        "correct": 2,
+        "accuracy": 0.6666666666666666,
+        "macro_f1": 0.5555555555555555,
+        "invalid_count": 0,
+        "parse_coverage": 1.0,
+        "unsupported_invalid_count": 0,
+        "confusion_matrix": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ]
+        ],
+        "true_label_order": [
+          "answer",
+          "refuse",
+          "conflict"
+        ],
+        "predicted_label_order": [
+          "answer",
+          "refuse",
+          "conflict",
+          "invalid"
+        ],
+        "per_class_f1": {
+          "answer": 1.0,
+          "refuse": 0.6666666666666666,
+          "conflict": 0.0
+        },
+        "invalid_policy": "Invalid outputs count as incorrect and false negatives; FAR counts explicit answer predictions only.",
+        "classification_false_answer_rate": 0.0,
+        "per_class": {
+          "answer": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 1,
+            "correct": 1
+          },
+          "refuse": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "support": 1,
+            "correct": 1
+          },
+          "conflict": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1,
+            "correct": 0
+          }
+        },
+        "refuse_to_answer_count": 0,
+        "conflict_to_answer_count": 0,
+        "refuse_to_answer_rate": 0.0,
+        "conflict_to_answer_rate": 0.0
+      },
+      "generation": {
+        "free_empty": 0,
+        "free_truncated": 0,
+        "classification_invalid": 0,
+        "classification_truncated": 0,
+        "all_eos": true,
+        "all_probe_pre_first_token": true,
+        "feature_arrays": 4
+      },
+      "saved_times": {
+        "free_answer": {
+          "first_saved": "2026-10-18T14:44:13.387862+08:00",
+          "last_saved": "2026-10-18T14:44:21.577478+08:00",
+          "generation_seconds_sum": 10.665021771914326,
+          "output_token_min": 27,
+          "output_token_max": 95
+        },
+        "classification": {
+          "first_saved": "2026-10-18T14:44:21.990578+08:00",
+          "last_saved": "2026-10-18T14:44:23.292781+08:00",
+          "generation_seconds_sum": 1.6252283349167556,
+          "output_token_min": 2,
+          "output_token_max": 3
+        }
+      },
+      "paired_summary": {
+        "questions": 1,
+        "I_refuse_probability_increases": 1,
+        "C_conflict_probability_increases": 1,
+        "S_answer_I_refuse_pairs": 0,
+        "S_answer_C_conflict_pairs": 0,
+        "D_same_probe": 1,
+        "D_same_classification": 1
+      },
+      "paired": [
+        {
+          "original_id": "val_31",
+          "probe": {
+            "S": "conflict",
+            "I": "refuse",
+            "C": "conflict",
+            "D": "conflict"
+          },
+          "classification": {
+            "S": "answer",
+            "I": "refuse",
+            "C": "refuse",
+            "D": "answer"
+          },
+          "I_refuse_probability_minus_S": 0.8001199975759333,
+          "C_conflict_probability_minus_S": 0.26004898578980973,
+          "D_same_probe": true,
+          "D_same_classification": true
+        }
+      ],
+      "annotation_file_exists": false,
+      "annotation_sha256": null,
+      "last_failure_exists": false,
+      "sha256": {
+        "protocol.json": "ca8c52a01df554d88d0fd9164d0ea966309a7dedb19262156c1fd54a7e9c8e52",
+        "progress.json": "7239257f19a5daf2cda30697cee2b29bea28256f4ed7fb7b7c161db6f5e1ae99",
+        "preflight.json": "5c2fcf38092660b47502397195f919039814f99b5798d35813b7eafaa85ae652",
+        "reports/pilot.json": "b73801c7943da33a8ee68fe62784c6601730a2cc4f5f03b00a3b1f7e3a38e3fb",
+        "free_answer/predictions.json": "2a84c939f74e74e1f54fb2da2d397df9d26fcccff370b464b3b26570bf8649c2",
+        "classification/predictions.json": "0e9fb1bc3f31f656058c0f785bc1a7f993fb85d65bb48ae3cc367b641fd9018d",
+        "review/manifest.json": "93b16110377b8220b5c5564d5c0929d1a59bdbec9925e1a0cf2ad5a13527483b",
+        "review/annotations_template.csv": "7dc5056d666d3ac7bac729d019b82b8a8212595b76603ffcec9f09e048520ca6",
+        "materials/inputs.json": "db9cb900ef1e75f97fb2c3a1bc25479d9366bbd0d0bcc5f6e9d008177c37b74f",
+        "materials/input_judgments.json": "17c7cf6c97786ecb1c8affd8eb1f16869cef24efdfa9805c56637e09041e926c",
+        "materials/review_seal.json": "60d137f8c5eef81cf6076e5c83f62c8e37b973ade0f05e1c8079f1ab09ea7032"
+      }
+    }
+  },
+  "limitations": [
+    "All cases are authored/exposed validation development; no independent gold or held-out generalization.",
+    "Probe uses an existing layer selected and calibrated on source validation; new input probabilities are not recalibrated.",
+    "All 40 formal behavior rows remain unscored; no substantive-answer/refusal/conflict-choice behavior rates are asserted.",
+    "Controlled edits also change surface wording, length and edit amount; probability directions do not establish a causal hidden-state mechanism.",
+    "Old no_qualified_baseline remains unchanged; 380 reserved questions unused; no patching."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "name": "probe_input_shift_development_v1",
+  "base_order": ["val_81", "val_14", "val_3", "val_94", "val_35", "val_31", "val_28", "val_17", "val_13", "val_86"],
+  "smoke_base": "val_31",
+  "cell_order": [["O", "O"], ["A", "O"], ["O", "P"], ["A", "P"], ["O", "N"], ["A", "N"]],
+  "question_levels": {"O": "Exact original validation question", "A": "Exact previous authored clarified question"},
+  "document_levels": {
+    "O": "All five original published answer documents, original order; published answer is provenance, not semantic gold",
+    "P": "All five previous pilot S documents, exact order/text",
+    "N": "Pilot S documents with only two redundant negative clauses deleted; positive answer-bearing facts, order and other documents unchanged"
+  },
+  "neutral_edits": {
+    "val_14": {"old": ", not a breed of cat", "new": "", "retained_positive": "The Boykin Spaniel is described as a breed of dog", "reason": "Both retain the explicit Boykin dog assertion; English White Terrier dog assertion and the dog-versus-cat question remain."},
+    "val_3": {"old": ", not a private airport", "new": "", "retained_positive": "El Paso International Airport is a public airport", "reason": "Both retain the explicit El Paso public-airport assertion; Tucson public status and the public-versus-private question remain."},
+    "val_31": {"old": "; there are no other music composers for it", "new": "", "retained_positive": "Elton John is the sole composer of all music for this version", "reason": "Both retain Elton John is the sole composer of all music for this version. Sole already states exhaustiveness."},
+    "val_28": {"old": " and is not a newspaper", "new": "", "retained_positive": "The described edition of DownBeat is a magazine", "reason": "Both retain DownBeat is a magazine; same edition scope and Better Homes and Gardens magazine statements remain."},
+    "val_17": {"old": " and explicitly not as a plateau", "new": "", "retained_positive": "Gangkhar Puensum is classified here as a mountain", "reason": "Both retain Gangkhar Puensum is classified here as a mountain; same-place scope and Skil Brum mountain statements remain."},
+    "val_13": {"old": " and is not a play", "new": "", "retained_positive": "The described original version of Malcolm Lowry's Under the Volcano is a novel", "reason": "Both retain Under the Volcano is a novel; original-version scope, not-stage-adaptations statement and Christ in Concrete novel assertion remain."}
+  },
+  "bridge_tolerances": {"max_layer_relative_l2": 0.02, "max_probability_absolute_error": 0.01},
+  "analysis": "Paired probe-label counts/probability differences and input token deltas. No classification accuracy, semantic correctness score, layer/threshold search or new behavior score. Report question changes separately within each document level; document bundle O-to-P is not a pure style/length contrast; P-to-N deletions still change length.",
+  "endpoint_exposure": "Original O/O and previous A/P endpoint features and aggregate predictions were inspected before design. All ten exposed bases retained; the six N bases are fixed solely by presence of the six specified redundant negative clauses, not selected by future results.",
+  "scope_limit": "Clarified questions sometimes narrow scope; original and authored document bundles differ in facts, distractors and order. No same-semantics claim for O-to-P or O-to-A. N preserves explicit positive answer-bearing propositions under the authored scope, not every possible open-world entailment. Development diagnostic, not independent gold/confirmation or a causal hidden-state intervention."
+}

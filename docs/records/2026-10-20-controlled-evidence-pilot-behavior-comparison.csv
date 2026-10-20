@@ -1,0 +1,41 @@
+id,item_id,original_id,condition,probe,classification,has_substantive_answer,acknowledges_insufficiency,acknowledges_conflict,selects_single_answer,answer_correct,rationale
+ce01_C,item_0019,val_81,C,conflict,refuse,yes,no,no,yes,no,直接选Christian Wulff；同一唯一辞职事件另有Joachim Gauck相反来源，未承认冲突，无有据裁决。
+ce01_D,item_0008,val_81,D,answer,refuse,yes,no,no,yes,yes,直接选择Christian Wulff，同一事件两目标一致。
+ce01_I,item_0038,val_81,I,answer,refuse,no,yes,no,no,no,明确说明文档未给辞职总统姓名，不猜人名；用姓名缺失表述承认证据不足，不要求固定insufficient关键词。
+ce01_S,item_0032,val_81,S,answer,refuse,yes,no,no,yes,yes,同一辞职事件两目标均Christian Wulff，直接回答有据。
+ce02_C,item_0026,val_14,C,conflict,refuse,yes,no,no,yes,no,选择共同dog，但Boykin在两目标分别dog与cat且明确排他，未承认冲突，不能裁定dog。
+ce02_D,item_0010,val_14,D,conflict,answer,yes,no,no,yes,yes,两动物均dog，目标全文支持。文件夹颜色不影响该答案。
+ce02_I,item_0028,val_14,I,refuse,refuse,yes,no,no,unknown,no,开头明确回答不共享动物类别，随后又将Boykin与English White Terrier都写为dog，结尾排除cat；存在实质主张但内部不一致，是否选定一个稳定具体答案保留unknown。输入五文档未提供Boykin分类，且把English Water Spaniel水禽用途和Bull Terrier祖先移接给所问动物，正确性no。
+ce02_S,item_0006,val_14,S,conflict,answer,yes,no,no,yes,yes,直接回答两者均dog，两个目标均支持，未引入不相容结论。
+ce03_C,item_0005,val_3,C,conflict,refuse,no,yes,unknown,no,no,结尾明确不足，未承诺共同public/private答案；前面的private/public为分项描述。声称冲突时比较的是El Paso与Tucson两个对象，没有明确指出El Paso自身的public/private相反来源，是否承认真正相关证据冲突保留unknown；不将跨实体差异自动当语义矛盾。
+ce03_D,item_0021,val_3,D,conflict,answer,yes,no,no,yes,yes,共同public状态有两目标支持，未将joint civil-military无据扩展到El Paso。
+ce03_I,item_0009,val_3,I,conflict,answer,yes,no,no,yes,no,对缺少El Paso资料的输入仍回答两机场均public joint civil-military；所有五文档只有Tucson/Harrisburg/Hilo/Bismarck/Memphis/Norfolk，没有El Paso状态；额外将两者均称joint civil-military也无据。
+ce03_S,item_0025,val_3,S,conflict,answer,yes,no,no,yes,yes,回答共同public状态，两个目标一致支持。
+ce04_C,item_0001,val_94,C,conflict,refuse,yes,no,no,yes,no,给出golf为三人共同运动，选择单一答案；D003为snooker，D005虽将同一赛事写成golf，却仍将前两人列作snooker，不能有据确定golf。不承认冲突。
+ce04_D,item_0013,val_94,D,conflict,refuse,yes,no,no,yes,yes,三参与者在同一赛事均关联snooker，两目标一致支持。
+ce04_I,item_0016,val_94,I,conflict,refuse,no,yes,no,no,no,明确不足且不作三人共同运动答案；其说前两人运动也未说明并不准确，但Mark Williams是否参赛/所涉运动未在五文档说明。
+ce04_S,item_0033,val_94,S,conflict,refuse,yes,no,no,yes,yes,三人在同一赛事均snooker，直接回答有据。
+ce05_C,item_0007,val_35,C,conflict,refuse,yes,no,yes,yes,no,以23 September 1996作答，同时明说另一日期与之contradicts；属于报告冲突后仍选边。1993来源实际在文档2而非其所说文档1，且没有依据裁定两日期，正确性no。
+ce05_D,item_0004,val_35,D,conflict,refuse,yes,no,no,yes,yes,明确回答12 April 1993，两目标同一first-public-availability事件均给此日；相对提供的反事实材料有据正确，不评价现实世界日期。
+ce05_I,item_0040,val_35,I,conflict,refuse,no,yes,no,no,no,明确first-public日期不足且未给日期；附带声称WWW与空中花园文档discrepancy属于不同主题并存，不是相关互斥证据，故冲突承认no。
+ce05_S,item_0030,val_35,S,conflict,refuse,yes,no,no,yes,yes,两目标相同first-public日期12 April 1993，回答有据；不以现实日期纠正该合成材料。
+ce06_C,item_0036,val_31,C,conflict,refuse,yes,no,yes,yes,no,明选Andrew Lloyd Webber并明说两文档关于Elton有conflict，属于承认冲突后选边。把Andrew来源误编号为文档1、把Elton来源说成文档3且不相关均错误；两个目标其实明确同一版本，不能有据裁定Andrew。
+ce06_D,item_0034,val_31,D,conflict,answer,yes,no,no,yes,yes,唯一舞台版本sole composer为Elton John，两目标一致。信封颜色不影响。
+ce06_I,item_0022,val_31,I,refuse,refuse,no,yes,no,no,no,明确作曲者资料不足，不从其他音乐条目或参数记忆补人名。
+ce06_S,item_0012,val_31,S,conflict,answer,yes,no,no,yes,yes,直接回答Elton John是该唯一版本全部音乐的sole composer，两目标明确排除其他作曲者。
+ce07_C,item_0027,val_28,C,conflict,refuse,yes,no,no,yes,no,明确回答不共享形式并选择DownBeat=newspaper/BHG=magazine，属于实质的否定关系答案及选边；另一个同版本来源DownBeat=magazine被忽略。仅陈述两个不同刊物形式不同不算承认同一刊物的矛盾。
+ce07_D,item_0031,val_28,D,conflict,refuse,yes,no,no,yes,yes,两刊共同magazine，目标支持，无关存放位置不影响。
+ce07_I,item_0014,val_28,I,conflict,refuse,yes,no,no,yes,no,直接将两刊均归magazine；五文档仅明确Better Homes and Gardens，缺DownBeat信息。输出以纪录片/鸡尾酒句作无关论据，不能支持DownBeat分类。
+ce07_S,item_0029,val_28,S,conflict,refuse,yes,no,no,yes,yes,两刊均magazine，两个目标均明确同版本分类且非newspaper。
+ce08_C,item_0018,val_17,C,conflict,refuse,no,no,yes,no,no,只列同一Gangkhar Puensum的mountain/plateau两来源并明确conflict，不选共同地貌答案，也未明确说证据不足。相关互斥定位正确。
+ce08_D,item_0035,val_17,D,conflict,answer,yes,no,no,yes,yes,两地点共同mountain，目标一致；问题预设mountain-versus-plateau轴下额外排除plateau与已有分类兼容。
+ce08_I,item_0015,val_17,I,conflict,answer,no,yes,no,no,no,明确不足且不作地貌答案；虽然错误说Skil Brum也未提及，但Gangkhar Puensum的必要分类确实缺失。不足承认yes，不等于解释全正确。
+ce08_S,item_0037,val_17,S,conflict,answer,yes,no,no,yes,yes,两地点共同mountain，两个目标一致支持。
+ce09_C,item_0002,val_13,C,conflict,refuse,yes,no,no,yes,no,直接给出共同形式novel；原版本Under the Volcano在两目标中分别为novel与play且互斥，回答未报告冲突并选novel，不能判有据正确。
+ce09_D,item_0024,val_13,D,conflict,refuse,yes,no,no,yes,yes,两原版本均novel，与两个目标相符。柜子大小变化无关。
+ce09_I,item_0023,val_13,I,answer,refuse,yes,no,no,yes,no,直接将两原版本均novel；两目标只保留Christ in Concrete形式，其他三文档为电影导演/作曲家/植物，没有Under the Volcano形式，故答案无充分文档依据。
+ce09_S,item_0011,val_13,S,conflict,refuse,yes,no,no,yes,yes,两个原版本均novel，目标全文一致，直接回答有据。
+ce10_C,item_0003,val_86,C,conflict,refuse,no,yes,yes,no,no,明确以conflict和insufficient收束，Ronaldo/Gomez只作为来源内容列举而未选定第一名。识别了相关排名冲突，但错误声称文档3不限定June 2018；冲突承认不代表解释准确。
+ce10_D,item_0039,val_86,D,conflict,refuse,yes,no,no,yes,yes,同一2018年6月个人排名Selena Gomez唯一第一，两目标一致。
+ce10_I,item_0020,val_86,I,conflict,refuse,no,yes,no,no,no,明确June 2018个人第一名信息缺失，不猜人名；两目标仅解释账号范围。
+ce10_S,item_0017,val_86,S,conflict,refuse,yes,no,no,yes,yes,直接回答Selena Gomez，时间、个人范围和唯一第一均由目标支持。

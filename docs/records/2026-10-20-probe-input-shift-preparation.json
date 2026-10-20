@@ -1,0 +1,280 @@
+{
+  "checked_at": "2026-10-20T11:43:24.904832+08:00",
+  "status": "prepared_not_started",
+  "new_gpu_forwards": 0,
+  "tests": {
+    "new_tests": 9,
+    "new_test_seconds": 39.059,
+    "final_total_tests": 102,
+    "final_total_seconds": 82.85,
+    "result": "passed",
+    "contains_real_tiny_cpu_qwen_and_real_tokenizer_frozen_probe": true,
+    "not_a_3b_gpu_result": true
+  },
+  "runs": {
+    "qwen2.5-3b-probe-input-shift-v1": {
+      "run_dir": "runs/qwen2.5-3b-probe-input-shift-v1",
+      "protocol_sha256": "e514970336594349b6e0bbd9280facc8a3b17210cd149f7d519909a778d34d71",
+      "implementation_fingerprints": 22,
+      "source_file_fingerprints": 9,
+      "cells": 52,
+      "document_slots": 260,
+      "unique_document_texts": 85,
+      "progress": {
+        "status": "prepared_not_started",
+        "saved": 0,
+        "target": 52
+      },
+      "prepared_only_verify": {
+        "status": "prepared_verified_not_started",
+        "cells": 52,
+        "new_gpu_forwards": 0,
+        "cached_endpoints": 20
+      },
+      "preflight": {
+        "status": "cpu_preflight_passed",
+        "cells": 52,
+        "input_tokens": {
+          "shift01_qO_dO": 4084,
+          "shift01_qA_dO": 4096,
+          "shift01_qO_dP": 2339,
+          "shift01_qA_dP": 2351,
+          "shift02_qO_dO": 1061,
+          "shift02_qA_dO": 1070,
+          "shift02_qO_dP": 611,
+          "shift02_qA_dP": 620,
+          "shift02_qO_dN": 599,
+          "shift02_qA_dN": 608,
+          "shift03_qO_dO": 1185,
+          "shift03_qA_dO": 1189,
+          "shift03_qO_dP": 770,
+          "shift03_qA_dP": 774,
+          "shift03_qO_dN": 760,
+          "shift03_qA_dN": 764,
+          "shift04_qO_dO": 2873,
+          "shift04_qA_dO": 2886,
+          "shift04_qO_dP": 1809,
+          "shift04_qA_dP": 1822,
+          "shift05_qO_dO": 654,
+          "shift05_qA_dO": 664,
+          "shift05_qO_dP": 490,
+          "shift05_qA_dP": 500,
+          "shift06_qO_dO": 4126,
+          "shift06_qA_dO": 4137,
+          "shift06_qO_dP": 2961,
+          "shift06_qA_dP": 2972,
+          "shift06_qO_dN": 2943,
+          "shift06_qA_dN": 2954,
+          "shift07_qO_dO": 778,
+          "shift07_qA_dO": 788,
+          "shift07_qO_dP": 543,
+          "shift07_qA_dP": 553,
+          "shift07_qO_dN": 533,
+          "shift07_qA_dN": 543,
+          "shift08_qO_dO": 1086,
+          "shift08_qA_dO": 1092,
+          "shift08_qO_dP": 661,
+          "shift08_qA_dP": 667,
+          "shift08_qO_dN": 649,
+          "shift08_qA_dN": 655,
+          "shift09_qO_dO": 1245,
+          "shift09_qA_dO": 1257,
+          "shift09_qO_dP": 896,
+          "shift09_qA_dP": 908,
+          "shift09_qO_dN": 886,
+          "shift09_qA_dN": 898,
+          "shift10_qO_dO": 756,
+          "shift10_qA_dO": 768,
+          "shift10_qO_dP": 630,
+          "shift10_qA_dP": 642
+        },
+        "max_input_tokens": 4137,
+        "context_tokens": 32768,
+        "expected_new_forwards": 32,
+        "reused_endpoints": 20,
+        "whole_smoke_plus_full_forward_count": 38,
+        "planned_whole_minutes": [
+          4,
+          11
+        ],
+        "planned_new_input_tokens_including_smoke": 62542,
+        "historical_max_seconds_per_input_token": 0.00024414377675793314,
+        "timing": "Capacity estimate from max elapsed/input-token over ten old cached original prefill records; 2x/10x allowances +3/8min load/IO. Attention cost is not linear in input length; not a new GPU benchmark. User launches; no guarantee under10 minutes."
+      },
+      "sha256": {
+        "protocol.json": "e514970336594349b6e0bbd9280facc8a3b17210cd149f7d519909a778d34d71",
+        "materials/inputs.json": "2167a101853a64f5a25b8820bb0f4a5d428353ab3f67d9dcb49193409f57a199",
+        "materials/edits.json": "c74258e0a1947baa32aaa7ed787152f487df1ba53763428363ca0032fc044ad0",
+        "preflight.json": "c3fddcb9028ed10c910227e61f7f59c14feb03bd8809668af4fe968413cff1ff",
+        "progress.json": "fb6ed625013357196f3936cfb9cf585bc0ac0d61701c5ad3853f4f630b4ad541",
+        "reports/cached_endpoints.json": "9b3b4de078936f142c29b8934f259efa9f6261920da05870591909fd2913a8e1"
+      }
+    },
+    "qwen2.5-3b-probe-input-shift-smoke-v1": {
+      "run_dir": "runs/qwen2.5-3b-probe-input-shift-smoke-v1",
+      "protocol_sha256": "20c9e926e1d22ba61a37b56585294bc87a4d96ba4aaa7d0e19bee246e20ea0a7",
+      "implementation_fingerprints": 22,
+      "source_file_fingerprints": 9,
+      "cells": 6,
+      "document_slots": 30,
+      "unique_document_texts": 10,
+      "progress": {
+        "status": "prepared_not_started",
+        "saved": 0,
+        "target": 6
+      },
+      "prepared_only_verify": {
+        "status": "prepared_verified_not_started",
+        "cells": 6,
+        "new_gpu_forwards": 0,
+        "cached_endpoints": 2
+      },
+      "preflight": {
+        "status": "cpu_preflight_passed",
+        "cells": 6,
+        "input_tokens": {
+          "shift06_qO_dO": 4126,
+          "shift06_qA_dO": 4137,
+          "shift06_qO_dP": 2961,
+          "shift06_qA_dP": 2972,
+          "shift06_qO_dN": 2943,
+          "shift06_qA_dN": 2954
+        },
+        "max_input_tokens": 4137,
+        "context_tokens": 32768,
+        "expected_new_forwards": 6,
+        "reused_endpoints": 0,
+        "whole_smoke_plus_full_forward_count": 38,
+        "planned_whole_minutes": [
+          4,
+          11
+        ],
+        "planned_new_input_tokens_including_smoke": 62542,
+        "historical_max_seconds_per_input_token": 0.00024414377675793314,
+        "timing": "Capacity estimate from max elapsed/input-token over ten old cached original prefill records; 2x/10x allowances +3/8min load/IO. Attention cost is not linear in input length; not a new GPU benchmark. User launches; no guarantee under10 minutes."
+      },
+      "sha256": {
+        "protocol.json": "20c9e926e1d22ba61a37b56585294bc87a4d96ba4aaa7d0e19bee246e20ea0a7",
+        "materials/inputs.json": "6c0bb660151273804975bd49e158c0dbcbdae8278291a06a0be350623faf4e81",
+        "materials/edits.json": "c74258e0a1947baa32aaa7ed787152f487df1ba53763428363ca0032fc044ad0",
+        "preflight.json": "3155a7ac019ea331f3a014a6685086c440ec32c339524761836dd02d89f88fc2",
+        "progress.json": "ab5e132f7c05fdb986fc0f5d9d6a396ad3635b959d5da769087b33823f02c5b0",
+        "reports/cached_endpoints.json": "502c5847d2ca66c1ec45f794e544db8f499a83410ba2d3647eb54f1494d308d1"
+      }
+    }
+  },
+  "next_user_command": "sh scripts/run_probe_input_shift_review.sh",
+  "cached_endpoint_cpu_findings": {
+    "endpoints": 20,
+    "original_OO_counts": {
+      "answer": 9,
+      "refuse": 1,
+      "conflict": 0
+    },
+    "pilot_AP_counts": {
+      "answer": 1,
+      "refuse": 0,
+      "conflict": 9
+    },
+    "conflict_probability_increases": 10,
+    "pairs": [
+      {
+        "original_id": "val_81",
+        "old_original_pred": "answer",
+        "pilot_S_pred": "answer",
+        "old_original_conflict_probability": 0.193226682841844,
+        "pilot_S_conflict_probability": 0.39227246961228596,
+        "conflict_probability_delta": 0.19904578677044196
+      },
+      {
+        "original_id": "val_14",
+        "old_original_pred": "answer",
+        "pilot_S_pred": "conflict",
+        "old_original_conflict_probability": 0.23491153780909288,
+        "pilot_S_conflict_probability": 0.8119625770466803,
+        "conflict_probability_delta": 0.5770510392375874
+      },
+      {
+        "original_id": "val_3",
+        "old_original_pred": "answer",
+        "pilot_S_pred": "conflict",
+        "old_original_conflict_probability": 0.30399446026412325,
+        "pilot_S_conflict_probability": 0.8446801447280845,
+        "conflict_probability_delta": 0.5406856844639613
+      },
+      {
+        "original_id": "val_94",
+        "old_original_pred": "refuse",
+        "pilot_S_pred": "conflict",
+        "old_original_conflict_probability": 0.01019511877688576,
+        "pilot_S_conflict_probability": 0.9255917486732009,
+        "conflict_probability_delta": 0.9153966298963152
+      },
+      {
+        "original_id": "val_35",
+        "old_original_pred": "answer",
+        "pilot_S_pred": "conflict",
+        "old_original_conflict_probability": 0.061703747281355525,
+        "pilot_S_conflict_probability": 0.931738052108074,
+        "conflict_probability_delta": 0.8700343048267185
+      },
+      {
+        "original_id": "val_31",
+        "old_original_pred": "answer",
+        "pilot_S_pred": "conflict",
+        "old_original_conflict_probability": 0.061886017403363476,
+        "pilot_S_conflict_probability": 0.713172358270748,
+        "conflict_probability_delta": 0.6512863408673845
+      },
+      {
+        "original_id": "val_28",
+        "old_original_pred": "answer",
+        "pilot_S_pred": "conflict",
+        "old_original_conflict_probability": 0.2721687853387805,
+        "pilot_S_conflict_probability": 0.6275756508938165,
+        "conflict_probability_delta": 0.35540686555503603
+      },
+      {
+        "original_id": "val_17",
+        "old_original_pred": "answer",
+        "pilot_S_pred": "conflict",
+        "old_original_conflict_probability": 0.009467160243130546,
+        "pilot_S_conflict_probability": 0.9071842615850291,
+        "conflict_probability_delta": 0.8977171013418985
+      },
+      {
+        "original_id": "val_13",
+        "old_original_pred": "answer",
+        "pilot_S_pred": "conflict",
+        "old_original_conflict_probability": 0.13520078671077146,
+        "pilot_S_conflict_probability": 0.7725676608286411,
+        "conflict_probability_delta": 0.6373668741178697
+      },
+      {
+        "original_id": "val_86",
+        "old_original_pred": "answer",
+        "pilot_S_pred": "conflict",
+        "old_original_conflict_probability": 0.16125551740566846,
+        "pilot_S_conflict_probability": 0.8892461441936216,
+        "conflict_probability_delta": 0.7279906267879531
+      }
+    ],
+    "limitation": "O/O versus A/P jointly changes question, facts/targets, distractors and order; not pure length/style, no semantic gold or independent evaluation."
+  },
+  "manual_new_material_review": {
+    "neutral_cases": 6,
+    "changed_target_documents_read": 12,
+    "deletion_spans": 12,
+    "retained_positive_clauses_verified": 12,
+    "author_exposed": true,
+    "independent_gold": false,
+    "does_not_claim_new_semantic_gold_for_all_52_cells": true
+  },
+  "unperformed": [
+    "No new3B GPU run",
+    "No new answers or behavior scores",
+    "No probe fit/calibration/layer/threshold selection",
+    "No test/confirmation data or patching",
+    "No commit/push"
+  ]
+}

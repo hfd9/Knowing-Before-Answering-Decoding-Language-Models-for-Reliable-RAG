@@ -1,0 +1,100 @@
+{
+  "checked_at": "2026-10-20T12:15:41.527037+08:00",
+  "purpose": "User-authorized code submission and remote push; read-only runtime snapshot, not full result replay",
+  "parent_commit": "e0094c60bfb5343ffd006aa8ece33ea3a3cca857",
+  "test_evidence": {
+    "tests": 111,
+    "seconds": 110.241,
+    "status": "previously_passed_same_frozen_implementation",
+    "rerun_this_submission": false
+  },
+  "runs": {
+    "qwen2.5-3b-probe-document-factors-v1": {
+      "progress": {
+        "status": "document_factor_diagnostic_complete",
+        "saved": 80,
+        "target": 80
+      },
+      "protocol_sha256": "6f1aaddfc5872a26ee38f931be40fb895d2d7c9c2331d6654a0cfd8f5f977846",
+      "fingerprints_matched": {
+        "implementation_sha256": 26,
+        "source_sha256": 12
+      },
+      "saved_records": 80,
+      "last_completed_at": "2026-10-20T04:14:05.661765+00:00"
+    },
+    "qwen2.5-3b-probe-document-factors-smoke-v1": {
+      "progress": {
+        "status": "document_factor_diagnostic_complete",
+        "saved": 16,
+        "target": 16
+      },
+      "protocol_sha256": "aff75b5831973d69209c85c7e058574f2eea4c3f2777b96c2b72ef15927cc5ec",
+      "fingerprints_matched": {
+        "implementation_sha256": 26,
+        "source_sha256": 12
+      },
+      "saved_records": 16,
+      "last_completed_at": "2026-10-20T04:13:20.623272+00:00"
+    },
+    "qwen2.5-3b-probe-input-shift-v1": {
+      "progress": {
+        "status": "prefill_diagnostic_complete",
+        "saved": 52,
+        "target": 52
+      },
+      "protocol_sha256": "e514970336594349b6e0bbd9280facc8a3b17210cd149f7d519909a778d34d71",
+      "fingerprints_matched": {
+        "implementation_sha256": 22,
+        "source_sha256": 9
+      },
+      "saved_records": 52,
+      "last_completed_at": "2026-10-20T03:47:24.638184+00:00"
+    },
+    "qwen2.5-3b-probe-input-shift-smoke-v1": {
+      "progress": {
+        "status": "prefill_diagnostic_complete",
+        "saved": 6,
+        "target": 6
+      },
+      "protocol_sha256": "20c9e926e1d22ba61a37b56585294bc87a4d96ba4aaa7d0e19bee246e20ea0a7",
+      "fingerprints_matched": {
+        "implementation_sha256": 22,
+        "source_sha256": 9
+      },
+      "saved_records": 6,
+      "last_completed_at": "2026-10-20T03:46:49.664564+00:00"
+    },
+    "qwen2.5-3b-controlled-evidence-pilot-v1": {
+      "progress": {
+        "status": "analysis_complete_behavior_pending",
+        "free_saved": 40,
+        "classification_saved": 40,
+        "protocol_sha256": "98650b290d29779242cb4727e43a1625d5fe187bae275c9ed2fb8bdf445baf6f"
+      },
+      "protocol_sha256": "98650b290d29779242cb4727e43a1625d5fe187bae275c9ed2fb8bdf445baf6f",
+      "fingerprints_matched": {
+        "implementation_sha256": 18,
+        "source_sha256": 0
+      }
+    },
+    "qwen2.5-3b-controlled-evidence-pilot-smoke-v1": {
+      "progress": {
+        "status": "analysis_complete_behavior_pending",
+        "free_saved": 4,
+        "classification_saved": 4,
+        "protocol_sha256": "ca8c52a01df554d88d0fd9164d0ea966309a7dedb19262156c1fd54a7e9c8e52"
+      },
+      "protocol_sha256": "ca8c52a01df554d88d0fd9164d0ea966309a7dedb19262156c1fd54a7e9c8e52",
+      "fingerprints_matched": {
+        "implementation_sha256": 18,
+        "source_sha256": 0
+      }
+    }
+  },
+  "new_file_checks": {
+    "files": 28,
+    "each_under_1_MiB": true,
+    "python_ast_json_shell_syntax": "passed"
+  }
+}

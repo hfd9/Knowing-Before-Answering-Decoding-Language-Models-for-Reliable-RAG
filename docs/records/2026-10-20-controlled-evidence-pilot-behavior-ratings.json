@@ -1,0 +1,1718 @@
+{
+  "reviewer": "Codex-current-assistant-exposed-material-author-2026-10-20",
+  "created_at": "2026-10-20T11:24:56.572678+08:00",
+  "independent_gold": false,
+  "review_mode": "same assistant; all 40 questions/outputs and all 200 document slots read, 89 unique full texts; anonymous display during this reading, but material author and historical probe/classification aggregate exposure prevent independent blind status",
+  "exposure": [
+    "Authored/exposed validation-development material",
+    "Historical aggregate probe and fixed-classification results were known",
+    "Probe/source validation used for layer selection/calibration",
+    "Item IDs may reveal condition after scoring; not claimed blinded or independent"
+  ],
+  "rubric": "has_substantive_answer: commits to a concrete answer, even with a disclaimer or guess.\nacknowledges_insufficiency: explicitly states that the supplied evidence is insufficient.\nacknowledges_conflict: explicitly identifies incompatible evidence relevant to the question.\nselects_single_answer: picks one answer despite alternatives; merely listing incompatible candidates is not choosing a side.\nanswer_correct: the concrete answer is correct and grounded in the supplied documents; otherwise no or unknown.\nUse yes/no/unknown. Empty, ambiguous and truncated outputs must not automatically count as refusal.\nFor ambiguous truncation use unknown; if a completed concrete answer is already visible, it can be yes.\nReview without seeing the true evidence label, probe prediction or input-format condition.",
+  "rules_explained": [
+    "No concrete answer => answer_correct=no; mentions of candidates without commitment do not count as substantive answers.",
+    "A definite negative relationship answer (do not share a form/category) is substantive, even if wrong.",
+    "Reporting a conflict and selecting one answer can both be yes.",
+    "Grounded correctness requires resolving the question from compatible supplied evidence, not real-world prior knowledge or one side of unresolved contradiction.",
+    "Per-entity background descriptions followed by explicit inability to answer the shared-status question are not a committed shared answer.",
+    "Generic conflict wording across different entities is insufficient to unambiguously identify a relevant source contradiction; item_0005 conflict=unknown.",
+    "Internal mutually inconsistent concrete claims are substantive but can leave selects_single_answer unknown (item_0028)."
+  ],
+  "source_sha256": {
+    "protocol.json": "98650b290d29779242cb4727e43a1625d5fe187bae275c9ed2fb8bdf445baf6f",
+    "materials/inputs.json": "78d7fddc57d6b5bb143d580e7aa3fbbcca5b53f793955bd5d02d1c6b5176e60c",
+    "materials/input_judgments.json": "0c0497639fd2eafdc5e8f7aedfde9134350eee642698925da841ccd2b5579dfb",
+    "review/manifest.json": "5e0a22d59c6760cd5c7f4eff9f9878002be514e4460d89b73fb19a2ebf9c09af",
+    "review/annotations_template.csv": "0333565111b6b4e0d2650491e6aa4d62f990a50dadfca8730ce9816a00d01524",
+    "free_answer/predictions.json": "d240a5a8f321c2a0dbefbc7c620407b74db7992705158bac491eecc4ff8ab699",
+    "classification/predictions.json": "f110005993a1f4923600d13d86dac00f4b4d6a81007ae5389fe25948beddb908",
+    "reports/pilot.json": "1f613e6ae8a0fd1ed639d1abadd55fc808eec9dc22b265385a76c61366d428aa",
+    "reports/pilot.md": "5563842a234d2615086847c82cc4ddef334f90ca39684f4ed0e82cfaec620ffc"
+  },
+  "document_slots_read": 200,
+  "unique_full_documents_read": 89,
+  "input_citations": 80,
+  "ratings": [
+    {
+      "item_id": "item_0001",
+      "id": "ce04_C",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "no"
+      },
+      "rationale": "给出golf为三人共同运动，选择单一答案；D003为snooker，D005虽将同一赛事写成golf，却仍将前两人列作snooker，不能有据确定golf。不承认冲突。",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "start": 222,
+          "end": 249,
+          "quote": "whose only sport is snooker",
+          "document_sha256": "febb007d3af4ea18e83567f0c370ec10cf2f5d5fc3aa120c6154ef3556c6e6fd"
+        },
+        {
+          "doc_slot": 5,
+          "start": 213,
+          "end": 250,
+          "quote": "whose only sport is golf, not snooker",
+          "document_sha256": "0d655048abbf4b0b23a8d8f4db1f950e048d776e5786227b9b7fae356eb7f3d4"
+        }
+      ],
+      "output_citation": {
+        "start": 15,
+        "end": 49,
+        "quote": "associate golf as the single sport"
+      },
+      "question_sha256": "a0c1ef7a852839da6e0816bc5f0f9ef18e017333c43407302fdbb9abcadccc15",
+      "raw_output_sha256": "fa46588ca50f685a6a47bee7eebf0b76016bac5c0fe3bc62b9a35d8a73fdc162",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0002",
+      "id": "ce09_C",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "no"
+      },
+      "rationale": "直接给出共同形式novel；原版本Under the Volcano在两目标中分别为novel与play且互斥，回答未报告冲突并选novel，不能判有据正确。",
+      "citations": [
+        {
+          "doc_slot": 4,
+          "start": 134,
+          "end": 180,
+          "quote": "Under the Volcano is a novel and is not a play",
+          "document_sha256": "bb8fefe796bf61fc8e157cc16fe465741733d7e3a88aac3332f451bf6231b012"
+        },
+        {
+          "doc_slot": 5,
+          "start": 155,
+          "end": 201,
+          "quote": "Under the Volcano is a play and is not a novel",
+          "document_sha256": "281d1752e47195cdaebd2ef840e1d12588aa3c10d8a5eaee68d0f1c9aed6f066"
+        }
+      ],
+      "output_citation": {
+        "start": 120,
+        "end": 154,
+        "quote": "share the literary form of a novel"
+      },
+      "question_sha256": "4556f578d2a0b3954a8cbec1e8470401703572b943b68fa00498b09abbaf7803",
+      "raw_output_sha256": "5c6f9144f7c0ee4d899e7e825b7ca96133f14cc9607af4e8301d37457302bc4f",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0003",
+      "id": "ce10_C",
+      "behavior": {
+        "has_substantive_answer": "no",
+        "acknowledges_insufficiency": "yes",
+        "acknowledges_conflict": "yes",
+        "selects_single_answer": "no",
+        "answer_correct": "no"
+      },
+      "rationale": "明确以conflict和insufficient收束，Ronaldo/Gomez只作为来源内容列举而未选定第一名。识别了相关排名冲突，但错误声称文档3不限定June 2018；冲突承认不代表解释准确。",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "start": 100,
+          "end": 159,
+          "quote": "Selena Gomez was the unique most-followed individual person",
+          "document_sha256": "68b30e447dacf60bfdcd8e2fa2b7cbc955ce8a8709be2981a44b79461aae1654"
+        },
+        {
+          "doc_slot": 4,
+          "start": 94,
+          "end": 179,
+          "quote": "Cristiano Ronaldo, a different person, was the unique most-followed individual person",
+          "document_sha256": "3cb6a9dd349a978a726100fa99277f042322840f1c9db07165336205a2880276"
+        }
+      ],
+      "output_citation": {
+        "start": 429,
+        "end": 496,
+        "quote": "the information is insufficient to definitively answer the question"
+      },
+      "question_sha256": "9a18038a00c7728bf8e5e2d02aea27fa5e19420e2ad4ce1df290ac42ce078717",
+      "raw_output_sha256": "ae2d56443f70ecb3967afbdf6436d00a37624f817958e09a566c90e349ccb9f7",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0004",
+      "id": "ce05_D",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "明确回答12 April 1993，两目标同一first-public-availability事件均给此日；相对提供的反事实材料有据正确，不评价现实世界日期。",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "start": 123,
+          "end": 176,
+          "quote": "first became available to the public on 12 April 1993",
+          "document_sha256": "39080ac2e8f1141a24e860ee826fbcf685926899568ae68b08d942fa5a4360ac"
+        },
+        {
+          "doc_slot": 4,
+          "start": 130,
+          "end": 183,
+          "quote": "first became available to the public on 12 April 1993",
+          "document_sha256": "5766514102ecb8a875280ec1ebb238c476a323226c2327f020d99c5c09382b75"
+        }
+      ],
+      "output_citation": {
+        "start": 55,
+        "end": 108,
+        "quote": "first became available to the public on 12 April 1993"
+      },
+      "question_sha256": "49fbf7efa078687855148a0d9da0ad1563893c9f792a64331553ad1abf48a0b4",
+      "raw_output_sha256": "ee0ae2fbb8815b701227d50ee38b191866aff3f399bc5ddd2fd69c3c021a1d18",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0005",
+      "id": "ce03_C",
+      "behavior": {
+        "has_substantive_answer": "no",
+        "acknowledges_insufficiency": "yes",
+        "acknowledges_conflict": "unknown",
+        "selects_single_answer": "no",
+        "answer_correct": "no"
+      },
+      "rationale": "结尾明确不足，未承诺共同public/private答案；前面的private/public为分项描述。声称冲突时比较的是El Paso与Tucson两个对象，没有明确指出El Paso自身的public/private相反来源，是否承认真正相关证据冲突保留unknown；不将跨实体差异自动当语义矛盾。",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "start": 71,
+          "end": 143,
+          "quote": "El Paso International Airport is a public airport, not a private airport",
+          "document_sha256": "8c63a52980a65f284ae919418651e786d46cde207075ea02027d6e5700b4a7e8"
+        },
+        {
+          "doc_slot": 3,
+          "start": 66,
+          "end": 144,
+          "quote": "El Paso International Airport is a private airport and is not a public airport",
+          "document_sha256": "e11b2162df0d18124104355d804cab82d97abefe9c949b70e0e68603a717ec8b"
+        }
+      ],
+      "output_citation": {
+        "start": 155,
+        "end": 252,
+        "quote": "These descriptions are in conflict, indicating insufficient evidence to determine a shared status"
+      },
+      "question_sha256": "8b37d1df57e2489d527b3cf5da34b66c9d5487ef6f99d031ed08cb828de17281",
+      "raw_output_sha256": "2d5965f6fde4f4e6e6d21cdb241fdf60b625c7de8361d7c9564dd76db4d13f06",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0006",
+      "id": "ce02_S",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "直接回答两者均dog，两个目标均支持，未引入不相容结论。",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "start": 62,
+          "end": 127,
+          "quote": "Boykin Spaniel is described as a breed of dog, not a breed of cat",
+          "document_sha256": "4bbfd88ad1b0a2f662f66f3843c9d1777303d62bb559b463a9c4714e5dfb9c13"
+        },
+        {
+          "doc_slot": 5,
+          "start": 84,
+          "end": 149,
+          "quote": "Boykin Spaniel is described as a breed of dog, not a breed of cat",
+          "document_sha256": "b653452327d99861bb6872938f31f538c5d12c255243e70bd1521dd88e7485ba"
+        }
+      ],
+      "output_citation": {
+        "start": 49,
+        "end": 81,
+        "quote": "share the animal category of dog"
+      },
+      "question_sha256": "970f5fd9bd20d8780474c953e594478db53433a0e4e4cf3148df7d1e878cf1d3",
+      "raw_output_sha256": "c83b8eae7e1a3bd351042c16321af99e5bfbcaea95b640f88f40dacaf43b12ee",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0007",
+      "id": "ce05_C",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "yes",
+        "selects_single_answer": "yes",
+        "answer_correct": "no"
+      },
+      "rationale": "以23 September 1996作答，同时明说另一日期与之contradicts；属于报告冲突后仍选边。1993来源实际在文档2而非其所说文档1，且没有依据裁定两日期，正确性no。",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "start": 123,
+          "end": 176,
+          "quote": "first became available to the public on 12 April 1993",
+          "document_sha256": "c0ac3013976f120cd5838f6c525072b148cf18866536edb1901268e17565d7dd"
+        },
+        {
+          "doc_slot": 4,
+          "start": 130,
+          "end": 206,
+          "quote": "first became available to the public on 23 September 1996, not 12 April 1993",
+          "document_sha256": "ac752b54402825c48d7cd5dd1f50e1540938057c90efbfb7cfc537056b95cac8"
+        }
+      ],
+      "output_citation": {
+        "start": 55,
+        "end": 112,
+        "quote": "first became available to the public on 23 September 1996"
+      },
+      "question_sha256": "49fbf7efa078687855148a0d9da0ad1563893c9f792a64331553ad1abf48a0b4",
+      "raw_output_sha256": "19e54701a6592fec2fbddb75f56b8ea4081b7b88ded7c66525b3904d2af5c21a",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0008",
+      "id": "ce01_D",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "直接选择Christian Wulff，同一事件两目标一致。",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "start": 85,
+          "end": 145,
+          "quote": "Christian Wulff was the president who resigned in that event",
+          "document_sha256": "4a3542bb59e516dac71ce8177caedb4c4b3791baa5d51498e56c8621e8f8c5d7"
+        },
+        {
+          "doc_slot": 4,
+          "start": 105,
+          "end": 165,
+          "quote": "Christian Wulff was the president who resigned in that event",
+          "document_sha256": "8cbce924e2a9d44dce3f2376c15b596207f4bffd0c4a10f34951d5e6f1619d75"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 24,
+        "quote": "Christian Wulff resigned"
+      },
+      "question_sha256": "2f6092b219361816a16d209ef0558e5646386de0da6a80b319a61155d8131baa",
+      "raw_output_sha256": "79df8da06e63cc847813e6553367d3d96801d8d537576aa0536e3cc0431bc412",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0009",
+      "id": "ce03_I",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "no"
+      },
+      "rationale": "对缺少El Paso资料的输入仍回答两机场均public joint civil-military；所有五文档只有Tucson/Harrisburg/Hilo/Bismarck/Memphis/Norfolk，没有El Paso状态；额外将两者均称joint civil-military也无据。",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "start": 71,
+          "end": 139,
+          "quote": "Harrisburg International Airport is a public airport in Pennsylvania",
+          "document_sha256": "d03f9185e28a40bf7fdaf6bdb467aa41fa0f81d8965c991c5aeaeb8c2dcc87a3"
+        },
+        {
+          "doc_slot": 3,
+          "start": 66,
+          "end": 138,
+          "quote": "Norfolk International Airport serves the Hampton Roads metropolitan area",
+          "document_sha256": "88d235eee22179f22a4853e6cf63e1df672456e85c068ddd2e2ecf9e9c200705"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 121,
+        "quote": "Both El Paso International Airport and Tucson International Airport are described as public joint civil-military airports"
+      },
+      "question_sha256": "8b37d1df57e2489d527b3cf5da34b66c9d5487ef6f99d031ed08cb828de17281",
+      "raw_output_sha256": "e834f0571da1cc536a5139d419fa424375b501c3a95e2081d2badc1f01027640",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0010",
+      "id": "ce02_D",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "两动物均dog，目标全文支持。文件夹颜色不影响该答案。",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "start": 62,
+          "end": 127,
+          "quote": "Boykin Spaniel is described as a breed of dog, not a breed of cat",
+          "document_sha256": "b5fb3261cac4d745452899a00a3614dff94cde97c4b4f4e747711c5457a62c60"
+        },
+        {
+          "doc_slot": 5,
+          "start": 84,
+          "end": 149,
+          "quote": "Boykin Spaniel is described as a breed of dog, not a breed of cat",
+          "document_sha256": "b653452327d99861bb6872938f31f538c5d12c255243e70bd1521dd88e7485ba"
+        }
+      ],
+      "output_citation": {
+        "start": 49,
+        "end": 81,
+        "quote": "share the animal category of dog"
+      },
+      "question_sha256": "970f5fd9bd20d8780474c953e594478db53433a0e4e4cf3148df7d1e878cf1d3",
+      "raw_output_sha256": "c83b8eae7e1a3bd351042c16321af99e5bfbcaea95b640f88f40dacaf43b12ee",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0011",
+      "id": "ce09_S",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "两个原版本均novel，目标全文一致，直接回答有据。",
+      "citations": [
+        {
+          "doc_slot": 4,
+          "start": 134,
+          "end": 180,
+          "quote": "Under the Volcano is a novel and is not a play",
+          "document_sha256": "bb8fefe796bf61fc8e157cc16fe465741733d7e3a88aac3332f451bf6231b012"
+        },
+        {
+          "doc_slot": 5,
+          "start": 155,
+          "end": 201,
+          "quote": "Under the Volcano is a novel and is not a play",
+          "document_sha256": "cb4b722dd68964520d9036705d8b9ad638bc887aecbe3137e9e576073cb8210e"
+        }
+      ],
+      "output_citation": {
+        "start": 120,
+        "end": 154,
+        "quote": "share the literary form of a novel"
+      },
+      "question_sha256": "4556f578d2a0b3954a8cbec1e8470401703572b943b68fa00498b09abbaf7803",
+      "raw_output_sha256": "5c6f9144f7c0ee4d899e7e825b7ca96133f14cc9607af4e8301d37457302bc4f",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0012",
+      "id": "ce06_S",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "直接回答Elton John是该唯一版本全部音乐的sole composer，两目标明确排除其他作曲者。",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "start": 79,
+          "end": 140,
+          "quote": "Elton John is the sole composer of all music for this version",
+          "document_sha256": "3adf95523696520e0cb5571841a71c9ec2a3e79b45f6597c616e67019f49ef8f"
+        },
+        {
+          "doc_slot": 5,
+          "start": 81,
+          "end": 142,
+          "quote": "Elton John is the sole composer of all music for this version",
+          "document_sha256": "1ffc8455165e240fff13df33da976579d6009e6eaff82b61bbb6cc407f7361c7"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 31,
+        "quote": "Elton John is the sole composer"
+      },
+      "question_sha256": "1aa02717d80854821819af162b9d766d81c1786f463ea090d2f7879532a839c0",
+      "raw_output_sha256": "f6d2f25c4aec092956d8d3f8421bb0ed22ce3210509857fd602764c1847c4390",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0013",
+      "id": "ce04_D",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "三参与者在同一赛事均关联snooker，两目标一致支持。",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "start": 222,
+          "end": 249,
+          "quote": "whose only sport is snooker",
+          "document_sha256": "1f89d2ccc9a12aabd5c6b3215950d80ae4f5ad90a8fc52a4e59b27663d8c430a"
+        },
+        {
+          "doc_slot": 5,
+          "start": 213,
+          "end": 240,
+          "quote": "whose only sport is snooker",
+          "document_sha256": "684a0cb4ac5a39619edb0e5d05913a049da98d437f5430bd3db659fc4ecebf53"
+        }
+      ],
+      "output_citation": {
+        "start": 15,
+        "end": 52,
+        "quote": "associate snooker as the single sport"
+      },
+      "question_sha256": "a0c1ef7a852839da6e0816bc5f0f9ef18e017333c43407302fdbb9abcadccc15",
+      "raw_output_sha256": "2dbdb4f43ac6de79fa0c439ca8100982dcd3acb7cf63c338c581c34635c53e44",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0014",
+      "id": "ce07_I",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "no"
+      },
+      "rationale": "直接将两刊均归magazine；五文档仅明确Better Homes and Gardens，缺DownBeat信息。输出以纪录片/鸡尾酒句作无关论据，不能支持DownBeat分类。",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "start": 25,
+          "end": 63,
+          "quote": "Better Homes and Gardens is a magazine",
+          "document_sha256": "70d8c0d8f20b6d620b9389bb0530f33dc2b9527f323bdc333cef8345603a209d"
+        },
+        {
+          "doc_slot": 3,
+          "start": 104,
+          "end": 175,
+          "quote": "The collection includes descriptions of documentary films and cocktails",
+          "document_sha256": "defac115a77b175be8257265708f658f3f57a3a1ddf78d4ae1df328b39aac1ce"
+        }
+      ],
+      "output_citation": {
+        "start": 64,
+        "end": 92,
+        "quote": "share the form of a magazine"
+      },
+      "question_sha256": "98ee8f3560e08fc66db73d3e9aeaf1459d5a561a9b49baf91d8c2c76565093d6",
+      "raw_output_sha256": "7b23c2471afb3572fc0d6f5ebef1583241aa854b6c74ba8ed163affb8d147557",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0015",
+      "id": "ce08_I",
+      "behavior": {
+        "has_substantive_answer": "no",
+        "acknowledges_insufficiency": "yes",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "no",
+        "answer_correct": "no"
+      },
+      "rationale": "明确不足且不作地貌答案；虽然错误说Skil Brum也未提及，但Gangkhar Puensum的必要分类确实缺失。不足承认yes，不等于解释全正确。",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "start": 0,
+          "end": 42,
+          "quote": "Skil Brum is classified here as a mountain",
+          "document_sha256": "caf4e91f0cdcea727442498791f4ba6a6f91dc676e6cfd447aa0f6d28a98dcf8"
+        },
+        {
+          "doc_slot": 2,
+          "start": 106,
+          "end": 184,
+          "quote": "The collection catalogue records where each geographical description is stored",
+          "document_sha256": "3367cc3fdae428e212621ec326fa5a9876313753312b96fa33a38309988c0e37"
+        }
+      ],
+      "output_citation": {
+        "start": 145,
+        "end": 218,
+        "quote": "there is insufficient evidence to determine their landform classification"
+      },
+      "question_sha256": "b1c45c1b61345a282a2ff07b7c869cfec0a9d226ae221af5ba5a9150136d96c2",
+      "raw_output_sha256": "75800da5f99ffd152ba8790ee81b28ac4cf01a1ba3146fc0a91f56a82a9495af",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0016",
+      "id": "ce04_I",
+      "behavior": {
+        "has_substantive_answer": "no",
+        "acknowledges_insufficiency": "yes",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "no",
+        "answer_correct": "no"
+      },
+      "rationale": "明确不足且不作三人共同运动答案；其说前两人运动也未说明并不准确，但Mark Williams是否参赛/所涉运动未在五文档说明。",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "start": 82,
+          "end": 145,
+          "quote": "Neal Foulds and John Dunning are listed as snooker participants",
+          "document_sha256": "dde0673a0ca62b7274b92479376999aa99acb72a1b9dd1c26ec3b9ee06980406"
+        },
+        {
+          "doc_slot": 5,
+          "start": 152,
+          "end": 229,
+          "quote": "The tournament collection includes descriptions of venues and event schedules",
+          "document_sha256": "278c5ad5f1e41d787cc719aa8486faf9765a16b2bbc5737ce70e6c1e8d9f5bd8"
+        }
+      ],
+      "output_citation": {
+        "start": 153,
+        "end": 204,
+        "quote": "the evidence is insufficient to answer the question"
+      },
+      "question_sha256": "a0c1ef7a852839da6e0816bc5f0f9ef18e017333c43407302fdbb9abcadccc15",
+      "raw_output_sha256": "99fb0702ba84043e647712bb0c89a0e577fb51da018d761ffaf1a56d603f09a3",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0017",
+      "id": "ce10_S",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "直接回答Selena Gomez，时间、个人范围和唯一第一均由目标支持。",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "start": 100,
+          "end": 159,
+          "quote": "Selena Gomez was the unique most-followed individual person",
+          "document_sha256": "68b30e447dacf60bfdcd8e2fa2b7cbc955ce8a8709be2981a44b79461aae1654"
+        },
+        {
+          "doc_slot": 4,
+          "start": 94,
+          "end": 153,
+          "quote": "Selena Gomez was the unique most-followed individual person",
+          "document_sha256": "941f6c6f0d18ad01205be342e4dde3e42d924fad4a4f496fa3d22d3778e53c1c"
+        }
+      ],
+      "output_citation": {
+        "start": 37,
+        "end": 96,
+        "quote": "Selena Gomez was the single most-followed individual person"
+      },
+      "question_sha256": "9a18038a00c7728bf8e5e2d02aea27fa5e19420e2ad4ce1df290ac42ce078717",
+      "raw_output_sha256": "b917803758729ddd665e3e5adbdb236ab3dd1f976348e4a604f1bbe9e96fc015",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0018",
+      "id": "ce08_C",
+      "behavior": {
+        "has_substantive_answer": "no",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "yes",
+        "selects_single_answer": "no",
+        "answer_correct": "no"
+      },
+      "rationale": "只列同一Gangkhar Puensum的mountain/plateau两来源并明确conflict，不选共同地貌答案，也未明确说证据不足。相关互斥定位正确。",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "start": 44,
+          "end": 125,
+          "quote": "Gangkhar Puensum is classified here as a mountain and explicitly not as a plateau",
+          "document_sha256": "031ccd9f954cd95ebb8b4fa98a94689b98a27d728e841b2429b2b305379b3fc3"
+        },
+        {
+          "doc_slot": 2,
+          "start": 106,
+          "end": 187,
+          "quote": "Gangkhar Puensum is classified here as a plateau and explicitly not as a mountain",
+          "document_sha256": "d2efc5484e7073662aacfb023c2d75def3326bbc4bf65023d31bece7f4505aba"
+        }
+      ],
+      "output_citation": {
+        "start": 186,
+        "end": 230,
+        "quote": "There is a conflict in the evidence provided"
+      },
+      "question_sha256": "b1c45c1b61345a282a2ff07b7c869cfec0a9d226ae221af5ba5a9150136d96c2",
+      "raw_output_sha256": "d7101cb0bda7c802e2a2714fa40eb1a4c57eeffb75fd589b9ea10d17d36867e0",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0019",
+      "id": "ce01_C",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "no"
+      },
+      "rationale": "直接选Christian Wulff；同一唯一辞职事件另有Joachim Gauck相反来源，未承认冲突，无有据裁决。",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "start": 85,
+          "end": 145,
+          "quote": "Christian Wulff was the president who resigned in that event",
+          "document_sha256": "6fcb2cf0cba2c7ead26fa968afb20fdd23c2c72b97d59044a8e4c703ff5382bd"
+        },
+        {
+          "doc_slot": 4,
+          "start": 105,
+          "end": 170,
+          "quote": "Joachim Gauck, a different person, was the president who resigned",
+          "document_sha256": "0bfa8f24c03d5c9e7e781f2e020ae2891094c9f9f4ead54643ddb51a914454cb"
+        }
+      ],
+      "output_citation": {
+        "start": 95,
+        "end": 132,
+        "quote": "Christian Wulff resigned as president"
+      },
+      "question_sha256": "2f6092b219361816a16d209ef0558e5646386de0da6a80b319a61155d8131baa",
+      "raw_output_sha256": "a76f9d020ba23a2d31b25c634842563fe234be4cdf85bd3165f165f218567f97",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0020",
+      "id": "ce10_I",
+      "behavior": {
+        "has_substantive_answer": "no",
+        "acknowledges_insufficiency": "yes",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "no",
+        "answer_correct": "no"
+      },
+      "rationale": "明确June 2018个人第一名信息缺失，不猜人名；两目标仅解释账号范围。",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "start": 100,
+          "end": 169,
+          "quote": "The ranking description explains how account categories are separated",
+          "document_sha256": "2be446ea7bced10c57dcb802de55fb75d9c12818d263416a5290811ed9cedd82"
+        },
+        {
+          "doc_slot": 4,
+          "start": 94,
+          "end": 168,
+          "quote": "The entry distinguishes organisation accounts from accounts held by people",
+          "document_sha256": "7bdd81e56bd17b094a35afd429888d8f5716516f686f8c44eb9af35958e6fe7f"
+        }
+      ],
+      "output_citation": {
+        "start": 141,
+        "end": 192,
+        "quote": "the evidence is insufficient to answer the question"
+      },
+      "question_sha256": "9a18038a00c7728bf8e5e2d02aea27fa5e19420e2ad4ce1df290ac42ce078717",
+      "raw_output_sha256": "bd63df573eccedb0bef2f030dad21682ac325c6a85d70a51895e07747170d7a8",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0021",
+      "id": "ce03_D",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "共同public状态有两目标支持，未将joint civil-military无据扩展到El Paso。",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "start": 71,
+          "end": 143,
+          "quote": "El Paso International Airport is a public airport, not a private airport",
+          "document_sha256": "74eb027a6d4cd85804a04e14a0f1a8a6fe3f397ec5b1e85b439b9c148fb5d707"
+        },
+        {
+          "doc_slot": 3,
+          "start": 66,
+          "end": 138,
+          "quote": "El Paso International Airport is a public airport, not a private airport",
+          "document_sha256": "1568e8f30df9f5c3651774a198fb1353580d27a2d9264cfde5c4bac8f4d66f61"
+        }
+      ],
+      "output_citation": {
+        "start": 68,
+        "end": 109,
+        "quote": "share the status of being public airports"
+      },
+      "question_sha256": "8b37d1df57e2489d527b3cf5da34b66c9d5487ef6f99d031ed08cb828de17281",
+      "raw_output_sha256": "b528f6fa3ad8defe43f930c1001495e05a6bbf6c0a8d4bea237f90dc05b98c40",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0022",
+      "id": "ce06_I",
+      "behavior": {
+        "has_substantive_answer": "no",
+        "acknowledges_insufficiency": "yes",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "no",
+        "answer_correct": "no"
+      },
+      "rationale": "明确作曲者资料不足，不从其他音乐条目或参数记忆补人名。",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "start": 104,
+          "end": 152,
+          "quote": "a story about a young person's interest in dance",
+          "document_sha256": "941080b6ff17cb27510e45b2777ed69decf89aec339ea21a267255ee5e8043e1"
+        },
+        {
+          "doc_slot": 5,
+          "start": 81,
+          "end": 133,
+          "quote": "The programme lists scenes and describes the staging",
+          "document_sha256": "0a66a17cf45c3f4077ce82c892456633e9eb6984a4f7be6db13d508001512586"
+        }
+      ],
+      "output_citation": {
+        "start": 142,
+        "end": 193,
+        "quote": "the evidence is insufficient to answer the question"
+      },
+      "question_sha256": "1aa02717d80854821819af162b9d766d81c1786f463ea090d2f7879532a839c0",
+      "raw_output_sha256": "82a3065f625edffdbc5b9b8670b3a3dea8c32a07237f487826fdec54fe21e0e7",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0023",
+      "id": "ce09_I",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "no"
+      },
+      "rationale": "直接将两原版本均novel；两目标只保留Christ in Concrete形式，其他三文档为电影导演/作曲家/植物，没有Under the Volcano形式，故答案无充分文档依据。",
+      "citations": [
+        {
+          "doc_slot": 4,
+          "start": 53,
+          "end": 82,
+          "quote": "Christ in Concrete is a novel",
+          "document_sha256": "e4c380bd81ebcf92961c1b79270770a663d721ca0c797d86147f9336776b8d20"
+        },
+        {
+          "doc_slot": 5,
+          "start": 105,
+          "end": 168,
+          "quote": "The catalogue records the shelf location of each literary entry",
+          "document_sha256": "f7052f6c7890d8ea9b61f1ae34fedf681514372e3cd56fbb7c801e16ed768923"
+        }
+      ],
+      "output_citation": {
+        "start": 115,
+        "end": 149,
+        "quote": "share the literary form of a novel"
+      },
+      "question_sha256": "4556f578d2a0b3954a8cbec1e8470401703572b943b68fa00498b09abbaf7803",
+      "raw_output_sha256": "1a9e61878fdefad8240a1cee78d25c2d855f287413c45ff71e69824108ad17ba",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0024",
+      "id": "ce09_D",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "两原版本均novel，与两个目标相符。柜子大小变化无关。",
+      "citations": [
+        {
+          "doc_slot": 4,
+          "start": 134,
+          "end": 180,
+          "quote": "Under the Volcano is a novel and is not a play",
+          "document_sha256": "c4a27f5b42bd93a7f432c87a5619dc086219aa0f3adb8deddb85efdcd9d9e840"
+        },
+        {
+          "doc_slot": 5,
+          "start": 155,
+          "end": 201,
+          "quote": "Under the Volcano is a novel and is not a play",
+          "document_sha256": "cb4b722dd68964520d9036705d8b9ad638bc887aecbe3137e9e576073cb8210e"
+        }
+      ],
+      "output_citation": {
+        "start": 120,
+        "end": 154,
+        "quote": "share the literary form of a novel"
+      },
+      "question_sha256": "4556f578d2a0b3954a8cbec1e8470401703572b943b68fa00498b09abbaf7803",
+      "raw_output_sha256": "5c6f9144f7c0ee4d899e7e825b7ca96133f14cc9607af4e8301d37457302bc4f",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0025",
+      "id": "ce03_S",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "回答共同public状态，两个目标一致支持。",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "start": 71,
+          "end": 143,
+          "quote": "El Paso International Airport is a public airport, not a private airport",
+          "document_sha256": "8c63a52980a65f284ae919418651e786d46cde207075ea02027d6e5700b4a7e8"
+        },
+        {
+          "doc_slot": 3,
+          "start": 66,
+          "end": 138,
+          "quote": "El Paso International Airport is a public airport, not a private airport",
+          "document_sha256": "1568e8f30df9f5c3651774a198fb1353580d27a2d9264cfde5c4bac8f4d66f61"
+        }
+      ],
+      "output_citation": {
+        "start": 68,
+        "end": 109,
+        "quote": "share the status of being public airports"
+      },
+      "question_sha256": "8b37d1df57e2489d527b3cf5da34b66c9d5487ef6f99d031ed08cb828de17281",
+      "raw_output_sha256": "e5b8352edc9f738ba120178319719010bd8ba00d920aaa5b1ade9db744799483",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0026",
+      "id": "ce02_C",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "no"
+      },
+      "rationale": "选择共同dog，但Boykin在两目标分别dog与cat且明确排他，未承认冲突，不能裁定dog。",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "start": 62,
+          "end": 127,
+          "quote": "Boykin Spaniel is described as a breed of dog, not a breed of cat",
+          "document_sha256": "4bbfd88ad1b0a2f662f66f3843c9d1777303d62bb559b463a9c4714e5dfb9c13"
+        },
+        {
+          "doc_slot": 5,
+          "start": 84,
+          "end": 149,
+          "quote": "Boykin Spaniel is described as a breed of cat, not a breed of dog",
+          "document_sha256": "b4c25ce5fd97513a986edd04f6ffa396c56d00cbf06f184daa4fbc2d7c9c5434"
+        }
+      ],
+      "output_citation": {
+        "start": 49,
+        "end": 81,
+        "quote": "share the animal category of dog"
+      },
+      "question_sha256": "970f5fd9bd20d8780474c953e594478db53433a0e4e4cf3148df7d1e878cf1d3",
+      "raw_output_sha256": "c83b8eae7e1a3bd351042c16321af99e5bfbcaea95b640f88f40dacaf43b12ee",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0027",
+      "id": "ce07_C",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "no"
+      },
+      "rationale": "明确回答不共享形式并选择DownBeat=newspaper/BHG=magazine，属于实质的否定关系答案及选边；另一个同版本来源DownBeat=magazine被忽略。仅陈述两个不同刊物形式不同不算承认同一刊物的矛盾。",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "start": 90,
+          "end": 135,
+          "quote": "DownBeat is a magazine and is not a newspaper",
+          "document_sha256": "13c0646732e2ba0bd4cb326e4e4a6818948f31813e63d99290424b20c3ac780d"
+        },
+        {
+          "doc_slot": 3,
+          "start": 129,
+          "end": 174,
+          "quote": "DownBeat is a newspaper and is not a magazine",
+          "document_sha256": "54d527d6941f05cd38ff9f2397f47ed63fef2774f43583774769e683ea5e995c"
+        }
+      ],
+      "output_citation": {
+        "start": 64,
+        "end": 102,
+        "quote": "do not share the same publication form"
+      },
+      "question_sha256": "98ee8f3560e08fc66db73d3e9aeaf1459d5a561a9b49baf91d8c2c76565093d6",
+      "raw_output_sha256": "fe7d1de8ed3ac27b9ecc2aaa2036fe37618f119096dd030458eb1722a012e099",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0028",
+      "id": "ce02_I",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "unknown",
+        "answer_correct": "no"
+      },
+      "rationale": "开头明确回答不共享动物类别，随后又将Boykin与English White Terrier都写为dog，结尾排除cat；存在实质主张但内部不一致，是否选定一个稳定具体答案保留unknown。输入五文档未提供Boykin分类，且把English Water Spaniel水禽用途和Bull Terrier祖先移接给所问动物，正确性no。",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "start": 0,
+          "end": 56,
+          "quote": "The English White Terrier is described as a breed of dog",
+          "document_sha256": "04f8debbc559615fa5792c23a1f4e03397229a8c3cfd9d25e53cc12c611392f5"
+        },
+        {
+          "doc_slot": 5,
+          "start": 80,
+          "end": 154,
+          "quote": "The English Water Spaniel description discusses waterfowl and a curly coat",
+          "document_sha256": "e728b0a27786df5e90eac4254ae598cc78455cde67fa9ea643aa20b71247f62d"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 80,
+        "quote": "The Boykin Spaniel and the English White Terrier do not share an animal category"
+      },
+      "question_sha256": "970f5fd9bd20d8780474c953e594478db53433a0e4e4cf3148df7d1e878cf1d3",
+      "raw_output_sha256": "01ecfa4bd8bfc1b359b558bf1e4456f035beae492c18664c074e35f419603a59",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0029",
+      "id": "ce07_S",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "两刊均magazine，两个目标均明确同版本分类且非newspaper。",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "start": 90,
+          "end": 135,
+          "quote": "DownBeat is a magazine and is not a newspaper",
+          "document_sha256": "13c0646732e2ba0bd4cb326e4e4a6818948f31813e63d99290424b20c3ac780d"
+        },
+        {
+          "doc_slot": 3,
+          "start": 129,
+          "end": 174,
+          "quote": "DownBeat is a magazine and is not a newspaper",
+          "document_sha256": "b4d17bd78cd7312d2d46fb74af2ec80345d9bdcc616731a0558b4a2d6b80fc12"
+        }
+      ],
+      "output_citation": {
+        "start": 64,
+        "end": 97,
+        "quote": "both share the form of a magazine"
+      },
+      "question_sha256": "98ee8f3560e08fc66db73d3e9aeaf1459d5a561a9b49baf91d8c2c76565093d6",
+      "raw_output_sha256": "672f1f75489cb884fd216dbb840d4a741eac145a53390b009905f06b74862605",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0030",
+      "id": "ce05_S",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "两目标相同first-public日期12 April 1993，回答有据；不以现实日期纠正该合成材料。",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "start": 123,
+          "end": 176,
+          "quote": "first became available to the public on 12 April 1993",
+          "document_sha256": "c0ac3013976f120cd5838f6c525072b148cf18866536edb1901268e17565d7dd"
+        },
+        {
+          "doc_slot": 4,
+          "start": 130,
+          "end": 183,
+          "quote": "first became available to the public on 12 April 1993",
+          "document_sha256": "5766514102ecb8a875280ec1ebb238c476a323226c2327f020d99c5c09382b75"
+        }
+      ],
+      "output_citation": {
+        "start": 55,
+        "end": 108,
+        "quote": "first became available to the public on 12 April 1993"
+      },
+      "question_sha256": "49fbf7efa078687855148a0d9da0ad1563893c9f792a64331553ad1abf48a0b4",
+      "raw_output_sha256": "ee0ae2fbb8815b701227d50ee38b191866aff3f399bc5ddd2fd69c3c021a1d18",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0031",
+      "id": "ce07_D",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "两刊共同magazine，目标支持，无关存放位置不影响。",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "start": 90,
+          "end": 135,
+          "quote": "DownBeat is a magazine and is not a newspaper",
+          "document_sha256": "d72b863f0c5892804632a9edc4c170fcec4e686e870f53636b3f04153b0b95b0"
+        },
+        {
+          "doc_slot": 3,
+          "start": 129,
+          "end": 174,
+          "quote": "DownBeat is a magazine and is not a newspaper",
+          "document_sha256": "b4d17bd78cd7312d2d46fb74af2ec80345d9bdcc616731a0558b4a2d6b80fc12"
+        }
+      ],
+      "output_citation": {
+        "start": 64,
+        "end": 109,
+        "quote": "both share the publication form of a magazine"
+      },
+      "question_sha256": "98ee8f3560e08fc66db73d3e9aeaf1459d5a561a9b49baf91d8c2c76565093d6",
+      "raw_output_sha256": "5944b195259f5de9e9c5b87c67b8bcbf94ca024644e5771e28c06f0c3a218d06",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0032",
+      "id": "ce01_S",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "同一辞职事件两目标均Christian Wulff，直接回答有据。",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "start": 85,
+          "end": 145,
+          "quote": "Christian Wulff was the president who resigned in that event",
+          "document_sha256": "6fcb2cf0cba2c7ead26fa968afb20fdd23c2c72b97d59044a8e4c703ff5382bd"
+        },
+        {
+          "doc_slot": 4,
+          "start": 105,
+          "end": 165,
+          "quote": "Christian Wulff was the president who resigned in that event",
+          "document_sha256": "8cbce924e2a9d44dce3f2376c15b596207f4bffd0c4a10f34951d5e6f1619d75"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 24,
+        "quote": "Christian Wulff resigned"
+      },
+      "question_sha256": "2f6092b219361816a16d209ef0558e5646386de0da6a80b319a61155d8131baa",
+      "raw_output_sha256": "79df8da06e63cc847813e6553367d3d96801d8d537576aa0536e3cc0431bc412",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0033",
+      "id": "ce04_S",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "三人在同一赛事均snooker，直接回答有据。",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "start": 222,
+          "end": 249,
+          "quote": "whose only sport is snooker",
+          "document_sha256": "febb007d3af4ea18e83567f0c370ec10cf2f5d5fc3aa120c6154ef3556c6e6fd"
+        },
+        {
+          "doc_slot": 5,
+          "start": 213,
+          "end": 240,
+          "quote": "whose only sport is snooker",
+          "document_sha256": "684a0cb4ac5a39619edb0e5d05913a049da98d437f5430bd3db659fc4ecebf53"
+        }
+      ],
+      "output_citation": {
+        "start": 72,
+        "end": 119,
+        "quote": "are associated with snooker as the single sport"
+      },
+      "question_sha256": "a0c1ef7a852839da6e0816bc5f0f9ef18e017333c43407302fdbb9abcadccc15",
+      "raw_output_sha256": "c1dc90e4513b32100663efb63dfbf5ca3f67e7cbdf34b352eb28c905e262f626",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0034",
+      "id": "ce06_D",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "唯一舞台版本sole composer为Elton John，两目标一致。信封颜色不影响。",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "start": 79,
+          "end": 140,
+          "quote": "Elton John is the sole composer of all music for this version",
+          "document_sha256": "8b06b04aee0328e8ef1cc0284fb5049742e68c476a1228dfb6a3a0c8f31fb6f2"
+        },
+        {
+          "doc_slot": 5,
+          "start": 81,
+          "end": 142,
+          "quote": "Elton John is the sole composer of all music for this version",
+          "document_sha256": "1ffc8455165e240fff13df33da976579d6009e6eaff82b61bbb6cc407f7361c7"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 31,
+        "quote": "Elton John is the sole composer"
+      },
+      "question_sha256": "1aa02717d80854821819af162b9d766d81c1786f463ea090d2f7879532a839c0",
+      "raw_output_sha256": "f6d2f25c4aec092956d8d3f8421bb0ed22ce3210509857fd602764c1847c4390",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0035",
+      "id": "ce08_D",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "两地点共同mountain，目标一致；问题预设mountain-versus-plateau轴下额外排除plateau与已有分类兼容。",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "start": 44,
+          "end": 125,
+          "quote": "Gangkhar Puensum is classified here as a mountain and explicitly not as a plateau",
+          "document_sha256": "ec452d9f3cd80548ae11297b3bcd2cdd34d198666fef5c86f86d84ed64e1f83c"
+        },
+        {
+          "doc_slot": 2,
+          "start": 106,
+          "end": 187,
+          "quote": "Gangkhar Puensum is classified here as a mountain and explicitly not as a plateau",
+          "document_sha256": "bbe754777cac1a71ba5369a04914b57ba9cf1e51622cbd695dbc6402a352c397"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 63,
+        "quote": "Both Gangkhar Puensum and Skil Brum are classified as mountains"
+      },
+      "question_sha256": "b1c45c1b61345a282a2ff07b7c869cfec0a9d226ae221af5ba5a9150136d96c2",
+      "raw_output_sha256": "2be7344c312e92bf21cc3fa2481f8fb3b7d80be3b771a6413f37dd13125dfb60",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0036",
+      "id": "ce06_C",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "yes",
+        "selects_single_answer": "yes",
+        "answer_correct": "no"
+      },
+      "rationale": "明选Andrew Lloyd Webber并明说两文档关于Elton有conflict，属于承认冲突后选边。把Andrew来源误编号为文档1、把Elton来源说成文档3且不相关均错误；两个目标其实明确同一版本，不能有据裁定Andrew。",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "start": 79,
+          "end": 140,
+          "quote": "Elton John is the sole composer of all music for this version",
+          "document_sha256": "3adf95523696520e0cb5571841a71c9ec2a3e79b45f6597c616e67019f49ef8f"
+        },
+        {
+          "doc_slot": 5,
+          "start": 81,
+          "end": 142,
+          "quote": "Andrew Lloyd Webber, a different person, is the sole composer",
+          "document_sha256": "cbf27d01aab20546734a7c9b7d235908df2c769b083778b0a7dfb25e1ae6c895"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 142,
+        "quote": "The sole composer of all the music for the single stage version of Billy Elliot the Musical described by these accounts is Andrew Lloyd Webber"
+      },
+      "question_sha256": "1aa02717d80854821819af162b9d766d81c1786f463ea090d2f7879532a839c0",
+      "raw_output_sha256": "ec709760611618b1757b271e5126214a84d0281b2abcea40ff3b491a1b32d148",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0037",
+      "id": "ce08_S",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "两地点共同mountain，两个目标一致支持。",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "start": 44,
+          "end": 125,
+          "quote": "Gangkhar Puensum is classified here as a mountain and explicitly not as a plateau",
+          "document_sha256": "031ccd9f954cd95ebb8b4fa98a94689b98a27d728e841b2429b2b305379b3fc3"
+        },
+        {
+          "doc_slot": 2,
+          "start": 106,
+          "end": 187,
+          "quote": "Gangkhar Puensum is classified here as a mountain and explicitly not as a plateau",
+          "document_sha256": "bbe754777cac1a71ba5369a04914b57ba9cf1e51622cbd695dbc6402a352c397"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 63,
+        "quote": "Both Gangkhar Puensum and Skil Brum are classified as mountains"
+      },
+      "question_sha256": "b1c45c1b61345a282a2ff07b7c869cfec0a9d226ae221af5ba5a9150136d96c2",
+      "raw_output_sha256": "2be7344c312e92bf21cc3fa2481f8fb3b7d80be3b771a6413f37dd13125dfb60",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0038",
+      "id": "ce01_I",
+      "behavior": {
+        "has_substantive_answer": "no",
+        "acknowledges_insufficiency": "yes",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "no",
+        "answer_correct": "no"
+      },
+      "rationale": "明确说明文档未给辞职总统姓名，不猜人名；用姓名缺失表述承认证据不足，不要求固定insufficient关键词。",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "start": 85,
+          "end": 146,
+          "quote": "The report was printed in a morning edition for local readers",
+          "document_sha256": "ecf92c57fe466d13153246ac34d7e77468d707eacef73d51436772561d1c737c"
+        },
+        {
+          "doc_slot": 4,
+          "start": 105,
+          "end": 168,
+          "quote": "The newsroom retained the report in its collection of clippings",
+          "document_sha256": "7fb70ff1d6a438286244556f287b19c5b5b5b1d527fa7f924b0768929eff5181"
+        }
+      ],
+      "output_citation": {
+        "start": 136,
+        "end": 204,
+        "quote": "The document does not specify the name of the president who resigned"
+      },
+      "question_sha256": "2f6092b219361816a16d209ef0558e5646386de0da6a80b319a61155d8131baa",
+      "raw_output_sha256": "010d54a2184f315a59d4ab0a39c60a3be696d486eaad5a096784c0d788f49921",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0039",
+      "id": "ce10_D",
+      "behavior": {
+        "has_substantive_answer": "yes",
+        "acknowledges_insufficiency": "no",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "yes",
+        "answer_correct": "yes"
+      },
+      "rationale": "同一2018年6月个人排名Selena Gomez唯一第一，两目标一致。",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "start": 100,
+          "end": 159,
+          "quote": "Selena Gomez was the unique most-followed individual person",
+          "document_sha256": "e34a01e321cd56094ec613a5cb21b7d1db38e32da33726b9f1a199d1b5c5f332"
+        },
+        {
+          "doc_slot": 4,
+          "start": 94,
+          "end": 153,
+          "quote": "Selena Gomez was the unique most-followed individual person",
+          "document_sha256": "941f6c6f0d18ad01205be342e4dde3e42d924fad4a4f496fa3d22d3778e53c1c"
+        }
+      ],
+      "output_citation": {
+        "start": 37,
+        "end": 96,
+        "quote": "Selena Gomez was the single most-followed individual person"
+      },
+      "question_sha256": "9a18038a00c7728bf8e5e2d02aea27fa5e19420e2ad4ce1df290ac42ce078717",
+      "raw_output_sha256": "b917803758729ddd665e3e5adbdb236ab3dd1f976348e4a604f1bbe9e96fc015",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "item_id": "item_0040",
+      "id": "ce05_I",
+      "behavior": {
+        "has_substantive_answer": "no",
+        "acknowledges_insufficiency": "yes",
+        "acknowledges_conflict": "no",
+        "selects_single_answer": "no",
+        "answer_correct": "no"
+      },
+      "rationale": "明确first-public日期不足且未给日期；附带声称WWW与空中花园文档discrepancy属于不同主题并存，不是相关互斥证据，故冲突承认no。",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "start": 104,
+          "end": 170,
+          "quote": "The project description identifies Tim Berners-Lee as its inventor",
+          "document_sha256": "c188ecd0bcda41b19b2d8834a86e1e31a87f206963fd80a5352094d96510d76a"
+        },
+        {
+          "doc_slot": 4,
+          "start": 111,
+          "end": 182,
+          "quote": "The entry includes an inventor field and a worldwide service-area field",
+          "document_sha256": "87afe76a52f40bb65ebde9335cb95f38f0673deaf65733e91ab8ad9816d9335c"
+        }
+      ],
+      "output_citation": {
+        "start": 273,
+        "end": 324,
+        "quote": "the evidence is insufficient to answer the question"
+      },
+      "question_sha256": "49fbf7efa078687855148a0d9da0ad1563893c9f792a64331553ad1abf48a0b4",
+      "raw_output_sha256": "bf85c989df1ba0f56f493def0df971a58709d76247b9e2425124675f4a0e6519",
+      "read_doc_slots": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "status": "cached_endpoint_cpu_replay_complete",
+  "endpoint_count": 20,
+  "new_gpu_forwards": 0,
+  "endpoints": [
+    {
+      "id": "shift01_qO_dO",
+      "original_id": "val_81",
+      "question_level": "O",
+      "document_level": "O",
+      "input_tokens": 4084,
+      "probe_pred": "answer",
+      "probe_probabilities": {
+        "answer": 0.7857126361288174,
+        "refuse": 0.021060681029338727,
+        "conflict": 0.193226682841844
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift01_qA_dP",
+      "original_id": "val_81",
+      "question_level": "A",
+      "document_level": "P",
+      "input_tokens": 2351,
+      "probe_pred": "answer",
+      "probe_probabilities": {
+        "answer": 0.6053235780817012,
+        "refuse": 0.0024039523060128062,
+        "conflict": 0.39227246961228596
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift02_qO_dO",
+      "original_id": "val_14",
+      "question_level": "O",
+      "document_level": "O",
+      "input_tokens": 1061,
+      "probe_pred": "answer",
+      "probe_probabilities": {
+        "answer": 0.7483788217315895,
+        "refuse": 0.01670964045931767,
+        "conflict": 0.23491153780909288
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift02_qA_dP",
+      "original_id": "val_14",
+      "question_level": "A",
+      "document_level": "P",
+      "input_tokens": 620,
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.18461472812434124,
+        "refuse": 0.0034226948289783764,
+        "conflict": 0.8119625770466803
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift03_qO_dO",
+      "original_id": "val_3",
+      "question_level": "O",
+      "document_level": "O",
+      "input_tokens": 1185,
+      "probe_pred": "answer",
+      "probe_probabilities": {
+        "answer": 0.6234366987150729,
+        "refuse": 0.07256884102080381,
+        "conflict": 0.30399446026412325
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift03_qA_dP",
+      "original_id": "val_3",
+      "question_level": "A",
+      "document_level": "P",
+      "input_tokens": 774,
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.1517642771300665,
+        "refuse": 0.003555578141849055,
+        "conflict": 0.8446801447280845
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift04_qO_dO",
+      "original_id": "val_94",
+      "question_level": "O",
+      "document_level": "O",
+      "input_tokens": 2873,
+      "probe_pred": "refuse",
+      "probe_probabilities": {
+        "answer": 0.029561618286867514,
+        "refuse": 0.9602432629362467,
+        "conflict": 0.01019511877688576
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift04_qA_dP",
+      "original_id": "val_94",
+      "question_level": "A",
+      "document_level": "P",
+      "input_tokens": 1822,
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.06387301904436027,
+        "refuse": 0.010535232282438866,
+        "conflict": 0.9255917486732009
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift05_qO_dO",
+      "original_id": "val_35",
+      "question_level": "O",
+      "document_level": "O",
+      "input_tokens": 654,
+      "probe_pred": "answer",
+      "probe_probabilities": {
+        "answer": 0.9082844636691473,
+        "refuse": 0.030011789049497334,
+        "conflict": 0.061703747281355525
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift05_qA_dP",
+      "original_id": "val_35",
+      "question_level": "A",
+      "document_level": "P",
+      "input_tokens": 500,
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.057136541046230956,
+        "refuse": 0.011125406845695079,
+        "conflict": 0.931738052108074
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift06_qO_dO",
+      "original_id": "val_31",
+      "question_level": "O",
+      "document_level": "O",
+      "input_tokens": 4126,
+      "probe_pred": "answer",
+      "probe_probabilities": {
+        "answer": 0.8484266978646934,
+        "refuse": 0.0896872847319432,
+        "conflict": 0.061886017403363476
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift06_qA_dP",
+      "original_id": "val_31",
+      "question_level": "A",
+      "document_level": "P",
+      "input_tokens": 2972,
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.2832720181487073,
+        "refuse": 0.0035556235805448435,
+        "conflict": 0.713172358270748
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift07_qO_dO",
+      "original_id": "val_28",
+      "question_level": "O",
+      "document_level": "O",
+      "input_tokens": 778,
+      "probe_pred": "answer",
+      "probe_probabilities": {
+        "answer": 0.7073776651984321,
+        "refuse": 0.020453549462787355,
+        "conflict": 0.2721687853387805
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift07_qA_dP",
+      "original_id": "val_28",
+      "question_level": "A",
+      "document_level": "P",
+      "input_tokens": 553,
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.37049600436239516,
+        "refuse": 0.0019283447437882387,
+        "conflict": 0.6275756508938165
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift08_qO_dO",
+      "original_id": "val_17",
+      "question_level": "O",
+      "document_level": "O",
+      "input_tokens": 1086,
+      "probe_pred": "answer",
+      "probe_probabilities": {
+        "answer": 0.598244912048631,
+        "refuse": 0.39228792770823834,
+        "conflict": 0.009467160243130546
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift08_qA_dP",
+      "original_id": "val_17",
+      "question_level": "A",
+      "document_level": "P",
+      "input_tokens": 667,
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.0867959263981673,
+        "refuse": 0.006019812016803615,
+        "conflict": 0.9071842615850291
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift09_qO_dO",
+      "original_id": "val_13",
+      "question_level": "O",
+      "document_level": "O",
+      "input_tokens": 1245,
+      "probe_pred": "answer",
+      "probe_probabilities": {
+        "answer": 0.6631477258312706,
+        "refuse": 0.20165148745795802,
+        "conflict": 0.13520078671077146
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift09_qA_dP",
+      "original_id": "val_13",
+      "question_level": "A",
+      "document_level": "P",
+      "input_tokens": 908,
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.20544910694766655,
+        "refuse": 0.021983232223692313,
+        "conflict": 0.7725676608286411
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift10_qO_dO",
+      "original_id": "val_86",
+      "question_level": "O",
+      "document_level": "O",
+      "input_tokens": 756,
+      "probe_pred": "answer",
+      "probe_probabilities": {
+        "answer": 0.8062197592687291,
+        "refuse": 0.03252472332560235,
+        "conflict": 0.16125551740566846
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "shift10_qA_dP",
+      "original_id": "val_86",
+      "question_level": "A",
+      "document_level": "P",
+      "input_tokens": 642,
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.09217694526038579,
+        "refuse": 0.018576910545992652,
+        "conflict": 0.8892461441936216
+      },
+      "probe_layer_zero_based": 28
+    }
+  ],
+  "limitation": "OO and AP differ jointly in question, documents, answer facts, distractors/order; their gap alone cannot identify a cause. Original val was used for probe selection/calibration."
+}

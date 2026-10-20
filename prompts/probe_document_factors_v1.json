@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "name": "fixed_question_fact_document_factors_development_v1",
+  "target_levels": ["F", "C"],
+  "background_levels": ["S", "L"],
+  "rotation_levels": [0, 1],
+  "smoke_bases": ["val_94", "val_35"],
+  "smoke_selection": "Fixed after tokenizer-only inspection of all80 inputs, before new factor states: val_94 contains the longest3112-token cell, val_35 the shortest482-token cell. Not a semantic-result selection.",
+  "target_definition": "F is the exact previous authored S target pair. C deletes only the explicit trailing background sentences listed here; all answer-bearing and scope clauses, including negative/exhaustive assertions, remain byte-identical.",
+  "background_definition": "Rank the five complete source-refuse documents once by ascending (character length, original slot). S takes the first three ranks, L takes the last three ranks, including the specified tie behavior. Within either selected set retain ascending original-slot order and duplicate multiplicity. These are source/length/duplicate changes, not a length-controlled identity experiment.",
+  "rotation_definition": "0 preserves the previous balanced target slots; 1 left-rotates the entire five-document list by one. The exact multiset is preserved, but target and distractor absolute slots and reading order change together.",
+  "target_tail_deletions": {
+    "val_81": [" The report was filed at the central news desk.", " A printed copy was retained in the newsroom."],
+    "val_14": [" The description is stored in a blue folder.", " The collection also contains illustrated breed histories."],
+    "val_3": [" This description is held in the northern records room.", " The airport collection includes regional transport descriptions."],
+    "val_94": [" The event account has a green cover.", " A copy is held with other tournament accounts."],
+    "val_35": [" The account was filed on the upper archive shelf.", " Its service area is described as worldwide."],
+    "val_31": [" A copy of the account is stored in a grey envelope.", " The programme includes a list of scenes."],
+    "val_28": [" This catalogue is kept in the eastern cabinet.", " The entry has a plain paper cover."],
+    "val_17": [" This geographical description is printed on cream paper.", " A copy is kept in the geographical collection."],
+    "val_13": [" The literary entry is filed in a small cabinet.", " The collection includes author biographies."],
+    "val_86": [" The ranking description is kept in a round binder.", null]
+  },
+  "new_background_review": {
+    "val_81": {"source_slots": [1, 5], "reason": "Full texts concern Potsdam/1945 and George H. W. Bush/US history. Mentions of Germany, February, presidents and resignations concern other times/entities, not Wulff's February 2012 German presidency event."},
+    "val_14": {"source_slots": [1, 5], "reason": "Estrela/Clumber and Teddy Roosevelt Terrier/Moscow Watchdog texts. English White Terrier appears as an ancestor, compatible with the retained dog category; no Boykin cat assertion or changed Boykin fact."},
+    "val_3": {"source_slots": [2, 3], "reason": "Central Wisconsin, Greenbrier, JFK and Tampa airport descriptions. Public status assertions concern other named airports and do not contradict the explicit El Paso/Tucson facts."},
+    "val_94": {"source_slots": [1, 3], "reason": "Serena Williams tennis and Shirley Williams politics are different full-name entities from Mark Williams. Neither describes the single British Open snooker event in the fixed question."},
+    "val_35": {"source_slots": [4, 5], "reason": "World War II casualties and Lego tires/manufacturing dates concern different entities and predicates; no WWW first-public-availability date."},
+    "val_31": {"source_slots": [3, 4], "reason": "Independent record-label history and Spice Girls biographies do not credit the specified Billy Elliot stage version. Billy J. Thomas and Elliot Kennedy name fragments are not the stage work's sole-composer credit."},
+    "val_28": {"source_slots": [3, 4], "reason": "Mesquite/Bruckenthalia plants and Malakian/Saenz musicians do not classify either target publication's edition."},
+    "val_17": {"source_slots": [2, 3], "reason": "Kai Ken/Corgi and Schipperke/Terceira Mastiff dog descriptions do not classify the two asked landforms. Breed disagreement about spitz/sheepdog is unrelated to mountain/plateau."},
+    "val_13": {"source_slots": [1, 2], "reason": "Burgos Pointer/Japanese Spitz and Burroughs/Bataille texts concern other dogs/authors; the mention of novels is not a contrary original-version form for either target work."},
+    "val_86": {"source_slots": [1, 4], "reason": "Jeopardy contestants and McCain versions do not provide an Instagram ranking. Source slot4 duplicates a retained Jeopardy text; multiplicity is preserved, not silently deduplicated."}
+  },
+  "bridge_tolerances": {"max_layer_relative_l2": 0.02, "max_probability_absolute_error": 0.01},
+  "primary_analysis": "Paired frozen-probe label/probability/token changes for each one-factor change at all four fixed settings of the other two factors. Four contrasts per factor, 12 contrast groups, ten paired bases each. Show every base; not 120 independent questions. No semantic accuracy/behavior metric or setting selection.",
+  "exposure": "Previously authored/exposed ten validation bases and earlier endpoint/input-shift outcomes are known. This design is fixed after those findings and before new factor outputs. Reviewer is the same exposed assistant, not independent gold.",
+  "limitations": "Target factor only tests specified background-tail removal, not natural versus synthetic support text. Background factor changes content, length and duplicates jointly. Rotation changes absolute positions and linear order jointly. No proof of full semantic equivalence, population generalization, model self-knowledge or hidden-state causal use; no probe fit/calibration/layer/threshold search, test/confirmation access, generation or patching."
+}

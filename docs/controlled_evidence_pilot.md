@@ -1,6 +1,8 @@
 # 同题证据对照：开发小试验运行说明
 
-本轮使用冻结Qwen2.5-3B-Instruct、已有chat自由回答模板及chat L28探针。目标是检查同题证据改变时，探针和实际行为是否随之变化。正式40条输入分别做自由回答和固定分类，共80条生成；另有4输入技术smoke、8条生成。当前由助手完成材料/CPU准备，3B GPU交用户启动。
+本轮使用冻结Qwen2.5-3B-Instruct、已有chat自由回答模板及chat L28探针。目标是检查同题证据改变时，探针和实际行为是否随之变化。正式40条输入分别做自由回答和固定分类，共80条生成；另有4输入技术smoke、8条生成。材料/CPU准备及后续用户GPU运行均已完成，当前状态见下。
+
+**2026-10-20当前状态：全部88次生成及正式40条显式行为复核、CPU分析/完整重放均已完成。** 正式末条于10月18日14:46:15保存，无空/截断，主表探针13/30、固定分类12/30；行为S有据正确10/10、I作答4/10（探针判不足后1/2）、C选边7/10，198字段确定/2已审歧义保留unknown。progress仍pending因两unknown，不表示40行仍空。评分来源有材料/历史暴露，非独立金标准。详见[行为复核](records/2026-10-20-controlled-evidence-pilot-behavior.md)和[生成核验](records/2026-10-20-controlled-evidence-pilot-verified.md)；**无需重跑下面的GPU入口**，下述准备快照和启动说明保留用于追溯。
 
 2026-10-18准备与核验已完成：93项CPU测试52.405秒通过，正式40和smoke4真实tokenizer预检查及准备只读重放均通过，两目录prepared_not_started、新GPU0。最大自由输入2977、分类3289，分别加128/8低于32768；容量规划8–26分钟，保守预留10–30分钟。完整证据见[准备记录](records/2026-10-18-controlled-evidence-pilot-preparation.md)及[清单](records/2026-10-18-controlled-evidence-pilot-preparation.json)。
 
@@ -81,6 +83,8 @@ GPU生成并导出报告后，助手进行完整只读核验：
 同脚本可用--run_dir指定smoke目录。核验重建材料、协议、真实输入长度和所有缓存/特征/概率，复算主表/配对/完整分母，独立重导审核页面到临时目录比较，不修改原产物。
 
 ## 行为评分与后续分析
+
+本轮已使用显式评分路径review/assistant-behavior-2026-10-20-v1/annotations.csv完成分析，原模板保留；若重放，使用同一--annotations路径，勿仅执行默认analyze导致切回不存在的根annotations.csv。当前只读复查可执行`python -B scripts/verify_controlled_evidence_behavior_review.py`（使用上方kba-rag绝对Python），不需再次分析或生成。以下为原通用流程说明。
 
 GPU生成完成后，行为仍待显式审核；分类标签、关键词和探针预测不自动生成评分。沿用has_substantive_answer、acknowledges_insufficiency、acknowledges_conflict、selects_single_answer、answer_correct五字段，yes/no/unknown，未明确项保留完整分母。当前作者熟悉材料，若由其继续判断须披露来源，不称独立盲审。
 
