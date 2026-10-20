@@ -4,6 +4,8 @@
 
 2026-10-20准备完成：全111项CPU测试110.241秒通过，正式80/smoke16真实tokenizer及准备只读verify通过，26实现/12源哈希匹配，输入482–3112/32768。两目录prepared_not_started、新GPU0；规划5–14分钟，建议预留10–20，非实测保证。详见[准备记录](records/2026-10-20-probe-document-factors-preparation.md)与[JSON](records/2026-10-20-probe-document-factors-preparation.json)。
 
+2026-10-20最新完成状态：正式80/80（70新/10复用）+smoke16/16，两次完整只读verify及独立120配对核验通过。两个桥接误差0，16跨运行同输入数组/概率完全一致；八组合逐题类别全相同，始终1answer/9conflict，12组各0/10翻转，概率仍有明显逐题变化。完整结果见[完成核验与分析](records/2026-10-20-probe-document-factors-verified.md)/[JSON](records/2026-10-20-probe-document-factors-verified.json)；下列准备/启动说明保留为复查入口，当前无需重跑GPU。
+
 ## 三因素、八组合
 
 | 因素 | 原条件 | 变更条件 | 保持不变的部分 |

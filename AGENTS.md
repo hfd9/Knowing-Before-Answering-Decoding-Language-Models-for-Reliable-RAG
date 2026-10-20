@@ -61,13 +61,15 @@ answer（证据充分）、refuse（证据不足）、conflict（证据冲突）
 | 探针输入变化诊断准备完成 | 2026-10-20 CPU重放20已有端点：原问题/发布answer全文读出9answer/1refuse/0conflict，上轮问题/S全文1answer/0refuse/9conflict，10/10冲突概率增加；两个端点多因素同时变，不归因长度。新52单元：问题O/A×文档O/P40＋六题N删除重复否定×两问题12；复用20、新32前向，另固定val_31六次smoke含两数值桥接，0生成。新9/全102CPU82.850秒通过，52/6真实tokenizer及准备只读verify通过，各22实现/9源哈希，最大4137，两目录prepared_not_started/GPU0。入口sh scripts/run_probe_input_shift_review.sh，规划4–11、预留10–20分钟，由用户运行。见docs/records/2026-10-20-probe-input-shift-preparation.md；不调层/阈值、不确认/patching |
 | 探针输入变化诊断完成核验 | 2026-10-20用户已完成正式52（32新/20复用）+smoke6，末条11:47:24；两次完整verify、独立52计数/58配对通过，各22实现/9源匹配。两桥接误差0、smoke/full同输入6数组及概率完全一致。固定文档换问题：原文档4/10类别变、conflict概率均值+12.02pp，S文档3/10、+19.82pp；固定问题换文档包：原问题6/10、+43.90pp，澄清问题7/10、+51.70pp。删重复否定各6/6概率下降（均值−5.07/−7.47pp），两问题均0/6类别翻转；不能用not单独解释，文档包根因仍未分离。无新生成/行为率，不调参、不确认/patching。见docs/records/2026-10-20-probe-input-shift-verified.md及JSON/52CSV；无需重跑 |
 | 固定问题/事实的文档三因素准备 | 2026-10-20用户要求直接推进。T完整/删背景尾句×B短三篇/长三篇完整来源×R原序/整体左循环1位，10题80单元；固定原澄清问题及回答事实，保留否定/唯一性/范围。19尾句及20新增背景槽位全文已审，InstagramB机构说明保留，重复原样。复用10/新70，另最长val_94与最短val_35各8smoke=16，合计86新prefill/0生成。新9/全111CPU110.241秒通过，80/16真实tokenizer及prepared_only重放通过，各26实现/12源，482–3112/32768，两目录GPU0。用户入口sh scripts/run_probe_document_factors_review.sh，规划5–14、预留10–20分钟。见docs/records/2026-10-20-probe-document-factors-preparation.md；只开发诊断，B含长度/重复、R含顺序，非独立gold，不训练/确认/patching |
+| 文档三因素80单元完成核验 | 2026-10-20用户完成正式80（70新/10复用）+smoke16，末条12:14:05；两次只读verify exit0，各26实现/12源匹配，两桥接误差0、全部16跨运行状态/概率完全一致。独立80分布/120配对均与报告相同：八组合逐题类别全相同，val_81始终answer、其余九题始终conflict，12组各0/10翻转；均值conflict变化−4.38至+2.84pp，单题仍可−23.50至+28.25pp。具体尾句/背景/循环编辑及其组合不足以消除现有冲突读出，不排除全部背景/顺序效应或证明根因。见docs/records/2026-10-20-probe-document-factors-verified.md及JSON/80CSV/120CSV。无新答案/行为率、不训练/确认/patching；无需重跑，下一步先复核支持事实本体表达/答案值与训练分布，尚未准备新GPU |
+| 支持事实表达/否定/同步值对照准备 | 2026-10-20用户授权开始准备；固定十题问题/三完整背景/槽位，50正式=10旧CS0复用+20两表达作者核心+12六题冗余否定+8四题同步人名/日期，80新目标全文/偏移/引文/语义理由已复核封存，非独立gold。机场背景含Tucson public，不扩类别值反事实。smoke固定val_31/35全部12条件含两旧端点桥接，正式40新/10复用，共52新prefill/0生成；九组60配对，10/6/4题分母单列。新9CPU55.940秒、全120CPU167.379秒及50/12真实预检查/准备只读verify/独立重建通过，各30实现/16源，459–2952tokens，两目录prepared_not_started/GPU0。用户入口sh scripts/run_probe_support_expression_review.sh，规划4–12、预留10–20分钟。train600只做字面计数，不据此判预训练熟悉度/OOD/根因；不训练/确认/patching。见docs/records/2026-10-20-probe-support-expression-preparation.md |
 
 原路由器三分类错误可答判定率为 10%，纯文本首行基线为 31.5%；这不是自由回答中的实际缺证回答率。
 路由器比基线净多判对 92 条：Answer +16、Refuse −10、Conflict +86；冲突贡献净增量的 93.5%。
 真实不足误判可答：路由器 11、基线 6；真实冲突误判可答：路由器 9、基线 57。
 因此不能仅凭整体提升认定不足类更好。旧首行解析是 post-hoc；新条件解析在推理前固定，invalid 保留分母。
 完整数据跨集合的 original_id 和问题文本无重叠；既有特征未见 NaN/Inf/全零向量。
-最近全套为2026-10-20的111项CPU测试通过（110.241秒），包含此前102项及新文档因素9项（单跑40.314秒）；含真实小型CPU Qwen捕获、真实tokenizer/旧probe与临时合成缓存，以及新80材料/事实前缀/循环多重集/背景重复/12组配对/门禁检查，不是新本机3B GPU结果。此前102项82.850秒（含输入变化诊断9项，单跑39.059秒）。此前2026-10-18受控开发93项52.405秒，包含旧83及受控试验10项。此前新分析83项10.380秒、提交前79项10.895秒、10月16日准备79项10.899秒。新两候选正式570+smoke18已完整CPU重放，仍无合格候选；受控开发40+4输入已于10月18日生成全部88次输出，10月20日正式/smoke完整只读核验及40条行为评分完成，198字段确定/2已审歧义保留unknown。此前v4为62项、v3为58项、v2为50项、2026-10-13为46项、2026-10-12为36项。
+最近全套为2026-10-20的120项CPU测试通过（167.379秒），包含此前111项与新支持表达9项（单跑55.940秒）。新项覆盖50材料/80完整替换/四题同步值/六题冗余否定/九组60配对与变分母/train只读计数/真实tokenizer和旧probe配合临时合成状态的缓存/门禁。此前111项110.241秒，包含此前102项及文档因素9项（单跑40.314秒）；含真实小型CPU Qwen捕获、真实tokenizer/旧probe与临时合成缓存，以及新80材料/事实前缀/循环多重集/背景重复/12组配对/门禁检查，不是新本机3B GPU结果。此前102项82.850秒（含输入变化诊断9项，单跑39.059秒）。此前2026-10-18受控开发93项52.405秒，包含旧83及受控试验10项。此前新分析83项10.380秒、提交前79项10.895秒、10月16日准备79项10.899秒。新两候选正式570+smoke18已完整CPU重放，仍无合格候选；受控开发40+4输入已于10月18日生成全部88次输出，10月20日正式/smoke完整只读核验及40条行为评分完成，198字段确定/2已审歧义保留unknown。此前v4为62项、v3为58项、v2为50项、2026-10-13为46项、2026-10-12为36项。
 四条件GPU正式新增2040条已于北京时间2026-10-11 12:30:06生成完并核验，见 [分类完成记录](docs/records/2026-10-11-classification-grid-verified.md)。
 chat相比plain准确率−7个百分点，但分类错误可答率31.5%降到14%；chat不足→可答0/100、冲突→可答28/100。
 分类chat的冲突召回只有1%，val两组chat未预测conflict；格式通过率提高不等于可靠三分类能力。
@@ -121,7 +123,8 @@ chat−plain 探针准确率差 −3.67 个百分点，按底题配对 bootstrap
 | `scripts/controlled_evidence_materials.py`、`scripts/controlled_evidence_pilot.py`、`scripts/verify_controlled_evidence_pilot.py`、`scripts/run_controlled_evidence_pilot_review.sh`、`docs/controlled_evidence_pilot.md` | 同题S/I/C/D的40自由+40固定分类、4+4smoke已生成；2026-10-20正式/smoke完整只读核验及正式40条显式行为评分/分析完成。主表探针13/30、分类12/30；I作答4/10、C选边7/10、S有据正确10/10，2行为字段unknown保留。无需重跑GPU、不重训探针 |
 | `scripts/verify_controlled_evidence_behavior_review.py`、`docs/records/2026-10-20-controlled-evidence-pilot-behavior.md` | 本轮新显式评分来源/CSV/80输入引用/40输出引用、旧报告快照和消费评分校验、独立11主率/D配对重放；默认只读，40条同助手判断不是独立金标准，198字段确定/2unknown已审保留 |
 | `scripts/probe_input_shift.py`、`scripts/run_probe_input_shift_review.sh`、`prompts/probe_input_shift_v1.json`、`docs/probe_input_shift.md` | 52个问题/文档/重复否定对照已由用户完成，32新/20复用＋6smoke；2026-10-20两目录完整verify及独立计数/配对通过，桥接误差0。文档包变化均值较大、问题也影响，删重复否定降低概率但不翻类别；根因仍未分离，无新行为结果。无需重跑，见本日完成核验记录 |
-| `scripts/probe_document_factors.py`、`scripts/run_probe_document_factors_review.sh`、`prompts/probe_document_factors_v1.json`、`docs/probe_document_factors.md` | 当前用户GPU入口：固定问题/回答事实，T目标尾句/B完整背景集合/R循环顺序的80单元，70新/10复用＋16技术smoke；新9/全111CPU、真实预检查/两目录准备只读核验通过，26实现/12源，GPU0。报告12组各10题配对，不设新accuracy/行为率；用户运行后助手核验分析 |
+| `scripts/probe_document_factors.py`、`scripts/run_probe_document_factors_review.sh`、`prompts/probe_document_factors_v1.json`、`docs/probe_document_factors.md` | 固定问题/回答事实的80单元+16smoke已由用户完成，2026-10-20完整只读verify/独立120配对与16跨运行数组比较通过；八组合逐题类别全相同，12组各0/10翻转，概率仍变化。无需重跑；具体编辑未消除冲突读出，未证明根因/语义gold/新行为，详见当日完成核验记录 |
+| `scripts/probe_support_expression.py`、`scripts/run_probe_support_expression_review.sh`、`prompts/probe_support_expression_v1.json`、`docs/probe_support_expression.md` | 当前用户GPU入口：50支持表达/否定/同步值输入（40新/10旧复用）+12smoke，共52新prefill/0答案。9组60配对，十/六/四底题分别报告；新9/全120CPU、真实预检查与两目录准备只读verify/独立重建通过，各30实现/16源，GPU0。4–12分钟容量规划、建议10–20，由用户启动后助手核验分析 |
 | `scripts/evidence_experiment.py` | 固定协议、输入渲染、缓存校验、审计、配对 bootstrap、状态钩子和生成公共函数 |
 | `scripts/check_environment.sh`、`scripts/check_environment.py` | 环境、权重与模型接口检查；加载模型的检查也会占 GPU |
 | `tests/test_small_repro.py`、`tests/test_prompt_baseline.py` | 旧复现和旧基线验证 |
@@ -175,7 +178,7 @@ chat−plain 探针准确率差 −3.67 个百分点，按底题配对 bootstrap
 - Python：`/large_disk/wf/miniconda3/envs/kba-rag/bin/python`；sh 入口会自动选择环境和本地配置。
 - 3B：`/large_disk/wf/研究代码/RAG/OpenDecoder/checkpoint/Qwen2.5-3B-Instruct`，36 层、2048 维、上下文 32768。
 - 默认 GPU 0（RTX 3090，24 GiB）；默认离线加载，BF16 模型、FP16 特征、SDPA。
-- Git origin 已切换为 SSH，仓库本地 core.sshCommand 选择专用 443 配置；用户已添加公钥，2026-10-18按用户授权先推送65a3f26（73文件），再推送e0094c60bfb5343ffd006aa8ece33ea3a3cca857（28文件），两次远端main完整哈希核验一致；本轮10月20日行为复核、输入诊断及文档三因素成果已按用户授权纳入归档，提交标识见docs/records/2026-10-20-code-submission.md所属提交；远端实际核验结果见本轮回复。正常使用 git push origin main，见 docs/git_push.md。
+- Git origin 已切换为 SSH，仓库本地 core.sshCommand 选择专用 443 配置；用户已添加公钥，2026-10-18按用户授权先推送65a3f26（73文件），再推送e0094c60bfb5343ffd006aa8ece33ea3a3cca857（28文件），两次远端main完整哈希核验一致；2026-10-20已按用户授权推送4a4dff247c6e150dd7093ce6fa35dea56959c86f（35文件），远端main完整哈希与本地一致；随后文档三因素完整核验与支持表达准备仍为本地修改，未自动再次提交推送。正常使用 git push origin main，见 docs/git_push.md。
 - 标准化只拟合 train；C=1/lbfgs/max_iter=2000；验证集选层并 sigmoid 校准。层号从 0 编号。
 - 状态定义为 `hidden_states[l+1][0,-1,:]`，末层含 final norm；自由回答两种模板分别重训探针。
 - 用户明确约定（2026-10-11）：预计运行超过10分钟的GPU程序，由助手先完成代码、检查、时间估算和断点记录，提供启动/续跑命令，再请用户运行；助手负责进度核验与分析。估算不能保证低于10分钟时按长期任务处理。已有任务运行时不要另起同GPU实验。
@@ -209,3 +212,9 @@ chat−plain 探针准确率差 −3.67 个百分点，按底题配对 bootstrap
 
 
 2026-10-20用户要求记录、提交并推送；[归档记录](docs/records/2026-10-20-code-submission.md)/JSON补充12:15后的实际状态：文档三因素正式80/80、smoke16/16均document_factor_diagnostic_complete，末条北京时间12:14:05/12:13:20，两run各26实现/12来源指纹及协议哈希匹配。上文GPU0与prepared_not_started均为准备时历史快照；本轮仅状态/指纹核对，新80+16完整结果重放与12组配对尚待完成，当前下一步为核验分析现有产物，无需重新启动GPU。冻结实现与输出未改，沿用已通过111CPU证据；旧40评分/2unknown及380保留题边界不变。
+
+最新更新（2026-10-20）：用户再次报告跑完后，[文档三因素完整核验与分析](docs/records/2026-10-20-probe-document-factors-verified.md)已完成。正式80/80+smoke16/16，两次只读verify通过、两个桥接误差0、16同输入数组/概率完全一致；全部12组120配对独立重算匹配，八组合逐题读出始终1answer/9conflict，各0类别翻转。概率均值差−4.38至+2.84pp、单题−23.50至+28.25pp，不能称无敏感性。此前GPU0/待核验和启动建议均为历史快照；当前无需重跑或填旧表，下一步先检查支持事实表达/排他否定/答案值与训练分布并预固定新目标段对照，尚未准备或启动新GPU。旧40评分/2unknown、no_qualified_baseline与380保留题边界不变；本轮仅记录未提交推送。
+
+2026-10-20用户要求开始准备上述支持事实表达对照，[准备记录](docs/records/2026-10-20-probe-support-expression-preparation.md)/JSON与80目标编辑持久副本已完成。正式50/技术smoke12的实际CPU准备、两次prepared_only只读核验及独立重建匹配，新9/全120CPU通过；正式40新/10复用+smoke12，共52新prefill，0GPU输出。当前下一步由用户执行sh scripts/run_probe_support_expression_review.sh，规划4–12分钟、建议预留10–20；助手未启动GPU，完成后先verify两目录再分析九组对照。十题表达/六题否定/四题同步值分开，B→核心为整体目标段包，措辞/否定/值仍有长度混杂；train600精确字面词频不认证语义/预训练熟悉度/OOD/根因。旧40评分/2unknown、no_qualified_baseline与380保留题不变，不patching；前述“新GPU尚未准备”为当时历史状态。本轮未提交推送。
+
+2026-10-20用户明确要求做好记录并推送，[第二次归档记录](docs/records/2026-10-20-code-submission-02.md)/JSON归档4a4dff2之后的文档三因素完整核验与支持表达代码/测试/材料准备。12:37实际新正式50/技术smoke12仍prepared_not_started/saved0、GPU0，各30实现/16来源匹配、旧119运行产物未变；沿用全120CPU167.379秒。按此次授权提交并正常推送，提交标识以本记录所属Git提交为准，远端实际哈希核验见本轮回复。此前“本轮未提交推送”是当时历史状态，当前下一步仍为用户启动支持表达GPU入口，未自动开始实验。

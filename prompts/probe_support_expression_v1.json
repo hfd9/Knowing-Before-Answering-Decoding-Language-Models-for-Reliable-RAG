@@ -1,0 +1,332 @@
+{
+  "schema_version": 1,
+  "name": "support_expression_value_development_v1",
+  "base_order": [
+    "val_81",
+    "val_14",
+    "val_3",
+    "val_94",
+    "val_35",
+    "val_31",
+    "val_28",
+    "val_17",
+    "val_13",
+    "val_86"
+  ],
+  "units": [
+    {
+      "base_id": "val_81",
+      "authored_value": "Christian Wulff",
+      "alternate_value": "Joachim Gauck",
+      "alternate_reason": "Existing pilot opposing value placed consistently in both targets; authored counterfactual, not a claim about real-world truth.",
+      "templates": {
+        "D": [
+          "In the single German presidential resignation event of February 2012, {value} was the one president who resigned.",
+          "The February 2012 event was a single resignation from the German presidency, and {value} was its sole resigning president."
+        ],
+        "P": [
+          "The German presidency had one resignation event in February 2012; the president who stepped down in it was {value}.",
+          "{value} was the sole president to step down in the one German presidential resignation event described for February 2012."
+        ]
+      },
+      "redundant_negative": null,
+      "review_reason": "Both target documents give the same unique person for the same February2012 German presidency event. Virginia, Ray Mallon and Iraqi presidency backgrounds concern different offices/events and support neither value.",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false
+    },
+    {
+      "base_id": "val_14",
+      "authored_value": "dog",
+      "alternate_value": null,
+      "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+      "templates": {
+        "D": [
+          "The Boykin Spaniel and the English White Terrier are both classified only as {value} breeds in these descriptions.",
+          "These descriptions place the Boykin Spaniel and the English White Terrier exclusively in the {value}-breed category."
+        ],
+        "P": [
+          "Both named breeds, the Boykin Spaniel and the English White Terrier, belong to the {value} category alone in this account.",
+          "For the animal classification used here, the {value} category is the sole category assigned to each of the Boykin Spaniel and the English White Terrier."
+        ]
+      },
+      "redundant_negative": "The Boykin Spaniel is not a breed of cat.",
+      "review_reason": "Each target covers both breeds and assigns only the dog category. The Coton/Miniature Bull Terrier background mentions English White Terrier ancestry; the value is therefore held fixed rather than inventing a cat counterfactual against contextual ancestry.",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false
+    },
+    {
+      "base_id": "val_3",
+      "authored_value": "public",
+      "alternate_value": null,
+      "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+      "templates": {
+        "D": [
+          "El Paso International Airport and Tucson International Airport are both classified exclusively as {value} airports in this account.",
+          "For both El Paso International Airport and Tucson International Airport, {value} is the sole public-or-private status assigned by this description."
+        ],
+        "P": [
+          "The account puts both El Paso International Airport and Tucson International Airport in the {value} category alone on the public-or-private axis.",
+          "On the airport-status axis used here, El Paso International Airport and Tucson International Airport share just one category: {value}."
+        ]
+      },
+      "redundant_negative": "El Paso International Airport is not a private airport.",
+      "review_reason": "Both airports retain public status. The fixed background explicitly identifies Tucson as public; values are not switched. Joint civil-military details are omitted from new cores but the question asks public/private, so baseline-to-core is a content package, not a pure wording edit.",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false
+    },
+    {
+      "base_id": "val_94",
+      "authored_value": "snooker",
+      "alternate_value": null,
+      "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+      "templates": {
+        "D": [
+          "At the single British Open event described here, Neal Foulds, John Dunning and Mark Williams all participated in {value}, the only sport at that event.",
+          "This account lists Neal Foulds, John Dunning and Mark Williams at the same British Open event, which had exactly one sport: {value}."
+        ],
+        "P": [
+          "The sole sport of the British Open event in this account was {value}, and Neal Foulds, John Dunning and Mark Williams were all participants in it.",
+          "The three listed participants, Neal Foulds, John Dunning and Mark Williams, shared one British Open event whose sport was {value} alone."
+        ]
+      },
+      "redundant_negative": null,
+      "review_reason": "Each target covers all three full names, the same event and its single sport. Golf reports concern other participants/events, gymnastics and Oscars do not supply a conflicting claim about this specified event. Value manipulation is confined to the four person/date questions by design.",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false
+    },
+    {
+      "base_id": "val_35",
+      "authored_value": "12 April 1993",
+      "alternate_value": "23 September 1996",
+      "alternate_reason": "Existing pilot opposing value placed consistently in both targets; authored counterfactual, not a claim about real-world truth.",
+      "templates": {
+        "D": [
+          "The World Wide Web first became available to the public on {value}, as distinct from the start of the project.",
+          "The first public availability of the World Wide Web, rather than its inception, occurred on {value}."
+        ],
+        "P": [
+          "{value} was the date on which the World Wide Web became publicly available for the first time, considered separately from the project-inception date.",
+          "Public access to the World Wide Web began on {value}; the account treats that as its first public availability, separately from its origin."
+        ]
+      },
+      "redundant_negative": null,
+      "review_reason": "Both targets specify first public availability, not project inception, using the same full date. Hanging Gardens, Telstar ball availability and the song recording are other entities/events. Both authored dates are synthetic supplied-evidence values, not verified historical dates; published gold1989/1990 concerns the original broader question and is not imported.",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false
+    },
+    {
+      "base_id": "val_31",
+      "authored_value": "Elton John",
+      "alternate_value": "Andrew Lloyd Webber",
+      "alternate_reason": "Existing pilot opposing value placed consistently in both targets; authored counterfactual, not a claim about real-world truth.",
+      "templates": {
+        "D": [
+          "For the one described stage version of Billy Elliot the Musical, {value} is the sole composer of all the music.",
+          "{value} alone composed all of the music for the single stage version of Billy Elliot the Musical described here."
+        ],
+        "P": [
+          "All music for the specified stage version of Billy Elliot the Musical was written by one composer, {value}.",
+          "The music of this one stage version of Billy Elliot the Musical has a single composer: {value}, who wrote all of it."
+        ]
+      },
+      "redundant_negative": "There are no other music composers for this version.",
+      "review_reason": "Both targets explicitly retain one stage version, music rather than book/lyrics, and all-music sole authorship. Carmichael arrangements/glossary/Sarah Vaughan concern other works. Redundant no-other-composer suffix follows already exhaustive sole authorship. Alternate value is applied to both targets only in positive cores.",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false
+    },
+    {
+      "base_id": "val_28",
+      "authored_value": "magazine",
+      "alternate_value": null,
+      "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+      "templates": {
+        "D": [
+          "The described editions of DownBeat and Better Homes and Gardens are both classified only as {value} publications.",
+          "For the described editions of DownBeat and Better Homes and Gardens, {value} is the sole magazine-versus-newspaper publication form assigned here."
+        ],
+        "P": [
+          "Both publications, DownBeat and Better Homes and Gardens, have the {value} form alone in the editions described by this account.",
+          "In this account, each of the described editions of DownBeat and Better Homes and Gardens belongs exclusively to the {value} category."
+        ]
+      },
+      "redundant_negative": "The described edition of DownBeat is not a newspaper.",
+      "review_reason": "Both named editions retain the magazine form, with an exclusive publication-form axis so the negative newspaper suffix adds no new answer premise. Cocktail recipes and film biographies do not describe the publications.",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false
+    },
+    {
+      "base_id": "val_17",
+      "authored_value": "mountain",
+      "alternate_value": null,
+      "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+      "templates": {
+        "D": [
+          "Gangkhar Puensum and Skil Brum are both assigned only the {value} category on the mountain-versus-plateau axis in this description.",
+          "This description classifies Gangkhar Puensum and Skil Brum exclusively in the {value} category on its mountain-versus-plateau axis."
+        ],
+        "P": [
+          "On the landform axis used here, the {value} category alone applies to each of Gangkhar Puensum and Skil Brum.",
+          "The sole mountain-versus-plateau classification given for both Gangkhar Puensum and Skil Brum in this account is {value}."
+        ]
+      },
+      "redundant_negative": "Gangkhar Puensum is not classified here as a plateau.",
+      "review_reason": "Both named places receive the exclusive mountain category on the same stated axis. Exclusivity is retained in positive cores because mountain/plateau can otherwise overlap; no-plateau suffix is redundant within this authored classification. Plant/dog/director backgrounds concern other entities. Relative to old baseline the counterpart exclusivity is made explicit, so that comparison is a package.",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false
+    },
+    {
+      "base_id": "val_13",
+      "authored_value": "novel",
+      "alternate_value": null,
+      "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+      "templates": {
+        "D": [
+          "The described original versions of Under the Volcano by Malcolm Lowry and Christ in Concrete by Pietro di Donato are each classified only as a {value}.",
+          "For the described original versions of Malcolm Lowry's Under the Volcano and Pietro di Donato's Christ in Concrete, {value} is the sole novel-versus-play form assigned here."
+        ],
+        "P": [
+          "In their original versions described here, both Malcolm Lowry's Under the Volcano and Pietro di Donato's Christ in Concrete have the {value} form alone.",
+          "The account assigns only the {value} form to each original version of Under the Volcano by Malcolm Lowry and Christ in Concrete by Pietro di Donato."
+        ]
+      },
+      "redundant_negative": "The described original version of Under the Volcano is not a play.",
+      "review_reason": "Both original works, authors and novel-versus-play scope are present; exclusive form makes added not-play redundant. Scarlatti, McDowell and plant entries do not concern these works. The new core states scope positively rather than mentioning stage adaptations; baseline comparison therefore includes that wording/content change.",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false
+    },
+    {
+      "base_id": "val_86",
+      "authored_value": "Selena Gomez",
+      "alternate_value": "Cristiano Ronaldo",
+      "alternate_reason": "Existing pilot opposing value placed consistently in both targets; authored counterfactual, not a claim about real-world truth.",
+      "templates": {
+        "D": [
+          "In June 2018, {value} was the sole most-followed individual person on Instagram; this ranking covers people rather than organisation accounts.",
+          "For the June 2018 Instagram ranking restricted to individual people, {value} held the unique first place."
+        ],
+        "P": [
+          "Among individual people on Instagram in June 2018, one person had the most followers: {value}. Organisation accounts are outside this comparison.",
+          "{value} alone led the June 2018 Instagram ranking of individual people, with a single first place in that person-only ranking."
+        ]
+      },
+      "redundant_negative": null,
+      "review_reason": "Both targets give the same unique first-ranked person, month and person-only scope. Duplicate Jeopardy entries and goalkeeper award do not describe Instagram; duplicates stay unchanged. Alternate Ronaldo is an authored counterfactual June2018 value, not a claim about actual history.",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false
+    }
+  ],
+  "smoke_bases": [
+    "val_31",
+    "val_35"
+  ],
+  "smoke_selection": "Fixed before any new states: val_31 covers sole-composer redundant-negative branch; val_35 covers calendar-date value branch. All their cells plus both cached baselines are recomputed. No semantic-result selection.",
+  "wording_levels": [
+    "D",
+    "P"
+  ],
+  "negative_bases": [
+    "val_14",
+    "val_3",
+    "val_31",
+    "val_28",
+    "val_17",
+    "val_13"
+  ],
+  "value_bases": [
+    "val_81",
+    "val_35",
+    "val_31",
+    "val_86"
+  ],
+  "bridge_tolerances": {
+    "max_layer_relative_l2": 0.02,
+    "max_probability_absolute_error": 0.01
+  },
+  "construction": "50 cells =10 cached CS0 baselines +20 authored-value positive cores +12 authored-value redundant-negative cores +8 alternate-value positive cores.40 new formal forwards plus12 smoke forwards. Both target documents changed together; questions, three complete backgrounds, native slots and duplicates fixed.",
+  "planned_contrasts": [
+    [
+      "P0",
+      "D0",
+      "wording_authored_positive"
+    ],
+    [
+      "P1",
+      "D1",
+      "wording_authored_negative"
+    ],
+    [
+      "PX",
+      "DX",
+      "wording_alternate_positive"
+    ],
+    [
+      "D1",
+      "D0",
+      "negative_direct_authored"
+    ],
+    [
+      "P1",
+      "P0",
+      "negative_paraphrase_authored"
+    ],
+    [
+      "DX",
+      "D0",
+      "value_direct_positive"
+    ],
+    [
+      "PX",
+      "P0",
+      "value_paraphrase_positive"
+    ],
+    [
+      "D0",
+      "B",
+      "core_direct_vs_cached_baseline_package"
+    ],
+    [
+      "P0",
+      "B",
+      "core_paraphrase_vs_cached_baseline_package"
+    ]
+  ],
+  "cell_definitions": {
+    "B": [
+      "baseline",
+      "authored",
+      "baseline"
+    ],
+    "D0": [
+      "D",
+      "authored",
+      "positive"
+    ],
+    "P0": [
+      "P",
+      "authored",
+      "positive"
+    ],
+    "D1": [
+      "D",
+      "authored",
+      "negative"
+    ],
+    "P1": [
+      "P",
+      "authored",
+      "negative"
+    ],
+    "DX": [
+      "D",
+      "alternate",
+      "positive"
+    ],
+    "PX": [
+      "P",
+      "alternate",
+      "positive"
+    ]
+  },
+  "note": "Cell codes are identities only and never enter the prompt. Nine contrasts,60 paired rows,10 repeated exposed bases; variable support per comparison(10/6/4). Baseline-to-core changes whole targets, duplication and some incidental propositions, not a pure style contrast. D-to-P preserves question-answer propositions within cores; authored-to-alternate changes the answer value consistently in both targets; negative suffixes follow already exhaustive classifications/sole composer. Positive means no added redundant-negative suffix; scope/exclusivity wording remains explicit.",
+  "limits": "These are authored counterfactuals with same-exposed-assistant review, not independent semantic gold or real-world truth. Wording and negative edits also change length; value changes identity/date and tokenization, not measured truth familiarity. Descriptive train-only lexical counts are not semantic/OOD certification. No training/calibration/layer/threshold selection, new semantic accuracy, answers/behavior, original test/confirmation or patching."
+}

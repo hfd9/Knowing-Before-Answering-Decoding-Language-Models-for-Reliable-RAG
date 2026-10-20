@@ -1,0 +1,1550 @@
+{
+  "method": "Independent CPU reconstruction from explicit spec and frozen previous CS0 inputs; no experiment build/summarize imports",
+  "runs": {
+    "qwen2.5-3b-probe-support-expression-v1": {
+      "protocol_sha256": "705e3c885a1a9b63c17af44df45c61ac35b925d4646da2633b3639a09a446fe9",
+      "independent_materials_match": true,
+      "cells": 50,
+      "input_document_slots": 250,
+      "unique_document_texts": 129,
+      "fingerprints": {
+        "implementation": 30,
+        "source": 16
+      },
+      "preflight": {
+        "status": "cpu_preflight_passed",
+        "cells": 50,
+        "input_tokens": {
+          "support01_B": 2331,
+          "support01_D0": 2322,
+          "support01_P0": 2322,
+          "support01_DX": 2324,
+          "support01_PX": 2324,
+          "support02_B": 603,
+          "support02_D0": 581,
+          "support02_P0": 593,
+          "support02_D1": 605,
+          "support02_P1": 617,
+          "support03_B": 756,
+          "support03_D0": 746,
+          "support03_P0": 750,
+          "support03_D1": 766,
+          "support03_P1": 770,
+          "support04_B": 1805,
+          "support04_D0": 1764,
+          "support04_P0": 1763,
+          "support05_B": 482,
+          "support05_D0": 459,
+          "support05_P0": 470,
+          "support05_DX": 459,
+          "support05_PX": 470,
+          "support06_B": 2952,
+          "support06_D0": 2925,
+          "support06_P0": 2928,
+          "support06_D1": 2945,
+          "support06_P1": 2948,
+          "support06_DX": 2927,
+          "support06_PX": 2930,
+          "support07_B": 536,
+          "support07_D0": 522,
+          "support07_P0": 523,
+          "support07_D1": 544,
+          "support07_P1": 545,
+          "support08_B": 649,
+          "support08_D0": 640,
+          "support08_P0": 635,
+          "support08_D1": 668,
+          "support08_P1": 663,
+          "support09_B": 891,
+          "support09_D0": 878,
+          "support09_P0": 873,
+          "support09_D1": 906,
+          "support09_P1": 901,
+          "support10_B": 632,
+          "support10_D0": 602,
+          "support10_P0": 607,
+          "support10_DX": 600,
+          "support10_PX": 607
+        },
+        "max_input_tokens": 2952,
+        "context_tokens": 32768,
+        "expected_new_forwards": 40,
+        "reused_endpoints": 10,
+        "whole_smoke_plus_full_new_forwards": 52,
+        "planned_new_input_tokens": 71317,
+        "historical_rows": 69,
+        "historical_max_seconds_per_token": 0.00025437513854795034,
+        "planned_whole_minutes": [
+          4,
+          12
+        ],
+        "timing_note": "Previous69 document-factor forwards excluding first model-load row; max elapsed/token with2x/10x and3/8min load/IO allowance. Attention nonlinear, not a new GPU measurement; user launches if not guaranteed under10min."
+      },
+      "progress": {
+        "status": "prepared_not_started",
+        "saved": 0,
+        "target": 50
+      },
+      "planned_contrasts": [
+        {
+          "contrast": "wording_authored_positive",
+          "pairs": [
+            {
+              "base_id": "val_81",
+              "left_id": "support01_P0",
+              "right_id": "support01_D0",
+              "token_delta": 0
+            },
+            {
+              "base_id": "val_14",
+              "left_id": "support02_P0",
+              "right_id": "support02_D0",
+              "token_delta": 12
+            },
+            {
+              "base_id": "val_3",
+              "left_id": "support03_P0",
+              "right_id": "support03_D0",
+              "token_delta": 4
+            },
+            {
+              "base_id": "val_94",
+              "left_id": "support04_P0",
+              "right_id": "support04_D0",
+              "token_delta": -1
+            },
+            {
+              "base_id": "val_35",
+              "left_id": "support05_P0",
+              "right_id": "support05_D0",
+              "token_delta": 11
+            },
+            {
+              "base_id": "val_31",
+              "left_id": "support06_P0",
+              "right_id": "support06_D0",
+              "token_delta": 3
+            },
+            {
+              "base_id": "val_28",
+              "left_id": "support07_P0",
+              "right_id": "support07_D0",
+              "token_delta": 1
+            },
+            {
+              "base_id": "val_17",
+              "left_id": "support08_P0",
+              "right_id": "support08_D0",
+              "token_delta": -5
+            },
+            {
+              "base_id": "val_13",
+              "left_id": "support09_P0",
+              "right_id": "support09_D0",
+              "token_delta": -5
+            },
+            {
+              "base_id": "val_86",
+              "left_id": "support10_P0",
+              "right_id": "support10_D0",
+              "token_delta": 5
+            }
+          ],
+          "n_pairs": 10,
+          "min_token_delta": -5,
+          "max_token_delta": 12
+        },
+        {
+          "contrast": "wording_authored_negative",
+          "pairs": [
+            {
+              "base_id": "val_14",
+              "left_id": "support02_P1",
+              "right_id": "support02_D1",
+              "token_delta": 12
+            },
+            {
+              "base_id": "val_3",
+              "left_id": "support03_P1",
+              "right_id": "support03_D1",
+              "token_delta": 4
+            },
+            {
+              "base_id": "val_31",
+              "left_id": "support06_P1",
+              "right_id": "support06_D1",
+              "token_delta": 3
+            },
+            {
+              "base_id": "val_28",
+              "left_id": "support07_P1",
+              "right_id": "support07_D1",
+              "token_delta": 1
+            },
+            {
+              "base_id": "val_17",
+              "left_id": "support08_P1",
+              "right_id": "support08_D1",
+              "token_delta": -5
+            },
+            {
+              "base_id": "val_13",
+              "left_id": "support09_P1",
+              "right_id": "support09_D1",
+              "token_delta": -5
+            }
+          ],
+          "n_pairs": 6,
+          "min_token_delta": -5,
+          "max_token_delta": 12
+        },
+        {
+          "contrast": "wording_alternate_positive",
+          "pairs": [
+            {
+              "base_id": "val_81",
+              "left_id": "support01_PX",
+              "right_id": "support01_DX",
+              "token_delta": 0
+            },
+            {
+              "base_id": "val_35",
+              "left_id": "support05_PX",
+              "right_id": "support05_DX",
+              "token_delta": 11
+            },
+            {
+              "base_id": "val_31",
+              "left_id": "support06_PX",
+              "right_id": "support06_DX",
+              "token_delta": 3
+            },
+            {
+              "base_id": "val_86",
+              "left_id": "support10_PX",
+              "right_id": "support10_DX",
+              "token_delta": 7
+            }
+          ],
+          "n_pairs": 4,
+          "min_token_delta": 0,
+          "max_token_delta": 11
+        },
+        {
+          "contrast": "negative_direct_authored",
+          "pairs": [
+            {
+              "base_id": "val_14",
+              "left_id": "support02_D1",
+              "right_id": "support02_D0",
+              "token_delta": 24
+            },
+            {
+              "base_id": "val_3",
+              "left_id": "support03_D1",
+              "right_id": "support03_D0",
+              "token_delta": 20
+            },
+            {
+              "base_id": "val_31",
+              "left_id": "support06_D1",
+              "right_id": "support06_D0",
+              "token_delta": 20
+            },
+            {
+              "base_id": "val_28",
+              "left_id": "support07_D1",
+              "right_id": "support07_D0",
+              "token_delta": 22
+            },
+            {
+              "base_id": "val_17",
+              "left_id": "support08_D1",
+              "right_id": "support08_D0",
+              "token_delta": 28
+            },
+            {
+              "base_id": "val_13",
+              "left_id": "support09_D1",
+              "right_id": "support09_D0",
+              "token_delta": 28
+            }
+          ],
+          "n_pairs": 6,
+          "min_token_delta": 20,
+          "max_token_delta": 28
+        },
+        {
+          "contrast": "negative_paraphrase_authored",
+          "pairs": [
+            {
+              "base_id": "val_14",
+              "left_id": "support02_P1",
+              "right_id": "support02_P0",
+              "token_delta": 24
+            },
+            {
+              "base_id": "val_3",
+              "left_id": "support03_P1",
+              "right_id": "support03_P0",
+              "token_delta": 20
+            },
+            {
+              "base_id": "val_31",
+              "left_id": "support06_P1",
+              "right_id": "support06_P0",
+              "token_delta": 20
+            },
+            {
+              "base_id": "val_28",
+              "left_id": "support07_P1",
+              "right_id": "support07_P0",
+              "token_delta": 22
+            },
+            {
+              "base_id": "val_17",
+              "left_id": "support08_P1",
+              "right_id": "support08_P0",
+              "token_delta": 28
+            },
+            {
+              "base_id": "val_13",
+              "left_id": "support09_P1",
+              "right_id": "support09_P0",
+              "token_delta": 28
+            }
+          ],
+          "n_pairs": 6,
+          "min_token_delta": 20,
+          "max_token_delta": 28
+        },
+        {
+          "contrast": "value_direct_positive",
+          "pairs": [
+            {
+              "base_id": "val_81",
+              "left_id": "support01_DX",
+              "right_id": "support01_D0",
+              "token_delta": 2
+            },
+            {
+              "base_id": "val_35",
+              "left_id": "support05_DX",
+              "right_id": "support05_D0",
+              "token_delta": 0
+            },
+            {
+              "base_id": "val_31",
+              "left_id": "support06_DX",
+              "right_id": "support06_D0",
+              "token_delta": 2
+            },
+            {
+              "base_id": "val_86",
+              "left_id": "support10_DX",
+              "right_id": "support10_D0",
+              "token_delta": -2
+            }
+          ],
+          "n_pairs": 4,
+          "min_token_delta": -2,
+          "max_token_delta": 2
+        },
+        {
+          "contrast": "value_paraphrase_positive",
+          "pairs": [
+            {
+              "base_id": "val_81",
+              "left_id": "support01_PX",
+              "right_id": "support01_P0",
+              "token_delta": 2
+            },
+            {
+              "base_id": "val_35",
+              "left_id": "support05_PX",
+              "right_id": "support05_P0",
+              "token_delta": 0
+            },
+            {
+              "base_id": "val_31",
+              "left_id": "support06_PX",
+              "right_id": "support06_P0",
+              "token_delta": 2
+            },
+            {
+              "base_id": "val_86",
+              "left_id": "support10_PX",
+              "right_id": "support10_P0",
+              "token_delta": 0
+            }
+          ],
+          "n_pairs": 4,
+          "min_token_delta": 0,
+          "max_token_delta": 2
+        },
+        {
+          "contrast": "core_direct_vs_cached_baseline_package",
+          "pairs": [
+            {
+              "base_id": "val_81",
+              "left_id": "support01_D0",
+              "right_id": "support01_B",
+              "token_delta": -9
+            },
+            {
+              "base_id": "val_14",
+              "left_id": "support02_D0",
+              "right_id": "support02_B",
+              "token_delta": -22
+            },
+            {
+              "base_id": "val_3",
+              "left_id": "support03_D0",
+              "right_id": "support03_B",
+              "token_delta": -10
+            },
+            {
+              "base_id": "val_94",
+              "left_id": "support04_D0",
+              "right_id": "support04_B",
+              "token_delta": -41
+            },
+            {
+              "base_id": "val_35",
+              "left_id": "support05_D0",
+              "right_id": "support05_B",
+              "token_delta": -23
+            },
+            {
+              "base_id": "val_31",
+              "left_id": "support06_D0",
+              "right_id": "support06_B",
+              "token_delta": -27
+            },
+            {
+              "base_id": "val_28",
+              "left_id": "support07_D0",
+              "right_id": "support07_B",
+              "token_delta": -14
+            },
+            {
+              "base_id": "val_17",
+              "left_id": "support08_D0",
+              "right_id": "support08_B",
+              "token_delta": -9
+            },
+            {
+              "base_id": "val_13",
+              "left_id": "support09_D0",
+              "right_id": "support09_B",
+              "token_delta": -13
+            },
+            {
+              "base_id": "val_86",
+              "left_id": "support10_D0",
+              "right_id": "support10_B",
+              "token_delta": -30
+            }
+          ],
+          "n_pairs": 10,
+          "min_token_delta": -41,
+          "max_token_delta": -9
+        },
+        {
+          "contrast": "core_paraphrase_vs_cached_baseline_package",
+          "pairs": [
+            {
+              "base_id": "val_81",
+              "left_id": "support01_P0",
+              "right_id": "support01_B",
+              "token_delta": -9
+            },
+            {
+              "base_id": "val_14",
+              "left_id": "support02_P0",
+              "right_id": "support02_B",
+              "token_delta": -10
+            },
+            {
+              "base_id": "val_3",
+              "left_id": "support03_P0",
+              "right_id": "support03_B",
+              "token_delta": -6
+            },
+            {
+              "base_id": "val_94",
+              "left_id": "support04_P0",
+              "right_id": "support04_B",
+              "token_delta": -42
+            },
+            {
+              "base_id": "val_35",
+              "left_id": "support05_P0",
+              "right_id": "support05_B",
+              "token_delta": -12
+            },
+            {
+              "base_id": "val_31",
+              "left_id": "support06_P0",
+              "right_id": "support06_B",
+              "token_delta": -24
+            },
+            {
+              "base_id": "val_28",
+              "left_id": "support07_P0",
+              "right_id": "support07_B",
+              "token_delta": -13
+            },
+            {
+              "base_id": "val_17",
+              "left_id": "support08_P0",
+              "right_id": "support08_B",
+              "token_delta": -14
+            },
+            {
+              "base_id": "val_13",
+              "left_id": "support09_P0",
+              "right_id": "support09_B",
+              "token_delta": -18
+            },
+            {
+              "base_id": "val_86",
+              "left_id": "support10_P0",
+              "right_id": "support10_B",
+              "token_delta": -25
+            }
+          ],
+          "n_pairs": 10,
+          "min_token_delta": -42,
+          "max_token_delta": -6
+        }
+      ],
+      "artifacts_sha256": {
+        "runs/qwen2.5-3b-probe-support-expression-v1/progress.json": "79a11a81ce53a4ec816954f5b3583763852f3ac0a7f7d70492ed638375de6d84",
+        "runs/qwen2.5-3b-probe-support-expression-v1/.run.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "runs/qwen2.5-3b-probe-support-expression-v1/protocol.json": "705e3c885a1a9b63c17af44df45c61ac35b925d4646da2633b3639a09a446fe9",
+        "runs/qwen2.5-3b-probe-support-expression-v1/preflight.json": "091e92867aacf9c3b6178bea1b062bc0d61160d3b39e92b57e5d7be9723fc9df",
+        "runs/qwen2.5-3b-probe-support-expression-v1/materials/inputs.json": "6b1ccde474325eddaa69b35fc97f9501140610230f75126ac4a2a49815698ca1",
+        "runs/qwen2.5-3b-probe-support-expression-v1/materials/target_edits.json": "6b3301d5c4e3d2f1dfc21b4fda9c9e62c7a154cdd43d2f53a5c38cbb75d08696",
+        "runs/qwen2.5-3b-probe-support-expression-v1/materials/review_seal.json": "a6bf3f176961675178ebb50060181e5c9723be87dacc500d657fb93123a7127d",
+        "runs/qwen2.5-3b-probe-support-expression-v1/materials/semantic_review.json": "cb1c7ffd995549cec91d6ff4fe70f40be2fd32126c3fad67c1ed2068c73538df",
+        "runs/qwen2.5-3b-probe-support-expression-v1/reports/cached_endpoints.json": "94f39608bc8842e041a593d007bba5e2a707bae6d21e64cb46e8af9a75d7503e",
+        "runs/qwen2.5-3b-probe-support-expression-v1/reports/train_lexical_counts.json": "977029798b17797e073eaa4054b5bca7ad4d22559b255f25f2b6c17d618e7ae8"
+      },
+      "prepared_only_verify_exit_code": 0,
+      "prepared_only_verify_status": "prepared_verified_not_started",
+      "new_gpu_outputs": 0
+    },
+    "qwen2.5-3b-probe-support-expression-smoke-v1": {
+      "protocol_sha256": "ee25c086980c1708f4bc94cd41ea6dc94c2ab0d267e8bda0e73c1d0620043116",
+      "independent_materials_match": true,
+      "cells": 12,
+      "input_document_slots": 60,
+      "unique_document_texts": 30,
+      "fingerprints": {
+        "implementation": 30,
+        "source": 16
+      },
+      "preflight": {
+        "status": "cpu_preflight_passed",
+        "cells": 12,
+        "input_tokens": {
+          "support05_B": 482,
+          "support05_D0": 459,
+          "support05_P0": 470,
+          "support05_DX": 459,
+          "support05_PX": 470,
+          "support06_B": 2952,
+          "support06_D0": 2925,
+          "support06_P0": 2928,
+          "support06_D1": 2945,
+          "support06_P1": 2948,
+          "support06_DX": 2927,
+          "support06_PX": 2930
+        },
+        "max_input_tokens": 2952,
+        "context_tokens": 32768,
+        "expected_new_forwards": 12,
+        "reused_endpoints": 0,
+        "whole_smoke_plus_full_new_forwards": 52,
+        "planned_new_input_tokens": 71317,
+        "historical_rows": 69,
+        "historical_max_seconds_per_token": 0.00025437513854795034,
+        "planned_whole_minutes": [
+          4,
+          12
+        ],
+        "timing_note": "Previous69 document-factor forwards excluding first model-load row; max elapsed/token with2x/10x and3/8min load/IO allowance. Attention nonlinear, not a new GPU measurement; user launches if not guaranteed under10min."
+      },
+      "progress": {
+        "status": "prepared_not_started",
+        "saved": 0,
+        "target": 12
+      },
+      "planned_contrasts": [
+        {
+          "contrast": "wording_authored_positive",
+          "pairs": [
+            {
+              "base_id": "val_35",
+              "left_id": "support05_P0",
+              "right_id": "support05_D0",
+              "token_delta": 11
+            },
+            {
+              "base_id": "val_31",
+              "left_id": "support06_P0",
+              "right_id": "support06_D0",
+              "token_delta": 3
+            }
+          ],
+          "n_pairs": 2,
+          "min_token_delta": 3,
+          "max_token_delta": 11
+        },
+        {
+          "contrast": "wording_authored_negative",
+          "pairs": [
+            {
+              "base_id": "val_31",
+              "left_id": "support06_P1",
+              "right_id": "support06_D1",
+              "token_delta": 3
+            }
+          ],
+          "n_pairs": 1,
+          "min_token_delta": 3,
+          "max_token_delta": 3
+        },
+        {
+          "contrast": "wording_alternate_positive",
+          "pairs": [
+            {
+              "base_id": "val_35",
+              "left_id": "support05_PX",
+              "right_id": "support05_DX",
+              "token_delta": 11
+            },
+            {
+              "base_id": "val_31",
+              "left_id": "support06_PX",
+              "right_id": "support06_DX",
+              "token_delta": 3
+            }
+          ],
+          "n_pairs": 2,
+          "min_token_delta": 3,
+          "max_token_delta": 11
+        },
+        {
+          "contrast": "negative_direct_authored",
+          "pairs": [
+            {
+              "base_id": "val_31",
+              "left_id": "support06_D1",
+              "right_id": "support06_D0",
+              "token_delta": 20
+            }
+          ],
+          "n_pairs": 1,
+          "min_token_delta": 20,
+          "max_token_delta": 20
+        },
+        {
+          "contrast": "negative_paraphrase_authored",
+          "pairs": [
+            {
+              "base_id": "val_31",
+              "left_id": "support06_P1",
+              "right_id": "support06_P0",
+              "token_delta": 20
+            }
+          ],
+          "n_pairs": 1,
+          "min_token_delta": 20,
+          "max_token_delta": 20
+        },
+        {
+          "contrast": "value_direct_positive",
+          "pairs": [
+            {
+              "base_id": "val_35",
+              "left_id": "support05_DX",
+              "right_id": "support05_D0",
+              "token_delta": 0
+            },
+            {
+              "base_id": "val_31",
+              "left_id": "support06_DX",
+              "right_id": "support06_D0",
+              "token_delta": 2
+            }
+          ],
+          "n_pairs": 2,
+          "min_token_delta": 0,
+          "max_token_delta": 2
+        },
+        {
+          "contrast": "value_paraphrase_positive",
+          "pairs": [
+            {
+              "base_id": "val_35",
+              "left_id": "support05_PX",
+              "right_id": "support05_P0",
+              "token_delta": 0
+            },
+            {
+              "base_id": "val_31",
+              "left_id": "support06_PX",
+              "right_id": "support06_P0",
+              "token_delta": 2
+            }
+          ],
+          "n_pairs": 2,
+          "min_token_delta": 0,
+          "max_token_delta": 2
+        },
+        {
+          "contrast": "core_direct_vs_cached_baseline_package",
+          "pairs": [
+            {
+              "base_id": "val_35",
+              "left_id": "support05_D0",
+              "right_id": "support05_B",
+              "token_delta": -23
+            },
+            {
+              "base_id": "val_31",
+              "left_id": "support06_D0",
+              "right_id": "support06_B",
+              "token_delta": -27
+            }
+          ],
+          "n_pairs": 2,
+          "min_token_delta": -27,
+          "max_token_delta": -23
+        },
+        {
+          "contrast": "core_paraphrase_vs_cached_baseline_package",
+          "pairs": [
+            {
+              "base_id": "val_35",
+              "left_id": "support05_P0",
+              "right_id": "support05_B",
+              "token_delta": -12
+            },
+            {
+              "base_id": "val_31",
+              "left_id": "support06_P0",
+              "right_id": "support06_B",
+              "token_delta": -24
+            }
+          ],
+          "n_pairs": 2,
+          "min_token_delta": -24,
+          "max_token_delta": -12
+        }
+      ],
+      "artifacts_sha256": {
+        "runs/qwen2.5-3b-probe-support-expression-smoke-v1/progress.json": "02282d144d88f9772e1ec6451d70335c4af531e658304b72a16f8b21e57ccfd2",
+        "runs/qwen2.5-3b-probe-support-expression-smoke-v1/.run.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "runs/qwen2.5-3b-probe-support-expression-smoke-v1/protocol.json": "ee25c086980c1708f4bc94cd41ea6dc94c2ab0d267e8bda0e73c1d0620043116",
+        "runs/qwen2.5-3b-probe-support-expression-smoke-v1/preflight.json": "0c42093c73dc6bff2a5b4476340c79191418cb9d56105efda2ca44db93ad2b04",
+        "runs/qwen2.5-3b-probe-support-expression-smoke-v1/materials/inputs.json": "35564dea5afff6280d24d0d417560a8fad31d444e9ee2a8a7287f8826411b2ac",
+        "runs/qwen2.5-3b-probe-support-expression-smoke-v1/materials/target_edits.json": "6b3301d5c4e3d2f1dfc21b4fda9c9e62c7a154cdd43d2f53a5c38cbb75d08696",
+        "runs/qwen2.5-3b-probe-support-expression-smoke-v1/materials/review_seal.json": "e65cd9341af1246dc2a9da9c882ffd0eec50c47aac7b83b8a47b2e2b4feec7d9",
+        "runs/qwen2.5-3b-probe-support-expression-smoke-v1/materials/semantic_review.json": "cb1c7ffd995549cec91d6ff4fe70f40be2fd32126c3fad67c1ed2068c73538df",
+        "runs/qwen2.5-3b-probe-support-expression-smoke-v1/reports/cached_endpoints.json": "94f39608bc8842e041a593d007bba5e2a707bae6d21e64cb46e8af9a75d7503e",
+        "runs/qwen2.5-3b-probe-support-expression-smoke-v1/reports/train_lexical_counts.json": "977029798b17797e073eaa4054b5bca7ad4d22559b255f25f2b6c17d618e7ae8"
+      },
+      "prepared_only_verify_exit_code": 0,
+      "prepared_only_verify_status": "prepared_verified_not_started",
+      "new_gpu_outputs": 0
+    }
+  },
+  "checked_at": "2026-10-20T12:35:27.933216+08:00",
+  "status": "prepared_not_started",
+  "new_gpu_forwards": 0,
+  "test_evidence": {
+    "new_tests": 9,
+    "new_test_seconds": 55.94,
+    "new_tests_status": "passed",
+    "final_tests": 120,
+    "final_seconds": 167.379,
+    "final_status": "passed",
+    "full_test_log_sha256": "ffd640d586e6a51d4a0c67231a5380186db126daf405617f80c2508da70b88c0",
+    "real_tiny_cpu_qwen_in_full_suite": true,
+    "new_tests_use_real_tokenizer_frozen_probe_and_temporary_synthetic_states": true,
+    "not_new_3b_gpu_output": true
+  },
+  "train_lexical_counts": {
+    "status": "train_only_descriptive_lexical_counts",
+    "instances": 600,
+    "base_questions": 200,
+    "source_sha256": "15494aaed6335f294b9d88befcdc88ff6d90c6555a8d89d87d4efe1ff0230492",
+    "term_counts": {
+      "Christian Wulff": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        }
+      },
+      "Joachim Gauck": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        }
+      },
+      "dog": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 14,
+          "document_slots": 24
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 17,
+          "document_slots": 28
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 11,
+          "document_slots": 18
+        }
+      },
+      "public": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 48,
+          "document_slots": 69
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 44,
+          "document_slots": 60
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 40,
+          "document_slots": 68
+        }
+      },
+      "snooker": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        }
+      },
+      "12 April 1993": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        }
+      },
+      "23 September 1996": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        }
+      },
+      "Elton John": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 1,
+          "document_slots": 1
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 1,
+          "document_slots": 1
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 1,
+          "document_slots": 1
+        }
+      },
+      "Andrew Lloyd Webber": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        }
+      },
+      "magazine": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 1,
+          "document_rows": 19,
+          "document_slots": 34
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 1,
+          "document_rows": 22,
+          "document_slots": 37
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 1,
+          "document_rows": 19,
+          "document_slots": 36
+        }
+      },
+      "mountain": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 19,
+          "document_slots": 29
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 21,
+          "document_slots": 34
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 17,
+          "document_slots": 29
+        }
+      },
+      "novel": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 2,
+          "document_rows": 22,
+          "document_slots": 35
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 2,
+          "document_rows": 24,
+          "document_slots": 38
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 2,
+          "document_rows": 17,
+          "document_slots": 31
+        }
+      },
+      "Selena Gomez": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        }
+      },
+      "Cristiano Ronaldo": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 0,
+          "document_slots": 0
+        }
+      },
+      "not": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 2,
+          "document_rows": 107,
+          "document_slots": 235
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 2,
+          "document_rows": 103,
+          "document_slots": 238
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 2,
+          "document_rows": 101,
+          "document_slots": 235
+        }
+      },
+      "no": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 93,
+          "document_slots": 172
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 93,
+          "document_slots": 167
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 87,
+          "document_slots": 184
+        }
+      },
+      "sole": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 5,
+          "document_slots": 5
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 5,
+          "document_slots": 5
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 5,
+          "document_slots": 7
+        }
+      },
+      "only": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 4,
+          "document_rows": 94,
+          "document_slots": 174
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 4,
+          "document_rows": 95,
+          "document_slots": 170
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 4,
+          "document_rows": 86,
+          "document_slots": 179
+        }
+      },
+      "unique": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 16,
+          "document_slots": 20
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 16,
+          "document_slots": 19
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 15,
+          "document_slots": 23
+        }
+      },
+      "single": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 1,
+          "document_rows": 67,
+          "document_slots": 99
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 1,
+          "document_rows": 64,
+          "document_slots": 89
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 1,
+          "document_rows": 57,
+          "document_slots": 102
+        }
+      },
+      "exclusively": {
+        "answer": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 3,
+          "document_slots": 3
+        },
+        "refuse": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 3,
+          "document_slots": 3
+        },
+        "conflict": {
+          "rows": 200,
+          "question_rows": 0,
+          "document_rows": 2,
+          "document_slots": 2
+        }
+      }
+    },
+    "limitation": "Case-insensitive boundary-matched literal presence in questions/documents, counted by published construction category. Does not establish proposition support, real-world truth, memorization, semantic distance, OOD detection or cause. No target/threshold selection from these counts."
+  },
+  "cached_endpoints_cpu_replay": {
+    "new_gpu_forwards": 0,
+    "endpoints": [
+      {
+        "id": "support01_B",
+        "original_id": "val_81",
+        "probe_pred": "answer",
+        "probe_probabilities": {
+          "answer": 0.6056556327956931,
+          "refuse": 0.0025561919642423155,
+          "conflict": 0.3917881752400645
+        },
+        "probe_layer_zero_based": 28
+      },
+      {
+        "id": "support02_B",
+        "original_id": "val_14",
+        "probe_pred": "conflict",
+        "probe_probabilities": {
+          "answer": 0.15842652480255678,
+          "refuse": 0.0029198591108818522,
+          "conflict": 0.8386536160865613
+        },
+        "probe_layer_zero_based": 28
+      },
+      {
+        "id": "support03_B",
+        "original_id": "val_3",
+        "probe_pred": "conflict",
+        "probe_probabilities": {
+          "answer": 0.12324654754912952,
+          "refuse": 0.003772582186573791,
+          "conflict": 0.8729808702642967
+        },
+        "probe_layer_zero_based": 28
+      },
+      {
+        "id": "support04_B",
+        "original_id": "val_94",
+        "probe_pred": "conflict",
+        "probe_probabilities": {
+          "answer": 0.049750766378743275,
+          "refuse": 0.008905264851511219,
+          "conflict": 0.9413439687697455
+        },
+        "probe_layer_zero_based": 28
+      },
+      {
+        "id": "support05_B",
+        "original_id": "val_35",
+        "probe_pred": "conflict",
+        "probe_probabilities": {
+          "answer": 0.021455029832592638,
+          "refuse": 0.011262525095881198,
+          "conflict": 0.9672824450715262
+        },
+        "probe_layer_zero_based": 28
+      },
+      {
+        "id": "support06_B",
+        "original_id": "val_31",
+        "probe_pred": "conflict",
+        "probe_probabilities": {
+          "answer": 0.14441858725504772,
+          "refuse": 0.005747480392298923,
+          "conflict": 0.8498339323526533
+        },
+        "probe_layer_zero_based": 28
+      },
+      {
+        "id": "support07_B",
+        "original_id": "val_28",
+        "probe_pred": "conflict",
+        "probe_probabilities": {
+          "answer": 0.4525255762738116,
+          "refuse": 0.00143200813955453,
+          "conflict": 0.5460424155866338
+        },
+        "probe_layer_zero_based": 28
+      },
+      {
+        "id": "support08_B",
+        "original_id": "val_17",
+        "probe_pred": "conflict",
+        "probe_probabilities": {
+          "answer": 0.07828748250463297,
+          "refuse": 0.006074055550065545,
+          "conflict": 0.9156384619453014
+        },
+        "probe_layer_zero_based": 28
+      },
+      {
+        "id": "support09_B",
+        "original_id": "val_13",
+        "probe_pred": "conflict",
+        "probe_probabilities": {
+          "answer": 0.17974514273902079,
+          "refuse": 0.019272420647915192,
+          "conflict": 0.800982436613064
+        },
+        "probe_layer_zero_based": 28
+      },
+      {
+        "id": "support10_B",
+        "original_id": "val_86",
+        "probe_pred": "conflict",
+        "probe_probabilities": {
+          "answer": 0.08640479592641916,
+          "refuse": 0.013251934035447225,
+          "conflict": 0.9003432700381337
+        },
+        "probe_layer_zero_based": 28
+      }
+    ]
+  },
+  "review_seal": {
+    "reviewer": "same_exposed_assistant",
+    "independent_gold": false,
+    "reviewed_new_targets": 80,
+    "inputs_sha256": "6b1ccde474325eddaa69b35fc97f9501140610230f75126ac4a2a49815698ca1",
+    "edits_sha256": "6b3301d5c4e3d2f1dfc21b4fda9c9e62c7a154cdd43d2f53a5c38cbb75d08696",
+    "reviews_sha256": "cb1c7ffd995549cec91d6ff4fe70f40be2fd32126c3fad67c1ed2068c73538df",
+    "scope": "All80 new target texts and answer/scope arguments reviewed; three fixed complete background documents and baseline targets reuse inspected prior materials. Not independent gold."
+  },
+  "semantic_review": [
+    {
+      "original_id": "val_81",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false,
+      "question_sha256": "2f6092b219361816a16d209ef0558e5646386de0da6a80b319a61155d8131baa",
+      "target_slots": [
+        1,
+        4
+      ],
+      "unchanged_background_sha256": [
+        "66e9b02ffe6a78448d4051ed1839713f70c8c4120b1f38fabc0910cec8e65864",
+        "8bd10d083499a45005ddac1e2ef984bb0d8a88b32a644db3af432af28eaae636",
+        "057897e7390b1776931576b77d221a96b57323726a262b700d001027585feda8"
+      ],
+      "required_fact_review": "Both target documents give the same unique person for the same February2012 German presidency event. Virginia, Ray Mallon and Iraqi presidency backgrounds concern different offices/events and support neither value.",
+      "alternate_reason": "Existing pilot opposing value placed consistently in both targets; authored counterfactual, not a claim about real-world truth.",
+      "authored_value": "Christian Wulff",
+      "alternate_value": "Joachim Gauck",
+      "supports_scope": "Same authored question-answer relation within D/P; value-switch changes both targets consistently. No independent semantic certification or real-world truth claim."
+    },
+    {
+      "original_id": "val_14",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false,
+      "question_sha256": "970f5fd9bd20d8780474c953e594478db53433a0e4e4cf3148df7d1e878cf1d3",
+      "target_slots": [
+        2,
+        5
+      ],
+      "unchanged_background_sha256": [
+        "4872fd0aa6bf7a1bb782c00b219cd11197f97315314725569eebb17071c6db06",
+        "7db6ecf653059304c1dfa0bf49cded21c8e279f8c178fe4755c95d1495254b65",
+        "848ab8ecead411d438ab630b2b4bd8dc9cfe32efee948fd4b910d31d5df6a7df"
+      ],
+      "required_fact_review": "Each target covers both breeds and assigns only the dog category. The Coton/Miniature Bull Terrier background mentions English White Terrier ancestry; the value is therefore held fixed rather than inventing a cat counterfactual against contextual ancestry.",
+      "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+      "authored_value": "dog",
+      "alternate_value": null,
+      "supports_scope": "Same authored question-answer relation within D/P; value-switch changes both targets consistently. No independent semantic certification or real-world truth claim."
+    },
+    {
+      "original_id": "val_3",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false,
+      "question_sha256": "8b37d1df57e2489d527b3cf5da34b66c9d5487ef6f99d031ed08cb828de17281",
+      "target_slots": [
+        1,
+        3
+      ],
+      "unchanged_background_sha256": [
+        "48db89e384746923cce6e378b0e81774b562ddb798573f4cd119a8c58a1c9a05",
+        "dd1652d945c7a4bcd6579b00bc26b6e78fa421872d5357fe754bf2edcfd6faf1",
+        "9a899a69bb1a24f0a927e8b573c283e1e3759bd7819eace61c734d523ff7c894"
+      ],
+      "required_fact_review": "Both airports retain public status. The fixed background explicitly identifies Tucson as public; values are not switched. Joint civil-military details are omitted from new cores but the question asks public/private, so baseline-to-core is a content package, not a pure wording edit.",
+      "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+      "authored_value": "public",
+      "alternate_value": null,
+      "supports_scope": "Same authored question-answer relation within D/P; value-switch changes both targets consistently. No independent semantic certification or real-world truth claim."
+    },
+    {
+      "original_id": "val_94",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false,
+      "question_sha256": "a0c1ef7a852839da6e0816bc5f0f9ef18e017333c43407302fdbb9abcadccc15",
+      "target_slots": [
+        3,
+        5
+      ],
+      "unchanged_background_sha256": [
+        "e0548bdf525741fe8af71b7c4511358642564345da71b047f259718249139461",
+        "324387034147214819ce1a43d85872eab724d908db7af92600869594b73d7295",
+        "165b065685e92589424bef5abac9a810464e89f584e62f6761b1e8108c40b74a"
+      ],
+      "required_fact_review": "Each target covers all three full names, the same event and its single sport. Golf reports concern other participants/events, gymnastics and Oscars do not supply a conflicting claim about this specified event. Value manipulation is confined to the four person/date questions by design.",
+      "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+      "authored_value": "snooker",
+      "alternate_value": null,
+      "supports_scope": "Same authored question-answer relation within D/P; value-switch changes both targets consistently. No independent semantic certification or real-world truth claim."
+    },
+    {
+      "original_id": "val_35",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false,
+      "question_sha256": "49fbf7efa078687855148a0d9da0ad1563893c9f792a64331553ad1abf48a0b4",
+      "target_slots": [
+        2,
+        4
+      ],
+      "unchanged_background_sha256": [
+        "ac5dcd75971705954690b736834b679ac2618e36a55ccd7f5ec302d7349c0bcc",
+        "de369b49d3b5042b6566ea74763819d61e3cb12321916992c947fe41206dfd84",
+        "a81bb497382de26a0e1aaf372e390f63507e0d5325db222f23c33fdadc05c0de"
+      ],
+      "required_fact_review": "Both targets specify first public availability, not project inception, using the same full date. Hanging Gardens, Telstar ball availability and the song recording are other entities/events. Both authored dates are synthetic supplied-evidence values, not verified historical dates; published gold1989/1990 concerns the original broader question and is not imported.",
+      "alternate_reason": "Existing pilot opposing value placed consistently in both targets; authored counterfactual, not a claim about real-world truth.",
+      "authored_value": "12 April 1993",
+      "alternate_value": "23 September 1996",
+      "supports_scope": "Same authored question-answer relation within D/P; value-switch changes both targets consistently. No independent semantic certification or real-world truth claim."
+    },
+    {
+      "original_id": "val_31",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false,
+      "question_sha256": "1aa02717d80854821819af162b9d766d81c1786f463ea090d2f7879532a839c0",
+      "target_slots": [
+        1,
+        5
+      ],
+      "unchanged_background_sha256": [
+        "72eeda3e2acd10af690b658ca2b75a7235827a75b3c68a0080c37711d9cdea75",
+        "ad544b5cf4bb7e25f2f9d92d31d77781ca4bdc5b599b20f5c07fdd7372fa6bbd",
+        "743b5f86e467d378f653d897641fd9ce5398c073430338155c82f6e6b32982b4"
+      ],
+      "required_fact_review": "Both targets explicitly retain one stage version, music rather than book/lyrics, and all-music sole authorship. Carmichael arrangements/glossary/Sarah Vaughan concern other works. Redundant no-other-composer suffix follows already exhaustive sole authorship. Alternate value is applied to both targets only in positive cores.",
+      "alternate_reason": "Existing pilot opposing value placed consistently in both targets; authored counterfactual, not a claim about real-world truth.",
+      "authored_value": "Elton John",
+      "alternate_value": "Andrew Lloyd Webber",
+      "supports_scope": "Same authored question-answer relation within D/P; value-switch changes both targets consistently. No independent semantic certification or real-world truth claim."
+    },
+    {
+      "original_id": "val_28",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false,
+      "question_sha256": "98ee8f3560e08fc66db73d3e9aeaf1459d5a561a9b49baf91d8c2c76565093d6",
+      "target_slots": [
+        2,
+        3
+      ],
+      "unchanged_background_sha256": [
+        "a4e65f1dc8f26f84aeec81a1fadaf60e8fba6e39a7f3469d6a977c68ba0f8501",
+        "39271ad158f12dae925e2e16115f47f2f0dd9ad6536ecd47a392835abf9174c8",
+        "93fe3cae37a5707719a9a7b2e692496cfaac6c44e348cb406732abad83d34612"
+      ],
+      "required_fact_review": "Both named editions retain the magazine form, with an exclusive publication-form axis so the negative newspaper suffix adds no new answer premise. Cocktail recipes and film biographies do not describe the publications.",
+      "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+      "authored_value": "magazine",
+      "alternate_value": null,
+      "supports_scope": "Same authored question-answer relation within D/P; value-switch changes both targets consistently. No independent semantic certification or real-world truth claim."
+    },
+    {
+      "original_id": "val_17",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false,
+      "question_sha256": "b1c45c1b61345a282a2ff07b7c869cfec0a9d226ae221af5ba5a9150136d96c2",
+      "target_slots": [
+        1,
+        2
+      ],
+      "unchanged_background_sha256": [
+        "d394d6ea41784d89c0004f3dd0d8c9aed0f5f21fed1e52424503ed650688f5a9",
+        "d32b9629bf13d4f803b72fc6f85d1be7be409385f16df58fa1bf4eb591818d3d",
+        "ebfc78263115574be1fe87567983830b7438f4cff595b5cea71723ae50770f17"
+      ],
+      "required_fact_review": "Both named places receive the exclusive mountain category on the same stated axis. Exclusivity is retained in positive cores because mountain/plateau can otherwise overlap; no-plateau suffix is redundant within this authored classification. Plant/dog/director backgrounds concern other entities. Relative to old baseline the counterpart exclusivity is made explicit, so that comparison is a package.",
+      "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+      "authored_value": "mountain",
+      "alternate_value": null,
+      "supports_scope": "Same authored question-answer relation within D/P; value-switch changes both targets consistently. No independent semantic certification or real-world truth claim."
+    },
+    {
+      "original_id": "val_13",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false,
+      "question_sha256": "4556f578d2a0b3954a8cbec1e8470401703572b943b68fa00498b09abbaf7803",
+      "target_slots": [
+        4,
+        5
+      ],
+      "unchanged_background_sha256": [
+        "1bee7b33733c7a5de4a3f7975fba912d5a2f6d5c74ccc77915a34d97169f586b",
+        "48826eca75c84772dddd956e6ae41a09b6650d328cfe08fc7709e95ad50850fd",
+        "55412194ec5fee26c538edf6aad5984a281a4a621f0f0d65eb76cde5294944c9"
+      ],
+      "required_fact_review": "Both original works, authors and novel-versus-play scope are present; exclusive form makes added not-play redundant. Scarlatti, McDowell and plant entries do not concern these works. The new core states scope positively rather than mentioning stage adaptations; baseline comparison therefore includes that wording/content change.",
+      "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+      "authored_value": "novel",
+      "alternate_value": null,
+      "supports_scope": "Same authored question-answer relation within D/P; value-switch changes both targets consistently. No independent semantic certification or real-world truth claim."
+    },
+    {
+      "original_id": "val_86",
+      "reviewer": "same_exposed_assistant",
+      "independent_gold": false,
+      "question_sha256": "9a18038a00c7728bf8e5e2d02aea27fa5e19420e2ad4ce1df290ac42ce078717",
+      "target_slots": [
+        3,
+        4
+      ],
+      "unchanged_background_sha256": [
+        "0725dd9967ddbe0df201ec467e1d7ce94538d38ec105b6a471962191a7a6e9f4",
+        "0725dd9967ddbe0df201ec467e1d7ce94538d38ec105b6a471962191a7a6e9f4",
+        "071ffe27d0b4c4b87f9e9c5e81bd73946c178f27246a2309b4b5a09d7826ff9d"
+      ],
+      "required_fact_review": "Both targets give the same unique first-ranked person, month and person-only scope. Duplicate Jeopardy entries and goalkeeper award do not describe Instagram; duplicates stay unchanged. Alternate Ronaldo is an authored counterfactual June2018 value, not a claim about actual history.",
+      "alternate_reason": "Existing pilot opposing value placed consistently in both targets; authored counterfactual, not a claim about real-world truth.",
+      "authored_value": "Selena Gomez",
+      "alternate_value": "Cristiano Ronaldo",
+      "supports_scope": "Same authored question-answer relation within D/P; value-switch changes both targets consistently. No independent semantic certification or real-world truth claim."
+    }
+  ],
+  "design": {
+    "formal_cells": 50,
+    "reused_formal_endpoints": 10,
+    "new_formal_forwards": 40,
+    "smoke_cells": 12,
+    "whole_entry_new_forwards": 52,
+    "generated_answers": 0,
+    "trained_probes": 0,
+    "main_base_questions": 10,
+    "negative_subset": 6,
+    "value_subset": 4,
+    "prespecified_contrasts": 9,
+    "paired_rows": 60,
+    "not_independent_gold": true
+  }
+}

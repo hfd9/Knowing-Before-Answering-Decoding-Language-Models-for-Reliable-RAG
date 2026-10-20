@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-10-20T12:37:21.968541+08:00",
+  "purpose": "User-authorized commit and push of completed document-factor verification and support-expression preparation",
+  "parent_commit": "4a4dff247c6e150dd7093ce6fa35dea56959c86f",
+  "test_evidence": {
+    "new_tests": 9,
+    "new_test_seconds": 55.94,
+    "new_tests_status": "passed",
+    "final_tests": 120,
+    "final_seconds": 167.379,
+    "final_status": "passed",
+    "full_test_log_sha256": "ffd640d586e6a51d4a0c67231a5380186db126daf405617f80c2508da70b88c0",
+    "real_tiny_cpu_qwen_in_full_suite": true,
+    "new_tests_use_real_tokenizer_frozen_probe_and_temporary_synthetic_states": true,
+    "not_new_3b_gpu_output": true
+  },
+  "runs": {
+    "qwen2.5-3b-probe-support-expression-v1": {
+      "progress": {
+        "status": "prepared_not_started",
+        "saved": 0,
+        "target": 50
+      },
+      "protocol_sha256": "705e3c885a1a9b63c17af44df45c61ac35b925d4646da2633b3639a09a446fe9",
+      "implementation_fingerprints_matched": 30,
+      "source_fingerprints_matched": 16,
+      "new_gpu_outputs": 0
+    },
+    "qwen2.5-3b-probe-support-expression-smoke-v1": {
+      "progress": {
+        "status": "prepared_not_started",
+        "saved": 0,
+        "target": 12
+      },
+      "protocol_sha256": "ee25c086980c1708f4bc94cd41ea6dc94c2ab0d267e8bda0e73c1d0620043116",
+      "implementation_fingerprints_matched": 30,
+      "source_fingerprints_matched": 16,
+      "new_gpu_outputs": 0
+    }
+  },
+  "previous_document_factor_runtime_files_unchanged": 119,
+  "new_file_checks": {
+    "files": 13,
+    "each_under_1_MiB": true,
+    "python_ast_json_shell_syntax": "passed"
+  }
+}

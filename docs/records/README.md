@@ -2,6 +2,9 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 新会话先读根目录 [AGENTS.md](../../AGENTS.md)，再读本索引和最新交接记录；无需一次性加载所有 JSON。
+最新授权归档：[10月20日第二次提交记录](2026-10-20-code-submission-02.md) / [提交快照JSON](2026-10-20-code-submission-02.json)（归档文档三因素完整核验与支持表达准备，120CPU冻结版本一致；12:37新50/12仍prepared_not_started、GPU0，各30实现/16来源匹配，旧119运行产物不变。按用户授权提交推送，提交标识以本记录所属提交为准，实际远端哈希核验在本轮回复报告）。
+最新支持事实表达准备：[50正式+12smoke与九组对照](2026-10-20-probe-support-expression-preparation.md) / [JSON](2026-10-20-probe-support-expression-preparation.json) / [80目标编辑](2026-10-20-probe-support-expression-target-edits.json)（十题两表达、六题冗余否定、四题同步人名/日期，40新/10复用+smoke12共52新prefill。80目标全文/偏移/引文已复核，新9/全120CPU167.379秒与50/12准备核验/独立重建通过，30实现/16源，459–2952tokens，两目录GPU0。用户入口sh scripts/run_probe_support_expression_review.sh，规划4–12、预留10–20；九组60配对不作独立样本，train600字面计数非语义/OOD证明，不训练/确认/patching）。
+最新文档三因素完整核验：[80正式+16smoke核验与12组分析](2026-10-20-probe-document-factors-verified.md) / [JSON](2026-10-20-probe-document-factors-verified.json) / [80单元CSV](2026-10-20-probe-document-factors-cells.csv) / [120配对CSV](2026-10-20-probe-document-factors-pairs.csv)（两次verify exit0、26实现/12源、两桥接误差0、16跨运行状态/概率完全相同。八组合逐题均1answer/9conflict，12组各0/10翻转；概率均值−4.38至+2.84pp、单题仍−23.50至+28.25pp。预设编辑未消除读出偏移，未证明根因/新行为；无需重跑，下一步先复核支持事实表达/答案值，新GPU未准备）。
 最新归档与运行状态：[2026-10-20代码提交记录](2026-10-20-code-submission.md) / [快照JSON](2026-10-20-code-submission.json)（用户授权提交推送；行为复核、52单元已核验诊断与文档三因素代码/测试/记录归档。提交时发现最新三因素正式80/80、smoke16/16已保存完成，各26实现/12来源匹配；尚待完整结果重放与12组配对分析，当前无需再启动GPU。下列准备/运行记录保留当时状态）。
 最新文档三因素准备：[固定问题/回答事实的80单元](2026-10-20-probe-document-factors-preparation.md) / [JSON](2026-10-20-probe-document-factors-preparation.json)（T删背景尾句/B长短完整背景/R整体循环，19尾句/20新增背景槽位全文复核，保留范围/否定事实与重复。复用10/新70＋16smoke，全111CPU110.241秒、80/16真实预检查/准备只读verify通过，26实现/12源，482–3112tokens，GPU0。用户入口sh scripts/run_probe_document_factors_review.sh，规划5–14、预留10–20分钟；12组十底题配对，非独立gold/新accuracy，不训练/确认/patching）。
 最新输入变化诊断核验：[52正式+6smoke完成与三类对照分析](2026-10-20-probe-input-shift-verified.md) / [JSON](2026-10-20-probe-input-shift-verified.json) / [52单元CSV](2026-10-20-probe-input-shift-cells.csv)（32新/20复用+smoke6，末条11:47:24，两个verify与独立58配对一致，桥接误差0、六同输入数组/概率完全相同。文档包conflict输出均值+43.90/+51.70pp，问题+12.02/+19.82pp；删重复否定六题各下降但0类别翻转，均值−5.07/−7.47pp。开发诊断不设新accuracy/行为率，根因未分离，不重跑/调参/确认/patching）。
@@ -28,6 +31,9 @@
 
 | 日期 | 文件 | 内容与状态 |
 | --- | --- | --- |
+| 2026-10-20 | [code-submission-02.md](2026-10-20-code-submission-02.md) / [JSON](2026-10-20-code-submission-02.json) | 用户授权归档文档三因素完整核验与支持表达准备并推送；120CPU版本一致，50/12未启动、指纹/准备产物及旧119文件哈希匹配 |
+| 2026-10-20 | [probe-support-expression-preparation.md](2026-10-20-probe-support-expression-preparation.md) / [JSON](2026-10-20-probe-support-expression-preparation.json) / [80目标编辑](2026-10-20-probe-support-expression-target-edits.json) | 支持表达/六题冗余否定/四题同步值50正式+12smoke准备完成；40新/10复用，九组60配对，新9/全120CPU及50/12准备verify/独立重建通过，GPU0，用户入口和4–12分钟估计齐全 |
+| 2026-10-20 | [probe-document-factors-verified.md](2026-10-20-probe-document-factors-verified.md) / [JSON](2026-10-20-probe-document-factors-verified.json) / [80单元CSV](2026-10-20-probe-document-factors-cells.csv) / [120配对CSV](2026-10-20-probe-document-factors-pairs.csv) | 80+16完成完整核验，16跨运行状态/概率完全相同；12组各0/10类别翻转、八组合逐题1answer/9conflict，概率仍有敏感性，不能认定机制根因；无新答案/训练/确认/patching |
 | 2026-10-20 | [code-submission.md](2026-10-20-code-submission.md) / [JSON](2026-10-20-code-submission.json) | 用户授权提交推送全部当前成果；111CPU冻结版本一致，语法/文件检查通过，最新三因素80+16已保存完成、指纹匹配，完整结果重放与分析待做 |
 | 2026-10-20 | [probe-document-factors-preparation.md](2026-10-20-probe-document-factors-preparation.md) / [JSON](2026-10-20-probe-document-factors-preparation.json) | 固定问题/回答事实的目标尾句/背景集合/循环顺序80单元，70新/10复用＋16smoke；19删除/20背景已审，全111CPU与两目录准备重放通过，GPU0，用户入口和5–14分钟容量规划齐全 |
 | 2026-10-20 | [probe-input-shift-verified.md](2026-10-20-probe-input-shift-verified.md) / [JSON](2026-10-20-probe-input-shift-verified.json) / [52CSV](2026-10-20-probe-input-shift-cells.csv) | 正式52+smoke6完整verify，桥接与六跨运行输入完全一致；独立58配对/七汇总通过。问题和文档包均改变读出、后者均值更大；删重复否定概率降但0翻转。根因未分离，无新行为/确认/patching |
