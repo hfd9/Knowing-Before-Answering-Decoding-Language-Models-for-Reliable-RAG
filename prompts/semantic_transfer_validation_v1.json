@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "name": "semantic_transfer_validation_v1",
+  "status": "design_frozen_materials_not_prepared_no_gpu",
+  "objective": "Validate frozen chat L28 against independently reviewed supplied-evidence semantics across expressions; then evaluate behavior regardless of probe hit.",
+  "source": {
+    "archive_sha256": "7dc9d0d23d8518d23c189decd548e5207130fb4ec1df54fc421889ddf0b55d41",
+    "opened_archive_member": "instances_train.jsonl",
+    "sampled_train_manifest_sha256": "3fc899266cfad2009dc3f9baa42050fe37a822eb448afea6b2b3f347fbee3a24",
+    "original_train_bases": 1821,
+    "excluded_existing_probe_train_bases": 200,
+    "eligible_bases": 1621,
+    "selection": "First30 sorted by SHA256(salt+|+original_id), before semantic inspection or any new probe output; no result-dependent replacement.",
+    "salt": "semantic-transfer-validation-v1-20261020",
+    "no_original_test_or_confirmation_member_opened": true,
+    "existing_val40_and_diagnostic_test300": "Exploration only; not reused as new evaluation bases."
+  },
+  "partitions": {
+    "semantic_train": [
+      "train_1102",
+      "train_150",
+      "train_1661",
+      "train_1179",
+      "train_1333",
+      "train_1492",
+      "train_744",
+      "train_1430",
+      "train_421",
+      "train_335",
+      "train_1136",
+      "train_1154"
+    ],
+    "semantic_dev": [
+      "train_405",
+      "train_1525",
+      "train_1064",
+      "train_315",
+      "train_989",
+      "train_1302"
+    ],
+    "semantic_eval": [
+      "train_1470",
+      "train_1805",
+      "train_32",
+      "train_341",
+      "train_1605",
+      "train_499",
+      "train_25",
+      "train_1150",
+      "train_254",
+      "train_1222",
+      "train_33",
+      "train_1709"
+    ]
+  },
+  "grouping": "Every base question, source identity and all8 variants stay in one partition; never random-split variants.",
+  "construction": {
+    "bases": 30,
+    "expressions": [
+      "A_source_like_natural",
+      "B_independent_paraphrase"
+    ],
+    "semantic_conditions": [
+      "S_consistent_complete",
+      "K_compatible_complete",
+      "I_missing_necessary_premise",
+      "C_genuine_relevant_incompatibility"
+    ],
+    "variants_per_base": 8,
+    "maximum_variants": 240,
+    "replacements_allowed": 0,
+    "extra_gpu_ablations_allowed": 0,
+    "repeat_previous_52_80_50_cells": false,
+    "question": "One question and scope fixed across all8 variants within a base; no gratuitous narrowing to manufacture unique roles.",
+    "evidence": "Five documents, fixed background multiset/slots per base. Both expression families realized for every semantic condition. No condition names or judgment metadata in model input.",
+    "S": "Two compatible support passages jointly establish every necessary premise.",
+    "K": "Different but jointly compatible supporting assertions (e.g. narrower/broader or complementary facts), retaining a complete answer. Explicit negative control for false conflict; no irrelevant conflict cue.",
+    "I": "Remove only one necessary premise under the matched template, without contradictory relevant claims or residual support in backgrounds. Do not assume a name establishes a relation.",
+    "C": "Same target/event/time/property with genuinely mutually exclusive claims; uniqueness/exclusivity only where warranted and constant across conditions. No supplied correction/source priority that resolves conflict.",
+    "expression": "Preserve evidence semantics within each condition across A/B; vary phrasing rather than question, slot or background. Record all edits and token deltas, without deleting premises to force length matching.",
+    "counterfactual": "If needed to obtain incompatible values, mark synthetic assertion explicitly in provenance; do not use world knowledge to score supplied-evidence truth.",
+    "material_gate": "Two independent-context input-only reviews before GPU; disagreements/ambiguity remain unknown, no automatic use of author condition as gold, no replacing bases after seeing outcomes. Nonconstructible bases remain recorded incomplete; analyze coverage, do not force labels.",
+    "history_independence_gate": "Input reviewers must not receive repository AGENTS.md/history, prior probe/behavior results or author labels. Existing40 background-exposed supplemental reviews do not satisfy this gate. Do not start new GPU before auditable material review is complete."
+  },
+  "probe": {
+    "frozen_old": "Exact existing free-answer chat L28 scaler/router, unchanged; same already-verified interface, no repeat template-debug stage.",
+    "old_source_pkl_sha256": "db6033b84f1fcd30e5e2e31ce4beb262a76920cc06811c57900ad14b8d40858d",
+    "candidate_layers_zero_based": [
+      28
+    ],
+    "layer_searches": 0,
+    "hyperparameter_candidates": 1,
+    "semantic_retrain_trigger": "On semantic_dev only: old-probe macroF1<0.75 OR sufficient(S/K)->conflict rate>0.20 OR A/B same-semantics label agreement<0.80. Unknown labels reported separately; cannot declare pass with semantic coverage<0.90.",
+    "semantic_train_expression": "A only, semantic_train12 bases x4conditions = at most48 examples; all B/train variants excluded from fitting.",
+    "semantic_train_labels": "Pre-GPU independent semantic review labels; unknown not used in fitting, counts retained; abort fit if any class absent.",
+    "max_training_fits": 1,
+    "standard_scaler": "Fit on semantic_train A only",
+    "classifier": "LogisticRegression(C=1, class_weight=balanced, solver=lbfgs,max_iter=2000,random_state=42)",
+    "calibration_fits": 0,
+    "threshold_tuning": 0,
+    "dev_refits": 0,
+    "random_seed": 42,
+    "evaluation_lock": "Hash final old-probe configuration and optional one-fit semantic probe before revealing semantic_eval predictions/reports; eval labels/review frozen before inference. No changes after eval disclosure.",
+    "no_claim": "Old and semantic-retrained probes reported separately. Training failure or unstable transfer is a result, not permission for another layer/fit/grid."
+  },
+  "primary_evaluation": {
+    "partition": "semantic_eval12 bases x8variants = at most96 inputs; held out from new semantic-probe training and selection",
+    "old_probe_metrics": [
+      "Semantic label coverage",
+      "Accuracy and macroF1 on determinate labels with denominators",
+      "Per-class recall/confusion",
+      "S/K false-conflict rate separately",
+      "A/B same-semantics label agreement and both-correct fraction",
+      "Within-expression S->I and S->C both-correct transition fractions",
+      "All three probability deltas with token deltas"
+    ],
+    "retrained_probe_metrics": "Same frozen metrics and matched samples as old probe; A and B separate, plus grouped comparison. Never replace old-probe metrics with retrained scores.",
+    "agreement_warning": "High A/B agreement with consistently wrong labels cannot establish reliability; report both-correct and false-conflict rates.",
+    "dependence": "Bootstrap by base question only,10000 resamples; no treating variants or pair rows as independent bases. Small12-base uncertainty disclosed.",
+    "unknown_policy": "All missing/unknown/unconstructible cells and semantic membership ambiguity reported with coverage and known-label denominators; no silent dropping or automatic refusal."
+  },
+  "behavior": {
+    "generation": "Same frozen chat free-answer instruction, greedy128 tokens, no probe feedback. At most240 answers, one per material; final model/GPU protocol and timing pending prepared materials.",
+    "review": "Separate fresh-context behavior reviewers see question/documents/answer, hidden probe and input review; no filtering by probe outcome.",
+    "primary_partition": "semantic_eval; semantic_dev and semantic_train descriptive separately",
+    "primary_rates": [
+      "All semantic insufficient substantive answering",
+      "All genuine semantic conflicts single-side selection",
+      "Conflicts selection without supplied resolution",
+      "S and K grounded correct answering",
+      "S and K explicit erroneous insufficiency refusal"
+    ],
+    "secondary": "Probe-conditioned rates only descriptive with exact denominators; original1/2 never a main endpoint.",
+    "unknown": "Preserve full eligible denominators with identification bounds; unknown input memberships additionally disclosed."
+  },
+  "stop_rules": [
+    "No extra wording candidates, layers or fits after inspecting evaluation results.",
+    "No original380 confirmation base inputs opened.",
+    "No patching in this round.",
+    "If reviewed semantic material or clean class support is inadequate, record incomplete measurement rather than enlarge the trial ad hoc."
+  ],
+  "decision_rules": [
+    {
+      "result": "Old probe fails, one-fit semantic probe generalizes across bases/expressions",
+      "next": "Re-test signal-behavior relationship with reliable measurement."
+    },
+    {
+      "result": "Semantic probe remains unstable, behavior mismatch stable",
+      "next": "Retain behavioral findings; narrow internal-recognition claims."
+    },
+    {
+      "result": "Semantic measurement and behavioral mismatch stable with clear matched contrasts",
+      "next": "Consider separately frozen limited causal intervention with controls."
+    }
+  ],
+  "readiness": "Design and base split only.240 texts, independent labels, GPU runnable implementation, tokenizer checks, timing and launch are not yet prepared. No claim of clean gold or confirmed reliability."
+}

@@ -1,0 +1,1540 @@
+{
+  "reviewer": "fresh_context_input_reviewer",
+  "independent_human_gold": false,
+  "packet_sha256": "1102b9e7db9af199874862287f221efdbbe6c09b2d7dc39757dc3f59a1eb12b9",
+  "exposure_note": "I have no inherited parent conversation turns. My runtime context did include the user-provided AGENTS.md handoff text and environment/instruction context, including aggregate historical research results; this is project-background exposure, so this is not a claim of complete project-context blindness. I did not open AGENTS.md or repository history, predictions, source specification, coordinator mapping, previous item judgments, generated answers, probe results, authored condition labels, original IDs, or another reviewer output. Task data accessed from disk were only input_public/rubric.json and input_public/packet.json. I read the rubric and all 40 questions and all 200 complete document slots through eight untruncated five-item pages, judging only supplied item evidence. I used a temporary writing/validation helper under /tmp and my designated output directory. Related text recurred across items, but each rating uses only the evidence in that item. This is an LLM evidence-semantics review, not independent human gold.",
+  "read_coverage": {
+    "questions_read": 40,
+    "complete_document_slots_read": 200,
+    "external_sources_used": false,
+    "all_items_judged_before_disclosure": true
+  },
+  "ratings": [
+    {
+      "item_id": "E001",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "Skil Brum's mountain-versus-plateau classification.",
+        "Gangkhar Puensum's mountain-versus-plateau classification in the same descriptions.",
+        "A compatible classification shared by both places."
+      ],
+      "support_chain": [
+        "Documents 1 and 2 classify Skil Brum as a mountain.",
+        "The reference to using the same classifications does not state a classification for Gangkhar Puensum.",
+        "None of the five documents supplies the missing second-place classification, so a shared category cannot be established."
+      ],
+      "supported_answer": null,
+      "missing_facts": [
+        "An actual mountain-versus-plateau classification for Gangkhar Puensum."
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "Skil Brum is supported; Gangkhar Puensum is not classified. The phrase about the same two places identifies the topic of the description and does not assert that both places share the category mountain.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Skil Brum is classified here as a mountain.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 2,
+          "quote": "This description uses the same landform classifications for the same two places.",
+          "role": "context"
+        },
+        {
+          "doc_slot": 2,
+          "quote": "Skil Brum is a mountain.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E002",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "The dog-versus-cat category of the English White Terrier.",
+        "The dog-versus-cat category of the Boykin Spaniel.",
+        "A consistent category shared by both named breeds."
+      ],
+      "support_chain": [
+        "Documents 2 and 5 agree that the English White Terrier is a dog breed.",
+        "Document 2 says Boykin Spaniel is a dog and not a cat.",
+        "Document 5 says Boykin Spaniel is a cat and not a dog.",
+        "The necessary category for Boykin Spaniel is therefore unresolved."
+      ],
+      "supported_answer": null,
+      "missing_facts": [],
+      "conflicting_claims": [
+        "Document 2 classifies Boykin Spaniel as dog and not cat; document 5 classifies the same breed as cat and not dog."
+      ],
+      "resolution_basis": "No document gives an explicit correction, time distinction or priority between the opposed descriptions.",
+      "rationale": "The explicit reciprocal exclusions create a genuine category contradiction about the same requested breed. Other dogs and the historical ancestry of the Bull Terrier do not resolve it.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "The English White Terrier is described as a breed of dog.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 2,
+          "quote": "The Boykin Spaniel is described as a breed of dog, not a breed of cat.",
+          "role": "conflict"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "The Boykin Spaniel is described as a breed of cat, not a breed of dog.",
+          "role": "conflict"
+        }
+      ]
+    },
+    {
+      "item_id": "E003",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "Skil Brum's mountain-versus-plateau classification.",
+        "Gangkhar Puensum's mountain-versus-plateau classification in the same descriptions.",
+        "A compatible classification shared by both places."
+      ],
+      "support_chain": [
+        "Document 1 explicitly classifies Skil Brum as a mountain.",
+        "Documents 1 and 2 explicitly classify Gangkhar Puensum as a mountain, excluding plateau.",
+        "Both requested places therefore share the mountain classification."
+      ],
+      "supported_answer": "Both are mountains.",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "The two relevant descriptions agree on both named places. The other documents discuss plants, dogs and film directors and supply no competing landform claim.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Skil Brum is classified here as a mountain.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 1,
+          "quote": "Gangkhar Puensum is classified here as a mountain and explicitly not as a plateau.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 2,
+          "quote": "Gangkhar Puensum is classified here as a mountain and explicitly not as a plateau.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E004",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "Neal Foulds and John Dunning are participants associated with a sport in the specified British Open event.",
+        "Mark Williams is associated with that same event.",
+        "The event has a single sport that consistently applies to all three."
+      ],
+      "support_chain": [
+        "Documents 3 and 5 associate Neal Foulds and John Dunning with snooker in a single-sport British Open event.",
+        "Neither lists or connects Mark Williams to the event.",
+        "A one-sport event supplies a sport for its listed participants, but does not establish that the missing third person participated."
+      ],
+      "supported_answer": null,
+      "missing_facts": [
+        "Evidence that Mark Williams is associated with that same described British Open event."
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "Two participants have the necessary support. The question's inclusion of Mark Williams cannot substitute for evidence connecting him to the event; no incompatible sport is claimed for him.",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "quote": "The British Open event in this account has one sport for its listed participants.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "Neal Foulds and John Dunning are listed as snooker participants in that event.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "Neal Foulds and John Dunning are listed as snooker participants in that event.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E005",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "Skil Brum's mountain-versus-plateau classification.",
+        "Gangkhar Puensum's mountain-versus-plateau classification in the same descriptions.",
+        "A compatible classification shared by both places."
+      ],
+      "support_chain": [
+        "Document 1 explicitly classifies Skil Brum as a mountain.",
+        "Documents 1 and 2 explicitly classify Gangkhar Puensum as a mountain, excluding plateau.",
+        "Both requested places therefore share the mountain classification."
+      ],
+      "supported_answer": "Both are mountains.",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "The two relevant descriptions agree on both named places. The other documents discuss plants, dogs and film directors and supply no competing landform claim.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Skil Brum is classified here as a mountain.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 1,
+          "quote": "Gangkhar Puensum is classified here as a mountain and explicitly not as a plateau.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 2,
+          "quote": "Gangkhar Puensum is classified here as a mountain and explicitly not as a plateau.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E006",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "The original-version literary form of Christ in Concrete by Pietro di Donato.",
+        "The original-version literary form of Under the Volcano by Malcolm Lowry.",
+        "That the descriptions concern the same originals rather than different adaptations."
+      ],
+      "support_chain": [
+        "Document 4 identifies Christ in Concrete as a novel.",
+        "Document 4 calls the original Under the Volcano a novel and not a play.",
+        "Document 5 expressly refers to the same originals and calls Under the Volcano a play and not a novel.",
+        "The form of a required original work is contradicted."
+      ],
+      "supported_answer": null,
+      "missing_facts": [],
+      "conflicting_claims": [
+        "Under the Volcano original: novel and not play in document 4; play and not novel in document 5."
+      ],
+      "resolution_basis": "The same-originals statement rules out resolving this as a novel versus a stage adaptation. No priority or correction is provided.",
+      "rationale": "The conflict is on the exact literary-form axis and original version asked about; different artistic media mentioned in unrelated documents cannot settle it.",
+      "citations": [
+        {
+          "doc_slot": 4,
+          "quote": "The described original version of Malcolm Lowry's Under the Volcano is a novel and is not a play.",
+          "role": "conflict"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "This entry describes those same original versions, not stage adaptations.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "The described original version of Malcolm Lowry's Under the Volcano is a play and is not a novel.",
+          "role": "conflict"
+        }
+      ]
+    },
+    {
+      "item_id": "E007",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "An explicit calendar date of the World Wide Web's first availability to the public.",
+        "That the date concerns first public availability rather than project origin or an unrelated event."
+      ],
+      "support_chain": [
+        "Document 2 gives 12 April 1993 for first public availability.",
+        "Document 4 gives 23 September 1996 for that same first-public-availability event and explicitly rejects 12 April 1993.",
+        "Both accounts distinguish availability from inception; the discrepancy cannot be assigned to different milestones."
+      ],
+      "supported_answer": null,
+      "missing_facts": [],
+      "conflicting_claims": [
+        "First public availability of the World Wide Web: 12 April 1993 in document 2 versus 23 September 1996, not 12 April 1993, in document 4."
+      ],
+      "resolution_basis": "Document 4 asserts a rival date but does not identify itself as an authoritative correction. No evidence prioritizes either account or distinguishes target events.",
+      "rationale": "The accounts give incompatible first dates for the same event. Their explicit milestone wording rules out using inception versus public launch as a resolution.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "The World Wide Web first became available to the public on 12 April 1993.",
+          "role": "conflict"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "The account concerns the first date when the World Wide Web was publicly available, rather than its inception.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "The World Wide Web first became available to the public on 23 September 1996, not 12 April 1993.",
+          "role": "conflict"
+        }
+      ]
+    },
+    {
+      "item_id": "E008",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "The identity of the specified single stage version of Billy Elliot the Musical.",
+        "The music composer's identity for all music in that version.",
+        "Sole authorship, excluding other music composers for that same version."
+      ],
+      "support_chain": [
+        "Document 1 specifies one stage version and states Elton John composed all its music alone.",
+        "Document 5 explicitly refers to that same single version and repeats the sole-composer claim.",
+        "The question's identity, scope and exclusivity requirements are all met."
+      ],
+      "supported_answer": "Elton John",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "The authorship claim is explicit and exclusive for the same version. Hoagy Carmichael's separate concert-band selection and Sarah Vaughan's album do not concern Billy Elliot.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "The account describes one specified stage version of Billy Elliot the Musical.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 1,
+          "quote": "Elton John is the sole composer of all music for this version; there are no other music composers for it.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "Elton John is the sole composer of all music for this version; there are no other music composers for it.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E009",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "The publication form of the described Better Homes and Gardens edition.",
+        "The publication form of the described DownBeat edition.",
+        "A consistent shared form on the magazine-versus-newspaper axis for those same editions."
+      ],
+      "support_chain": [
+        "Document 2 identifies Better Homes and Gardens as a magazine.",
+        "Documents 2 and 3 identify DownBeat as a magazine, explicitly excluding newspaper.",
+        "Document 3 refers to the same editions, so the shared form is magazine."
+      ],
+      "supported_answer": "Both described editions are magazines.",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "The necessary publication forms are explicit and compatible. The cocktail and documentary-film entries do not classify either publication.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "The described edition of Better Homes and Gardens is a magazine.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 2,
+          "quote": "The described edition of DownBeat is a magazine and is not a newspaper.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "This entry describes the same editions of the two publications.",
+          "role": "premise"
+        }
+      ]
+    },
+    {
+      "item_id": "E010",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "Tucson International Airport's public-or-private status.",
+        "El Paso International Airport's public-or-private status.",
+        "A compatible shared status on that axis; civil-military use is a separate property."
+      ],
+      "support_chain": [
+        "Document 1 states that Tucson is public and joint civil-military.",
+        "Documents 1 and 3 state that El Paso is public and not private.",
+        "Document 4 independently repeats Tucson's public joint civil-military description.",
+        "Both airports therefore share public status."
+      ],
+      "supported_answer": "Both are public airports.",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "The civil-military qualification is compatible with public status and does not create a public/private contradiction. Other named airports do not alter the two required premises.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Tucson International Airport is a public joint civil-military airport.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 1,
+          "quote": "El Paso International Airport is a public airport, not a private airport.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "El Paso International Airport is a public airport, not a private airport.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E011",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "Tucson International Airport's public-or-private status.",
+        "El Paso International Airport's public-or-private status.",
+        "A compatible shared status on that axis; civil-military use is a separate property."
+      ],
+      "support_chain": [
+        "Documents 1, 3 and 4 establish Tucson's public joint civil-military status.",
+        "The other airport descriptions concern Harrisburg, Norfolk, Bismarck, Hilo and Memphis.",
+        "None classifies El Paso as public or private, so the shared status is not established."
+      ],
+      "supported_answer": null,
+      "missing_facts": [
+        "El Paso International Airport's public-or-private status."
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "There is sufficient evidence for Tucson only. Public ownership or status of a different airport does not establish El Paso's status; no relevant incompatible El Paso claim appears.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Tucson International Airport is a public joint civil-military airport.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 1,
+          "quote": "Harrisburg International Airport is a public airport in Pennsylvania.",
+          "role": "context"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "Norfolk International Airport serves the Hampton Roads metropolitan area.",
+          "role": "context"
+        }
+      ]
+    },
+    {
+      "item_id": "E012",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "The single German presidential resignation event occurred in February 2012.",
+        "The identity of the one president who resigned in that specific event."
+      ],
+      "support_chain": [
+        "Documents 1 and 4 specify one German presidential resignation in February 2012.",
+        "Neither identifies the resigning president.",
+        "Named people in the other documents belong to unrelated US, British police or Iraqi contexts."
+      ],
+      "supported_answer": null,
+      "missing_facts": [
+        "The name of the resigning German president in the February 2012 event."
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "An event being single does not reveal its participant's name. No supplied report connects any named person to this German resignation.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "A report describes a single resignation from the German presidency in February 2012.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "The February 2012 German presidential resignation report concerns one event and one resigning president.",
+          "role": "premise"
+        }
+      ]
+    },
+    {
+      "item_id": "E013",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "The identity of the specified single stage version of Billy Elliot the Musical.",
+        "The music composer's identity for all music in that version.",
+        "Sole authorship, excluding other music composers for that same version."
+      ],
+      "support_chain": [
+        "Documents 1 and 5 identify a stage version of Billy Elliot and describe its story, scenes and staging.",
+        "Neither names its music composer or establishes sole authorship.",
+        "The other musical documents name composers or performers for other works and cannot supply this credit."
+      ],
+      "supported_answer": null,
+      "missing_facts": [
+        "The music composer for this Billy Elliot version.",
+        "An assertion that this person composed all the music without another composer."
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "Story and staging details do not establish music authorship. There is no relevant rival composer claim, only a missing required credit.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "The account describes one specified stage version of Billy Elliot the Musical.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 1,
+          "quote": "This stage version tells a story about a young person's interest in dance.",
+          "role": "context"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "The programme lists scenes and describes the staging of the performance.",
+          "role": "context"
+        }
+      ]
+    },
+    {
+      "item_id": "E014",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "A ranking of individual people on Instagram, excluding organisation accounts.",
+        "The specified time June 2018.",
+        "The unique first-place person in that ranking."
+      ],
+      "support_chain": [
+        "Document 3 defines the June 2018 individual-person ranking and excludes organisation accounts.",
+        "Documents 3 and 4 both state Selena Gomez was its unique most-followed individual person.",
+        "Document 4 explicitly places Instagram's own organisation account outside this ranking."
+      ],
+      "supported_answer": "Selena Gomez",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "The person, ranking category, uniqueness and time are explicit. Instagram's organisation account and unrelated Jeopardy/goalkeeper rankings do not compete for this category.",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "quote": "This ranking concerns individual people on Instagram in June 2018, excluding organisation accounts.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "Selena Gomez was the unique most-followed individual person in that ranking.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Instagram's own account is an organisation account and is outside this ranking.",
+          "role": "context"
+        }
+      ]
+    },
+    {
+      "item_id": "E015",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "A ranking of individual people on Instagram, excluding organisation accounts.",
+        "The specified time June 2018.",
+        "The unique first-place person in that ranking."
+      ],
+      "support_chain": [
+        "Documents 3 and 4 define an individual-person ranking for June 2018 and state it has a single first place.",
+        "They separate organisation accounts from individuals but do not name the first-place person.",
+        "Jeopardy contestants and a football-award winner are not connected to the Instagram ranking."
+      ],
+      "supported_answer": null,
+      "missing_facts": [
+        "The identity of the unique most-followed individual person in June 2018."
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "The ranking's scope and time are clear, but the requested winner is absent. Excluding Instagram's own account does not identify a remaining person.",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "quote": "This ranking concerns individual people on Instagram in June 2018, excluding organisation accounts.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "This is the same June 2018 Instagram ranking of individual people, with a single first place.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Instagram's own account is an organisation account and is outside this ranking.",
+          "role": "context"
+        }
+      ]
+    },
+    {
+      "item_id": "E016",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "Neal Foulds and John Dunning are participants associated with a sport in the specified British Open event.",
+        "Mark Williams is associated with that same event.",
+        "The event has a single sport that consistently applies to all three."
+      ],
+      "support_chain": [
+        "Document 3 identifies Neal Foulds and John Dunning as snooker participants in a one-sport British Open event.",
+        "It explicitly lists Mark Williams in the same event and says the only sport is snooker.",
+        "Document 5 repeats those associations and the same-event identity.",
+        "All three are therefore associated with snooker in this event."
+      ],
+      "supported_answer": "Snooker",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "Every required person is linked to the same explicitly single-sport event. Golf news and Olympic gymnastics concern unrelated participants and events.",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "quote": "Neal Foulds and John Dunning are listed as snooker participants in that event.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "Mark Williams is listed as a participant in that same event, whose only sport is snooker.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "Mark Williams is listed as a participant in that same event, whose only sport is snooker.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E017",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "The dog-versus-cat category of the English White Terrier.",
+        "The dog-versus-cat category of the Boykin Spaniel.",
+        "A consistent category shared by both named breeds."
+      ],
+      "support_chain": [
+        "Documents 2 and 5 identify the English White Terrier as a dog breed.",
+        "Both documents also identify the Boykin Spaniel as a dog breed and explicitly exclude cat.",
+        "The common category is dog."
+      ],
+      "supported_answer": "Both are dog breeds.",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "Both named breeds have explicit compatible dog classifications. Descriptions of other breeds do not contradict either claim.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "The English White Terrier is described as a breed of dog.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 2,
+          "quote": "The Boykin Spaniel is described as a breed of dog, not a breed of cat.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "The Boykin Spaniel is described as a breed of dog, not a breed of cat.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E018",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "The single German presidential resignation event occurred in February 2012.",
+        "The identity of the one president who resigned in that specific event."
+      ],
+      "support_chain": [
+        "Document 1 specifies the German presidency and February 2012 resignation event.",
+        "It names Christian Wulff as the president who resigned in that event.",
+        "Document 4 repeats the same identity and single-event scope."
+      ],
+      "supported_answer": "Christian Wulff",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "Both relevant reports agree on the requested person. The police resignation in 2001, Virginia presidents and Iraqi president refer to other offices, times and events.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "A report describes a single resignation from the German presidency in February 2012.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 1,
+          "quote": "Christian Wulff was the president who resigned in that event.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Christian Wulff was the president who resigned in that event.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E019",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "An explicit calendar date of the World Wide Web's first availability to the public.",
+        "That the date concerns first public availability rather than project origin or an unrelated event."
+      ],
+      "support_chain": [
+        "Document 2 distinguishes project origin from first public availability and supplies 12 April 1993.",
+        "Document 4 expressly describes first public availability and supplies the same date.",
+        "These compatible statements support the requested date within the supplied accounts."
+      ],
+      "supported_answer": "12 April 1993",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "The target event and calendar date are explicit in both relevant accounts. The inception field of the Telstar ball and recording dates for a song concern other entities.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "This account distinguishes the origin of the World Wide Web project from its first public availability.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 2,
+          "quote": "The World Wide Web first became available to the public on 12 April 1993.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "The World Wide Web first became available to the public on 12 April 1993.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E020",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "A ranking of individual people on Instagram, excluding organisation accounts.",
+        "The specified time June 2018.",
+        "The unique first-place person in that ranking."
+      ],
+      "support_chain": [
+        "Document 3 defines the June 2018 individual-person ranking and excludes organisation accounts.",
+        "Documents 3 and 4 both state Selena Gomez was its unique most-followed individual person.",
+        "Document 4 explicitly places Instagram's own organisation account outside this ranking."
+      ],
+      "supported_answer": "Selena Gomez",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "The person, ranking category, uniqueness and time are explicit. Instagram's organisation account and unrelated Jeopardy/goalkeeper rankings do not compete for this category.",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "quote": "This ranking concerns individual people on Instagram in June 2018, excluding organisation accounts.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "Selena Gomez was the unique most-followed individual person in that ranking.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Instagram's own account is an organisation account and is outside this ranking.",
+          "role": "context"
+        }
+      ]
+    },
+    {
+      "item_id": "E021",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "The publication form of the described Better Homes and Gardens edition.",
+        "The publication form of the described DownBeat edition.",
+        "A consistent shared form on the magazine-versus-newspaper axis for those same editions."
+      ],
+      "support_chain": [
+        "Both relevant documents identify Better Homes and Gardens as a magazine.",
+        "Document 2 classifies DownBeat as magazine and not newspaper.",
+        "Document 3 explicitly describes the same edition and classifies DownBeat as newspaper and not magazine.",
+        "The necessary DownBeat premise is incompatible across the accounts."
+      ],
+      "supported_answer": null,
+      "missing_facts": [],
+      "conflicting_claims": [
+        "DownBeat same edition: magazine and not newspaper in document 2; newspaper and not magazine in document 3."
+      ],
+      "resolution_basis": "The text specifies the same editions and provides no time change, correction or preferred source.",
+      "rationale": "The conflict concerns the precise requested publication-form distinction for one required publication. Agreement about Better Homes and Gardens cannot resolve DownBeat.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "The described edition of DownBeat is a magazine and is not a newspaper.",
+          "role": "conflict"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "This entry describes the same editions of the two publications.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "The described edition of DownBeat is a newspaper and is not a magazine.",
+          "role": "conflict"
+        }
+      ]
+    },
+    {
+      "item_id": "E022",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "The single German presidential resignation event occurred in February 2012.",
+        "The identity of the one president who resigned in that specific event."
+      ],
+      "support_chain": [
+        "Document 1 names Christian Wulff for the single February 2012 German presidential resignation.",
+        "Document 4 names Joachim Gauck, explicitly a different person, for that same one-event/one-president report.",
+        "The event permits only one resigning president, so the two identities are incompatible."
+      ],
+      "supported_answer": null,
+      "missing_facts": [],
+      "conflicting_claims": [
+        "One specified German presidential resignation event: Christian Wulff in document 1 versus Joachim Gauck, a different person, in document 4."
+      ],
+      "resolution_basis": "No report states a correction, different event, different time or source priority. Both assertions address the single February 2012 event.",
+      "rationale": "The singular event and single resigning president exclude resolving the rival names as two compatible resignations.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Christian Wulff was the president who resigned in that event.",
+          "role": "conflict"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "The February 2012 German presidential resignation report concerns one event and one resigning president.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Joachim Gauck, a different person, was the president who resigned in that event.",
+          "role": "conflict"
+        }
+      ]
+    },
+    {
+      "item_id": "E023",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "The identity of the specified single stage version of Billy Elliot the Musical.",
+        "The music composer's identity for all music in that version.",
+        "Sole authorship, excluding other music composers for that same version."
+      ],
+      "support_chain": [
+        "Document 1 specifies one stage version and states Elton John composed all its music alone.",
+        "Document 5 explicitly refers to that same single version and repeats the sole-composer claim.",
+        "The question's identity, scope and exclusivity requirements are all met."
+      ],
+      "supported_answer": "Elton John",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "The authorship claim is explicit and exclusive for the same version. Hoagy Carmichael's separate concert-band selection and Sarah Vaughan's album do not concern Billy Elliot.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "The account describes one specified stage version of Billy Elliot the Musical.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 1,
+          "quote": "Elton John is the sole composer of all music for this version; there are no other music composers for it.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "Elton John is the sole composer of all music for this version; there are no other music composers for it.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E024",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "An explicit calendar date of the World Wide Web's first availability to the public.",
+        "That the date concerns first public availability rather than project origin or an unrelated event."
+      ],
+      "support_chain": [
+        "Document 2 distinguishes project origin from first public availability and supplies 12 April 1993.",
+        "Document 4 expressly describes first public availability and supplies the same date.",
+        "These compatible statements support the requested date within the supplied accounts."
+      ],
+      "supported_answer": "12 April 1993",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "The target event and calendar date are explicit in both relevant accounts. The inception field of the Telstar ball and recording dates for a song concern other entities.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "This account distinguishes the origin of the World Wide Web project from its first public availability.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 2,
+          "quote": "The World Wide Web first became available to the public on 12 April 1993.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "The World Wide Web first became available to the public on 12 April 1993.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E025",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "Neal Foulds and John Dunning are participants associated with a sport in the specified British Open event.",
+        "Mark Williams is associated with that same event.",
+        "The event has a single sport that consistently applies to all three."
+      ],
+      "support_chain": [
+        "Document 3 identifies Neal Foulds and John Dunning as snooker participants in a one-sport British Open event.",
+        "It explicitly lists Mark Williams in the same event and says the only sport is snooker.",
+        "Document 5 repeats those associations and the same-event identity.",
+        "All three are therefore associated with snooker in this event."
+      ],
+      "supported_answer": "Snooker",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "Every required person is linked to the same explicitly single-sport event. Golf news and Olympic gymnastics concern unrelated participants and events.",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "quote": "Neal Foulds and John Dunning are listed as snooker participants in that event.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "Mark Williams is listed as a participant in that same event, whose only sport is snooker.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "Mark Williams is listed as a participant in that same event, whose only sport is snooker.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E026",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "The publication form of the described Better Homes and Gardens edition.",
+        "The publication form of the described DownBeat edition.",
+        "A consistent shared form on the magazine-versus-newspaper axis for those same editions."
+      ],
+      "support_chain": [
+        "Documents 2 and 3 classify Better Homes and Gardens as magazine.",
+        "Neither gives DownBeat's publication form.",
+        "The other documents concern cocktails and films, with no DownBeat classification."
+      ],
+      "supported_answer": null,
+      "missing_facts": [
+        "Whether the described DownBeat edition is a magazine or newspaper."
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "The shared form requires both named publications. Better Homes and Gardens alone cannot support a shared magazine answer, and no competing DownBeat claim is present.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "The described edition of Better Homes and Gardens is a magazine.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "This entry describes the same editions of the two publications.",
+          "role": "context"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "Better Homes and Gardens is a magazine.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E027",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "Skil Brum's mountain-versus-plateau classification.",
+        "Gangkhar Puensum's mountain-versus-plateau classification in the same descriptions.",
+        "A compatible classification shared by both places."
+      ],
+      "support_chain": [
+        "Both relevant descriptions call Skil Brum a mountain.",
+        "Document 1 calls Gangkhar Puensum a mountain and excludes plateau.",
+        "Document 2 calls that same place a plateau and excludes mountain.",
+        "The conflicting necessary premise prevents an agreed shared classification."
+      ],
+      "supported_answer": null,
+      "missing_facts": [],
+      "conflicting_claims": [
+        "Document 1: Gangkhar Puensum is a mountain and not a plateau. Document 2: Gangkhar Puensum is a plateau and not a mountain."
+      ],
+      "resolution_basis": "No correction, source priority, different time or different geographic referent resolves the opposition. Document 2 explicitly uses the same classifications for the same places.",
+      "rationale": "This is a direct disagreement on the requested landform axis for Gangkhar Puensum, not a broader/narrower description or two different places.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Skil Brum is classified here as a mountain.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 1,
+          "quote": "Gangkhar Puensum is classified here as a mountain and explicitly not as a plateau.",
+          "role": "conflict"
+        },
+        {
+          "doc_slot": 2,
+          "quote": "Gangkhar Puensum is classified here as a plateau and explicitly not as a mountain.",
+          "role": "conflict"
+        }
+      ]
+    },
+    {
+      "item_id": "E028",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "The identity of the specified single stage version of Billy Elliot the Musical.",
+        "The music composer's identity for all music in that version.",
+        "Sole authorship, excluding other music composers for that same version."
+      ],
+      "support_chain": [
+        "Document 1 states that Elton John is the sole composer of all music for the specified version.",
+        "Document 5 identifies the same single version but names a different sole composer, Andrew Lloyd Webber, and says Elton John composed none.",
+        "The explicit sole/all/none claims cannot describe compatible contributions."
+      ],
+      "supported_answer": null,
+      "missing_facts": [],
+      "conflicting_claims": [
+        "Document 1 credits all music exclusively to Elton John. Document 5 credits all music exclusively to Andrew Lloyd Webber and excludes any Elton John contribution."
+      ],
+      "resolution_basis": "The same-single-version wording blocks an adaptation or version distinction. No source priority or explicit correction resolves the competing exclusive credits.",
+      "rationale": "This is a direct exclusive-authorship contradiction, rather than two potentially compatible composer credits.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Elton John is the sole composer of all music for this version; there are no other music composers for it.",
+          "role": "conflict"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "This account concerns the same single stage version of Billy Elliot the Musical.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "Andrew Lloyd Webber, a different person, is the sole composer of all music for this version; Elton John composed none of it.",
+          "role": "conflict"
+        }
+      ]
+    },
+    {
+      "item_id": "E029",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "Tucson International Airport's public-or-private status.",
+        "El Paso International Airport's public-or-private status.",
+        "A compatible shared status on that axis; civil-military use is a separate property."
+      ],
+      "support_chain": [
+        "Document 1 states that Tucson is public and joint civil-military.",
+        "Documents 1 and 3 state that El Paso is public and not private.",
+        "Document 4 independently repeats Tucson's public joint civil-military description.",
+        "Both airports therefore share public status."
+      ],
+      "supported_answer": "Both are public airports.",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "The civil-military qualification is compatible with public status and does not create a public/private contradiction. Other named airports do not alter the two required premises.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Tucson International Airport is a public joint civil-military airport.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 1,
+          "quote": "El Paso International Airport is a public airport, not a private airport.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "El Paso International Airport is a public airport, not a private airport.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E030",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "The original-version literary form of Christ in Concrete by Pietro di Donato.",
+        "The original-version literary form of Under the Volcano by Malcolm Lowry.",
+        "That the descriptions concern the same originals rather than different adaptations."
+      ],
+      "support_chain": [
+        "Document 4 calls the original Christ in Concrete a novel.",
+        "Documents 4 and 5 call the original Under the Volcano a novel and not a play.",
+        "Document 5 explicitly excludes stage adaptations as the referent.",
+        "The original works share the form novel."
+      ],
+      "supported_answer": "Both original versions are novels.",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "Both required literary forms are supplied and agree. The unrelated director, composer and plant entries offer no competing form for these works.",
+      "citations": [
+        {
+          "doc_slot": 4,
+          "quote": "The described original version of Pietro di Donato's Christ in Concrete is a novel.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "The described original version of Malcolm Lowry's Under the Volcano is a novel and is not a play.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "This entry describes those same original versions, not stage adaptations.",
+          "role": "premise"
+        }
+      ]
+    },
+    {
+      "item_id": "E031",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "The single German presidential resignation event occurred in February 2012.",
+        "The identity of the one president who resigned in that specific event."
+      ],
+      "support_chain": [
+        "Document 1 specifies the German presidency and February 2012 resignation event.",
+        "It names Christian Wulff as the president who resigned in that event.",
+        "Document 4 repeats the same identity and single-event scope."
+      ],
+      "supported_answer": "Christian Wulff",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "Both relevant reports agree on the requested person. The police resignation in 2001, Virginia presidents and Iraqi president refer to other offices, times and events.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "A report describes a single resignation from the German presidency in February 2012.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 1,
+          "quote": "Christian Wulff was the president who resigned in that event.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Christian Wulff was the president who resigned in that event.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E032",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "The dog-versus-cat category of the English White Terrier.",
+        "The dog-versus-cat category of the Boykin Spaniel.",
+        "A consistent category shared by both named breeds."
+      ],
+      "support_chain": [
+        "Documents 2 and 5 identify the English White Terrier as a dog breed.",
+        "Both documents also identify the Boykin Spaniel as a dog breed and explicitly exclude cat.",
+        "The common category is dog."
+      ],
+      "supported_answer": "Both are dog breeds.",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "Both named breeds have explicit compatible dog classifications. Descriptions of other breeds do not contradict either claim.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "The English White Terrier is described as a breed of dog.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 2,
+          "quote": "The Boykin Spaniel is described as a breed of dog, not a breed of cat.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "The Boykin Spaniel is described as a breed of dog, not a breed of cat.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E033",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "An explicit calendar date of the World Wide Web's first availability to the public.",
+        "That the date concerns first public availability rather than project origin or an unrelated event."
+      ],
+      "support_chain": [
+        "Documents 2 and 4 identify the target as first public availability rather than origin.",
+        "The supplied facts name an inventor and describe worldwide service, without any date for the target event.",
+        "Dates in the ball and song entries concern unrelated entities."
+      ],
+      "supported_answer": null,
+      "missing_facts": [
+        "The calendar date of the World Wide Web's first public availability."
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "Knowing the inventor or worldwide service area does not date first public availability. No competing date for the target event is asserted.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "The project description identifies Tim Berners-Lee as its inventor.",
+          "role": "context"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "The account concerns the first date when the World Wide Web was publicly available, rather than its inception.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "The entry includes an inventor field and a worldwide service-area field.",
+          "role": "context"
+        }
+      ]
+    },
+    {
+      "item_id": "E034",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "The original-version literary form of Christ in Concrete by Pietro di Donato.",
+        "The original-version literary form of Under the Volcano by Malcolm Lowry.",
+        "That the descriptions concern the same originals rather than different adaptations."
+      ],
+      "support_chain": [
+        "Document 4 calls the original Christ in Concrete a novel.",
+        "Documents 4 and 5 call the original Under the Volcano a novel and not a play.",
+        "Document 5 explicitly excludes stage adaptations as the referent.",
+        "The original works share the form novel."
+      ],
+      "supported_answer": "Both original versions are novels.",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "Both required literary forms are supplied and agree. The unrelated director, composer and plant entries offer no competing form for these works.",
+      "citations": [
+        {
+          "doc_slot": 4,
+          "quote": "The described original version of Pietro di Donato's Christ in Concrete is a novel.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "The described original version of Malcolm Lowry's Under the Volcano is a novel and is not a play.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "This entry describes those same original versions, not stage adaptations.",
+          "role": "premise"
+        }
+      ]
+    },
+    {
+      "item_id": "E035",
+      "semantic_mode": "answer",
+      "confidence": "high",
+      "required_facts": [
+        "The publication form of the described Better Homes and Gardens edition.",
+        "The publication form of the described DownBeat edition.",
+        "A consistent shared form on the magazine-versus-newspaper axis for those same editions."
+      ],
+      "support_chain": [
+        "Document 2 identifies Better Homes and Gardens as a magazine.",
+        "Documents 2 and 3 identify DownBeat as a magazine, explicitly excluding newspaper.",
+        "Document 3 refers to the same editions, so the shared form is magazine."
+      ],
+      "supported_answer": "Both described editions are magazines.",
+      "missing_facts": [],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "The necessary publication forms are explicit and compatible. The cocktail and documentary-film entries do not classify either publication.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "The described edition of Better Homes and Gardens is a magazine.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 2,
+          "quote": "The described edition of DownBeat is a magazine and is not a newspaper.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "This entry describes the same editions of the two publications.",
+          "role": "premise"
+        }
+      ]
+    },
+    {
+      "item_id": "E036",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "Tucson International Airport's public-or-private status.",
+        "El Paso International Airport's public-or-private status.",
+        "A compatible shared status on that axis; civil-military use is a separate property."
+      ],
+      "support_chain": [
+        "Tucson is consistently public, including in document 4.",
+        "Document 1 calls El Paso public and not private.",
+        "Document 3 calls El Paso private and not public.",
+        "The necessary public/private premise for El Paso is contradicted."
+      ],
+      "supported_answer": null,
+      "missing_facts": [],
+      "conflicting_claims": [
+        "El Paso International Airport: public and not private in document 1; private and not public in document 3."
+      ],
+      "resolution_basis": "No date change, explicit correction, distinct airport identity or source-priority statement resolves the El Paso disagreement.",
+      "rationale": "The conflict is specifically about El Paso's public/private status. Tucson's civil-military use is a compatible separate axis and is not the source of conflict.",
+      "citations": [
+        {
+          "doc_slot": 1,
+          "quote": "Tucson International Airport is a public joint civil-military airport.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 1,
+          "quote": "El Paso International Airport is a public airport, not a private airport.",
+          "role": "conflict"
+        },
+        {
+          "doc_slot": 3,
+          "quote": "El Paso International Airport is a private airport and is not a public airport.",
+          "role": "conflict"
+        }
+      ]
+    },
+    {
+      "item_id": "E037",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "Neal Foulds and John Dunning are participants associated with a sport in the specified British Open event.",
+        "Mark Williams is associated with that same event.",
+        "The event has a single sport that consistently applies to all three."
+      ],
+      "support_chain": [
+        "Document 3 states the event's only sport is snooker and links all three named people to that event.",
+        "Document 5 explicitly calls it the same single-sport event but states its only sport is golf, not snooker, while still listing Foulds and Dunning as snooker participants.",
+        "This creates both an inter-document snooker/golf contradiction and an internal inconsistency in document 5's event description."
+      ],
+      "supported_answer": null,
+      "missing_facts": [],
+      "conflicting_claims": [
+        "The same event's only sport is snooker in document 3 versus golf, not snooker, in document 5.",
+        "Document 5 also lists Neal Foulds and John Dunning as snooker participants in that same event whose only sport it calls golf."
+      ],
+      "resolution_basis": "No second event, multi-sport exception, correction or source priority is supplied. The text explicitly insists on the same single-sport event.",
+      "rationale": "The single-sport restriction prevents resolving the difference by treating the participants as playing different sports in the same event. The unrelated golf-news document supplies no correction for this contradiction.",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "quote": "Mark Williams is listed as a participant in that same event, whose only sport is snooker.",
+          "role": "conflict"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "This account describes the same British Open event and its single sport.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "Neal Foulds and John Dunning are listed as snooker participants in that event.",
+          "role": "conflict"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "Mark Williams is listed as a participant in that same event, whose only sport is golf, not snooker.",
+          "role": "conflict"
+        }
+      ]
+    },
+    {
+      "item_id": "E038",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "The original-version literary form of Christ in Concrete by Pietro di Donato.",
+        "The original-version literary form of Under the Volcano by Malcolm Lowry.",
+        "That the descriptions concern the same originals rather than different adaptations."
+      ],
+      "support_chain": [
+        "Document 4 classifies the original Christ in Concrete as a novel, and document 5 repeats that classification.",
+        "Neither literary entry gives Under the Volcano's form.",
+        "The film/director/composer/plant entries do not establish the missing original-work form."
+      ],
+      "supported_answer": null,
+      "missing_facts": [
+        "The literary form of the described original Under the Volcano."
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "Only one requested work is classified. A shared form cannot be established by importing knowledge about the other title.",
+      "citations": [
+        {
+          "doc_slot": 4,
+          "quote": "The described original version of Pietro di Donato's Christ in Concrete is a novel.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "This entry describes those same original versions, not stage adaptations.",
+          "role": "context"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "Christ in Concrete is a novel.",
+          "role": "support"
+        }
+      ]
+    },
+    {
+      "item_id": "E039",
+      "semantic_mode": "conflict",
+      "confidence": "high",
+      "required_facts": [
+        "A ranking of individual people on Instagram, excluding organisation accounts.",
+        "The specified time June 2018.",
+        "The unique first-place person in that ranking."
+      ],
+      "support_chain": [
+        "Document 3 names Selena Gomez the unique first-place individual in the June 2018 Instagram ranking.",
+        "Document 4 explicitly identifies the same ranking and single first place.",
+        "It names Cristiano Ronaldo, a different person, as the unique first-place individual and denies Selena Gomez was first.",
+        "The two unique-winner claims are incompatible."
+      ],
+      "supported_answer": null,
+      "missing_facts": [],
+      "conflicting_claims": [
+        "Same June 2018 individual-person ranking: Selena Gomez uniquely first in document 3; Cristiano Ronaldo uniquely first and Selena Gomez not first in document 4."
+      ],
+      "resolution_basis": "The explicit same-ranking, time and individual-person scope exclude a date or organisation-account explanation. No correction or source priority is supplied.",
+      "rationale": "These are mutually exclusive first-place claims about different people, not a ranking of all accounts versus a ranking of individuals.",
+      "citations": [
+        {
+          "doc_slot": 3,
+          "quote": "Selena Gomez was the unique most-followed individual person in that ranking.",
+          "role": "conflict"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "This is the same June 2018 Instagram ranking of individual people, with a single first place.",
+          "role": "premise"
+        },
+        {
+          "doc_slot": 4,
+          "quote": "Cristiano Ronaldo, a different person, was the unique most-followed individual person in that ranking; Selena Gomez was not first.",
+          "role": "conflict"
+        }
+      ]
+    },
+    {
+      "item_id": "E040",
+      "semantic_mode": "refuse",
+      "confidence": "high",
+      "required_facts": [
+        "The dog-versus-cat category of the English White Terrier.",
+        "The dog-versus-cat category of the Boykin Spaniel.",
+        "A consistent category shared by both named breeds."
+      ],
+      "support_chain": [
+        "Documents 2 and 5 explicitly classify English White Terrier as dog.",
+        "The remaining breed descriptions concern Coton de Tuléar, Bull Terrier, English Water Spaniel, Miniature Fox Terrier, Jack Russell Terrier and Whippet.",
+        "None supplies Boykin Spaniel's category, so the shared classification is unsupported."
+      ],
+      "supported_answer": null,
+      "missing_facts": [
+        "The animal category of the Boykin Spaniel."
+      ],
+      "conflicting_claims": [],
+      "resolution_basis": "not_applicable",
+      "rationale": "The name in the question is not evidence for Boykin Spaniel being a dog. All five documents lack the necessary Boykin classification; no relevant incompatibility is asserted.",
+      "citations": [
+        {
+          "doc_slot": 2,
+          "quote": "The English White Terrier is described as a breed of dog.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "This animal description identifies the English White Terrier as a breed of dog.",
+          "role": "support"
+        },
+        {
+          "doc_slot": 5,
+          "quote": "The English Water Spaniel description discusses waterfowl and a curly coat.",
+          "role": "context"
+        }
+      ]
+    }
+  ]
+}

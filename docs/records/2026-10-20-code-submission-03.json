@@ -1,0 +1,88 @@
+{
+  "recorded_at": "2026-10-20T16:35:42.564176+08:00",
+  "user_authorization": "做好记录，提交推送到远端",
+  "parent_commit": "abb8c2473211a993cbd9ead27fed64bc17f9b546",
+  "branch": "main",
+  "remote": "origin",
+  "remote_main_before_submission": "abb8c2473211a993cbd9ead27fed64bc17f9b546",
+  "submission_identity": "The Git commit containing this record; actual push and remote HEAD equality are checked after commit and reported in the user reply.",
+  "scopes": [
+    "support_expression_50_plus_12_verified",
+    "controlled_40_background_exposed_separate_input_behavior_review",
+    "frozen_30_base_cross_expression_design",
+    "v1_retained_and_v2_cpu_material_preparation"
+  ],
+  "support_expression": {
+    "full": 50,
+    "new_full": 40,
+    "reused_full": 10,
+    "smoke": 12,
+    "answers": 0,
+    "all_nine_contrasts_label_flips": 0,
+    "details": "docs/records/2026-10-20-probe-support-expression-verified.json"
+  },
+  "controlled_review": {
+    "input_rows": 40,
+    "behavior_rows": 40,
+    "history_blind_independent_confirmation": 0,
+    "old_conflict_selection": 7,
+    "supplemental_conflict_selection": 8,
+    "conflict_denominator": 10,
+    "old_ratings_retained": true,
+    "details": "docs/records/2026-10-20-controlled-semantic-transfer-review.json"
+  },
+  "current_materials": {
+    "run": "runs/qwen2.5-3b-semantic-transfer-materials-v2",
+    "planned_cells": 240,
+    "constructed_cells": 168,
+    "unavailable_cells": 72,
+    "construction_coverage": 0.7,
+    "constructed_train_dev_eval": [
+      72,
+      40,
+      56
+    ],
+    "independent_semantic_labels": 0,
+    "review_gate_passed": false,
+    "gpu_forwards": 0,
+    "answers": 0,
+    "fits": 0,
+    "details": "docs/records/2026-10-20-semantic-transfer-materials-preparation.json"
+  },
+  "tests": {
+    "passed": 22,
+    "elapsed_seconds": 28.987,
+    "new_material_tests": 12,
+    "previous_transfer_review_and_design_tests": 10,
+    "original_full120_rerun": false
+  },
+  "test_log_sha256": "11cf6ec80fda4d81ec6eb5001af1784dfbe69f4d6faca7009924e89c152f43a0",
+  "test_code_sha256": {
+    "tests/test_controlled_semantic_transfer_review.py": "1c7c9ea6c8dcdb4d2e38313bdc2b5ed44b25310f9c717d14ed1331ff92f93ce0",
+    "tests/test_semantic_transfer_materials.py": "f0b321b5e7975310ce4c52a4b6b7bab3d3d0a39e514132a9331a168922bf3ac0",
+    "tests/test_semantic_transfer_materials_v2.py": "f2e87a88121ef304bf0492a034147b5f4d22a64829dcbd5d355fc1d4f11005fa",
+    "tests/test_semantic_transfer_validation_design.py": "8d96bd8405bf84209ccfbfe9f0bf173b32b6ac61e89855855f1b831995774d34"
+  },
+  "precommit_verification": {
+    "artifact_and_frozen_source_hash_checks": 195,
+    "python_ast_and_json": true,
+    "each_changed_file_less_than_1MiB": true,
+    "broad_120_tests_rerun": false,
+    "csv_line_ending_normalization": {
+      "files": [
+        "docs/records/2026-10-20-probe-support-expression-cells.csv",
+        "docs/records/2026-10-20-probe-support-expression-pairs.csv"
+      ],
+      "change": "CRLF to LF in tracked summary copies only",
+      "parsed_rows_unchanged": true,
+      "run_artifacts_unchanged": true
+    }
+  },
+  "unchanged_limits": [
+    "380 original test bases sealed",
+    "Published-label 80.67% result unchanged in its original scope",
+    "No retraining, calibration, new GPU or causal intervention in this submission",
+    "Author intent is not gold; no inference of internal recognition from conflict readout"
+  ],
+  "storage": "Tracked lightweight code/specs/ratings/summaries/citations/hashes only; ignored runs retain complete packets, outputs and arrays locally. No model weights or credentials included."
+}
