@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "method": "Independent reconstruction from original probabilities, materials, coordinator mapping and sealed manual codes; base means resampled separately from paired-analysis implementation.",
+  "pairs_checked": 180,
+  "probability_deltas_checked": 540,
+  "behavior_endpoint_fields_checked": 2520,
+  "input_token_deltas_checked": 180,
+  "reference_eligible": 174,
+  "all_constructed": {
+    "S_to_I": {
+      "pairs": 60,
+      "bases": 30,
+      "mean_delta": 0.18075403915699628,
+      "bootstrap_95": [
+        0.09709266860029579,
+        0.27571696113527405
+      ],
+      "increase": 53,
+      "class_change": 24,
+      "target_behavior": {
+        "yes": 23,
+        "no": 37
+      },
+      "increase_and_target_behavior": {
+        "no": 41,
+        "yes": 19
+      }
+    },
+    "S_to_C": {
+      "pairs": 60,
+      "bases": 30,
+      "mean_delta": 0.20838950011593255,
+      "bootstrap_95": [
+        0.14747235715878967,
+        0.26909025031499806
+      ],
+      "increase": 54,
+      "class_change": 15,
+      "target_behavior": {
+        "yes": 37,
+        "unknown": 6,
+        "no": 17
+      },
+      "increase_and_target_behavior": {
+        "yes": 34,
+        "no": 21,
+        "unknown": 5
+      }
+    },
+    "S_to_K": {
+      "pairs": 60,
+      "bases": 30,
+      "mean_delta": -0.058652634549724456,
+      "bootstrap_95": [
+        -0.11622582369011142,
+        -0.0012368774178266298
+      ],
+      "increase": 18,
+      "class_change": 8,
+      "target_behavior": {
+        "no": 53,
+        "yes": 7
+      },
+      "increase_and_target_behavior": {
+        "no": 60
+      }
+    }
+  },
+  "preserved_paths": 885,
+  "original_run_files": 495,
+  "no_new_labels": true,
+  "no_gpu": true
+}

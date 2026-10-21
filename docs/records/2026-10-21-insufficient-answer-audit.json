@@ -1,0 +1,1781 @@
+{
+  "status": "posthoc_insufficient_answer_audit_complete",
+  "history_exposed": true,
+  "independent_gold": false,
+  "approved_for_training": false,
+  "formal_labels_added": 0,
+  "original_judgments_overwritten": false,
+  "new_descriptive_case_codings": 23,
+  "new_gpu_calls": 0,
+  "new_answers": 0,
+  "new_fits": 0,
+  "remaining_original_design_fits": 0,
+  "source_insufficient_rows": 60,
+  "selected_outputs": 23,
+  "selected_bases": 13,
+  "primary_pattern_counts": {
+    "fact_reassignment": 8,
+    "unsupported_relation_promotion": 9,
+    "absent_answer_value": 6
+  },
+  "interpretation_boundary_counts": {
+    "none_identified": 15,
+    "category_inference": 2,
+    "overview_scope": 2,
+    "lexical_semantics": 2,
+    "cause_vs_modifier": 1,
+    "referent_ambiguity": 1
+  },
+  "acknowledgment_alignment_counts": {
+    "none": 18,
+    "relevant_missing_relation": 4,
+    "wrong_target": 1
+  },
+  "attribution_counts": {
+    "named_document_not_supporting_requested_relation": 10,
+    "descriptive_inference": 4,
+    "general_document_attribution": 4,
+    "none": 4,
+    "explicit_external_framing": 1
+  },
+  "input_citations": 76,
+  "output_citations": 23,
+  "critical_output_citations": 23,
+  "input_document_slots": 230,
+  "unique_input_documents": 121,
+  "preserved_original_paths": 901,
+  "preserved_fit_sealed_files": 12,
+  "source_sha256": {
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/behavior_review/packet.json": "79540160969ba0e63ea5181c94273b521c0d2ec9497fdb43b364524585ef0e06",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/coordinator/behavior_mapping.json": "2c240667de493bffce4fa96c850d226a1d22047760b7fd1eee75b6ead9686f16",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/predictions.json": "ed95ebe4e04b351a66b85ac275c86dda7f16044ea542e11cfe3bf9e489a02cf9",
+    "docs/records/2026-10-21-semantic-transfer-exploratory-behavior-cells.csv": "2e7ae1ba760c383539d61cf97611ef54fac4b08666000e5d2ca77860f3f639fe",
+    "docs/records/2026-10-21-semantic-transfer-exploratory-behavior-ratings.json": "fdb0c89c9f38025a07c09a3b964ff6395e5c0a6e28fde47c78f243cea788d862",
+    "docs/records/2026-10-21-insufficient-answer-audit-manual.json": "b67a3565fb06293d5a261fc3aee958337b3d8e84512c0219f0315301084108cd",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/approved_labels.json": "d4bd330366ae40fb51a7980e99bfbcf8398a76e0c074c8ea25c4f45cedbb7eca",
+    "docs/records/2026-10-21-semantic-transfer-exploratory-retrain-fit-seal.json": "7ca22b01581746cd33a88989123be97aab7711b07e835453623792b378d6e88d",
+    "scripts/semantic_transfer_insufficient_answer_audit.py": "b7a4afa2a23382b04cf8bd6f3447ec8f0a62849c0f10cf7955fc9789a657d8b9"
+  },
+  "interpretation": "Selected outputs only; counts do not estimate all insufficient cases or population prevalence. Descriptive pattern is not causal provenance. New interpretation boundaries do not silently revise old input/behavior labels; none_identified is not independent semantic confirmation. S answers are retained even if they refused. No parametric-memory, external-world truth or probe-mechanism conclusions.",
+  "cases": [
+    {
+      "id": "stv02_A_I",
+      "primary_pattern": "fact_reassignment",
+      "boundary": "none_identified",
+      "required_fact": "Mont Saint-Jean对应的通常战役名称，而非重复题中已给的法方名称。",
+      "supplied_facts": "法方称Mont Saint-Jean，战场在同名山脊；缺少与Waterloo的名称对应。",
+      "unsupported_claim": "用Battle of Mont Saint-Jean回答通常名称。",
+      "assessment": "D1和D3支持题中名称及地理位置，不能补出所问的另一名称；这里首先是代答已给信息，非补出一个未知新词。",
+      "i_document_indices": [
+        1,
+        3
+      ],
+      "s_document_indices": [
+        1
+      ],
+      "critical_output_quote": "We know this battle as the Battle of Mont Saint-Jean",
+      "acknowledgment_alignment": "none",
+      "attribution": "named_document_not_supporting_requested_relation",
+      "new_value": null,
+      "item_id": "B081",
+      "original_id": "train_150",
+      "partition": "semantic_train",
+      "expression": "A",
+      "question": "Napoleon called this the Battle of Mont Saint Jean, by what name do we know it?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "把题中已给的法方名称当通常名称作答，未提供所问别名依据。",
+      "output": "We know this battle as the Battle of Mont Saint-Jean, as stated in Document 1. This name is also used in Document 3, which confirms it was fought along the Mont Saint-Jean ridge. There is no conflicting information provided in the documents.",
+      "s_id": "stv02_A_S",
+      "s_output": "We know the battle by the name of Waterloo, as stated in Document 1 that the Battle of Mont Saint-Jean is called the Battle of Waterloo by Napoleon.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 80,
+          "quote": "Napoleon and the French called the military clash the Battle of Mont Saint-Jean.",
+          "text_sha256": "d3f5b8576f95a5b586cc60dbc70b2a860a053e5fd3e7883cfa4cec62b6a5c9bb",
+          "document_index": 1,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 55,
+          "quote": "That battle was fought along the Mont Saint-Jean ridge.",
+          "text_sha256": "05ab6f3b7ce461864b4767ff79d2d69a4d2340518765726dc2575c91f31e76aa",
+          "document_index": 3,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 118,
+          "quote": "The military clash called the Battle of Mont Saint-Jean by Napoleon and the French is known as the Battle of Waterloo.",
+          "text_sha256": "42875490c7c67b5ea162aa456fb569c7edcb91f93655c0c3835a52b2f47d5077",
+          "document_index": 1,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 241,
+        "quote": "We know this battle as the Battle of Mont Saint-Jean, as stated in Document 1. This name is also used in Document 3, which confirms it was fought along the Mont Saint-Jean ridge. There is no conflicting information provided in the documents.",
+        "text_sha256": "32b4d960592b66f5a43ba5006867a26c950be0f92e62689548d9ad45c529b7fe"
+      },
+      "critical_output_citation": {
+        "start": 0,
+        "end": 52,
+        "quote": "We know this battle as the Battle of Mont Saint-Jean",
+        "text_sha256": "32b4d960592b66f5a43ba5006867a26c950be0f92e62689548d9ad45c529b7fe"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv02_B_I",
+      "primary_pattern": "fact_reassignment",
+      "boundary": "none_identified",
+      "required_fact": "Mont Saint-Jean的通常战役名称对应。",
+      "supplied_facts": "法方名称与山脊，未给通常名称。",
+      "unsupported_claim": "仍以Mont Saint-Jean代答。",
+      "assessment": "D1被准确用来复述法方名称，却没有满足问题要求的名称转换。",
+      "i_document_indices": [
+        1,
+        3
+      ],
+      "s_document_indices": [
+        1
+      ],
+      "critical_output_quote": "We know this battle as the Battle of Mont Saint-Jean",
+      "acknowledgment_alignment": "none",
+      "attribution": "named_document_not_supporting_requested_relation",
+      "new_value": null,
+      "item_id": "B229",
+      "original_id": "train_150",
+      "partition": "semantic_train",
+      "expression": "B",
+      "question": "Napoleon called this the Battle of Mont Saint Jean, by what name do we know it?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "拿已给法方名称Mont Saint-Jean代答通常别名，所问Waterloo关系未给。",
+      "output": "We know this battle as the Battle of Mont Saint-Jean, as stated in Document 1.",
+      "s_id": "stv02_B_S",
+      "s_output": "We know it as the Battle of Waterloo, as stated in Document 3 that Mont Saint-Jean and Waterloo are two names for the same military encounter.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 76,
+          "quote": "The name Napoleon and the French used for the encounter was Mont Saint-Jean.",
+          "text_sha256": "f2212a2c50cf246a5ed0e0ee088d99f2877881f84707eb342e7cfa678c4733f3",
+          "document_index": 1,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 70,
+          "quote": "The battlefield of that encounter lay along the Mont Saint-Jean ridge.",
+          "text_sha256": "ee8ce920775e151797de109f38c9242a463a17791caaf3fea383ebc6630f25b3",
+          "document_index": 3,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 93,
+          "quote": "Waterloo is the usual name of the battle that Napoleon and the French called Mont Saint-Jean.",
+          "text_sha256": "3b2462ba5321dac2a4e1fc2900b7c1b48b6981ad12d064100754b7986e01562e",
+          "document_index": 1,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 78,
+        "quote": "We know this battle as the Battle of Mont Saint-Jean, as stated in Document 1.",
+        "text_sha256": "42eb89ced2b28db3283fadcdab675a50460b091af1ab807835b7bc548c13de14"
+      },
+      "critical_output_citation": {
+        "start": 0,
+        "end": 52,
+        "quote": "We know this battle as the Battle of Mont Saint-Jean",
+        "text_sha256": "42eb89ced2b28db3283fadcdab675a50460b091af1ab807835b7bc548c13de14"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv03_A_I",
+      "primary_pattern": "unsupported_relation_promotion",
+      "boundary": "none_identified",
+      "required_fact": "Irrawaddy/Ayeyarwady具有Burma chief/principal river地位。",
+      "supplied_facts": "Irrawaddy是Myanmar的一条河，Ayeyarwady为别名。",
+      "unsupported_claim": "将Irrawaddy称为chief river。",
+      "assessment": "D4只有名称别名关系，没有主要河流地位；候选名出现不能替代所问属性。",
+      "i_document_indices": [
+        1,
+        4
+      ],
+      "s_document_indices": [
+        4
+      ],
+      "critical_output_quote": "The chief river of Burma is the Irrawaddy or Ayeyarwady",
+      "acknowledgment_alignment": "none",
+      "attribution": "named_document_not_supporting_requested_relation",
+      "new_value": null,
+      "item_id": "B191",
+      "original_id": "train_1661",
+      "partition": "semantic_train",
+      "expression": "A",
+      "question": "What is the chief river of Burma ?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "从存在及别名推断chief地位，缺主要河流关系仍作答。",
+      "output": "The chief river of Burma is the Irrawaddy or Ayeyarwady, as mentioned in Document 4.",
+      "s_id": "stv03_A_S",
+      "s_output": "The chief river of Burma is the Irrawaddy or Ayeyarwady, as stated in Document 4.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 52,
+          "quote": "The Irrawaddy is a river of Myanmar, formerly Burma.",
+          "text_sha256": "a024fbd70f224338158eef822f55312f541f00ce4894f46af1dc1bb3254750ec",
+          "document_index": 1,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 51,
+          "quote": "That river is known as the Irrawaddy or Ayeyarwady.",
+          "text_sha256": "7ffa76d2722785fe5d4dd8dc79dc7cb7024fbbec8a04e84199cbf13a266a716c",
+          "document_index": 4,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 70,
+          "quote": "The river known as the Irrawaddy or Ayeyarwady is Burma's chief river.",
+          "text_sha256": "d17137f455999306db2e7f46f7fcfb1c60352828da2e9b4bdcc3d6b9f6f85c90",
+          "document_index": 4,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 84,
+        "quote": "The chief river of Burma is the Irrawaddy or Ayeyarwady, as mentioned in Document 4.",
+        "text_sha256": "72599510bf69fe216cc52b9a14ddfd6b723bd910b0e875128a31ee963e67489b"
+      },
+      "critical_output_citation": {
+        "start": 0,
+        "end": 55,
+        "quote": "The chief river of Burma is the Irrawaddy or Ayeyarwady",
+        "text_sha256": "72599510bf69fe216cc52b9a14ddfd6b723bd910b0e875128a31ee963e67489b"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv03_B_I",
+      "primary_pattern": "unsupported_relation_promotion",
+      "boundary": "none_identified",
+      "required_fact": "候选河流具有chief river地位。",
+      "supplied_facts": "Myanmar有该河，两名字指同一条河。",
+      "unsupported_claim": "将存在和别名两条文本称为chief地位的依据。",
+      "assessment": "两段引文原文确实存在，仍未蕴含chief；引文匹配与主张有据需要分开。",
+      "i_document_indices": [
+        1,
+        4
+      ],
+      "s_document_indices": [
+        4
+      ],
+      "critical_output_quote": "The chief river of Burma is the Irrawaddy",
+      "acknowledgment_alignment": "none",
+      "attribution": "named_document_not_supporting_requested_relation",
+      "new_value": null,
+      "item_id": "B084",
+      "original_id": "train_1661",
+      "partition": "semantic_train",
+      "expression": "B",
+      "question": "What is the chief river of Burma ?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "给Irrawaddy为chief，但存在及别名不能推出chief地位。",
+      "output": "The chief river of Burma is the Irrawaddy, also known as the Ayeyarwady. This is evident from Document 1 stating \"Myanmar, formerly Burma, has a river called the Irrawaddy\" and Document 4 noting \"Irrawaddy and Ayeyarwady are names of that river.\"",
+      "s_id": "stv03_B_S",
+      "s_output": "The chief river of Burma is the Irrawaddy, also known as the Ayeyarwady. This is indicated by Document 4 stating \"Burma's chief river goes by the names Irrawaddy and Ayeyarwady.\"",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 58,
+          "quote": "Myanmar, formerly Burma, has a river called the Irrawaddy.",
+          "text_sha256": "98273c16553458603a690c736e59b642c71fe0dde8ed444486f45fbb60aa2b18",
+          "document_index": 1,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 49,
+          "quote": "Irrawaddy and Ayeyarwady are names of that river.",
+          "text_sha256": "3989507f64189f47002117718009a6c3615672c790ab7bdc5377e4775d947c40",
+          "document_index": 4,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 63,
+          "quote": "Burma's chief river goes by the names Irrawaddy and Ayeyarwady.",
+          "text_sha256": "72db44356498b55cc6ed792c91fcbf7018ce533a3967e48e3479666d5490857f",
+          "document_index": 4,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 246,
+        "quote": "The chief river of Burma is the Irrawaddy, also known as the Ayeyarwady. This is evident from Document 1 stating \"Myanmar, formerly Burma, has a river called the Irrawaddy\" and Document 4 noting \"Irrawaddy and Ayeyarwady are names of that river.\"",
+        "text_sha256": "27925740ca9c09e5393d016cd59930bbb4c8373bcda9b1e2829079cbe4ce8d06"
+      },
+      "critical_output_citation": {
+        "start": 0,
+        "end": 41,
+        "quote": "The chief river of Burma is the Irrawaddy",
+        "text_sha256": "27925740ca9c09e5393d016cd59930bbb4c8373bcda9b1e2829079cbe4ce8d06"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv04_A_I",
+      "primary_pattern": "fact_reassignment",
+      "boundary": "none_identified",
+      "required_fact": "Luoding和Dingzhou各自的位置。",
+      "supplied_facts": "Luoding为县级市；Dingzhou在Hebei、northern China。",
+      "unsupported_claim": "Luoding位于Hebei Province, northern China。",
+      "assessment": "Hebei位置关系属于Dingzhou；输出将其赋给Luoding，并未完整回答两个城市。",
+      "i_document_indices": [
+        1,
+        5
+      ],
+      "s_document_indices": [
+        1
+      ],
+      "critical_output_quote": "Luoding is located in China, specifically in Hebei Province, northern China",
+      "acknowledgment_alignment": "none",
+      "attribution": "named_document_not_supporting_requested_relation",
+      "new_value": null,
+      "item_id": "B234",
+      "original_id": "train_1179",
+      "partition": "semantic_train",
+      "expression": "A",
+      "question": "Where are Luoding and Dingzhou located?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "把Dingzhou的Hebei位置套给Luoding，Luoding位置关系实际缺失，仍具体作答且漏答Dingzhou。",
+      "output": "Luoding is located in China, specifically in Hebei Province, northern China, based on the information provided in Document 1 and Document 5.",
+      "s_id": "stv04_A_S",
+      "s_output": "Luoding is located in western Guangdong, China, and Dingzhou is located in Hebei Province, which is in northern China.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 31,
+          "quote": "Luoding is a county-level city.",
+          "text_sha256": "2746a1fda3c29ab34d64f8656920f9b3118a787fcb4f4a17bf89b6a86c671865",
+          "document_index": 1,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 55,
+          "quote": "Dingzhou is a city in Hebei Province in northern China.",
+          "text_sha256": "e921e4d85e6954bef0c9e3cfdd11e788f53e0b2e89bdb3ebc473f8bd5ff6696a",
+          "document_index": 5,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 59,
+          "quote": "Luoding is a county-level city in western Guangdong, China.",
+          "text_sha256": "8d7e1392c3f1512910799dd12e33010a39ebe1126aff76c443f13ac1fcdd0a3c",
+          "document_index": 1,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 140,
+        "quote": "Luoding is located in China, specifically in Hebei Province, northern China, based on the information provided in Document 1 and Document 5.",
+        "text_sha256": "a6c3c17e961dc52a4b17084089c9e2d1264f38d2387bb5e1707d753f08514953"
+      },
+      "critical_output_citation": {
+        "start": 0,
+        "end": 75,
+        "quote": "Luoding is located in China, specifically in Hebei Province, northern China",
+        "text_sha256": "a6c3c17e961dc52a4b17084089c9e2d1264f38d2387bb5e1707d753f08514953"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv05_A_I",
+      "primary_pattern": "unsupported_relation_promotion",
+      "boundary": "category_inference",
+      "required_fact": "Khet与Quarto同为board games的分类关系。",
+      "supplied_facts": "Khet是chess-like、涉及激光与抽象策略；Quarto明确为board game；背景还出现其他board games。",
+      "unsupported_claim": "由Khet的描述推成board game。",
+      "assessment": "缺少显式Khet→board game，但chess-like与问题games语境会支持常识分类推导；本条不能仅因删除board就认定无歧义真缺证。S输出也错误拒答，不能假定补回必然修复。",
+      "i_document_indices": [
+        2,
+        3
+      ],
+      "s_document_indices": [
+        2
+      ],
+      "critical_output_quote": "Khet is a board game",
+      "acknowledgment_alignment": "none",
+      "attribution": "descriptive_inference",
+      "new_value": null,
+      "item_id": "B222",
+      "original_id": "train_1333",
+      "partition": "semantic_train",
+      "expression": "A",
+      "question": "Khet and Quarto, are games of what type?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "从chess-like/lasers推Khet board game，缺分类桥接仍具体作答。",
+      "output": "Khet is a board game as it is described to use chess-like rules and lasers, while Quarto is explicitly stated to be a board game for two players. Therefore, Khet and Quarto are both board games.",
+      "s_id": "stv05_A_S",
+      "s_output": "The documents do not provide any information about the type of games Khet and Quarto are. There is a conflict with the given information.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 64,
+          "quote": "Khet is chess-like, uses lasers, and involves abstract strategy.",
+          "text_sha256": "1fee3d7832d051a2a7c269bd7d40c03151557271f11a3bedd9599627c0a0a545",
+          "document_index": 2,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 66,
+          "quote": "Quarto is a board game for two players, invented by Blaise Müller.",
+          "text_sha256": "b6664b80b50f595d0e4a705de571e152cd9c501ffce6ddeab667cdd95e6caab7",
+          "document_index": 3,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 63,
+          "quote": "Khet is a chess-like abstract strategy board game using lasers.",
+          "text_sha256": "bc01dc987152c9c0740815abc3f499ed659ac483257d4b1554b65c88a4966d39",
+          "document_index": 2,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 194,
+        "quote": "Khet is a board game as it is described to use chess-like rules and lasers, while Quarto is explicitly stated to be a board game for two players. Therefore, Khet and Quarto are both board games.",
+        "text_sha256": "584673b0f21c8b91218716f9f7a2ff7f400941b9de9a02821ae28b85e042f6d3"
+      },
+      "critical_output_citation": {
+        "start": 0,
+        "end": 20,
+        "quote": "Khet is a board game",
+        "text_sha256": "584673b0f21c8b91218716f9f7a2ff7f400941b9de9a02821ae28b85e042f6d3"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv05_B_I",
+      "primary_pattern": "unsupported_relation_promotion",
+      "boundary": "category_inference",
+      "required_fact": "Khet的board-game分类及与Quarto共同类型。",
+      "supplied_facts": "Khet为chess-like且涉及lasers/abstract strategy；Quarto为board game。",
+      "unsupported_claim": "先将Khet定为board game，结尾又分别给abstract strategy和board game。",
+      "assessment": "同A存在常识分类边界，同时完整回答共同类型的程度有限；不将作者refuse当独立确定真值。S同样拒答，不作成功对照挑选。",
+      "i_document_indices": [
+        2,
+        3
+      ],
+      "s_document_indices": [
+        2
+      ],
+      "critical_output_quote": "Khet is a board game",
+      "acknowledgment_alignment": "none",
+      "attribution": "descriptive_inference",
+      "new_value": null,
+      "item_id": "B195",
+      "original_id": "train_1333",
+      "partition": "semantic_train",
+      "expression": "B",
+      "question": "Khet and Quarto, are games of what type?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "具体给Khet为board game但仅有激光策略chess-like，缺类别关系仍作答。",
+      "output": "Khet is a board game involving lasers and abstract strategy, while Quarto is a board game played as a board game by two people. Therefore, Khet is an abstract strategy game and Quarto is a board game.",
+      "s_id": "stv05_B_S",
+      "s_output": "The documents do not provide information about the type of games Khet and Quarto are. There is no information about Khet, and Quarto is described as a board game but its type is not specified.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 71,
+          "quote": "Lasers and abstract strategy are involved in Khet, which is chess-like.",
+          "text_sha256": "ca98c3f70469abd5e7c3d16156d4025a35cf2ad54aa859066e650c83e49b77c3",
+          "document_index": 2,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 77,
+          "quote": "Blaise Müller invented Quarto, which is played as a board game by two people.",
+          "text_sha256": "073b80231f4a6e9f3b765924c4dec32a5187f498d7f202d414cfd1b37554e92a",
+          "document_index": 3,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 84,
+          "quote": "Lasers are used in Khet, a chess-like board game in the abstract strategy tradition.",
+          "text_sha256": "f333d290c9c43c312e69dd0d60fb81fdd82dc631c8e87370f72ba21a66a39cbf",
+          "document_index": 2,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 200,
+        "quote": "Khet is a board game involving lasers and abstract strategy, while Quarto is a board game played as a board game by two people. Therefore, Khet is an abstract strategy game and Quarto is a board game.",
+        "text_sha256": "d1985e4936302e722ea3c08f6dd4188a7a00977cc5f15b05aedc9035640e5566"
+      },
+      "critical_output_citation": {
+        "start": 0,
+        "end": 20,
+        "quote": "Khet is a board game",
+        "text_sha256": "d1985e4936302e722ea3c08f6dd4188a7a00977cc5f15b05aedc9035640e5566"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv08_A_I",
+      "primary_pattern": "unsupported_relation_promotion",
+      "boundary": "overview_scope",
+      "required_fact": "指定series overview记载的总季数，区别于文档中可数的单季条目。",
+      "supplied_facts": "有Season 2和Season 4背景条目；overview只说记录seasons，没有总数。",
+      "unsupported_claim": "将two个背景条目当overview总数。",
+      "assessment": "回答可从背景数出two，但问题how many seasons ... are listed也允许读成当前可见列项数；预期overview总量与表面列项计数需在新设计中区分。",
+      "i_document_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "s_document_indices": [
+        3
+      ],
+      "critical_output_quote": "two seasons of RuPaul's Drag Race are listed",
+      "acknowledgment_alignment": "none",
+      "attribution": "general_document_attribution",
+      "new_value": null,
+      "item_id": "B053",
+      "original_id": "train_1430",
+      "partition": "semantic_train",
+      "expression": "A",
+      "question": "According to the series overview in these documents, how many seasons of RuPaul's Drag Race are listed?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "从两个单季背景推断overview总数two，未给overview总数且单季列表不能支持该总数。",
+      "output": "According to the series overview provided in these documents, two seasons of RuPaul's Drag Race are listed: Season 2 from 2010 and Season 4 from 2012.",
+      "s_id": "stv08_A_S",
+      "s_output": "According to the series overview provided in these documents, ten seasons of RuPaul's Drag Race are listed.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 322,
+          "quote": "RuPaul 's Drag Race Season 4 Broadcast from January 30 ( 2012 - 01 - 30 ) -- April 30 , 2012 ( 2012 - 04 - 30 ) Judges RuPaul Michelle Visage Santino Rice Billy B Host ( s ) RuPaul Broadcaster Logo Competitors 13 Winner Sharon Needles Origin Pittsburgh , PA Runner - up Chad Michaels Phi Phi O'Hara Chronology ◀ Season 4 ▶",
+          "text_sha256": "3f93132bd2c81c38bfc1d59ba34b115bced09158f8e1b4c81297c0ceb22fe650",
+          "document_index": 1,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 290,
+          "quote": "RuPaul 's Drag Race Season 2 Broadcast from February 1 ( 2010 - 02 - 01 ) -- April 26 , 2010 ( 2010 - 04 - 26 ) Judges RuPaul Santino Rice Merle Ginsberg Host ( s ) RuPaul Broadcaster Logo Competitors 12 Winner Tyra Sanchez Origin Orlando , Florida Runner - up Raven Chronology ◀ Season 2 ▶",
+          "text_sha256": "f321b836720b75547de8af9f2af56a4ff02e4c7121626b2ca9e604ed8cf0fc4b",
+          "document_index": 2,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 62,
+          "quote": "The supplied overview describes the series RuPaul's Drag Race.",
+          "text_sha256": "5cce1f2edaf43e7eccd43861c3686e85c6b40a139168f14b33a9af9ebf002786",
+          "document_index": 3,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 78,
+          "quote": "That RuPaul's Drag Race overview records information about the show's seasons.",
+          "text_sha256": "9f2a77e8ac77851b8e86a2421f580b91dc017a053573e2cd31f7420b3deda872",
+          "document_index": 4,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 62,
+          "quote": "The supplied overview of RuPaul's Drag Race lists ten seasons.",
+          "text_sha256": "db2a1dd24bb0bb11fcea42f46235fc1bd75cfc7ed0584ef2be84d49bbe875ab1",
+          "document_index": 3,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 150,
+        "quote": "According to the series overview provided in these documents, two seasons of RuPaul's Drag Race are listed: Season 2 from 2010 and Season 4 from 2012.",
+        "text_sha256": "5837ea228b689f2da5f0a897778ffaa5be3a0b0fd3a4e0bb79c1bb7c33ba441a"
+      },
+      "critical_output_citation": {
+        "start": 62,
+        "end": 106,
+        "quote": "two seasons of RuPaul's Drag Race are listed",
+        "text_sha256": "5837ea228b689f2da5f0a897778ffaa5be3a0b0fd3a4e0bb79c1bb7c33ba441a"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv08_B_I",
+      "primary_pattern": "unsupported_relation_promotion",
+      "boundary": "overview_scope",
+      "required_fact": "指定overview的总量而非可见两个背景条目的计数。",
+      "supplied_facts": "两个单季背景和不含总数的overview描述。",
+      "unsupported_claim": "回答two seasons。",
+      "assessment": "同A有计数范围边界；不能把可见背景计数不加说明地归为参数记忆或随机编造。",
+      "i_document_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "s_document_indices": [
+        3
+      ],
+      "critical_output_quote": "two seasons of RuPaul's Drag Race are listed",
+      "acknowledgment_alignment": "none",
+      "attribution": "general_document_attribution",
+      "new_value": null,
+      "item_id": "B078",
+      "original_id": "train_1430",
+      "partition": "semantic_train",
+      "expression": "B",
+      "question": "According to the series overview in these documents, how many seasons of RuPaul's Drag Race are listed?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "从两条单季背景得总数two，overview未提供总数，不足依据作答。",
+      "output": "According to the series overview provided in these documents, two seasons of RuPaul's Drag Race are listed: Season 2 from 2010 and Season 4 from 2012.",
+      "s_id": "stv08_B_S",
+      "s_output": "According to the series overview provided in these documents, RuPaul's Drag Race is listed as having a total of ten seasons.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 322,
+          "quote": "RuPaul 's Drag Race Season 4 Broadcast from January 30 ( 2012 - 01 - 30 ) -- April 30 , 2012 ( 2012 - 04 - 30 ) Judges RuPaul Michelle Visage Santino Rice Billy B Host ( s ) RuPaul Broadcaster Logo Competitors 13 Winner Sharon Needles Origin Pittsburgh , PA Runner - up Chad Michaels Phi Phi O'Hara Chronology ◀ Season 4 ▶",
+          "text_sha256": "3f93132bd2c81c38bfc1d59ba34b115bced09158f8e1b4c81297c0ceb22fe650",
+          "document_index": 1,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 290,
+          "quote": "RuPaul 's Drag Race Season 2 Broadcast from February 1 ( 2010 - 02 - 01 ) -- April 26 , 2010 ( 2010 - 04 - 26 ) Judges RuPaul Santino Rice Merle Ginsberg Host ( s ) RuPaul Broadcaster Logo Competitors 12 Winner Tyra Sanchez Origin Orlando , Florida Runner - up Raven Chronology ◀ Season 2 ▶",
+          "text_sha256": "f321b836720b75547de8af9f2af56a4ff02e4c7121626b2ca9e604ed8cf0fc4b",
+          "document_index": 2,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 68,
+          "quote": "RuPaul's Drag Race is the series described in the provided overview.",
+          "text_sha256": "faa54f80e713e416271ecd435ed7f91bd4528c38499ec70e35ad7b543a37e8e0",
+          "document_index": 3,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 66,
+          "quote": "Information about that show's seasons is recorded in the overview.",
+          "text_sha256": "f93f1c2958679f30a13128566a60901929a59cdcbe6e6aa680eb848ed739bffa",
+          "document_index": 4,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "Ten is the season total shown in the provided RuPaul's Drag Race series overview.",
+          "text_sha256": "076e0a6af85c0cc67851c0c5a0bb351f39ea2335a2c36eff153ec2c586699c3a",
+          "document_index": 3,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 150,
+        "quote": "According to the series overview provided in these documents, two seasons of RuPaul's Drag Race are listed: Season 2 from 2010 and Season 4 from 2012.",
+        "text_sha256": "5837ea228b689f2da5f0a897778ffaa5be3a0b0fd3a4e0bb79c1bb7c33ba441a"
+      },
+      "critical_output_citation": {
+        "start": 62,
+        "end": 106,
+        "quote": "two seasons of RuPaul's Drag Race are listed",
+        "text_sha256": "5837ea228b689f2da5f0a897778ffaa5be3a0b0fd3a4e0bb79c1bb7c33ba441a"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv09_A_I",
+      "primary_pattern": "fact_reassignment",
+      "boundary": "none_identified",
+      "required_fact": "Pretty Little Liars第二季集数。",
+      "supplied_facts": "D1为第一季22集；第二季只有身份和播出日期，其他背景还有不同季/剧集数。",
+      "unsupported_claim": "第二季22集，称来自第一文档。",
+      "assessment": "22可在文本中定位，但属于第一季；不是第二季计数证据。",
+      "i_document_indices": [
+        1,
+        3,
+        5
+      ],
+      "s_document_indices": [
+        3
+      ],
+      "critical_output_quote": "season 2 has 22 episodes",
+      "acknowledgment_alignment": "none",
+      "attribution": "named_document_not_supporting_requested_relation",
+      "new_value": null,
+      "item_id": "B144",
+      "original_id": "train_421",
+      "partition": "semantic_train",
+      "expression": "A",
+      "question": "How many episodes are in pretty little liars season 2?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "误取第一季22作第二季计数，第二季只给日期，依据不成立。",
+      "output": "Pretty Little Liars season 2 has 22 episodes as stated in the first document.",
+      "s_id": "stv09_A_S",
+      "s_output": "Pretty Little Liars season 2 contains 25 episodes, as stated in both Document 3 and Document 5, providing a clear and consistent answer.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 446,
+          "quote": "Pretty Little Liars ( season 1 ) Season 1 DVD cover Starring Troian Bellisario Ashley Benson Holly Marie Combs Lucy Hale Ian Harding Bianca Lawson Laura Leighton Chad Lowe Shay Mitchell Sasha Pieterse Country of origin United States No. of episodes 22 Release Original network ABC Family Original release June 8 , 2010 ( 2010 - 06 - 08 ) -- March 21 , 2011 ( 2011 - 03 - 21 ) Season chronology Next → Season 2 List of Pretty Little Liars episodes",
+          "text_sha256": "f30f8b6500f45457f990260e12b162ef0ee70ab565adf84012a698514adea33f",
+          "document_index": 1,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 65,
+          "quote": "The supplied account describes season two of Pretty Little Liars.",
+          "text_sha256": "2a17b2cf6d1cd4630a77f2fd166016773056d67c752194439172b8dad07d3ca8",
+          "document_index": 3,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 69,
+          "quote": "The original release of that season ran from June 2011 to March 2012.",
+          "text_sha256": "ef06ca77ed950fa2a7615b8b078288f229a5b9dc197943ba87bd8b9caa201643",
+          "document_index": 5,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 55,
+          "quote": "Season two of Pretty Little Liars contains 25 episodes.",
+          "text_sha256": "2074517568392357c8fe4beca80cc253ecb29845608017e068cc3b928944cfdf",
+          "document_index": 3,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 77,
+        "quote": "Pretty Little Liars season 2 has 22 episodes as stated in the first document.",
+        "text_sha256": "86880242293afd6fe0ecba2adec67178635ac7de188ad397b7d42efc1ffcdb87"
+      },
+      "critical_output_citation": {
+        "start": 20,
+        "end": 44,
+        "quote": "season 2 has 22 episodes",
+        "text_sha256": "86880242293afd6fe0ecba2adec67178635ac7de188ad397b7d42efc1ffcdb87"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv09_B_I",
+      "primary_pattern": "fact_reassignment",
+      "boundary": "none_identified",
+      "required_fact": "第二季的episode total。",
+      "supplied_facts": "第一季22集，第二季只给日期。",
+      "unsupported_claim": "second season has 22 episodes。",
+      "assessment": "Document 1确有22，但实体/季范围不对应。",
+      "i_document_indices": [
+        1,
+        3,
+        5
+      ],
+      "s_document_indices": [
+        3
+      ],
+      "critical_output_quote": "second season has 22 episodes",
+      "acknowledgment_alignment": "none",
+      "attribution": "named_document_not_supporting_requested_relation",
+      "new_value": null,
+      "item_id": "B014",
+      "original_id": "train_421",
+      "partition": "semantic_train",
+      "expression": "B",
+      "question": "How many episodes are in pretty little liars season 2?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "把第一季22集错用于第二季，给出确定数值但无第二季计数依据，未承认不足。",
+      "output": "Pretty Little Liars' second season has 22 episodes, as stated in Document 1.",
+      "s_id": "stv09_B_S",
+      "s_output": "Pretty Little Liars' second season has a total of 25 episodes, as stated in Document 3 and Document 5.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 446,
+          "quote": "Pretty Little Liars ( season 1 ) Season 1 DVD cover Starring Troian Bellisario Ashley Benson Holly Marie Combs Lucy Hale Ian Harding Bianca Lawson Laura Leighton Chad Lowe Shay Mitchell Sasha Pieterse Country of origin United States No. of episodes 22 Release Original network ABC Family Original release June 8 , 2010 ( 2010 - 06 - 08 ) -- March 21 , 2011 ( 2011 - 03 - 21 ) Season chronology Next → Season 2 List of Pretty Little Liars episodes",
+          "text_sha256": "f30f8b6500f45457f990260e12b162ef0ee70ab565adf84012a698514adea33f",
+          "document_index": 1,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 72,
+          "quote": "Pretty Little Liars' second season is described in the supplied account.",
+          "text_sha256": "91d1fa5492298ee2f3b2d45461e56d7a51f13617b218f6fdb469e6bf05b37ada",
+          "document_index": 3,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "That season originally ran from June 2011 through March 2012.",
+          "text_sha256": "38905bf13916d18f4863d5ba3b4f5458ca75d9417919a756316eeb6ea52b3c93",
+          "document_index": 5,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 62,
+          "quote": "Pretty Little Liars' second season has a total of 25 episodes.",
+          "text_sha256": "6940af0542632f23cdb817276739ed58a71a597d9c494d5b24199839ce66e265",
+          "document_index": 3,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 76,
+        "quote": "Pretty Little Liars' second season has 22 episodes, as stated in Document 1.",
+        "text_sha256": "e51cf4bf5d1b11b7555248f705957b95a552878e321ad67793a3b85130517f74"
+      },
+      "critical_output_citation": {
+        "start": 21,
+        "end": 50,
+        "quote": "second season has 22 episodes",
+        "text_sha256": "e51cf4bf5d1b11b7555248f705957b95a552878e321ad67793a3b85130517f74"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv11_A_I",
+      "primary_pattern": "absent_answer_value",
+      "boundary": "none_identified",
+      "required_fact": "Wham-O现代Hula Hoop市场首发年份。",
+      "supplied_facts": "市场引入和商业使用事件存在，没有年份。",
+      "unsupported_claim": "首发年份1963。",
+      "assessment": "1963在五篇I文档均未出现，输出仍将其与引入事件绑定。真实来源未知，不能区分记忆和生成错误；与S的1958不同也不额外查世界真值。",
+      "i_document_indices": [
+        1,
+        2
+      ],
+      "s_document_indices": [
+        1
+      ],
+      "critical_output_quote": "market debut in 1963",
+      "acknowledgment_alignment": "none",
+      "attribution": "general_document_attribution",
+      "new_value": "1963",
+      "item_id": "B157",
+      "original_id": "train_1136",
+      "partition": "semantic_train",
+      "expression": "A",
+      "question": "In what year did Wham-O's modern Hula Hoop make its market debut?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "明确1963，两个目标均未给年份，缺依据作答。",
+      "output": "Wham-O's modern Hula Hoop made its market debut in 1963, as indicated by the introduction of the modern Hula Hoop by Wham-O to the market.",
+      "s_id": "stv11_A_S",
+      "s_output": "Wham-O's modern Hula Hoop made its market debut in 1958, as stated in Document 1.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 53,
+          "quote": "Wham-O introduced its modern Hula Hoop to the market.",
+          "text_sha256": "8c1d84a3a3170fe50240d50f611c12a09fa111b8c687609ae62674823629b3a9",
+          "document_index": 1,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 43,
+          "quote": "Commercial use of Wham-O's Hula Hoop began.",
+          "text_sha256": "d4dbe2c0417288f594116e78cc28ca0f9e9bd48c6c0073465f6f5be8ac50fb3d",
+          "document_index": 2,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Wham-O introduced its modern Hula Hoop to the market in 1958.",
+          "text_sha256": "09ba5a374e8dd8133c061a01dfbc6dea074cec9354dd3e418569b152332fe85e",
+          "document_index": 1,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 138,
+        "quote": "Wham-O's modern Hula Hoop made its market debut in 1963, as indicated by the introduction of the modern Hula Hoop by Wham-O to the market.",
+        "text_sha256": "2c4163ebb2e0c6756ae9d92f6f4b20b4db6a03fcc719a62a8213da2d9fca487b"
+      },
+      "critical_output_citation": {
+        "start": 35,
+        "end": 55,
+        "quote": "market debut in 1963",
+        "text_sha256": "2c4163ebb2e0c6756ae9d92f6f4b20b4db6a03fcc719a62a8213da2d9fca487b"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv11_B_I",
+      "primary_pattern": "absent_answer_value",
+      "boundary": "none_identified",
+      "required_fact": "市场首发年份。",
+      "supplied_facts": "首发与commercial use均无年。",
+      "unsupported_claim": "1958，并称Document 1给出。",
+      "assessment": "五篇I文档均无1958；虽与S中年值相同，仍不能由答案吻合断言参数记忆来源。",
+      "i_document_indices": [
+        1,
+        2
+      ],
+      "s_document_indices": [
+        1
+      ],
+      "critical_output_quote": "market debut in 1958",
+      "acknowledgment_alignment": "none",
+      "attribution": "named_document_not_supporting_requested_relation",
+      "new_value": "1958",
+      "item_id": "B180",
+      "original_id": "train_1136",
+      "partition": "semantic_train",
+      "expression": "B",
+      "question": "In what year did Wham-O's modern Hula Hoop make its market debut?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "明确1958但文档1并无年份，引用不成立，缺依据作答。",
+      "output": "Wham-O's modern Hula Hoop made its market debut in 1958, as indicated in Document 1.",
+      "s_id": "stv11_B_S",
+      "s_output": "The market debut of Wham-O's modern Hula Hoop took place in 1958, as stated in Document 1.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 48,
+          "quote": "Wham-O's modern Hula Hoop made its market debut.",
+          "text_sha256": "62b488b04f60680ca8544184bf3f25999d6f6a5bbadc3a400d9cadaef60a8d77",
+          "document_index": 1,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 42,
+          "quote": "Wham-O's Hula Hoop entered commercial use.",
+          "text_sha256": "3241f56fe190fa222eaaf094e82ee1daca2043e8731528ada5b31373e08d73e3",
+          "document_index": 2,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 65,
+          "quote": "The market debut of Wham-O's modern Hula Hoop took place in 1958.",
+          "text_sha256": "1d4db47823ef2ece0aff20effb1dacb92a0e66228942f1b1746e1a9698a849d3",
+          "document_index": 1,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 84,
+        "quote": "Wham-O's modern Hula Hoop made its market debut in 1958, as indicated in Document 1.",
+        "text_sha256": "4c682b7fe1155873f5f88129767713d4e436f10179a85b2d615b052d893607fd"
+      },
+      "critical_output_citation": {
+        "start": 35,
+        "end": 55,
+        "quote": "market debut in 1958",
+        "text_sha256": "4c682b7fe1155873f5f88129767713d4e436f10179a85b2d615b052d893607fd"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv15_A_I",
+      "primary_pattern": "absent_answer_value",
+      "boundary": "lexical_semantics",
+      "required_fact": "ameliorate所表示的状态改善方向。",
+      "supplied_facts": "目标句只给bad/initially bad，未给better或improve。",
+      "unsupported_claim": "回答better。",
+      "assessment": "better未出现于五篇I文档，但问题直接使用有词义的ameliorate；通用语言理解与外部事实知识的边界无法由删去定义建立。这是新实验应排除的词义补全题。",
+      "i_document_indices": [
+        2,
+        3
+      ],
+      "s_document_indices": [
+        2
+      ],
+      "critical_output_quote": "better",
+      "acknowledgment_alignment": "none",
+      "attribution": "none",
+      "new_value": "better",
+      "item_id": "B225",
+      "original_id": "train_1064",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "question": "Ameliorate means to make something that was bad, what?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "明确better，但仅给初始bad状态，改善关系未提供。",
+      "output": "Ameliorate means to make something that was initially bad, better.",
+      "s_id": "stv15_A_S",
+      "s_output": "Ameliorate means to make something that was bad, better or improve it.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 50,
+          "quote": "The word ameliorate is used about a bad situation.",
+          "text_sha256": "324023800ca47c50b57f370d279e3351551fdb3de9c38c5d79113021d2e6f23c",
+          "document_index": 2,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 63,
+          "quote": "The verb ameliorate concerns conditions that are initially bad.",
+          "text_sha256": "4eacf44dc05eebd041c22470b2b0c7d40383e533fa5dee7e4ff33d997e9433b3",
+          "document_index": 3,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 65,
+          "quote": "To ameliorate a bad situation is to make it better or improve it.",
+          "text_sha256": "0085726ad758a1164b8462abc851ef5f15ac03276e7914ce59166c5f2f3a5723",
+          "document_index": 2,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 66,
+        "quote": "Ameliorate means to make something that was initially bad, better.",
+        "text_sha256": "2e4178a1da7a13aeb4c39636ecc1f688ef301a0766b2b482176e9982ca5aee39"
+      },
+      "critical_output_citation": {
+        "start": 59,
+        "end": 65,
+        "quote": "better",
+        "text_sha256": "2e4178a1da7a13aeb4c39636ecc1f688ef301a0766b2b482176e9982ca5aee39"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv15_B_I",
+      "primary_pattern": "absent_answer_value",
+      "boundary": "lexical_semantics",
+      "required_fact": "ameliorate使bad状态发生何种变化。",
+      "supplied_facts": "只说bad起点，但问题保留ameliorate词本身。",
+      "unsupported_claim": "回答better。",
+      "assessment": "同A，数值分类仅描述答案词未在提供文本出现，不能因此把基础词义回答当无歧义知识越界。",
+      "i_document_indices": [
+        2,
+        3
+      ],
+      "s_document_indices": [
+        2
+      ],
+      "critical_output_quote": "better",
+      "acknowledgment_alignment": "none",
+      "attribution": "none",
+      "new_value": "better",
+      "item_id": "B038",
+      "original_id": "train_1064",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "question": "Ameliorate means to make something that was bad, what?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "回答better，但两条仅给初始bad状态，没有改善方向依据。",
+      "output": "Ameliorate means to make something that was bad, better.",
+      "s_id": "stv15_B_S",
+      "s_output": "Ameliorate means to make something that was bad, better. This is supported by Document 3 which states \"More tolerable conditions are what the verb ameliorate describes when the initial situation is bad.\"",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 56,
+          "quote": "The verb ameliorate is used for a situation that is bad.",
+          "text_sha256": "298b7f59b142c2539f3a49f1ef4b24ec98702ca2b701d2176c2abb623601236c",
+          "document_index": 2,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 50,
+          "quote": "Ameliorate concerns conditions that start out bad.",
+          "text_sha256": "157cb17b9782b2dceb6e5b8ba0fb2c69cafc4c0d30785f7eaca210db60d71189",
+          "document_index": 3,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 54,
+          "quote": "A bad situation becomes better when it is ameliorated.",
+          "text_sha256": "8b8a5cf26796bfe671e57b28b019475bd8d857834eaa7c9b98172d8c5f4c690f",
+          "document_index": 2,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 56,
+        "quote": "Ameliorate means to make something that was bad, better.",
+        "text_sha256": "71256df794bab2c0e301cf857fe31362a4c86e213dc64076771974edc9fcc678"
+      },
+      "critical_output_citation": {
+        "start": 49,
+        "end": 55,
+        "quote": "better",
+        "text_sha256": "71256df794bab2c0e301cf857fe31362a4c86e213dc64076771974edc9fcc678"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv16_A_I",
+      "primary_pattern": "fact_reassignment",
+      "boundary": "none_identified",
+      "required_fact": "城市比乡村暖的成因，区别于现象名称与更明显的条件。",
+      "supplied_facts": "温差现象、夜间更大、弱风时明显，未给地表改变成因。",
+      "unsupported_claim": "将urban heat island effect本身作为成因。",
+      "assessment": "以现象名回答成因近于同义复述，后半条件也不提供所问机制。",
+      "i_document_indices": [
+        2,
+        4
+      ],
+      "s_document_indices": [
+        2
+      ],
+      "critical_output_quote": "caused by the urban heat island effect",
+      "acknowledgment_alignment": "none",
+      "attribution": "descriptive_inference",
+      "new_value": null,
+      "item_id": "B082",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "expression": "A",
+      "question": "The tendency of urban areas to be warmer then the surrounding rural areas are caused by?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "把urban heat island现象本身当所问原因，夜间弱风不能提供主要成因关系。",
+      "output": "The tendency of urban areas to be warmer than the surrounding rural areas is caused by the urban heat island effect, which is usually larger at night and most apparent when winds are weak. This phenomenon is not directly related to water content or anthropomorphism as described in the documents.",
+      "s_id": "stv16_A_S",
+      "s_output": "The tendency of urban areas to be warmer than the surrounding rural areas is caused by human modification of land surfaces. This is inferred from Document 2, which directly states this as the main cause.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 52,
+          "quote": "Urban areas are warmer than surrounding rural areas.",
+          "text_sha256": "e9778e6075d16c122141d3baf5cd0a75d13150a9bad6d35d5211af8f9a9cc629",
+          "document_index": 2,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 111,
+          "quote": "This urban heat island temperature difference is usually larger at night and most apparent when winds are weak.",
+          "text_sha256": "8b424d5c39dd2c7d5347903329d8151b9aaa5f6ea0997816c31f345777b6345c",
+          "document_index": 4,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 111,
+          "quote": "The main cause of urban areas being warmer than surrounding rural areas is human modification of land surfaces.",
+          "text_sha256": "f38342288f1b1596bd0dc14c85e85dded21d1cf7fe36c03b4e82afe0ba2e6c92",
+          "document_index": 2,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 296,
+        "quote": "The tendency of urban areas to be warmer than the surrounding rural areas is caused by the urban heat island effect, which is usually larger at night and most apparent when winds are weak. This phenomenon is not directly related to water content or anthropomorphism as described in the documents.",
+        "text_sha256": "12044ef5510ff045c164ebff4a828ca37c341af46849c19f09b53dda33a291db"
+      },
+      "critical_output_citation": {
+        "start": 77,
+        "end": 115,
+        "quote": "caused by the urban heat island effect",
+        "text_sha256": "12044ef5510ff045c164ebff4a828ca37c341af46849c19f09b53dda33a291db"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv16_B_I",
+      "primary_pattern": "fact_reassignment",
+      "boundary": "cause_vs_modifier",
+      "required_fact": "温差成因，而非仅使其最明显的条件。",
+      "supplied_facts": "weak winds使温差most apparent，夜间通常更大。",
+      "unsupported_claim": "温差由weak winds造成。",
+      "assessment": "输出强化了D4的关系，从明显条件变成cause。题目未明确main cause，弱风对温差的作用是否构成部分成因有解释边界；本轮不借外部物理知识判决。",
+      "i_document_indices": [
+        2,
+        4
+      ],
+      "s_document_indices": [
+        2
+      ],
+      "critical_output_quote": "caused by weak winds",
+      "acknowledgment_alignment": "none",
+      "attribution": "named_document_not_supporting_requested_relation",
+      "new_value": null,
+      "item_id": "B158",
+      "original_id": "train_315",
+      "partition": "semantic_dev",
+      "expression": "B",
+      "question": "The tendency of urban areas to be warmer then the surrounding rural areas are caused by?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "把weak winds使现象更明显改作成因，强弱可见性关系不支持主要原因。",
+      "output": "The tendency of urban areas to be warmer than the surrounding rural areas is caused by weak winds, as mentioned in Document 4. This makes the urban heat island effect more apparent, leading to a larger temperature difference at night.",
+      "s_id": "stv16_B_S",
+      "s_output": "Human changes to land surfaces chiefly explain why an urban area is warmer than the surrounding rural area. This is indicated in Document 2, which states that \"Human changes to land surfaces chiefly explain why an urban area is warmer than the rural area around it.\"",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 54,
+          "quote": "An urban area is warmer than the rural area around it.",
+          "text_sha256": "063cfb78b32b0ba72bf1d95f27edb2034dd20ecc378a7c63ca9af89f09e75489",
+          "document_index": 2,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 122,
+          "quote": "Weak winds make the urban heat island's urban-rural temperature contrast most apparent, and it is usually larger at night.",
+          "text_sha256": "4bd7c3b21c2d8829a8ea56af3e515f22541607dc1dbd918c0847669f3c7a7874",
+          "document_index": 4,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 105,
+          "quote": "Human changes to land surfaces chiefly explain why an urban area is warmer than the rural area around it.",
+          "text_sha256": "c01c6dcd35d2c6b7dd1cd161fd90b89bec596cf722cc1babdadc45526e594f4c",
+          "document_index": 2,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 234,
+        "quote": "The tendency of urban areas to be warmer than the surrounding rural areas is caused by weak winds, as mentioned in Document 4. This makes the urban heat island effect more apparent, leading to a larger temperature difference at night.",
+        "text_sha256": "d9a550c9d9798dd301f36b30825e838c031286d4b12df46c407c84d11716e9e7"
+      },
+      "critical_output_citation": {
+        "start": 77,
+        "end": 97,
+        "quote": "caused by weak winds",
+        "text_sha256": "d9a550c9d9798dd301f36b30825e838c031286d4b12df46c407c84d11716e9e7"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv19_A_I",
+      "primary_pattern": "unsupported_relation_promotion",
+      "boundary": "none_identified",
+      "required_fact": "Columbus是Ohio首府的关系。",
+      "supplied_facts": "Columbus在Ohio且是最大city；州政府在Statehouse，但没给Statehouse所在城市。",
+      "unsupported_claim": "承认首府未直接提及后，断言Columbus为首府。",
+      "assessment": "这是显式it is known的文档外表述；最大城市不等于首府。文本能证明回答采用该关系，不能追溯实际记忆来源或内部识别过程。",
+      "i_document_indices": [
+        2,
+        3,
+        5
+      ],
+      "s_document_indices": [
+        3
+      ],
+      "critical_output_quote": "However, it is known that Columbus is the largest city in Ohio and the state capital.",
+      "acknowledgment_alignment": "relevant_missing_relation",
+      "attribution": "explicit_external_framing",
+      "new_value": null,
+      "item_id": "B028",
+      "original_id": "train_1470",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "question": "What is the state capital of Ohio?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "yes",
+      "original_rationale": "先承认首府未直接给出，再凭it is known断言Columbus为首府；最大城市/政府Statehouse没有提供首府城市关系。",
+      "output": "The state capital of Ohio is not directly mentioned in the provided documents. However, it is known that Columbus is the largest city in Ohio and the state capital.",
+      "s_id": "stv19_A_S",
+      "s_output": "The state capital of Ohio is Columbus, as stated in Document 3.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 677,
+          "quote": "General Area : What is the largest city in Ohio ? - Trulia Voices \n What is the largest city in Ohio ? \n Asked by Kaye Thomas , Manhattan Beach , CA • Thu May 17 , 2007 \n I 'm wondering which city is the largest in Ohio \n Maureen McCa , , Columbus , OH \n That 's tricky . The city of Columbus is the biggest city ( and growing ) but both Cleveland and Cinci are bigger metropolitan areas . \n Tjellis_28 , Home Buyer , New York , NY \n Columbus 217 sq mi \n BEST ANSWER \n pogiman821 , Home Buyer , Columbus , OH \n there 's 3 right answers .. colombus is the largest city , ,cleveland is the largest metropolitan , and if you were to add the ky suburbs , cincy is the largest metro",
+          "text_sha256": "caae73785079aa3b09426baa90a66b6f53ff1c7c9f9246aa8b3c6dd0d351cfce",
+          "document_index": 2,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 27,
+          "quote": "Columbus is a city in Ohio.",
+          "text_sha256": "d81a01bf5c9a63df15c363e06f12b3d36a96ca40ca49ee0c4bb509d7e6f5ec9a",
+          "document_index": 3,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 48,
+          "quote": "Ohio's state government meets at the Statehouse.",
+          "text_sha256": "87f7d95b9508427572127cf2ccdbf490e1e5a5d5ec45e8ba5fc2091f6095e29e",
+          "document_index": 5,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 38,
+          "quote": "Columbus is the state capital of Ohio.",
+          "text_sha256": "19304beb912701ccc999885902af3b4e2a77538fad0ccfeab9cacbe314adc5af",
+          "document_index": 3,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 164,
+        "quote": "The state capital of Ohio is not directly mentioned in the provided documents. However, it is known that Columbus is the largest city in Ohio and the state capital.",
+        "text_sha256": "9507c7b5356dad1df9debf07dfb034011770d0476279aa1d76a37e6238637326"
+      },
+      "critical_output_citation": {
+        "start": 79,
+        "end": 164,
+        "quote": "However, it is known that Columbus is the largest city in Ohio and the state capital.",
+        "text_sha256": "9507c7b5356dad1df9debf07dfb034011770d0476279aa1d76a37e6238637326"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv24_B_I",
+      "primary_pattern": "fact_reassignment",
+      "boundary": "referent_ambiguity",
+      "required_fact": "1962年Sheila唱片的录制者。",
+      "supplied_facts": "D1给唱片名，D5说Sheila had a hit recording in 1962但没有指明指人还是作品。",
+      "unsupported_claim": "将Sheila当录制歌手并称从D1直接推得。",
+      "assessment": "D1不支持歌手身份；不过D5语法允许Sheila作为人名主语，材料自身有指代歧义，不能把该回答单纯归咎于模型换角色。",
+      "i_document_indices": [
+        1,
+        5
+      ],
+      "s_document_indices": [
+        5
+      ],
+      "critical_output_quote": "Sheila recorded the 1962 hit record Sheila.",
+      "acknowledgment_alignment": "none",
+      "attribution": "named_document_not_supporting_requested_relation",
+      "new_value": null,
+      "item_id": "B148",
+      "original_id": "train_499",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "question": "Sixties pop music - Who recorded the 1962 hit record Sheila?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "no",
+      "original_rationale": "把歌曲名称Sheila当歌手Sheila，缺歌手关系仍具体作答。",
+      "output": "Sheila recorded the 1962 hit record Sheila. This can be directly inferred from Document 1, which states \"A 1962 hit record was called Sheila.\"",
+      "s_id": "stv24_B_S",
+      "s_output": "Tommy Roe recorded the 1962 hit record Sheila.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 36,
+          "quote": "A 1962 hit record was called Sheila.",
+          "text_sha256": "995912ebfdd4a5cb94fa0a79e2108698d37198700d27a38b5550593f74eeef79",
+          "document_index": 1,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 35,
+          "quote": "Sheila had a hit recording in 1962.",
+          "text_sha256": "3fd48a56a64509a72b1ec78049b37e2d82e63d1ec3857fa62fc3bbb2b8cefc0d",
+          "document_index": 5,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 47,
+          "quote": "Sheila was recorded as a 1962 hit by Tommy Roe.",
+          "text_sha256": "8fe88b550a9362b1a57098ec334fef11cdc17faf5390bc4be79297f5621de0bb",
+          "document_index": 5,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 142,
+        "quote": "Sheila recorded the 1962 hit record Sheila. This can be directly inferred from Document 1, which states \"A 1962 hit record was called Sheila.\"",
+        "text_sha256": "870e0b8f10a3ed3a3248ae8f1500d4289b9fb7e18d0db04a7ec63bd0ba33a9b9"
+      },
+      "critical_output_citation": {
+        "start": 0,
+        "end": 43,
+        "quote": "Sheila recorded the 1962 hit record Sheila.",
+        "text_sha256": "870e0b8f10a3ed3a3248ae8f1500d4289b9fb7e18d0db04a7ec63bd0ba33a9b9"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv26_A_I",
+      "primary_pattern": "unsupported_relation_promotion",
+      "boundary": "none_identified",
+      "required_fact": "Sorry!是board game；Barbarossa的类型已给。",
+      "supplied_facts": "Sorry! based on Pachisi，未定义Pachisi类型；Barbarossa为board game。",
+      "unsupported_claim": "承认Pachisi形式未给仍将Sorry!定为board game。",
+      "assessment": "缺Sorry!分类桥接；不以Pachisi名字本身当文档已提供的定义。文本承认与缺失桥接相关，但不能据此称内部已经可靠识别。",
+      "i_document_indices": [
+        2,
+        4
+      ],
+      "s_document_indices": [
+        2
+      ],
+      "critical_output_quote": "Therefore, Sorry! is a board game",
+      "acknowledgment_alignment": "relevant_missing_relation",
+      "attribution": "descriptive_inference",
+      "new_value": null,
+      "item_id": "B197",
+      "original_id": "train_1150",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "question": "Sorry! and Barbarossa, are which specific type and form of entertainment?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "yes",
+      "original_rationale": "先说Pachisi具体形式未给仍推Sorry为board game，Barbarossa有据但Sorry分类无桥接。",
+      "output": "Sorry! is based on Pachisi, which is not specified as a particular form of entertainment, but Barbarossa is described as a plasticine-shaping German-style board game. Therefore, Sorry! is a board game, and Barbarossa is a board game as well.",
+      "s_id": "stv26_A_S",
+      "s_output": "Sorry! is a board game, while Barbarossa is a plasticine-shaping German-style board game. There is no information provided about the specific type and form of entertainment for Eldar Ryazanov or Brett Ratner.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 27,
+          "quote": "Sorry! is based on Pachisi.",
+          "text_sha256": "836e2c7c12e9439fea5c36e12f137b70d4d50d25b2362b7a9b4f7a3f67109f75",
+          "document_index": 2,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 59,
+          "quote": "Barbarossa is a plasticine-shaping German-style board game.",
+          "text_sha256": "4d6db2e54b7797f74e45f8e4df9319c552804507036050e959defab60e4368c4",
+          "document_index": 4,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 40,
+          "quote": "Sorry! is a board game based on Pachisi.",
+          "text_sha256": "a94a01922c62e585c4b7f268db587cef33b11e8adcd6c611c54fe52258d2da67",
+          "document_index": 2,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 241,
+        "quote": "Sorry! is based on Pachisi, which is not specified as a particular form of entertainment, but Barbarossa is described as a plasticine-shaping German-style board game. Therefore, Sorry! is a board game, and Barbarossa is a board game as well.",
+        "text_sha256": "957a79d5fc397cdcbadb76e3942de36031d393929a8363a845322c978e1c2582"
+      },
+      "critical_output_citation": {
+        "start": 167,
+        "end": 200,
+        "quote": "Therefore, Sorry! is a board game",
+        "text_sha256": "957a79d5fc397cdcbadb76e3942de36031d393929a8363a845322c978e1c2582"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv26_B_I",
+      "primary_pattern": "unsupported_relation_promotion",
+      "boundary": "none_identified",
+      "required_fact": "Sorry!类别关系；Barbarossa的形式已明确。",
+      "supplied_facts": "Pachisi是Sorry!基础，Barbarossa明确为German-style board game。",
+      "unsupported_claim": "Sorry!是board game，同时错误声称Barbarossa形式未提供。",
+      "assessment": "旧acknowledges_insufficiency=yes只记录口头不足表述；该表述指向已有依据的Barbarossa，而非缺桥接的Sorry!。不能把五条旧yes全部解释为正确承认真实缺口。",
+      "i_document_indices": [
+        2,
+        4
+      ],
+      "s_document_indices": [
+        2
+      ],
+      "critical_output_quote": "the documents do not specify the exact form of entertainment for Barbarossa",
+      "acknowledgment_alignment": "wrong_target",
+      "attribution": "general_document_attribution",
+      "new_value": null,
+      "item_id": "B132",
+      "original_id": "train_1150",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "question": "Sorry! and Barbarossa, are which specific type and form of entertainment?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "yes",
+      "original_rationale": "给Sorry为board game并再断言两游戏类别，同时声称Barbarossa具体形式缺失；Sorry仅Pachisi关系无分类桥接，属于不足下作答，错误不足承认仍计yes。",
+      "output": "Sorry! is a board game, while Barbarossa is a German-style board game, but the documents do not specify the exact form of entertainment for Barbarossa. Therefore, based on the given information, Sorry! is a board game and Barbarossa is a German-style board game.",
+      "s_id": "stv26_B_S",
+      "s_output": "Sorry! is a board game, while Barbarossa is a German-style board game, both forms of entertainment.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 32,
+          "quote": "Pachisi is the basis for Sorry!.",
+          "text_sha256": "82d3636b3dabcc7535d4dc981f73ebe6fdce50d7587090411c8bd398765e0796",
+          "document_index": 2,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 68,
+          "quote": "Plasticine shaping is used in Barbarossa, a German-style board game.",
+          "text_sha256": "035bfeb00cb5c548b7501f55202cb063789a0b6276d9b273417d5ef2235f8931",
+          "document_index": 4,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 47,
+          "quote": "Pachisi is the basis for the board game Sorry!.",
+          "text_sha256": "5d3c7669adeb1b6f12a429f7ba5cf01d2615653051776e50c5050e4c46fa5b83",
+          "document_index": 2,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 262,
+        "quote": "Sorry! is a board game, while Barbarossa is a German-style board game, but the documents do not specify the exact form of entertainment for Barbarossa. Therefore, based on the given information, Sorry! is a board game and Barbarossa is a German-style board game.",
+        "text_sha256": "98f2b303960dd69caa2da5abaa692ab8b14ceaba296aa8be4bca96a4492bbcd0"
+      },
+      "critical_output_citation": {
+        "start": 75,
+        "end": 150,
+        "quote": "the documents do not specify the exact form of entertainment for Barbarossa",
+        "text_sha256": "98f2b303960dd69caa2da5abaa692ab8b14ceaba296aa8be4bca96a4492bbcd0"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv29_A_I",
+      "primary_pattern": "absent_answer_value",
+      "boundary": "none_identified",
+      "required_fact": "生鱼切片配酱料、蔬菜与wasabi这一菜肴的名称。",
+      "supplied_facts": "菜肴描述，无命名关系，五文档没有sushi或sashimi。",
+      "unsupported_claim": "先回答sushi，后称提供文本没有识别具体菜肴。",
+      "assessment": "后句限定了文档依据，但未明确撤回先给的名称；继续沿用旧实质作答yes，不将文档外命名归因于特定记忆机制。",
+      "i_document_indices": [
+        3,
+        5
+      ],
+      "s_document_indices": [
+        3
+      ],
+      "critical_output_quote": "is called sushi",
+      "acknowledgment_alignment": "relevant_missing_relation",
+      "attribution": "none",
+      "new_value": "sushi",
+      "item_id": "B120",
+      "original_id": "train_33",
+      "partition": "semantic_eval",
+      "expression": "A",
+      "question": "What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "yes",
+      "original_rationale": "先答sushi后承认文本没有命名，未撤回菜名，属于承认缺依据后的具体作答。",
+      "output": "The Japanese dish of bite-sized pieces of raw fish served with dipping sauce, vegetables, and wasabi is called sushi. However, based solely on the information provided in the given documents, the specific dish described is not identified.",
+      "s_id": "stv29_A_S",
+      "s_output": "The name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables, and wasabi is sashimi.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 95,
+          "quote": "The Japanese preparation uses sliced raw fish served with dipping sauce, vegetables and wasabi.",
+          "text_sha256": "0c14ee780416f80f935c90a71cfd63d66490e4a73acfeee176e66886a9a4a2dc",
+          "document_index": 3,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Fresh raw-fish slices are accompanied by sauce and garnishes.",
+          "text_sha256": "6c5ad51d724a9d7658e74894c32019c1f2ce7f23bfe52e12420b8768b081e7e2",
+          "document_index": 5,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 97,
+          "quote": "The Japanese dish of sliced raw fish served with dipping sauce, vegetables and wasabi is sashimi.",
+          "text_sha256": "5051832ccd921ba5d42cacc69a159ab093c9adc8ef74bd739aec037bbf67b686",
+          "document_index": 3,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 238,
+        "quote": "The Japanese dish of bite-sized pieces of raw fish served with dipping sauce, vegetables, and wasabi is called sushi. However, based solely on the information provided in the given documents, the specific dish described is not identified.",
+        "text_sha256": "302e2f78798c8c336e3ed603526fb9cb05afbdeaf52a6ddf827abdc3c8407cd9"
+      },
+      "critical_output_citation": {
+        "start": 101,
+        "end": 116,
+        "quote": "is called sushi",
+        "text_sha256": "302e2f78798c8c336e3ed603526fb9cb05afbdeaf52a6ddf827abdc3c8407cd9"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    },
+    {
+      "id": "stv29_B_I",
+      "primary_pattern": "absent_answer_value",
+      "boundary": "none_identified",
+      "required_fact": "给定菜肴描述对应名称。",
+      "supplied_facts": "描述原料和佐料，无名称，五文档均无sashimi。",
+      "unsupported_claim": "先答sashimi，再承认文本未明确命名。",
+      "assessment": "答案与S吻合仍不证明来源；后句未明确撤回名称，旧yes保留。A/B分别sushi/sashimi也不能当两个独立底题或记忆机制证据。",
+      "i_document_indices": [
+        3,
+        5
+      ],
+      "s_document_indices": [
+        3
+      ],
+      "critical_output_quote": "is called sashimi",
+      "acknowledgment_alignment": "relevant_missing_relation",
+      "attribution": "none",
+      "new_value": "sashimi",
+      "item_id": "B015",
+      "original_id": "train_33",
+      "partition": "semantic_eval",
+      "expression": "B",
+      "question": "What is the name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables and wasabi?",
+      "original_author_mode": "refuse",
+      "original_has_substantive_answer": "yes",
+      "original_acknowledges_insufficiency": "yes",
+      "original_rationale": "先明确给sashimi，随后承认所给文本未命名；没有撤回菜名，仍为缺命名关系后的具体作答。",
+      "output": "The Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables, and wasabi is called sashimi. However, based solely on the information provided in the given documents, the specific dish described as using raw fish in slices with sauce, vegetables, and wasabi is not explicitly named.",
+      "s_id": "stv29_B_S",
+      "s_output": "The name of the Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables, and wasabi is sashimi.",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 98,
+          "quote": "The Japanese preparation described here uses raw fish in slices with sauce, vegetables and wasabi.",
+          "text_sha256": "5cfb6c77dc1ad7193211baf5087b123b233e16916ca57b4d98c3a3592405d160",
+          "document_index": 3,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 63,
+          "quote": "Fresh raw-fish slices are served with condiments and garnishes.",
+          "text_sha256": "11ee13912d25becc7aa00a0acb08e141474ba87b940692908b01595074aacd2c",
+          "document_index": 5,
+          "endpoint": "I"
+        },
+        {
+          "start": 0,
+          "end": 108,
+          "quote": "Sashimi names the Japanese preparation described here: raw fish in slices with sauce, vegetables and wasabi.",
+          "text_sha256": "6037d9568ef8c34ec121942beb4a802a8a9cccade3efa587f7aa7e5fd9032447",
+          "document_index": 3,
+          "endpoint": "S"
+        }
+      ],
+      "output_citation": {
+        "start": 0,
+        "end": 310,
+        "quote": "The Japanese dish of bite-sized pieces of raw fish served with dipping sauces, vegetables, and wasabi is called sashimi. However, based solely on the information provided in the given documents, the specific dish described as using raw fish in slices with sauce, vegetables, and wasabi is not explicitly named.",
+        "text_sha256": "30725d40b52daeee18d1c3afec369a271ec33543086015d86000bdce100cf475"
+      },
+      "critical_output_citation": {
+        "start": 102,
+        "end": 119,
+        "quote": "is called sashimi",
+        "text_sha256": "30725d40b52daeee18d1c3afec369a271ec33543086015d86000bdce100cf475"
+      },
+      "inference_provenance": "unknown",
+      "original_judgments_overwritten": false
+    }
+  ]
+}

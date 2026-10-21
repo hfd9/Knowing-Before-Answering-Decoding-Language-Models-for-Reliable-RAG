@@ -1,6 +1,26 @@
 # chat L28语义迁移执行器：CPU准备与审核门禁
 
-最新材料已经另存[v5关系对照修订](records/2026-10-20-semantic-transfer-materials-v5.md)：83输入/131目标片段修订、54条I重构，CPU材料/审包/空接收已核验。**本页执行器仍冻结绑定v4-r2**，不应改旧实现/准备目录来接受v5；待实际独立审核后另存对应运行版本和协议。当前独立标签0，无就绪GPU任务。
+**原设计一次拟合预算已耗尽（2026-10-21）：** 用户按已说明范围要求开始，另存[作者参照探索性修订及一次CPU重训](records/2026-10-21-semantic-transfer-exploratory-retrain.md)。训练A48、同底题B41/48，eval来源旧57/96→新62/96，差区间跨0且冲突召回18/24→11/24；原独立标签和门禁不变，不称测量可靠性通过。共享预算声明及新run的同设计fit_attempt已存在，未改旧v5守卫能识别并拒绝另一fit。剩余预算0，后续实际独立审核也不能自动重置同设计预算。v1拟合完成后分析漏token字段报错，模型封存后只修v2分析，没有重拟合；CPU核验使用`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /large_disk/wf/miniconda3/envs/kba-rag/bin/python -B scripts/semantic_transfer_exploratory_retrain_analysis_v2.py --stage verify`。新读出是离线读取生成前缓存，不是原生成回调；无新GPU/回答/行为评分/380访问。
+
+**现有输出同题配对分析已完成：** [2026-10-21配对结果](records/2026-10-21-semantic-transfer-paired-analysis.md)复用240保存概率及封存行为，完成180对照、30底题/174作者参照合格/6未知保留、10000次整底题bootstrap、A/B与来源切片及PNG/PDF图。S→I不足概率+18.08pp，53/60升且19条仍答；S→C冲突概率+20.84pp，54升且34确定+5未知仍无消解选边；S→K冲突概率−5.87pp。I的probe类别两组仅2混合底题能题内比较且两表达都未答，不能将1/16与22/44当稳定题内预测优势。11新CPU/主分析与异进程图表重放/另写计算/885旧路径通过，无新GPU/评分/拟合；当前仍有历史暴露、正式语义批准0。CPU入口为`MPLCONFIGDIR=/tmp/kba-paired-mpl /large_disk/wf/miniconda3/envs/kba-rag/bin/python -B scripts/semantic_transfer_paired_analysis.py --stage verify`。
+
+**探索性行为复核已完成：** [2026-10-21离线复核](records/2026-10-21-semantic-transfer-exploratory-behavior.md)逐条审完240回答/1200槽/435全文，评分封存后再接旧probe；1652字段确定、17已审行28字段unknown。作者侧输入分组仅探索：不足作答23/60，probe判不足后1/16；冲突无消解选边37–43/60；确定充分且probe冲突58条中53–56条有据答对。13新CPU/实际分析与只读重放/独立计数通过，869旧路径含原run495不变。新评分/联合表另存，原模板保留；当前助手有历史暴露，独立标签仍0、正式门禁不变，无新GPU或拟合。CPU复算命令为`/large_disk/wf/miniconda3/envs/kba-rag/bin/python -B scripts/semantic_transfer_exploratory_behavior_review.py --stage verify`。下文行为未评分为采集核验时历史状态，当前本轮离线任务已完成。
+
+**探索性采集已完成并核验：** [2026-10-21完成记录](records/2026-10-21-semantic-transfer-exploratory-verified.md)确认240回答/状态/已提交attempt，4技术smoke通过且计入240，空/触顶0、EOS240；完整只读verify和独立旧probe概率重放通过，最大误差0，原run495文件未变。行为包240项仍未评分，独立标签0，不代表正式语义成绩。无需重跑GPU，下一步离线行为复核；以下待用户启动/GPU0为准备时历史状态。
+
+**用户已另行授权探索性采集（2026-10-21）：** [新入口/协议与CPU核验](records/2026-10-21-semantic-transfer-exploratory-preparation.md)允许独立语义审核前只采集v5全240条旧probe读出/状态/自由回答，不训练或计算正式语义指标。用户运行`sh scripts/run_semantic_transfer_exploratory_collection.sh`，同批4技术smoke计入240，预留30–120分钟；当前实际GPU0。该采集collection_allowed=true，不改变以下正式执行器的审核门禁。原96eval在采集后不再是预审后才揭示的前瞻评估，后续使用须披露时间和暴露。
+
+**最新v5执行绑定已另存CPU准备：** [2026-10-21记录](records/2026-10-21-semantic-transfer-study-v5-preparation.md)使用新入口`run_semantic_transfer_study_v5.sh`，复用不变旧执行核心；240提示/token与v5一致，实际prepare/独立进程verify及28相关CPU通过，350旧路径不变。新准备目录为runs/qwen2.5-3b-semantic-transfer-study-v5-preparation-v1，批准标签全部null/审核0/GPUfalse，实际run在加载前按门禁退出。作者验收仅绑定风险来源，不用于批准标签。以下v4-r2入口及历史准备目录仍保留。
+
+```sh
+sh scripts/run_semantic_transfer_study_v5.sh --stage verify
+```
+
+本命令仅CPU重放新准备；当前没有就绪GPU任务。未来实际独立审核和上下文审计通过后，以新批准文件另存就绪运行，不修改当前无批准协议。L28/最多一次拟合/开发触发/评估锁继续约束，新入口也检查其他study目录中同设计已存在的拟合尝试。
+
+2026-10-21已完成[v5修后作者验收与封存](records/2026-10-21-semantic-transfer-v5-acceptance.md)，保留扑克S/K四unknown及13组A/B细节风险，独立标签仍0/GPUfalse。作者侧三个交付步骤已完成，旧执行器和准备目录均未修改；当前无就绪GPU任务。
+
+最新材料已经另存[v5关系对照修订](records/2026-10-20-semantic-transfer-materials-v5.md)：83输入/131目标片段修订、54条I重构，CPU材料/审包/空接收已核验。**下文旧执行器仍冻结绑定v4-r2**，不应改旧实现/准备目录来接受v5；新v5绑定已另存CPU准备见上文，实际独立审核后仍须另存对应就绪协议。当前独立标签0，无就绪GPU任务。
 
 当前版本使用来源补充材料v4-r2，240条作者输入，30底题按12/6/12分区。独立审核仍0、批准标签0；当前准备目录的gpu_launch_ready=false。实现包含后续运行路径，但**尚未在本机3B上执行新GPU验证或正式训练**。材料构造达到100%不等于语义覆盖通过。
 

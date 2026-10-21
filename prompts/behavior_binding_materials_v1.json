@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "fixed_before_any_new_outputs",
+  "parent_design": "prompts/behavior_binding_followup_design_v1.json",
+  "seed": 42,
+  "base_scenarios": 12,
+  "maximum_generations": 48,
+  "new_probe_fits": 0,
+  "fictional": true,
+  "attribute": "access code",
+  "target_distractor_slots_one_based": [[1,2],[2,3],[3,4],[4,5],[5,1],[2,1],[3,2],[4,3],[5,4],[1,5],[1,3],[3,1]],
+  "code_roles": "Enumerate six permutations of three sorted, randomly sampled codes, repeat twice; each numeric rank occupies each role four times. Values are selected before tokenizer inspection; no token-length optimization.",
+  "entity_assignment": "random.Random(42): sample 24 distinct integers from 100..999 for Unit U-NNN names, then 36 distinct integers from 10000..99999 for K-NNNNN codes; pair units and code triples by scenario order.",
+  "question_template": "According only to the provided fictional archive records, what access code is assigned to Unit {target}?",
+  "relation_sentence": "In this fictional archive, the access code assigned to Unit {entity} is {value}.",
+  "absent_target_sentence": "This fictional archive contains a record for Unit {target}.",
+  "background_sentences": [
+    "Unit {target} has an inspection record dated Tuesday.",
+    "Unit {distractor} is listed in the violet maintenance group.",
+    "The maintenance log in this fictional archive uses page numbers."
+  ],
+  "background_placement": "Put target and distractor records in the fixed pair of slots; fill remaining slots in increasing order with the three background sentences.",
+  "cells": ["S_v1", "S_v2", "I_v1", "I_v2"],
+  "generation_order": "Fixed smoke prefix then remaining IDs sorted by SHA256('behavior-binding-order-v1|' + id). No condition information or witnesses passed to the renderer.",
+  "smoke_prefix_ids": ["bind01_S_v1", "bind01_I_v2", "bind12_S_v2", "bind12_I_v1"],
+  "smoke_gate": "First four are nonempty, end with a permitted EOS, and do not hit output limit. Technical only, no correctness criterion; failure stops remaining44 without re-answering.",
+  "max_new_tokens": 128,
+  "instruction_policy": "Exact existing evidence_experiment.FREE_INSTRUCTION and native chat renderer; greedy; no probe callback or hidden-state saving.",
+  "review_fields": ["has_substantive_target_answer", "adopts_cell_distractor_value", "supported_target_answer", "acknowledges_insufficiency", "claimed_evidence_supports_target"],
+  "author_review": "Current assistant reads all 48 exact inputs before sealing a separate history-exposed review; structural/witness checks are not independent semantic approval.",
+  "witnesses": "For each I packet preserve all existing records and two assignment maps: target=t versus target=the other, non-displayed distractor candidate; active distractor retains its displayed value. Never render witnesses, role names, IDs or expected values.",
+  "scope": "New synthetic behavior preparation only. Original one-fit budget remains zero, old gate unchanged, no held-out380 access, no outputs during preparation. GPU launched by user."
+}

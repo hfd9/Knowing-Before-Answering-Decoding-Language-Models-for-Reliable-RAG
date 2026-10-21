@@ -1,0 +1,23 @@
+{
+  "reviewer": "Codex current assistant; project and author-material history exposed",
+  "history_exposed": true,
+  "independent_gold": false,
+  "approved_for_training": false,
+  "formal_semantic_labels_added": 0,
+  "new_gpu_calls": 0,
+  "new_probe_fits": 0,
+  "sealed_at": "2026-10-21T10:27:23.494498+08:00",
+  "stage": "behavior_scoring_sealed_before_rowwise_join",
+  "rowwise_join_started": false,
+  "anonymous_items": 240,
+  "behavior_fields": 1680,
+  "artifacts": {
+    "docs/records/2026-10-21-semantic-transfer-exploratory-behavior-ratings.json": "fdb0c89c9f38025a07c09a3b964ff6395e5c0a6e28fde47c78f243cea788d862",
+    "docs/records/2026-10-21-semantic-transfer-exploratory-behavior-rubric.json": "eb3af59d603fb73f40303259b0ac310e954edb315e5803ed95949fe64d126bad",
+    "docs/records/2026-10-21-semantic-transfer-exploratory-behavior-manual.txt": "7c51513f30c17f730c30a4175e2d574c3d5f8fcd5d5184457f39313659abe114",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/behavior_review/packet.json": "79540160969ba0e63ea5181c94273b521c0d2ec9497fdb43b364524585ef0e06",
+    "docs/records/2026-10-21-semantic-transfer-exploratory-behavior-reading-inventory.json": "2ffb6c7f2f8eacda890bd785f123cd8a8556595ebaec42d8f5b8061e6c304bba",
+    "docs/records/2026-10-21-semantic-transfer-exploratory-behavior-preserved.json": "aeb71a339982560a268f4bb690c82e124660efc6e5c7417d8a8a1451b753d362"
+  },
+  "limitations": "Project and material history exposed; anonymous rowwise workflow does not establish independent blindness. Seal authenticates bytes, not semantic truth or a reviewer mind-state."
+}

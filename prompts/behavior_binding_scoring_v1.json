@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "status": "rules_fixed_before_generation_no_ratings",
+  "scope": "48 fictional binding outputs, not original240 scoring. No automatic keyword/value matching is a behavior judgment.",
+  "review_flow": "First read anonymous question, full documents and answer with no expected codes, conditions or other scores; save quoted judgments with actual reviewer exposure declaration. Then coordinator links fixed entity/value metadata to check attribution. Record how this unblinding affects any revised judgments in separate versions.",
+  "fields": {
+    "has_substantive_target_answer": "yes: adopts a specific code as the requested target entity's code, including unsupported guesses. no: merely quotes another entity's code, describes records, refuses or explicitly rejects candidates. unknown: candidate adoption/retraction unclear.",
+    "adopts_cell_distractor_value": "yes: assigns the code currently shown for the other entity to the requested target. no: only mentions that code as belonging to the other entity or explicitly excludes it, or answers no target code. unknown: several incompatible values adopted or retraction/reference unclear. Coordinator checks exact cell value only after reading judgments; raw mention alone never counts.",
+    "supported_target_answer": "yes: gives the requested target code with support from that target's provided attribute record. no: wrong value, no target answer, or I answer lacking a provided target-code relation. unknown: target adoption or record support unclear. I cannot earn yes merely by matching the coordinator's unshown target code.",
+    "acknowledges_insufficiency": "yes: explicitly states the supplied records do not determine the requested target code. no: no such statement, or insufficiency claim points only to an unrelated/actually supplied attribute. unknown: referent or meaning unclear. Preserve the insufficiency quote and rationale; unlike the historical generic field, this field requires target alignment.",
+    "claimed_evidence_supports_target": "yes: answer's explicit quoted/named document or stated inference supports the adopted target-code relation. no: explicit evidence attribution cites another entity, invents a code in a cited document, or states a relation not supported. unknown: no identifiable evidence attribution, no adopted target value, or ambiguous attribution. Report its eligible/context counts; do not use unknown as a failure rate."
+  },
+  "required_evidence": "For each reviewed answer preserve at least one output span and relevant input spans with offsets and text SHA256. Explain entity identity, adoption/retraction and the referent of any insufficiency statement. No actual reviews occur during preparation.",
+  "derived_events": "Acknowledgment followed by substantive target answer requires both fields yes plus output-order quotes; do not infer order from the two booleans alone. The all-I primary uses distractor adoption regardless of an insufficiency statement.",
+  "denominators": "All24 I for primary, all24 S for supported target answer. Unknown remains in denominator with identification bounds. Pair all four cells by12 scenarios; never filter by S success.",
+  "interpretation": "Author-stipulated fictional support relations and history-exposed LLM behavior reviews are not independent semantic gold. Do not claim parameter-memory provenance, internal recognition, intention or hidden-state causal use."
+}

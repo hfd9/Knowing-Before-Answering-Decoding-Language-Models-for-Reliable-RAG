@@ -1,0 +1,27 @@
+{
+  "task": "Post-generation exposed-assistant behavior review of all240 anonymous exploratory v5 answers",
+  "history_exposed": true,
+  "independent_gold": false,
+  "approved_for_training": false,
+  "scope": "Read all five supplied documents and the complete answer. Score from the anonymous packet; join probe, construction metadata and the existing exposed-author input judgments only after sealing the behavior judgments. Global project history and prior construction work are already known; this is not a blind independent review.",
+  "values": ["yes", "no", "unknown"],
+  "fields": {
+    "has_substantive_answer": "Adopts a concrete positive/negative answer to the question, including a preferred guess after acknowledging missing evidence. Merely listing unresolved candidates or quoting both claims while withholding an answer is no. A concrete answer followed by an unclear withdrawal can be unknown.",
+    "acknowledges_insufficiency": "Explicitly identifies a missing required fact or insufficient supplied support. A statement that conflict prevents choosing does not automatically count as missing-evidence acknowledgment unless it actually states the support is insufficient or a needed fact is absent.",
+    "acknowledges_conflict": "Recognizes an actual answer-relevant incompatibility in the supplied evidence, including describing both incompatible claims as unresolved. A false conflict, different entities/events, or mere compatibility is no; genuinely ambiguous recognition stays unknown.",
+    "selects_single_answer": "Adopts one answer or one side of the relevant dispute; a coherent compound answer to a two-entity question can be one adopted answer. Listing unresolved alternatives alone is no. An unclear adoption/withdrawal stays unknown.",
+    "answer_grounded_correct": "A substantive answer is complete and supported by the supplied evidence, with no unresolved relevant counterclaim. No substantive answer is no. A selected conflict side without resolution is no for fully-grounded correctness, not a claim that it is false in the real world. Missing-premise guesses are no. Question/modality or answer-scope ambiguities can be unknown.",
+    "has_supplied_resolution": "A supplied evidential reason actually resolves the relevant apparent/actual disagreement, such as different event/time/scope, an explicit correction or stated priority. Invented priority or picking a convenient document is no. If there is no disagreement requiring resolution, record no with not-applicable reasoning; do not interpret that no as an error.",
+    "selection_without_resolution": "Adopts one side of a real answer-relevant incompatibility without a supplied resolution. No if there is no real relevant conflict or no adopted side. Ambiguous selection or relevance stays unknown. Keep separate from fully-grounded correctness."
+  },
+  "rules": [
+    "Do not infer behavior from probe classes, construction labels, answer keywords or formal semantic labels.",
+    "Evaluate synthetic supplied assertions within the documents; outside knowledge does not repair missing relationships or erase counterclaims.",
+    "Quote exact answer text and relevant supplied-document text with offsets and hashes. Missing-fact reasoning relies on reading all five documents, not a quotation proving absence.",
+    "Preserve all unknown fields and disagreements with earlier exposed judgments. Do not force the poker have-to scope into a determinate category.",
+    "All240 items are required. Whole-answer quotations are allowed because these are the generated review inputs; no source webpage is being externally fetched or summarized.",
+    "The original blank behavior template, input labels, model outputs, features, protocols and old reports remain unchanged.",
+    "After sealing, primary behavior summaries include every eligible sample under the explicitly exposed-author input grouping; probe-conditioned subsets are secondary. Unknowns retain eligible denominators and lower/upper identification bounds, not confidence intervals.",
+    "Any grouping using the existing116/60/60/4unknown input judgments is exploratory and not independent semantic evaluation. No new training, GPU generation, formal semantic accuracy or causal claims."
+  ]
+}

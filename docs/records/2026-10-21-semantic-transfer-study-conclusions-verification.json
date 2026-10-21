@@ -1,0 +1,33 @@
+{
+  "status": "verified",
+  "original_preserved_paths": 901,
+  "original_preserved_hash_mismatches": 0,
+  "fit_sealed_files": 12,
+  "fit_seal_hash_mismatches": 0,
+  "source_reports": 3,
+  "copied_evidence_entries": 16,
+  "source_pointers_replayed": true,
+  "source_eval_full_denominator_behavior_unchanged": true,
+  "real_total_fits": 1,
+  "new_fits_this_turn": 0,
+  "remaining_fits": 0,
+  "executed_verifiers": [
+    {
+      "script": "scripts/semantic_transfer_exploratory_retrain_analysis_v2.py",
+      "stage": "verify",
+      "exit_code": 0
+    },
+    {
+      "script": "scripts/semantic_transfer_exploratory_behavior_review.py",
+      "stage": "verify",
+      "exit_code": 0
+    }
+  ],
+  "new_unit_tests": 0,
+  "old_unit_tests_rerun": false,
+  "independent_semantic_review": false,
+  "artifacts_sha256": {
+    "docs/records/2026-10-21-semantic-transfer-study-conclusions.json": "80bfd322febea5b46b110c95e13b4c6ac2e1c5ab2d9aefec7a904dbc8571bf67",
+    "docs/records/2026-10-21-semantic-transfer-study-conclusions-evidence.csv": "31581a92c998fba0718a39299361fb122e0d16b096747046d111f0641ddac710"
+  }
+}

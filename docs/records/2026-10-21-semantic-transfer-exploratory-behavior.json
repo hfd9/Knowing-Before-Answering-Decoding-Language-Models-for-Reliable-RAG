@@ -1,0 +1,2388 @@
+{
+  "schema_version": 1,
+  "status": "exploratory_behavior_review_complete",
+  "history_exposed": true,
+  "independent_gold": false,
+  "approved_for_training": false,
+  "formal_semantic_labels_added": 0,
+  "new_gpu_calls": 0,
+  "new_probe_fits": 0,
+  "interpretation": "Post-generation, history-exposed assistant review. Author input grouping is an exposed diagnostic reference, not independent gold. No semantic accuracy or causal inference. Unknown intervals are identification bounds in full eligible denominators, not confidence intervals. Source train/dev/eval partitions are not prospective tests. Thirty bases with repeated variants.",
+  "anonymous_rows": 240,
+  "behavior_fields": 1680,
+  "determinate_fields": 1652,
+  "unknown_fields": 28,
+  "unknown_rows": [
+    {
+      "item_id": "B045",
+      "id": "stv01_B_C",
+      "fields": [
+        "has_substantive_answer",
+        "selects_single_answer",
+        "selection_without_resolution"
+      ],
+      "rationale": "先断言Boxing Day后称冲突使两文档均不可确定依赖；是否撤回初始答案不清，作答/选边/无消解选边保留unknown；仅冲突性不确定不另算明确不足。"
+    },
+    {
+      "item_id": "B125",
+      "id": "stv02_A_S",
+      "fields": [
+        "answer_grounded_correct"
+      ],
+      "rationale": "所问通常名称Waterloo正确，但解释把Napoleon使用的名称错改成Waterloo，实质归属误述影响整体有据正确，保留unknown。"
+    },
+    {
+      "item_id": "B041",
+      "id": "stv04_B_S",
+      "fields": [
+        "answer_grounded_correct"
+      ],
+      "rationale": "回答两城位置但把northern China的修饰移到northern Hebei，区域范围是否仍正确有文本支持歧义，正确性保留unknown。"
+    },
+    {
+      "item_id": "B023",
+      "id": "stv04_B_K",
+      "fields": [
+        "answer_grounded_correct"
+      ],
+      "rationale": "主体答对Luoding/Guangdong及Dingzhou/northern China，但末句把northern China错误归到Luoding；有据正确受实体错置影响保留unknown。"
+    },
+    {
+      "item_id": "B155",
+      "id": "stv07_B_S",
+      "fields": [
+        "answer_grounded_correct"
+      ],
+      "rationale": "Fiery Face正确，但从未提及另两昵称推出was not known as两者，排他否定超出明确文本；整体正确性范围保留unknown。"
+    },
+    {
+      "item_id": "B156",
+      "id": "stv10_B_C",
+      "fields": [
+        "has_substantive_answer",
+        "selects_single_answer",
+        "selection_without_resolution"
+      ],
+      "rationale": "先断言Lucas后称无法消解不一致，是否撤回初始答案不清；其所谓冲突却引用相同Lucas关系而未认出Micah反证，实际冲突承认no，采纳三个字段unknown。"
+    },
+    {
+      "item_id": "B187",
+      "id": "stv11_A_K",
+      "fields": [
+        "answer_grounded_correct"
+      ],
+      "rationale": "1958主体正确并解释商业使用与上市兼容，提供的区分支持消解表面差异；但把May1958说成slightly earlier date缺具体上市日依据，整体正确保留unknown。"
+    },
+    {
+      "item_id": "B130",
+      "id": "stv16_A_C",
+      "fields": [
+        "selects_single_answer",
+        "selection_without_resolution"
+      ],
+      "rationale": "先否定地表改变为原因又说instead归因同一地表改变，形成自身矛盾；未明确承认来源冲突，是否采纳单侧及无消解选边保留unknown，整体正确no。"
+    },
+    {
+      "item_id": "B153",
+      "id": "stv16_B_K",
+      "fields": [
+        "answer_grounded_correct"
+      ],
+      "rationale": "主要成因地表变化正确，但not by waste heat可能否认任何贡献，也可能仅否认主要地位；兼容次要贡献范围歧义使整体正确性unknown。"
+    },
+    {
+      "item_id": "B097",
+      "id": "stv16_B_C",
+      "fields": [
+        "has_substantive_answer",
+        "selects_single_answer",
+        "selection_without_resolution"
+      ],
+      "rationale": "先断言地表改变为原因，后承认正反冲突并说不足以确定；是否撤回前句不清，作答/选边/无消解选边保留unknown。"
+    },
+    {
+      "item_id": "B159",
+      "id": "stv17_A_S",
+      "fields": [
+        "answer_grounded_correct"
+      ],
+      "rationale": "复述最后下注后多人留下展示并命名showdown，事实本身有据；对have to规范义务是否充分仍保留unknown。"
+    },
+    {
+      "item_id": "B181",
+      "id": "stv17_A_K",
+      "fields": [
+        "answer_grounded_correct"
+      ],
+      "rationale": "复述多人留下于最后下注后展示，事实有据，但have to的规范强度仍有歧义。"
+    },
+    {
+      "item_id": "B237",
+      "id": "stv17_B_S",
+      "fields": [
+        "answer_grounded_correct"
+      ],
+      "rationale": "展示时机及showdown有描述性支持；题中have to规范义务强度歧义保留unknown。"
+    },
+    {
+      "item_id": "B050",
+      "id": "stv17_B_K",
+      "fields": [
+        "answer_grounded_correct"
+      ],
+      "rationale": "给出最后下注后至少两人及showdown；描述性展示事实是否推出have to义务保留unknown。"
+    },
+    {
+      "item_id": "B011",
+      "id": "stv19_A_C",
+      "fields": [
+        "has_substantive_answer",
+        "selects_single_answer",
+        "selection_without_resolution"
+      ],
+      "rationale": "先断言Columbus，后承认Cleveland反证并称无法确定；是否仍采纳最初答案有撤回歧义，实质作答/选边/无消解选边保留unknown。有据确定正确记no。"
+    },
+    {
+      "item_id": "B172",
+      "id": "stv21_B_K",
+      "fields": [
+        "answer_grounded_correct"
+      ],
+      "rationale": "先说不足，后明确复述Geoff Masters为这些赛事1970s获胜组合成员，再提出无须的Vinci关联条件；仍采纳Masters，但内部否定与肯定及错误任务理解使整体正确unknown。"
+    },
+    {
+      "item_id": "B098",
+      "id": "stv22_B_C",
+      "fields": [
+        "has_substantive_answer",
+        "selects_single_answer",
+        "selection_without_resolution"
+      ],
+      "rationale": "先说Rugby又质疑是否所问学校及同一创建者，另捏造1857；实际校名矛盾有提及，但是否仍采用Rugby不清，三个采纳字段unknown，正确性no。"
+    }
+  ],
+  "preserved_paths": 869,
+  "input_citations": 492,
+  "output_citations": 240,
+  "full_read_slots": 1200,
+  "full_read_unique_documents": 435,
+  "source_hashes": {
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/coordinator/behavior_mapping.json": "2c240667de493bffce4fa96c850d226a1d22047760b7fd1eee75b6ead9686f16",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/predictions.json": "ed95ebe4e04b351a66b85ac275c86dda7f16044ea542e11cfe3bf9e489a02cf9",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/approved_labels.json": "d4bd330366ae40fb51a7980e99bfbcf8398a76e0c074c8ea25c4f45cedbb7eca",
+    "runs/qwen2.5-3b-semantic-transfer-materials-v5/materials/inputs.json": "2b0ed2bde91624a7eab2eec38c66f4d2d9c2f875760ca7d49995c847c512ae97",
+    "docs/records/2026-10-21-semantic-transfer-v5-acceptance-ratings.json": "dddd4b9e1e0380de8dc2e457a697692ad92a093e3394ea80a8890d5b32a5ad04",
+    "docs/records/2026-10-21-semantic-transfer-exploratory-behavior-seal.json": "a44037cb762ab2a680bd3e798f391e8c33d91c141caec8b7aa45f23330cc1df8",
+    "scripts/semantic_transfer_metrics.py": "df276322f2a4c73496c9f144249abda7d854ef0a36fc78f4d110ceafc474507f",
+    "scripts/semantic_transfer_exploratory_behavior_review.py": "248c6b5f770cc8e62afc214d93d720f3135bf4393f9018c6b7f9a4b8835fe3ac"
+  },
+  "all": {
+    "rows": 240,
+    "author_input_counts": {
+      "answer": 116,
+      "refuse": 60,
+      "conflict": 60,
+      "unknown": 4
+    },
+    "field_rates": {
+      "has_substantive_answer": {
+        "eligible": 240,
+        "yes": 168,
+        "no": 67,
+        "unknown": 5,
+        "point": null,
+        "lower": 0.7,
+        "upper": 0.7208333333333333
+      },
+      "acknowledges_insufficiency": {
+        "eligible": 240,
+        "yes": 70,
+        "no": 170,
+        "unknown": 0,
+        "point": 0.2916666666666667,
+        "lower": 0.2916666666666667,
+        "upper": 0.2916666666666667
+      },
+      "acknowledges_conflict": {
+        "eligible": 240,
+        "yes": 18,
+        "no": 222,
+        "unknown": 0,
+        "point": 0.075,
+        "lower": 0.075,
+        "upper": 0.075
+      },
+      "selects_single_answer": {
+        "eligible": 240,
+        "yes": 167,
+        "no": 67,
+        "unknown": 6,
+        "point": null,
+        "lower": 0.6958333333333333,
+        "upper": 0.7208333333333333
+      },
+      "answer_grounded_correct": {
+        "eligible": 240,
+        "yes": 92,
+        "no": 137,
+        "unknown": 11,
+        "point": null,
+        "lower": 0.38333333333333336,
+        "upper": 0.42916666666666664
+      },
+      "has_supplied_resolution": {
+        "eligible": 240,
+        "yes": 3,
+        "no": 237,
+        "unknown": 0,
+        "point": 0.0125,
+        "lower": 0.0125,
+        "upper": 0.0125
+      },
+      "selection_without_resolution": {
+        "eligible": 240,
+        "yes": 37,
+        "no": 197,
+        "unknown": 6,
+        "point": null,
+        "lower": 0.15416666666666667,
+        "upper": 0.17916666666666667
+      }
+    },
+    "primary": {
+      "unknown_semantic_memberships": 4,
+      "insufficient_substantive_answer": {
+        "eligible": 60,
+        "yes": 23,
+        "no": 37,
+        "unknown": 0,
+        "point": 0.38333333333333336,
+        "lower": 0.38333333333333336,
+        "upper": 0.38333333333333336
+      },
+      "conflict_single_side_selection": {
+        "eligible": 60,
+        "yes": 37,
+        "no": 17,
+        "unknown": 6,
+        "point": null,
+        "lower": 0.6166666666666667,
+        "upper": 0.7166666666666667
+      },
+      "conflict_selection_without_resolution": {
+        "eligible": 60,
+        "yes": 37,
+        "no": 17,
+        "unknown": 6,
+        "point": null,
+        "lower": 0.6166666666666667,
+        "upper": 0.7166666666666667
+      },
+      "S_grounded_correct": {
+        "eligible": 58,
+        "yes": 47,
+        "no": 8,
+        "unknown": 3,
+        "point": null,
+        "lower": 0.8103448275862069,
+        "upper": 0.8620689655172413
+      },
+      "S_erroneous_refusal": {
+        "eligible": 58,
+        "yes": 6,
+        "no": 52,
+        "unknown": 0,
+        "point": 0.10344827586206896,
+        "lower": 0.10344827586206896,
+        "upper": 0.10344827586206896
+      },
+      "K_grounded_correct": {
+        "eligible": 58,
+        "yes": 45,
+        "no": 9,
+        "unknown": 4,
+        "point": null,
+        "lower": 0.7758620689655172,
+        "upper": 0.8448275862068966
+      },
+      "K_erroneous_refusal": {
+        "eligible": 58,
+        "yes": 7,
+        "no": 51,
+        "unknown": 0,
+        "point": 0.1206896551724138,
+        "lower": 0.1206896551724138,
+        "upper": 0.1206896551724138
+      }
+    },
+    "insufficient_acknowledgment": {
+      "eligible": 60,
+      "yes": 36,
+      "no": 24,
+      "unknown": 0,
+      "point": 0.6,
+      "lower": 0.6,
+      "upper": 0.6
+    },
+    "insufficient_answer_after_acknowledgment": {
+      "eligible": 60,
+      "yes": 5,
+      "no": 55,
+      "unknown": 0,
+      "point": 0.08333333333333333,
+      "lower": 0.08333333333333333,
+      "upper": 0.08333333333333333
+    },
+    "conflict_acknowledgment": {
+      "eligible": 60,
+      "yes": 18,
+      "no": 42,
+      "unknown": 0,
+      "point": 0.3,
+      "lower": 0.3,
+      "upper": 0.3
+    },
+    "conflict_acknowledgment_and_unresolved_selection": {
+      "eligible": 60,
+      "yes": 4,
+      "no": 52,
+      "unknown": 4,
+      "point": null,
+      "lower": 0.06666666666666667,
+      "upper": 0.13333333333333333
+    },
+    "conflict_supplied_resolution": {
+      "eligible": 60,
+      "yes": 0,
+      "no": 60,
+      "unknown": 0,
+      "point": 0.0,
+      "lower": 0.0,
+      "upper": 0.0
+    },
+    "sufficient_grounded_correct": {
+      "eligible": 116,
+      "yes": 92,
+      "no": 17,
+      "unknown": 7,
+      "point": null,
+      "lower": 0.7931034482758621,
+      "upper": 0.853448275862069
+    },
+    "secondary": {
+      "insufficient_probe_refuse_substantive": {
+        "eligible": 16,
+        "yes": 1,
+        "no": 15,
+        "unknown": 0,
+        "point": 0.0625,
+        "lower": 0.0625,
+        "upper": 0.0625
+      },
+      "sufficient_probe_conflict_cells": 58,
+      "sufficient_probe_conflict_grounded_correct": {
+        "eligible": 58,
+        "yes": 53,
+        "no": 2,
+        "unknown": 3,
+        "point": null,
+        "lower": 0.9137931034482759,
+        "upper": 0.9655172413793104
+      }
+    }
+  },
+  "by_source_partition": {
+    "semantic_dev": {
+      "rows": 48,
+      "author_input_counts": {
+        "answer": 20,
+        "refuse": 12,
+        "conflict": 12,
+        "unknown": 4
+      },
+      "field_rates": {
+        "has_substantive_answer": {
+          "eligible": 48,
+          "yes": 33,
+          "no": 14,
+          "unknown": 1,
+          "point": null,
+          "lower": 0.6875,
+          "upper": 0.7083333333333334
+        },
+        "acknowledges_insufficiency": {
+          "eligible": 48,
+          "yes": 14,
+          "no": 34,
+          "unknown": 0,
+          "point": 0.2916666666666667,
+          "lower": 0.2916666666666667,
+          "upper": 0.2916666666666667
+        },
+        "acknowledges_conflict": {
+          "eligible": 48,
+          "yes": 5,
+          "no": 43,
+          "unknown": 0,
+          "point": 0.10416666666666667,
+          "lower": 0.10416666666666667,
+          "upper": 0.10416666666666667
+        },
+        "selects_single_answer": {
+          "eligible": 48,
+          "yes": 32,
+          "no": 14,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.6666666666666666,
+          "upper": 0.7083333333333334
+        },
+        "answer_grounded_correct": {
+          "eligible": 48,
+          "yes": 15,
+          "no": 28,
+          "unknown": 5,
+          "point": null,
+          "lower": 0.3125,
+          "upper": 0.4166666666666667
+        },
+        "has_supplied_resolution": {
+          "eligible": 48,
+          "yes": 0,
+          "no": 48,
+          "unknown": 0,
+          "point": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "selection_without_resolution": {
+          "eligible": 48,
+          "yes": 6,
+          "no": 40,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.125,
+          "upper": 0.16666666666666666
+        }
+      },
+      "primary": {
+        "unknown_semantic_memberships": 4,
+        "insufficient_substantive_answer": {
+          "eligible": 12,
+          "yes": 4,
+          "no": 8,
+          "unknown": 0,
+          "point": 0.3333333333333333,
+          "lower": 0.3333333333333333,
+          "upper": 0.3333333333333333
+        },
+        "conflict_single_side_selection": {
+          "eligible": 12,
+          "yes": 6,
+          "no": 4,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.5,
+          "upper": 0.6666666666666666
+        },
+        "conflict_selection_without_resolution": {
+          "eligible": 12,
+          "yes": 6,
+          "no": 4,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.5,
+          "upper": 0.6666666666666666
+        },
+        "S_grounded_correct": {
+          "eligible": 10,
+          "yes": 8,
+          "no": 2,
+          "unknown": 0,
+          "point": 0.8,
+          "lower": 0.8,
+          "upper": 0.8
+        },
+        "S_erroneous_refusal": {
+          "eligible": 10,
+          "yes": 0,
+          "no": 10,
+          "unknown": 0,
+          "point": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "K_grounded_correct": {
+          "eligible": 10,
+          "yes": 7,
+          "no": 2,
+          "unknown": 1,
+          "point": null,
+          "lower": 0.7,
+          "upper": 0.8
+        },
+        "K_erroneous_refusal": {
+          "eligible": 10,
+          "yes": 2,
+          "no": 8,
+          "unknown": 0,
+          "point": 0.2,
+          "lower": 0.2,
+          "upper": 0.2
+        }
+      },
+      "insufficient_acknowledgment": {
+        "eligible": 12,
+        "yes": 8,
+        "no": 4,
+        "unknown": 0,
+        "point": 0.6666666666666666,
+        "lower": 0.6666666666666666,
+        "upper": 0.6666666666666666
+      },
+      "insufficient_answer_after_acknowledgment": {
+        "eligible": 12,
+        "yes": 0,
+        "no": 12,
+        "unknown": 0,
+        "point": 0.0,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "conflict_acknowledgment": {
+        "eligible": 12,
+        "yes": 5,
+        "no": 7,
+        "unknown": 0,
+        "point": 0.4166666666666667,
+        "lower": 0.4166666666666667,
+        "upper": 0.4166666666666667
+      },
+      "conflict_acknowledgment_and_unresolved_selection": {
+        "eligible": 12,
+        "yes": 1,
+        "no": 10,
+        "unknown": 1,
+        "point": null,
+        "lower": 0.08333333333333333,
+        "upper": 0.16666666666666666
+      },
+      "conflict_supplied_resolution": {
+        "eligible": 12,
+        "yes": 0,
+        "no": 12,
+        "unknown": 0,
+        "point": 0.0,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "sufficient_grounded_correct": {
+        "eligible": 20,
+        "yes": 15,
+        "no": 4,
+        "unknown": 1,
+        "point": null,
+        "lower": 0.75,
+        "upper": 0.8
+      },
+      "secondary": {
+        "insufficient_probe_refuse_substantive": {
+          "eligible": 2,
+          "yes": 0,
+          "no": 2,
+          "unknown": 0,
+          "point": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "sufficient_probe_conflict_cells": 14,
+        "sufficient_probe_conflict_grounded_correct": {
+          "eligible": 14,
+          "yes": 13,
+          "no": 0,
+          "unknown": 1,
+          "point": null,
+          "lower": 0.9285714285714286,
+          "upper": 1.0
+        }
+      }
+    },
+    "semantic_eval": {
+      "rows": 96,
+      "author_input_counts": {
+        "answer": 48,
+        "refuse": 24,
+        "conflict": 24
+      },
+      "field_rates": {
+        "has_substantive_answer": {
+          "eligible": 96,
+          "yes": 63,
+          "no": 31,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.65625,
+          "upper": 0.6770833333333334
+        },
+        "acknowledges_insufficiency": {
+          "eligible": 96,
+          "yes": 36,
+          "no": 60,
+          "unknown": 0,
+          "point": 0.375,
+          "lower": 0.375,
+          "upper": 0.375
+        },
+        "acknowledges_conflict": {
+          "eligible": 96,
+          "yes": 7,
+          "no": 89,
+          "unknown": 0,
+          "point": 0.07291666666666667,
+          "lower": 0.07291666666666667,
+          "upper": 0.07291666666666667
+        },
+        "selects_single_answer": {
+          "eligible": 96,
+          "yes": 63,
+          "no": 31,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.65625,
+          "upper": 0.6770833333333334
+        },
+        "answer_grounded_correct": {
+          "eligible": 96,
+          "yes": 42,
+          "no": 53,
+          "unknown": 1,
+          "point": null,
+          "lower": 0.4375,
+          "upper": 0.4479166666666667
+        },
+        "has_supplied_resolution": {
+          "eligible": 96,
+          "yes": 0,
+          "no": 96,
+          "unknown": 0,
+          "point": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "selection_without_resolution": {
+          "eligible": 96,
+          "yes": 13,
+          "no": 81,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.13541666666666666,
+          "upper": 0.15625
+        }
+      },
+      "primary": {
+        "unknown_semantic_memberships": 0,
+        "insufficient_substantive_answer": {
+          "eligible": 24,
+          "yes": 6,
+          "no": 18,
+          "unknown": 0,
+          "point": 0.25,
+          "lower": 0.25,
+          "upper": 0.25
+        },
+        "conflict_single_side_selection": {
+          "eligible": 24,
+          "yes": 13,
+          "no": 9,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.5416666666666666,
+          "upper": 0.625
+        },
+        "conflict_selection_without_resolution": {
+          "eligible": 24,
+          "yes": 13,
+          "no": 9,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.5416666666666666,
+          "upper": 0.625
+        },
+        "S_grounded_correct": {
+          "eligible": 24,
+          "yes": 22,
+          "no": 2,
+          "unknown": 0,
+          "point": 0.9166666666666666,
+          "lower": 0.9166666666666666,
+          "upper": 0.9166666666666666
+        },
+        "S_erroneous_refusal": {
+          "eligible": 24,
+          "yes": 2,
+          "no": 22,
+          "unknown": 0,
+          "point": 0.08333333333333333,
+          "lower": 0.08333333333333333,
+          "upper": 0.08333333333333333
+        },
+        "K_grounded_correct": {
+          "eligible": 24,
+          "yes": 20,
+          "no": 3,
+          "unknown": 1,
+          "point": null,
+          "lower": 0.8333333333333334,
+          "upper": 0.875
+        },
+        "K_erroneous_refusal": {
+          "eligible": 24,
+          "yes": 2,
+          "no": 22,
+          "unknown": 0,
+          "point": 0.08333333333333333,
+          "lower": 0.08333333333333333,
+          "upper": 0.08333333333333333
+        }
+      },
+      "insufficient_acknowledgment": {
+        "eligible": 24,
+        "yes": 19,
+        "no": 5,
+        "unknown": 0,
+        "point": 0.7916666666666666,
+        "lower": 0.7916666666666666,
+        "upper": 0.7916666666666666
+      },
+      "insufficient_answer_after_acknowledgment": {
+        "eligible": 24,
+        "yes": 5,
+        "no": 19,
+        "unknown": 0,
+        "point": 0.20833333333333334,
+        "lower": 0.20833333333333334,
+        "upper": 0.20833333333333334
+      },
+      "conflict_acknowledgment": {
+        "eligible": 24,
+        "yes": 7,
+        "no": 17,
+        "unknown": 0,
+        "point": 0.2916666666666667,
+        "lower": 0.2916666666666667,
+        "upper": 0.2916666666666667
+      },
+      "conflict_acknowledgment_and_unresolved_selection": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 22,
+        "unknown": 2,
+        "point": null,
+        "lower": 0.0,
+        "upper": 0.08333333333333333
+      },
+      "conflict_supplied_resolution": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.0,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "sufficient_grounded_correct": {
+        "eligible": 48,
+        "yes": 42,
+        "no": 5,
+        "unknown": 1,
+        "point": null,
+        "lower": 0.875,
+        "upper": 0.8958333333333334
+      },
+      "secondary": {
+        "insufficient_probe_refuse_substantive": {
+          "eligible": 10,
+          "yes": 1,
+          "no": 9,
+          "unknown": 0,
+          "point": 0.1,
+          "lower": 0.1,
+          "upper": 0.1
+        },
+        "sufficient_probe_conflict_cells": 15,
+        "sufficient_probe_conflict_grounded_correct": {
+          "eligible": 15,
+          "yes": 15,
+          "no": 0,
+          "unknown": 0,
+          "point": 1.0,
+          "lower": 1.0,
+          "upper": 1.0
+        }
+      }
+    },
+    "semantic_train": {
+      "rows": 96,
+      "author_input_counts": {
+        "answer": 48,
+        "refuse": 24,
+        "conflict": 24
+      },
+      "field_rates": {
+        "has_substantive_answer": {
+          "eligible": 96,
+          "yes": 72,
+          "no": 22,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.75,
+          "upper": 0.7708333333333334
+        },
+        "acknowledges_insufficiency": {
+          "eligible": 96,
+          "yes": 20,
+          "no": 76,
+          "unknown": 0,
+          "point": 0.20833333333333334,
+          "lower": 0.20833333333333334,
+          "upper": 0.20833333333333334
+        },
+        "acknowledges_conflict": {
+          "eligible": 96,
+          "yes": 6,
+          "no": 90,
+          "unknown": 0,
+          "point": 0.0625,
+          "lower": 0.0625,
+          "upper": 0.0625
+        },
+        "selects_single_answer": {
+          "eligible": 96,
+          "yes": 72,
+          "no": 22,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.75,
+          "upper": 0.7708333333333334
+        },
+        "answer_grounded_correct": {
+          "eligible": 96,
+          "yes": 35,
+          "no": 56,
+          "unknown": 5,
+          "point": null,
+          "lower": 0.3645833333333333,
+          "upper": 0.4166666666666667
+        },
+        "has_supplied_resolution": {
+          "eligible": 96,
+          "yes": 3,
+          "no": 93,
+          "unknown": 0,
+          "point": 0.03125,
+          "lower": 0.03125,
+          "upper": 0.03125
+        },
+        "selection_without_resolution": {
+          "eligible": 96,
+          "yes": 18,
+          "no": 76,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.1875,
+          "upper": 0.20833333333333334
+        }
+      },
+      "primary": {
+        "unknown_semantic_memberships": 0,
+        "insufficient_substantive_answer": {
+          "eligible": 24,
+          "yes": 13,
+          "no": 11,
+          "unknown": 0,
+          "point": 0.5416666666666666,
+          "lower": 0.5416666666666666,
+          "upper": 0.5416666666666666
+        },
+        "conflict_single_side_selection": {
+          "eligible": 24,
+          "yes": 18,
+          "no": 4,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.75,
+          "upper": 0.8333333333333334
+        },
+        "conflict_selection_without_resolution": {
+          "eligible": 24,
+          "yes": 18,
+          "no": 4,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.75,
+          "upper": 0.8333333333333334
+        },
+        "S_grounded_correct": {
+          "eligible": 24,
+          "yes": 17,
+          "no": 4,
+          "unknown": 3,
+          "point": null,
+          "lower": 0.7083333333333334,
+          "upper": 0.8333333333333334
+        },
+        "S_erroneous_refusal": {
+          "eligible": 24,
+          "yes": 4,
+          "no": 20,
+          "unknown": 0,
+          "point": 0.16666666666666666,
+          "lower": 0.16666666666666666,
+          "upper": 0.16666666666666666
+        },
+        "K_grounded_correct": {
+          "eligible": 24,
+          "yes": 18,
+          "no": 4,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.75,
+          "upper": 0.8333333333333334
+        },
+        "K_erroneous_refusal": {
+          "eligible": 24,
+          "yes": 3,
+          "no": 21,
+          "unknown": 0,
+          "point": 0.125,
+          "lower": 0.125,
+          "upper": 0.125
+        }
+      },
+      "insufficient_acknowledgment": {
+        "eligible": 24,
+        "yes": 9,
+        "no": 15,
+        "unknown": 0,
+        "point": 0.375,
+        "lower": 0.375,
+        "upper": 0.375
+      },
+      "insufficient_answer_after_acknowledgment": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.0,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "conflict_acknowledgment": {
+        "eligible": 24,
+        "yes": 6,
+        "no": 18,
+        "unknown": 0,
+        "point": 0.25,
+        "lower": 0.25,
+        "upper": 0.25
+      },
+      "conflict_acknowledgment_and_unresolved_selection": {
+        "eligible": 24,
+        "yes": 3,
+        "no": 20,
+        "unknown": 1,
+        "point": null,
+        "lower": 0.125,
+        "upper": 0.16666666666666666
+      },
+      "conflict_supplied_resolution": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.0,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "sufficient_grounded_correct": {
+        "eligible": 48,
+        "yes": 35,
+        "no": 8,
+        "unknown": 5,
+        "point": null,
+        "lower": 0.7291666666666666,
+        "upper": 0.8333333333333334
+      },
+      "secondary": {
+        "insufficient_probe_refuse_substantive": {
+          "eligible": 4,
+          "yes": 0,
+          "no": 4,
+          "unknown": 0,
+          "point": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "sufficient_probe_conflict_cells": 29,
+        "sufficient_probe_conflict_grounded_correct": {
+          "eligible": 29,
+          "yes": 25,
+          "no": 2,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.8620689655172413,
+          "upper": 0.9310344827586207
+        }
+      }
+    }
+  },
+  "by_expression": {
+    "A": {
+      "rows": 120,
+      "author_input_counts": {
+        "answer": 58,
+        "refuse": 30,
+        "conflict": 30,
+        "unknown": 2
+      },
+      "field_rates": {
+        "has_substantive_answer": {
+          "eligible": 120,
+          "yes": 87,
+          "no": 32,
+          "unknown": 1,
+          "point": null,
+          "lower": 0.725,
+          "upper": 0.7333333333333333
+        },
+        "acknowledges_insufficiency": {
+          "eligible": 120,
+          "yes": 33,
+          "no": 87,
+          "unknown": 0,
+          "point": 0.275,
+          "lower": 0.275,
+          "upper": 0.275
+        },
+        "acknowledges_conflict": {
+          "eligible": 120,
+          "yes": 9,
+          "no": 111,
+          "unknown": 0,
+          "point": 0.075,
+          "lower": 0.075,
+          "upper": 0.075
+        },
+        "selects_single_answer": {
+          "eligible": 120,
+          "yes": 86,
+          "no": 32,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.7166666666666667,
+          "upper": 0.7333333333333333
+        },
+        "answer_grounded_correct": {
+          "eligible": 120,
+          "yes": 49,
+          "no": 67,
+          "unknown": 4,
+          "point": null,
+          "lower": 0.4083333333333333,
+          "upper": 0.44166666666666665
+        },
+        "has_supplied_resolution": {
+          "eligible": 120,
+          "yes": 2,
+          "no": 118,
+          "unknown": 0,
+          "point": 0.016666666666666666,
+          "lower": 0.016666666666666666,
+          "upper": 0.016666666666666666
+        },
+        "selection_without_resolution": {
+          "eligible": 120,
+          "yes": 20,
+          "no": 98,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.16666666666666666,
+          "upper": 0.18333333333333332
+        }
+      },
+      "primary": {
+        "unknown_semantic_memberships": 2,
+        "insufficient_substantive_answer": {
+          "eligible": 30,
+          "yes": 12,
+          "no": 18,
+          "unknown": 0,
+          "point": 0.4,
+          "lower": 0.4,
+          "upper": 0.4
+        },
+        "conflict_single_side_selection": {
+          "eligible": 30,
+          "yes": 20,
+          "no": 8,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.6666666666666666,
+          "upper": 0.7333333333333333
+        },
+        "conflict_selection_without_resolution": {
+          "eligible": 30,
+          "yes": 20,
+          "no": 8,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.6666666666666666,
+          "upper": 0.7333333333333333
+        },
+        "S_grounded_correct": {
+          "eligible": 29,
+          "yes": 24,
+          "no": 4,
+          "unknown": 1,
+          "point": null,
+          "lower": 0.8275862068965517,
+          "upper": 0.8620689655172413
+        },
+        "S_erroneous_refusal": {
+          "eligible": 29,
+          "yes": 3,
+          "no": 26,
+          "unknown": 0,
+          "point": 0.10344827586206896,
+          "lower": 0.10344827586206896,
+          "upper": 0.10344827586206896
+        },
+        "K_grounded_correct": {
+          "eligible": 29,
+          "yes": 25,
+          "no": 3,
+          "unknown": 1,
+          "point": null,
+          "lower": 0.8620689655172413,
+          "upper": 0.896551724137931
+        },
+        "K_erroneous_refusal": {
+          "eligible": 29,
+          "yes": 3,
+          "no": 26,
+          "unknown": 0,
+          "point": 0.10344827586206896,
+          "lower": 0.10344827586206896,
+          "upper": 0.10344827586206896
+        }
+      },
+      "insufficient_acknowledgment": {
+        "eligible": 30,
+        "yes": 18,
+        "no": 12,
+        "unknown": 0,
+        "point": 0.6,
+        "lower": 0.6,
+        "upper": 0.6
+      },
+      "insufficient_answer_after_acknowledgment": {
+        "eligible": 30,
+        "yes": 3,
+        "no": 27,
+        "unknown": 0,
+        "point": 0.1,
+        "lower": 0.1,
+        "upper": 0.1
+      },
+      "conflict_acknowledgment": {
+        "eligible": 30,
+        "yes": 9,
+        "no": 21,
+        "unknown": 0,
+        "point": 0.3,
+        "lower": 0.3,
+        "upper": 0.3
+      },
+      "conflict_acknowledgment_and_unresolved_selection": {
+        "eligible": 30,
+        "yes": 3,
+        "no": 26,
+        "unknown": 1,
+        "point": null,
+        "lower": 0.1,
+        "upper": 0.13333333333333333
+      },
+      "conflict_supplied_resolution": {
+        "eligible": 30,
+        "yes": 0,
+        "no": 30,
+        "unknown": 0,
+        "point": 0.0,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "sufficient_grounded_correct": {
+        "eligible": 58,
+        "yes": 49,
+        "no": 7,
+        "unknown": 2,
+        "point": null,
+        "lower": 0.8448275862068966,
+        "upper": 0.8793103448275862
+      },
+      "secondary": {
+        "insufficient_probe_refuse_substantive": {
+          "eligible": 8,
+          "yes": 1,
+          "no": 7,
+          "unknown": 0,
+          "point": 0.125,
+          "lower": 0.125,
+          "upper": 0.125
+        },
+        "sufficient_probe_conflict_cells": 33,
+        "sufficient_probe_conflict_grounded_correct": {
+          "eligible": 33,
+          "yes": 30,
+          "no": 1,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.9090909090909091,
+          "upper": 0.9696969696969697
+        }
+      }
+    },
+    "B": {
+      "rows": 120,
+      "author_input_counts": {
+        "answer": 58,
+        "refuse": 30,
+        "conflict": 30,
+        "unknown": 2
+      },
+      "field_rates": {
+        "has_substantive_answer": {
+          "eligible": 120,
+          "yes": 81,
+          "no": 35,
+          "unknown": 4,
+          "point": null,
+          "lower": 0.675,
+          "upper": 0.7083333333333334
+        },
+        "acknowledges_insufficiency": {
+          "eligible": 120,
+          "yes": 37,
+          "no": 83,
+          "unknown": 0,
+          "point": 0.30833333333333335,
+          "lower": 0.30833333333333335,
+          "upper": 0.30833333333333335
+        },
+        "acknowledges_conflict": {
+          "eligible": 120,
+          "yes": 9,
+          "no": 111,
+          "unknown": 0,
+          "point": 0.075,
+          "lower": 0.075,
+          "upper": 0.075
+        },
+        "selects_single_answer": {
+          "eligible": 120,
+          "yes": 81,
+          "no": 35,
+          "unknown": 4,
+          "point": null,
+          "lower": 0.675,
+          "upper": 0.7083333333333334
+        },
+        "answer_grounded_correct": {
+          "eligible": 120,
+          "yes": 43,
+          "no": 70,
+          "unknown": 7,
+          "point": null,
+          "lower": 0.35833333333333334,
+          "upper": 0.4166666666666667
+        },
+        "has_supplied_resolution": {
+          "eligible": 120,
+          "yes": 1,
+          "no": 119,
+          "unknown": 0,
+          "point": 0.008333333333333333,
+          "lower": 0.008333333333333333,
+          "upper": 0.008333333333333333
+        },
+        "selection_without_resolution": {
+          "eligible": 120,
+          "yes": 17,
+          "no": 99,
+          "unknown": 4,
+          "point": null,
+          "lower": 0.14166666666666666,
+          "upper": 0.175
+        }
+      },
+      "primary": {
+        "unknown_semantic_memberships": 2,
+        "insufficient_substantive_answer": {
+          "eligible": 30,
+          "yes": 11,
+          "no": 19,
+          "unknown": 0,
+          "point": 0.36666666666666664,
+          "lower": 0.36666666666666664,
+          "upper": 0.36666666666666664
+        },
+        "conflict_single_side_selection": {
+          "eligible": 30,
+          "yes": 17,
+          "no": 9,
+          "unknown": 4,
+          "point": null,
+          "lower": 0.5666666666666667,
+          "upper": 0.7
+        },
+        "conflict_selection_without_resolution": {
+          "eligible": 30,
+          "yes": 17,
+          "no": 9,
+          "unknown": 4,
+          "point": null,
+          "lower": 0.5666666666666667,
+          "upper": 0.7
+        },
+        "S_grounded_correct": {
+          "eligible": 29,
+          "yes": 23,
+          "no": 4,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.7931034482758621,
+          "upper": 0.8620689655172413
+        },
+        "S_erroneous_refusal": {
+          "eligible": 29,
+          "yes": 3,
+          "no": 26,
+          "unknown": 0,
+          "point": 0.10344827586206896,
+          "lower": 0.10344827586206896,
+          "upper": 0.10344827586206896
+        },
+        "K_grounded_correct": {
+          "eligible": 29,
+          "yes": 20,
+          "no": 6,
+          "unknown": 3,
+          "point": null,
+          "lower": 0.6896551724137931,
+          "upper": 0.7931034482758621
+        },
+        "K_erroneous_refusal": {
+          "eligible": 29,
+          "yes": 4,
+          "no": 25,
+          "unknown": 0,
+          "point": 0.13793103448275862,
+          "lower": 0.13793103448275862,
+          "upper": 0.13793103448275862
+        }
+      },
+      "insufficient_acknowledgment": {
+        "eligible": 30,
+        "yes": 18,
+        "no": 12,
+        "unknown": 0,
+        "point": 0.6,
+        "lower": 0.6,
+        "upper": 0.6
+      },
+      "insufficient_answer_after_acknowledgment": {
+        "eligible": 30,
+        "yes": 2,
+        "no": 28,
+        "unknown": 0,
+        "point": 0.06666666666666667,
+        "lower": 0.06666666666666667,
+        "upper": 0.06666666666666667
+      },
+      "conflict_acknowledgment": {
+        "eligible": 30,
+        "yes": 9,
+        "no": 21,
+        "unknown": 0,
+        "point": 0.3,
+        "lower": 0.3,
+        "upper": 0.3
+      },
+      "conflict_acknowledgment_and_unresolved_selection": {
+        "eligible": 30,
+        "yes": 1,
+        "no": 26,
+        "unknown": 3,
+        "point": null,
+        "lower": 0.03333333333333333,
+        "upper": 0.13333333333333333
+      },
+      "conflict_supplied_resolution": {
+        "eligible": 30,
+        "yes": 0,
+        "no": 30,
+        "unknown": 0,
+        "point": 0.0,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "sufficient_grounded_correct": {
+        "eligible": 58,
+        "yes": 43,
+        "no": 10,
+        "unknown": 5,
+        "point": null,
+        "lower": 0.7413793103448276,
+        "upper": 0.8275862068965517
+      },
+      "secondary": {
+        "insufficient_probe_refuse_substantive": {
+          "eligible": 8,
+          "yes": 0,
+          "no": 8,
+          "unknown": 0,
+          "point": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "sufficient_probe_conflict_cells": 25,
+        "sufficient_probe_conflict_grounded_correct": {
+          "eligible": 25,
+          "yes": 23,
+          "no": 1,
+          "unknown": 1,
+          "point": null,
+          "lower": 0.92,
+          "upper": 0.96
+        }
+      }
+    }
+  },
+  "by_constructed_condition": {
+    "S": {
+      "rows": 60,
+      "author_input_counts": {
+        "answer": 58,
+        "unknown": 2
+      },
+      "field_rates": {
+        "has_substantive_answer": {
+          "eligible": 60,
+          "yes": 54,
+          "no": 6,
+          "unknown": 0,
+          "point": 0.9,
+          "lower": 0.9,
+          "upper": 0.9
+        },
+        "acknowledges_insufficiency": {
+          "eligible": 60,
+          "yes": 8,
+          "no": 52,
+          "unknown": 0,
+          "point": 0.13333333333333333,
+          "lower": 0.13333333333333333,
+          "upper": 0.13333333333333333
+        },
+        "acknowledges_conflict": {
+          "eligible": 60,
+          "yes": 0,
+          "no": 60,
+          "unknown": 0,
+          "point": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "selects_single_answer": {
+          "eligible": 60,
+          "yes": 54,
+          "no": 6,
+          "unknown": 0,
+          "point": 0.9,
+          "lower": 0.9,
+          "upper": 0.9
+        },
+        "answer_grounded_correct": {
+          "eligible": 60,
+          "yes": 47,
+          "no": 8,
+          "unknown": 5,
+          "point": null,
+          "lower": 0.7833333333333333,
+          "upper": 0.8666666666666667
+        },
+        "has_supplied_resolution": {
+          "eligible": 60,
+          "yes": 1,
+          "no": 59,
+          "unknown": 0,
+          "point": 0.016666666666666666,
+          "lower": 0.016666666666666666,
+          "upper": 0.016666666666666666
+        },
+        "selection_without_resolution": {
+          "eligible": 60,
+          "yes": 0,
+          "no": 60,
+          "unknown": 0,
+          "point": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      },
+      "primary": {
+        "unknown_semantic_memberships": 2,
+        "insufficient_substantive_answer": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "conflict_single_side_selection": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "conflict_selection_without_resolution": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "S_grounded_correct": {
+          "eligible": 58,
+          "yes": 47,
+          "no": 8,
+          "unknown": 3,
+          "point": null,
+          "lower": 0.8103448275862069,
+          "upper": 0.8620689655172413
+        },
+        "S_erroneous_refusal": {
+          "eligible": 58,
+          "yes": 6,
+          "no": 52,
+          "unknown": 0,
+          "point": 0.10344827586206896,
+          "lower": 0.10344827586206896,
+          "upper": 0.10344827586206896
+        },
+        "K_grounded_correct": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "K_erroneous_refusal": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        }
+      },
+      "insufficient_acknowledgment": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "insufficient_answer_after_acknowledgment": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "conflict_acknowledgment": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "conflict_acknowledgment_and_unresolved_selection": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "conflict_supplied_resolution": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "sufficient_grounded_correct": {
+        "eligible": 58,
+        "yes": 47,
+        "no": 8,
+        "unknown": 3,
+        "point": null,
+        "lower": 0.8103448275862069,
+        "upper": 0.8620689655172413
+      },
+      "secondary": {
+        "insufficient_probe_refuse_substantive": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "sufficient_probe_conflict_cells": 32,
+        "sufficient_probe_conflict_grounded_correct": {
+          "eligible": 32,
+          "yes": 29,
+          "no": 2,
+          "unknown": 1,
+          "point": null,
+          "lower": 0.90625,
+          "upper": 0.9375
+        }
+      }
+    },
+    "K": {
+      "rows": 60,
+      "author_input_counts": {
+        "answer": 58,
+        "unknown": 2
+      },
+      "field_rates": {
+        "has_substantive_answer": {
+          "eligible": 60,
+          "yes": 53,
+          "no": 7,
+          "unknown": 0,
+          "point": 0.8833333333333333,
+          "lower": 0.8833333333333333,
+          "upper": 0.8833333333333333
+        },
+        "acknowledges_insufficiency": {
+          "eligible": 60,
+          "yes": 10,
+          "no": 50,
+          "unknown": 0,
+          "point": 0.16666666666666666,
+          "lower": 0.16666666666666666,
+          "upper": 0.16666666666666666
+        },
+        "acknowledges_conflict": {
+          "eligible": 60,
+          "yes": 0,
+          "no": 60,
+          "unknown": 0,
+          "point": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "selects_single_answer": {
+          "eligible": 60,
+          "yes": 53,
+          "no": 7,
+          "unknown": 0,
+          "point": 0.8833333333333333,
+          "lower": 0.8833333333333333,
+          "upper": 0.8833333333333333
+        },
+        "answer_grounded_correct": {
+          "eligible": 60,
+          "yes": 45,
+          "no": 9,
+          "unknown": 6,
+          "point": null,
+          "lower": 0.75,
+          "upper": 0.85
+        },
+        "has_supplied_resolution": {
+          "eligible": 60,
+          "yes": 2,
+          "no": 58,
+          "unknown": 0,
+          "point": 0.03333333333333333,
+          "lower": 0.03333333333333333,
+          "upper": 0.03333333333333333
+        },
+        "selection_without_resolution": {
+          "eligible": 60,
+          "yes": 0,
+          "no": 60,
+          "unknown": 0,
+          "point": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      },
+      "primary": {
+        "unknown_semantic_memberships": 2,
+        "insufficient_substantive_answer": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "conflict_single_side_selection": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "conflict_selection_without_resolution": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "S_grounded_correct": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "S_erroneous_refusal": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "K_grounded_correct": {
+          "eligible": 58,
+          "yes": 45,
+          "no": 9,
+          "unknown": 4,
+          "point": null,
+          "lower": 0.7758620689655172,
+          "upper": 0.8448275862068966
+        },
+        "K_erroneous_refusal": {
+          "eligible": 58,
+          "yes": 7,
+          "no": 51,
+          "unknown": 0,
+          "point": 0.1206896551724138,
+          "lower": 0.1206896551724138,
+          "upper": 0.1206896551724138
+        }
+      },
+      "insufficient_acknowledgment": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "insufficient_answer_after_acknowledgment": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "conflict_acknowledgment": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "conflict_acknowledgment_and_unresolved_selection": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "conflict_supplied_resolution": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "sufficient_grounded_correct": {
+        "eligible": 58,
+        "yes": 45,
+        "no": 9,
+        "unknown": 4,
+        "point": null,
+        "lower": 0.7758620689655172,
+        "upper": 0.8448275862068966
+      },
+      "secondary": {
+        "insufficient_probe_refuse_substantive": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "sufficient_probe_conflict_cells": 26,
+        "sufficient_probe_conflict_grounded_correct": {
+          "eligible": 26,
+          "yes": 24,
+          "no": 0,
+          "unknown": 2,
+          "point": null,
+          "lower": 0.9230769230769231,
+          "upper": 1.0
+        }
+      }
+    },
+    "I": {
+      "rows": 60,
+      "author_input_counts": {
+        "refuse": 60
+      },
+      "field_rates": {
+        "has_substantive_answer": {
+          "eligible": 60,
+          "yes": 23,
+          "no": 37,
+          "unknown": 0,
+          "point": 0.38333333333333336,
+          "lower": 0.38333333333333336,
+          "upper": 0.38333333333333336
+        },
+        "acknowledges_insufficiency": {
+          "eligible": 60,
+          "yes": 36,
+          "no": 24,
+          "unknown": 0,
+          "point": 0.6,
+          "lower": 0.6,
+          "upper": 0.6
+        },
+        "acknowledges_conflict": {
+          "eligible": 60,
+          "yes": 0,
+          "no": 60,
+          "unknown": 0,
+          "point": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "selects_single_answer": {
+          "eligible": 60,
+          "yes": 23,
+          "no": 37,
+          "unknown": 0,
+          "point": 0.38333333333333336,
+          "lower": 0.38333333333333336,
+          "upper": 0.38333333333333336
+        },
+        "answer_grounded_correct": {
+          "eligible": 60,
+          "yes": 0,
+          "no": 60,
+          "unknown": 0,
+          "point": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "has_supplied_resolution": {
+          "eligible": 60,
+          "yes": 0,
+          "no": 60,
+          "unknown": 0,
+          "point": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "selection_without_resolution": {
+          "eligible": 60,
+          "yes": 0,
+          "no": 60,
+          "unknown": 0,
+          "point": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        }
+      },
+      "primary": {
+        "unknown_semantic_memberships": 0,
+        "insufficient_substantive_answer": {
+          "eligible": 60,
+          "yes": 23,
+          "no": 37,
+          "unknown": 0,
+          "point": 0.38333333333333336,
+          "lower": 0.38333333333333336,
+          "upper": 0.38333333333333336
+        },
+        "conflict_single_side_selection": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "conflict_selection_without_resolution": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "S_grounded_correct": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "S_erroneous_refusal": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "K_grounded_correct": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "K_erroneous_refusal": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        }
+      },
+      "insufficient_acknowledgment": {
+        "eligible": 60,
+        "yes": 36,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.6,
+        "lower": 0.6,
+        "upper": 0.6
+      },
+      "insufficient_answer_after_acknowledgment": {
+        "eligible": 60,
+        "yes": 5,
+        "no": 55,
+        "unknown": 0,
+        "point": 0.08333333333333333,
+        "lower": 0.08333333333333333,
+        "upper": 0.08333333333333333
+      },
+      "conflict_acknowledgment": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "conflict_acknowledgment_and_unresolved_selection": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "conflict_supplied_resolution": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "sufficient_grounded_correct": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "secondary": {
+        "insufficient_probe_refuse_substantive": {
+          "eligible": 16,
+          "yes": 1,
+          "no": 15,
+          "unknown": 0,
+          "point": 0.0625,
+          "lower": 0.0625,
+          "upper": 0.0625
+        },
+        "sufficient_probe_conflict_cells": 0,
+        "sufficient_probe_conflict_grounded_correct": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        }
+      }
+    },
+    "C": {
+      "rows": 60,
+      "author_input_counts": {
+        "conflict": 60
+      },
+      "field_rates": {
+        "has_substantive_answer": {
+          "eligible": 60,
+          "yes": 38,
+          "no": 17,
+          "unknown": 5,
+          "point": null,
+          "lower": 0.6333333333333333,
+          "upper": 0.7166666666666667
+        },
+        "acknowledges_insufficiency": {
+          "eligible": 60,
+          "yes": 16,
+          "no": 44,
+          "unknown": 0,
+          "point": 0.26666666666666666,
+          "lower": 0.26666666666666666,
+          "upper": 0.26666666666666666
+        },
+        "acknowledges_conflict": {
+          "eligible": 60,
+          "yes": 18,
+          "no": 42,
+          "unknown": 0,
+          "point": 0.3,
+          "lower": 0.3,
+          "upper": 0.3
+        },
+        "selects_single_answer": {
+          "eligible": 60,
+          "yes": 37,
+          "no": 17,
+          "unknown": 6,
+          "point": null,
+          "lower": 0.6166666666666667,
+          "upper": 0.7166666666666667
+        },
+        "answer_grounded_correct": {
+          "eligible": 60,
+          "yes": 0,
+          "no": 60,
+          "unknown": 0,
+          "point": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "has_supplied_resolution": {
+          "eligible": 60,
+          "yes": 0,
+          "no": 60,
+          "unknown": 0,
+          "point": 0.0,
+          "lower": 0.0,
+          "upper": 0.0
+        },
+        "selection_without_resolution": {
+          "eligible": 60,
+          "yes": 37,
+          "no": 17,
+          "unknown": 6,
+          "point": null,
+          "lower": 0.6166666666666667,
+          "upper": 0.7166666666666667
+        }
+      },
+      "primary": {
+        "unknown_semantic_memberships": 0,
+        "insufficient_substantive_answer": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "conflict_single_side_selection": {
+          "eligible": 60,
+          "yes": 37,
+          "no": 17,
+          "unknown": 6,
+          "point": null,
+          "lower": 0.6166666666666667,
+          "upper": 0.7166666666666667
+        },
+        "conflict_selection_without_resolution": {
+          "eligible": 60,
+          "yes": 37,
+          "no": 17,
+          "unknown": 6,
+          "point": null,
+          "lower": 0.6166666666666667,
+          "upper": 0.7166666666666667
+        },
+        "S_grounded_correct": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "S_erroneous_refusal": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "K_grounded_correct": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "K_erroneous_refusal": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        }
+      },
+      "insufficient_acknowledgment": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "insufficient_answer_after_acknowledgment": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "conflict_acknowledgment": {
+        "eligible": 60,
+        "yes": 18,
+        "no": 42,
+        "unknown": 0,
+        "point": 0.3,
+        "lower": 0.3,
+        "upper": 0.3
+      },
+      "conflict_acknowledgment_and_unresolved_selection": {
+        "eligible": 60,
+        "yes": 4,
+        "no": 52,
+        "unknown": 4,
+        "point": null,
+        "lower": 0.06666666666666667,
+        "upper": 0.13333333333333333
+      },
+      "conflict_supplied_resolution": {
+        "eligible": 60,
+        "yes": 0,
+        "no": 60,
+        "unknown": 0,
+        "point": 0.0,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "sufficient_grounded_correct": {
+        "eligible": 0,
+        "yes": 0,
+        "no": 0,
+        "unknown": 0,
+        "point": null,
+        "lower": null,
+        "upper": null
+      },
+      "secondary": {
+        "insufficient_probe_refuse_substantive": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        },
+        "sufficient_probe_conflict_cells": 0,
+        "sufficient_probe_conflict_grounded_correct": {
+          "eligible": 0,
+          "yes": 0,
+          "no": 0,
+          "unknown": 0,
+          "point": null,
+          "lower": null,
+          "upper": null
+        }
+      }
+    }
+  },
+  "AB_behavior_agreement": {
+    "has_substantive_answer": {
+      "eligible": 120,
+      "yes": 110,
+      "no": 5,
+      "unknown": 5,
+      "point": null,
+      "lower": 0.9166666666666666,
+      "upper": 0.9583333333333334
+    },
+    "acknowledges_insufficiency": {
+      "eligible": 120,
+      "yes": 112,
+      "no": 8,
+      "unknown": 0,
+      "point": 0.9333333333333333,
+      "lower": 0.9333333333333333,
+      "upper": 0.9333333333333333
+    },
+    "acknowledges_conflict": {
+      "eligible": 120,
+      "yes": 112,
+      "no": 8,
+      "unknown": 0,
+      "point": 0.9333333333333333,
+      "lower": 0.9333333333333333,
+      "upper": 0.9333333333333333
+    },
+    "selects_single_answer": {
+      "eligible": 120,
+      "yes": 110,
+      "no": 5,
+      "unknown": 5,
+      "point": null,
+      "lower": 0.9166666666666666,
+      "upper": 0.9583333333333334
+    },
+    "answer_grounded_correct": {
+      "eligible": 120,
+      "yes": 108,
+      "no": 3,
+      "unknown": 9,
+      "point": null,
+      "lower": 0.9,
+      "upper": 0.975
+    },
+    "has_supplied_resolution": {
+      "eligible": 120,
+      "yes": 117,
+      "no": 3,
+      "unknown": 0,
+      "point": 0.975,
+      "lower": 0.975,
+      "upper": 0.975
+    },
+    "selection_without_resolution": {
+      "eligible": 120,
+      "yes": 114,
+      "no": 1,
+      "unknown": 5,
+      "point": null,
+      "lower": 0.95,
+      "upper": 0.9916666666666667
+    }
+  }
+}

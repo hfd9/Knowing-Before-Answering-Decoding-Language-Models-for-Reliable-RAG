@@ -1,0 +1,21 @@
+{
+  "status": "fit_complete_analysis_v1_failed_after_fit",
+  "reason": "Missing input_tokens in new prediction records passed to frozen paired metrics",
+  "analysis_error": "KeyError: input_tokens",
+  "fit_attempts": 1,
+  "remaining_original_design_fits": 0,
+  "files": {
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-author-retrain-v1/fit_decision.json": "40c3ff6daa52dd54672a1600d9eddeb3e1042f7a9cfc8b21f0cfc3629db7eff4",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-author-retrain-v1/fit_attempt.json": "19620f553b449b1050756fa2444ad8b48b717246b1db2e1261d15d801f8d8741",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-author-retrain-v1/semantic_probe.json": "2a3cb186901918035e3af9f8a82e33735d3c5e93e870c8a3174e46b8555fc2dd",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-author-retrain-v1/semantic_probe.pkl": "1428dd4f6b2641226042a30121535784a38eade0e488be7ba722b9b64370e7b8",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-author-retrain-v1/feature_inventory.json": "8e303d115056f7d2d1a6f4b4a74f277ddf40ce7bd6f690293d159d17435116dc",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-author-retrain-v1/protocol.json": "cbb032428e0e86d56e11e10a3224d550d9a33e9bef6f41af6625a3bb1f634503",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-author-retrain-v1/author_reference_labels.json": "f9efe75d9b4edf4905da06fdcb0da1f6df58eee1abe98b6f8252b683f6610fce",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-author-retrain-v1/offline_comparison_lock.json": "50cefff2d82ad9ff1e4332bdc72a1fb1d276c2c7eab7e01eea5ea65a2722178c",
+    "runs/semantic-transfer-shared-one-fit-budget-v1.json": "e18339a83e8eb45d1b7539797e2091ae4f780c4d558bb96a4e984217946a8b35",
+    "scripts/semantic_transfer_exploratory_retrain.py": "61b422dcb9d85979a3c9c96cb786a526220947c155cbe3a4f58d37a81f3bf64e",
+    "tests/test_semantic_transfer_exploratory_retrain.py": "3e62341a0889a0b133ad5bd24afd061ce29d2bf959a9b1c83f0d78a88c11d2d4",
+    "prompts/semantic_transfer_exploratory_retrain_v1.json": "c08f93b7f782b8be11b26e3ee41264d79a9e4f6bda1ea6fe5c16401baef385ff"
+  }
+}

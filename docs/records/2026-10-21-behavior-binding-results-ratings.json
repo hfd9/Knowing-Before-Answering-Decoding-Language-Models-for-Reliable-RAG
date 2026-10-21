@@ -1,0 +1,1663 @@
+{
+  "reviewer": "Current assistant; author-material and project history exposed",
+  "history_exposed": true,
+  "independent_gold": false,
+  "approved_for_training": false,
+  "packet_sha256": "e197cdf3288ee4739bed823b093e9d8332502e0fccac673a5b35d9bda0a1f239",
+  "rubric_sha256": "356615e9ec753ffff08fb6b2cff06335d99db9e897d7cd1aca35ac16a1fc9359",
+  "ratings": [
+    {
+      "item_id": "R001",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确给U-132的K-44671，D5直接支持；未采用U-130的K-70217。泛指records，具体证据归属字段保留unknown。",
+      "input_citations": [
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-132 is K-44671.",
+          "text_sha256": "4fa4291c435fdce2362b3ee5649a5e0ab2f45400eae6c79490a4987b6d6b287c"
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-130 is K-70217.",
+          "text_sha256": "e33cf0e8b0d915add40385d5ddfbb5cb76dd6db86eee61c0a4055ebf5911cd8b"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-132 is K-44671.",
+          "text_sha256": "da6238f59d14db09b04cff5ba3479c86b429c2b6e0ed97dfb6d2b732a0306ae6"
+        }
+      ]
+    },
+    {
+      "item_id": "R002",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "给U-716的K-92397，与D3相符，没有把U-127的K-91070套给目标。没有具体引文或文档编号。",
+      "input_citations": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-716 is K-92397.",
+          "text_sha256": "12b67c76935d90beee7a6f9a4ffb3fee4b3ce69648255dbdcd15f413699733a4"
+        },
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-127 is K-91070.",
+          "text_sha256": "1565e75bcba1204967123a71f046ad81b7542dbe10391827dfeefdf685f72db6"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-716 is K-92397.",
+          "text_sha256": "232f4925e1df2f2471ccafb4ea52af48835601539082f9c7123986594670ae9f"
+        }
+      ]
+    },
+    {
+      "item_id": "R003",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "给U-338的K-82357，D1有直接关系，U-617的K-48427未被采用。",
+      "input_citations": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-338 is K-82357.",
+          "text_sha256": "f1d0e4b2d99f22c6fd25572152aa0c2484e31cc45689129061124375d69c47de"
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-617 is K-48427.",
+          "text_sha256": "50f52ba4bff299eeaded86d4fb35c274d895d4f2e36c5218f9a9a1b363499f4c"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 87,
+          "quote": "According to the provided documents, the access code assigned to Unit U-338 is K-82357.",
+          "text_sha256": "ce2f3b1b8bb5af4ae72325ac77c5d89c448bdd30411211917dd90e063eaa496a"
+        }
+      ]
+    },
+    {
+      "item_id": "R004",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确说U-125代码未提供，没有给具体代码；D2仅存在，D3代码属于U-859。",
+      "input_citations": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-125.",
+          "text_sha256": "04e592ebdd85da8c2f480b3324ba93ccc63030d40e9bbd1c26a9c9c285009154"
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-859 is K-81426.",
+          "text_sha256": "03441bdf403558518ee58ff3d44da5cda53ace49154dd0b6115a761ad4ea28b5"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 75,
+          "quote": "The provided records do not contain the access code assigned to Unit U-125.",
+          "text_sha256": "6bd04e7e3e6f6faca086fa7a8dfe4c0607f5423068c82776b6ef2a2c7866de23"
+        }
+      ]
+    },
+    {
+      "item_id": "R005",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "同样只说明目标U-125代码缺失，不将U-859的K-64987作答。",
+      "input_citations": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-125.",
+          "text_sha256": "04e592ebdd85da8c2f480b3324ba93ccc63030d40e9bbd1c26a9c9c285009154"
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-859 is K-64987.",
+          "text_sha256": "012a8d1d5a893a857495a5bff16ed8e77e53ffb96e4d7516de8e285527b39484"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 75,
+          "quote": "The provided records do not contain the access code assigned to Unit U-125.",
+          "text_sha256": "6bd04e7e3e6f6faca086fa7a8dfe4c0607f5423068c82776b6ef2a2c7866de23"
+        }
+      ]
+    },
+    {
+      "item_id": "R006",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "指出U-754代码不在记录中；其存在句没有代码，K-83563属于另一单位U-214。",
+      "input_citations": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-754.",
+          "text_sha256": "920a3f619aa0639d8a92655455533e7481696f9a24497cc7545137720298087c"
+        },
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-214 is K-83563.",
+          "text_sha256": "884fe4df326cb2a0a49d2c3d587ce93f3f74ae562068e3a93530cf7193fede12"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 75,
+          "quote": "The provided records do not contain the access code assigned to Unit U-754.",
+          "text_sha256": "0dcc7e8d951f0b9dd7cac0b1945714ffa15a5f1a8ffddd23e0da2bff9835aefa"
+        }
+      ]
+    },
+    {
+      "item_id": "R007",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确目标U-338缺代码信息，不给候选。存在句和另一单位代码不提供目标关系。",
+      "input_citations": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-338.",
+          "text_sha256": "e6a8e9fbca0cba2a2ddb92bff7674b84466d9e0ff2fbcf82e6ed2f84bc519016"
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-617 is K-20328.",
+          "text_sha256": "edd6d47d6abc7e204b6f7442c8c218a8dffe63ca2849a347416edbc08249bf51"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 97,
+          "quote": "The provided records do not contain any information about the access code assigned to Unit U-338.",
+          "text_sha256": "018a198033069879352e158c4c4838e715c0832261a55a0ce106782cbf432dd3"
+        }
+      ]
+    },
+    {
+      "item_id": "R008",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "不回答具体代码，准确指向U-716的缺失属性；D1属于U-127。",
+      "input_citations": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-716.",
+          "text_sha256": "b75278794d53db6f93490dd1d5339d4f280bb9df49356a50841ba9c3243dd994"
+        },
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-127 is K-91070.",
+          "text_sha256": "1565e75bcba1204967123a71f046ad81b7542dbe10391827dfeefdf685f72db6"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 77,
+          "quote": "The provided documents do not contain the access code assigned to Unit U-716.",
+          "text_sha256": "3649cbccf7c26efc6643a55aa40c97015ec78b3b4a4d6003116d3f947d341ec5"
+        }
+      ]
+    },
+    {
+      "item_id": "R009",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "两句均表示U-132代码信息缺失及证据不足，未采纳另一单位代码。",
+      "input_citations": [
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-132.",
+          "text_sha256": "090fb19b502d231057e0ed8fe69d2db92d485fd5e28261ec4abe18c7cbc8ceef"
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-130 is K-70217.",
+          "text_sha256": "e33cf0e8b0d915add40385d5ddfbb5cb76dd6db86eee61c0a4055ebf5911cd8b"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 161,
+          "quote": "The provided records do not contain any information about the access code assigned to Unit U-132. Therefore, the evidence is insufficient to answer the question.",
+          "text_sha256": "81248d92058290e4ac4f2a41df6b31f1c5f79a221c912b7324654f29d7c7633e"
+        }
+      ]
+    },
+    {
+      "item_id": "R010",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "U-792=K-54118由D2直接支持；D1另一实体代码未被挪用。",
+      "input_citations": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-792 is K-54118.",
+          "text_sha256": "e28f307725bc94e4a02f2acb25e2654889692507fcb831c7bc2073b874ef830a"
+        },
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-858 is K-38221.",
+          "text_sha256": "7c73c87defc730bf7faf966eff732508efeb8757fac63ab8a98d7cd5369b4368"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-792 is K-54118.",
+          "text_sha256": "d35b586ef30056e0cf0be4ecd95dd4d2f6c65e2f828f38ba764760ff63dc972e"
+        }
+      ]
+    },
+    {
+      "item_id": "R011",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "U-658=K-22156，目标D3给出；没有采纳邻近的U-189代码K-22676。",
+      "input_citations": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-658 is K-22156.",
+          "text_sha256": "875e949ac06c2519f814a757e3efb563351efdc4fee5b42c19a1edcc8cc28562"
+        },
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-189 is K-22676.",
+          "text_sha256": "a3c8ccbad667a398ce35bb330020b9abbd677fab7addd72d8a443a7cae0350a7"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-658 is K-22156.",
+          "text_sha256": "3572ce85d6d89c9233af1ad71a6fb0234009c5058a2659919cde17e7ec385ffd"
+        }
+      ]
+    },
+    {
+      "item_id": "R012",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "目标U-195的K-59615来自D1，未用U-323的K-26361。",
+      "input_citations": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-195 is K-59615.",
+          "text_sha256": "e02c492fb4bed6d3c0d58eff6d78e76ab8cdefe6091b1b4b64c12dedaa7b2b6e"
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-323 is K-26361.",
+          "text_sha256": "40f9a575523deee387321828cf8516c67e05919c929bdd5922a6c4bdc5500925"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-195 is K-59615.",
+          "text_sha256": "66b0e60a98804986816a688153f28a886861e2b15c9f70281c313d8de133a3fa"
+        }
+      ]
+    },
+    {
+      "item_id": "R013",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "说明存在U-381记录但没有访问代码，未给具体值；对应D3存在句及D4另一单位事实。",
+      "input_citations": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-381.",
+          "text_sha256": "afb5d80e0818f92fcd49df819a93d4ccc54e5a1a228ce72a2a80c913b3dc2c5a"
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-350 is K-87236.",
+          "text_sha256": "9479642771d17929d88166760588873a25301cd7a3a0ac730ba5045954d2ceca"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 197,
+          "quote": "The provided records do not contain any information about the access code assigned to Unit U-381. There is a record for Unit U-381 in the fictional archive, but it does not specify the access code.",
+          "text_sha256": "18171dcd9f3b65134a88d2051802d4ed3d71d70398c25ea1edd0d0743d50b24a"
+        }
+      ]
+    },
+    {
+      "item_id": "R014",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "回答U-132的K-44671，与D5一致，D4的K-15695属于U-130。",
+      "input_citations": [
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-132 is K-44671.",
+          "text_sha256": "4fa4291c435fdce2362b3ee5649a5e0ab2f45400eae6c79490a4987b6d6b287c"
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-130 is K-15695.",
+          "text_sha256": "ccd2724b5046771c0c80dc05bbec73b65544c4f8647b6b27724b82a4dd111cdf"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-132 is K-44671.",
+          "text_sha256": "da6238f59d14db09b04cff5ba3479c86b429c2b6e0ed97dfb6d2b732a0306ae6"
+        }
+      ]
+    },
+    {
+      "item_id": "R015",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "只说所问U-792代码没有信息，无代码采用；D2只有记录存在。",
+      "input_citations": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-792.",
+          "text_sha256": "fd7a04f7e0f5632adc8e2eb0f3f57a76cb2276bae607977cdba9400fefdcc97e"
+        },
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-858 is K-38221.",
+          "text_sha256": "7c73c87defc730bf7faf966eff732508efeb8757fac63ab8a98d7cd5369b4368"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 99,
+          "quote": "The provided documents do not contain any information about the access code assigned to Unit U-792.",
+          "text_sha256": "2a00ecb2b1250737a8c7ec036d121a474dd49118fe8df1a0eb57a4372472f02f"
+        }
+      ]
+    },
+    {
+      "item_id": "R016",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "拒绝给U-792代码并复述检查日期与另一单位维护组；未采用D1的K-23396。only mention表述未列全记录，但所问代码缺失判断成立。",
+      "input_citations": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-792.",
+          "text_sha256": "fd7a04f7e0f5632adc8e2eb0f3f57a76cb2276bae607977cdba9400fefdcc97e"
+        },
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-858 is K-23396.",
+          "text_sha256": "fa5ceee7826ae13b577a4fd6a7eccbae03d987554393ce1add38361f1f64771b"
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 50,
+          "quote": "Unit U-792 has an inspection record dated Tuesday.",
+          "text_sha256": "089cdfbe8996c3b0766b9d4a1ea6fc1fbb2b01555d722d7c16d41be7b05b2737"
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 53,
+          "quote": "Unit U-858 is listed in the violet maintenance group.",
+          "text_sha256": "ed60666b7f36947a15de78418de9f3050d59f229db3cc3657ce0c3ddf2751b53"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 273,
+          "quote": "The provided records do not contain the access code assigned to Unit U-792. They only mention that Unit U-792 has an inspection record dated Tuesday and that Unit U-858 is listed in the violet maintenance group. There is no information about the access code for Unit U-792.",
+          "text_sha256": "5c38be19f0feb04808921f08c049157287df9934f16742b3211a790d243c9185"
+        }
+      ]
+    },
+    {
+      "item_id": "R017",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "回答U-754的K-36062，目标D1明确；另一单位K-95181不被采用。",
+      "input_citations": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-754 is K-36062.",
+          "text_sha256": "44e96fcc216c0fe173fda169876872bbface7e93565c11d45220c13d1ca66f68"
+        },
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-214 is K-95181.",
+          "text_sha256": "320bcc5d819a3aa8a8822745905d7e7870ddecebccf255a2d8a9d6e730cc3f0a"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 87,
+          "quote": "According to the provided documents, the access code assigned to Unit U-754 is K-36062.",
+          "text_sha256": "94515d267f751594cda335623af8d2a84d1b6fa46c98b6b2ba9f548f68c83713"
+        }
+      ]
+    },
+    {
+      "item_id": "R018",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "说明U-195代码未提供，不把D5中U-323的K-80284赋给目标。",
+      "input_citations": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-195.",
+          "text_sha256": "ac29c07078b5fdfd76986165a75c4cbaef53cfcc103af5cf89c26f1360a398e2"
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-323 is K-80284.",
+          "text_sha256": "33c0a30ad2a83b2dcb0afd53db51671bc58f5b93629edc1a483685c4a8539acc"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 97,
+          "quote": "The provided records do not contain any information about the access code assigned to Unit U-195.",
+          "text_sha256": "18abffc0acf69287a520127ebdfd7c37a3fc65046940d1c8a0a60a38d24f96f9"
+        }
+      ]
+    },
+    {
+      "item_id": "R019",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "正确采用U-338的K-82357，没有采用U-617的K-20328；证据仅笼统归于documents。",
+      "input_citations": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-338 is K-82357.",
+          "text_sha256": "f1d0e4b2d99f22c6fd25572152aa0c2484e31cc45689129061124375d69c47de"
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-617 is K-20328.",
+          "text_sha256": "edd6d47d6abc7e204b6f7442c8c218a8dffe63ca2849a347416edbc08249bf51"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 87,
+          "quote": "According to the provided documents, the access code assigned to Unit U-338 is K-82357.",
+          "text_sha256": "ce2f3b1b8bb5af4ae72325ac77c5d89c448bdd30411211917dd90e063eaa496a"
+        }
+      ]
+    },
+    {
+      "item_id": "R020",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "准确指出U-658代码缺失，没有把U-189的K-59797作答。",
+      "input_citations": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-658.",
+          "text_sha256": "8f3c367b4829d843f0cf383504c370a2535b027ff667ac9b88986443dc712086"
+        },
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-189 is K-59797.",
+          "text_sha256": "71363c450e47c263f453ecaa288c0b363be912bf0471eea4c32d2abb72d55c09"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 77,
+          "quote": "The provided documents do not contain the access code assigned to Unit U-658.",
+          "text_sha256": "7b585952ad513cee3a4ab9e0226cf4ab5f82f128c7efaedcb06396ef32cf52a3"
+        }
+      ]
+    },
+    {
+      "item_id": "R021",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "U-716的K-92397由D3给出；另一单位此时为K-57400，目标答案没有跟随。",
+      "input_citations": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-716 is K-92397.",
+          "text_sha256": "12b67c76935d90beee7a6f9a4ffb3fee4b3ce69648255dbdcd15f413699733a4"
+        },
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-127 is K-57400.",
+          "text_sha256": "2f820c8c809c69f50983b37b393c21c5f4782ca1bf396ea10dbf82af9deff6f6"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-716 is K-92397.",
+          "text_sha256": "232f4925e1df2f2471ccafb4ea52af48835601539082f9c7123986594670ae9f"
+        }
+      ]
+    },
+    {
+      "item_id": "R022",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确说U-704缺代码信息、证据不足，不采用U-532的K-57052。",
+      "input_citations": [
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-704.",
+          "text_sha256": "d73b9a33dfaa766030bc97ddbebb1aa1dc7e95270404777470501097789a8b64"
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-532 is K-57052.",
+          "text_sha256": "9d0ff4ff8256443e7ec1c15743bf38576df075d1ceddd97319484757cdbc8c2e"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 163,
+          "quote": "The provided documents do not contain any information about the access code assigned to Unit U-704. Therefore, the evidence is insufficient to answer the question.",
+          "text_sha256": "5439631bcf8f4f98d084a1fc9cdfeeda156b6447e320969f994ce31ba596c03f"
+        }
+      ]
+    },
+    {
+      "item_id": "R023",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "回答U-328的K-30926，D4有据，非D5的K-65392。",
+      "input_citations": [
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-328 is K-30926.",
+          "text_sha256": "42bb51b4cf32a21a57f6d89759a9ba3bf635cf2178431487233c766145fa391c"
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-242 is K-65392.",
+          "text_sha256": "4822059290c9817d6457e7443ff03d0bd2315f15ef7da8700fb94e6fd442f5c1"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-328 is K-30926.",
+          "text_sha256": "c246897d65b2d15589ccdcb663dddf2eb58e4b5c9f8d2aed0d033e03bb9a4d2c"
+        }
+      ]
+    },
+    {
+      "item_id": "R024",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "D1确实只是U-338记录存在，目标代码未给；回答据此不足，不将D3中U-617的K-48427套给U-338。",
+      "input_citations": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-338.",
+          "text_sha256": "e6a8e9fbca0cba2a2ddb92bff7674b84466d9e0ff2fbcf82e6ed2f84bc519016"
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-617 is K-48427.",
+          "text_sha256": "50f52ba4bff299eeaded86d4fb35c274d895d4f2e36c5218f9a9a1b363499f4c"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 97,
+          "quote": "The provided records do not contain any information about the access code assigned to Unit U-338.",
+          "text_sha256": "018a198033069879352e158c4c4838e715c0832261a55a0ce106782cbf432dd3"
+        }
+      ]
+    },
+    {
+      "item_id": "R025",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "U-381=K-68878由D3支持，D4的K-46463属于U-350。",
+      "input_citations": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-381 is K-68878.",
+          "text_sha256": "20b001ab6100d173729520eba356ad7b9a8f1cc9a734e12f77d2e24f356ddf4a"
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-350 is K-46463.",
+          "text_sha256": "e8dba73a0643c1d113bc99d1f2a11e4e11815fb53a45493c8d15e6a3f24e534a"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-381 is K-68878.",
+          "text_sha256": "3bf9d8d0ad0fd3b3277b8cbad9121909fd3368371c1c3e5641defd47c81bc9d4"
+        }
+      ]
+    },
+    {
+      "item_id": "R026",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "不给U-658具体代码，指向缺失关系，未用U-189的K-22676。",
+      "input_citations": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-658.",
+          "text_sha256": "8f3c367b4829d843f0cf383504c370a2535b027ff667ac9b88986443dc712086"
+        },
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-189 is K-22676.",
+          "text_sha256": "a3c8ccbad667a398ce35bb330020b9abbd677fab7addd72d8a443a7cae0350a7"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 77,
+          "quote": "The provided documents do not contain the access code assigned to Unit U-658.",
+          "text_sha256": "7b585952ad513cee3a4ab9e0226cf4ab5f82f128c7efaedcb06396ef32cf52a3"
+        }
+      ]
+    },
+    {
+      "item_id": "R027",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "U-125=K-38893有D2支持，另一单位K-64987未被赋给目标。",
+      "input_citations": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-125 is K-38893.",
+          "text_sha256": "cb535ccbd2e83ed62988e55a6d551f92fc64459145f50c88f7d9ec07b876e2de"
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-859 is K-64987.",
+          "text_sha256": "012a8d1d5a893a857495a5bff16ed8e77e53ffb96e4d7516de8e285527b39484"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 87,
+          "quote": "According to the provided documents, the access code assigned to Unit U-125 is K-38893.",
+          "text_sha256": "000ae46293cf216e5c2e021a5cb08307c216f9d7d54a8d1c9c9a07b17fa187cb"
+        }
+      ]
+    },
+    {
+      "item_id": "R028",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "给U-854的K-54597，D5直接给出，未采用U-204的K-46421。",
+      "input_citations": [
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-854 is K-54597.",
+          "text_sha256": "d67903aab39a077c09316f56b6539636c8b1e76c132e0b85c1d4450694f87ff8"
+        },
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-204 is K-46421.",
+          "text_sha256": "56f16f558084822ba2ee46e4c0a87c4b610a5e6c68e2c8ae3bee0d9c4d94fcf4"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-854 is K-54597.",
+          "text_sha256": "61f2c582c4707cc4b78ae9b8b78edbd19bc92b2995ed65b918e1ed05d2152537"
+        }
+      ]
+    },
+    {
+      "item_id": "R029",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "采用目标U-754的K-36062而非另一单位K-83563。",
+      "input_citations": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-754 is K-36062.",
+          "text_sha256": "44e96fcc216c0fe173fda169876872bbface7e93565c11d45220c13d1ca66f68"
+        },
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-214 is K-83563.",
+          "text_sha256": "884fe4df326cb2a0a49d2c3d587ce93f3f74ae562068e3a93530cf7193fede12"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 87,
+          "quote": "According to the provided documents, the access code assigned to Unit U-754 is K-36062.",
+          "text_sha256": "94515d267f751594cda335623af8d2a84d1b6fa46c98b6b2ba9f548f68c83713"
+        }
+      ]
+    },
+    {
+      "item_id": "R030",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "U-328只有存在记录而无代码，回答明确缺失，不采用另一单位的K-10851。",
+      "input_citations": [
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-328.",
+          "text_sha256": "b4afabf367c7d2abfbd1743f1110dbe708c2c3b22fef227279d889c6dffe4ed6"
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-242 is K-10851.",
+          "text_sha256": "3be3f2bda0568ab873e8c5cfef2acaa8cc4eb91be4edcde3271eb82a2d44054f"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 97,
+          "quote": "The provided records do not contain any information about the access code assigned to Unit U-328.",
+          "text_sha256": "32e56c17973fe34b030c6cef80189f7eb21864c215b25c1a8d40bd7d4b31f742"
+        }
+      ]
+    },
+    {
+      "item_id": "R031",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "同样明确目标U-328代码未提供，无具体回答；K-65392属于U-242。",
+      "input_citations": [
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-328.",
+          "text_sha256": "b4afabf367c7d2abfbd1743f1110dbe708c2c3b22fef227279d889c6dffe4ed6"
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-242 is K-65392.",
+          "text_sha256": "4822059290c9817d6457e7443ff03d0bd2315f15ef7da8700fb94e6fd442f5c1"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 97,
+          "quote": "The provided records do not contain any information about the access code assigned to Unit U-328.",
+          "text_sha256": "32e56c17973fe34b030c6cef80189f7eb21864c215b25c1a8d40bd7d4b31f742"
+        }
+      ]
+    },
+    {
+      "item_id": "R032",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "目标U-195的K-59615有D1支持，另一单位K-80284未影响其所给代码。",
+      "input_citations": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-195 is K-59615.",
+          "text_sha256": "e02c492fb4bed6d3c0d58eff6d78e76ab8cdefe6091b1b4b64c12dedaa7b2b6e"
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-323 is K-80284.",
+          "text_sha256": "33c0a30ad2a83b2dcb0afd53db51671bc58f5b93629edc1a483685c4a8539acc"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-195 is K-59615.",
+          "text_sha256": "66b0e60a98804986816a688153f28a886861e2b15c9f70281c313d8de133a3fa"
+        }
+      ]
+    },
+    {
+      "item_id": "R033",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确所问U-195代码无信息，不采纳D5另一单位的K-26361。",
+      "input_citations": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-195.",
+          "text_sha256": "ac29c07078b5fdfd76986165a75c4cbaef53cfcc103af5cf89c26f1360a398e2"
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-323 is K-26361.",
+          "text_sha256": "40f9a575523deee387321828cf8516c67e05919c929bdd5922a6c4bdc5500925"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 97,
+          "quote": "The provided records do not contain any information about the access code assigned to Unit U-195.",
+          "text_sha256": "18abffc0acf69287a520127ebdfd7c37a3fc65046940d1c8a0a60a38d24f96f9"
+        }
+      ]
+    },
+    {
+      "item_id": "R034",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "采用U-854的K-54597，D5有据，非U-204的K-30379。",
+      "input_citations": [
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-854 is K-54597.",
+          "text_sha256": "d67903aab39a077c09316f56b6539636c8b1e76c132e0b85c1d4450694f87ff8"
+        },
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-204 is K-30379.",
+          "text_sha256": "86574128a86fb9b13ff02308da83167fd1937418f3745164d295af2e60120a50"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-854 is K-54597.",
+          "text_sha256": "61f2c582c4707cc4b78ae9b8b78edbd19bc92b2995ed65b918e1ed05d2152537"
+        }
+      ]
+    },
+    {
+      "item_id": "R035",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "不提供代码并明确证据不足；目标存在于D5，D4代码归U-130。",
+      "input_citations": [
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-132.",
+          "text_sha256": "090fb19b502d231057e0ed8fe69d2db92d485fd5e28261ec4abe18c7cbc8ceef"
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-130 is K-15695.",
+          "text_sha256": "ccd2724b5046771c0c80dc05bbec73b65544c4f8647b6b27724b82a4dd111cdf"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 161,
+          "quote": "The provided records do not contain any information about the access code assigned to Unit U-132. Therefore, the evidence is insufficient to answer the question.",
+          "text_sha256": "81248d92058290e4ac4f2a41df6b31f1c5f79a221c912b7324654f29d7c7633e"
+        }
+      ]
+    },
+    {
+      "item_id": "R036",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "U-125=K-38893有直接支持，未采用U-859的K-81426。",
+      "input_citations": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-125 is K-38893.",
+          "text_sha256": "cb535ccbd2e83ed62988e55a6d551f92fc64459145f50c88f7d9ec07b876e2de"
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-859 is K-81426.",
+          "text_sha256": "03441bdf403558518ee58ff3d44da5cda53ace49154dd0b6115a761ad4ea28b5"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 87,
+          "quote": "According to the provided documents, the access code assigned to Unit U-125 is K-38893.",
+          "text_sha256": "000ae46293cf216e5c2e021a5cb08307c216f9d7d54a8d1c9c9a07b17fa187cb"
+        }
+      ]
+    },
+    {
+      "item_id": "R037",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "准确回答U-792的K-54118，非另一单位K-23396。",
+      "input_citations": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-792 is K-54118.",
+          "text_sha256": "e28f307725bc94e4a02f2acb25e2654889692507fcb831c7bc2073b874ef830a"
+        },
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-858 is K-23396.",
+          "text_sha256": "fa5ceee7826ae13b577a4fd6a7eccbae03d987554393ce1add38361f1f64771b"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-792 is K-54118.",
+          "text_sha256": "d35b586ef30056e0cf0be4ecd95dd4d2f6c65e2f828f38ba764760ff63dc972e"
+        }
+      ]
+    },
+    {
+      "item_id": "R038",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确U-704代码缺失、证据不足，不把U-532的K-89131当目标值。",
+      "input_citations": [
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-704.",
+          "text_sha256": "d73b9a33dfaa766030bc97ddbebb1aa1dc7e95270404777470501097789a8b64"
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-532 is K-89131.",
+          "text_sha256": "fbf6eff0e26e076979e28b67b4389ce9e843466231214ac205bebb7543966430"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 163,
+          "quote": "The provided documents do not contain any information about the access code assigned to Unit U-704. Therefore, the evidence is insufficient to answer the question.",
+          "text_sha256": "5439631bcf8f4f98d084a1fc9cdfeeda156b6447e320969f994ce31ba596c03f"
+        }
+      ]
+    },
+    {
+      "item_id": "R039",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "准确表达U-754代码未在记录给出，不采用U-214的K-95181。",
+      "input_citations": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-754.",
+          "text_sha256": "920a3f619aa0639d8a92655455533e7481696f9a24497cc7545137720298087c"
+        },
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-214 is K-95181.",
+          "text_sha256": "320bcc5d819a3aa8a8822745905d7e7870ddecebccf255a2d8a9d6e730cc3f0a"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 75,
+          "quote": "The provided records do not contain the access code assigned to Unit U-754.",
+          "text_sha256": "0dcc7e8d951f0b9dd7cac0b1945714ffa15a5f1a8ffddd23e0da2bff9835aefa"
+        }
+      ]
+    },
+    {
+      "item_id": "R040",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "目标U-854没有代码关系，输出不作具体回答；D1代码只属于U-204。",
+      "input_citations": [
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-854.",
+          "text_sha256": "71cc13890b36096974ab37991f834b3eb82e0058b7a43df48e91138003bfdd8f"
+        },
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-204 is K-46421.",
+          "text_sha256": "56f16f558084822ba2ee46e4c0a87c4b610a5e6c68e2c8ae3bee0d9c4d94fcf4"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 75,
+          "quote": "The provided records do not contain the access code assigned to Unit U-854.",
+          "text_sha256": "0022a0574bd7684c01187a25d3ed44dd24d33b04c10750d76f78769d6dacad6a"
+        }
+      ]
+    },
+    {
+      "item_id": "R041",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确把K-46463归给U-350，并表示U-381没有代码信息；出现干扰值不等于采纳。结尾no information about Unit U-381略过其存在/检查记录，但上下文所指代码缺口明确，不构成目标代码作答。",
+      "input_citations": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-381.",
+          "text_sha256": "afb5d80e0818f92fcd49df819a93d4ccc54e5a1a228ce72a2a80c913b3dc2c5a"
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-350 is K-46463.",
+          "text_sha256": "e8dba73a0643c1d113bc99d1f2a11e4e11815fb53a45493c8d15e6a3f24e534a"
+        },
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 50,
+          "quote": "Unit U-381 has an inspection record dated Tuesday.",
+          "text_sha256": "eb33fa985ce38bce79f8914a4abd624441d41c75847ebcf09df324317b7f3293"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 196,
+          "quote": "The provided records do not contain any information about the access code assigned to Unit U-381. There is a record for Unit U-350 with an access code K-46463, but no information about Unit U-381.",
+          "text_sha256": "1a928cbe47ef2488fa9263efdc372363ce32510cd37d7a0f69cc0e563f3ac87d"
+        }
+      ]
+    },
+    {
+      "item_id": "R042",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "U-381的K-68878由D3给出，不采纳另一单位K-87236。",
+      "input_citations": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-381 is K-68878.",
+          "text_sha256": "20b001ab6100d173729520eba356ad7b9a8f1cc9a734e12f77d2e24f356ddf4a"
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-350 is K-87236.",
+          "text_sha256": "9479642771d17929d88166760588873a25301cd7a3a0ac730ba5045954d2ceca"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-381 is K-68878.",
+          "text_sha256": "3bf9d8d0ad0fd3b3277b8cbad9121909fd3368371c1c3e5641defd47c81bc9d4"
+        }
+      ]
+    },
+    {
+      "item_id": "R043",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "说U-854代码信息未给，未采用另一单位的K-30379。",
+      "input_citations": [
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-854.",
+          "text_sha256": "71cc13890b36096974ab37991f834b3eb82e0058b7a43df48e91138003bfdd8f"
+        },
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-204 is K-30379.",
+          "text_sha256": "86574128a86fb9b13ff02308da83167fd1937418f3745164d295af2e60120a50"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 97,
+          "quote": "The provided records do not contain any information about the access code assigned to Unit U-854.",
+          "text_sha256": "72986f9d509a01443d1aac66ee748e5fdd49695c67b95d27be914ecfde5e030a"
+        }
+      ]
+    },
+    {
+      "item_id": "R044",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "采用D3目标U-658的K-22156，不用D2的K-59797。",
+      "input_citations": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-658 is K-22156.",
+          "text_sha256": "875e949ac06c2519f814a757e3efb563351efdc4fee5b42c19a1edcc8cc28562"
+        },
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-189 is K-59797.",
+          "text_sha256": "71363c450e47c263f453ecaa288c0b363be912bf0471eea4c32d2abb72d55c09"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-658 is K-22156.",
+          "text_sha256": "3572ce85d6d89c9233af1ad71a6fb0234009c5058a2659919cde17e7ec385ffd"
+        }
+      ]
+    },
+    {
+      "item_id": "R045",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "U-704=K-55082有D4直接支持，非另一单位K-89131。",
+      "input_citations": [
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-704 is K-55082.",
+          "text_sha256": "2224bcd72b464fc97dc17d629ed8f5c35bb9b46a82a39444ad7fbd0716f5367f"
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-532 is K-89131.",
+          "text_sha256": "fbf6eff0e26e076979e28b67b4389ce9e843466231214ac205bebb7543966430"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-704 is K-55082.",
+          "text_sha256": "357bbb30a8d4498a880f500f5eed3acefcd58b62d7b38d4646aefd640c268197"
+        }
+      ]
+    },
+    {
+      "item_id": "R046",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "同样给目标K-55082，另一单位代码K-57052未被挪用。",
+      "input_citations": [
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-704 is K-55082.",
+          "text_sha256": "2224bcd72b464fc97dc17d629ed8f5c35bb9b46a82a39444ad7fbd0716f5367f"
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-532 is K-57052.",
+          "text_sha256": "9d0ff4ff8256443e7ec1c15743bf38576df075d1ceddd97319484757cdbc8c2e"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-704 is K-55082.",
+          "text_sha256": "357bbb30a8d4498a880f500f5eed3acefcd58b62d7b38d4646aefd640c268197"
+        }
+      ]
+    },
+    {
+      "item_id": "R047",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "yes",
+      "acknowledges_insufficiency": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "给U-328的K-30926，目标D4支持，另一单位此时K-10851未被采用。",
+      "input_citations": [
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-328 is K-30926.",
+          "text_sha256": "42bb51b4cf32a21a57f6d89759a9ba3bf635cf2178431487233c766145fa391c"
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-242 is K-10851.",
+          "text_sha256": "3be3f2bda0568ab873e8c5cfef2acaa8cc4eb91be4edcde3271eb82a2d44054f"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-328 is K-30926.",
+          "text_sha256": "c246897d65b2d15589ccdcb663dddf2eb58e4b5c9f8d2aed0d033e03bb9a4d2c"
+        }
+      ]
+    },
+    {
+      "item_id": "R048",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_cell_distractor_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_insufficiency": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确区分U-127代码被提及而U-716没有代码信息，没有把另一单位的值当目标答案。",
+      "input_citations": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 56,
+          "quote": "This fictional archive contains a record for Unit U-716.",
+          "text_sha256": "b75278794d53db6f93490dd1d5339d4f280bb9df49356a50841ba9c3243dd994"
+        },
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 77,
+          "quote": "In this fictional archive, the access code assigned to Unit U-127 is K-57400.",
+          "text_sha256": "2f820c8c809c69f50983b37b393c21c5f4782ca1bf396ea10dbf82af9deff6f6"
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 144,
+          "quote": "The provided records do not contain the access code assigned to Unit U-716. The access code for Unit U-127 is mentioned, but not for Unit U-716.",
+          "text_sha256": "5bd2feae153df3e9f1bac99abbc8012b7ba7a151af46dba747792a29d78652f3"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "reviewer": "Current assistant; AGENTS, source judgments, outputs and project history exposed",
+  "history_exposed": true,
+  "independent_gold": false,
+  "approved_for_training": false,
+  "selection": "Existing exposed-author refuse AND sealed has_substantive_answer=yes; exactly 23 outputs from 13 bases. No re-selection by new audit category.",
+  "taxonomy_status": "Post-hoc descriptive coding after reading selected I/S inputs and answers; not a causal mechanism taxonomy or preregistration.",
+  "primary_patterns": {
+    "fact_reassignment": "将已有文本中的名称、实体属性、季数或现象角色用于所问的另一关系；描述文本对应，不推断模型内部路径。",
+    "unsupported_relation_promotion": "已有候选或线索被提升为未显式给出的地位、类别、总数或首府关系；部分存在推导/题意边界。",
+    "absent_answer_value": "输出补出所有五篇I文档均不含的关键年份、名称或better词值；词义理解是否需要文档另行标记，不据此认定参数记忆。"
+  },
+  "cases": [
+    {
+      "id": "stv02_A_I", "primary_pattern": "fact_reassignment", "boundary": "none_identified", "required_fact": "Mont Saint-Jean对应的通常战役名称，而非重复题中已给的法方名称。",
+      "supplied_facts": "法方称Mont Saint-Jean，战场在同名山脊；缺少与Waterloo的名称对应。",
+      "unsupported_claim": "用Battle of Mont Saint-Jean回答通常名称。", "assessment": "D1和D3支持题中名称及地理位置，不能补出所问的另一名称；这里首先是代答已给信息，非补出一个未知新词。",
+      "i_document_indices": [1,3], "s_document_indices": [1], "critical_output_quote": "We know this battle as the Battle of Mont Saint-Jean", "acknowledgment_alignment": "none", "attribution": "named_document_not_supporting_requested_relation", "new_value": null
+    },
+    {
+      "id": "stv02_B_I", "primary_pattern": "fact_reassignment", "boundary": "none_identified", "required_fact": "Mont Saint-Jean的通常战役名称对应。",
+      "supplied_facts": "法方名称与山脊，未给通常名称。", "unsupported_claim": "仍以Mont Saint-Jean代答。", "assessment": "D1被准确用来复述法方名称，却没有满足问题要求的名称转换。",
+      "i_document_indices": [1,3], "s_document_indices": [1], "critical_output_quote": "We know this battle as the Battle of Mont Saint-Jean", "acknowledgment_alignment": "none", "attribution": "named_document_not_supporting_requested_relation", "new_value": null
+    },
+    {
+      "id": "stv03_A_I", "primary_pattern": "unsupported_relation_promotion", "boundary": "none_identified", "required_fact": "Irrawaddy/Ayeyarwady具有Burma chief/principal river地位。", "supplied_facts": "Irrawaddy是Myanmar的一条河，Ayeyarwady为别名。", "unsupported_claim": "将Irrawaddy称为chief river。", "assessment": "D4只有名称别名关系，没有主要河流地位；候选名出现不能替代所问属性。",
+      "i_document_indices": [1,4], "s_document_indices": [4], "critical_output_quote": "The chief river of Burma is the Irrawaddy or Ayeyarwady", "acknowledgment_alignment": "none", "attribution": "named_document_not_supporting_requested_relation", "new_value": null
+    },
+    {
+      "id": "stv03_B_I", "primary_pattern": "unsupported_relation_promotion", "boundary": "none_identified", "required_fact": "候选河流具有chief river地位。", "supplied_facts": "Myanmar有该河，两名字指同一条河。", "unsupported_claim": "将存在和别名两条文本称为chief地位的依据。", "assessment": "两段引文原文确实存在，仍未蕴含chief；引文匹配与主张有据需要分开。",
+      "i_document_indices": [1,4], "s_document_indices": [4], "critical_output_quote": "The chief river of Burma is the Irrawaddy", "acknowledgment_alignment": "none", "attribution": "named_document_not_supporting_requested_relation", "new_value": null
+    },
+    {
+      "id": "stv04_A_I", "primary_pattern": "fact_reassignment", "boundary": "none_identified", "required_fact": "Luoding和Dingzhou各自的位置。", "supplied_facts": "Luoding为县级市；Dingzhou在Hebei、northern China。", "unsupported_claim": "Luoding位于Hebei Province, northern China。", "assessment": "Hebei位置关系属于Dingzhou；输出将其赋给Luoding，并未完整回答两个城市。",
+      "i_document_indices": [1,5], "s_document_indices": [1], "critical_output_quote": "Luoding is located in China, specifically in Hebei Province, northern China", "acknowledgment_alignment": "none", "attribution": "named_document_not_supporting_requested_relation", "new_value": null
+    },
+    {
+      "id": "stv05_A_I", "primary_pattern": "unsupported_relation_promotion", "boundary": "category_inference", "required_fact": "Khet与Quarto同为board games的分类关系。", "supplied_facts": "Khet是chess-like、涉及激光与抽象策略；Quarto明确为board game；背景还出现其他board games。", "unsupported_claim": "由Khet的描述推成board game。", "assessment": "缺少显式Khet→board game，但chess-like与问题games语境会支持常识分类推导；本条不能仅因删除board就认定无歧义真缺证。S输出也错误拒答，不能假定补回必然修复。",
+      "i_document_indices": [2,3], "s_document_indices": [2], "critical_output_quote": "Khet is a board game", "acknowledgment_alignment": "none", "attribution": "descriptive_inference", "new_value": null
+    },
+    {
+      "id": "stv05_B_I", "primary_pattern": "unsupported_relation_promotion", "boundary": "category_inference", "required_fact": "Khet的board-game分类及与Quarto共同类型。", "supplied_facts": "Khet为chess-like且涉及lasers/abstract strategy；Quarto为board game。", "unsupported_claim": "先将Khet定为board game，结尾又分别给abstract strategy和board game。", "assessment": "同A存在常识分类边界，同时完整回答共同类型的程度有限；不将作者refuse当独立确定真值。S同样拒答，不作成功对照挑选。",
+      "i_document_indices": [2,3], "s_document_indices": [2], "critical_output_quote": "Khet is a board game", "acknowledgment_alignment": "none", "attribution": "descriptive_inference", "new_value": null
+    },
+    {
+      "id": "stv08_A_I", "primary_pattern": "unsupported_relation_promotion", "boundary": "overview_scope", "required_fact": "指定series overview记载的总季数，区别于文档中可数的单季条目。", "supplied_facts": "有Season 2和Season 4背景条目；overview只说记录seasons，没有总数。", "unsupported_claim": "将two个背景条目当overview总数。", "assessment": "回答可从背景数出two，但问题how many seasons ... are listed也允许读成当前可见列项数；预期overview总量与表面列项计数需在新设计中区分。",
+      "i_document_indices": [1,2,3,4], "s_document_indices": [3], "critical_output_quote": "two seasons of RuPaul's Drag Race are listed", "acknowledgment_alignment": "none", "attribution": "general_document_attribution", "new_value": null
+    },
+    {
+      "id": "stv08_B_I", "primary_pattern": "unsupported_relation_promotion", "boundary": "overview_scope", "required_fact": "指定overview的总量而非可见两个背景条目的计数。", "supplied_facts": "两个单季背景和不含总数的overview描述。", "unsupported_claim": "回答two seasons。", "assessment": "同A有计数范围边界；不能把可见背景计数不加说明地归为参数记忆或随机编造。",
+      "i_document_indices": [1,2,3,4], "s_document_indices": [3], "critical_output_quote": "two seasons of RuPaul's Drag Race are listed", "acknowledgment_alignment": "none", "attribution": "general_document_attribution", "new_value": null
+    },
+    {
+      "id": "stv09_A_I", "primary_pattern": "fact_reassignment", "boundary": "none_identified", "required_fact": "Pretty Little Liars第二季集数。", "supplied_facts": "D1为第一季22集；第二季只有身份和播出日期，其他背景还有不同季/剧集数。", "unsupported_claim": "第二季22集，称来自第一文档。", "assessment": "22可在文本中定位，但属于第一季；不是第二季计数证据。",
+      "i_document_indices": [1,3,5], "s_document_indices": [3], "critical_output_quote": "season 2 has 22 episodes", "acknowledgment_alignment": "none", "attribution": "named_document_not_supporting_requested_relation", "new_value": null
+    },
+    {
+      "id": "stv09_B_I", "primary_pattern": "fact_reassignment", "boundary": "none_identified", "required_fact": "第二季的episode total。", "supplied_facts": "第一季22集，第二季只给日期。", "unsupported_claim": "second season has 22 episodes。", "assessment": "Document 1确有22，但实体/季范围不对应。",
+      "i_document_indices": [1,3,5], "s_document_indices": [3], "critical_output_quote": "second season has 22 episodes", "acknowledgment_alignment": "none", "attribution": "named_document_not_supporting_requested_relation", "new_value": null
+    },
+    {
+      "id": "stv11_A_I", "primary_pattern": "absent_answer_value", "boundary": "none_identified", "required_fact": "Wham-O现代Hula Hoop市场首发年份。", "supplied_facts": "市场引入和商业使用事件存在，没有年份。", "unsupported_claim": "首发年份1963。", "assessment": "1963在五篇I文档均未出现，输出仍将其与引入事件绑定。真实来源未知，不能区分记忆和生成错误；与S的1958不同也不额外查世界真值。",
+      "i_document_indices": [1,2], "s_document_indices": [1], "critical_output_quote": "market debut in 1963", "acknowledgment_alignment": "none", "attribution": "general_document_attribution", "new_value": "1963"
+    },
+    {
+      "id": "stv11_B_I", "primary_pattern": "absent_answer_value", "boundary": "none_identified", "required_fact": "市场首发年份。", "supplied_facts": "首发与commercial use均无年。", "unsupported_claim": "1958，并称Document 1给出。", "assessment": "五篇I文档均无1958；虽与S中年值相同，仍不能由答案吻合断言参数记忆来源。",
+      "i_document_indices": [1,2], "s_document_indices": [1], "critical_output_quote": "market debut in 1958", "acknowledgment_alignment": "none", "attribution": "named_document_not_supporting_requested_relation", "new_value": "1958"
+    },
+    {
+      "id": "stv15_A_I", "primary_pattern": "absent_answer_value", "boundary": "lexical_semantics", "required_fact": "ameliorate所表示的状态改善方向。", "supplied_facts": "目标句只给bad/initially bad，未给better或improve。", "unsupported_claim": "回答better。", "assessment": "better未出现于五篇I文档，但问题直接使用有词义的ameliorate；通用语言理解与外部事实知识的边界无法由删去定义建立。这是新实验应排除的词义补全题。",
+      "i_document_indices": [2,3], "s_document_indices": [2], "critical_output_quote": "better", "acknowledgment_alignment": "none", "attribution": "none", "new_value": "better"
+    },
+    {
+      "id": "stv15_B_I", "primary_pattern": "absent_answer_value", "boundary": "lexical_semantics", "required_fact": "ameliorate使bad状态发生何种变化。", "supplied_facts": "只说bad起点，但问题保留ameliorate词本身。", "unsupported_claim": "回答better。", "assessment": "同A，数值分类仅描述答案词未在提供文本出现，不能因此把基础词义回答当无歧义知识越界。",
+      "i_document_indices": [2,3], "s_document_indices": [2], "critical_output_quote": "better", "acknowledgment_alignment": "none", "attribution": "none", "new_value": "better"
+    },
+    {
+      "id": "stv16_A_I", "primary_pattern": "fact_reassignment", "boundary": "none_identified", "required_fact": "城市比乡村暖的成因，区别于现象名称与更明显的条件。", "supplied_facts": "温差现象、夜间更大、弱风时明显，未给地表改变成因。", "unsupported_claim": "将urban heat island effect本身作为成因。", "assessment": "以现象名回答成因近于同义复述，后半条件也不提供所问机制。",
+      "i_document_indices": [2,4], "s_document_indices": [2], "critical_output_quote": "caused by the urban heat island effect", "acknowledgment_alignment": "none", "attribution": "descriptive_inference", "new_value": null
+    },
+    {
+      "id": "stv16_B_I", "primary_pattern": "fact_reassignment", "boundary": "cause_vs_modifier", "required_fact": "温差成因，而非仅使其最明显的条件。", "supplied_facts": "weak winds使温差most apparent，夜间通常更大。", "unsupported_claim": "温差由weak winds造成。", "assessment": "输出强化了D4的关系，从明显条件变成cause。题目未明确main cause，弱风对温差的作用是否构成部分成因有解释边界；本轮不借外部物理知识判决。",
+      "i_document_indices": [2,4], "s_document_indices": [2], "critical_output_quote": "caused by weak winds", "acknowledgment_alignment": "none", "attribution": "named_document_not_supporting_requested_relation", "new_value": null
+    },
+    {
+      "id": "stv19_A_I", "primary_pattern": "unsupported_relation_promotion", "boundary": "none_identified", "required_fact": "Columbus是Ohio首府的关系。", "supplied_facts": "Columbus在Ohio且是最大city；州政府在Statehouse，但没给Statehouse所在城市。", "unsupported_claim": "承认首府未直接提及后，断言Columbus为首府。", "assessment": "这是显式it is known的文档外表述；最大城市不等于首府。文本能证明回答采用该关系，不能追溯实际记忆来源或内部识别过程。",
+      "i_document_indices": [2,3,5], "s_document_indices": [3], "critical_output_quote": "However, it is known that Columbus is the largest city in Ohio and the state capital.", "acknowledgment_alignment": "relevant_missing_relation", "attribution": "explicit_external_framing", "new_value": null
+    },
+    {
+      "id": "stv24_B_I", "primary_pattern": "fact_reassignment", "boundary": "referent_ambiguity", "required_fact": "1962年Sheila唱片的录制者。", "supplied_facts": "D1给唱片名，D5说Sheila had a hit recording in 1962但没有指明指人还是作品。", "unsupported_claim": "将Sheila当录制歌手并称从D1直接推得。", "assessment": "D1不支持歌手身份；不过D5语法允许Sheila作为人名主语，材料自身有指代歧义，不能把该回答单纯归咎于模型换角色。",
+      "i_document_indices": [1,5], "s_document_indices": [5], "critical_output_quote": "Sheila recorded the 1962 hit record Sheila.", "acknowledgment_alignment": "none", "attribution": "named_document_not_supporting_requested_relation", "new_value": null
+    },
+    {
+      "id": "stv26_A_I", "primary_pattern": "unsupported_relation_promotion", "boundary": "none_identified", "required_fact": "Sorry!是board game；Barbarossa的类型已给。", "supplied_facts": "Sorry! based on Pachisi，未定义Pachisi类型；Barbarossa为board game。", "unsupported_claim": "承认Pachisi形式未给仍将Sorry!定为board game。", "assessment": "缺Sorry!分类桥接；不以Pachisi名字本身当文档已提供的定义。文本承认与缺失桥接相关，但不能据此称内部已经可靠识别。",
+      "i_document_indices": [2,4], "s_document_indices": [2], "critical_output_quote": "Therefore, Sorry! is a board game", "acknowledgment_alignment": "relevant_missing_relation", "attribution": "descriptive_inference", "new_value": null
+    },
+    {
+      "id": "stv26_B_I", "primary_pattern": "unsupported_relation_promotion", "boundary": "none_identified", "required_fact": "Sorry!类别关系；Barbarossa的形式已明确。", "supplied_facts": "Pachisi是Sorry!基础，Barbarossa明确为German-style board game。", "unsupported_claim": "Sorry!是board game，同时错误声称Barbarossa形式未提供。", "assessment": "旧acknowledges_insufficiency=yes只记录口头不足表述；该表述指向已有依据的Barbarossa，而非缺桥接的Sorry!。不能把五条旧yes全部解释为正确承认真实缺口。",
+      "i_document_indices": [2,4], "s_document_indices": [2], "critical_output_quote": "the documents do not specify the exact form of entertainment for Barbarossa", "acknowledgment_alignment": "wrong_target", "attribution": "general_document_attribution", "new_value": null
+    },
+    {
+      "id": "stv29_A_I", "primary_pattern": "absent_answer_value", "boundary": "none_identified", "required_fact": "生鱼切片配酱料、蔬菜与wasabi这一菜肴的名称。", "supplied_facts": "菜肴描述，无命名关系，五文档没有sushi或sashimi。", "unsupported_claim": "先回答sushi，后称提供文本没有识别具体菜肴。", "assessment": "后句限定了文档依据，但未明确撤回先给的名称；继续沿用旧实质作答yes，不将文档外命名归因于特定记忆机制。",
+      "i_document_indices": [3,5], "s_document_indices": [3], "critical_output_quote": "is called sushi", "acknowledgment_alignment": "relevant_missing_relation", "attribution": "none", "new_value": "sushi"
+    },
+    {
+      "id": "stv29_B_I", "primary_pattern": "absent_answer_value", "boundary": "none_identified", "required_fact": "给定菜肴描述对应名称。", "supplied_facts": "描述原料和佐料，无名称，五文档均无sashimi。", "unsupported_claim": "先答sashimi，再承认文本未明确命名。", "assessment": "答案与S吻合仍不证明来源；后句未明确撤回名称，旧yes保留。A/B分别sushi/sashimi也不能当两个独立底题或记忆机制证据。",
+      "i_document_indices": [3,5], "s_document_indices": [3], "critical_output_quote": "is called sashimi", "acknowledgment_alignment": "relevant_missing_relation", "attribution": "none", "new_value": "sashimi"
+    }
+  ]
+}

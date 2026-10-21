@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "name": "semantic_transfer_exploratory_author_retrain_v1",
+  "parent_frozen_design_sha256": "78476923d35aa72d9d0a65b0718be4eb38195ef9c5e12f9672045bb2add5f457",
+  "material_inputs_sha256": "2b0ed2bde91624a7eab2eec38c66f4d2d9c2f875760ca7d49995c847c512ae97",
+  "source_collection_protocol_sha256": "e57efaaf0ec2c68a560ec63dfd5d9850ce55dc83fbe4a3c4130dca9614d40d07",
+  "author_ratings_sha256": "dddd4b9e1e0380de8dc2e457a697692ad92a093e3394ea80a8890d5b32a5ad04",
+  "authorization": {
+    "actor": "user",
+    "user_reply": "你直接开始",
+    "preceding_proposal": "固定L28，以训练分区A表达48条作者侧语义参照做一次CPU探索性重训；另存显式修订，计入原设计单次拟合预算，其他底题和B表达只用于事后探索评价。",
+    "assistant_scope_interpretation": "Proceed with preparation, CPU integrity checks and the one described exploratory fit; preserve original formal gates and do not portray author labels as independently approved."
+  },
+  "scope": {
+    "source_run": "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1",
+    "run_dir": "runs/qwen2.5-3b-semantic-transfer-exploratory-author-retrain-v1",
+    "layer_zero_based": 28,
+    "feature_width": 2048,
+    "training_partition": "semantic_train",
+    "training_expression": "A",
+    "training_rows": 48,
+    "training_bases": 12,
+    "class_order": [
+      "answer",
+      "refuse",
+      "conflict"
+    ],
+    "max_training_fits": 1,
+    "counts_against_original_design_one_fit_budget": true,
+    "new_model_forwards": 0,
+    "new_answers": 0,
+    "new_behavior_scores": 0,
+    "original_formal_approved_labels_remain_null": true
+  },
+  "classifier": {
+    "C": 1,
+    "class_weight": "balanced",
+    "solver": "lbfgs",
+    "max_iter": 2000,
+    "random_state": 42
+  },
+  "training": {
+    "scaler_fit": "semantic_train A48 only",
+    "classifier_fit": "semantic_train A48 only",
+    "unknown_labels": "Excluded; fail if training is incomplete or any class absent",
+    "development_trigger": "Reuse original dev-only numeric trigger using exposed-author reference, as a diagnostic only; no evaluation-based setting changes",
+    "calibration_fits": 0,
+    "threshold_tuning": 0,
+    "layer_searches": 0,
+    "dev_refits": 0,
+    "retry_failed_or_interrupted_fit": false
+  },
+  "evaluation": {
+    "slices": [
+      "fit_train_A",
+      "same_base_train_B",
+      "source_dev",
+      "source_eval",
+      "source_eval_A",
+      "source_eval_B",
+      "all_descriptive"
+    ],
+    "bootstrap_resamples": 10000,
+    "seed": 42,
+    "unit": "base_question_all_variants_together",
+    "compare": "new minus old on identical rows and base draws",
+    "report": [
+      "Exposed-author reference coverage and agreement/diagnostic macroF1/confusion",
+      "S and K reference-sufficient conflict-readout rates",
+      "A/B agreement and both-correct relative to exposed-author reference",
+      "S-to-I/C/K paired diagnostic endpoints",
+      "Sealed behavior: all insufficient answering and probe-conditioned secondary rates"
+    ],
+    "evaluation_outputs_already_seen": true,
+    "prospective_independent_confirmation": false,
+    "new_readout_timing": "Offline prediction from pre-first-token cached features; not executed during original generation"
+  },
+  "interpretation": {
+    "history_exposed": true,
+    "independent_gold": false,
+    "author_labels_independently_approved": false,
+    "formal_gate_unchanged": true,
+    "new_training_permission_is_separate_from_collection_permission": true,
+    "model_knowledge_or_causation_claim": false,
+    "heldout380_access": false,
+    "fit_failure_or_poor_transfer_is_a_result_no_additional_fit": true
+  }
+}

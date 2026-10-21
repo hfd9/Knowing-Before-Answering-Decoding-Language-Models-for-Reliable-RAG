@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "name": "semantic_transfer_exploratory_collection_v1",
+  "authorized_date": "2026-10-21",
+  "authorization": {
+    "actor": "user",
+    "user_reply": "行直接开始运行吧",
+    "accepted_scope": "After clarification that no personal240-item review is requested, user agreed to collect frozen old chat L28 readouts and free answers on the existing unreviewed v5 inputs as exploration before independent semantic review.",
+    "gpu_launch_actor": "user",
+    "assistant_prepares_and_verifies_then_provides_launch_command": true
+  },
+  "parent_frozen_design_sha256": "78476923d35aa72d9d0a65b0718be4eb38195ef9c5e12f9672045bb2add5f457",
+  "materials_protocol_sha256": "337104e9f22c78afbd42eb6e62cc30f7b73015429e73ef9aa16b6da91b1ae271",
+  "amended_order": "This separate exploratory collection may precede independent input review. It is not approval of the original formal study gate. Keep all original formal gates and protocols unchanged.",
+  "scope": {
+    "existing_v5_cells": 240,
+    "new_bases": 0,
+    "material_edits": 0,
+    "max_model_generations": 240,
+    "max_new_training_fits": 0,
+    "fixed_old_probe_layer_zero_based": 28,
+    "old_probe_feedback_to_generator": false,
+    "max_new_tokens_each": 128,
+    "greedy": true,
+    "input_or_output_truncation_policy_changes": false,
+    "formal_approved_labels_remain_null": true
+  },
+  "technical_smoke": {
+    "included_in_the_same240_budget": true,
+    "prefix_ids": ["stv01_B_S", "stv16_A_I", "stv17_A_C", "stv01_A_I"],
+    "selection": "Longest input, shortest input, repaired poker conflict, and first-base missing-relation input; selected from frozen CPU lengths/metadata, not probe outputs. Generate once and reuse as the full-run prefix.",
+    "require_four_nonempty_EOS_ended_answers_without_output_limit": true,
+    "failure": "Preserve cached answers and stop; do not alter prompts/budget, retry the same inputs or classify empty/truncated outputs as refusals."
+  },
+  "interpretation": {
+    "independent_semantic_approval": false,
+    "author_modes_used_as_gold": false,
+    "formal_semantic_accuracy_or_macroF1": false,
+    "new_probe_training_or_dev_trigger": false,
+    "causal_intervention": false,
+    "heldout380_access": false,
+    "former_eval_partition": "Retain its identity only as provenance. These96 outcomes will no longer be an undisclosed prospective evaluation under the original pre-GPU-reviewed design after collection.",
+    "later_labels": "Any later input review or behavior scoring must retain timestamps, exposure and provenance. Do not silently relabel these caches as the original pre-review formal experiment or independent confirmation."
+  }
+}

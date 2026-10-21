@@ -1,0 +1,47 @@
+{
+  "status": "complete",
+  "manual_review": {
+    "items": 240,
+    "document_slots": 1200,
+    "unique_full_documents": 435,
+    "fields": 1680,
+    "determinate": 1652,
+    "unknown_fields": 28,
+    "unknown_rows": 17,
+    "input_citations": 492,
+    "complete_output_citations": 240
+  },
+  "tests": {
+    "command": "/large_disk/wf/miniconda3/envs/kba-rag/bin/python -B -m unittest discover -s tests -p test_semantic_transfer_exploratory_behavior_review.py -v",
+    "passed": 13,
+    "failed": 0,
+    "unittest_seconds": 0.479,
+    "semantic_judgment_truth_validated_by_tests": false,
+    "old_53_or_120_tests_rerun": false
+  },
+  "replay": {
+    "analyze_exit_code": 0,
+    "verify_exit_code": 0,
+    "verify_pythonhashseed": 97,
+    "preserved_paths": 869,
+    "original_run_file_count": 495,
+    "original_run_unchanged": true,
+    "independent_manual_code_and_csv_counts_match": true
+  },
+  "static_checks": {
+    "json_parse": true,
+    "python_ast_parse": true,
+    "record_links_exist": true,
+    "max_new_file_bytes": 541740,
+    "all_new_files_below_1MiB": true,
+    "experiment_semantic_accuracy_columns_blank": true
+  },
+  "boundary": {
+    "history_exposed": true,
+    "independent_gold": false,
+    "formal_semantic_labels_added": 0,
+    "new_gpu_calls": 0,
+    "new_probe_fits": 0
+  },
+  "note": "Old blank templates and technical reports retain their historical unreviewed snapshot; the completed review is a separate sealed artifact set."
+}

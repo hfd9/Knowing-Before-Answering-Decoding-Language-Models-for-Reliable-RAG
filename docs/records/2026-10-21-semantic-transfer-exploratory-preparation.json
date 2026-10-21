@@ -1,0 +1,156 @@
+{
+  "recorded_date": "2026-10-21",
+  "status": "exploratory_collection_prepared_verified_user_launch_pending_GPU0",
+  "authorization": "User explicitly accepted exploratory GPU collection before independent semantic review after clarification; GPU launch remains user-operated.",
+  "amendment_path": "prompts/semantic_transfer_exploratory_collection_v1.json",
+  "amendment_sha256": "2f7b590492332a41bb42ef5fdf697a920efb8447e50b2261ea4afc567399092d",
+  "run_dir": "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1",
+  "audit_dir": "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-preparation-audit-v1",
+  "gpu_launch_actor": "user",
+  "launch_command": "sh scripts/run_semantic_transfer_exploratory_collection.sh",
+  "actual_checks": {
+    "prepare_exit": 0,
+    "fresh_process_verify_exit": 0,
+    "verify_hash_seed": 71,
+    "all240_original_v5_inputs_retained": true,
+    "all240_prompts_and_tokens_equal_v5": true,
+    "smoke_is_first4_of_same240": true,
+    "zero_actual_predictions_and_attempt_markers": true,
+    "old_paths_hashes_checked": 366,
+    "old_path_mismatches": [],
+    "implementation_fingerprints": 20,
+    "source_fingerprints": 24
+  },
+  "planned": {
+    "cells": 240,
+    "bases": 30,
+    "partitions": {
+      "semantic_train": 96,
+      "semantic_dev": 48,
+      "semantic_eval": 96
+    },
+    "input_tokens": {
+      "min": 341,
+      "max": 3055,
+      "total": 323081
+    },
+    "max_output_tokens": 30720,
+    "training_fits": 0,
+    "old_probe_layer": 28,
+    "smoke_prefix_ids": [
+      "stv01_B_S",
+      "stv16_A_I",
+      "stv17_A_C",
+      "stv01_A_I"
+    ],
+    "extra_smoke_generations": 0,
+    "full_budget_includes_all240": true
+  },
+  "collection_authorization": {
+    "status": "user_authorized_exploratory_collection_before_independent_review",
+    "amendment_sha256": "2f7b590492332a41bb42ef5fdf697a920efb8447e50b2261ea4afc567399092d",
+    "collection_allowed": true,
+    "independent_semantic_approval": false,
+    "formal_gpu_launch_ready": false,
+    "approved_semantic_labels": 0,
+    "max_training_fits": 0,
+    "max_model_generations": 240,
+    "launch_actor": "user",
+    "original_formal_review_gate_unchanged": true
+  },
+  "original_formal_review_gate": {
+    "status": "pending_independent_semantic_reviews",
+    "planned_cells": 240,
+    "constructed_cells": 240,
+    "construction_coverage": 1.0,
+    "approved_semantic_labels": 0,
+    "semantic_coverage": 0.0,
+    "partitions": {
+      "semantic_train": {
+        "planned": 96,
+        "approved": 0,
+        "coverage": 0.0
+      },
+      "semantic_dev": {
+        "planned": 48,
+        "approved": 0,
+        "coverage": 0.0
+      },
+      "semantic_eval": {
+        "planned": 96,
+        "approved": 0,
+        "coverage": 0.0
+      }
+    },
+    "audited_context_receipts": 0,
+    "gpu_launch_ready": false,
+    "approval_is_explicit_not_automatic": true,
+    "context_audit_limit": "Hashes verify retained records, not the truth or completeness of an external auditor declaration.",
+    "no_model_weights_loaded": true,
+    "no_probe_deserialized": true,
+    "new_gpu_forwards": 0,
+    "generated_answers": 0,
+    "trained_probes": 0,
+    "material_version": 5,
+    "author_acceptance_is_independent_approval": false,
+    "author_acceptance_risks_retained": true,
+    "old_v4_study_directory_unchanged": true
+  },
+  "tests": {
+    "new_tests_passed": 7,
+    "new_test_seconds": 8.239,
+    "related_tests_passed": 35,
+    "related_seconds_including_import": 11.916,
+    "unittest_reported_seconds": 11.56,
+    "old_related28_rerun": true,
+    "old53_and120_suites_not_rerun": true,
+    "simulated240_completion_and_resume_not_actual_model_outputs": true
+  },
+  "implementation_sha256": {
+    "scripts/semantic_transfer_exploratory_collection.py": "8b81bb30a60c7719dc60c4038fcada9dedb4bd7e139badf21805b0b3609c9d9e",
+    "scripts/run_semantic_transfer_exploratory_collection.sh": "fdcc97706fd9f2bd968d3c8dffd9d0da03cff5d0cd44535006df9215ad7fdb98",
+    "tests/test_semantic_transfer_exploratory_collection.py": "c9e0f3dffa6f42872aa1665f8f41bf2d0b71959870ce1a359e45defcb2e10bbf"
+  },
+  "prepared_artifact_sha256": {
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/approved_labels.json": "d4bd330366ae40fb51a7980e99bfbcf8398a76e0c074c8ea25c4f45cedbb7eca",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/collection_authorization.json": "9fcea7a375675054b39a8bf8435c028e08b48a795f0f964739eadd8f8bc02bdd",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/collection_plan.json": "1a3c5f2c7affa9373f2724f0a55f43c5af33371dff2b2857046eaae2d7b465a6",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/preflight.json": "ed83d1a2fbdd836884a9318adef108f632c242dd8ff9c796f92e8d1928ec948e",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/protocol.json": "e57efaaf0ec2c68a560ec63dfd5d9850ce55dc83fbe4a3c4130dca9614d40d07"
+  },
+  "audit_artifact_sha256": {
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-preparation-audit-v1/inputs240.csv": "0fd1b5279a6fffd3dbb47b8beb68fc82361740d070e5810f97b321a71aab933d",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-preparation-audit-v1/prepare.log": "cc3ce59f59e049f6bfb0fb80092ef8bacb3d8edd78d237559439fb41b2725090",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-preparation-audit-v1/tests-new.log": "d6ab8996498fd3761aaa8822f8a63e3d6ddb7c96d3db4157145a9417ea9042e8",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-preparation-audit-v1/tests-related.log": "7b57e4eaa089543e98a1548656059864238b11d75257812162822c8bc12e858c",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-preparation-audit-v1/verify.log": "cc3ce59f59e049f6bfb0fb80092ef8bacb3d8edd78d237559439fb41b2725090"
+  },
+  "persistent_inputs_sha256": "0fd1b5279a6fffd3dbb47b8beb68fc82361740d070e5810f97b321a71aab933d",
+  "preserved_manifest_sha256": "1ae84df15957f0ad3266560f69c540fb8bd566b4ede238f3be173ef188ad63fb",
+  "expected_after_user_run": [
+    "strict240_cache_replay",
+    "technical_collection_summary_without_semantic_accuracy",
+    "unscored_behavior_packet"
+  ],
+  "planning_minutes": [
+    30,
+    120
+  ],
+  "planning_basis": "Historical effective generation capacity with full30720-output budget, not actual newGPU timing.",
+  "resume_policy": "Same command reuses committed prefixes. Uncommitted attempts or failed smoke stop for inspection; no deleting markers or automatic repeated generation.",
+  "new_gpu_forwards": 0,
+  "generated_answers": 0,
+  "trained_probes": 0,
+  "approved_independent_labels": 0,
+  "original_formal_gate_changed": false,
+  "heldout380_accessed": false,
+  "commit_or_push_performed": false,
+  "limitations": [
+    "Collection precedes independent input review by explicit user amendment; not the original formal study.",
+    "No author-derived training gold, semantic accuracy, MacroF1, behavior rates, dev trigger, new fit or causal claims.",
+    "Original96 eval identity is provenance only after outcomes are collected; future use must disclose timing and exposure.",
+    "These240 answer attempts are the collection budget, not permission to regenerate a second formal batch.",
+    "Unresolved poker fourunknown and13AB detail/scope caveats remain.",
+    "Technical CPU simulations do not establish actual3B GPU success."
+  ]
+}

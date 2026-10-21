@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "status": "all48_inputs_author_reviewed_before_generation",
+  "reviewer": "Current assistant; project history, design and author construction exposed",
+  "history_exposed": true,
+  "independent_gold": false,
+  "approved_for_probe_training": false,
+  "formal_semantic_labels_added": 0,
+  "materials_sha256": "663829849a931cafa2e464c279e590b0fac85db7c7982c8f0eaf8bf6910c6336",
+  "reading": {
+    "full_question_document_inputs": 48,
+    "document_slots": 240,
+    "unique_document_texts": 73,
+    "method": "Read all48 from exact generated text in two displayed batches; repeated documents referenced by exact-text identity. Checked target/distractor roles and two-value I completions.",
+    "interpretation": "Author review of simple fictional records, not independent assessment or evidence that natural-document semantic review gates passed."
+  },
+  "reviewed_ids": [
+    "bind01_S_v1", "bind01_S_v2", "bind01_I_v1", "bind01_I_v2",
+    "bind02_S_v1", "bind02_S_v2", "bind02_I_v1", "bind02_I_v2",
+    "bind03_S_v1", "bind03_S_v2", "bind03_I_v1", "bind03_I_v2",
+    "bind04_S_v1", "bind04_S_v2", "bind04_I_v1", "bind04_I_v2",
+    "bind05_S_v1", "bind05_S_v2", "bind05_I_v1", "bind05_I_v2",
+    "bind06_S_v1", "bind06_S_v2", "bind06_I_v1", "bind06_I_v2",
+    "bind07_S_v1", "bind07_S_v2", "bind07_I_v1", "bind07_I_v2",
+    "bind08_S_v1", "bind08_S_v2", "bind08_I_v1", "bind08_I_v2",
+    "bind09_S_v1", "bind09_S_v2", "bind09_I_v1", "bind09_I_v2",
+    "bind10_S_v1", "bind10_S_v2", "bind10_I_v1", "bind10_I_v2",
+    "bind11_S_v1", "bind11_S_v2", "bind11_I_v1", "bind11_I_v2",
+    "bind12_S_v1", "bind12_S_v2", "bind12_I_v1", "bind12_I_v2"
+  ],
+  "scenario_notes": [
+    {"base":"bind01", "target":"U-754", "other":"U-214", "target_code":"K-36062", "assessment":"目标D1、另一单位D2；I只保留目标记录存在与周二检查，另一单位代码不能唯一确定目标。"},
+    {"base":"bind02", "target":"U-125", "other":"U-859", "target_code":"K-38893", "assessment":"目标D2、另一单位D3；背景紫色组仅指另一单位，没有跨单位代码等同规则。"},
+    {"base":"bind03", "target":"U-381", "other":"U-350", "target_code":"K-68878", "assessment":"目标D3、另一单位D4；S两个值归不同单位，兼容而非冲突；I目标代码关系缺失。"},
+    {"base":"bind04", "target":"U-328", "other":"U-242", "target_code":"K-30926", "assessment":"目标D4、另一单位D5；I不含目标值30926，两个不同补全均满足已给记录。"},
+    {"base":"bind05", "target":"U-854", "other":"U-204", "target_code":"K-54597", "assessment":"目标D5、另一单位D1；干扰先出现，I不存在把其代码赋给目标的文本关系。"},
+    {"base":"bind06", "target":"U-792", "other":"U-858", "target_code":"K-54118", "assessment":"目标D2、另一单位D1；实体明确，目标代码与两个干扰值互异。"},
+    {"base":"bind07", "target":"U-658", "other":"U-189", "target_code":"K-22156", "assessment":"目标D3、另一单位D2；代码22156与22676局部相似但互异，无别名/子串等同。"},
+    {"base":"bind08", "target":"U-704", "other":"U-532", "target_code":"K-55082", "assessment":"目标D4、另一单位D3；背景无任何访问代码事实；I没有目标关系。"},
+    {"base":"bind09", "target":"U-132", "other":"U-130", "target_code":"K-44671", "assessment":"目标D5、另一单位D4；两个单位名称数字接近但明确不同，不能合并；此相似性披露而不因预期难度换题。"},
+    {"base":"bind10", "target":"U-195", "other":"U-323", "target_code":"K-59615", "assessment":"目标D1、另一单位D5；相隔较远但问题指向明确，背景仅检查日期及维护组。"},
+    {"base":"bind11", "target":"U-338", "other":"U-617", "target_code":"K-82357", "assessment":"目标D1、另一单位D3；I目标存在句不含访问代码，两个补全可以保留全部原文。"},
+    {"base":"bind12", "target":"U-716", "other":"U-127", "target_code":"K-92397", "assessment":"目标D3、另一单位D1；S给92397，I无值；不将另单位91070或57400当目标依据。"}
+  ],
+  "overall_assessment": "All24 S inputs explicitly give one target access code and a compatible different-entity value. All24 I inputs retain no target-code relation and admit two distinct target assignments. No lexical-definition, overview-counting, causal-role or pronoun ambiguity was identified in this author review. This is not an independent semantic guarantee.",
+  "remaining_limits": ["One English sentence family with synthetic identifiers, not 12 diverse natural tasks.", "Identifier closeness varies and can affect difficulty; no replacement after outcomes.", "Target positions are near-balanced (counts2 or3), relative order exactly6/6; exact equality across five positions is impossible with12 bases.", "S/I differs in content and token length; no isolated token-length or hidden-mechanism claim."]
+}

@@ -1,0 +1,61 @@
+{
+  "status": "complete",
+  "scope": "posthoc_history_exposed_CPU_paired_analysis",
+  "input_cells": 240,
+  "base_questions": 30,
+  "constructed_pairs": 180,
+  "author_reference_eligible_pairs": 174,
+  "author_reference_ineligible_pairs_retained": 6,
+  "slice_summaries": 21,
+  "tests": {
+    "new_tests": 11,
+    "passed": 11,
+    "failed": 0,
+    "unittest_seconds": 0.146,
+    "old_13_53_120_rerun": false
+  },
+  "actual_commands": {
+    "analyze_exit_code": 0,
+    "verify_exit_code": 0,
+    "verify_pythonhashseed": 89,
+    "verify_recreated_json_tables_and_figures_byte_identically": true
+  },
+  "independent_recomputation": {
+    "paired_probability_deltas": 540,
+    "endpoint_behavior_fields": 2520,
+    "input_token_deltas": 180,
+    "all_three_10000_base_bootstrap_intervals_match": true
+  },
+  "static_checks": {
+    "python_ast": true,
+    "json_parse": true,
+    "record_links": true,
+    "csv_counts": true,
+    "git_diff_check": true,
+    "max_new_file_bytes": 200031,
+    "all_below_1MiB": true
+  },
+  "preservation": {
+    "old_paths": 885,
+    "mismatches": 0,
+    "source_run_files": 495,
+    "source_run_unchanged": true,
+    "prior_behavior_seal_and_outputs_unchanged": true
+  },
+  "figures": {
+    "png": 2,
+    "pdf": 2,
+    "visually_inspected": true
+  },
+  "boundaries": {
+    "history_exposed": true,
+    "independent_gold": false,
+    "new_gpu_calls": 0,
+    "new_generated_answers": 0,
+    "new_probe_fits": 0,
+    "new_semantic_labels": 0,
+    "new_behavior_scores": 0,
+    "heldout380_accessed": false,
+    "original_gates_unchanged": true
+  }
+}

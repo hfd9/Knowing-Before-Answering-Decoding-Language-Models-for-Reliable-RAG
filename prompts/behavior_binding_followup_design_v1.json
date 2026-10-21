@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "status": "proposed_new_behavior_design_no_materials_no_gpu",
+  "origin": "Question selected after post-hoc exposed-author audit of 23 existing answers; not preregistration of the old study and not evidence of a confirmed mechanism.",
+  "question": "When a target attribute relation is absent from a document packet, does the answer assign a same-attribute value from a different named entity to the target, and does replacing that distractor value change the adopted value?",
+  "current_scope": "Design document only. No source sampling, finalized materials, executable collector, new forward pass, generation or study registration has occurred.",
+  "new_generation_started": false,
+  "independent_semantic_approval": false,
+  "original_semantic_transfer_design_remaining_fits": 0,
+  "new_probe_fits_allowed": 0,
+  "model": "Frozen local Qwen2.5-3B-Instruct",
+  "probe_role": "No probe required for primary outcomes; no re-training, layer selection, calibration or threshold search.",
+  "material_plan": {
+    "family": "Fresh explicitly fictional entity-attribute records, not original release facts or held-out 380 questions",
+    "base_scenarios": 12,
+    "cells_per_base": 4,
+    "maximum_answers_if_later_prepared_and_launched": 48,
+    "factors": {
+      "target_relation": ["present_S", "absent_I"],
+      "non_target_distractor_value": ["v1", "v2"]
+    },
+    "answer_values": "Three distinct opaque values per base: target t, distractors v1/v2. Fixed generated assignment before outputs, with role/position balancing specified in the later material spec; no selecting labels by tokenizer behavior or model answers.",
+    "question": "Ask only the stipulated target entity's one attribute according to the supplied records. Do not include the answer value in the question.",
+    "documents": "Five short fictional records with explicit entity identities. One target relation, one different entity's same attribute, and three invariant background records. Preserve slot order and distractor entity between four cells.",
+    "S": "Target record explicitly supplies value t. The non-target value is either v1 or v2; both are compatible with the target because entity identities differ.",
+    "I": "Replace only the target attribute sentence with an entity-presence statement. No target attribute value remains in the rendered question or five documents. Distractor sentence otherwise matches S.",
+    "constraints": [
+      "v1 and v2 must differ from t and each other; no substring or alias collisions.",
+      "Exclude lexical definitions, implicit class membership, overview counting, ambiguous names, causal modifiers and pronouns.",
+      "For every I packet, construct two explicit completions assigning different target values, both compatible with all provided records. These are audit witnesses and are never shown to the model.",
+      "The later material spec must fix identifier/value assignment, ordering and seed before generation; this draft does not claim these are finalized.",
+      "Record token lengths. Removing a target fact changes content and may change length; do not claim a pure hidden-state or token-length mechanism.",
+      "Do not add paraphrase variants, instruction candidates, retries of completed answers or a second sample after observing outcomes."
+    ]
+  },
+  "generation_plan": {
+    "template": "Reuse the existing chat free-answer instruction and native chat renderer after fingerprinting; fictional short records are a new input distribution.",
+    "decoding": "greedy, max_new_tokens=128, one saved answer per cell",
+    "smoke": "At most four selected cells included within 48, not additional answers; exact selection and technical checks must be fixed in collection preparation.",
+    "launch": "Prepare code, CPU source/render checks and estimates first. If runtime cannot be guaranteed below 10 minutes, user launches under the existing division of work. No runnable collector exists at draft time."
+  },
+  "outcomes": {
+    "primary": "All I outputs: assigns that cell's non-target distractor value to the target. Denominator 24 if all 12 bases are prepared; preserve invalid/ambiguous cases in denominator.",
+    "paired_descriptive": "For each of 12 bases, whether I-v1 adopts v1 and I-v2 adopts v2; retain all four cells, do not select bases by S success.",
+    "controls": "All S outputs: correct target value and supported attribution; denominator 24. Report both distractor settings. Poor S performance limits a missing-relation-specific interpretation.",
+    "secondary": ["I any substantive target answer", "I explicit insufficiency acknowledgment", "I acknowledgment followed by substantive target answer", "output citation supports the claimed target relation"],
+    "coding": "Separate assigns-target-value from mentions-value, quotes-background and explicitly rejects-value. Multiple candidate adoption or unclear retraction can remain unknown. Keep raw outputs and quoted spans.",
+    "statistics": "Full counts and unknown identification bounds; descriptive paired base tables. If bootstrap intervals are reported, resample all four cells together across 12 bases, 10000 repeats, seed42. No significance search or success-selected slices."
+  },
+  "interpretation_limits": [
+    "Fictional stipulated facts test entity-attribute binding under this task, not natural-document semantic generalization or real-world answer correctness.",
+    "A distractor replacement response concerns the edited input. It does not identify hidden-state causal use, parameter memory, subjective knowledge or deliberate disregard.",
+    "Author construction and deterministic input checks are not independent semantic approval. Expose actual reviewers and context if review occurs.",
+    "Original one-fit budget remains exhausted; the draft cannot reopen it or reuse seen eval as prospective confirmation.",
+    "The original 380 held-out test questions remain untouched."
+  ]
+}

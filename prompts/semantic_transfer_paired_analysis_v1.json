@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "status": "posthoc_exploratory_analysis_specified_before_paired_computation",
+  "history_exposed": true,
+  "independent_gold": false,
+  "approved_for_training": false,
+  "new_gpu_calls": 0,
+  "new_probe_fits": 0,
+  "source_run": "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1",
+  "source_behavior_prefix": "docs/records/2026-10-21-semantic-transfer-exploratory-behavior",
+  "output_prefix": "docs/records/2026-10-21-semantic-transfer-paired-analysis",
+  "design": {
+    "base_questions": 30,
+    "expressions": ["A", "B"],
+    "contrasts": ["S_to_I", "S_to_C", "S_to_K"],
+    "constructed_pairs": 180,
+    "reference_eligible_pairs": 174,
+    "reference_ineligible_pairs": 6,
+    "pairing": "Same original_id, expression, partition and question. S is always the left endpoint.",
+    "semantic_reference": "Existing exposed-author input judgments only; not formal semantic labels. Report constructed pairs and author-reference-eligible pairs separately. Retain all six poker pairs with unknown S membership."
+  },
+  "endpoints": {
+    "S_to_I": {
+      "focal_probability": "refuse",
+      "target_behavior": "has_substantive_answer",
+      "behavior_changes": ["has_substantive_answer", "acknowledges_insufficiency"]
+    },
+    "S_to_C": {
+      "focal_probability": "conflict",
+      "target_behavior": "selection_without_resolution",
+      "behavior_changes": ["acknowledges_conflict", "selects_single_answer", "selection_without_resolution"]
+    },
+    "S_to_K": {
+      "focal_probability": "conflict",
+      "target_behavior": "erroneous_refusal",
+      "behavior_changes": ["answer_grounded_correct", "erroneous_refusal", "acknowledges_conflict"]
+    }
+  },
+  "statistics": {
+    "probabilities": "All three right-minus-left probability deltas; focal increase means strictly greater than zero, with no optimized threshold. Report magnitude, sign counts and class transition tables.",
+    "behavior": "Reuse sealed yes/no/unknown judgments without rescoring. Record endpoint changes, source-answer AND target-answer, focal increase AND target behavior, and focal increase conditional on target behavior. Unknowns remain in eligible denominators.",
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 42,
+    "bootstrap_unit": "original_id; retain all available contrasts and A/B expressions for every sampled base, including repeated draws",
+    "bootstrap_interval": "Percentile 2.5 and 97.5 percent. For unknown behavior, compute separate sampling intervals for lower and upper identification bounds. These intervals exclude judgment uncertainty and model/training randomness and do not establish population representativeness.",
+    "slices": ["all constructed", "exposed-author-reference eligible", "expression A", "expression B", "source semantic_train", "source semantic_dev", "source semantic_eval"],
+    "composition_audit": "For I endpoints, report each base as both expressions probe-refuse, mixed, or neither; report outcomes within mixed bases separately. For all eight variants, count stable class predictions and S/K conflict concentration by base. These are observational diagnostics, not adjustment proving causation.",
+    "no_significance_search": true
+  },
+  "boundaries": [
+    "All source outputs and author judgments have already been viewed. This is a new post-hoc analysis, not preregistration or prospective confirmation.",
+    "No new scoring, semantic accuracy/MacroF1, training trigger, model/probe loading, generation, causal intervention, external reviewer or held-out 380-question access.",
+    "Source partitions are descriptive provenance only. Preserve frozen code, source run, prior reports, labels and gates."
+  ]
+}

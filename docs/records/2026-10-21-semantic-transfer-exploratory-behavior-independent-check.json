@@ -1,0 +1,77 @@
+{
+  "manual_rows": 240,
+  "fields": 1680,
+  "manual_code_counts": {
+    "has_substantive_answer": {
+      "y": 168,
+      "n": 67,
+      "?": 5
+    },
+    "acknowledges_insufficiency": {
+      "n": 170,
+      "y": 70
+    },
+    "acknowledges_conflict": {
+      "n": 222,
+      "y": 18
+    },
+    "selects_single_answer": {
+      "y": 167,
+      "n": 67,
+      "?": 6
+    },
+    "answer_grounded_correct": {
+      "y": 92,
+      "n": 137,
+      "?": 11
+    },
+    "has_supplied_resolution": {
+      "n": 237,
+      "y": 3
+    },
+    "selection_without_resolution": {
+      "n": 197,
+      "y": 37,
+      "?": 6
+    }
+  },
+  "primary_recomputed": [
+    {
+      "endpoint": "insufficient_substantive_answer",
+      "eligible": 60,
+      "yes": 23,
+      "unknown": 0,
+      "lower": 0.38333333333333336,
+      "upper": 0.38333333333333336
+    },
+    {
+      "endpoint": "conflict_single_side_selection",
+      "eligible": 60,
+      "yes": 37,
+      "unknown": 6,
+      "lower": 0.6166666666666667,
+      "upper": 0.7166666666666667
+    },
+    {
+      "endpoint": "conflict_selection_without_resolution",
+      "eligible": 60,
+      "yes": 37,
+      "unknown": 6,
+      "lower": 0.6166666666666667,
+      "upper": 0.7166666666666667
+    }
+  ],
+  "unknown_rows": 17,
+  "unknown_fields": 28,
+  "secondary_probe_refuse_denominator": 16,
+  "secondary_probe_refuse_answers": 1,
+  "sufficient_probe_conflict": 58,
+  "sufficient_probe_conflict_grounded": {
+    "yes": 53,
+    "unknown": 3,
+    "no": 2
+  },
+  "preserved_checked": 869,
+  "preserved_mismatches": [],
+  "method": "Independent one-off CPU counts from explicit manual codes plus joined CSV; no scoring from labels or keywords; no model loaded."
+}

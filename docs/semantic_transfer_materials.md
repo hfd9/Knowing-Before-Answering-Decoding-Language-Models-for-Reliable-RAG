@@ -1,5 +1,13 @@
 # 跨表达语义材料：当前v5关系对照修订与CPU交付
 
+2026-10-21用户已完成[240条探索性GPU采集并经只读核验](records/2026-10-21-semantic-transfer-exploratory-verified.md)，全部EOS、无空/触顶，原输入与准备产物不变。当前应离线审核已有回答，行为评分仍0；独立语义标签及正式门禁不变，无需再运行生成入口。
+
+用户于2026-10-21明确同意[另存的探索性GPU采集](records/2026-10-21-semantic-transfer-exploratory-preparation.md)，使用当前240输入不再改稿，只采集旧L28读出/状态/自由回答，不训练或计算正式语义准确率；新入口`sh scripts/run_semantic_transfer_exploratory_collection.sh`就绪待用户运行。材料独立标签仍0，原正式门禁false；同批4技术smoke已计入240预算。
+
+2026-10-21后续已完成[v5执行绑定的CPU准备](records/2026-10-21-semantic-transfer-study-v5-preparation.md)：新入口`sh scripts/run_semantic_transfer_study_v5.sh --stage verify`，旧执行器未改；实际240提示匹配、28相关CPU及350旧路径核验通过。独立标签仍0/门禁false，不能把CPU准备当作真实GPU测量已完成。
+
+2026-10-21已完成[v5修后作者验收/风险/封存](records/2026-10-21-semantic-transfer-v5-acceptance.md)：116充分/60不足/60冲突/4unknown；58组S/I暂可接受、2组S范围未知，13组A/B有细节/范围注意点。当前材料字节未改，独立标签0、门禁false。两匿名包与协调端验收资料封存在runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1；public内各ZIP与原v5逐字节相同。CPU核验：`sh scripts/run_semantic_transfer_v5_acceptance.sh --stage verify`。作者验收完成不表示材料全部语义通过；未决项保留，不自动继续修改或启动GPU。
+
 当前使用[v5修订记录](records/2026-10-20-semantic-transfer-materials-v5.md)，spec为prompts/semantic_transfer_materials_v5.json，修订声明为prompts/semantic_transfer_control_revision_v1.json，新run为runs/qwen2.5-3b-semantic-transfer-materials-v5。83输入/131片段变化、157原样；54条I重构，问题/背景/槽位/底题/分区与原来源不变。8新CPU44.533秒及实际prepare/verify通过，341–3055tokens、总323081。
 
 ```sh

@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "actual_research_fits": 1,
+  "remaining_original_design_fits": 0,
+  "training_rows": 48,
+  "scaler_mean_variance_match_train_A_only": true,
+  "manual_softmax_max_abs_error": 0.0,
+  "slice_confusion_recomputed": {
+    "fit_train_A": {
+      "old": {
+        "correct": 19,
+        "determinate": 48
+      },
+      "new": {
+        "correct": 48,
+        "determinate": 48
+      }
+    },
+    "same_base_train_B": {
+      "old": {
+        "correct": 23,
+        "determinate": 48
+      },
+      "new": {
+        "correct": 41,
+        "determinate": 48
+      }
+    },
+    "source_dev": {
+      "old": {
+        "correct": 18,
+        "determinate": 44
+      },
+      "new": {
+        "correct": 30,
+        "determinate": 44
+      }
+    },
+    "source_eval": {
+      "old": {
+        "correct": 57,
+        "determinate": 96
+      },
+      "new": {
+        "correct": 62,
+        "determinate": 96
+      }
+    },
+    "source_eval_A": {
+      "old": {
+        "correct": 27,
+        "determinate": 48
+      },
+      "new": {
+        "correct": 31,
+        "determinate": 48
+      }
+    },
+    "source_eval_B": {
+      "old": {
+        "correct": 30,
+        "determinate": 48
+      },
+      "new": {
+        "correct": 31,
+        "determinate": 48
+      }
+    },
+    "all_descriptive": {
+      "old": {
+        "correct": 117,
+        "determinate": 236
+      },
+      "new": {
+        "correct": 181,
+        "determinate": 236
+      }
+    }
+  },
+  "source_eval_paired_bootstrap_recomputed": {
+    "accuracy": [
+      -0.05208333333333337,
+      0.16666666666666669
+    ],
+    "macro_f1": [
+      -0.05260323739809967,
+      0.1588229159654977
+    ]
+  },
+  "old_v5_guard_blocks_another_fit": true,
+  "source_preserved_paths": 901,
+  "sealed_fit_files": 12,
+  "no_refitting_in_check": true
+}

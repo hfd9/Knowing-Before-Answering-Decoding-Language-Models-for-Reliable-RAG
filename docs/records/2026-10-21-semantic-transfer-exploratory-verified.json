@@ -1,0 +1,160 @@
+{
+  "recorded_date": "2026-10-21",
+  "status": "exploratory_collection_verified_complete_not_semantically_validated",
+  "operator": "assistant_CPU_readonly_verification_after_user_GPU_run",
+  "source_run": "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1",
+  "verification_run": "runs/qwen2.5-3b-semantic-transfer-exploratory-verified-2026-10-21-v1",
+  "actual_verify_results_command": "PYTHONHASHSEED=83 sh scripts/run_semantic_transfer_exploratory_collection.sh --stage verify-results",
+  "actual_verify_results_exit": 0,
+  "independent_checks": {
+    "completed": 240,
+    "smoke_included4": true,
+    "attempts": 240,
+    "features": 240,
+    "all_feature_shapes": [
+      36,
+      2048
+    ],
+    "feature_dtype": "float16",
+    "max_old_probe_probability_replay_abs_error": 0.0,
+    "prediction_counts": {
+      "conflict": 120,
+      "answer": 98,
+      "refuse": 22
+    },
+    "input_tokens": 323081,
+    "output_tokens": 9038,
+    "empty_outputs": 0,
+    "ended_with_eos": 240,
+    "hit_output_limit": 0,
+    "behavior_packet_items": 240,
+    "unreviewed_behavior_fields": 1680,
+    "approved_independent_labels": 0,
+    "formal_gate_changed": false,
+    "source_fingerprints_verified": {
+      "implementation": 20,
+      "sources": 24
+    },
+    "previous_paths_preserved": 366,
+    "preparation_files_unchanged": 5,
+    "first_answer_completed_bj": "2026-10-21T09:45:31.432036+08:00",
+    "last_answer_completed_bj": "2026-10-21T09:52:49.525674+08:00",
+    "sum_generation_seconds": 436.1863094783039,
+    "first_inference_start_estimated_bj": "2026-10-21T09:45:28.144472+08:00",
+    "inference_and_save_span_seconds": 441.381202,
+    "timing_excludes_initial_CPU_preflight_and_model_load": true
+  },
+  "read_only_integrity": {
+    "original_run_files": 495,
+    "all_original_file_sha256_unchanged": true,
+    "new_or_deleted_original_run_files": 0,
+    "old_source_paths": 366,
+    "old_source_hash_mismatches": [],
+    "prepared_files_unchanged": 5,
+    "collection_log_saved_lines": 240,
+    "collection_log_indices_exactly_1_to_240": true,
+    "tracebacks_errors_failed_messages": 0,
+    "last_failure_file_present": false,
+    "uncommitted_generation_attempts": 0
+  },
+  "report": {
+    "status": "exploratory_collection_complete_not_semantically_validated",
+    "completed": 240,
+    "model_generations": 240,
+    "extra_smoke_generations": 0,
+    "input_tokens": 323081,
+    "output_tokens": 9038,
+    "empty_outputs": 0,
+    "ended_with_eos": 240,
+    "hit_output_limit": 0,
+    "frozen_old_probe_predictions": {
+      "conflict": 120,
+      "answer": 98,
+      "refuse": 22
+    },
+    "prediction_distribution_is_not_semantic_accuracy": true,
+    "independent_semantic_labels": 0,
+    "semantic_accuracy": null,
+    "semantic_macroF1": null,
+    "training_fits": 0,
+    "probe_feedback": false,
+    "original_formal_gpu_gate_changed": false,
+    "original_eval_partition_not_prospective_confirmation": true,
+    "behavior_ratings_completed": 0,
+    "actual_behavior_rates": null,
+    "amended_order": "Exploratory collection before independent input review; future labels/scoring must disclose timing and exposure."
+  },
+  "completion": {
+    "status": "exploratory_collection_complete_not_semantically_validated",
+    "protocol_sha256": "e57efaaf0ec2c68a560ec63dfd5d9850ce55dc83fbe4a3c4130dca9614d40d07",
+    "predictions_sha256": "ed95ebe4e04b351a66b85ac275c86dda7f16044ea542e11cfe3bf9e489a02cf9",
+    "collection_summary_sha256": "791238ff139d9982e2029f3983157ad5bbd92e598ea4457988871d3eef6f72a5",
+    "collection_plan_sha256": "1a3c5f2c7affa9373f2724f0a55f43c5af33371dff2b2857046eaae2d7b465a6",
+    "completed": 240,
+    "trained_probes": 0,
+    "independent_semantic_approval": false
+  },
+  "smoke": {
+    "status": "technical_smoke_passed",
+    "ids": [
+      "stv01_B_S",
+      "stv16_A_I",
+      "stv17_A_C",
+      "stv01_A_I"
+    ],
+    "included_in_total240": true,
+    "extra_generations": 0,
+    "nonempty": 4,
+    "ended_with_eos": 4,
+    "hit_output_limit": 0,
+    "passed": true,
+    "semantic_correctness_assessed": false
+  },
+  "actual_inference_timing": {
+    "sum_sample_generation_seconds": 436.1863094783039,
+    "inference_and_save_span_seconds": 441.381202,
+    "first_completed_bj": "2026-10-21T09:45:31.432036+08:00",
+    "last_completed_bj": "2026-10-21T09:52:49.525674+08:00",
+    "excludes_initial_CPU_preflight_and_model_loading": true
+  },
+  "behavior_review": {
+    "items": 240,
+    "fields_per_item": 7,
+    "unreviewed_fields": 1680,
+    "all_ratings_unreviewed": true,
+    "packet_has_only_question_documents_answer_and_anonymous_id": true,
+    "mapping_bijection_verified": true,
+    "manual_behavior_scoring_performed_this_turn": false
+  },
+  "no_new_gpu_generation_this_turn": true,
+  "new_probe_training_this_turn": 0,
+  "formal_independent_labels": 0,
+  "formal_semantic_accuracy": null,
+  "formal_semantic_macroF1": null,
+  "actual_behavior_rates": null,
+  "no_new_unit_tests_run": true,
+  "historical_related_tests_passed": 35,
+  "historical_test_record": "docs/records/2026-10-21-semantic-transfer-exploratory-preparation.json",
+  "current_implementation_sha256": {
+    "scripts/semantic_transfer_exploratory_collection.py": "8b81bb30a60c7719dc60c4038fcada9dedb4bd7e139badf21805b0b3609c9d9e",
+    "scripts/run_semantic_transfer_exploratory_collection.sh": "fdcc97706fd9f2bd968d3c8dffd9d0da03cff5d0cd44535006df9215ad7fdb98"
+  },
+  "verification_artifact_sha256": {
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-verified-2026-10-21-v1/cells240.csv": "b6540a23bc3d0e7bf76946d445067fc37bfec4a08208c2ac46bd3732c78cf59d",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-verified-2026-10-21-v1/independent_checks.json": "1891f6ea8aadbd59c64b910cc7d9e074a46abb0cc3b5d44d3e0f7741a8d4149c",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-verified-2026-10-21-v1/original_run_files_sha256.json": "4ece1ca475b8da3ed4c6a24575f4520e6eac1696d9c961c707ad1919c38b6066",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-verified-2026-10-21-v1/verify-results.log": "8d2439e4a9adea59fe94499254c13cc8e79151b7d83a7ecb916cab65ee6c1db3"
+  },
+  "persistent_cells_sha256": "b6540a23bc3d0e7bf76946d445067fc37bfec4a08208c2ac46bd3732c78cf59d",
+  "persistent_run_hash_manifest_sha256": "4ece1ca475b8da3ed4c6a24575f4520e6eac1696d9c961c707ad1919c38b6066",
+  "limitations": [
+    "Technical completion and exact old-probe probability replay do not establish semantic reliability.",
+    "The input materials had no independent semantic approval before GPU. This remains the explicitly amended exploratory collection.",
+    "Global probe class distribution is not accuracy or a scored behavior distribution.",
+    "Original96eval outcomes have been collected; preserve the nonprospective provenance and do not silently reuse as original confirmation.",
+    "No new manual input or behavior ratings, no new training, no causal intervention or heldout380 access."
+  ],
+  "next_step": "Offline behavior review of existing240 answers with explicit exposure/timestamp provenance; no GPU rerun needed.",
+  "heldout380_accessed": false,
+  "commit_or_push_performed": false
+}

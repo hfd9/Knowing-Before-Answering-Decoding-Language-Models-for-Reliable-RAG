@@ -1,0 +1,209 @@
+{
+  "recorded_date": "2026-10-21",
+  "status": "v5_exposed_author_acceptance_complete_with_residual_risks_sealed_no_GPU",
+  "operator": "current_history_exposed_assistant",
+  "authorization": "User requested completing all three proposed steps: v5 semantic acceptance, acceptance/risk tables, sealed delivery.",
+  "run_dir": "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1",
+  "summary": {
+    "status": "v5_exposed_author_acceptance_complete_with_residual_risks_sealed_no_GPU",
+    "reviewed_bases": 30,
+    "reviewed_cells": 240,
+    "changed_cells": 83,
+    "reviewed_document_slots": 1200,
+    "reviewed_unique_full_documents": 435,
+    "manual_semantic_counts": {
+      "answer": 116,
+      "refuse": 60,
+      "conflict": 60,
+      "unknown": 4
+    },
+    "unknown_ids": [
+      "stv17_A_S",
+      "stv17_A_K",
+      "stv17_B_S",
+      "stv17_B_K"
+    ],
+    "semantic_mode_changes_from_v4": [
+      {
+        "id": "stv17_A_S",
+        "before": "answer",
+        "after": "unknown"
+      },
+      {
+        "id": "stv17_A_K",
+        "before": "answer",
+        "after": "unknown"
+      },
+      {
+        "id": "stv17_A_C",
+        "before": "unknown",
+        "after": "conflict"
+      },
+      {
+        "id": "stv17_B_S",
+        "before": "answer",
+        "after": "unknown"
+      },
+      {
+        "id": "stv17_B_K",
+        "before": "answer",
+        "after": "unknown"
+      },
+      {
+        "id": "stv17_B_C",
+        "before": "unknown",
+        "after": "conflict"
+      }
+    ],
+    "partitions": {
+      "semantic_train": {
+        "planned": 96,
+        "counts": {
+          "answer": 48,
+          "refuse": 24,
+          "conflict": 24
+        }
+      },
+      "semantic_dev": {
+        "planned": 48,
+        "counts": {
+          "answer": 20,
+          "refuse": 12,
+          "conflict": 12,
+          "unknown": 4
+        }
+      },
+      "semantic_eval": {
+        "planned": 96,
+        "counts": {
+          "answer": 48,
+          "refuse": 24,
+          "conflict": 24
+        }
+      }
+    },
+    "S_to_I_pairs": {
+      "total": 60,
+      "statuses": {
+        "provisionally_acceptable_relation_projection": 58,
+        "unknown_support_scope": 2
+      },
+      "reviewed_answer_to_refuse": 58,
+      "all_I_reviewed_refuse": 60,
+      "literal_single_atom_minimality_proved": 0
+    },
+    "AB_pairs": {
+      "total": 120,
+      "same_determinate_mode": 118,
+      "unknown_pairs": 2,
+      "residual_detail_or_scope_caveats": 13,
+      "no_specific_difference_identified": 107,
+      "formal_equivalence_proved": 0
+    },
+    "old18_repairs": {
+      "total": 18,
+      "statuses": {
+        "old_specific_difference_repaired_in_author_review": 15,
+        "old_specific_difference_repaired_other_detail_remains": 2,
+        "descriptive_alignment_repaired_obligation_scope_still_unknown": 1
+      }
+    },
+    "background_slots": 90,
+    "unique_background_documents": 83,
+    "history_exposed": true,
+    "independent_gold": false,
+    "approved_for_training": false,
+    "approved_semantic_labels": 0,
+    "independent_semantic_coverage": 0.0,
+    "minimum_independent_coverage": 0.9,
+    "gpu_launch_ready": false,
+    "new_gpu_forwards": 0,
+    "generated_answers": 0,
+    "trained_probes": 0,
+    "source_questions_backgrounds_partitions_and_slots_unchanged": true,
+    "quality_disposition": "Exposed author QA completed; residual issues retained. Not unconditional semantic acceptance or proof of probe reliability."
+  },
+  "actual_checks": {
+    "materials_v5_readonly_verify_exit": 0,
+    "intake_v4_readonly_verify_exit": 0,
+    "acceptance_seal_exit": 0,
+    "independent_CSV_replay": true,
+    "cell_target_quotes": 480,
+    "pair_target_quotes": 1200,
+    "old_path_hashes_verified": 322,
+    "old_path_mismatches": [],
+    "anonymous_ZIPs_byte_identical": true,
+    "anonymous_packets_240_each_and_templates_all_unreviewed": true,
+    "acceptance_verify_processes": {
+      "17": {
+        "exit_code": 0,
+        "stdout_sha256": "83ee0588dc9796c5280d6341e7b2dd3eb3f829f0b97052c6855542ff807ceb26"
+      },
+      "43": {
+        "exit_code": 0,
+        "stdout_sha256": "83ee0588dc9796c5280d6341e7b2dd3eb3f829f0b97052c6855542ff807ceb26"
+      }
+    }
+  },
+  "tests": {
+    "related_tests_passed": 11,
+    "new_tests": 6,
+    "unchanged_old_author_review_tests": 5,
+    "seconds": 2.206,
+    "earlier_new6_run_seconds": 1.747,
+    "old53_and120_suites_not_rerun": true,
+    "purpose": "Integrity/denominators/false quote and batch rejection/exposure guards/null labels/archive determinism/corruption/source preservation; not semantic truth."
+  },
+  "implementation_sha256": {
+    "scripts/semantic_transfer_v5_acceptance.py": "750a1986d1e59500ac151f3a8d64daad9761d5503186c7a581a551c650717e61",
+    "scripts/run_semantic_transfer_v5_acceptance.sh": "363ef1663d6ec3597bfefd6e28b9fdd5a0ef037620cacc92502c952ac8cc5b14",
+    "tests/test_semantic_transfer_v5_acceptance.py": "dc5a6fa3991fb0bfca95b0cb8fd51a9467a573b45d72ff7edfd105a242d09c47"
+  },
+  "persistent_exports_sha256": {
+    "docs/records/2026-10-21-semantic-transfer-v5-acceptance-cells.csv": "0e37fc7e7e63503c9ab63208fd75446e88e064b8c181e1bca3bf6f4abaa3bc5c",
+    "docs/records/2026-10-21-semantic-transfer-v5-acceptance-pairs.csv": "c77ab1a9e3ad633f3fdeff996e96e7f1d08b978a9e850ceaa5aeb855b5c177cd",
+    "docs/records/2026-10-21-semantic-transfer-v5-acceptance-S-to-I60.csv": "592e4ae2af316a133320652278497b05c8a256ca539ac5b574f0e4c54087067b",
+    "docs/records/2026-10-21-semantic-transfer-v5-acceptance-old18-repairs.csv": "3d95b2e2f689a09200b75692a69a3779f4204fd6ae6a71855b64e2f639397d73",
+    "docs/records/2026-10-21-semantic-transfer-v5-acceptance-risks.json": "28a4acc08ae3737d396b438eccb1b52a5a0e9288cf356dae6c47f318a17b0277",
+    "docs/records/2026-10-21-semantic-transfer-v5-acceptance-ratings.json": "dddd4b9e1e0380de8dc2e457a697692ad92a093e3394ea80a8890d5b32a5ad04",
+    "docs/records/2026-10-21-semantic-transfer-v5-acceptance-preserved.json": "1660d0112b3507a05e07d7fd038464ac8cecc0a871f4ba90267d26cd9e5946f0"
+  },
+  "run_artifact_sha256": {
+    "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1/README.txt": "c3c646ab589a6908a9712198ace9c6e8ede4638046ad950acebc5c31f8d1b1dc",
+    "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1/SHA256SUMS": "5282e67e201904aef883099c73fedee570b3607b83f76d96bd28146ae66d44e9",
+    "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1/S_to_I60.csv": "592e4ae2af316a133320652278497b05c8a256ca539ac5b574f0e4c54087067b",
+    "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1/cells.csv": "0e37fc7e7e63503c9ab63208fd75446e88e064b8c181e1bca3bf6f4abaa3bc5c",
+    "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1/coordinator/v5-acceptance-coordinator.zip": "555bc404f47dfdec26a41a101c13d66f8e48d058540704ec8b9f65217292874d",
+    "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1/fulltext_inventory.json": "5d5df38408cff3cb05cc95e22bb400d54c004cea8b3dbcd4ea367ecf43ec6a64",
+    "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1/old18_repairs.csv": "3d95b2e2f689a09200b75692a69a3779f4204fd6ae6a71855b64e2f639397d73",
+    "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1/pairs.csv": "c77ab1a9e3ad633f3fdeff996e96e7f1d08b978a9e850ceaa5aeb855b5c177cd",
+    "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1/preserved_sources.json": "7a425ab32ab47e5d6c47f90e43bdcb516eb20e0ae6a542e90410e5e04d9d6ba3",
+    "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1/protocol.json": "55380a0bd76c3e9330fdb389b36b06323bdd744f20524e77a3a2b9efa4977c59",
+    "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1/public/input-review-a.zip": "35f4b56f710c28deea589570bb2288e00a1ca329cf29a3bb6ea350a1bc48653b",
+    "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1/public/input-review-b.zip": "0884f58b085301ad3db2b1335e3c97e373bf9912346c42c2e656b6c4d4538acd",
+    "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1/ratings.json": "dddd4b9e1e0380de8dc2e457a697692ad92a093e3394ea80a8890d5b32a5ad04",
+    "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1/risks.json": "28a4acc08ae3737d396b438eccb1b52a5a0e9288cf356dae6c47f318a17b0277",
+    "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1/seal_manifest.json": "5c7e9dc9e49b994521567f626abf14dcd8e9b6e185c7dff82410081fc14a2b78",
+    "runs/qwen2.5-3b-semantic-transfer-v5-acceptance-v1/summary.json": "1d9ad86c3242262b73df4b620966afa203c0e44fe15f9423d845c07b207e21ec"
+  },
+  "remaining_conditions": [
+    "Two actual auditable history-independent input reviews and explicit approval; frozen90% semantic coverage overall and per partition.",
+    "Preserve unresolved poker scope and A/B details; author acceptance does not approve pure-expression equivalence.",
+    "Future v5 study must use separately versioned implementation/protocol; keep L28/at most1fit/dev trigger/evaluation lock.",
+    "User currently has no external review channel; do not repeatedly ask or replace actual independent reviews with exposed contexts."
+  ],
+  "material_changes_this_turn": 0,
+  "new_gpu_forwards": 0,
+  "generated_answers": 0,
+  "trained_probes": 0,
+  "independent_approved_labels": 0,
+  "gpu_launch_ready": false,
+  "heldout380_accessed": false,
+  "external_delivery_performed": false,
+  "commit_or_push_performed": false,
+  "limits": [
+    "Current labels are exposed author judgments, not new independent gold.",
+    "All partitions read together; no fresh development-first seal, evaluation blindness, probe accuracy or causal claims.",
+    "Hashes attest retained bytes, not truth of semantic judgments or external context declarations."
+  ]
+}

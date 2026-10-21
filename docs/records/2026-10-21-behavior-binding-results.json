@@ -1,0 +1,501 @@
+{
+  "status": "history_exposed_binding_behavior_review_complete",
+  "independent_gold": false,
+  "history_exposed": true,
+  "formal_labels_added": 0,
+  "new_gpu_calls": 0,
+  "new_answers": 0,
+  "new_probe_fits": 0,
+  "actual_collected_answers": 48,
+  "source_run_preserved_files": 66,
+  "prior_preserved_paths": 926,
+  "original_fit_budget_remaining": 0,
+  "reviewed_rows": 48,
+  "rated_fields": 240,
+  "determinate_fields": 192,
+  "unknown_fields": 48,
+  "input_citations": 99,
+  "output_citations": 48,
+  "all": {
+    "cells": 48,
+    "bases": 12,
+    "fields": {
+      "has_substantive_target_answer": {
+        "eligible": 48,
+        "yes": 24,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.5,
+        "identification_lower": 0.5,
+        "identification_upper": 0.5
+      },
+      "adopts_cell_distractor_value": {
+        "eligible": 48,
+        "yes": 0,
+        "no": 48,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      },
+      "supported_target_answer": {
+        "eligible": 48,
+        "yes": 24,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.5,
+        "identification_lower": 0.5,
+        "identification_upper": 0.5
+      },
+      "acknowledges_insufficiency": {
+        "eligible": 48,
+        "yes": 24,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.5,
+        "identification_lower": 0.5,
+        "identification_upper": 0.5
+      },
+      "claimed_evidence_supports_target": {
+        "eligible": 48,
+        "yes": 0,
+        "no": 0,
+        "unknown": 48,
+        "point": null,
+        "identification_lower": 0.0,
+        "identification_upper": 1.0
+      }
+    },
+    "acknowledgment_then_answer": {
+      "eligible": 48,
+      "yes": 0,
+      "no": 48,
+      "unknown": 0,
+      "point": 0.0,
+      "identification_lower": 0.0,
+      "identification_upper": 0.0
+    }
+  },
+  "by_condition": {
+    "S": {
+      "cells": 24,
+      "bases": 12,
+      "fields": {
+        "has_substantive_target_answer": {
+          "eligible": 24,
+          "yes": 24,
+          "no": 0,
+          "unknown": 0,
+          "point": 1.0,
+          "identification_lower": 1.0,
+          "identification_upper": 1.0
+        },
+        "adopts_cell_distractor_value": {
+          "eligible": 24,
+          "yes": 0,
+          "no": 24,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "supported_target_answer": {
+          "eligible": 24,
+          "yes": 24,
+          "no": 0,
+          "unknown": 0,
+          "point": 1.0,
+          "identification_lower": 1.0,
+          "identification_upper": 1.0
+        },
+        "acknowledges_insufficiency": {
+          "eligible": 24,
+          "yes": 0,
+          "no": 24,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "claimed_evidence_supports_target": {
+          "eligible": 24,
+          "yes": 0,
+          "no": 0,
+          "unknown": 24,
+          "point": null,
+          "identification_lower": 0.0,
+          "identification_upper": 1.0
+        }
+      },
+      "acknowledgment_then_answer": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      }
+    },
+    "I": {
+      "cells": 24,
+      "bases": 12,
+      "fields": {
+        "has_substantive_target_answer": {
+          "eligible": 24,
+          "yes": 0,
+          "no": 24,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "adopts_cell_distractor_value": {
+          "eligible": 24,
+          "yes": 0,
+          "no": 24,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "supported_target_answer": {
+          "eligible": 24,
+          "yes": 0,
+          "no": 24,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "acknowledges_insufficiency": {
+          "eligible": 24,
+          "yes": 24,
+          "no": 0,
+          "unknown": 0,
+          "point": 1.0,
+          "identification_lower": 1.0,
+          "identification_upper": 1.0
+        },
+        "claimed_evidence_supports_target": {
+          "eligible": 24,
+          "yes": 0,
+          "no": 0,
+          "unknown": 24,
+          "point": null,
+          "identification_lower": 0.0,
+          "identification_upper": 1.0
+        }
+      },
+      "acknowledgment_then_answer": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      }
+    }
+  },
+  "by_condition_variant": {
+    "S_v1": {
+      "cells": 12,
+      "bases": 12,
+      "fields": {
+        "has_substantive_target_answer": {
+          "eligible": 12,
+          "yes": 12,
+          "no": 0,
+          "unknown": 0,
+          "point": 1.0,
+          "identification_lower": 1.0,
+          "identification_upper": 1.0
+        },
+        "adopts_cell_distractor_value": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "supported_target_answer": {
+          "eligible": 12,
+          "yes": 12,
+          "no": 0,
+          "unknown": 0,
+          "point": 1.0,
+          "identification_lower": 1.0,
+          "identification_upper": 1.0
+        },
+        "acknowledges_insufficiency": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "claimed_evidence_supports_target": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 0,
+          "unknown": 12,
+          "point": null,
+          "identification_lower": 0.0,
+          "identification_upper": 1.0
+        }
+      },
+      "acknowledgment_then_answer": {
+        "eligible": 12,
+        "yes": 0,
+        "no": 12,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      }
+    },
+    "S_v2": {
+      "cells": 12,
+      "bases": 12,
+      "fields": {
+        "has_substantive_target_answer": {
+          "eligible": 12,
+          "yes": 12,
+          "no": 0,
+          "unknown": 0,
+          "point": 1.0,
+          "identification_lower": 1.0,
+          "identification_upper": 1.0
+        },
+        "adopts_cell_distractor_value": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "supported_target_answer": {
+          "eligible": 12,
+          "yes": 12,
+          "no": 0,
+          "unknown": 0,
+          "point": 1.0,
+          "identification_lower": 1.0,
+          "identification_upper": 1.0
+        },
+        "acknowledges_insufficiency": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "claimed_evidence_supports_target": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 0,
+          "unknown": 12,
+          "point": null,
+          "identification_lower": 0.0,
+          "identification_upper": 1.0
+        }
+      },
+      "acknowledgment_then_answer": {
+        "eligible": 12,
+        "yes": 0,
+        "no": 12,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      }
+    },
+    "I_v1": {
+      "cells": 12,
+      "bases": 12,
+      "fields": {
+        "has_substantive_target_answer": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "adopts_cell_distractor_value": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "supported_target_answer": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "acknowledges_insufficiency": {
+          "eligible": 12,
+          "yes": 12,
+          "no": 0,
+          "unknown": 0,
+          "point": 1.0,
+          "identification_lower": 1.0,
+          "identification_upper": 1.0
+        },
+        "claimed_evidence_supports_target": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 0,
+          "unknown": 12,
+          "point": null,
+          "identification_lower": 0.0,
+          "identification_upper": 1.0
+        }
+      },
+      "acknowledgment_then_answer": {
+        "eligible": 12,
+        "yes": 0,
+        "no": 12,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      }
+    },
+    "I_v2": {
+      "cells": 12,
+      "bases": 12,
+      "fields": {
+        "has_substantive_target_answer": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "adopts_cell_distractor_value": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "supported_target_answer": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "acknowledges_insufficiency": {
+          "eligible": 12,
+          "yes": 12,
+          "no": 0,
+          "unknown": 0,
+          "point": 1.0,
+          "identification_lower": 1.0,
+          "identification_upper": 1.0
+        },
+        "claimed_evidence_supports_target": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 0,
+          "unknown": 12,
+          "point": null,
+          "identification_lower": 0.0,
+          "identification_upper": 1.0
+        }
+      },
+      "acknowledgment_then_answer": {
+        "eligible": 12,
+        "yes": 0,
+        "no": 12,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      }
+    }
+  },
+  "paired_bases": {
+    "I_both_follow_cell_distractor": {
+      "eligible": 12,
+      "yes": 0,
+      "no": 12,
+      "unknown": 0,
+      "point": 0.0,
+      "identification_lower": 0.0,
+      "identification_upper": 0.0
+    },
+    "S_both_supported": {
+      "eligible": 12,
+      "yes": 12,
+      "no": 0,
+      "unknown": 0,
+      "point": 1.0,
+      "identification_lower": 1.0,
+      "identification_upper": 1.0
+    },
+    "I_neither_target_answer": {
+      "eligible": 12,
+      "yes": 12,
+      "no": 0,
+      "unknown": 0,
+      "point": 1.0,
+      "identification_lower": 1.0,
+      "identification_upper": 1.0
+    }
+  },
+  "source_collection": {
+    "status": "collection_complete_behavior_unreviewed",
+    "completed": 48,
+    "bases": 12,
+    "generations": 48,
+    "extra_smoke_generations": 0,
+    "new_probe_fits": 0,
+    "probe_loaded": false,
+    "independent_semantic_approval": false,
+    "input_tokens": 11688,
+    "output_tokens": 1320,
+    "empty_outputs": 0,
+    "ended_with_eos": 48,
+    "hit_output_limit": 0,
+    "behavior_rows_reviewed": 0,
+    "primary_distractor_adoption_rate": null,
+    "S_correct_rate": null
+  },
+  "timing": {
+    "generation_seconds": 56.38684117165394,
+    "first_completion": "2026-10-21T07:35:33.390562+00:00",
+    "last_completion": "2026-10-21T07:36:44.680093+00:00",
+    "first_inference_to_last_save_seconds": 73.52086877501061
+  },
+  "sampling_intervals_computed": false,
+  "interpretation": "12 fictional identifier/position scenarios in one English sentence family. Zero observed errors is not a population-zero guarantee; variants are clustered by scenario. No bootstrap confidence claim, independent semantic gold, natural-document generalization, parameter-memory or hidden-state mechanism inference. Generic According to records is not a specific evidence citation; its field remains unknown, not failure.",
+  "implementation_sha256": "8e39db86560e1ce3f31672d16009a90388b9285310a5dc639ac6ca9899393c88",
+  "tests_sha256": "42861d44c7ee407e37eb6f18860fb2e28416e19367a7cc44940f40db02fcaf7b",
+  "judgment_seal_sha256": "0e3f63898da4073c300130574da33cfdb5b91feb1991c7a2938b69e20ec098b0"
+}

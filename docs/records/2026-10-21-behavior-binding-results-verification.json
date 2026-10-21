@@ -1,0 +1,50 @@
+{
+  "status": "verified_complete",
+  "independent_semantic_review": false,
+  "verification_kind": "Separately written raw-source joins, counts, quote checks and tokenizer/token/EOS replay",
+  "answers": 48,
+  "attempts": 48,
+  "inputs_token_replayed": 48,
+  "outputs_token_replayed": 48,
+  "input_citations": 99,
+  "output_citations": 48,
+  "reading_slots": 240,
+  "unique_documents": 73,
+  "I_primary_adoption": {
+    "yes": 0,
+    "no": 24,
+    "unknown": 0
+  },
+  "S_supported": {
+    "yes": 24,
+    "no": 0,
+    "unknown": 0
+  },
+  "pair_rows": 12,
+  "determinate_fields": 192,
+  "unknown_fields": 48,
+  "old_preserved_paths": 926,
+  "source_run_files_preserved": 66,
+  "actual_original_source_fit_budget_remaining": 0,
+  "new_gpu_calls": 0,
+  "new_answers": 0,
+  "new_fits": 0,
+  "core_verify_results_exit_code": 0,
+  "new_tests": 6,
+  "new_unittest_seconds": 0.009,
+  "analyze_exit_code": 0,
+  "independent_process_verify_exit_code": 0,
+  "old_test_suites_rerun": false,
+  "artifact_sha256": {
+    "docs/records/2026-10-21-behavior-binding-results-manual.json": "1f06ed1559735c0fc2a0c4bd5f7a9a217a22519f586d10b1f90a435a3fa67f27",
+    "docs/records/2026-10-21-behavior-binding-results-ratings.json": "4f6ae1bb67dbfe34e5c9edf25a61e68ab672fdf0207d69d8e34e63637e171ea0",
+    "docs/records/2026-10-21-behavior-binding-results-reading-inventory.json": "e665c25246ae1812d7c349c18dd68e8552ffc772249c00ca9ffd3858c1cfd070",
+    "docs/records/2026-10-21-behavior-binding-results-source-run-hashes.json": "436a995e3ef56f8fa7ce924643395e48272c413d212ef4cdb0df5325ba2eaf99",
+    "docs/records/2026-10-21-behavior-binding-results-seal.json": "0e3f63898da4073c300130574da33cfdb5b91feb1991c7a2938b69e20ec098b0",
+    "docs/records/2026-10-21-behavior-binding-results.json": "e2dd51b4fdd59ebb1377a15200250b4642a293e7e881b6051c042e8d232f42d7",
+    "docs/records/2026-10-21-behavior-binding-results-cells.csv": "18a8a102564ac6f4b209f36ee42921ce08fb91673beb80994bc55ed931a9586c",
+    "docs/records/2026-10-21-behavior-binding-results-pairs.csv": "10952f4df212e024b8643b2f4f09bf34a4045eac91546f04184418eba2516d24",
+    "scripts/behavior_binding_results.py": "8e39db86560e1ce3f31672d16009a90388b9285310a5dc639ac6ca9899393c88",
+    "tests/test_behavior_binding_results.py": "42861d44c7ee407e37eb6f18860fb2e28416e19367a7cc44940f40db02fcaf7b"
+  }
+}
