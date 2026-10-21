@@ -1,0 +1,69 @@
+{
+  "status": "verified_complete",
+  "official_readonly_command": "PYTHONHASHSEED=223 sh scripts/run_behavior_binding_probe.sh --stage verify-results",
+  "official_exit_code": 0,
+  "independent_replay_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /large_disk/wf/miniconda3/envs/kba-rag/bin/python -B scripts/verify_behavior_binding_probe_results.py",
+  "independent_replay_exit_code": 0,
+  "actual_user_gpu_forwards": 48,
+  "audit_gpu_calls": 0,
+  "new_answers": 0,
+  "new_fits": 0,
+  "new_behavior_ratings": 0,
+  "formal_labels_added": 0,
+  "original_fit_budget_remaining": 0,
+  "independent_semantic_approvals": 0,
+  "formal_gate": false,
+  "confirmation380_accessed": false,
+  "implementation_files": 20,
+  "source_files": 12,
+  "complete_weight_shards_verified": 2,
+  "source_run_files_preserved": 116,
+  "previous_paths_preserved": 1007,
+  "prepared_files_preserved": 6,
+  "original_answer_run_files_preserved": 66,
+  "original_12_tests_rerun": false,
+  "manual_scaler_linear_sigmoid_max_absolute_error": 0.0,
+  "probability_summary_posthoc_descriptive_only": {
+    "S": {
+      "answer": {
+        "minimum": 0.07742865297876397,
+        "mean": 0.49606646580920977,
+        "maximum": 0.7650059986181355
+      },
+      "refuse": {
+        "minimum": 0.0018838834921676235,
+        "mean": 0.0034085838194050384,
+        "maximum": 0.006739017727219737
+      },
+      "conflict": {
+        "minimum": 0.23174670527458513,
+        "mean": 0.5005249503713852,
+        "maximum": 0.9191745091802929
+      }
+    },
+    "I": {
+      "answer": {
+        "minimum": 0.5821975672837331,
+        "mean": 0.7339385030705389,
+        "maximum": 0.8489107485554738
+      },
+      "refuse": {
+        "minimum": 0.041813685174568856,
+        "mean": 0.10996085792347775,
+        "maximum": 0.3276314810592174
+      },
+      "conflict": {
+        "minimum": 0.056497485347817025,
+        "mean": 0.1561006390059832,
+        "maximum": 0.2937461333271362
+      }
+    }
+  },
+  "thresholds_added": 0,
+  "bootstrap_or_significance_tests_added": false,
+  "independent_gold": false,
+  "interpretation": "Correct primary behavior with poor frozen three-class decision transfer. Continuous refuse scores respond in all24 S-to-I pairs; not evidence of absent information. Post-answer state recomputation and one sentence family limit interpretation.",
+  "new_results_registered": true,
+  "committed": false,
+  "pushed": false
+}

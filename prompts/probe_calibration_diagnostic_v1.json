@@ -1,0 +1,20 @@
+{
+  "task": "posthoc_fixed_old_L28_linear_vs_sigmoid_diagnostic_v1",
+  "authorization": "User asked to continue the proposed CPU diagnostic and keep records after the48 binding readout result.",
+  "probe_source": "runs/qwen2.5-3b-free-answer-study/chat/probe/probe.pkl",
+  "probe_sha256": "db6033b84f1fcd30e5e2e31ce4beb262a76920cc06811c57900ad14b8d40858d",
+  "layer_zero_based": 28,
+  "datasets": {
+    "binding48": {"run": "runs/qwen2.5-3b-behavior-binding-probe-v1", "records": "states.json", "behavior": "source/behavior_rows.json", "rows": 48, "bases": 12, "reference": "Exposed construction reference S=answer/I=refuse; retain existing five behavior fields and48 evidence-attribution unknowns.", "timing": "Post-answer recomputed input states, not simultaneous original-generation probe records."},
+    "transfer240": {"run": "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1", "records": "predictions.json", "behavior": "docs/records/2026-10-21-semantic-transfer-exploratory-behavior-cells.csv", "rows": 240, "bases": 30, "reference": "Existing exposed author input mode; four original unknowns remain unknown and all240 remain in outputs.", "timing": "Original generation-prefill states; all answers and author references already seen; source eval is not prospective confirmation."}
+  },
+  "stages": ["Original frozen StandardScaler onL28", "Original calibration-internal linear estimator three decision scores andargmax", "Existing class-specific sigmoid maps and shared normalization", "Existing calibrated three-classargmax"],
+  "row_outputs": "All288 rows: source identity and hashes, original behavior/answer, three raw linear scores, descriptive raw softmax, sigmoid logits/unnormalized values, final probabilities, both classes and correctness/disposition relative to exposed reference. Raw softmax is not a new calibrated confidence estimate.",
+  "dispositions": ["unchanged_correct", "unchanged_wrong", "changed_corrected", "changed_damaged", "changed_both_wrong", "changed_reference_unknown", "unchanged_reference_unknown"],
+  "summaries": "Separate datasets, never a pooled semantic accuracy. Full counts and reference-eligible denominators, confusion tables, transitions, corrected/damaged/both-wrong counts; bysource partition, condition, expression/variant andpartition-by-condition. Preserve unknowns; no independent Accuracy/F1.",
+  "pairs": "binding48:24 S/I and24 distractor-v1/v2 contrasts. transfer240:180 S/I,C,K and120 A/B expression pairs. Save all348 pairs, raw-score/softmax/calibrated-probability deltas, both-stage classes and double-correct flags withunknown retained. No pair filtering bysuccess.",
+  "behavior": "Keep original five/seven fields without re-scoring. ForI/refuse-reference rows compare existing answer rates conditional onraw/calibrated classes, with zero-denominatornull. No behavior intervention or effect claim.",
+  "inference": "Observed decision changes attributable to the frozen deterministic readout stages onthese vectors only. Raw errors do not prove absence of semantic information; calibration damage does not establish its root cause or generalize to natural documents. Class-independent positive normalization cannot change the sigmoidargmax.",
+  "budget": {"new_fits": 0, "new_gpu_calls": 0, "new_generations": 0, "new_labels": 0, "threshold_or_layer_searches": 0, "bootstrap_or_significance_tests": 0, "original_fit_budget_remaining": 0},
+  "stop": "No automatic classifier replacement, newthreshold, fitting, expansion, confirmation380 access orpatching. This is posthoc measurement diagnosis, not independent semantic approval. Preserve alloriginalrun/probe/score/fit-seal artifacts."
+}

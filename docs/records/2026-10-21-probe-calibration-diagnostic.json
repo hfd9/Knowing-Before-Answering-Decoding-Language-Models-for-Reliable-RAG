@@ -1,0 +1,332 @@
+{
+  "status": "posthoc_frozen_linear_vs_sigmoid_diagnostic_complete",
+  "independent_gold": false,
+  "rows": 288,
+  "datasets": {
+    "binding48": {
+      "rows": 48,
+      "bases": 12,
+      "known_reference": 48,
+      "unknown_reference": 0,
+      "class_changes": 5,
+      "dispositions": {
+        "unchanged_correct": 13,
+        "unchanged_wrong": 30,
+        "changed_corrected": 0,
+        "changed_damaged": 5,
+        "changed_both_wrong": 0,
+        "changed_reference_unknown": 0,
+        "unchanged_reference_unknown": 0
+      },
+      "transitions": {
+        "answer": {
+          "answer": 37,
+          "refuse": 0,
+          "conflict": 5
+        },
+        "refuse": {
+          "answer": 0,
+          "refuse": 0,
+          "conflict": 0
+        },
+        "conflict": {
+          "answer": 0,
+          "refuse": 0,
+          "conflict": 6
+        }
+      },
+      "raw": {
+        "matches_author_reference": 18,
+        "distribution": {
+          "answer": 42,
+          "refuse": 0,
+          "conflict": 6
+        },
+        "confusion": {
+          "answer": {
+            "answer": 18,
+            "refuse": 0,
+            "conflict": 6
+          },
+          "refuse": {
+            "answer": 24,
+            "refuse": 0,
+            "conflict": 0
+          },
+          "conflict": {
+            "answer": 0,
+            "refuse": 0,
+            "conflict": 0
+          }
+        },
+        "I_existing_answer_by_class": {
+          "answer": {
+            "eligible": 24,
+            "yes": 0,
+            "no": 24,
+            "unknown": 0,
+            "point": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "refuse": {
+            "eligible": 0,
+            "yes": 0,
+            "no": 0,
+            "unknown": 0,
+            "point": null,
+            "lower": null,
+            "upper": null
+          },
+          "conflict": {
+            "eligible": 0,
+            "yes": 0,
+            "no": 0,
+            "unknown": 0,
+            "point": null,
+            "lower": null,
+            "upper": null
+          }
+        }
+      },
+      "calibrated": {
+        "matches_author_reference": 13,
+        "distribution": {
+          "answer": 37,
+          "refuse": 0,
+          "conflict": 11
+        },
+        "confusion": {
+          "answer": {
+            "answer": 13,
+            "refuse": 0,
+            "conflict": 11
+          },
+          "refuse": {
+            "answer": 24,
+            "refuse": 0,
+            "conflict": 0
+          },
+          "conflict": {
+            "answer": 0,
+            "refuse": 0,
+            "conflict": 0
+          }
+        },
+        "I_existing_answer_by_class": {
+          "answer": {
+            "eligible": 24,
+            "yes": 0,
+            "no": 24,
+            "unknown": 0,
+            "point": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          },
+          "refuse": {
+            "eligible": 0,
+            "yes": 0,
+            "no": 0,
+            "unknown": 0,
+            "point": null,
+            "lower": null,
+            "upper": null
+          },
+          "conflict": {
+            "eligible": 0,
+            "yes": 0,
+            "no": 0,
+            "unknown": 0,
+            "point": null,
+            "lower": null,
+            "upper": null
+          }
+        }
+      },
+      "net_reference_matches": -5
+    },
+    "transfer240": {
+      "rows": 240,
+      "bases": 30,
+      "known_reference": 236,
+      "unknown_reference": 4,
+      "class_changes": 11,
+      "dispositions": {
+        "unchanged_correct": 112,
+        "unchanged_wrong": 113,
+        "changed_corrected": 5,
+        "changed_damaged": 5,
+        "changed_both_wrong": 1,
+        "changed_reference_unknown": 0,
+        "unchanged_reference_unknown": 4
+      },
+      "transitions": {
+        "answer": {
+          "answer": 98,
+          "refuse": 0,
+          "conflict": 9
+        },
+        "refuse": {
+          "answer": 0,
+          "refuse": 22,
+          "conflict": 2
+        },
+        "conflict": {
+          "answer": 0,
+          "refuse": 0,
+          "conflict": 109
+        }
+      },
+      "raw": {
+        "matches_author_reference": 117,
+        "distribution": {
+          "answer": 107,
+          "refuse": 24,
+          "conflict": 109
+        },
+        "confusion": {
+          "answer": {
+            "answer": 59,
+            "refuse": 5,
+            "conflict": 52
+          },
+          "refuse": {
+            "answer": 29,
+            "refuse": 16,
+            "conflict": 15
+          },
+          "conflict": {
+            "answer": 15,
+            "refuse": 3,
+            "conflict": 42
+          }
+        },
+        "I_existing_answer_by_class": {
+          "answer": {
+            "eligible": 29,
+            "yes": 13,
+            "no": 16,
+            "unknown": 0,
+            "point": 0.4482758620689655,
+            "lower": 0.4482758620689655,
+            "upper": 0.4482758620689655
+          },
+          "refuse": {
+            "eligible": 16,
+            "yes": 1,
+            "no": 15,
+            "unknown": 0,
+            "point": 0.0625,
+            "lower": 0.0625,
+            "upper": 0.0625
+          },
+          "conflict": {
+            "eligible": 15,
+            "yes": 9,
+            "no": 6,
+            "unknown": 0,
+            "point": 0.6,
+            "lower": 0.6,
+            "upper": 0.6
+          }
+        }
+      },
+      "calibrated": {
+        "matches_author_reference": 117,
+        "distribution": {
+          "answer": 98,
+          "refuse": 22,
+          "conflict": 120
+        },
+        "confusion": {
+          "answer": {
+            "answer": 54,
+            "refuse": 4,
+            "conflict": 58
+          },
+          "refuse": {
+            "answer": 29,
+            "refuse": 16,
+            "conflict": 15
+          },
+          "conflict": {
+            "answer": 11,
+            "refuse": 2,
+            "conflict": 47
+          }
+        },
+        "I_existing_answer_by_class": {
+          "answer": {
+            "eligible": 29,
+            "yes": 13,
+            "no": 16,
+            "unknown": 0,
+            "point": 0.4482758620689655,
+            "lower": 0.4482758620689655,
+            "upper": 0.4482758620689655
+          },
+          "refuse": {
+            "eligible": 16,
+            "yes": 1,
+            "no": 15,
+            "unknown": 0,
+            "point": 0.0625,
+            "lower": 0.0625,
+            "upper": 0.0625
+          },
+          "conflict": {
+            "eligible": 15,
+            "yes": 9,
+            "no": 6,
+            "unknown": 0,
+            "point": 0.6,
+            "lower": 0.6,
+            "upper": 0.6
+          }
+        }
+      },
+      "net_reference_matches": 0
+    }
+  },
+  "pairs": 348,
+  "pair_counts": {
+    "binding48": 48,
+    "transfer240": 300
+  },
+  "slices": 33,
+  "base_summaries": 42,
+  "preserved_paths": 1132,
+  "saved_probability_max_absolute_error": 0.0,
+  "api_probability_max_absolute_error": 0.0,
+  "original_fit_budget_remaining": 0,
+  "new_fits": 0,
+  "new_gpu_calls": 0,
+  "new_answers": 0,
+  "new_behavior_ratings": 0,
+  "thresholds_added": 0,
+  "formal_labels_added": 0,
+  "bootstrap_or_significance_tests_added": false,
+  "class_specific_sigmoid_parameters": [
+    {
+      "mode": "answer",
+      "a": -0.43899682511454147,
+      "b": 1.588686121997991
+    },
+    {
+      "mode": "refuse",
+      "a": -0.3752022579277305,
+      "b": 1.5417836382320387
+    },
+    {
+      "mode": "conflict",
+      "a": -0.4341760809203356,
+      "b": 1.037810534003109
+    }
+  ],
+  "calibration_normalization_cannot_change_argmax": true,
+  "limitations": "Observed decision changes attributable to the frozen deterministic readout stages onthese vectors only. Raw errors do not prove absence of semantic information; calibration damage does not establish its root cause or generalize to natural documents. Class-independent positive normalization cannot change the sigmoidargmax.",
+  "state_timings": {
+    "binding48": "Post-answer recomputed input states, not simultaneous original-generation probe records.",
+    "transfer240": "Original generation-prefill states; all answers and author references already seen; source eval is not prospective confirmation."
+  }
+}

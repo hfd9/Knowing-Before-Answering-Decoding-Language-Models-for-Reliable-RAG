@@ -1,5 +1,9 @@
 # 虚构实体属性绑定：48条行为采集运行说明
 
+**后续补充已完成（2026-10-21）：** [同批48输入冻结chat L28结果](records/2026-10-21-behavior-binding-probe-results.md)已核验：S为answer13/conflict11、I为answer24，没有refuse；主行为仍全部正确，引用归属48unknown保持。S→I不足概率全部上升但三分类未正确区分，增加了冻结判定迁移有效性不足的证据；不等于隐藏状态无信息。无需再生成或跑GPU；下方补充待启动为历史。
+
+**后续补充准备（2026-10-21）：** 用户要求同批输入—probe—行为联合对照，已另建[原48输入的冻结chat L28前向补充](behavior_binding_probe.md)。原本任务不存状态，因此新增48次decoder prefill，复用原回答和五字段评分，不重生成或拟合；当前仅CPU准备、3B前向0。补充入口为`sh scripts/run_behavior_binding_probe.sh`，与下方已经完成的回答采集入口分开。原48行为结论、48引用归属unknown与研究边界不变。
+
 **最新状态（2026-10-21）：采集、只读核验及48行行为评分均已完成，参见[完成记录](records/2026-10-21-behavior-binding-results.md)。** 实际48回答/48attempt，smoke通过、空/触顶0、EOS48；I干扰采用0/24、I实质作答0/24、I目标不足承认24/24，S有据目标回答24/24，12场景四格全部保留。评分192字段确定/48具体证据归属unknown，全部已审；作者历史暴露，非独立金标准。无新GPU/拟合，不因零事件追加48；无需再次运行GPU入口。原run技术报告/模板的unreviewed为当时快照，本次评分另存。下文准备状态和启动说明保留历史，当前仅需离线分析verify。
 
 当前状态（2026-10-21）：prepared_not_started_cpu_verified。48条材料、作者侧全文检查、评分规则、CPU测试、真实tokenizer和独立重建核验已完成；实际GPU调用0、回答0、probe拟合0。新任务只观察回答，原一次probe拟合预算继续为0。

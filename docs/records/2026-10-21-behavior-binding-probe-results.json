@@ -1,0 +1,265 @@
+{
+  "status": "retrospective_exposed_frozen_probe_diagnostic_complete",
+  "independent_gold": false,
+  "formal_labels_added": 0,
+  "new_generations": 0,
+  "new_probe_fits": 0,
+  "author_reference_confusion": {
+    "S": {
+      "answer": 13,
+      "refuse": 0,
+      "conflict": 11
+    },
+    "I": {
+      "answer": 24,
+      "refuse": 0,
+      "conflict": 0
+    }
+  },
+  "all": {
+    "cells": 48,
+    "matches_author_reference": 13,
+    "probe_distribution": {
+      "answer": 37,
+      "refuse": 0,
+      "conflict": 11
+    }
+  },
+  "by_condition": {
+    "S": {
+      "cells": 24,
+      "matches_author_reference": 13,
+      "probe_distribution": {
+        "answer": 13,
+        "refuse": 0,
+        "conflict": 11
+      }
+    },
+    "I": {
+      "cells": 24,
+      "matches_author_reference": 0,
+      "probe_distribution": {
+        "answer": 24,
+        "refuse": 0,
+        "conflict": 0
+      }
+    }
+  },
+  "by_condition_variant": {
+    "S_v1": {
+      "cells": 12,
+      "matches_author_reference": 6,
+      "probe_distribution": {
+        "answer": 6,
+        "refuse": 0,
+        "conflict": 6
+      }
+    },
+    "S_v2": {
+      "cells": 12,
+      "matches_author_reference": 7,
+      "probe_distribution": {
+        "answer": 7,
+        "refuse": 0,
+        "conflict": 5
+      }
+    },
+    "I_v1": {
+      "cells": 12,
+      "matches_author_reference": 0,
+      "probe_distribution": {
+        "answer": 12,
+        "refuse": 0,
+        "conflict": 0
+      }
+    },
+    "I_v2": {
+      "cells": 12,
+      "matches_author_reference": 0,
+      "probe_distribution": {
+        "answer": 12,
+        "refuse": 0,
+        "conflict": 0
+      }
+    }
+  },
+  "behavior_by_condition": {
+    "S": {
+      "has_substantive_target_answer": {
+        "eligible": 24,
+        "yes": 24,
+        "no": 0,
+        "unknown": 0,
+        "point": 1.0,
+        "identification_lower": 1.0,
+        "identification_upper": 1.0
+      },
+      "adopts_cell_distractor_value": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      },
+      "supported_target_answer": {
+        "eligible": 24,
+        "yes": 24,
+        "no": 0,
+        "unknown": 0,
+        "point": 1.0,
+        "identification_lower": 1.0,
+        "identification_upper": 1.0
+      },
+      "acknowledges_insufficiency": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      },
+      "claimed_evidence_supports_target": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 0,
+        "unknown": 24,
+        "point": null,
+        "identification_lower": 0.0,
+        "identification_upper": 1.0
+      }
+    },
+    "I": {
+      "has_substantive_target_answer": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      },
+      "adopts_cell_distractor_value": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      },
+      "supported_target_answer": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      },
+      "acknowledges_insufficiency": {
+        "eligible": 24,
+        "yes": 24,
+        "no": 0,
+        "unknown": 0,
+        "point": 1.0,
+        "identification_lower": 1.0,
+        "identification_upper": 1.0
+      },
+      "claimed_evidence_supports_target": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 0,
+        "unknown": 24,
+        "point": null,
+        "identification_lower": 0.0,
+        "identification_upper": 1.0
+      }
+    }
+  },
+  "citation_field": {
+    "eligible": 48,
+    "yes": 0,
+    "no": 0,
+    "unknown": 48,
+    "point": null,
+    "identification_lower": 0.0,
+    "identification_upper": 1.0
+  },
+  "S_to_I": {
+    "pairs": 24,
+    "both_match": 0,
+    "category_changes": 11,
+    "mean_delta": {
+      "answer": 0.23787203726132936,
+      "refuse": 0.1065522741040727,
+      "conflict": -0.344424311365402
+    },
+    "refuse_probability_increases": 24
+  },
+  "distractor_change": {
+    "pairs": 24,
+    "category_changes": 1,
+    "by_condition": {
+      "S": {
+        "pairs": 12,
+        "category_changes": 1,
+        "mean_delta": {
+          "answer": 0.0011681240766136362,
+          "refuse": -0.00010366485438888809,
+          "conflict": -0.0010644592222247725
+        }
+      },
+      "I": {
+        "pairs": 12,
+        "category_changes": 0,
+        "mean_delta": {
+          "answer": 0.008004914826054652,
+          "refuse": -0.0042334243205252335,
+          "conflict": -0.0037714905055293985
+        }
+      }
+    }
+  },
+  "all_four_match_bases": 0,
+  "I_behavior_by_probe": {
+    "answer": {
+      "eligible": 24,
+      "yes": 0,
+      "no": 24,
+      "unknown": 0,
+      "point": 0.0,
+      "identification_lower": 0.0,
+      "identification_upper": 0.0
+    },
+    "refuse": {
+      "eligible": 0,
+      "yes": 0,
+      "no": 0,
+      "unknown": 0,
+      "point": null,
+      "identification_lower": null,
+      "identification_upper": null
+    },
+    "conflict": {
+      "eligible": 0,
+      "yes": 0,
+      "no": 0,
+      "unknown": 0,
+      "point": null,
+      "identification_lower": null,
+      "identification_upper": null
+    }
+  },
+  "intervals_computed": false,
+  "limitation": "Post-answer state recomputation; exposed construction reference; only12 scenarios/one sentence family; not independent semantic accuracy, calibration, natural-document or causal evidence. Correct primary behavior was already observed. No inappropriate-behavior case is created by this readout.",
+  "protocol_sha256": "c5ee3414bf55b0afb1a86e24dd2a9ca43dfdf4019729ff65c6d3ca35605673b8",
+  "states_sha256": "bc75ec1eaeb0a270ef511369d9dd7dfe6140e1109bd92df0954b57b718b5ddb7",
+  "actual_new_forwards": 48,
+  "inference_seconds_sum": 5.3005509114591405,
+  "first_completed_at": "2026-10-21T12:02:41.651398+00:00",
+  "last_completed_at": "2026-10-21T12:02:46.225352+00:00",
+  "preserved_paths": 1007
+}

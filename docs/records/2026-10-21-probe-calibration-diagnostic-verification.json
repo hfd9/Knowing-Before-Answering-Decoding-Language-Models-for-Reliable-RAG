@@ -1,0 +1,67 @@
+{
+  "status": "independent_manual288_stage_and348_pair_replay_passed",
+  "independent_semantic_review": false,
+  "rows": 288,
+  "pairs": 348,
+  "slices": 33,
+  "base_summaries": 42,
+  "unknown_author_references_preserved": 4,
+  "binding_citation_unknowns_preserved": 48,
+  "preserved_paths": 1132,
+  "new_run_files": 10,
+  "manual_stage_max_absolute_errors": {
+    "linear": 0.0,
+    "raw_softmax": 0.0,
+    "sigmoid_logit": 0.0,
+    "sigmoid_unnormalized": 0.0,
+    "calibrated_p": 0.0,
+    "original_saved_probability": 0.0
+  },
+  "total_class_changes": 16,
+  "all_changes_into_conflict": true,
+  "I_class_changes_by_dataset": {
+    "binding48": 0,
+    "transfer240": 0
+  },
+  "datasets": {
+    "binding48": {
+      "known": 48,
+      "unknown": 0,
+      "before": 18,
+      "after": 13,
+      "changes": 5,
+      "dispositions": {
+        "unchanged_correct": 13,
+        "unchanged_wrong": 30,
+        "changed_corrected": 0,
+        "changed_damaged": 5,
+        "changed_both_wrong": 0,
+        "changed_reference_unknown": 0,
+        "unchanged_reference_unknown": 0
+      }
+    },
+    "transfer240": {
+      "known": 236,
+      "unknown": 4,
+      "before": 117,
+      "after": 117,
+      "changes": 11,
+      "dispositions": {
+        "unchanged_correct": 112,
+        "unchanged_wrong": 113,
+        "changed_corrected": 5,
+        "changed_damaged": 5,
+        "changed_both_wrong": 1,
+        "changed_reference_unknown": 0,
+        "unchanged_reference_unknown": 4
+      }
+    }
+  },
+  "new_gpu_calls": 0,
+  "new_answers": 0,
+  "new_fits": 0,
+  "new_behavior_ratings": 0,
+  "thresholds_added": 0,
+  "implementation_sha256": "aee714c4c7ee11000ce674cb8ba5e248982bb07d08fc17b513181fd4c060dbad",
+  "source_run_manifest_sha256": "ca93d97348384581f7471171f8d4cc4deaf290fc56cc94b6fbf4c9624b093ae9"
+}

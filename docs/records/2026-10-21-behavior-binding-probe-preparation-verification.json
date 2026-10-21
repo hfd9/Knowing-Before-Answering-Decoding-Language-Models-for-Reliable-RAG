@@ -1,0 +1,24 @@
+{
+  "status": "independent_implementation_cpu_replay_passed",
+  "semantic_independent_review": false,
+  "original_inputs_and_prompts": 48,
+  "total_input_tokens": 11688,
+  "original_behavior_rows_joined": 48,
+  "citation_unknowns_preserved": 48,
+  "preserved_paths": 1007,
+  "source_run_files": 66,
+  "implementation_files": 20,
+  "source_files": 12,
+  "gpu_forwards": 0,
+  "new_answers": 0,
+  "new_fits": 0,
+  "original_fit_budget_remaining": 0,
+  "prepared_artifact_sha256": {
+    "runs/qwen2.5-3b-behavior-binding-probe-v1/materials/inputs.json": "97e86ecba00f253d37ba2eab69dbf21c71cc010125b57f57337111476298eab4",
+    "runs/qwen2.5-3b-behavior-binding-probe-v1/preflight.json": "4154c06c97bd2b2474fe1f9e1500480d8e9880e566191f5d3c3d9986d545c001",
+    "runs/qwen2.5-3b-behavior-binding-probe-v1/protocol.json": "c5ee3414bf55b0afb1a86e24dd2a9ca43dfdf4019729ff65c6d3ca35605673b8",
+    "runs/qwen2.5-3b-behavior-binding-probe-v1/source/behavior_rows.json": "d41424230a9b1fa969b56a9a965f7df98f376a2595968ee536ab67f177914f9e",
+    "runs/qwen2.5-3b-behavior-binding-probe-v1/source/preserved.json": "78cf46a287e4ecf43494dda59da150b6ea373e5d5c1b4b0bbd3ebb69cfefd330",
+    "runs/qwen2.5-3b-behavior-binding-probe-v1/specification.json": "9542f39361e4c0926da53a128b19b747064bfda1656eeaca737586041d44b478"
+  }
+}

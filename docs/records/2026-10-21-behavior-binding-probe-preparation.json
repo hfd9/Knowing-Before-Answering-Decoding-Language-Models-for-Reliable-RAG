@@ -1,0 +1,113 @@
+{
+  "status": "prepared_not_started_cpu_verified",
+  "recorded_at": "2026-10-21T11:51:35.454989+00:00",
+  "user_request": "Start the same48 input/frozen chat L28/actual behavior joint diagnostic and maintain records.",
+  "model": "/large_disk/wf/研究代码/RAG/OpenDecoder/checkpoint/Qwen2.5-3B-Instruct",
+  "run_dir": "runs/qwen2.5-3b-behavior-binding-probe-v1",
+  "probe_sha256": "db6033b84f1fcd30e5e2e31ce4beb262a76920cc06811c57900ad14b8d40858d",
+  "layer_zero_based": 28,
+  "actual_new_gpu_forwards": 0,
+  "forward_attempts": 0,
+  "feature_files": 0,
+  "new_answers": 0,
+  "new_probe_fits": 0,
+  "original_fit_budget_remaining": 0,
+  "independent_semantic_approvals": 0,
+  "original_formal_gate": false,
+  "formal_labels_added": 0,
+  "original_confirmation380_accessed": false,
+  "source_answers_reused": 48,
+  "source_behavior_fields_reused": 240,
+  "citation_attribution_unknowns_preserved": 48,
+  "material_scenarios": 12,
+  "planned_new_forwards": 48,
+  "technical_smoke_included": 4,
+  "extra_smoke_forwards": 0,
+  "input_tokens_min": 238,
+  "input_tokens_max": 249,
+  "total_input_tokens": 11688,
+  "tests": {
+    "command": "/large_disk/wf/miniconda3/envs/kba-rag/bin/python -B -m unittest discover -s tests -p test_behavior_binding_probe.py -v",
+    "passed": 12,
+    "unittest_seconds": 10.517,
+    "real_3b_gpu_test": false,
+    "old_suites_rerun": false,
+    "real_tokenizer48_test": true,
+    "small_random_cpu_qwen_capture_vs_hf_test": true
+  },
+  "preparation": {
+    "initial_process_exit_code": 130,
+    "all_six_artifacts_written_before_interrupt": true,
+    "final_prepared_message_observed": true,
+    "interrupt_did_not_create_forward_attempts": true,
+    "slow_cpu_validation": "Frozen source output-token checking repeatedly calls tokenizer.__len__; diagnostic stack confirms this. No frozen implementation changed to optimize it.",
+    "diagnostic_readonly_process_exit_code": 130,
+    "actual_readonly_verify_command": "PYTHONHASHSEED=211 sh scripts/run_behavior_binding_probe.sh --stage verify",
+    "actual_readonly_verify_exit_code": 0,
+    "readonly_verify_report": {
+      "stage": "verify",
+      "prepared_cells": 48,
+      "committed_new_forwards": 0,
+      "new_answers": 0,
+      "new_fits": 0
+    }
+  },
+  "independent_implementation_replay": {
+    "status": "independent_implementation_cpu_replay_passed",
+    "semantic_independent_review": false,
+    "original_inputs_and_prompts": 48,
+    "total_input_tokens": 11688,
+    "original_behavior_rows_joined": 48,
+    "citation_unknowns_preserved": 48,
+    "preserved_paths": 1007,
+    "source_run_files": 66,
+    "implementation_files": 20,
+    "source_files": 12,
+    "gpu_forwards": 0,
+    "new_answers": 0,
+    "new_fits": 0,
+    "original_fit_budget_remaining": 0,
+    "prepared_artifact_sha256": {
+      "runs/qwen2.5-3b-behavior-binding-probe-v1/materials/inputs.json": "97e86ecba00f253d37ba2eab69dbf21c71cc010125b57f57337111476298eab4",
+      "runs/qwen2.5-3b-behavior-binding-probe-v1/preflight.json": "4154c06c97bd2b2474fe1f9e1500480d8e9880e566191f5d3c3d9986d545c001",
+      "runs/qwen2.5-3b-behavior-binding-probe-v1/protocol.json": "c5ee3414bf55b0afb1a86e24dd2a9ca43dfdf4019729ff65c6d3ca35605673b8",
+      "runs/qwen2.5-3b-behavior-binding-probe-v1/source/behavior_rows.json": "d41424230a9b1fa969b56a9a965f7df98f376a2595968ee536ab67f177914f9e",
+      "runs/qwen2.5-3b-behavior-binding-probe-v1/source/preserved.json": "78cf46a287e4ecf43494dda59da150b6ea373e5d5c1b4b0bbd3ebb69cfefd330",
+      "runs/qwen2.5-3b-behavior-binding-probe-v1/specification.json": "9542f39361e4c0926da53a128b19b747064bfda1656eeaca737586041d44b478"
+    }
+  },
+  "implementation_files": 20,
+  "source_files": 12,
+  "model_weight_shards": 2,
+  "complete_model_fingerprints_bound": true,
+  "preserved_paths": 1007,
+  "source_run_files": 66,
+  "launch_command": "sh scripts/run_behavior_binding_probe.sh",
+  "verify_results_command": "sh scripts/run_behavior_binding_probe.sh --stage verify-results",
+  "log": "runs/qwen2.5-3b-behavior-binding-probe-v1/launch/prefill.log",
+  "frozen_prefill_capacity_minutes": [
+    4,
+    11
+  ],
+  "whole_entry_planning_minutes": [
+    10,
+    20
+  ],
+  "planning_is_new_gpu_measurement": false,
+  "launch_actor": "user",
+  "analysis_outputs": {
+    "cells": 48,
+    "S_to_I_pairs": 24,
+    "distractor_pairs": 24,
+    "base_scenarios": 12
+  },
+  "limitations": [
+    "Post-answer input-prefill recomputation, not simultaneous original-generation probe recording.",
+    "No original binding states exist to certify a numerical bridge.",
+    "Exposed author reference only; no independent semantic Accuracy/F1, calibration or causal evidence.",
+    "Primary behavior already correct; adding readout cannot create inappropriate-behavior cases.",
+    "No automatic expansion, repeated answers, layer/threshold tuning, new fitting or patching."
+  ],
+  "committed": false,
+  "pushed": false
+}

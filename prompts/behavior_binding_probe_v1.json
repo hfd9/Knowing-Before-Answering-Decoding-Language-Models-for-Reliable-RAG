@@ -1,0 +1,35 @@
+{
+  "task": "retrospective_frozen_chat_l28_binding_diagnostic_v1",
+  "source_run": "runs/qwen2.5-3b-behavior-binding-v1",
+  "source_behavior_prefix": "docs/records/2026-10-21-behavior-binding-results",
+  "maximum_new_forwards": 48,
+  "extra_smoke_forwards": 0,
+  "smoke_prefix_ids": ["bind01_S_v1", "bind01_I_v2", "bind12_S_v2", "bind12_I_v1"],
+  "new_generations": 0,
+  "new_probe_fits": 0,
+  "original_fit_budget_remaining": 0,
+  "probe": {
+    "source": "runs/qwen2.5-3b-free-answer-study/chat/probe/probe.pkl",
+    "sha256": "db6033b84f1fcd30e5e2e31ce4beb262a76920cc06811c57900ad14b8d40858d",
+    "layer_zero_based": 28,
+    "decision": "Existing calibrated router argmax over answer/refuse/conflict; no threshold or layer selection. The later author-reference retrained probe is not compared."
+  },
+  "capture": {
+    "input": "Exactly the original free-answer chat prompt, token IDs and order; no answer tokens, values or judgments are added.",
+    "forward": "Frozen BF16 backbone, SDPA, batch size 1, eval, use_cache=true, decoder only; no LM head or generation.",
+    "saved_states": "Existing LastPromptCapture convention, all36 last-position vectors in FP16 for integrity replay; only frozen L28 is read. No layer scan.",
+    "timing_identity": "Recomputed after answers and behavior scores were seen; input-side prefill state, not a probe decision recorded during the original answer generation. No original binding states exist for numerical bridge certification."
+  },
+  "technical_smoke": "First4 original cells count toward48; require complete finite nonzero36x2048 FP16, exact prompt/token identity, valid calibrated probabilities and committed attempt. No semantic correctness gate.",
+  "recovery": "Committed prefix only. Uncommitted attempt, orphan feature, failed smoke or corrupt cache stops before another model call; never remove markers to rerun.",
+  "analysis": {
+    "reference": "Exposed author construction reference S=answer, I=refuse, not independent semantic gold or a new formal label.",
+    "cells": "All48 join original inputs, frozen-probe classes/three probabilities and existing five behavior fields, answer text, anonymous ID and hashes. Never re-score behavior from probe or value strings.",
+    "pairs": "All24 S-to-I pairs and24 distractor-v1-to-v2 pairs; retain all12 scenarios and both variants, no success filtering.",
+    "metrics": "Descriptive2x3 confusion counts, author-reference agreement counts, S false-conflict/refuse, I answer/conflict, paired probability deltas, class changes, S/I both correct, all-four-cells correct, I answer rate conditional on probe class with zero-denominator null.",
+    "citation": "Keep all original claimed_evidence_supports_target values, including48 unknown; unknown is neither citation failure nor success.",
+    "inference": "One sentence family,12 clustered scenarios, already observed correct primary behavior. No bootstrap, significance test, calibration claim, independent Accuracy/F1, population guarantee, natural-document generalization or causal inference. No same-batch inappropriate-behavior cases can be created by adding probe readout."
+  },
+  "scope": "Supplement to completed M3 behavior-boundary package; does not reopen original240-generation or one-fit design. Old40 independent review and broader semantic-transfer reliability remain unresolved. No380 access, patching, expansion or automatic follow-up grid.",
+  "launch_actor": "user"
+}

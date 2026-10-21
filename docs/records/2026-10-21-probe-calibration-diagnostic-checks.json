@@ -1,0 +1,52 @@
+{
+  "status": "verified_complete",
+  "analyze_exit_code": 0,
+  "verify_exit_code": 0,
+  "verify_environment": {
+    "PYTHONHASHSEED": "229",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "independent_manual_replay_exit_code": 0,
+  "tests_passed": 8,
+  "unittest_seconds": 1.38,
+  "old_suites_rerun": false,
+  "total_rows": 288,
+  "separate_dataset_rows": {
+    "binding48": 48,
+    "transfer240": 240
+  },
+  "known_transfer_author_references": 236,
+  "unknown_transfer_author_references": 4,
+  "binding_citation_unknowns_preserved": 48,
+  "total_pairs": 348,
+  "slices": 33,
+  "base_summaries": 42,
+  "preserved_paths": 1132,
+  "fit_seal_files_preserved": 12,
+  "new_run_files_preserved": 10,
+  "saved_probability_max_absolute_error": 0.0,
+  "independent_manual_errors": {
+    "linear": 0.0,
+    "raw_softmax": 0.0,
+    "sigmoid_logit": 0.0,
+    "sigmoid_unnormalized": 0.0,
+    "calibrated_p": 0.0,
+    "original_saved_probability": 0.0
+  },
+  "new_fits": 0,
+  "new_gpu_calls": 0,
+  "new_model_forwards": 0,
+  "new_generated_answers": 0,
+  "new_behavior_ratings": 0,
+  "new_formal_labels": 0,
+  "thresholds_or_layers_searched": 0,
+  "original_fit_budget_remaining": 0,
+  "formal_gate": false,
+  "independent_gold": false,
+  "confirmation380_accessed": false,
+  "default_probe_replaced": false,
+  "bootstrap_or_significance_tests_added": false,
+  "committed": false,
+  "pushed": false
+}

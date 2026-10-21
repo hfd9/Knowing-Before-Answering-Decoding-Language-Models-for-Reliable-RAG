@@ -1,0 +1,44 @@
+{
+  "status": "independent_implementation_results_replay_passed",
+  "independent_semantic_review": false,
+  "original_inputs_and_prompts": 48,
+  "total_input_tokens": 11688,
+  "committed_attempts": 48,
+  "feature_files": 48,
+  "feature_shape": [
+    36,
+    2048
+  ],
+  "feature_dtype": "float16",
+  "nonfinite_or_zero_vectors": 0,
+  "manual_scaler_linear_sigmoid_probability_max_absolute_error": 0.0,
+  "author_reference_confusion": {
+    "S": {
+      "answer": 13,
+      "refuse": 0,
+      "conflict": 11
+    },
+    "I": {
+      "answer": 24,
+      "refuse": 0,
+      "conflict": 0
+    }
+  },
+  "author_reference_matches": 13,
+  "S_to_I_pairs": 24,
+  "distractor_pairs": 24,
+  "base_scenarios": 12,
+  "citation_unknowns_preserved": 48,
+  "preserved_paths": 1007,
+  "source_run_files": 116,
+  "prepared_artifacts_preserved": 6,
+  "new_forwards_in_this_audit": 0,
+  "new_answers": 0,
+  "new_fits": 0,
+  "first_inference_utc": "2026-10-21T12:02:40.449751+00:00",
+  "last_completion_utc": "2026-10-21T12:02:46.225352+00:00",
+  "inference_seconds_sum": 5.3005509114591405,
+  "first_inference_to_last_record_seconds": 5.775601,
+  "implementation_sha256": "37605fd4d3c740212890308fff9452d53d4058852c5ae9c0a8ab52208ad373fc",
+  "source_run_manifest_sha256": "47c18bf7d7025aed08ab626bd4f3941c5f1585f8a3bb6afd5909e24c245eea9f"
+}
