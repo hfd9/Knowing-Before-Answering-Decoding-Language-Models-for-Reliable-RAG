@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "status": "review_material_preparation_only",
+  "authorization": "2026-10-23用户要求按既定上限收尾，只读整理旧23条及相关未作答、充分对照与新3条解释的独立语义审查材料。",
+  "selection": {
+    "anchor": "Frozen 23 cases in docs/records/2026-10-21-insufficient-answer-audit.json; no new outcome selection",
+    "related_control_rule": "For all 13 anchor base IDs include both A/B expressions under I and S; retain every S output regardless of success and every same-base I nonanswer",
+    "old_base_prefixes": ["stv02", "stv03", "stv04", "stv05", "stv08", "stv09", "stv11", "stv15", "stv16", "stv19", "stv24", "stv26", "stv29"],
+    "expected_old_cases": 52,
+    "expected_anchor_answers": 23,
+    "expected_related_I_nonanswers": 3,
+    "expected_S_controls": 26,
+    "new_explanation_ids": ["rel05_TA_v2", "rel03_OQ_v2", "rel03_OA_v1"],
+    "expected_total_items": 55,
+    "interpretation": "Purpose-selected case review, not a new representative sample or new rate denominator. Other 34 old I outputs are outside this minimal package, not discarded from original 60."
+  },
+  "delivery": {
+    "directory": "docs/review/2026-10-23-semantic-claims-v1",
+    "permutation": "Sort by SHA256 of seed42|source_family|source_id; assign Q001...Q055",
+    "input_first": true,
+    "full_five_documents": true,
+    "full_unedited_answers": true,
+    "reviewer_fields_initially_null": true,
+    "coordinator_only": ["source mappings", "selection groups", "old ratings and classifications", "prior author assessments", "suggested claim units and citations", "paired controls"],
+    "no_probe_predictions_in_reviewer_material": true,
+    "atomic_claim_policy": "Coordinator inventories use verbatim sentence spans as candidate claim units, not automatic atomic propositions or semantic ratings. Reviewer must split compound clauses, identify any omitted claims, and may disagree with all prior author assessments."
+  },
+  "endpoints": {
+    "target_answer": "Whether a specific requested target answer is given, whether that target claim is supported, and whether withholding matches the actual gap",
+    "explanation_claims": "Each factual or evidence-status claim, including conflict/absence/attribution claims, reviewed separately against all five supplied documents",
+    "four_axes": ["claim", "document_support", "missing_link", "ambiguity"],
+    "allowed_final_judgments": ["supported", "contradicted", "unsupported", "ambiguous", "not_applicable"],
+    "absence_policy": "Absence/unknown/conflict assertions require checking the whole supplied set. A cited text match alone does not establish entailment; absence of an answer token alone does not establish missing semantics.",
+    "external_truth": "Review supplied-text support first; no external search in preparation. Any later external truth check must be separate and attributed, never substituted for supplied-text entailment."
+  },
+  "provenance": {
+    "preparer_history_exposed": true,
+    "independent_semantic_approvals": 0,
+    "new_semantic_scores_in_preparation": 0,
+    "independence": "Actual reviewer context/exposure audit is required; anonymization, different context, or a second implementation does not certify independence.",
+    "no_reviewer_contact_or_external_delivery": true
+  },
+  "stopping": {
+    "round_closed_at_existing_caps": true,
+    "new_fits": 0,
+    "new_collection": 0,
+    "new_probe_reads": 0,
+    "patching_allowed": false,
+    "remaining_original_design_fits": 0,
+    "held_out_380_remain_sealed": true,
+    "formal_gate": false,
+    "formal_labels_remain_null": true,
+    "next_decision": "After actual independent claim review, decide whether one specific question merits any further work; no automatic experiment branch."
+  }
+}

@@ -2,6 +2,22 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新本地归档：[10月23日第二次本地提交记录](2026-10-23-code-submission-02.md) / [清单与检查](2026-10-23-code-submission-02.json)。归档父9464e16后诊断/恢复、55审查包、有暴露作者复核/v2补记、阶段报告与提纲、接收CPU工具，共69文件。7Python/30JSON/6CSV/2ZIP与五项只读verify通过，原包/来源/12拟合封存保持；原文引用空白保留例外有单独清单。15CPU已通过不重复跑；沿用hfd9身份，仅本地提交不推送，本记录所属提交为归档版本。实际评审0/率null、预算0/独立语义0/正式gate=false/380封存，无新GPU任务。此前未提交记录保留历史。
+
+最新接收准备：[10月23日55条逐主张接收CPU准备](2026-10-23-semantic-claim-review-intake.md) / [使用说明](../semantic_claim_review_intake.md) / [检查与状态](2026-10-23-semantic-claim-review-intake.json)。新15CPU0.258秒通过，实际prepare/异进程verify exit0；新run仅4冻结JSON，pending_no_review_files，55/82计划、真实已审输入/输出/主张0、率null，gate/GPU就绪false。支持原子引用/封存/暴露声明和共同端点比较，主张对齐/裁定需人工，不自动认定独立性。原包、作者评分与拟合保持，预算0/独立语义0/380封存，无新实验，未提交推送。
+
+最新汇报整理：[10月23日动作记录](2026-10-23-stage-research-brief.md) / [8页提纲](../stage_research_brief.md) / [机器检查](2026-10-23-stage-research-brief.json)。仅压缩既有阶段报告为建议10分钟汇报，含每页证据、口头解释及6项讨论答复；时长未实测、未演讲外发，无新评分或实验。原报告/来源保持，数字和链接核对；预算0/独立语义0/正式gate=false/380封存，无新GPU待办，未提交推送。
+
+最新阶段报告：[10月23日完成记录](2026-10-23-stage-research-report.md) / [研究报告](../stage_research_report.md) / [23组证据](2026-10-23-stage-research-report-evidence.json) / [101来源指针](2026-10-23-stage-research-report-evidence.csv) / [核验](2026-10-23-stage-research-report-verification.json)。只整合既有迁移、两行为对照、读出/重训及作者复核，完整呈现代价、零事件和限制；11来源哈希、原值、表格展示、案例及链接核对，无新实验/评分/统计检验。探索收尾，实际独立语义0/预算0/正式gate=false/380封存，三解释仍待核验，无新GPU任务，未提交推送。
+
+最新作者复核：[10月23日55条/155主张作者复核](2026-10-23-semantic-claim-author-review.md) / [当前v2主张](../review/2026-10-23-semantic-claims-author-v1/analysis-v2/claims.md) / [独立实现核验](2026-10-23-semantic-claim-author-review-verification.json) / [决策](../semantic_claim_review_decision.md)。用户要求接续到长期GPU，本轮全文275槽/140文本、55输入与155手写主张封存后连接，旧23目标15未支持/8歧义、新3保留未知有据但冲突主张无据，均有历史暴露非独立确认。Q055一项从反证收紧未支持另存补记，原稿保持、当前v2为101支持/34未支持/13歧义/7反证。实际分析/异进程verify/独立引用与计数重放通过，59来源/原审查包16载荷/12拟合封存不变。实际独立审核0，尚无新GPU就绪任务；先真实审核再决定具体问题，预算0/正式gate=false/380封存，无拟合/采集/patching，未提交推送。
+
+最新收尾与审查准备：[10月23日55条独立语义审查材料](2026-10-23-semantic-claim-review-preparation.md) / [交付说明](../review/2026-10-23-semantic-claims-v1/README.md) / [技术核验](2026-10-23-semantic-claim-review-preparation-verification.json)。用户决定按既定上限结束扩样；旧23锚点＋同13底题3未作答/26S＋新3解释，共55条/275槽/26配对；82逐句候选非原子判断。public分两阶段输入/回答与空白表，coordinator单列主张/文档引用/缺失/歧义和原作者判断，未筛掉S失败。实际build/异进程verify/独立实现连接、引用、空表、ZIP和12拟合封存通过，27来源哈希保持；新评分0/实际独立审核0，三冲突案例待核验。补读/一次重训已完成不再待办；先实际独立审查，再决定具体问题，不新增采集/拟合/patching，预算0/正式gate=false/380封存。未外发、未提交推送。
+
+最新背景恢复：[10月23日第二次恢复记录](2026-10-23-context-restored-02.md)。已恢复至关系附着48结果/最新归档与贡献图诊断之后；本地HEAD及保存的origin/main均9464e16、差0/0，未联网核对。保留恢复前诊断改动；七run/共享预算/唯一fit_attempt及最新技术48/48与48attempt文件轻量核对，未完整重放。现有实验工作包均完成，原unreviewed/待启动是历史快照；预算0/独立语义0/正式gate=false/380封存，不自动新GPU、拟合或patching。本轮只恢复及记录维护，未提交推送。
+
+最新GitHub诊断：[10月23日贡献图缺失](2026-10-23-github-contributions-diagnosis.md) / [脱敏API证据](2026-10-23-github-contributions-diagnosis.json)。当前仓库fork=true，上游SyedHuq28同名仓库、公开/main；最近五个提交作者/提交者已正确关联hfd9。个人提交贡献不计fork，单纯等待不能修复；可另建独立研究仓库或在充分了解永久及非Git元数据影响后退出fork网络，均未执行。没有改邮箱、历史或远端设置，新诊断记录未提交推送。
+
 最新授权归档：[10月23日提交与推送记录](2026-10-23-code-submission.md) / [机器检查](2026-10-23-code-submission.json)。用户要求记录后推送；归档父615d9c2后背景恢复/结构差异审计/新48完整准备及实际结果与评分，共61文件，7Python/30JSON/1shell语法及阶段哈希、CSV检查，实际最新verify/独立复算均通过，1181旧路径/源run67保持。沿用hfd9身份；推送前远端798345e是本地祖先，正常推送将包含此前本地5152ca9/615d9c2与本次新提交。实际完整提交与推送核验以Git及本轮回复为准，保留旧阶段未提交快照；无新实验/拟合，预算0/正式gate=false/380封存保持。
 
 最新完成：[10月23日关系附着48回答与行为主比较](2026-10-23-relation-attachment-results.md) / [报告](2026-10-23-relation-attachment-results.json) / [48逐条](2026-10-23-relation-attachment-results-cells.csv) / [12主对](2026-10-23-relation-attachment-results-primary-pairs.csv) / [六场景](2026-10-23-relation-attachment-results-scenarios.csv) / [质性注记](2026-10-23-relation-attachment-results-qualitative-notes.csv) / [独立核验](2026-10-23-relation-attachment-results-verification.json)。48回答/attempt技术通过，TQ有据12/12、36不足均不作目标代码答案，TA0/12−OA0/12=0pp；有3条额外无据冲突说法，不把零误绑定当全文正确。48/240槽手写评分先封存后连接，194字段确定/46具体归属unknown，历史暴露非独立审核。完整verify-results/analyze/异进程verify/独立复算及token解码均通过，1181旧路径/原run67字节保持。无新生成/拟合/统计检验，预算0/正式gate=false/380封存；本批按上限结束、不追加GPU或网格，未提交推送。原准备未启动及技术unreviewed为历史快照。

@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "task": "semantic_claim_review_intake_CPU_only",
+  "source_package": "docs/review/2026-10-23-semantic-claims-v1",
+  "source_manifest_sha256": "713bd68f52dfa1708e95a19a47a6f86a323f0dd0af970c4fdeb9580c7cff0c29",
+  "default_run": "runs/qwen2.5-3b-semantic-claim-review-intake-v1",
+  "planned_items": 55,
+  "planned_sentence_units": 82,
+  "input_modes": ["answerable", "insufficient", "conflict", "ambiguous"],
+  "claim_judgments": ["supported", "contradicted", "unsupported", "ambiguous", "not_applicable"],
+  "atomic_roles": ["target", "explanation"],
+  "rules": [
+    "Each supplied form retains every Q001-Q055 row; unreviewed rows keep all scoring fields null",
+    "Completed input judgments require explicit target interpretation, support references, missing-link/ambiguity statements and conflict propositions",
+    "Completed claim reviews preserve every original sentence span, split separately judgeable propositions into atomic objects and confirm full-answer coverage",
+    "Citations require document_index (documents only), start, end and exact quote; offsets are Unicode character indices with exclusive end",
+    "Contradicted claims require a counterevidence citation; unsupported claims require an explicit missing link",
+    "Target answer support and withholding applicability are validated separately; explanation support is checked against authored explanation claims without scoring their meaning",
+    "For provided target answers, summarize authored target claims in order contradicted, unsupported, ambiguous, supported; this checks internal consistency only",
+    "Self-reported exposure is retained, not rejected or upgraded to proven independence; actual independent approval remains outside this intake",
+    "Compare only common item-level endpoints with prior author data; claim alignment and semantic adjudication require manual work",
+    "Preserve original author unknown; for endpoint comparison alone map unknown to ambiguous and retain both the raw and comparison value",
+    "A recorded input seal binds exact bytes and actual seal time; it does not prove absence of prior answer exposure",
+    "New received files or revisions use a separate run; frozen sources and earlier intake artifacts remain unchanged"
+  ],
+  "boundaries": {
+    "actual_independent_approvals_added_automatically": 0,
+    "formal_gate": false,
+    "formal_labels_added": 0,
+    "gpu_launch_ready": false,
+    "new_fits": 0,
+    "remaining_original_design_fits": 0,
+    "held_out_380_remain_sealed": true,
+    "no_automatic_experiment_or_adjudication": true
+  }
+}

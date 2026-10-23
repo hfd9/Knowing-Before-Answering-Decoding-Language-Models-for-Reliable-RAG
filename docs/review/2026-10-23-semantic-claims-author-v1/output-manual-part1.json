@@ -1,0 +1,79 @@
+{
+  "identity": "history_exposed_author_review_not_independent",
+  "target_order": ["gives_specific_target_answer", "target_support", "withholding_matches_gap"],
+  "claim_order": ["sentence_unit", "verbatim_anchor", "proposition", "judgment", "document_indices", "missing_link", "ambiguity", "role"],
+  "items": {
+    "Q001": {"target": [false,"not_applicable","supported"], "claims": [
+      [1,"Sheila was a hit record in 1962","Sheila是1962年热门唱片","supported",[1,5],"无","作品与艺人区分","description"],
+      [1,"as mentioned in Document 1","D1支持作品年份描述","supported",[1],"无","不表示支持录制者","attribution"],
+      [2,"No other information is provided to identify the specific artist","整套材料没有给出该唱片具体艺人","supported",[1,5],"录制者关系缺失；五文档已查","不以其他艺人背景代替所问关系","absence"]]},
+    "Q002": {"target": [true,"unsupported","not_applicable"], "claims": [
+      [1,"not directly mentioned","所给文档没有直接给Ohio首府","supported",[3,5],"缺首府/城市对应；五篇已查","与会址建筑存在信息区别","absence"],
+      [2,"Columbus is the largest city in Ohio","Columbus是Ohio最大城市","supported",[2],"无","市区与都会区分母不同，原文已区分","description"],
+      [2,"the state capital","Columbus是Ohio首府","unsupported",[2,3,5],"最大城市/城市存在/Statehouse未给首府桥接","it is known不能认证文档外知识来源","target"]]},
+    "Q003": {"target": [true,"unsupported","not_applicable"], "claims": [
+      [1,"market debut in 1963","Wham-O现代Hula Hoop首发于1963","unsupported",[1,2],"事件有据但年值缺失；五篇已查","不判断外部真实年份","target"],
+      [1,"as indicated by the introduction","市场引入事件足以支持1963年份","unsupported",[1,2],"从事件存在到具体年份的推理无桥接","相关事件不等于年值依据","attribution"]]},
+    "Q004": {"target": [false,"not_applicable","supported"], "claims": [
+      [1,"cannot be determined directly","U-215的access code无法由提供记录确定","supported",[1,2,3],"该单位该字段未给；五篇已查","字段独立且值可共享","absence"],
+      [1,"an inspection code for Unit U-757","文档提供的是U-757的inspection值","supported",[2],"无","不是U-215的access","description"],
+      [1,"a ledger entry for Unit U-215","U-215有ledger entry","supported",[1,2],"无","entry不决定字段值","description"],
+      [2,"There is a conflict","两单位已有信息之间存在冲突","unsupported",[1,2,3],"未给出同实体同属性的不相容命题","缺目标值与另一单位赋值可同时成立","conflict"]]},
+    "Q005": {"target": [true,"supported","not_applicable"], "claims": [
+      [1,"Battle of Waterloo","所问通常名是Waterloo","supported",[1,3],"无","与法方名称区别","target"],
+      [1,"as stated in Document 3","D3说Mont Saint-Jean和Waterloo是同一战事两名","supported",[3],"无","不把同事件不同名字判冲突","attribution"]]},
+    "Q006": {"target": [true,"unsupported","not_applicable"], "claims": [
+      [1,"is called sushi","给定菜肴名为sushi","unsupported",[3,5],"没有名称映射；五篇已查","不凭外部食物常识判真假或来源","target"],
+      [1,"bite-sized pieces of raw fish served with dipping sauce, vegetables, and wasabi","菜肴描述包含生鱼切片及所给配料","supported",[3,5],"无","目标是名称而不是原料复述","description"],
+      [2,"the specific dish described is not identified","只依给定文档菜名未被识别","supported",[3,5],"命名关系缺失；五篇已查","后句限定文档支持，未明确撤回先给sushi","absence"]]},
+    "Q007": {"target": [true,"ambiguous","not_applicable"], "claims": [
+      [1,"Ameliorate means to make something that was bad, better","ameliorate表示使坏状态变好","ambiguous",[2,3],"文本只给bad起点，没有改善定义","基本词义理解可支持better，不把词义直接当事实越界","target"]]},
+    "Q008": {"target": [false,"not_applicable","supported"], "claims": [
+      [1,"not directly mentioned","Ohio首府没有直接提及","supported",[3,5],"无首府对应；五篇已查","不否认Statehouse信息","absence"],
+      [2,"information about the state capital","材料未提供首府身份关系","supported",[3,5],"缺首府城市桥接；五篇已查","最大城市不能代答","absence"],
+      [2,"the location of the Ohio state government","材料没有州政府位置的信息","ambiguous",[5],"D5提供Statehouse但未提供其城市","若位置泛指建筑则过宽；若只问所在城市则仍缺","absence"]]},
+    "Q009": {"target": [true,"unsupported","not_applicable"], "claims": [
+      [1,"Sorry! is based on Pachisi","Sorry!基于Pachisi","supported",[2],"无","不是类别定义","description"],
+      [1,"not specified as a particular form of entertainment","文档没有指定Pachisi类型","supported",[2],"Pachisi类别未定义；五篇已查","不诉诸游戏名称外部知识","absence"],
+      [1,"plasticine-shaping German-style board game","Barbarossa是塑形German-style board game","supported",[4],"无","多个兼容类型属性","target"],
+      [2,"Sorry! is a board game","Sorry!是board game","unsupported",[2],"缺Pachisi/Sorry!到board-game分类桥接","Therefore没有提供新桥接","target"],
+      [2,"Barbarossa is a board game as well","Barbarossa是board game","supported",[4],"无","原类别已明确","target"]]},
+    "Q010": {"target": [true,"supported","not_applicable"], "claims": [
+      [1,"market debut of Wham-O's modern Hula Hoop took place in 1958","首发年为1958","supported",[1,2],"无","两事件年份兼容","target"],
+      [1,"as stated in Document 1","D1给出1958上市年","supported",[1],"无","不以正确答案替代引用核查","attribution"]]},
+    "Q011": {"target": [true,"unsupported","not_applicable"], "claims": [
+      [1,"chief river of Burma is the Irrawaddy","Irrawaddy具有Burma chief地位","unsupported",[1,4],"存在和别名未给chief属性；五篇已查","不引入外部地理知识","target"],
+      [1,"also known as the Ayeyarwady","Irrawaddy与Ayeyarwady是同河别名","supported",[4],"无","候选名有据不认证chief","description"],
+      [2,"Document 1 stating","D1确有被引的河流存在原文","supported",[1],"无","引用匹配与蕴含分开","attribution"],
+      [2,"Document 4 noting","D4确有被引的别名原文","supported",[4],"无","引用匹配与chief分开","attribution"],
+      [2,"This is evident from","存在和别名两条引文蕴含chief结论","unsupported",[1,4],"缺主要地位关系","准确抄引仍可不支持结论","inference"]]},
+    "Q012": {"target": [true,"unsupported","not_applicable"], "claims": [
+      [1,"is called sashimi","给定菜肴名称为sashimi","unsupported",[3,5],"没有命名关系；五篇已查","与S名称吻合不证明知识来源","target"],
+      [1,"raw fish served with dipping sauces, vegetables, and wasabi","给定菜肴由生鱼和配料描述","supported",[3,5],"无","描述不等于名称","description"],
+      [2,"is not explicitly named","所给文档未明确给菜名","supported",[3,5],"命名关系缺失；五篇已查","没有明确撤回先给名称","absence"]]},
+    "Q013": {"target": [true,"supported","not_applicable"], "claims": [
+      [1,"is sashimi","给定生鱼菜肴名称为sashimi","supported",[3,5],"无","原料关系和名称均明确","target"]]},
+    "Q014": {"target": [true,"supported","not_applicable"], "claims": [
+      [1,"a total of ten seasons","指定overview总季数为ten","supported",[3,4],"无","不是单季条目数","target"]]},
+    "Q015": {"target": [true,"unsupported","not_applicable"], "claims": [
+      [1,"We know this battle as the Battle of Mont Saint-Jean","用法方名称Mont Saint-Jean回答所问通常名称转换","unsupported",[1,3],"通常名称映射未给；五篇已查","已有法方名称本身并非虚构，但没完成所问关系","target"],
+      [1,"as stated in Document 1","D1给出Mont Saint-Jean法方名称","supported",[1],"不支持常用名转换","引用对象范围受限","attribution"]]},
+    "Q016": {"target": [true,"supported","not_applicable"], "claims": [
+      [1,"Luoding is located in western Guangdong, China","Luoding在western Guangdong, China","supported",[1],"无","地点属于Luoding","target"],
+      [1,"Dingzhou is located in Hebei Province","Dingzhou在Hebei Province","supported",[5],"无","地点属于Dingzhou","target"],
+      [1,"which is in northern China","Hebei/Dingzhou处于northern China范围","supported",[5],"无","未将northern修饰改到Hebei内部","description"]]},
+    "Q017": {"target": [true,"supported","not_applicable"], "claims": [
+      [1,"ten seasons of RuPaul's Drag Race are listed","指定overview列ten seasons","supported",[3,4],"无","背景单季条目不代替总量","target"]]},
+    "Q018": {"target": [true,"unsupported","not_applicable"], "claims": [
+      [1,"second season has 22 episodes","第二季有22集","unsupported",[1,3,5],"22属于第一季，第二季集数缺失；五篇已查","不同季可同集数但文本未支持此关系","target"],
+      [1,"as stated in Document 1","D1给出第二季22集","unsupported",[1],"D1数字绑定第一季","来源归属错不意味着外部第二季必不为22","attribution"]]},
+    "Q019": {"target": [true,"ambiguous","not_applicable"], "claims": [
+      [1,"two seasons of RuPaul's Drag Race are listed","overview或当前列项数为two","ambiguous",[1,2,3,4,5],"overview总量未给","listed可能指普通版可见两季；若含All Stars则还多一条","target"],
+      [1,"Season 2 from 2010","可见第二季条目时间2010","supported",[2],"无","单季条目不是overview总量","description"],
+      [1,"Season 4 from 2012","可见第四季条目时间2012","supported",[1],"无","仅支持这一条目的时间","description"]]},
+    "Q020": {"target": [true,"ambiguous","not_applicable"], "claims": [
+      [1,"Sheila recorded the 1962 hit record Sheila","Sheila是所问唱片的录制者","ambiguous",[1,5],"D1没有艺人，D5指代未定","D5可能把Sheila作人名主语，不能强制认定角色挪用","target"],
+      [2,"directly inferred from Document 1","D1直接蕴含Sheila是录制者","unsupported",[1],"被引D1只说唱片名","整体人名歧义不使D1归属变为有据","attribution"],
+      [2,"A 1962 hit record was called Sheila.","所引D1作品名年份原文准确","supported",[1],"无","引文匹配不认证录制者","attribution"]]}
+  }
+}

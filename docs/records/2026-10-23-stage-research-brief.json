@@ -1,0 +1,128 @@
+{
+  "status": "brief_complete_existing_evidence_only",
+  "brief_sha256": "f7e330fd23850d784cb28542d937cfce79d69d1ea73679809af550e330f87b93",
+  "record_sha256": "fb754f3f1da0f0ed043958f41439f82a358d39bae6862547ed94c5d178be4bca",
+  "source_sha256": {
+    "docs/records/2026-10-21-behavior-binding-probe-results.json": "0844afc7a2142193a97e2df6cc67b0ca97c3c55d5cac56fb1d673e32998eebdf",
+    "docs/records/2026-10-21-behavior-binding-results.json": "e2dd51b4fdd59ebb1377a15200250b4642a293e7e881b6051c042e8d232f42d7",
+    "docs/records/2026-10-21-insufficient-answer-audit.json": "bc8c8ceb04b46f427749159aa618a4cbd47cdde864324047121a2a49973af85b",
+    "docs/records/2026-10-21-probe-calibration-diagnostic.json": "43adcee4027e5e376237f670ac8f971b2bdd494d6cd725477e0d18ffa6bb2294",
+    "docs/records/2026-10-21-semantic-transfer-exploratory-behavior.json": "162f22b4224de582fe2930379c649fe3d4689f4e9df613beda4fc05e307e4a5c",
+    "docs/records/2026-10-21-semantic-transfer-exploratory-retrain.json": "ea1ae8b7a2fe35781bfd613a149a83b1ba3194f8962e3a846d7bd2540da51a41",
+    "docs/records/2026-10-21-semantic-transfer-paired-analysis.json": "58e1392b62a33a52f988526bcd7e1e5976616abb6c2ecd92ccf282539d81a234",
+    "docs/records/2026-10-23-relation-attachment-results.json": "d24eda685b9683c4053609971dadeea3f3351bd8a0fdd4179b63ea2cbdb2b906",
+    "docs/records/2026-10-23-semantic-claim-author-review-verification.json": "a7fc9eb2d2b9f6d114bd05e2bf1d78c0f055687235507e54832d78cd9f4fb2f7",
+    "docs/records/2026-10-23-stage-research-report-evidence.csv": "70332effdb6c725ffbba2b9c280f5b341186f1d0eaea79cf1746ce2a31059194",
+    "docs/records/2026-10-23-stage-research-report-evidence.json": "df5ce265534663b508e519b25dd62468d1cf61088f1606996a05890099fe57dc",
+    "docs/records/2026-10-23-stage-research-report-verification.json": "3863165fd12a3b88d3291cc24bd02e8a569c39d931f9f1993b8e1465548b5d4a",
+    "docs/review/2026-10-23-semantic-claims-author-v1/analysis-v2/report.json": "6a76120fe1deedc1f7127c88dd1d3a1b2bcfc5e334500a13bb410ef984576f62",
+    "docs/review/2026-10-23-semantic-claims-v1/manifest.json": "713bd68f52dfa1708e95a19a47a6f86a323f0dd0af970c4fdeb9580c7cff0c29",
+    "docs/semantic_claim_review_decision.md": "a52142283c073f570e199be7ce122ecf06274e3247b37365c309e25d0d259695",
+    "docs/stage_research_report.md": "e4388e51cf72803d399a39639caab8e65de3c41ddfe5e9cd55a37861ac8f73db"
+  },
+  "prior_source_hash_assertions": 14,
+  "pages": [
+    {
+      "page": 1,
+      "title": "本阶段回答了哪些问题",
+      "planned_seconds": 30
+    },
+    {
+      "page": 2,
+      "title": "研究设计与证据身份",
+      "planned_seconds": 60
+    },
+    {
+      "page": 3,
+      "title": "旧材料确有缺证作答，文本模式多样",
+      "planned_seconds": 90
+    },
+    {
+      "page": 4,
+      "title": "两类简单绑定对照未支持原假设",
+      "planned_seconds": 60
+    },
+    {
+      "page": 5,
+      "title": "连续响应存在，冻结三分类仍失效",
+      "planned_seconds": 90
+    },
+    {
+      "page": 6,
+      "title": "唯一重训有收益，也有代价",
+      "planned_seconds": 60
+    },
+    {
+      "page": 7,
+      "title": "正确保留目标未知，解释仍可能无据",
+      "planned_seconds": 90
+    },
+    {
+      "page": 8,
+      "title": "阶段决策与后续判据",
+      "planned_seconds": 120
+    }
+  ],
+  "planned_total_seconds": 600,
+  "presentation_actually_delivered": false,
+  "external_delivery": false,
+  "discussion_answers": 6,
+  "numeric_display_checks": 18,
+  "numeric_display_strings": [
+    "| S→I不足概率 | +18.08个百分点 | [9.71, 27.57]个百分点 |",
+    "| S→C冲突概率 | +20.84个百分点 | [14.75, 26.91]个百分点 |",
+    "**23/60**",
+    "| 已有事实被挪到另一关系 | 8 |",
+    "| 候选或线索提升为所问关系 | 9 |",
+    "| 补出提供文本没有的关键值 | 6 |",
+    "| S，24条 | 有据回答24/24 | Answer13、Conflict11 |",
+    "| I，24条 | 正确保留目标未知24/24 | Answer24、Refuse0、Conflict0 |",
+    "+10.66个百分点",
+    "| 总体一致 | 57/96（59.38%） | 62/96（64.58%） |",
+    "| S被判Conflict | 9/24 | 1/24 |",
+    "| K被判Conflict | 6/24 | 0/24 |",
+    "| 冲突参照召回 | 18/24 | 11/24 |",
+    "+5.21个百分点",
+    "[-5.21, +16.67]个百分点",
+    "目标作答0/24、干扰采用0/24",
+    "目标作答0/36",
+    "TA−OA为0个百分点"
+  ],
+  "case_ids_checked": [
+    "rel03_OA_v1",
+    "rel03_OQ_v2",
+    "rel05_TA_v2"
+  ],
+  "evidence_ids_used": [
+    "E01",
+    "E02",
+    "E03",
+    "E05",
+    "E06",
+    "E09",
+    "E10",
+    "E11",
+    "E12",
+    "E13",
+    "E14",
+    "E15",
+    "E16",
+    "E17",
+    "E18",
+    "E19",
+    "E20",
+    "E21",
+    "E23"
+  ],
+  "local_links_checked": 8,
+  "new_model_calls": 0,
+  "new_fits": 0,
+  "new_semantic_scores": 0,
+  "new_statistical_tests": 0,
+  "independent_semantic_approvals": 0,
+  "formal_gate": false,
+  "remaining_original_design_fits": 0,
+  "held_out_380_accessed": false,
+  "verification_note": "Initial checker normalized minus in the document only, causing a false display mismatch. Normalizing both operands passed; no briefing or source data changed.",
+  "notes": "Presentation planning and existing-result display checks; no new evidence, review, protocol, GPU readiness or full experiment replay."
+}

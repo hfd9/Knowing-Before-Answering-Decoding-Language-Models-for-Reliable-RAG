@@ -1,0 +1,1718 @@
+{
+  "status": "existing_result_snapshot_for_stage_report",
+  "history_exposed": true,
+  "independent_semantic_approvals": 0,
+  "new_scores": 0,
+  "new_fits": 0,
+  "new_model_calls": 0,
+  "new_statistical_tests": 0,
+  "source_sha256": {
+    "docs/records/2026-10-21-semantic-transfer-paired-analysis.json": "58e1392b62a33a52f988526bcd7e1e5976616abb6c2ecd92ccf282539d81a234",
+    "docs/records/2026-10-21-semantic-transfer-exploratory-retrain.json": "ea1ae8b7a2fe35781bfd613a149a83b1ba3194f8962e3a846d7bd2540da51a41",
+    "docs/records/2026-10-21-semantic-transfer-exploratory-behavior.json": "162f22b4224de582fe2930379c649fe3d4689f4e9df613beda4fc05e307e4a5c",
+    "docs/records/2026-10-21-insufficient-answer-audit.json": "bc8c8ceb04b46f427749159aa618a4cbd47cdde864324047121a2a49973af85b",
+    "docs/records/2026-10-21-behavior-binding-results.json": "e2dd51b4fdd59ebb1377a15200250b4642a293e7e881b6051c042e8d232f42d7",
+    "docs/records/2026-10-21-behavior-binding-probe-results.json": "0844afc7a2142193a97e2df6cc67b0ca97c3c55d5cac56fb1d673e32998eebdf",
+    "docs/records/2026-10-21-probe-calibration-diagnostic.json": "43adcee4027e5e376237f670ac8f971b2bdd494d6cd725477e0d18ffa6bb2294",
+    "docs/records/2026-10-23-relation-attachment-results.json": "d24eda685b9683c4053609971dadeea3f3351bd8a0fdd4179b63ea2cbdb2b906",
+    "docs/review/2026-10-23-semantic-claims-author-v1/analysis-v2/report.json": "6a76120fe1deedc1f7127c88dd1d3a1b2bcfc5e334500a13bb410ef984576f62",
+    "docs/review/2026-10-23-semantic-claims-v1/manifest.json": "713bd68f52dfa1708e95a19a47a6f86a323f0dd0af970c4fdeb9580c7cff0c29",
+    "docs/records/2026-10-23-semantic-claim-author-review-verification.json": "a7fc9eb2d2b9f6d114bd05e2bf1d78c0f055687235507e54832d78cd9f4fb2f7"
+  },
+  "evidence": [
+    {
+      "evidence_id": "E01",
+      "topic": "迁移材料与配对规模",
+      "source": "docs/records/2026-10-21-semantic-transfer-paired-analysis.json",
+      "source_sha256": "58e1392b62a33a52f988526bcd7e1e5976616abb6c2ecd92ccf282539d81a234",
+      "values": [
+        {
+          "pointer": "/bases",
+          "value": 30
+        },
+        {
+          "pointer": "/cells",
+          "value": 240
+        },
+        {
+          "pointer": "/constructed_pairs",
+          "value": 180
+        },
+        {
+          "pointer": "/author_reference_eligible_pairs",
+          "value": 174
+        },
+        {
+          "pointer": "/author_reference_ineligible_pairs",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "evidence_id": "E02",
+      "topic": "作者输入参照",
+      "source": "docs/records/2026-10-21-semantic-transfer-exploratory-retrain.json",
+      "source_sha256": "ea1ae8b7a2fe35781bfd613a149a83b1ba3194f8962e3a846d7bd2540da51a41",
+      "values": [
+        {
+          "pointer": "/author_reference_counts",
+          "value": {
+            "answer": 116,
+            "refuse": 60,
+            "conflict": 60,
+            "unknown": 4
+          }
+        }
+      ]
+    },
+    {
+      "evidence_id": "E03",
+      "topic": "缺证作答及次要条件子集",
+      "source": "docs/records/2026-10-21-semantic-transfer-exploratory-behavior.json",
+      "source_sha256": "162f22b4224de582fe2930379c649fe3d4689f4e9df613beda4fc05e307e4a5c",
+      "values": [
+        {
+          "pointer": "/all/primary/insufficient_substantive_answer",
+          "value": {
+            "eligible": 60,
+            "yes": 23,
+            "no": 37,
+            "unknown": 0,
+            "point": 0.38333333333333336,
+            "lower": 0.38333333333333336,
+            "upper": 0.38333333333333336
+          }
+        },
+        {
+          "pointer": "/all/secondary/insufficient_probe_refuse_substantive",
+          "value": {
+            "eligible": 16,
+            "yes": 1,
+            "no": 15,
+            "unknown": 0,
+            "point": 0.0625,
+            "lower": 0.0625,
+            "upper": 0.0625
+          }
+        }
+      ]
+    },
+    {
+      "evidence_id": "E04",
+      "topic": "冲突行为及未知",
+      "source": "docs/records/2026-10-21-semantic-transfer-exploratory-behavior.json",
+      "source_sha256": "162f22b4224de582fe2930379c649fe3d4689f4e9df613beda4fc05e307e4a5c",
+      "values": [
+        {
+          "pointer": "/all/primary/conflict_selection_without_resolution",
+          "value": {
+            "eligible": 60,
+            "yes": 37,
+            "no": 17,
+            "unknown": 6,
+            "point": null,
+            "lower": 0.6166666666666667,
+            "upper": 0.7166666666666667
+          }
+        },
+        {
+          "pointer": "/all/conflict_acknowledgment",
+          "value": {
+            "eligible": 60,
+            "yes": 18,
+            "no": 42,
+            "unknown": 0,
+            "point": 0.3,
+            "lower": 0.3,
+            "upper": 0.3
+          }
+        },
+        {
+          "pointer": "/all/conflict_supplied_resolution",
+          "value": {
+            "eligible": 60,
+            "yes": 0,
+            "no": 60,
+            "unknown": 0,
+            "point": 0.0,
+            "lower": 0.0,
+            "upper": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "evidence_id": "E05",
+      "topic": "证据编辑的连续读出响应",
+      "source": "docs/records/2026-10-21-semantic-transfer-paired-analysis.json",
+      "source_sha256": "58e1392b62a33a52f988526bcd7e1e5976616abb6c2ecd92ccf282539d81a234",
+      "values": [
+        {
+          "pointer": "/contrasts/S_to_I/all_constructed/pairs",
+          "value": 60
+        },
+        {
+          "pointer": "/contrasts/S_to_I/all_constructed/metrics/delta_p_refuse",
+          "value": {
+            "point": 0.18075403915699628,
+            "identification_lower": 0.18075403915699628,
+            "identification_upper": 0.18075403915699628,
+            "ambiguous_pairs": 0,
+            "sampling_95_for_lower_bound": [
+              0.09709266860029579,
+              0.27571696113527405
+            ],
+            "sampling_95_for_upper_bound": [
+              0.09709266860029579,
+              0.27571696113527405
+            ]
+          }
+        },
+        {
+          "pointer": "/contrasts/S_to_I/all_constructed/focal_sign_counts",
+          "value": {
+            "increase": 53,
+            "decrease": 7,
+            "equal": 0
+          }
+        }
+      ]
+    },
+    {
+      "evidence_id": "E06",
+      "topic": "证据编辑的连续读出响应",
+      "source": "docs/records/2026-10-21-semantic-transfer-paired-analysis.json",
+      "source_sha256": "58e1392b62a33a52f988526bcd7e1e5976616abb6c2ecd92ccf282539d81a234",
+      "values": [
+        {
+          "pointer": "/contrasts/S_to_C/all_constructed/pairs",
+          "value": 60
+        },
+        {
+          "pointer": "/contrasts/S_to_C/all_constructed/metrics/delta_p_conflict",
+          "value": {
+            "point": 0.20838950011593257,
+            "identification_lower": 0.20838950011593257,
+            "identification_upper": 0.20838950011593257,
+            "ambiguous_pairs": 0,
+            "sampling_95_for_lower_bound": [
+              0.14747235715878967,
+              0.26909025031499806
+            ],
+            "sampling_95_for_upper_bound": [
+              0.14747235715878967,
+              0.26909025031499806
+            ]
+          }
+        },
+        {
+          "pointer": "/contrasts/S_to_C/all_constructed/focal_sign_counts",
+          "value": {
+            "increase": 54,
+            "decrease": 6,
+            "equal": 0
+          }
+        }
+      ]
+    },
+    {
+      "evidence_id": "E07",
+      "topic": "证据编辑的连续读出响应",
+      "source": "docs/records/2026-10-21-semantic-transfer-paired-analysis.json",
+      "source_sha256": "58e1392b62a33a52f988526bcd7e1e5976616abb6c2ecd92ccf282539d81a234",
+      "values": [
+        {
+          "pointer": "/contrasts/S_to_K/all_constructed/pairs",
+          "value": 60
+        },
+        {
+          "pointer": "/contrasts/S_to_K/all_constructed/metrics/delta_p_conflict",
+          "value": {
+            "point": -0.05865263454972445,
+            "identification_lower": -0.05865263454972445,
+            "identification_upper": -0.05865263454972445,
+            "ambiguous_pairs": 0,
+            "sampling_95_for_lower_bound": [
+              -0.11622582369011142,
+              -0.001236877417826628
+            ],
+            "sampling_95_for_upper_bound": [
+              -0.11622582369011142,
+              -0.001236877417826628
+            ]
+          }
+        },
+        {
+          "pointer": "/contrasts/S_to_K/all_constructed/focal_sign_counts",
+          "value": {
+            "increase": 18,
+            "decrease": 42,
+            "equal": 0
+          }
+        }
+      ]
+    },
+    {
+      "evidence_id": "E08",
+      "topic": "题内比较与作答配对差",
+      "source": "docs/records/2026-10-21-semantic-transfer-paired-analysis.json",
+      "source_sha256": "58e1392b62a33a52f988526bcd7e1e5976616abb6c2ecd92ccf282539d81a234",
+      "values": [
+        {
+          "pointer": "/composition/within_base_mixed_comparisons",
+          "value": [
+            {
+              "base_id": "stv14",
+              "original_id": "train_1525",
+              "refuse_id": "stv14_A_I",
+              "other_id": "stv14_B_I",
+              "refuse_answer": "no",
+              "other_answer": "no",
+              "refuse_minus_other_lower": 0.0,
+              "refuse_minus_other_upper": 0.0
+            },
+            {
+              "base_id": "stv17",
+              "original_id": "train_989",
+              "refuse_id": "stv17_B_I",
+              "other_id": "stv17_A_I",
+              "refuse_answer": "no",
+              "other_answer": "no",
+              "refuse_minus_other_lower": 0.0,
+              "refuse_minus_other_upper": 0.0
+            }
+          ]
+        },
+        {
+          "pointer": "/contrasts/S_to_I/all_constructed/metrics/change_has_substantive_answer",
+          "value": {
+            "point": -0.5166666666666667,
+            "identification_lower": -0.5166666666666667,
+            "identification_upper": -0.5166666666666667,
+            "ambiguous_pairs": 0,
+            "sampling_95_for_lower_bound": [
+              -0.7,
+              -0.31666666666666665
+            ],
+            "sampling_95_for_upper_bound": [
+              -0.7,
+              -0.31666666666666665
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "evidence_id": "E09",
+      "topic": "23条文本现象分类及边界",
+      "source": "docs/records/2026-10-21-insufficient-answer-audit.json",
+      "source_sha256": "bc8c8ceb04b46f427749159aa618a4cbd47cdde864324047121a2a49973af85b",
+      "values": [
+        {
+          "pointer": "/selected_outputs",
+          "value": 23
+        },
+        {
+          "pointer": "/selected_bases",
+          "value": 13
+        },
+        {
+          "pointer": "/primary_pattern_counts",
+          "value": {
+            "fact_reassignment": 8,
+            "unsupported_relation_promotion": 9,
+            "absent_answer_value": 6
+          }
+        },
+        {
+          "pointer": "/interpretation_boundary_counts",
+          "value": {
+            "none_identified": 15,
+            "category_inference": 2,
+            "overview_scope": 2,
+            "lexical_semantics": 2,
+            "cause_vs_modifier": 1,
+            "referent_ambiguity": 1
+          }
+        },
+        {
+          "pointer": "/acknowledgment_alignment_counts",
+          "value": {
+            "none": 18,
+            "relevant_missing_relation": 4,
+            "wrong_target": 1
+          }
+        }
+      ]
+    },
+    {
+      "evidence_id": "E10",
+      "topic": "唯一拟合及同题B",
+      "source": "docs/records/2026-10-21-semantic-transfer-exploratory-retrain.json",
+      "source_sha256": "ea1ae8b7a2fe35781bfd613a149a83b1ba3194f8962e3a846d7bd2540da51a41",
+      "values": [
+        {
+          "pointer": "/fit/training_rows",
+          "value": 48
+        },
+        {
+          "pointer": "/fit/training_bases",
+          "value": 12
+        },
+        {
+          "pointer": "/fit/training_fits",
+          "value": 1
+        },
+        {
+          "pointer": "/original_design_fit_budget_remaining",
+          "value": 0
+        },
+        {
+          "pointer": "/slices/same_base_train_B/new_author_reference_metrics/accuracy",
+          "value": 0.8541666666666666
+        }
+      ]
+    },
+    {
+      "evidence_id": "E11",
+      "topic": "评估来源总体一致与区间",
+      "source": "docs/records/2026-10-21-semantic-transfer-exploratory-retrain.json",
+      "source_sha256": "ea1ae8b7a2fe35781bfd613a149a83b1ba3194f8962e3a846d7bd2540da51a41",
+      "values": [
+        {
+          "pointer": "/slices/source_eval/cells",
+          "value": 96
+        },
+        {
+          "pointer": "/slices/source_eval/bases",
+          "value": 12
+        },
+        {
+          "pointer": "/slices/source_eval/old_author_reference_metrics/accuracy",
+          "value": 0.59375
+        },
+        {
+          "pointer": "/slices/source_eval/new_author_reference_metrics/accuracy",
+          "value": 0.6458333333333334
+        },
+        {
+          "pointer": "/slices/source_eval/new_minus_old_paired_base_bootstrap/intervals/accuracy",
+          "value": {
+            "lower": -0.05208333333333337,
+            "upper": 0.16666666666666669,
+            "defined_resamples": 10000,
+            "undefined_resamples": 0
+          }
+        }
+      ]
+    },
+    {
+      "evidence_id": "E12",
+      "topic": "重训收益与代价",
+      "source": "docs/records/2026-10-21-semantic-transfer-exploratory-retrain.json",
+      "source_sha256": "ea1ae8b7a2fe35781bfd613a149a83b1ba3194f8962e3a846d7bd2540da51a41",
+      "values": [
+        {
+          "pointer": "/slices/source_eval/old_author_reference_metrics/S_false_conflict",
+          "value": {
+            "numerator": 9,
+            "denominator": 24,
+            "value": 0.375
+          }
+        },
+        {
+          "pointer": "/slices/source_eval/old_author_reference_metrics/K_false_conflict",
+          "value": {
+            "numerator": 6,
+            "denominator": 24,
+            "value": 0.25
+          }
+        },
+        {
+          "pointer": "/slices/source_eval/old_author_reference_metrics/recalls",
+          "value": {
+            "answer": {
+              "numerator": 29,
+              "denominator": 48,
+              "value": 0.6041666666666666
+            },
+            "refuse": {
+              "numerator": 10,
+              "denominator": 24,
+              "value": 0.4166666666666667
+            },
+            "conflict": {
+              "numerator": 18,
+              "denominator": 24,
+              "value": 0.75
+            }
+          }
+        },
+        {
+          "pointer": "/slices/source_eval/old_author_reference_metrics/AB_agreement",
+          "value": {
+            "numerator": 43,
+            "denominator": 48,
+            "value": 0.8958333333333334
+          }
+        },
+        {
+          "pointer": "/slices/source_eval/new_author_reference_metrics/S_false_conflict",
+          "value": {
+            "numerator": 1,
+            "denominator": 24,
+            "value": 0.041666666666666664
+          }
+        },
+        {
+          "pointer": "/slices/source_eval/new_author_reference_metrics/K_false_conflict",
+          "value": {
+            "numerator": 0,
+            "denominator": 24,
+            "value": 0.0
+          }
+        },
+        {
+          "pointer": "/slices/source_eval/new_author_reference_metrics/recalls",
+          "value": {
+            "answer": {
+              "numerator": 36,
+              "denominator": 48,
+              "value": 0.75
+            },
+            "refuse": {
+              "numerator": 15,
+              "denominator": 24,
+              "value": 0.625
+            },
+            "conflict": {
+              "numerator": 11,
+              "denominator": 24,
+              "value": 0.4583333333333333
+            }
+          }
+        },
+        {
+          "pointer": "/slices/source_eval/new_author_reference_metrics/AB_agreement",
+          "value": {
+            "numerator": 43,
+            "denominator": 48,
+            "value": 0.8958333333333334
+          }
+        }
+      ]
+    },
+    {
+      "evidence_id": "E13",
+      "topic": "跨实体绑定行为",
+      "source": "docs/records/2026-10-21-behavior-binding-results.json",
+      "source_sha256": "e2dd51b4fdd59ebb1377a15200250b4642a293e7e881b6051c042e8d232f42d7",
+      "values": [
+        {
+          "pointer": "/by_condition/S",
+          "value": {
+            "cells": 24,
+            "bases": 12,
+            "fields": {
+              "has_substantive_target_answer": {
+                "eligible": 24,
+                "yes": 24,
+                "no": 0,
+                "unknown": 0,
+                "point": 1.0,
+                "identification_lower": 1.0,
+                "identification_upper": 1.0
+              },
+              "adopts_cell_distractor_value": {
+                "eligible": 24,
+                "yes": 0,
+                "no": 24,
+                "unknown": 0,
+                "point": 0.0,
+                "identification_lower": 0.0,
+                "identification_upper": 0.0
+              },
+              "supported_target_answer": {
+                "eligible": 24,
+                "yes": 24,
+                "no": 0,
+                "unknown": 0,
+                "point": 1.0,
+                "identification_lower": 1.0,
+                "identification_upper": 1.0
+              },
+              "acknowledges_insufficiency": {
+                "eligible": 24,
+                "yes": 0,
+                "no": 24,
+                "unknown": 0,
+                "point": 0.0,
+                "identification_lower": 0.0,
+                "identification_upper": 0.0
+              },
+              "claimed_evidence_supports_target": {
+                "eligible": 24,
+                "yes": 0,
+                "no": 0,
+                "unknown": 24,
+                "point": null,
+                "identification_lower": 0.0,
+                "identification_upper": 1.0
+              }
+            },
+            "acknowledgment_then_answer": {
+              "eligible": 24,
+              "yes": 0,
+              "no": 24,
+              "unknown": 0,
+              "point": 0.0,
+              "identification_lower": 0.0,
+              "identification_upper": 0.0
+            }
+          }
+        },
+        {
+          "pointer": "/by_condition/I",
+          "value": {
+            "cells": 24,
+            "bases": 12,
+            "fields": {
+              "has_substantive_target_answer": {
+                "eligible": 24,
+                "yes": 0,
+                "no": 24,
+                "unknown": 0,
+                "point": 0.0,
+                "identification_lower": 0.0,
+                "identification_upper": 0.0
+              },
+              "adopts_cell_distractor_value": {
+                "eligible": 24,
+                "yes": 0,
+                "no": 24,
+                "unknown": 0,
+                "point": 0.0,
+                "identification_lower": 0.0,
+                "identification_upper": 0.0
+              },
+              "supported_target_answer": {
+                "eligible": 24,
+                "yes": 0,
+                "no": 24,
+                "unknown": 0,
+                "point": 0.0,
+                "identification_lower": 0.0,
+                "identification_upper": 0.0
+              },
+              "acknowledges_insufficiency": {
+                "eligible": 24,
+                "yes": 24,
+                "no": 0,
+                "unknown": 0,
+                "point": 1.0,
+                "identification_lower": 1.0,
+                "identification_upper": 1.0
+              },
+              "claimed_evidence_supports_target": {
+                "eligible": 24,
+                "yes": 0,
+                "no": 0,
+                "unknown": 24,
+                "point": null,
+                "identification_lower": 0.0,
+                "identification_upper": 1.0
+              }
+            },
+            "acknowledgment_then_answer": {
+              "eligible": 24,
+              "yes": 0,
+              "no": 24,
+              "unknown": 0,
+              "point": 0.0,
+              "identification_lower": 0.0,
+              "identification_upper": 0.0
+            }
+          }
+        },
+        {
+          "pointer": "/paired_bases",
+          "value": {
+            "I_both_follow_cell_distractor": {
+              "eligible": 12,
+              "yes": 0,
+              "no": 12,
+              "unknown": 0,
+              "point": 0.0,
+              "identification_lower": 0.0,
+              "identification_upper": 0.0
+            },
+            "S_both_supported": {
+              "eligible": 12,
+              "yes": 12,
+              "no": 0,
+              "unknown": 0,
+              "point": 1.0,
+              "identification_lower": 1.0,
+              "identification_upper": 1.0
+            },
+            "I_neither_target_answer": {
+              "eligible": 12,
+              "yes": 12,
+              "no": 0,
+              "unknown": 0,
+              "point": 1.0,
+              "identification_lower": 1.0,
+              "identification_upper": 1.0
+            }
+          }
+        },
+        {
+          "pointer": "/unknown_fields",
+          "value": 48
+        }
+      ]
+    },
+    {
+      "evidence_id": "E14",
+      "topic": "原48旧L28补读",
+      "source": "docs/records/2026-10-21-behavior-binding-probe-results.json",
+      "source_sha256": "0844afc7a2142193a97e2df6cc67b0ca97c3c55d5cac56fb1d673e32998eebdf",
+      "values": [
+        {
+          "pointer": "/by_condition",
+          "value": {
+            "S": {
+              "cells": 24,
+              "matches_author_reference": 13,
+              "probe_distribution": {
+                "answer": 13,
+                "refuse": 0,
+                "conflict": 11
+              }
+            },
+            "I": {
+              "cells": 24,
+              "matches_author_reference": 0,
+              "probe_distribution": {
+                "answer": 24,
+                "refuse": 0,
+                "conflict": 0
+              }
+            }
+          }
+        },
+        {
+          "pointer": "/S_to_I",
+          "value": {
+            "pairs": 24,
+            "both_match": 0,
+            "category_changes": 11,
+            "mean_delta": {
+              "answer": 0.23787203726132936,
+              "refuse": 0.1065522741040727,
+              "conflict": -0.344424311365402
+            },
+            "refuse_probability_increases": 24
+          }
+        },
+        {
+          "pointer": "/I_behavior_by_probe/refuse",
+          "value": {
+            "eligible": 0,
+            "yes": 0,
+            "no": 0,
+            "unknown": 0,
+            "point": null,
+            "identification_lower": null,
+            "identification_upper": null
+          }
+        },
+        {
+          "pointer": "/citation_field",
+          "value": {
+            "eligible": 48,
+            "yes": 0,
+            "no": 0,
+            "unknown": 48,
+            "point": null,
+            "identification_lower": 0.0,
+            "identification_upper": 1.0
+          }
+        },
+        {
+          "pointer": "/actual_new_forwards",
+          "value": 48
+        }
+      ]
+    },
+    {
+      "evidence_id": "E15",
+      "topic": "校准前后定位",
+      "source": "docs/records/2026-10-21-probe-calibration-diagnostic.json",
+      "source_sha256": "43adcee4027e5e376237f670ac8f971b2bdd494d6cd725477e0d18ffa6bb2294",
+      "values": [
+        {
+          "pointer": "/datasets/binding48/raw/matches_author_reference",
+          "value": 18
+        },
+        {
+          "pointer": "/datasets/binding48/raw/confusion/refuse",
+          "value": {
+            "answer": 24,
+            "refuse": 0,
+            "conflict": 0
+          }
+        },
+        {
+          "pointer": "/datasets/binding48/calibrated/matches_author_reference",
+          "value": 13
+        },
+        {
+          "pointer": "/datasets/binding48/calibrated/confusion/refuse",
+          "value": {
+            "answer": 24,
+            "refuse": 0,
+            "conflict": 0
+          }
+        },
+        {
+          "pointer": "/datasets/transfer240/raw/matches_author_reference",
+          "value": 117
+        },
+        {
+          "pointer": "/datasets/transfer240/raw/confusion/refuse",
+          "value": {
+            "answer": 29,
+            "refuse": 16,
+            "conflict": 15
+          }
+        },
+        {
+          "pointer": "/datasets/transfer240/calibrated/matches_author_reference",
+          "value": 117
+        },
+        {
+          "pointer": "/datasets/transfer240/calibrated/confusion/refuse",
+          "value": {
+            "answer": 29,
+            "refuse": 16,
+            "conflict": 15
+          }
+        }
+      ]
+    },
+    {
+      "evidence_id": "E16",
+      "topic": "关系附着各格行为",
+      "source": "docs/records/2026-10-23-relation-attachment-results.json",
+      "source_sha256": "d24eda685b9683c4053609971dadeea3f3351bd8a0fdd4179b63ea2cbdb2b906",
+      "values": [
+        {
+          "pointer": "/by_condition",
+          "value": {
+            "TQ": {
+              "rows": 12,
+              "scenarios": 6,
+              "fields": {
+                "has_substantive_target_answer": {
+                  "eligible": 12,
+                  "yes": 12,
+                  "no": 0,
+                  "unknown": 0,
+                  "point": 1.0,
+                  "identification_lower": 1.0,
+                  "identification_upper": 1.0
+                },
+                "adopts_displayed_candidate_as_requested_target_value": {
+                  "eligible": 12,
+                  "yes": 12,
+                  "no": 0,
+                  "unknown": 0,
+                  "point": 1.0,
+                  "identification_lower": 1.0,
+                  "identification_upper": 1.0
+                },
+                "supported_target_answer": {
+                  "eligible": 12,
+                  "yes": 12,
+                  "no": 0,
+                  "unknown": 0,
+                  "point": 1.0,
+                  "identification_lower": 1.0,
+                  "identification_upper": 1.0
+                },
+                "acknowledges_missing_target_attribute": {
+                  "eligible": 12,
+                  "yes": 0,
+                  "no": 12,
+                  "unknown": 0,
+                  "point": 0.0,
+                  "identification_lower": 0.0,
+                  "identification_upper": 0.0
+                },
+                "claimed_evidence_supports_target": {
+                  "eligible": 12,
+                  "yes": 2,
+                  "no": 0,
+                  "unknown": 10,
+                  "point": null,
+                  "identification_lower": 0.16666666666666666,
+                  "identification_upper": 1.0
+                }
+              }
+            },
+            "OQ": {
+              "rows": 12,
+              "scenarios": 6,
+              "fields": {
+                "has_substantive_target_answer": {
+                  "eligible": 12,
+                  "yes": 0,
+                  "no": 12,
+                  "unknown": 0,
+                  "point": 0.0,
+                  "identification_lower": 0.0,
+                  "identification_upper": 0.0
+                },
+                "adopts_displayed_candidate_as_requested_target_value": {
+                  "eligible": 12,
+                  "yes": 0,
+                  "no": 12,
+                  "unknown": 0,
+                  "point": 0.0,
+                  "identification_lower": 0.0,
+                  "identification_upper": 0.0
+                },
+                "supported_target_answer": {
+                  "eligible": 12,
+                  "yes": 0,
+                  "no": 12,
+                  "unknown": 0,
+                  "point": 0.0,
+                  "identification_lower": 0.0,
+                  "identification_upper": 0.0
+                },
+                "acknowledges_missing_target_attribute": {
+                  "eligible": 12,
+                  "yes": 12,
+                  "no": 0,
+                  "unknown": 0,
+                  "point": 1.0,
+                  "identification_lower": 1.0,
+                  "identification_upper": 1.0
+                },
+                "claimed_evidence_supports_target": {
+                  "eligible": 12,
+                  "yes": 0,
+                  "no": 0,
+                  "unknown": 12,
+                  "point": null,
+                  "identification_lower": 0.0,
+                  "identification_upper": 1.0
+                }
+              }
+            },
+            "TA": {
+              "rows": 12,
+              "scenarios": 6,
+              "fields": {
+                "has_substantive_target_answer": {
+                  "eligible": 12,
+                  "yes": 0,
+                  "no": 12,
+                  "unknown": 0,
+                  "point": 0.0,
+                  "identification_lower": 0.0,
+                  "identification_upper": 0.0
+                },
+                "adopts_displayed_candidate_as_requested_target_value": {
+                  "eligible": 12,
+                  "yes": 0,
+                  "no": 12,
+                  "unknown": 0,
+                  "point": 0.0,
+                  "identification_lower": 0.0,
+                  "identification_upper": 0.0
+                },
+                "supported_target_answer": {
+                  "eligible": 12,
+                  "yes": 0,
+                  "no": 12,
+                  "unknown": 0,
+                  "point": 0.0,
+                  "identification_lower": 0.0,
+                  "identification_upper": 0.0
+                },
+                "acknowledges_missing_target_attribute": {
+                  "eligible": 12,
+                  "yes": 12,
+                  "no": 0,
+                  "unknown": 0,
+                  "point": 1.0,
+                  "identification_lower": 1.0,
+                  "identification_upper": 1.0
+                },
+                "claimed_evidence_supports_target": {
+                  "eligible": 12,
+                  "yes": 0,
+                  "no": 0,
+                  "unknown": 12,
+                  "point": null,
+                  "identification_lower": 0.0,
+                  "identification_upper": 1.0
+                }
+              }
+            },
+            "OA": {
+              "rows": 12,
+              "scenarios": 6,
+              "fields": {
+                "has_substantive_target_answer": {
+                  "eligible": 12,
+                  "yes": 0,
+                  "no": 12,
+                  "unknown": 0,
+                  "point": 0.0,
+                  "identification_lower": 0.0,
+                  "identification_upper": 0.0
+                },
+                "adopts_displayed_candidate_as_requested_target_value": {
+                  "eligible": 12,
+                  "yes": 0,
+                  "no": 12,
+                  "unknown": 0,
+                  "point": 0.0,
+                  "identification_lower": 0.0,
+                  "identification_upper": 0.0
+                },
+                "supported_target_answer": {
+                  "eligible": 12,
+                  "yes": 0,
+                  "no": 12,
+                  "unknown": 0,
+                  "point": 0.0,
+                  "identification_lower": 0.0,
+                  "identification_upper": 0.0
+                },
+                "acknowledges_missing_target_attribute": {
+                  "eligible": 12,
+                  "yes": 12,
+                  "no": 0,
+                  "unknown": 0,
+                  "point": 1.0,
+                  "identification_lower": 1.0,
+                  "identification_upper": 1.0
+                },
+                "claimed_evidence_supports_target": {
+                  "eligible": 12,
+                  "yes": 0,
+                  "no": 0,
+                  "unknown": 12,
+                  "point": null,
+                  "identification_lower": 0.0,
+                  "identification_upper": 1.0
+                }
+              }
+            }
+          }
+        },
+        {
+          "pointer": "/all_insufficient",
+          "value": {
+            "rows": 36,
+            "scenarios": 6,
+            "fields": {
+              "has_substantive_target_answer": {
+                "eligible": 36,
+                "yes": 0,
+                "no": 36,
+                "unknown": 0,
+                "point": 0.0,
+                "identification_lower": 0.0,
+                "identification_upper": 0.0
+              },
+              "adopts_displayed_candidate_as_requested_target_value": {
+                "eligible": 36,
+                "yes": 0,
+                "no": 36,
+                "unknown": 0,
+                "point": 0.0,
+                "identification_lower": 0.0,
+                "identification_upper": 0.0
+              },
+              "supported_target_answer": {
+                "eligible": 36,
+                "yes": 0,
+                "no": 36,
+                "unknown": 0,
+                "point": 0.0,
+                "identification_lower": 0.0,
+                "identification_upper": 0.0
+              },
+              "acknowledges_missing_target_attribute": {
+                "eligible": 36,
+                "yes": 36,
+                "no": 0,
+                "unknown": 0,
+                "point": 1.0,
+                "identification_lower": 1.0,
+                "identification_upper": 1.0
+              },
+              "claimed_evidence_supports_target": {
+                "eligible": 36,
+                "yes": 0,
+                "no": 0,
+                "unknown": 36,
+                "point": null,
+                "identification_lower": 0.0,
+                "identification_upper": 1.0
+              }
+            }
+          }
+        },
+        {
+          "pointer": "/unknown_fields",
+          "value": 46
+        }
+      ]
+    },
+    {
+      "evidence_id": "E17",
+      "topic": "TA减OA冻结主比较",
+      "source": "docs/records/2026-10-23-relation-attachment-results.json",
+      "source_sha256": "d24eda685b9683c4053609971dadeea3f3351bd8a0fdd4179b63ea2cbdb2b906",
+      "values": [
+        {
+          "pointer": "/primary",
+          "value": {
+            "scenarios": 6,
+            "paired_versions": 12,
+            "endpoints": 24,
+            "point": 0.0,
+            "identification_lower": 0.0,
+            "identification_upper": 0.0,
+            "interval_type": "Unknown-identification bounds, not a confidence interval",
+            "bootstrap_or_significance_test": false,
+            "control_success_filter": false
+          }
+        }
+      ]
+    },
+    {
+      "evidence_id": "E18",
+      "topic": "三条事后冲突及两个边界注记",
+      "source": "docs/records/2026-10-23-relation-attachment-results.json",
+      "source_sha256": "d24eda685b9683c4053609971dadeea3f3351bd8a0fdd4179b63ea2cbdb2b906",
+      "values": [
+        {
+          "pointer": "/posthoc_note_counts",
+          "value": {
+            "unsupported_conflict_statement": 3,
+            "overbroad_explanation": 1,
+            "existence_not_value": 1
+          }
+        },
+        {
+          "pointer": "/posthoc_qualitative_notes",
+          "value": [
+            {
+              "item_id": "R014",
+              "kind": "unsupported_conflict_statement",
+              "quote": "There is a conflict with the information provided about the inspection code for Unit U-352 being K-22280, but this does not pertain to the access code.",
+              "assessment": "输入只有一个inspection赋值，字段独立且无互斥目标答案；拒绝给access正确，但冲突说法无据。这是事后文本观察，不新增主终点。",
+              "id": "rel05_TA_v2",
+              "condition": "TA",
+              "output_citation": {
+                "start": 100,
+                "end": 251,
+                "quote": "There is a conflict with the information provided about the inspection code for Unit U-352 being K-22280, but this does not pertain to the access code.",
+                "text_sha256": "91c28794dff5a3c057090f6040bc8ea833155bd6a1a0c9f9b35e9f1b6bdf9ce4"
+              }
+            },
+            {
+              "item_id": "R016",
+              "kind": "unsupported_conflict_statement",
+              "quote": "There is a conflict between the provided data regarding the access codes for Units U-215 and U-757.",
+              "assessment": "不同单位与缺失目标值不构成互斥赋值；主行为不答，但解释多报冲突。",
+              "id": "rel03_OQ_v2",
+              "condition": "OQ",
+              "output_citation": {
+                "start": 328,
+                "end": 427,
+                "quote": "There is a conflict between the provided data regarding the access codes for Units U-215 and U-757.",
+                "text_sha256": "239f9e74cc64551e4c798e0bdec275be4d2f8c5027f899d2fc18516b15fb1c3f"
+              }
+            },
+            {
+              "item_id": "R027",
+              "kind": "unsupported_conflict_statement",
+              "quote": "There is a conflict between the information given about Unit U-215 and U-757.",
+              "assessment": "两个单位的信息是兼容事实且未给所问目标值，末句冲突说法无据。",
+              "id": "rel03_OA_v1",
+              "condition": "OA",
+              "output_citation": {
+                "start": 220,
+                "end": 297,
+                "quote": "There is a conflict between the information given about Unit U-215 and U-757.",
+                "text_sha256": "e5f86140c5ba423814615d35e979481956e16b6e87ed8b5a1b742f5b905e9080"
+              }
+            },
+            {
+              "item_id": "R022",
+              "kind": "overbroad_explanation",
+              "quote": "Inspection codes are not mentioned in the given information.",
+              "assessment": "若按所有inspection提及逐字理解则过宽，背景提到该字段；上下文已正确指出目标inspection值未给，不改变冻结主评分。",
+              "id": "rel06_TA_v2",
+              "condition": "TA",
+              "output_citation": {
+                "start": 191,
+                "end": 251,
+                "quote": "Inspection codes are not mentioned in the given information.",
+                "text_sha256": "bf697ba6e36aebd9bcc49573f6a57a73fb9249afdd1e8fb79dfb8885292da9b9"
+              }
+            },
+            {
+              "item_id": "R040",
+              "kind": "existence_not_value",
+              "quote": "we can infer that it must have an access code, though this specific code is not given in the provided documents.",
+              "assessment": "存在某个值不等于提出具体代码，所问值仍明确未知；不因infer一词自动判作答。",
+              "id": "rel03_TA_v2",
+              "condition": "TA",
+              "output_citation": {
+                "start": 207,
+                "end": 319,
+                "quote": "we can infer that it must have an access code, though this specific code is not given in the provided documents.",
+                "text_sha256": "0994d7d64e2ad9cfb7d3060db6862782ad9fb34d7ef8217a047482158339ced7"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "evidence_id": "E19",
+      "topic": "55条作者复核结果",
+      "source": "docs/review/2026-10-23-semantic-claims-author-v1/analysis-v2/report.json",
+      "source_sha256": "6a76120fe1deedc1f7127c88dd1d3a1b2bcfc5e334500a13bb410ef984576f62",
+      "values": [
+        {
+          "pointer": "/items",
+          "value": 55
+        },
+        {
+          "pointer": "/document_slots",
+          "value": 275
+        },
+        {
+          "pointer": "/unique_document_texts",
+          "value": 140
+        },
+        {
+          "pointer": "/sentence_units",
+          "value": 82
+        },
+        {
+          "pointer": "/claim_instances",
+          "value": 155
+        },
+        {
+          "pointer": "/input_judgment_counts",
+          "value": {
+            "insufficient": 20,
+            "answerable": 26,
+            "ambiguous": 9
+          }
+        },
+        {
+          "pointer": "/claim_judgment_counts",
+          "value": {
+            "supported": 101,
+            "unsupported": 34,
+            "ambiguous": 13,
+            "contradicted": 7
+          }
+        },
+        {
+          "pointer": "/groups",
+          "value": {
+            "new_3_explanation_cases": {
+              "items": 3,
+              "target_given": 0,
+              "target_support": {
+                "not_applicable": 3
+              },
+              "all_claims_supported": {
+                "no": 3
+              },
+              "explanation_claims_supported": {
+                "no": 3
+              }
+            },
+            "old_23_answer_anchors": {
+              "items": 23,
+              "target_given": 23,
+              "target_support": {
+                "unsupported": 15,
+                "ambiguous": 8
+              },
+              "all_claims_supported": {
+                "no": 17,
+                "unknown": 6
+              },
+              "explanation_claims_supported": {
+                "yes": 9,
+                "no": 11,
+                "not_applicable": 2,
+                "unknown": 1
+              }
+            },
+            "same_base_I_nonanswer_control": {
+              "items": 3,
+              "target_given": 0,
+              "target_support": {
+                "not_applicable": 3
+              },
+              "all_claims_supported": {
+                "yes": 1,
+                "unknown": 1,
+                "no": 1
+              },
+              "explanation_claims_supported": {
+                "yes": 1,
+                "unknown": 1,
+                "no": 1
+              }
+            },
+            "same_base_S_control": {
+              "items": 26,
+              "target_given": 24,
+              "target_support": {
+                "supported": 23,
+                "not_applicable": 2,
+                "unsupported": 1
+              },
+              "all_claims_supported": {
+                "yes": 21,
+                "no": 4,
+                "unknown": 1
+              },
+              "explanation_claims_supported": {
+                "yes": 15,
+                "not_applicable": 7,
+                "no": 3,
+                "unknown": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "evidence_id": "E20",
+      "topic": "复核身份与研究边界",
+      "source": "docs/review/2026-10-23-semantic-claims-author-v1/analysis-v2/report.json",
+      "source_sha256": "6a76120fe1deedc1f7127c88dd1d3a1b2bcfc5e334500a13bb410ef984576f62",
+      "values": [
+        {
+          "pointer": "/independent_semantic_approvals",
+          "value": 0
+        },
+        {
+          "pointer": "/formal_gate",
+          "value": false
+        },
+        {
+          "pointer": "/formal_labels_added",
+          "value": 0
+        },
+        {
+          "pointer": "/remaining_original_design_fits",
+          "value": 0
+        },
+        {
+          "pointer": "/held_out_380_accessed",
+          "value": false
+        },
+        {
+          "pointer": "/judgment_addendum",
+          "value": {
+            "created_at": "2026-10-23T07:15:00.252205+00:00",
+            "history_exposed": true,
+            "independent": false,
+            "reason": "本轮自查收紧反证标准：原文没有给Napoleon使用Waterloo的关系，但他使用Mont Saint-Jean并不逻辑排除他也用另一名称。因此记录为未支持，不断言外部为假或存在明确排他反证。",
+            "original_analysis_files_sha256": {
+              "docs/review/2026-10-23-semantic-claims-author-v1/analysis.json": "c1af5589af273e9e91ebf11574d6010a484aab097fbd1d67af01384bb5d8e157",
+              "docs/review/2026-10-23-semantic-claims-author-v1/rows.csv": "4ae3dfed9e99f4faca3db3097f40b46125ee8e569e23456599fd45b4701f730d",
+              "docs/review/2026-10-23-semantic-claims-author-v1/claims.csv": "e16ffa5048f6641be1430aef9ba8f4167edc3b0570b54cf9e78f3e0e25abefcc",
+              "docs/review/2026-10-23-semantic-claims-author-v1/claims.md": "1b0512f403636dd6874cb429d715a8134ba5929d39c25a806b528624337d20c3",
+              "docs/review/2026-10-23-semantic-claims-author-v1/reading-inventory.json": "93a8dff2f11b7e863f1871205d70d257d7e6e4b11562924a61d210a03eee3d7b"
+            },
+            "amendments": [
+              {
+                "claim_id": "Q055_C03",
+                "old_judgment": "contradicted",
+                "new_judgment": "unsupported",
+                "missing_link": "D1/D3只给Napoleon/法方使用Mont Saint-Jean及通常名Waterloo；没有Napoleon→Waterloo使用者关系。",
+                "ambiguity": "未给另一使用关系不逻辑蕴含从未使用；收紧为文本不支持，不判外部假。"
+              }
+            ],
+            "target_endpoint_changes": 0,
+            "original_files_overwritten": false
+          }
+        }
+      ]
+    },
+    {
+      "evidence_id": "E21",
+      "topic": "实际独立审查材料准备",
+      "source": "docs/review/2026-10-23-semantic-claims-v1/manifest.json",
+      "source_sha256": "713bd68f52dfa1708e95a19a47a6f86a323f0dd0af970c4fdeb9580c7cff0c29",
+      "values": [
+        {
+          "pointer": "/status",
+          "value": "prepared_not_independently_reviewed"
+        },
+        {
+          "pointer": "/items",
+          "value": 55
+        },
+        {
+          "pointer": "/counts",
+          "value": {
+            "same_base_I_nonanswer_control": 3,
+            "old_23_answer_anchors": 23,
+            "new_3_explanation_cases": 3,
+            "same_base_S_control": 26
+          }
+        },
+        {
+          "pointer": "/actual_independent_reviews",
+          "value": 0
+        },
+        {
+          "pointer": "/new_semantic_scores",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "evidence_id": "E22",
+      "topic": "作者复核技术核验",
+      "source": "docs/records/2026-10-23-semantic-claim-author-review-verification.json",
+      "source_sha256": "a7fc9eb2d2b9f6d114bd05e2bf1d78c0f055687235507e54832d78cd9f4fb2f7",
+      "values": [
+        {
+          "pointer": "/status",
+          "value": "author_review_arithmetic_and_reference_verified_not_independent_semantic_approval"
+        },
+        {
+          "pointer": "/source_files_unchanged",
+          "value": 59
+        },
+        {
+          "pointer": "/items",
+          "value": 55
+        },
+        {
+          "pointer": "/claim_instances",
+          "value": 155
+        },
+        {
+          "pointer": "/sentence_units_covered",
+          "value": 82
+        },
+        {
+          "pointer": "/document_citation_instances",
+          "value": 244
+        },
+        {
+          "pointer": "/independent_semantic_approvals",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "evidence_id": "E23",
+      "topic": "关键案例的原文与主张证据",
+      "source": "docs/review/2026-10-23-semantic-claims-author-v1/analysis-v2/report.json",
+      "source_sha256": "6a76120fe1deedc1f7127c88dd1d3a1b2bcfc5e334500a13bb410ef984576f62",
+      "values": [
+        {
+          "pointer": "/claims/11",
+          "value": {
+            "item_id": "Q004",
+            "claim_id": "Q004_C04",
+            "source_id": "rel03_OA_v1",
+            "source_sentence_unit": "U02",
+            "claim": "两单位已有信息之间存在冲突",
+            "judgment": "unsupported",
+            "role": "conflict",
+            "output_reference": {
+              "start": 220,
+              "end": 239,
+              "quote": "There is a conflict",
+              "text_sha256": "e5f86140c5ba423814615d35e979481956e16b6e87ed8b5a1b742f5b905e9080"
+            },
+            "document_support": [
+              {
+                "start": 0,
+                "end": 61,
+                "quote": "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+                "text_sha256": "e029b0edcb596831dbe46f86083b1ce0b098fa01c053ffd80245bb84e3999c9d",
+                "document_index": 1
+              },
+              {
+                "start": 0,
+                "end": 85,
+                "quote": "The inspection code assigned to Unit U-757 is K-23434. Unit U-215 has a ledger entry.",
+                "text_sha256": "081b841349818dc0277ddbc0a647e79d2b22e0da02ffb35c6c80473bf8894879",
+                "document_index": 2
+              },
+              {
+                "start": 0,
+                "end": 162,
+                "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+                "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+                "document_index": 3
+              }
+            ],
+            "missing_link": "未给出同实体同属性的不相容命题",
+            "ambiguity": "缺目标值与另一单位赋值可同时成立",
+            "all_five_documents_checked": true,
+            "history_exposed": true,
+            "independent": false
+          }
+        },
+        {
+          "pointer": "/claims/67",
+          "value": {
+            "item_id": "Q026",
+            "claim_id": "Q026_C02",
+            "source_id": "rel05_TA_v2",
+            "source_sentence_unit": "U02",
+            "claim": "已给inspection信息存在冲突",
+            "judgment": "unsupported",
+            "role": "conflict",
+            "output_reference": {
+              "start": 100,
+              "end": 119,
+              "quote": "There is a conflict",
+              "text_sha256": "91c28794dff5a3c057090f6040bc8ea833155bd6a1a0c9f9b35e9f1b6bdf9ce4"
+            },
+            "document_support": [
+              {
+                "start": 0,
+                "end": 162,
+                "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+                "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+                "document_index": 2
+              },
+              {
+                "start": 0,
+                "end": 85,
+                "quote": "The inspection code assigned to Unit U-352 is K-22280. Unit U-383 has a ledger entry.",
+                "text_sha256": "41044ecc25f8026a694dd40a0f9fc9f3d6195cf6bce13b2575ed338299f57892",
+                "document_index": 3
+              }
+            ],
+            "missing_link": "只给一个inspection赋值，没有互斥对",
+            "ambiguity": "未知access与inspection存在兼容",
+            "all_five_documents_checked": true,
+            "history_exposed": true,
+            "independent": false
+          }
+        },
+        {
+          "pointer": "/claims/147",
+          "value": {
+            "item_id": "Q052",
+            "claim_id": "Q052_C06",
+            "source_id": "rel03_OQ_v2",
+            "source_sentence_unit": "U03",
+            "claim": "U-215和U-757的access资料存在冲突",
+            "judgment": "unsupported",
+            "role": "conflict",
+            "output_reference": {
+              "start": 328,
+              "end": 347,
+              "quote": "There is a conflict",
+              "text_sha256": "239f9e74cc64551e4c798e0bdec275be4d2f8c5027f899d2fc18516b15fb1c3f"
+            },
+            "document_support": [
+              {
+                "start": 0,
+                "end": 61,
+                "quote": "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+                "text_sha256": "e029b0edcb596831dbe46f86083b1ce0b098fa01c053ffd80245bb84e3999c9d",
+                "document_index": 1
+              },
+              {
+                "start": 0,
+                "end": 81,
+                "quote": "The access code assigned to Unit U-757 is K-81486. Unit U-215 has a ledger entry.",
+                "text_sha256": "e933f1ea1b50425890077b969bddb228e507784dfd94576ba633674674c31953",
+                "document_index": 2
+              },
+              {
+                "start": 0,
+                "end": 162,
+                "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+                "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+                "document_index": 3
+              }
+            ],
+            "missing_link": "没有同单位同字段互斥赋值",
+            "ambiguity": "不同单位属性加一个未知可同时成立",
+            "all_five_documents_checked": true,
+            "history_exposed": true,
+            "independent": false
+          }
+        },
+        {
+          "pointer": "/claims/138",
+          "value": {
+            "item_id": "Q050",
+            "claim_id": "Q050_C02",
+            "source_id": "stv04_B_I",
+            "source_sentence_unit": "U01",
+            "claim": "未提供Dingzhou位置",
+            "judgment": "contradicted",
+            "role": "absence",
+            "output_reference": {
+              "start": 14,
+              "end": 82,
+              "quote": "do not provide information about the location of Luoding or Dingzhou",
+              "text_sha256": "7a4683451f564e9ad7fe2c53573fb75c8da246cd25f0f85fc08f9f77d578e8f0"
+            },
+            "document_support": [
+              {
+                "start": 0,
+                "end": 59,
+                "quote": "In northern China's Hebei province is the city of Dingzhou.",
+                "text_sha256": "add53e65dcbe8d3617341f572ab65fc08e091a5d5bfdf2e736ab212769c45e28",
+                "document_index": 5
+              }
+            ],
+            "missing_link": "D5明确Hebei/northern China",
+            "ambiguity": "不作答仍可附带错误解释",
+            "all_five_documents_checked": true,
+            "history_exposed": true,
+            "independent": false
+          }
+        },
+        {
+          "pointer": "/claims/149",
+          "value": {
+            "item_id": "Q053",
+            "claim_id": "Q053_C02",
+            "source_id": "stv04_B_S",
+            "source_sentence_unit": "U01",
+            "claim": "Dingzhou在Hebei北部",
+            "judgment": "unsupported",
+            "role": "target",
+            "output_reference": {
+              "start": 54,
+              "end": 92,
+              "quote": "Dingzhou is in northern Hebei province",
+              "text_sha256": "9d2fa59831488571191be768cd4d7ab408f379cbfcafda46918725ae2ca22832"
+            },
+            "document_support": [
+              {
+                "start": 0,
+                "end": 59,
+                "quote": "In northern China's Hebei province is the city of Dingzhou.",
+                "text_sha256": "add53e65dcbe8d3617341f572ab65fc08e091a5d5bfdf2e736ab212769c45e28",
+                "document_index": 5
+              }
+            ],
+            "missing_link": "D5的northern修饰China而非Hebei内部",
+            "ambiguity": "可能外部为真但提供文本未支持；保留原评分unknown不覆盖",
+            "all_five_documents_checked": true,
+            "history_exposed": true,
+            "independent": false
+          }
+        },
+        {
+          "pointer": "/claims/152",
+          "value": {
+            "item_id": "Q055",
+            "claim_id": "Q055_C01",
+            "source_id": "stv02_A_S",
+            "source_sentence_unit": "U01",
+            "claim": "所问通常名称为Waterloo",
+            "judgment": "supported",
+            "role": "target",
+            "output_reference": {
+              "start": 19,
+              "end": 42,
+              "quote": "by the name of Waterloo",
+              "text_sha256": "071c5b4caed066aa8aaab60a432b0e3e6d65a25abd35422cb74855d55fb9143f"
+            },
+            "document_support": [
+              {
+                "start": 0,
+                "end": 118,
+                "quote": "The military clash called the Battle of Mont Saint-Jean by Napoleon and the French is known as the Battle of Waterloo.",
+                "text_sha256": "42875490c7c67b5ea162aa456fb569c7edcb91f93655c0c3835a52b2f47d5077",
+                "document_index": 1
+              },
+              {
+                "start": 0,
+                "end": 119,
+                "quote": "The Battle of Waterloo was fought along the Mont Saint-Jean ridge; Mont Saint-Jean was the French name for that battle.",
+                "text_sha256": "e8a8aa914cb297b9ce566a58386ece283eaf6c5aeaa21376481c6185ede4e7e0",
+                "document_index": 3
+              }
+            ],
+            "missing_link": "无",
+            "ambiguity": "目标答案有据",
+            "all_five_documents_checked": true,
+            "history_exposed": true,
+            "independent": false
+          }
+        },
+        {
+          "pointer": "/claims/154",
+          "value": {
+            "item_id": "Q055",
+            "claim_id": "Q055_C03",
+            "source_id": "stv02_A_S",
+            "source_sentence_unit": "U01",
+            "claim": "Napoleon称此战为Waterloo",
+            "judgment": "unsupported",
+            "role": "attribution",
+            "output_reference": {
+              "start": 106,
+              "end": 147,
+              "quote": "called the Battle of Waterloo by Napoleon",
+              "text_sha256": "071c5b4caed066aa8aaab60a432b0e3e6d65a25abd35422cb74855d55fb9143f"
+            },
+            "document_support": [
+              {
+                "start": 0,
+                "end": 118,
+                "quote": "The military clash called the Battle of Mont Saint-Jean by Napoleon and the French is known as the Battle of Waterloo.",
+                "text_sha256": "42875490c7c67b5ea162aa456fb569c7edcb91f93655c0c3835a52b2f47d5077",
+                "document_index": 1
+              },
+              {
+                "start": 0,
+                "end": 119,
+                "quote": "The Battle of Waterloo was fought along the Mont Saint-Jean ridge; Mont Saint-Jean was the French name for that battle.",
+                "text_sha256": "e8a8aa914cb297b9ce566a58386ece283eaf6c5aeaa21376481c6185ede4e7e0",
+                "document_index": 3
+              }
+            ],
+            "missing_link": "D1/D3只给Napoleon/法方使用Mont Saint-Jean及通常名Waterloo；没有Napoleon→Waterloo使用者关系。",
+            "ambiguity": "未给另一使用关系不逻辑蕴含从未使用；收紧为文本不支持，不判外部假。",
+            "all_five_documents_checked": true,
+            "history_exposed": true,
+            "independent": false,
+            "judgment_addendum_source": "docs/review/2026-10-23-semantic-claims-author-v1/judgment-addendum.json"
+          }
+        }
+      ]
+    }
+  ],
+  "scope": "Exact saved values only; report rounding and interpretation are separately documented. No experiment replay or new analysis."
+}

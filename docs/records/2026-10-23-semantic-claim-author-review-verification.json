@@ -1,0 +1,39 @@
+{
+  "status": "author_review_arithmetic_and_reference_verified_not_independent_semantic_approval",
+  "verifier_sha256": "3b1f09842a97148709b79d51e57f1633ff343a408c1084fefbc7c43a52cbf5b9",
+  "current_report_sha256": "6a76120fe1deedc1f7127c88dd1d3a1b2bcfc5e334500a13bb410ef984576f62",
+  "source_files_unchanged": 59,
+  "items": 55,
+  "claim_instances": 155,
+  "sentence_units_covered": 82,
+  "document_slots": 275,
+  "document_citation_instances": 244,
+  "claim_counts": {
+    "supported": 101,
+    "unsupported": 34,
+    "ambiguous": 13,
+    "contradicted": 7
+  },
+  "input_counts": {
+    "insufficient": 20,
+    "answerable": 26,
+    "ambiguous": 9
+  },
+  "original_package_payloads_unchanged": 16,
+  "judgment_addenda": 1,
+  "independent_semantic_approvals": 0,
+  "new_model_calls": 0,
+  "new_fits": 0,
+  "held_out_380_accessed": false,
+  "checks": [
+    "manual155 plus explicit addendum",
+    "raw55 questions/answers",
+    "82 sentence coverage",
+    "output and document citations",
+    "55 target endpoints",
+    "group reductions",
+    "CSV exact fields",
+    "all sealed source hashes",
+    "original independent package unchanged"
+  ]
+}

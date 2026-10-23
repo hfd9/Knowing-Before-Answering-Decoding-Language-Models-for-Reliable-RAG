@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "scope": "55 saved items from semantic-claims-v1; no new sampling",
+  "authorization": "2026-10-23用户要求继续后续工作直到长期GPU；当前可执行项为有历史暴露的逐主张复核、离线连接与研究决策。",
+  "identity": {
+    "reviewer": "current_history_exposed_assistant",
+    "independent": false,
+    "prior_project_and_output_exposure": true,
+    "input_first_this_pass_does_not_erase_prior_exposure": true,
+    "independent_approvals_added": 0
+  },
+  "source_package": "docs/review/2026-10-23-semantic-claims-v1",
+  "new_review_directory": "docs/review/2026-10-23-semantic-claims-author-v1",
+  "process": [
+    "Read all 55 questions and all 275 document slots via 140 exact-text unique documents",
+    "Manually record and seal input judgments before current-pass output decomposition; disclose earlier output exposure",
+    "Read all 55 complete outputs and manually split separately assessable target, attribution, absence, conflict and other factual claims",
+    "Preserve exact output spans, document references, missing links, ambiguity and rationale for every claim",
+    "Join sealed sources only after claim judgments are saved; retain old judgments and blank independent templates",
+    "Compute descriptive counts and explicit old/new judgment differences without generalization or new significance testing"
+  ],
+  "input_values": ["answerable", "insufficient", "ambiguous"],
+  "claim_values": ["supported", "contradicted", "unsupported", "ambiguous", "not_applicable"],
+  "semantics": {
+    "supported": "Provided text entails claim, including explicitly stated ordinary equivalences; note reliance on linguistic inference",
+    "contradicted": "Provided text entails an incompatible claim in the same entity/relation/scope; overbroad absence or conflict assertions may be contradicted by the supplied compatible evidence",
+    "unsupported": "Claim is not entailed and no supplied incompatible proposition establishes its negation; missing evidence is not external falsity",
+    "ambiguous": "Reasonable interpretation, referent, scope or language-inference choices change support judgment",
+    "conflict": "Must specify incompatible propositions under matching entity, attribute and scope; unknown is not itself a conflict",
+    "coverage": "Every asserted factual/evidence-status content must be represented; one verbatim span may ground several separately judged propositions",
+    "separate_endpoints": "Specific target answer support and support of every explanation claim are evaluated separately; mixed rows remain mixed"
+  },
+  "forbidden_updates": ["original ratings", "independent reviewer blank forms", "formal labels", "fitted probes", "collection runs"],
+  "limits": {
+    "no_new_gpu_or_forward": true,
+    "no_new_collection_or_probe_reads": true,
+    "new_fits": 0,
+    "remaining_original_fit_budget": 0,
+    "held_out_380_sealed": true,
+    "formal_gate": false,
+    "no_patching": true,
+    "no_automatic_experiment_after_author_review": true,
+    "actual_independent_semantic_review_still_required_for_prior_gate": true
+  }
+}

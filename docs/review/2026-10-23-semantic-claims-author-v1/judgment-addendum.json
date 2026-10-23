@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-10-23T07:15:00.252205+00:00",
+  "history_exposed": true,
+  "independent": false,
+  "reason": "本轮自查收紧反证标准：原文没有给Napoleon使用Waterloo的关系，但他使用Mont Saint-Jean并不逻辑排除他也用另一名称。因此记录为未支持，不断言外部为假或存在明确排他反证。",
+  "original_analysis_files_sha256": {
+    "docs/review/2026-10-23-semantic-claims-author-v1/analysis.json": "c1af5589af273e9e91ebf11574d6010a484aab097fbd1d67af01384bb5d8e157",
+    "docs/review/2026-10-23-semantic-claims-author-v1/rows.csv": "4ae3dfed9e99f4faca3db3097f40b46125ee8e569e23456599fd45b4701f730d",
+    "docs/review/2026-10-23-semantic-claims-author-v1/claims.csv": "e16ffa5048f6641be1430aef9ba8f4167edc3b0570b54cf9e78f3e0e25abefcc",
+    "docs/review/2026-10-23-semantic-claims-author-v1/claims.md": "1b0512f403636dd6874cb429d715a8134ba5929d39c25a806b528624337d20c3",
+    "docs/review/2026-10-23-semantic-claims-author-v1/reading-inventory.json": "93a8dff2f11b7e863f1871205d70d257d7e6e4b11562924a61d210a03eee3d7b"
+  },
+  "amendments": [
+    {
+      "claim_id": "Q055_C03",
+      "old_judgment": "contradicted",
+      "new_judgment": "unsupported",
+      "missing_link": "D1/D3只给Napoleon/法方使用Mont Saint-Jean及通常名Waterloo；没有Napoleon→Waterloo使用者关系。",
+      "ambiguity": "未给另一使用关系不逻辑蕴含从未使用；收紧为文本不支持，不判外部假。"
+    }
+  ],
+  "target_endpoint_changes": 0,
+  "original_files_overwritten": false
+}

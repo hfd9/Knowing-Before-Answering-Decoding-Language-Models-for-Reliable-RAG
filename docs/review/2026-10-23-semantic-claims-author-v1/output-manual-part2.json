@@ -1,0 +1,89 @@
+{
+  "identity": "history_exposed_author_review_not_independent",
+  "items": {
+    "Q021": {"target": [false,"not_applicable","contradicted"], "claims": [
+      [1,"do not provide any information about the type of games Khet and Quarto are","文档未提供Khet游戏类型","contradicted",[2],"D2明确board game，否认信息存在与文本相反","原句同时谈两者，分别核验","absence"],
+      [1,"do not provide any information about the type of games Khet and Quarto are","文档未提供Quarto游戏类型","contradicted",[3],"D3明确board game","不能把拒答直接算有据","absence"],
+      [2,"There is a conflict","所给信息存在冲突","unsupported",[2,3,4],"没有指定同范围互斥命题；五篇已查","两游戏同类与背景其他游戏兼容","conflict"]]},
+    "Q022": {"target": [true,"supported","not_applicable"], "claims": [
+      [1,"better or improve it","ameliorate使bad状态变好/改善","supported",[2,3],"无","方向由文本定义","target"]]},
+    "Q023": {"target": [true,"supported","not_applicable"], "claims": [
+      [1,"caused by human modification of land surfaces","温差主要成因为人类改变地表","supported",[2],"无","回答未否认其他条件作用","target"],
+      [2,"Document 2, which directly states this as the main cause","D2直接给人类改变地表为main cause","supported",[2],"无","推理措辞不破坏直接支持","attribution"]]},
+    "Q024": {"target": [true,"ambiguous","not_applicable"], "claims": [
+      [1,"Khet is a board game","Khet是board game","ambiguous",[2],"无显式board标签","chess-like游戏的常识分类可能支持，不强制缺证","target"],
+      [1,"involving lasers and abstract strategy","Khet涉及lasers和abstract strategy","supported",[2],"无","两个属性分别明确","description"],
+      [1,"Quarto is a board game","Quarto是board game","supported",[3],"无","目标另一端有据","target"],
+      [1,"by two people","Quarto由两人玩","supported",[3],"无","two people与two players等价","description"],
+      [2,"Khet is an abstract strategy game","Khet属于抽象策略游戏描述","supported",[2],"无","involves abstract strategy与题干game的语言组合","target"],
+      [2,"Quarto is a board game","结尾再次说Quarto是board game","supported",[3],"无","重复主张实例，非独立事实","target"]]},
+    "Q025": {"target": [true,"unsupported","not_applicable"], "claims": [
+      [1,"season 2 has 22 episodes","第二季有22集","unsupported",[1,3,5],"22属于第一季，第二季无集数；五篇已查","季别范围不可交换","target"],
+      [1,"as stated in the first document","第一文档支持第二季22集","unsupported",[1],"D1数字指第一季","不把不同季数字存在认定目标支持","attribution"]]},
+    "Q026": {"target": [false,"not_applicable","supported"], "claims": [
+      [1,"do not contain any information about the access code assigned to Unit U-352","文档没有U-352具体access code","supported",[1,2,3],"字段值缺失；五篇已查","规则提及access字段不等于给具体值","absence"],
+      [2,"There is a conflict","已给inspection信息存在冲突","unsupported",[2,3],"只给一个inspection赋值，没有互斥对","未知access与inspection存在兼容","conflict"],
+      [2,"inspection code for Unit U-352 being K-22280","U-352的inspection code是K-22280","supported",[3],"无","引用事实本身有据，不认证conflict","description"],
+      [2,"does not pertain to the access code","inspection值不足以确定所问access值","supported",[2,3],"独立字段无值传递规则","不能将不相关解释为取值必不同","inference"]]},
+    "Q027": {"target": [true,"unsupported","not_applicable"], "claims": [
+      [1,"Sorry! is a board game","Sorry!是board game","unsupported",[2],"只有Pachisi基础，缺分类桥接","外部Pachisi常识另算","target"],
+      [1,"Barbarossa is a German-style board game","Barbarossa是German-style board game","supported",[4],"无","原句后半的否认不能擦除已有分类","target"],
+      [1,"do not specify the exact form of entertainment for Barbarossa","文档没有具体给Barbarossa娱乐形式","contradicted",[4],"D4已明确board game和plasticine shaping","若另要求未指明的更细类别需先限定；当前否认过宽","absence"],
+      [2,"Sorry! is a board game","结尾重复Sorry!为board game","unsupported",[2],"Therefore未补分类桥接","重复主张实例","target"],
+      [2,"Barbarossa is a German-style board game","结尾重复Barbarossa类型","supported",[4],"无","重复主张实例","target"]]},
+    "Q028": {"target": [true,"supported","not_applicable"], "claims": [
+      [1,"season 2 contains 25 episodes","第二季25集","supported",[3,5],"无","不同季背景另有范围","target"],
+      [1,"as stated in both Document 3 and Document 5","D3和D5均给第二季25集","supported",[3,5],"无","两条分别可回放","attribution"],
+      [1,"providing a clear and consistent answer","所问集数的两个来源相容","supported",[3,5],"无","限于目标集数，不声称所有背景外部真值正确","inference"]]},
+    "Q029": {"target": [true,"supported","not_applicable"], "claims": [
+      [1,"recorded by Tommy Roe","Tommy Roe录制1962年Sheila","supported",[1,5],"无","歌曲、年份与人物关系均给出","target"]]},
+    "Q030": {"target": [false,"not_applicable","contradicted"], "claims": [
+      [1,"do not provide information about the type of games Khet and Quarto are","所给文档未提供两游戏类型","contradicted",[2,3],"两文档均明确board game","这一合取否认两端均与文档相反","absence"],
+      [2,"There is no information about Khet","文档没有Khet信息","contradicted",[2],"D2给Khet名称、board类别、lasers和strategy","过宽否认","absence"],
+      [2,"Quarto is described as a board game","文档将Quarto描述为board game","supported",[3],"无","与前后否认冲突不改变此分句有据","description"],
+      [2,"its type is not specified","Quarto类型未给出","contradicted",[3],"board game就是所问类别","若另要求更细类别文中未限定","absence"]]},
+    "Q031": {"target": [true,"unsupported","not_applicable"], "claims": [
+      [1,"Luoding is located in China","Luoding在China","unsupported",[1,5],"D1只有行政级别，D5的China绑定Dingzhou","外部地点知识不计文档支持","target"],
+      [1,"specifically in Hebei Province, northern China","Luoding在Hebei/northern China","unsupported",[1,5],"地点关系属于Dingzhou，没有Luoding桥接","不能据不同实体赋值断言Luoding实际地点的外部真假","target"],
+      [1,"based on the information provided in Document 1 and Document 5","D1和D5支持把该位置赋给Luoding","unsupported",[1,5],"跨实体关系转移无依据","没有补出Dingzhou的位置回答","attribution"]]},
+    "Q032": {"target": [true,"supported","not_applicable"], "claims": [
+      [1,"chief river of Burma is the Irrawaddy or Ayeyarwady","主要河流为Irrawaddy/Ayeyarwady","supported",[1,4],"无","别名同河","target"],
+      [1,"as stated in Document 4","D4支持chief及两名","supported",[4],"无","原文属性完整","attribution"]]},
+    "Q033": {"target": [true,"unsupported","not_applicable"], "claims": [
+      [1,"caused by the urban heat island effect","以urban heat island现象名称解释该温差成因","unsupported",[2,4],"D4命名该温差，没有说明现象名是它自身的成因","输入的部分成因边界不认证同义复述成因","target"],
+      [1,"usually larger at night","温差通常夜间更大","supported",[4],"无","描述条件不是目标成因","description"],
+      [1,"most apparent when winds are weak","弱风时温差最明显","supported",[4],"无","相关条件按原文范围保持","description"],
+      [2,"not directly related to water content","现象与water content没有直接关系","unsupported",[1,2,4],"文档只分别定义/描述，未给排除关系","缺少关系信息不蕴含实际无关系；不作外部物理判断","inference"],
+      [2,"anthropomorphism as described in the documents","现象与anthropomorphism没有直接关系","unsupported",[2,3,4],"定义另主题未明说排除因果或直接关系","语义主题不同不足以自动认证所有无关性断言","inference"]]},
+    "Q034": {"target": [true,"supported","not_applicable"], "claims": [
+      [1,"bad, better","ameliorate改善bad状态","supported",[2,3],"无","better与more tolerable同向","target"],
+      [2,"supported by Document 3","D3的more tolerable支持改善方向","supported",[3],"无","词义同向推理","attribution"],
+      [2,"More tolerable conditions are what the verb ameliorate describes when the initial situation is bad.","所引D3原文匹配","supported",[3],"无","支持和引用匹配分别核验","attribution"]]},
+    "Q035": {"target": [true,"ambiguous","not_applicable"], "claims": [
+      [1,"caused by weak winds","弱风是温差成因","ambiguous",[2,4],"D4只说使差异更明显，未给产生温差主要机制","题干未限定main cause，部分因果和条件范围需保留","target"],
+      [1,"as mentioned in Document 4","D4支持把弱风作用称为所问成因","ambiguous",[4],"make most apparent是否足以桥接成因未定","不能只按因果词出现判充分","attribution"],
+      [2,"makes the urban heat island effect more apparent","弱风使现象更明显","supported",[4],"无","D4有make most apparent","description"],
+      [2,"a larger temperature difference at night","温差通常夜间更大","supported",[4],"无","限于夜间比较本身","description"],
+      [2,"leading to a larger temperature difference at night","弱风使之明显进而导致夜间差异更大","unsupported",[4],"文档分别给两个条件，没有这种串联因果","两个有据分句不自动支持连接词的因果","inference"]]},
+    "Q036": {"target": [true,"supported","not_applicable"], "claims": [
+      [1,"capital of Ohio is Columbus","Ohio首府为Columbus","supported",[3,5],"无","目标关系明确","target"],
+      [1,"as stated in Document 3","D3直接给首府关系","supported",[3],"无","原文可回放","attribution"]]},
+    "Q037": {"target": [true,"ambiguous","not_applicable"], "claims": [
+      [1,"Khet is a board game","Khet为board game","ambiguous",[2],"没有显式board分类","chess-like及题干games允许普通分类推理","target"],
+      [1,"chess-like rules and lasers","Khet描述涉及chess-like和lasers","supported",[2],"无","rules是chess-like玩法的普通转述，不认证board分类","description"],
+      [1,"Quarto is explicitly stated to be a board game for two players","Quarto明确是两人board game","supported",[3],"无","两个属性均给出","target"],
+      [2,"Khet and Quarto are both board games","两者共同属于board games","ambiguous",[2,3],"Khet类别仍需推导","Quarto端明确不消除Khet推导边界","target"]]},
+    "Q038": {"target": [true,"supported","not_applicable"], "claims": [
+      [1,"Sorry! is a board game","Sorry!是board game","supported",[2],"无","原类别明确","target"],
+      [1,"Barbarossa is a German-style board game","Barbarossa是German-style board game","supported",[4],"无","塑形描述兼容","target"],
+      [1,"both forms of entertainment","两游戏均为娱乐形式","supported",[2,4],"无","game到entertainment为普通类别语言理解","description"]]},
+    "Q039": {"target": [true,"supported","not_applicable"], "claims": [
+      [1,"is sashimi","所述生鱼菜肴名为sashimi","supported",[3,5],"无","命名关系完整","target"]]},
+    "Q040": {"target": [true,"unsupported","not_applicable"], "claims": [
+      [1,"We know this battle as the Battle of Mont Saint-Jean","用已给法方名称回答所问通常名","unsupported",[1,3],"未给通常名称对应；五篇已查","名称本身出现不等于完成转换","target"],
+      [1,"as stated in Document 1","D1确给法方名称Mont Saint-Jean","supported",[1],"无","仅支持法方名称事实","attribution"],
+      [2,"This name is also used in Document 3","D3也使用同一个名称","ambiguous",[3],"D3写的是Mont Saint-Jean ridge，未以完整battle名命名","若指字符串可成立，若指战役命名则无据","attribution"],
+      [2,"it was fought along the Mont Saint-Jean ridge","战役在Mont Saint-Jean山脊交战","supported",[3],"无","地点关系明确","description"],
+      [3,"There is no conflicting information provided in the documents","提供文档没有所问名称的互斥赋值","supported",[1,3],"无；五篇已查","兼容不代表有通常名映射","conflict"]]}
+  }
+}
