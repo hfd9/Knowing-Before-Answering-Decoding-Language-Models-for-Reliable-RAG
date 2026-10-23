@@ -1,0 +1,6 @@
+item_id,id,condition,kind,quote,assessment
+R014,rel05_TA_v2,TA,unsupported_conflict_statement,"There is a conflict with the information provided about the inspection code for Unit U-352 being K-22280, but this does not pertain to the access code.",输入只有一个inspection赋值，字段独立且无互斥目标答案；拒绝给access正确，但冲突说法无据。这是事后文本观察，不新增主终点。
+R016,rel03_OQ_v2,OQ,unsupported_conflict_statement,There is a conflict between the provided data regarding the access codes for Units U-215 and U-757.,不同单位与缺失目标值不构成互斥赋值；主行为不答，但解释多报冲突。
+R027,rel03_OA_v1,OA,unsupported_conflict_statement,There is a conflict between the information given about Unit U-215 and U-757.,两个单位的信息是兼容事实且未给所问目标值，末句冲突说法无据。
+R022,rel06_TA_v2,TA,overbroad_explanation,Inspection codes are not mentioned in the given information.,若按所有inspection提及逐字理解则过宽，背景提到该字段；上下文已正确指出目标inspection值未给，不改变冻结主评分。
+R040,rel03_TA_v2,TA,existence_not_value,"we can infer that it must have an access code, though this specific code is not given in the provided documents.",存在某个值不等于提出具体代码，所问值仍明确未知；不因infer一词自动判作答。

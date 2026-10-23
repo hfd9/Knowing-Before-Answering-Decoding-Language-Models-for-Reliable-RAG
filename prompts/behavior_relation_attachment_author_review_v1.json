@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "status": "full48_author_review_complete_before_generation",
+  "history_exposed": true,
+  "independent_gold": false,
+  "approved_for_training": false,
+  "reviewer": "Current assistant exposed to AGENTS/project history/old judgments/old outputs; not independent",
+  "reading": "Read all48 full questions and240 document slots across two displayed batches of preparation-inputs.md;57 unique document texts. Reviewed each scenario at both code variants and all four entity/field cells.",
+  "materials_sha256": "9df613c0e94807ad6c919defdffe5b815965554c9ffc4ef775272bb2e462bee1",
+  "reading_inventory_sha256": "a092100e5fffb817383a3460b80e88960c5281f77091aeda2082f1230a2f5c09",
+  "reviewed_ids": [
+    "rel01_TQ_v1",
+    "rel01_TQ_v2",
+    "rel01_OQ_v1",
+    "rel01_OQ_v2",
+    "rel01_TA_v1",
+    "rel01_TA_v2",
+    "rel01_OA_v1",
+    "rel01_OA_v2",
+    "rel02_TQ_v1",
+    "rel02_TQ_v2",
+    "rel02_OQ_v1",
+    "rel02_OQ_v2",
+    "rel02_TA_v1",
+    "rel02_TA_v2",
+    "rel02_OA_v1",
+    "rel02_OA_v2",
+    "rel03_TQ_v1",
+    "rel03_TQ_v2",
+    "rel03_OQ_v1",
+    "rel03_OQ_v2",
+    "rel03_TA_v1",
+    "rel03_TA_v2",
+    "rel03_OA_v1",
+    "rel03_OA_v2",
+    "rel04_TQ_v1",
+    "rel04_TQ_v2",
+    "rel04_OQ_v1",
+    "rel04_OQ_v2",
+    "rel04_TA_v1",
+    "rel04_TA_v2",
+    "rel04_OA_v1",
+    "rel04_OA_v2",
+    "rel05_TQ_v1",
+    "rel05_TQ_v2",
+    "rel05_OQ_v1",
+    "rel05_OQ_v2",
+    "rel05_TA_v1",
+    "rel05_TA_v2",
+    "rel05_OA_v1",
+    "rel05_OA_v2",
+    "rel06_TQ_v1",
+    "rel06_TQ_v2",
+    "rel06_OQ_v1",
+    "rel06_OQ_v2",
+    "rel06_TA_v1",
+    "rel06_TA_v2",
+    "rel06_OA_v1",
+    "rel06_OA_v2"
+  ],
+  "author_support_counts": {
+    "answer": 12,
+    "refuse": 36
+  },
+  "scenario_judgments": [
+    {
+      "scenario": "rel01",
+      "target": "U-317",
+      "other": "U-682",
+      "query": "access code",
+      "values": [
+        "K-24173",
+        "K-85629"
+      ],
+      "candidate_slot": 1,
+      "judgment": "TQ在D1直接给U-317的access。OQ给U-682的access；TA给U-317的inspection；OA给U-682的inspection。后三格不确定所问access，D3明确字段独立且允许同值。"
+    },
+    {
+      "scenario": "rel02",
+      "target": "U-946",
+      "other": "U-153",
+      "query": "inspection code",
+      "values": [
+        "K-76418",
+        "K-32865"
+      ],
+      "candidate_slot": 4,
+      "judgment": "TQ在D4直接给U-946的inspection。OQ给U-153的inspection；TA给U-946的access；OA给U-153的access。D2明确字段独立，后三格未给所问目标关系。"
+    },
+    {
+      "scenario": "rel03",
+      "target": "U-215",
+      "other": "U-757",
+      "query": "access code",
+      "values": [
+        "K-23434",
+        "K-81486"
+      ],
+      "candidate_slot": 2,
+      "judgment": "TQ在D2给U-215的access，两版本均直接支持。OQ属于U-757；TA是U-215的inspection；OA是U-757的inspection。D3允许目标access与候选相同或不同。"
+    },
+    {
+      "scenario": "rel04",
+      "target": "U-862",
+      "other": "U-125",
+      "query": "inspection code",
+      "values": [
+        "K-87402",
+        "K-21395"
+      ],
+      "candidate_slot": 5,
+      "judgment": "TQ在D5给U-862的inspection。OQ将inspection赋给U-125；TA给U-862的access；OA给U-125的access，均不提供所问关系。D2未要求字段取不同值。"
+    },
+    {
+      "scenario": "rel05",
+      "target": "U-352",
+      "other": "U-383",
+      "query": "access code",
+      "values": [
+        "K-14165",
+        "K-22280"
+      ],
+      "candidate_slot": 3,
+      "judgment": "TQ在D3给U-352的access。OQ给U-383的access；TA给U-352的inspection；OA给U-383的inspection。近似数字单位名仍逐字明确，不因名称近似换题；D2允许同值，I不确定。"
+    },
+    {
+      "scenario": "rel06",
+      "target": "U-330",
+      "other": "U-243",
+      "query": "inspection code",
+      "values": [
+        "K-76240",
+        "K-40497"
+      ],
+      "candidate_slot": 1,
+      "judgment": "TQ在D1给U-330的inspection。OQ给U-243的inspection；TA给U-330的access；OA给U-243的access。D3声明字段独立，后三格无确定目标inspection。"
+    }
+  ],
+  "checks": [
+    "OnlyTQ assigns candidate to queried target field;OQ/TA/OA leave it undetermined.",
+    "Shared independence rule permits code equality; I worlds are compatible completions, not hidden true targets.",
+    "Redundant ledger clause does not change substantive support; primary entity swaps preserve word/number multisets.",
+    "No alias, normative modality, multiple requested targets or enumeration scope.",
+    "Explicit rule and single template may make refusal easy; no natural-document/old error root-cause claim."
+  ],
+  "independent_semantic_approvals": 0,
+  "original_fit_budget_remaining": 0,
+  "new_behavior_ratings": 0,
+  "held_out380_accessed": false
+}

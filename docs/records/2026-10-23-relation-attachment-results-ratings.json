@@ -1,0 +1,1809 @@
+{
+  "reviewer": "Current assistant; author materials, AGENTS, history and technical collection/log counts exposed",
+  "history_exposed": true,
+  "independent_gold": false,
+  "packet_sha256": "7f0ab767d002a845b8e3563809d5779998470e296238504bc00643bbbd10efb3",
+  "judgment_seal_sha256": "e891b5e2cb11de3a83bf9d79566b0bdf0bad3d0ee62dd9f940b7f284d3737976",
+  "ratings": [
+    {
+      "item_id": "R043",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_displayed_candidate_as_requested_target_value": "yes",
+      "supported_target_answer": "yes",
+      "acknowledges_missing_target_attribute": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "给U-317的access K-24173，D1直接支持；泛称records，具体归属未知。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-317 is K-24173. Unit U-682 has a ledger entry.",
+          "text_sha256": "0e05f2297dee7e1b3aa2f480ebf131c198a0023653a3a26727c1f41290065bd2",
+          "document_index": 1
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-317 is K-24173.",
+          "text_sha256": "6d595d97081670b1fa210351a84a308ca86bb56230586d8eaa3670a2b99405cc"
+        }
+      ]
+    },
+    {
+      "item_id": "R004",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_displayed_candidate_as_requested_target_value": "yes",
+      "supported_target_answer": "yes",
+      "acknowledges_missing_target_attribute": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "采用U-317的K-85629为access，D1直接支持；泛称records，没有具体文档归属，末字段未知。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-317 is K-85629. Unit U-682 has a ledger entry.",
+          "text_sha256": "9ba28a839e96b434a4cf10a71203e448a489326066097be394df96058557eb8f",
+          "document_index": 1
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-317 is K-85629.",
+          "text_sha256": "72777775e3647f96a1af885ea1828510eed05239f1bf5b9c696b881a21d30c5a"
+        }
+      ]
+    },
+    {
+      "item_id": "R029",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "说明记录未给U-317 access，不提供目标代码。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-682 is K-24173. Unit U-317 has a ledger entry.",
+          "text_sha256": "7190a380c5fb761d0350145483b7efd18f484f230e377b7f29f22f9c3c14f41d",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-317 has a ledger entry. Unit U-682 has a ledger entry.",
+          "text_sha256": "46341c462940090cca222416b37ff9ebce3b253b83ec981b37b236d03b12f42c",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 190,
+          "quote": "According to the provided records, Unit U-317 has a ledger entry, but there is no specific access code assigned to it. The access code for Unit U-317 is not mentioned in the given documents.",
+          "text_sha256": "69a4e0bc0534235a28fdc477a9af5c716885da11cb39e1591c9dc7b3bdbe49fb"
+        }
+      ]
+    },
+    {
+      "item_id": "R038",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "将K-85629正确归U-682并明确不适用于U-317，承认所问目标缺失，不采用。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-682 is K-85629. Unit U-317 has a ledger entry.",
+          "text_sha256": "d8463d449faa2f4575be966e2326e6e9cf2705e80efc2d6770db755e6d57ef8f",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-317 has a ledger entry. Unit U-682 has a ledger entry.",
+          "text_sha256": "46341c462940090cca222416b37ff9ebce3b253b83ec981b37b236d03b12f42c",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 209,
+          "quote": "According to the provided records, Unit U-317 has a ledger entry, but there is no specific access code assigned to it. The access code for Unit U-682 is given as K-85629, but this does not apply to Unit U-317.",
+          "text_sha256": "81367d1da1e698d746b23cde65147bc53142b1563c930a772a260b3627526379"
+        }
+      ]
+    },
+    {
+      "item_id": "R032",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确K-24173是U-317的inspection，所问access未给；没有目标答案。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-317 is K-24173. Unit U-682 has a ledger entry.",
+          "text_sha256": "c65fe1ccd496e5449b14a0bfdff11afbbee04050b9189b37f76700bc8b342f1e",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-317 has a ledger entry. Unit U-682 has a ledger entry.",
+          "text_sha256": "46341c462940090cca222416b37ff9ebce3b253b83ec981b37b236d03b12f42c",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 201,
+          "quote": "The provided documents do not contain the access code assigned to Unit U-317. They only mention that Unit U-317 has a ledger entry and an inspection code of K-24173, but do not provide the access code.",
+          "text_sha256": "6f89c64075cba5a29b9c6d7012896c433e4ae3012c36e825b2c9fb4e7b141454"
+        }
+      ]
+    },
+    {
+      "item_id": "R018",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "区分U-317的inspection K-85629与未给access，明确不足，没有目标代码猜测。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-317 is K-85629. Unit U-682 has a ledger entry.",
+          "text_sha256": "297773e813d350e11e3be9c6bf66f49a49564d393bf4c10cf5ec6c158adc700c",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-317 has a ledger entry. Unit U-682 has a ledger entry.",
+          "text_sha256": "46341c462940090cca222416b37ff9ebce3b253b83ec981b37b236d03b12f42c",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 210,
+          "quote": "The provided documents do not contain the access code assigned to Unit U-317. The documents only mention that Unit U-317 has a ledger entry and an inspection code of K-85629, but do not provide the access code.",
+          "text_sha256": "c6509766f0c1592d04b202f590b3eb8bf557698cf27529b4ade764ff662ce01f"
+        }
+      ]
+    },
+    {
+      "item_id": "R028",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "仅复述U-682的inspection K-24173，明确U-317 access未给，不采用。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-682 is K-24173. Unit U-317 has a ledger entry.",
+          "text_sha256": "518cfb033a7a3941cbb5bcd31256107d7574a3ca89a44874e93ea3929eb5ca94",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-317 has a ledger entry. Unit U-682 has a ledger entry.",
+          "text_sha256": "46341c462940090cca222416b37ff9ebce3b253b83ec981b37b236d03b12f42c",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 273,
+          "quote": "According to the provided records, Unit U-317 has a ledger entry, but there is no specific access code assigned to it. The documents only mention an inspection code for Unit U-682 (K-24173) and a ledger entry for Unit U-317, without providing an access code for Unit U-317.",
+          "text_sha256": "8c26a4d82e5f5c2e07e3092197a00dd8b4c84dc6c1a2d5375e18d2b18860823b"
+        }
+      ]
+    },
+    {
+      "item_id": "R012",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "按records说明U-317有ledger但access值没提供，不给代码；no specific code assigned在全文语境中是记录未给，不当作确定现实无代码。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-682 is K-85629. Unit U-317 has a ledger entry.",
+          "text_sha256": "b65e6b8b89f4720d182949a924402b202dab5cbfb0d8858f114ccef000037c98",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-317 has a ledger entry. Unit U-682 has a ledger entry.",
+          "text_sha256": "46341c462940090cca222416b37ff9ebce3b253b83ec981b37b236d03b12f42c",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 201,
+          "quote": "According to the provided records, Unit U-317 has a ledger entry, but there is no specific access code assigned to it. The documents only mention that Unit U-317 has a ledger entry, not an access code.",
+          "text_sha256": "8d321ece7b8f1f52718e7424d2160d30279c576797328aa11de30395e79f0cb0"
+        }
+      ]
+    },
+    {
+      "item_id": "R008",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_displayed_candidate_as_requested_target_value": "yes",
+      "supported_target_answer": "yes",
+      "acknowledges_missing_target_attribute": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "给U-946的inspection K-76418，D4直接支持；泛称records，具体归属未知。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-946 is K-76418. Unit U-153 has a ledger entry.",
+          "text_sha256": "89784ef53128df1ea2cd871b86a9b3d44f3ad00e74b061e665081e6d6647015e",
+          "document_index": 4
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 89,
+          "quote": "According to the provided records, the inspection code assigned to Unit U-946 is K-76418.",
+          "text_sha256": "b9ba5561c0ad601a197974734d500daafbad511988e3dd08b38966f99757d191"
+        }
+      ]
+    },
+    {
+      "item_id": "R024",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_displayed_candidate_as_requested_target_value": "yes",
+      "supported_target_answer": "yes",
+      "acknowledges_missing_target_attribute": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "给U-946的inspection K-32865，D4支持；泛称records不计具体归属成功或失败。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-946 is K-32865. Unit U-153 has a ledger entry.",
+          "text_sha256": "7ce01dbaa90ed16c083b9af0312ed5cd533955a3ac5b71580c7f7220e4795b2c",
+          "document_index": 4
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 89,
+          "quote": "According to the provided records, the inspection code assigned to Unit U-946 is K-32865.",
+          "text_sha256": "01044d0333fe15d511397cea9d99ba12fd1343c3fd5909d0ecaf6185de17b42f"
+        }
+      ]
+    },
+    {
+      "item_id": "R037",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "虽点名D4/D1，但明确K-76418属于U-153，不告知U-946代码；没有目标代码采用，末字段按规则仍未知而非引用支持成功。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-946 has a ledger entry. Unit U-153 has a ledger entry.",
+          "text_sha256": "19f97ce0eea43456b282f7b83e3989a77210c9571f2a3ec66ea622bbb537f837",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-153 is K-76418. Unit U-946 has a ledger entry.",
+          "text_sha256": "383d2ea5f08090027625613e75e97dcd391436b21350c7fc1d5b2ddd1b222259",
+          "document_index": 4
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 322,
+          "quote": "The inspection code assigned to Unit U-946 is not provided in the given records. According to Document 4, the inspection code for Unit U-153 is K-76418, but this does not directly inform us about Unit U-946. Document 1 mentions that Unit U-946 has a ledger entry, but it does not specify the inspection code for this unit.",
+          "text_sha256": "07ca970bf6fcc6c3bcbd176afb19dad0e1756bdc9ab4daffc0f1574c40fec3b1"
+        }
+      ]
+    },
+    {
+      "item_id": "R047",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确K-32865属于U-153，不能确定U-946 inspection，不采用。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-946 has a ledger entry. Unit U-153 has a ledger entry.",
+          "text_sha256": "19f97ce0eea43456b282f7b83e3989a77210c9571f2a3ec66ea622bbb537f837",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-153 is K-32865. Unit U-946 has a ledger entry.",
+          "text_sha256": "af8cd6e9c10ce8cafbb83148c45787f6b507210477403ff8d5cf79a7ca5715e0",
+          "document_index": 4
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 195,
+          "quote": "The inspection code assigned to Unit U-946 is not provided in the given records. Inspection code K-32865 is assigned to Unit U-153, but there is no information about Unit U-946's inspection code.",
+          "text_sha256": "cdb418bc53d309fe978325896e836130de64cc0d1fe27bf477f4e6f4a4295d96"
+        }
+      ]
+    },
+    {
+      "item_id": "R033",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "U-946 inspection未给时不答，不采用同实体access K-76418。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-946 has a ledger entry. Unit U-153 has a ledger entry.",
+          "text_sha256": "19f97ce0eea43456b282f7b83e3989a77210c9571f2a3ec66ea622bbb537f837",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-946 is K-76418. Unit U-153 has a ledger entry.",
+          "text_sha256": "376e2703d4e13fe898f70b00257b8d968bd7bbd3530e6aa42ea7c494d8ffd062",
+          "document_index": 4
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 147,
+          "quote": "The provided records do not contain an inspection code assigned to Unit U-946. Inspection code information is not available in the given documents.",
+          "text_sha256": "4d967d634f152c2126276a12d37e306b1c3ef017efec28780c2d938939b56630"
+        }
+      ]
+    },
+    {
+      "item_id": "R025",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确没有U-946的inspection代码，不把该单位access K-32865用于所问属性。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-946 has a ledger entry. Unit U-153 has a ledger entry.",
+          "text_sha256": "19f97ce0eea43456b282f7b83e3989a77210c9571f2a3ec66ea622bbb537f837",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-946 is K-32865. Unit U-153 has a ledger entry.",
+          "text_sha256": "4adde6398524cd46665f786f339370bc72f784238844de41d8955d63deb47f79",
+          "document_index": 4
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 147,
+          "quote": "The provided records do not contain an inspection code assigned to Unit U-946. Inspection code information is not available in the given documents.",
+          "text_sha256": "4d967d634f152c2126276a12d37e306b1c3ef017efec28780c2d938939b56630"
+        }
+      ]
+    },
+    {
+      "item_id": "R048",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确未给U-946 inspection，不把另一单位access K-76418挪用。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-946 has a ledger entry. Unit U-153 has a ledger entry.",
+          "text_sha256": "19f97ce0eea43456b282f7b83e3989a77210c9571f2a3ec66ea622bbb537f837",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-153 is K-76418. Unit U-946 has a ledger entry.",
+          "text_sha256": "70f486d79ddd511b438479ddb217d7ac819d27eb665d939a24cf2285de013e94",
+          "document_index": 4
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 178,
+          "quote": "The provided records do not contain an inspection code specifically assigned to Unit U-946. There is no information about an inspection code for this unit in the given documents.",
+          "text_sha256": "829c3433aaafbc3c70bc7e430463ea34991cbea9c995985223343e3e8162fde8"
+        }
+      ]
+    },
+    {
+      "item_id": "R003",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确缺U-946的inspection值，不给代码；D4另一单位access值未挪用。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-946 has a ledger entry. Unit U-153 has a ledger entry.",
+          "text_sha256": "19f97ce0eea43456b282f7b83e3989a77210c9571f2a3ec66ea622bbb537f837",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-153 is K-32865. Unit U-946 has a ledger entry.",
+          "text_sha256": "2ecf9b09149eb73cd78778bb35fc7f29b9b0706be9a8a75739dff03fd8b02b56",
+          "document_index": 4
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 179,
+          "quote": "The provided records do not contain an inspection code specifically assigned to Unit U-946. There is no information about an inspection code for Unit U-946 in the given documents.",
+          "text_sha256": "76404a7891c0274d13e697b221010468284352a52884e084f9f2186f24ec13bb"
+        }
+      ]
+    },
+    {
+      "item_id": "R010",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_displayed_candidate_as_requested_target_value": "yes",
+      "supported_target_answer": "yes",
+      "acknowledges_missing_target_attribute": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "给U-215的access K-23434，D2支持；泛称records，引用归属未知。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-215 is K-23434. Unit U-757 has a ledger entry.",
+          "text_sha256": "ac7cccfde99269369ccde620c2f9c29aaa86a0eb3f21c0a82783bb95e1acb77b",
+          "document_index": 2
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-215 is K-23434.",
+          "text_sha256": "22b2a253de9bc2afd924e13c85d43d8633f7776874b9915cb89239dd61023e21"
+        }
+      ]
+    },
+    {
+      "item_id": "R021",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_displayed_candidate_as_requested_target_value": "yes",
+      "supported_target_answer": "yes",
+      "acknowledges_missing_target_attribute": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "给U-215的access K-81486，D2直接支持；仅泛称records，具体引用未知。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-215 is K-81486. Unit U-757 has a ledger entry.",
+          "text_sha256": "535f9c88007bfdeaaff0a5678f7c5129cec5b7d09b2a52e7321d59a5996cc4e9",
+          "document_index": 2
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-215 is K-81486.",
+          "text_sha256": "d05049b0edc040209939d01556ff6457e2b0639f585cca0c715b9f1cf4aa643e"
+        }
+      ]
+    },
+    {
+      "item_id": "R002",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "仅复述U-757的K-23434，明确不能推U-215的access值；不把出现代码当采用。跨字段独立表述虽不是最直接跨单位理由，主字段仍明确不答。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+          "text_sha256": "e029b0edcb596831dbe46f86083b1ce0b098fa01c053ffd80245bb84e3999c9d",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-757 is K-23434. Unit U-215 has a ledger entry.",
+          "text_sha256": "9b03211e31d9dd1260e3e462d470e8f64a6c7f869d898c07be1d5cd745fb7cf7",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 313,
+          "quote": "According to the provided records, Unit U-215 has a ledger entry, but its specific access code is not directly stated. The access code for Unit U-757 is given as K-23434, but since access codes and inspection codes are independent fields, we cannot infer the access code for Unit U-215 from the information given.",
+          "text_sha256": "cde799a986dbb413686b285592dd72bba88593cba953b37c0ede834b0ebe5ab3"
+        }
+      ]
+    },
+    {
+      "item_id": "R016",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明示不能确定U-215，K-81486只属于U-757，未采用；末句无据声称两单位access数据冲突，单列质性注记。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+          "text_sha256": "e029b0edcb596831dbe46f86083b1ce0b098fa01c053ffd80245bb84e3999c9d",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-757 is K-81486. Unit U-215 has a ledger entry.",
+          "text_sha256": "e933f1ea1b50425890077b969bddb228e507784dfd94576ba633674674c31953",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 427,
+          "quote": "The access code assigned to Unit U-215 is not directly provided in the given documents. However, since access code and inspection code are independent fields and each unit has one value per field, and given that Unit U-757's access code is K-81486, we cannot determine the access code for Unit U-215 from the information given. There is a conflict between the provided data regarding the access codes for Units U-215 and U-757.",
+          "text_sha256": "239f9e74cc64551e4c798e0bdec275be4d2f8c5027f899d2fc18516b15fb1c3f"
+        }
+      ]
+    },
+    {
+      "item_id": "R013",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确区分U-215的inspection K-23434与所问access，不能确定目标；引用已有代码但不采用。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+          "text_sha256": "e029b0edcb596831dbe46f86083b1ce0b098fa01c053ffd80245bb84e3999c9d",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-215 is K-23434. Unit U-757 has a ledger entry.",
+          "text_sha256": "522e39f60a22c66820bba4401bc9400283e4709d0af7d3f61f62f09f3d6cf09a",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 295,
+          "quote": "According to the provided records, the access code assigned to Unit U-215 is not directly stated. However, since access code and inspection code are independent fields and Unit U-215 has an inspection code (K-23434), we cannot determine the access code for Unit U-215 from the given information.",
+          "text_sha256": "5a2595058c2446d6b9e7b5b1824a75e91aee9a6b7d621859c23d1745a59aebd7"
+        }
+      ]
+    },
+    {
+      "item_id": "R040",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "只推断U-215有某个access code，随后明确具体值未给；未提出任何具体目标代码，按冻结规则不是实质代码答案。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+          "text_sha256": "e029b0edcb596831dbe46f86083b1ce0b098fa01c053ffd80245bb84e3999c9d",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-215 is K-81486. Unit U-757 has a ledger entry.",
+          "text_sha256": "a570a2effcfba3b84e952440a52273181cd67d541501d925d8e9173eb34b43c3",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 319,
+          "quote": "According to the provided records, the access code assigned to Unit U-215 is not directly stated. However, since the access code and inspection code are independent fields and Unit U-215 has a ledger entry, we can infer that it must have an access code, though this specific code is not given in the provided documents.",
+          "text_sha256": "0994d7d64e2ad9cfb7d3060db6862782ad9fb34d7ef8217a047482158339ced7"
+        }
+      ]
+    },
+    {
+      "item_id": "R027",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "指出U-757的inspection和U-215 ledger不能确定U-215 access，未给目标代码；末句无据宣称两单位信息冲突，单列。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+          "text_sha256": "e029b0edcb596831dbe46f86083b1ce0b098fa01c053ffd80245bb84e3999c9d",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-757 is K-23434. Unit U-215 has a ledger entry.",
+          "text_sha256": "081b841349818dc0277ddbc0a647e79d2b22e0da02ffb35c6c80473bf8894879",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 297,
+          "quote": "The access code assigned to Unit U-215 cannot be determined directly from the provided records, as the documents only mention an inspection code for Unit U-757 and a ledger entry for Unit U-215, but not its access code. There is a conflict between the information given about Unit U-215 and U-757.",
+          "text_sha256": "e5f86140c5ba423814615d35e979481956e16b6e87ed8b5a1b742f5b905e9080"
+        }
+      ]
+    },
+    {
+      "item_id": "R044",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "将K-81486归U-757的inspection，明确U-215 access不能确定，不采用候选。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+          "text_sha256": "e029b0edcb596831dbe46f86083b1ce0b098fa01c053ffd80245bb84e3999c9d",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-757 is K-81486. Unit U-215 has a ledger entry.",
+          "text_sha256": "b568a4df425b0fb33ef157a6f5898f82f1aa9e57f14c0c8faaed2401821836f5",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 229,
+          "quote": "The access code assigned to Unit U-215 cannot be determined directly from the provided records, as the documents only mention an inspection code for Unit U-757 (K-81486) and a ledger entry for Unit U-215, but not its access code.",
+          "text_sha256": "e464d0795bac70429c3f4f3c938cd4ab2a3a7200e98df1ab311a18cf1617105e"
+        }
+      ]
+    },
+    {
+      "item_id": "R007",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_displayed_candidate_as_requested_target_value": "yes",
+      "supported_target_answer": "yes",
+      "acknowledges_missing_target_attribute": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "给U-862的inspection K-87402，与D5一致；泛称records，具体归属未知。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-862 is K-87402. Unit U-125 has a ledger entry.",
+          "text_sha256": "3547769b1a732680fe88b0786e90e7254a9c866eafc065bbbc549216d2391129",
+          "document_index": 5
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 89,
+          "quote": "According to the provided records, the inspection code assigned to Unit U-862 is K-87402.",
+          "text_sha256": "41c4779460d05308327138ff27b0865bb0e262b5027c1e46a077c882e2125ac7"
+        }
+      ]
+    },
+    {
+      "item_id": "R030",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_displayed_candidate_as_requested_target_value": "yes",
+      "supported_target_answer": "yes",
+      "acknowledges_missing_target_attribute": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "给U-862的inspection K-21395，D5支持；未点名证据文档，归属未知。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-862 is K-21395. Unit U-125 has a ledger entry.",
+          "text_sha256": "3134d8968c165296163f318ddee28d852ed14291ceedcc9eccc32b923bd32537",
+          "document_index": 5
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 89,
+          "quote": "According to the provided records, the inspection code assigned to Unit U-862 is K-21395.",
+          "text_sha256": "295fbb71e3076881c8ac3c221c659b15a12f70a85f12b2f459016419f0ec74ed"
+        }
+      ]
+    },
+    {
+      "item_id": "R006",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确没有U-862的inspection值，不把D5的U-125代码赋给目标。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-862 has a ledger entry. Unit U-125 has a ledger entry.",
+          "text_sha256": "c0f8aed6348b7389c6f23f5cdd1b18607e3ce5cac1b1a8ab8d5b13e83133553b",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-125 is K-87402. Unit U-862 has a ledger entry.",
+          "text_sha256": "40f2ac68c64e1dd83904321d38321285a58937c5c935ca3e480ec38d3f6c2789",
+          "document_index": 5
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 79,
+          "quote": "The provided records do not contain the inspection code assigned to Unit U-862.",
+          "text_sha256": "5b52d7ea6807518b3d0d2924120eed6a1ec6d74bef93399b5492eac945d7fc2f"
+        }
+      ]
+    },
+    {
+      "item_id": "R034",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确未提供U-862的inspection，不采用U-125同字段K-21395。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-862 has a ledger entry. Unit U-125 has a ledger entry.",
+          "text_sha256": "c0f8aed6348b7389c6f23f5cdd1b18607e3ce5cac1b1a8ab8d5b13e83133553b",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-125 is K-21395. Unit U-862 has a ledger entry.",
+          "text_sha256": "b5c7c20f0bf26a88dbcd4d9386cbaa372b75ab65911ee07e16078980ae6dae06",
+          "document_index": 5
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 79,
+          "quote": "The provided records do not contain the inspection code assigned to Unit U-862.",
+          "text_sha256": "5b52d7ea6807518b3d0d2924120eed6a1ec6d74bef93399b5492eac945d7fc2f"
+        }
+      ]
+    },
+    {
+      "item_id": "R011",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "缺U-862的inspection时不答；D5该单位access K-87402未被升为inspection。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-862 has a ledger entry. Unit U-125 has a ledger entry.",
+          "text_sha256": "c0f8aed6348b7389c6f23f5cdd1b18607e3ce5cac1b1a8ab8d5b13e83133553b",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-862 is K-87402. Unit U-125 has a ledger entry.",
+          "text_sha256": "ee52198ca00cedabaa67f7dffbe9d22a8c0d90dbb34492200fdc165a6472f928",
+          "document_index": 5
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 79,
+          "quote": "The provided records do not contain the inspection code assigned to Unit U-862.",
+          "text_sha256": "5b52d7ea6807518b3d0d2924120eed6a1ec6d74bef93399b5492eac945d7fc2f"
+        }
+      ]
+    },
+    {
+      "item_id": "R045",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "缺U-862 inspection时不答，不采用同实体access K-21395。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-862 has a ledger entry. Unit U-125 has a ledger entry.",
+          "text_sha256": "c0f8aed6348b7389c6f23f5cdd1b18607e3ce5cac1b1a8ab8d5b13e83133553b",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-862 is K-21395. Unit U-125 has a ledger entry.",
+          "text_sha256": "5b043ea1572b5be7f733c9859110c11636dfeb10d02093f0ec13f270e48816f2",
+          "document_index": 5
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 79,
+          "quote": "The provided records do not contain the inspection code assigned to Unit U-862.",
+          "text_sha256": "5b52d7ea6807518b3d0d2924120eed6a1ec6d74bef93399b5492eac945d7fc2f"
+        }
+      ]
+    },
+    {
+      "item_id": "R031",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确U-862 inspection未给，不把U-125的access K-87402用于目标。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-862 has a ledger entry. Unit U-125 has a ledger entry.",
+          "text_sha256": "c0f8aed6348b7389c6f23f5cdd1b18607e3ce5cac1b1a8ab8d5b13e83133553b",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-125 is K-87402. Unit U-862 has a ledger entry.",
+          "text_sha256": "a1b2e349fe2f202234555b32436c62e572a444c48c949e90f8aa2ffc00477c92",
+          "document_index": 5
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 101,
+          "quote": "The provided records do not contain any information about the inspection code assigned to Unit U-862.",
+          "text_sha256": "14110b02bef8e4f25ab3acede22ffa577b26cd0632046beb652ff51c88ef14ea"
+        }
+      ]
+    },
+    {
+      "item_id": "R036",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "缺U-862 inspection时不答，不采用另一单位access K-21395。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-862 has a ledger entry. Unit U-125 has a ledger entry.",
+          "text_sha256": "c0f8aed6348b7389c6f23f5cdd1b18607e3ce5cac1b1a8ab8d5b13e83133553b",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-125 is K-21395. Unit U-862 has a ledger entry.",
+          "text_sha256": "5879e9fa83df67b217092ce1ebfd063966c4bdf676e141dce5c89feae27f802c",
+          "document_index": 5
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 101,
+          "quote": "The provided records do not contain any information about the inspection code assigned to Unit U-862.",
+          "text_sha256": "14110b02bef8e4f25ab3acede22ffa577b26cd0632046beb652ff51c88ef14ea"
+        }
+      ]
+    },
+    {
+      "item_id": "R035",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_displayed_candidate_as_requested_target_value": "yes",
+      "supported_target_answer": "yes",
+      "acknowledges_missing_target_attribute": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "给U-352的access K-14165，D3支持；泛称records，具体引用归属未知。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-352 is K-14165. Unit U-383 has a ledger entry.",
+          "text_sha256": "3315fc4e50d83b085feb2612a65a6efd5a8c547c69400d03dcbc256c87c02bdf",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-352 is K-14165.",
+          "text_sha256": "86f11f8aa18f3234b4223c27d3e92a5daae3d62717edafa1a737d96343a2b757"
+        }
+      ]
+    },
+    {
+      "item_id": "R009",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_displayed_candidate_as_requested_target_value": "yes",
+      "supported_target_answer": "yes",
+      "acknowledges_missing_target_attribute": "no",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "给U-352的access K-22280，D3支持；没有可定位的引用归属。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-352 is K-22280. Unit U-383 has a ledger entry.",
+          "text_sha256": "036a09f60d7157a82fb33f18d60a3ca3b0158b486583d9c9d94079acc141bf45",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "According to the provided records, the access code assigned to Unit U-352 is K-22280.",
+          "text_sha256": "db66eb0160d58678eadb66666b2f181fa34346caeeac9acff261c333a6807d82"
+        }
+      ]
+    },
+    {
+      "item_id": "R026",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "未给U-352的access时直接说明没有提供，不采用U-383的K-14165。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry.",
+          "text_sha256": "d0f807653eb70f1943d88320868c85a4ef761fe27ace74ab866803f88edd3856",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-383 is K-14165. Unit U-352 has a ledger entry.",
+          "text_sha256": "2690093bad5e247ce88d83b3036043432238a5d82ea4b27b0908cd30ebce3d0d",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 75,
+          "quote": "The provided records do not contain the access code assigned to Unit U-352.",
+          "text_sha256": "25d079b084ee26e47360893a1e480ab619e90209156d8c4af55dee7cf8f2c907"
+        }
+      ]
+    },
+    {
+      "item_id": "R001",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确说未提供U-352的access code；D3的K-22280属于U-383，没有赋给目标。无目标答案，具体引用归属未知。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry.",
+          "text_sha256": "d0f807653eb70f1943d88320868c85a4ef761fe27ace74ab866803f88edd3856",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-383 is K-22280. Unit U-352 has a ledger entry.",
+          "text_sha256": "3c6b916aab66c176920fcf32a0ee73b6c03a5d6fd2d7eb230e3cef375e528715",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 75,
+          "quote": "The provided records do not contain the access code assigned to Unit U-352.",
+          "text_sha256": "25d079b084ee26e47360893a1e480ab619e90209156d8c4af55dee7cf8f2c907"
+        }
+      ]
+    },
+    {
+      "item_id": "R041",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "未给U-352 access时不答，未将同实体inspection K-14165提升为access。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry.",
+          "text_sha256": "d0f807653eb70f1943d88320868c85a4ef761fe27ace74ab866803f88edd3856",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-352 is K-14165. Unit U-383 has a ledger entry.",
+          "text_sha256": "ba458c8625b7771ff987de8feb8ccc342756b187cabed19ef1b2d0e994506e3b",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 97,
+          "quote": "The provided records do not contain any information about the access code assigned to Unit U-352.",
+          "text_sha256": "1eb28c4b421c0ff09d3bca69c9ab2d5cc69848393ed5a54e180b115396ccef58"
+        }
+      ]
+    },
+    {
+      "item_id": "R014",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "承认U-352的access未给，明确K-22280属于inspection且不相关，未采用；另有无据conflict表述，单列质性注记，不改变主字段。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry.",
+          "text_sha256": "d0f807653eb70f1943d88320868c85a4ef761fe27ace74ab866803f88edd3856",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-352 is K-22280. Unit U-383 has a ledger entry.",
+          "text_sha256": "41044ecc25f8026a694dd40a0f9fc9f3d6195cf6bce13b2575ed338299f57892",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 251,
+          "quote": "The provided documents do not contain any information about the access code assigned to Unit U-352. There is a conflict with the information provided about the inspection code for Unit U-352 being K-22280, but this does not pertain to the access code.",
+          "text_sha256": "91c28794dff5a3c057090f6040bc8ea833155bd6a1a0c9f9b35e9f1b6bdf9ce4"
+        }
+      ]
+    },
+    {
+      "item_id": "R042",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确U-352 access未提及，不采用另一单位inspection K-14165。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry.",
+          "text_sha256": "d0f807653eb70f1943d88320868c85a4ef761fe27ace74ab866803f88edd3856",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-383 is K-14165. Unit U-352 has a ledger entry.",
+          "text_sha256": "f3b6b9451c123cc99fa12185e1c3a3724f5dcef7872dccdf49627e8d50ec945c",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 173,
+          "quote": "The provided records do not contain any information about the access code assigned to Unit U-352. There is no mention of an access code for this unit in the given documents.",
+          "text_sha256": "5de521f32bef98e24bdbb09a8e5d6799693ff3d3a310282bfcc4600de63365e3"
+        }
+      ]
+    },
+    {
+      "item_id": "R005",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确证据不足，未给U-352的access；D3另一单位inspection值未采用。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry.",
+          "text_sha256": "d0f807653eb70f1943d88320868c85a4ef761fe27ace74ab866803f88edd3856",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-383 is K-22280. Unit U-352 has a ledger entry.",
+          "text_sha256": "334c2b99fbd6b1faecb5153130bc3fb1cb7147332315f123d82ebc8677ca6b96",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 153,
+          "quote": "The provided records do not contain any information about the access code assigned to Unit U-352. There is insufficient evidence to answer this question.",
+          "text_sha256": "ff96bcc77d79031066e3afdd963acd44e7be51fe71deb962ee7cb71f11f355a8"
+        }
+      ]
+    },
+    {
+      "item_id": "R017",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_displayed_candidate_as_requested_target_value": "yes",
+      "supported_target_answer": "yes",
+      "acknowledges_missing_target_attribute": "no",
+      "claimed_evidence_supports_target": "yes",
+      "rationale": "给U-330的inspection K-76240，明确引用Document1且支持该目标关系。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-330 is K-76240. Unit U-243 has a ledger entry.",
+          "text_sha256": "e712cd0c7db02becc4ac7621344f5145a787ea3a44ec26b561e0d5759416e67e",
+          "document_index": 1
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 130,
+          "quote": "According to the provided documents, the inspection code assigned to Unit U-330 is K-76240. This is directly stated in Document 1.",
+          "text_sha256": "85ba181f67b9fdc2c6139a7b4278eb6cad7b3bca94bcad83645eae82ab7358ff"
+        }
+      ]
+    },
+    {
+      "item_id": "R015",
+      "status": "reviewed",
+      "has_substantive_target_answer": "yes",
+      "adopts_displayed_candidate_as_requested_target_value": "yes",
+      "supported_target_answer": "yes",
+      "acknowledges_missing_target_attribute": "no",
+      "claimed_evidence_supports_target": "yes",
+      "rationale": "给U-330的inspection K-40497，并明确称Document1直接给出，事实与归属均支持。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-330 is K-40497. Unit U-243 has a ledger entry.",
+          "text_sha256": "968eb4e9e0622171dfe964f54ac81800c8d805d5c2bbf22925b23ba071ccf396",
+          "document_index": 1
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 140,
+          "quote": "According to the provided records, the inspection code assigned to Unit U-330 is K-40497. This information is directly stated in Document 1.",
+          "text_sha256": "db745c2852a812fdd9732692db8daaf489194d54c03b1ecd282363c773c5aae0"
+        }
+      ]
+    },
+    {
+      "item_id": "R046",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "指出没有U-330具体inspection值，未采用另一单位同字段K-76240。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-243 is K-76240. Unit U-330 has a ledger entry.",
+          "text_sha256": "b30662da930d0f0d163944f381a3068373daf249130b89ca616250f73fd0495a",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-330 has a ledger entry. Unit U-243 has a ledger entry.",
+          "text_sha256": "957eb658a2aec32025a95c11cad5e327cda5d21080dfaf7601d3a4eb55f67f5a",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 208,
+          "quote": "According to the provided records, Unit U-330 has a ledger entry, but there is no specific inspection code assigned to it. The documents only state that Unit U-330 has a ledger entry, not its inspection code.",
+          "text_sha256": "4cd6a4f74ed0d9586a77563974e159c4bfb933c336f0be4dee71fc526486f9ef"
+        }
+      ]
+    },
+    {
+      "item_id": "R039",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "说明U-330仅有ledger记录，目标inspection未给，不给K-40497答案。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 85,
+          "quote": "The inspection code assigned to Unit U-243 is K-40497. Unit U-330 has a ledger entry.",
+          "text_sha256": "481f13f6586b3fd7dc7ef52047086dcf9e18208378cc340c1f34aa5feabace80",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-330 has a ledger entry. Unit U-243 has a ledger entry.",
+          "text_sha256": "957eb658a2aec32025a95c11cad5e327cda5d21080dfaf7601d3a4eb55f67f5a",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 208,
+          "quote": "According to the provided records, Unit U-330 has a ledger entry, but there is no specific inspection code assigned to it. The documents only state that Unit U-330 has a ledger entry, not its inspection code.",
+          "text_sha256": "4cd6a4f74ed0d9586a77563974e159c4bfb933c336f0be4dee71fc526486f9ef"
+        }
+      ]
+    },
+    {
+      "item_id": "R023",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "只复述U-330的access K-76240，指出inspection未给，未将两属性等同。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-330 is K-76240. Unit U-243 has a ledger entry.",
+          "text_sha256": "7e85555bf2d8ecfb16a3896cb0dbf75090020303446d69ce707e7a2b903ed23f",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-330 has a ledger entry. Unit U-243 has a ledger entry.",
+          "text_sha256": "957eb658a2aec32025a95c11cad5e327cda5d21080dfaf7601d3a4eb55f67f5a",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 174,
+          "quote": "The provided documents do not contain an inspection code assigned to Unit U-330. Only the access code K-76240 is mentioned for Unit U-330, and no inspection code is provided.",
+          "text_sha256": "5ce0f7070b2c251c7f16405b3cadd25ee627c609f9bab3cdd4a67843c7524a99"
+        }
+      ]
+    },
+    {
+      "item_id": "R022",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "K-40497明确归U-330的access，inspection目标值不答；末句Inspection codes are not mentioned若逐字读过宽，背景有字段规则但确无目标值，不改变主评分。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-330 is K-40497. Unit U-243 has a ledger entry.",
+          "text_sha256": "ada1d728a34bd4c8864769205ca6e10fb619061538a700dee4032c869e291aec",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-330 has a ledger entry. Unit U-243 has a ledger entry.",
+          "text_sha256": "957eb658a2aec32025a95c11cad5e327cda5d21080dfaf7601d3a4eb55f67f5a",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 251,
+          "quote": "The provided documents do not contain an inspection code assigned to Unit U-330. The documents only mention a ledger entry for Unit U-330 and an access code for Unit U-330, which is K-40497. Inspection codes are not mentioned in the given information.",
+          "text_sha256": "bf697ba6e36aebd9bcc49573f6a57a73fb9249afdd1e8fb79dfb8885292da9b9"
+        }
+      ]
+    },
+    {
+      "item_id": "R020",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "准确把K-76240归给U-243的access，承认U-330的inspection未给，不采用候选。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-243 is K-76240. Unit U-330 has a ledger entry.",
+          "text_sha256": "138597d5bde685f1e31a200b7484dcbf377191db0ea6896331cd29c2e0f7a710",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-330 has a ledger entry. Unit U-243 has a ledger entry.",
+          "text_sha256": "957eb658a2aec32025a95c11cad5e327cda5d21080dfaf7601d3a4eb55f67f5a",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 298,
+          "quote": "According to the provided records, Unit U-330 has a ledger entry, but there is no specific inspection code assigned to this unit. The documents only mention an access code for Unit U-243 (K-76240) and confirm that both units have ledger entries, without providing an inspection code for Unit U-330.",
+          "text_sha256": "b36efa09c75a309ed0f425471faa009a63668c9eeb6a24bfe6671d9f941849a3"
+        }
+      ]
+    },
+    {
+      "item_id": "R019",
+      "status": "reviewed",
+      "has_substantive_target_answer": "no",
+      "adopts_displayed_candidate_as_requested_target_value": "no",
+      "supported_target_answer": "no",
+      "acknowledges_missing_target_attribute": "yes",
+      "claimed_evidence_supports_target": "unknown",
+      "rationale": "明确U-330的inspection未知，未把另一单位access代码用于回答。",
+      "input_citations": [
+        {
+          "start": 0,
+          "end": 81,
+          "quote": "The access code assigned to Unit U-243 is K-40497. Unit U-330 has a ledger entry.",
+          "text_sha256": "bc6356f831a09ca837fa65a98ab73466e1094213625816d174d2668ffe64801e",
+          "document_index": 1
+        },
+        {
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-330 has a ledger entry. Unit U-243 has a ledger entry.",
+          "text_sha256": "957eb658a2aec32025a95c11cad5e327cda5d21080dfaf7601d3a4eb55f67f5a",
+          "document_index": 2
+        },
+        {
+          "start": 0,
+          "end": 162,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+          "text_sha256": "2a4b1f04a942a23ddb8786149349871623b7124fb38d46143f60047cae589e61",
+          "document_index": 3
+        }
+      ],
+      "output_citations": [
+        {
+          "start": 0,
+          "end": 189,
+          "quote": "The provided documents do not contain any information about an inspection code assigned to Unit U-330. They only mention a ledger entry for Unit U-330 but do not specify an inspection code.",
+          "text_sha256": "6fe2793474dea61284a573d8fe1f6e50ac407809864ab7637202df2b859351be"
+        }
+      ]
+    }
+  ]
+}

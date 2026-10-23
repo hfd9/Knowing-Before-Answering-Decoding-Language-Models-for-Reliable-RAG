@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "new_payload_files_checked": 18,
+  "syntax_and_format": {
+    "python": 2,
+    "json": 8,
+    "csv": 5,
+    "markdown": 3
+  },
+  "new_markdown_local_links_exist": true,
+  "new_payload_trailing_whitespace": false,
+  "final_preserved_paths": 1142,
+  "new_model_calls": 0,
+  "new_fits": 0,
+  "old_tests_rerun": false,
+  "actual_commands": [
+    {
+      "command": "python3 -B scripts/behavior_structure_audit.py --stage build",
+      "exit_code": 0
+    },
+    {
+      "command": "PYTHONHASHSEED=239 python3 -B scripts/behavior_structure_audit.py --stage verify",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -B scripts/verify_behavior_structure_audit.py",
+      "exit_code": 0
+    }
+  ],
+  "payload_sha256": {
+    "docs/behavior_relation_attachment_design.md": "ba2606be03c8db55e4105a0499b169b499e1d78f33ef674c35556ba162bae056",
+    "docs/records/2026-10-23-behavior-structure-audit-author-review.json": "f2b9d1abd156bfd3d97687b187f3e4603c90519a46b827100a0cb1574f844c71",
+    "docs/records/2026-10-23-behavior-structure-audit-bases.csv": "7c16bf0268e4d035f7faaa2bbd90b060955192149e6d02c77bd6e31679c30073",
+    "docs/records/2026-10-23-behavior-structure-audit-cases.csv": "d9fd767e51b1712bbe8176f7ebf60d975347972b6827841b6249b54ca5531f00",
+    "docs/records/2026-10-23-behavior-structure-audit-dimensions.csv": "b6c241753d5dde431ca4b6dffda27d8ef91f1c4e69803276ce5a9e8cb8271666",
+    "docs/records/2026-10-23-behavior-structure-audit-pairs.csv": "4e7ff1cfab3ddfb753238575845df46ae1afd8b9cbf7eedeea7e454510cd1200",
+    "docs/records/2026-10-23-behavior-structure-audit-preserved.json": "19385ff154f48e6c252092250302f31c1d062f68fca3861591edb8c11fd8ac14",
+    "docs/records/2026-10-23-behavior-structure-audit-samples.json": "0e7e5d4e4cecfdae7907cd42b7eb6bd3a70031fd4b014d84c63245e48cd1405b",
+    "docs/records/2026-10-23-behavior-structure-audit-samples.md": "e237cb87ac79539a62e55d8e287633e66ade6f3e540b3951ed30d11e680591e4",
+    "docs/records/2026-10-23-behavior-structure-audit-statistics.csv": "4330b339c804f2e1a9763d8c89d0bd33e120cc7a7cd86f5eacb23ca299a3f3dd",
+    "docs/records/2026-10-23-behavior-structure-audit-verification.json": "2df63cd896917ad6b5a3bcb36bcc478e498133fc59d160ba7b0456e4e6ae4018",
+    "docs/records/2026-10-23-behavior-structure-audit-worlds.json": "31fceef990730b1a112d6fa5b27fe6f53f8f09f338ef6b947253e85f78ff3967",
+    "docs/records/2026-10-23-behavior-structure-audit.json": "8950560a0759710b2e83686ce8f6ec12232fd212851565f70a82c9ae92abff7a",
+    "docs/records/2026-10-23-behavior-structure-audit.md": "1b41f3eec763c506b32f88011dbb2033dee6bd4f7b94447b82fd2df909f4361f",
+    "prompts/behavior_relation_attachment_audit_v1.json": "b2b14cdf0f8293b24bb82488037a5022ff75a0d976989dd843d303ad7f28eb55",
+    "prompts/behavior_relation_attachment_design_v1.json": "bedb9115bbda1072c9c577c9fac81b245777bcfc66cf49123ee4d9480b75cd50",
+    "scripts/behavior_structure_audit.py": "3fb576a0fe884dc5add3df0ed90411a1de384c857f5ebdbdeaa47b1e9a3c91dd",
+    "scripts/verify_behavior_structure_audit.py": "0b23878d5c2b1fe0a1a086c815c0e988b05b24a2677383f5dd156ddc12b15072"
+  }
+}

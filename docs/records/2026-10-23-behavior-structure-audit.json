@@ -1,0 +1,199 @@
+{
+  "status": "source_bound_posthoc_comparison_and_draft_examples",
+  "history_exposed": true,
+  "independent_gold": false,
+  "original_behavior_rescored": false,
+  "new_behavior_judgments": 0,
+  "old_insufficient_denominator": 60,
+  "old_insufficient_answering": 23,
+  "old_insufficient_behavior_counts": {
+    "no": 37,
+    "yes": 23
+  },
+  "selected_error_bases": 13,
+  "old_patterns": {
+    "fact_reassignment": 8,
+    "unsupported_relation_promotion": 9,
+    "absent_answer_value": 6
+  },
+  "old_boundary_counts": {
+    "none_identified": 15,
+    "category_inference": 2,
+    "overview_scope": 2,
+    "lexical_semantics": 2,
+    "cause_vs_modifier": 1,
+    "referent_ambiguity": 1
+  },
+  "structural_connection_counts": {
+    "partial_role_analogy": 4,
+    "same_target_other_relation_motivation": 3,
+    "old_cross_entity_control": 3,
+    "outside_new_design": 13
+  },
+  "binding_insufficient": {
+    "cells": 24,
+    "bases": 12,
+    "fields": {
+      "has_substantive_target_answer": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      },
+      "adopts_cell_distractor_value": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      },
+      "supported_target_answer": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 24,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      },
+      "acknowledges_insufficiency": {
+        "eligible": 24,
+        "yes": 24,
+        "no": 0,
+        "unknown": 0,
+        "point": 1.0,
+        "identification_lower": 1.0,
+        "identification_upper": 1.0
+      },
+      "claimed_evidence_supports_target": {
+        "eligible": 24,
+        "yes": 0,
+        "no": 0,
+        "unknown": 24,
+        "point": null,
+        "identification_lower": 0.0,
+        "identification_upper": 1.0
+      }
+    },
+    "acknowledgment_then_answer": {
+      "eligible": 24,
+      "yes": 0,
+      "no": 24,
+      "unknown": 0,
+      "point": 0.0,
+      "identification_lower": 0.0,
+      "identification_upper": 0.0
+    }
+  },
+  "statistics": [
+    {
+      "group": "transfer_all_I60",
+      "rows": 60,
+      "document_slots": 300,
+      "unique_document_texts": 203,
+      "input_tokens_min": 341,
+      "input_tokens_max": 3045,
+      "input_tokens_sum": 80213,
+      "input_tokens_mean": 1336.8833333333334,
+      "document_chars_min": 922,
+      "document_chars_max": 11694,
+      "document_chars_mean": 4813.483333333334
+    },
+    {
+      "group": "transfer_selected_answering_I23",
+      "rows": 23,
+      "document_slots": 115,
+      "unique_document_texts": 82,
+      "input_tokens_min": 341,
+      "input_tokens_max": 2537,
+      "input_tokens_sum": 29054,
+      "input_tokens_mean": 1263.2173913043478,
+      "document_chars_min": 922,
+      "document_chars_max": 9901,
+      "document_chars_mean": 4617.95652173913
+    },
+    {
+      "group": "transfer_matched_S23_unfiltered_for_S_behavior",
+      "rows": 23,
+      "document_slots": 115,
+      "unique_document_texts": 82,
+      "input_tokens_min": 351,
+      "input_tokens_max": 2547,
+      "input_tokens_sum": 29242,
+      "input_tokens_mean": 1271.391304347826,
+      "document_chars_min": 981,
+      "document_chars_max": 9941,
+      "document_chars_mean": 4650.217391304348
+    },
+    {
+      "group": "binding_all48",
+      "rows": 48,
+      "document_slots": 240,
+      "unique_document_texts": 73,
+      "input_tokens_min": 238,
+      "input_tokens_max": 249,
+      "input_tokens_sum": 11688,
+      "input_tokens_mean": 243.5,
+      "document_chars_min": 300,
+      "document_chars_max": 321,
+      "document_chars_mean": 310.5
+    },
+    {
+      "group": "binding_I24",
+      "rows": 24,
+      "document_slots": 120,
+      "unique_document_texts": 61,
+      "input_tokens_min": 238,
+      "input_tokens_max": 238,
+      "input_tokens_sum": 5712,
+      "input_tokens_mean": 238.0,
+      "document_chars_min": 300,
+      "document_chars_max": 300,
+      "document_chars_mean": 300.0
+    }
+  ],
+  "sample_checks": {
+    "exact_inputs": 16,
+    "sufficient": 4,
+    "insufficient": 12,
+    "world_pairs": 12,
+    "complete_worlds": 24,
+    "declared_fact_slots": 80,
+    "pairs": 24,
+    "primary_pairs": 4,
+    "entity_pair_word_number_multisets_equal": true
+  },
+  "example_scope": "Two authored example scenarios/16 exact inputs; not full48 materials or execution protocol",
+  "exact_tokens_for_new_examples": null,
+  "new_gpu_calls": 0,
+  "new_forward_passes": 0,
+  "new_answers": 0,
+  "new_fits": 0,
+  "original_remaining_fits": 0,
+  "independent_semantic_approvals": 0,
+  "original_formal_gate": false,
+  "held_out380_accessed": false,
+  "prior_paths_preserved": 1142,
+  "source_sha256": {
+    "prompts/behavior_relation_attachment_design_v1.json": "bedb9115bbda1072c9c577c9fac81b245777bcfc66cf49123ee4d9480b75cd50",
+    "prompts/behavior_relation_attachment_audit_v1.json": "b2b14cdf0f8293b24bb82488037a5022ff75a0d976989dd843d303ad7f28eb55",
+    "docs/records/2026-10-21-insufficient-answer-audit.json": "bc8c8ceb04b46f427749159aa618a4cbd47cdde864324047121a2a49973af85b",
+    "docs/records/2026-10-21-semantic-transfer-exploratory-behavior-cells.csv": "2e7ae1ba760c383539d61cf97611ef54fac4b08666000e5d2ca77860f3f639fe",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/behavior_review/packet.json": "79540160969ba0e63ea5181c94273b521c0d2ec9497fdb43b364524585ef0e06",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/coordinator/behavior_mapping.json": "2c240667de493bffce4fa96c850d226a1d22047760b7fd1eee75b6ead9686f16",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/predictions.json": "ed95ebe4e04b351a66b85ac275c86dda7f16044ea542e11cfe3bf9e489a02cf9",
+    "runs/qwen2.5-3b-behavior-binding-v1/materials/inputs.json": "663829849a931cafa2e464c279e590b0fac85db7c7982c8f0eaf8bf6910c6336",
+    "runs/qwen2.5-3b-behavior-binding-v1/predictions.json": "aa478aa9fe6313421e34ea94a30f3a0ef334dd8e4d87c2ba6ded30829bc996db",
+    "docs/records/2026-10-21-behavior-binding-results.json": "e2dd51b4fdd59ebb1377a15200250b4642a293e7e881b6051c042e8d232f42d7",
+    "prompts/behavior_binding_materials_v1.json": "3c951195676371d15ca57e176aac2e8f800772c22c2ff47b15e0ec9ebf38b1ae",
+    "scripts/evidence_experiment.py": "019af81ffcfe108b155e6e061569d7d1c1fc17d3b072ad436d78defa74aac225",
+    "scripts/behavior_structure_audit.py": "3fb576a0fe884dc5add3df0ed90411a1de384c857f5ebdbdeaa47b1e9a3c91dd"
+  },
+  "review_basis": "Existing sealed23 case codings and their input/output citations; no claim of a new full121-document reread or independent semantic review",
+  "interpretation": "Cross-study differences are descriptive and jointly confounded; selected23/23 is not a rate for comparison. Novel contrast TA-OA changes candidate entity attachment within alternative-attribute inputs, with lexical mention counts balanced; not an internal causal mechanism or explanation of old error gap."
+}

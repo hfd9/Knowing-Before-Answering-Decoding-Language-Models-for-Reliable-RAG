@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "status": "fixed_before_tokenizer_inspection_and_any_outputs",
+  "parent_design": "prompts/behavior_relation_attachment_design_v1.json",
+  "authorization": "User asked to continue research after design delivery; CPU material and collection preparation, GPU launched by user.",
+  "collection_allowed": true,
+  "independent_semantic_approval": false,
+  "original_formal_gate_changed": false,
+  "original_remaining_fits": 0,
+  "new_probe_fits": 0,
+  "seed": 42,
+  "base_scenarios": 6,
+  "maximum_generations": 48,
+  "max_new_tokens": 128,
+  "scenarios": [
+    {
+      "id": "rel01",
+      "target": "U-317",
+      "other": "U-682",
+      "queried_attribute": "access code",
+      "alternative_attribute": "inspection code",
+      "v1": "K-24173",
+      "v2": "K-85629",
+      "witness_alternative": "K-59314",
+      "candidate_slot": 1
+    },
+    {
+      "id": "rel02",
+      "target": "U-946",
+      "other": "U-153",
+      "queried_attribute": "inspection code",
+      "alternative_attribute": "access code",
+      "v1": "K-76418",
+      "v2": "K-32865",
+      "witness_alternative": "K-91247",
+      "candidate_slot": 4
+    },
+    {
+      "id": "rel03",
+      "target": "U-215",
+      "other": "U-757",
+      "queried_attribute": "access code",
+      "alternative_attribute": "inspection code",
+      "v1": "K-23434",
+      "v2": "K-81486",
+      "witness_alternative": "K-98702",
+      "candidate_slot": 2
+    },
+    {
+      "id": "rel04",
+      "target": "U-862",
+      "other": "U-125",
+      "queried_attribute": "inspection code",
+      "alternative_attribute": "access code",
+      "v1": "K-87402",
+      "v2": "K-21395",
+      "witness_alternative": "K-65305",
+      "candidate_slot": 5
+    },
+    {
+      "id": "rel05",
+      "target": "U-352",
+      "other": "U-383",
+      "queried_attribute": "access code",
+      "alternative_attribute": "inspection code",
+      "v1": "K-14165",
+      "v2": "K-22280",
+      "witness_alternative": "K-13905",
+      "candidate_slot": 3
+    },
+    {
+      "id": "rel06",
+      "target": "U-330",
+      "other": "U-243",
+      "queried_attribute": "inspection code",
+      "alternative_attribute": "access code",
+      "v1": "K-76240",
+      "v2": "K-40497",
+      "witness_alternative": "K-38659",
+      "candidate_slot": 1
+    }
+  ],
+  "cells": [
+    "TQ",
+    "OQ",
+    "TA",
+    "OA"
+  ],
+  "question_template": "According only to the provided fictional archive records, what {queried_attribute} is assigned to Unit {target}?",
+  "candidate_document_template": "The {attribute} assigned to Unit {owner} is {candidate}. Unit {nonowner} has a ledger entry.",
+  "background_templates_in_order": [
+    "Unit {target} has a ledger entry. Unit {other} has a ledger entry.",
+    "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+    "The archive stores its ledger entries on numbered pages.",
+    "A ledger entry has a date field. The archive is fictional."
+  ],
+  "smoke_prefix_ids": [
+    "rel01_TQ_v1",
+    "rel02_OQ_v2",
+    "rel05_TA_v1",
+    "rel06_OA_v2"
+  ],
+  "generation_order": "Smoke prefix then remaining IDs sorted by SHA256('relation-attachment-order-v1|' + id).",
+  "smoke_gate": "First4 nonempty, EOS, no output limit; technical only; all4 count within48, never regenerate on semantic or technical failure.",
+  "assignment": "Keep two draft scenarios exactly. random.Random(42) sample8 unit integers excluding the four draft units and12 code integers excluding the six draft codes; sample units first then codes. Target/other alternate ascending/descending numeric order. Sort each code triple and apply remaining permutations [(0,1,2),(2,0,1),(1,2,0),(2,1,0)] as v1/v2/witness. Each of six code-rank permutations occurs once; query directions3/3 and target numeric ranks3/3. No token-length or output selection.",
+  "scope": "New behavior-only pilot:48 fixed answers maximum,12TQ/36I,12 primaryTA-OA pairs, no hidden states/probe/fits/heldout380. Previous16 examples included, not extra.",
+  "review_fields": [
+    "has_substantive_target_answer",
+    "adopts_displayed_candidate_as_requested_target_value",
+    "supported_target_answer",
+    "acknowledges_missing_target_attribute",
+    "claimed_evidence_supports_target"
+  ]
+}

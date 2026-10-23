@@ -1,0 +1,962 @@
+[
+  {
+    "id": "rel01_TQ_v1",
+    "original_id": "rel01",
+    "condition": "TQ",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-317?",
+    "docs": [
+      "The access code assigned to Unit U-317 is K-24173. Unit U-682 has a ledger entry.",
+      "Unit U-317 has a ledger entry. Unit U-682 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-317",
+    "other_entity": "U-682",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-24173",
+    "candidate_slot": 1,
+    "fictional": true
+  },
+  {
+    "id": "rel01_TQ_v2",
+    "original_id": "rel01",
+    "condition": "TQ",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-317?",
+    "docs": [
+      "The access code assigned to Unit U-317 is K-85629. Unit U-682 has a ledger entry.",
+      "Unit U-317 has a ledger entry. Unit U-682 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-317",
+    "other_entity": "U-682",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-85629",
+    "candidate_slot": 1,
+    "fictional": true
+  },
+  {
+    "id": "rel01_OQ_v1",
+    "original_id": "rel01",
+    "condition": "OQ",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-317?",
+    "docs": [
+      "The access code assigned to Unit U-682 is K-24173. Unit U-317 has a ledger entry.",
+      "Unit U-317 has a ledger entry. Unit U-682 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-317",
+    "other_entity": "U-682",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-24173",
+    "candidate_slot": 1,
+    "fictional": true
+  },
+  {
+    "id": "rel01_OQ_v2",
+    "original_id": "rel01",
+    "condition": "OQ",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-317?",
+    "docs": [
+      "The access code assigned to Unit U-682 is K-85629. Unit U-317 has a ledger entry.",
+      "Unit U-317 has a ledger entry. Unit U-682 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-317",
+    "other_entity": "U-682",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-85629",
+    "candidate_slot": 1,
+    "fictional": true
+  },
+  {
+    "id": "rel01_TA_v1",
+    "original_id": "rel01",
+    "condition": "TA",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-317?",
+    "docs": [
+      "The inspection code assigned to Unit U-317 is K-24173. Unit U-682 has a ledger entry.",
+      "Unit U-317 has a ledger entry. Unit U-682 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-317",
+    "other_entity": "U-682",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-24173",
+    "candidate_slot": 1,
+    "fictional": true
+  },
+  {
+    "id": "rel01_TA_v2",
+    "original_id": "rel01",
+    "condition": "TA",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-317?",
+    "docs": [
+      "The inspection code assigned to Unit U-317 is K-85629. Unit U-682 has a ledger entry.",
+      "Unit U-317 has a ledger entry. Unit U-682 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-317",
+    "other_entity": "U-682",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-85629",
+    "candidate_slot": 1,
+    "fictional": true
+  },
+  {
+    "id": "rel01_OA_v1",
+    "original_id": "rel01",
+    "condition": "OA",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-317?",
+    "docs": [
+      "The inspection code assigned to Unit U-682 is K-24173. Unit U-317 has a ledger entry.",
+      "Unit U-317 has a ledger entry. Unit U-682 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-317",
+    "other_entity": "U-682",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-24173",
+    "candidate_slot": 1,
+    "fictional": true
+  },
+  {
+    "id": "rel01_OA_v2",
+    "original_id": "rel01",
+    "condition": "OA",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-317?",
+    "docs": [
+      "The inspection code assigned to Unit U-682 is K-85629. Unit U-317 has a ledger entry.",
+      "Unit U-317 has a ledger entry. Unit U-682 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-317",
+    "other_entity": "U-682",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-85629",
+    "candidate_slot": 1,
+    "fictional": true
+  },
+  {
+    "id": "rel02_TQ_v1",
+    "original_id": "rel02",
+    "condition": "TQ",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-946?",
+    "docs": [
+      "Unit U-946 has a ledger entry. Unit U-153 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "The inspection code assigned to Unit U-946 is K-76418. Unit U-153 has a ledger entry.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-946",
+    "other_entity": "U-153",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-76418",
+    "candidate_slot": 4,
+    "fictional": true
+  },
+  {
+    "id": "rel02_TQ_v2",
+    "original_id": "rel02",
+    "condition": "TQ",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-946?",
+    "docs": [
+      "Unit U-946 has a ledger entry. Unit U-153 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "The inspection code assigned to Unit U-946 is K-32865. Unit U-153 has a ledger entry.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-946",
+    "other_entity": "U-153",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-32865",
+    "candidate_slot": 4,
+    "fictional": true
+  },
+  {
+    "id": "rel02_OQ_v1",
+    "original_id": "rel02",
+    "condition": "OQ",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-946?",
+    "docs": [
+      "Unit U-946 has a ledger entry. Unit U-153 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "The inspection code assigned to Unit U-153 is K-76418. Unit U-946 has a ledger entry.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-946",
+    "other_entity": "U-153",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-76418",
+    "candidate_slot": 4,
+    "fictional": true
+  },
+  {
+    "id": "rel02_OQ_v2",
+    "original_id": "rel02",
+    "condition": "OQ",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-946?",
+    "docs": [
+      "Unit U-946 has a ledger entry. Unit U-153 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "The inspection code assigned to Unit U-153 is K-32865. Unit U-946 has a ledger entry.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-946",
+    "other_entity": "U-153",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-32865",
+    "candidate_slot": 4,
+    "fictional": true
+  },
+  {
+    "id": "rel02_TA_v1",
+    "original_id": "rel02",
+    "condition": "TA",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-946?",
+    "docs": [
+      "Unit U-946 has a ledger entry. Unit U-153 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "The access code assigned to Unit U-946 is K-76418. Unit U-153 has a ledger entry.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-946",
+    "other_entity": "U-153",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-76418",
+    "candidate_slot": 4,
+    "fictional": true
+  },
+  {
+    "id": "rel02_TA_v2",
+    "original_id": "rel02",
+    "condition": "TA",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-946?",
+    "docs": [
+      "Unit U-946 has a ledger entry. Unit U-153 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "The access code assigned to Unit U-946 is K-32865. Unit U-153 has a ledger entry.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-946",
+    "other_entity": "U-153",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-32865",
+    "candidate_slot": 4,
+    "fictional": true
+  },
+  {
+    "id": "rel02_OA_v1",
+    "original_id": "rel02",
+    "condition": "OA",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-946?",
+    "docs": [
+      "Unit U-946 has a ledger entry. Unit U-153 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "The access code assigned to Unit U-153 is K-76418. Unit U-946 has a ledger entry.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-946",
+    "other_entity": "U-153",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-76418",
+    "candidate_slot": 4,
+    "fictional": true
+  },
+  {
+    "id": "rel02_OA_v2",
+    "original_id": "rel02",
+    "condition": "OA",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-946?",
+    "docs": [
+      "Unit U-946 has a ledger entry. Unit U-153 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "The access code assigned to Unit U-153 is K-32865. Unit U-946 has a ledger entry.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-946",
+    "other_entity": "U-153",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-32865",
+    "candidate_slot": 4,
+    "fictional": true
+  },
+  {
+    "id": "rel03_TQ_v1",
+    "original_id": "rel03",
+    "condition": "TQ",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-215?",
+    "docs": [
+      "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+      "The access code assigned to Unit U-215 is K-23434. Unit U-757 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-215",
+    "other_entity": "U-757",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-23434",
+    "candidate_slot": 2,
+    "fictional": true
+  },
+  {
+    "id": "rel03_TQ_v2",
+    "original_id": "rel03",
+    "condition": "TQ",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-215?",
+    "docs": [
+      "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+      "The access code assigned to Unit U-215 is K-81486. Unit U-757 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-215",
+    "other_entity": "U-757",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-81486",
+    "candidate_slot": 2,
+    "fictional": true
+  },
+  {
+    "id": "rel03_OQ_v1",
+    "original_id": "rel03",
+    "condition": "OQ",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-215?",
+    "docs": [
+      "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+      "The access code assigned to Unit U-757 is K-23434. Unit U-215 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-215",
+    "other_entity": "U-757",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-23434",
+    "candidate_slot": 2,
+    "fictional": true
+  },
+  {
+    "id": "rel03_OQ_v2",
+    "original_id": "rel03",
+    "condition": "OQ",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-215?",
+    "docs": [
+      "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+      "The access code assigned to Unit U-757 is K-81486. Unit U-215 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-215",
+    "other_entity": "U-757",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-81486",
+    "candidate_slot": 2,
+    "fictional": true
+  },
+  {
+    "id": "rel03_TA_v1",
+    "original_id": "rel03",
+    "condition": "TA",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-215?",
+    "docs": [
+      "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+      "The inspection code assigned to Unit U-215 is K-23434. Unit U-757 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-215",
+    "other_entity": "U-757",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-23434",
+    "candidate_slot": 2,
+    "fictional": true
+  },
+  {
+    "id": "rel03_TA_v2",
+    "original_id": "rel03",
+    "condition": "TA",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-215?",
+    "docs": [
+      "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+      "The inspection code assigned to Unit U-215 is K-81486. Unit U-757 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-215",
+    "other_entity": "U-757",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-81486",
+    "candidate_slot": 2,
+    "fictional": true
+  },
+  {
+    "id": "rel03_OA_v1",
+    "original_id": "rel03",
+    "condition": "OA",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-215?",
+    "docs": [
+      "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+      "The inspection code assigned to Unit U-757 is K-23434. Unit U-215 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-215",
+    "other_entity": "U-757",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-23434",
+    "candidate_slot": 2,
+    "fictional": true
+  },
+  {
+    "id": "rel03_OA_v2",
+    "original_id": "rel03",
+    "condition": "OA",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-215?",
+    "docs": [
+      "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+      "The inspection code assigned to Unit U-757 is K-81486. Unit U-215 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-215",
+    "other_entity": "U-757",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-81486",
+    "candidate_slot": 2,
+    "fictional": true
+  },
+  {
+    "id": "rel04_TQ_v1",
+    "original_id": "rel04",
+    "condition": "TQ",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-862?",
+    "docs": [
+      "Unit U-862 has a ledger entry. Unit U-125 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional.",
+      "The inspection code assigned to Unit U-862 is K-87402. Unit U-125 has a ledger entry."
+    ],
+    "target_entity": "U-862",
+    "other_entity": "U-125",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-87402",
+    "candidate_slot": 5,
+    "fictional": true
+  },
+  {
+    "id": "rel04_TQ_v2",
+    "original_id": "rel04",
+    "condition": "TQ",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-862?",
+    "docs": [
+      "Unit U-862 has a ledger entry. Unit U-125 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional.",
+      "The inspection code assigned to Unit U-862 is K-21395. Unit U-125 has a ledger entry."
+    ],
+    "target_entity": "U-862",
+    "other_entity": "U-125",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-21395",
+    "candidate_slot": 5,
+    "fictional": true
+  },
+  {
+    "id": "rel04_OQ_v1",
+    "original_id": "rel04",
+    "condition": "OQ",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-862?",
+    "docs": [
+      "Unit U-862 has a ledger entry. Unit U-125 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional.",
+      "The inspection code assigned to Unit U-125 is K-87402. Unit U-862 has a ledger entry."
+    ],
+    "target_entity": "U-862",
+    "other_entity": "U-125",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-87402",
+    "candidate_slot": 5,
+    "fictional": true
+  },
+  {
+    "id": "rel04_OQ_v2",
+    "original_id": "rel04",
+    "condition": "OQ",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-862?",
+    "docs": [
+      "Unit U-862 has a ledger entry. Unit U-125 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional.",
+      "The inspection code assigned to Unit U-125 is K-21395. Unit U-862 has a ledger entry."
+    ],
+    "target_entity": "U-862",
+    "other_entity": "U-125",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-21395",
+    "candidate_slot": 5,
+    "fictional": true
+  },
+  {
+    "id": "rel04_TA_v1",
+    "original_id": "rel04",
+    "condition": "TA",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-862?",
+    "docs": [
+      "Unit U-862 has a ledger entry. Unit U-125 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional.",
+      "The access code assigned to Unit U-862 is K-87402. Unit U-125 has a ledger entry."
+    ],
+    "target_entity": "U-862",
+    "other_entity": "U-125",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-87402",
+    "candidate_slot": 5,
+    "fictional": true
+  },
+  {
+    "id": "rel04_TA_v2",
+    "original_id": "rel04",
+    "condition": "TA",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-862?",
+    "docs": [
+      "Unit U-862 has a ledger entry. Unit U-125 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional.",
+      "The access code assigned to Unit U-862 is K-21395. Unit U-125 has a ledger entry."
+    ],
+    "target_entity": "U-862",
+    "other_entity": "U-125",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-21395",
+    "candidate_slot": 5,
+    "fictional": true
+  },
+  {
+    "id": "rel04_OA_v1",
+    "original_id": "rel04",
+    "condition": "OA",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-862?",
+    "docs": [
+      "Unit U-862 has a ledger entry. Unit U-125 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional.",
+      "The access code assigned to Unit U-125 is K-87402. Unit U-862 has a ledger entry."
+    ],
+    "target_entity": "U-862",
+    "other_entity": "U-125",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-87402",
+    "candidate_slot": 5,
+    "fictional": true
+  },
+  {
+    "id": "rel04_OA_v2",
+    "original_id": "rel04",
+    "condition": "OA",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-862?",
+    "docs": [
+      "Unit U-862 has a ledger entry. Unit U-125 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional.",
+      "The access code assigned to Unit U-125 is K-21395. Unit U-862 has a ledger entry."
+    ],
+    "target_entity": "U-862",
+    "other_entity": "U-125",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-21395",
+    "candidate_slot": 5,
+    "fictional": true
+  },
+  {
+    "id": "rel05_TQ_v1",
+    "original_id": "rel05",
+    "condition": "TQ",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-352?",
+    "docs": [
+      "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The access code assigned to Unit U-352 is K-14165. Unit U-383 has a ledger entry.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-352",
+    "other_entity": "U-383",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-14165",
+    "candidate_slot": 3,
+    "fictional": true
+  },
+  {
+    "id": "rel05_TQ_v2",
+    "original_id": "rel05",
+    "condition": "TQ",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-352?",
+    "docs": [
+      "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The access code assigned to Unit U-352 is K-22280. Unit U-383 has a ledger entry.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-352",
+    "other_entity": "U-383",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-22280",
+    "candidate_slot": 3,
+    "fictional": true
+  },
+  {
+    "id": "rel05_OQ_v1",
+    "original_id": "rel05",
+    "condition": "OQ",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-352?",
+    "docs": [
+      "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The access code assigned to Unit U-383 is K-14165. Unit U-352 has a ledger entry.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-352",
+    "other_entity": "U-383",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-14165",
+    "candidate_slot": 3,
+    "fictional": true
+  },
+  {
+    "id": "rel05_OQ_v2",
+    "original_id": "rel05",
+    "condition": "OQ",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-352?",
+    "docs": [
+      "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The access code assigned to Unit U-383 is K-22280. Unit U-352 has a ledger entry.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-352",
+    "other_entity": "U-383",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-22280",
+    "candidate_slot": 3,
+    "fictional": true
+  },
+  {
+    "id": "rel05_TA_v1",
+    "original_id": "rel05",
+    "condition": "TA",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-352?",
+    "docs": [
+      "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The inspection code assigned to Unit U-352 is K-14165. Unit U-383 has a ledger entry.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-352",
+    "other_entity": "U-383",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-14165",
+    "candidate_slot": 3,
+    "fictional": true
+  },
+  {
+    "id": "rel05_TA_v2",
+    "original_id": "rel05",
+    "condition": "TA",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-352?",
+    "docs": [
+      "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The inspection code assigned to Unit U-352 is K-22280. Unit U-383 has a ledger entry.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-352",
+    "other_entity": "U-383",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-22280",
+    "candidate_slot": 3,
+    "fictional": true
+  },
+  {
+    "id": "rel05_OA_v1",
+    "original_id": "rel05",
+    "condition": "OA",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-352?",
+    "docs": [
+      "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The inspection code assigned to Unit U-383 is K-14165. Unit U-352 has a ledger entry.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-352",
+    "other_entity": "U-383",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-14165",
+    "candidate_slot": 3,
+    "fictional": true
+  },
+  {
+    "id": "rel05_OA_v2",
+    "original_id": "rel05",
+    "condition": "OA",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-352?",
+    "docs": [
+      "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The inspection code assigned to Unit U-383 is K-22280. Unit U-352 has a ledger entry.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-352",
+    "other_entity": "U-383",
+    "queried_attribute": "access code",
+    "displayed_candidate": "K-22280",
+    "candidate_slot": 3,
+    "fictional": true
+  },
+  {
+    "id": "rel06_TQ_v1",
+    "original_id": "rel06",
+    "condition": "TQ",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-330?",
+    "docs": [
+      "The inspection code assigned to Unit U-330 is K-76240. Unit U-243 has a ledger entry.",
+      "Unit U-330 has a ledger entry. Unit U-243 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-330",
+    "other_entity": "U-243",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-76240",
+    "candidate_slot": 1,
+    "fictional": true
+  },
+  {
+    "id": "rel06_TQ_v2",
+    "original_id": "rel06",
+    "condition": "TQ",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-330?",
+    "docs": [
+      "The inspection code assigned to Unit U-330 is K-40497. Unit U-243 has a ledger entry.",
+      "Unit U-330 has a ledger entry. Unit U-243 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-330",
+    "other_entity": "U-243",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-40497",
+    "candidate_slot": 1,
+    "fictional": true
+  },
+  {
+    "id": "rel06_OQ_v1",
+    "original_id": "rel06",
+    "condition": "OQ",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-330?",
+    "docs": [
+      "The inspection code assigned to Unit U-243 is K-76240. Unit U-330 has a ledger entry.",
+      "Unit U-330 has a ledger entry. Unit U-243 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-330",
+    "other_entity": "U-243",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-76240",
+    "candidate_slot": 1,
+    "fictional": true
+  },
+  {
+    "id": "rel06_OQ_v2",
+    "original_id": "rel06",
+    "condition": "OQ",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-330?",
+    "docs": [
+      "The inspection code assigned to Unit U-243 is K-40497. Unit U-330 has a ledger entry.",
+      "Unit U-330 has a ledger entry. Unit U-243 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-330",
+    "other_entity": "U-243",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-40497",
+    "candidate_slot": 1,
+    "fictional": true
+  },
+  {
+    "id": "rel06_TA_v1",
+    "original_id": "rel06",
+    "condition": "TA",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-330?",
+    "docs": [
+      "The access code assigned to Unit U-330 is K-76240. Unit U-243 has a ledger entry.",
+      "Unit U-330 has a ledger entry. Unit U-243 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-330",
+    "other_entity": "U-243",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-76240",
+    "candidate_slot": 1,
+    "fictional": true
+  },
+  {
+    "id": "rel06_TA_v2",
+    "original_id": "rel06",
+    "condition": "TA",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-330?",
+    "docs": [
+      "The access code assigned to Unit U-330 is K-40497. Unit U-243 has a ledger entry.",
+      "Unit U-330 has a ledger entry. Unit U-243 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-330",
+    "other_entity": "U-243",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-40497",
+    "candidate_slot": 1,
+    "fictional": true
+  },
+  {
+    "id": "rel06_OA_v1",
+    "original_id": "rel06",
+    "condition": "OA",
+    "variant": "v1",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-330?",
+    "docs": [
+      "The access code assigned to Unit U-243 is K-76240. Unit U-330 has a ledger entry.",
+      "Unit U-330 has a ledger entry. Unit U-243 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-330",
+    "other_entity": "U-243",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-76240",
+    "candidate_slot": 1,
+    "fictional": true
+  },
+  {
+    "id": "rel06_OA_v2",
+    "original_id": "rel06",
+    "condition": "OA",
+    "variant": "v2",
+    "question": "According only to the provided fictional archive records, what inspection code is assigned to Unit U-330?",
+    "docs": [
+      "The access code assigned to Unit U-243 is K-40497. Unit U-330 has a ledger entry.",
+      "Unit U-330 has a ledger entry. Unit U-243 has a ledger entry.",
+      "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+      "The archive stores its ledger entries on numbered pages.",
+      "A ledger entry has a date field. The archive is fictional."
+    ],
+    "target_entity": "U-330",
+    "other_entity": "U-243",
+    "queried_attribute": "inspection code",
+    "displayed_candidate": "K-40497",
+    "candidate_slot": 1,
+    "fictional": true
+  }
+]

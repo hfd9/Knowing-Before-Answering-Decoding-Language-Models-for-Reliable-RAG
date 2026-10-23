@@ -1,0 +1,150 @@
+{
+  "status": "prepared_not_started_cpu_verified",
+  "history_exposed": true,
+  "independent_gold": false,
+  "actual_gpu_calls": 0,
+  "actual_forward_passes": 0,
+  "actual_answers": 0,
+  "actual_generation_attempts": 0,
+  "new_probe_fits": 0,
+  "original_remaining_fits": 0,
+  "original_formal_gate": false,
+  "formal_labels": null,
+  "held_out380_accessed": false,
+  "collection_allowed": true,
+  "original_formal_gate_changed": false,
+  "scenarios": 6,
+  "cells": 48,
+  "sufficient": 12,
+  "insufficient": 36,
+  "main_pairs": 12,
+  "compatible_worlds": 72,
+  "structural_pairs": 72,
+  "original_examples_preserved": 16,
+  "reviewed_questions": 48,
+  "reviewed_document_slots": 240,
+  "unique_document_texts": 57,
+  "real_preflight": {
+    "status": "prepared_not_started",
+    "cells": 48,
+    "scenarios": 6,
+    "counts_by_cell": {
+      "TQ": 12,
+      "OQ": 12,
+      "TA": 12,
+      "OA": 12
+    },
+    "smoke_cells_included": 4,
+    "input_tokens_min": 267,
+    "input_tokens_max": 267,
+    "total_input_tokens": 12816,
+    "reserved_output_tokens": 6144,
+    "no_model_weights_loaded": true,
+    "no_probe_loaded": true,
+    "no_gpu_calls": true
+  },
+  "new_cpu_tests": {
+    "tests": 10,
+    "unittest_seconds": 8.115,
+    "exit_code": 0,
+    "synthetic_answers_only": true,
+    "old_suite_rerun": false
+  },
+  "actual_commands": [
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /large_disk/wf/miniconda3/envs/kba-rag/bin/python -B -m unittest discover -s tests -p test_relation_attachment_study.py -v",
+      "exit_code": 0
+    },
+    {
+      "command": "sh scripts/run_relation_attachment_study.sh --stage prepare",
+      "exit_code": 0
+    },
+    {
+      "command": "PYTHONHASHSEED=241 sh scripts/run_relation_attachment_study.sh --stage verify",
+      "exit_code": 0
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /large_disk/wf/miniconda3/envs/kba-rag/bin/python -B scripts/verify_relation_attachment_preparation.py",
+      "exit_code": 0
+    }
+  ],
+  "independent_structural_verification": {
+    "status": "independent_cpu_preparation_verified",
+    "independent_semantic_review": false,
+    "prior_paths_preserved": 1162,
+    "frozen_run_files": 10,
+    "inputs": 48,
+    "scenarios": 6,
+    "sufficient": 12,
+    "insufficient": 36,
+    "compatible_worlds": 72,
+    "pairs": 72,
+    "primary_pairs": 12,
+    "primary_pairs_with_equal_token_multisets": 12,
+    "input_tokens_min": 267,
+    "input_tokens_max": 267,
+    "total_input_tokens": 12816,
+    "exact_prompts_rebuilt": 48,
+    "implementation_files": 13,
+    "source_files": 9,
+    "model_metadata_checked": 5,
+    "full_weights_checked_by": "Collector prepare and verify, not repeated in this independent metadata/token check",
+    "generated_answers": 0,
+    "new_fits": 0,
+    "new_gpu_calls": 0,
+    "implementation_sha256": "67b18a7a7ef1609aa5c2225433ef05bd1d5738c3e3a7296e8bf30c1f7e129378",
+    "protocol_sha256": "504b4da5f0c4e51cfdffaa54129e55c0a3b433f37e387d286c21ad65f4d7c1f5"
+  },
+  "implementation_sha256": {
+    "scripts/relation_attachment_study.py": "b303128496c73093a84204c36c3ca1e8f676e9638363b8132e962ab16cb6a62c",
+    "scripts/run_relation_attachment_study.sh": "f423101e36be880f1a829c312efef1b08a49d938b6ad0bfb9e78895a75cd64f4",
+    "tests/test_relation_attachment_study.py": "55190d288d1025a52d579f2237070ebf0dd33129d43b0e8c945024c87718c9ac",
+    "scripts/behavior_binding_study.py": "4312e543a6c39e544dd18c5db72412a86237163eed25570ed3ef279ce36fa79f",
+    "scripts/evidence_experiment.py": "019af81ffcfe108b155e6e061569d7d1c1fc17d3b072ad436d78defa74aac225",
+    "scripts/small_repro.py": "3302a541d04cfde3a29e663f747ad093dac8893b85f6607c5fb16333edf457fd",
+    "scripts/prompt_baseline.py": "2966151480873b1775aa1d275f804544959f377587840fc36f51ff1d209aed3c",
+    "scripts/analyze_prompt_baseline.py": "7a95b7d4487cac73d5bb20e53e9cfcaa6ad69399e5fe69484633c187eed0e020",
+    "scripts/classification_semantic_baseline.py": "01e1d8c03e7503d984b1b12272c790d1ea3c8ef3a82f61195e16833abc36d53d",
+    "scripts/classification_prompt_search.py": "a3738c2d77412aa20c35c992a847b3a5ed0386bc154d728c19966111f9ec44e2",
+    "code/prompts.py": "bedd7b758ef6cfe117580d3fc29e133f1343830f88be71243f8c07e6a893f7c8",
+    "prompts/prompt_robustness_P0_P5.json": "d6f83b7d4a9919b408275fa0d4587db8e8628cb581e1e593a8f0b64dbbd27b27",
+    "configs/local.env": "0d62a5eea40dc8464f135ba88da937b37c4dc2a9a8ab5eec5f74a40e636cdcc9"
+  },
+  "source_sha256": {
+    "prompts/behavior_relation_attachment_materials_v1.json": "d0644392426b53aec790ae8d71027863833bc74037e7da8d116a5a974fbd9248",
+    "prompts/behavior_relation_attachment_design_v1.json": "bedb9115bbda1072c9c577c9fac81b245777bcfc66cf49123ee4d9480b75cd50",
+    "prompts/behavior_relation_attachment_scoring_v1.json": "6c4886d7859ddfb5ee64d9f17919c9b4a582bc3e226612401203bb3bba7cc37b",
+    "prompts/behavior_relation_attachment_author_review_v1.json": "7a277d3e834adff51a8fae3aeebaacfd1eee2b2d3e8749d8fe149a08343267fe",
+    "docs/records/2026-10-23-behavior-structure-audit-samples.json": "0e7e5d4e4cecfdae7907cd42b7eb6bd3a70031fd4b014d84c63245e48cd1405b",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/protocol.json": "e57efaaf0ec2c68a560ec63dfd5d9850ce55dc83fbe4a3c4130dca9614d40d07",
+    "runs/semantic-transfer-shared-one-fit-budget-v1.json": "e18339a83e8eb45d1b7539797e2091ae4f780c4d558bb96a4e984217946a8b35",
+    "docs/records/2026-10-21-semantic-transfer-exploratory-retrain-fit-seal.json": "7ca22b01581746cd33a88989123be97aab7711b07e835453623792b378d6e88d",
+    "runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/approved_labels.json": "d4bd330366ae40fb51a7980e99bfbcf8398a76e0c074c8ea25c4f45cedbb7eca"
+  },
+  "model_files_sha256": {
+    "config.json": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+    "model.safetensors.index.json": "bc8aaa0c87d4335177e01c765f1de0db81661c67c1a72fbfb0d521b09f5ddc56",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "model-00001-of-00002.safetensors": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2",
+    "model-00002-of-00002.safetensors": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d",
+    "generation_config.json": "ea35dfb6fc5051b01114f9b995820d55dab01ed33ee490f6378b442af82c09f9"
+  },
+  "protocol_sha256": "504b4da5f0c4e51cfdffaa54129e55c0a3b433f37e387d286c21ad65f4d7c1f5",
+  "prior_paths_preserved": 1162,
+  "frozen_run_files": 10,
+  "launch_command": "sh scripts/run_relation_attachment_study.sh",
+  "launch_actor": "user",
+  "launch_log": "runs/qwen2.5-3b-relation-attachment-v1/launch/collection.log",
+  "planning_minutes": [
+    5,
+    20
+  ],
+  "gpu_duration_measured": false,
+  "results_verification_command": "sh scripts/run_relation_attachment_study.sh --stage verify-results",
+  "primary_behavior_rate": null,
+  "all_I_answer_rate": null,
+  "TQ_supported_rate": null,
+  "committed": false,
+  "pushed": false
+}

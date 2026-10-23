@@ -1,0 +1,74 @@
+{
+  "status": "passed",
+  "actual_commands": [
+    {
+      "command": "PYTHONHASHSEED=251 sh scripts/run_relation_attachment_study.sh --stage verify-results",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -B scripts/relation_attachment_results.py --stage analyze",
+      "exit_code": 0
+    },
+    {
+      "command": "PYTHONHASHSEED=257 python3 -B scripts/relation_attachment_results.py --stage verify",
+      "exit_code": 0
+    },
+    {
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /large_disk/wf/miniconda3/envs/kba-rag/bin/python -B scripts/verify_relation_attachment_results.py",
+      "exit_code": 0
+    }
+  ],
+  "new_payload_files": 15,
+  "syntax_and_format": {
+    "python": 2,
+    "json": 8,
+    "csv": 4,
+    "markdown": 1
+  },
+  "markdown_local_links_exist": true,
+  "trailing_whitespace": false,
+  "old_paths_unchanged": 1181,
+  "source_run_set_and_bytes_unchanged": 67,
+  "independent_verification": {
+    "status": "independent_numeric_citation_and_raw_token_verification_passed",
+    "independent_semantic_review": false,
+    "rows": 48,
+    "fields": 240,
+    "input_citations": 120,
+    "full_output_citations": 48,
+    "unknown_fields": 46,
+    "primary_pairs": 12,
+    "scenarios": 6,
+    "primary_difference": 0.0,
+    "maximum_count_and_primary_error": 0,
+    "posthoc_conflict_notes": 3,
+    "raw_outputs_decoded": 48,
+    "preserved_old_paths": 1181,
+    "source_run_files": 67,
+    "new_gpu_calls": 0,
+    "new_fits": 0,
+    "implementation_sha256": "ad4130dca02f68643472f42ac1adecb0b206a46d6c0455dc3d305b049290c4d1"
+  },
+  "new_gpu_calls": 0,
+  "new_forward_passes": 0,
+  "new_answers": 0,
+  "new_fits": 0,
+  "old_tests_rerun": false,
+  "payload_sha256": {
+    "docs/records/2026-10-23-relation-attachment-results-cells.csv": "55cc17b89757decb70d3af57099bd0b25e0f9ac1cade7372768f82ef7f71c630",
+    "docs/records/2026-10-23-relation-attachment-results-judgment-seal.json": "e891b5e2cb11de3a83bf9d79566b0bdf0bad3d0ee62dd9f940b7f284d3737976",
+    "docs/records/2026-10-23-relation-attachment-results-manual.json": "5225645b0e4d4f794c7c3cd5db3ca93a9fe838075f1e8720d10f212f4bbce67a",
+    "docs/records/2026-10-23-relation-attachment-results-preserved.json": "6f12fc3bc07a47e44a3b8a44893e194db52084414ca5a551b5767479fd599f1c",
+    "docs/records/2026-10-23-relation-attachment-results-primary-pairs.csv": "ed213a6f671b7dec0562bda1e4b9f62c94ec3ad7bdeb22bc3217861fb665cd4a",
+    "docs/records/2026-10-23-relation-attachment-results-qualitative-notes.csv": "729518817528ce08e004da2df3fba98dd4e9b92350aa14ac9e114e9dcba49e2e",
+    "docs/records/2026-10-23-relation-attachment-results-ratings.json": "ab517fb2dc7a3ff83f580f245122a7c439df13f24bf426c5642abf2a212f9667",
+    "docs/records/2026-10-23-relation-attachment-results-reading-inventory.json": "73f5adf74cbfa821b415be9b3782f018ea6ac3b470e634ff723760bdefefbef4",
+    "docs/records/2026-10-23-relation-attachment-results-scenarios.csv": "84fa2ae2b9f9f5b713b75ba90f0974ae873b5f0315ae4c3aafcf68409160425f",
+    "docs/records/2026-10-23-relation-attachment-results-source-run-hashes.json": "dda028251343aba553b3fd48557b15188e4bdce6657453fd171289c04905f45f",
+    "docs/records/2026-10-23-relation-attachment-results-verification.json": "f73daa585fd946230fe9546bfc8a5ecc2357d56573933e8c58b1170c4ff0339c",
+    "docs/records/2026-10-23-relation-attachment-results.json": "d24eda685b9683c4053609971dadeea3f3351bd8a0fdd4179b63ea2cbdb2b906",
+    "docs/records/2026-10-23-relation-attachment-results.md": "17152e178c853164f0b2326e4c1cf469165f3d1113a5ae74a7459fe2feb8459e",
+    "scripts/relation_attachment_results.py": "0b6c02b3dfd792db514694c8adc25cc07943303daa5cd5aa69461d7d239b5897",
+    "scripts/verify_relation_attachment_results.py": "ad4130dca02f68643472f42ac1adecb0b206a46d6c0455dc3d305b049290c4d1"
+  }
+}

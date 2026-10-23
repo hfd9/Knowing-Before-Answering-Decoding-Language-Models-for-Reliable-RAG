@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "new_payload_files": 18,
+  "syntax_and_format": {
+    "python": 3,
+    "json": 10,
+    "shell": 1,
+    "markdown": 3,
+    "csv": 1
+  },
+  "local_markdown_links_exist": true,
+  "trailing_whitespace": false,
+  "prior_paths_final_sha256_match": 1162,
+  "run_prepared_file_set_and_bytes_unchanged": 10,
+  "frozen_implementation_files_unchanged": 13,
+  "frozen_source_files_unchanged": 9,
+  "new_gpu_calls": 0,
+  "new_answers": 0,
+  "new_fits": 0,
+  "old_tests_rerun": false,
+  "payload_sha256": {
+    "docs/records/2026-10-23-relation-attachment-preparation-inputs.json": "9df613c0e94807ad6c919defdffe5b815965554c9ffc4ef775272bb2e462bee1",
+    "docs/records/2026-10-23-relation-attachment-preparation-inputs.md": "1a19431238eff5e4900d956c33545ce56a8392fb32416ba24b4152016237efd2",
+    "docs/records/2026-10-23-relation-attachment-preparation-pairs.csv": "b17ff79c80d44fcad4fdefeb7cb1537bd124823c967c5d3551d2ea7655c02632",
+    "docs/records/2026-10-23-relation-attachment-preparation-preserved.json": "5b0e5466ed1522575baabbb57d54a3ba1218c92693935229c46c7c5cb07c9275",
+    "docs/records/2026-10-23-relation-attachment-preparation-reading-inventory.json": "a092100e5fffb817383a3460b80e88960c5281f77091aeda2082f1230a2f5c09",
+    "docs/records/2026-10-23-relation-attachment-preparation-run-hashes.json": "e462aac1bd976f117be11b0879acf5acaa8d9bc7fa93566ae02723b7eac1c780",
+    "docs/records/2026-10-23-relation-attachment-preparation-verification.json": "073ae3ed53fb23db67dd4ef41abc2b51ae13eea85cdc21c315b4a825b913266a",
+    "docs/records/2026-10-23-relation-attachment-preparation-witnesses.json": "3c7f8281c859cab50e7ebab67929eef951d7da4bc816ed8ad01d9e2365fc39aa",
+    "docs/records/2026-10-23-relation-attachment-preparation.json": "52cf8d95981981572250d9e7c0a3b610af20341c0ebe8d566c58ae3ce538823a",
+    "docs/records/2026-10-23-relation-attachment-preparation.md": "4a9e5639397bbaa62daea00438b2ee7027333256aaaa13ec5a1a7457d34ab694",
+    "docs/relation_attachment_study.md": "375120fbe10a14f1e0675b8762a004c4cd7b464c41dd8101d57ad7c90dc905f0",
+    "prompts/behavior_relation_attachment_author_review_v1.json": "7a277d3e834adff51a8fae3aeebaacfd1eee2b2d3e8749d8fe149a08343267fe",
+    "prompts/behavior_relation_attachment_materials_v1.json": "d0644392426b53aec790ae8d71027863833bc74037e7da8d116a5a974fbd9248",
+    "prompts/behavior_relation_attachment_scoring_v1.json": "6c4886d7859ddfb5ee64d9f17919c9b4a582bc3e226612401203bb3bba7cc37b",
+    "scripts/relation_attachment_study.py": "b303128496c73093a84204c36c3ca1e8f676e9638363b8132e962ab16cb6a62c",
+    "scripts/run_relation_attachment_study.sh": "f423101e36be880f1a829c312efef1b08a49d938b6ad0bfb9e78895a75cd64f4",
+    "scripts/verify_relation_attachment_preparation.py": "67b18a7a7ef1609aa5c2225433ef05bd1d5738c3e3a7296e8bf30c1f7e129378",
+    "tests/test_relation_attachment_study.py": "55190d288d1025a52d579f2237070ebf0dd33129d43b0e8c945024c87718c9ac"
+  }
+}

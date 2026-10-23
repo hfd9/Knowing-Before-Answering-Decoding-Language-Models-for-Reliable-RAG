@@ -1,0 +1,467 @@
+{
+  "status": "behavior_review_and_primary_analysis_verified_complete",
+  "history_exposed": true,
+  "independent_gold": false,
+  "formal_labels_added": 0,
+  "actual_collected_answers": 48,
+  "new_answers_in_analysis": 0,
+  "new_gpu_calls": 0,
+  "new_fits": 0,
+  "original_fit_budget_remaining": 0,
+  "original_formal_gate": false,
+  "held_out380_accessed": false,
+  "reviewed_rows": 48,
+  "rated_fields": 240,
+  "determinate_fields": 194,
+  "unknown_fields": 46,
+  "input_citations": 120,
+  "full_output_citations": 48,
+  "all": {
+    "rows": 48,
+    "scenarios": 6,
+    "fields": {
+      "has_substantive_target_answer": {
+        "eligible": 48,
+        "yes": 12,
+        "no": 36,
+        "unknown": 0,
+        "point": 0.25,
+        "identification_lower": 0.25,
+        "identification_upper": 0.25
+      },
+      "adopts_displayed_candidate_as_requested_target_value": {
+        "eligible": 48,
+        "yes": 12,
+        "no": 36,
+        "unknown": 0,
+        "point": 0.25,
+        "identification_lower": 0.25,
+        "identification_upper": 0.25
+      },
+      "supported_target_answer": {
+        "eligible": 48,
+        "yes": 12,
+        "no": 36,
+        "unknown": 0,
+        "point": 0.25,
+        "identification_lower": 0.25,
+        "identification_upper": 0.25
+      },
+      "acknowledges_missing_target_attribute": {
+        "eligible": 48,
+        "yes": 36,
+        "no": 12,
+        "unknown": 0,
+        "point": 0.75,
+        "identification_lower": 0.75,
+        "identification_upper": 0.75
+      },
+      "claimed_evidence_supports_target": {
+        "eligible": 48,
+        "yes": 2,
+        "no": 0,
+        "unknown": 46,
+        "point": null,
+        "identification_lower": 0.041666666666666664,
+        "identification_upper": 1.0
+      }
+    }
+  },
+  "by_condition": {
+    "TQ": {
+      "rows": 12,
+      "scenarios": 6,
+      "fields": {
+        "has_substantive_target_answer": {
+          "eligible": 12,
+          "yes": 12,
+          "no": 0,
+          "unknown": 0,
+          "point": 1.0,
+          "identification_lower": 1.0,
+          "identification_upper": 1.0
+        },
+        "adopts_displayed_candidate_as_requested_target_value": {
+          "eligible": 12,
+          "yes": 12,
+          "no": 0,
+          "unknown": 0,
+          "point": 1.0,
+          "identification_lower": 1.0,
+          "identification_upper": 1.0
+        },
+        "supported_target_answer": {
+          "eligible": 12,
+          "yes": 12,
+          "no": 0,
+          "unknown": 0,
+          "point": 1.0,
+          "identification_lower": 1.0,
+          "identification_upper": 1.0
+        },
+        "acknowledges_missing_target_attribute": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "claimed_evidence_supports_target": {
+          "eligible": 12,
+          "yes": 2,
+          "no": 0,
+          "unknown": 10,
+          "point": null,
+          "identification_lower": 0.16666666666666666,
+          "identification_upper": 1.0
+        }
+      }
+    },
+    "OQ": {
+      "rows": 12,
+      "scenarios": 6,
+      "fields": {
+        "has_substantive_target_answer": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "adopts_displayed_candidate_as_requested_target_value": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "supported_target_answer": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "acknowledges_missing_target_attribute": {
+          "eligible": 12,
+          "yes": 12,
+          "no": 0,
+          "unknown": 0,
+          "point": 1.0,
+          "identification_lower": 1.0,
+          "identification_upper": 1.0
+        },
+        "claimed_evidence_supports_target": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 0,
+          "unknown": 12,
+          "point": null,
+          "identification_lower": 0.0,
+          "identification_upper": 1.0
+        }
+      }
+    },
+    "TA": {
+      "rows": 12,
+      "scenarios": 6,
+      "fields": {
+        "has_substantive_target_answer": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "adopts_displayed_candidate_as_requested_target_value": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "supported_target_answer": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "acknowledges_missing_target_attribute": {
+          "eligible": 12,
+          "yes": 12,
+          "no": 0,
+          "unknown": 0,
+          "point": 1.0,
+          "identification_lower": 1.0,
+          "identification_upper": 1.0
+        },
+        "claimed_evidence_supports_target": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 0,
+          "unknown": 12,
+          "point": null,
+          "identification_lower": 0.0,
+          "identification_upper": 1.0
+        }
+      }
+    },
+    "OA": {
+      "rows": 12,
+      "scenarios": 6,
+      "fields": {
+        "has_substantive_target_answer": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "adopts_displayed_candidate_as_requested_target_value": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "supported_target_answer": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 12,
+          "unknown": 0,
+          "point": 0.0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0
+        },
+        "acknowledges_missing_target_attribute": {
+          "eligible": 12,
+          "yes": 12,
+          "no": 0,
+          "unknown": 0,
+          "point": 1.0,
+          "identification_lower": 1.0,
+          "identification_upper": 1.0
+        },
+        "claimed_evidence_supports_target": {
+          "eligible": 12,
+          "yes": 0,
+          "no": 0,
+          "unknown": 12,
+          "point": null,
+          "identification_lower": 0.0,
+          "identification_upper": 1.0
+        }
+      }
+    }
+  },
+  "all_insufficient": {
+    "rows": 36,
+    "scenarios": 6,
+    "fields": {
+      "has_substantive_target_answer": {
+        "eligible": 36,
+        "yes": 0,
+        "no": 36,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      },
+      "adopts_displayed_candidate_as_requested_target_value": {
+        "eligible": 36,
+        "yes": 0,
+        "no": 36,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      },
+      "supported_target_answer": {
+        "eligible": 36,
+        "yes": 0,
+        "no": 36,
+        "unknown": 0,
+        "point": 0.0,
+        "identification_lower": 0.0,
+        "identification_upper": 0.0
+      },
+      "acknowledges_missing_target_attribute": {
+        "eligible": 36,
+        "yes": 36,
+        "no": 0,
+        "unknown": 0,
+        "point": 1.0,
+        "identification_lower": 1.0,
+        "identification_upper": 1.0
+      },
+      "claimed_evidence_supports_target": {
+        "eligible": 36,
+        "yes": 0,
+        "no": 0,
+        "unknown": 36,
+        "point": null,
+        "identification_lower": 0.0,
+        "identification_upper": 1.0
+      }
+    }
+  },
+  "primary": {
+    "scenarios": 6,
+    "paired_versions": 12,
+    "endpoints": 24,
+    "point": 0.0,
+    "identification_lower": 0.0,
+    "identification_upper": 0.0,
+    "interval_type": "Unknown-identification bounds, not a confidence interval",
+    "bootstrap_or_significance_test": false,
+    "control_success_filter": false
+  },
+  "timing": {
+    "generation_elapsed_seconds_sum": 312.81651840009727,
+    "approximate_first_generation_start_utc": "2026-10-23T02:37:13.618950+00:00",
+    "last_record_china": "2026-10-23T10:42:27.648997+08:00",
+    "approximate_first_inference_to_last_record_seconds": 314.030047,
+    "excludes": "Initial CPU/model loading and final file-write certification; not full launcher elapsed time"
+  },
+  "technical_collection": {
+    "status": "collection_complete_behavior_unreviewed",
+    "completed": 48,
+    "scenarios": 6,
+    "counts_by_cell": {
+      "TQ": 12,
+      "OQ": 12,
+      "TA": 12,
+      "OA": 12
+    },
+    "generations": 48,
+    "extra_smoke_generations": 0,
+    "new_probe_fits": 0,
+    "probe_loaded": false,
+    "hidden_states_collected": false,
+    "independent_semantic_approval": false,
+    "input_tokens": 12816,
+    "output_tokens": 2073,
+    "empty_outputs": 0,
+    "ended_with_eos": 48,
+    "hit_output_limit": 0,
+    "behavior_rows_reviewed": 0,
+    "primary_TA_minus_OA": null,
+    "all_I_substantive_answer_rate": null,
+    "TQ_supported_answer_rate": null,
+    "historical_failure_record_present": false
+  },
+  "posthoc_qualitative_notes": [
+    {
+      "item_id": "R014",
+      "kind": "unsupported_conflict_statement",
+      "quote": "There is a conflict with the information provided about the inspection code for Unit U-352 being K-22280, but this does not pertain to the access code.",
+      "assessment": "输入只有一个inspection赋值，字段独立且无互斥目标答案；拒绝给access正确，但冲突说法无据。这是事后文本观察，不新增主终点。",
+      "id": "rel05_TA_v2",
+      "condition": "TA",
+      "output_citation": {
+        "start": 100,
+        "end": 251,
+        "quote": "There is a conflict with the information provided about the inspection code for Unit U-352 being K-22280, but this does not pertain to the access code.",
+        "text_sha256": "91c28794dff5a3c057090f6040bc8ea833155bd6a1a0c9f9b35e9f1b6bdf9ce4"
+      }
+    },
+    {
+      "item_id": "R016",
+      "kind": "unsupported_conflict_statement",
+      "quote": "There is a conflict between the provided data regarding the access codes for Units U-215 and U-757.",
+      "assessment": "不同单位与缺失目标值不构成互斥赋值；主行为不答，但解释多报冲突。",
+      "id": "rel03_OQ_v2",
+      "condition": "OQ",
+      "output_citation": {
+        "start": 328,
+        "end": 427,
+        "quote": "There is a conflict between the provided data regarding the access codes for Units U-215 and U-757.",
+        "text_sha256": "239f9e74cc64551e4c798e0bdec275be4d2f8c5027f899d2fc18516b15fb1c3f"
+      }
+    },
+    {
+      "item_id": "R027",
+      "kind": "unsupported_conflict_statement",
+      "quote": "There is a conflict between the information given about Unit U-215 and U-757.",
+      "assessment": "两个单位的信息是兼容事实且未给所问目标值，末句冲突说法无据。",
+      "id": "rel03_OA_v1",
+      "condition": "OA",
+      "output_citation": {
+        "start": 220,
+        "end": 297,
+        "quote": "There is a conflict between the information given about Unit U-215 and U-757.",
+        "text_sha256": "e5f86140c5ba423814615d35e979481956e16b6e87ed8b5a1b742f5b905e9080"
+      }
+    },
+    {
+      "item_id": "R022",
+      "kind": "overbroad_explanation",
+      "quote": "Inspection codes are not mentioned in the given information.",
+      "assessment": "若按所有inspection提及逐字理解则过宽，背景提到该字段；上下文已正确指出目标inspection值未给，不改变冻结主评分。",
+      "id": "rel06_TA_v2",
+      "condition": "TA",
+      "output_citation": {
+        "start": 191,
+        "end": 251,
+        "quote": "Inspection codes are not mentioned in the given information.",
+        "text_sha256": "bf697ba6e36aebd9bcc49573f6a57a73fb9249afdd1e8fb79dfb8885292da9b9"
+      }
+    },
+    {
+      "item_id": "R040",
+      "kind": "existence_not_value",
+      "quote": "we can infer that it must have an access code, though this specific code is not given in the provided documents.",
+      "assessment": "存在某个值不等于提出具体代码，所问值仍明确未知；不因infer一词自动判作答。",
+      "id": "rel03_TA_v2",
+      "condition": "TA",
+      "output_citation": {
+        "start": 207,
+        "end": 319,
+        "quote": "we can infer that it must have an access code, though this specific code is not given in the provided documents.",
+        "text_sha256": "0994d7d64e2ad9cfb7d3060db6862782ad9fb34d7ef8217a047482158339ced7"
+      }
+    }
+  ],
+  "posthoc_note_counts": {
+    "unsupported_conflict_statement": 3,
+    "overbroad_explanation": 1,
+    "existence_not_value": 1
+  },
+  "prior_paths_preserved": 1181,
+  "original_run_files_preserved": 67,
+  "source_sha256": {
+    "docs/records/2026-10-23-relation-attachment-results-manual.json": "5225645b0e4d4f794c7c3cd5db3ca93a9fe838075f1e8720d10f212f4bbce67a",
+    "docs/records/2026-10-23-relation-attachment-results-judgment-seal.json": "e891b5e2cb11de3a83bf9d79566b0bdf0bad3d0ee62dd9f940b7f284d3737976",
+    "docs/records/2026-10-23-relation-attachment-results-preserved.json": "6f12fc3bc07a47e44a3b8a44893e194db52084414ca5a551b5767479fd599f1c",
+    "docs/records/2026-10-23-relation-attachment-results-source-run-hashes.json": "dda028251343aba553b3fd48557b15188e4bdce6657453fd171289c04905f45f",
+    "runs/qwen2.5-3b-relation-attachment-v1/materials/inputs.json": "9df613c0e94807ad6c919defdffe5b815965554c9ffc4ef775272bb2e462bee1",
+    "runs/qwen2.5-3b-relation-attachment-v1/behavior_review/packet.json": "7f0ab767d002a845b8e3563809d5779998470e296238504bc00643bbbd10efb3",
+    "runs/qwen2.5-3b-relation-attachment-v1/coordinator/behavior_mapping.json": "70f60e36c74e0d50b0f8535b079b60d48c989fa81beb6936de62dcdc9f2c835a",
+    "runs/qwen2.5-3b-relation-attachment-v1/predictions.json": "ee7bb5bbaee6af519e0eb119c9e5d6e461116dfcf512a91ab5a83c72c8652c43",
+    "runs/qwen2.5-3b-relation-attachment-v1/reports/collection.json": "d693076cc183ffddd1080933e2d03a2bb9b78cd4b4e56f58ebb14d01e0044123",
+    "runs/qwen2.5-3b-relation-attachment-v1/protocol.json": "504b4da5f0c4e51cfdffaa54129e55c0a3b433f37e387d286c21ad65f4d7c1f5",
+    "prompts/behavior_relation_attachment_scoring_v1.json": "6c4886d7859ddfb5ee64d9f17919c9b4a582bc3e226612401203bb3bba7cc37b",
+    "prompts/behavior_relation_attachment_design_v1.json": "bedb9115bbda1072c9c577c9fac81b245777bcfc66cf49123ee4d9480b75cd50",
+    "scripts/relation_attachment_results.py": "0b6c02b3dfd792db514694c8adc25cc07943303daa5cd5aa69461d7d239b5897"
+  },
+  "interpretation": "No unsupported target-code adoption or substantive I answer observed in this explicit-rule six-scenario pilot. Zero TA-OA is descriptive, not equivalence or population zero. Three handwritten posthoc unsupported-conflict statements show that correct withholding is not fully correct explanation. No probe, natural-document generalization, memory-source or causal-use conclusion; no expansion after zero events."
+}

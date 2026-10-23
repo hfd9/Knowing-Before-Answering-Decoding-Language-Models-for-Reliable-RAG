@@ -1,0 +1,39 @@
+{
+  "status": "example_author_semantic_review_complete_history_exposed",
+  "reviewer": "Current assistant, exposed to AGENTS, old outputs, author judgments and new design",
+  "independent_gold": false,
+  "approved_for_training": false,
+  "collection_authorization": false,
+  "reading_basis": "Read the exact sixteen full questions and all eighty displayed document slots in the generated samples.md, plus the old23 complete I outputs and their relevant I citations. Reused the earlier sealed audit for remaining old full-source reading; no new full121-document reread is claimed.",
+  "semantic_checks": [
+    "The question always asks for a specific code field of one explicitly identified unit; there is no multiple-target, alias, cause or enumeration scope.",
+    "A shared background explicitly makes access/inspection fields independent and permits equal values across fields and units. Distinct field names do not assert unequal code values.",
+    "TQ explicitly assigns the displayed code to the requested unit and field. OQ assigns a different unit, TA a different field of the target, and OA both a different unit and field.",
+    "The second clause of the changed document repeats a ledger fact already stated for both units in a shared background; swapping this redundant clause does not add an answer-bearing relation.",
+    "In every I example both a coincidentally equal queried-target value and a different value are compatible with the text. The unseen witness value is not a hidden correct answer.",
+    "The explicit independence sentence makes the task unusually clear and could make refusal easy. Its presence is a deliberate scope restriction, not a controlled explanation of the earlier natural-document failures.",
+    "One template and two code-field directions remain a narrow artificial task. Balanced word/number multisets do not establish tokenizer equality, equal attention or semantic independence of an actual reviewer."
+  ],
+  "rows": [
+    {"id": "rel01_TQ_v1", "author_mode": "answer", "basis": "D1直接给U-317的access code为K-24173。"},
+    {"id": "rel01_TQ_v2", "author_mode": "answer", "basis": "D1直接给U-317的access code为K-85629。"},
+    {"id": "rel01_OQ_v1", "author_mode": "refuse", "basis": "D1的K-24173属于U-682；U-317只给ledger存在，access值未定。"},
+    {"id": "rel01_OQ_v2", "author_mode": "refuse", "basis": "D1的K-85629属于U-682；未给U-317的access值。"},
+    {"id": "rel01_TA_v1", "author_mode": "refuse", "basis": "D1给U-317的inspection值K-24173，问题问access；D3不允许由一字段确定另一字段。"},
+    {"id": "rel01_TA_v2", "author_mode": "refuse", "basis": "D1给U-317的inspection值K-85629，access值仍可相同也可不同。"},
+    {"id": "rel01_OA_v1", "author_mode": "refuse", "basis": "D1给U-682的inspection值K-24173，既非目标实体也非所问字段。"},
+    {"id": "rel01_OA_v2", "author_mode": "refuse", "basis": "D1给U-682的inspection值K-85629，不能确定U-317的access值。"},
+    {"id": "rel02_TQ_v1", "author_mode": "answer", "basis": "D4直接给U-946的inspection code为K-76418。"},
+    {"id": "rel02_TQ_v2", "author_mode": "answer", "basis": "D4直接给U-946的inspection code为K-32865。"},
+    {"id": "rel02_OQ_v1", "author_mode": "refuse", "basis": "D4给U-153的inspection值K-76418，问题问U-946。"},
+    {"id": "rel02_OQ_v2", "author_mode": "refuse", "basis": "D4给U-153的inspection值K-32865，U-946对应值未给。"},
+    {"id": "rel02_TA_v1", "author_mode": "refuse", "basis": "D4给U-946的access值K-76418，问题问inspection；D2明确字段独立。"},
+    {"id": "rel02_TA_v2", "author_mode": "refuse", "basis": "D4给U-946的access值K-32865，inspection不能由它确定。"},
+    {"id": "rel02_OA_v1", "author_mode": "refuse", "basis": "D4给U-153的access值K-76418，不能确定U-946的inspection值。"},
+    {"id": "rel02_OA_v2", "author_mode": "refuse", "basis": "D4给U-153的access值K-32865，目标实体和字段均未得到对应关系。"}
+  ],
+  "new_behavior_ratings": 0,
+  "new_independent_semantic_approvals": 0,
+  "original_remaining_fits": 0,
+  "held_out380_accessed": false
+}

@@ -1,0 +1,27 @@
+{
+  "status": "independent_numeric_and_structural_verification_passed",
+  "independent_semantic_review": false,
+  "preserved_files": 1142,
+  "old_complete_I": 60,
+  "old_answering": 23,
+  "binding_I": 24,
+  "binding_I_answering": 0,
+  "old23_joins": 23,
+  "statistics_slices": 5,
+  "maximum_statistics_error": 0,
+  "examples": 16,
+  "complete_compatible_worlds": 24,
+  "pairs": 24,
+  "primary_example_pairs": 4,
+  "author_review_rows": 16,
+  "new_gpu": 0,
+  "new_fits": 0,
+  "source_sha256": {
+    "scripts/verify_behavior_structure_audit.py": "0b23878d5c2b1fe0a1a086c815c0e988b05b24a2677383f5dd156ddc12b15072",
+    "docs/records/2026-10-23-behavior-structure-audit.json": "8950560a0759710b2e83686ce8f6ec12232fd212851565f70a82c9ae92abff7a",
+    "docs/records/2026-10-23-behavior-structure-audit-samples.json": "0e7e5d4e4cecfdae7907cd42b7eb6bd3a70031fd4b014d84c63245e48cd1405b",
+    "docs/records/2026-10-23-behavior-structure-audit-worlds.json": "31fceef990730b1a112d6fa5b27fe6f53f8f09f338ef6b947253e85f78ff3967",
+    "docs/records/2026-10-23-behavior-structure-audit-author-review.json": "f2b9d1abd156bfd3d97687b187f3e4603c90519a46b827100a0cb1574f844c71",
+    "docs/records/2026-10-23-behavior-structure-audit-pairs.csv": "4e7ff1cfab3ddfb753238575845df46ae1afd8b9cbf7eedeea7e454510cd1200"
+  }
+}
