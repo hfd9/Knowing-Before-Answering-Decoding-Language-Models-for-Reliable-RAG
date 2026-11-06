@@ -100,6 +100,20 @@ class Runtime:
                 'model_metadata_sha256': self.metadata_hashes,
                 'weights_loaded': False, 'inference': False, 'collection_allowed': False}
 
+    def generation_input(self, item_id):
+        """Rebuild and check the exact prompt and token IDs a future collector would use."""
+        if item_id not in self.inputs:
+            raise ValueError('unknown material id')
+        row = self.rows[item_id]
+        prompt = self.renderer.render_input({'question': row['question'], 'docs': row['documents']},
+                                            'free_answer', 'chat', self.tokenizer)
+        token_ids = self.renderer.encode(self.tokenizer, prompt, 'chat')['input_ids']
+        expected = self.inputs[item_id]
+        if (input_payload_sha(row) != expected['input_sha256'] or text_sha(prompt) != expected['prompt_sha256']
+                or ids_sha(token_ids) != expected['input_token_ids_sha256'] or len(token_ids) != expected['input_tokens']):
+            raise ValueError('material or generation input changed since runtime initialization')
+        return {'prompt': prompt, 'input_ids': token_ids}
+
     def make_record(self, index, generated_token_ids, elapsed_seconds, completed_at):
         if type(index) is not int or not 0 <= index < 48:
             raise ValueError('invalid record index')

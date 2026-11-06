@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-06（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新合成缓存与输入连接（2026-11-06）：按用户要求接续中断任务，完成[记录](docs/records/2026-11-06-explanation-scope-cache-writer.md)/[说明](docs/explanation_scope_cache_writer_fixture.md)。在途合成写入器接入候选磁盘格式，清单显式标synthetic；核验锁普通文件及持锁inode、事务异常停止，同进程同持锁会话才可提交attempt，跨进程重读正常前缀而中断未提交阻止重答。未来生成输入接口重建48条并检查材料/prompt/token哈希；真实tokenizer与合成文件36测试77.388秒、最后布尔标记修改后2项定向测试、原事务20测试、48输入独立重建及旧72来源/12拟合封存/4快照核验通过，默认run不存在。合成标记不是来源证明，未证明断电持久性；真实生产采集器/非synthetic写入恢复与模型生成仍未实现或验证，无真实回答。正式独立批准0/gate及GPUfalse/预算0/标签null/380封存保持，不能称GPU就绪。
+
 最新中断恢复（2026-11-06）：按用户要求查找上次记忆，见[恢复记录](docs/records/2026-11-06-context-restored-03.md)。上次会话在16:33因使用额度上限中断；其后台测试16:34实际结束，30项通过，含4项新增候选磁盘格式合成写入测试。工作区保留未提交的 `scripts/explanation_scope_cache_writer_fixture.py` 和 `tests/test_explanation_scope_runtime.py` 改动：仅临时目录synthetic原型，尚未审查归档，不能当生产采集器或非合成run恢复。此前预检已提交ae2063e，恢复时实际远端main同哈希；预定run目录不存在。未覆盖、提交或重跑这两处在途改动。下一步应从审查原型、检查边界并续做实际采集路径技术准备接续，不把合成通过当采集授权；正式独立批准0/gate及GPUfalse/预算0/标签null/380封存保持。
 
 最新运行时预检（2026-11-06）：用户要求直接完成后续两步，见[记录](docs/records/2026-11-06-explanation-scope-runtime-preflight.md)/[说明](docs/review/2026-11-06-explanation-scope-runtime-preflight-v1/README.md)。已实现48真实chat输入/prompt/token哈希、生成token实际decode/EOS/上限、只读磁盘缓存检查及空评分包连接；synthetic临时事务集成通过26项真实tokenizer测试，含48合成记录、跨进程重读和中断，首次慢测试主动中断130、缓存词表后通过。实际全7模型文件含两权重分片SHA匹配；沙箱外RTX3090及PyTorch CUDA12.1/bf16可见，GPU为当时只读快照，未加载模型或前向。原事务20/账本11复验及35旧路径哈希、原72来源/12封存/4快照保持。真实生产采集器及非synthetic run写入/恢复尚未实现、无真实回答；正式独立批准0/gate及GPUfalse/预算0/标签null/380封存，不能称GPU就绪，按长期约定提交推送。

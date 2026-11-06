@@ -13,9 +13,12 @@ INPUT_FINGERPRINTS = ROOT / 'docs/review/2026-11-06-explanation-scope-runtime-pr
 DEFAULT_RUN = ROOT / 'runs/qwen2.5-3b-explanation-scope-v1'
 
 
-def expected_manifest(runtime):
-    return {'format': 'explanation-scope-cache-v1', 'plan_sha256': runtime.plan_sha,
-            'input_fingerprints_sha256': hashlib.sha256(INPUT_FINGERPRINTS.read_bytes()).hexdigest()}
+def expected_manifest(runtime, synthetic_fixture=False):
+    result = {'format': 'explanation-scope-cache-v1', 'plan_sha256': runtime.plan_sha,
+              'input_fingerprints_sha256': hashlib.sha256(INPUT_FINGERPRINTS.read_bytes()).hexdigest()}
+    if synthetic_fixture:
+        result['synthetic_fixture_only'] = True
+    return result
 
 
 def _read(path):
@@ -57,7 +60,10 @@ def inspect_cache(directory, runtime):
         entries = list(root.iterdir())
         if any(p.name not in allowed or p.is_symlink() for p in entries):
             raise ValueError('unknown, pending or symlink cache entry; preserve for inspection')
-        if _read(root / 'manifest.json') != expected_manifest(runtime):
+        manifest = _read(root / 'manifest.json')
+        synthetic_fixture = (isinstance(manifest, dict) and manifest.get('synthetic_fixture_only') is True
+                             and manifest == expected_manifest(runtime, synthetic_fixture=True))
+        if not synthetic_fixture and manifest != expected_manifest(runtime):
             raise ValueError('cache manifest differs from input and plan fingerprints')
         data = _read(root / 'records.json')
         if not isinstance(data, dict) or set(data) != {'plan_sha256', 'records'} or data['plan_sha256'] != runtime.plan_sha:
@@ -73,6 +79,7 @@ def inspect_cache(directory, runtime):
         failure = _read(root / 'failure.json') if (root / 'failure.json').exists() else None
         result = runtime.validate_cache(attempts, data['records'], smoke, failure)
         result.update({'writes_performed': False, 'output_origin_verified': False,
+                       'synthetic_fixture_only': synthetic_fixture,
                        'note': 'Read-only cache format; no production writer or collection authorization.'})
         return result
     finally:

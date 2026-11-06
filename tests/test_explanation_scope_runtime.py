@@ -2,6 +2,7 @@
 import fcntl
 from pathlib import Path
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -12,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 import explanation_scope_metrics as metrics
 import explanation_scope_disk_cache as disk_cache
+import explanation_scope_cache_writer_fixture as cache_writer
 import explanation_scope_runtime as scope
 import explanation_scope_transaction_prototype as transaction
 import explanation_scope_verified_fixture_journal as verified
@@ -58,6 +60,23 @@ class RuntimeTests(unittest.TestCase):
         self.assertEqual(r['raw_output'], self.runtime.tokenizer.decode(self.fake_tokens, skip_special_tokens=True))
         self.assertTrue(r['ended_with_eos'])
         self.assertFalse(r['hit_output_limit'])
+
+    def test_generation_input_rechecks_all_48_and_rejects_changed_material(self):
+        for item_id in self.runtime.plan['ordered_ids']:
+            generated_input = self.runtime.generation_input(item_id)
+            self.assertEqual(scope.ids_sha(generated_input['input_ids']),
+                             self.runtime.inputs[item_id]['input_token_ids_sha256'])
+            self.assertEqual(scope.text_sha(generated_input['prompt']),
+                             self.runtime.inputs[item_id]['prompt_sha256'])
+        item_id = self.runtime.plan['ordered_ids'][0]
+        row = self.runtime.rows[item_id]
+        original = row['question']
+        try:
+            row['question'] += ' changed'
+            with self.assertRaises(ValueError):
+                self.runtime.generation_input(item_id)
+        finally:
+            row['question'] = original
 
     def test_modified_prompt_or_input_token_hash_is_rejected(self):
         for key in ('input_sha256', 'prompt_sha256', 'input_token_ids_sha256'):
@@ -341,6 +360,158 @@ class RuntimeTests(unittest.TestCase):
                 self.assertEqual(summary['technical_complete'], 47)
                 self.assertIsNone(summary['primary']['point'])
                 self.assertFalse(summary['gpu_launch_ready'])
+
+    def test_candidate_disk_format_full_fixture_matches_reader_and_review(self):
+        with tempfile.TemporaryDirectory(prefix='kba-scope-candidate-') as directory:
+            writer = cache_writer.FixtureCacheWriter(directory, self.runtime)
+            with writer.locked():
+                writer.initialize()
+                for i in range(48):
+                    writer.begin()
+                    tokens = [self.fake_tokens[0]] * 128 if i == 17 else self.fake_tokens
+                    writer.commit_fixture_tokens(tokens, 0.01, self.when)
+                    if i == 3:
+                        self.assertTrue(writer.check_smoke()['passed'])
+                self.assertEqual(writer.status()['state'], 'validated_complete_unreviewed')
+                with self.assertRaises(transaction.JournalBlocked):
+                    writer.begin()
+                artifacts = writer.review_artifacts()
+                self.assertTrue(artifacts['synthetic_fixture_only'])
+                summary = metrics.summarize(artifacts['endpoint_template'])
+                self.assertEqual((summary['technical_complete'], summary['reviewed_slots']), (47, 0))
+                with self.assertRaises(ValueError):
+                    disk_cache.inspect_cache(directory, self.runtime)
+            read_result = disk_cache.inspect_cache(directory, self.runtime)
+            self.assertEqual(read_result['state'], 'validated_complete_unreviewed')
+            self.assertTrue(read_result['synthetic_fixture_only'])
+            self.assertFalse(read_result['output_origin_verified'])
+            self.assertFalse(read_result['gpu_launch_ready'])
+
+    def test_candidate_writer_preserves_uncommitted_attempt_across_lock(self):
+        with tempfile.TemporaryDirectory(prefix='kba-scope-candidate-') as directory:
+            writer = cache_writer.FixtureCacheWriter(directory, self.runtime)
+            with writer.locked():
+                writer.initialize()
+                writer.begin()
+            with writer.locked():
+                self.assertEqual(writer.status()['state'], 'blocked_uncommitted_attempt')
+                with self.assertRaises(transaction.JournalBlocked):
+                    writer.commit_fixture_tokens(self.fake_tokens, 0.01, self.when)
+            with self.assertRaises(ValueError):
+                disk_cache.inspect_cache(directory, self.runtime)
+
+    def test_candidate_writer_pending_replace_fails_closed(self):
+        with tempfile.TemporaryDirectory(prefix='kba-scope-candidate-') as directory:
+            writer = cache_writer.FixtureCacheWriter(directory, self.runtime)
+            with writer.locked():
+                writer.initialize()
+                writer.begin()
+                with patch.object(transaction.os, 'replace', side_effect=OSError('synthetic failure')):
+                    with self.assertRaises(OSError):
+                        writer.commit_fixture_tokens(self.fake_tokens, 0.01, self.when)
+                with self.assertRaises(transaction.JournalBlocked):
+                    writer.status()
+            with self.assertRaises(ValueError):
+                disk_cache.inspect_cache(directory, self.runtime)
+
+    def test_candidate_production_factory_cannot_create_run(self):
+        before = disk_cache.DEFAULT_RUN.exists()
+        with self.assertRaises(PermissionError):
+            cache_writer.FixtureCacheWriter.production(self.runtime)
+        self.assertEqual(disk_cache.DEFAULT_RUN.exists(), before)
+
+    def test_candidate_writer_rejects_replaced_lock(self):
+        with tempfile.TemporaryDirectory(prefix='kba-scope-candidate-') as directory:
+            writer = cache_writer.FixtureCacheWriter(directory, self.runtime)
+            with writer.locked():
+                writer.initialize()
+                lock = Path(directory) / '.lock'
+                lock.rename(Path(directory) / 'old-lock')
+                lock.touch()
+                with self.assertRaises(transaction.JournalBlocked):
+                    writer.begin()
+                self.assertEqual(list((Path(directory) / 'attempts').iterdir()), [])
+
+    def test_candidate_writer_rejects_nonregular_lock(self):
+        with tempfile.TemporaryDirectory(prefix='kba-scope-candidate-') as directory:
+            os.mkfifo(Path(directory) / '.lock')
+            writer = cache_writer.FixtureCacheWriter(directory, self.runtime)
+            with self.assertRaises(transaction.JournalBlocked):
+                with writer.locked():
+                    self.fail('nonregular lock accepted')
+
+    def test_candidate_writer_retains_synthetic_marker(self):
+        with tempfile.TemporaryDirectory(prefix='kba-scope-candidate-') as directory:
+            writer = cache_writer.FixtureCacheWriter(directory, self.runtime)
+            with writer.locked():
+                writer.initialize()
+                manifest = Path(directory) / 'manifest.json'
+                self.assertTrue(json.loads(manifest.read_text())['synthetic_fixture_only'])
+                invalid = disk_cache.expected_manifest(self.runtime, synthetic_fixture=True)
+                invalid['synthetic_fixture_only'] = 1
+                manifest.write_text(json.dumps(invalid))
+                with self.assertRaises(transaction.JournalBlocked):
+                    writer.begin()
+                manifest.write_text(json.dumps(disk_cache.expected_manifest(self.runtime)))
+                with self.assertRaises(transaction.JournalBlocked):
+                    writer.begin()
+            # A manifest without the declaration still cannot prove real origin.
+            result = disk_cache.inspect_cache(directory, self.runtime)
+            self.assertFalse(result['output_origin_verified'])
+            invalid['synthetic_fixture_only'] = 1
+            manifest.write_text(json.dumps(invalid))
+            with self.assertRaises(ValueError):
+                disk_cache.inspect_cache(directory, self.runtime)
+
+    def test_candidate_writer_stops_session_after_post_replace_failure(self):
+        with tempfile.TemporaryDirectory(prefix='kba-scope-candidate-') as directory:
+            writer = cache_writer.FixtureCacheWriter(directory, self.runtime)
+            with writer.locked():
+                writer.initialize()
+                writer.begin()
+                original = transaction._atomic_replace
+                def fail_after_replace(path, value):
+                    original(path, value)
+                    raise OSError('simulated post-replace error')
+                with patch.object(transaction, '_atomic_replace', side_effect=fail_after_replace):
+                    with self.assertRaises(OSError):
+                        writer.commit_fixture_tokens(self.fake_tokens, 0.01, self.when)
+                with self.assertRaises(transaction.JournalBlocked):
+                    writer.begin()
+            # Reopening validates what is actually visible; it makes no power-loss claim.
+            with writer.locked():
+                self.assertEqual(writer.status()['records'], 1)
+
+    def test_candidate_writer_new_process_resumes_prefix_then_crash_blocks(self):
+        with tempfile.TemporaryDirectory(prefix='kba-scope-candidate-') as directory:
+            writer = cache_writer.FixtureCacheWriter(directory, self.runtime)
+            with writer.locked():
+                writer.initialize()
+                writer.begin()
+                writer.commit_fixture_tokens(self.fake_tokens, 0.01, self.when)
+            code = (
+                "import sys,os\nsys.path.insert(0,sys.argv[1])\n"
+                "import explanation_scope_runtime as r\n"
+                "import explanation_scope_cache_writer_fixture as w\n"
+                "rt=r.Runtime()\nx=w.FixtureCacheWriter(sys.argv[2],rt)\n"
+                "with x.locked():\n"
+                " assert x.status()['records']==1\n"
+                " x.begin()\n"
+                " ids=rt.tokenizer.encode('synthetic response',add_special_tokens=False)+[rt.eos_ids[0]]\n"
+                " x.commit_fixture_tokens(ids,0.01,'2026-11-06T08:00:00+00:00')\n"
+                " x.begin()\n"
+                " os._exit(0)\n"
+            )
+            result = subprocess.run([sys.executable, '-B', '-c', code, str(ROOT / 'scripts'), directory],
+                                    capture_output=True, text=True, timeout=120)
+            self.assertEqual(result.returncode, 0, result.stderr)
+            with writer.locked():
+                self.assertEqual(writer.status()['records'], 2)
+                self.assertEqual(writer.status()['state'], 'blocked_uncommitted_attempt')
+                with self.assertRaises(transaction.JournalBlocked):
+                    writer.commit_fixture_tokens(self.fake_tokens, 0.01, self.when)
+            with self.assertRaises(ValueError):
+                disk_cache.inspect_cache(directory, self.runtime)
 
 
 if __name__ == '__main__':
