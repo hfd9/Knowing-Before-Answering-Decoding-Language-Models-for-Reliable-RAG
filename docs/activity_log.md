@@ -6,6 +6,8 @@
 
 ## 当前交接摘要
 
+- 2026-11-06 已完成[解释行为合成文件事务原型](records/2026-11-06-explanation-scope-transaction-prototype.md)及20项CPU测试；旧attempt不能在另一进程或锁会话自动补写，真实采集器仍待准备。
+
 - 2026-11-06 已完成[解释行为有限模型及CPU账本预案](records/2026-11-06-explanation-scope-cpu-preflight.md)：语义边界、候选顺序及合成失败停止规则已核查，尚无真实采集器或GPU入口。
 
 - 2026-11-06 已完成[解释行为12×4材料草稿及CPU核验](records/2026-11-06-explanation-scope-materials.md)，当前v2为48候选输入；独立语义批准和GPU采集仍未发生。

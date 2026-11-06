@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新事务原型：[动作记录](2026-11-06-explanation-scope-transaction-prototype.md) / [实现与范围](../explanation_scope_transaction_prototype.md)。临时目录synthetic事务实现锁、独占标记、fsync及原子替换；修复旧标记跨锁会话补写风险，20项跨进程/中断/上限测试通过。不是实际采集器或GPU就绪，独立批准0、gate/GPUfalse、预算0、标签null及380封存保持。
+
 最新CPU预案：[有限模型与账本检查记录](2026-11-06-explanation-scope-cpu-preflight.md) / [具体材料](../review/2026-11-06-explanation-scope-cpu-preflight-v1/README.md)。48输入有限域穷举，区分记录相对支持与世界真值；48候选顺序及四smoke已定，11+2测试及7项合成CLI演练通过。模拟非真实采集器/执行，正式独立批准0、gate/GPUfalse、预算0、标签null和380封存保持。
 
 最新材料准备：[12场景材料记录](2026-11-06-explanation-scope-materials.md) / [v2材料与核验](../review/2026-11-06-explanation-scope-materials-v2/README.md)。12×4共48候选输入，保留编号修订前v1，无模型回答；v2的12主对词、字符、token长度与token多重集匹配，48均287 tokens，局部修复见证与3 CPU测试通过。作者侧条件解释非独立语义批准；尚无采集协议或GPU入口，gate/GPUfalse、预算0、标签null和380封存保持。

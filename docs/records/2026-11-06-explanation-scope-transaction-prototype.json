@@ -1,0 +1,49 @@
+{
+  "recorded_at_utc": "2026-11-06T07:59:17.456303+00:00",
+  "parent_commit": "29ff50f3ed1c329d23f7c9ced28d578ba1f9332a",
+  "file_sha256": {
+    "scripts/explanation_scope_transaction_prototype.py": "fd2a035af9dc72d26160e13e55ecb1d63dff91b8285e54743d8d2934dc91c6c3",
+    "tests/test_explanation_scope_transaction_prototype.py": "3c8282527877b72bbb80f3a4ceb81df1f0802e3ae3fb00129313080efdf17130",
+    "docs/explanation_scope_transaction_prototype.md": "9949ff5cfbc85b7dade0b78da95c636822b37285f73ce8a96b6fcdea30bb3746",
+    "docs/records/2026-11-06-explanation-scope-transaction-prototype.md": "2132b423720f5e07af093f0246af8a3291c0744e7299bac9056da5b9b4bc71fd",
+    "docs/records/2026-11-06-explanation-scope-materials.json": "6ef5a0f8edb5e93b15c8bc8e455d0b02bb1e81fe5e6e3174750557a9ef059447",
+    "docs/records/2026-11-06-explanation-scope-cpu-preflight.json": "d198baa071e91a1f2e4f0758a99e464d25ccc0d1e3d5f8cc8f3fd2ecd2e2fcf2",
+    "docs/review/2026-11-06-explanation-scope-cpu-preflight-v1/execution-draft.json": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+    "scripts/explanation_scope_ledger_simulator.py": "5b81761a6c8652b085b7a77c506bf769ea42cad08a2ff44e90c7290e648134ff"
+  },
+  "actual_checks": {
+    "transaction_tests": 20,
+    "transaction_tests_exit": 0,
+    "transaction_tests_seconds": 4.731,
+    "ledger_tests": 11,
+    "ledger_tests_exit": 0,
+    "finite_model_tests": 2,
+    "finite_model_tests_exit": 0,
+    "prior_recorded_artifact_hashes_checked": 29,
+    "original_cli_verifier_exit": 0,
+    "original_protected_sources": 72,
+    "fit_sealed_files": 12,
+    "intake_snapshots_matching": 4,
+    "v2_material_verify_exit": 0,
+    "synthetic_only": true,
+    "temp_root": "/tmp",
+    "platform": "Linux",
+    "process_exits_injected": [
+      17,
+      19,
+      27,
+      28
+    ]
+  },
+  "limits": {
+    "filesystem_power_loss_tested": false,
+    "real_model_tokenizer_or_eos_checked": false,
+    "actual_collection_run_created": false,
+    "new_real_answers": 0,
+    "new_independent_approvals": 0,
+    "new_fits": 0,
+    "formal_gate": false,
+    "gpu_launch_ready": false,
+    "held_out_380_accessed": false
+  }
+}
