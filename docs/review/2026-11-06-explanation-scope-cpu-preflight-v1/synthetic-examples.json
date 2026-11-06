@@ -1,0 +1,513 @@
+{
+  "status": "synthetic_cli_integration_examples_only_no_model_output",
+  "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+  "cases": [
+    {
+      "name": "empty",
+      "fixture": {
+        "synthetic": true,
+        "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+        "attempts": [],
+        "records": [],
+        "smoke": null,
+        "failure": null
+      },
+      "expected_state": "synthetic_clean_prefix",
+      "exit_code": 0,
+      "output": {
+        "state": "synthetic_clean_prefix",
+        "declared_attempts": 0,
+        "declared_records": 0,
+        "ledger_next_step_unblocked": true,
+        "collection_permitted": false,
+        "gpu_launch_ready": false,
+        "scope": "synthetic_metadata_only_no_filesystem_atomicity_no_output_decode"
+      },
+      "error_tail": null
+    },
+    {
+      "name": "uncommitted",
+      "fixture": {
+        "synthetic": true,
+        "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+        "attempts": [
+          {
+            "index": 0,
+            "id": "exs01_S",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          }
+        ],
+        "records": [],
+        "smoke": null,
+        "failure": null
+      },
+      "expected_state": "blocked_uncommitted_attempt",
+      "exit_code": 0,
+      "output": {
+        "state": "blocked_uncommitted_attempt",
+        "declared_attempts": 1,
+        "declared_records": 0,
+        "ledger_next_step_unblocked": false,
+        "collection_permitted": false,
+        "gpu_launch_ready": false,
+        "scope": "synthetic_metadata_only_no_filesystem_atomicity_no_output_decode"
+      },
+      "error_tail": null
+    },
+    {
+      "name": "missing_smoke",
+      "fixture": {
+        "synthetic": true,
+        "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+        "attempts": [
+          {
+            "index": 0,
+            "id": "exs01_S",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          },
+          {
+            "index": 1,
+            "id": "exs01_I0",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          },
+          {
+            "index": 2,
+            "id": "exs01_IU",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          },
+          {
+            "index": 3,
+            "id": "exs01_CT",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          }
+        ],
+        "records": [
+          {
+            "index": 0,
+            "id": "exs01_S",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          },
+          {
+            "index": 1,
+            "id": "exs01_I0",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          },
+          {
+            "index": 2,
+            "id": "exs01_IU",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          },
+          {
+            "index": 3,
+            "id": "exs01_CT",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          }
+        ],
+        "smoke": null,
+        "failure": null
+      },
+      "expected_state": "blocked_missing_smoke_receipt",
+      "exit_code": 0,
+      "output": {
+        "state": "blocked_missing_smoke_receipt",
+        "declared_attempts": 4,
+        "declared_records": 4,
+        "ledger_next_step_unblocked": false,
+        "collection_permitted": false,
+        "gpu_launch_ready": false,
+        "scope": "synthetic_metadata_only_no_filesystem_atomicity_no_output_decode"
+      },
+      "error_tail": null
+    },
+    {
+      "name": "failed_smoke",
+      "fixture": {
+        "synthetic": true,
+        "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+        "attempts": [
+          {
+            "index": 0,
+            "id": "exs01_S",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          },
+          {
+            "index": 1,
+            "id": "exs01_I0",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          },
+          {
+            "index": 2,
+            "id": "exs01_IU",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          },
+          {
+            "index": 3,
+            "id": "exs01_CT",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          }
+        ],
+        "records": [
+          {
+            "index": 0,
+            "id": "exs01_S",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          },
+          {
+            "index": 1,
+            "id": "exs01_I0",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          },
+          {
+            "index": 2,
+            "id": "exs01_IU",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 128,
+            "ended_with_eos": false,
+            "hit_output_limit": true,
+            "nonempty_output": true
+          },
+          {
+            "index": 3,
+            "id": "exs01_CT",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          }
+        ],
+        "smoke": {
+          "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+          "records_sha256": "13af94926f203753142043cd77676679ee5317ab63c09c64d0e2bf826764b9aa",
+          "passed": false
+        },
+        "failure": null
+      },
+      "expected_state": "blocked_failed_smoke",
+      "exit_code": 0,
+      "output": {
+        "state": "blocked_failed_smoke",
+        "declared_attempts": 4,
+        "declared_records": 4,
+        "ledger_next_step_unblocked": false,
+        "collection_permitted": false,
+        "gpu_launch_ready": false,
+        "scope": "synthetic_metadata_only_no_filesystem_atomicity_no_output_decode"
+      },
+      "error_tail": null
+    },
+    {
+      "name": "passed_smoke",
+      "fixture": {
+        "synthetic": true,
+        "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+        "attempts": [
+          {
+            "index": 0,
+            "id": "exs01_S",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          },
+          {
+            "index": 1,
+            "id": "exs01_I0",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          },
+          {
+            "index": 2,
+            "id": "exs01_IU",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          },
+          {
+            "index": 3,
+            "id": "exs01_CT",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          }
+        ],
+        "records": [
+          {
+            "index": 0,
+            "id": "exs01_S",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          },
+          {
+            "index": 1,
+            "id": "exs01_I0",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          },
+          {
+            "index": 2,
+            "id": "exs01_IU",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          },
+          {
+            "index": 3,
+            "id": "exs01_CT",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          }
+        ],
+        "smoke": {
+          "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+          "records_sha256": "ac40e3981251cff8ecee12a96fee0bad87840e1051c35fad87f9217b30dd4b6c",
+          "passed": true
+        },
+        "failure": null
+      },
+      "expected_state": "synthetic_clean_prefix",
+      "exit_code": 0,
+      "output": {
+        "state": "synthetic_clean_prefix",
+        "declared_attempts": 4,
+        "declared_records": 4,
+        "ledger_next_step_unblocked": true,
+        "collection_permitted": false,
+        "gpu_launch_ready": false,
+        "scope": "synthetic_metadata_only_no_filesystem_atomicity_no_output_decode"
+      },
+      "error_tail": null
+    },
+    {
+      "name": "recorded_failure",
+      "fixture": {
+        "synthetic": true,
+        "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+        "attempts": [
+          {
+            "index": 0,
+            "id": "exs01_S",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          },
+          {
+            "index": 1,
+            "id": "exs01_I0",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          },
+          {
+            "index": 2,
+            "id": "exs01_IU",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          },
+          {
+            "index": 3,
+            "id": "exs01_CT",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          }
+        ],
+        "records": [
+          {
+            "index": 0,
+            "id": "exs01_S",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          },
+          {
+            "index": 1,
+            "id": "exs01_I0",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          },
+          {
+            "index": 2,
+            "id": "exs01_IU",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          },
+          {
+            "index": 3,
+            "id": "exs01_CT",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          }
+        ],
+        "smoke": {
+          "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+          "records_sha256": "ac40e3981251cff8ecee12a96fee0bad87840e1051c35fad87f9217b30dd4b6c",
+          "passed": true
+        },
+        "failure": {
+          "reason": "synthetic interrupted write"
+        }
+      },
+      "expected_state": "blocked_recorded_failure",
+      "exit_code": 0,
+      "output": {
+        "state": "blocked_recorded_failure",
+        "declared_attempts": 4,
+        "declared_records": 4,
+        "ledger_next_step_unblocked": false,
+        "collection_permitted": false,
+        "gpu_launch_ready": false,
+        "scope": "synthetic_metadata_only_no_filesystem_atomicity_no_output_decode"
+      },
+      "error_tail": null
+    },
+    {
+      "name": "tampered_receipt",
+      "fixture": {
+        "synthetic": true,
+        "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+        "attempts": [
+          {
+            "index": 0,
+            "id": "exs01_S",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          },
+          {
+            "index": 1,
+            "id": "exs01_I0",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          },
+          {
+            "index": 2,
+            "id": "exs01_IU",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          },
+          {
+            "index": 3,
+            "id": "exs01_CT",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+          }
+        ],
+        "records": [
+          {
+            "index": 0,
+            "id": "exs01_S",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          },
+          {
+            "index": 1,
+            "id": "exs01_I0",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          },
+          {
+            "index": 2,
+            "id": "exs01_IU",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          },
+          {
+            "index": 3,
+            "id": "exs01_CT",
+            "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+            "prompt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+            "output_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+            "output_tokens": 10,
+            "ended_with_eos": true,
+            "hit_output_limit": false,
+            "nonempty_output": true
+          }
+        ],
+        "smoke": {
+          "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+          "records_sha256": "ac40e3981251cff8ecee12a96fee0bad87840e1051c35fad87f9217b30dd4b6c",
+          "passed": true
+        },
+        "failure": null
+      },
+      "expected_state": null,
+      "exit_code": 1,
+      "output": null,
+      "error_tail": "ValueError: smoke receipt does not bind first four records"
+    }
+  ]
+}

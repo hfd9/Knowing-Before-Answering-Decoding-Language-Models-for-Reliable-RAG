@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新CPU预案：[有限模型与账本检查记录](2026-11-06-explanation-scope-cpu-preflight.md) / [具体材料](../review/2026-11-06-explanation-scope-cpu-preflight-v1/README.md)。48输入有限域穷举，区分记录相对支持与世界真值；48候选顺序及四smoke已定，11+2测试及7项合成CLI演练通过。模拟非真实采集器/执行，正式独立批准0、gate/GPUfalse、预算0、标签null和380封存保持。
+
 最新材料准备：[12场景材料记录](2026-11-06-explanation-scope-materials.md) / [v2材料与核验](../review/2026-11-06-explanation-scope-materials-v2/README.md)。12×4共48候选输入，保留编号修订前v1，无模型回答；v2的12主对词、字符、token长度与token多重集匹配，48均287 tokens，局部修复见证与3 CPU测试通过。作者侧条件解释非独立语义批准；尚无采集协议或GPU入口，gate/GPUfalse、预算0、标签null和380封存保持。
 
 最新助手裁定：[记录](2026-11-06-assistant-adjudication-study-decision.md) / [13项裁定、主张对应及研究决策](../assistant_adjudication_and_study_decision.md)。用户不想本人逐项审核，助手知情裁定并自行决定采纳12×4为后续探索设计方向；三焦点狭义E分别unknown/no/unknown，不能当直接复现或确认。非人工或新增独立评审，原判保留；未来准备由助手继续，独立批准0/gate及GPUfalse/预算0/标签null/380封存。

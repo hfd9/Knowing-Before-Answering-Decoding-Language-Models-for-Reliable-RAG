@@ -1,0 +1,1157 @@
+{
+  "status": "finite_model_audit_not_independent_semantic_approval",
+  "execution_draft_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+  "domain_size": 4,
+  "worlds_per_item_before_report_constraints": 256,
+  "assumptions": [
+    "Each retained report is imposed as true only for the given repair.",
+    "The alternative interpretation permits every report to be false.",
+    "Finite-domain witnesses do not exhaust unrestricted natural-language models."
+  ],
+  "interpretation_note": "S has one reported target value, but if all reports may be false its true target is not determined.",
+  "items": [
+    {
+      "id": "exs01_S",
+      "condition": "S",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81010"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81010",
+        "VX-81011",
+        "VX-81012",
+        "VX-91010"
+      ]
+    },
+    {
+      "id": "exs01_I0",
+      "condition": "I0",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81010",
+        "VX-81011",
+        "VX-81012",
+        "VX-91010"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81010",
+        "VX-81011",
+        "VX-81012",
+        "VX-91010"
+      ]
+    },
+    {
+      "id": "exs01_IU",
+      "condition": "IU",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 2,
+          "world_count": 16,
+          "target_values": [
+            "VX-81010",
+            "VX-81011",
+            "VX-81012",
+            "VX-91010"
+          ]
+        },
+        {
+          "dropped_document": 3,
+          "world_count": 16,
+          "target_values": [
+            "VX-81010",
+            "VX-81011",
+            "VX-81012",
+            "VX-91010"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81010",
+        "VX-81011",
+        "VX-81012",
+        "VX-91010"
+      ]
+    },
+    {
+      "id": "exs01_CT",
+      "condition": "CT",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 2,
+          "world_count": 16,
+          "target_values": [
+            "VX-81012"
+          ]
+        },
+        {
+          "dropped_document": 3,
+          "world_count": 16,
+          "target_values": [
+            "VX-81010"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81010",
+        "VX-81011",
+        "VX-81012",
+        "VX-91010"
+      ]
+    },
+    {
+      "id": "exs02_S",
+      "condition": "S",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81022"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81020",
+        "VX-81021",
+        "VX-81022",
+        "VX-91020"
+      ]
+    },
+    {
+      "id": "exs02_I0",
+      "condition": "I0",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81020",
+        "VX-81021",
+        "VX-81022",
+        "VX-91020"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81020",
+        "VX-81021",
+        "VX-81022",
+        "VX-91020"
+      ]
+    },
+    {
+      "id": "exs02_IU",
+      "condition": "IU",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 1,
+          "world_count": 16,
+          "target_values": [
+            "VX-81020",
+            "VX-81021",
+            "VX-81022",
+            "VX-91020"
+          ]
+        },
+        {
+          "dropped_document": 2,
+          "world_count": 16,
+          "target_values": [
+            "VX-81020",
+            "VX-81021",
+            "VX-81022",
+            "VX-91020"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81020",
+        "VX-81021",
+        "VX-81022",
+        "VX-91020"
+      ]
+    },
+    {
+      "id": "exs02_CT",
+      "condition": "CT",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 1,
+          "world_count": 16,
+          "target_values": [
+            "VX-81021"
+          ]
+        },
+        {
+          "dropped_document": 2,
+          "world_count": 16,
+          "target_values": [
+            "VX-81022"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81020",
+        "VX-81021",
+        "VX-81022",
+        "VX-91020"
+      ]
+    },
+    {
+      "id": "exs03_S",
+      "condition": "S",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81031"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81030",
+        "VX-81031",
+        "VX-81032",
+        "VX-91030"
+      ]
+    },
+    {
+      "id": "exs03_I0",
+      "condition": "I0",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81030",
+        "VX-81031",
+        "VX-81032",
+        "VX-91030"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81030",
+        "VX-81031",
+        "VX-81032",
+        "VX-91030"
+      ]
+    },
+    {
+      "id": "exs03_IU",
+      "condition": "IU",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 1,
+          "world_count": 16,
+          "target_values": [
+            "VX-81030",
+            "VX-81031",
+            "VX-81032",
+            "VX-91030"
+          ]
+        },
+        {
+          "dropped_document": 5,
+          "world_count": 16,
+          "target_values": [
+            "VX-81030",
+            "VX-81031",
+            "VX-81032",
+            "VX-91030"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81030",
+        "VX-81031",
+        "VX-81032",
+        "VX-91030"
+      ]
+    },
+    {
+      "id": "exs03_CT",
+      "condition": "CT",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 1,
+          "world_count": 16,
+          "target_values": [
+            "VX-81031"
+          ]
+        },
+        {
+          "dropped_document": 5,
+          "world_count": 16,
+          "target_values": [
+            "VX-81030"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81030",
+        "VX-81031",
+        "VX-81032",
+        "VX-91030"
+      ]
+    },
+    {
+      "id": "exs04_S",
+      "condition": "S",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81041"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81040",
+        "VX-81041",
+        "VX-81042",
+        "VX-91040"
+      ]
+    },
+    {
+      "id": "exs04_I0",
+      "condition": "I0",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81040",
+        "VX-81041",
+        "VX-81042",
+        "VX-91040"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81040",
+        "VX-81041",
+        "VX-81042",
+        "VX-91040"
+      ]
+    },
+    {
+      "id": "exs04_IU",
+      "condition": "IU",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 4,
+          "world_count": 16,
+          "target_values": [
+            "VX-81040",
+            "VX-81041",
+            "VX-81042",
+            "VX-91040"
+          ]
+        },
+        {
+          "dropped_document": 5,
+          "world_count": 16,
+          "target_values": [
+            "VX-81040",
+            "VX-81041",
+            "VX-81042",
+            "VX-91040"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81040",
+        "VX-81041",
+        "VX-81042",
+        "VX-91040"
+      ]
+    },
+    {
+      "id": "exs04_CT",
+      "condition": "CT",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 4,
+          "world_count": 16,
+          "target_values": [
+            "VX-81040"
+          ]
+        },
+        {
+          "dropped_document": 5,
+          "world_count": 16,
+          "target_values": [
+            "VX-81041"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81040",
+        "VX-81041",
+        "VX-81042",
+        "VX-91040"
+      ]
+    },
+    {
+      "id": "exs05_S",
+      "condition": "S",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81051"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81050",
+        "VX-81051",
+        "VX-81052",
+        "VX-91050"
+      ]
+    },
+    {
+      "id": "exs05_I0",
+      "condition": "I0",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81050",
+        "VX-81051",
+        "VX-81052",
+        "VX-91050"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81050",
+        "VX-81051",
+        "VX-81052",
+        "VX-91050"
+      ]
+    },
+    {
+      "id": "exs05_IU",
+      "condition": "IU",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 3,
+          "world_count": 16,
+          "target_values": [
+            "VX-81050",
+            "VX-81051",
+            "VX-81052",
+            "VX-91050"
+          ]
+        },
+        {
+          "dropped_document": 4,
+          "world_count": 16,
+          "target_values": [
+            "VX-81050",
+            "VX-81051",
+            "VX-81052",
+            "VX-91050"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81050",
+        "VX-81051",
+        "VX-81052",
+        "VX-91050"
+      ]
+    },
+    {
+      "id": "exs05_CT",
+      "condition": "CT",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 3,
+          "world_count": 16,
+          "target_values": [
+            "VX-81052"
+          ]
+        },
+        {
+          "dropped_document": 4,
+          "world_count": 16,
+          "target_values": [
+            "VX-81051"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81050",
+        "VX-81051",
+        "VX-81052",
+        "VX-91050"
+      ]
+    },
+    {
+      "id": "exs06_S",
+      "condition": "S",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81060"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81060",
+        "VX-81061",
+        "VX-81062",
+        "VX-91060"
+      ]
+    },
+    {
+      "id": "exs06_I0",
+      "condition": "I0",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81060",
+        "VX-81061",
+        "VX-81062",
+        "VX-91060"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81060",
+        "VX-81061",
+        "VX-81062",
+        "VX-91060"
+      ]
+    },
+    {
+      "id": "exs06_IU",
+      "condition": "IU",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 2,
+          "world_count": 16,
+          "target_values": [
+            "VX-81060",
+            "VX-81061",
+            "VX-81062",
+            "VX-91060"
+          ]
+        },
+        {
+          "dropped_document": 3,
+          "world_count": 16,
+          "target_values": [
+            "VX-81060",
+            "VX-81061",
+            "VX-81062",
+            "VX-91060"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81060",
+        "VX-81061",
+        "VX-81062",
+        "VX-91060"
+      ]
+    },
+    {
+      "id": "exs06_CT",
+      "condition": "CT",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 2,
+          "world_count": 16,
+          "target_values": [
+            "VX-81061"
+          ]
+        },
+        {
+          "dropped_document": 3,
+          "world_count": 16,
+          "target_values": [
+            "VX-81060"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81060",
+        "VX-81061",
+        "VX-81062",
+        "VX-91060"
+      ]
+    },
+    {
+      "id": "exs07_S",
+      "condition": "S",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81072"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81070",
+        "VX-81071",
+        "VX-81072",
+        "VX-91070"
+      ]
+    },
+    {
+      "id": "exs07_I0",
+      "condition": "I0",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81070",
+        "VX-81071",
+        "VX-81072",
+        "VX-91070"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81070",
+        "VX-81071",
+        "VX-81072",
+        "VX-91070"
+      ]
+    },
+    {
+      "id": "exs07_IU",
+      "condition": "IU",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 1,
+          "world_count": 16,
+          "target_values": [
+            "VX-81070",
+            "VX-81071",
+            "VX-81072",
+            "VX-91070"
+          ]
+        },
+        {
+          "dropped_document": 2,
+          "world_count": 16,
+          "target_values": [
+            "VX-81070",
+            "VX-81071",
+            "VX-81072",
+            "VX-91070"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81070",
+        "VX-81071",
+        "VX-81072",
+        "VX-91070"
+      ]
+    },
+    {
+      "id": "exs07_CT",
+      "condition": "CT",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 1,
+          "world_count": 16,
+          "target_values": [
+            "VX-81071"
+          ]
+        },
+        {
+          "dropped_document": 2,
+          "world_count": 16,
+          "target_values": [
+            "VX-81072"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81070",
+        "VX-81071",
+        "VX-81072",
+        "VX-91070"
+      ]
+    },
+    {
+      "id": "exs08_S",
+      "condition": "S",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81081"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81080",
+        "VX-81081",
+        "VX-81082",
+        "VX-91080"
+      ]
+    },
+    {
+      "id": "exs08_I0",
+      "condition": "I0",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81080",
+        "VX-81081",
+        "VX-81082",
+        "VX-91080"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81080",
+        "VX-81081",
+        "VX-81082",
+        "VX-91080"
+      ]
+    },
+    {
+      "id": "exs08_IU",
+      "condition": "IU",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 1,
+          "world_count": 16,
+          "target_values": [
+            "VX-81080",
+            "VX-81081",
+            "VX-81082",
+            "VX-91080"
+          ]
+        },
+        {
+          "dropped_document": 5,
+          "world_count": 16,
+          "target_values": [
+            "VX-81080",
+            "VX-81081",
+            "VX-81082",
+            "VX-91080"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81080",
+        "VX-81081",
+        "VX-81082",
+        "VX-91080"
+      ]
+    },
+    {
+      "id": "exs08_CT",
+      "condition": "CT",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 1,
+          "world_count": 16,
+          "target_values": [
+            "VX-81081"
+          ]
+        },
+        {
+          "dropped_document": 5,
+          "world_count": 16,
+          "target_values": [
+            "VX-81082"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81080",
+        "VX-81081",
+        "VX-81082",
+        "VX-91080"
+      ]
+    },
+    {
+      "id": "exs09_S",
+      "condition": "S",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81092"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81090",
+        "VX-81091",
+        "VX-81092",
+        "VX-91090"
+      ]
+    },
+    {
+      "id": "exs09_I0",
+      "condition": "I0",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81090",
+        "VX-81091",
+        "VX-81092",
+        "VX-91090"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81090",
+        "VX-81091",
+        "VX-81092",
+        "VX-91090"
+      ]
+    },
+    {
+      "id": "exs09_IU",
+      "condition": "IU",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 4,
+          "world_count": 16,
+          "target_values": [
+            "VX-81090",
+            "VX-81091",
+            "VX-81092",
+            "VX-91090"
+          ]
+        },
+        {
+          "dropped_document": 5,
+          "world_count": 16,
+          "target_values": [
+            "VX-81090",
+            "VX-81091",
+            "VX-81092",
+            "VX-91090"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81090",
+        "VX-81091",
+        "VX-81092",
+        "VX-91090"
+      ]
+    },
+    {
+      "id": "exs09_CT",
+      "condition": "CT",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 4,
+          "world_count": 16,
+          "target_values": [
+            "VX-81090"
+          ]
+        },
+        {
+          "dropped_document": 5,
+          "world_count": 16,
+          "target_values": [
+            "VX-81092"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81090",
+        "VX-81091",
+        "VX-81092",
+        "VX-91090"
+      ]
+    },
+    {
+      "id": "exs10_S",
+      "condition": "S",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81100"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81100",
+        "VX-81101",
+        "VX-81102",
+        "VX-91100"
+      ]
+    },
+    {
+      "id": "exs10_I0",
+      "condition": "I0",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81100",
+        "VX-81101",
+        "VX-81102",
+        "VX-91100"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81100",
+        "VX-81101",
+        "VX-81102",
+        "VX-91100"
+      ]
+    },
+    {
+      "id": "exs10_IU",
+      "condition": "IU",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 3,
+          "world_count": 16,
+          "target_values": [
+            "VX-81100",
+            "VX-81101",
+            "VX-81102",
+            "VX-91100"
+          ]
+        },
+        {
+          "dropped_document": 4,
+          "world_count": 16,
+          "target_values": [
+            "VX-81100",
+            "VX-81101",
+            "VX-81102",
+            "VX-91100"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81100",
+        "VX-81101",
+        "VX-81102",
+        "VX-91100"
+      ]
+    },
+    {
+      "id": "exs10_CT",
+      "condition": "CT",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 3,
+          "world_count": 16,
+          "target_values": [
+            "VX-81101"
+          ]
+        },
+        {
+          "dropped_document": 4,
+          "world_count": 16,
+          "target_values": [
+            "VX-81100"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81100",
+        "VX-81101",
+        "VX-81102",
+        "VX-91100"
+      ]
+    },
+    {
+      "id": "exs11_S",
+      "condition": "S",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81110"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81110",
+        "VX-81111",
+        "VX-81112",
+        "VX-91110"
+      ]
+    },
+    {
+      "id": "exs11_I0",
+      "condition": "I0",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81110",
+        "VX-81111",
+        "VX-81112",
+        "VX-91110"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81110",
+        "VX-81111",
+        "VX-81112",
+        "VX-91110"
+      ]
+    },
+    {
+      "id": "exs11_IU",
+      "condition": "IU",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 2,
+          "world_count": 16,
+          "target_values": [
+            "VX-81110",
+            "VX-81111",
+            "VX-81112",
+            "VX-91110"
+          ]
+        },
+        {
+          "dropped_document": 3,
+          "world_count": 16,
+          "target_values": [
+            "VX-81110",
+            "VX-81111",
+            "VX-81112",
+            "VX-91110"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81110",
+        "VX-81111",
+        "VX-81112",
+        "VX-91110"
+      ]
+    },
+    {
+      "id": "exs11_CT",
+      "condition": "CT",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 2,
+          "world_count": 16,
+          "target_values": [
+            "VX-81112"
+          ]
+        },
+        {
+          "dropped_document": 3,
+          "world_count": 16,
+          "target_values": [
+            "VX-81110"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81110",
+        "VX-81111",
+        "VX-81112",
+        "VX-91110"
+      ]
+    },
+    {
+      "id": "exs12_S",
+      "condition": "S",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81122"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81120",
+        "VX-81121",
+        "VX-81122",
+        "VX-91120"
+      ]
+    },
+    {
+      "id": "exs12_I0",
+      "condition": "I0",
+      "finite_all_records_trusted_world_count": 4,
+      "finite_all_records_trusted_target_values": [
+        "VX-81120",
+        "VX-81121",
+        "VX-81122",
+        "VX-91120"
+      ],
+      "minimal_one_record_repair_cases": [],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81120",
+        "VX-81121",
+        "VX-81122",
+        "VX-91120"
+      ]
+    },
+    {
+      "id": "exs12_IU",
+      "condition": "IU",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 1,
+          "world_count": 16,
+          "target_values": [
+            "VX-81120",
+            "VX-81121",
+            "VX-81122",
+            "VX-91120"
+          ]
+        },
+        {
+          "dropped_document": 2,
+          "world_count": 16,
+          "target_values": [
+            "VX-81120",
+            "VX-81121",
+            "VX-81122",
+            "VX-91120"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81120",
+        "VX-81121",
+        "VX-81122",
+        "VX-91120"
+      ]
+    },
+    {
+      "id": "exs12_CT",
+      "condition": "CT",
+      "finite_all_records_trusted_world_count": 0,
+      "finite_all_records_trusted_target_values": [],
+      "minimal_one_record_repair_cases": [
+        {
+          "dropped_document": 1,
+          "world_count": 16,
+          "target_values": [
+            "VX-81120"
+          ]
+        },
+        {
+          "dropped_document": 2,
+          "world_count": 16,
+          "target_values": [
+            "VX-81122"
+          ]
+        }
+      ],
+      "if_all_reports_may_be_wrong_target_values": [
+        "VX-81120",
+        "VX-81121",
+        "VX-81122",
+        "VX-91120"
+      ]
+    }
+  ],
+  "formal_gate": false,
+  "independent_approval": false,
+  "model_inference": false
+}

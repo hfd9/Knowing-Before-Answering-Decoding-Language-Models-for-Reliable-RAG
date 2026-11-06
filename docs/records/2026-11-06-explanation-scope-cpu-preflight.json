@@ -1,0 +1,59 @@
+{
+  "recorded_at_utc": "2026-11-06T07:50:07.504317+00:00",
+  "parent_commit": "e0ffeba5f0c90cf0086eb4c982e8619cf6c2e295",
+  "file_sha256": {
+    "docs/records/2026-11-06-explanation-scope-cpu-preflight.md": "bd2f1d142bea5494cb4f4542ee1d5153c364290a665693b08e522fb896880053",
+    "docs/review/2026-11-06-explanation-scope-cpu-preflight-v1/README.md": "044cad7564e25f6802fefbacccfc462bce339bac60ea778c18224f0cc4c41640",
+    "docs/review/2026-11-06-explanation-scope-cpu-preflight-v1/execution-draft-initial.json": "0a6d994efce682ce9eb6889c67b76fc240a74766a8e78cf5991e25d87aac3944",
+    "docs/review/2026-11-06-explanation-scope-cpu-preflight-v1/execution-draft.json": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+    "docs/review/2026-11-06-explanation-scope-cpu-preflight-v1/finite-model-audit-initial.json": "fe2ff19485bc2e60a467fa2457be3b5aa230d21fbe0cbf6dc2b994cb8340e1d6",
+    "docs/review/2026-11-06-explanation-scope-cpu-preflight-v1/finite-model-audit.json": "efa59f428401a6ea6b1404f63bc9ae1aaaac4be7c97d9e2607e1a157de538659",
+    "docs/review/2026-11-06-explanation-scope-cpu-preflight-v1/relation-reference-snapshot.json": "504b4da5f0c4e51cfdffaa54129e55c0a3b433f37e387d286c21ad65f4d7c1f5",
+    "docs/review/2026-11-06-explanation-scope-cpu-preflight-v1/synthetic-examples.json": "d40d8b26a4480e07decc3c81e5bcb28290a1aac7963fdf876ec32ca78cb1ea98",
+    "scripts/audit_explanation_scope_models.py": "e5d51749ed0dbbba0f69251d8e38b3592e6e57dac7cef010192784da42c9ae35",
+    "scripts/explanation_scope_ledger_simulator.py": "5b81761a6c8652b085b7a77c506bf769ea42cad08a2ff44e90c7290e648134ff",
+    "tests/test_explanation_scope_finite_models.py": "13cc62fba2863923497f13c354adf4f78f9df5f31b153bcb5e095abe2885d251",
+    "tests/test_explanation_scope_ledger_simulator.py": "1d060118136a8a0a29c0e68091493873ae5d02df6f2ed996020b0599a8315281"
+  },
+  "sources_sha256": {
+    "docs/review/2026-11-06-explanation-scope-materials-v2/design-lock.json": "c8b1107ddf5179f52b8fe232a4c910a6dfcf58c143514892618399d47705b9ff",
+    "docs/review/2026-11-06-explanation-scope-materials-v2/materials.json": "d70c9e72b89e023fae19bf94d91e9bb438bc5e4726fab27786e5db7869bc877e",
+    "docs/review/2026-11-06-explanation-scope-materials-v2/input-packet.json": "01bc1af601a7a6eb581edb080b949a1b64cfdf35ad3e6b2052451abe9b79f341",
+    "docs/review/2026-11-06-explanation-scope-materials-v2/coordinator.json": "d56b5505619580839f8b07837b5f26e2575015537f322bea1a71ff42d87b0dfc",
+    "docs/review/2026-11-06-explanation-scope-materials-v2/author-interpretation.json": "3cd48f094ca6d91365117e3ade11c0b856874c4e548abbd899a9a1593dfe3933",
+    "docs/review/2026-11-06-explanation-scope-materials-v2/preflight.json": "2ea2bd8fc7368cdcad0131ff2e1f3dd91b7b5c10f4014ed33b77bf86724349b1",
+    "prompts/explanation_evidence_scope_draft_v1.json": "8e03b1285553c58948826c2b78c13b724000fa2ef550ac27a975fe2411eef138",
+    "prompts/explanation_scope_scoring_contract_v1.json": "581f4377979718edd7f68dd3f206e3766cda52577cb876bc552b90b3ecdcc2a4",
+    "docs/review/2026-11-06-explanation-scope-cpu-preflight-v1/relation-reference-snapshot.json": "504b4da5f0c4e51cfdffaa54129e55c0a3b433f37e387d286c21ad65f4d7c1f5"
+  },
+  "verification": {
+    "finite_model_fresh_verify_exit": 0,
+    "v2_material_replay_exit": 0,
+    "semantic_intake_cli_readonly_verify_exit": 0,
+    "empty_metrics_verify_exit": 0,
+    "protected_old_sources": 72,
+    "fit_seal_files": 12,
+    "local_intake_snapshots_equal": 4,
+    "old_reference_implementation_files_matched": 13,
+    "synthetic_ledger_test_count": 11,
+    "synthetic_ledger_test_exit": 0,
+    "finite_model_test_count": 2,
+    "finite_model_test_exit": 0,
+    "synthetic_cli_examples": 7,
+    "expected_tamper_rejection_exit": 1,
+    "plan_reference_revision_checked": true
+  },
+  "scope": {
+    "finite_domain_size": 4,
+    "candidate_inputs": 48,
+    "independent_semantic_approvals_added": 0,
+    "real_model_answers": 0,
+    "created_actual_run": false,
+    "loaded_model_weights": false,
+    "gpu_inference": false,
+    "new_fits": 0,
+    "formal_gate": false,
+    "gpu_launch_ready": false,
+    "held_out_380_accessed": false
+  }
+}
