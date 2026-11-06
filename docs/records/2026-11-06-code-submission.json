@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "status": "precommit_checks_passed_commit_and_push_to_be_confirmed_by_git",
+  "checked_at": "2026-11-06T01:47:04.126065+00:00",
+  "authorization": "User: 每次完成任务后记住提交推送代码",
+  "standing_preference_saved_in": "AGENTS.md",
+  "parent_commit": "4ce17d61291532fc56845328a02c2ec5c4ffd6b9",
+  "remote_main_observed_before_commit": "4ce17d61291532fc56845328a02c2ec5c4ffd6b9",
+  "remote_observation_command": "git ls-remote origin refs/heads/main",
+  "files": [
+    "AGENTS.md",
+    "docs/activity_log.md",
+    "docs/records/README.md",
+    "docs/explanation_evidence_scope_draft.md",
+    "docs/records/2026-11-06-context-restored.md",
+    "docs/records/2026-11-06-explanation-evidence-scope-draft.md",
+    "docs/records/2026-11-06-explanation-evidence-scope-draft.json",
+    "prompts/explanation_evidence_scope_draft_v1.json",
+    "docs/records/2026-11-06-code-submission.md",
+    "docs/records/2026-11-06-code-submission.json"
+  ],
+  "file_counts": {
+    "total": 10,
+    "markdown": 7,
+    "json": 3
+  },
+  "payload_sha256": {
+    "docs/explanation_evidence_scope_draft.md": "ae0eb2ffe3cebd3ed92fa020bc7b5f6925fb0d61f948c0561dcfe43d8c7fd063",
+    "docs/records/2026-11-06-context-restored.md": "2ae95179b148212c0e9a17d2422bb4b740f0fe1adcbfba0c386e80f4b8f28273",
+    "docs/records/2026-11-06-explanation-evidence-scope-draft.md": "4aecbd9323371f9e0f5877c7df3229243bd7832b69f2a958ebd92001fe5e2c87",
+    "docs/records/2026-11-06-explanation-evidence-scope-draft.json": "10e5ddb0a89313a208a66370fa304d26f0a1b2e026a5d6393562c86776e4f86a",
+    "prompts/explanation_evidence_scope_draft_v1.json": "8e03b1285553c58948826c2b78c13b724000fa2ef550ac27a975fe2411eef138"
+  },
+  "checks": {
+    "original_source_hashes": 72,
+    "draft_payload_hashes": 3,
+    "original_fit_sealed_files": 12,
+    "all_hashes_match": true,
+    "new_markdown_local_links_checked": 15,
+    "json_files_parse": 3,
+    "git_diff_check_exit": 0,
+    "configured_author_name": "hfd9",
+    "configured_email_present_not_disclosed": true,
+    "identity_override_used": false,
+    "existing_same_session_CPU_intake_verify_exit": 0,
+    "existing_same_session_symbolic_checks_reused": true,
+    "old_test_suites_rerun": false,
+    "new_experiments": 0
+  },
+  "research_boundaries": {
+    "actual_independent_approvals": 0,
+    "remaining_original_design_fits": 0,
+    "formal_gate": false,
+    "formal_labels_added": 0,
+    "held_out_380_remain_sealed": true,
+    "gpu_launch_ready": false
+  },
+  "git_result_policy": {
+    "this_record_is_part_of_archival_commit": true,
+    "actual_commit_hash_from_git_and_final_reply": true,
+    "actual_push_success_requires_live_remote_hash_match": true,
+    "force_push": false,
+    "rewrite_history": false
+  }
+}
