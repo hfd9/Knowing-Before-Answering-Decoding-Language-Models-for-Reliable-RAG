@@ -6,6 +6,8 @@
 
 ## 当前交接摘要
 
+- 2026-11-06 已完成[解释行为12×4材料草稿及CPU核验](records/2026-11-06-explanation-scope-materials.md)，当前v2为48候选输入；独立语义批准和GPU采集仍未发生。
+
 - 2026-11-06 用户要求助手自行完成后续；已作[知情裁定与研究决策](assistant_adjudication_and_study_decision.md)，保留12×4为探索设计方向，未来不要求用户逐项审核。正式独立批准0和GPU门禁false保持。
 
 - 2026-11-06 已完成CLI复评的[知情助手核查及近邻文献初查](review/2026-11-06-informed-followup/README.md)：三焦点的冲突范围不都明确指向目标字段；端点分歧并集13个回答。人工裁定和草案采纳仍待定。

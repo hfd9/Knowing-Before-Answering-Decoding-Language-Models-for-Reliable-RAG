@@ -1,0 +1,1043 @@
+{
+  "status": "assistant_author_exposed_interpretation_not_independent_semantic_approval",
+  "materials_sha256": "d70c9e72b89e023fae19bf94d91e9bb438bc5e4726fab27786e5db7869bc877e",
+  "review_method": "Shared generated templates inspected and each item parsed; condition-aware author-side interpretation, not blind review.",
+  "record_semantics_limit": "Single uncontradicted record supports an answer relative to the records; it does not prove the true value if records may be wrong.",
+  "items": [
+    {
+      "id": "exs01_S",
+      "construction_interpretation": "one_target_record",
+      "target_record_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-401 the alpha code VX-81010.",
+          "entity": "XU-401",
+          "field": "alpha",
+          "value": "VX-81010"
+        }
+      ],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-400 the alpha code VX-81012.",
+          "entity": "XU-400",
+          "field": "alpha",
+          "value": "VX-81012"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs01_I0",
+      "construction_interpretation": "target_unassigned_no_conflicting_record",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-400 the alpha code VX-81010.",
+          "entity": "XU-400",
+          "field": "alpha",
+          "value": "VX-81010"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs01_IU",
+      "construction_interpretation": "target_unassigned_other_entity_record_conflict",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-400 the alpha code VX-81010.",
+          "entity": "XU-400",
+          "field": "alpha",
+          "value": "VX-81010"
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-400 the alpha code VX-81012.",
+          "entity": "XU-400",
+          "field": "alpha",
+          "value": "VX-81012"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs01_CT",
+      "construction_interpretation": "conflicting_target_records",
+      "target_record_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-401 the alpha code VX-81010.",
+          "entity": "XU-401",
+          "field": "alpha",
+          "value": "VX-81010"
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-401 the alpha code VX-81012.",
+          "entity": "XU-401",
+          "field": "alpha",
+          "value": "VX-81012"
+        }
+      ],
+      "other_same_field_record_citations": [],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs02_S",
+      "construction_interpretation": "one_target_record",
+      "target_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-403 the omega code VX-81022.",
+          "entity": "XU-403",
+          "field": "omega",
+          "value": "VX-81022"
+        }
+      ],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-402 the omega code VX-81021.",
+          "entity": "XU-402",
+          "field": "omega",
+          "value": "VX-81021"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs02_I0",
+      "construction_interpretation": "target_unassigned_no_conflicting_record",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-402 the omega code VX-81022.",
+          "entity": "XU-402",
+          "field": "omega",
+          "value": "VX-81022"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs02_IU",
+      "construction_interpretation": "target_unassigned_other_entity_record_conflict",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-402 the omega code VX-81022.",
+          "entity": "XU-402",
+          "field": "omega",
+          "value": "VX-81022"
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-402 the omega code VX-81021.",
+          "entity": "XU-402",
+          "field": "omega",
+          "value": "VX-81021"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs02_CT",
+      "construction_interpretation": "conflicting_target_records",
+      "target_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-403 the omega code VX-81022.",
+          "entity": "XU-403",
+          "field": "omega",
+          "value": "VX-81022"
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-403 the omega code VX-81021.",
+          "entity": "XU-403",
+          "field": "omega",
+          "value": "VX-81021"
+        }
+      ],
+      "other_same_field_record_citations": [],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs03_S",
+      "construction_interpretation": "one_target_record",
+      "target_record_citations": [
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-405 the alpha code VX-81031.",
+          "entity": "XU-405",
+          "field": "alpha",
+          "value": "VX-81031"
+        }
+      ],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-404 the alpha code VX-81030.",
+          "entity": "XU-404",
+          "field": "alpha",
+          "value": "VX-81030"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs03_I0",
+      "construction_interpretation": "target_unassigned_no_conflicting_record",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-404 the alpha code VX-81031.",
+          "entity": "XU-404",
+          "field": "alpha",
+          "value": "VX-81031"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs03_IU",
+      "construction_interpretation": "target_unassigned_other_entity_record_conflict",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-404 the alpha code VX-81030.",
+          "entity": "XU-404",
+          "field": "alpha",
+          "value": "VX-81030"
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-404 the alpha code VX-81031.",
+          "entity": "XU-404",
+          "field": "alpha",
+          "value": "VX-81031"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs03_CT",
+      "construction_interpretation": "conflicting_target_records",
+      "target_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-405 the alpha code VX-81030.",
+          "entity": "XU-405",
+          "field": "alpha",
+          "value": "VX-81030"
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-405 the alpha code VX-81031.",
+          "entity": "XU-405",
+          "field": "alpha",
+          "value": "VX-81031"
+        }
+      ],
+      "other_same_field_record_citations": [],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs04_S",
+      "construction_interpretation": "one_target_record",
+      "target_record_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-407 the omega code VX-81041.",
+          "entity": "XU-407",
+          "field": "omega",
+          "value": "VX-81041"
+        }
+      ],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-406 the omega code VX-81040.",
+          "entity": "XU-406",
+          "field": "omega",
+          "value": "VX-81040"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs04_I0",
+      "construction_interpretation": "target_unassigned_no_conflicting_record",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-406 the omega code VX-81041.",
+          "entity": "XU-406",
+          "field": "omega",
+          "value": "VX-81041"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs04_IU",
+      "construction_interpretation": "target_unassigned_other_entity_record_conflict",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-406 the omega code VX-81041.",
+          "entity": "XU-406",
+          "field": "omega",
+          "value": "VX-81041"
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-406 the omega code VX-81040.",
+          "entity": "XU-406",
+          "field": "omega",
+          "value": "VX-81040"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs04_CT",
+      "construction_interpretation": "conflicting_target_records",
+      "target_record_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-407 the omega code VX-81041.",
+          "entity": "XU-407",
+          "field": "omega",
+          "value": "VX-81041"
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-407 the omega code VX-81040.",
+          "entity": "XU-407",
+          "field": "omega",
+          "value": "VX-81040"
+        }
+      ],
+      "other_same_field_record_citations": [],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs05_S",
+      "construction_interpretation": "one_target_record",
+      "target_record_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-409 the omega code VX-81051.",
+          "entity": "XU-409",
+          "field": "omega",
+          "value": "VX-81051"
+        }
+      ],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-408 the omega code VX-81052.",
+          "entity": "XU-408",
+          "field": "omega",
+          "value": "VX-81052"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs05_I0",
+      "construction_interpretation": "target_unassigned_no_conflicting_record",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-408 the omega code VX-81051.",
+          "entity": "XU-408",
+          "field": "omega",
+          "value": "VX-81051"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs05_IU",
+      "construction_interpretation": "target_unassigned_other_entity_record_conflict",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-408 the omega code VX-81051.",
+          "entity": "XU-408",
+          "field": "omega",
+          "value": "VX-81051"
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-408 the omega code VX-81052.",
+          "entity": "XU-408",
+          "field": "omega",
+          "value": "VX-81052"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs05_CT",
+      "construction_interpretation": "conflicting_target_records",
+      "target_record_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-409 the omega code VX-81051.",
+          "entity": "XU-409",
+          "field": "omega",
+          "value": "VX-81051"
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-409 the omega code VX-81052.",
+          "entity": "XU-409",
+          "field": "omega",
+          "value": "VX-81052"
+        }
+      ],
+      "other_same_field_record_citations": [],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs06_S",
+      "construction_interpretation": "one_target_record",
+      "target_record_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-410 the omega code VX-81060.",
+          "entity": "XU-410",
+          "field": "omega",
+          "value": "VX-81060"
+        }
+      ],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-411 the omega code VX-81061.",
+          "entity": "XU-411",
+          "field": "omega",
+          "value": "VX-81061"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs06_I0",
+      "construction_interpretation": "target_unassigned_no_conflicting_record",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-411 the omega code VX-81060.",
+          "entity": "XU-411",
+          "field": "omega",
+          "value": "VX-81060"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs06_IU",
+      "construction_interpretation": "target_unassigned_other_entity_record_conflict",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-411 the omega code VX-81060.",
+          "entity": "XU-411",
+          "field": "omega",
+          "value": "VX-81060"
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-411 the omega code VX-81061.",
+          "entity": "XU-411",
+          "field": "omega",
+          "value": "VX-81061"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs06_CT",
+      "construction_interpretation": "conflicting_target_records",
+      "target_record_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-410 the omega code VX-81060.",
+          "entity": "XU-410",
+          "field": "omega",
+          "value": "VX-81060"
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-410 the omega code VX-81061.",
+          "entity": "XU-410",
+          "field": "omega",
+          "value": "VX-81061"
+        }
+      ],
+      "other_same_field_record_citations": [],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs07_S",
+      "construction_interpretation": "one_target_record",
+      "target_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-413 the alpha code VX-81072.",
+          "entity": "XU-413",
+          "field": "alpha",
+          "value": "VX-81072"
+        }
+      ],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-412 the alpha code VX-81071.",
+          "entity": "XU-412",
+          "field": "alpha",
+          "value": "VX-81071"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs07_I0",
+      "construction_interpretation": "target_unassigned_no_conflicting_record",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-412 the alpha code VX-81072.",
+          "entity": "XU-412",
+          "field": "alpha",
+          "value": "VX-81072"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs07_IU",
+      "construction_interpretation": "target_unassigned_other_entity_record_conflict",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-412 the alpha code VX-81072.",
+          "entity": "XU-412",
+          "field": "alpha",
+          "value": "VX-81072"
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-412 the alpha code VX-81071.",
+          "entity": "XU-412",
+          "field": "alpha",
+          "value": "VX-81071"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs07_CT",
+      "construction_interpretation": "conflicting_target_records",
+      "target_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-413 the alpha code VX-81072.",
+          "entity": "XU-413",
+          "field": "alpha",
+          "value": "VX-81072"
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-413 the alpha code VX-81071.",
+          "entity": "XU-413",
+          "field": "alpha",
+          "value": "VX-81071"
+        }
+      ],
+      "other_same_field_record_citations": [],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs08_S",
+      "construction_interpretation": "one_target_record",
+      "target_record_citations": [
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-414 the omega code VX-81081.",
+          "entity": "XU-414",
+          "field": "omega",
+          "value": "VX-81081"
+        }
+      ],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-415 the omega code VX-81082.",
+          "entity": "XU-415",
+          "field": "omega",
+          "value": "VX-81082"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs08_I0",
+      "construction_interpretation": "target_unassigned_no_conflicting_record",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-415 the omega code VX-81081.",
+          "entity": "XU-415",
+          "field": "omega",
+          "value": "VX-81081"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs08_IU",
+      "construction_interpretation": "target_unassigned_other_entity_record_conflict",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-415 the omega code VX-81082.",
+          "entity": "XU-415",
+          "field": "omega",
+          "value": "VX-81082"
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-415 the omega code VX-81081.",
+          "entity": "XU-415",
+          "field": "omega",
+          "value": "VX-81081"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs08_CT",
+      "construction_interpretation": "conflicting_target_records",
+      "target_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-414 the omega code VX-81082.",
+          "entity": "XU-414",
+          "field": "omega",
+          "value": "VX-81082"
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-414 the omega code VX-81081.",
+          "entity": "XU-414",
+          "field": "omega",
+          "value": "VX-81081"
+        }
+      ],
+      "other_same_field_record_citations": [],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs09_S",
+      "construction_interpretation": "one_target_record",
+      "target_record_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-416 the alpha code VX-81092.",
+          "entity": "XU-416",
+          "field": "alpha",
+          "value": "VX-81092"
+        }
+      ],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-417 the alpha code VX-81090.",
+          "entity": "XU-417",
+          "field": "alpha",
+          "value": "VX-81090"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs09_I0",
+      "construction_interpretation": "target_unassigned_no_conflicting_record",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-417 the alpha code VX-81092.",
+          "entity": "XU-417",
+          "field": "alpha",
+          "value": "VX-81092"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs09_IU",
+      "construction_interpretation": "target_unassigned_other_entity_record_conflict",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-417 the alpha code VX-81092.",
+          "entity": "XU-417",
+          "field": "alpha",
+          "value": "VX-81092"
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-417 the alpha code VX-81090.",
+          "entity": "XU-417",
+          "field": "alpha",
+          "value": "VX-81090"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs09_CT",
+      "construction_interpretation": "conflicting_target_records",
+      "target_record_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-416 the alpha code VX-81092.",
+          "entity": "XU-416",
+          "field": "alpha",
+          "value": "VX-81092"
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-416 the alpha code VX-81090.",
+          "entity": "XU-416",
+          "field": "alpha",
+          "value": "VX-81090"
+        }
+      ],
+      "other_same_field_record_citations": [],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs10_S",
+      "construction_interpretation": "one_target_record",
+      "target_record_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-418 the alpha code VX-81100.",
+          "entity": "XU-418",
+          "field": "alpha",
+          "value": "VX-81100"
+        }
+      ],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-419 the alpha code VX-81101.",
+          "entity": "XU-419",
+          "field": "alpha",
+          "value": "VX-81101"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs10_I0",
+      "construction_interpretation": "target_unassigned_no_conflicting_record",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-419 the alpha code VX-81100.",
+          "entity": "XU-419",
+          "field": "alpha",
+          "value": "VX-81100"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs10_IU",
+      "construction_interpretation": "target_unassigned_other_entity_record_conflict",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-419 the alpha code VX-81100.",
+          "entity": "XU-419",
+          "field": "alpha",
+          "value": "VX-81100"
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-419 the alpha code VX-81101.",
+          "entity": "XU-419",
+          "field": "alpha",
+          "value": "VX-81101"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs10_CT",
+      "construction_interpretation": "conflicting_target_records",
+      "target_record_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-418 the alpha code VX-81100.",
+          "entity": "XU-418",
+          "field": "alpha",
+          "value": "VX-81100"
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-418 the alpha code VX-81101.",
+          "entity": "XU-418",
+          "field": "alpha",
+          "value": "VX-81101"
+        }
+      ],
+      "other_same_field_record_citations": [],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs11_S",
+      "construction_interpretation": "one_target_record",
+      "target_record_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-420 the omega code VX-81110.",
+          "entity": "XU-420",
+          "field": "omega",
+          "value": "VX-81110"
+        }
+      ],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-421 the omega code VX-81112.",
+          "entity": "XU-421",
+          "field": "omega",
+          "value": "VX-81112"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs11_I0",
+      "construction_interpretation": "target_unassigned_no_conflicting_record",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-421 the omega code VX-81110.",
+          "entity": "XU-421",
+          "field": "omega",
+          "value": "VX-81110"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs11_IU",
+      "construction_interpretation": "target_unassigned_other_entity_record_conflict",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-421 the omega code VX-81110.",
+          "entity": "XU-421",
+          "field": "omega",
+          "value": "VX-81110"
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-421 the omega code VX-81112.",
+          "entity": "XU-421",
+          "field": "omega",
+          "value": "VX-81112"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs11_CT",
+      "construction_interpretation": "conflicting_target_records",
+      "target_record_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-420 the omega code VX-81110.",
+          "entity": "XU-420",
+          "field": "omega",
+          "value": "VX-81110"
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-420 the omega code VX-81112.",
+          "entity": "XU-420",
+          "field": "omega",
+          "value": "VX-81112"
+        }
+      ],
+      "other_same_field_record_citations": [],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs12_S",
+      "construction_interpretation": "one_target_record",
+      "target_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-422 the alpha code VX-81122.",
+          "entity": "XU-422",
+          "field": "alpha",
+          "value": "VX-81122"
+        }
+      ],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-423 the alpha code VX-81120.",
+          "entity": "XU-423",
+          "field": "alpha",
+          "value": "VX-81120"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs12_I0",
+      "construction_interpretation": "target_unassigned_no_conflicting_record",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-423 the alpha code VX-81122.",
+          "entity": "XU-423",
+          "field": "alpha",
+          "value": "VX-81122"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs12_IU",
+      "construction_interpretation": "target_unassigned_other_entity_record_conflict",
+      "target_record_citations": [],
+      "other_same_field_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-423 the alpha code VX-81122.",
+          "entity": "XU-423",
+          "field": "alpha",
+          "value": "VX-81122"
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-423 the alpha code VX-81120.",
+          "entity": "XU-423",
+          "field": "alpha",
+          "value": "VX-81120"
+        }
+      ],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    },
+    {
+      "id": "exs12_CT",
+      "construction_interpretation": "conflicting_target_records",
+      "target_record_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-422 the alpha code VX-81122.",
+          "entity": "XU-422",
+          "field": "alpha",
+          "value": "VX-81122"
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-422 the alpha code VX-81120.",
+          "entity": "XU-422",
+          "field": "alpha",
+          "value": "VX-81120"
+        }
+      ],
+      "other_same_field_record_citations": [],
+      "all_five_slots_checked_by_parser": true,
+      "not_a_formal_label": true
+    }
+  ],
+  "formal_independent_approvals": 0,
+  "formal_gate": false,
+  "gpu_launch_ready": false
+}

@@ -1,0 +1,3811 @@
+{
+  "mapping": {
+    "P001": "exs11_IU",
+    "P002": "exs05_IU",
+    "P003": "exs12_S",
+    "P004": "exs03_I0",
+    "P005": "exs08_CT",
+    "P006": "exs07_I0",
+    "P007": "exs01_IU",
+    "P008": "exs05_I0",
+    "P009": "exs04_IU",
+    "P010": "exs05_CT",
+    "P011": "exs06_CT",
+    "P012": "exs10_S",
+    "P013": "exs04_S",
+    "P014": "exs03_S",
+    "P015": "exs01_CT",
+    "P016": "exs02_IU",
+    "P017": "exs03_CT",
+    "P018": "exs11_S",
+    "P019": "exs09_IU",
+    "P020": "exs12_CT",
+    "P021": "exs12_I0",
+    "P022": "exs10_I0",
+    "P023": "exs08_IU",
+    "P024": "exs06_S",
+    "P025": "exs07_IU",
+    "P026": "exs03_IU",
+    "P027": "exs12_IU",
+    "P028": "exs09_S",
+    "P029": "exs11_CT",
+    "P030": "exs11_I0",
+    "P031": "exs08_S",
+    "P032": "exs06_I0",
+    "P033": "exs10_IU",
+    "P034": "exs01_S",
+    "P035": "exs04_I0",
+    "P036": "exs04_CT",
+    "P037": "exs02_CT",
+    "P038": "exs02_I0",
+    "P039": "exs02_S",
+    "P040": "exs09_CT",
+    "P041": "exs07_CT",
+    "P042": "exs01_I0",
+    "P043": "exs09_I0",
+    "P044": "exs05_S",
+    "P045": "exs07_S",
+    "P046": "exs06_IU",
+    "P047": "exs08_I0",
+    "P048": "exs10_CT"
+  },
+  "witnesses": {
+    "exs01_S": {
+      "displayed_assignments": [
+        [
+          "XU-401",
+          "alpha",
+          "VX-81010"
+        ],
+        [
+          "XU-400",
+          "alpha",
+          "VX-81012"
+        ],
+        [
+          "XU-401",
+          "omega",
+          "VX-81011"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-400",
+              "field": "alpha",
+              "value": "VX-81012"
+            },
+            {
+              "entity": "XU-400",
+              "field": "omega",
+              "value": "VX-81011"
+            },
+            {
+              "entity": "XU-401",
+              "field": "alpha",
+              "value": "VX-81010"
+            },
+            {
+              "entity": "XU-401",
+              "field": "omega",
+              "value": "VX-81011"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs01_I0": {
+      "displayed_assignments": [
+        [
+          "XU-400",
+          "alpha",
+          "VX-81010"
+        ],
+        [
+          "XU-400",
+          "omega",
+          "VX-81012"
+        ],
+        [
+          "XU-401",
+          "omega",
+          "VX-81011"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-400",
+              "field": "alpha",
+              "value": "VX-81010"
+            },
+            {
+              "entity": "XU-400",
+              "field": "omega",
+              "value": "VX-81012"
+            },
+            {
+              "entity": "XU-401",
+              "field": "alpha",
+              "value": "VX-91010"
+            },
+            {
+              "entity": "XU-401",
+              "field": "omega",
+              "value": "VX-81011"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-400",
+              "field": "alpha",
+              "value": "VX-81010"
+            },
+            {
+              "entity": "XU-400",
+              "field": "omega",
+              "value": "VX-81012"
+            },
+            {
+              "entity": "XU-401",
+              "field": "alpha",
+              "value": "VX-91011"
+            },
+            {
+              "entity": "XU-401",
+              "field": "omega",
+              "value": "VX-81011"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs01_IU": {
+      "displayed_assignments": [
+        [
+          "XU-400",
+          "alpha",
+          "VX-81010"
+        ],
+        [
+          "XU-400",
+          "alpha",
+          "VX-81012"
+        ],
+        [
+          "XU-401",
+          "omega",
+          "VX-81011"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-400",
+              "field": "alpha",
+              "value": "VX-81012"
+            },
+            {
+              "entity": "XU-400",
+              "field": "omega",
+              "value": "VX-81011"
+            },
+            {
+              "entity": "XU-401",
+              "field": "alpha",
+              "value": "VX-91010"
+            },
+            {
+              "entity": "XU-401",
+              "field": "omega",
+              "value": "VX-81011"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-400",
+              "field": "alpha",
+              "value": "VX-81012"
+            },
+            {
+              "entity": "XU-400",
+              "field": "omega",
+              "value": "VX-81011"
+            },
+            {
+              "entity": "XU-401",
+              "field": "alpha",
+              "value": "VX-91011"
+            },
+            {
+              "entity": "XU-401",
+              "field": "omega",
+              "value": "VX-81011"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-400",
+              "field": "alpha",
+              "value": "VX-81010"
+            },
+            {
+              "entity": "XU-400",
+              "field": "omega",
+              "value": "VX-81011"
+            },
+            {
+              "entity": "XU-401",
+              "field": "alpha",
+              "value": "VX-91010"
+            },
+            {
+              "entity": "XU-401",
+              "field": "omega",
+              "value": "VX-81011"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-400",
+              "field": "alpha",
+              "value": "VX-81010"
+            },
+            {
+              "entity": "XU-400",
+              "field": "omega",
+              "value": "VX-81011"
+            },
+            {
+              "entity": "XU-401",
+              "field": "alpha",
+              "value": "VX-91011"
+            },
+            {
+              "entity": "XU-401",
+              "field": "omega",
+              "value": "VX-81011"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs01_CT": {
+      "displayed_assignments": [
+        [
+          "XU-401",
+          "alpha",
+          "VX-81010"
+        ],
+        [
+          "XU-401",
+          "alpha",
+          "VX-81012"
+        ],
+        [
+          "XU-401",
+          "omega",
+          "VX-81011"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-400",
+              "field": "alpha",
+              "value": "VX-81012"
+            },
+            {
+              "entity": "XU-400",
+              "field": "omega",
+              "value": "VX-81011"
+            },
+            {
+              "entity": "XU-401",
+              "field": "alpha",
+              "value": "VX-81012"
+            },
+            {
+              "entity": "XU-401",
+              "field": "omega",
+              "value": "VX-81011"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-400",
+              "field": "alpha",
+              "value": "VX-81012"
+            },
+            {
+              "entity": "XU-400",
+              "field": "omega",
+              "value": "VX-81011"
+            },
+            {
+              "entity": "XU-401",
+              "field": "alpha",
+              "value": "VX-81010"
+            },
+            {
+              "entity": "XU-401",
+              "field": "omega",
+              "value": "VX-81011"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs02_S": {
+      "displayed_assignments": [
+        [
+          "XU-403",
+          "omega",
+          "VX-81022"
+        ],
+        [
+          "XU-402",
+          "omega",
+          "VX-81021"
+        ],
+        [
+          "XU-403",
+          "alpha",
+          "VX-81020"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-402",
+              "field": "alpha",
+              "value": "VX-81020"
+            },
+            {
+              "entity": "XU-402",
+              "field": "omega",
+              "value": "VX-81021"
+            },
+            {
+              "entity": "XU-403",
+              "field": "alpha",
+              "value": "VX-81020"
+            },
+            {
+              "entity": "XU-403",
+              "field": "omega",
+              "value": "VX-81022"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs02_I0": {
+      "displayed_assignments": [
+        [
+          "XU-402",
+          "omega",
+          "VX-81022"
+        ],
+        [
+          "XU-402",
+          "alpha",
+          "VX-81021"
+        ],
+        [
+          "XU-403",
+          "alpha",
+          "VX-81020"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-402",
+              "field": "alpha",
+              "value": "VX-81021"
+            },
+            {
+              "entity": "XU-402",
+              "field": "omega",
+              "value": "VX-81022"
+            },
+            {
+              "entity": "XU-403",
+              "field": "alpha",
+              "value": "VX-81020"
+            },
+            {
+              "entity": "XU-403",
+              "field": "omega",
+              "value": "VX-91020"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-402",
+              "field": "alpha",
+              "value": "VX-81021"
+            },
+            {
+              "entity": "XU-402",
+              "field": "omega",
+              "value": "VX-81022"
+            },
+            {
+              "entity": "XU-403",
+              "field": "alpha",
+              "value": "VX-81020"
+            },
+            {
+              "entity": "XU-403",
+              "field": "omega",
+              "value": "VX-91021"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs02_IU": {
+      "displayed_assignments": [
+        [
+          "XU-402",
+          "omega",
+          "VX-81022"
+        ],
+        [
+          "XU-402",
+          "omega",
+          "VX-81021"
+        ],
+        [
+          "XU-403",
+          "alpha",
+          "VX-81020"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-402",
+              "field": "alpha",
+              "value": "VX-81020"
+            },
+            {
+              "entity": "XU-402",
+              "field": "omega",
+              "value": "VX-81021"
+            },
+            {
+              "entity": "XU-403",
+              "field": "alpha",
+              "value": "VX-81020"
+            },
+            {
+              "entity": "XU-403",
+              "field": "omega",
+              "value": "VX-91020"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-402",
+              "field": "alpha",
+              "value": "VX-81020"
+            },
+            {
+              "entity": "XU-402",
+              "field": "omega",
+              "value": "VX-81021"
+            },
+            {
+              "entity": "XU-403",
+              "field": "alpha",
+              "value": "VX-81020"
+            },
+            {
+              "entity": "XU-403",
+              "field": "omega",
+              "value": "VX-91021"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-402",
+              "field": "alpha",
+              "value": "VX-81020"
+            },
+            {
+              "entity": "XU-402",
+              "field": "omega",
+              "value": "VX-81022"
+            },
+            {
+              "entity": "XU-403",
+              "field": "alpha",
+              "value": "VX-81020"
+            },
+            {
+              "entity": "XU-403",
+              "field": "omega",
+              "value": "VX-91020"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-402",
+              "field": "alpha",
+              "value": "VX-81020"
+            },
+            {
+              "entity": "XU-402",
+              "field": "omega",
+              "value": "VX-81022"
+            },
+            {
+              "entity": "XU-403",
+              "field": "alpha",
+              "value": "VX-81020"
+            },
+            {
+              "entity": "XU-403",
+              "field": "omega",
+              "value": "VX-91021"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs02_CT": {
+      "displayed_assignments": [
+        [
+          "XU-403",
+          "omega",
+          "VX-81022"
+        ],
+        [
+          "XU-403",
+          "omega",
+          "VX-81021"
+        ],
+        [
+          "XU-403",
+          "alpha",
+          "VX-81020"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-402",
+              "field": "alpha",
+              "value": "VX-81020"
+            },
+            {
+              "entity": "XU-402",
+              "field": "omega",
+              "value": "VX-81021"
+            },
+            {
+              "entity": "XU-403",
+              "field": "alpha",
+              "value": "VX-81020"
+            },
+            {
+              "entity": "XU-403",
+              "field": "omega",
+              "value": "VX-81021"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-402",
+              "field": "alpha",
+              "value": "VX-81020"
+            },
+            {
+              "entity": "XU-402",
+              "field": "omega",
+              "value": "VX-81021"
+            },
+            {
+              "entity": "XU-403",
+              "field": "alpha",
+              "value": "VX-81020"
+            },
+            {
+              "entity": "XU-403",
+              "field": "omega",
+              "value": "VX-81022"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs03_S": {
+      "displayed_assignments": [
+        [
+          "XU-405",
+          "alpha",
+          "VX-81031"
+        ],
+        [
+          "XU-404",
+          "alpha",
+          "VX-81030"
+        ],
+        [
+          "XU-405",
+          "omega",
+          "VX-81032"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-404",
+              "field": "alpha",
+              "value": "VX-81030"
+            },
+            {
+              "entity": "XU-404",
+              "field": "omega",
+              "value": "VX-81032"
+            },
+            {
+              "entity": "XU-405",
+              "field": "alpha",
+              "value": "VX-81031"
+            },
+            {
+              "entity": "XU-405",
+              "field": "omega",
+              "value": "VX-81032"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs03_I0": {
+      "displayed_assignments": [
+        [
+          "XU-404",
+          "alpha",
+          "VX-81031"
+        ],
+        [
+          "XU-404",
+          "omega",
+          "VX-81030"
+        ],
+        [
+          "XU-405",
+          "omega",
+          "VX-81032"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-404",
+              "field": "alpha",
+              "value": "VX-81031"
+            },
+            {
+              "entity": "XU-404",
+              "field": "omega",
+              "value": "VX-81030"
+            },
+            {
+              "entity": "XU-405",
+              "field": "alpha",
+              "value": "VX-91030"
+            },
+            {
+              "entity": "XU-405",
+              "field": "omega",
+              "value": "VX-81032"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-404",
+              "field": "alpha",
+              "value": "VX-81031"
+            },
+            {
+              "entity": "XU-404",
+              "field": "omega",
+              "value": "VX-81030"
+            },
+            {
+              "entity": "XU-405",
+              "field": "alpha",
+              "value": "VX-91031"
+            },
+            {
+              "entity": "XU-405",
+              "field": "omega",
+              "value": "VX-81032"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs03_IU": {
+      "displayed_assignments": [
+        [
+          "XU-404",
+          "alpha",
+          "VX-81031"
+        ],
+        [
+          "XU-404",
+          "alpha",
+          "VX-81030"
+        ],
+        [
+          "XU-405",
+          "omega",
+          "VX-81032"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-404",
+              "field": "alpha",
+              "value": "VX-81030"
+            },
+            {
+              "entity": "XU-404",
+              "field": "omega",
+              "value": "VX-81032"
+            },
+            {
+              "entity": "XU-405",
+              "field": "alpha",
+              "value": "VX-91030"
+            },
+            {
+              "entity": "XU-405",
+              "field": "omega",
+              "value": "VX-81032"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-404",
+              "field": "alpha",
+              "value": "VX-81030"
+            },
+            {
+              "entity": "XU-404",
+              "field": "omega",
+              "value": "VX-81032"
+            },
+            {
+              "entity": "XU-405",
+              "field": "alpha",
+              "value": "VX-91031"
+            },
+            {
+              "entity": "XU-405",
+              "field": "omega",
+              "value": "VX-81032"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-404",
+              "field": "alpha",
+              "value": "VX-81031"
+            },
+            {
+              "entity": "XU-404",
+              "field": "omega",
+              "value": "VX-81032"
+            },
+            {
+              "entity": "XU-405",
+              "field": "alpha",
+              "value": "VX-91030"
+            },
+            {
+              "entity": "XU-405",
+              "field": "omega",
+              "value": "VX-81032"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-404",
+              "field": "alpha",
+              "value": "VX-81031"
+            },
+            {
+              "entity": "XU-404",
+              "field": "omega",
+              "value": "VX-81032"
+            },
+            {
+              "entity": "XU-405",
+              "field": "alpha",
+              "value": "VX-91031"
+            },
+            {
+              "entity": "XU-405",
+              "field": "omega",
+              "value": "VX-81032"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs03_CT": {
+      "displayed_assignments": [
+        [
+          "XU-405",
+          "alpha",
+          "VX-81031"
+        ],
+        [
+          "XU-405",
+          "alpha",
+          "VX-81030"
+        ],
+        [
+          "XU-405",
+          "omega",
+          "VX-81032"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-404",
+              "field": "alpha",
+              "value": "VX-81030"
+            },
+            {
+              "entity": "XU-404",
+              "field": "omega",
+              "value": "VX-81032"
+            },
+            {
+              "entity": "XU-405",
+              "field": "alpha",
+              "value": "VX-81030"
+            },
+            {
+              "entity": "XU-405",
+              "field": "omega",
+              "value": "VX-81032"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-404",
+              "field": "alpha",
+              "value": "VX-81030"
+            },
+            {
+              "entity": "XU-404",
+              "field": "omega",
+              "value": "VX-81032"
+            },
+            {
+              "entity": "XU-405",
+              "field": "alpha",
+              "value": "VX-81031"
+            },
+            {
+              "entity": "XU-405",
+              "field": "omega",
+              "value": "VX-81032"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs04_S": {
+      "displayed_assignments": [
+        [
+          "XU-407",
+          "omega",
+          "VX-81041"
+        ],
+        [
+          "XU-406",
+          "omega",
+          "VX-81040"
+        ],
+        [
+          "XU-407",
+          "alpha",
+          "VX-81042"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-406",
+              "field": "alpha",
+              "value": "VX-81042"
+            },
+            {
+              "entity": "XU-406",
+              "field": "omega",
+              "value": "VX-81040"
+            },
+            {
+              "entity": "XU-407",
+              "field": "alpha",
+              "value": "VX-81042"
+            },
+            {
+              "entity": "XU-407",
+              "field": "omega",
+              "value": "VX-81041"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs04_I0": {
+      "displayed_assignments": [
+        [
+          "XU-406",
+          "omega",
+          "VX-81041"
+        ],
+        [
+          "XU-406",
+          "alpha",
+          "VX-81040"
+        ],
+        [
+          "XU-407",
+          "alpha",
+          "VX-81042"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-406",
+              "field": "alpha",
+              "value": "VX-81040"
+            },
+            {
+              "entity": "XU-406",
+              "field": "omega",
+              "value": "VX-81041"
+            },
+            {
+              "entity": "XU-407",
+              "field": "alpha",
+              "value": "VX-81042"
+            },
+            {
+              "entity": "XU-407",
+              "field": "omega",
+              "value": "VX-91040"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-406",
+              "field": "alpha",
+              "value": "VX-81040"
+            },
+            {
+              "entity": "XU-406",
+              "field": "omega",
+              "value": "VX-81041"
+            },
+            {
+              "entity": "XU-407",
+              "field": "alpha",
+              "value": "VX-81042"
+            },
+            {
+              "entity": "XU-407",
+              "field": "omega",
+              "value": "VX-91041"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs04_IU": {
+      "displayed_assignments": [
+        [
+          "XU-406",
+          "omega",
+          "VX-81041"
+        ],
+        [
+          "XU-406",
+          "omega",
+          "VX-81040"
+        ],
+        [
+          "XU-407",
+          "alpha",
+          "VX-81042"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-406",
+              "field": "alpha",
+              "value": "VX-81042"
+            },
+            {
+              "entity": "XU-406",
+              "field": "omega",
+              "value": "VX-81040"
+            },
+            {
+              "entity": "XU-407",
+              "field": "alpha",
+              "value": "VX-81042"
+            },
+            {
+              "entity": "XU-407",
+              "field": "omega",
+              "value": "VX-91040"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-406",
+              "field": "alpha",
+              "value": "VX-81042"
+            },
+            {
+              "entity": "XU-406",
+              "field": "omega",
+              "value": "VX-81040"
+            },
+            {
+              "entity": "XU-407",
+              "field": "alpha",
+              "value": "VX-81042"
+            },
+            {
+              "entity": "XU-407",
+              "field": "omega",
+              "value": "VX-91041"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-406",
+              "field": "alpha",
+              "value": "VX-81042"
+            },
+            {
+              "entity": "XU-406",
+              "field": "omega",
+              "value": "VX-81041"
+            },
+            {
+              "entity": "XU-407",
+              "field": "alpha",
+              "value": "VX-81042"
+            },
+            {
+              "entity": "XU-407",
+              "field": "omega",
+              "value": "VX-91040"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-406",
+              "field": "alpha",
+              "value": "VX-81042"
+            },
+            {
+              "entity": "XU-406",
+              "field": "omega",
+              "value": "VX-81041"
+            },
+            {
+              "entity": "XU-407",
+              "field": "alpha",
+              "value": "VX-81042"
+            },
+            {
+              "entity": "XU-407",
+              "field": "omega",
+              "value": "VX-91041"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs04_CT": {
+      "displayed_assignments": [
+        [
+          "XU-407",
+          "omega",
+          "VX-81041"
+        ],
+        [
+          "XU-407",
+          "omega",
+          "VX-81040"
+        ],
+        [
+          "XU-407",
+          "alpha",
+          "VX-81042"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-406",
+              "field": "alpha",
+              "value": "VX-81042"
+            },
+            {
+              "entity": "XU-406",
+              "field": "omega",
+              "value": "VX-81040"
+            },
+            {
+              "entity": "XU-407",
+              "field": "alpha",
+              "value": "VX-81042"
+            },
+            {
+              "entity": "XU-407",
+              "field": "omega",
+              "value": "VX-81040"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-406",
+              "field": "alpha",
+              "value": "VX-81042"
+            },
+            {
+              "entity": "XU-406",
+              "field": "omega",
+              "value": "VX-81040"
+            },
+            {
+              "entity": "XU-407",
+              "field": "alpha",
+              "value": "VX-81042"
+            },
+            {
+              "entity": "XU-407",
+              "field": "omega",
+              "value": "VX-81041"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs05_S": {
+      "displayed_assignments": [
+        [
+          "XU-409",
+          "omega",
+          "VX-81051"
+        ],
+        [
+          "XU-408",
+          "omega",
+          "VX-81052"
+        ],
+        [
+          "XU-409",
+          "alpha",
+          "VX-81050"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-408",
+              "field": "alpha",
+              "value": "VX-81050"
+            },
+            {
+              "entity": "XU-408",
+              "field": "omega",
+              "value": "VX-81052"
+            },
+            {
+              "entity": "XU-409",
+              "field": "alpha",
+              "value": "VX-81050"
+            },
+            {
+              "entity": "XU-409",
+              "field": "omega",
+              "value": "VX-81051"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs05_I0": {
+      "displayed_assignments": [
+        [
+          "XU-408",
+          "omega",
+          "VX-81051"
+        ],
+        [
+          "XU-408",
+          "alpha",
+          "VX-81052"
+        ],
+        [
+          "XU-409",
+          "alpha",
+          "VX-81050"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-408",
+              "field": "alpha",
+              "value": "VX-81052"
+            },
+            {
+              "entity": "XU-408",
+              "field": "omega",
+              "value": "VX-81051"
+            },
+            {
+              "entity": "XU-409",
+              "field": "alpha",
+              "value": "VX-81050"
+            },
+            {
+              "entity": "XU-409",
+              "field": "omega",
+              "value": "VX-91050"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-408",
+              "field": "alpha",
+              "value": "VX-81052"
+            },
+            {
+              "entity": "XU-408",
+              "field": "omega",
+              "value": "VX-81051"
+            },
+            {
+              "entity": "XU-409",
+              "field": "alpha",
+              "value": "VX-81050"
+            },
+            {
+              "entity": "XU-409",
+              "field": "omega",
+              "value": "VX-91051"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs05_IU": {
+      "displayed_assignments": [
+        [
+          "XU-408",
+          "omega",
+          "VX-81051"
+        ],
+        [
+          "XU-408",
+          "omega",
+          "VX-81052"
+        ],
+        [
+          "XU-409",
+          "alpha",
+          "VX-81050"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-408",
+              "field": "alpha",
+              "value": "VX-81050"
+            },
+            {
+              "entity": "XU-408",
+              "field": "omega",
+              "value": "VX-81052"
+            },
+            {
+              "entity": "XU-409",
+              "field": "alpha",
+              "value": "VX-81050"
+            },
+            {
+              "entity": "XU-409",
+              "field": "omega",
+              "value": "VX-91050"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-408",
+              "field": "alpha",
+              "value": "VX-81050"
+            },
+            {
+              "entity": "XU-408",
+              "field": "omega",
+              "value": "VX-81052"
+            },
+            {
+              "entity": "XU-409",
+              "field": "alpha",
+              "value": "VX-81050"
+            },
+            {
+              "entity": "XU-409",
+              "field": "omega",
+              "value": "VX-91051"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-408",
+              "field": "alpha",
+              "value": "VX-81050"
+            },
+            {
+              "entity": "XU-408",
+              "field": "omega",
+              "value": "VX-81051"
+            },
+            {
+              "entity": "XU-409",
+              "field": "alpha",
+              "value": "VX-81050"
+            },
+            {
+              "entity": "XU-409",
+              "field": "omega",
+              "value": "VX-91050"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-408",
+              "field": "alpha",
+              "value": "VX-81050"
+            },
+            {
+              "entity": "XU-408",
+              "field": "omega",
+              "value": "VX-81051"
+            },
+            {
+              "entity": "XU-409",
+              "field": "alpha",
+              "value": "VX-81050"
+            },
+            {
+              "entity": "XU-409",
+              "field": "omega",
+              "value": "VX-91051"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs05_CT": {
+      "displayed_assignments": [
+        [
+          "XU-409",
+          "omega",
+          "VX-81051"
+        ],
+        [
+          "XU-409",
+          "omega",
+          "VX-81052"
+        ],
+        [
+          "XU-409",
+          "alpha",
+          "VX-81050"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-408",
+              "field": "alpha",
+              "value": "VX-81050"
+            },
+            {
+              "entity": "XU-408",
+              "field": "omega",
+              "value": "VX-81052"
+            },
+            {
+              "entity": "XU-409",
+              "field": "alpha",
+              "value": "VX-81050"
+            },
+            {
+              "entity": "XU-409",
+              "field": "omega",
+              "value": "VX-81052"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-408",
+              "field": "alpha",
+              "value": "VX-81050"
+            },
+            {
+              "entity": "XU-408",
+              "field": "omega",
+              "value": "VX-81052"
+            },
+            {
+              "entity": "XU-409",
+              "field": "alpha",
+              "value": "VX-81050"
+            },
+            {
+              "entity": "XU-409",
+              "field": "omega",
+              "value": "VX-81051"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs06_S": {
+      "displayed_assignments": [
+        [
+          "XU-410",
+          "omega",
+          "VX-81060"
+        ],
+        [
+          "XU-411",
+          "omega",
+          "VX-81061"
+        ],
+        [
+          "XU-410",
+          "alpha",
+          "VX-81062"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-410",
+              "field": "alpha",
+              "value": "VX-81062"
+            },
+            {
+              "entity": "XU-410",
+              "field": "omega",
+              "value": "VX-81060"
+            },
+            {
+              "entity": "XU-411",
+              "field": "alpha",
+              "value": "VX-81062"
+            },
+            {
+              "entity": "XU-411",
+              "field": "omega",
+              "value": "VX-81061"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs06_I0": {
+      "displayed_assignments": [
+        [
+          "XU-411",
+          "omega",
+          "VX-81060"
+        ],
+        [
+          "XU-411",
+          "alpha",
+          "VX-81061"
+        ],
+        [
+          "XU-410",
+          "alpha",
+          "VX-81062"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-410",
+              "field": "alpha",
+              "value": "VX-81062"
+            },
+            {
+              "entity": "XU-410",
+              "field": "omega",
+              "value": "VX-91060"
+            },
+            {
+              "entity": "XU-411",
+              "field": "alpha",
+              "value": "VX-81061"
+            },
+            {
+              "entity": "XU-411",
+              "field": "omega",
+              "value": "VX-81060"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-410",
+              "field": "alpha",
+              "value": "VX-81062"
+            },
+            {
+              "entity": "XU-410",
+              "field": "omega",
+              "value": "VX-91061"
+            },
+            {
+              "entity": "XU-411",
+              "field": "alpha",
+              "value": "VX-81061"
+            },
+            {
+              "entity": "XU-411",
+              "field": "omega",
+              "value": "VX-81060"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs06_IU": {
+      "displayed_assignments": [
+        [
+          "XU-411",
+          "omega",
+          "VX-81060"
+        ],
+        [
+          "XU-411",
+          "omega",
+          "VX-81061"
+        ],
+        [
+          "XU-410",
+          "alpha",
+          "VX-81062"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-410",
+              "field": "alpha",
+              "value": "VX-81062"
+            },
+            {
+              "entity": "XU-410",
+              "field": "omega",
+              "value": "VX-91060"
+            },
+            {
+              "entity": "XU-411",
+              "field": "alpha",
+              "value": "VX-81062"
+            },
+            {
+              "entity": "XU-411",
+              "field": "omega",
+              "value": "VX-81061"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-410",
+              "field": "alpha",
+              "value": "VX-81062"
+            },
+            {
+              "entity": "XU-410",
+              "field": "omega",
+              "value": "VX-91061"
+            },
+            {
+              "entity": "XU-411",
+              "field": "alpha",
+              "value": "VX-81062"
+            },
+            {
+              "entity": "XU-411",
+              "field": "omega",
+              "value": "VX-81061"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-410",
+              "field": "alpha",
+              "value": "VX-81062"
+            },
+            {
+              "entity": "XU-410",
+              "field": "omega",
+              "value": "VX-91060"
+            },
+            {
+              "entity": "XU-411",
+              "field": "alpha",
+              "value": "VX-81062"
+            },
+            {
+              "entity": "XU-411",
+              "field": "omega",
+              "value": "VX-81060"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-410",
+              "field": "alpha",
+              "value": "VX-81062"
+            },
+            {
+              "entity": "XU-410",
+              "field": "omega",
+              "value": "VX-91061"
+            },
+            {
+              "entity": "XU-411",
+              "field": "alpha",
+              "value": "VX-81062"
+            },
+            {
+              "entity": "XU-411",
+              "field": "omega",
+              "value": "VX-81060"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs06_CT": {
+      "displayed_assignments": [
+        [
+          "XU-410",
+          "omega",
+          "VX-81060"
+        ],
+        [
+          "XU-410",
+          "omega",
+          "VX-81061"
+        ],
+        [
+          "XU-410",
+          "alpha",
+          "VX-81062"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-410",
+              "field": "alpha",
+              "value": "VX-81062"
+            },
+            {
+              "entity": "XU-410",
+              "field": "omega",
+              "value": "VX-81061"
+            },
+            {
+              "entity": "XU-411",
+              "field": "alpha",
+              "value": "VX-81062"
+            },
+            {
+              "entity": "XU-411",
+              "field": "omega",
+              "value": "VX-81061"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-410",
+              "field": "alpha",
+              "value": "VX-81062"
+            },
+            {
+              "entity": "XU-410",
+              "field": "omega",
+              "value": "VX-81060"
+            },
+            {
+              "entity": "XU-411",
+              "field": "alpha",
+              "value": "VX-81062"
+            },
+            {
+              "entity": "XU-411",
+              "field": "omega",
+              "value": "VX-81061"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs07_S": {
+      "displayed_assignments": [
+        [
+          "XU-413",
+          "alpha",
+          "VX-81072"
+        ],
+        [
+          "XU-412",
+          "alpha",
+          "VX-81071"
+        ],
+        [
+          "XU-413",
+          "omega",
+          "VX-81070"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-412",
+              "field": "alpha",
+              "value": "VX-81071"
+            },
+            {
+              "entity": "XU-412",
+              "field": "omega",
+              "value": "VX-81070"
+            },
+            {
+              "entity": "XU-413",
+              "field": "alpha",
+              "value": "VX-81072"
+            },
+            {
+              "entity": "XU-413",
+              "field": "omega",
+              "value": "VX-81070"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs07_I0": {
+      "displayed_assignments": [
+        [
+          "XU-412",
+          "alpha",
+          "VX-81072"
+        ],
+        [
+          "XU-412",
+          "omega",
+          "VX-81071"
+        ],
+        [
+          "XU-413",
+          "omega",
+          "VX-81070"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-412",
+              "field": "alpha",
+              "value": "VX-81072"
+            },
+            {
+              "entity": "XU-412",
+              "field": "omega",
+              "value": "VX-81071"
+            },
+            {
+              "entity": "XU-413",
+              "field": "alpha",
+              "value": "VX-91070"
+            },
+            {
+              "entity": "XU-413",
+              "field": "omega",
+              "value": "VX-81070"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-412",
+              "field": "alpha",
+              "value": "VX-81072"
+            },
+            {
+              "entity": "XU-412",
+              "field": "omega",
+              "value": "VX-81071"
+            },
+            {
+              "entity": "XU-413",
+              "field": "alpha",
+              "value": "VX-91071"
+            },
+            {
+              "entity": "XU-413",
+              "field": "omega",
+              "value": "VX-81070"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs07_IU": {
+      "displayed_assignments": [
+        [
+          "XU-412",
+          "alpha",
+          "VX-81072"
+        ],
+        [
+          "XU-412",
+          "alpha",
+          "VX-81071"
+        ],
+        [
+          "XU-413",
+          "omega",
+          "VX-81070"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-412",
+              "field": "alpha",
+              "value": "VX-81071"
+            },
+            {
+              "entity": "XU-412",
+              "field": "omega",
+              "value": "VX-81070"
+            },
+            {
+              "entity": "XU-413",
+              "field": "alpha",
+              "value": "VX-91070"
+            },
+            {
+              "entity": "XU-413",
+              "field": "omega",
+              "value": "VX-81070"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-412",
+              "field": "alpha",
+              "value": "VX-81071"
+            },
+            {
+              "entity": "XU-412",
+              "field": "omega",
+              "value": "VX-81070"
+            },
+            {
+              "entity": "XU-413",
+              "field": "alpha",
+              "value": "VX-91071"
+            },
+            {
+              "entity": "XU-413",
+              "field": "omega",
+              "value": "VX-81070"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-412",
+              "field": "alpha",
+              "value": "VX-81072"
+            },
+            {
+              "entity": "XU-412",
+              "field": "omega",
+              "value": "VX-81070"
+            },
+            {
+              "entity": "XU-413",
+              "field": "alpha",
+              "value": "VX-91070"
+            },
+            {
+              "entity": "XU-413",
+              "field": "omega",
+              "value": "VX-81070"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-412",
+              "field": "alpha",
+              "value": "VX-81072"
+            },
+            {
+              "entity": "XU-412",
+              "field": "omega",
+              "value": "VX-81070"
+            },
+            {
+              "entity": "XU-413",
+              "field": "alpha",
+              "value": "VX-91071"
+            },
+            {
+              "entity": "XU-413",
+              "field": "omega",
+              "value": "VX-81070"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs07_CT": {
+      "displayed_assignments": [
+        [
+          "XU-413",
+          "alpha",
+          "VX-81072"
+        ],
+        [
+          "XU-413",
+          "alpha",
+          "VX-81071"
+        ],
+        [
+          "XU-413",
+          "omega",
+          "VX-81070"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-412",
+              "field": "alpha",
+              "value": "VX-81071"
+            },
+            {
+              "entity": "XU-412",
+              "field": "omega",
+              "value": "VX-81070"
+            },
+            {
+              "entity": "XU-413",
+              "field": "alpha",
+              "value": "VX-81071"
+            },
+            {
+              "entity": "XU-413",
+              "field": "omega",
+              "value": "VX-81070"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-412",
+              "field": "alpha",
+              "value": "VX-81071"
+            },
+            {
+              "entity": "XU-412",
+              "field": "omega",
+              "value": "VX-81070"
+            },
+            {
+              "entity": "XU-413",
+              "field": "alpha",
+              "value": "VX-81072"
+            },
+            {
+              "entity": "XU-413",
+              "field": "omega",
+              "value": "VX-81070"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs08_S": {
+      "displayed_assignments": [
+        [
+          "XU-414",
+          "omega",
+          "VX-81081"
+        ],
+        [
+          "XU-415",
+          "omega",
+          "VX-81082"
+        ],
+        [
+          "XU-414",
+          "alpha",
+          "VX-81080"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-414",
+              "field": "alpha",
+              "value": "VX-81080"
+            },
+            {
+              "entity": "XU-414",
+              "field": "omega",
+              "value": "VX-81081"
+            },
+            {
+              "entity": "XU-415",
+              "field": "alpha",
+              "value": "VX-81080"
+            },
+            {
+              "entity": "XU-415",
+              "field": "omega",
+              "value": "VX-81082"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs08_I0": {
+      "displayed_assignments": [
+        [
+          "XU-415",
+          "omega",
+          "VX-81081"
+        ],
+        [
+          "XU-415",
+          "alpha",
+          "VX-81082"
+        ],
+        [
+          "XU-414",
+          "alpha",
+          "VX-81080"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-414",
+              "field": "alpha",
+              "value": "VX-81080"
+            },
+            {
+              "entity": "XU-414",
+              "field": "omega",
+              "value": "VX-91080"
+            },
+            {
+              "entity": "XU-415",
+              "field": "alpha",
+              "value": "VX-81082"
+            },
+            {
+              "entity": "XU-415",
+              "field": "omega",
+              "value": "VX-81081"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-414",
+              "field": "alpha",
+              "value": "VX-81080"
+            },
+            {
+              "entity": "XU-414",
+              "field": "omega",
+              "value": "VX-91081"
+            },
+            {
+              "entity": "XU-415",
+              "field": "alpha",
+              "value": "VX-81082"
+            },
+            {
+              "entity": "XU-415",
+              "field": "omega",
+              "value": "VX-81081"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs08_IU": {
+      "displayed_assignments": [
+        [
+          "XU-415",
+          "omega",
+          "VX-81081"
+        ],
+        [
+          "XU-415",
+          "omega",
+          "VX-81082"
+        ],
+        [
+          "XU-414",
+          "alpha",
+          "VX-81080"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-414",
+              "field": "alpha",
+              "value": "VX-81080"
+            },
+            {
+              "entity": "XU-414",
+              "field": "omega",
+              "value": "VX-91080"
+            },
+            {
+              "entity": "XU-415",
+              "field": "alpha",
+              "value": "VX-81080"
+            },
+            {
+              "entity": "XU-415",
+              "field": "omega",
+              "value": "VX-81082"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-414",
+              "field": "alpha",
+              "value": "VX-81080"
+            },
+            {
+              "entity": "XU-414",
+              "field": "omega",
+              "value": "VX-91081"
+            },
+            {
+              "entity": "XU-415",
+              "field": "alpha",
+              "value": "VX-81080"
+            },
+            {
+              "entity": "XU-415",
+              "field": "omega",
+              "value": "VX-81082"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-414",
+              "field": "alpha",
+              "value": "VX-81080"
+            },
+            {
+              "entity": "XU-414",
+              "field": "omega",
+              "value": "VX-91080"
+            },
+            {
+              "entity": "XU-415",
+              "field": "alpha",
+              "value": "VX-81080"
+            },
+            {
+              "entity": "XU-415",
+              "field": "omega",
+              "value": "VX-81081"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-414",
+              "field": "alpha",
+              "value": "VX-81080"
+            },
+            {
+              "entity": "XU-414",
+              "field": "omega",
+              "value": "VX-91081"
+            },
+            {
+              "entity": "XU-415",
+              "field": "alpha",
+              "value": "VX-81080"
+            },
+            {
+              "entity": "XU-415",
+              "field": "omega",
+              "value": "VX-81081"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs08_CT": {
+      "displayed_assignments": [
+        [
+          "XU-414",
+          "omega",
+          "VX-81081"
+        ],
+        [
+          "XU-414",
+          "omega",
+          "VX-81082"
+        ],
+        [
+          "XU-414",
+          "alpha",
+          "VX-81080"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-414",
+              "field": "alpha",
+              "value": "VX-81080"
+            },
+            {
+              "entity": "XU-414",
+              "field": "omega",
+              "value": "VX-81082"
+            },
+            {
+              "entity": "XU-415",
+              "field": "alpha",
+              "value": "VX-81080"
+            },
+            {
+              "entity": "XU-415",
+              "field": "omega",
+              "value": "VX-81082"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-414",
+              "field": "alpha",
+              "value": "VX-81080"
+            },
+            {
+              "entity": "XU-414",
+              "field": "omega",
+              "value": "VX-81081"
+            },
+            {
+              "entity": "XU-415",
+              "field": "alpha",
+              "value": "VX-81080"
+            },
+            {
+              "entity": "XU-415",
+              "field": "omega",
+              "value": "VX-81082"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs09_S": {
+      "displayed_assignments": [
+        [
+          "XU-416",
+          "alpha",
+          "VX-81092"
+        ],
+        [
+          "XU-417",
+          "alpha",
+          "VX-81090"
+        ],
+        [
+          "XU-416",
+          "omega",
+          "VX-81091"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-416",
+              "field": "alpha",
+              "value": "VX-81092"
+            },
+            {
+              "entity": "XU-416",
+              "field": "omega",
+              "value": "VX-81091"
+            },
+            {
+              "entity": "XU-417",
+              "field": "alpha",
+              "value": "VX-81090"
+            },
+            {
+              "entity": "XU-417",
+              "field": "omega",
+              "value": "VX-81091"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs09_I0": {
+      "displayed_assignments": [
+        [
+          "XU-417",
+          "alpha",
+          "VX-81092"
+        ],
+        [
+          "XU-417",
+          "omega",
+          "VX-81090"
+        ],
+        [
+          "XU-416",
+          "omega",
+          "VX-81091"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-416",
+              "field": "alpha",
+              "value": "VX-91090"
+            },
+            {
+              "entity": "XU-416",
+              "field": "omega",
+              "value": "VX-81091"
+            },
+            {
+              "entity": "XU-417",
+              "field": "alpha",
+              "value": "VX-81092"
+            },
+            {
+              "entity": "XU-417",
+              "field": "omega",
+              "value": "VX-81090"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-416",
+              "field": "alpha",
+              "value": "VX-91091"
+            },
+            {
+              "entity": "XU-416",
+              "field": "omega",
+              "value": "VX-81091"
+            },
+            {
+              "entity": "XU-417",
+              "field": "alpha",
+              "value": "VX-81092"
+            },
+            {
+              "entity": "XU-417",
+              "field": "omega",
+              "value": "VX-81090"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs09_IU": {
+      "displayed_assignments": [
+        [
+          "XU-417",
+          "alpha",
+          "VX-81092"
+        ],
+        [
+          "XU-417",
+          "alpha",
+          "VX-81090"
+        ],
+        [
+          "XU-416",
+          "omega",
+          "VX-81091"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-416",
+              "field": "alpha",
+              "value": "VX-91090"
+            },
+            {
+              "entity": "XU-416",
+              "field": "omega",
+              "value": "VX-81091"
+            },
+            {
+              "entity": "XU-417",
+              "field": "alpha",
+              "value": "VX-81090"
+            },
+            {
+              "entity": "XU-417",
+              "field": "omega",
+              "value": "VX-81091"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-416",
+              "field": "alpha",
+              "value": "VX-91091"
+            },
+            {
+              "entity": "XU-416",
+              "field": "omega",
+              "value": "VX-81091"
+            },
+            {
+              "entity": "XU-417",
+              "field": "alpha",
+              "value": "VX-81090"
+            },
+            {
+              "entity": "XU-417",
+              "field": "omega",
+              "value": "VX-81091"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-416",
+              "field": "alpha",
+              "value": "VX-91090"
+            },
+            {
+              "entity": "XU-416",
+              "field": "omega",
+              "value": "VX-81091"
+            },
+            {
+              "entity": "XU-417",
+              "field": "alpha",
+              "value": "VX-81092"
+            },
+            {
+              "entity": "XU-417",
+              "field": "omega",
+              "value": "VX-81091"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-416",
+              "field": "alpha",
+              "value": "VX-91091"
+            },
+            {
+              "entity": "XU-416",
+              "field": "omega",
+              "value": "VX-81091"
+            },
+            {
+              "entity": "XU-417",
+              "field": "alpha",
+              "value": "VX-81092"
+            },
+            {
+              "entity": "XU-417",
+              "field": "omega",
+              "value": "VX-81091"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs09_CT": {
+      "displayed_assignments": [
+        [
+          "XU-416",
+          "alpha",
+          "VX-81092"
+        ],
+        [
+          "XU-416",
+          "alpha",
+          "VX-81090"
+        ],
+        [
+          "XU-416",
+          "omega",
+          "VX-81091"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-416",
+              "field": "alpha",
+              "value": "VX-81090"
+            },
+            {
+              "entity": "XU-416",
+              "field": "omega",
+              "value": "VX-81091"
+            },
+            {
+              "entity": "XU-417",
+              "field": "alpha",
+              "value": "VX-81090"
+            },
+            {
+              "entity": "XU-417",
+              "field": "omega",
+              "value": "VX-81091"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-416",
+              "field": "alpha",
+              "value": "VX-81092"
+            },
+            {
+              "entity": "XU-416",
+              "field": "omega",
+              "value": "VX-81091"
+            },
+            {
+              "entity": "XU-417",
+              "field": "alpha",
+              "value": "VX-81090"
+            },
+            {
+              "entity": "XU-417",
+              "field": "omega",
+              "value": "VX-81091"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs10_S": {
+      "displayed_assignments": [
+        [
+          "XU-418",
+          "alpha",
+          "VX-81100"
+        ],
+        [
+          "XU-419",
+          "alpha",
+          "VX-81101"
+        ],
+        [
+          "XU-418",
+          "omega",
+          "VX-81102"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-418",
+              "field": "alpha",
+              "value": "VX-81100"
+            },
+            {
+              "entity": "XU-418",
+              "field": "omega",
+              "value": "VX-81102"
+            },
+            {
+              "entity": "XU-419",
+              "field": "alpha",
+              "value": "VX-81101"
+            },
+            {
+              "entity": "XU-419",
+              "field": "omega",
+              "value": "VX-81102"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs10_I0": {
+      "displayed_assignments": [
+        [
+          "XU-419",
+          "alpha",
+          "VX-81100"
+        ],
+        [
+          "XU-419",
+          "omega",
+          "VX-81101"
+        ],
+        [
+          "XU-418",
+          "omega",
+          "VX-81102"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-418",
+              "field": "alpha",
+              "value": "VX-91100"
+            },
+            {
+              "entity": "XU-418",
+              "field": "omega",
+              "value": "VX-81102"
+            },
+            {
+              "entity": "XU-419",
+              "field": "alpha",
+              "value": "VX-81100"
+            },
+            {
+              "entity": "XU-419",
+              "field": "omega",
+              "value": "VX-81101"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-418",
+              "field": "alpha",
+              "value": "VX-91101"
+            },
+            {
+              "entity": "XU-418",
+              "field": "omega",
+              "value": "VX-81102"
+            },
+            {
+              "entity": "XU-419",
+              "field": "alpha",
+              "value": "VX-81100"
+            },
+            {
+              "entity": "XU-419",
+              "field": "omega",
+              "value": "VX-81101"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs10_IU": {
+      "displayed_assignments": [
+        [
+          "XU-419",
+          "alpha",
+          "VX-81100"
+        ],
+        [
+          "XU-419",
+          "alpha",
+          "VX-81101"
+        ],
+        [
+          "XU-418",
+          "omega",
+          "VX-81102"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-418",
+              "field": "alpha",
+              "value": "VX-91100"
+            },
+            {
+              "entity": "XU-418",
+              "field": "omega",
+              "value": "VX-81102"
+            },
+            {
+              "entity": "XU-419",
+              "field": "alpha",
+              "value": "VX-81101"
+            },
+            {
+              "entity": "XU-419",
+              "field": "omega",
+              "value": "VX-81102"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-418",
+              "field": "alpha",
+              "value": "VX-91101"
+            },
+            {
+              "entity": "XU-418",
+              "field": "omega",
+              "value": "VX-81102"
+            },
+            {
+              "entity": "XU-419",
+              "field": "alpha",
+              "value": "VX-81101"
+            },
+            {
+              "entity": "XU-419",
+              "field": "omega",
+              "value": "VX-81102"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-418",
+              "field": "alpha",
+              "value": "VX-91100"
+            },
+            {
+              "entity": "XU-418",
+              "field": "omega",
+              "value": "VX-81102"
+            },
+            {
+              "entity": "XU-419",
+              "field": "alpha",
+              "value": "VX-81100"
+            },
+            {
+              "entity": "XU-419",
+              "field": "omega",
+              "value": "VX-81102"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-418",
+              "field": "alpha",
+              "value": "VX-91101"
+            },
+            {
+              "entity": "XU-418",
+              "field": "omega",
+              "value": "VX-81102"
+            },
+            {
+              "entity": "XU-419",
+              "field": "alpha",
+              "value": "VX-81100"
+            },
+            {
+              "entity": "XU-419",
+              "field": "omega",
+              "value": "VX-81102"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs10_CT": {
+      "displayed_assignments": [
+        [
+          "XU-418",
+          "alpha",
+          "VX-81100"
+        ],
+        [
+          "XU-418",
+          "alpha",
+          "VX-81101"
+        ],
+        [
+          "XU-418",
+          "omega",
+          "VX-81102"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-418",
+              "field": "alpha",
+              "value": "VX-81101"
+            },
+            {
+              "entity": "XU-418",
+              "field": "omega",
+              "value": "VX-81102"
+            },
+            {
+              "entity": "XU-419",
+              "field": "alpha",
+              "value": "VX-81101"
+            },
+            {
+              "entity": "XU-419",
+              "field": "omega",
+              "value": "VX-81102"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-418",
+              "field": "alpha",
+              "value": "VX-81100"
+            },
+            {
+              "entity": "XU-418",
+              "field": "omega",
+              "value": "VX-81102"
+            },
+            {
+              "entity": "XU-419",
+              "field": "alpha",
+              "value": "VX-81101"
+            },
+            {
+              "entity": "XU-419",
+              "field": "omega",
+              "value": "VX-81102"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs11_S": {
+      "displayed_assignments": [
+        [
+          "XU-420",
+          "omega",
+          "VX-81110"
+        ],
+        [
+          "XU-421",
+          "omega",
+          "VX-81112"
+        ],
+        [
+          "XU-420",
+          "alpha",
+          "VX-81111"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-420",
+              "field": "alpha",
+              "value": "VX-81111"
+            },
+            {
+              "entity": "XU-420",
+              "field": "omega",
+              "value": "VX-81110"
+            },
+            {
+              "entity": "XU-421",
+              "field": "alpha",
+              "value": "VX-81111"
+            },
+            {
+              "entity": "XU-421",
+              "field": "omega",
+              "value": "VX-81112"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs11_I0": {
+      "displayed_assignments": [
+        [
+          "XU-421",
+          "omega",
+          "VX-81110"
+        ],
+        [
+          "XU-421",
+          "alpha",
+          "VX-81112"
+        ],
+        [
+          "XU-420",
+          "alpha",
+          "VX-81111"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-420",
+              "field": "alpha",
+              "value": "VX-81111"
+            },
+            {
+              "entity": "XU-420",
+              "field": "omega",
+              "value": "VX-91110"
+            },
+            {
+              "entity": "XU-421",
+              "field": "alpha",
+              "value": "VX-81112"
+            },
+            {
+              "entity": "XU-421",
+              "field": "omega",
+              "value": "VX-81110"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-420",
+              "field": "alpha",
+              "value": "VX-81111"
+            },
+            {
+              "entity": "XU-420",
+              "field": "omega",
+              "value": "VX-91111"
+            },
+            {
+              "entity": "XU-421",
+              "field": "alpha",
+              "value": "VX-81112"
+            },
+            {
+              "entity": "XU-421",
+              "field": "omega",
+              "value": "VX-81110"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs11_IU": {
+      "displayed_assignments": [
+        [
+          "XU-421",
+          "omega",
+          "VX-81110"
+        ],
+        [
+          "XU-421",
+          "omega",
+          "VX-81112"
+        ],
+        [
+          "XU-420",
+          "alpha",
+          "VX-81111"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-420",
+              "field": "alpha",
+              "value": "VX-81111"
+            },
+            {
+              "entity": "XU-420",
+              "field": "omega",
+              "value": "VX-91110"
+            },
+            {
+              "entity": "XU-421",
+              "field": "alpha",
+              "value": "VX-81111"
+            },
+            {
+              "entity": "XU-421",
+              "field": "omega",
+              "value": "VX-81112"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-420",
+              "field": "alpha",
+              "value": "VX-81111"
+            },
+            {
+              "entity": "XU-420",
+              "field": "omega",
+              "value": "VX-91111"
+            },
+            {
+              "entity": "XU-421",
+              "field": "alpha",
+              "value": "VX-81111"
+            },
+            {
+              "entity": "XU-421",
+              "field": "omega",
+              "value": "VX-81112"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-420",
+              "field": "alpha",
+              "value": "VX-81111"
+            },
+            {
+              "entity": "XU-420",
+              "field": "omega",
+              "value": "VX-91110"
+            },
+            {
+              "entity": "XU-421",
+              "field": "alpha",
+              "value": "VX-81111"
+            },
+            {
+              "entity": "XU-421",
+              "field": "omega",
+              "value": "VX-81110"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-420",
+              "field": "alpha",
+              "value": "VX-81111"
+            },
+            {
+              "entity": "XU-420",
+              "field": "omega",
+              "value": "VX-91111"
+            },
+            {
+              "entity": "XU-421",
+              "field": "alpha",
+              "value": "VX-81111"
+            },
+            {
+              "entity": "XU-421",
+              "field": "omega",
+              "value": "VX-81110"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs11_CT": {
+      "displayed_assignments": [
+        [
+          "XU-420",
+          "omega",
+          "VX-81110"
+        ],
+        [
+          "XU-420",
+          "omega",
+          "VX-81112"
+        ],
+        [
+          "XU-420",
+          "alpha",
+          "VX-81111"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-420",
+              "field": "alpha",
+              "value": "VX-81111"
+            },
+            {
+              "entity": "XU-420",
+              "field": "omega",
+              "value": "VX-81112"
+            },
+            {
+              "entity": "XU-421",
+              "field": "alpha",
+              "value": "VX-81111"
+            },
+            {
+              "entity": "XU-421",
+              "field": "omega",
+              "value": "VX-81112"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-420",
+              "field": "alpha",
+              "value": "VX-81111"
+            },
+            {
+              "entity": "XU-420",
+              "field": "omega",
+              "value": "VX-81110"
+            },
+            {
+              "entity": "XU-421",
+              "field": "alpha",
+              "value": "VX-81111"
+            },
+            {
+              "entity": "XU-421",
+              "field": "omega",
+              "value": "VX-81112"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs12_S": {
+      "displayed_assignments": [
+        [
+          "XU-422",
+          "alpha",
+          "VX-81122"
+        ],
+        [
+          "XU-423",
+          "alpha",
+          "VX-81120"
+        ],
+        [
+          "XU-422",
+          "omega",
+          "VX-81121"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-422",
+              "field": "alpha",
+              "value": "VX-81122"
+            },
+            {
+              "entity": "XU-422",
+              "field": "omega",
+              "value": "VX-81121"
+            },
+            {
+              "entity": "XU-423",
+              "field": "alpha",
+              "value": "VX-81120"
+            },
+            {
+              "entity": "XU-423",
+              "field": "omega",
+              "value": "VX-81121"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs12_I0": {
+      "displayed_assignments": [
+        [
+          "XU-423",
+          "alpha",
+          "VX-81122"
+        ],
+        [
+          "XU-423",
+          "omega",
+          "VX-81120"
+        ],
+        [
+          "XU-422",
+          "omega",
+          "VX-81121"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-422",
+              "field": "alpha",
+              "value": "VX-91120"
+            },
+            {
+              "entity": "XU-422",
+              "field": "omega",
+              "value": "VX-81121"
+            },
+            {
+              "entity": "XU-423",
+              "field": "alpha",
+              "value": "VX-81122"
+            },
+            {
+              "entity": "XU-423",
+              "field": "omega",
+              "value": "VX-81120"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": null,
+          "world": [
+            {
+              "entity": "XU-422",
+              "field": "alpha",
+              "value": "VX-91121"
+            },
+            {
+              "entity": "XU-422",
+              "field": "omega",
+              "value": "VX-81121"
+            },
+            {
+              "entity": "XU-423",
+              "field": "alpha",
+              "value": "VX-81122"
+            },
+            {
+              "entity": "XU-423",
+              "field": "omega",
+              "value": "VX-81120"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs12_IU": {
+      "displayed_assignments": [
+        [
+          "XU-423",
+          "alpha",
+          "VX-81122"
+        ],
+        [
+          "XU-423",
+          "alpha",
+          "VX-81120"
+        ],
+        [
+          "XU-422",
+          "omega",
+          "VX-81121"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-422",
+              "field": "alpha",
+              "value": "VX-91120"
+            },
+            {
+              "entity": "XU-422",
+              "field": "omega",
+              "value": "VX-81121"
+            },
+            {
+              "entity": "XU-423",
+              "field": "alpha",
+              "value": "VX-81120"
+            },
+            {
+              "entity": "XU-423",
+              "field": "omega",
+              "value": "VX-81121"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-422",
+              "field": "alpha",
+              "value": "VX-91121"
+            },
+            {
+              "entity": "XU-422",
+              "field": "omega",
+              "value": "VX-81121"
+            },
+            {
+              "entity": "XU-423",
+              "field": "alpha",
+              "value": "VX-81120"
+            },
+            {
+              "entity": "XU-423",
+              "field": "omega",
+              "value": "VX-81121"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-422",
+              "field": "alpha",
+              "value": "VX-91120"
+            },
+            {
+              "entity": "XU-422",
+              "field": "omega",
+              "value": "VX-81121"
+            },
+            {
+              "entity": "XU-423",
+              "field": "alpha",
+              "value": "VX-81122"
+            },
+            {
+              "entity": "XU-423",
+              "field": "omega",
+              "value": "VX-81121"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-422",
+              "field": "alpha",
+              "value": "VX-91121"
+            },
+            {
+              "entity": "XU-422",
+              "field": "omega",
+              "value": "VX-81121"
+            },
+            {
+              "entity": "XU-423",
+              "field": "alpha",
+              "value": "VX-81122"
+            },
+            {
+              "entity": "XU-423",
+              "field": "omega",
+              "value": "VX-81121"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    },
+    "exs12_CT": {
+      "displayed_assignments": [
+        [
+          "XU-422",
+          "alpha",
+          "VX-81122"
+        ],
+        [
+          "XU-422",
+          "alpha",
+          "VX-81120"
+        ],
+        [
+          "XU-422",
+          "omega",
+          "VX-81121"
+        ]
+      ],
+      "local_repair_witnesses": [
+        {
+          "dropped_record_index": 0,
+          "world": [
+            {
+              "entity": "XU-422",
+              "field": "alpha",
+              "value": "VX-81120"
+            },
+            {
+              "entity": "XU-422",
+              "field": "omega",
+              "value": "VX-81121"
+            },
+            {
+              "entity": "XU-423",
+              "field": "alpha",
+              "value": "VX-81120"
+            },
+            {
+              "entity": "XU-423",
+              "field": "omega",
+              "value": "VX-81121"
+            }
+          ]
+        },
+        {
+          "dropped_record_index": 1,
+          "world": [
+            {
+              "entity": "XU-422",
+              "field": "alpha",
+              "value": "VX-81122"
+            },
+            {
+              "entity": "XU-422",
+              "field": "omega",
+              "value": "VX-81121"
+            },
+            {
+              "entity": "XU-423",
+              "field": "alpha",
+              "value": "VX-81120"
+            },
+            {
+              "entity": "XU-423",
+              "field": "omega",
+              "value": "VX-81121"
+            }
+          ]
+        }
+      ],
+      "not_exhaustive": true
+    }
+  },
+  "warning": "Not model input; witnesses are not exhaustive or gold labels."
+}

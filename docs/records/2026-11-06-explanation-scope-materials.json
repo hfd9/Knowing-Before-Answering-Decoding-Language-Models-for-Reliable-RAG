@@ -1,0 +1,46 @@
+{
+  "recorded_at_utc": "2026-11-06T07:39:45.233877+00:00",
+  "parent_commit": "6092c18add54e43943c2a4b2f3bfffa281b9f6ed",
+  "file_sha256": {
+    "docs/records/2026-11-06-explanation-scope-materials.md": "c1cb6cbbcc30534879c701bdc1ca110d2fce1dfca3e96c7764e2e353eb798b31",
+    "docs/review/2026-11-06-explanation-scope-materials-v1/README.md": "61fd6e1c0cf9ce7cb2ab0937473fe97718f960433e4debafbd16243d2b7fcd4f",
+    "docs/review/2026-11-06-explanation-scope-materials-v1/coordinator.json": "a993fb7c6af185f3590e3b44d5854b0fa49d0054204cbd85b9a6d0c8ac24e9bd",
+    "docs/review/2026-11-06-explanation-scope-materials-v1/design-lock.json": "44dab368e52e14c6c8d5bcd6ea2179065114aee7b53c3b5c89fece8926b05130",
+    "docs/review/2026-11-06-explanation-scope-materials-v1/input-packet.json": "1543813fe83ed7e077cfbf691785f46b23a61f9a7aa1f5dae9a3bda8db2432db",
+    "docs/review/2026-11-06-explanation-scope-materials-v1/materials.json": "65a2ba5d1f50c8add87bafc6ccbf453b4fbd108c39a84ee5b3993b9a8acd9d96",
+    "docs/review/2026-11-06-explanation-scope-materials-v1/preflight.json": "df119741bbc4630d631906b8a4ae37e04a9f8d3a0381cf1055a59edab0308cef",
+    "docs/review/2026-11-06-explanation-scope-materials-v2/README.md": "c1806fefb6756ea4d584b30a750505c6c00f7cadf487094c2f6f03a23bbe1f48",
+    "docs/review/2026-11-06-explanation-scope-materials-v2/author-interpretation.json": "3cd48f094ca6d91365117e3ade11c0b856874c4e548abbd899a9a1593dfe3933",
+    "docs/review/2026-11-06-explanation-scope-materials-v2/coordinator.json": "d56b5505619580839f8b07837b5f26e2575015537f322bea1a71ff42d87b0dfc",
+    "docs/review/2026-11-06-explanation-scope-materials-v2/design-lock.json": "c8b1107ddf5179f52b8fe232a4c910a6dfcf58c143514892618399d47705b9ff",
+    "docs/review/2026-11-06-explanation-scope-materials-v2/input-packet.json": "01bc1af601a7a6eb581edb080b949a1b64cfdf35ad3e6b2052451abe9b79f341",
+    "docs/review/2026-11-06-explanation-scope-materials-v2/materials.json": "d70c9e72b89e023fae19bf94d91e9bb438bc5e4726fab27786e5db7869bc877e",
+    "docs/review/2026-11-06-explanation-scope-materials-v2/preflight.json": "2ea2bd8fc7368cdcad0131ff2e1f3dd91b7b5c10f4014ed33b77bf86724349b1",
+    "scripts/prepare_explanation_scope_materials.py": "96443aaa2db07dcd0d3aa7429d37e1444040f97f4191ff2d932dabe0395126d5",
+    "scripts/verify_explanation_scope_materials.py": "96ad3e9643ecd82059dacf8df8bd12974ba07569f485b27ee1f63d5d2ad98fa1",
+    "tests/test_explanation_scope_materials.py": "f0f279cf24fe1b31ba006abeb276096b832d2a950db56e6f0c9c2871e053ce63"
+  },
+  "verification": {
+    "v1_v2_generator_verify_exit": 0,
+    "v2_independent_surface_world_tokenizer_verify_exit": 0,
+    "v2_author_interpretation_hash_and_citations_checked": true,
+    "new_unittest_count": 3,
+    "new_unittest_exit": 0,
+    "previous_cli_verifier_exit": 0,
+    "protected_sources": 72,
+    "sealed_fit_files": 12,
+    "local_intake_snapshots_match": 4
+  },
+  "scope": {
+    "scenes": 12,
+    "current_version": "v2",
+    "current_candidate_inputs": 48,
+    "prior_v1_is_historical_revision": true,
+    "model_answers": 0,
+    "new_independent_approvals": 0,
+    "formal_gate": false,
+    "gpu_ready": false,
+    "new_fits": 0,
+    "held_out_380_accessed": false
+  }
+}

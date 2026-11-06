@@ -1,0 +1,111 @@
+{
+  "status": "draft_surface_world_and_tokenizer_checked_not_semantic_independent_approval",
+  "version": "v2",
+  "items": 48,
+  "scenes": 12,
+  "primary_pairs": 12,
+  "witnesses_by_condition": {
+    "S": 12,
+    "I0": 24,
+    "IU": 48,
+    "CT": 24
+  },
+  "input_tokens_min": 287,
+  "input_tokens_max": 287,
+  "input_tokens_total": 13776,
+  "token_pair_checks": [
+    {
+      "scene_id": "exs01",
+      "I0_tokens": 287,
+      "IU_tokens": 287,
+      "equal_token_length": true,
+      "equal_token_multiset": true
+    },
+    {
+      "scene_id": "exs02",
+      "I0_tokens": 287,
+      "IU_tokens": 287,
+      "equal_token_length": true,
+      "equal_token_multiset": true
+    },
+    {
+      "scene_id": "exs03",
+      "I0_tokens": 287,
+      "IU_tokens": 287,
+      "equal_token_length": true,
+      "equal_token_multiset": true
+    },
+    {
+      "scene_id": "exs04",
+      "I0_tokens": 287,
+      "IU_tokens": 287,
+      "equal_token_length": true,
+      "equal_token_multiset": true
+    },
+    {
+      "scene_id": "exs05",
+      "I0_tokens": 287,
+      "IU_tokens": 287,
+      "equal_token_length": true,
+      "equal_token_multiset": true
+    },
+    {
+      "scene_id": "exs06",
+      "I0_tokens": 287,
+      "IU_tokens": 287,
+      "equal_token_length": true,
+      "equal_token_multiset": true
+    },
+    {
+      "scene_id": "exs07",
+      "I0_tokens": 287,
+      "IU_tokens": 287,
+      "equal_token_length": true,
+      "equal_token_multiset": true
+    },
+    {
+      "scene_id": "exs08",
+      "I0_tokens": 287,
+      "IU_tokens": 287,
+      "equal_token_length": true,
+      "equal_token_multiset": true
+    },
+    {
+      "scene_id": "exs09",
+      "I0_tokens": 287,
+      "IU_tokens": 287,
+      "equal_token_length": true,
+      "equal_token_multiset": true
+    },
+    {
+      "scene_id": "exs10",
+      "I0_tokens": 287,
+      "IU_tokens": 287,
+      "equal_token_length": true,
+      "equal_token_multiset": true
+    },
+    {
+      "scene_id": "exs11",
+      "I0_tokens": 287,
+      "IU_tokens": 287,
+      "equal_token_length": true,
+      "equal_token_multiset": true
+    },
+    {
+      "scene_id": "exs12",
+      "I0_tokens": 287,
+      "IU_tokens": 287,
+      "equal_token_length": true,
+      "equal_token_multiset": true
+    }
+  ],
+  "collision_scope_files": 3,
+  "old_entity_number_suffix_overlap": [],
+  "old_code_number_suffix_overlap": [],
+  "scenes_target_id_lexicographically_smaller": 6,
+  "model_weights_loaded": false,
+  "model_inference": false,
+  "independent_approval": false,
+  "formal_gate": false,
+  "gpu_launch_ready": false
+}

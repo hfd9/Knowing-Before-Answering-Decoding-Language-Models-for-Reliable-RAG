@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新材料准备：[12场景材料记录](2026-11-06-explanation-scope-materials.md) / [v2材料与核验](../review/2026-11-06-explanation-scope-materials-v2/README.md)。12×4共48候选输入，保留编号修订前v1，无模型回答；v2的12主对词、字符、token长度与token多重集匹配，48均287 tokens，局部修复见证与3 CPU测试通过。作者侧条件解释非独立语义批准；尚无采集协议或GPU入口，gate/GPUfalse、预算0、标签null和380封存保持。
+
 最新助手裁定：[记录](2026-11-06-assistant-adjudication-study-decision.md) / [13项裁定、主张对应及研究决策](../assistant_adjudication_and_study_decision.md)。用户不想本人逐项审核，助手知情裁定并自行决定采纳12×4为后续探索设计方向；三焦点狭义E分别unknown/no/unknown，不能当直接复现或确认。非人工或新增独立评审，原判保留；未来准备由助手继续，独立批准0/gate及GPUfalse/预算0/标签null/380封存。
 
 最新知情复核：[CLI复评后续记录](2026-11-06-informed-cli-followup.md) / [案例、分歧与近邻文献](../review/2026-11-06-informed-followup/README.md)。三焦点均有无据冲突表述，但目标字段指代不一，不自动等同草案E；9/8/6端点分歧共13个回答，16项128主张跨度候选非语义对齐。助手已见双方判断，非人工裁定或新独立批准；草案待人工审阅决定，预算0/gate及GPUfalse/标签null/380封存保持。
