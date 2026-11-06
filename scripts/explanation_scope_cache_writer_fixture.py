@@ -11,17 +11,24 @@ import explanation_scope_ledger_simulator as plan_loader
 import explanation_scope_transaction_prototype as transaction
 
 
-class FixtureCacheWriter:
-    """Real file transactions, but only under a temporary directory and with fixture data."""
+class _CacheWriterCore:
+    """Shared transaction mechanics; callers must impose their own path and gate policy."""
 
-    def __init__(self, directory, runtime):
+    def __init__(self, directory, runtime, *, synthetic_fixture):
+        if type(synthetic_fixture) is not bool:
+            raise transaction.JournalBlocked('explicit cache origin mode required')
+        if not synthetic_fixture:
+            runtime.assert_collection_disabled()
+            if Path(directory) != disk.DEFAULT_RUN:
+                raise transaction.JournalBlocked('production mode requires the fixed run path')
         root = Path(directory)
         if root.is_symlink() or not root.is_dir():
             raise transaction.JournalBlocked('fixture root must be an existing non-symlink directory')
         self.root = root.resolve(strict=True)
         temp_root = Path(tempfile.gettempdir()).resolve(strict=True)
-        if self.root == temp_root or not self.root.is_relative_to(temp_root):
+        if synthetic_fixture and (self.root == temp_root or not self.root.is_relative_to(temp_root)):
             raise transaction.JournalBlocked('fixture writer restricted to a temporary subdirectory')
+        self.synthetic_fixture = synthetic_fixture
         self.runtime = runtime
         _, plan_sha = plan_loader.load_plan()
         if runtime.plan_sha != plan_sha:
@@ -32,11 +39,8 @@ class FixtureCacheWriter:
         self._lock_fd = None
         self._poisoned = False
 
-    @classmethod
-    def production(cls, runtime):
-        # The frozen plan has no collection authority; no path or file is touched.
-        runtime.assert_collection_disabled()
-        raise AssertionError('unreachable under the frozen no-collection plan')
+    def _manifest(self):
+        return disk.expected_manifest(self.runtime, synthetic_fixture=self.synthetic_fixture)
 
     @contextmanager
     def locked(self):
@@ -62,6 +66,8 @@ class FixtureCacheWriter:
             os.close(fd)
 
     def _require_lock(self):
+        if not self.synthetic_fixture:
+            self.runtime.assert_collection_disabled()
         if not self._locked or self._pid != os.getpid():
             raise transaction.JournalBlocked('current-process lock required')
         if self._poisoned:
@@ -84,7 +90,7 @@ class FixtureCacheWriter:
         try:
             (self.root / 'attempts').mkdir(mode=0o700)
             transaction._fsync_dir(self.root)
-            transaction._exclusive(self.root / 'manifest.json', disk.expected_manifest(self.runtime, synthetic_fixture=True))
+            transaction._exclusive(self.root / 'manifest.json', self._manifest())
             transaction._exclusive(self.root / 'records.json', {'plan_sha256': self.runtime.plan_sha, 'records': []})
         except BaseException:
             self._poisoned = True
@@ -98,8 +104,8 @@ class FixtureCacheWriter:
             raise transaction.JournalBlocked('unknown, pending or symlink entry')
         try:
             manifest = disk._read(self.root / 'manifest.json')
-            if (not isinstance(manifest, dict) or manifest.get('synthetic_fixture_only') is not True
-                    or manifest != disk.expected_manifest(self.runtime, synthetic_fixture=True)):
+            if (not isinstance(manifest, dict) or manifest != self._manifest()
+                    or (self.synthetic_fixture and manifest.get('synthetic_fixture_only') is not True)):
                 raise ValueError('manifest differs')
             data = disk._read(self.root / 'records.json')
             if not isinstance(data, dict) or set(data) != {'plan_sha256', 'records'} or data['plan_sha256'] != self.runtime.plan_sha:
@@ -144,7 +150,7 @@ class FixtureCacheWriter:
         self._owned = marker
         return marker
 
-    def commit_fixture_tokens(self, token_ids, elapsed_seconds, completed_at):
+    def _commit_tokens(self, token_ids, elapsed_seconds, completed_at):
         attempts, records, smoke, check = self._load()
         if check['state'] != 'blocked_uncommitted_attempt' or self._owned is None or self._owned != attempts[-1]:
             raise transaction.JournalBlocked('current-session uncommitted attempt required')
@@ -179,5 +185,20 @@ class FixtureCacheWriter:
         if check['state'] != 'validated_complete_unreviewed':
             raise transaction.JournalBlocked('full valid cache required')
         result = self.runtime.review_artifacts(attempts, records, smoke)
-        result['synthetic_fixture_only'] = True
+        result['synthetic_fixture_only'] = self.synthetic_fixture
         return result
+
+
+class FixtureCacheWriter(_CacheWriterCore):
+    """Real file transactions, but only under a temporary directory and with fixture data."""
+
+    def __init__(self, directory, runtime):
+        super().__init__(directory, runtime, synthetic_fixture=True)
+
+    def commit_fixture_tokens(self, token_ids, elapsed_seconds, completed_at):
+        return self._commit_tokens(token_ids, elapsed_seconds, completed_at)
+
+    @classmethod
+    def production(cls, runtime):
+        runtime.assert_collection_disabled()
+        raise AssertionError('unreachable under the frozen no-collection plan')

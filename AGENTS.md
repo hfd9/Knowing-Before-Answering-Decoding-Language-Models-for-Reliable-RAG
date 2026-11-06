@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-06（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新受门禁生产路径（2026-11-06）：用户要求直接完成生产事务恢复、故障测试及模型执行连接，已编写[生产代码](scripts/explanation_scope_production.py)、[记录](docs/records/2026-11-06-explanation-scope-guarded-production.md)/[说明](docs/explanation_scope_guarded_production.md)。默认在建真实run/加载模型前由原门禁拒绝；计划加载器同样要求guard为false，不可用命令行参数启用。代码绑定输入/七模型文件哈希、设备与greedy调用，处理锁、attempt、持久化、前缀恢复及smoke。生产路径最终13项完整合成模拟测试、共享运行时36项、生成桩8项、旧事务20项通过；测试显式模拟放行/GPU/模型且只写临时合成目录。实际七模型文件SHA、48输入独立重建、旧72来源/12拟合封存/4快照匹配；默认run不存在。没有真实模型加载、前向或实时GPU检查，真实CUDA/Transformers兼容性、输出来源及断电持久性未证实；独立批准0/gate及GPUfalse/预算0/标签null/380封存保持，不能称GPU就绪。
+
 最新合成生成连接（2026-11-06）：按用户要求继续真实路径技术准备，完成[记录](docs/records/2026-11-06-explanation-scope-generation-fixture.md)/[说明](docs/explanation_scope_generation_fixture.md)。真实tokenizer、CPU张量及固定token桩连接输入校验、greedy配置、单条attempt/提交和smoke；8项10.983秒通过，含配置/计划变化、输入与输出损坏、异常阻止重答、EOS/截断、smoke成败及关闭门禁。48输入独立重建与72旧来源/12拟合封存/4快照核验通过。桩不是语言模型或Transformers真实generate，不验证GPU/模型兼容性及输出来源；真实生产采集器、非synthetic写入恢复仍未实现或验证，无真实回答或模型前向。正式独立批准0/gate及GPUfalse/预算0/标签null/380封存保持。
 
 最新合成缓存与输入连接（2026-11-06）：按用户要求接续中断任务，完成[记录](docs/records/2026-11-06-explanation-scope-cache-writer.md)/[说明](docs/explanation_scope_cache_writer_fixture.md)。在途合成写入器接入候选磁盘格式，清单显式标synthetic；核验锁普通文件及持锁inode、事务异常停止，同进程同持锁会话才可提交attempt，跨进程重读正常前缀而中断未提交阻止重答。未来生成输入接口重建48条并检查材料/prompt/token哈希；真实tokenizer与合成文件36测试77.388秒、最后布尔标记修改后2项定向测试、原事务20测试、48输入独立重建及旧72来源/12拟合封存/4快照核验通过，默认run不存在。合成标记不是来源证明，未证明断电持久性；真实生产采集器/非synthetic写入恢复与模型生成仍未实现或验证，无真实回答。正式独立批准0/gate及GPUfalse/预算0/标签null/380封存保持，不能称GPU就绪。

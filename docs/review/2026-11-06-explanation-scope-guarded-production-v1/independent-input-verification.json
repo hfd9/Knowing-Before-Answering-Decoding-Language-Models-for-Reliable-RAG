@@ -1,0 +1,15 @@
+{
+  "status": "independent_chat_assembly_matches_shared_prompt_builder",
+  "verified_items": 48,
+  "plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+  "input_fingerprints_sha256": "ad5c7da3292dcfff58b12eec323f029401eb13e21c55119440ba82279bb01aeb",
+  "shared_dependencies": [
+    "P0 render_prompt",
+    "local tokenizer",
+    "reference instruction"
+  ],
+  "model_weights_loaded": false,
+  "model_inference": false,
+  "independent_semantic_approval": false,
+  "gpu_launch_ready": false
+}
