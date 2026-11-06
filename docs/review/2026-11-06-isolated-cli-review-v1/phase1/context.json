@@ -1,0 +1,14 @@
+{
+  "reviewer_id": "CLI20261106R01",
+  "reviewed_at": "2026-11-06T10:41:08.337402+08:00",
+  "prior_project_history_exposure": false,
+  "prior_author_ratings_exposure": false,
+  "prior_outputs_or_probe_results_exposure": false,
+  "coordinator_material_exposure": false,
+  "instructions_or_hidden_context_exposure": false,
+  "exposure_description": "Before opening the input packet, the received context contained ordinary operating instructions, workspace/session metadata, the user context-audit request, and this reviewer's audit response. No specific research project history, prior author judgments or label counts, model answer or probe-result summaries, coordinator case mappings, or project-specific handoff contents were received or inspected. The phase1 task supplied stage instructions and reviewer ID; the blank templates and review instructions supplied procedure, not prior project judgments. The audit can_proceed=false meant only that separate instruction and input were awaited. During this stage only the named stage instructions, blank templates, input packet, and this review's generated files were read. No answer packet was viewed or requested.",
+  "input_first_process_actually_followed": true,
+  "actual_independence_determination": "An input-first process was followed in this session, with no identified prior exposure in the five requested categories. This is a bounded self-report about received context and observed tool use, not proof of absolute independence, an assessment of uninspected files or other sessions, or automatic independent approval. A new session, anonymized item IDs, programmatic hashes, and coverage checks do not establish semantic independence. The resulting input judgments are complete before any answer review; coordinator sealing is a subsequent external step.",
+  "input_review_sha256": "7dc1ef99d32e5a8a8523279f35096bf449393f5505a90ed721870f753ce57d00",
+  "input_review_completed_at": "2026-11-06T10:41:08.337402+08:00"
+}

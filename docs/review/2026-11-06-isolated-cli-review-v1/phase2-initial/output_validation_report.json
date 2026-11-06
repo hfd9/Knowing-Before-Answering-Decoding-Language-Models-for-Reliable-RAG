@@ -1,0 +1,72 @@
+{
+  "reviewer_id": "CLI20261106R01",
+  "validated_at": "2026-11-06T10:56:22.379415+08:00",
+  "validation_passed": false,
+  "semantic_review_complete_declared": true,
+  "structural_and_citation_validation_passed": true,
+  "input_seal_hash_verified": true,
+  "stage1_files_unchanged": true,
+  "stage1_files_verified": 11,
+  "seal_completion_timestamp_available": false,
+  "blocking_metadata_issues": [
+    "input_seal.json omits input_review_completed_at; the required sealed_input_review_completed_at remains null rather than being invented or copied from a different source. A clarification request was sent."
+  ],
+  "counts": {
+    "items_reviewed": 55,
+    "items_unreviewed": 0,
+    "original_units": 82,
+    "atomic_claims": 172,
+    "output_citations": 172,
+    "document_citations": 249,
+    "specific_target_answers": 47,
+    "no_specific_target_answer": 8,
+    "atomic_judgments": {
+      "supported": 113,
+      "unsupported": 42,
+      "contradicted": 14,
+      "ambiguous": 3
+    },
+    "atomic_roles": {
+      "explanation": 108,
+      "target": 64
+    },
+    "target_claim_supported": {
+      "not_applicable": 8,
+      "unsupported": 24,
+      "supported": 23
+    },
+    "withholding_matches_gap": {
+      "supported": 6,
+      "not_applicable": 47,
+      "contradicted": 2
+    },
+    "explanation_all_claims_supported": {
+      "yes": 23,
+      "no": 21,
+      "not_applicable": 10,
+      "ambiguous": 1
+    }
+  },
+  "checks_passed": [
+    "all 55 IDs preserved in order",
+    "all original unit IDs, source_span fields, offsets, quotes, and hashes preserved exactly",
+    "continuous mechanical unit coverage of all complete answers",
+    "all unit-level summary fields remain null",
+    "all 172 manually authored atoms have unique item-local IDs and required fields",
+    "all output citations remain within their source units and match text exactly",
+    "all document citations have exact Unicode end-exclusive offsets",
+    "supported atoms have support and contradicted atoms have counterevidence",
+    "target applicability and precedence reductions",
+    "explanation summary reductions",
+    "all reading-log answer, question, document, and original-unit mappings",
+    "unchanged SHA256 for every recorded stage-1 file",
+    "sealed input-review SHA256 still matches"
+  ],
+  "sealed_input_review_sha256": "7dc1ef99d32e5a8a8523279f35096bf449393f5505a90ed721870f753ce57d00",
+  "claim_review_sha256": "8252c5b2c6e289b899c57a3bdad2f2166002a08e8e258b066fb751cc9321c99d",
+  "limitations": [
+    "Semantic correctness and full semantic coverage remain reviewer judgments, not consequences of byte/span validation.",
+    "No author comparison or independent approval was performed. Authorized answers were read only after the seal hash matched.",
+    "No stage-1 judgments or files were revised."
+  ]
+}

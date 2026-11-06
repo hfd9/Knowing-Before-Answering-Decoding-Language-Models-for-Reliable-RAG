@@ -1,0 +1,26 @@
+{
+  "reviewer_id": "CLI20261106R01",
+  "validated_at": "2026-11-06T10:41:44.498201+08:00",
+  "validation_passed": true,
+  "item_ids_verified": 55,
+  "reviewed": 55,
+  "unreviewed": 0,
+  "document_slots_verified": 275,
+  "unique_document_texts_verified": 140,
+  "citations_exactly_matched": 113,
+  "answerability_counts": {
+    "insufficient": 29,
+    "answerable": 26
+  },
+  "input_review_sha256": "7dc1ef99d32e5a8a8523279f35096bf449393f5505a90ed721870f753ce57d00",
+  "checks": [
+    "Q001-Q055 exactly once and in template order",
+    "required fields and status/answer consistency",
+    "Unicode end-exclusive citation bounds and exact text",
+    "every document slot mapped to original packet text and SHA256",
+    "reading log question hashes and declared full-text ranges",
+    "explicit boolean exposure flags and timezone-aware timestamp",
+    "matching completed review hash and completion timestamp across outputs"
+  ],
+  "limits": "Validation verifies structure, text identity, and recorded coverage declarations. It does not mechanically verify semantic correctness, actual comprehension, or independence; coordinator sealing has not been performed here."
+}

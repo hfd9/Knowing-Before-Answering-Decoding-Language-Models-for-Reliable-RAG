@@ -1,0 +1,43 @@
+{
+  "reviewer_id": "CLI20261106R01",
+  "stage": "input_only_review",
+  "status": "complete",
+  "files_written": [
+    "input_review.json",
+    "context.json",
+    "input_reading_log.json",
+    "input_validation_report.json",
+    "reading_inventory.json",
+    "author_input_review.py"
+  ],
+  "counts": {
+    "items_reviewed": 55,
+    "items_unreviewed": 0,
+    "document_slots_assessed": 275,
+    "distinct_document_texts_read": 140,
+    "answerable": 26,
+    "insufficient": 29,
+    "conflict": 0,
+    "ambiguous": 0,
+    "citations_validated": 113
+  },
+  "validation_passed": true,
+  "exposure_conclusion": {
+    "audit_resolved_for_this_stage": true,
+    "prior_project_history_exposure": false,
+    "prior_author_ratings_exposure": false,
+    "prior_outputs_or_probe_results_exposure": false,
+    "coordinator_material_exposure": false,
+    "instructions_or_hidden_context_exposure": false,
+    "input_first_process_actually_followed": true,
+    "explanation": "The earlier can_proceed=false reflected awaiting separate instructions and input, not an unresolved exposure concern. No answer packet was viewed or requested."
+  },
+  "input_review_completed_at": "2026-11-06T10:41:08.337402+08:00",
+  "input_review_sha256": "7dc1ef99d32e5a8a8523279f35096bf449393f5505a90ed721870f753ce57d00",
+  "limitations": [
+    "Judgments use only the supplied question and document text; missing evidence was not filled with external answers.",
+    "Reading and semantic assessment are reviewer declarations. Programmatic validation confirms structure, citation text and offsets, hashes, and slot mappings.",
+    "The exposure conclusion is a bounded self-report, not proof of absolute independence or automatic independent approval.",
+    "Coordinator sealing remains a separate step. input_review.json will not be revised after this turn."
+  ]
+}

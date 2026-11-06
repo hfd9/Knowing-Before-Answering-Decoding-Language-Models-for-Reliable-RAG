@@ -1,0 +1,81 @@
+{
+  "checked_at": "2026-11-06T03:10:15.594243+00:00",
+  "evidence_kind": "coordinator_observations_and_reviewer_declarations_not_full_private_context_certification",
+  "fresh_CLI_working_directory": "/tmp/text-evidence-review-20261106-neutral",
+  "reviewer_thread_id": "01a1aeb3-b618-7770-a9d6-cfadc2aaaef8",
+  "project_AGENTS_removed_or_changed": false,
+  "global_configuration_or_permissions_changed": false,
+  "dangerously_bypass_flags_used": false,
+  "instruction_paths_checked_absent": [
+    "/AGENTS.md",
+    "/AGENTS.override.md",
+    "/tmp/AGENTS.md",
+    "/tmp/AGENTS.override.md",
+    "/tmp/text-evidence-review-20261106-neutral/AGENTS.md",
+    "/tmp/text-evidence-review-20261106-neutral/AGENTS.override.md",
+    "/large_disk/wf/.codex/AGENTS.md",
+    "/large_disk/wf/.codex/AGENTS.override.md"
+  ],
+  "current_CLI_memory_features_observed": {
+    "memories": false,
+    "external_agent_memory_import": false
+  },
+  "memory_feature_check_timing": "Observed during coordinator checking after answer review; no feature configuration changed by coordinator.",
+  "completed_commands_inspected": 29,
+  "known_original_project_path_observed_in_commands": false,
+  "parent_relative_path_observed_in_commands": false,
+  "raw_event_item_types": {
+    "phase1": {
+      "agent_message": 5,
+      "command_execution": 24
+    },
+    "phase2": {
+      "agent_message": 7,
+      "command_execution": 32,
+      "file_change": 4
+    },
+    "metadata": {
+      "agent_message": 2,
+      "command_execution": 6
+    }
+  },
+  "completed_turn_usage": {
+    "phase1": [
+      {
+        "input_tokens": 450985,
+        "cached_input_tokens": 390656,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13732,
+        "reasoning_output_tokens": 1179
+      }
+    ],
+    "phase2": [
+      {
+        "input_tokens": 1646023,
+        "cached_input_tokens": 1531648,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 38009,
+        "reasoning_output_tokens": 5885
+      }
+    ],
+    "metadata": [
+      {
+        "input_tokens": 2016079,
+        "cached_input_tokens": 1864960,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 41182,
+        "reasoning_output_tokens": 6579
+      }
+    ]
+  },
+  "full_private_context_inspected": false,
+  "operating_system_read_access_to_original_project_blocked": false,
+  "context_isolation_supported_by_observations": true,
+  "formal_independent_approval_added": 0,
+  "limits": [
+    "Candidate declarations and visible commands do not prove all private context provenance or semantic comprehension.",
+    "Different working directory is not an operating-system-level ban on reading the original project.",
+    "This is one LLM reviewer; model-family error independence and human gold-standard correctness are not established."
+  ],
+  "usage_interpretation": "Raw CLI turn.completed payloads; accounting in resumed sessions may be cumulative. Do not sum them as independent per-stage usage or infer cost."
+}

@@ -1,0 +1,1344 @@
+{
+  "reviewer_id": "CLI20261106R01",
+  "items": [
+    {
+      "item_id": "Q001",
+      "status": "reviewed",
+      "target_interpretation": "Identify the recording artist of the 1962 hit record Sheila.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 32,
+          "quote": "Sheila was a hit record in 1962."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 41,
+          "quote": "There was a 1962 hit recording of Sheila."
+        }
+      ],
+      "missing_link": "All five documents were checked. Documents 1 and 5 identify the title and year, but neither assigns the recording to an artist. The quiz, Squeeze profile, and Riley biography do not supply that artist-title relation.",
+      "ambiguity": "The title and year clearly select a recording; the uncertainty is its unnamed performer, not an identified competing recording.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q002",
+      "status": "reviewed",
+      "target_interpretation": "Identify the city serving as the state capital of Ohio.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 27,
+          "quote": "Columbus is a city in Ohio."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 48,
+          "quote": "Ohio's state government meets at the Statehouse."
+        }
+      ],
+      "missing_link": "All five documents were checked. Columbus is called a city and the largest city, and a Statehouse is mentioned, but its location and the state-capital relation are absent. The presidential biographies do not connect Columbus to that role.",
+      "ambiguity": "Largest city and state capital are different relations. No conflicting capital is supplied, and the capital cannot be selected from population information alone.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q003",
+      "status": "reviewed",
+      "target_interpretation": "Identify the calendar year of the market debut of Wham-O's modern Hula Hoop.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 53,
+          "quote": "Wham-O introduced its modern Hula Hoop to the market."
+        },
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 43,
+          "quote": "Commercial use of Wham-O's Hula Hoop began."
+        }
+      ],
+      "missing_link": "All five slots were checked, including the duplicate song text in slots 4 and 5. The market introduction and commercial use are asserted without a year. Dates in the Australian constitution and song excerpts concern other entities.",
+      "ambiguity": "Market debut has a clear target here. No date is supplied for that event; unrelated years cannot fill the gap.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q004",
+      "status": "reviewed",
+      "target_interpretation": "Identify the access-code field value for fictional Unit U-215, using only these archive records.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry."
+        },
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 54,
+          "quote": "The inspection code assigned to Unit U-757 is K-23434."
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 81,
+          "quote": "Access code and inspection code are independent fields in this fictional archive."
+        }
+      ],
+      "missing_link": "All five documents were checked. U-215 has an entry, but no access-code value is given for it. K-23434 is an inspection code for U-757, differing in both field and unit. Independent fields and shareable values provide no rule transferring the value to U-215.",
+      "ambiguity": "The unit and requested field are explicit. Sharing of values is permitted, so equality is possible but is not established; there is no contradiction to resolve.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q005",
+      "status": "reviewed",
+      "target_interpretation": "Identify the usual name of the battle Napoleon called Mont Saint Jean.",
+      "answerability": "answerable",
+      "candidate_answer": "The Battle of Waterloo.",
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 93,
+          "quote": "Waterloo is the usual name of the battle that Napoleon and the French called Mont Saint-Jean."
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 74,
+          "quote": "Mont Saint-Jean and Waterloo are two names for the same military encounter"
+        }
+      ],
+      "missing_link": "No missing link is identified: documents 1 and 3 explicitly equate the requested battle name with Waterloo.",
+      "ambiguity": "Spacing and hyphenation of Mont Saint Jean do not change the referent. The recipe and other unrelated documents supply no competing identification.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q006",
+      "status": "reviewed",
+      "target_interpretation": "Name the Japanese raw-fish dish described as bite-sized pieces with dipping sauces, vegetables, and wasabi.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 95,
+          "quote": "The Japanese preparation uses sliced raw fish served with dipping sauce, vegetables and wasabi."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 61,
+          "quote": "Fresh raw-fish slices are accompanied by sauce and garnishes."
+        }
+      ],
+      "missing_link": "All five documents were checked. The relevant preparation and accompaniments are described, but the preparation is not named. The Nigerian snacks, chop suey definitions, and pescetarian discussion do not supply its Japanese dish-name relation.",
+      "ambiguity": "Slices versus bite-sized pieces is a minor descriptive difference; the decisive gap is an absent name, not an explicit competing dish identification.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q007",
+      "status": "reviewed",
+      "target_interpretation": "Give the resulting quality or condition expressed by ameliorating something initially bad.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 56,
+          "quote": "The verb ameliorate is used for a situation that is bad."
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 50,
+          "quote": "Ameliorate concerns conditions that start out bad."
+        }
+      ],
+      "missing_link": "All five documents were checked. The two relevant statements specify only the starting condition, not the resulting change. The supplied word-book excerpt does not define ameliorate; the song review and golf do-over account do not establish its meaning.",
+      "ambiguity": "The question asks what the bad condition becomes, rather than whether the verb applies to bad conditions. No definition of that outcome is provided.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q008",
+      "status": "reviewed",
+      "target_interpretation": "Identify the city serving as the state capital of Ohio.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 32,
+          "quote": "Among Ohio's cities is Columbus."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 50,
+          "quote": "The Ohio state government meets in the Statehouse."
+        }
+      ],
+      "missing_link": "All five documents were checked. City membership and largest-city claims identify Columbus as relevant, but do not make it the capital. The Statehouse is not geographically located, and neither presidential biography supplies the missing relation.",
+      "ambiguity": "There is no competing capital assertion. The distinction between being an Ohio city and being its capital prevents a complete answer.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q009",
+      "status": "reviewed",
+      "target_interpretation": "Identify the shared specific entertainment form of Sorry! and Barbarossa.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 27,
+          "quote": "Sorry! is based on Pachisi."
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 59,
+          "quote": "Barbarossa is a plasticine-shaping German-style board game."
+        }
+      ],
+      "missing_link": "All five documents were checked. Barbarossa is explicitly a board game; Sorry! is only related to Pachisi, whose type is not given. That ancestry alone does not establish the shared board-game form without external knowledge. The dog, plant, and filmmaker texts do not fill it.",
+      "ambiguity": "The question seeks a common form, not necessarily the narrower German-style subtype. Board games is plausible, but Sorry! is not typed by the supplied text.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q010",
+      "status": "reviewed",
+      "target_interpretation": "Identify the calendar year of the market debut of Wham-O's modern Hula Hoop.",
+      "answerability": "answerable",
+      "candidate_answer": "1958.",
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 65,
+          "quote": "The market debut of Wham-O's modern Hula Hoop took place in 1958."
+        },
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 70,
+          "quote": "1958 was the year in which commercial use of Wham-O's Hula Hoop began."
+        }
+      ],
+      "missing_link": "No missing link is identified: document 1 directly dates the market debut, and document 2 corroborates the year for commercial use.",
+      "ambiguity": "The modern Wham-O product and market-debut event are explicit; unrelated constitution and song dates do not compete with this date.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q011",
+      "status": "reviewed",
+      "target_interpretation": "Identify the chief or principal river of Burma (Myanmar).",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 58,
+          "quote": "Myanmar, formerly Burma, has a river called the Irrawaddy."
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 49,
+          "quote": "Irrawaddy and Ayeyarwady are names of that river."
+        }
+      ],
+      "missing_link": "All five documents were checked. The texts establish a river in Myanmar and its alternative names, but never its chief or principal status. The Laos map, Canadian river account, and Myanmar political story add no ranking of Burmese rivers.",
+      "ambiguity": "The Irrawaddy Magazine mentioned in the political article is not itself evidence about river rank. A river-name candidate is available, but the requested chief relation is missing.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q012",
+      "status": "reviewed",
+      "target_interpretation": "Name the Japanese dish of raw-fish pieces served with dipping sauce, vegetables, and wasabi.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 98,
+          "quote": "The Japanese preparation described here uses raw fish in slices with sauce, vegetables and wasabi."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 63,
+          "quote": "Fresh raw-fish slices are served with condiments and garnishes."
+        }
+      ],
+      "missing_link": "All five documents were checked. Documents 3 and 5 describe the target preparation without giving its name. The other three documents concern Nigerian snacks, chop suey, and a seafood-inclusive diet, and supply no name for that Japanese preparation.",
+      "ambiguity": "Condiments and garnishes are compatible with the question, but compatibility of ingredients does not supply an unnamed dish label.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q013",
+      "status": "reviewed",
+      "target_interpretation": "Name the Japanese raw-fish preparation with sauce, vegetables, and wasabi.",
+      "answerability": "answerable",
+      "candidate_answer": "Sashimi.",
+      "document_support": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 108,
+          "quote": "Sashimi names the Japanese preparation described here: raw fish in slices with sauce, vegetables and wasabi."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 74,
+          "quote": "Fresh raw-fish slices with condiments and garnishes are served as sashimi."
+        }
+      ],
+      "missing_link": "No missing link is identified: the preparation described in the question is explicitly named sashimi in document 3 and reinforced by document 5.",
+      "ambiguity": "Slices and bite-sized pieces are compatible descriptions in this question. The unrelated cooked dishes do not contradict the direct identification.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q014",
+      "status": "reviewed",
+      "target_interpretation": "Report the total number of RuPaul's Drag Race seasons recorded by the supplied series overview, not a current external total.",
+      "answerability": "answerable",
+      "candidate_answer": "Ten seasons.",
+      "document_support": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 81,
+          "quote": "Ten is the season total shown in the provided RuPaul's Drag Race series overview."
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 73,
+          "quote": "In that overview, RuPaul's Drag Race has a recorded total of ten seasons."
+        }
+      ],
+      "missing_link": "No missing link is identified: both relevant overview statements directly give a total of ten.",
+      "ambiguity": "The question is restricted to this overview. Individual season numbers, contestant counts, and the All Stars excerpt are different quantities and do not conflict with that total.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q015",
+      "status": "reviewed",
+      "target_interpretation": "Identify the usual name of the military encounter Napoleon called Mont Saint Jean.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 76,
+          "quote": "The name Napoleon and the French used for the encounter was Mont Saint-Jean."
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 70,
+          "quote": "The battlefield of that encounter lay along the Mont Saint-Jean ridge."
+        }
+      ],
+      "missing_link": "All five documents were checked. The French name and ridge location are supplied, but no alternative usual battle name is linked to that encounter. The Napoleon recipe account concerns Marengo and does not equate it with this battle; the saint and racing texts add no identification.",
+      "ambiguity": "A ridge location does not independently determine the requested alternate name. No text asserts competing alternate names.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q016",
+      "status": "reviewed",
+      "target_interpretation": "Locate both Luoding and Dingzhou, allowing the country-level common location and the supplied provincial details.",
+      "answerability": "answerable",
+      "candidate_answer": "Both are in China: Luoding is in western Guangdong, and Dingzhou is in Hebei Province in northern China.",
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 59,
+          "quote": "Luoding is a county-level city in western Guangdong, China."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 55,
+          "quote": "Dingzhou is a city in Hebei Province in northern China."
+        }
+      ],
+      "missing_link": "No missing link is identified: each named city has an explicit location, and both are explicitly placed in China.",
+      "ambiguity": "The question does not specify geographic granularity; giving the shared country and each supplied province resolves that harmless scope variation.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q017",
+      "status": "reviewed",
+      "target_interpretation": "Report the season total in the supplied RuPaul's Drag Race series overview.",
+      "answerability": "answerable",
+      "candidate_answer": "Ten seasons.",
+      "document_support": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 62,
+          "quote": "The supplied overview of RuPaul's Drag Race lists ten seasons."
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 80,
+          "quote": "The total number of seasons recorded in this RuPaul's Drag Race overview is ten."
+        }
+      ],
+      "missing_link": "No missing link is identified: documents 3 and 4 both explicitly state the requested overview total.",
+      "ambiguity": "The target is the overview total rather than the count of excerpts or a present-day season total. Season-specific and All Stars information addresses different scopes.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q018",
+      "status": "reviewed",
+      "target_interpretation": "Give the episode count for Pretty Little Liars season 2.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 72,
+          "quote": "Pretty Little Liars' second season is described in the supplied account."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 61,
+          "quote": "That season originally ran from June 2011 through March 2012."
+        }
+      ],
+      "missing_link": "All five documents were checked. Season 2 is named and dated but has no episode total. The 22 episodes refer to Pretty Little Liars season 1, 20 to season 7, and 26 to My Little Pony season 8; none supplies the requested season-2 count.",
+      "ambiguity": "The pronoun in document 5 can reasonably refer to the season-2 account, but even that reading supplies only release dates, not an episode count.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q019",
+      "status": "reviewed",
+      "target_interpretation": "Report the total seasons listed by the supplied RuPaul's Drag Race overview.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 62,
+          "quote": "The supplied overview describes the series RuPaul's Drag Race."
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 78,
+          "quote": "That RuPaul's Drag Race overview records information about the show's seasons."
+        }
+      ],
+      "missing_link": "All five documents were checked. Documents 3 and 4 refer to an overview without stating its total. The season-4 and season-2 excerpts show particular seasons, not the total; the All Stars season-1 excerpt is a separate titled series and cannot supply the main-series total.",
+      "ambiguity": "The wording asks for an overview total, not how many season snippets happen to be included. Neither the highest season number nor the number of documents determines that total.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q020",
+      "status": "reviewed",
+      "target_interpretation": "Identify who recorded the 1962 hit Sheila.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 36,
+          "quote": "A 1962 hit record was called Sheila."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 35,
+          "quote": "Sheila had a hit recording in 1962."
+        }
+      ],
+      "missing_link": "All five documents were checked. The title and date are repeated without a performer. The quiz names performers of other songs, the Squeeze article concerns another band, and the Riley biography identifies other hits; none attributes Sheila to an artist.",
+      "ambiguity": "The requested artist relation is clear, but matching the title and year alone does not identify an artist.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q021",
+      "status": "reviewed",
+      "target_interpretation": "Identify the common type of games represented by Khet and Quarto.",
+      "answerability": "answerable",
+      "candidate_answer": "Board games.",
+      "document_support": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 63,
+          "quote": "Khet is a chess-like abstract strategy board game using lasers."
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 66,
+          "quote": "Quarto is a board game for two players, invented by Blaise Müller."
+        }
+      ],
+      "missing_link": "No missing link is identified for the shared category board games: both named games are explicitly assigned that type.",
+      "ambiguity": "Khet is additionally called abstract strategy, but Quarto is not given that narrower label here. Board games is the supported shared level of classification.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q022",
+      "status": "reviewed",
+      "target_interpretation": "State what a bad situation becomes when ameliorated.",
+      "answerability": "answerable",
+      "candidate_answer": "Better, improved, or more tolerable.",
+      "document_support": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 65,
+          "quote": "To ameliorate a bad situation is to make it better or improve it."
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 82,
+          "quote": "When conditions are bad, ameliorate means that they have been made more tolerable."
+        }
+      ],
+      "missing_link": "No missing link is identified: both relevant statements define the resulting change from the initially bad condition.",
+      "ambiguity": "Better and more tolerable express compatible degrees of improvement; neither implies that all problems are completely eliminated.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q023",
+      "status": "reviewed",
+      "target_interpretation": "Identify the cause of the urban-versus-surrounding-rural temperature difference.",
+      "answerability": "answerable",
+      "candidate_answer": "Human modification of land surfaces is the main cause.",
+      "document_support": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 111,
+          "quote": "The main cause of urban areas being warmer than surrounding rural areas is human modification of land surfaces."
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 111,
+          "quote": "This urban heat island temperature difference is usually larger at night and most apparent when winds are weak."
+        }
+      ],
+      "missing_link": "No missing link is identified for the main cause: document 2 explicitly supplies the causal relation. Document 4 describes conditions under which the difference is larger or more apparent.",
+      "ambiguity": "The question can invite a mechanism or a phenomenon name. Its causal wording supports the stated main cause; the text calls the difference an urban heat island but does not claim surface modification is the sole cause.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q024",
+      "status": "reviewed",
+      "target_interpretation": "Identify the common game type of Khet and Quarto.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 71,
+          "quote": "Lasers and abstract strategy are involved in Khet, which is chess-like."
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "Blaise Müller invented Quarto, which is played as a board game by two people."
+        }
+      ],
+      "missing_link": "All five documents were checked. Quarto is explicitly a board game. Khet is described by lasers, abstract strategy, and a chess comparison without an explicit board-game classification. The other board games are Hare and Tortoise and Backgammon, not Khet; the dog descriptions add no link.",
+      "ambiguity": "Board games is a plausible common category, but chess-like can describe rules or strategy without fixing physical form. Abstract strategy is only assigned to Khet, so that narrower shared type is also not established.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q025",
+      "status": "reviewed",
+      "target_interpretation": "Give the number of episodes of Pretty Little Liars season 2.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 65,
+          "quote": "The supplied account describes season two of Pretty Little Liars."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 69,
+          "quote": "The original release of that season ran from June 2011 to March 2012."
+        }
+      ],
+      "missing_link": "All five documents were checked. The relevant season is named and dated, but no total episodes are given for it. The explicit counts of 22, 26, and 20 belong respectively to PLL season 1, My Little Pony season 8, and PLL season 7.",
+      "ambiguity": "Release duration does not determine how many episodes aired. The surrounding season counts have clear different entity or season scopes.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q026",
+      "status": "reviewed",
+      "target_interpretation": "Identify the access-code value assigned to fictional Unit U-352.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry."
+        },
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 81,
+          "quote": "Access code and inspection code are independent fields in this fictional archive."
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 54,
+          "quote": "The inspection code assigned to Unit U-352 is K-22280."
+        }
+      ],
+      "missing_link": "All five documents were checked. K-22280 is assigned to the target unit as its inspection code, not its access code. The archive explicitly makes those fields independent and gives no access-code assignment for U-352.",
+      "ambiguity": "The same value may occur across fields, so K-22280 is neither established nor ruled out as the access code. One value per field does not make different fields equal.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q027",
+      "status": "reviewed",
+      "target_interpretation": "Identify the shared specific entertainment form of Sorry! and Barbarossa.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 32,
+          "quote": "Pachisi is the basis for Sorry!."
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 68,
+          "quote": "Plasticine shaping is used in Barbarossa, a German-style board game."
+        }
+      ],
+      "missing_link": "All five documents were checked. Barbarossa is typed as a board game, whereas Sorry! is only linked to an untyped Pachisi. Dog, plant, and filmmaker excerpts do not provide the missing common classification.",
+      "ambiguity": "A shared board-game category is plausible but requires knowing what Sorry! or Pachisi is beyond the supplied statements. The German-style and plasticine modifiers are only established for Barbarossa.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q028",
+      "status": "reviewed",
+      "target_interpretation": "Give the total episode count for Pretty Little Liars season 2.",
+      "answerability": "answerable",
+      "candidate_answer": "25 episodes.",
+      "document_support": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 55,
+          "quote": "Season two of Pretty Little Liars contains 25 episodes."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 58,
+          "quote": "The episode total for Pretty Little Liars season two is 25"
+        }
+      ],
+      "missing_link": "No missing link is identified: both relevant documents explicitly give 25 episodes for the requested show and season.",
+      "ambiguity": "Counts of 22 and 20 belong to other PLL seasons, and 26 belongs to a different show, so they do not conflict with the season-2 count.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q029",
+      "status": "reviewed",
+      "target_interpretation": "Identify the artist who recorded the 1962 hit Sheila.",
+      "answerability": "answerable",
+      "candidate_answer": "Tommy Roe.",
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 39,
+          "quote": "Tommy Roe recorded the 1962 hit Sheila."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 50,
+          "quote": "The 1962 hit recording of Sheila was by Tommy Roe."
+        }
+      ],
+      "missing_link": "No missing link is identified: documents 1 and 5 directly connect the artist to the requested title and year.",
+      "ambiguity": "Other artists in the quiz and biographies are attached to other songs and do not create a conflicting attribution of Sheila.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q030",
+      "status": "reviewed",
+      "target_interpretation": "Identify the game category shared by Khet and Quarto.",
+      "answerability": "answerable",
+      "candidate_answer": "Board games.",
+      "document_support": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 84,
+          "quote": "Lasers are used in Khet, a chess-like board game in the abstract strategy tradition."
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 77,
+          "quote": "Blaise Müller invented Quarto, which is played as a board game by two people."
+        }
+      ],
+      "missing_link": "No missing link is identified for the shared board-game category: it is explicitly given for both Khet and Quarto.",
+      "ambiguity": "The abstract-strategy modifier is supplied for Khet only. The answer is limited to the common board-game form, without extending that modifier to Quarto.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q031",
+      "status": "reviewed",
+      "target_interpretation": "Locate both Luoding and Dingzhou geographically.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 31,
+          "quote": "Luoding is a county-level city."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 55,
+          "quote": "Dingzhou is a city in Hebei Province in northern China."
+        }
+      ],
+      "missing_link": "All five documents were checked. Dingzhou is explicitly located, but Luoding has only administrative status, with no country or province. University, company, and lake locations concern other entities and cannot locate Luoding.",
+      "ambiguity": "The question permits either a shared country or separate provincial locations, but both readings need a geographic link for Luoding. A county-level designation alone does not provide that country.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q032",
+      "status": "reviewed",
+      "target_interpretation": "Identify the chief river of Burma, also called Myanmar.",
+      "answerability": "answerable",
+      "candidate_answer": "The Irrawaddy River, also called Ayeyarwady.",
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 70,
+          "quote": "The Irrawaddy River is the principal river of Myanmar, formerly Burma."
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 70,
+          "quote": "The river known as the Irrawaddy or Ayeyarwady is Burma's chief river."
+        }
+      ],
+      "missing_link": "No missing link is identified: principal and chief status are expressly assigned to the named river in the target country.",
+      "ambiguity": "Principal and chief are compatible here, and the two river names are expressly equated. The magazine with a similar name is a different entity.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q033",
+      "status": "reviewed",
+      "target_interpretation": "Identify why urban areas are warmer than their surrounding rural areas.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 52,
+          "quote": "Urban areas are warmer than surrounding rural areas."
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 111,
+          "quote": "This urban heat island temperature difference is usually larger at night and most apparent when winds are weak."
+        }
+      ],
+      "missing_link": "All five slots were checked. Document 2 restates the difference and document 4 describes timing and weak-wind visibility, but neither explains its underlying cause. The water-content definition and duplicate anthropomorphism excerpts give no causal connection to urban warming.",
+      "ambiguity": "Weak winds are described as making the contrast apparent, not as the general cause of cities being warmer. Naming urban heat island also names the phenomenon rather than supplying a mechanism.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q034",
+      "status": "reviewed",
+      "target_interpretation": "State the resulting condition expressed by ameliorate when the original situation is bad.",
+      "answerability": "answerable",
+      "candidate_answer": "Better or more tolerable.",
+      "document_support": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 54,
+          "quote": "A bad situation becomes better when it is ameliorated."
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 99,
+          "quote": "More tolerable conditions are what the verb ameliorate describes when the initial situation is bad."
+        }
+      ],
+      "missing_link": "No missing link is identified: the improvement from bad to better or more tolerable is directly stated.",
+      "ambiguity": "The two outcome descriptions are compatible and do not promise perfection or complete removal of the initial problem.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q035",
+      "status": "reviewed",
+      "target_interpretation": "Explain the cause of the urban-rural temperature difference in which cities are warmer.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 54,
+          "quote": "An urban area is warmer than the rural area around it."
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 122,
+          "quote": "Weak winds make the urban heat island's urban-rural temperature contrast most apparent, and it is usually larger at night."
+        }
+      ],
+      "missing_link": "All five slots were checked. The relevant texts provide a temperature comparison and when it is prominent, but no underlying cause of the urban warmth. Water content is defined without an urban-temperature connection, and the duplicated anthropomorphism text is unrelated.",
+      "ambiguity": "A condition affecting apparent contrast is not automatically the cause of the temperature difference. The supplied text does not justify treating nighttime or weak winds as the requested primary mechanism.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q036",
+      "status": "reviewed",
+      "target_interpretation": "Identify the state capital city of Ohio.",
+      "answerability": "answerable",
+      "candidate_answer": "Columbus.",
+      "document_support": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 38,
+          "quote": "Columbus is the state capital of Ohio."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 78,
+          "quote": "Ohio's state government meets at the Statehouse in Columbus, its capital city."
+        }
+      ],
+      "missing_link": "No missing link is identified: document 3 states the capital relation directly, and document 5 corroborates it with the Statehouse location.",
+      "ambiguity": "Largest-city information elsewhere is a separate property, compatible with the direct capital statements and unnecessary to infer them.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q037",
+      "status": "reviewed",
+      "target_interpretation": "Identify the shared type of games Khet and Quarto.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 64,
+          "quote": "Khet is chess-like, uses lasers, and involves abstract strategy."
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 66,
+          "quote": "Quarto is a board game for two players, invented by Blaise Müller."
+        }
+      ],
+      "missing_link": "All five documents were checked. Quarto is explicitly a board game; Khet has a chess comparison and strategy features without that form being stated. Hare and Tortoise and Backgammon are separately typed games, and their category cannot be transferred to Khet merely because they share a packet.",
+      "ambiguity": "Chess-like supports a plausible board-game guess but can refer to strategic resemblance. The narrower abstract-strategy category is stated for Khet only, leaving no fully established shared specific type.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q038",
+      "status": "reviewed",
+      "target_interpretation": "Identify the common entertainment form of Sorry! and Barbarossa.",
+      "answerability": "answerable",
+      "candidate_answer": "Board games.",
+      "document_support": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 47,
+          "quote": "Pachisi is the basis for the board game Sorry!."
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 68,
+          "quote": "Plasticine shaping is used in Barbarossa, a German-style board game."
+        }
+      ],
+      "missing_link": "No missing link is identified: each named entertainment is explicitly classified as a board game.",
+      "ambiguity": "German-style and plasticine-shaping qualify Barbarossa only. The shared board-game form answers the question without assigning those narrower features to Sorry!.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q039",
+      "status": "reviewed",
+      "target_interpretation": "Name the Japanese dish of raw-fish pieces served with dipping sauce, vegetables, and wasabi.",
+      "answerability": "answerable",
+      "candidate_answer": "Sashimi.",
+      "document_support": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 97,
+          "quote": "The Japanese dish of sliced raw fish served with dipping sauce, vegetables and wasabi is sashimi."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 77,
+          "quote": "Sashimi consists of fresh raw-fish slices accompanied by sauce and garnishes."
+        }
+      ],
+      "missing_link": "No missing link is identified: document 3 directly names the described dish, with compatible ingredient support in document 5.",
+      "ambiguity": "The question describes bite-sized pieces while the sources say slices; this does not create an alternative named preparation in these documents.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q040",
+      "status": "reviewed",
+      "target_interpretation": "Identify the usual name of the encounter Napoleon called the Battle of Mont Saint Jean.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 80,
+          "quote": "Napoleon and the French called the military clash the Battle of Mont Saint-Jean."
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 55,
+          "quote": "That battle was fought along the Mont Saint-Jean ridge."
+        }
+      ],
+      "missing_link": "All five documents were checked. Documents 1 and 3 repeat the French name and location without naming an alternative. The Marengo discussion in the biography concerns its own battle and supplies no equivalence; the saint and racing documents add none.",
+      "ambiguity": "The referent is clear enough to ask for an alternate name, but the ridge wording does not provide it. There is no explicit inconsistent alternate identification.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q041",
+      "status": "reviewed",
+      "target_interpretation": "Identify the shared specific form of entertainment of Sorry! and Barbarossa.",
+      "answerability": "answerable",
+      "candidate_answer": "Board games.",
+      "document_support": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 40,
+          "quote": "Sorry! is a board game based on Pachisi."
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 59,
+          "quote": "Barbarossa is a plasticine-shaping German-style board game."
+        }
+      ],
+      "missing_link": "No missing link is identified: both named games have an explicit board-game classification.",
+      "ambiguity": "The supported common category is board games. The documents do not classify both as German-style or both as plasticine-shaping games.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q042",
+      "status": "reviewed",
+      "target_interpretation": "Identify the chief river of Burma/Myanmar.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 52,
+          "quote": "The Irrawaddy is a river of Myanmar, formerly Burma."
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 51,
+          "quote": "That river is known as the Irrawaddy or Ayeyarwady."
+        }
+      ],
+      "missing_link": "All five documents were checked. Irrawaddy/Ayeyarwady is located in Myanmar and its names are linked, but no chief or principal designation is supplied. The Laos map, Canadian-river profile, and Myanmar politics article do not establish Burmese river rank.",
+      "ambiguity": "The magazine name in document 5 has no bearing on the requested river status. There is a relevant river candidate but no evidence selecting it as chief.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q043",
+      "status": "reviewed",
+      "target_interpretation": "Identify the chief river of Burma, using the Myanmar country-name equivalence in the documents.",
+      "answerability": "answerable",
+      "candidate_answer": "The Irrawaddy, also known as Ayeyarwady.",
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 66,
+          "quote": "Myanmar, formerly Burma, has the Irrawaddy as its principal river."
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 63,
+          "quote": "Burma's chief river goes by the names Irrawaddy and Ayeyarwady."
+        }
+      ],
+      "missing_link": "No missing link is identified: documents 1 and 4 directly give the relevant status, country, and river names.",
+      "ambiguity": "Chief and principal describe the same requested role here; the explicit dual naming removes any uncertainty between Irrawaddy and Ayeyarwady.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q044",
+      "status": "reviewed",
+      "target_interpretation": "Identify the year Wham-O's modern Hula Hoop entered the market.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 48,
+          "quote": "Wham-O's modern Hula Hoop made its market debut."
+        },
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 42,
+          "quote": "Wham-O's Hula Hoop entered commercial use."
+        }
+      ],
+      "missing_link": "All five slots were checked. The product debut and commercial use lack dates. Years in the constitution excerpt and duplicated song excerpt are attached to different historical events and do not date the Hula Hoop.",
+      "ambiguity": "The event and product are specific, but no year can be selected from their undated statements.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q045",
+      "status": "reviewed",
+      "target_interpretation": "Identify the state capital of Ohio.",
+      "answerability": "answerable",
+      "candidate_answer": "Columbus.",
+      "document_support": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 32,
+          "quote": "Ohio's capital city is Columbus."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 80,
+          "quote": "Columbus, Ohio's capital, is where the state government meets at the Statehouse."
+        }
+      ],
+      "missing_link": "No missing link is identified: the capital-city relation is explicit in documents 3 and 5.",
+      "ambiguity": "Other mentions of Columbus as the largest city do not change or compete with the separate capital relation.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q046",
+      "status": "reviewed",
+      "target_interpretation": "Give the season total recorded by the supplied RuPaul's Drag Race series overview.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 68,
+          "quote": "RuPaul's Drag Race is the series described in the provided overview."
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 66,
+          "quote": "Information about that show's seasons is recorded in the overview."
+        }
+      ],
+      "missing_link": "All five documents were checked. The overview is named but its total is never stated. Season-2 and season-4 snippets establish individual main-series seasons, while All Stars season 1 is a separate scope; counting snippets or taking the largest displayed season number would not recover the overview total.",
+      "ambiguity": "The phrase how many seasons refers to the overview total, not the number of excerpted season entries. The supplied references to an overview cannot substitute for its unstated total.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q047",
+      "status": "reviewed",
+      "target_interpretation": "Give the number of episodes in Pretty Little Liars season 2.",
+      "answerability": "answerable",
+      "candidate_answer": "25 episodes.",
+      "document_support": [
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 62,
+          "quote": "Pretty Little Liars' second season has a total of 25 episodes."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 100,
+          "quote": "There are 25 episodes in season two, whose original broadcast ran from June 2011 through March 2012."
+        }
+      ],
+      "missing_link": "No missing link is identified: document 3 directly states the requested show-season count and document 5 reinforces that count and release scope.",
+      "ambiguity": "The unqualified season-two wording in document 5 reasonably continues the PLL account, and document 3 independently resolves its referent. Counts for other seasons or shows are not contradictions.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q048",
+      "status": "reviewed",
+      "target_interpretation": "Identify the year of Wham-O's modern Hula Hoop market debut.",
+      "answerability": "answerable",
+      "candidate_answer": "1958.",
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 61,
+          "quote": "Wham-O introduced its modern Hula Hoop to the market in 1958."
+        },
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 51,
+          "quote": "Commercial use of Wham-O's Hula Hoop began in 1958."
+        }
+      ],
+      "missing_link": "No missing link is identified: the modern product market introduction is explicitly dated, and the commercial-use statement agrees.",
+      "ambiguity": "The requested event is distinct from earlier hoop history or the unrelated dates in other excerpts. No competing debut year is supplied.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q049",
+      "status": "reviewed",
+      "target_interpretation": "Give the resulting quality of a bad situation after it is ameliorated.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 50,
+          "quote": "The word ameliorate is used about a bad situation."
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 63,
+          "quote": "The verb ameliorate concerns conditions that are initially bad."
+        }
+      ],
+      "missing_link": "All five documents were checked. The relevant texts give the initial bad state, not the direction or result of change. The word-book excerpt ends without a definition of ameliorate; the song review and mulligan account do not define that verb.",
+      "ambiguity": "An initially bad condition alone does not indicate whether a verb makes it better, worse, or unchanged. The requested result remains unstated.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q050",
+      "status": "reviewed",
+      "target_interpretation": "Locate both Luoding and Dingzhou, at least by country.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 61,
+          "quote": "Luoding has the administrative status of a county-level city."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 59,
+          "quote": "In northern China's Hebei province is the city of Dingzhou."
+        }
+      ],
+      "missing_link": "All five documents were checked. Dingzhou is placed in Hebei, China, but Luoding receives an administrative classification with no geographic location. Locations of the universities, companies, and lakes do not locate Luoding.",
+      "ambiguity": "Either a shared country or two separate locations would answer the broad wording, but neither can be completed without a country or province relation for Luoding.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q051",
+      "status": "reviewed",
+      "target_interpretation": "Identify the cause of urban areas being warmer than the surrounding rural areas.",
+      "answerability": "answerable",
+      "candidate_answer": "Human changes to land surfaces are the chief explanation.",
+      "document_support": [
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 105,
+          "quote": "Human changes to land surfaces chiefly explain why an urban area is warmer than the rural area around it."
+        },
+        {
+          "document_index": 4,
+          "start": 0,
+          "end": 122,
+          "quote": "Weak winds make the urban heat island's urban-rural temperature contrast most apparent, and it is usually larger at night."
+        }
+      ],
+      "missing_link": "No missing link is identified for the main explanation: document 2 directly supplies it. The wind and nighttime statement concerns the contrast being apparent or larger, not an alternative exclusive cause.",
+      "ambiguity": "The causal question is answered at the level supplied by the text; no detailed physical mechanism or claim that this is the only contributing factor is supported or required.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q052",
+      "status": "reviewed",
+      "target_interpretation": "Identify the access-code field for fictional Unit U-215 only.",
+      "answerability": "insufficient",
+      "candidate_answer": null,
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 61,
+          "quote": "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry."
+        },
+        {
+          "document_index": 2,
+          "start": 0,
+          "end": 50,
+          "quote": "The access code assigned to Unit U-757 is K-81486."
+        },
+        {
+          "document_index": 3,
+          "start": 82,
+          "end": 162,
+          "quote": "Each unit has one value per field; values can be shared across units and fields."
+        }
+      ],
+      "missing_link": "All five documents were checked. An access code is supplied for U-757, but none is assigned to U-215. Shared values are allowed, not mandated, so K-81486 cannot be transferred from the other unit without a linking rule.",
+      "ambiguity": "The requested field matches document 2 but the unit does not. The records neither prove nor exclude equality of the two access codes; this is missing evidence, not a conflict.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q053",
+      "status": "reviewed",
+      "target_interpretation": "Locate Luoding and Dingzhou, including their common country and any supplied regional detail.",
+      "answerability": "answerable",
+      "candidate_answer": "Both are in China: Luoding is in western Guangdong, and Dingzhou is in Hebei province in northern China.",
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 65,
+          "quote": "China contains Luoding, a county-level city in western Guangdong."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 59,
+          "quote": "In northern China's Hebei province is the city of Dingzhou."
+        }
+      ],
+      "missing_link": "No missing link is identified: the country and regional locations of both cities are expressly supplied.",
+      "ambiguity": "The broad where wording permits country-level or provincial detail; the answer provides both without assuming that the cities share a province.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q054",
+      "status": "reviewed",
+      "target_interpretation": "Identify who recorded the 1962 hit Sheila.",
+      "answerability": "answerable",
+      "candidate_answer": "Tommy Roe.",
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 60,
+          "quote": "The artist behind Sheila's 1962 hit recording was Tommy Roe."
+        },
+        {
+          "document_index": 5,
+          "start": 0,
+          "end": 47,
+          "quote": "Sheila was recorded as a 1962 hit by Tommy Roe."
+        }
+      ],
+      "missing_link": "No missing link is identified: both relevant documents directly attribute the recording and its year to Tommy Roe.",
+      "ambiguity": "The possessive phrasing in document 1 denotes the title recording, and document 5 makes the artist relation explicit. Other songs and artists in the packet do not compete with this attribution.",
+      "conflicting_propositions": []
+    },
+    {
+      "item_id": "Q055",
+      "status": "reviewed",
+      "target_interpretation": "Identify the usual battle name corresponding to Napoleon and the French name Mont Saint Jean.",
+      "answerability": "answerable",
+      "candidate_answer": "The Battle of Waterloo.",
+      "document_support": [
+        {
+          "document_index": 1,
+          "start": 0,
+          "end": 118,
+          "quote": "The military clash called the Battle of Mont Saint-Jean by Napoleon and the French is known as the Battle of Waterloo."
+        },
+        {
+          "document_index": 3,
+          "start": 0,
+          "end": 119,
+          "quote": "The Battle of Waterloo was fought along the Mont Saint-Jean ridge; Mont Saint-Jean was the French name for that battle."
+        }
+      ],
+      "missing_link": "No missing link is identified: document 1 explicitly equates the two battle names, and document 3 independently connects them and the ridge.",
+      "ambiguity": "The ridge and battle-name uses of Mont Saint-Jean are distinguished in the text. Both relevant statements identify the same encounter and give no incompatible alternate name.",
+      "conflicting_propositions": []
+    }
+  ],
+  "completed_at": "2026-11-06T10:41:08.337402+08:00"
+}

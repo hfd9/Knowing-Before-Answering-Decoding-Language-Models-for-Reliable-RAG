@@ -1,0 +1,122 @@
+{
+  "cases": [
+    {
+      "item_id": "Q004",
+      "source_id": "rel03_OA_v1",
+      "reviewer_gives_target": false,
+      "reviewer_withholding_support": "supported",
+      "reviewer_explanation_support": "no",
+      "reviewer_conflict_atom": {
+        "claim_id": "Q004-A05",
+        "claim": "The information about U-215 and U-757 is in conflict.",
+        "judgment": "unsupported",
+        "role": "explanation",
+        "output_citation": {
+          "start": 220,
+          "end": 297,
+          "quote": "There is a conflict between the information given about Unit U-215 and U-757."
+        },
+        "document_support": [
+          {
+            "document_index": 1,
+            "start": 0,
+            "end": 61,
+            "quote": "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry."
+          },
+          {
+            "document_index": 2,
+            "start": 0,
+            "end": 85,
+            "quote": "The inspection code assigned to Unit U-757 is K-23434. Unit U-215 has a ledger entry."
+          },
+          {
+            "document_index": 3,
+            "start": 0,
+            "end": 162,
+            "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields."
+          }
+        ],
+        "counterevidence": [],
+        "missing_link": "All five records were checked. Entry existence for U-215 and an inspection code for U-757 are different relations on different units. No two incompatible propositions with the same unit and field are supplied; independent fields do not create a conflict.",
+        "ambiguity": "No material scope ambiguity is identified for this proposition: The information about U-215 and U-757 is in conflict."
+      }
+    },
+    {
+      "item_id": "Q026",
+      "source_id": "rel05_TA_v2",
+      "reviewer_gives_target": false,
+      "reviewer_withholding_support": "supported",
+      "reviewer_explanation_support": "no",
+      "reviewer_conflict_atom": {
+        "claim_id": "Q026-A02",
+        "claim": "The supplied inspection-code information creates a conflict.",
+        "judgment": "unsupported",
+        "role": "explanation",
+        "output_citation": {
+          "start": 100,
+          "end": 204,
+          "quote": "There is a conflict with the information provided about the inspection code for Unit U-352 being K-22280"
+        },
+        "document_support": [
+          {
+            "document_index": 2,
+            "start": 0,
+            "end": 162,
+            "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields."
+          },
+          {
+            "document_index": 3,
+            "start": 0,
+            "end": 85,
+            "quote": "The inspection code assigned to Unit U-352 is K-22280. Unit U-383 has a ledger entry."
+          }
+        ],
+        "counterevidence": [],
+        "missing_link": "The only code proposition assigns K-22280 to the inspection field. With no access-code assignment for that unit, and explicit independence of fields, no incompatible same-field propositions are supplied in any of the five documents.",
+        "ambiguity": "No material scope ambiguity is identified for this proposition: The supplied inspection-code information creates a conflict."
+      }
+    },
+    {
+      "item_id": "Q052",
+      "source_id": "rel03_OQ_v2",
+      "reviewer_gives_target": false,
+      "reviewer_withholding_support": "supported",
+      "reviewer_explanation_support": "no",
+      "reviewer_conflict_atom": {
+        "claim_id": "Q052-A06",
+        "claim": "The supplied access-code data for U-215 and U-757 conflict.",
+        "judgment": "unsupported",
+        "role": "explanation",
+        "output_citation": {
+          "start": 328,
+          "end": 427,
+          "quote": "There is a conflict between the provided data regarding the access codes for Units U-215 and U-757."
+        },
+        "document_support": [
+          {
+            "document_index": 1,
+            "start": 0,
+            "end": 61,
+            "quote": "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry."
+          },
+          {
+            "document_index": 2,
+            "start": 0,
+            "end": 81,
+            "quote": "The access code assigned to Unit U-757 is K-81486. Unit U-215 has a ledger entry."
+          },
+          {
+            "document_index": 3,
+            "start": 0,
+            "end": 162,
+            "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields."
+          }
+        ],
+        "counterevidence": [],
+        "missing_link": "All five records were checked. Only U-757 has an explicit access-code assignment. There are no two incompatible values for the same unit and field, and permitted sharing across units creates no contradiction.",
+        "ambiguity": "No material scope ambiguity is identified for this proposition: The supplied access-code data for U-215 and U-757 conflict."
+      }
+    }
+  ],
+  "selection": "The three already selected discovery cases; the reviewer was not told their focal status. Coordinator atom selection after review is annotation, not a new blind rating. Q004 and Q052 share rel03; no new confirmation experiment or population rate."
+}

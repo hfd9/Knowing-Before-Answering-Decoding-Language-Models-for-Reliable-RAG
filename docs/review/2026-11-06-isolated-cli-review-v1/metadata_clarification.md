@@ -1,0 +1,3 @@
+# Receipt field mapping clarification
+
+The original coordinator receipt is immutable and must not be amended. The form field sealed_input_review_completed_at must equal input_seal.json.sealed_at, exactly `2026-11-06T02:44:42.913163+00:00`. The form field sealed_input_review_sha256 must equal input_seal.json.input_review_sha256. The receipt schema intentionally has no input_review_completed_at field. The reviewer's stage-1 completion time remains separately recorded in its stage-1 context and summary. This clarifies metadata mapping only; it gives no semantic scoring feedback and does not change any input judgment, source, seal, or claim judgment.

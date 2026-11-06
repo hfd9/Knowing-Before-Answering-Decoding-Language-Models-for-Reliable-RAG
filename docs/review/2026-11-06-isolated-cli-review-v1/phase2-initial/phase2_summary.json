@@ -1,0 +1,63 @@
+{
+  "reviewer_id": "CLI20261106R01",
+  "stage": "answer_review",
+  "status": "semantic_review_complete_seal_metadata_incomplete",
+  "input_seal": {
+    "sha256_verified_before_reading_answers": true,
+    "sealed_input_review_sha256": "7dc1ef99d32e5a8a8523279f35096bf449393f5505a90ed721870f753ce57d00",
+    "stage1_files_preserved_byte_for_byte": true,
+    "stage1_files_verified": 11,
+    "metadata_issue": "input_seal.json omits input_review_completed_at. The required sealed_input_review_completed_at remains null; no value was invented or substituted."
+  },
+  "files_written": [
+    "claim_review.json",
+    "output_context.json",
+    "output_reading_log.json",
+    "output_validation_report.json",
+    "author_claim_review.py",
+    "validate_claim_review.py",
+    "stage2_preservation_baseline.json"
+  ],
+  "counts": {
+    "answers_reviewed_completely": 55,
+    "items_unreviewed": 0,
+    "original_units_preserved": 82,
+    "atomic_claims": 172,
+    "atomic_judgments": {
+      "supported": 113,
+      "unsupported": 42,
+      "contradicted": 14,
+      "ambiguous": 3
+    },
+    "target_claim_supported": {
+      "supported": 23,
+      "unsupported": 24,
+      "not_applicable": 8
+    },
+    "withholding_matches_gap": {
+      "supported": 6,
+      "contradicted": 2,
+      "not_applicable": 47
+    },
+    "explanation_all_claims_supported": {
+      "yes": 23,
+      "no": 21,
+      "ambiguous": 1,
+      "not_applicable": 10
+    }
+  },
+  "validation": {
+    "structural_and_citation_checks_passed": true,
+    "output_citations_verified": 172,
+    "document_citations_verified": 249,
+    "source_spans_and_hashes_preserved": true,
+    "summary_reductions_verified": true,
+    "overall_passed": false,
+    "remaining_requirement": "Resolve the missing completion-time metadata required by phase2_task.md. A clarification request has been sent."
+  },
+  "exposure_limitations": [
+    "The designated answers were read only after verifying the input seal hash.",
+    "No author labels, coordinator mappings, comparisons, external sources, or project-history materials were inspected.",
+    "This same-session review and its coverage declarations do not establish automatic independent approval."
+  ]
+}

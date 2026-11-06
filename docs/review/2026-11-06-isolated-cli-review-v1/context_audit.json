@@ -1,0 +1,38 @@
+{
+  "exposure_categories": {
+    "specific_research_project_history": {
+      "status": "absent",
+      "scope": "No specific research project history appears in the context already received."
+    },
+    "prior_author_judgments_or_label_counts": {
+      "status": "absent",
+      "scope": "No prior author judgments or label counts appear in the context already received."
+    },
+    "model_answer_or_probe_result_summaries": {
+      "status": "absent",
+      "scope": "No model answer summaries or probe-result summaries appear in the context already received."
+    },
+    "coordinator_case_mappings": {
+      "status": "absent",
+      "scope": "No coordinator case mappings appear in the context already received."
+    },
+    "project_specific_handoff": {
+      "status": "absent",
+      "scope": "No project-specific handoff content, such as the contents of an AGENTS.md file, has been received."
+    },
+    "session_environment_metadata": {
+      "status": "present",
+      "scope": "Workspace and session metadata have been received. These do not establish project history or review independence."
+    },
+    "review_packet": {
+      "status": "absent",
+      "scope": "No review packet has been supplied."
+    }
+  },
+  "uncertainty": {
+    "unseen_files_external_material_and_prior_sessions": "unknown",
+    "limits": "Absence refers only to the context already received. No tools were used, no files were inspected, and no examples were assessed. Independence is not established merely by this being a new session."
+  },
+  "can_proceed_to_input_only_review": false,
+  "review_status": "Awaiting a separate instruction and review input before conducting any review."
+}

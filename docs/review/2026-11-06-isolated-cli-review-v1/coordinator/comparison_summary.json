@@ -1,0 +1,55 @@
+{
+  "items": 55,
+  "reviewer_id": "CLI20261106R01",
+  "endpoint_disagreements": {
+    "input_mode_disagreement": {
+      "count": 9,
+      "item_ids": [
+        "Q007",
+        "Q019",
+        "Q020",
+        "Q024",
+        "Q033",
+        "Q035",
+        "Q037",
+        "Q046",
+        "Q049"
+      ]
+    },
+    "gives_target_disagreement": {
+      "count": 0,
+      "item_ids": []
+    },
+    "target_support_disagreement": {
+      "count": 8,
+      "item_ids": [
+        "Q007",
+        "Q019",
+        "Q020",
+        "Q024",
+        "Q035",
+        "Q037",
+        "Q046",
+        "Q049"
+      ]
+    },
+    "withholding_support_disagreement": {
+      "count": 0,
+      "item_ids": []
+    },
+    "explanation_support_disagreement": {
+      "count": 6,
+      "item_ids": [
+        "Q008",
+        "Q033",
+        "Q037",
+        "Q040",
+        "Q041",
+        "Q053"
+      ]
+    }
+  },
+  "adjudication": null,
+  "claim_alignment_policy": "No automatic claim-index matching or semantic adjudication.",
+  "interpretation": "Endpoint disagreement only; neither rating is automatically gold. Different atomic decompositions are not aligned by index. This selected55 package does not estimate population accuracy."
+}
