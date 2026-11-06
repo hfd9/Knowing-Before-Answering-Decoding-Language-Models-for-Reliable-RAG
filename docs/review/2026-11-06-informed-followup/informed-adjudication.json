@@ -1,0 +1,279 @@
+{
+  "status": "informed_assistant_adjudication_not_human_or_independent",
+  "source_comparison_sha256": "cd510f5909d42ee474374e3460f46f5059a4f4a0de6d7ff3ca4bd71034cb91d8",
+  "items": [
+    {
+      "item_id": "Q007",
+      "original_author": {
+        "input": "ambiguous",
+        "target": "ambiguous",
+        "explanation": "not_applicable"
+      },
+      "original_cli": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "not_applicable"
+      },
+      "informed_assistant": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "not_applicable",
+        "basis_and_limits": "材料未定义结果方向；普通词义与文本支持分开。"
+      }
+    },
+    {
+      "item_id": "Q008",
+      "original_author": {
+        "input": "insufficient",
+        "target": "not_applicable",
+        "explanation": "ambiguous"
+      },
+      "original_cli": {
+        "input": "insufficient",
+        "target": "not_applicable",
+        "explanation": "no"
+      },
+      "informed_assistant": {
+        "input": "insufficient",
+        "target": "not_applicable",
+        "explanation": "no",
+        "basis_and_limits": "D5提供Statehouse这一开会地点；若“location”限城市仍有歧义。"
+      }
+    },
+    {
+      "item_id": "Q019",
+      "original_author": {
+        "input": "ambiguous",
+        "target": "ambiguous",
+        "explanation": "yes"
+      },
+      "original_cli": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "yes"
+      },
+      "informed_assistant": {
+        "input": "ambiguous",
+        "target": "ambiguous",
+        "explanation": "yes",
+        "basis_and_limits": "overview总数与材料中可见条目数量可能是不同问题，无法稳妥消除此歧义。"
+      }
+    },
+    {
+      "item_id": "Q020",
+      "original_author": {
+        "input": "ambiguous",
+        "target": "ambiguous",
+        "explanation": "no"
+      },
+      "original_cli": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "no"
+      },
+      "informed_assistant": {
+        "input": "ambiguous",
+        "target": "ambiguous",
+        "explanation": "no",
+        "basis_and_limits": "D5的Sheila可能指作品或人物；D1仅是作品名，不能支持D1直接蕴含录制者。"
+      }
+    },
+    {
+      "item_id": "Q024",
+      "original_author": {
+        "input": "ambiguous",
+        "target": "ambiguous",
+        "explanation": "yes"
+      },
+      "original_cli": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "yes"
+      },
+      "informed_assistant": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "yes",
+        "basis_and_limits": "chess-like和laser不能必然蕴含board form；相关单独描述有据。"
+      }
+    },
+    {
+      "item_id": "Q033",
+      "original_author": {
+        "input": "ambiguous",
+        "target": "unsupported",
+        "explanation": "no"
+      },
+      "original_cli": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "ambiguous"
+      },
+      "informed_assistant": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "ambiguous",
+        "basis_and_limits": "现象名称不是额外机制；两项直接关系否认在文档范围与现实范围间有歧义。"
+      }
+    },
+    {
+      "item_id": "Q035",
+      "original_author": {
+        "input": "ambiguous",
+        "target": "ambiguous",
+        "explanation": "no"
+      },
+      "original_cli": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "no"
+      },
+      "informed_assistant": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "no",
+        "basis_and_limits": "D4记弱风使差异明显，不等于给出普遍成因；串联夜间因果无依据。"
+      }
+    },
+    {
+      "item_id": "Q037",
+      "original_author": {
+        "input": "ambiguous",
+        "target": "ambiguous",
+        "explanation": "yes"
+      },
+      "original_cli": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "no"
+      },
+      "informed_assistant": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "no",
+        "basis_and_limits": "chess-like不足以推出board form，解释中将其作为推出依据亦无据。"
+      }
+    },
+    {
+      "item_id": "Q040",
+      "original_author": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "ambiguous"
+      },
+      "original_cli": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "no"
+      },
+      "informed_assistant": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "no",
+        "basis_and_limits": "D3使用同一地名指山脊，并未把该词赋为战役名称；题目别名关系缺失。"
+      }
+    },
+    {
+      "item_id": "Q041",
+      "original_author": {
+        "input": "answerable",
+        "target": "supported",
+        "explanation": "ambiguous"
+      },
+      "original_cli": {
+        "input": "answerable",
+        "target": "supported",
+        "explanation": "no"
+      },
+      "informed_assistant": {
+        "input": "answerable",
+        "target": "supported",
+        "explanation": "ambiguous",
+        "basis_and_limits": "D5确有导演、电影、喜剧及电视信息；回答specific type and form的具体否认范围不明。"
+      }
+    },
+    {
+      "item_id": "Q046",
+      "original_author": {
+        "input": "ambiguous",
+        "target": "ambiguous",
+        "explanation": "yes"
+      },
+      "original_cli": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "yes"
+      },
+      "informed_assistant": {
+        "input": "ambiguous",
+        "target": "ambiguous",
+        "explanation": "yes",
+        "basis_and_limits": "overview总数与材料可见季条目数量范围不清，同Q019。"
+      }
+    },
+    {
+      "item_id": "Q049",
+      "original_author": {
+        "input": "ambiguous",
+        "target": "ambiguous",
+        "explanation": "not_applicable"
+      },
+      "original_cli": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "not_applicable"
+      },
+      "informed_assistant": {
+        "input": "insufficient",
+        "target": "unsupported",
+        "explanation": "not_applicable",
+        "basis_and_limits": "材料只给bad起点，不给结果方向；不要把外部词义归因给材料。"
+      }
+    },
+    {
+      "item_id": "Q053",
+      "original_author": {
+        "input": "answerable",
+        "target": "unsupported",
+        "explanation": "yes"
+      },
+      "original_cli": {
+        "input": "answerable",
+        "target": "unsupported",
+        "explanation": "not_applicable"
+      },
+      "informed_assistant": {
+        "input": "answerable",
+        "target": "unsupported",
+        "explanation": "not_applicable",
+        "basis_and_limits": "northern限定China而非Hebei内位置；无额外独立解释，分歧主要在目标/解释角色。"
+      }
+    }
+  ],
+  "focal_scope_judgments": [
+    {
+      "item_id": "Q004",
+      "withholding": "supported",
+      "unsupported_conflict": "yes",
+      "narrow_target_conflict": "unknown",
+      "reason": "冲突指代两个单位的信息，未明确落在目标字段。"
+    },
+    {
+      "item_id": "Q026",
+      "withholding": "supported",
+      "unsupported_conflict": "yes",
+      "narrow_target_conflict": "no",
+      "reason": "回答明确称所指inspection冲突不涉及目标access。"
+    },
+    {
+      "item_id": "Q052",
+      "withholding": "supported",
+      "unsupported_conflict": "yes",
+      "narrow_target_conflict": "unknown",
+      "reason": "冲突指两个单位access数据，是否明确断言目标同一字段互斥仍不确定。"
+    }
+  ],
+  "formal_independent_approvals_added": 0,
+  "formal_gate": false,
+  "gpu_launch_ready": false
+}
