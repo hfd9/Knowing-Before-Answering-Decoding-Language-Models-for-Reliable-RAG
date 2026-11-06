@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新CPU配套完成：[11月6日评分配套记录](2026-11-06-explanation-scope-scoring-contract.md) / [使用说明](../explanation_scope_scoring_contract.md) / [机器检查](2026-11-06-explanation-scope-scoring-contract.json) / [第二次归档](2026-11-06-code-submission-02.md) / [清单](2026-11-06-code-submission-02.json)。落实S/CT及解释缺席/过宽否认端点、W/E/J完整分母与unknown计算，原草案保持；17CPU0.343秒、两空模板verify和合成Fraction手算/两summarize通过，78来源/12拟合封存保持。工具只处理人工声明，不查字节或逐主张引用，不认证独立性；实际审核0、空规划48行非材料、率null/gate/GPUfalse。CPU配套已完成，下一步仍真实审核后人工采纳，不再增加接收层或自动新材料。预算0/标签null/380封存，按长期授权提交推送，实际哈希见Git及回复。
+
 最新授权归档：[11月6日提交推送记录](2026-11-06-code-submission.md) / [清单与检查](2026-11-06-code-submission.json)。用户建立“每次任务完成后做好记录并提交推送”的长期授权，已写入AGENTS并替换原逐次授权默认；沿用hfd9身份，无变更不空提交、不强推或改写历史。本轮归档父4ce17d6后的恢复、审核文件检查、条件性草案与交接，共10文件；72原来源/3草案载荷/12拟合封存保持，沿用本轮接收verify及符号设计检查，无新实验。实际提交及远端哈希以Git和回复为准；原阶段未提交记录保留历史，预算0/独立语义0/正式gate=false/380封存保持。
 
 最新后续准备：[11月6日动作记录](2026-11-06-explanation-evidence-scope-draft.md) / [条件性草案](../explanation_evidence_scope_draft.md) / [机器设计](../../prompts/explanation_evidence_scope_draft_v1.json) / [实际检查](2026-11-06-explanation-evidence-scope-draft.json)。限定范围46候选JSON中没有已填写55条提交，原接收verify exit0、已审0。拟议12新场景×四条件48回答，主要比较其他实体真冲突是否增加“有据保留未知且无据目标冲突”，完整分母/unknown界/停止规则已写明；实际独立审核后人工决定采纳，当前非可运行协议。九联合状态/81差界/625符号赋值及映射检查通过，72原来源/12拟合封存保持；无新材料、语义评分、模型、采集或GPU入口。预算0/独立语义0/正式gate=false/380封存，未提交推送。

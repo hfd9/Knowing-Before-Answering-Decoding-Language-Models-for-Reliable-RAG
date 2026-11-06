@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "precommit_checks_complete_actual_commit_and_push_from_git",
+  "checked_at": "2026-11-06T02:00:39.476840+00:00",
+  "standing_authorization": "每次完成任务后记住提交推送代码",
+  "parent_commit": "c9eb0f4b702049fbdd3006983b15c8f38ed776e4",
+  "remote_main_observed_before_commit": "c9eb0f4b702049fbdd3006983b15c8f38ed776e4",
+  "remote_observation_command": "git ls-remote origin refs/heads/main",
+  "files": [
+    "AGENTS.md",
+    "docs/activity_log.md",
+    "docs/records/README.md",
+    "docs/explanation_scope_scoring_contract.md",
+    "prompts/explanation_scope_scoring_contract_v1.json",
+    "scripts/explanation_scope_metrics.py",
+    "tests/test_explanation_scope_metrics.py",
+    "docs/records/2026-11-06-explanation-scope-scoring-contract.md",
+    "docs/records/2026-11-06-explanation-scope-scoring-contract.json",
+    "docs/records/2026-11-06-code-submission-02.md",
+    "docs/records/2026-11-06-code-submission-02.json"
+  ],
+  "file_counts": {
+    "total": 11,
+    "python": 2,
+    "json": 3,
+    "markdown": 6
+  },
+  "payload_sha256": {
+    "docs/explanation_scope_scoring_contract.md": "482f504e3c6800f4fb10edb9800396d75577293b5531404132cfd8efb475016b",
+    "prompts/explanation_scope_scoring_contract_v1.json": "581f4377979718edd7f68dd3f206e3766cda52577cb876bc552b90b3ecdcc2a4",
+    "scripts/explanation_scope_metrics.py": "6c960688f76f4e0c3c81185ab57599827d9ef72ccdfd92b89c5f97819af7b3ea",
+    "tests/test_explanation_scope_metrics.py": "b897214b6f5aa75c1d1bdeb7a1df95a3cc1a23bd37a537d1a9f0f4c0aa3c53a9",
+    "docs/records/2026-11-06-explanation-scope-scoring-contract.md": "a70f9917f563f9c516fb85f4e87d48c0eba9ddbf81f9bbb69d7f7ab6524d3744",
+    "docs/records/2026-11-06-explanation-scope-scoring-contract.json": "be748c209ca93517388ecdc311a305132e8f4fd16147b0092436577276c1b28d"
+  },
+  "checks": {
+    "final_new_CPU_tests": 17,
+    "final_unittest_seconds": 0.343,
+    "empty_template_cross_process_verify_exit": [
+      0,
+      0
+    ],
+    "synthetic_summarize_exit": [
+      0,
+      0
+    ],
+    "independent_Fraction_reference_matches": true,
+    "original_source_hashes_unchanged": 78,
+    "original_fit_sealed_files_unchanged": 12,
+    "python_AST": 2,
+    "JSON_parse": 3,
+    "new_local_links_including_navigation": 24,
+    "new_payload_whitespace": true,
+    "git_diff_check_exit": 0,
+    "author_and_committer": "hfd9",
+    "identity_override_used": false,
+    "old_tests_rerun": false,
+    "old_experiment_full_verify_rerun": false
+  },
+  "boundaries": {
+    "actual_new_materials": 0,
+    "actual_new_semantic_scores": 0,
+    "actual_independent_approvals": 0,
+    "new_model_calls": 0,
+    "new_fits": 0,
+    "remaining_original_design_fits": 0,
+    "formal_gate": false,
+    "gpu_launch_ready": false,
+    "held_out_380_remain_sealed": true
+  },
+  "git_result_policy": {
+    "record_is_part_of_archival_commit": true,
+    "commit_hash_from_git_and_reply": true,
+    "actual_push_success_requires_live_remote_hash_match": true,
+    "force_push": false,
+    "rewrite_history": false
+  }
+}

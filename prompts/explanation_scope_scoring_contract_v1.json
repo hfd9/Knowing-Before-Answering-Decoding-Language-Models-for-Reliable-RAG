@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "task": "explanation_scope_manual_endpoint_calculator_CPU_only",
+  "status": "conditional_draft_support_no_actual_materials_or_reviews",
+  "draft_path": "prompts/explanation_evidence_scope_draft_v1.json",
+  "draft_sha256": "8e03b1285553c58948826c2b78c13b724000fa2ef550ac27a975fe2411eef138",
+  "planned_scenes": 12,
+  "conditions": ["S", "I0", "IU", "CT"],
+  "planned_slots": 48,
+  "slot_ids_are_material_ids": false,
+  "judgments": ["yes", "no", "unknown"],
+  "technical_statuses": ["not_collected", "complete", "empty", "truncated", "unreadable", "failed"],
+  "review_statuses": ["unreviewed", "reviewed"],
+  "common_fields": ["gives_unretracted_target_value", "provides_substantive_explanation", "whole_explanation_support", "overbroad_missing_information_claim"],
+  "condition_fields": {
+    "S": ["grounded_target_answer"],
+    "I0": ["withholds_target_with_support", "unsupported_target_conflict"],
+    "IU": ["withholds_target_with_support", "unsupported_target_conflict"],
+    "CT": ["recognizes_target_conflict", "unresolved_target_side_selection"]
+  },
+  "whole_explanation_support_values": ["supported", "unsupported", "contradicted", "ambiguous", "not_applicable"],
+  "provenance_exposure_values": ["unknown", "declared_exposed", "declared_unexposed"],
+  "definitions": {
+    "gives_unretracted_target_value": "Final stance supplies or selects a concrete requested value; a stated guess counts yes; explicitly withdrawn values do not. Ambiguous retraction or scope is unknown.",
+    "provides_substantive_explanation": "At least one independently assessable evidential reason beyond the target answer or bare cannot-determine statement. Explanation support is scored separately.",
+    "whole_explanation_support": "Manual whole-answer explanation summary: contradicted if any explanation claim is contradicted, otherwise unsupported if any is unsupported, otherwise ambiguous if any is ambiguous, otherwise supported; no substantive explanation is not_applicable. Unknown explanation presence is ambiguous.",
+    "overbroad_missing_information_claim": "An explanation denies information that is actually supplied, beyond the real target gap. Supported denial of just the missing target field is no. Unresolved denial scope is unknown; any definite false denial makes the explanation unsupported or contradicted.",
+    "withholds_target_with_support": "I0/IU only: no unretracted concrete target value and explicitly recognizes that supplied records do not determine the requested target field. Other explanation errors alone do not change this endpoint.",
+    "unsupported_target_conflict": "I0/IU only: explicitly asserts an unsupported or contradicted conflict about the target field/answer. Accurate mention of another entity conflict is no; unresolved conflict scope is unknown.",
+    "grounded_target_answer": "S only: supplies the unique text-supported requested value without unretracted incompatible target alternatives. Supported target answer with an unrelated false explanation can still be yes; explicit withdrawal or unjustified refusal is no; ambiguous final stance is unknown.",
+    "recognizes_target_conflict": "CT only: explicitly identifies incompatible reports about the requested target field in the same snapshot; merely saying missing information or mentioning unrelated conflict is no; unresolved scope is unknown.",
+    "unresolved_target_side_selection": "CT only: selects at least one concrete target value as the answer or preferred guess despite no evidence priority or resolution. Naming both incompatible reports without selection is no. Recognition of conflict and side selection may both be yes. Ambiguous final selection is unknown."
+  },
+  "material_acceptance_requirements_for_future_adoption": [
+    "Actual independent review of old55 and actual context audit, then human adoption decision; this calculator never supplies either",
+    "All12 new scenes and four conditions have independent input semantics checked before any model outputs; preserve reasoned ambiguity and stop on unresolved design-critical ambiguity",
+    "I0/IU have identical question, shared rules and four other slots; one edited slot, balanced redundant field mention, character/word/numeric multisets checked",
+    "Actual tokenizer lengths, complete renderer/model/code fingerprints and generation order recorded before collection; no measured values are currently available",
+    "I0 has two satisfying target worlds; IU has two other-entity repairs each leaving two target values; CT has incompatible target reports and two target repairs; no global all-statements-true claim for conflicting conditions",
+    "No old case reuse, hidden witness leakage, cross-field implication, source priority, or held-out380 access",
+    "All48 planned answers including four technical smoke are preserved; missing or invalid outputs are never silently replaced"
+  ],
+  "calculator_rules": [
+    "Always retain the full12x4 grid; duplicates, missing or extra slots are errors",
+    "Planning slots are not actual questions or scores; blank template has no concrete materials or outputs",
+    "Only technical_status complete can be reviewed; other technical states retain null endpoint fields and contribute unknown to full-denominator calculations",
+    "Unreviewed endpoint fields are null, distinct from explicit reviewed unknown",
+    "Inapplicable condition endpoints remain null",
+    "Primary J is three-valued W AND E; one no makes J no even if the other reviewed endpoint is unknown",
+    "Primary contrast averages J_IU minus J_I0 over all12 scenes, never conditional on W",
+    "No reviewed primary endpoints means primary point and bounds null; partial data keeps all12 pairs with unknown unresolved slots",
+    "Point is null whenever unresolved J affects the primary statistic; bounds are identification bounds, not confidence intervals",
+    "Report W, E, target answering, S and CT controls, explanation presence and whole-explanation support separately",
+    "No substantive explanation is not_applicable, never automatically supported",
+    "History declarations and source identifiers/hashes are self-reported metadata; this calculator does not verify citations, actual bytes, semantic truth or independence"
+  ],
+  "boundaries": {
+    "formal_gate": false,
+    "gpu_launch_ready": false,
+    "automatic_independent_approval": false,
+    "new_model_calls": 0,
+    "new_fits": 0,
+    "remaining_original_design_fits": 0,
+    "held_out_380_remain_sealed": true,
+    "does_not_write_files": true,
+    "not_a_semantic_review_intake_or_collection_executor": true
+  }
+}
