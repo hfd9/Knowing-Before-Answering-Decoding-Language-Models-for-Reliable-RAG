@@ -1,0 +1,129 @@
+item_id,side,claim_id,claim,judgment,output_start,output_end,overlapping_other_claim_ids,note
+Q004,author,Q004_C01,U-215的access code无法由提供记录确定,supported,39,68,Q004-A01,offset overlap only; semantic correspondence unverified
+Q004,author,Q004_C02,文档提供的是U-757的inspection值,supported,126,159,Q004-A02,offset overlap only; semantic correspondence unverified
+Q004,author,Q004_C03,U-215有ledger entry,supported,164,193,Q004-A03,offset overlap only; semantic correspondence unverified
+Q004,author,Q004_C04,两单位已有信息之间存在冲突,unsupported,220,239,Q004-A05,offset overlap only; semantic correspondence unverified
+Q004,CLI,Q004-A01,U-215's access code cannot be determined from these records.,supported,0,94,Q004_C01,offset overlap only; semantic correspondence unverified
+Q004,CLI,Q004-A02,The records mention an inspection code for U-757.,supported,126,159,Q004_C02,offset overlap only; semantic correspondence unverified
+Q004,CLI,Q004-A03,The records mention a ledger entry for U-215.,supported,164,193,Q004_C03,offset overlap only; semantic correspondence unverified
+Q004,CLI,Q004-A04,The records do not provide U-215's access code.,supported,195,218,,offset overlap only; semantic correspondence unverified
+Q004,CLI,Q004-A05,The information about U-215 and U-757 is in conflict.,unsupported,220,297,Q004_C04,offset overlap only; semantic correspondence unverified
+Q007,author,Q007_C01,ameliorate表示使坏状态变好,ambiguous,0,55,Q007-A01,offset overlap only; semantic correspondence unverified
+Q007,CLI,Q007-A01,Ameliorate means to make an initially bad thing better.,unsupported,0,56,Q007_C01,offset overlap only; semantic correspondence unverified
+Q008,author,Q008_C01,Ohio首府没有直接提及,supported,29,51,Q008-A01,offset overlap only; semantic correspondence unverified
+Q008,author,Q008_C02,材料未提供首府身份关系,supported,108,143,Q008-A02,offset overlap only; semantic correspondence unverified
+Q008,author,Q008_C03,材料没有州政府位置的信息,ambiguous,147,188,Q008-A03,offset overlap only; semantic correspondence unverified
+Q008,CLI,Q008-A01,The documents do not directly identify Ohio's capital city.,supported,0,78,Q008_C01,offset overlap only; semantic correspondence unverified
+Q008,CLI,Q008-A02,The documents do not state the identity of Ohio's state capital.,supported,79,143,Q008_C02,offset overlap only; semantic correspondence unverified
+Q008,CLI,Q008-A03,The documents contain no information about the location of Ohio's state government.,contradicted,144,188,Q008_C03,offset overlap only; semantic correspondence unverified
+Q019,author,Q019_C01,overview或当前列项数为two,ambiguous,62,106,Q019-A01,offset overlap only; semantic correspondence unverified
+Q019,author,Q019_C02,可见第二季条目时间2010,supported,108,126,Q019-A02,offset overlap only; semantic correspondence unverified
+Q019,author,Q019_C03,可见第四季条目时间2012,supported,131,149,Q019-A03,offset overlap only; semantic correspondence unverified
+Q019,CLI,Q019-A01,The supplied series overview gives a total of two seasons for RuPaul's Drag Race.,unsupported,0,106,Q019_C01,offset overlap only; semantic correspondence unverified
+Q019,CLI,Q019-A02,The supplied material lists RuPaul's Drag Race season 2 with a 2010 broadcast.,supported,108,126,Q019_C02,offset overlap only; semantic correspondence unverified
+Q019,CLI,Q019-A03,The supplied material lists RuPaul's Drag Race season 4 with a 2012 broadcast.,supported,131,149,Q019_C03,offset overlap only; semantic correspondence unverified
+Q020,author,Q020_C01,Sheila是所问唱片的录制者,ambiguous,0,42,Q020-A01,offset overlap only; semantic correspondence unverified
+Q020,author,Q020_C02,D1直接蕴含Sheila是录制者,unsupported,56,89,Q020-A02,offset overlap only; semantic correspondence unverified
+Q020,author,Q020_C03,所引D1作品名年份原文准确,supported,105,141,Q020-A03,offset overlap only; semantic correspondence unverified
+Q020,CLI,Q020-A01,An artist named Sheila recorded the 1962 hit Sheila.,unsupported,0,43,Q020_C01,offset overlap only; semantic correspondence unverified
+Q020,CLI,Q020-A02,The recording-artist attribution can be directly inferred from document 1.,unsupported,44,89,Q020_C02,offset overlap only; semantic correspondence unverified
+Q020,CLI,Q020-A03,Document 1 states that a 1962 hit record was called Sheila.,supported,91,142,Q020_C03,offset overlap only; semantic correspondence unverified
+Q024,author,Q024_C01,Khet是board game,ambiguous,0,20,Q024-A01,offset overlap only; semantic correspondence unverified
+Q024,author,Q024_C02,Khet涉及lasers和abstract strategy,supported,21,59,Q024-A02 Q024-A03,offset overlap only; semantic correspondence unverified
+Q024,author,Q024_C03,Quarto是board game,supported,67,89,Q024-A04,offset overlap only; semantic correspondence unverified
+Q024,author,Q024_C04,Quarto由两人玩,supported,113,126,Q024-A05,offset overlap only; semantic correspondence unverified
+Q024,author,Q024_C05,Khet属于抽象策略游戏描述,supported,139,172,Q024-A06,offset overlap only; semantic correspondence unverified
+Q024,author,Q024_C06,结尾再次说Quarto是board game,supported,177,199,Q024-A07,offset overlap only; semantic correspondence unverified
+Q024,CLI,Q024-A01,Khet is a board game.,unsupported,0,20,Q024_C01,offset overlap only; semantic correspondence unverified
+Q024,CLI,Q024-A02,Khet involves lasers.,supported,21,37,Q024_C02,offset overlap only; semantic correspondence unverified
+Q024,CLI,Q024-A03,Khet involves abstract strategy.,supported,38,59,Q024_C02,offset overlap only; semantic correspondence unverified
+Q024,CLI,Q024-A04,Quarto is a board game.,supported,67,89,Q024_C03,offset overlap only; semantic correspondence unverified
+Q024,CLI,Q024-A05,Quarto is played by two people.,supported,113,126,Q024_C04,offset overlap only; semantic correspondence unverified
+Q024,CLI,Q024-A06,Khet is an abstract strategy game.,supported,139,172,Q024_C05,offset overlap only; semantic correspondence unverified
+Q024,CLI,Q024-A07,Quarto is a board game.,supported,177,199,Q024_C06,offset overlap only; semantic correspondence unverified
+Q026,author,Q026_C01,文档没有U-352具体access code,supported,23,98,Q026-A01,offset overlap only; semantic correspondence unverified
+Q026,author,Q026_C02,已给inspection信息存在冲突,unsupported,100,119,Q026-A02,offset overlap only; semantic correspondence unverified
+Q026,author,Q026_C03,U-352的inspection code是K-22280,supported,160,204,Q026-A02 Q026-A03,offset overlap only; semantic correspondence unverified
+Q026,author,Q026_C04,inspection值不足以确定所问access值,supported,215,250,Q026-A04,offset overlap only; semantic correspondence unverified
+Q026,CLI,Q026-A01,The records contain no access-code assignment for U-352.,supported,0,99,Q026_C01,offset overlap only; semantic correspondence unverified
+Q026,CLI,Q026-A02,The supplied inspection-code information creates a conflict.,unsupported,100,204,Q026_C02 Q026_C03,offset overlap only; semantic correspondence unverified
+Q026,CLI,Q026-A03,U-352's inspection code is K-22280.,supported,156,204,Q026_C03,offset overlap only; semantic correspondence unverified
+Q026,CLI,Q026-A04,That inspection-code value does not determine U-352's access code.,supported,206,250,Q026_C04,offset overlap only; semantic correspondence unverified
+Q033,author,Q033_C01,以urban heat island现象名称解释该温差成因,unsupported,77,115,Q033-A01 Q033-A02,offset overlap only; semantic correspondence unverified
+Q033,author,Q033_C02,温差通常夜间更大,supported,126,149,Q033-A03,offset overlap only; semantic correspondence unverified
+Q033,author,Q033_C03,弱风时温差最明显,supported,154,187,Q033-A04,offset overlap only; semantic correspondence unverified
+Q033,author,Q033_C04,现象与water content没有直接关系,unsupported,208,245,Q033-A05 Q033-A06,offset overlap only; semantic correspondence unverified
+Q033,author,Q033_C05,现象与anthropomorphism没有直接关系,unsupported,249,295,Q033-A05 Q033-A06,offset overlap only; semantic correspondence unverified
+Q033,CLI,Q033-A01,The urban warmth difference is caused by the urban heat island effect.,unsupported,0,115,Q033_C01,offset overlap only; semantic correspondence unverified
+Q033,CLI,Q033-A02,The described urban-rural temperature difference is an urban heat island phenomenon.,supported,91,115,Q033_C01,offset overlap only; semantic correspondence unverified
+Q033,CLI,Q033-A03,The urban heat island difference is usually larger at night.,supported,117,149,Q033_C02,offset overlap only; semantic correspondence unverified
+Q033,CLI,Q033-A04,The urban heat island difference is most apparent when winds are weak.,supported,154,187,Q033_C03,offset overlap only; semantic correspondence unverified
+Q033,CLI,Q033-A05,The urban heat island phenomenon is not directly related to water content.,ambiguous,189,296,Q033_C04 Q033_C05,offset overlap only; semantic correspondence unverified
+Q033,CLI,Q033-A06,The urban heat island phenomenon is not directly related to anthropomorphism.,ambiguous,189,296,Q033_C04 Q033_C05,offset overlap only; semantic correspondence unverified
+Q035,author,Q035_C01,弱风是温差成因,ambiguous,77,97,Q035-A01,offset overlap only; semantic correspondence unverified
+Q035,author,Q035_C02,D4支持把弱风作用称为所问成因,ambiguous,99,125,Q035-A02,offset overlap only; semantic correspondence unverified
+Q035,author,Q035_C03,弱风使现象更明显,supported,132,180,Q035-A03,offset overlap only; semantic correspondence unverified
+Q035,author,Q035_C04,温差通常夜间更大,supported,193,233,Q035-A04 Q035-A05,offset overlap only; semantic correspondence unverified
+Q035,author,Q035_C05,弱风使之明显进而导致夜间差异更大,unsupported,182,233,Q035-A04 Q035-A05,offset overlap only; semantic correspondence unverified
+Q035,CLI,Q035-A01,Weak winds cause urban areas to be warmer than the surrounding rural areas.,unsupported,0,97,Q035_C01,offset overlap only; semantic correspondence unverified
+Q035,CLI,Q035-A02,Document 4 states weak winds as the cause of urban areas being warmer.,unsupported,99,125,Q035_C02,offset overlap only; semantic correspondence unverified
+Q035,CLI,Q035-A03,Weak winds make the urban heat island contrast more apparent.,supported,127,180,Q035_C03,offset overlap only; semantic correspondence unverified
+Q035,CLI,Q035-A04,The urban-rural temperature difference is larger at night.,supported,193,233,Q035_C04 Q035_C05,offset overlap only; semantic correspondence unverified
+Q035,CLI,Q035-A05,Weak winds or increased apparent contrast lead to a larger nighttime temperature difference.,unsupported,182,233,Q035_C04 Q035_C05,offset overlap only; semantic correspondence unverified
+Q037,author,Q037_C01,Khet为board game,ambiguous,0,20,Q037-A01,offset overlap only; semantic correspondence unverified
+Q037,author,Q037_C02,Khet描述涉及chess-like和lasers,supported,47,74,Q037-A02 Q037-A03 Q037-A04,offset overlap only; semantic correspondence unverified
+Q037,author,Q037_C03,Quarto明确是两人board game,supported,82,144,Q037-A05 Q037-A06,offset overlap only; semantic correspondence unverified
+Q037,author,Q037_C04,两者共同属于board games,ambiguous,157,193,Q037-A07 Q037-A08,offset overlap only; semantic correspondence unverified
+Q037,CLI,Q037-A01,Khet is a board game.,unsupported,0,20,Q037_C01,offset overlap only; semantic correspondence unverified
+Q037,CLI,Q037-A02,The supplied Khet description says it is chess-like in rules.,ambiguous,24,63,Q037_C02,offset overlap only; semantic correspondence unverified
+Q037,CLI,Q037-A03,Khet uses lasers.,supported,64,74,Q037_C02,offset overlap only; semantic correspondence unverified
+Q037,CLI,Q037-A04,The chess-like description and lasers establish Khet's board-game form.,unsupported,21,74,Q037_C02,offset overlap only; semantic correspondence unverified
+Q037,CLI,Q037-A05,Quarto is a board game.,supported,82,128,Q037_C03,offset overlap only; semantic correspondence unverified
+Q037,CLI,Q037-A06,Quarto is played by two players.,supported,129,144,Q037_C03,offset overlap only; semantic correspondence unverified
+Q037,CLI,Q037-A07,Khet is a board game.,unsupported,157,193,Q037_C04,offset overlap only; semantic correspondence unverified
+Q037,CLI,Q037-A08,Quarto is a board game.,supported,157,193,Q037_C04,offset overlap only; semantic correspondence unverified
+Q040,author,Q040_C01,用已给法方名称回答所问通常名,unsupported,0,52,Q040-A01,offset overlap only; semantic correspondence unverified
+Q040,author,Q040_C02,D1确给法方名称Mont Saint-Jean,supported,54,77,Q040-A02,offset overlap only; semantic correspondence unverified
+Q040,author,Q040_C03,D3也使用同一个名称,ambiguous,79,115,Q040-A03,offset overlap only; semantic correspondence unverified
+Q040,author,Q040_C04,战役在Mont Saint-Jean山脊交战,supported,132,177,Q040-A04,offset overlap only; semantic correspondence unverified
+Q040,author,Q040_C05,提供文档没有所问名称的互斥赋值,supported,179,240,Q040-A05,offset overlap only; semantic correspondence unverified
+Q040,CLI,Q040-A01,The usual name sought for the battle is the Battle of Mont Saint-Jean.,unsupported,0,52,Q040_C01,offset overlap only; semantic correspondence unverified
+Q040,CLI,Q040-A02,Document 1 names the battle Mont Saint-Jean.,supported,54,77,Q040_C02,offset overlap only; semantic correspondence unverified
+Q040,CLI,Q040-A03,Document 3 uses Mont Saint-Jean as the battle's name.,unsupported,79,115,Q040_C03,offset overlap only; semantic correspondence unverified
+Q040,CLI,Q040-A04,Document 3 confirms the battle was fought along the Mont Saint-Jean ridge.,supported,117,177,Q040_C04,offset overlap only; semantic correspondence unverified
+Q040,CLI,Q040-A05,The supplied documents contain no conflicting information about this battle identification.,supported,179,241,Q040_C05,offset overlap only; semantic correspondence unverified
+Q041,author,Q041_C01,Sorry!是board game,supported,0,22,Q041-A01,offset overlap only; semantic correspondence unverified
+Q041,author,Q041_C02,Barbarossa是塑形German-style board game,supported,30,88,Q041-A02 Q041-A03 Q041-A04,offset overlap only; semantic correspondence unverified
+Q041,author,Q041_C03,没有两位导演娱乐类型/形式信息,ambiguous,90,208,Q041-A05 Q041-A06,offset overlap only; semantic correspondence unverified
+Q041,CLI,Q041-A01,Sorry! is a board game.,supported,0,22,Q041_C01,offset overlap only; semantic correspondence unverified
+Q041,CLI,Q041-A02,Barbarossa is a board game.,supported,30,88,Q041_C02,offset overlap only; semantic correspondence unverified
+Q041,CLI,Q041-A03,Barbarossa uses plasticine shaping.,supported,46,64,Q041_C02,offset overlap only; semantic correspondence unverified
+Q041,CLI,Q041-A04,Barbarossa is German-style.,supported,65,77,Q041_C02,offset overlap only; semantic correspondence unverified
+Q041,CLI,Q041-A05,The documents provide no information about Eldar Ryazanov's entertainment forms.,contradicted,90,208,Q041_C03,offset overlap only; semantic correspondence unverified
+Q041,CLI,Q041-A06,The documents provide no information about Brett Ratner's entertainment forms.,contradicted,90,208,Q041_C03,offset overlap only; semantic correspondence unverified
+Q046,author,Q046_C01,所问overview或可见季条目数为two,ambiguous,62,106,Q046-A01,offset overlap only; semantic correspondence unverified
+Q046,author,Q046_C02,第二季背景条目在2010,supported,108,126,Q046-A02,offset overlap only; semantic correspondence unverified
+Q046,author,Q046_C03,第四季背景条目在2012,supported,131,149,Q046-A03,offset overlap only; semantic correspondence unverified
+Q046,CLI,Q046-A01,The supplied overview gives a total of two seasons for RuPaul's Drag Race.,unsupported,0,106,Q046_C01,offset overlap only; semantic correspondence unverified
+Q046,CLI,Q046-A02,The supplied season-2 entry is dated 2010.,supported,108,126,Q046_C02,offset overlap only; semantic correspondence unverified
+Q046,CLI,Q046-A03,The supplied season-4 entry is dated 2012.,supported,131,149,Q046_C03,offset overlap only; semantic correspondence unverified
+Q049,author,Q049_C01,ameliorate把坏状态改善为better,ambiguous,0,65,Q049-A01,offset overlap only; semantic correspondence unverified
+Q049,CLI,Q049-A01,Ameliorate means to make something initially bad better.,unsupported,0,66,Q049_C01,offset overlap only; semantic correspondence unverified
+Q052,author,Q052_C01,U-215的access值未直接给出,supported,39,63,Q052-A01,offset overlap only; semantic correspondence unverified
+Q052,author,Q052_C02,access与inspection是独立字段,supported,103,157,Q052-A02,offset overlap only; semantic correspondence unverified
+Q052,author,Q052_C03,每单位每字段一个值,supported,162,195,Q052-A03,offset overlap only; semantic correspondence unverified
+Q052,author,Q052_C04,U-757的access值是K-81486,supported,212,247,Q052-A04,offset overlap only; semantic correspondence unverified
+Q052,author,Q052_C05,所给资料不能确定U-215的access值,supported,249,299,Q052-A05,offset overlap only; semantic correspondence unverified
+Q052,author,Q052_C06,U-215和U-757的access资料存在冲突,unsupported,328,347,Q052-A06,offset overlap only; semantic correspondence unverified
+Q052,CLI,Q052-A01,U-215's access code is not directly supplied.,supported,0,87,Q052_C01,offset overlap only; semantic correspondence unverified
+Q052,CLI,Q052-A02,Access code and inspection code are independent fields.,supported,103,157,Q052_C02,offset overlap only; semantic correspondence unverified
+Q052,CLI,Q052-A03,Each unit has one value per field.,supported,162,195,Q052_C03,offset overlap only; semantic correspondence unverified
+Q052,CLI,Q052-A04,U-757's access code is K-81486.,supported,212,247,Q052_C04,offset overlap only; semantic correspondence unverified
+Q052,CLI,Q052-A05,The supplied information cannot determine U-215's access code.,supported,249,326,Q052_C05,offset overlap only; semantic correspondence unverified
+Q052,CLI,Q052-A06,The supplied access-code data for U-215 and U-757 conflict.,unsupported,328,427,Q052_C06,offset overlap only; semantic correspondence unverified
+Q053,author,Q053_C01,"Luoding在western Guangdong, China",supported,0,46,Q053-A01,offset overlap only; semantic correspondence unverified
+Q053,author,Q053_C02,Dingzhou在Hebei北部,unsupported,54,92,Q053-A02 Q053-A03,offset overlap only; semantic correspondence unverified
+Q053,author,Q053_C03,Dingzhou在China,supported,84,99,Q053-A02 Q053-A03,offset overlap only; semantic correspondence unverified
+Q053,CLI,Q053-A01,"Luoding is in western Guangdong, China.",supported,0,46,Q053_C01,offset overlap only; semantic correspondence unverified
+Q053,CLI,Q053-A02,"Dingzhou is in Hebei province, China.",supported,54,99,Q053_C02 Q053_C03,offset overlap only; semantic correspondence unverified
+Q053,CLI,Q053-A03,Dingzhou is in the northern part of Hebei province.,unsupported,69,92,Q053_C02 Q053_C03,offset overlap only; semantic correspondence unverified
