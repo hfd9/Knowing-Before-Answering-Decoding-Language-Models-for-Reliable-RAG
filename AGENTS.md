@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-06（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新中断恢复（2026-11-06）：按用户要求查找上次记忆，见[恢复记录](docs/records/2026-11-06-context-restored-03.md)。上次会话在16:33因使用额度上限中断；其后台测试16:34实际结束，30项通过，含4项新增候选磁盘格式合成写入测试。工作区保留未提交的 `scripts/explanation_scope_cache_writer_fixture.py` 和 `tests/test_explanation_scope_runtime.py` 改动：仅临时目录synthetic原型，尚未审查归档，不能当生产采集器或非合成run恢复。此前预检已提交ae2063e，恢复时实际远端main同哈希；预定run目录不存在。未覆盖、提交或重跑这两处在途改动。下一步应从审查原型、检查边界并续做实际采集路径技术准备接续，不把合成通过当采集授权；正式独立批准0/gate及GPUfalse/预算0/标签null/380封存保持。
+
 最新运行时预检（2026-11-06）：用户要求直接完成后续两步，见[记录](docs/records/2026-11-06-explanation-scope-runtime-preflight.md)/[说明](docs/review/2026-11-06-explanation-scope-runtime-preflight-v1/README.md)。已实现48真实chat输入/prompt/token哈希、生成token实际decode/EOS/上限、只读磁盘缓存检查及空评分包连接；synthetic临时事务集成通过26项真实tokenizer测试，含48合成记录、跨进程重读和中断，首次慢测试主动中断130、缓存词表后通过。实际全7模型文件含两权重分片SHA匹配；沙箱外RTX3090及PyTorch CUDA12.1/bf16可见，GPU为当时只读快照，未加载模型或前向。原事务20/账本11复验及35旧路径哈希、原72来源/12封存/4快照保持。真实生产采集器及非synthetic run写入/恢复尚未实现、无真实回答；正式独立批准0/gate及GPUfalse/预算0/标签null/380封存，不能称GPU就绪，按长期约定提交推送。
 
 最新事务原型（2026-11-06）：用户询问后续并要求继续，已完成[临时目录合成文件事务原型](docs/records/2026-11-06-explanation-scope-transaction-prototype.md)/[说明](docs/explanation_scope_transaction_prototype.md)。只接受/tmp类系统临时子目录及synthetic数据，实际实现POSIX锁、独占attempt、fsync及同目录原子替换；中断/脏文件不自动清理或重答。实现时发现并修复重启后旧标记可被补写的漏洞：只有创建标记的同进程同锁会话可提交，解锁/退出/fork撤销权限。20项CPU临时文件/跨进程/中断测试通过；11原账本及2有限模型测试、29前序文件哈希、旧72来源/12拟合封存/4快照保持。全部合成，无真实输出或run，未证明断电持久性、真实token/EOS/模型指纹或GPU运行；正式独立批准0/gate及GPUfalse/预算0/标签null/380封存。下一步助手继续真实执行准备，但不得因原型通过自动放行采集。
