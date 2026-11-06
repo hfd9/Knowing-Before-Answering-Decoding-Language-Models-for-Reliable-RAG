@@ -1,0 +1,24 @@
+{
+  "checked_between_utc": [
+    "2026-11-06 08:12:08 UTC",
+    "2026-11-06 08:12:12 UTC"
+  ],
+  "method": "read-only nvidia-smi outside sandbox; earlier sandbox query exited 9 because driver was inaccessible",
+  "gpu_query": {
+    "chunk_id": "74fe9a",
+    "wall_time_seconds": 0.000038025,
+    "exit_code": 0,
+    "original_token_count": 14,
+    "output": "0, NVIDIA GeForce RTX 3090, 535.183.01, 24576, 12, 1\n"
+  },
+  "compute_process_query": {
+    "chunk_id": "c5ed05",
+    "wall_time_seconds": 0.891556073,
+    "exit_code": 0,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "snapshot_only": true,
+  "guarantees_future_availability": false,
+  "no_model_inference": true
+}

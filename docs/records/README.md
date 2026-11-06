@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新运行时预检：[记录](2026-11-06-explanation-scope-runtime-preflight.md) / [指纹、设备与说明](../review/2026-11-06-explanation-scope-runtime-preflight-v1/README.md)。真实tokenizer的48输入哈希、输出decode/EOS、只读缓存检查和评分连接已实现，以26项合成fixture测试；7模型文件SHA匹配、沙箱外RTX3090及CUDA/bf16可见，未进行模型推理。真实生产采集器/非synthetic写入恢复未完成；独立批准0、gate/GPUfalse、预算0、标签null及380封存保持。
+
 最新事务原型：[动作记录](2026-11-06-explanation-scope-transaction-prototype.md) / [实现与范围](../explanation_scope_transaction_prototype.md)。临时目录synthetic事务实现锁、独占标记、fsync及原子替换；修复旧标记跨锁会话补写风险，20项跨进程/中断/上限测试通过。不是实际采集器或GPU就绪，独立批准0、gate/GPUfalse、预算0、标签null及380封存保持。
 
 最新CPU预案：[有限模型与账本检查记录](2026-11-06-explanation-scope-cpu-preflight.md) / [具体材料](../review/2026-11-06-explanation-scope-cpu-preflight-v1/README.md)。48输入有限域穷举，区分记录相对支持与世界真值；48候选顺序及四smoke已定，11+2测试及7项合成CLI演练通过。模拟非真实采集器/执行，正式独立批准0、gate/GPUfalse、预算0、标签null和380封存保持。

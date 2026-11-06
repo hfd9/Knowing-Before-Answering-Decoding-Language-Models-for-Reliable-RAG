@@ -1,0 +1,23 @@
+{
+  "recorded_at_utc": "2026-11-06 08:15:14 UTC",
+  "observation_timing": "Both checks occurred immediately before this record; this is not an exact measurement timestamp.",
+  "command": "/large_disk/wf/miniconda3/envs/kba-rag/bin/python -c <torch CUDA capability query>",
+  "inside_sandbox": {
+    "exit_code": 0,
+    "nvml_warning": "Can't initialize NVML",
+    "cuda_available": false,
+    "device_count": 0
+  },
+  "outside_sandbox": {
+    "exit_code": 0,
+    "torch_version": "2.5.1+cu121",
+    "torch_cuda_version": "12.1",
+    "cuda_available": true,
+    "device_count": 1,
+    "device_name": "NVIDIA GeForce RTX 3090",
+    "capability": [8, 6],
+    "bf16_supported": true
+  },
+  "snapshot_only": true,
+  "note": "CUDA capability query may initialize the CUDA driver. No model weights, forward pass, answer generation, or fitting."
+}
