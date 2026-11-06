@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新代理审计：[11月6日审计记录](2026-11-06-agent-review-context-audit.md) / [实际调用与机器记录](2026-11-06-agent-review-context-audit.json) / [代理回复](../review/2026-11-06-agent-context-audit-v1/audit.md)。用户授权后仅启动一个fork不继承历史的候选，其自述仍有项目历史、作者判断和结果暴露，按计划在交付55条审查包前停止；未评分、未建接收run，独立批准0。保存实际任务及fork设置，不将候选自述冒称完整私有上下文认证；72原文件及12拟合封存保持，作者已完成55输入/155主张不变。七文件正常提交推送，实际哈希见Git及回复；预算0/gate及GPUfalse/标签null/380封存，不重复相同候选或自动推进草案。
+
 最新状态说明修正：[11月6日完整性核验记录](2026-11-06-review-status-clarification.md) / [机器检查](2026-11-06-review-status-clarification.json) / [状态与文件位置](../semantic_claim_review_status.md)。审查包17及作者复核17个Git文件完整且与父fecd0d7一致，本地接收四JSON存在但受runs/忽略；四项CPU核验exit0，作者55输入/155主张/244引用及59来源、12拟合封存保持。独立接收已审0只属于该流程，不能称原作者成果缺失；后续并列报告完成量与待审量、说明Git保存范围。限定46候选仍仅原两空表，真实独立审核未发生。六文件正常提交推送、实际哈希见Git及回复；预算0/gate及GPUfalse/标签null/380封存，无新语义评分或实验。
 
 最新CPU配套完成：[11月6日评分配套记录](2026-11-06-explanation-scope-scoring-contract.md) / [使用说明](../explanation_scope_scoring_contract.md) / [机器检查](2026-11-06-explanation-scope-scoring-contract.json) / [第二次归档](2026-11-06-code-submission-02.md) / [清单](2026-11-06-code-submission-02.json)。落实S/CT及解释缺席/过宽否认端点、W/E/J完整分母与unknown计算，原草案保持；17CPU0.343秒、两空模板verify和合成Fraction手算/两summarize通过，78来源/12拟合封存保持。工具只处理人工声明，不查字节或逐主张引用，不认证独立性；实际审核0、空规划48行非材料、率null/gate/GPUfalse。CPU配套已完成，下一步仍真实审核后人工采纳，不再增加接收层或自动新材料。预算0/标签null/380封存，按长期授权提交推送，实际哈希见Git及回复。
