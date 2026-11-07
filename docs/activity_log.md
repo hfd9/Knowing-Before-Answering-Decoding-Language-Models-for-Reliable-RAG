@@ -1276,3 +1276,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 114. 2026-11-07：采集前知情核对与文献比较
 
 按用户要求直接继续，完成[采集前语义、近邻文献、条件性执行与放行缺口](explanation_scope_precollection_review.md)，详细检查见[记录](records/2026-11-07-explanation-scope-precollection-review.md)。48固定模板及12对单槽差、输入token、旧CLI及预案源绑定复验通过；S为记录相对支持，有限域及作者暴露核对不能代替独立批准。对Hidden Commitment、ContextConflict、CONFLICTS及Ragability定向比较，未确立首创。新48无真实回答，正式独立批准0、gate/GPUfalse、拟合预算0、标签null、380封存；未进行实验模型调用、评分、拟合或GPU检查。
+
+## 115. 2026-11-07：逐条核对输入与评审交付边界
+
+按用户要求继续，完成[48输入结构及引文、CLI可见轨迹和评分交付方案](review/2026-11-07-explanation-scope-audit/README.md)，具体证据见[记录](records/2026-11-07-explanation-scope-item-audit.md)。逐条结果属知情模板解析；29成功及2失败命令的有限扫描不认证私有上下文。明确P0本身有问题相关冲突指令，endpoint_template及mapping均不可交未暴露评审者。旧CLI及拟合封存、4快照复验通过，独立正式批准、执行协议和真实回答仍未完成；gate/GPUfalse、预算0/标签null/380封存，无新实验。

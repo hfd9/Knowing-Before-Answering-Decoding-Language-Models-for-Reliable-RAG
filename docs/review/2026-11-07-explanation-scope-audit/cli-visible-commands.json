@@ -1,0 +1,271 @@
+{
+  "method": "lexical inspection of retained completed command events; not full process, file or private-context audit",
+  "source_sha256": {
+    "phase1/trace.json": "8639ed184c7358c5a0792bd3c0f041a2e2d14f5606b5e7e20414a792fa379a80",
+    "phase2-initial/trace.json": "13d2961c5b7f75164f1b3d5f3b51c313d5645505feb2b235ae75045caae1c5be",
+    "phase2/trace.json": "20ad8e2154ced6981bd2beed8364034458f80046477d6783871150635dc3c10f"
+  },
+  "counts": {
+    "completed": 29,
+    "failed": 2
+  },
+  "commands": [
+    {
+      "trace": "phase1/trace.json",
+      "id": "item_1",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "8cafb6da3fcd46a8bfb5c648475fc04ef79b8da52ea8ff29d908d39532fa1149",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase1/trace.json",
+      "id": "item_2",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "5b99b11a15750b1c7ba2982723e97ee4417c8b248436375fea6847407f3ee8e6",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase1/trace.json",
+      "id": "item_4",
+      "status": "failed",
+      "exit_code": 127,
+      "command_sha256": "4c9739d872fccca2d382874765e10cbbae5d8c44de4ede101db30cee1c7cca96",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase1/trace.json",
+      "id": "item_5",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "c8e6a82d55ad636cafd4c71da63826f4bdd81c60f7855b6d0648efd00756cf19",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase1/trace.json",
+      "id": "item_6",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "a32475ea814f70b9495e3e6cb7795b1e4c67c607f016eead71fd2f77b78a18b3",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase1/trace.json",
+      "id": "item_7",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "92575c22bd908f24fa5614037d1a787d993d0cabd80e87b6e7b8c5cef3097bf2",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase1/trace.json",
+      "id": "item_8",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "515bd6008c9daee2cf6c49dc44ba37988aa7992a420e573584ffd890a21197cb",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase1/trace.json",
+      "id": "item_9",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "74d7bc06d592af62770ce75a29dad844e015a584d590c5fc4a4e6c8b8bc0c9c5",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase1/trace.json",
+      "id": "item_10",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "159db608a3fd898c27c4aabfabff9f0a195f7255e32be3af6a4a2f8073c37b9c",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase1/trace.json",
+      "id": "item_11",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "8920f6b68b1250e334d5f1a094e33cdb72df8973e3b5562f9613ef203516abd4",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase1/trace.json",
+      "id": "item_13",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "277a56a4ab756e14f04115f911572d8c326cc5e8222b4d516d790a2a06553b42",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase1/trace.json",
+      "id": "item_15",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "cba7baec71a0ee66bb1b52da3327f66d8fef93d328ee3571adc2f5c66592d1ef",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2-initial/trace.json",
+      "id": "item_1",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "5f8436a8c9c5f9d5da25f82e73b198a4751b00e97e5f2c0b126436f93affcd4d",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2-initial/trace.json",
+      "id": "item_2",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "bb76ae47c13caaa81919c4124c33274b23df90bdb11391a8a77aa01a26fc037c",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2-initial/trace.json",
+      "id": "item_4",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "df069912b9a9f6b17e40c2e8c0365ee916e1c050da50a00a962a9daa83eadd99",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2-initial/trace.json",
+      "id": "item_6",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "528a83c1482e271cfdebee2393f25f8985f407cbec6d036c8aa2243f42aa14be",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2-initial/trace.json",
+      "id": "item_7",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "ac0448b611fbee6e3f32085847150f0ae3c29e96e2b32b752e736a2a309d6d83",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2-initial/trace.json",
+      "id": "item_8",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "706bac35fbe1bd45464acc3b35959f6b9588f62c3cdb7a491834f40f23096ace",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2-initial/trace.json",
+      "id": "item_9",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "fa5ff97c5f390345de8345452bef067dce18a889fe14b5a9d63fbb43284dd7cc",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2-initial/trace.json",
+      "id": "item_11",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "5def74d496289f1c810dcc2a76a0e2c71d39df25d2f123ee9461eb7c2559d9b4",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2-initial/trace.json",
+      "id": "item_12",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "ccd1f0d7ddc116dc8864fcc68007f43a29b0b8e1f03c6a893208bb606d0f55dd",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2-initial/trace.json",
+      "id": "item_14",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "b4b3791a3ac3a8fe2d8a9d747388762b035ab3928b726020d051a23162fcc209",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2-initial/trace.json",
+      "id": "item_15",
+      "status": "failed",
+      "exit_code": 1,
+      "command_sha256": "f8c3610538750c52f5a3482f8918f16487ab18fe540d25ce7c1bdfc616f6854c",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2-initial/trace.json",
+      "id": "item_18",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "9bd112300327946efd2bbca7a471aec130a41a4e70099819c264cddeb3d61fb7",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2-initial/trace.json",
+      "id": "item_19",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "8c79371d7d9efe07881b3e111216870fc32fc7b05945f3e4daa6b76c0049fac0",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2-initial/trace.json",
+      "id": "item_21",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "9bd112300327946efd2bbca7a471aec130a41a4e70099819c264cddeb3d61fb7",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2-initial/trace.json",
+      "id": "item_22",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "a54262b93215654edf877902ae0e379d1383409b53f650f1cb680096e86f4e71",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2-initial/trace.json",
+      "id": "item_23",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "869209fdb1bea03f6d794f2cc2b0568c0765923296257d3d4c0f962050a81d87",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2/trace.json",
+      "id": "item_1",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "19833031ed89331aef1a28e618e947c063edcd1ef4e20e904621d7c716062fa6",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2/trace.json",
+      "id": "item_2",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "e0443280ad39501994335bece7fe1269ad046efafebb569b4b8a6009e46b7414",
+      "lexical_markers": []
+    },
+    {
+      "trace": "phase2/trace.json",
+      "id": "item_3",
+      "status": "completed",
+      "exit_code": 0,
+      "command_sha256": "75545cb914b3f6a9c25d98a10c96dda939f91c6734d8d8f4f7bcba626525dabc",
+      "lexical_markers": [
+        "subprocess"
+      ]
+    }
+  ],
+  "limitations": [
+    "Trace files declare omitted item types; retained events do not prove all commands or private context.",
+    "Lexical markers do not prove absence of indirect file or network access.",
+    "The sole subprocess marker runs the local metadata validator according to retained command text.",
+    "Recorded coordinator delivery time is not identified as actual first-stage delivery time."
+  ],
+  "independent_approval": false
+}
