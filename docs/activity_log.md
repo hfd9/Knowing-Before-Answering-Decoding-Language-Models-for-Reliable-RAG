@@ -1316,3 +1316,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 124. 2026-11-07：接收用户GPU预检并核对执行绑定候选
 
 用户运行预检并粘贴RTX3090、CUDA12.1/bf16可用、当时无计算进程的输出；[记录](records/2026-11-07-scope-e1-gpu-user-report.md)/[说明](explanation_scope_e1_gpu_report_and_binding_20261107.md)保存用户报告和边界。CPU侧核对用户执行候选10个来源SHA与48原顺序；该候选未接入运行时，不是放行。E1关闭门禁调用在访问设备/建run前拒绝；正式独立批准0、gate/GPUfalse、预算0/标签null/380封存、48真实回答0，未来GPU命令由用户运行。
+
+## 125. 2026-11-07：E1用户执行版审查及命令准备
+
+用户明确要求给命令由其运行、完成后助手继续；完成[用户执行协议](explanation_scope_e1_user_collection_20261107.md)、[单版本门禁审查](explanation_scope_e1_user_collection_gate_review_20261107.md)、新执行器/固定计划/release及[记录与命令](records/2026-11-07-scope-e1-user-collection-ready.md)。用户版按固定48条有条件放行，原v1及E1-r1门禁保持false；启动时实时核对七模型文件和GPU设备，四smoke计入48，空/截断或异常停止不重答。8项CPU synthetic测试通过，本轮无真实GPU前向、真实回答0，独立批准0、预算0/标签null/380封存；用户运行后助手先核验。

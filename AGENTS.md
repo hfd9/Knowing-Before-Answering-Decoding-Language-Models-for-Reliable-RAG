@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-07（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新E1用户执行版（2026-11-07）：用户明确要求给命令由其运行、结束后助手继续；完成[用户协议](docs/explanation_scope_e1_user_collection_20261107.md)、[单版本审查](docs/explanation_scope_e1_user_collection_gate_review_20261107.md)、[固定计划/release](docs/review/2026-11-07-explanation-scope-e1/user-collection-release-v1.json)、[记录与运行命令](docs/records/2026-11-07-scope-e1-user-collection-ready.md)。新用户版门禁经单独审查有条件放行，原v1和E1-r1门禁仍false、正式独立批准0；实时GPU就绪在用户启动时检查。用户版脚本验证48固定顺序、用户执行身份、模型SHA及GPU UUID/计算进程/CUDA/bf16，四smoke计入48，任一空/截断/未提交或异常停止保留、不自动重答。8项CPU临时synthetic完整/失败/门禁测试通过；用户真实run尚不存在、真实回答0，预算0/标签null/380封存。当前下一步用户运行记录中的命令，完成或报错后助手先核验；失败时用户不删run或自行重答。
+
 最新用户GPU报告（2026-11-07）：用户自行执行预检并粘贴结果，[报告与执行绑定候选](docs/explanation_scope_e1_gpu_report_and_binding_20261107.md)/[记录](docs/records/2026-11-07-scope-e1-gpu-user-report.md)。用户报告12:36:13 UTC RTX3090、24576MiB/已用12MiB、无计算进程、CUDA12.1单可见GPU及bf16可用；版本与CPU快照一致，来源是用户粘贴，非助手独立设备/日志核验或实时预留，不证明真实模型生成兼容。另存用户执行候选，10来源SHA及48固定顺序CPU核对通过，但候选未接入运行时或放行；直接调用E1 collect在访问GPU前拒绝，真实run不存在。正式独立批准0、gate/GPUfalse、预算0/标签null/380封存、48真实回答0。未来完成用户执行角色版本绑定、门禁和环境重审后，GPU命令由用户运行；本轮不采集。
 
 最新E1 CPU联检（2026-11-07）：用户最新指定所有需要GPU的工作由用户执行，助手负责其余工作并提供命令；[执行者补充](docs/explanation_scope_e1_user_execution_addendum_20261107.md)取代旧协议/下文历史中“助手启动GPU”的表述。完成[两条完整/第五条空输出跨组件合成联检、7模型文件CPU哈希与版本记录](docs/records/2026-11-07-scope-e1-cpu-integration-preflight.md)，新两测试16.224秒通过，7文件SHA匹配、未加载模型或访问CUDA。[用户GPU预检命令](docs/explanation_scope_e1_cpu_preflight_20261107.md)已准备，4项mock测试通过，实际设备待用户运行；命令只检查设备，不采集、不放行。E1旧协议原件未改，正式独立批准0、gate/GPUfalse、预算0/标签null/380封存、48真实回答0；未来采集前须将用户执行约定绑定新版并审查门禁，GPU采集由用户运行。

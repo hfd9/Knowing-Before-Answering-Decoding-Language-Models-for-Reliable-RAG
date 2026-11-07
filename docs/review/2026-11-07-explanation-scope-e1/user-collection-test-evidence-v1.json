@@ -1,0 +1,11 @@
+{
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /large_disk/wf/miniconda3/envs/kba-rag/bin/python -B -m unittest discover -s tests -p test_explanation_scope_e1_user_collection.py -v",
+  "elapsed_seconds": 17.453,
+  "gpu_inference_performed": false,
+  "notes": "Includes the complete 48-record CPU mock, fifth-item empty stop/restart, package, gate tampering and busy GPU preflight mocks.",
+  "status": "all_user_execution_cpu_tests_passed",
+  "synthetic_models_and_temp_directories_only": true,
+  "test_file_sha256": "3c05a15884acea386facbac93f94dfbc733676a0771700ffa44bb491d8459eba",
+  "tests_passed": 8,
+  "user_script_sha256": "144ef2cdf7375b7dddb2cd5d57d588fc19353a35f64eeb4615ed18817534e2fe"
+}
