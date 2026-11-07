@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-07（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新采集前核对（2026-11-07）：按用户要求直接推进，完成[知情语义结构、文献对照、条件性执行草案与放行缺口](docs/explanation_scope_precollection_review.md)/[记录](docs/records/2026-11-07-explanation-scope-precollection-review.md)。48条结构及12对单槽差、真实tokenizer均复验通过，旧CLI及9项预案源绑定核验通过；S仅记录相对支持、12场景单模板，检查非独立语义批准。Hidden Commitment、ContextConflict、CONFLICTS及Ragability存在近邻，不宣称首创；未新增模型回答或行为结果。旧CLI独立性审计pending、正式批准0，旧关键案例与既定门禁的处理、新48语义与正式执行协议仍需完成；gate/GPUfalse、拟合预算0、标签null、380封存，不自动采集。用户无需本人逐条审核。
+
 最新口径核对（2026-11-07）：按用户提出的后续方向核对[原件及结论](docs/records/2026-11-07-explanation-scope-assessment.md)。知情裁定覆盖13个分歧回答、对16回答作部分主张语义对应；三焦点狭义E为unknown/no/unknown。预案前四smoke为同一场景S/I0/IU/CT各一条，计入48与预定分析；J=W且E，以完整12对比较。新采集仍需独立性、语义和正式协议及门禁处理，用户本人无需逐条审阅；未检索Hidden Commitment/ContextConflict或新增实验。
 
 最新背景恢复（2026-11-07）：按用户要求恢复至受门禁生产路径后，见[恢复记录](docs/records/2026-11-07-context-restored.md)。恢复前工作区干净，本地HEAD、本地origin/main及实际远端main均为9cdd049；默认解释行为run不存在，代码中真实采集在建目录及模型加载前被门禁拒绝。未重跑测试、查实时GPU或重算模型哈希。48候选尚无真实回答；历史合成测试不代表真实GPU兼容或采集许可。作者55输入/155主张及单次CLI接收55输入/55回答/172主张均已完成，正式独立批准0、gate及GPUfalse、拟合预算0、正式标签null、380题封存保持。用户无需本人逐条审核；按后续用户任务继续，不自动放行采集。记录后按长期约定提交推送，实际哈希以Git及回复为准。

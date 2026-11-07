@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新采集前核对：[记录](2026-11-07-explanation-scope-precollection-review.md) / [语义、文献与条件性执行草案](../explanation_scope_precollection_review.md)。48材料结构、12对差异、tokenizer及旧CLI复验通过；四篇近邻逐项比较，明确独立性、语义和正式门禁仍未完成，没有新回答。
+
 最新研究口径核对：[2026-11-07记录](2026-11-07-explanation-scope-assessment.md)。核对旧分歧与16回答部分语义对应、四条件及W/E评分、四smoke计入分析及关闭门禁；没有新行为结果或文献检索。
 
 最新背景恢复：[2026-11-07记录](2026-11-07-context-restored.md)。恢复至[受门禁生产路径](2026-11-06-explanation-scope-guarded-production.md)：默认run不存在，真实采集门禁关闭，历史合成通过不代表GPU就绪；作者55/155与一次CLI接收55/55/172均已完成。正式批准0、预算0、380题封存保持；本轮未重跑测试或检查实时GPU。下方较早“最新”条目保留当时快照。

@@ -1272,3 +1272,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 113. 2026-11-07：核对用户提出的探索方向
 
 只读核对[知情裁定、材料、评分与门禁原件](records/2026-11-07-explanation-scope-assessment.md)。13个分歧回答已有知情判断，16回答有部分主张语义对应，三焦点狭义E为unknown/no/unknown；四条smoke来自同一场景四条件，计入48和预定分析。主指标为完整12对J(IU)−J(I0)，独立性及正式采集门禁仍未通过。本轮无新语义评分、模型调用、GPU检查或文献检索，不更新实验指标。
+
+## 114. 2026-11-07：采集前知情核对与文献比较
+
+按用户要求直接继续，完成[采集前语义、近邻文献、条件性执行与放行缺口](explanation_scope_precollection_review.md)，详细检查见[记录](records/2026-11-07-explanation-scope-precollection-review.md)。48固定模板及12对单槽差、输入token、旧CLI及预案源绑定复验通过；S为记录相对支持，有限域及作者暴露核对不能代替独立批准。对Hidden Commitment、ContextConflict、CONFLICTS及Ragability定向比较，未确立首创。新48无真实回答，正式独立批准0、gate/GPUfalse、拟合预算0、标签null、380封存；未进行实验模型调用、评分、拟合或GPU检查。
