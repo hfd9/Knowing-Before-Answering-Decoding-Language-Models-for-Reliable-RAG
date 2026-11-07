@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-07（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新口径核对（2026-11-07）：按用户提出的后续方向核对[原件及结论](docs/records/2026-11-07-explanation-scope-assessment.md)。知情裁定覆盖13个分歧回答、对16回答作部分主张语义对应；三焦点狭义E为unknown/no/unknown。预案前四smoke为同一场景S/I0/IU/CT各一条，计入48与预定分析；J=W且E，以完整12对比较。新采集仍需独立性、语义和正式协议及门禁处理，用户本人无需逐条审阅；未检索Hidden Commitment/ContextConflict或新增实验。
+
 最新背景恢复（2026-11-07）：按用户要求恢复至受门禁生产路径后，见[恢复记录](docs/records/2026-11-07-context-restored.md)。恢复前工作区干净，本地HEAD、本地origin/main及实际远端main均为9cdd049；默认解释行为run不存在，代码中真实采集在建目录及模型加载前被门禁拒绝。未重跑测试、查实时GPU或重算模型哈希。48候选尚无真实回答；历史合成测试不代表真实GPU兼容或采集许可。作者55输入/155主张及单次CLI接收55输入/55回答/172主张均已完成，正式独立批准0、gate及GPUfalse、拟合预算0、正式标签null、380题封存保持。用户无需本人逐条审核；按后续用户任务继续，不自动放行采集。记录后按长期约定提交推送，实际哈希以Git及回复为准。
 
 最新受门禁生产路径（2026-11-06）：用户要求直接完成生产事务恢复、故障测试及模型执行连接，已编写[生产代码](scripts/explanation_scope_production.py)、[记录](docs/records/2026-11-06-explanation-scope-guarded-production.md)/[说明](docs/explanation_scope_guarded_production.md)。默认在建真实run/加载模型前由原门禁拒绝；计划加载器同样要求guard为false，不可用命令行参数启用。代码绑定输入/七模型文件哈希、设备与greedy调用，处理锁、attempt、持久化、前缀恢复及smoke。生产路径最终13项完整合成模拟测试、共享运行时36项、生成桩8项、旧事务20项通过；测试显式模拟放行/GPU/模型且只写临时合成目录。实际七模型文件SHA、48输入独立重建、旧72来源/12拟合封存/4快照匹配；默认run不存在。没有真实模型加载、前向或实时GPU检查，真实CUDA/Transformers兼容性、输出来源及断电持久性未证实；独立批准0/gate及GPUfalse/预算0/标签null/380封存保持，不能称GPU就绪。
