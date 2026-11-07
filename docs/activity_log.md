@@ -1300,3 +1300,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 120. 2026-11-07：形成探索性另版协议候选
 
 按用户要求继续，完成[探索性E1及新旧治理与执行差距](explanation_scope_exploratory_protocol_candidate_20261107.md)/[记录](records/2026-11-07-scope-exploratory-protocol-candidate.md)。复核材料、12主对、窄E、原P0指令及条件交付；公开SHA排序可按已知ID重建全部R映射，部分缓存不能创建评分包，smoke后的空/截断提交可继续但不能评分。材料、有限模型、真实tokenizer、48结构及两关闭门禁/两合成评分包定向测试通过。E1未正式采纳、原v1待定，独立批准0、gate/GPUfalse、预算0、标签null、380封存；无新评审、模型或拟合。
+
+## 121. 2026-11-07：E1协议、执行差距修复和关闭门禁审查
+
+按用户要求冻结[E1-r1研究及异常规则](explanation_scope_e1_protocol_20261107.md)，新增[受门禁执行/部分转包](../scripts/explanation_scope_e1.py)与17项合成测试，完成[门禁审查](explanation_scope_e1_gate_review_20261107.md)/[记录](records/2026-11-07-scope-e1-implementation-gate-review.md)。全程空/截断保存后停止不自动重答；随机私有映射及48槽部分转包绑定来源，但公开原文48载荷唯一，可按文本再识别条件。E1研究准备由知情助手采纳，原v1待定，真实门禁/GPU均false；旧门禁2项、评分17项及两复评来源重放通过，无新真实回答、GPU或拟合，预算0/标签null/380封存。用户明确未来仅放行且GPU就绪后由助手启动，本轮不启动。
