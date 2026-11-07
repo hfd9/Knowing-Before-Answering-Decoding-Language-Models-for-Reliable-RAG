@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新E1逐主张接收：[记录](2026-11-07-scope-e1-claim-intake.md) / [格式与CPU入口](../explanation_scope_e1_claim_intake.md)。完成评审原字节及逐字引文封存、封存后人工端点连接与结果重放；11项临时合成/异进程测试通过，未新增真实评分或打开门禁。
+
 最新E1协议与门禁审查：[记录](2026-11-07-scope-e1-implementation-gate-review.md) / [协议](../explanation_scope_e1_protocol_20261107.md) / [审查](../explanation_scope_e1_gate_review_20261107.md)。已按协议修复全程空/截断停止、持久随机映射及E1部分缓存转包，合成测试通过；48公开载荷可全文再识别条件，原始逐主张语义/封存不由转包器认证；两个门禁保持false、无真实回答。
 
 最新另版协议候选：[记录](2026-11-07-scope-exploratory-protocol-candidate.md) / [E1候选及执行差距](../explanation_scope_exploratory_protocol_candidate_20261107.md)。另版治理及12对评分计划尚未正式采纳；公开排序可重建伪匿名映射、部分输出包未实现、smoke后空/截断处理与门禁更新须按实际代码审查，原v1保持待定。

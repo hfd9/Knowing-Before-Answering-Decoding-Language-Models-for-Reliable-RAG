@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-07（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新E1逐主张接收（2026-11-07）：用户要求继续，完成[两阶段封存/映射连接/结果重放合同](docs/explanation_scope_e1_claim_intake.md)、[CPU代码](scripts/explanation_scope_e1_intake.py)及[记录](docs/records/2026-11-07-scope-e1-claim-intake.md)。seal只读公开packet与评审表、逐字核引用并封存原字节；connect先复验封存再读取协调映射，绑定来源、转换者/暴露及主张ID，手工端点接入完整48槽/12对汇总；verify临时重放。11项真实E1合成部分包/三异进程测试、1关闭门禁定向及空模板verify通过，非真实评分；无法证明完整阅读、语义或历史隔离，48公开载荷仍可再识别条件。原E1协议/执行锁未改，独立批准0、gate/GPUfalse、预算0/标签null/380封存、48真实回答0。未来仅正式放行且设备就绪后由助手启动；当前不采集。
+
 最新E1协议与执行修复（2026-11-07）：用户要求先定协议、修差距、审门禁且本轮不采集。已形成[E1-r1协议](docs/explanation_scope_e1_protocol_20261107.md)、[实现](scripts/explanation_scope_e1.py)、[审查](docs/explanation_scope_e1_gate_review_20261107.md)与[记录](docs/records/2026-11-07-scope-e1-implementation-gate-review.md)。知情助手采纳有限探索的研究/技术准备，原v1待定，正式独立批准0；窄E/完整12对及四smoke不变，全程空/截断保存后停止不重试，未提交attempt阻断。新E1缓存支持48槽部分转包、私有随机映射/来源哈希，缓存损坏拒绝；已证明公开原材料48载荷全部唯一，文本匹配可重新识别条件，随机编号不证明盲化。E1 17项真实tokenizer合成/模拟、旧门禁2项、评分17项及两复评来源重放通过；逐主张语义/引用封存与映射转换尚需未来实际执行，不由转包器认证。真实E1 run不存在，formal_gate/GPU及采集false、预算0/标签null/380封存、48真实回答0；未查实时GPU/重散列权重。用户最新要求未来放行且GPU就绪后由助手启动，当前不启动；需先审门禁修改、更新代码锁及实际环境。
 
 最新另版协议候选（2026-11-07）：用户要求继续，完成[探索性E1候选与新旧治理、执行差距](docs/explanation_scope_exploratory_protocol_candidate_20261107.md)/[记录](docs/records/2026-11-07-scope-exploratory-protocol-candidate.md)。明确保留原v1待定、不将现有LLM复评冒称独立；拟议以有暴露助手及实际复评支持有限模板探索，尚未采纳或放行。实查发现原伪匿名R编号按公开原ID和固定SHA排序可完整重建（不证明任何评审实际重建），部分缓存不能建评分包，smoke后的已提交空/截断可继续但不能评分；新版需新计划/目录/指纹及代码审查。材料/有限世界/真实tokenizer/48结构重放，2关闭门禁及2合成评分包定向测试通过；独立批准0、gate/GPUfalse、预算0/标签null/380封存、48新回答0。下一步完成E1治理决定、评分盲化与中断处置，再审新版协议与门禁，用户无需逐条审核。

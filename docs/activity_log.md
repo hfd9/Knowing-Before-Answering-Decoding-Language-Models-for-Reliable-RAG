@@ -1304,3 +1304,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 121. 2026-11-07：E1协议、执行差距修复和关闭门禁审查
 
 按用户要求冻结[E1-r1研究及异常规则](explanation_scope_e1_protocol_20261107.md)，新增[受门禁执行/部分转包](../scripts/explanation_scope_e1.py)与17项合成测试，完成[门禁审查](explanation_scope_e1_gate_review_20261107.md)/[记录](records/2026-11-07-scope-e1-implementation-gate-review.md)。全程空/截断保存后停止不自动重答；随机私有映射及48槽部分转包绑定来源，但公开原文48载荷唯一，可按文本再识别条件。E1研究准备由知情助手采纳，原v1待定，真实门禁/GPU均false；旧门禁2项、评分17项及两复评来源重放通过，无新真实回答、GPU或拟合，预算0/标签null/380封存。用户明确未来仅放行且GPU就绪后由助手启动，本轮不启动。
+
+## 122. 2026-11-07：E1逐主张封存、连接与重放
+
+按用户要求继续，新增[接收合同](explanation_scope_e1_claim_intake.md)/[CPU接收器](../scripts/explanation_scope_e1_intake.py)，先以公开packet验证逐字引用和暴露声明并封存原字节，再连接协调映射和人工端点，保留48槽/12对并支持独立进程结果重放；见[记录](records/2026-11-07-scope-e1-claim-intake.md)。11项临时合成及三异进程测试、1关闭门禁定向、空模板verify通过；不证明语义、独立性或真实模型来源，未产生真实评分。原E1代码/锁未改，正式批准0、gate/GPUfalse、预算0/标签null/380封存、48真实回答0。
