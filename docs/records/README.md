@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新另版协议候选：[记录](2026-11-07-scope-exploratory-protocol-candidate.md) / [E1候选及执行差距](../explanation_scope_exploratory_protocol_candidate_20261107.md)。另版治理及12对评分计划尚未正式采纳；公开排序可重建伪匿名映射、部分输出包未实现、smoke后空/截断处理与门禁更新须按实际代码审查，原v1保持待定。
+
 最新口径与治理：[记录](2026-11-07-scope-criteria-governance.md) / [决定与分支](../explanation_scope_criteria_governance_20261107.md)。主E沿用目标字段自身互斥窄口径，Q052原判及知情补充均保留；现有两CLI依原v1不可核实分支不计独立采纳额度，原v1待定、采集门禁关闭。
 
 最新背景恢复：[记录](2026-11-07-context-restored-02.md)。恢复至48输入候选复评之后；两项只读复评核验通过，默认真实run不存在且采集门禁关闭。正式独立批准0、48新实验回答0，继续处理Q052口径、独立性及正式协议；旧作者55/155和CLI 55/55/172保持。

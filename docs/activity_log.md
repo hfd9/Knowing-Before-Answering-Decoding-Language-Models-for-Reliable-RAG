@@ -1296,3 +1296,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 119. 2026-11-07：确定候选主E口径并归属现有门禁证据
 
 按用户要求直接开始，形成[口径与治理决定](explanation_scope_criteria_governance_20261107.md)/[记录](records/2026-11-07-scope-criteria-governance.md)：沿用目标字段自身互斥窄口径，Q052原封存yes与同候选知情宽yes/窄unknown并存；依原v1不可核实分支，现有CLI复评归档但不计独立采纳额度，不假定已暴露或将助手决定冒称人工。原v1待定，另版治理仅为后续路径。17评分测试、两复评只读重放及空模板verify通过；无新评分、生成、拟合或GPU检查，正式批准0、gate/GPUfalse、预算0、标签null、380封存。
+
+## 120. 2026-11-07：形成探索性另版协议候选
+
+按用户要求继续，完成[探索性E1及新旧治理与执行差距](explanation_scope_exploratory_protocol_candidate_20261107.md)/[记录](records/2026-11-07-scope-exploratory-protocol-candidate.md)。复核材料、12主对、窄E、原P0指令及条件交付；公开SHA排序可按已知ID重建全部R映射，部分缓存不能创建评分包，smoke后的空/截断提交可继续但不能评分。材料、有限模型、真实tokenizer、48结构及两关闭门禁/两合成评分包定向测试通过。E1未正式采纳、原v1待定，独立批准0、gate/GPUfalse、预算0、标签null、380封存；无新评审、模型或拟合。
