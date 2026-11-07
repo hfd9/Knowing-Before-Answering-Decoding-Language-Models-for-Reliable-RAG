@@ -1320,3 +1320,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 125. 2026-11-07：E1用户执行版审查及命令准备
 
 用户明确要求给命令由其运行、完成后助手继续；完成[用户执行协议](explanation_scope_e1_user_collection_20261107.md)、[单版本门禁审查](explanation_scope_e1_user_collection_gate_review_20261107.md)、新执行器/固定计划/release及[记录与命令](records/2026-11-07-scope-e1-user-collection-ready.md)。用户版按固定48条有条件放行，原v1及E1-r1门禁保持false；启动时实时核对七模型文件和GPU设备，四smoke计入48，空/截断或异常停止不重答。8项CPU synthetic测试通过，本轮无真实GPU前向、真实回答0，独立批准0、预算0/标签null/380封存；用户运行后助手先核验。
+
+## 126. 2026-11-07：E1用户执行48条核验与知情评分
+
+用户报告48完成；助手确认48记录/48 attempt、四smoke通过、全EOS无空/截断，归档[56来源、评分及结果](review/2026-11-07-e1-user-results-v1/README.md)/[记录](records/2026-11-07-scope-e1-user-results.md)。104主张/104答案及299文档引用为已见历史和条件的助手知情判断，先封存后连映射；看初版后将4条先答后说无法确定保守改unknown，原版保留。v2中I0/IU窄E均0/12 yes，12对J差0；S记录支持11yes/1unknown、CT目标冲突识别6/12且选边9yes/3unknown，零事件不证明安全或等效。56来源/token/引用/配对独立重放、两版接收重放及3项边界测试通过；不独立认证语义或输出来源。用户版已完成、无需重跑，旧门禁false、独立批准0、预算0/标签null/380封存，无新拟合。

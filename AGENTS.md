@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-07（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新E1用户版结果（2026-11-07）：用户完成48条真实回答并报告完成；助手核验48记录/48 attempt、四smoke通过、全EOS且空/截断0，归档[结果与原始来源](docs/review/2026-11-07-e1-user-results-v1/README.md)/[记录](docs/records/2026-11-07-scope-e1-user-results.md)。当前助手有历史/条件暴露，48输入/48回答、104手写主张为知情评分，104答案/299文档引用逐字核验，非独立金标准。先封存原始主张后连接映射；查看初版后对4条先答后称不能确定的最终立场保守改unknown，初版与原判保留，现用v2。12对I0/IU狭义E均0/12 yes、J均0/12，差0/识别界[0,0]；W各3yes/5no/4unknown与5yes/4no/3unknown。S记录相对支持11yes/1unknown；CT目标冲突识别6yes/6no、无消解选边9yes/3unknown；零事件不是等效或总体安全。56来源现场/归档、token解码和配对独立复算、两版接收重放及3项边界测试通过。用户版已完成，不再重跑GPU；原v1/E1-r1旧门禁false、独立批准0/拟合预算0/正式标签null/380封存。无自动扩样、重训或patching，用户无需本人逐条审核。
+
 最新E1用户执行版（2026-11-07）：用户明确要求给命令由其运行、结束后助手继续；完成[用户协议](docs/explanation_scope_e1_user_collection_20261107.md)、[单版本审查](docs/explanation_scope_e1_user_collection_gate_review_20261107.md)、[固定计划/release](docs/review/2026-11-07-explanation-scope-e1/user-collection-release-v1.json)、[记录与运行命令](docs/records/2026-11-07-scope-e1-user-collection-ready.md)。新用户版门禁经单独审查有条件放行，原v1和E1-r1门禁仍false、正式独立批准0；实时GPU就绪在用户启动时检查。用户版脚本验证48固定顺序、用户执行身份、模型SHA及GPU UUID/计算进程/CUDA/bf16，四smoke计入48，任一空/截断/未提交或异常停止保留、不自动重答。8项CPU临时synthetic完整/失败/门禁测试通过；用户真实run尚不存在、真实回答0，预算0/标签null/380封存。当前下一步用户运行记录中的命令，完成或报错后助手先核验；失败时用户不删run或自行重答。
 
 最新用户GPU报告（2026-11-07）：用户自行执行预检并粘贴结果，[报告与执行绑定候选](docs/explanation_scope_e1_gpu_report_and_binding_20261107.md)/[记录](docs/records/2026-11-07-scope-e1-gpu-user-report.md)。用户报告12:36:13 UTC RTX3090、24576MiB/已用12MiB、无计算进程、CUDA12.1单可见GPU及bf16可用；版本与CPU快照一致，来源是用户粘贴，非助手独立设备/日志核验或实时预留，不证明真实模型生成兼容。另存用户执行候选，10来源SHA及48固定顺序CPU核对通过，但候选未接入运行时或放行；直接调用E1 collect在访问GPU前拒绝，真实run不存在。正式独立批准0、gate/GPUfalse、预算0/标签null/380封存、48真实回答0。未来完成用户执行角色版本绑定、门禁和环境重审后，GPU命令由用户运行；本轮不采集。

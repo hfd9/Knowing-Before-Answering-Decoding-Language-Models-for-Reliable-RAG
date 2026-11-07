@@ -1,0 +1,24 @@
+{
+  "e1_protocol_sha256": "d12926314f230203c0adb4dcbeab469bf441bb1d263350337dcdf2d3ee9305cd",
+  "format": "explanation-scope-e1-user-v1",
+  "implementation_lock_sha256": "f2369ae4de11b175e935cc27e97eb7021edbc075883f30d4e95f3c194657b9c4",
+  "implementation_sha256": {
+    "scripts/evidence_experiment.py": "019af81ffcfe108b155e6e061569d7d1c1fc17d3b072ad436d78defa74aac225",
+    "scripts/explanation_scope_cache_writer_fixture.py": "2ab6330dd8973f3db90bb302ff568c7fa7d40911d1f58e205027b16874340cbf",
+    "scripts/explanation_scope_disk_cache.py": "d460740370cd2ffafebda0ddb3bdd3e0f2b0ab2b2ac4c45b21289949ef1c96e8",
+    "scripts/explanation_scope_e1.py": "d85b62f3bbe011bc57f5b0f27175a8e641cdfe835881f4b708b36406a3c79935",
+    "scripts/explanation_scope_generation_fixture.py": "f42e59707a8564f2e6ceff6bf2f7ef8461906207c66b22c3b0959d9e6bd92c8b",
+    "scripts/explanation_scope_ledger_simulator.py": "5b81761a6c8652b085b7a77c506bf769ea42cad08a2ff44e90c7290e648134ff",
+    "scripts/explanation_scope_metrics.py": "6c960688f76f4e0c3c81185ab57599827d9ef72ccdfd92b89c5f97819af7b3ea",
+    "scripts/explanation_scope_production.py": "d839a1a0cf02e5b32778ffdb95659e00b13a9063a6c5c625c84b73cfc773c2dd",
+    "scripts/explanation_scope_runtime.py": "fb569f2d39bd2f60e460b15236999c147b7975fbcb8a53cdbf2a687cae0a5c16",
+    "scripts/explanation_scope_transaction_prototype.py": "fd2a035af9dc72d26160e13e55ecb1d63dff91b8285e54743d8d2934dc91c6c3"
+  },
+  "input_fingerprints_sha256": "ad5c7da3292dcfff58b12eec323f029401eb13e21c55119440ba82279bb01aeb",
+  "model_reference_sha256": "493bef85a43ffad80bba134ef27040eb231783a655d8db4dba4faaf9ad679580",
+  "operator": "user",
+  "source_plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+  "synthetic_fixture": false,
+  "user_plan_sha256": "026f4a9c7fbdab7f65b2348e97dc6757c7adf99b2df479bc13eceed68f457f92",
+  "user_release_sha256": "6119e75357a0cc24290690991ab68852ab415ecbefffcc2c9d9360ec3b394eae"
+}

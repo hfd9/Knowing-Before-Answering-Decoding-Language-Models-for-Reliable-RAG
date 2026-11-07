@@ -1,0 +1,141 @@
+"""Independent read-only replay of saved E1-user bytes, token decode, citations and declared metrics."""
+from collections import Counter
+from datetime import datetime
+from fractions import Fraction
+import hashlib
+import json
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+BASE=ROOT/'docs/review/2026-11-07-e1-user-results-v1'
+
+
+def sha(raw):
+    return hashlib.sha256(raw).hexdigest()
+
+
+def read(path):
+    return json.loads(path.read_text(encoding='utf-8'))
+
+
+def canonical(value):
+    return json.dumps(value,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode('utf-8')
+
+
+def main():
+    archive=read(BASE/'source-manifest.json')
+    assert archive['records']==archive['attempts']==48 and archive['source_run_synthetic_flag'] is False
+    live_matched=live_missing=0
+    for entry in archive['files']:
+        archived=ROOT/entry['archive_path']; live=ROOT/entry['source_path']
+        raw=archived.read_bytes()
+        assert len(raw)==entry['bytes'] and sha(raw)==entry['sha256']
+        if live.exists():
+            assert sha(live.read_bytes())==entry['sha256']
+            live_matched+=1
+        else:
+            live_missing+=1
+    plan=read(ROOT/'docs/review/2026-11-07-explanation-scope-e1/user-collection-plan-v1.json')
+    release=read(ROOT/'docs/review/2026-11-07-explanation-scope-e1/user-collection-release-v1.json')
+    run_manifest=read(BASE/'source/manifest.json')
+    data=read(BASE/'source/records.json')
+    records=data['records']
+    smoke=read(BASE/'source/smoke.json')
+    assert len(records)==48 and len(plan['ordered_ids'])==48 and plan['ordered_ids'][:4]==plan['smoke_ids']
+    assert smoke['passed'] is True and smoke['semantic_correctness_assessed'] is False
+    assert run_manifest['format']=='explanation-scope-e1-user-v1' and run_manifest['synthetic_fixture'] is False
+    assert run_manifest['operator']=='user' and release['operator']=='user'
+    assert run_manifest['user_plan_sha256']==sha((ROOT/'docs/review/2026-11-07-explanation-scope-e1/user-collection-plan-v1.json').read_bytes())
+    assert run_manifest['user_release_sha256']==sha((ROOT/'docs/review/2026-11-07-explanation-scope-e1/user-collection-release-v1.json').read_bytes())
+    assert release['plan_sha256']==run_manifest['user_plan_sha256'] and release['old_v1_gate'] is False and release['old_e1_gate'] is False
+    assert release['independent_approvals']==0 and release['user_version_formal_gate'] is True
+    fp=read(ROOT/'docs/review/2026-11-06-explanation-scope-runtime-preflight-v1/input-fingerprints.json')
+    eos=fp['eos_token_ids']
+    reference=read(ROOT/'docs/review/2026-11-06-explanation-scope-cpu-preflight-v1/relation-reference-snapshot.json')
+    from transformers import AutoTokenizer
+    tokenizer=AutoTokenizer.from_pretrained(reference['model'],local_files_only=True)
+    packet=read(BASE/'public/packet.json')
+    items={x['item_id']:x for x in packet['items']}
+    coordinator=read(BASE/'coordinator/coordinator.json')
+    sources=coordinator['mapping_and_sources']
+    assert len(items)==len(sources)==48 and set(items)==set(sources)
+    reverse={value['source_item_id']:key for key,value in sources.items()}
+    assert len(reverse)==48 and set(reverse)==set(plan['ordered_ids'])
+    token_counts=[];durations=[]
+    for i,record in enumerate(records):
+        iid=plan['ordered_ids'][i]; rid=reverse[iid]; item=items[rid]; src=sources[rid]
+        attempt=read(BASE/f'source/attempts/{i:04d}.json')
+        assert attempt=={'index':i,'id':iid,'plan_sha256':plan['source_plan_sha256'],
+                         'e1_protocol_sha256':run_manifest['e1_protocol_sha256']}
+        assert record['index']==i and record['id']==iid and record['plan_sha256']==plan['source_plan_sha256']
+        tokens=record['generated_token_ids']; text=record['raw_output']
+        assert type(tokens) is list and 1<=len(tokens)<=128 and all(type(t) is int for t in tokens)
+        assert record['generated_tokens']==len(tokens) and not any(t in eos for t in tokens[:-1])
+        assert record['ended_with_eos'] is True and tokens[-1] in eos and record['hit_output_limit'] is False
+        assert text.strip() and tokenizer.decode(tokens,skip_special_tokens=True)==text
+        assert sha(text.encode())==record['raw_output_sha256']==src['output_sha256']
+        assert sha(json.dumps(tokens).encode())==record['generated_token_ids_sha256']
+        assert item['technical_status']=='complete' and item['answer']==text
+        input_sha=sha(canonical({'question':item['question'],'documents':item['documents']}))
+        assert input_sha==record['input_sha256']==src['input_sha256']
+        assert src['attempt_sha256']==sha((BASE/f'source/attempts/{i:04d}.json').read_bytes())
+        assert src['record_sha256']==sha(canonical(record)) and src['technical_status']=='complete'
+        token_counts.append(len(tokens));durations.append(record['elapsed_seconds'])
+    review=read(BASE/'review-sealed/review.json')
+    seal=read(BASE/'review-sealed/receipt.json')
+    conversion=read(BASE/'analysis/receipt.json')
+    assert review['history_exposure']=='declared_exposed' and seal['independent_approval'] is False
+    assert seal['review_bytes_sha256']==sha((BASE/'review-sealed/review.json').read_bytes())
+    assert seal['packet_bytes_sha256']==sha((BASE/'public/packet.json').read_bytes())
+    assert datetime.fromisoformat(records[-1]['completed_at'])<=datetime.fromisoformat(archive['created_at_utc'])<datetime.fromisoformat(seal['sealed_at_utc'])<=datetime.fromisoformat(conversion['converted_at_utc'])
+    claim_counts=Counter();output_quotes=doc_quotes=0
+    assert len(review['items'])==48
+    for row in review['items']:
+        item=items[row['item_id']]; assert row['review_status']=='reviewed' and row['full_answer_reviewed'] is True
+        for claim in row['claims']:
+            claim_counts[claim['judgment']]+=1
+            ref=claim['output_citation']; assert item['answer'][ref['start']:ref['end']]==ref['quote'];output_quotes+=1
+            for ref in claim['document_support']+claim['counterevidence']:
+                text=item['documents'][ref['document_index']-1]
+                assert text[ref['start']:ref['end']]==ref['quote'];doc_quotes+=1
+    endpoints=read(BASE/'analysis/endpoints.json')
+    summary=read(BASE/'analysis/summary.json')
+    assert len(endpoints['rows'])==summary['reviewed_slots']==48
+    indexed={(r['scene'],r['condition']):r for r in endpoints['rows']}
+    assert len(indexed)==48
+    for condition in ('S','I0','IU','CT'):
+        rows=[r for r in endpoints['rows'] if r['condition']==condition]
+        for field,actual in summary['conditions'][condition]['endpoints'].items():
+            counts=Counter(r[field] for r in rows)
+            assert actual['planned']==12 and actual['reviewed']==12
+            assert (actual['yes'],actual['no'],actual['explicit_reviewed_unknown'])==(counts['yes'],counts['no'],counts['unknown'])
+    lower=upper=Fraction(0);joint_counts=Counter()
+    def interval(row):
+        a,b=row['withholds_target_with_support'],row['unsupported_target_conflict']
+        result='no' if 'no' in (a,b) else ('yes' if a==b=='yes' else 'unknown')
+        joint_counts[(row['condition'],result)]+=1
+        return {'yes':(1,1),'no':(0,0),'unknown':(0,1)}[result]
+    for scene in range(1,13):
+        blo,bhi=interval(indexed[(scene,'I0')]);tlo,thi=interval(indexed[(scene,'IU')])
+        lower+=Fraction(tlo-bhi,12);upper+=Fraction(thi-blo,12)
+    primary=summary['primary']
+    assert primary['planned_pairs']==primary['fully_reviewed_pairs']==12 and primary['reviewed_endpoints']==24
+    assert abs(primary['identification_lower']-float(lower))<1e-12 and abs(primary['identification_upper']-float(upper))<1e-12
+    assert primary['point']==0 and lower==upper==0
+    result={'status':'archived_bytes_tokens_citations_and_declared_metrics_verified_not_semantic_or_model_origin_certification',
+        'archived_files':len(archive['files']),'live_files_matching':live_matched,'live_files_missing':live_missing,
+        'records':len(records),'attempts':48,'smoke_passed':True,'empty':0,'truncated':0,'ended_eos':48,
+        'generated_tokens_min':min(token_counts),'generated_tokens_max':max(token_counts),
+        'generated_tokens_total':sum(token_counts),'generation_elapsed_sum_seconds':round(sum(durations),3),
+        'first_completed_at':records[0]['completed_at'],'last_completed_at':records[-1]['completed_at'],
+        'reviewed_inputs_and_outputs':48,'claim_instances':sum(claim_counts.values()),'claim_judgments':dict(claim_counts),
+        'output_quote_instances':output_quotes,'document_quote_instances':doc_quotes,
+        'reviewer_exposure':'declared_exposed','independent_approval':False,
+        'primary_pairs':12,'I0_J_no':joint_counts[('I0','no')],'IU_J_no':joint_counts[('IU','no')],
+        'primary_IU_minus_I0':float(lower),'model_weights_loaded':False,'gpu_accessed':False,
+        'semantic_truth_verified':False,'model_output_origin_independently_verified':False}
+    print(json.dumps(result,ensure_ascii=False,indent=2))
+
+
+if __name__=='__main__':
+    main()

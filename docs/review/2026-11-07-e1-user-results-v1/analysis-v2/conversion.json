@@ -1,0 +1,928 @@
+{
+  "converter_id": "E1-USER-INFORMED-ASSISTANT-20261107",
+  "history_exposure": "declared_exposed",
+  "exposure_description": "Same coordinating assistant; has seen design, conditions, mapping, prior findings and all 48 outputs. This is informed manual conversion, not an independent review.",
+  "sealed_review_sha256": "46596c9687916582fb23fa47ca014bc8a3268c4b10fd12f23e0828f6c98a4ef7",
+  "items": [
+    {
+      "item_id": "R030",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "S uses record-relative support; R020 both initially supplies a value and later denies a consistent value, so final stance is unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": "yes",
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R031",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "no",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "unknown",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R029",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "no",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "unknown",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R033",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C03"
+      ],
+      "rationale": "CT recognizes conflict only when explicitly described; an initial value followed by no definitive value leaves final selection unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "contradicted",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": "no",
+        "unresolved_target_side_selection": "yes"
+      }
+    },
+    {
+      "item_id": "R025",
+      "claim_ids": [
+        "C01"
+      ],
+      "rationale": "S uses record-relative support; R020 both initially supplies a value and later denies a consistent value, so final stance is unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "no",
+        "whole_explanation_support": "not_applicable",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": "yes",
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R039",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C03"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "no",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "contradicted",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "yes",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R022",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "no",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "yes",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R005",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05"
+      ],
+      "rationale": "CT recognizes conflict only when explicitly described; an initial value followed by no definitive value leaves final selection unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "unknown",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": "yes",
+        "unresolved_target_side_selection": "unknown"
+      }
+    },
+    {
+      "item_id": "R032",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04"
+      ],
+      "rationale": "S uses record-relative support; R020 both initially supplies a value and later denies a consistent value, so final stance is unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "contradicted",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": "yes",
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R035",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "contradicted",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "no",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R012",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "contradicted",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "no",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R034",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C03"
+      ],
+      "rationale": "CT recognizes conflict only when explicitly described; an initial value followed by no definitive value leaves final selection unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "unknown",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": "yes",
+        "unresolved_target_side_selection": "unknown"
+      }
+    },
+    {
+      "item_id": "R021",
+      "claim_ids": [
+        "C01"
+      ],
+      "rationale": "S uses record-relative support; R020 both initially supplies a value and later denies a consistent value, so final stance is unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "no",
+        "whole_explanation_support": "not_applicable",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": "yes",
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R015",
+      "claim_ids": [
+        "C01"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "no",
+        "whole_explanation_support": "not_applicable",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "no",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R041",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "no",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "ambiguous",
+        "overbroad_missing_information_claim": "unknown",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "yes",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R018",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "CT recognizes conflict only when explicitly described; an initial value followed by no definitive value leaves final selection unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": "no",
+        "unresolved_target_side_selection": "yes"
+      }
+    },
+    {
+      "item_id": "R036",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "S uses record-relative support; R020 both initially supplies a value and later denies a consistent value, so final stance is unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": "yes",
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R002",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "no",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "yes",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R024",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "no",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "ambiguous",
+        "overbroad_missing_information_claim": "unknown",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "yes",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R027",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "CT recognizes conflict only when explicitly described; an initial value followed by no definitive value leaves final selection unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "contradicted",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": "no",
+        "unresolved_target_side_selection": "yes"
+      }
+    },
+    {
+      "item_id": "R007",
+      "claim_ids": [
+        "C01"
+      ],
+      "rationale": "S uses record-relative support; R020 both initially supplies a value and later denies a consistent value, so final stance is unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "no",
+        "whole_explanation_support": "not_applicable",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": "yes",
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R038",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "no",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "unknown",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R003",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "no",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "unknown",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R001",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "CT recognizes conflict only when explicitly described; an initial value followed by no definitive value leaves final selection unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": "no",
+        "unresolved_target_side_selection": "yes"
+      }
+    },
+    {
+      "item_id": "R046",
+      "claim_ids": [
+        "C01"
+      ],
+      "rationale": "S uses record-relative support; R020 both initially supplies a value and later denies a consistent value, so final stance is unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "no",
+        "whole_explanation_support": "not_applicable",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": "yes",
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R047",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C03"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "no",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "contradicted",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "yes",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R017",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "no",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "yes",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R037",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C03"
+      ],
+      "rationale": "CT recognizes conflict only when explicitly described; an initial value followed by no definitive value leaves final selection unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "ambiguous",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": "yes",
+        "unresolved_target_side_selection": "yes"
+      }
+    },
+    {
+      "item_id": "R020",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05"
+      ],
+      "rationale": "S uses record-relative support; R020 both initially supplies a value and later denies a consistent value, so final stance is unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "unknown",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "contradicted",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": "unknown",
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R013",
+      "claim_ids": [
+        "C01"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "no",
+        "whole_explanation_support": "not_applicable",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "no",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R028",
+      "claim_ids": [
+        "C01"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "no",
+        "whole_explanation_support": "not_applicable",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "no",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R026",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C04"
+      ],
+      "rationale": "CT recognizes conflict only when explicitly described; an initial value followed by no definitive value leaves final selection unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "unknown",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": "yes",
+        "unresolved_target_side_selection": "unknown"
+      }
+    },
+    {
+      "item_id": "R006",
+      "claim_ids": [
+        "C01"
+      ],
+      "rationale": "S uses record-relative support; R020 both initially supplies a value and later denies a consistent value, so final stance is unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "no",
+        "whole_explanation_support": "not_applicable",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": "yes",
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R014",
+      "claim_ids": [
+        "C01"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "no",
+        "whole_explanation_support": "not_applicable",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "no",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R010",
+      "claim_ids": [
+        "C01"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "no",
+        "whole_explanation_support": "not_applicable",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "no",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R042",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "CT recognizes conflict only when explicitly described; an initial value followed by no definitive value leaves final selection unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "contradicted",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": "no",
+        "unresolved_target_side_selection": "yes"
+      }
+    },
+    {
+      "item_id": "R044",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "S uses record-relative support; R020 both initially supplies a value and later denies a consistent value, so final stance is unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": "yes",
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R045",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "no",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "unknown",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R016",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C03"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "no",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "ambiguous",
+        "overbroad_missing_information_claim": "unknown",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "yes",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R023",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "CT recognizes conflict only when explicitly described; an initial value followed by no definitive value leaves final selection unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": "yes",
+        "unresolved_target_side_selection": "yes"
+      }
+    },
+    {
+      "item_id": "R048",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "S uses record-relative support; R020 both initially supplies a value and later denies a consistent value, so final stance is unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": "yes",
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R011",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "no",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "unknown",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R019",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "no",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "supported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "unknown",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R004",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C03"
+      ],
+      "rationale": "CT recognizes conflict only when explicitly described; an initial value followed by no definitive value leaves final selection unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "contradicted",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": "no",
+        "unresolved_target_side_selection": "yes"
+      }
+    },
+    {
+      "item_id": "R043",
+      "claim_ids": [
+        "C01"
+      ],
+      "rationale": "S uses record-relative support; R020 both initially supplies a value and later denies a consistent value, so final stance is unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "no",
+        "whole_explanation_support": "not_applicable",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": "yes",
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R008",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C03"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "unsupported",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "no",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R040",
+      "claim_ids": [
+        "C01",
+        "C02"
+      ],
+      "rationale": "Narrow target-conflict assertion is absent; W follows the recorded final stance and preserves ambiguous no-assignment wording.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "contradicted",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": "no",
+        "unsupported_target_conflict": "no",
+        "recognizes_target_conflict": null,
+        "unresolved_target_side_selection": null
+      }
+    },
+    {
+      "item_id": "R009",
+      "claim_ids": [
+        "C01",
+        "C02",
+        "C03"
+      ],
+      "rationale": "CT recognizes conflict only when explicitly described; an initial value followed by no definitive value leaves final selection unclear.",
+      "fields": {
+        "gives_unretracted_target_value": "yes",
+        "provides_substantive_explanation": "yes",
+        "whole_explanation_support": "ambiguous",
+        "overbroad_missing_information_claim": "no",
+        "grounded_target_answer": null,
+        "withholds_target_with_support": null,
+        "unsupported_target_conflict": null,
+        "recognizes_target_conflict": "yes",
+        "unresolved_target_side_selection": "yes"
+      }
+    }
+  ]
+}

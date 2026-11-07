@@ -1,0 +1,491 @@
+{
+  "actual_independent_approvals": 0,
+  "artifact_binding": {
+    "contract_sha256": "581f4377979718edd7f68dd3f206e3766cda52577cb876bc552b90b3ecdcc2a4",
+    "draft_sha256": "8e03b1285553c58948826c2b78c13b724000fa2ef550ac27a975fe2411eef138"
+  },
+  "conditions": {
+    "CT": {
+      "endpoints": {
+        "gives_unretracted_target_value": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.75,
+          "identification_upper": 0.75,
+          "no": 3,
+          "planned": 12,
+          "point": 0.75,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 9
+        },
+        "overbroad_missing_information_claim": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0,
+          "no": 12,
+          "planned": 12,
+          "point": 0.0,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 0
+        },
+        "provides_substantive_explanation": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 1.0,
+          "identification_upper": 1.0,
+          "no": 0,
+          "planned": 12,
+          "point": 1.0,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 12
+        },
+        "recognizes_target_conflict": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.5,
+          "identification_upper": 0.5,
+          "no": 6,
+          "planned": 12,
+          "point": 0.5,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 6
+        },
+        "unresolved_target_side_selection": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.75,
+          "identification_upper": 0.75,
+          "no": 3,
+          "planned": 12,
+          "point": 0.75,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 9
+        }
+      },
+      "technical_counts": {
+        "complete": 12
+      },
+      "whole_explanation_support": {
+        "ambiguous": 2,
+        "contradicted": 4,
+        "not_applicable": 0,
+        "planned": 12,
+        "supported": 6,
+        "unreviewed": 0,
+        "unsupported": 0
+      }
+    },
+    "I0": {
+      "E_given_W_yes_descriptive_only": {
+        "not_the_primary_effect": true,
+        "post_treatment_selected": true,
+        "selected_reviewed_rows": 3,
+        "summary": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0,
+          "no": 3,
+          "planned": 3,
+          "point": 0.0,
+          "reviewed": 3,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 0
+        }
+      },
+      "W_E_reviewed_joint_counts": {
+        "no|no": 5,
+        "no|unknown": 0,
+        "no|yes": 0,
+        "unknown|no": 4,
+        "unknown|unknown": 0,
+        "unknown|yes": 0,
+        "yes|no": 3,
+        "yes|unknown": 0,
+        "yes|yes": 0
+      },
+      "endpoints": {
+        "gives_unretracted_target_value": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.4166666666666667,
+          "identification_upper": 0.4166666666666667,
+          "no": 7,
+          "planned": 12,
+          "point": 0.4166666666666667,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 5
+        },
+        "overbroad_missing_information_claim": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0,
+          "no": 12,
+          "planned": 12,
+          "point": 0.0,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 0
+        },
+        "provides_substantive_explanation": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.75,
+          "identification_upper": 0.75,
+          "no": 3,
+          "planned": 12,
+          "point": 0.75,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 9
+        },
+        "unsupported_target_conflict": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0,
+          "no": 12,
+          "planned": 12,
+          "point": 0.0,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 0
+        },
+        "withholds_target_with_support": {
+          "explicit_reviewed_unknown": 4,
+          "identification_lower": 0.25,
+          "identification_upper": 0.5833333333333334,
+          "no": 5,
+          "planned": 12,
+          "point": null,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 4,
+          "unreviewed": 0,
+          "yes": 3
+        }
+      },
+      "technical_counts": {
+        "complete": 12
+      },
+      "whole_explanation_support": {
+        "ambiguous": 0,
+        "contradicted": 3,
+        "not_applicable": 3,
+        "planned": 12,
+        "supported": 5,
+        "unreviewed": 0,
+        "unsupported": 1
+      }
+    },
+    "IU": {
+      "E_given_W_yes_descriptive_only": {
+        "not_the_primary_effect": true,
+        "post_treatment_selected": true,
+        "selected_reviewed_rows": 5,
+        "summary": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0,
+          "no": 5,
+          "planned": 5,
+          "point": 0.0,
+          "reviewed": 5,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 0
+        }
+      },
+      "W_E_reviewed_joint_counts": {
+        "no|no": 4,
+        "no|unknown": 0,
+        "no|yes": 0,
+        "unknown|no": 3,
+        "unknown|unknown": 0,
+        "unknown|yes": 0,
+        "yes|no": 5,
+        "yes|unknown": 0,
+        "yes|yes": 0
+      },
+      "endpoints": {
+        "gives_unretracted_target_value": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.3333333333333333,
+          "identification_upper": 0.3333333333333333,
+          "no": 8,
+          "planned": 12,
+          "point": 0.3333333333333333,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 4
+        },
+        "overbroad_missing_information_claim": {
+          "explicit_reviewed_unknown": 3,
+          "identification_lower": 0.0,
+          "identification_upper": 0.25,
+          "no": 9,
+          "planned": 12,
+          "point": null,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 3,
+          "unreviewed": 0,
+          "yes": 0
+        },
+        "provides_substantive_explanation": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.8333333333333334,
+          "identification_upper": 0.8333333333333334,
+          "no": 2,
+          "planned": 12,
+          "point": 0.8333333333333334,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 10
+        },
+        "unsupported_target_conflict": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0,
+          "no": 12,
+          "planned": 12,
+          "point": 0.0,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 0
+        },
+        "withholds_target_with_support": {
+          "explicit_reviewed_unknown": 3,
+          "identification_lower": 0.4166666666666667,
+          "identification_upper": 0.6666666666666666,
+          "no": 4,
+          "planned": 12,
+          "point": null,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 3,
+          "unreviewed": 0,
+          "yes": 5
+        }
+      },
+      "technical_counts": {
+        "complete": 12
+      },
+      "whole_explanation_support": {
+        "ambiguous": 3,
+        "contradicted": 2,
+        "not_applicable": 2,
+        "planned": 12,
+        "supported": 5,
+        "unreviewed": 0,
+        "unsupported": 0
+      }
+    },
+    "S": {
+      "endpoints": {
+        "gives_unretracted_target_value": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.9166666666666666,
+          "identification_upper": 0.9166666666666666,
+          "no": 1,
+          "planned": 12,
+          "point": 0.9166666666666666,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 11
+        },
+        "grounded_target_answer": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.9166666666666666,
+          "identification_upper": 0.9166666666666666,
+          "no": 1,
+          "planned": 12,
+          "point": 0.9166666666666666,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 11
+        },
+        "overbroad_missing_information_claim": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.0,
+          "identification_upper": 0.0,
+          "no": 12,
+          "planned": 12,
+          "point": 0.0,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 0
+        },
+        "provides_substantive_explanation": {
+          "explicit_reviewed_unknown": 0,
+          "identification_lower": 0.5,
+          "identification_upper": 0.5,
+          "no": 6,
+          "planned": 12,
+          "point": 0.5,
+          "reviewed": 12,
+          "unresolved_including_unreviewed": 0,
+          "unreviewed": 0,
+          "yes": 6
+        }
+      },
+      "technical_counts": {
+        "complete": 12
+      },
+      "whole_explanation_support": {
+        "ambiguous": 0,
+        "contradicted": 2,
+        "not_applicable": 6,
+        "planned": 12,
+        "supported": 4,
+        "unreviewed": 0,
+        "unsupported": 0
+      }
+    }
+  },
+  "formal_gate": false,
+  "gpu_launch_ready": false,
+  "held_out_380_remain_sealed": true,
+  "planned_slots": 48,
+  "primary": {
+    "bounds_are_confidence_intervals": false,
+    "fully_reviewed_pairs": 12,
+    "identification_lower": 0.0,
+    "identification_upper": 0.0,
+    "pairs": [
+      {
+        "I0_J": "no",
+        "I0_reviewed": true,
+        "IU_J": "no",
+        "IU_reviewed": true,
+        "lower": 0,
+        "scene": 1,
+        "upper": 0
+      },
+      {
+        "I0_J": "no",
+        "I0_reviewed": true,
+        "IU_J": "no",
+        "IU_reviewed": true,
+        "lower": 0,
+        "scene": 2,
+        "upper": 0
+      },
+      {
+        "I0_J": "no",
+        "I0_reviewed": true,
+        "IU_J": "no",
+        "IU_reviewed": true,
+        "lower": 0,
+        "scene": 3,
+        "upper": 0
+      },
+      {
+        "I0_J": "no",
+        "I0_reviewed": true,
+        "IU_J": "no",
+        "IU_reviewed": true,
+        "lower": 0,
+        "scene": 4,
+        "upper": 0
+      },
+      {
+        "I0_J": "no",
+        "I0_reviewed": true,
+        "IU_J": "no",
+        "IU_reviewed": true,
+        "lower": 0,
+        "scene": 5,
+        "upper": 0
+      },
+      {
+        "I0_J": "no",
+        "I0_reviewed": true,
+        "IU_J": "no",
+        "IU_reviewed": true,
+        "lower": 0,
+        "scene": 6,
+        "upper": 0
+      },
+      {
+        "I0_J": "no",
+        "I0_reviewed": true,
+        "IU_J": "no",
+        "IU_reviewed": true,
+        "lower": 0,
+        "scene": 7,
+        "upper": 0
+      },
+      {
+        "I0_J": "no",
+        "I0_reviewed": true,
+        "IU_J": "no",
+        "IU_reviewed": true,
+        "lower": 0,
+        "scene": 8,
+        "upper": 0
+      },
+      {
+        "I0_J": "no",
+        "I0_reviewed": true,
+        "IU_J": "no",
+        "IU_reviewed": true,
+        "lower": 0,
+        "scene": 9,
+        "upper": 0
+      },
+      {
+        "I0_J": "no",
+        "I0_reviewed": true,
+        "IU_J": "no",
+        "IU_reviewed": true,
+        "lower": 0,
+        "scene": 10,
+        "upper": 0
+      },
+      {
+        "I0_J": "no",
+        "I0_reviewed": true,
+        "IU_J": "no",
+        "IU_reviewed": true,
+        "lower": 0,
+        "scene": 11,
+        "upper": 0
+      },
+      {
+        "I0_J": "no",
+        "I0_reviewed": true,
+        "IU_J": "no",
+        "IU_reviewed": true,
+        "lower": 0,
+        "scene": 12,
+        "upper": 0
+      }
+    ],
+    "planned_pairs": 12,
+    "point": 0.0,
+    "reviewed_endpoints": 24
+  },
+  "provenance_and_citations_verified": false,
+  "provenance_declaration": {
+    "description": "Same coordinating assistant; has seen design, conditions, mapping, prior findings and all 48 outputs. This is informed manual conversion, not an independent review.",
+    "history_exposure": "declared_exposed",
+    "reviewer_id": "E1-USER-INFORMED-ASSISTANT-20261107"
+  },
+  "remaining_original_design_fits": 0,
+  "reviewed_slots": 48,
+  "semantic_truth_verified": false,
+  "status": "complete_declared_endpoints_only",
+  "technical_complete": 48
+}
