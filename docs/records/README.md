@@ -2,6 +2,10 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新背景恢复：[2026-11-07记录](2026-11-07-context-restored.md)。恢复至[受门禁生产路径](2026-11-06-explanation-scope-guarded-production.md)：默认run不存在，真实采集门禁关闭，历史合成通过不代表GPU就绪；作者55/155与一次CLI接收55/55/172均已完成。正式批准0、预算0、380题封存保持；本轮未重跑测试或检查实时GPU。下方较早“最新”条目保留当时快照。
+
+最新生产路径：[记录](2026-11-06-explanation-scope-guarded-production.md) / [说明](../explanation_scope_guarded_production.md)。已编写事务恢复及模型执行连接，临时合成/模拟测试通过；关闭门禁阻止真实run及模型加载，真实推理和GPU兼容性未验证。
+
 最新运行时预检：[记录](2026-11-06-explanation-scope-runtime-preflight.md) / [指纹、设备与说明](../review/2026-11-06-explanation-scope-runtime-preflight-v1/README.md)。真实tokenizer的48输入哈希、输出decode/EOS、只读缓存检查和评分连接已实现，以26项合成fixture测试；7模型文件SHA匹配、沙箱外RTX3090及CUDA/bf16可见，未进行模型推理。真实生产采集器/非synthetic写入恢复未完成；独立批准0、gate/GPUfalse、预算0、标签null及380封存保持。
 
 最新事务原型：[动作记录](2026-11-06-explanation-scope-transaction-prototype.md) / [实现与范围](../explanation_scope_transaction_prototype.md)。临时目录synthetic事务实现锁、独占标记、fsync及原子替换；修复旧标记跨锁会话补写风险，20项跨进程/中断/上限测试通过。不是实际采集器或GPU就绪，独立批准0、gate/GPUfalse、预算0、标签null及380封存保持。
