@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-07（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新用户GPU报告（2026-11-07）：用户自行执行预检并粘贴结果，[报告与执行绑定候选](docs/explanation_scope_e1_gpu_report_and_binding_20261107.md)/[记录](docs/records/2026-11-07-scope-e1-gpu-user-report.md)。用户报告12:36:13 UTC RTX3090、24576MiB/已用12MiB、无计算进程、CUDA12.1单可见GPU及bf16可用；版本与CPU快照一致，来源是用户粘贴，非助手独立设备/日志核验或实时预留，不证明真实模型生成兼容。另存用户执行候选，10来源SHA及48固定顺序CPU核对通过，但候选未接入运行时或放行；直接调用E1 collect在访问GPU前拒绝，真实run不存在。正式独立批准0、gate/GPUfalse、预算0/标签null/380封存、48真实回答0。未来完成用户执行角色版本绑定、门禁和环境重审后，GPU命令由用户运行；本轮不采集。
+
 最新E1 CPU联检（2026-11-07）：用户最新指定所有需要GPU的工作由用户执行，助手负责其余工作并提供命令；[执行者补充](docs/explanation_scope_e1_user_execution_addendum_20261107.md)取代旧协议/下文历史中“助手启动GPU”的表述。完成[两条完整/第五条空输出跨组件合成联检、7模型文件CPU哈希与版本记录](docs/records/2026-11-07-scope-e1-cpu-integration-preflight.md)，新两测试16.224秒通过，7文件SHA匹配、未加载模型或访问CUDA。[用户GPU预检命令](docs/explanation_scope_e1_cpu_preflight_20261107.md)已准备，4项mock测试通过，实际设备待用户运行；命令只检查设备，不采集、不放行。E1旧协议原件未改，正式独立批准0、gate/GPUfalse、预算0/标签null/380封存、48真实回答0；未来采集前须将用户执行约定绑定新版并审查门禁，GPU采集由用户运行。
 
 最新E1逐主张接收（2026-11-07）：用户要求继续，完成[两阶段封存/映射连接/结果重放合同](docs/explanation_scope_e1_claim_intake.md)、[CPU代码](scripts/explanation_scope_e1_intake.py)及[记录](docs/records/2026-11-07-scope-e1-claim-intake.md)。seal只读公开packet与评审表、逐字核引用并封存原字节；connect先复验封存再读取协调映射，绑定来源、转换者/暴露及主张ID，手工端点接入完整48槽/12对汇总；verify临时重放。11项真实E1合成部分包/三异进程测试、1关闭门禁定向及空模板verify通过，非真实评分；无法证明完整阅读、语义或历史隔离，48公开载荷仍可再识别条件。原E1协议/执行锁未改，独立批准0、gate/GPUfalse、预算0/标签null/380封存、48真实回答0。未来仅正式放行且设备就绪后由助手启动；当前不采集。

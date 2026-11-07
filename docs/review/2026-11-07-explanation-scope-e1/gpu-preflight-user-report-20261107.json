@@ -1,0 +1,35 @@
+{
+  "provenance": "user_pasted_terminal_output_normalized_by_assistant_not_an_independently_captured_process_or_log",
+  "user_command": "/large_disk/wf/miniconda3/envs/kba-rag/bin/python -B scripts/verify_explanation_scope_e1_gpu.py --gpu-id 0",
+  "reported_output": {
+    "observed_at_utc": "2026-11-07T12:36:13.458711+00:00",
+    "gpu_index": 0,
+    "gpu_uuid": "GPU-1652bafc-65ec-03e5-1c07-ccd400b237b5",
+    "gpu_name": "NVIDIA GeForce RTX 3090",
+    "memory_total_mib": "24576",
+    "memory_used_mib": "12",
+    "driver_version": "535.183.01",
+    "active_compute_processes": [],
+    "formal_gate": false,
+    "gpu_launch_ready": false,
+    "collection_allowed": false,
+    "model_loaded": false,
+    "model_inference": false,
+    "fit_performed": false,
+    "gpu_is_exclusively_reserved": false,
+    "status": "gpu_device_snapshot_not_model_compatibility",
+    "pytorch_cuda_checked": true,
+    "torch_version": "2.5.1+cu121",
+    "torch_cuda_version": "12.1",
+    "cuda_available": true,
+    "visible_device_count": 1,
+    "visible_device_name": "NVIDIA GeForce RTX 3090",
+    "bf16_supported": true,
+    "note": "Point-in-time observation only; no exclusive reservation or inference test."
+  },
+  "limits": [
+    "The assistant checked the pasted fields for consistency, not the original process, clock or raw stdout bytes.",
+    "Availability and process occupancy are time-specific and do not reserve the GPU.",
+    "This does not prove Qwen, Transformers, or CUDA generation compatibility, nor does it authorize collection."
+  ]
+}

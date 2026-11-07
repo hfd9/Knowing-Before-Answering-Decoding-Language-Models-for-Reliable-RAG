@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新用户GPU报告：[记录](2026-11-07-scope-e1-gpu-user-report.md) / [用户预检与绑定候选](../explanation_scope_e1_gpu_report_and_binding_20261107.md)。用户报告RTX3090、CUDA/bf16可用及当时无计算进程，候选按用户执行、保留48顺序但未接入运行时；门禁仍关闭、真实run不存在。
+
 最新E1 CPU联检：[记录](2026-11-07-scope-e1-cpu-integration-preflight.md) / [CPU结果及用户GPU预检命令](../explanation_scope_e1_cpu_preflight_20261107.md) / [执行者补充](../explanation_scope_e1_user_execution_addendum_20261107.md)。完整48和第五条空输出两条合成链通过，七模型文件哈希匹配；未检查真实GPU、未放行。最新约定GPU任务由用户运行。
 
 最新E1逐主张接收：[记录](2026-11-07-scope-e1-claim-intake.md) / [格式与CPU入口](../explanation_scope_e1_claim_intake.md)。完成评审原字节及逐字引文封存、封存后人工端点连接与结果重放；11项临时合成/异进程测试通过，未新增真实评分或打开门禁。

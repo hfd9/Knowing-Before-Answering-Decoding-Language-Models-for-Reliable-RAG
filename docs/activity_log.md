@@ -1312,3 +1312,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 123. 2026-11-07：E1 CPU端到端联检与GPU执行者变更
 
 用户指定不需要GPU的工作助手完成、GPU工作给命令由用户运行，[执行者补充](explanation_scope_e1_user_execution_addendum_20261107.md)取代历史“助手启动GPU”。[记录](records/2026-11-07-scope-e1-cpu-integration-preflight.md)/[说明及用户设备预检命令](explanation_scope_e1_cpu_preflight_20261107.md)：完整48及第五条空输出两条跨组件合成链通过；实际七模型文件CPU哈希均匹配并记录包版本，未调用CUDA；GPU预检逻辑4项mock测试通过，实际待用户执行。门禁仍关闭、预算0/标签null/380封存、48真实回答0；未生成可绕门禁的采集命令。
+
+## 124. 2026-11-07：接收用户GPU预检并核对执行绑定候选
+
+用户运行预检并粘贴RTX3090、CUDA12.1/bf16可用、当时无计算进程的输出；[记录](records/2026-11-07-scope-e1-gpu-user-report.md)/[说明](explanation_scope_e1_gpu_report_and_binding_20261107.md)保存用户报告和边界。CPU侧核对用户执行候选10个来源SHA与48原顺序；该候选未接入运行时，不是放行。E1关闭门禁调用在访问设备/建run前拒绝；正式独立批准0、gate/GPUfalse、预算0/标签null/380封存、48真实回答0，未来GPU命令由用户运行。
