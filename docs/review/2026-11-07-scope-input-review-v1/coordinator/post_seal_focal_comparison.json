@@ -1,0 +1,46 @@
+{
+  "status": "post_seal_focal_comparison_no_adjudication_or_prevalence",
+  "new_review_sha256": "1020c9f17de857c7224937718118aac0073e246b2517999bbbbc1fb6365ba9e2",
+  "new_review_seal_sha256": "3f4e867bb597169b5be48ef778f1b6e979460dc1adfd4960a23ac61ec21c9984",
+  "mapping_sha256": "9545b65c7df9321a7ac96dd5c243314d337fbfdfe577d46dee125aae85f6864f",
+  "prior_informed_sha256": "ee5fc315bd88e103c461447323fc6a66e900dc1f32d7318fddf09e1365cf6e7c",
+  "prior_cli_focal_sha256": "5a3d8208da195a612808a73ee8cb83b3149b691e0a511edb970ec38c525e6441",
+  "same_narrow_judgment_count": 2,
+  "rows": [
+    {
+      "review_id": "F001",
+      "old_item_id": "Q004",
+      "new_reviewer_withholds_with_support": "yes",
+      "new_reviewer_target_conflict_assertion": "unknown",
+      "new_reviewer_broader_conflict_support": "unsupported",
+      "prior_informed_target_conflict": "unknown",
+      "prior_informed_reason": "冲突指代两个单位的信息，未明确落在目标字段。",
+      "prior_cli_broader_conflict_atom_judgment": "unsupported",
+      "same_narrow_scope_judgment": true
+    },
+    {
+      "review_id": "F002",
+      "old_item_id": "Q026",
+      "new_reviewer_withholds_with_support": "yes",
+      "new_reviewer_target_conflict_assertion": "no",
+      "new_reviewer_broader_conflict_support": "unsupported",
+      "prior_informed_target_conflict": "no",
+      "prior_informed_reason": "回答明确称所指inspection冲突不涉及目标access。",
+      "prior_cli_broader_conflict_atom_judgment": "unsupported",
+      "same_narrow_scope_judgment": true
+    },
+    {
+      "review_id": "F003",
+      "old_item_id": "Q052",
+      "new_reviewer_withholds_with_support": "yes",
+      "new_reviewer_target_conflict_assertion": "yes",
+      "new_reviewer_broader_conflict_support": "unsupported",
+      "prior_informed_target_conflict": "unknown",
+      "prior_informed_reason": "冲突指两个单位access数据，是否明确断言目标同一字段互斥仍不确定。",
+      "prior_cli_broader_conflict_atom_judgment": "unsupported",
+      "same_narrow_scope_judgment": false
+    }
+  ],
+  "notes": "These are selected post-hoc old cases; two share a base scene. The new reviewer is one model session and had reviewed new 48 inputs first. Scope disagreements remain; original ratings are unchanged.",
+  "formal_independent_approval": false
+}

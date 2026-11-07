@@ -1,0 +1,2030 @@
+{
+  "status": "reviewer_completed_input_only_not_formal_independent_approval",
+  "reviewer_id": "SCOPECLI20261107R01",
+  "thread_id": "01a1b4e9-eb7a-7a31-bf38-4360cac26cd3",
+  "input_packet_sha256": "8519788f29ce49c629c3b4fd8703eab81eb2e770675b401f2d10b74ad390c155",
+  "audit_sha256": "df1cd605a4754750f5acdfbefa48afbd714e480c92a2000c33b5e9c540ef8ff2",
+  "completion_declaration_sha256": "2d794a57843e226224d413dd9d9af8777071c29dbc87d73dd3704728513d9f74",
+  "batches": [
+    {
+      "batch": "P001-P008",
+      "response_sha256": "6cb5dd587fa03af331a83ef749d9e0fe8723c8b22912e8563a00a28c2bee131a",
+      "events_sha256": "7850aa366d68c3732c953c05917d54d940bf831abd5eb7d0b6d1b802388c7f08",
+      "task_sha256": "ac8582b373285ef0704fd1d55f8ae0448b7301a5d630e49326af330aac1d603b",
+      "visible_items": 8,
+      "exact_quote_occurrences": 41
+    },
+    {
+      "batch": "P009-P016",
+      "response_sha256": "a9c93b979e9e3f5b78b320cb9b390fe71301644a0b541a9b5373521949dfb667",
+      "events_sha256": "19458fe0fc5769fe7821bf4ae19282833b9950629d4997400a920fb0117aaeae",
+      "task_sha256": "8b582c0447ebf66fee7c76e7351801efd0c3b01dc58b8b2751cd903f250f790f",
+      "visible_items": 8,
+      "exact_quote_occurrences": 45
+    },
+    {
+      "batch": "P017-P024",
+      "response_sha256": "89173755a314630fe1880839b3ccf1bf7a0ec8a02dd2d5aee4376bac051fe93d",
+      "events_sha256": "a9a43ad678d0882d5c4e2bc4c550ea3fcdcc24a1edbb1cc0a2d42d485875f688",
+      "task_sha256": "4ab0f2551cf859895b3eef4215fcbf5f119e6bed54e03c96edeb272ba6dd7b20",
+      "visible_items": 8,
+      "exact_quote_occurrences": 42
+    },
+    {
+      "batch": "P025-P032",
+      "response_sha256": "d4071003dab957cc3384e50284e2af2541e28702ea8919d56aee103a7c10fe38",
+      "events_sha256": "454d9a86944ceaa2bbddeec990e13c81bd02c52056eb9c678ba66fb501e1a484",
+      "task_sha256": "da993c229b502bf4c45204529c9509fd2b01bc5fda372e53035e84821cad9047",
+      "visible_items": 8,
+      "exact_quote_occurrences": 41
+    },
+    {
+      "batch": "P033-P040",
+      "response_sha256": "bf531d3aa489ad2c9c71c24f9399c26cc705f0308d44d7636cb041b902057b2d",
+      "events_sha256": "681aabd736c6d683bfcdba347d3fae424d0b707c970e52f14c445d48eeedc908",
+      "task_sha256": "55cd6514ca87c03ddae2ab0ff5df489aaf4edb9bfb889079f440fc6bbcb9b98f",
+      "visible_items": 8,
+      "exact_quote_occurrences": 43
+    },
+    {
+      "batch": "P041-P048",
+      "response_sha256": "5a528893525d21349a895859e0960d42b4c687206b2633a7c9affabb01e6e081",
+      "events_sha256": "a3d06aedaa9b1cfcaf4715fa03865074f4aa2a5a8e02fbd41902fa8dc8fc3375",
+      "task_sha256": "a31b330b3313798ea2419926160f26599b2db4932ef838e4c424dc1b8cf10458",
+      "visible_items": 8,
+      "exact_quote_occurrences": 40
+    }
+  ],
+  "batch_statements": [
+    {
+      "batch": "P001-P008",
+      "exposure_statement": "The earlier context-exposure audit reported no relevant project history, prior judgments or counts, model answers or results, coordinator mappings, or item-specific review material in the context then received. That absence means only that such material was not seen; the provenance of all private or hidden instructions could not be certified. Ordinary operating instructions and workspace metadata were present. Before this batch display, I had read the review template and packet items P001-P004 and reported preliminary observations on those four items. For this batch I then read the displayed packet items P001-P008. No author judgments, model answers, coordinator mappings, source history, or external resources were consulted.",
+      "reading_statement": "I declare that I read the complete displayed question and five documents for each of P001-P008. The read-only tool output presented one complete JSON object per item without visible truncation; that presentation can be checked, but it cannot prove comprehension.",
+      "limitations": "This is one model's input-only review and does not certify independent formal approval. The packet hash is the value supplied in the batch instruction and was not independently verified in this batch. Record support describes what the fictional documents report, not proof of an actual real-world value. No files were written."
+    },
+    {
+      "batch": "P009-P016",
+      "exposure_statement": "The earlier context-exposure audit reported no relevant project history, prior judgments or counts, model answers or results, coordinator mappings, or item-specific review material in the context then received. That absence means only that such material was not seen; the provenance of all private or hidden instructions could not be certified. Ordinary operating instructions and workspace metadata were present. Before this batch, I had read the review template and packet items P001-P008 and produced my own preliminary observations and review of those items. I then read the displayed packet items P009-P016. No author judgments, other model answers, coordinator mappings, source history, or external resources were consulted.",
+      "reading_statement": "I declare that I read the complete displayed question and five documents for each of P009-P016. The read-only tool output presented one complete JSON object per item without visible truncation; that presentation can be checked, but it cannot prove comprehension.",
+      "limitations": "This is one model's input-only review and does not certify independent formal approval. The packet hash is the value supplied in the batch instruction and was not independently verified in this batch. Each item was assessed against its own five supplied documents; repeated unit identifiers across items were not treated as evidence within another item. Record support describes what the fictional documents report, not proof of an actual real-world value. No files were written."
+    },
+    {
+      "batch": "P017-P024",
+      "exposure_statement": "The earlier context-exposure audit reported no relevant project history, prior judgments or counts, model answers or results, coordinator mappings, or item-specific review material in the context then received. That absence means only that such material was not seen; the provenance of all private or hidden instructions could not be certified. Ordinary operating instructions and workspace metadata were present. Before this batch, I had read the review template and packet items P001-P016 and produced my own preliminary observations and reviews of those items. I then read the displayed packet items P017-P024. No author judgments, other model answers, coordinator mappings, source history, or external resources were consulted.",
+      "reading_statement": "I declare that I read the complete displayed question and five documents for each of P017-P024. The read-only tool output presented one complete JSON object per item without visible truncation; that presentation can be checked, but it cannot prove comprehension.",
+      "limitations": "This is one model's input-only review and does not certify independent formal approval. The packet hash is the value supplied in the batch instruction and was not independently verified in this batch. Each item was assessed against its own five supplied documents; repeated unit identifiers across items were not treated as evidence within another item. Record support describes what the fictional documents report, not proof of an actual real-world value. No files were written."
+    },
+    {
+      "batch": "P025-P032",
+      "exposure_statement": "The earlier context-exposure audit reported no relevant project history, prior judgments or counts, model answers or results, coordinator mappings, or item-specific review material in the context then received. That absence means only that such material was not seen; the provenance of all private or hidden instructions could not be certified. Ordinary operating instructions and workspace metadata were present. Before this batch, I had read the review template and packet items P001-P024 and produced my own preliminary observations and reviews of those items. I then read the displayed packet items P025-P032. No author judgments, other model answers, coordinator mappings, source history, or external resources were consulted.",
+      "reading_statement": "I declare that I read the complete displayed question and five documents for each of P025-P032. The read-only tool output presented one complete JSON object per item without visible truncation; that presentation can be checked, but it cannot prove comprehension.",
+      "limitations": "This is one model's input-only review and does not certify independent formal approval. The packet hash is the value supplied in the batch instruction and was not independently verified in this batch. Each item was assessed against its own five supplied documents; repeated unit identifiers across items were not treated as evidence within another item. Record support describes what the fictional documents report, not proof of an actual real-world value. No files were written."
+    },
+    {
+      "batch": "P033-P040",
+      "exposure_statement": "The earlier context-exposure audit reported no relevant project history, prior judgments or counts, model answers or results, coordinator mappings, or item-specific review material in the context then received. That absence means only that such material was not seen; the provenance of all private or hidden instructions could not be certified. Ordinary operating instructions and workspace metadata were present. Before this batch, I had read the review template and packet items P001-P032 and produced my own preliminary observations and reviews of those items. I then read the displayed packet items P033-P040. No author judgments, other model answers, coordinator mappings, source history, or external resources were consulted.",
+      "reading_statement": "I declare that I read the complete displayed question and five documents for each of P033-P040. The read-only tool output presented one complete JSON object per item without visible truncation; that presentation can be checked, but it cannot prove comprehension.",
+      "limitations": "This is one model's input-only review and does not certify independent formal approval. The packet hash is the value supplied in the batch instruction and was not independently verified in this batch. Each item was assessed against its own five supplied documents; repeated unit identifiers across items were not treated as evidence within another item. Record support describes what the fictional documents report, not proof of an actual real-world value. No files were written."
+    },
+    {
+      "batch": "P041-P048",
+      "exposure_statement": "The earlier context-exposure audit reported no relevant project history, prior judgments or counts, model answers or results, coordinator mappings, or item-specific review material in the context then received. That absence means only that such material was not seen; the provenance of all private or hidden instructions could not be certified. Ordinary operating instructions and workspace metadata were present. Before this batch, I had read the review template and packet items P001-P040 and produced my own preliminary observations and reviews of those items. I then read the displayed packet items P041-P048. No author judgments, other model answers, coordinator mappings, source history, or external resources were consulted.",
+      "reading_statement": "I declare that I read the complete displayed question and five documents for each of P041-P048. The read-only tool output presented one complete JSON object per item without visible truncation; that presentation can be checked, but it cannot prove comprehension.",
+      "limitations": "This is one model's input-only review and does not certify independent formal approval. The packet hash is the value supplied in the batch instruction and was not independently verified in this batch. Each item was assessed against its own five supplied documents; repeated unit identifiers across items were not treated as evidence within another item. Record support describes what the fictional documents report, not proof of an actual real-world value. No files were written."
+    }
+  ],
+  "items": [
+    {
+      "item_id": "P001",
+      "target_entity": "Unit XU-420",
+      "target_field": "omega code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [
+        {
+          "entity": "Unit XU-421",
+          "field": "omega code",
+          "records": [
+            {
+              "document_index": 2,
+              "quote": "A record assigns Unit XU-421 the omega code VX-81110.",
+              "value": "VX-81110"
+            },
+            {
+              "document_index": 3,
+              "quote": "A record assigns Unit XU-421 the omega code VX-81112.",
+              "value": "VX-81112"
+            }
+          ],
+          "reason": "The records assign different omega codes to the same unit in the same snapshot, although each unit has exactly one value for each code field."
+        }
+      ],
+      "target_support_interpretation": "No supplied record assigns an omega code to Unit XU-420. Its alpha-code assignment cannot determine its omega code under the stated field-independence rule.",
+      "missing_or_uncertain": "The target omega value is not stated. The rules assert that each unit has a value, but do not supply this one. A rule equating the fields would change the interpretation, but the supplied rules state they are independent.",
+      "reasoning": "All five documents were checked. Document 4 concerns the target but assigns its alpha code; documents 2 and 3 concern another unit; documents 1 and 5 provide rules and background. The conflict about XU-421 does not assign a value to XU-420.",
+      "evidence_citations": [
+        {
+          "document_index": 1,
+          "quote": "Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-420 the alpha code VX-81111."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-421 the omega code VX-81110."
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-421 the omega code VX-81112."
+        }
+      ]
+    },
+    {
+      "item_id": "P002",
+      "target_entity": "Unit XU-409",
+      "target_field": "omega code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [
+        {
+          "entity": "Unit XU-408",
+          "field": "omega code",
+          "records": [
+            {
+              "document_index": 3,
+              "quote": "A record assigns Unit XU-408 the omega code VX-81051.",
+              "value": "VX-81051"
+            },
+            {
+              "document_index": 4,
+              "quote": "A record assigns Unit XU-408 the omega code VX-81052.",
+              "value": "VX-81052"
+            }
+          ],
+          "reason": "The records assign different omega codes to the same unit in the same snapshot, although each unit has exactly one value for each code field."
+        }
+      ],
+      "target_support_interpretation": "No supplied record assigns an omega code to Unit XU-409. The target's alpha assignment does not determine its independent omega field.",
+      "missing_or_uncertain": "The target omega value is not stated. The rules assert that each unit has a value, but do not supply this one. A rule equating the fields would change the interpretation, but the supplied rules state they are independent.",
+      "reasoning": "All five documents were checked. Document 5 assigns the target an alpha code; documents 3 and 4 concern another unit; documents 1 and 2 provide background and rules. The conflict about XU-408 does not assign a value to XU-409.",
+      "evidence_citations": [
+        {
+          "document_index": 2,
+          "quote": "Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-409 the alpha code VX-81050."
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-408 the omega code VX-81051."
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-408 the omega code VX-81052."
+        }
+      ]
+    },
+    {
+      "item_id": "P003",
+      "target_entity": "Unit XU-422",
+      "target_field": "alpha code",
+      "target_record_state": "target_record_supported",
+      "target_records": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-422 the alpha code VX-81122.",
+          "value": "VX-81122"
+        }
+      ],
+      "conflicts": [],
+      "target_support_interpretation": "Document 1 reports VX-81122 as the target alpha code. That is support from a supplied fictional record, not proof of a real-world value.",
+      "missing_or_uncertain": "No incompatible assignment to the target field is supplied. The records do not independently establish a real-world value.",
+      "reasoning": "Document 1 assigns the requested field. Document 3 assigns the target's independent omega field, and document 2 assigns another unit's alpha field. The supplied rules permit different units to share values and give no record priority; none of these other assignments conflicts with document 1.",
+      "evidence_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-422 the alpha code VX-81122."
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-422 the omega code VX-81121."
+        },
+        {
+          "document_index": 5,
+          "quote": "Alpha code and omega code are independent fields. Different units may share values."
+        }
+      ]
+    },
+    {
+      "item_id": "P004",
+      "target_entity": "Unit XU-405",
+      "target_field": "alpha code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [],
+      "target_support_interpretation": "No supplied record assigns an alpha code to Unit XU-405. Its omega assignment does not determine its independent alpha field.",
+      "missing_or_uncertain": "The target alpha value is not stated. The rules assert that each unit has a value, but do not supply this one. A rule equating the fields would change the interpretation, but the supplied rules state they are independent.",
+      "reasoning": "All five documents were checked. Document 2 assigns the target an omega code. Documents 1 and 5 assign different fields to Unit XU-404, and documents 3 and 4 provide background and rules. No pair of supplied assignments is incompatible under those rules.",
+      "evidence_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-405 the omega code VX-81032."
+        },
+        {
+          "document_index": 4,
+          "quote": "Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-404 the omega code VX-81030."
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-404 the alpha code VX-81031."
+        }
+      ]
+    },
+    {
+      "item_id": "P005",
+      "target_entity": "Unit XU-414",
+      "target_field": "omega code",
+      "target_record_state": "conflicting_target_records",
+      "target_records": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-414 the omega code VX-81082.",
+          "value": "VX-81082"
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-414 the omega code VX-81081.",
+          "value": "VX-81081"
+        }
+      ],
+      "conflicts": [
+        {
+          "entity": "Unit XU-414",
+          "field": "omega code",
+          "records": [
+            {
+              "document_index": 1,
+              "quote": "A record assigns Unit XU-414 the omega code VX-81082.",
+              "value": "VX-81082"
+            },
+            {
+              "document_index": 5,
+              "quote": "A record assigns Unit XU-414 the omega code VX-81081.",
+              "value": "VX-81081"
+            }
+          ],
+          "reason": "The two records assign different omega codes to the same unit in the same snapshot, while the rules specify exactly one value per field and no priority between records."
+        }
+      ],
+      "target_support_interpretation": "Each omega value is reported by a supplied record, but the two assignments conflict and the rules do not resolve which, if either, is correct. Neither report proves a real-world value.",
+      "missing_or_uncertain": "The supplied rules give no basis to choose between the conflicting target assignments. A priority rule or a rule allowing multiple values for one field could change the assessment, but neither is supplied.",
+      "reasoning": "Documents 1 and 5 assign different values to the requested field of the same unit. Document 2 concerns the target's independent alpha field and does not resolve the omega conflict.",
+      "evidence_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-414 the omega code VX-81082."
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-414 the omega code VX-81081."
+        },
+        {
+          "document_index": 4,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        }
+      ]
+    },
+    {
+      "item_id": "P006",
+      "target_entity": "Unit XU-413",
+      "target_field": "alpha code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [],
+      "target_support_interpretation": "No supplied record assigns an alpha code to Unit XU-413. Its omega assignment does not determine its independent alpha field.",
+      "missing_or_uncertain": "The target alpha value is not stated. The rules assert that each unit has a value, but do not supply this one. A rule equating the fields would change the interpretation, but the supplied rules state they are independent.",
+      "reasoning": "All five documents were checked. Document 3 assigns the target an omega code. Documents 1 and 2 assign independent fields to Unit XU-412, and documents 4 and 5 provide background and rules. No pair of supplied assignments is incompatible under those rules.",
+      "evidence_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-413 the omega code VX-81070."
+        },
+        {
+          "document_index": 5,
+          "quote": "Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-412 the alpha code VX-81072."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-412 the omega code VX-81071."
+        }
+      ]
+    },
+    {
+      "item_id": "P007",
+      "target_entity": "Unit XU-401",
+      "target_field": "alpha code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [
+        {
+          "entity": "Unit XU-400",
+          "field": "alpha code",
+          "records": [
+            {
+              "document_index": 2,
+              "quote": "A record assigns Unit XU-400 the alpha code VX-81010.",
+              "value": "VX-81010"
+            },
+            {
+              "document_index": 3,
+              "quote": "A record assigns Unit XU-400 the alpha code VX-81012.",
+              "value": "VX-81012"
+            }
+          ],
+          "reason": "The records assign different alpha codes to the same unit in the same snapshot, although each unit has exactly one value for each code field."
+        }
+      ],
+      "target_support_interpretation": "No supplied record assigns an alpha code to Unit XU-401. Its omega assignment does not determine its independent alpha field.",
+      "missing_or_uncertain": "The target alpha value is not stated. The rules assert that each unit has a value, but do not supply this one. A rule equating the fields would change the interpretation, but the supplied rules state they are independent.",
+      "reasoning": "All five documents were checked. Document 4 assigns the target an omega code; documents 2 and 3 concern another unit; documents 1 and 5 provide rules and background. The conflict about XU-400 does not assign a value to XU-401.",
+      "evidence_citations": [
+        {
+          "document_index": 1,
+          "quote": "Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-401 the omega code VX-81011."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-400 the alpha code VX-81010."
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-400 the alpha code VX-81012."
+        }
+      ]
+    },
+    {
+      "item_id": "P008",
+      "target_entity": "Unit XU-409",
+      "target_field": "omega code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [],
+      "target_support_interpretation": "No supplied record assigns an omega code to Unit XU-409. Its alpha assignment does not determine its independent omega field.",
+      "missing_or_uncertain": "The target omega value is not stated. The rules assert that each unit has a value, but do not supply this one. A rule equating the fields would change the interpretation, but the supplied rules state they are independent.",
+      "reasoning": "All five documents were checked. Document 5 assigns the target an alpha code. Documents 3 and 4 assign different fields to Unit XU-408; documents 1 and 2 provide background and rules. The assignments in documents 3 and 4 are not incompatible because alpha and omega are independent fields.",
+      "evidence_citations": [
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-409 the alpha code VX-81050."
+        },
+        {
+          "document_index": 2,
+          "quote": "Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-408 the omega code VX-81051."
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-408 the alpha code VX-81052."
+        }
+      ]
+    },
+    {
+      "item_id": "P009",
+      "target_entity": "Unit XU-407",
+      "target_field": "omega code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [
+        {
+          "entity": "Unit XU-406",
+          "field": "omega code",
+          "records": [
+            {
+              "document_index": 4,
+              "quote": "A record assigns Unit XU-406 the omega code VX-81041.",
+              "value": "VX-81041"
+            },
+            {
+              "document_index": 5,
+              "quote": "A record assigns Unit XU-406 the omega code VX-81040.",
+              "value": "VX-81040"
+            }
+          ],
+          "reason": "These records assign different omega codes to the same unit in the same snapshot, while each unit has exactly one value for each code field."
+        }
+      ],
+      "target_support_interpretation": "No supplied record assigns an omega code to Unit XU-407. The target's alpha assignment does not determine its independent omega field.",
+      "missing_or_uncertain": "The target omega value is unstated. The rules say each unit has one value for each field but do not supply it. An interpretation equating alpha and omega would change the result, but the rules explicitly state that the fields are independent.",
+      "reasoning": "All five documents were checked. Document 1 assigns the target an alpha code; documents 4 and 5 assign omega codes to another unit; documents 2 and 3 provide background and rules. The conflict about XU-406 does not assign an omega code to XU-407.",
+      "evidence_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-407 the alpha code VX-81042."
+        },
+        {
+          "document_index": 3,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-406 the omega code VX-81041."
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-406 the omega code VX-81040."
+        }
+      ]
+    },
+    {
+      "item_id": "P010",
+      "target_entity": "Unit XU-409",
+      "target_field": "omega code",
+      "target_record_state": "conflicting_target_records",
+      "target_records": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-409 the omega code VX-81051.",
+          "value": "VX-81051"
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-409 the omega code VX-81052.",
+          "value": "VX-81052"
+        }
+      ],
+      "conflicts": [
+        {
+          "entity": "Unit XU-409",
+          "field": "omega code",
+          "records": [
+            {
+              "document_index": 3,
+              "quote": "A record assigns Unit XU-409 the omega code VX-81051.",
+              "value": "VX-81051"
+            },
+            {
+              "document_index": 4,
+              "quote": "A record assigns Unit XU-409 the omega code VX-81052.",
+              "value": "VX-81052"
+            }
+          ],
+          "reason": "The records assign different omega codes to the same unit in the same snapshot, while the rules allow exactly one value per field and give no record priority."
+        }
+      ],
+      "target_support_interpretation": "Each value is reported by a supplied record, but the reports conflict and neither has stated priority. A record's report is not proof of a real-world value.",
+      "missing_or_uncertain": "The supplied documents do not resolve which omega assignment, if either, is correct. A priority rule or a rule allowing multiple values for the same field could change the assessment; neither is supplied.",
+      "reasoning": "Documents 3 and 4 assign different values to the requested field of the same unit. Document 5 assigns the independent alpha field and does not resolve the conflict.",
+      "evidence_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-409 the omega code VX-81051."
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-409 the omega code VX-81052."
+        },
+        {
+          "document_index": 2,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        }
+      ]
+    },
+    {
+      "item_id": "P011",
+      "target_entity": "Unit XU-410",
+      "target_field": "omega code",
+      "target_record_state": "conflicting_target_records",
+      "target_records": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-410 the omega code VX-81060.",
+          "value": "VX-81060"
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-410 the omega code VX-81061.",
+          "value": "VX-81061"
+        }
+      ],
+      "conflicts": [
+        {
+          "entity": "Unit XU-410",
+          "field": "omega code",
+          "records": [
+            {
+              "document_index": 2,
+              "quote": "A record assigns Unit XU-410 the omega code VX-81060.",
+              "value": "VX-81060"
+            },
+            {
+              "document_index": 3,
+              "quote": "A record assigns Unit XU-410 the omega code VX-81061.",
+              "value": "VX-81061"
+            }
+          ],
+          "reason": "The records assign different omega codes to the same unit in the same snapshot, while the rules allow exactly one value per field and give no record priority."
+        }
+      ],
+      "target_support_interpretation": "Each value is reported by a supplied record, but the reports conflict and neither has stated priority. A record's report is not proof of a real-world value.",
+      "missing_or_uncertain": "The supplied documents do not resolve which omega assignment, if either, is correct. A priority rule or a rule allowing multiple values for the same field could change the assessment; neither is supplied.",
+      "reasoning": "Documents 2 and 3 assign different values to the requested field of the same unit. Document 4 assigns the independent alpha field and does not resolve the conflict.",
+      "evidence_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-410 the omega code VX-81060."
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-410 the omega code VX-81061."
+        },
+        {
+          "document_index": 1,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        }
+      ]
+    },
+    {
+      "item_id": "P012",
+      "target_entity": "Unit XU-418",
+      "target_field": "alpha code",
+      "target_record_state": "target_record_supported",
+      "target_records": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-418 the alpha code VX-81100.",
+          "value": "VX-81100"
+        }
+      ],
+      "conflicts": [],
+      "target_support_interpretation": "Document 3 reports VX-81100 as the target's alpha code. This is support from a supplied fictional record, not proof of a real-world value.",
+      "missing_or_uncertain": "No incompatible assignment to the target field appears in this item's records. The supplied records do not independently establish a real-world value.",
+      "reasoning": "Document 3 assigns the requested field. Document 5 assigns the target's independent omega field, and document 4 assigns another unit's alpha field. No pair of assignments in this item's documents is incompatible under the supplied rules.",
+      "evidence_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-418 the alpha code VX-81100."
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-418 the omega code VX-81102."
+        },
+        {
+          "document_index": 2,
+          "quote": "Alpha code and omega code are independent fields. Different units may share values."
+        }
+      ]
+    },
+    {
+      "item_id": "P013",
+      "target_entity": "Unit XU-407",
+      "target_field": "omega code",
+      "target_record_state": "target_record_supported",
+      "target_records": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-407 the omega code VX-81041.",
+          "value": "VX-81041"
+        }
+      ],
+      "conflicts": [],
+      "target_support_interpretation": "Document 4 reports VX-81041 as the target's omega code. This is support from a supplied fictional record, not proof of a real-world value.",
+      "missing_or_uncertain": "No incompatible assignment to the target field appears in this item's records. The supplied records do not independently establish a real-world value.",
+      "reasoning": "Document 4 assigns the requested field. Document 1 assigns the target's independent alpha field, and document 5 assigns another unit's omega field. No pair of assignments in this item's documents is incompatible under the supplied rules.",
+      "evidence_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-407 the omega code VX-81041."
+        },
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-407 the alpha code VX-81042."
+        },
+        {
+          "document_index": 3,
+          "quote": "Alpha code and omega code are independent fields. Different units may share values."
+        }
+      ]
+    },
+    {
+      "item_id": "P014",
+      "target_entity": "Unit XU-405",
+      "target_field": "alpha code",
+      "target_record_state": "target_record_supported",
+      "target_records": [
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-405 the alpha code VX-81031.",
+          "value": "VX-81031"
+        }
+      ],
+      "conflicts": [],
+      "target_support_interpretation": "Document 5 reports VX-81031 as the target's alpha code. This is support from a supplied fictional record, not proof of a real-world value.",
+      "missing_or_uncertain": "No incompatible assignment to the target field appears in this item's records. The supplied records do not independently establish a real-world value.",
+      "reasoning": "Document 5 assigns the requested field. Document 2 assigns the target's independent omega field, and document 1 assigns another unit's alpha field. No pair of assignments in this item's documents is incompatible under the supplied rules.",
+      "evidence_citations": [
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-405 the alpha code VX-81031."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-405 the omega code VX-81032."
+        },
+        {
+          "document_index": 4,
+          "quote": "Alpha code and omega code are independent fields. Different units may share values."
+        }
+      ]
+    },
+    {
+      "item_id": "P015",
+      "target_entity": "Unit XU-401",
+      "target_field": "alpha code",
+      "target_record_state": "conflicting_target_records",
+      "target_records": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-401 the alpha code VX-81010.",
+          "value": "VX-81010"
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-401 the alpha code VX-81012.",
+          "value": "VX-81012"
+        }
+      ],
+      "conflicts": [
+        {
+          "entity": "Unit XU-401",
+          "field": "alpha code",
+          "records": [
+            {
+              "document_index": 2,
+              "quote": "A record assigns Unit XU-401 the alpha code VX-81010.",
+              "value": "VX-81010"
+            },
+            {
+              "document_index": 3,
+              "quote": "A record assigns Unit XU-401 the alpha code VX-81012.",
+              "value": "VX-81012"
+            }
+          ],
+          "reason": "The records assign different alpha codes to the same unit in the same snapshot, while the rules allow exactly one value per field and give no record priority."
+        }
+      ],
+      "target_support_interpretation": "Each value is reported by a supplied record, but the reports conflict and neither has stated priority. A record's report is not proof of a real-world value.",
+      "missing_or_uncertain": "The supplied documents do not resolve which alpha assignment, if either, is correct. A priority rule or a rule allowing multiple values for the same field could change the assessment; neither is supplied.",
+      "reasoning": "Documents 2 and 3 assign different values to the requested field of the same unit. Document 4 assigns the independent omega field and does not resolve the conflict.",
+      "evidence_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-401 the alpha code VX-81010."
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-401 the alpha code VX-81012."
+        },
+        {
+          "document_index": 1,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        }
+      ]
+    },
+    {
+      "item_id": "P016",
+      "target_entity": "Unit XU-403",
+      "target_field": "omega code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [
+        {
+          "entity": "Unit XU-402",
+          "field": "omega code",
+          "records": [
+            {
+              "document_index": 1,
+              "quote": "A record assigns Unit XU-402 the omega code VX-81022.",
+              "value": "VX-81022"
+            },
+            {
+              "document_index": 2,
+              "quote": "A record assigns Unit XU-402 the omega code VX-81021.",
+              "value": "VX-81021"
+            }
+          ],
+          "reason": "These records assign different omega codes to the same unit in the same snapshot, while each unit has exactly one value for each code field."
+        }
+      ],
+      "target_support_interpretation": "No supplied record assigns an omega code to Unit XU-403. The target's alpha assignment does not determine its independent omega field.",
+      "missing_or_uncertain": "The target omega value is unstated. The rules say each unit has one value for each field but do not supply it. An interpretation equating alpha and omega would change the result, but the rules explicitly state that the fields are independent.",
+      "reasoning": "All five documents were checked. Document 3 assigns the target an alpha code; documents 1 and 2 assign omega codes to another unit; documents 4 and 5 provide background and rules. The conflict about XU-402 does not assign an omega code to XU-403.",
+      "evidence_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-403 the alpha code VX-81020."
+        },
+        {
+          "document_index": 5,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-402 the omega code VX-81022."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-402 the omega code VX-81021."
+        }
+      ]
+    },
+    {
+      "item_id": "P017",
+      "target_entity": "Unit XU-405",
+      "target_field": "alpha code",
+      "target_record_state": "conflicting_target_records",
+      "target_records": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-405 the alpha code VX-81030.",
+          "value": "VX-81030"
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-405 the alpha code VX-81031.",
+          "value": "VX-81031"
+        }
+      ],
+      "conflicts": [
+        {
+          "entity": "Unit XU-405",
+          "field": "alpha code",
+          "records": [
+            {
+              "document_index": 1,
+              "quote": "A record assigns Unit XU-405 the alpha code VX-81030.",
+              "value": "VX-81030"
+            },
+            {
+              "document_index": 5,
+              "quote": "A record assigns Unit XU-405 the alpha code VX-81031.",
+              "value": "VX-81031"
+            }
+          ],
+          "reason": "The records assign different alpha codes to the same unit in the same snapshot, while each unit has exactly one value per field."
+        }
+      ],
+      "target_support_interpretation": "Each value is reported by a supplied record, but the reports conflict and neither has stated priority. The reports do not prove a real-world value.",
+      "missing_or_uncertain": "The supplied records do not resolve which alpha assignment, if either, is correct. A priority rule or a rule permitting multiple values for one field could change the assessment; neither is supplied.",
+      "reasoning": "Documents 1 and 5 assign different values to the target field. Document 2 assigns the target's independent omega field and does not resolve the conflict.",
+      "evidence_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-405 the alpha code VX-81030."
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-405 the alpha code VX-81031."
+        },
+        {
+          "document_index": 4,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        }
+      ]
+    },
+    {
+      "item_id": "P018",
+      "target_entity": "Unit XU-420",
+      "target_field": "omega code",
+      "target_record_state": "target_record_supported",
+      "target_records": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-420 the omega code VX-81110.",
+          "value": "VX-81110"
+        }
+      ],
+      "conflicts": [],
+      "target_support_interpretation": "Document 2 reports VX-81110 as the target's omega code. This is support from a supplied fictional record, not proof of a real-world value.",
+      "missing_or_uncertain": "No incompatible assignment to the target field appears in this item's documents. The records do not independently establish a real-world value.",
+      "reasoning": "Document 2 assigns the requested field. Document 4 assigns the target's independent alpha field, and document 3 assigns another unit's omega field. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-420 the omega code VX-81110."
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-420 the alpha code VX-81111."
+        },
+        {
+          "document_index": 1,
+          "quote": "Alpha code and omega code are independent fields. Different units may share values."
+        }
+      ]
+    },
+    {
+      "item_id": "P019",
+      "target_entity": "Unit XU-416",
+      "target_field": "alpha code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [
+        {
+          "entity": "Unit XU-417",
+          "field": "alpha code",
+          "records": [
+            {
+              "document_index": 4,
+              "quote": "A record assigns Unit XU-417 the alpha code VX-81092.",
+              "value": "VX-81092"
+            },
+            {
+              "document_index": 5,
+              "quote": "A record assigns Unit XU-417 the alpha code VX-81090.",
+              "value": "VX-81090"
+            }
+          ],
+          "reason": "These records assign different alpha codes to the same unit in the same snapshot, while each unit has exactly one value per field."
+        }
+      ],
+      "target_support_interpretation": "No supplied record assigns an alpha code to Unit XU-416. Its omega assignment does not determine its independent alpha field.",
+      "missing_or_uncertain": "The target alpha value is unstated. The rules say each unit has one value for each field but do not supply it. An interpretation equating alpha and omega would change the result, but the rules state the fields are independent.",
+      "reasoning": "All five documents were checked. Document 1 assigns the target an omega code; documents 4 and 5 assign alpha codes to another unit; documents 2 and 3 provide background and rules. The conflict about XU-417 does not assign an alpha code to XU-416.",
+      "evidence_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-416 the omega code VX-81091."
+        },
+        {
+          "document_index": 3,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-417 the alpha code VX-81092."
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-417 the alpha code VX-81090."
+        }
+      ]
+    },
+    {
+      "item_id": "P020",
+      "target_entity": "Unit XU-422",
+      "target_field": "alpha code",
+      "target_record_state": "conflicting_target_records",
+      "target_records": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-422 the alpha code VX-81122.",
+          "value": "VX-81122"
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-422 the alpha code VX-81120.",
+          "value": "VX-81120"
+        }
+      ],
+      "conflicts": [
+        {
+          "entity": "Unit XU-422",
+          "field": "alpha code",
+          "records": [
+            {
+              "document_index": 1,
+              "quote": "A record assigns Unit XU-422 the alpha code VX-81122.",
+              "value": "VX-81122"
+            },
+            {
+              "document_index": 2,
+              "quote": "A record assigns Unit XU-422 the alpha code VX-81120.",
+              "value": "VX-81120"
+            }
+          ],
+          "reason": "The records assign different alpha codes to the same unit in the same snapshot, while each unit has exactly one value per field."
+        }
+      ],
+      "target_support_interpretation": "Each value is reported by a supplied record, but the reports conflict and neither has stated priority. The reports do not prove a real-world value.",
+      "missing_or_uncertain": "The supplied records do not resolve which alpha assignment, if either, is correct. A priority rule or a rule permitting multiple values for one field could change the assessment; neither is supplied.",
+      "reasoning": "Documents 1 and 2 assign different values to the target field. Document 3 assigns the target's independent omega field and does not resolve the conflict.",
+      "evidence_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-422 the alpha code VX-81122."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-422 the alpha code VX-81120."
+        },
+        {
+          "document_index": 5,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        }
+      ]
+    },
+    {
+      "item_id": "P021",
+      "target_entity": "Unit XU-422",
+      "target_field": "alpha code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [],
+      "target_support_interpretation": "No supplied record assigns an alpha code to Unit XU-422. Its omega assignment does not determine its independent alpha field.",
+      "missing_or_uncertain": "The target alpha value is unstated. The rules say each unit has one value for each field but do not supply it. An interpretation equating alpha and omega would change the result, but the rules state the fields are independent.",
+      "reasoning": "All five documents were checked. Document 3 assigns the target an omega code. Documents 1 and 2 assign independent fields to Unit XU-423; documents 4 and 5 provide background and rules. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-422 the omega code VX-81121."
+        },
+        {
+          "document_index": 5,
+          "quote": "Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-423 the alpha code VX-81122."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-423 the omega code VX-81120."
+        }
+      ]
+    },
+    {
+      "item_id": "P022",
+      "target_entity": "Unit XU-418",
+      "target_field": "alpha code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [],
+      "target_support_interpretation": "No supplied record assigns an alpha code to Unit XU-418. Its omega assignment does not determine its independent alpha field.",
+      "missing_or_uncertain": "The target alpha value is unstated. The rules say each unit has one value for each field but do not supply it. An interpretation equating alpha and omega would change the result, but the rules state the fields are independent.",
+      "reasoning": "All five documents were checked. Document 5 assigns the target an omega code. Documents 3 and 4 assign independent fields to Unit XU-419; documents 1 and 2 provide background and rules. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-418 the omega code VX-81102."
+        },
+        {
+          "document_index": 2,
+          "quote": "Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-419 the alpha code VX-81100."
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-419 the omega code VX-81101."
+        }
+      ]
+    },
+    {
+      "item_id": "P023",
+      "target_entity": "Unit XU-414",
+      "target_field": "omega code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [
+        {
+          "entity": "Unit XU-415",
+          "field": "omega code",
+          "records": [
+            {
+              "document_index": 1,
+              "quote": "A record assigns Unit XU-415 the omega code VX-81082.",
+              "value": "VX-81082"
+            },
+            {
+              "document_index": 5,
+              "quote": "A record assigns Unit XU-415 the omega code VX-81081.",
+              "value": "VX-81081"
+            }
+          ],
+          "reason": "These records assign different omega codes to the same unit in the same snapshot, while each unit has exactly one value per field."
+        }
+      ],
+      "target_support_interpretation": "No supplied record assigns an omega code to Unit XU-414. Its alpha assignment does not determine its independent omega field.",
+      "missing_or_uncertain": "The target omega value is unstated. The rules say each unit has one value for each field but do not supply it. An interpretation equating alpha and omega would change the result, but the rules state the fields are independent.",
+      "reasoning": "All five documents were checked. Document 2 assigns the target an alpha code; documents 1 and 5 assign omega codes to another unit; documents 3 and 4 provide background and rules. The conflict about XU-415 does not assign an omega code to XU-414.",
+      "evidence_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-414 the alpha code VX-81080."
+        },
+        {
+          "document_index": 4,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-415 the omega code VX-81082."
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-415 the omega code VX-81081."
+        }
+      ]
+    },
+    {
+      "item_id": "P024",
+      "target_entity": "Unit XU-410",
+      "target_field": "omega code",
+      "target_record_state": "target_record_supported",
+      "target_records": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-410 the omega code VX-81060.",
+          "value": "VX-81060"
+        }
+      ],
+      "conflicts": [],
+      "target_support_interpretation": "Document 2 reports VX-81060 as the target's omega code. This is support from a supplied fictional record, not proof of a real-world value.",
+      "missing_or_uncertain": "No incompatible assignment to the target field appears in this item's documents. The records do not independently establish a real-world value.",
+      "reasoning": "Document 2 assigns the requested field. Document 4 assigns the target's independent alpha field, and document 3 assigns another unit's omega field. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-410 the omega code VX-81060."
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-410 the alpha code VX-81062."
+        },
+        {
+          "document_index": 1,
+          "quote": "Alpha code and omega code are independent fields. Different units may share values."
+        }
+      ]
+    },
+    {
+      "item_id": "P025",
+      "target_entity": "Unit XU-413",
+      "target_field": "alpha code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [
+        {
+          "entity": "Unit XU-412",
+          "field": "alpha code",
+          "records": [
+            {
+              "document_index": 1,
+              "quote": "A record assigns Unit XU-412 the alpha code VX-81072.",
+              "value": "VX-81072"
+            },
+            {
+              "document_index": 2,
+              "quote": "A record assigns Unit XU-412 the alpha code VX-81071.",
+              "value": "VX-81071"
+            }
+          ],
+          "reason": "The records assign different alpha codes to the same unit in the same snapshot, while each unit has exactly one value for each field."
+        }
+      ],
+      "target_support_interpretation": "No supplied record assigns an alpha code to Unit XU-413. Its omega assignment does not determine its independent alpha field.",
+      "missing_or_uncertain": "The target alpha value is unstated. A rule equating alpha and omega could change the assessment, but the supplied rules state that the fields are independent.",
+      "reasoning": "All five documents were checked. Document 3 assigns the target an omega code; documents 1 and 2 concern another unit; documents 4 and 5 provide background and rules. The conflict about XU-412 does not assign a value to XU-413.",
+      "evidence_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-413 the omega code VX-81070."
+        },
+        {
+          "document_index": 5,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-412 the alpha code VX-81072."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-412 the alpha code VX-81071."
+        }
+      ]
+    },
+    {
+      "item_id": "P026",
+      "target_entity": "Unit XU-405",
+      "target_field": "alpha code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [
+        {
+          "entity": "Unit XU-404",
+          "field": "alpha code",
+          "records": [
+            {
+              "document_index": 1,
+              "quote": "A record assigns Unit XU-404 the alpha code VX-81030.",
+              "value": "VX-81030"
+            },
+            {
+              "document_index": 5,
+              "quote": "A record assigns Unit XU-404 the alpha code VX-81031.",
+              "value": "VX-81031"
+            }
+          ],
+          "reason": "The records assign different alpha codes to the same unit in the same snapshot, while each unit has exactly one value for each field."
+        }
+      ],
+      "target_support_interpretation": "No supplied record assigns an alpha code to Unit XU-405. Its omega assignment does not determine its independent alpha field.",
+      "missing_or_uncertain": "The target alpha value is unstated. A rule equating alpha and omega could change the assessment, but the supplied rules state that the fields are independent.",
+      "reasoning": "All five documents were checked. Document 2 assigns the target an omega code; documents 1 and 5 concern another unit; documents 3 and 4 provide background and rules. The conflict about XU-404 does not assign a value to XU-405.",
+      "evidence_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-405 the omega code VX-81032."
+        },
+        {
+          "document_index": 4,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-404 the alpha code VX-81030."
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-404 the alpha code VX-81031."
+        }
+      ]
+    },
+    {
+      "item_id": "P027",
+      "target_entity": "Unit XU-422",
+      "target_field": "alpha code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [
+        {
+          "entity": "Unit XU-423",
+          "field": "alpha code",
+          "records": [
+            {
+              "document_index": 1,
+              "quote": "A record assigns Unit XU-423 the alpha code VX-81122.",
+              "value": "VX-81122"
+            },
+            {
+              "document_index": 2,
+              "quote": "A record assigns Unit XU-423 the alpha code VX-81120.",
+              "value": "VX-81120"
+            }
+          ],
+          "reason": "The records assign different alpha codes to the same unit in the same snapshot, while each unit has exactly one value for each field."
+        }
+      ],
+      "target_support_interpretation": "No supplied record assigns an alpha code to Unit XU-422. Its omega assignment does not determine its independent alpha field.",
+      "missing_or_uncertain": "The target alpha value is unstated. A rule equating alpha and omega could change the assessment, but the supplied rules state that the fields are independent.",
+      "reasoning": "All five documents were checked. Document 3 assigns the target an omega code; documents 1 and 2 concern another unit; documents 4 and 5 provide background and rules. The conflict about XU-423 does not assign a value to XU-422.",
+      "evidence_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-422 the omega code VX-81121."
+        },
+        {
+          "document_index": 5,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-423 the alpha code VX-81122."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-423 the alpha code VX-81120."
+        }
+      ]
+    },
+    {
+      "item_id": "P028",
+      "target_entity": "Unit XU-416",
+      "target_field": "alpha code",
+      "target_record_state": "target_record_supported",
+      "target_records": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-416 the alpha code VX-81092.",
+          "value": "VX-81092"
+        }
+      ],
+      "conflicts": [],
+      "target_support_interpretation": "Document 4 reports VX-81092 as the target alpha code. This is support from a supplied fictional record, not proof of a real-world value.",
+      "missing_or_uncertain": "No incompatible assignment to the target field appears in this item's documents. The records do not independently establish a real-world value.",
+      "reasoning": "Document 4 assigns the target field. Document 1 assigns the target's independent omega field; document 5 assigns another unit's alpha field. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-416 the alpha code VX-81092."
+        },
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-416 the omega code VX-81091."
+        },
+        {
+          "document_index": 3,
+          "quote": "Alpha code and omega code are independent fields. Different units may share values."
+        }
+      ]
+    },
+    {
+      "item_id": "P029",
+      "target_entity": "Unit XU-420",
+      "target_field": "omega code",
+      "target_record_state": "conflicting_target_records",
+      "target_records": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-420 the omega code VX-81110.",
+          "value": "VX-81110"
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-420 the omega code VX-81112.",
+          "value": "VX-81112"
+        }
+      ],
+      "conflicts": [
+        {
+          "entity": "Unit XU-420",
+          "field": "omega code",
+          "records": [
+            {
+              "document_index": 2,
+              "quote": "A record assigns Unit XU-420 the omega code VX-81110.",
+              "value": "VX-81110"
+            },
+            {
+              "document_index": 3,
+              "quote": "A record assigns Unit XU-420 the omega code VX-81112.",
+              "value": "VX-81112"
+            }
+          ],
+          "reason": "The records assign different omega codes to the same unit in the same snapshot, while each unit has exactly one value per field and no record has priority."
+        }
+      ],
+      "target_support_interpretation": "Each value is reported by a supplied record, but the reports conflict and neither has stated priority. The reports do not prove a real-world value.",
+      "missing_or_uncertain": "The records do not resolve which omega assignment, if either, is correct. A priority rule or a rule permitting multiple values for one field could change the assessment; neither is supplied.",
+      "reasoning": "Documents 2 and 3 assign different values to the target field. Document 4 assigns the target's independent alpha field and does not resolve the conflict.",
+      "evidence_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-420 the omega code VX-81110."
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-420 the omega code VX-81112."
+        },
+        {
+          "document_index": 1,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        }
+      ]
+    },
+    {
+      "item_id": "P030",
+      "target_entity": "Unit XU-420",
+      "target_field": "omega code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [],
+      "target_support_interpretation": "No supplied record assigns an omega code to Unit XU-420. Its alpha assignment does not determine its independent omega field.",
+      "missing_or_uncertain": "The target omega value is unstated. A rule equating alpha and omega could change the assessment, but the supplied rules state that the fields are independent.",
+      "reasoning": "All five documents were checked. Document 4 assigns the target an alpha code. Documents 2 and 3 assign independent fields to Unit XU-421; documents 1 and 5 provide rules and background. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-420 the alpha code VX-81111."
+        },
+        {
+          "document_index": 1,
+          "quote": "Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-421 the omega code VX-81110."
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-421 the alpha code VX-81112."
+        }
+      ]
+    },
+    {
+      "item_id": "P031",
+      "target_entity": "Unit XU-414",
+      "target_field": "omega code",
+      "target_record_state": "target_record_supported",
+      "target_records": [
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-414 the omega code VX-81081.",
+          "value": "VX-81081"
+        }
+      ],
+      "conflicts": [],
+      "target_support_interpretation": "Document 5 reports VX-81081 as the target omega code. This is support from a supplied fictional record, not proof of a real-world value.",
+      "missing_or_uncertain": "No incompatible assignment to the target field appears in this item's documents. The records do not independently establish a real-world value.",
+      "reasoning": "Document 5 assigns the target field. Document 2 assigns the target's independent alpha field; document 1 assigns another unit's omega field. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-414 the omega code VX-81081."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-414 the alpha code VX-81080."
+        },
+        {
+          "document_index": 4,
+          "quote": "Alpha code and omega code are independent fields. Different units may share values."
+        }
+      ]
+    },
+    {
+      "item_id": "P032",
+      "target_entity": "Unit XU-410",
+      "target_field": "omega code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [],
+      "target_support_interpretation": "No supplied record assigns an omega code to Unit XU-410. Its alpha assignment does not determine its independent omega field.",
+      "missing_or_uncertain": "The target omega value is unstated. A rule equating alpha and omega could change the assessment, but the supplied rules state that the fields are independent.",
+      "reasoning": "All five documents were checked. Document 4 assigns the target an alpha code. Documents 2 and 3 assign independent fields to Unit XU-411; documents 1 and 5 provide rules and background. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-410 the alpha code VX-81062."
+        },
+        {
+          "document_index": 1,
+          "quote": "Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-411 the omega code VX-81060."
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-411 the alpha code VX-81061."
+        }
+      ]
+    },
+    {
+      "item_id": "P033",
+      "target_entity": "Unit XU-418",
+      "target_field": "alpha code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [
+        {
+          "entity": "Unit XU-419",
+          "field": "alpha code",
+          "records": [
+            {
+              "document_index": 3,
+              "quote": "A record assigns Unit XU-419 the alpha code VX-81100.",
+              "value": "VX-81100"
+            },
+            {
+              "document_index": 4,
+              "quote": "A record assigns Unit XU-419 the alpha code VX-81101.",
+              "value": "VX-81101"
+            }
+          ],
+          "reason": "The records assign different alpha codes to the same unit in the same snapshot, while each unit has exactly one value for each field."
+        }
+      ],
+      "target_support_interpretation": "No supplied record assigns an alpha code to Unit XU-418. Its omega assignment does not determine its independent alpha field.",
+      "missing_or_uncertain": "The target alpha value is unstated. A rule equating alpha and omega could change the assessment, but the supplied rules state that the fields are independent.",
+      "reasoning": "All five documents were checked. Document 5 assigns the target an omega code; documents 3 and 4 concern another unit; documents 1 and 2 provide background and rules. The conflict about XU-419 does not assign a value to XU-418.",
+      "evidence_citations": [
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-418 the omega code VX-81102."
+        },
+        {
+          "document_index": 2,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-419 the alpha code VX-81100."
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-419 the alpha code VX-81101."
+        }
+      ]
+    },
+    {
+      "item_id": "P034",
+      "target_entity": "Unit XU-401",
+      "target_field": "alpha code",
+      "target_record_state": "target_record_supported",
+      "target_records": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-401 the alpha code VX-81010.",
+          "value": "VX-81010"
+        }
+      ],
+      "conflicts": [],
+      "target_support_interpretation": "Document 2 reports VX-81010 as the target alpha code. This is support from a supplied fictional record, not proof of a real-world value.",
+      "missing_or_uncertain": "No incompatible target assignment appears in this item's documents. The records do not independently establish a real-world value.",
+      "reasoning": "Document 2 assigns the requested field. Document 4 assigns the target's independent omega field, and document 3 assigns another unit's alpha field. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-401 the alpha code VX-81010."
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-401 the omega code VX-81011."
+        },
+        {
+          "document_index": 1,
+          "quote": "Alpha code and omega code are independent fields. Different units may share values."
+        }
+      ]
+    },
+    {
+      "item_id": "P035",
+      "target_entity": "Unit XU-407",
+      "target_field": "omega code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [],
+      "target_support_interpretation": "No supplied record assigns an omega code to Unit XU-407. Its alpha assignment does not determine its independent omega field.",
+      "missing_or_uncertain": "The target omega value is unstated. A rule equating alpha and omega could change the assessment, but the supplied rules state that the fields are independent.",
+      "reasoning": "All five documents were checked. Document 1 assigns the target an alpha code. Documents 4 and 5 assign independent fields to Unit XU-406; documents 2 and 3 provide background and rules. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-407 the alpha code VX-81042."
+        },
+        {
+          "document_index": 3,
+          "quote": "Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-406 the omega code VX-81041."
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-406 the alpha code VX-81040."
+        }
+      ]
+    },
+    {
+      "item_id": "P036",
+      "target_entity": "Unit XU-407",
+      "target_field": "omega code",
+      "target_record_state": "conflicting_target_records",
+      "target_records": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-407 the omega code VX-81041.",
+          "value": "VX-81041"
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-407 the omega code VX-81040.",
+          "value": "VX-81040"
+        }
+      ],
+      "conflicts": [
+        {
+          "entity": "Unit XU-407",
+          "field": "omega code",
+          "records": [
+            {
+              "document_index": 4,
+              "quote": "A record assigns Unit XU-407 the omega code VX-81041.",
+              "value": "VX-81041"
+            },
+            {
+              "document_index": 5,
+              "quote": "A record assigns Unit XU-407 the omega code VX-81040.",
+              "value": "VX-81040"
+            }
+          ],
+          "reason": "The records assign different omega codes to the same unit in the same snapshot, while each unit has exactly one value per field and no record has priority."
+        }
+      ],
+      "target_support_interpretation": "Each value is reported by a supplied record, but the reports conflict and neither has stated priority. The reports do not prove a real-world value.",
+      "missing_or_uncertain": "The records do not resolve which omega assignment, if either, is correct. A priority rule or a rule permitting multiple values for one field could change the assessment; neither is supplied.",
+      "reasoning": "Documents 4 and 5 assign different values to the target field. Document 1 assigns the target's independent alpha field and does not resolve the conflict.",
+      "evidence_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-407 the omega code VX-81041."
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-407 the omega code VX-81040."
+        },
+        {
+          "document_index": 3,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        }
+      ]
+    },
+    {
+      "item_id": "P037",
+      "target_entity": "Unit XU-403",
+      "target_field": "omega code",
+      "target_record_state": "conflicting_target_records",
+      "target_records": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-403 the omega code VX-81022.",
+          "value": "VX-81022"
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-403 the omega code VX-81021.",
+          "value": "VX-81021"
+        }
+      ],
+      "conflicts": [
+        {
+          "entity": "Unit XU-403",
+          "field": "omega code",
+          "records": [
+            {
+              "document_index": 1,
+              "quote": "A record assigns Unit XU-403 the omega code VX-81022.",
+              "value": "VX-81022"
+            },
+            {
+              "document_index": 2,
+              "quote": "A record assigns Unit XU-403 the omega code VX-81021.",
+              "value": "VX-81021"
+            }
+          ],
+          "reason": "The records assign different omega codes to the same unit in the same snapshot, while each unit has exactly one value per field and no record has priority."
+        }
+      ],
+      "target_support_interpretation": "Each value is reported by a supplied record, but the reports conflict and neither has stated priority. The reports do not prove a real-world value.",
+      "missing_or_uncertain": "The records do not resolve which omega assignment, if either, is correct. A priority rule or a rule permitting multiple values for one field could change the assessment; neither is supplied.",
+      "reasoning": "Documents 1 and 2 assign different values to the target field. Document 3 assigns the target's independent alpha field and does not resolve the conflict.",
+      "evidence_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-403 the omega code VX-81022."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-403 the omega code VX-81021."
+        },
+        {
+          "document_index": 5,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        }
+      ]
+    },
+    {
+      "item_id": "P038",
+      "target_entity": "Unit XU-403",
+      "target_field": "omega code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [],
+      "target_support_interpretation": "No supplied record assigns an omega code to Unit XU-403. Its alpha assignment does not determine its independent omega field.",
+      "missing_or_uncertain": "The target omega value is unstated. A rule equating alpha and omega could change the assessment, but the supplied rules state that the fields are independent.",
+      "reasoning": "All five documents were checked. Document 3 assigns the target an alpha code. Documents 1 and 2 assign independent fields to Unit XU-402; documents 4 and 5 provide background and rules. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-403 the alpha code VX-81020."
+        },
+        {
+          "document_index": 5,
+          "quote": "Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-402 the omega code VX-81022."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-402 the alpha code VX-81021."
+        }
+      ]
+    },
+    {
+      "item_id": "P039",
+      "target_entity": "Unit XU-403",
+      "target_field": "omega code",
+      "target_record_state": "target_record_supported",
+      "target_records": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-403 the omega code VX-81022.",
+          "value": "VX-81022"
+        }
+      ],
+      "conflicts": [],
+      "target_support_interpretation": "Document 1 reports VX-81022 as the target omega code. This is support from a supplied fictional record, not proof of a real-world value.",
+      "missing_or_uncertain": "No incompatible target assignment appears in this item's documents. The records do not independently establish a real-world value.",
+      "reasoning": "Document 1 assigns the requested field. Document 3 assigns the target's independent alpha field, and document 2 assigns another unit's omega field. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-403 the omega code VX-81022."
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-403 the alpha code VX-81020."
+        },
+        {
+          "document_index": 5,
+          "quote": "Alpha code and omega code are independent fields. Different units may share values."
+        }
+      ]
+    },
+    {
+      "item_id": "P040",
+      "target_entity": "Unit XU-416",
+      "target_field": "alpha code",
+      "target_record_state": "conflicting_target_records",
+      "target_records": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-416 the alpha code VX-81092.",
+          "value": "VX-81092"
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-416 the alpha code VX-81090.",
+          "value": "VX-81090"
+        }
+      ],
+      "conflicts": [
+        {
+          "entity": "Unit XU-416",
+          "field": "alpha code",
+          "records": [
+            {
+              "document_index": 4,
+              "quote": "A record assigns Unit XU-416 the alpha code VX-81092.",
+              "value": "VX-81092"
+            },
+            {
+              "document_index": 5,
+              "quote": "A record assigns Unit XU-416 the alpha code VX-81090.",
+              "value": "VX-81090"
+            }
+          ],
+          "reason": "The records assign different alpha codes to the same unit in the same snapshot, while each unit has exactly one value per field and no record has priority."
+        }
+      ],
+      "target_support_interpretation": "Each value is reported by a supplied record, but the reports conflict and neither has stated priority. The reports do not prove a real-world value.",
+      "missing_or_uncertain": "The records do not resolve which alpha assignment, if either, is correct. A priority rule or a rule permitting multiple values for one field could change the assessment; neither is supplied.",
+      "reasoning": "Documents 4 and 5 assign different values to the target field. Document 1 assigns the target's independent omega field and does not resolve the conflict.",
+      "evidence_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-416 the alpha code VX-81092."
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-416 the alpha code VX-81090."
+        },
+        {
+          "document_index": 3,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        }
+      ]
+    },
+    {
+      "item_id": "P041",
+      "target_entity": "Unit XU-413",
+      "target_field": "alpha code",
+      "target_record_state": "conflicting_target_records",
+      "target_records": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-413 the alpha code VX-81072.",
+          "value": "VX-81072"
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-413 the alpha code VX-81071.",
+          "value": "VX-81071"
+        }
+      ],
+      "conflicts": [
+        {
+          "entity": "Unit XU-413",
+          "field": "alpha code",
+          "records": [
+            {
+              "document_index": 1,
+              "quote": "A record assigns Unit XU-413 the alpha code VX-81072.",
+              "value": "VX-81072"
+            },
+            {
+              "document_index": 2,
+              "quote": "A record assigns Unit XU-413 the alpha code VX-81071.",
+              "value": "VX-81071"
+            }
+          ],
+          "reason": "The records assign different alpha codes to the same unit in the same snapshot, while each unit has exactly one value per field and no record has priority."
+        }
+      ],
+      "target_support_interpretation": "Each value is reported by a supplied record, but the reports conflict and neither has stated priority. The reports do not prove a real-world value.",
+      "missing_or_uncertain": "The records do not resolve which alpha assignment, if either, is correct. A priority rule or a rule permitting multiple values for one field could change the assessment; neither is supplied.",
+      "reasoning": "Documents 1 and 2 assign different values to the target field. Document 3 assigns the target's independent omega field and does not resolve the conflict.",
+      "evidence_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-413 the alpha code VX-81072."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-413 the alpha code VX-81071."
+        },
+        {
+          "document_index": 5,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        }
+      ]
+    },
+    {
+      "item_id": "P042",
+      "target_entity": "Unit XU-401",
+      "target_field": "alpha code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [],
+      "target_support_interpretation": "No supplied record assigns an alpha code to Unit XU-401. Its omega assignment does not determine its independent alpha field.",
+      "missing_or_uncertain": "The target alpha value is unstated. A rule equating alpha and omega could change the assessment, but the supplied rules state that the fields are independent.",
+      "reasoning": "All five documents were checked. Document 4 assigns the target an omega code. Documents 2 and 3 assign independent fields to Unit XU-400; documents 1 and 5 provide rules and background. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-401 the omega code VX-81011."
+        },
+        {
+          "document_index": 1,
+          "quote": "Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-400 the alpha code VX-81010."
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-400 the omega code VX-81012."
+        }
+      ]
+    },
+    {
+      "item_id": "P043",
+      "target_entity": "Unit XU-416",
+      "target_field": "alpha code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [],
+      "target_support_interpretation": "No supplied record assigns an alpha code to Unit XU-416. Its omega assignment does not determine its independent alpha field.",
+      "missing_or_uncertain": "The target alpha value is unstated. A rule equating alpha and omega could change the assessment, but the supplied rules state that the fields are independent.",
+      "reasoning": "All five documents were checked. Document 1 assigns the target an omega code. Documents 4 and 5 assign independent fields to Unit XU-417; documents 2 and 3 provide background and rules. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-416 the omega code VX-81091."
+        },
+        {
+          "document_index": 3,
+          "quote": "Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-417 the alpha code VX-81092."
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-417 the omega code VX-81090."
+        }
+      ]
+    },
+    {
+      "item_id": "P044",
+      "target_entity": "Unit XU-409",
+      "target_field": "omega code",
+      "target_record_state": "target_record_supported",
+      "target_records": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-409 the omega code VX-81051.",
+          "value": "VX-81051"
+        }
+      ],
+      "conflicts": [],
+      "target_support_interpretation": "Document 3 reports VX-81051 as the target omega code. This is support from a supplied fictional record, not proof of a real-world value.",
+      "missing_or_uncertain": "No incompatible target assignment appears in this item's documents. The records do not independently establish a real-world value.",
+      "reasoning": "Document 3 assigns the requested field. Document 5 assigns the target's independent alpha field, and document 4 assigns another unit's omega field. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-409 the omega code VX-81051."
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-409 the alpha code VX-81050."
+        },
+        {
+          "document_index": 2,
+          "quote": "Alpha code and omega code are independent fields. Different units may share values."
+        }
+      ]
+    },
+    {
+      "item_id": "P045",
+      "target_entity": "Unit XU-413",
+      "target_field": "alpha code",
+      "target_record_state": "target_record_supported",
+      "target_records": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-413 the alpha code VX-81072.",
+          "value": "VX-81072"
+        }
+      ],
+      "conflicts": [],
+      "target_support_interpretation": "Document 1 reports VX-81072 as the target alpha code. This is support from a supplied fictional record, not proof of a real-world value.",
+      "missing_or_uncertain": "No incompatible target assignment appears in this item's documents. The records do not independently establish a real-world value.",
+      "reasoning": "Document 1 assigns the requested field. Document 3 assigns the target's independent omega field, and document 2 assigns another unit's alpha field. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-413 the alpha code VX-81072."
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-413 the omega code VX-81070."
+        },
+        {
+          "document_index": 5,
+          "quote": "Alpha code and omega code are independent fields. Different units may share values."
+        }
+      ]
+    },
+    {
+      "item_id": "P046",
+      "target_entity": "Unit XU-410",
+      "target_field": "omega code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [
+        {
+          "entity": "Unit XU-411",
+          "field": "omega code",
+          "records": [
+            {
+              "document_index": 2,
+              "quote": "A record assigns Unit XU-411 the omega code VX-81060.",
+              "value": "VX-81060"
+            },
+            {
+              "document_index": 3,
+              "quote": "A record assigns Unit XU-411 the omega code VX-81061.",
+              "value": "VX-81061"
+            }
+          ],
+          "reason": "The records assign different omega codes to the same unit in the same snapshot, while each unit has exactly one value for each field."
+        }
+      ],
+      "target_support_interpretation": "No supplied record assigns an omega code to Unit XU-410. Its alpha assignment does not determine its independent omega field.",
+      "missing_or_uncertain": "The target omega value is unstated. A rule equating alpha and omega could change the assessment, but the supplied rules state that the fields are independent.",
+      "reasoning": "All five documents were checked. Document 4 assigns the target an alpha code; documents 2 and 3 concern another unit; documents 1 and 5 provide rules and background. The conflict about XU-411 does not assign a value to XU-410.",
+      "evidence_citations": [
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-410 the alpha code VX-81062."
+        },
+        {
+          "document_index": 1,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-411 the omega code VX-81060."
+        },
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-411 the omega code VX-81061."
+        }
+      ]
+    },
+    {
+      "item_id": "P047",
+      "target_entity": "Unit XU-414",
+      "target_field": "omega code",
+      "target_record_state": "no_target_record",
+      "target_records": [],
+      "conflicts": [],
+      "target_support_interpretation": "No supplied record assigns an omega code to Unit XU-414. Its alpha assignment does not determine its independent omega field.",
+      "missing_or_uncertain": "The target omega value is unstated. A rule equating alpha and omega could change the assessment, but the supplied rules state that the fields are independent.",
+      "reasoning": "All five documents were checked. Document 2 assigns the target an alpha code. Documents 1 and 5 assign independent fields to Unit XU-415; documents 3 and 4 provide background and rules. No pair of assignments in this item's documents is incompatible under the rules.",
+      "evidence_citations": [
+        {
+          "document_index": 2,
+          "quote": "A record assigns Unit XU-414 the alpha code VX-81080."
+        },
+        {
+          "document_index": 4,
+          "quote": "Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        },
+        {
+          "document_index": 1,
+          "quote": "A record assigns Unit XU-415 the alpha code VX-81082."
+        },
+        {
+          "document_index": 5,
+          "quote": "A record assigns Unit XU-415 the omega code VX-81081."
+        }
+      ]
+    },
+    {
+      "item_id": "P048",
+      "target_entity": "Unit XU-418",
+      "target_field": "alpha code",
+      "target_record_state": "conflicting_target_records",
+      "target_records": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-418 the alpha code VX-81100.",
+          "value": "VX-81100"
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-418 the alpha code VX-81101.",
+          "value": "VX-81101"
+        }
+      ],
+      "conflicts": [
+        {
+          "entity": "Unit XU-418",
+          "field": "alpha code",
+          "records": [
+            {
+              "document_index": 3,
+              "quote": "A record assigns Unit XU-418 the alpha code VX-81100.",
+              "value": "VX-81100"
+            },
+            {
+              "document_index": 4,
+              "quote": "A record assigns Unit XU-418 the alpha code VX-81101.",
+              "value": "VX-81101"
+            }
+          ],
+          "reason": "The records assign different alpha codes to the same unit in the same snapshot, while each unit has exactly one value per field and no record has priority."
+        }
+      ],
+      "target_support_interpretation": "Each value is reported by a supplied record, but the reports conflict and neither has stated priority. The reports do not prove a real-world value.",
+      "missing_or_uncertain": "The records do not resolve which alpha assignment, if either, is correct. A priority rule or a rule permitting multiple values for one field could change the assessment; neither is supplied.",
+      "reasoning": "Documents 3 and 4 assign different values to the target field. Document 5 assigns the target's independent omega field and does not resolve the conflict.",
+      "evidence_citations": [
+        {
+          "document_index": 3,
+          "quote": "A record assigns Unit XU-418 the alpha code VX-81100."
+        },
+        {
+          "document_index": 4,
+          "quote": "A record assigns Unit XU-418 the alpha code VX-81101."
+        },
+        {
+          "document_index": 2,
+          "quote": "All records refer to the same snapshot. Each unit has exactly one value for each code field. Alpha code and omega code are independent fields. Different units may share values. Records may disagree; no record has priority."
+        }
+      ]
+    }
+  ]
+}

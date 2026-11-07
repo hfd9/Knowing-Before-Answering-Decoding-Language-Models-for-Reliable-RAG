@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新实际48输入复评：[记录](2026-11-07-scope-blind-input-review.md) / [原始评审、封存、三个旧案例和流程审查](../review/2026-11-07-scope-input-review-v1/README.md)。一个候选CLI会话实际评48输入并封存，目标记录状态/值及冲突归属封存后各48/48与构造一致；同会话复评3旧案例的狭义E为unknown/no/yes，Q052后续知情补充区分涉及目标与自身互斥。此为新增LLM复核，不是新实验回答或正式独立批准；原门禁仍关闭。
+
 最新原门禁逐项审查：[记录](2026-11-07-explanation-scope-gate-assessment.md) / [证据矩阵和候选协议快照](../explanation_scope_gate_assessment_20261107.md) / [结构化来源状态](../review/2026-11-07-explanation-scope-gate-assessment.json)。区分完整CLI复评已有证据与待定独立审计；旧门禁仍关闭，无真实新回答。
 
 最新逐条核对：[记录](2026-11-07-explanation-scope-item-audit.md) / [48输入结构、CLI轨迹及评分交付](../review/2026-11-07-explanation-scope-audit/README.md)。逐项表为知情模板结构核对，31个保留命令事件的词法审计有限；明确P0已有冲突指令及模板暴露条件，未产生独立批准或新回答。

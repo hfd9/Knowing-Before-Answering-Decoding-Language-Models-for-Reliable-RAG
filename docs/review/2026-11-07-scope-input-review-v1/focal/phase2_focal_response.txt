@@ -1,0 +1,94 @@
+{
+  "reviewer_id": "SCOPECLI20261107R01",
+  "packet_sha256": "97180a6d07ea2226859bd7cdebcb13381a2032a09d60d35159b759c284d13d2e",
+  "items": [
+    {
+      "item_id": "F001",
+      "target_entity": "Unit U-215",
+      "target_field": "access code",
+      "withholds_with_support": "yes",
+      "target_conflict_assertion": "unknown",
+      "broader_conflict_claim": "yes",
+      "broader_conflict_support": "unsupported",
+      "answer_quotes": [
+        "The access code assigned to Unit U-215 cannot be determined directly from the provided records, as the documents only mention an inspection code for Unit U-757 and a ledger entry for Unit U-215, but not its access code.",
+        "There is a conflict between the information given about Unit U-215 and U-757."
+      ],
+      "document_citations": [
+        {
+          "document_index": 1,
+          "quote": "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry."
+        },
+        {
+          "document_index": 2,
+          "quote": "The inspection code assigned to Unit U-757 is K-23434. Unit U-215 has a ledger entry."
+        },
+        {
+          "document_index": 3,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields."
+        }
+      ],
+      "reasoning": "The documents state that U-215 has a ledger entry and give an inspection code for U-757, but provide no access-code assignment for U-215. The answer withholds a concrete target value and correctly says the supplied records do not determine it. Its final sentence asserts a conflict between information about the two units, but does not explicitly identify the target access field as the subject of that conflict; the intended scope is unclear. The broader conflict claim is unsupported: the cited ledger entries and U-757 inspection code are compatible under the rules. This is a record-relative assessment, not proof of any external-world value."
+    },
+    {
+      "item_id": "F002",
+      "target_entity": "Unit U-352",
+      "target_field": "access code",
+      "withholds_with_support": "yes",
+      "target_conflict_assertion": "no",
+      "broader_conflict_claim": "yes",
+      "broader_conflict_support": "unsupported",
+      "answer_quotes": [
+        "The provided documents do not contain any information about the access code assigned to Unit U-352.",
+        "There is a conflict with the information provided about the inspection code for Unit U-352 being K-22280, but this does not pertain to the access code."
+      ],
+      "document_citations": [
+        {
+          "document_index": 1,
+          "quote": "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry."
+        },
+        {
+          "document_index": 2,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields."
+        },
+        {
+          "document_index": 3,
+          "quote": "The inspection code assigned to Unit U-352 is K-22280. Unit U-383 has a ledger entry."
+        }
+      ],
+      "reasoning": "The records give U-352 an inspection code but no concrete access-code assignment. The answer withholds a target value and correctly recognizes that the access code is not determined by the supplied records. It explicitly says the alleged conflict does not pertain to the access code, so it does not assert a conflict in the queried field. It nevertheless makes a broader conflict claim about inspection-code information; no incompatible inspection-code assignment or other contradictory statement is supplied to support that claim. This is a record-relative assessment, not proof of any external-world value."
+    },
+    {
+      "item_id": "F003",
+      "target_entity": "Unit U-215",
+      "target_field": "access code",
+      "withholds_with_support": "yes",
+      "target_conflict_assertion": "yes",
+      "broader_conflict_claim": "yes",
+      "broader_conflict_support": "unsupported",
+      "answer_quotes": [
+        "The access code assigned to Unit U-215 is not directly provided in the given documents.",
+        "given that Unit U-757's access code is K-81486, we cannot determine the access code for Unit U-215 from the information given.",
+        "There is a conflict between the provided data regarding the access codes for Units U-215 and U-757."
+      ],
+      "document_citations": [
+        {
+          "document_index": 1,
+          "quote": "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry."
+        },
+        {
+          "document_index": 2,
+          "quote": "The access code assigned to Unit U-757 is K-81486. Unit U-215 has a ledger entry."
+        },
+        {
+          "document_index": 3,
+          "quote": "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields."
+        }
+      ],
+      "reasoning": "The documents assign an access code to U-757 but do not assign one to U-215. The rule that values can be shared does not establish that these units share a value. The answer withholds a concrete target value and correctly says it cannot be determined from the records. Its final sentence explicitly claims a conflict involving the access codes of both units, including the queried target field. That broader claim is unsupported: a missing U-215 assignment and a stated U-757 assignment are not incompatible records. This is a record-relative assessment, not proof of any external-world value."
+    }
+  ],
+  "exposure_statement": "This is the same reviewer who previously assessed the 48 input-only items in six batches; those assessments remain in the conversation context and have not been revised in this stage. The initial audit reported no relevant project history, author judgments, prior model answers, or coordinator mappings in the context then received, while acknowledging that unseen instruction provenance could not be certified. No author judgments, earlier judgments by another reviewer, design mappings, or expected labels were supplied for these cases. I then read the three displayed focal case texts.",
+  "reading_statement": "I declare that I read each complete displayed question, all five documents, and the full answer for F001-F003. The read-only tool output presented one complete JSON object per case without visible truncation; that presentation is verifiable but cannot prove comprehension.",
+  "limitations": "These are three selected discovery cases, not a random sample, so the judgments do not establish prevalence. This is one model's review and does not certify independent formal approval. The packet hash is the value supplied in the instruction and was not independently verified. No files were written."
+}

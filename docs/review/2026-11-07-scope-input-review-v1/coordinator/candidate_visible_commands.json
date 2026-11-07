@@ -1,0 +1,164 @@
+{
+  "status": "coordinator_static_check_of_candidate_visible_command_events_not_os_or_private_context_audit",
+  "event_file_sha256": {
+    "focal/phase2_focal_events.jsonl": "e201572756bd11751f30db3eec2aa45d6556ded944be071cc432f712ee22e7c2",
+    "input/audit1-events.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "input/audit2-events.jsonl": "fed1a454a72c274a324b1338e9fc36934f8b41f7d045cde4602786d8460e4edf",
+    "input/batch01-events.jsonl": "7850aa366d68c3732c953c05917d54d940bf831abd5eb7d0b6d1b802388c7f08",
+    "input/batch02-events.jsonl": "19458fe0fc5769fe7821bf4ae19282833b9950629d4997400a920fb0117aaeae",
+    "input/batch03-events.jsonl": "a9a43ad678d0882d5c4e2bc4c550ea3fcdcc24a1edbb1cc0a2d42d485875f688",
+    "input/batch04-events.jsonl": "454d9a86944ceaa2bbddeec990e13c81bd02c52056eb9c678ba66fb501e1a484",
+    "input/batch05-events.jsonl": "681aabd736c6d683bfcdba347d3fae424d0b707c970e52f14c445d48eeedc908",
+    "input/batch06-events.jsonl": "a3d06aedaa9b1cfcaf4715fa03865074f4aa2a5a8e02fbd41902fa8dc8fc3375",
+    "input/completion-events.jsonl": "ab4fe05702ebeb950cbf6b5dc9216c22db5322634eccddafa3548e3f74c17519",
+    "input/phase1-events.jsonl": "c1adfc069a73ff697b4220221e5be104fcf1da7f4026d85c2ab12c095da5f232",
+    "process-audit/phase3_audit_events.jsonl": "1cd930f28a327e9eeb137a752dad26d2567928eec28edab301bdb9b25c87543a",
+    "process-audit/phase3_audit_supplement_events.jsonl": "a5051e157157e24cf856c227fcbabcfe32eb702e9868764d73e20a76b4a3d7d5"
+  },
+  "events": [
+    {
+      "event_file": "focal/phase2_focal_events.jsonl",
+      "item_id": "item_1",
+      "exit_code": 0,
+      "command_sha256": "0f6bec8ef27112a9f3c24cbd77e9c679ce1af951917a3e73270f910e3ddc44c2",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "input/batch01-events.jsonl",
+      "item_id": "item_1",
+      "exit_code": 0,
+      "command_sha256": "30ae277603c756ef1d454a6840c4927bda2b6ad48b712805793ddab542e9e552",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "input/batch02-events.jsonl",
+      "item_id": "item_1",
+      "exit_code": 0,
+      "command_sha256": "3bc0b31f5b38841c210d6707e9fba2a2e4c680f548a2f600e0eb9d50af7abecd",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "input/batch03-events.jsonl",
+      "item_id": "item_1",
+      "exit_code": 0,
+      "command_sha256": "83f2a9d1e5be48189e104338d5a923667df33c468c9da07664db408e050c4c3f",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "input/batch04-events.jsonl",
+      "item_id": "item_1",
+      "exit_code": 0,
+      "command_sha256": "4e4063c474b8417ea79a9a03c955275887ccade5473838341e93ace752b7f315",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "input/batch05-events.jsonl",
+      "item_id": "item_1",
+      "exit_code": 0,
+      "command_sha256": "99f56fc3bda120ba0354eabf1bfc316eddde5adc28d41c4816c6f0ce506ed9ab",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "input/batch06-events.jsonl",
+      "item_id": "item_1",
+      "exit_code": 0,
+      "command_sha256": "03189ae1a0eef1ea832524ee990cc13127d7d9b19c514d056ced846cb6174f0d",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "input/phase1-events.jsonl",
+      "item_id": "item_1",
+      "exit_code": 0,
+      "command_sha256": "00eede7711bea4365438e617d8f22a899e76704e2549a772e3548c1942757db0",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "input/phase1-events.jsonl",
+      "item_id": "item_2",
+      "exit_code": 127,
+      "command_sha256": "81b4d46e2600eae4ce5d9ed6d87836302b8c27a780124b686ed09cf5f8f1624e",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "input/phase1-events.jsonl",
+      "item_id": "item_3",
+      "exit_code": 0,
+      "command_sha256": "11195398f00ec705bd7e2b7ee9e255c6fc959c6aad05a99a0cc019acebb28558",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "input/phase1-events.jsonl",
+      "item_id": "item_4",
+      "exit_code": 0,
+      "command_sha256": "cd13739a9ab7912a48e4529a36c410042caa6c2900225fb2e67e186f852dafed",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "input/phase1-events.jsonl",
+      "item_id": "item_5",
+      "exit_code": 0,
+      "command_sha256": "72abe6b81c1ebb849daa2eda327e204e13b5d1738b5aab2cce5120c7be42e325",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "input/phase1-events.jsonl",
+      "item_id": "item_6",
+      "exit_code": 0,
+      "command_sha256": "fa11cdb8291463fe520034601051478a08e7f40f5e555226d2c11947e1056cf4",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "process-audit/phase3_audit_events.jsonl",
+      "item_id": "item_1",
+      "exit_code": 0,
+      "command_sha256": "ed63e5eb6505763bcc336ac96ba78961aa9ca7c70be2090a6586581fa592defa",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "process-audit/phase3_audit_events.jsonl",
+      "item_id": "item_2",
+      "exit_code": 0,
+      "command_sha256": "4aa332064f6a95244395e681e065211898caac88501c22471a30547753f7a7ea",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "process-audit/phase3_audit_events.jsonl",
+      "item_id": "item_3",
+      "exit_code": 0,
+      "command_sha256": "0f4b9ee15b2710557ad37ef1e6516a87f4c7d9617789b9d2c496990fd6ab90a9",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "process-audit/phase3_audit_events.jsonl",
+      "item_id": "item_5",
+      "exit_code": 0,
+      "command_sha256": "2f08506793860cd2e6cc616fcaa2b0b7a0713265ddf656efed792311f611d64f",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "process-audit/phase3_audit_events.jsonl",
+      "item_id": "item_6",
+      "exit_code": 0,
+      "command_sha256": "c568283c8a38d06b186fba5269de7aea16ac1a093f34e865b5a98cd1b3ca1869",
+      "lexical_markers": []
+    },
+    {
+      "event_file": "process-audit/phase3_audit_supplement_events.jsonl",
+      "item_id": "item_1",
+      "exit_code": 0,
+      "command_sha256": "4dc4c8335c66edc8ac48420527737dd75c0c544962aee7add7da2a8289118b9a",
+      "lexical_markers": [
+        "network_word",
+        "subprocess_word"
+      ]
+    }
+  ],
+  "counts": {
+    "completed_command_events": 19,
+    "exit_zero": 18,
+    "nonzero": 1
+  },
+  "marker_interpretation": "The supplement scan command contains network/subprocess words as regex literals for detecting old commands; those words alone do not establish network access.",
+  "limits": "CLI event logs and lexical scan cannot establish full private context, indirect access, execution environment or semantic comprehension.",
+  "formal_independent_approval": false
+}

@@ -1,0 +1,61 @@
+{
+  "delivered_at": "2026-11-07T08:01:45.584714+00:00",
+  "reviewer_thread_id": "01a1b4e9-eb7a-7a31-bf38-4360cac26cd3",
+  "sealed_48_input_sha256": "742546a4fa491b451d12393fc6ed653f6e6b6a5774b1b9615e2e97201a64b65c",
+  "sealed_focal_response_sha256": "1020c9f17de857c7224937718118aac0073e246b2517999bbbbc1fb6365ba9e2",
+  "focal_seal_sha256": "3f4e867bb597169b5be48ef778f1b6e979460dc1adfd4960a23ac61ec21c9984",
+  "files": {
+    "candidate_context_self_report.json": {
+      "source": "docs/review/2026-11-06-isolated-cli-review-v1/context_audit.json",
+      "sha256": "e4ec5f7903babcb79935f60ccc0d527f11fc0efb3d51fe36019a5247b82dfe54",
+      "bytes": 1674
+    },
+    "coordinator_context_observations.json": {
+      "source": "docs/review/2026-11-06-isolated-cli-review-v1/coordinator/context_assessment.json",
+      "sha256": "cc39fffbd44c6b8f947298388d52e2e772b4fca4d29fb3f49a9e571e0284c2e6",
+      "bytes": 2967
+    },
+    "input_context.json": {
+      "source": "docs/review/2026-11-06-isolated-cli-review-v1/phase1/context.json",
+      "sha256": "0aafb7f71e41ecf1ca488eb8a857aee24229771dc4703a9abbe4a8bf64414e8e",
+      "bytes": 1978
+    },
+    "input_seal.json": {
+      "source": "docs/review/2026-11-06-isolated-cli-review-v1/phase1/input_seal.json",
+      "sha256": "6725e0ae7f548e631745c17041ff329b4b002bf25c9df4bbe62a2b19f80d90bc",
+      "bytes": 356
+    },
+    "first_delivery.json": {
+      "source": "docs/review/2026-11-06-isolated-cli-review-v1/coordinator/delivery_stage1.json",
+      "sha256": "fc15f8bcae5e43d742ea3730a3f541cffa9188a11a3ee4aa746064b4e90114d0",
+      "bytes": 995
+    },
+    "second_delivery.json": {
+      "source": "docs/review/2026-11-06-isolated-cli-review-v1/coordinator/delivery_stage2.json",
+      "sha256": "735697d82bd04d033a6e1ea86b7f8485de64417f07cf81eecd2a838c4995c28a",
+      "bytes": 605
+    },
+    "intake_report.json": {
+      "source": "docs/review/2026-11-06-isolated-cli-review-v1/coordinator/intake-snapshot/intake_report.json",
+      "sha256": "15b035854afe3090b97c1faa33dc73c7645d9fa9f71c793c72686f970fc68f7e",
+      "bytes": 5195
+    },
+    "input_trace.json": {
+      "source": "docs/review/2026-11-06-isolated-cli-review-v1/phase1/trace.json",
+      "sha256": "8639ed184c7358c5a0792bd3c0f041a2e2d14f5606b5e7e20414a792fa379a80",
+      "bytes": 163475
+    },
+    "answer_trace.json": {
+      "source": "docs/review/2026-11-06-isolated-cli-review-v1/phase2-initial/trace.json",
+      "sha256": "13d2961c5b7f75164f1b3d5f3b51c313d5645505feb2b235ae75045caae1c5be",
+      "bytes": 116332
+    },
+    "metadata_trace.json": {
+      "source": "docs/review/2026-11-06-isolated-cli-review-v1/phase2/trace.json",
+      "sha256": "20ad8e2154ced6981bd2beed8364034458f80046477d6783871150635dc3c10f",
+      "bytes": 18783
+    }
+  },
+  "prior_project_details_now_delivered": true,
+  "independent_approval": false
+}

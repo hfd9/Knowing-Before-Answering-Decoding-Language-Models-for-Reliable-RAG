@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "item_id": "F001",
+      "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-215?",
+      "documents": [
+        "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+        "The inspection code assigned to Unit U-757 is K-23434. Unit U-215 has a ledger entry.",
+        "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+        "The archive stores its ledger entries on numbered pages.",
+        "A ledger entry has a date field. The archive is fictional."
+      ],
+      "answer": "The access code assigned to Unit U-215 cannot be determined directly from the provided records, as the documents only mention an inspection code for Unit U-757 and a ledger entry for Unit U-215, but not its access code. There is a conflict between the information given about Unit U-215 and U-757."
+    },
+    {
+      "item_id": "F002",
+      "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-352?",
+      "documents": [
+        "Unit U-352 has a ledger entry. Unit U-383 has a ledger entry.",
+        "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+        "The inspection code assigned to Unit U-352 is K-22280. Unit U-383 has a ledger entry.",
+        "The archive stores its ledger entries on numbered pages.",
+        "A ledger entry has a date field. The archive is fictional."
+      ],
+      "answer": "The provided documents do not contain any information about the access code assigned to Unit U-352. There is a conflict with the information provided about the inspection code for Unit U-352 being K-22280, but this does not pertain to the access code."
+    },
+    {
+      "item_id": "F003",
+      "question": "According only to the provided fictional archive records, what access code is assigned to Unit U-215?",
+      "documents": [
+        "Unit U-215 has a ledger entry. Unit U-757 has a ledger entry.",
+        "The access code assigned to Unit U-757 is K-81486. Unit U-215 has a ledger entry.",
+        "Access code and inspection code are independent fields in this fictional archive. Each unit has one value per field; values can be shared across units and fields.",
+        "The archive stores its ledger entries on numbered pages.",
+        "A ledger entry has a date field. The archive is fictional."
+      ],
+      "answer": "The access code assigned to Unit U-215 is not directly provided in the given documents. However, since access code and inspection code are independent fields and each unit has one value per field, and given that Unit U-757's access code is K-81486, we cannot determine the access code for Unit U-215 from the information given. There is a conflict between the provided data regarding the access codes for Units U-215 and U-757."
+    }
+  ]
+}

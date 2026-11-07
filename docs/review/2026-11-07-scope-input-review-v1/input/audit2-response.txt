@@ -1,0 +1,15 @@
+{
+  "exposure_categories": {
+    "specific_research_project_history_or_handoff": "absent",
+    "previous_author_judgments_labels_or_counts": "absent",
+    "prior_model_answer_texts_experimental_results_or_probe_summaries": "absent",
+    "coordinator_mappings_or_designated_focal_cases": "absent",
+    "actual_review_material_or_item_specific_answers": "absent"
+  },
+  "uncertainty": {
+    "meaning_of_absent": "Not seen in the context received for this session; this does not establish absolute independence from a new session.",
+    "private_or_hidden_instruction_provenance": "The received context does not provide enough information to certify the provenance of all private or hidden instructions."
+  },
+  "ordinary_operating_context": "The received context includes ordinary system and developer instructions and workspace metadata. These are not, by themselves, a research project's history or handoff.",
+  "can_proceed_only_after_separate_instruction_and_materials": true
+}
