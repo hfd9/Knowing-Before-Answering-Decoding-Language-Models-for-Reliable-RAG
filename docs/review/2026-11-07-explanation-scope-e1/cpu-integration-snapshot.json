@@ -1,0 +1,24 @@
+{
+  "cpu_end_to_end_tests": 2,
+  "experimental_answers": 0,
+  "files_sha256": {
+    "docs/explanation_scope_e1_cpu_preflight_20261107.md": "383c243b6f5a9bba2448212c52ae552a69d0d95a2050ac57dd5088b9934d5a1b",
+    "docs/explanation_scope_e1_user_execution_addendum_20261107.md": "a8a4fea68aeff227032ba44e6b176e9baa4ec109280d0d0c0285afc6a3edf471",
+    "docs/review/2026-11-07-explanation-scope-e1/claim-intake-snapshot.json": "b6b1d88f95e9d34c78b9c5a770ca6336e1a4503d50fdbd42d036fe34548f4b84",
+    "docs/review/2026-11-07-explanation-scope-e1/cpu-preflight-20261107.json": "38f4f583afafa4cb2466b7f2760bfc58314230c166ef1a2e1a46e318fd866334",
+    "docs/review/2026-11-07-explanation-scope-e1/implementation-lock.json": "f2369ae4de11b175e935cc27e97eb7021edbc075883f30d4e95f3c194657b9c4",
+    "scripts/verify_explanation_scope_e1_cpu.py": "90bb145598c963d038ec6fdf335df004bdc382972163dcde6446d81fd7b06d98",
+    "scripts/verify_explanation_scope_e1_gpu.py": "8c53223249d7b8a28d9c2f8072a6a468292eefeae2a9b9b9f48cec4dfe68b2a8",
+    "tests/test_explanation_scope_e1_end_to_end.py": "23ae9756b898af496b85485003ef35298699a9fca48af2523b4628cb074e97cf",
+    "tests/test_explanation_scope_e1_gpu_preflight.py": "7941f9e28f2ab29b32293706b2a23317203dc397c369c66fd052799382ce94db"
+  },
+  "fit_budget": 0,
+  "formal_gate": false,
+  "gpu_actual_checked": false,
+  "gpu_launch_ready": false,
+  "gpu_preflight_mock_tests": 4,
+  "gpu_work_operator": "user",
+  "held_out_380_accessed": false,
+  "independent_approval": false,
+  "status": "cpu_pipeline_and_hashes_verified_gpu_awaiting_user"
+}

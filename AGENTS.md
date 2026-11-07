@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-07（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新E1 CPU联检（2026-11-07）：用户最新指定所有需要GPU的工作由用户执行，助手负责其余工作并提供命令；[执行者补充](docs/explanation_scope_e1_user_execution_addendum_20261107.md)取代旧协议/下文历史中“助手启动GPU”的表述。完成[两条完整/第五条空输出跨组件合成联检、7模型文件CPU哈希与版本记录](docs/records/2026-11-07-scope-e1-cpu-integration-preflight.md)，新两测试16.224秒通过，7文件SHA匹配、未加载模型或访问CUDA。[用户GPU预检命令](docs/explanation_scope_e1_cpu_preflight_20261107.md)已准备，4项mock测试通过，实际设备待用户运行；命令只检查设备，不采集、不放行。E1旧协议原件未改，正式独立批准0、gate/GPUfalse、预算0/标签null/380封存、48真实回答0；未来采集前须将用户执行约定绑定新版并审查门禁，GPU采集由用户运行。
+
 最新E1逐主张接收（2026-11-07）：用户要求继续，完成[两阶段封存/映射连接/结果重放合同](docs/explanation_scope_e1_claim_intake.md)、[CPU代码](scripts/explanation_scope_e1_intake.py)及[记录](docs/records/2026-11-07-scope-e1-claim-intake.md)。seal只读公开packet与评审表、逐字核引用并封存原字节；connect先复验封存再读取协调映射，绑定来源、转换者/暴露及主张ID，手工端点接入完整48槽/12对汇总；verify临时重放。11项真实E1合成部分包/三异进程测试、1关闭门禁定向及空模板verify通过，非真实评分；无法证明完整阅读、语义或历史隔离，48公开载荷仍可再识别条件。原E1协议/执行锁未改，独立批准0、gate/GPUfalse、预算0/标签null/380封存、48真实回答0。未来仅正式放行且设备就绪后由助手启动；当前不采集。
 
 最新E1协议与执行修复（2026-11-07）：用户要求先定协议、修差距、审门禁且本轮不采集。已形成[E1-r1协议](docs/explanation_scope_e1_protocol_20261107.md)、[实现](scripts/explanation_scope_e1.py)、[审查](docs/explanation_scope_e1_gate_review_20261107.md)与[记录](docs/records/2026-11-07-scope-e1-implementation-gate-review.md)。知情助手采纳有限探索的研究/技术准备，原v1待定，正式独立批准0；窄E/完整12对及四smoke不变，全程空/截断保存后停止不重试，未提交attempt阻断。新E1缓存支持48槽部分转包、私有随机映射/来源哈希，缓存损坏拒绝；已证明公开原材料48载荷全部唯一，文本匹配可重新识别条件，随机编号不证明盲化。E1 17项真实tokenizer合成/模拟、旧门禁2项、评分17项及两复评来源重放通过；逐主张语义/引用封存与映射转换尚需未来实际执行，不由转包器认证。真实E1 run不存在，formal_gate/GPU及采集false、预算0/标签null/380封存、48真实回答0；未查实时GPU/重散列权重。用户最新要求未来放行且GPU就绪后由助手启动，当前不启动；需先审门禁修改、更新代码锁及实际环境。

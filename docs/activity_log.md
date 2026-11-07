@@ -1308,3 +1308,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 122. 2026-11-07：E1逐主张封存、连接与重放
 
 按用户要求继续，新增[接收合同](explanation_scope_e1_claim_intake.md)/[CPU接收器](../scripts/explanation_scope_e1_intake.py)，先以公开packet验证逐字引用和暴露声明并封存原字节，再连接协调映射和人工端点，保留48槽/12对并支持独立进程结果重放；见[记录](records/2026-11-07-scope-e1-claim-intake.md)。11项临时合成及三异进程测试、1关闭门禁定向、空模板verify通过；不证明语义、独立性或真实模型来源，未产生真实评分。原E1代码/锁未改，正式批准0、gate/GPUfalse、预算0/标签null/380封存、48真实回答0。
+
+## 123. 2026-11-07：E1 CPU端到端联检与GPU执行者变更
+
+用户指定不需要GPU的工作助手完成、GPU工作给命令由用户运行，[执行者补充](explanation_scope_e1_user_execution_addendum_20261107.md)取代历史“助手启动GPU”。[记录](records/2026-11-07-scope-e1-cpu-integration-preflight.md)/[说明及用户设备预检命令](explanation_scope_e1_cpu_preflight_20261107.md)：完整48及第五条空输出两条跨组件合成链通过；实际七模型文件CPU哈希均匹配并记录包版本，未调用CUDA；GPU预检逻辑4项mock测试通过，实际待用户执行。门禁仍关闭、预算0/标签null/380封存、48真实回答0；未生成可绕门禁的采集命令。

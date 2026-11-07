@@ -1,0 +1,75 @@
+{
+  "status": "cpu_source_and_file_hash_check_not_gpu_or_model_compatibility",
+  "checked_at_utc": "2026-11-07T12:30:58.661401+00:00",
+  "python": "/large_disk/wf/miniconda3/envs/kba-rag/bin/python",
+  "python_version": "3.11.15",
+  "packages": {
+    "torch": "2.5.1+cu121",
+    "transformers": "4.56.2",
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "tokenizers": "0.22.2"
+  },
+  "model_dir": "/large_disk/wf/研究代码/RAG/OpenDecoder/checkpoint/Qwen2.5-3B-Instruct",
+  "model_files": [
+    {
+      "name": "config.json",
+      "bytes": 661,
+      "sha256": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+      "matches_reference": true
+    },
+    {
+      "name": "generation_config.json",
+      "bytes": 242,
+      "sha256": "ea35dfb6fc5051b01114f9b995820d55dab01ed33ee490f6378b442af82c09f9",
+      "matches_reference": true
+    },
+    {
+      "name": "model-00001-of-00002.safetensors",
+      "bytes": 3968658944,
+      "sha256": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2",
+      "matches_reference": true
+    },
+    {
+      "name": "model-00002-of-00002.safetensors",
+      "bytes": 2203268048,
+      "sha256": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d",
+      "matches_reference": true
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "bytes": 35581,
+      "sha256": "bc8aaa0c87d4335177e01c765f1de0db81661c67c1a72fbfb0d521b09f5ddc56",
+      "matches_reference": true
+    },
+    {
+      "name": "tokenizer.json",
+      "bytes": 7031645,
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "matches_reference": true
+    },
+    {
+      "name": "tokenizer_config.json",
+      "bytes": 7305,
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "matches_reference": true
+    }
+  ],
+  "all_model_files_match": true,
+  "e1_protocol_sha256": "d12926314f230203c0adb4dcbeab469bf441bb1d263350337dcdf2d3ee9305cd",
+  "source_plan_sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d",
+  "e1_lock_sha256": "f2369ae4de11b175e935cc27e97eb7021edbc075883f30d4e95f3c194657b9c4",
+  "claim_snapshot_sha256": "b6b1d88f95e9d34c78b9c5a770ca6336e1a4503d50fdbd42d036fe34548f4b84",
+  "claim_sources_checked": 5,
+  "e1_real_run_exists": false,
+  "original_scope_run_exists": false,
+  "formal_gate": false,
+  "gpu_launch_ready": false,
+  "fit_budget": 0,
+  "held_out_380_accessed": false,
+  "model_weights_loaded": false,
+  "model_inference": false,
+  "cuda_queried": false,
+  "gpu_readiness_proved": false,
+  "elapsed_seconds": 20.531
+}
