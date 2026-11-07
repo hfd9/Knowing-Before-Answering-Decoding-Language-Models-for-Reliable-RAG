@@ -1280,3 +1280,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 115. 2026-11-07：逐条核对输入与评审交付边界
 
 按用户要求继续，完成[48输入结构及引文、CLI可见轨迹和评分交付方案](review/2026-11-07-explanation-scope-audit/README.md)，具体证据见[记录](records/2026-11-07-explanation-scope-item-audit.md)。逐条结果属知情模板解析；29成功及2失败命令的有限扫描不认证私有上下文。明确P0本身有问题相关冲突指令，endpoint_template及mapping均不可交未暴露评审者。旧CLI及拟合封存、4快照复验通过，独立正式批准、执行协议和真实回答仍未完成；gate/GPUfalse、预算0/标签null/380封存，无新实验。
+
+## 116. 2026-11-07：逐项评估原采纳门禁
+
+按用户要求直接继续，完成[原门禁条件、实际证据和候选协议快照](explanation_scope_gate_assessment_20261107.md)，见[记录](records/2026-11-07-explanation-scope-gate-assessment.md)。CLI实际55/55/172、输入先封存的记录和三焦点较宽复评已存在；独立正式上下文审计及狭义范围分歧仍未完成，旧v1待定。17评分/3材料/3关闭门禁定向测试及旧CLI和48结构重放通过；无新模型、回答或GPU检查，预算0/标签null/380封存，gate/GPUfalse。

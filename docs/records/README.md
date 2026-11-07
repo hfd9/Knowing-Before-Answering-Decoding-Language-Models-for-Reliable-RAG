@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新原门禁逐项审查：[记录](2026-11-07-explanation-scope-gate-assessment.md) / [证据矩阵和候选协议快照](../explanation_scope_gate_assessment_20261107.md) / [结构化来源状态](../review/2026-11-07-explanation-scope-gate-assessment.json)。区分完整CLI复评已有证据与待定独立审计；旧门禁仍关闭，无真实新回答。
+
 最新逐条核对：[记录](2026-11-07-explanation-scope-item-audit.md) / [48输入结构、CLI轨迹及评分交付](../review/2026-11-07-explanation-scope-audit/README.md)。逐项表为知情模板结构核对，31个保留命令事件的词法审计有限；明确P0已有冲突指令及模板暴露条件，未产生独立批准或新回答。
 
 最新采集前核对：[记录](2026-11-07-explanation-scope-precollection-review.md) / [语义、文献与条件性执行草案](../explanation_scope_precollection_review.md)。48材料结构、12对差异、tokenizer及旧CLI复验通过；四篇近邻逐项比较，明确独立性、语义和正式门禁仍未完成，没有新回答。

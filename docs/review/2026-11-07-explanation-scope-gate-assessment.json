@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "status": "informed_assistant_evidence_assessment_not_formal_approval",
+  "sources": {
+    "draft": {
+      "path": "prompts/explanation_evidence_scope_draft_v1.json",
+      "sha256": "8e03b1285553c58948826c2b78c13b724000fa2ef550ac27a975fe2411eef138"
+    },
+    "contract": {
+      "path": "prompts/explanation_scope_scoring_contract_v1.json",
+      "sha256": "581f4377979718edd7f68dd3f206e3766cda52577cb876bc552b90b3ecdcc2a4"
+    },
+    "intake": {
+      "path": "docs/review/2026-11-06-isolated-cli-review-v1/coordinator/intake-snapshot/intake_report.json",
+      "sha256": "15b035854afe3090b97c1faa33dc73c7645d9fa9f71c793c72686f970fc68f7e"
+    },
+    "focal": {
+      "path": "docs/review/2026-11-06-isolated-cli-review-v1/coordinator/focal_cases.json",
+      "sha256": "5a3d8208da195a612808a73ee8cb83b3149b691e0a511edb970ec38c525e6441"
+    },
+    "seal": {
+      "path": "docs/review/2026-11-06-isolated-cli-review-v1/phase1/input_seal.json",
+      "sha256": "6725e0ae7f548e631745c17041ff329b4b002bf25c9df4bbe62a2b19f80d90bc"
+    },
+    "delivery2": {
+      "path": "docs/review/2026-11-06-isolated-cli-review-v1/coordinator/delivery_stage2.json",
+      "sha256": "735697d82bd04d033a6e1ea86b7f8485de64417f07cf81eecd2a838c4995c28a"
+    },
+    "context": {
+      "path": "docs/review/2026-11-06-isolated-cli-review-v1/coordinator/context_assessment.json",
+      "sha256": "cc39fffbd44c6b8f947298388d52e2e772b4fca4d29fb3f49a9e571e0284c2e6"
+    },
+    "materials": {
+      "path": "docs/review/2026-11-06-explanation-scope-materials-v2/materials.json",
+      "sha256": "d70c9e72b89e023fae19bf94d91e9bb438bc5e4726fab27786e5db7869bc877e"
+    },
+    "execution_draft": {
+      "path": "docs/review/2026-11-06-explanation-scope-cpu-preflight-v1/execution-draft.json",
+      "sha256": "01872b06a32044911e26c0d5f1a7a24d7b122470da85cc999f0c3d0dfad1ee0d"
+    }
+  },
+  "criteria": {
+    "complete_submission": {
+      "state": "evidence_documented",
+      "inputs": 55,
+      "outputs": 55,
+      "claims": 172
+    },
+    "input_sealed_before_answer_delivery": {
+      "state": "recorded_order_and_hash_verified_not_proof_of_prior_nonexposure",
+      "sealed_at": "2026-11-06T02:44:42.913163+00:00",
+      "delivered_at": "2026-11-06T02:46:03.846888+00:00"
+    },
+    "context_independence": {
+      "state": "pending_formal_independent_audit",
+      "visible_isolation_support": true,
+      "independently_verified": false
+    },
+    "three_focal_cases": {
+      "state": "cli_three_explicit_broader_claim_judgments_recorded",
+      "independent_adoption_credit": false,
+      "narrow_E_informed_judgment": {
+        "Q004": "unknown",
+        "Q026": "no",
+        "Q052": "unknown"
+      }
+    },
+    "human_adoption": {
+      "state": "not_recorded_as_human",
+      "assistant_exploratory_decision_exists": true
+    },
+    "new_48_semantic_approval": {
+      "state": "author_exposed_and_informed_structural_review_only",
+      "independent_approval": false
+    }
+  },
+  "decision": "retain_original_v1_pending",
+  "formal_gate": false,
+  "gpu_launch_ready": false,
+  "real_generated_answers": 0,
+  "fit_budget": 0,
+  "labels": null,
+  "held_out_380_accessed": false,
+  "does_not_modify_plan_or_approve_independence": true
+}

@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-07（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新原门禁逐项审查（2026-11-07）：用户要求直接完成后续，已形成[条件、实际证据与协议候选快照](docs/explanation_scope_gate_assessment_20261107.md)/[结构化状态](docs/review/2026-11-07-explanation-scope-gate-assessment.json)/[记录](docs/records/2026-11-07-explanation-scope-gate-assessment.md)。CLI实际55/55/172、输入封存先于第二阶段交付记录及三焦点较宽复评均有文件支持；独立正式上下文裁定、狭义焦点争议及最终协议仍待处理，知情助手采纳探索方向不冒充人类或独立批准。17评分/3材料/3门禁定向测试及旧CLI来源和48结构表重放通过；原v1保持待定，不自动修改门禁、启动模型或访问380题。用户无需本人逐项审核；预算0/标签null/gate及GPUfalse。
+
 最新逐条核对（2026-11-07）：用户要求继续并提交推送，完成[48条结构及引文表、31个保留CLI命令事件审计、P0与评分交付边界](docs/review/2026-11-07-explanation-scope-audit/README.md)/[记录](docs/records/2026-11-07-explanation-scope-item-audit.md)。48行是固定模板知情结构核对，不是独立盲评；29成功/2失败命令的字面扫描不能证明完整上下文。P0原本含问题相关冲突指令；review_artifacts的endpoint_template与mapping均暴露条件，不能交给未暴露评审者，已记录先封存逐主张再连接映射的方案。原来源/12拟合封存/4快照重验、四临时突变及CSV重放通过；独立正式裁定、正式协议及真实模型回答仍未完成，gate/GPUfalse、预算0/标签null/380封存。用户无需亲自逐条审核。
 
 最新采集前核对（2026-11-07）：按用户要求直接推进，完成[知情语义结构、文献对照、条件性执行草案与放行缺口](docs/explanation_scope_precollection_review.md)/[记录](docs/records/2026-11-07-explanation-scope-precollection-review.md)。48条结构及12对单槽差、真实tokenizer均复验通过，旧CLI及9项预案源绑定核验通过；S仅记录相对支持、12场景单模板，检查非独立语义批准。Hidden Commitment、ContextConflict、CONFLICTS及Ragability存在近邻，不宣称首创；未新增模型回答或行为结果。旧CLI独立性审计pending、正式批准0，旧关键案例与既定门禁的处理、新48语义与正式执行协议仍需完成；gate/GPUfalse、拟合预算0、标签null、380封存，不自动采集。用户无需本人逐条审核。
