@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新GPU执行约定：[记录](2026-11-09-gpu-user-execution-preference.md)。必要阶段助手准备检查和命令，用户运行GPU，完成或报错后助手核验继续；不必回避必要GPU工作，既有协议及预算边界保持。
+
 最新E1结果与probe核查：[记录](2026-11-09-e1-results-probe-assessment.md) / [四条件及研究决定](../review/2026-11-09-e1-results-assessment/README.md) / [12对逐主张证据](../review/2026-11-09-e1-results-assessment/pairs-evidence.md)。原v2知情评分与来源重放通过；现场及144哈希文本检索未找到E1同批probe，不能排除搜索范围外产物。保留狭义事件有限负结果，后续优先测量有效性，不自动新增实验。
 
 最新背景恢复：[记录](2026-11-09-context-restored.md)。恢复至已完成的E1用户版结果；56来源及48记录/attempt、token/引用/12对主比较只读重放和三项边界测试通过。当前评分为有暴露的知情判断，旧门禁关闭，不重跑GPU；等待用户后续任务。

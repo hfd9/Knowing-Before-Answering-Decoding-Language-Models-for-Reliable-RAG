@@ -1332,3 +1332,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 128. 2026-11-09：E1结果、同批probe与研究方向
 
 按用户要求完成[四条件端点、同批probe检索和研究判断](review/2026-11-09-e1-results-assessment/README.md)、[12对逐主张引用](review/2026-11-09-e1-results-assessment/pairs-evidence.md)及[记录](records/2026-11-09-e1-results-probe-assessment.md)。E1窄E在I0/IU各0 yes/12 no/0 unknown，W各保留4/3 unknown，J均no；原始引用/计数重放和3项测试通过。现场及144输入/提示/token哈希对现存JSON/JSONL/CSV搜索未找到E1同批probe，搜索有范围限制；旧48绑定probe是另一批。保留有限负结果、暂缓狭义解释方向，后续优先测量有效性；无新评分、采集、GPU、拟合或自动扩样，旧门禁及预算/380边界不变。
+
+## 129. 2026-11-09：必要GPU阶段由用户执行
+
+用户明确必要GPU阶段可直接提供命令由其运行，不必回避GPU；助手负责设计、非GPU准备检查、估时、异常说明和运行后核验，见[记录](records/2026-11-09-gpu-user-execution-preference.md)。本次仅记录执行分工，无新GPU任务或模型调用；现有协议、预算与380封存边界保持。
