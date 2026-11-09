@@ -1,0 +1,32 @@
+{
+  "base_counts": {
+    "binding48": 12,
+    "neutral_control": 6,
+    "transfer240": 30
+  },
+  "formal_labels_assigned": 0,
+  "forwards": 0,
+  "gpu_calls": 0,
+  "input_counts": {
+    "binding48": 48,
+    "neutral_control": 36,
+    "transfer240": 240
+  },
+  "neutral_control_overlap": "24 positive/negative rows are old cached inputs; only 12 neutral inputs are new; never pool as independent samples.",
+  "new_fits": 0,
+  "pair_counts": {
+    "binding48": 24,
+    "neutral_control": 18,
+    "transfer240": 120
+  },
+  "semantic_gold": false,
+  "source_sha256": {
+    "docs/records/2026-10-20-probe-support-expression-preparation.md": "e78221e6c65a33e2f457eea7172bab0f121d3ec42a39f72b552790f1fb5c7dfb",
+    "docs/records/2026-10-21-behavior-binding-probe-results.md": "59b6d79d123a6cb12a9e0e0a682a8a35f5843de97305f4f3632ecd9d820c0c4e",
+    "docs/review/2026-11-09-probe-existing-cache-audit-v1/AB_pairs.csv": "e9df5ad93fd9073206b8baf700b7dfec33687001dd4a64fdcd6bd11a857a9cea",
+    "docs/review/2026-11-09-probe-existing-cache-audit-v1/corpus.csv": "fdcd3e6c6fe3ca22e8a2f5cad5be98cd342ef087938ace858c15977752239a24",
+    "docs/review/2026-11-09-probe-neutral-control-results-v1/README.md": "8d6793a78417da269bc02ba7620644acc0966fe3cc1ff69a7cf5fd16e07d65a4",
+    "docs/review/2026-11-09-probe-neutral-control-results-v1/cells.csv": "d58c2ec9f68b7c2a36cb6e01d374b4487b9b9cea1d8607056f560bf8b2755492"
+  },
+  "status": "retrospective_exposed_author_reference_not_gold"
+}

@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新probe测量去留：[记录](2026-11-09-probe-measurement-scope-decision.md) / [三批逐状态与表达总表、162对及文献对照](../review/2026-11-09-probe-measurement-scope-decision-v1/README.md)。有暴露参照下不足状态读出在关键批次不可靠；暂停旧probe的可靠语义测量/已知不行动论证，不推隐藏状态无信息。无新实验。
+
 最新背景恢复：[记录](2026-11-09-context-restored-02.md)。恢复至已完成的等token对照；三项CPU只读复验通过，12对及59份归档来源一致，保留语义和GPU来源限制；旧门禁及预算不变，等待用户后续任务。
 
 最新等token对照结果：[记录](2026-11-09-probe-neutral-control-results.md) / [12对结果与59份来源](../review/2026-11-09-probe-neutral-control-results-v1/README.md)。用户运行13前向完成，桥接/来源/读出复核通过；D否定−中性conflict概率差平均+2.68pp（4正/2负），P +6.56pp（6正），全部条件类别conflict。六个已暴露底题、内容与位置仍混杂，不证明否定词因果或自然泛化。
