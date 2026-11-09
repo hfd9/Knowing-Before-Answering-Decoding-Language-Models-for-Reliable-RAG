@@ -1356,3 +1356,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 134. 2026-11-09：CLI既有复评与冻结probe交叉连接
 
 用户要求完成[52严格匹配、3排除、26对及9分歧](review/2026-11-09-cli-probe-comparison-v1/README.md)/[记录](records/2026-11-09-cli-probe-comparison.md)。CLI判26 S可答、26 I不足；旧probe的I为15answer/2refuse/9conflict，2条refuse是同一底题，26 I中23条按已知作答选择，不得外推总体。作者55对9条记ambiguous而CLI记insufficient，原判保留；CLI完整私有上下文未认证、正式独立批准0。输入/输出/提示/token/特征及104个CLI引文、58来源和异进程重建通过；无新评审、GPU、前向或拟合，旧门禁、预算及380封存不变。
+
+## 135. 2026-11-09：恢复probe研究计划背景
+
+按用户要求读取交接、[研究计划](records/2026-11-09-probe-research-next-steps.md)及两份最新分析，[恢复记录](records/2026-11-09-context-restored-03.md)。恢复前工作区干净，本地HEAD和实际远端main均07637f6；范围判断只读verify通过，22组/162对一致；CLI连接只读verify通过，52连接/3排除/26对一致。未新做评审、前向、GPU或拟合；事实表、问题收窄、近邻逐篇比较和有条件协议均待后续执行，旧门禁、预算和380封存保持。

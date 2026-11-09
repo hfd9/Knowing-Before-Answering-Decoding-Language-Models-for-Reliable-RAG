@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新背景恢复：[记录](2026-11-09-context-restored-03.md)；[研究去留执行计划](2026-11-09-probe-research-next-steps.md)仍待按顺序执行，保留既有实验和预算边界。
+
 最新CLI复评—probe连接：[记录](2026-11-09-cli-probe-comparison.md) / [52项、26对、9分歧及58来源](../review/2026-11-09-cli-probe-comparison-v1/README.md)。52旧输入严格匹配；CLI判不足的26个选例中旧probe仅2条refuse且来自同一底题；23条原本按作答选择，不可推广总体。保留作者与CLI分歧和独立性限制，无新实验。
 
 最新probe测量去留：[记录](2026-11-09-probe-measurement-scope-decision.md) / [三批逐状态与表达总表、162对及文献对照](../review/2026-11-09-probe-measurement-scope-decision-v1/README.md)。有暴露参照下不足状态读出在关键批次不可靠；暂停旧probe的可靠语义测量/已知不行动论证，不推隐藏状态无信息。无新实验。

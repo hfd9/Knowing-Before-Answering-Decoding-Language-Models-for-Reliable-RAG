@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-09（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新背景恢复（2026-11-09）：按用户要求恢复至CLI对照及研究去留计划，见[记录](docs/records/2026-11-09-context-restored-03.md)。恢复前工作区干净，本地HEAD、保存的origin/main及实际远端main均为07637f6；范围判断只读verify通过。后续执行计划尚未完成，旧门禁、预算及380封存不变；未新做评审、模型前向、GPU或拟合。按长期约定记录并提交推送，实际哈希以Git为准。
+
 最新后续计划（2026-11-09）：用户要求做好记录，后续恢复背景后按[研究去留执行计划](docs/records/2026-11-09-probe-research-next-steps.md)继续。依次复用既有范围判断和CLI对照做一页事实表；收窄可证伪的冻结probe测量问题；逐篇查证KBA、Err Knowingly、Hidden Commitment、ContextConflict、ProbeRAG及probe可靠性近邻并判断增量；仅差异明确且可行时起草候选协议，再作去留判断。当前仅记录计划，以上工作尚未完成；不重做缓存审计或前向，不自动扩样、重训、搜索阈值或patching；原v1/E1-r1门禁false、独立批准0、正式标签null、原拟合预算0、380保留底题封存。必要GPU按用户执行约定准备命令与检查后由用户运行。
 
 最新CLI复评—probe连接（2026-11-09）：用户要求直接完成交叉核对；[报告/52逐项/26对/58来源](docs/review/2026-11-09-cli-probe-comparison-v1/README.md)/[记录](docs/records/2026-11-09-cli-probe-comparison.md)。55中的52条严格匹配原问题、五文档、回答、P0提示/真实token/特征哈希与旧L28 probe；另3关系案例本次未连接。CLI对26 S判可答、26 I判不足；作者55对I为17不足/9 ambiguous，早期240作者I参照均refuse，均保留不裁决。probe S=13answer/13conflict，I=15answer/2refuse/9conflict；26对仅1对两端符合CLI映射。26 I中23为按既有作答选择的锚点，非总体发生率；2个probe refuse为同一底题A/B，行为一答一不答。CLI为真实单会话复评但完整私有上下文未认证，非独立金标准；不恢复“可靠检测不足却未行动”主张，不推隐藏状态无信息。原CLI/材料重放、连接异进程verify、独立计数及58来源哈希通过；无新评审/前向/GPU/拟合，正式批准0、旧门禁false、标签null、预算0、380封存，不自动扩样/重训/阈值搜索/patching。
