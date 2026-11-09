@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新背景恢复：[记录](2026-11-09-context-restored.md)。恢复至已完成的E1用户版结果；56来源及48记录/attempt、token/引用/12对主比较只读重放和三项边界测试通过。当前评分为有暴露的知情判断，旧门禁关闭，不重跑GPU；等待用户后续任务。
+
 最新E1用户版结果：[记录](2026-11-07-scope-e1-user-results.md) / [48答案、知情逐主张及主比较](../review/2026-11-07-e1-user-results-v1/README.md)。实际48回答/48 attempt，四smoke计入；104主张为有暴露助手判断，当前v2保留先答后不确定的unknown。12对窄E的J在I0/IU各0/12、差0；S记录支持11yes/1unknown，CT识别6/12、选边9yes/3unknown。56来源、token/引用/配对独立重放通过，非独立金标准或总体安全证据。
 
 最新E1用户执行版：[记录及用户运行命令](2026-11-07-scope-e1-user-collection-ready.md) / [用户协议](../explanation_scope_e1_user_collection_20261107.md) / [单版本门禁审查](../explanation_scope_e1_user_collection_gate_review_20261107.md)。用户版有条件放行并在启动时重检设备，原v1及E1-r1门禁不变；8项CPU合成测试通过，当前真实回答0，由用户执行GPU命令。
