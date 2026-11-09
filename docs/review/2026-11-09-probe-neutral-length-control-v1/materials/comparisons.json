@@ -1,0 +1,338 @@
+[
+  {
+    "base": "val_14",
+    "changed_document_slots": [
+      2,
+      5
+    ],
+    "negative_id": "support02_D1",
+    "negative_identity": {
+      "input_token_ids_sha256": "90dfe6f41db6b61b1e7c042f8369d2b54a8d6a6424f8b1f57d47e1c936f681aa",
+      "input_tokens": 605,
+      "prompt_sha256": "e56ec78c074a525c578cb60c332956b4f5f9743a1cb56cbcca9a8b5833a5d255"
+    },
+    "negative_suffix": "The Boykin Spaniel is not a breed of cat.",
+    "neutral_id": "neutral_val_14_D",
+    "neutral_identity": {
+      "input_token_ids_sha256": "e6c2fd6199bdac442eaa8aba8c6df39e4929288b51a534cdb62d076c1b430d49",
+      "input_tokens": 605,
+      "prompt_sha256": "8a875b63c009e74e7dd18b5c867b60c71c322ed6c63e8af6493d553caea3a9c4"
+    },
+    "neutral_suffix": "Archive note: This record appears in a standard text format.",
+    "positive_id": "support02_D0",
+    "positive_identity": {
+      "input_token_ids_sha256": "150e4fca21c1869776b36437b85eebaebf8aba766700e370a52c150094956698",
+      "input_tokens": 581,
+      "prompt_sha256": "9a3ae6a31ebbb56c7804a23456ca95fe1933a9637013ef7f0fe84be19a7b35c3"
+    },
+    "wording": "D"
+  },
+  {
+    "base": "val_14",
+    "changed_document_slots": [
+      2,
+      5
+    ],
+    "negative_id": "support02_P1",
+    "negative_identity": {
+      "input_token_ids_sha256": "f4d0292b9e12fab3ccce76afa16dc439dbdb295f936ac410d5ba9b4867e1fc3e",
+      "input_tokens": 617,
+      "prompt_sha256": "582968faebc85bb9a240a483d310ebb574d8574c354ecce038d26f4ccf7aeff7"
+    },
+    "negative_suffix": "The Boykin Spaniel is not a breed of cat.",
+    "neutral_id": "neutral_val_14_P",
+    "neutral_identity": {
+      "input_token_ids_sha256": "f9cc3751fc29f31baf49405f93ae2b4bbe491221ac6c6e685caf9917b49effde",
+      "input_tokens": 617,
+      "prompt_sha256": "7ad050147e3b8502bb7ffc6215a762c8433321014a7bfafb1bce7961f32adcc5"
+    },
+    "neutral_suffix": "Archive note: This record appears in a standard text format.",
+    "positive_id": "support02_P0",
+    "positive_identity": {
+      "input_token_ids_sha256": "ce3415a29bab4f0f2984da4e9c649dd9ac514ce41a9df85203bf1d5089a7e647",
+      "input_tokens": 593,
+      "prompt_sha256": "c4b917decb08dd28a4fba2a0e67a65eb81ccd70283d61ace9533b9409901cd88"
+    },
+    "wording": "P"
+  },
+  {
+    "base": "val_3",
+    "changed_document_slots": [
+      1,
+      3
+    ],
+    "negative_id": "support03_D1",
+    "negative_identity": {
+      "input_token_ids_sha256": "63877aa5606868faf504f93ec2b1ad02ea21320319fc9f93b168a481fad567b9",
+      "input_tokens": 766,
+      "prompt_sha256": "b8f3587227639d9920ea642810cb910fa1f80140af46e30154553fbac89dd8c8"
+    },
+    "negative_suffix": "El Paso International Airport is not a private airport.",
+    "neutral_id": "neutral_val_3_D",
+    "neutral_identity": {
+      "input_token_ids_sha256": "dbb2f709c95f8a3c7b2039252bfa68bd7a920d5b99e92f7671d24134ed5df75b",
+      "input_tokens": 766,
+      "prompt_sha256": "56ddd6a823c18ad7ea03d33bdbf1307c3400718b3d3552635c8160f93e29bb76"
+    },
+    "neutral_suffix": "Archive note: This is a standard text record.",
+    "positive_id": "support03_D0",
+    "positive_identity": {
+      "input_token_ids_sha256": "c6fb7828766d4c140a8073621c6c24b713a1e91862775be6bf2ef7c236a27bc3",
+      "input_tokens": 746,
+      "prompt_sha256": "b8a30d2ea16f59f7559ebdd4332a700766b8d2466dc7d420377b4f7a51a0078c"
+    },
+    "wording": "D"
+  },
+  {
+    "base": "val_3",
+    "changed_document_slots": [
+      1,
+      3
+    ],
+    "negative_id": "support03_P1",
+    "negative_identity": {
+      "input_token_ids_sha256": "afc95dd73b844e0c5e4293a5d19de0c8d5465c35ffb610ebea35acbf56d8cdc3",
+      "input_tokens": 770,
+      "prompt_sha256": "35b467d21210011c58910aab8d63dcf1a9e1cf345206bad42d9681fc9db87689"
+    },
+    "negative_suffix": "El Paso International Airport is not a private airport.",
+    "neutral_id": "neutral_val_3_P",
+    "neutral_identity": {
+      "input_token_ids_sha256": "94b91a4ff370907e588e0bf4e4a5a2c5bf3552a845b534f9d5f8aa2f66d521e0",
+      "input_tokens": 770,
+      "prompt_sha256": "c230ea5e319b587061ea5690ea47cf3510c00653e6f4863a7f9028e5af7d4460"
+    },
+    "neutral_suffix": "Archive note: This is a standard text record.",
+    "positive_id": "support03_P0",
+    "positive_identity": {
+      "input_token_ids_sha256": "b51088782689ba6ed54f6e864340e0f1e1fe783b5dc46c71b9ba6457b305f358",
+      "input_tokens": 750,
+      "prompt_sha256": "d75c2c7ee803168bb22f3eb5a855fdcc076bfdad59053f8b4602407e857ad632"
+    },
+    "wording": "P"
+  },
+  {
+    "base": "val_31",
+    "changed_document_slots": [
+      1,
+      5
+    ],
+    "negative_id": "support06_D1",
+    "negative_identity": {
+      "input_token_ids_sha256": "a7c632144e9b751352a1f0589e4325ba7e3eecdd018b9429fb038f5d07b4a370",
+      "input_tokens": 2945,
+      "prompt_sha256": "3451d81aff8e8dbc8023240f8ec909fe812705c2d1d4b943e1aa05883dfc83a4"
+    },
+    "negative_suffix": "There are no other music composers for this version.",
+    "neutral_id": "neutral_val_31_D",
+    "neutral_identity": {
+      "input_token_ids_sha256": "7997fd54b342dab1d120285ed146571155baeb8a94c5944f9a23da7e49b7a37e",
+      "input_tokens": 2945,
+      "prompt_sha256": "1c10b91654a0661299469ab915778c8457c3968cfa6575e1c00ca42df24ada45"
+    },
+    "neutral_suffix": "Archive note: This is a standard text record.",
+    "positive_id": "support06_D0",
+    "positive_identity": {
+      "input_token_ids_sha256": "64b720b14b65e02df3d73aab7cc4628e43dc2d2870f8feecf98506afe15940cf",
+      "input_tokens": 2925,
+      "prompt_sha256": "03807b8f223a75285a5323895ed824afad9d3c6a52f2b9016823650e23b3e3ae"
+    },
+    "wording": "D"
+  },
+  {
+    "base": "val_31",
+    "changed_document_slots": [
+      1,
+      5
+    ],
+    "negative_id": "support06_P1",
+    "negative_identity": {
+      "input_token_ids_sha256": "876316093780fcf89c448e392578ec9befa5f3ad045bf8358a57e4c5d48bbd6f",
+      "input_tokens": 2948,
+      "prompt_sha256": "6e11115429ac47f1a237449d3b1f1a34603c596c8dbf4fc27a84213db06226ad"
+    },
+    "negative_suffix": "There are no other music composers for this version.",
+    "neutral_id": "neutral_val_31_P",
+    "neutral_identity": {
+      "input_token_ids_sha256": "1dfce45d3b99c8a7174807338796c4863e82ee43b083f7db231d5a73509a2f97",
+      "input_tokens": 2948,
+      "prompt_sha256": "c6019db128020b6b5662c07b52aef9b2021ce3a73d026062e7a7175853b16c79"
+    },
+    "neutral_suffix": "Archive note: This is a standard text record.",
+    "positive_id": "support06_P0",
+    "positive_identity": {
+      "input_token_ids_sha256": "afe77368f222b583a6ab61ca63470144a64c6da7f7cd46b2195863ea06d86eaa",
+      "input_tokens": 2928,
+      "prompt_sha256": "c65aebdbe869f714a3e437f67d456866227349650ccf6cb81e7140b2ebccf891"
+    },
+    "wording": "P"
+  },
+  {
+    "base": "val_28",
+    "changed_document_slots": [
+      2,
+      3
+    ],
+    "negative_id": "support07_D1",
+    "negative_identity": {
+      "input_token_ids_sha256": "3d3d98ed185b8d199c38b2efe239be259c233765327834e3550ab7bd9c6d4988",
+      "input_tokens": 544,
+      "prompt_sha256": "9bb9ace160a4bc594fdc8d53b1f4049545c166e18bce5a8acbcbbdeca145d46c"
+    },
+    "negative_suffix": "The described edition of DownBeat is not a newspaper.",
+    "neutral_id": "neutral_val_28_D",
+    "neutral_identity": {
+      "input_token_ids_sha256": "c9ad79c5a413954b9e24f835db56b9003934c860a69ed541e9ca362c70030f2d",
+      "input_tokens": 544,
+      "prompt_sha256": "fcb1095e8f4a2bb697e3c877df234c32d4f6f38530fa25f111a1915be869a834"
+    },
+    "neutral_suffix": "Archive note: This entry is in standard text form.",
+    "positive_id": "support07_D0",
+    "positive_identity": {
+      "input_token_ids_sha256": "ee83e080faab4366c5ddef285e399de0e549e94ed92c0b878bacb32928e080d5",
+      "input_tokens": 522,
+      "prompt_sha256": "0606ff1be1c1352a57219bb9601a619619281414b9b42f0ec51d32c46850b227"
+    },
+    "wording": "D"
+  },
+  {
+    "base": "val_28",
+    "changed_document_slots": [
+      2,
+      3
+    ],
+    "negative_id": "support07_P1",
+    "negative_identity": {
+      "input_token_ids_sha256": "f2cdcf3824d169dbab640f2afd8865f83048995473594e88b0c3f00543443c01",
+      "input_tokens": 545,
+      "prompt_sha256": "7c476e9953a496847e4a8167819c2587226a10a7871c8cbbab0d0e528958b5c5"
+    },
+    "negative_suffix": "The described edition of DownBeat is not a newspaper.",
+    "neutral_id": "neutral_val_28_P",
+    "neutral_identity": {
+      "input_token_ids_sha256": "8d6390bfbacd32ac51c21ccf2015a0e52fc631258571e55886c713013c369191",
+      "input_tokens": 545,
+      "prompt_sha256": "651ac65f260a1be9d8f68899ca228ba0181e1a9c4cb060c4838788f14e39e007"
+    },
+    "neutral_suffix": "Archive note: This entry is in standard text form.",
+    "positive_id": "support07_P0",
+    "positive_identity": {
+      "input_token_ids_sha256": "c74aec336499cf0e3732029218b7faa94a8d16b27a897be96e2c17d89d7133f3",
+      "input_tokens": 523,
+      "prompt_sha256": "8a023195c6f3daec1bd3718e17a5bd67dc47c699f0922a51611c1269a4bdceb2"
+    },
+    "wording": "P"
+  },
+  {
+    "base": "val_17",
+    "changed_document_slots": [
+      1,
+      2
+    ],
+    "negative_id": "support08_D1",
+    "negative_identity": {
+      "input_token_ids_sha256": "3bbde49eb005ce104945deacb60993ce0e6338b6405c0069ddfef4c6b83d5bf2",
+      "input_tokens": 668,
+      "prompt_sha256": "a6fc29ddfedf74f12bbca4d02d1905f06f4758e18b7c4844e8739cb53b5c98b1"
+    },
+    "negative_suffix": "Gangkhar Puensum is not classified here as a plateau.",
+    "neutral_id": "neutral_val_17_D",
+    "neutral_identity": {
+      "input_token_ids_sha256": "10b160a9b8d5927455ff9fd30bf7207ffcad529266a0f2aaf68487cbb22dabb1",
+      "input_tokens": 668,
+      "prompt_sha256": "634407a3953efa97e1d50ef5e2e4624226f4e5675933e3c5789339703505264a"
+    },
+    "neutral_suffix": "Archive note: A standard text record. It is a text entry.",
+    "positive_id": "support08_D0",
+    "positive_identity": {
+      "input_token_ids_sha256": "bba8195f28ab1befeca78dc68f8341543c8446ddba25f0536a24319ac819ca94",
+      "input_tokens": 640,
+      "prompt_sha256": "02bc5543ae7077995d25f2e25906bdc3a2938b9ae7f8c633cf6896661533ff10"
+    },
+    "wording": "D"
+  },
+  {
+    "base": "val_17",
+    "changed_document_slots": [
+      1,
+      2
+    ],
+    "negative_id": "support08_P1",
+    "negative_identity": {
+      "input_token_ids_sha256": "88f0a7ba1e817cccea6966086b8a4e0d3b3be8c14cef5ad5fc322149b060fbe7",
+      "input_tokens": 663,
+      "prompt_sha256": "97536fb0fe2f5321aeea520ffd2c32f2dad4db02db87d355026f59d8a856f349"
+    },
+    "negative_suffix": "Gangkhar Puensum is not classified here as a plateau.",
+    "neutral_id": "neutral_val_17_P",
+    "neutral_identity": {
+      "input_token_ids_sha256": "4568be882b7f98cf692d62a77253ad9932d31a39d953f6ac844eba338a6716a2",
+      "input_tokens": 663,
+      "prompt_sha256": "4ffad9b304a402a4ad83f82e6b15a6239497189a7923cdef83d4bda3ec3cb0bf"
+    },
+    "neutral_suffix": "Archive note: A standard text record. It is a text entry.",
+    "positive_id": "support08_P0",
+    "positive_identity": {
+      "input_token_ids_sha256": "5003a806dc152d2ef752bba1d2a4b9e01528ef1ac511bbc70d51b836783da725",
+      "input_tokens": 635,
+      "prompt_sha256": "541c41a20007de7bd54152f5f3478522ea21e1f07e01e173535a7be19b035f39"
+    },
+    "wording": "P"
+  },
+  {
+    "base": "val_13",
+    "changed_document_slots": [
+      4,
+      5
+    ],
+    "negative_id": "support09_D1",
+    "negative_identity": {
+      "input_token_ids_sha256": "0ec0188b3c856869434eeec22f1001ff6b763b0f1641fb0da2a3fcf12a04e25f",
+      "input_tokens": 906,
+      "prompt_sha256": "fedc9e70109908fa6c29930783ce1348ff4332b862cc8c10eb67a5ee8c0e0419"
+    },
+    "negative_suffix": "The described original version of Under the Volcano is not a play.",
+    "neutral_id": "neutral_val_13_D",
+    "neutral_identity": {
+      "input_token_ids_sha256": "9874ee170c979782921f5e61a3caa81700363c6b18583a5e7721d3a1977bbd0d",
+      "input_tokens": 906,
+      "prompt_sha256": "17454884af42da6d810193f8c071461d8a155e13798b93a86067d71a35e5b7b4"
+    },
+    "neutral_suffix": "Archive note: A standard text record. It is a text entry.",
+    "positive_id": "support09_D0",
+    "positive_identity": {
+      "input_token_ids_sha256": "c341534f12cb8764f96672ffb75159f9d4569d7fa25ee6e61a9e26c9489d22b6",
+      "input_tokens": 878,
+      "prompt_sha256": "42ed96b48cfe89cbff2d427380edfa80eae5de36fe39f9edfb20dd464d9177e6"
+    },
+    "wording": "D"
+  },
+  {
+    "base": "val_13",
+    "changed_document_slots": [
+      4,
+      5
+    ],
+    "negative_id": "support09_P1",
+    "negative_identity": {
+      "input_token_ids_sha256": "5e56ed334bc1d3662bf7fe537a150d3e537a3f3652196bdfbc28c8582e0cb2b8",
+      "input_tokens": 901,
+      "prompt_sha256": "9f51a84bf9ad255daee72a3417da7aa68f90bc57271d1ba39684d5b65b7cf13d"
+    },
+    "negative_suffix": "The described original version of Under the Volcano is not a play.",
+    "neutral_id": "neutral_val_13_P",
+    "neutral_identity": {
+      "input_token_ids_sha256": "26b60a3322a2c5b42e252987a92e1130128292732c4e1086eca6b534ec4e6596",
+      "input_tokens": 901,
+      "prompt_sha256": "7a710f3288add1c63fd2908a72a7f3dea623b7be749b112f665a7ce30bba5de0"
+    },
+    "neutral_suffix": "Archive note: A standard text record. It is a text entry.",
+    "positive_id": "support09_P0",
+    "positive_identity": {
+      "input_token_ids_sha256": "01a495b2db717637a08e4bb1012936b830ba22a644ed9de74056d6dd886da9fc",
+      "input_tokens": 873,
+      "prompt_sha256": "f5b040f519e45032f0059c5f133870d6deac63d17402a758c67835fbd4ad5e34"
+    },
+    "wording": "P"
+  }
+]

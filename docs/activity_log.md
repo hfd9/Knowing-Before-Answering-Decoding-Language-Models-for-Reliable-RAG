@@ -1336,3 +1336,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 129. 2026-11-09：必要GPU阶段由用户执行
 
 用户明确必要GPU阶段可直接提供命令由其运行，不必回避GPU；助手负责设计、非GPU准备检查、估时、异常说明和运行后核验，见[记录](records/2026-11-09-gpu-user-execution-preference.md)。本次仅记录执行分工，无新GPU任务或模型调用；现有协议、预算与380封存边界保持。
+
+## 130. 2026-11-09：probe已有缓存审计与等token控制准备
+
+用户要求直接推进至需要其运行GPU；完成[288行及300配对缓存审计](review/2026-11-09-probe-existing-cache-audit-v1/README.md)/[记录](records/2026-11-09-probe-measurement-cache-audit-and-neutral-control.md)。120组A/B中106类别一致，含52两端符合作者参照、52均不符、2未知；知情参照非金标准。旧六底题冗余否定与长度混杂，已固定[12等token中性附注及一旧输入桥接](review/2026-11-09-probe-neutral-length-control-v1/README.md)，CPU独立重建和七项测试通过；新run prepared_not_started，等用户运行GPU，不生成答案或拟合。原门禁/预算/380封存及E1不重跑保持。

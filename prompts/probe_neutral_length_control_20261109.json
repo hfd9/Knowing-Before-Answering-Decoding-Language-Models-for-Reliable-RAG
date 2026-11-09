@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "task": "probe_neutral_length_control_development",
+  "scope": "Six previously exposed val bases, two prior wordings; no new base, answer generation, fits or E1 prefill. This is a new small diagnostic, not confirmation.",
+  "selection": "Fixed original six negative bases and both original wording levels. Neutral notes selected for tokenizer length, not new model or probe outputs; prior results already exposed.",
+  "negative_bases": ["val_14", "val_3", "val_31", "val_28", "val_17", "val_13"],
+  "wordings": ["D", "P"],
+  "suffixes": {
+    "val_14": "Archive note: This record appears in a standard text format.",
+    "val_3": "Archive note: This is a standard text record.",
+    "val_31": "Archive note: This is a standard text record.",
+    "val_28": "Archive note: This entry is in standard text form.",
+    "val_17": "Archive note: A standard text record. It is a text entry.",
+    "val_13": "Archive note: A standard text record. It is a text entry."
+  },
+  "new_neutral_inputs": 12,
+  "bridge_source_id": "support06_D1",
+  "bridge_extra_forwards": 1,
+  "primary_comparison": "For each fixed base and wording: frozen old P(conflict) on negative suffix minus matched-token neutral suffix. Report all six paired values separately for D and P, signed differences and means as descriptive only.",
+  "secondary_comparison": "Each negative or neutral suffix minus the saved positive core; three-class probabilities, frozen class, and exact prompt length. No new response behavior is measured.",
+  "interpretation": "Disagreement between two equal-token additions is evidence against token count alone being a complete explanation for that specific contrast; agreement does not prove length causes the result. Content, token identities, semantics and position differ; no natural-task or mechanism claim.",
+  "tolerances": {"max_layer_relative_l2": 0.02, "max_probability_absolute_error": 0.01},
+  "exposure": "Same informed assistant; six val bases used in probe calibration/selection and old results already seen; no independent semantic gold or prospective confirmation.",
+  "user_operated_gpu": true,
+  "max_new_forwards": 13,
+  "new_generated_answers": 0,
+  "new_fits": 0,
+  "held_out_380_access": false
+}

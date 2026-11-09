@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-09（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新probe测量审计与用户GPU入口（2026-11-09）：用户要求直接推进至需要其执行；[缓存审计](docs/review/2026-11-09-probe-existing-cache-audit-v1/README.md)/[记录](docs/records/2026-11-09-probe-measurement-cache-audit-and-neutral-control.md)连接240迁移与另一批48绑定、288特征、120个A/B和180个关系对照。A/B的106类别相同中52两端符合作者参照、52均不符、2 unknown；非独立金标准。旧六底题冗余否定同时增加20–28 token，已准备[六底题×两表达12个等token中性附注+1旧输入桥接](docs/review/2026-11-09-probe-neutral-length-control-v1/README.md)，无新底题/生成/拟合，单条桥接和格式附注的限制须披露。CPU材料/真实tokenizer、24旧特征、七项测试及旧288状态重放通过；新run prepared_not_started，待用户按说明运行，完成/报错助手先核验，不删未提交attempt。原E1不重跑、原v1/E1-r1门禁false、独立批准0、正式标签null、原拟合预算0、380封存，不自动重训/阈值搜索/patching。
+
 最新GPU执行约定（2026-11-09）：用户明确后续必要阶段需要GPU时，助手做好代码/设计、非GPU检查、时间估算与失败处置后可直接提供命令，由用户执行，无需为避免GPU而回避必要工作；完成或报错后助手核验并继续。见[记录](docs/records/2026-11-09-gpu-user-execution-preference.md)。这不自动更改既定实验边界或预算：E1无需重跑，原v1/E1-r1门禁false、正式独立批准0、标签null、原拟合预算0、380封存；不自动扩样、重训、阈值搜索或patching。
 
 最新E1结果与probe核查（2026-11-09）：按用户要求完成[四条件各端点与研究决定](docs/review/2026-11-09-e1-results-assessment/README.md)、[12对逐主张引文](docs/review/2026-11-09-e1-results-assessment/pairs-evidence.md)及[记录](docs/records/2026-11-09-e1-results-probe-assessment.md)。v2知情评分的I0/IU狭义E均0yes/12no/0unknown，W分别3/5/4及5/4/3，J均no；56现场/归档、token/引用/配对重放及三项边界测试通过。协议不采隐藏状态；现场run及144个输入/提示/token哈希对现存runs和文档的JSON/JSONL/CSV检索未发现同批probe，不能排除其他位置或未标哈希产物，E1未测probe与行为关系。保留狭义现象有限负结果、暂缓此方向；结合既有迁移证据，后续优先评估语义测量有效性，不断言语义或构造痕迹单一机制。无新评分、前向、GPU或拟合；原v1/E1-r1门禁false、独立批准0、正式标签null、预算0、380封存，不自动扩样/重训/阈值搜索/patching，用户执行未来GPU。
