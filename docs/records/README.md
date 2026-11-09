@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新来源与可行性：[记录](2026-11-09-probe-source-feasibility.md) / [四个候选来源、语义参照与成本](../review/2026-11-09-probe-source-feasibility-v1/README.md)。FaithEval预览有跨卡同qid且论文报告多人审核，但全量交集、条款、改造后参照与排重未核；保留元数据候选，不放行确认实验。
+
 最新研究去留：[记录](2026-11-09-probe-research-decision.md) / [一页事实表、研究问题和逐篇近邻](../review/2026-11-09-probe-research-decision-v1/README.md)。潜在组合差异与确认可行性尚未确立，保留有限问题、暂停确认实验及协议；chat L28原诊断为77.67%，不是另一L24路由器的80.67%。
 
 最新背景恢复：[记录](2026-11-09-context-restored-03.md)；[研究去留执行计划](2026-11-09-probe-research-next-steps.md)仍待按顺序执行，保留既有实验和预算边界。
