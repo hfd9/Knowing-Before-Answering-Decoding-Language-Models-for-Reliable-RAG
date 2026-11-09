@@ -1,0 +1,23 @@
+{
+  "status": "aggregate_question_overlap_not_semantic_validation",
+  "faith_eval_commits": {"I": "4a14e0e9860e270a8c9ff57c511821f4f50dce57", "C": "e29508db3955db2c82a80a1f3c3aadc11f93fc3f"},
+  "strict_qids": 785,
+  "normalized_question_equal_IC": 785,
+  "normalized_question_different_IC": 0,
+  "candidate_qids_with_question_under_five_unique_tokens": 28,
+  "candidate_qids_with_exact_question_in_exposed_baseline": 1,
+  "candidate_qids_with_exact_or_jaccard_at_least_0_8_in_exposed_baseline": 1,
+  "baseline_unique_normalized_questions": {"train200": 200, "val95": 95, "diagnostic100": 100, "transfer30": 30},
+  "by_existing_group": {"train200": {"exact": 1, "near_including_exact": 1}, "val95": {"exact": 0, "near_including_exact": 0}, "diagnostic100": {"exact": 0, "near_including_exact": 0}, "transfer30": {"exact": 0, "near_including_exact": 0}},
+  "matching_candidate_subset_counts": {"TriviaQA-web": 1},
+  "threshold_definition": "NFKC, casefold, Unicode word-token equality; set Jaccard >= 0.8 requires at least five unique tokens on both sides; exact counted irrespective of length",
+  "jaccard_threshold_is_exploratory_not_certified": true,
+  "candidate_qids_or_questions_saved": false,
+  "candidate_contexts_or_answers_read": false,
+  "full_remote_file_sha256_verified": false,
+  "old_source_document_overlap_evaluated": false,
+  "pretraining_overlap_evaluated": false,
+  "heldout_380_accessed": false,
+  "semantic_approval": 0,
+  "further_collection_authorized": false
+}

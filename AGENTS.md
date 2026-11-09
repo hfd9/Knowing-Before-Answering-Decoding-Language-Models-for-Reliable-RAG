@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-09（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新FaithEval三步核查（2026-11-09）：用户要求完成来源条款、文本排重及最终语义参照，完成[报告](docs/review/2026-11-09-faitheval-feasibility-followup-v1/README.md)/[记录](docs/records/2026-11-09-faitheval-feasibility-followup.md)。固定I/C785个同qid同subset两侧问题规范化均相同；与旧200训练/95验证/100已用诊断/30作者问题比对，1个TriviaQA-web问题与旧训练规范化相同，Jaccard≥0.8无额外命中，28个短问仅精确；异进程独立倒排聚合通过。仅在内存读取候选问题列，不存候选ID/问题、不读context/answers，不代表其余784无重叠；380、其他旧材料、文档和预训练未覆盖。上游条款分源未全部解决；原I/C多人评审不认证未来五文档S/I/C或A/B，正式参照未成立，暂无GPU。无新样本/评分/前向/拟合；原门禁false、正式独立批准0、标签null、拟合预算0、380封存，不自动扩样/重训/阈值搜索/patching。
+
 最新FaithEval元数据（2026-11-09）：用户要求直接开始下一步，完成[固定版本、匿名交集及排重边界](docs/review/2026-11-09-faitheval-metadata-v1/README.md)/[记录](docs/records/2026-11-09-faitheval-metadata.md)。I固定4a14e0e，2492行/2491唯一qid，1重复；C固定e29508d，1500行/1500唯一。两侧各一行且subset相同的qid交集785，七个非HotpotQA/NQ/TriviaQA子来源合计557；异进程SQLite独立聚合复算通过。仅远程范围读取qid/subset，不解析或保存正文/逐题ID，未重算整文件SHA；本地原original_id并非FaithEval qid，未证跨集或380无重叠，785/557不是有效样本数。许可、改造后语义和研究增量仍待核；无新样本、评审、前向或拟合，原门禁false、正式独立批准0、标签null、原拟合预算0、380封存，不自动扩样/重训/阈值搜索/patching。
 
 最新来源与可行性（2026-11-09）：用户要求直接完成三步，完成[公开来源、语义参照、资源与去留](docs/review/2026-11-09-probe-source-feasibility-v1/README.md)/[记录](docs/records/2026-11-09-probe-source-feasibility.md)。FaithEval不足2492/冲突1500，网页预览有至少两个跨卡同qid且论文报告三人多数审核；全量交集、每题排重、改造后S/I/C和两表达未验，代码Apache不代表数据/上游条款均已核实。ContextConflict有配对但许可未核清；RAGTruth是回答幻觉标签而非三状态证据标签。保留FaithEval作元数据可行性候选，确认实验/协议尚不就绪；39/80底题仅零失败、三类Bonferroni示意，非预算或门槛。未下载全量数据、选题、评分、前向或拟合；旧门禁false、独立批准0、标签null、原拟合预算0、380封存，不自动扩样/重训/阈值搜索/patching。

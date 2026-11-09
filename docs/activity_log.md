@@ -1372,3 +1372,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 138. 2026-11-09：FaithEval固定版本元数据交集
 
 按用户要求直接开展[固定版本qid/subset计数](review/2026-11-09-faitheval-metadata-v1/README.md)/[记录](records/2026-11-09-faitheval-metadata.md)。I 2492行/2491唯一（1重复），C 1500行/1500唯一；两边各一行且同subset的交集785，其中七个非已知共享来源557；异进程SQLite独立聚合一致。远程范围只解析两列、未保存qid或文件，未对全文散列；旧original_id无可直接匹配的FaithEval qid，跨集及380重叠未知。无新样本、评审、前向或拟合；许可及语义未放行，原门禁、预算和380封存保持。
+
+## 139. 2026-11-09：FaithEval条款、问题排重与语义参照
+
+用户要求完成三步，[报告](review/2026-11-09-faitheval-feasibility-followup-v1/README.md)/[记录](records/2026-11-09-faitheval-feasibility-followup.md)列出上游条款及未决处；对固定版本785个I/C问题与旧200/95/100/30问题仅在内存聚合比对，I/C规范化785相同、1个TriviaQA-web问题与旧训练精确命中，Jaccard近似无额外命中、28短问仅精确。独立倒排聚合及合成检查通过；不证明余下问题/文档/380无重叠。原I/C多人参照不自动覆盖拟议的五文档S/I/C和A/B，当前无新确认参照或GPU就绪；无新样本、评分、前向或拟合，旧门禁/预算/380封存保持。
