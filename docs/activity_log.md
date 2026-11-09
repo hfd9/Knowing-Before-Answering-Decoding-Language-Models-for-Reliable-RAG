@@ -1352,3 +1352,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 133. 2026-11-09：probe测量总表与去留判断
 
 按用户要求[整理三批状态/表达及162对](review/2026-11-09-probe-measurement-scope-decision-v1/README.md)/[记录](records/2026-11-09-probe-measurement-scope-decision.md)：迁移I各表达8/30读refuse、绑定I各版本0/12，作者参照暴露且非独立金标准；暂停将旧L28作为可靠语义测量或“已检测不足但未行动”的依据，不推隐藏状态无信息。原论文与控制任务已含相近主题，定向文献对照未证明创新；一组网络请求connection failed、原因未知。22组和9配对组独立重算通过，无新GPU、特征重放、拟合或评分，380封存。
+
+## 134. 2026-11-09：CLI既有复评与冻结probe交叉连接
+
+用户要求完成[52严格匹配、3排除、26对及9分歧](review/2026-11-09-cli-probe-comparison-v1/README.md)/[记录](records/2026-11-09-cli-probe-comparison.md)。CLI判26 S可答、26 I不足；旧probe的I为15answer/2refuse/9conflict，2条refuse是同一底题，26 I中23条按已知作答选择，不得外推总体。作者55对9条记ambiguous而CLI记insufficient，原判保留；CLI完整私有上下文未认证、正式独立批准0。输入/输出/提示/token/特征及104个CLI引文、58来源和异进程重建通过；无新评审、GPU、前向或拟合，旧门禁、预算及380封存不变。

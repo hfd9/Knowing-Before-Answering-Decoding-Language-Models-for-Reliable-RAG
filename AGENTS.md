@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-09（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新CLI复评—probe连接（2026-11-09）：用户要求直接完成交叉核对；[报告/52逐项/26对/58来源](docs/review/2026-11-09-cli-probe-comparison-v1/README.md)/[记录](docs/records/2026-11-09-cli-probe-comparison.md)。55中的52条严格匹配原问题、五文档、回答、P0提示/真实token/特征哈希与旧L28 probe；另3关系案例本次未连接。CLI对26 S判可答、26 I判不足；作者55对I为17不足/9 ambiguous，早期240作者I参照均refuse，均保留不裁决。probe S=13answer/13conflict，I=15answer/2refuse/9conflict；26对仅1对两端符合CLI映射。26 I中23为按既有作答选择的锚点，非总体发生率；2个probe refuse为同一底题A/B，行为一答一不答。CLI为真实单会话复评但完整私有上下文未认证，非独立金标准；不恢复“可靠检测不足却未行动”主张，不推隐藏状态无信息。原CLI/材料重放、连接异进程verify、独立计数及58来源哈希通过；无新评审/前向/GPU/拟合，正式批准0、旧门禁false、标签null、预算0、380封存，不自动扩样/重训/阈值搜索/patching。
+
 最新probe测量去留（2026-11-09）：用户要求先整理并判断、不启动新实验；完成[按任务/状态/表达总表与162对](docs/review/2026-11-09-probe-measurement-scope-decision-v1/README.md)/[记录](docs/records/2026-11-09-probe-measurement-scope-decision.md)。迁移I两表达各8/30读refuse，绑定I两版本各0/12读refuse；C有响应但S/K亦有较多conflict。作者参照有历史暴露非独立金标准，unknown和底题配对保留；暂停以旧L28 probe作为可靠语义测量或“已检测不足却未行动”的依据，不推断隐藏状态无信息。收缩为探针测量边界的候选问题，定向对照原论文与控制任务研究，尚不能宣称创新；网络请求曾connection failed、原因未知，文献并非系统综述。22组/162对只读重排及独立复算通过，无新GPU、特征重放、拟合、评分或380访问；原门禁false、正式批准0、标签null、预算0，仍不自动扩样/重训/阈值搜索/patching。
 
 最新背景恢复（2026-11-09）：按用户要求恢复至等token中性对照完成后，见[记录](docs/records/2026-11-09-context-restored-02.md)。恢复前工作区干净，本地HEAD、保存的origin/main及实际远端main均为75d2130；三项CPU只读复验通过，13记录/attempt/特征、12对、59归档来源及桥接和读出复算一致。既有研究限制、旧门禁和预算不变；未访问GPU或重散列权重，等待用户后续任务，必要GPU由用户执行。按长期约定记录并提交推送，实际哈希以Git及回复为准。

@@ -1,0 +1,331 @@
+{
+  "includes_self": false,
+  "note": "hash inventory, not semantic or independence certification",
+  "files": [
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/README.md",
+      "bytes": 7825,
+      "sha256": "d4c2a4c86f5c7a831a6a265b9ee83427f970e207ed337f803f4e55f44ee22992"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/excluded.csv",
+      "bytes": 439,
+      "sha256": "9aa058d07176a389af10340a34d63ff4a9e309c4f4064d20b3d26b0943074ed5"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/linked.csv",
+      "bytes": 61763,
+      "sha256": "36d6551fe7ee9f8a40031a7909e18cdaebfe40b5576d44ea1cf041cc20a76049"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/pairs.csv",
+      "bytes": 3091,
+      "sha256": "0d4cfe0e883c7418021dd12314675496c016660c4563ce35ad300235183f3e58"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-free-answer-study/chat/probe/probe.pkl",
+      "bytes": 100209,
+      "sha256": "db6033b84f1fcd30e5e2e31ce4beb262a76920cc06811c57900ad14b8d40858d"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/approved_labels.json",
+      "bytes": 5043,
+      "sha256": "d4bd330366ae40fb51a7980e99bfbcf8398a76e0c074c8ea25c4f45cedbb7eca"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/coordinator/behavior_mapping.json",
+      "bytes": 5523,
+      "sha256": "2c240667de493bffce4fa96c850d226a1d22047760b7fd1eee75b6ead9686f16"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0001.npy",
+      "bytes": 147584,
+      "sha256": "e945c8225b792cdce32bef494fdde91723e5355087af1e5fead273577db79069"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0010.npy",
+      "bytes": 147584,
+      "sha256": "cdb61224683c02ea44779448f3cca04178a57afb24beceb9006da6b14d055db8"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0012.npy",
+      "bytes": 147584,
+      "sha256": "1289b3494c2723abbb4496827263c097e3715e00f48c9636a16a389be11e8262"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0014.npy",
+      "bytes": 147584,
+      "sha256": "b7a1ebf3dbd9dcb98f055605ea36fe7ef1be5764cdd3867106a25a8f803b5d83"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0016.npy",
+      "bytes": 147584,
+      "sha256": "c9aeba0eee3be15e0b0301ade8ee65ba5eedadc0831b27f08e09224fae925eea"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0018.npy",
+      "bytes": 147584,
+      "sha256": "f1560809fc30e689471b54aa4ce5d1dac6f7759c012094f0a6e115acf9d345c5"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0020.npy",
+      "bytes": 147584,
+      "sha256": "85d557b41226257cfbcc1cefbc78e3f88469cee4e9521d134016ebfd4b4925d7"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0022.npy",
+      "bytes": 147584,
+      "sha256": "56275ccc1405969c1af151522bf2225304a3dd508869b06a9b383b6cf3384110"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0024.npy",
+      "bytes": 147584,
+      "sha256": "7694ec09bb17e732d73650eb4ab14c1c970d6349c1c1586e64cb13c869e34a42"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0026.npy",
+      "bytes": 147584,
+      "sha256": "b6dd547c78f511306fea1059ec2a526f037d167536645b5531f05e4589bbf233"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0028.npy",
+      "bytes": 147584,
+      "sha256": "81db05edc33647870c4d46c1d85e82da6f8eabe15dd093aa589ccdc6f5d9ea2c"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0030.npy",
+      "bytes": 147584,
+      "sha256": "ae9f9215850761e69b186fc5e60a57b552acc1467dec27664d18ad0a8770efaa"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0032.npy",
+      "bytes": 147584,
+      "sha256": "389acc6367ab02c436c76045bea6c3e7c1b3f0abbe040f5cf0e70337ea9eeff8"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0034.npy",
+      "bytes": 147584,
+      "sha256": "a5385f9fcb81ceb62086bb1d02469d82593054bc2d33bf34ff90f0ab668341f1"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0036.npy",
+      "bytes": 147584,
+      "sha256": "66bf626616d5fa4d6bf20d1469df5175719d22ed8a525d6143d5a27e1fd798c1"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0038.npy",
+      "bytes": 147584,
+      "sha256": "a0ffb2d9c33addfb001389789a12ce3f0875b61698bbad131fdfd91bf0e910f3"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0040.npy",
+      "bytes": 147584,
+      "sha256": "2d1b0ebdbf6a1336cf5271decf2f4e5cb60d88c780eed91f78be94dfc094b353"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0058.npy",
+      "bytes": 147584,
+      "sha256": "679c39896525b19f71d09857e0558c80f528b3c1a34e2ae297b4f497f6c6e257"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0060.npy",
+      "bytes": 147584,
+      "sha256": "fb1e70e08670b5596bd813a9eeb85e6ff8d1589cf53d82151cc7861a36f8ac21"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0062.npy",
+      "bytes": 147584,
+      "sha256": "9ffe3ac3653f854dcf581d6ea52da1a4115186746dd451de471ca548d7b8e480"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0064.npy",
+      "bytes": 147584,
+      "sha256": "1580cb23212e828bd18fc012e2ff7e03989a89071b78ac92ec1d6ec4b9b1dd8e"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0066.npy",
+      "bytes": 147584,
+      "sha256": "5fe36645c6827b0200ac9b1d8b5495b6a6a5c9a76eb90e3843ef04fe54372172"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0068.npy",
+      "bytes": 147584,
+      "sha256": "9e4e0749faf59039e7d16d76939a9ea2ee750a9757e09dcd4ee3da221753d64b"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0070.npy",
+      "bytes": 147584,
+      "sha256": "bb47e8219daf6b02cbfbadaefb9818bb3a13ac2dfb0ebaa413685c9b0d2ca5cf"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0072.npy",
+      "bytes": 147584,
+      "sha256": "5918aeec0a69fa6a3b9fc7c0cb3cae7ae1de03e1b714b580cab86f4fb76439a6"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0082.npy",
+      "bytes": 147584,
+      "sha256": "5d38398d0cee2dae9bbf35d5020abe0a0d0d2e8fd29c4e469bd92f99a23f9548"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0084.npy",
+      "bytes": 147584,
+      "sha256": "0cc20c1aa980c4c7fdcf99475aec0b00c3fdcb5d195571b06ace2ef6e00c57ca"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0086.npy",
+      "bytes": 147584,
+      "sha256": "2822547339c83c5e8d426bb87c2728b9f90dd44f47e0469b720dd99317f490b3"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0088.npy",
+      "bytes": 147584,
+      "sha256": "db57c6c7cf29e7b77dfc9f4933474ee837e612468d7c71055cbcc99bf15468b5"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0114.npy",
+      "bytes": 147584,
+      "sha256": "404f34919a4889a1600fd93065e2c21b75185868c69cec5a784009a6c1074f9a"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0116.npy",
+      "bytes": 147584,
+      "sha256": "f690e1fa7413e8c8e9c1b9fc27e43c4650225bd281e8939df96d10891cd01298"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0118.npy",
+      "bytes": 147584,
+      "sha256": "1800db06b02fffb959706e9024508f7ec99da7f3575ed1bad1e0313e9c69ba3d"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0120.npy",
+      "bytes": 147584,
+      "sha256": "1af9639624bc087297d2af0c1a3fb466a34ac0c7ad406c9abcc166ef4a2c2a29"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0122.npy",
+      "bytes": 147584,
+      "sha256": "5ad295582a4122f7b67c4dd1a477a84d349a720ad1e49be45f0eac4d8e54c4c5"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0125.npy",
+      "bytes": 147584,
+      "sha256": "39f80b3cfa184a38e1b7d2b4d72b47114534560d659c1a5ab9b2ddf1fc6b08a8"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0127.npy",
+      "bytes": 147584,
+      "sha256": "7d09a3b60f4accf8bfc7e62f9a007b473ba26ab6bad168ddea502481ae9cf20b"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0144.npy",
+      "bytes": 147584,
+      "sha256": "b3c8cd5cdd3d32e1e5af04cba75d27be0d4bdfa3180c25a75c8f7d0d690e2b48"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0146.npy",
+      "bytes": 147584,
+      "sha256": "64356d7ecc998742eaa9eff604cd25dcdbf3b6d941a584246c1c45099052ac58"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0148.npy",
+      "bytes": 147584,
+      "sha256": "1a6053a92f81a28f96ee9bc1c27ea1cdc11dc4e1878526dd854cc5af52dfbacf"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0150.npy",
+      "bytes": 147584,
+      "sha256": "f893fa5818c5beefb87d0e195c626f92e4633079fcf8eb470bad954fc4130056"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0184.npy",
+      "bytes": 147584,
+      "sha256": "5723cf694cd65dccd4ae6dbb4ce104d170ab9bfee9a5dbc9cc662906c53b7723"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0186.npy",
+      "bytes": 147584,
+      "sha256": "3341e75b9003e263565189afb3ea10aed49b5f96568ae15c76bb9c0fdee5b31b"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0188.npy",
+      "bytes": 147584,
+      "sha256": "f5e9a4be6b166065e60c5e4ca4f8dcca8a0697b151c06569dd233fb88d7be415"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0190.npy",
+      "bytes": 147584,
+      "sha256": "a77436c04d017ced753d278cafbfac3cf5650789ed86dc1ef18e999bdd68787c"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0200.npy",
+      "bytes": 147584,
+      "sha256": "0dc58a5d548b3eff65fbfc57c85aa4d426e3bca84ffbb998f564b98d31892389"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0202.npy",
+      "bytes": 147584,
+      "sha256": "884efbf8499f9d4c11abb666925a252c4b5167a0055123fa76757b872d46340e"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0204.npy",
+      "bytes": 147584,
+      "sha256": "c7c095e863e2c47d11b05bdc50dd5a3ecfd081024533b1946b55477e27f265d7"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0206.npy",
+      "bytes": 147584,
+      "sha256": "85af91e8ebf88fd48e5ccffa1def0bab542d4a7a261e356822cadce67b8d8b48"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0224.npy",
+      "bytes": 147584,
+      "sha256": "2c21e225f7550f6f0a6bd6d4a821822657eaa1d6cb969d44ecc65723d6043c0d"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0226.npy",
+      "bytes": 147584,
+      "sha256": "4f556cabfbed819f159abeb95622e89e9ebabc67b0b6298dcfc40e14e80e3f81"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0228.npy",
+      "bytes": 147584,
+      "sha256": "7edf9662d44adc247b9cf0c6689f5833b710c0e4d4be30077b99b0fa15bae0c9"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/features/0230.npy",
+      "bytes": 147584,
+      "sha256": "a583cd119623f0a75c181dba3e5653ea33adda0504d0adfe1a870afa6d00d91b"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/predictions.json",
+      "bytes": 411032,
+      "sha256": "ed95ebe4e04b351a66b85ac275c86dda7f16044ea542e11cfe3bf9e489a02cf9"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-exploratory-v5-v1/protocol.json",
+      "bytes": 21692,
+      "sha256": "e57efaaf0ec2c68a560ec63dfd5d9850ce55dc83fbe4a3c4130dca9614d40d07"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source/runs/qwen2.5-3b-semantic-transfer-materials-v5/materials/inputs.json",
+      "bytes": 1268570,
+      "sha256": "2b0ed2bde91624a7eab2eec38c66f4d2d9c2f875760ca7d49995c847c512ae97"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/source-manifest.json",
+      "bytes": 21114,
+      "sha256": "f9133b24e9918291a8d0f0e0c16627ec9692933cdd4329dac595eb9e896f5890"
+    },
+    {
+      "path": "docs/review/2026-11-09-cli-probe-comparison-v1/summary.json",
+      "bytes": 6562,
+      "sha256": "81c402009f49ac565bc373500c4af3a3421bc643133a947246f36d2435e3d0ef"
+    },
+    {
+      "path": "scripts/compare_cli_review_frozen_probe_20261109.py",
+      "bytes": 15656,
+      "sha256": "d91492603619e92a48359dc91b2a146bd1ca4b403e90f687ae23c598b77b465a"
+    }
+  ]
+}
