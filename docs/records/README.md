@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新进展回顾：[记录](2026-11-09-recent-hours-summary.md)。回顾当日E1、等token控制、CLI—probe对照和FaithEval可行性；未做新实验。
+
 最新FaithEval三步核查：[记录](2026-11-09-faitheval-feasibility-followup.md) / [条款、问题聚合排重与语义参照](../review/2026-11-09-faitheval-feasibility-followup-v1/README.md)。785个I/C问题规范化相同，1个与旧train问题相同；筛查未覆盖文档、其他历史及380，不能证明其余无重叠。来源条款与最终五文档参照尚未通过，无GPU任务。
 
 最新FaithEval元数据：[记录](2026-11-09-faitheval-metadata.md) / [固定版本与匿名交集](../review/2026-11-09-faitheval-metadata-v1/README.md)。I与C严格同qid同来源交集785，七个非已知共享来源557；仅元数据，未证明正文相同、语义有效、数据许可或跨集不重叠。

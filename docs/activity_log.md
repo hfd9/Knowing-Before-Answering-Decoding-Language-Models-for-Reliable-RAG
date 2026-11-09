@@ -1376,3 +1376,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 139. 2026-11-09：FaithEval条款、问题排重与语义参照
 
 用户要求完成三步，[报告](review/2026-11-09-faitheval-feasibility-followup-v1/README.md)/[记录](records/2026-11-09-faitheval-feasibility-followup.md)列出上游条款及未决处；对固定版本785个I/C问题与旧200/95/100/30问题仅在内存聚合比对，I/C规范化785相同、1个TriviaQA-web问题与旧训练精确命中，Jaccard近似无额外命中、28短问仅精确。独立倒排聚合及合成检查通过；不证明余下问题/文档/380无重叠。原I/C多人参照不自动覆盖拟议的五文档S/I/C和A/B，当前无新确认参照或GPU就绪；无新样本、评分、前向或拟合，旧门禁/预算/380封存保持。
+
+## 140. 2026-11-09：近几小时进展回顾
+
+按用户要求只读回顾既有记录和Git历史，[记录](records/2026-11-09-recent-hours-summary.md)；概括E1、等token对照、probe测量、CLI选例和FaithEval可行性。未新增实验、评分、GPU或拟合，原门禁及预算边界保持。
