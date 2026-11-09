@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新后续计划评价：[记录](2026-11-09-next-plan-assessment.md)。确认依赖顺序及停止条件，澄清用途、重放范围和封存读取的边界；本轮未执行计划。
+
 最新依赖核查停止点：[记录](2026-11-09-faitheval-dependency-gate.md) / [来源、文档碰撞和未决项](../review/2026-11-09-faitheval-dependency-gate-v1/README.md)。785个同qid上下文对旧文档筛查有1个片段重合线索；真实数据独立复算两次网络失败，编号索引与FaithEval不是同一命名空间，380正文碰撞未知；不进入语义采样或GPU。
 
 最新进展回顾：[记录](2026-11-09-recent-hours-summary.md)。回顾当日E1、等token控制、CLI—probe对照和FaithEval可行性；未做新实验。
