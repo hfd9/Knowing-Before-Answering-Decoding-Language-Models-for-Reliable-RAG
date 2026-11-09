@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新背景恢复：[记录](2026-11-09-context-restored-02.md)。恢复至已完成的等token对照；三项CPU只读复验通过，12对及59份归档来源一致，保留语义和GPU来源限制；旧门禁及预算不变，等待用户后续任务。
+
 最新等token对照结果：[记录](2026-11-09-probe-neutral-control-results.md) / [12对结果与59份来源](../review/2026-11-09-probe-neutral-control-results-v1/README.md)。用户运行13前向完成，桥接/来源/读出复核通过；D否定−中性conflict概率差平均+2.68pp（4正/2负），P +6.56pp（6正），全部条件类别conflict。六个已暴露底题、内容与位置仍混杂，不证明否定词因果或自然泛化。
 
 最新probe审计与待用户GPU：[记录](2026-11-09-probe-measurement-cache-audit-and-neutral-control.md) / [缓存审计](../review/2026-11-09-probe-existing-cache-audit-v1/README.md) / [等token中性对照及命令](../review/2026-11-09-probe-neutral-length-control-v1/README.md)。现有288缓存、120 A/B及180关系对照已复核；固定六旧底题×两表达12新中性输入+一旧输入桥接已CPU准备，等待用户运行，尚无新GPU结果。
