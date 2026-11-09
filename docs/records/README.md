@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新E1结果与probe核查：[记录](2026-11-09-e1-results-probe-assessment.md) / [四条件及研究决定](../review/2026-11-09-e1-results-assessment/README.md) / [12对逐主张证据](../review/2026-11-09-e1-results-assessment/pairs-evidence.md)。原v2知情评分与来源重放通过；现场及144哈希文本检索未找到E1同批probe，不能排除搜索范围外产物。保留狭义事件有限负结果，后续优先测量有效性，不自动新增实验。
+
 最新背景恢复：[记录](2026-11-09-context-restored.md)。恢复至已完成的E1用户版结果；56来源及48记录/attempt、token/引用/12对主比较只读重放和三项边界测试通过。当前评分为有暴露的知情判断，旧门禁关闭，不重跑GPU；等待用户后续任务。
 
 最新E1用户版结果：[记录](2026-11-07-scope-e1-user-results.md) / [48答案、知情逐主张及主比较](../review/2026-11-07-e1-user-results-v1/README.md)。实际48回答/48 attempt，四smoke计入；104主张为有暴露助手判断，当前v2保留先答后不确定的unknown。12对窄E的J在I0/IU各0/12、差0；S记录支持11yes/1unknown，CT识别6/12、选边9yes/3unknown。56来源、token/引用/配对独立重放通过，非独立金标准或总体安全证据。

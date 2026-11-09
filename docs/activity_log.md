@@ -1328,3 +1328,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 127. 2026-11-09：恢复E1用户版结果后的背景
 
 按用户要求读取交接和最新结果，恢复前本地HEAD及实际远端main均为6f18e01、工作区干净；[记录](records/2026-11-09-context-restored.md)。E1来源、token、引用及配对只读重放exit 0，56来源现场与归档一致、48记录/attempt、四smoke通过，3项边界测试通过。知情评分及旧门禁、预算和380封存边界不变；未检查实时GPU或重散列权重，无新采集、评分或拟合。按长期约定记录并提交推送。
+
+## 128. 2026-11-09：E1结果、同批probe与研究方向
+
+按用户要求完成[四条件端点、同批probe检索和研究判断](review/2026-11-09-e1-results-assessment/README.md)、[12对逐主张引用](review/2026-11-09-e1-results-assessment/pairs-evidence.md)及[记录](records/2026-11-09-e1-results-probe-assessment.md)。E1窄E在I0/IU各0 yes/12 no/0 unknown，W各保留4/3 unknown，J均no；原始引用/计数重放和3项测试通过。现场及144输入/提示/token哈希对现存JSON/JSONL/CSV搜索未找到E1同批probe，搜索有范围限制；旧48绑定probe是另一批。保留有限负结果、暂缓狭义解释方向，后续优先测量有效性；无新评分、采集、GPU、拟合或自动扩样，旧门禁及预算/380边界不变。
