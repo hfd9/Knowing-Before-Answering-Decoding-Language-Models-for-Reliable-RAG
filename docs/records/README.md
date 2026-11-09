@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新研究去留：[记录](2026-11-09-probe-research-decision.md) / [一页事实表、研究问题和逐篇近邻](../review/2026-11-09-probe-research-decision-v1/README.md)。潜在组合差异与确认可行性尚未确立，保留有限问题、暂停确认实验及协议；chat L28原诊断为77.67%，不是另一L24路由器的80.67%。
+
 最新背景恢复：[记录](2026-11-09-context-restored-03.md)；[研究去留执行计划](2026-11-09-probe-research-next-steps.md)仍待按顺序执行，保留既有实验和预算边界。
 
 最新CLI复评—probe连接：[记录](2026-11-09-cli-probe-comparison.md) / [52项、26对、9分歧及58来源](../review/2026-11-09-cli-probe-comparison-v1/README.md)。52旧输入严格匹配；CLI判不足的26个选例中旧probe仅2条refuse且来自同一底题；23条原本按作答选择，不可推广总体。保留作者与CLI分歧和独立性限制，无新实验。
