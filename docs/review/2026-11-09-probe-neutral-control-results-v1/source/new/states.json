@@ -1,0 +1,278 @@
+{
+  "protocol_sha256": "9533239d58962beaafb208a6c3396f06f051570f201c83a34acac0c8cd3738bd",
+  "records": [
+    {
+      "id": "bridge_support06_D1",
+      "original_id": "val_31",
+      "question_level": "A",
+      "document_level": "D1",
+      "origin": "new_forward",
+      "capture_phase": "decoder_prefill_without_generation",
+      "prompt_sha256": "3451d81aff8e8dbc8023240f8ec909fe812705c2d1d4b943e1aa05883dfc83a4",
+      "input_tokens": 2945,
+      "feature_file": "features/0000.npy",
+      "feature_sha256": "dada0a437f95882fc175184b8fc6d1eb4dc6b9db8e87a16b8f3da60e7470da89",
+      "elapsed_seconds": 2.8693006485700607,
+      "completed_at": "2026-11-09T01:55:56.373849+00:00",
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.20012117006752422,
+        "refuse": 0.005768845427921441,
+        "conflict": 0.7941099845045543
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "neutral_val_14_D",
+      "original_id": "val_14",
+      "question_level": "A",
+      "document_level": "DN",
+      "origin": "new_forward",
+      "capture_phase": "decoder_prefill_without_generation",
+      "prompt_sha256": "8a875b63c009e74e7dd18b5c867b60c71c322ed6c63e8af6493d553caea3a9c4",
+      "input_tokens": 605,
+      "feature_file": "features/0001.npy",
+      "feature_sha256": "6d9683139a5ab74baff532bd021377abc4e1d00f3de84fda7e0e969ce4933808",
+      "elapsed_seconds": 0.29659289633855224,
+      "completed_at": "2026-11-09T01:55:56.750656+00:00",
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.1914012413205921,
+        "refuse": 0.005633662035409725,
+        "conflict": 0.8029650966439982
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "neutral_val_14_P",
+      "original_id": "val_14",
+      "question_level": "A",
+      "document_level": "PN",
+      "origin": "new_forward",
+      "capture_phase": "decoder_prefill_without_generation",
+      "prompt_sha256": "7ad050147e3b8502bb7ffc6215a762c8433321014a7bfafb1bce7961f32adcc5",
+      "input_tokens": 617,
+      "feature_file": "features/0002.npy",
+      "feature_sha256": "80b3a18043e3bf4c597067df0a6407890d1a7028550f0d8c39bc0289ab4c68f1",
+      "elapsed_seconds": 0.2828892571851611,
+      "completed_at": "2026-11-09T01:55:57.052979+00:00",
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.271583371350956,
+        "refuse": 0.0018125676313876663,
+        "conflict": 0.7266040610176563
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "neutral_val_3_D",
+      "original_id": "val_3",
+      "question_level": "A",
+      "document_level": "DN",
+      "origin": "new_forward",
+      "capture_phase": "decoder_prefill_without_generation",
+      "prompt_sha256": "56ddd6a823c18ad7ea03d33bdbf1307c3400718b3d3552635c8160f93e29bb76",
+      "input_tokens": 766,
+      "feature_file": "features/0003.npy",
+      "feature_sha256": "3ef3ae6036b780d47683dc532c671d0aabdae3127853061da0c4ec63def698f3",
+      "elapsed_seconds": 0.29833941627293825,
+      "completed_at": "2026-11-09T01:55:57.365598+00:00",
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.1917458716956874,
+        "refuse": 0.0019755778993919165,
+        "conflict": 0.8062785504049207
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "neutral_val_3_P",
+      "original_id": "val_3",
+      "question_level": "A",
+      "document_level": "PN",
+      "origin": "new_forward",
+      "capture_phase": "decoder_prefill_without_generation",
+      "prompt_sha256": "c230ea5e319b587061ea5690ea47cf3510c00653e6f4863a7f9028e5af7d4460",
+      "input_tokens": 770,
+      "feature_file": "features/0004.npy",
+      "feature_sha256": "fc01c25a5df3255dd901b3d378b08841da29b457c62e330d054b0170c2ce107d",
+      "elapsed_seconds": 0.31342274602502584,
+      "completed_at": "2026-11-09T01:55:57.701205+00:00",
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.2531029593345989,
+        "refuse": 0.00200479240036099,
+        "conflict": 0.7448922482650401
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "neutral_val_31_D",
+      "original_id": "val_31",
+      "question_level": "A",
+      "document_level": "DN",
+      "origin": "new_forward",
+      "capture_phase": "decoder_prefill_without_generation",
+      "prompt_sha256": "1c10b91654a0661299469ab915778c8457c3968cfa6575e1c00ca42df24ada45",
+      "input_tokens": 2945,
+      "feature_file": "features/0005.npy",
+      "feature_sha256": "a08c045d517b6b5cd91135338f9a9da4eb39167d051bda5a10b5f994c6bc259f",
+      "elapsed_seconds": 0.5648257732391357,
+      "completed_at": "2026-11-09T01:55:58.283549+00:00",
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.15589498185341763,
+        "refuse": 0.00532957467617959,
+        "conflict": 0.8387754434704028
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "neutral_val_31_P",
+      "original_id": "val_31",
+      "question_level": "A",
+      "document_level": "PN",
+      "origin": "new_forward",
+      "capture_phase": "decoder_prefill_without_generation",
+      "prompt_sha256": "c6019db128020b6b5662c07b52aef9b2021ce3a73d026062e7a7175853b16c79",
+      "input_tokens": 2948,
+      "feature_file": "features/0006.npy",
+      "feature_sha256": "6ff36400eeba8336b745ea197efee7becb07bd0b2e755311dbbb15473a039b0f",
+      "elapsed_seconds": 0.5810934151522815,
+      "completed_at": "2026-11-09T01:55:58.880369+00:00",
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.39984995995387296,
+        "refuse": 0.0037162245443691814,
+        "conflict": 0.5964338155017579
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "neutral_val_28_D",
+      "original_id": "val_28",
+      "question_level": "A",
+      "document_level": "DN",
+      "origin": "new_forward",
+      "capture_phase": "decoder_prefill_without_generation",
+      "prompt_sha256": "fcb1095e8f4a2bb697e3c877df234c32d4f6f38530fa25f111a1915be869a834",
+      "input_tokens": 544,
+      "feature_file": "features/0007.npy",
+      "feature_sha256": "dfd81516f14c5462365d9bd9361f8cbcf42eca1a1705b2834fb5c845f1b778fc",
+      "elapsed_seconds": 0.2766391672194004,
+      "completed_at": "2026-11-09T01:55:59.207637+00:00",
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.24007362800205503,
+        "refuse": 0.0024347332787826343,
+        "conflict": 0.7574916387191623
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "neutral_val_28_P",
+      "original_id": "val_28",
+      "question_level": "A",
+      "document_level": "PN",
+      "origin": "new_forward",
+      "capture_phase": "decoder_prefill_without_generation",
+      "prompt_sha256": "651ac65f260a1be9d8f68899ca228ba0181e1a9c4cb060c4838788f14e39e007",
+      "input_tokens": 545,
+      "feature_file": "features/0008.npy",
+      "feature_sha256": "f2aec8fea68f37655be456d8013d85e47fa602c23180c4546b7385271ab99c38",
+      "elapsed_seconds": 0.28512452729046345,
+      "completed_at": "2026-11-09T01:55:59.518913+00:00",
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.3384826359726115,
+        "refuse": 0.0014039113203414947,
+        "conflict": 0.660113452707047
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "neutral_val_17_D",
+      "original_id": "val_17",
+      "question_level": "A",
+      "document_level": "DN",
+      "origin": "new_forward",
+      "capture_phase": "decoder_prefill_without_generation",
+      "prompt_sha256": "634407a3953efa97e1d50ef5e2e4624226f4e5675933e3c5789339703505264a",
+      "input_tokens": 668,
+      "feature_file": "features/0009.npy",
+      "feature_sha256": "fcbe3ed755c90611eeadb4035ec4d0810b1472a1f6a746b92812588b04412dde",
+      "elapsed_seconds": 0.29736537113785744,
+      "completed_at": "2026-11-09T01:55:59.839222+00:00",
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.06934500230953808,
+        "refuse": 0.003872132239925576,
+        "conflict": 0.9267828654505363
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "neutral_val_17_P",
+      "original_id": "val_17",
+      "question_level": "A",
+      "document_level": "PN",
+      "origin": "new_forward",
+      "capture_phase": "decoder_prefill_without_generation",
+      "prompt_sha256": "4ffad9b304a402a4ad83f82e6b15a6239497189a7923cdef83d4bda3ec3cb0bf",
+      "input_tokens": 663,
+      "feature_file": "features/0010.npy",
+      "feature_sha256": "f8fe521063cee1413915d22b7b4ba2a63e6c3c4d714ad0aded0b8772739ae35b",
+      "elapsed_seconds": 0.2817524690181017,
+      "completed_at": "2026-11-09T01:56:00.142735+00:00",
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.062137668767523094,
+        "refuse": 0.0032023039362868593,
+        "conflict": 0.9346600272961899
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "neutral_val_13_D",
+      "original_id": "val_13",
+      "question_level": "A",
+      "document_level": "DN",
+      "origin": "new_forward",
+      "capture_phase": "decoder_prefill_without_generation",
+      "prompt_sha256": "17454884af42da6d810193f8c071461d8a155e13798b93a86067d71a35e5b7b4",
+      "input_tokens": 906,
+      "feature_file": "features/0011.npy",
+      "feature_sha256": "6fa68ae25510f57b55413d252f05a29e2330cab79adc35a9a67fb2b44d8139d0",
+      "elapsed_seconds": 0.3164392220787704,
+      "completed_at": "2026-11-09T01:56:00.474338+00:00",
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.38243838421585447,
+        "refuse": 0.00968010477050068,
+        "conflict": 0.6078815110136448
+      },
+      "probe_layer_zero_based": 28
+    },
+    {
+      "id": "neutral_val_13_P",
+      "original_id": "val_13",
+      "question_level": "A",
+      "document_level": "PN",
+      "origin": "new_forward",
+      "capture_phase": "decoder_prefill_without_generation",
+      "prompt_sha256": "7a710f3288add1c63fd2908a72a7f3dea623b7be749b112f665a7ce30bba5de0",
+      "input_tokens": 901,
+      "feature_file": "features/0012.npy",
+      "feature_sha256": "017800daa5e2a43e5fc14c684486ea0b9b821511cc92096d93b1e0e810ca85bb",
+      "elapsed_seconds": 0.4112382270395756,
+      "completed_at": "2026-11-09T01:56:00.905129+00:00",
+      "probe_pred": "conflict",
+      "probe_probabilities": {
+        "answer": 0.251935990510447,
+        "refuse": 0.007694890022044446,
+        "conflict": 0.7403691194675086
+      },
+      "probe_layer_zero_based": 28
+    }
+  ]
+}

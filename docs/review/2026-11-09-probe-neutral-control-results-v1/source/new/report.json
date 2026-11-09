@@ -1,0 +1,346 @@
+{
+  "interpretation": "Disagreement between two equal-token additions is evidence against token count alone being a complete explanation for that specific contrast; agreement does not prove length causes the result. Content, token identities, semantics and position differ; no natural-task or mechanism claim.",
+  "new_answers": 0,
+  "new_fits": 0,
+  "new_forwards": 13,
+  "pairs": [
+    {
+      "base": "val_14",
+      "negative_id": "support02_D1",
+      "negative_minus_neutral_conflict": 0.08192695776262116,
+      "negative_pred": "conflict",
+      "negative_probabilities": {
+        "answer": 0.11191308841106029,
+        "conflict": 0.8848920544066193,
+        "refuse": 0.003194857182320463
+      },
+      "negative_tokens": 605,
+      "neutral_id": "neutral_val_14_D",
+      "neutral_pred": "conflict",
+      "neutral_probabilities": {
+        "answer": 0.1914012413205921,
+        "conflict": 0.8029650966439982,
+        "refuse": 0.005633662035409725
+      },
+      "neutral_tokens": 605,
+      "positive_id": "support02_D0",
+      "positive_pred": "conflict",
+      "positive_probabilities": {
+        "answer": 0.23054483200205003,
+        "conflict": 0.7658560062611969,
+        "refuse": 0.003599161736753137
+      },
+      "wording": "D"
+    },
+    {
+      "base": "val_14",
+      "negative_id": "support02_P1",
+      "negative_minus_neutral_conflict": 0.09746594554099941,
+      "negative_pred": "conflict",
+      "negative_probabilities": {
+        "answer": 0.17412554993721951,
+        "conflict": 0.8240700065586557,
+        "refuse": 0.0018044435041247398
+      },
+      "negative_tokens": 617,
+      "neutral_id": "neutral_val_14_P",
+      "neutral_pred": "conflict",
+      "neutral_probabilities": {
+        "answer": 0.271583371350956,
+        "conflict": 0.7266040610176563,
+        "refuse": 0.0018125676313876663
+      },
+      "neutral_tokens": 617,
+      "positive_id": "support02_P0",
+      "positive_pred": "conflict",
+      "positive_probabilities": {
+        "answer": 0.25695012763178715,
+        "conflict": 0.7416337718359114,
+        "refuse": 0.0014161005323014711
+      },
+      "wording": "P"
+    },
+    {
+      "base": "val_3",
+      "negative_id": "support03_D1",
+      "negative_minus_neutral_conflict": 0.033044756343820425,
+      "negative_pred": "conflict",
+      "negative_probabilities": {
+        "answer": 0.15764755890721321,
+        "conflict": 0.8393233067487411,
+        "refuse": 0.0030291343440455995
+      },
+      "negative_tokens": 766,
+      "neutral_id": "neutral_val_3_D",
+      "neutral_pred": "conflict",
+      "neutral_probabilities": {
+        "answer": 0.1917458716956874,
+        "conflict": 0.8062785504049207,
+        "refuse": 0.0019755778993919165
+      },
+      "neutral_tokens": 766,
+      "positive_id": "support03_D0",
+      "positive_pred": "conflict",
+      "positive_probabilities": {
+        "answer": 0.1761431298752526,
+        "conflict": 0.82124355004505,
+        "refuse": 0.0026133200796973977
+      },
+      "wording": "D"
+    },
+    {
+      "base": "val_3",
+      "negative_id": "support03_P1",
+      "negative_minus_neutral_conflict": 0.09077619215871713,
+      "negative_pred": "conflict",
+      "negative_probabilities": {
+        "answer": 0.16191979083241012,
+        "conflict": 0.8356684404237572,
+        "refuse": 0.0024117687438327345
+      },
+      "negative_tokens": 770,
+      "neutral_id": "neutral_val_3_P",
+      "neutral_pred": "conflict",
+      "neutral_probabilities": {
+        "answer": 0.2531029593345989,
+        "conflict": 0.7448922482650401,
+        "refuse": 0.00200479240036099
+      },
+      "neutral_tokens": 770,
+      "positive_id": "support03_P0",
+      "positive_pred": "conflict",
+      "positive_probabilities": {
+        "answer": 0.23606631393775324,
+        "conflict": 0.7619439027230589,
+        "refuse": 0.001989783339187832
+      },
+      "wording": "P"
+    },
+    {
+      "base": "val_31",
+      "negative_id": "support06_D1",
+      "negative_minus_neutral_conflict": -0.044665458965848504,
+      "negative_pred": "conflict",
+      "negative_probabilities": {
+        "answer": 0.20012117006752422,
+        "conflict": 0.7941099845045543,
+        "refuse": 0.005768845427921441
+      },
+      "negative_tokens": 2945,
+      "neutral_id": "neutral_val_31_D",
+      "neutral_pred": "conflict",
+      "neutral_probabilities": {
+        "answer": 0.15589498185341763,
+        "conflict": 0.8387754434704028,
+        "refuse": 0.00532957467617959
+      },
+      "neutral_tokens": 2945,
+      "positive_id": "support06_D0",
+      "positive_pred": "conflict",
+      "positive_probabilities": {
+        "answer": 0.36530864894790693,
+        "conflict": 0.6292810919082253,
+        "refuse": 0.005410259143867682
+      },
+      "wording": "D"
+    },
+    {
+      "base": "val_31",
+      "negative_id": "support06_P1",
+      "negative_minus_neutral_conflict": 0.03653065747069839,
+      "negative_pred": "conflict",
+      "negative_probabilities": {
+        "answer": 0.36205177340605565,
+        "conflict": 0.6329644729724563,
+        "refuse": 0.004983753621488028
+      },
+      "negative_tokens": 2948,
+      "neutral_id": "neutral_val_31_P",
+      "neutral_pred": "conflict",
+      "neutral_probabilities": {
+        "answer": 0.39984995995387296,
+        "conflict": 0.5964338155017579,
+        "refuse": 0.0037162245443691814
+      },
+      "neutral_tokens": 2948,
+      "positive_id": "support06_P0",
+      "positive_pred": "conflict",
+      "positive_probabilities": {
+        "answer": 0.4901032775308558,
+        "conflict": 0.505068498082223,
+        "refuse": 0.004828224386921207
+      },
+      "wording": "P"
+    },
+    {
+      "base": "val_28",
+      "negative_id": "support07_D1",
+      "negative_minus_neutral_conflict": -0.04031943614079814,
+      "negative_pred": "conflict",
+      "negative_probabilities": {
+        "answer": 0.2801854099795053,
+        "conflict": 0.7171722025783641,
+        "refuse": 0.0026423874421305335
+      },
+      "negative_tokens": 544,
+      "neutral_id": "neutral_val_28_D",
+      "neutral_pred": "conflict",
+      "neutral_probabilities": {
+        "answer": 0.24007362800205503,
+        "conflict": 0.7574916387191623,
+        "refuse": 0.0024347332787826343
+      },
+      "neutral_tokens": 544,
+      "positive_id": "support07_D0",
+      "positive_pred": "conflict",
+      "positive_probabilities": {
+        "answer": 0.2846930108004971,
+        "conflict": 0.7127195398805566,
+        "refuse": 0.0025874493189463137
+      },
+      "wording": "D"
+    },
+    {
+      "base": "val_28",
+      "negative_id": "support07_P1",
+      "negative_minus_neutral_conflict": 0.030348895423912836,
+      "negative_pred": "conflict",
+      "negative_probabilities": {
+        "answer": 0.3081664542124819,
+        "conflict": 0.6904623481309599,
+        "refuse": 0.0013711976565581921
+      },
+      "negative_tokens": 545,
+      "neutral_id": "neutral_val_28_P",
+      "neutral_pred": "conflict",
+      "neutral_probabilities": {
+        "answer": 0.3384826359726115,
+        "conflict": 0.660113452707047,
+        "refuse": 0.0014039113203414947
+      },
+      "neutral_tokens": 545,
+      "positive_id": "support07_P0",
+      "positive_pred": "conflict",
+      "positive_probabilities": {
+        "answer": 0.3394341722785264,
+        "conflict": 0.6591248288799647,
+        "refuse": 0.0014409988415088628
+      },
+      "wording": "P"
+    },
+    {
+      "base": "val_17",
+      "negative_id": "support08_D1",
+      "negative_minus_neutral_conflict": 0.0340969665808154,
+      "negative_pred": "conflict",
+      "negative_probabilities": {
+        "answer": 0.03492090260806399,
+        "conflict": 0.9608798320313517,
+        "refuse": 0.004199265360584274
+      },
+      "negative_tokens": 668,
+      "neutral_id": "neutral_val_17_D",
+      "neutral_pred": "conflict",
+      "neutral_probabilities": {
+        "answer": 0.06934500230953808,
+        "conflict": 0.9267828654505363,
+        "refuse": 0.003872132239925576
+      },
+      "neutral_tokens": 668,
+      "positive_id": "support08_D0",
+      "positive_pred": "conflict",
+      "positive_probabilities": {
+        "answer": 0.10408894805808312,
+        "conflict": 0.8929519186790321,
+        "refuse": 0.0029591332628847106
+      },
+      "wording": "D"
+    },
+    {
+      "base": "val_17",
+      "negative_id": "support08_P1",
+      "negative_minus_neutral_conflict": 0.025652021607638797,
+      "negative_pred": "conflict",
+      "negative_probabilities": {
+        "answer": 0.03524373981573363,
+        "conflict": 0.9603120489038287,
+        "refuse": 0.004444211280437636
+      },
+      "negative_tokens": 663,
+      "neutral_id": "neutral_val_17_P",
+      "neutral_pred": "conflict",
+      "neutral_probabilities": {
+        "answer": 0.062137668767523094,
+        "conflict": 0.9346600272961899,
+        "refuse": 0.0032023039362868593
+      },
+      "neutral_tokens": 663,
+      "positive_id": "support08_P0",
+      "positive_pred": "conflict",
+      "positive_probabilities": {
+        "answer": 0.11718234477029227,
+        "conflict": 0.8796105409889736,
+        "refuse": 0.003207114240734065
+      },
+      "wording": "P"
+    },
+    {
+      "base": "val_13",
+      "negative_id": "support09_D1",
+      "negative_minus_neutral_conflict": 0.09672344247765252,
+      "negative_pred": "conflict",
+      "negative_probabilities": {
+        "answer": 0.287703929863287,
+        "conflict": 0.7046049534912974,
+        "refuse": 0.007691116645415678
+      },
+      "negative_tokens": 906,
+      "neutral_id": "neutral_val_13_D",
+      "neutral_pred": "conflict",
+      "neutral_probabilities": {
+        "answer": 0.38243838421585447,
+        "conflict": 0.6078815110136448,
+        "refuse": 0.00968010477050068
+      },
+      "neutral_tokens": 906,
+      "positive_id": "support09_D0",
+      "positive_pred": "conflict",
+      "positive_probabilities": {
+        "answer": 0.34904273133016145,
+        "conflict": 0.6360349209220479,
+        "refuse": 0.014922347747790533
+      },
+      "wording": "D"
+    },
+    {
+      "base": "val_13",
+      "negative_id": "support09_P1",
+      "negative_minus_neutral_conflict": 0.11265689746583218,
+      "negative_pred": "conflict",
+      "negative_probabilities": {
+        "answer": 0.13210396014153902,
+        "conflict": 0.8530260169333408,
+        "refuse": 0.014870022925120144
+      },
+      "negative_tokens": 901,
+      "neutral_id": "neutral_val_13_P",
+      "neutral_pred": "conflict",
+      "neutral_probabilities": {
+        "answer": 0.251935990510447,
+        "conflict": 0.7403691194675086,
+        "refuse": 0.007694890022044446
+      },
+      "neutral_tokens": 901,
+      "positive_id": "support09_P0",
+      "positive_pred": "conflict",
+      "positive_probabilities": {
+        "answer": 0.2689064560300593,
+        "conflict": 0.7190055913967982,
+        "refuse": 0.012087952573142565
+      },
+      "wording": "P"
+    }
+  ],
+  "semantic_gold": false,
+  "status": "technical_prefill_complete_exposed_development_only"
+}

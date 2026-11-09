@@ -1,0 +1,154 @@
+{
+  "analysis": "For each fixed base and wording: frozen old P(conflict) on negative suffix minus matched-token neutral suffix. Report all six paired values separately for D and P, signed differences and means as descriptive only.",
+  "bridge_tolerances": {
+    "max_layer_relative_l2": 0.02,
+    "max_probability_absolute_error": 0.01
+  },
+  "dependencies": {
+    "code/prompts.py": "bedd7b758ef6cfe117580d3fc29e133f1343830f88be71243f8c07e6a893f7c8",
+    "configs/local.env": "0d62a5eea40dc8464f135ba88da937b37c4dc2a9a8ab5eec5f74a40e636cdcc9",
+    "docs/review/2026-11-06-explanation-scope-cpu-preflight-v1/relation-reference-snapshot.json": "504b4da5f0c4e51cfdffaa54129e55c0a3b433f37e387d286c21ad65f4d7c1f5",
+    "prompts/baseline_prompts.json": "48075d1187b8e0331b295d0e4b46409642bcf7ef803aaf3b885dc10ac97f1a79",
+    "prompts/classification_semantic_v1.json": "3306d6aee2be2125cc2150f1047201e4788d9bfe5201e876210d0265914f839d",
+    "prompts/controlled_evidence_pilot_v1.json": "1f71f400352a5fadf1f3c070e1d22ca701452c488756df4b4146d1720d83d437",
+    "prompts/probe_document_factors_v1.json": "0f42a1b44df4573eb56be2a0020412ca735ea1a8e335e681fb4a27746b1ac079",
+    "prompts/probe_input_shift_v1.json": "76d9de36415c9b72672541042f458d3cd758ae50ac1aa05e8e4e41af9016e050",
+    "prompts/probe_neutral_length_control_20261109.json": "7a81f0551c00adcbe4fc2f5f2b0a3cb5358e270f9eba7115b320498d4148342d",
+    "prompts/probe_support_expression_v1.json": "2f3f18f8cd0ed5d507daff6e176f43b5d2c116dfb40a7b44616235c35bf1fea6",
+    "runs/qwen2.5-3b-controlled-evidence-pilot-v1/free_answer/predictions.json": "d240a5a8f321c2a0dbefbc7c620407b74db7992705158bac491eecc4ff8ab699",
+    "runs/qwen2.5-3b-controlled-evidence-pilot-v1/materials/inputs.json": "78d7fddc57d6b5bb143d580e7aa3fbbcca5b53f793955bd5d02d1c6b5176e60c",
+    "runs/qwen2.5-3b-controlled-evidence-pilot-v1/protocol.json": "98650b290d29779242cb4727e43a1625d5fe187bae275c9ed2fb8bdf445baf6f",
+    "runs/qwen2.5-3b-free-answer-study/chat/probe/probe.json": "fcd01efc19334be52854c021baec9dfa6480377fe4f15a76135b980820691350",
+    "runs/qwen2.5-3b-free-answer-study/chat/probe/probe.pkl": "db6033b84f1fcd30e5e2e31ce4beb262a76920cc06811c57900ad14b8d40858d",
+    "runs/qwen2.5-3b-free-answer-study/chat/train/states.json": "2c22a8f43ab0b6c46ac1ec675dcad2274379e9836a8aeabcdf2c9bdef7ae1e86",
+    "runs/qwen2.5-3b-free-answer-study/chat/val/states.json": "79c45e55ccff6602915d72c890c9fadc01496d811342f3cc5db22158aebf1949",
+    "runs/qwen2.5-3b-free-answer-study/protocol.json": "893af4b195ab42c4fa3c2a670da022e7fc422a6537506671600c9c50f949c3f0",
+    "runs/qwen2.5-3b-probe-document-factors-v1/materials/inputs.json": "d3f29602f54161d3fc431562e629610237e86ed826e7114966f4630dd50552c9",
+    "runs/qwen2.5-3b-probe-document-factors-v1/protocol.json": "6f1aaddfc5872a26ee38f931be40fb895d2d7c9c2331d6654a0cfd8f5f977846",
+    "runs/qwen2.5-3b-probe-document-factors-v1/states.json": "47459cd18d1ec06e406296ce3b5f33569f9413b3bdf0a06f40f79e981956a5a8",
+    "runs/qwen2.5-3b-probe-input-shift-v1/materials/inputs.json": "2167a101853a64f5a25b8820bb0f4a5d428353ab3f67d9dcb49193409f57a199",
+    "runs/qwen2.5-3b-probe-input-shift-v1/protocol.json": "e514970336594349b6e0bbd9280facc8a3b17210cd149f7d519909a778d34d71",
+    "runs/qwen2.5-3b-probe-input-shift-v1/states.json": "32b61d16269a523a2f613e2d407aabb37c5226f3234147cc39b9a1977e903c90",
+    "runs/qwen2.5-3b-probe-support-expression-v1/materials/inputs.json": "6b1ccde474325eddaa69b35fc97f9501140610230f75126ac4a2a49815698ca1",
+    "runs/qwen2.5-3b-probe-support-expression-v1/protocol.json": "705e3c885a1a9b63c17af44df45c61ac35b925d4646da2633b3639a09a446fe9",
+    "runs/qwen2.5-3b-probe-support-expression-v1/states.json": "92fa24966be6154edbcc63f090efbc6a97e95991e4bd19b283818e6b5d113d16",
+    "runs/qwen2.5-3b-small/data/instances_train.jsonl": "15494aaed6335f294b9d88befcdc88ff6d90c6555a8d89d87d4efe1ff0230492",
+    "runs/qwen2.5-3b-small/data/instances_val.jsonl": "18a0e6817fbbc3b0f9a89e029209221e97f6406a3b6c7ecb88de61161cb095bb",
+    "scripts/analyze_prompt_baseline.py": "7a95b7d4487cac73d5bb20e53e9cfcaa6ad69399e5fe69484633c187eed0e020",
+    "scripts/classification_prompt_search.py": "a3738c2d77412aa20c35c992a847b3a5ed0386bc154d728c19966111f9ec44e2",
+    "scripts/classification_semantic_baseline.py": "01e1d8c03e7503d984b1b12272c790d1ea3c8ef3a82f61195e16833abc36d53d",
+    "scripts/controlled_evidence_materials.py": "e5853f240d35499e5c2e0b61f13f83e5d00add42726cb357e8be748a33f08b4d",
+    "scripts/controlled_evidence_pilot.py": "b3a98124d1312309ac889905d8b4a36b96e682a0e16bc94804a025e93c68f61e",
+    "scripts/evidence_experiment.py": "019af81ffcfe108b155e6e061569d7d1c1fc17d3b072ad436d78defa74aac225",
+    "scripts/free_answer_review.py": "9ad214955fc1b1db35d4b2b5f027721b74ccaf8a735027c20ceb0895b6068882",
+    "scripts/free_answer_study.py": "a253f0abb8eee9aec8c122c373cd47dc60671bdc68aaaf181cf5cdc8594c5939",
+    "scripts/probe_document_factors.py": "eb9c2b74610ba1bcb69f842f1a2394a2cf05f1282f159af614c1440e59c0828b",
+    "scripts/probe_input_shift.py": "8ecbc24221a73fd36ed10da133fe4871cd8264b58541499747fefc762a09dbb8",
+    "scripts/probe_neutral_length_control_20261109.py": "cba8977b309674c748d3dc6469188468f84fa34f6998374eb9fbdf32c4ec6619",
+    "scripts/probe_support_expression.py": "03dae8bbc72fdd33914631d9765a5878f40549074c13d8580878e4956f3d5f43",
+    "scripts/prompt_baseline.py": "2966151480873b1775aa1d275f804544959f377587840fc36f51ff1d209aed3c",
+    "scripts/run_controlled_evidence_pilot.sh": "a0c29a02caba307b587b4233700d259a147489c0eb2b582e9101c818f0b993ec",
+    "scripts/run_controlled_evidence_pilot_review.sh": "d7ffe5c15a375b3e364c0c37a04dc9078c06b89b0d6f53a29da89be9a2f645f9",
+    "scripts/run_probe_document_factors.sh": "c05b7dc5056ae015336ed30fa7562a34838e779ea9e048686ef7eaeb580d20d2",
+    "scripts/run_probe_document_factors_review.sh": "c9dd8431bc75387bc2503ccd1a652730000b4da737906642898a514f2f04b8ec",
+    "scripts/run_probe_input_shift.sh": "cf0137b1dc53e26554de4b71f31e547a260dec5cc9625f307bae6b42bb7afeab",
+    "scripts/run_probe_input_shift_review.sh": "32558acf494f43042b85b66076e89afc7c58d0b971c3312ff8f5438a39bd1e9a",
+    "scripts/run_probe_support_expression.sh": "d7e4c6f6f4ba7cec873e1e9b1ca3dfcd9df24a9eb76886e2fb91056c4c30607e",
+    "scripts/run_probe_support_expression_review.sh": "ce2cd7cf19b9211b0f938cc07840469a11c55ad9dbcd20d8ce238d7c4c3b6b1e",
+    "scripts/small_repro.py": "3302a541d04cfde3a29e663f747ad093dac8893b85f6607c5fb16333edf457fd",
+    "scripts/verify_controlled_evidence_pilot.py": "e2c3c9f1af59f62f2f17d12eb6ac469ef83126352b241c833d1d1723b05393f5"
+  },
+  "exposure": "Same informed assistant; six val bases used in probe calibration/selection and old results already seen; no independent semantic gold or prospective confirmation.",
+  "held_out_380_access": false,
+  "identities": {
+    "bridge_support06_D1": {
+      "input_token_ids_sha256": "a7c632144e9b751352a1f0589e4325ba7e3eecdd018b9429fb038f5d07b4a370",
+      "input_tokens": 2945,
+      "prompt_sha256": "3451d81aff8e8dbc8023240f8ec909fe812705c2d1d4b943e1aa05883dfc83a4"
+    },
+    "neutral_val_13_D": {
+      "input_token_ids_sha256": "9874ee170c979782921f5e61a3caa81700363c6b18583a5e7721d3a1977bbd0d",
+      "input_tokens": 906,
+      "prompt_sha256": "17454884af42da6d810193f8c071461d8a155e13798b93a86067d71a35e5b7b4"
+    },
+    "neutral_val_13_P": {
+      "input_token_ids_sha256": "26b60a3322a2c5b42e252987a92e1130128292732c4e1086eca6b534ec4e6596",
+      "input_tokens": 901,
+      "prompt_sha256": "7a710f3288add1c63fd2908a72a7f3dea623b7be749b112f665a7ce30bba5de0"
+    },
+    "neutral_val_14_D": {
+      "input_token_ids_sha256": "e6c2fd6199bdac442eaa8aba8c6df39e4929288b51a534cdb62d076c1b430d49",
+      "input_tokens": 605,
+      "prompt_sha256": "8a875b63c009e74e7dd18b5c867b60c71c322ed6c63e8af6493d553caea3a9c4"
+    },
+    "neutral_val_14_P": {
+      "input_token_ids_sha256": "f9cc3751fc29f31baf49405f93ae2b4bbe491221ac6c6e685caf9917b49effde",
+      "input_tokens": 617,
+      "prompt_sha256": "7ad050147e3b8502bb7ffc6215a762c8433321014a7bfafb1bce7961f32adcc5"
+    },
+    "neutral_val_17_D": {
+      "input_token_ids_sha256": "10b160a9b8d5927455ff9fd30bf7207ffcad529266a0f2aaf68487cbb22dabb1",
+      "input_tokens": 668,
+      "prompt_sha256": "634407a3953efa97e1d50ef5e2e4624226f4e5675933e3c5789339703505264a"
+    },
+    "neutral_val_17_P": {
+      "input_token_ids_sha256": "4568be882b7f98cf692d62a77253ad9932d31a39d953f6ac844eba338a6716a2",
+      "input_tokens": 663,
+      "prompt_sha256": "4ffad9b304a402a4ad83f82e6b15a6239497189a7923cdef83d4bda3ec3cb0bf"
+    },
+    "neutral_val_28_D": {
+      "input_token_ids_sha256": "c9ad79c5a413954b9e24f835db56b9003934c860a69ed541e9ca362c70030f2d",
+      "input_tokens": 544,
+      "prompt_sha256": "fcb1095e8f4a2bb697e3c877df234c32d4f6f38530fa25f111a1915be869a834"
+    },
+    "neutral_val_28_P": {
+      "input_token_ids_sha256": "8d6390bfbacd32ac51c21ccf2015a0e52fc631258571e55886c713013c369191",
+      "input_tokens": 545,
+      "prompt_sha256": "651ac65f260a1be9d8f68899ca228ba0181e1a9c4cb060c4838788f14e39e007"
+    },
+    "neutral_val_31_D": {
+      "input_token_ids_sha256": "7997fd54b342dab1d120285ed146571155baeb8a94c5944f9a23da7e49b7a37e",
+      "input_tokens": 2945,
+      "prompt_sha256": "1c10b91654a0661299469ab915778c8457c3968cfa6575e1c00ca42df24ada45"
+    },
+    "neutral_val_31_P": {
+      "input_token_ids_sha256": "1dfce45d3b99c8a7174807338796c4863e82ee43b083f7db231d5a73509a2f97",
+      "input_tokens": 2948,
+      "prompt_sha256": "c6019db128020b6b5662c07b52aef9b2021ce3a73d026062e7a7175853b16c79"
+    },
+    "neutral_val_3_D": {
+      "input_token_ids_sha256": "dbb2f709c95f8a3c7b2039252bfa68bd7a920d5b99e92f7671d24134ed5df75b",
+      "input_tokens": 766,
+      "prompt_sha256": "56ddd6a823c18ad7ea03d33bdbf1307c3400718b3d3552635c8160f93e29bb76"
+    },
+    "neutral_val_3_P": {
+      "input_token_ids_sha256": "94b91a4ff370907e588e0bf4e4a5a2c5bf3552a845b534f9d5f8aa2f66d521e0",
+      "input_tokens": 770,
+      "prompt_sha256": "c230ea5e319b587061ea5690ea47cf3510c00653e6f4863a7f9028e5af7d4460"
+    }
+  },
+  "input_rows": 13,
+  "model": "/large_disk/wf/研究代码/RAG/OpenDecoder/checkpoint/Qwen2.5-3B-Instruct",
+  "model_files_sha256": {
+    "config.json": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+    "generation_config.json": "ea35dfb6fc5051b01114f9b995820d55dab01ed33ee490f6378b442af82c09f9",
+    "model-00001-of-00002.safetensors": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2",
+    "model-00002-of-00002.safetensors": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d",
+    "model.safetensors.index.json": "bc8aaa0c87d4335177e01c765f1de0db81661c67c1a72fbfb0d521b09f5ddc56",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+  },
+  "new_answers": 0,
+  "new_fits": 0,
+  "new_forwards": 13,
+  "operator": "user",
+  "runtime_versions": {
+    "numpy": "1.26.4",
+    "scikit-learn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "transformers": "4.56.2"
+  },
+  "schema_version": 1,
+  "source_probe_sha256": "db6033b84f1fcd30e5e2e31ce4beb262a76920cc06811c57900ad14b8d40858d",
+  "task": "probe_neutral_length_control_development"
+}

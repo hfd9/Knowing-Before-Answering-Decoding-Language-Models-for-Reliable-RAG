@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-09（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新等token对照结果（2026-11-09）：用户报告完成；[结果与59份来源归档](docs/review/2026-11-09-probe-neutral-control-results-v1/README.md)/[记录](docs/records/2026-11-09-probe-neutral-control-results.md)。13记录/attempt/特征齐全、无失败标记；一条旧输入桥接层相对L2及概率误差均0，52依赖及收集后7模型文件SHA匹配；冻结运行器、独立材料、手算与sklearn读出、12对复算均通过。用户未粘贴终端输出且run未持久记录日志，不认证设备独占或全部模型来源。六题×两表达预定否定−等长中性conflict概率差：D平均+2.68pp、4正/2负；P +6.56pp、6正；正面/否定/中性各6/6均conflict。事后原始conflict线性差D 3正/3负、P 6正，非新拟合；中性附注也改变读出。等token数仍有差异，但词汇/语义/位置/格式混杂，不能证否定词因果、语义可靠或总体泛化。无需重跑，不自动扩样、重训、阈值搜索或patching；旧v1/E1-r1门禁false、独立批准0、正式标签null、原拟合预算0、380封存。
+
 最新probe测量审计与用户GPU入口（2026-11-09）：用户要求直接推进至需要其执行；[缓存审计](docs/review/2026-11-09-probe-existing-cache-audit-v1/README.md)/[记录](docs/records/2026-11-09-probe-measurement-cache-audit-and-neutral-control.md)连接240迁移与另一批48绑定、288特征、120个A/B和180个关系对照。A/B的106类别相同中52两端符合作者参照、52均不符、2 unknown；非独立金标准。旧六底题冗余否定同时增加20–28 token，已准备[六底题×两表达12个等token中性附注+1旧输入桥接](docs/review/2026-11-09-probe-neutral-length-control-v1/README.md)，无新底题/生成/拟合，单条桥接和格式附注的限制须披露。CPU材料/真实tokenizer、24旧特征、七项测试及旧288状态重放通过；新run prepared_not_started，待用户按说明运行，完成/报错助手先核验，不删未提交attempt。原E1不重跑、原v1/E1-r1门禁false、独立批准0、正式标签null、原拟合预算0、380封存，不自动重训/阈值搜索/patching。
 
 最新GPU执行约定（2026-11-09）：用户明确后续必要阶段需要GPU时，助手做好代码/设计、非GPU检查、时间估算与失败处置后可直接提供命令，由用户执行，无需为避免GPU而回避必要工作；完成或报错后助手核验并继续。见[记录](docs/records/2026-11-09-gpu-user-execution-preference.md)。这不自动更改既定实验边界或预算：E1无需重跑，原v1/E1-r1门禁false、正式独立批准0、标签null、原拟合预算0、380封存；不自动扩样、重训、阈值搜索或patching。

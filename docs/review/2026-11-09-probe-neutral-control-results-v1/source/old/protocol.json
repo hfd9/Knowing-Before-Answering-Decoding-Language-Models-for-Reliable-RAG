@@ -1,0 +1,586 @@
+{
+  "schema_version": 1,
+  "task": "support_expression_value_development",
+  "model": "/large_disk/wf/研究代码/RAG/OpenDecoder/checkpoint/Qwen2.5-3B-Instruct",
+  "smoke": false,
+  "specification": {
+    "schema_version": 1,
+    "name": "support_expression_value_development_v1",
+    "base_order": [
+      "val_81",
+      "val_14",
+      "val_3",
+      "val_94",
+      "val_35",
+      "val_31",
+      "val_28",
+      "val_17",
+      "val_13",
+      "val_86"
+    ],
+    "units": [
+      {
+        "base_id": "val_81",
+        "authored_value": "Christian Wulff",
+        "alternate_value": "Joachim Gauck",
+        "alternate_reason": "Existing pilot opposing value placed consistently in both targets; authored counterfactual, not a claim about real-world truth.",
+        "templates": {
+          "D": [
+            "In the single German presidential resignation event of February 2012, {value} was the one president who resigned.",
+            "The February 2012 event was a single resignation from the German presidency, and {value} was its sole resigning president."
+          ],
+          "P": [
+            "The German presidency had one resignation event in February 2012; the president who stepped down in it was {value}.",
+            "{value} was the sole president to step down in the one German presidential resignation event described for February 2012."
+          ]
+        },
+        "redundant_negative": null,
+        "review_reason": "Both target documents give the same unique person for the same February2012 German presidency event. Virginia, Ray Mallon and Iraqi presidency backgrounds concern different offices/events and support neither value.",
+        "reviewer": "same_exposed_assistant",
+        "independent_gold": false
+      },
+      {
+        "base_id": "val_14",
+        "authored_value": "dog",
+        "alternate_value": null,
+        "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+        "templates": {
+          "D": [
+            "The Boykin Spaniel and the English White Terrier are both classified only as {value} breeds in these descriptions.",
+            "These descriptions place the Boykin Spaniel and the English White Terrier exclusively in the {value}-breed category."
+          ],
+          "P": [
+            "Both named breeds, the Boykin Spaniel and the English White Terrier, belong to the {value} category alone in this account.",
+            "For the animal classification used here, the {value} category is the sole category assigned to each of the Boykin Spaniel and the English White Terrier."
+          ]
+        },
+        "redundant_negative": "The Boykin Spaniel is not a breed of cat.",
+        "review_reason": "Each target covers both breeds and assigns only the dog category. The Coton/Miniature Bull Terrier background mentions English White Terrier ancestry; the value is therefore held fixed rather than inventing a cat counterfactual against contextual ancestry.",
+        "reviewer": "same_exposed_assistant",
+        "independent_gold": false
+      },
+      {
+        "base_id": "val_3",
+        "authored_value": "public",
+        "alternate_value": null,
+        "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+        "templates": {
+          "D": [
+            "El Paso International Airport and Tucson International Airport are both classified exclusively as {value} airports in this account.",
+            "For both El Paso International Airport and Tucson International Airport, {value} is the sole public-or-private status assigned by this description."
+          ],
+          "P": [
+            "The account puts both El Paso International Airport and Tucson International Airport in the {value} category alone on the public-or-private axis.",
+            "On the airport-status axis used here, El Paso International Airport and Tucson International Airport share just one category: {value}."
+          ]
+        },
+        "redundant_negative": "El Paso International Airport is not a private airport.",
+        "review_reason": "Both airports retain public status. The fixed background explicitly identifies Tucson as public; values are not switched. Joint civil-military details are omitted from new cores but the question asks public/private, so baseline-to-core is a content package, not a pure wording edit.",
+        "reviewer": "same_exposed_assistant",
+        "independent_gold": false
+      },
+      {
+        "base_id": "val_94",
+        "authored_value": "snooker",
+        "alternate_value": null,
+        "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+        "templates": {
+          "D": [
+            "At the single British Open event described here, Neal Foulds, John Dunning and Mark Williams all participated in {value}, the only sport at that event.",
+            "This account lists Neal Foulds, John Dunning and Mark Williams at the same British Open event, which had exactly one sport: {value}."
+          ],
+          "P": [
+            "The sole sport of the British Open event in this account was {value}, and Neal Foulds, John Dunning and Mark Williams were all participants in it.",
+            "The three listed participants, Neal Foulds, John Dunning and Mark Williams, shared one British Open event whose sport was {value} alone."
+          ]
+        },
+        "redundant_negative": null,
+        "review_reason": "Each target covers all three full names, the same event and its single sport. Golf reports concern other participants/events, gymnastics and Oscars do not supply a conflicting claim about this specified event. Value manipulation is confined to the four person/date questions by design.",
+        "reviewer": "same_exposed_assistant",
+        "independent_gold": false
+      },
+      {
+        "base_id": "val_35",
+        "authored_value": "12 April 1993",
+        "alternate_value": "23 September 1996",
+        "alternate_reason": "Existing pilot opposing value placed consistently in both targets; authored counterfactual, not a claim about real-world truth.",
+        "templates": {
+          "D": [
+            "The World Wide Web first became available to the public on {value}, as distinct from the start of the project.",
+            "The first public availability of the World Wide Web, rather than its inception, occurred on {value}."
+          ],
+          "P": [
+            "{value} was the date on which the World Wide Web became publicly available for the first time, considered separately from the project-inception date.",
+            "Public access to the World Wide Web began on {value}; the account treats that as its first public availability, separately from its origin."
+          ]
+        },
+        "redundant_negative": null,
+        "review_reason": "Both targets specify first public availability, not project inception, using the same full date. Hanging Gardens, Telstar ball availability and the song recording are other entities/events. Both authored dates are synthetic supplied-evidence values, not verified historical dates; published gold1989/1990 concerns the original broader question and is not imported.",
+        "reviewer": "same_exposed_assistant",
+        "independent_gold": false
+      },
+      {
+        "base_id": "val_31",
+        "authored_value": "Elton John",
+        "alternate_value": "Andrew Lloyd Webber",
+        "alternate_reason": "Existing pilot opposing value placed consistently in both targets; authored counterfactual, not a claim about real-world truth.",
+        "templates": {
+          "D": [
+            "For the one described stage version of Billy Elliot the Musical, {value} is the sole composer of all the music.",
+            "{value} alone composed all of the music for the single stage version of Billy Elliot the Musical described here."
+          ],
+          "P": [
+            "All music for the specified stage version of Billy Elliot the Musical was written by one composer, {value}.",
+            "The music of this one stage version of Billy Elliot the Musical has a single composer: {value}, who wrote all of it."
+          ]
+        },
+        "redundant_negative": "There are no other music composers for this version.",
+        "review_reason": "Both targets explicitly retain one stage version, music rather than book/lyrics, and all-music sole authorship. Carmichael arrangements/glossary/Sarah Vaughan concern other works. Redundant no-other-composer suffix follows already exhaustive sole authorship. Alternate value is applied to both targets only in positive cores.",
+        "reviewer": "same_exposed_assistant",
+        "independent_gold": false
+      },
+      {
+        "base_id": "val_28",
+        "authored_value": "magazine",
+        "alternate_value": null,
+        "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+        "templates": {
+          "D": [
+            "The described editions of DownBeat and Better Homes and Gardens are both classified only as {value} publications.",
+            "For the described editions of DownBeat and Better Homes and Gardens, {value} is the sole magazine-versus-newspaper publication form assigned here."
+          ],
+          "P": [
+            "Both publications, DownBeat and Better Homes and Gardens, have the {value} form alone in the editions described by this account.",
+            "In this account, each of the described editions of DownBeat and Better Homes and Gardens belongs exclusively to the {value} category."
+          ]
+        },
+        "redundant_negative": "The described edition of DownBeat is not a newspaper.",
+        "review_reason": "Both named editions retain the magazine form, with an exclusive publication-form axis so the negative newspaper suffix adds no new answer premise. Cocktail recipes and film biographies do not describe the publications.",
+        "reviewer": "same_exposed_assistant",
+        "independent_gold": false
+      },
+      {
+        "base_id": "val_17",
+        "authored_value": "mountain",
+        "alternate_value": null,
+        "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+        "templates": {
+          "D": [
+            "Gangkhar Puensum and Skil Brum are both assigned only the {value} category on the mountain-versus-plateau axis in this description.",
+            "This description classifies Gangkhar Puensum and Skil Brum exclusively in the {value} category on its mountain-versus-plateau axis."
+          ],
+          "P": [
+            "On the landform axis used here, the {value} category alone applies to each of Gangkhar Puensum and Skil Brum.",
+            "The sole mountain-versus-plateau classification given for both Gangkhar Puensum and Skil Brum in this account is {value}."
+          ]
+        },
+        "redundant_negative": "Gangkhar Puensum is not classified here as a plateau.",
+        "review_reason": "Both named places receive the exclusive mountain category on the same stated axis. Exclusivity is retained in positive cores because mountain/plateau can otherwise overlap; no-plateau suffix is redundant within this authored classification. Plant/dog/director backgrounds concern other entities. Relative to old baseline the counterpart exclusivity is made explicit, so that comparison is a package.",
+        "reviewer": "same_exposed_assistant",
+        "independent_gold": false
+      },
+      {
+        "base_id": "val_13",
+        "authored_value": "novel",
+        "alternate_value": null,
+        "alternate_reason": "No value manipulation: retain the category and all backgrounds, avoiding counterpart/background entailment changes.",
+        "templates": {
+          "D": [
+            "The described original versions of Under the Volcano by Malcolm Lowry and Christ in Concrete by Pietro di Donato are each classified only as a {value}.",
+            "For the described original versions of Malcolm Lowry's Under the Volcano and Pietro di Donato's Christ in Concrete, {value} is the sole novel-versus-play form assigned here."
+          ],
+          "P": [
+            "In their original versions described here, both Malcolm Lowry's Under the Volcano and Pietro di Donato's Christ in Concrete have the {value} form alone.",
+            "The account assigns only the {value} form to each original version of Under the Volcano by Malcolm Lowry and Christ in Concrete by Pietro di Donato."
+          ]
+        },
+        "redundant_negative": "The described original version of Under the Volcano is not a play.",
+        "review_reason": "Both original works, authors and novel-versus-play scope are present; exclusive form makes added not-play redundant. Scarlatti, McDowell and plant entries do not concern these works. The new core states scope positively rather than mentioning stage adaptations; baseline comparison therefore includes that wording/content change.",
+        "reviewer": "same_exposed_assistant",
+        "independent_gold": false
+      },
+      {
+        "base_id": "val_86",
+        "authored_value": "Selena Gomez",
+        "alternate_value": "Cristiano Ronaldo",
+        "alternate_reason": "Existing pilot opposing value placed consistently in both targets; authored counterfactual, not a claim about real-world truth.",
+        "templates": {
+          "D": [
+            "In June 2018, {value} was the sole most-followed individual person on Instagram; this ranking covers people rather than organisation accounts.",
+            "For the June 2018 Instagram ranking restricted to individual people, {value} held the unique first place."
+          ],
+          "P": [
+            "Among individual people on Instagram in June 2018, one person had the most followers: {value}. Organisation accounts are outside this comparison.",
+            "{value} alone led the June 2018 Instagram ranking of individual people, with a single first place in that person-only ranking."
+          ]
+        },
+        "redundant_negative": null,
+        "review_reason": "Both targets give the same unique first-ranked person, month and person-only scope. Duplicate Jeopardy entries and goalkeeper award do not describe Instagram; duplicates stay unchanged. Alternate Ronaldo is an authored counterfactual June2018 value, not a claim about actual history.",
+        "reviewer": "same_exposed_assistant",
+        "independent_gold": false
+      }
+    ],
+    "smoke_bases": [
+      "val_31",
+      "val_35"
+    ],
+    "smoke_selection": "Fixed before any new states: val_31 covers sole-composer redundant-negative branch; val_35 covers calendar-date value branch. All their cells plus both cached baselines are recomputed. No semantic-result selection.",
+    "wording_levels": [
+      "D",
+      "P"
+    ],
+    "negative_bases": [
+      "val_14",
+      "val_3",
+      "val_31",
+      "val_28",
+      "val_17",
+      "val_13"
+    ],
+    "value_bases": [
+      "val_81",
+      "val_35",
+      "val_31",
+      "val_86"
+    ],
+    "bridge_tolerances": {
+      "max_layer_relative_l2": 0.02,
+      "max_probability_absolute_error": 0.01
+    },
+    "construction": "50 cells =10 cached CS0 baselines +20 authored-value positive cores +12 authored-value redundant-negative cores +8 alternate-value positive cores.40 new formal forwards plus12 smoke forwards. Both target documents changed together; questions, three complete backgrounds, native slots and duplicates fixed.",
+    "planned_contrasts": [
+      [
+        "P0",
+        "D0",
+        "wording_authored_positive"
+      ],
+      [
+        "P1",
+        "D1",
+        "wording_authored_negative"
+      ],
+      [
+        "PX",
+        "DX",
+        "wording_alternate_positive"
+      ],
+      [
+        "D1",
+        "D0",
+        "negative_direct_authored"
+      ],
+      [
+        "P1",
+        "P0",
+        "negative_paraphrase_authored"
+      ],
+      [
+        "DX",
+        "D0",
+        "value_direct_positive"
+      ],
+      [
+        "PX",
+        "P0",
+        "value_paraphrase_positive"
+      ],
+      [
+        "D0",
+        "B",
+        "core_direct_vs_cached_baseline_package"
+      ],
+      [
+        "P0",
+        "B",
+        "core_paraphrase_vs_cached_baseline_package"
+      ]
+    ],
+    "cell_definitions": {
+      "B": [
+        "baseline",
+        "authored",
+        "baseline"
+      ],
+      "D0": [
+        "D",
+        "authored",
+        "positive"
+      ],
+      "P0": [
+        "P",
+        "authored",
+        "positive"
+      ],
+      "D1": [
+        "D",
+        "authored",
+        "negative"
+      ],
+      "P1": [
+        "P",
+        "authored",
+        "negative"
+      ],
+      "DX": [
+        "D",
+        "alternate",
+        "positive"
+      ],
+      "PX": [
+        "P",
+        "alternate",
+        "positive"
+      ]
+    },
+    "note": "Cell codes are identities only and never enter the prompt. Nine contrasts,60 paired rows,10 repeated exposed bases; variable support per comparison(10/6/4). Baseline-to-core changes whole targets, duplication and some incidental propositions, not a pure style contrast. D-to-P preserves question-answer propositions within cores; authored-to-alternate changes the answer value consistently in both targets; negative suffixes follow already exhaustive classifications/sole composer. Positive means no added redundant-negative suffix; scope/exclusivity wording remains explicit.",
+    "limits": "These are authored counterfactuals with same-exposed-assistant review, not independent semantic gold or real-world truth. Wording and negative edits also change length; value changes identity/date and tokenization, not measured truth familiarity. Descriptive train-only lexical counts are not semantic/OOD certification. No training/calibration/layer/threshold selection, new semantic accuracy, answers/behavior, original test/confirmation or patching."
+  },
+  "backbone_signature": {
+    "model": "/large_disk/wf/研究代码/RAG/OpenDecoder/checkpoint/Qwen2.5-3B-Instruct",
+    "model_files": {
+      "config.json": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+      "model.safetensors.index.json": "bc8aaa0c87d4335177e01c765f1de0db81661c67c1a72fbfb0d521b09f5ddc56",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    },
+    "weights": [
+      {
+        "file": "model-00001-of-00002.safetensors",
+        "size": 3968658944,
+        "mtime_ns": 1779872990918334651
+      },
+      {
+        "file": "model-00002-of-00002.safetensors",
+        "size": 2203268048,
+        "mtime_ns": 1779873198472256482
+      }
+    ],
+    "template": "P0",
+    "template_sha256": "d6f83b7d4a9919b408275fa0d4587db8e8628cb581e1e593a8f0b64dbbd27b27",
+    "renderer_sha256": "bedd7b758ef6cfe117580d3fc29e133f1343830f88be71243f8c07e6a893f7c8",
+    "render_policy": "plain_json_templates_full_docs_v1",
+    "data_sha256": "18a0e6817fbbc3b0f9a89e029209221e97f6406a3b6c7ecb88de61161cb095bb",
+    "ids": [
+      "support01_B",
+      "support01_D0",
+      "support01_P0",
+      "support01_DX",
+      "support01_PX",
+      "support02_B",
+      "support02_D0",
+      "support02_P0",
+      "support02_D1",
+      "support02_P1",
+      "support03_B",
+      "support03_D0",
+      "support03_P0",
+      "support03_D1",
+      "support03_P1",
+      "support04_B",
+      "support04_D0",
+      "support04_P0",
+      "support05_B",
+      "support05_D0",
+      "support05_P0",
+      "support05_DX",
+      "support05_PX",
+      "support06_B",
+      "support06_D0",
+      "support06_P0",
+      "support06_D1",
+      "support06_P1",
+      "support06_DX",
+      "support06_PX",
+      "support07_B",
+      "support07_D0",
+      "support07_P0",
+      "support07_D1",
+      "support07_P1",
+      "support08_B",
+      "support08_D0",
+      "support08_P0",
+      "support08_D1",
+      "support08_P1",
+      "support09_B",
+      "support09_D0",
+      "support09_P0",
+      "support09_D1",
+      "support09_P1",
+      "support10_B",
+      "support10_D0",
+      "support10_P0",
+      "support10_DX",
+      "support10_PX"
+    ],
+    "labels": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  },
+  "runtime_versions": {
+    "torch": "2.5.1+cu121",
+    "transformers": "4.56.2",
+    "numpy": "1.26.4",
+    "scikit-learn": "1.5.2"
+  },
+  "implementation_sha256": {
+    "code/prompts.py": "bedd7b758ef6cfe117580d3fc29e133f1343830f88be71243f8c07e6a893f7c8",
+    "configs/local.env": "0d62a5eea40dc8464f135ba88da937b37c4dc2a9a8ab5eec5f74a40e636cdcc9",
+    "prompts/baseline_prompts.json": "48075d1187b8e0331b295d0e4b46409642bcf7ef803aaf3b885dc10ac97f1a79",
+    "prompts/classification_semantic_v1.json": "3306d6aee2be2125cc2150f1047201e4788d9bfe5201e876210d0265914f839d",
+    "prompts/controlled_evidence_pilot_v1.json": "1f71f400352a5fadf1f3c070e1d22ca701452c488756df4b4146d1720d83d437",
+    "prompts/probe_document_factors_v1.json": "0f42a1b44df4573eb56be2a0020412ca735ea1a8e335e681fb4a27746b1ac079",
+    "prompts/probe_input_shift_v1.json": "76d9de36415c9b72672541042f458d3cd758ae50ac1aa05e8e4e41af9016e050",
+    "prompts/probe_support_expression_v1.json": "2f3f18f8cd0ed5d507daff6e176f43b5d2c116dfb40a7b44616235c35bf1fea6",
+    "scripts/analyze_prompt_baseline.py": "7a95b7d4487cac73d5bb20e53e9cfcaa6ad69399e5fe69484633c187eed0e020",
+    "scripts/classification_prompt_search.py": "a3738c2d77412aa20c35c992a847b3a5ed0386bc154d728c19966111f9ec44e2",
+    "scripts/classification_semantic_baseline.py": "01e1d8c03e7503d984b1b12272c790d1ea3c8ef3a82f61195e16833abc36d53d",
+    "scripts/controlled_evidence_materials.py": "e5853f240d35499e5c2e0b61f13f83e5d00add42726cb357e8be748a33f08b4d",
+    "scripts/controlled_evidence_pilot.py": "b3a98124d1312309ac889905d8b4a36b96e682a0e16bc94804a025e93c68f61e",
+    "scripts/evidence_experiment.py": "019af81ffcfe108b155e6e061569d7d1c1fc17d3b072ad436d78defa74aac225",
+    "scripts/free_answer_review.py": "9ad214955fc1b1db35d4b2b5f027721b74ccaf8a735027c20ceb0895b6068882",
+    "scripts/free_answer_study.py": "a253f0abb8eee9aec8c122c373cd47dc60671bdc68aaaf181cf5cdc8594c5939",
+    "scripts/probe_document_factors.py": "eb9c2b74610ba1bcb69f842f1a2394a2cf05f1282f159af614c1440e59c0828b",
+    "scripts/probe_input_shift.py": "8ecbc24221a73fd36ed10da133fe4871cd8264b58541499747fefc762a09dbb8",
+    "scripts/probe_support_expression.py": "03dae8bbc72fdd33914631d9765a5878f40549074c13d8580878e4956f3d5f43",
+    "scripts/prompt_baseline.py": "2966151480873b1775aa1d275f804544959f377587840fc36f51ff1d209aed3c",
+    "scripts/run_controlled_evidence_pilot.sh": "a0c29a02caba307b587b4233700d259a147489c0eb2b582e9101c818f0b993ec",
+    "scripts/run_controlled_evidence_pilot_review.sh": "d7ffe5c15a375b3e364c0c37a04dc9078c06b89b0d6f53a29da89be9a2f645f9",
+    "scripts/run_probe_document_factors.sh": "c05b7dc5056ae015336ed30fa7562a34838e779ea9e048686ef7eaeb580d20d2",
+    "scripts/run_probe_document_factors_review.sh": "c9dd8431bc75387bc2503ccd1a652730000b4da737906642898a514f2f04b8ec",
+    "scripts/run_probe_input_shift.sh": "cf0137b1dc53e26554de4b71f31e547a260dec5cc9625f307bae6b42bb7afeab",
+    "scripts/run_probe_input_shift_review.sh": "32558acf494f43042b85b66076e89afc7c58d0b971c3312ff8f5438a39bd1e9a",
+    "scripts/run_probe_support_expression.sh": "d7e4c6f6f4ba7cec873e1e9b1ca3dfcd9df24a9eb76886e2fb91056c4c30607e",
+    "scripts/run_probe_support_expression_review.sh": "ce2cd7cf19b9211b0f938cc07840469a11c55ad9dbcd20d8ce238d7c4c3b6b1e",
+    "scripts/small_repro.py": "3302a541d04cfde3a29e663f747ad093dac8893b85f6607c5fb16333edf457fd",
+    "scripts/verify_controlled_evidence_pilot.py": "e2c3c9f1af59f62f2f17d12eb6ac469ef83126352b241c833d1d1723b05393f5"
+  },
+  "source_sha256": {
+    "runs/qwen2.5-3b-free-answer-study/protocol.json": "893af4b195ab42c4fa3c2a670da022e7fc422a6537506671600c9c50f949c3f0",
+    "runs/qwen2.5-3b-free-answer-study/chat/probe/probe.json": "fcd01efc19334be52854c021baec9dfa6480377fe4f15a76135b980820691350",
+    "runs/qwen2.5-3b-free-answer-study/chat/probe/probe.pkl": "db6033b84f1fcd30e5e2e31ce4beb262a76920cc06811c57900ad14b8d40858d",
+    "runs/qwen2.5-3b-free-answer-study/chat/train/states.json": "2c22a8f43ab0b6c46ac1ec675dcad2274379e9836a8aeabcdf2c9bdef7ae1e86",
+    "runs/qwen2.5-3b-free-answer-study/chat/val/states.json": "79c45e55ccff6602915d72c890c9fadc01496d811342f3cc5db22158aebf1949",
+    "runs/qwen2.5-3b-small/data/instances_val.jsonl": "18a0e6817fbbc3b0f9a89e029209221e97f6406a3b6c7ecb88de61161cb095bb",
+    "runs/qwen2.5-3b-controlled-evidence-pilot-v1/protocol.json": "98650b290d29779242cb4727e43a1625d5fe187bae275c9ed2fb8bdf445baf6f",
+    "runs/qwen2.5-3b-controlled-evidence-pilot-v1/materials/inputs.json": "78d7fddc57d6b5bb143d580e7aa3fbbcca5b53f793955bd5d02d1c6b5176e60c",
+    "runs/qwen2.5-3b-controlled-evidence-pilot-v1/free_answer/predictions.json": "d240a5a8f321c2a0dbefbc7c620407b74db7992705158bac491eecc4ff8ab699",
+    "runs/qwen2.5-3b-probe-input-shift-v1/protocol.json": "e514970336594349b6e0bbd9280facc8a3b17210cd149f7d519909a778d34d71",
+    "runs/qwen2.5-3b-probe-input-shift-v1/states.json": "32b61d16269a523a2f613e2d407aabb37c5226f3234147cc39b9a1977e903c90",
+    "runs/qwen2.5-3b-probe-input-shift-v1/materials/inputs.json": "2167a101853a64f5a25b8820bb0f4a5d428353ab3f67d9dcb49193409f57a199",
+    "runs/qwen2.5-3b-probe-document-factors-v1/protocol.json": "6f1aaddfc5872a26ee38f931be40fb895d2d7c9c2331d6654a0cfd8f5f977846",
+    "runs/qwen2.5-3b-probe-document-factors-v1/states.json": "47459cd18d1ec06e406296ce3b5f33569f9413b3bdf0a06f40f79e981956a5a8",
+    "runs/qwen2.5-3b-probe-document-factors-v1/materials/inputs.json": "d3f29602f54161d3fc431562e629610237e86ed826e7114966f4630dd50552c9",
+    "runs/qwen2.5-3b-small/data/instances_train.jsonl": "15494aaed6335f294b9d88befcdc88ff6d90c6555a8d89d87d4efe1ff0230492"
+  },
+  "selected_ids": [
+    "support01_B",
+    "support01_D0",
+    "support01_P0",
+    "support01_DX",
+    "support01_PX",
+    "support02_B",
+    "support02_D0",
+    "support02_P0",
+    "support02_D1",
+    "support02_P1",
+    "support03_B",
+    "support03_D0",
+    "support03_P0",
+    "support03_D1",
+    "support03_P1",
+    "support04_B",
+    "support04_D0",
+    "support04_P0",
+    "support05_B",
+    "support05_D0",
+    "support05_P0",
+    "support05_DX",
+    "support05_PX",
+    "support06_B",
+    "support06_D0",
+    "support06_P0",
+    "support06_D1",
+    "support06_P1",
+    "support06_DX",
+    "support06_PX",
+    "support07_B",
+    "support07_D0",
+    "support07_P0",
+    "support07_D1",
+    "support07_P1",
+    "support08_B",
+    "support08_D0",
+    "support08_P0",
+    "support08_D1",
+    "support08_P1",
+    "support09_B",
+    "support09_D0",
+    "support09_P0",
+    "support09_D1",
+    "support09_P1",
+    "support10_B",
+    "support10_D0",
+    "support10_P0",
+    "support10_DX",
+    "support10_PX"
+  ],
+  "inputs_sha256": "6b1ccde474325eddaa69b35fc97f9501140610230f75126ac4a2a49815698ca1",
+  "edits_sha256": "6b3301d5c4e3d2f1dfc21b4fda9c9e62c7a154cdd43d2f53a5c38cbb75d08696",
+  "reviews_sha256": "cb1c7ffd995549cec91d6ff4fe70f40be2fd32126c3fad67c1ed2068c73538df",
+  "feature_convention": "H[l] = hidden_states[l+1][0,-1,:]; final layer includes decoder final norm",
+  "frozen_probe_layer": 28,
+  "forward": "decoder-only prefill, use_cache=False, BF16/SDPA; no LM head, no generation, no feedback",
+  "no_training": "No fitting, calibration, layer/threshold selection or feedback.",
+  "no_generation": "No LM head, generated answers or new behavior scoring.",
+  "no_gold": "Same exposed assistant, no independent semantic gold, new accuracy or population claim.",
+  "no_test": "Same exposed ten val bases plus descriptive fixed train600 counts, no original test/confirmation."
+}

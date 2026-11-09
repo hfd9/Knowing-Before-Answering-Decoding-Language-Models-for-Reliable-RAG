@@ -1340,3 +1340,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 130. 2026-11-09：probe已有缓存审计与等token控制准备
 
 用户要求直接推进至需要其运行GPU；完成[288行及300配对缓存审计](review/2026-11-09-probe-existing-cache-audit-v1/README.md)/[记录](records/2026-11-09-probe-measurement-cache-audit-and-neutral-control.md)。120组A/B中106类别一致，含52两端符合作者参照、52均不符、2未知；知情参照非金标准。旧六底题冗余否定与长度混杂，已固定[12等token中性附注及一旧输入桥接](review/2026-11-09-probe-neutral-length-control-v1/README.md)，CPU独立重建和七项测试通过；新run prepared_not_started，等用户运行GPU，不生成答案或拟合。原门禁/预算/380封存及E1不重跑保持。
+
+## 131. 2026-11-09：等token中性对照核验与配对结果
+
+用户报告运行完成，[结果、59来源及独立重放](review/2026-11-09-probe-neutral-control-results-v1/README.md)/[记录](records/2026-11-09-probe-neutral-control-results.md)：13记录/attempt/特征齐全，旧输入桥接层相对误差和概率误差均0，7模型文件SHA及冻结probe/来源匹配。否定−等长中性conflict概率差D平均+2.68pp（4正/2负）、P +6.56pp（6正），全部36个新旧条件类别均conflict；事后原始线性分数分别3正/3负及6正。6题两表达、非独立语义参照；词汇/语义/位置仍混杂，不能推否定因果或自然泛化。用户终端日志未存；无新回答/拟合/380访问，不自动扩样、调参或patching。

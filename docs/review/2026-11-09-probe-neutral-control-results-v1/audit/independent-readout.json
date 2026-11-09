@@ -1,0 +1,22 @@
+{
+  "status": "independent_manual_readout_and_bridge_verified",
+  "records": 13,
+  "attempts": 13,
+  "new_features": 13,
+  "old_features": 24,
+  "pairs": 12,
+  "full_prompt_token_matched": 12,
+  "probe_sha256": "db6033b84f1fcd30e5e2e31ce4beb262a76920cc06811c57900ad14b8d40858d",
+  "layer_zero_based": 28,
+  "max_manual_probe_probability_abs_error": 0.0,
+  "bridge_max_layer_relative_l2": 0.0,
+  "bridge_max_probability_abs_error": 0.0,
+  "bridge_max_layer_relative_l2_limit": 0.02,
+  "bridge_max_probability_abs_error_limit": 0.01,
+  "dependencies_verified": 52,
+  "semantic_truth_verified": false,
+  "model_output_origin_independently_verified": false,
+  "new_gpu_calls": 0,
+  "new_forward_passes": 0,
+  "new_fits": 0
+}

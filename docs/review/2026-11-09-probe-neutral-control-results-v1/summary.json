@@ -1,0 +1,115 @@
+{
+  "bridge_inputs": 1,
+  "groups": {
+    "D": {
+      "class_counts": {
+        "negative": {
+          "conflict": 6
+        },
+        "neutral": {
+          "conflict": 6
+        },
+        "positive": {
+          "conflict": 6
+        }
+      },
+      "negative_minus_neutral_pp": {
+        "maximum": 9.672344247765253,
+        "mean": 2.6801204676377144,
+        "minimum": -4.466545896584851,
+        "negative": 2,
+        "positive": 4,
+        "zero": 0
+      },
+      "negative_minus_neutral_raw_conflict_score": {
+        "maximum": 3.2420240800970817,
+        "mean": 0.6856622240811209,
+        "minimum": -1.0798456250327533,
+        "negative": 3,
+        "positive": 3,
+        "zero": 0
+      },
+      "negative_minus_positive_pp": {
+        "maximum": 16.482889259632895,
+        "mean": 7.381588434413651,
+        "minimum": 0.445266269780753,
+        "negative": 0,
+        "positive": 6,
+        "zero": 0
+      },
+      "negative_vs_neutral_class_changes": 0,
+      "neutral_minus_positive_pp": {
+        "maximum": 20.949435156217746,
+        "mean": 4.701467966775938,
+        "minimum": -2.8153409908403093,
+        "negative": 2,
+        "positive": 4,
+        "zero": 0
+      },
+      "pairs": 6,
+      "positive_to_negative_class_changes": 0,
+      "positive_to_neutral_class_changes": 0
+    },
+    "P": {
+      "class_counts": {
+        "negative": {
+          "conflict": 6
+        },
+        "neutral": {
+          "conflict": 6
+        },
+        "positive": {
+          "conflict": 6
+        }
+      },
+      "negative_minus_neutral_pp": {
+        "maximum": 11.265689746583218,
+        "mean": 6.5571768277966465,
+        "minimum": 2.5652021607638797,
+        "negative": 0,
+        "positive": 6,
+        "zero": 0
+      },
+      "negative_minus_neutral_raw_conflict_score": {
+        "maximum": 2.010607120604398,
+        "mean": 0.9120459503067572,
+        "minimum": 0.07087939560335954,
+        "negative": 0,
+        "positive": 6,
+        "zero": 0
+      },
+      "negative_minus_positive_pp": {
+        "maximum": 13.402042553654258,
+        "mean": 8.835270000267812,
+        "minimum": 3.133751925099515,
+        "negative": 0,
+        "positive": 6,
+        "zero": 0
+      },
+      "negative_vs_neutral_class_changes": 0,
+      "neutral_minus_positive_pp": {
+        "maximum": 9.13653174195349,
+        "mean": 2.2780931724711664,
+        "minimum": -1.7051654458018817,
+        "negative": 2,
+        "positive": 4,
+        "zero": 0
+      },
+      "pairs": 6,
+      "positive_to_negative_class_changes": 0,
+      "positive_to_neutral_class_changes": 0
+    }
+  },
+  "interpretation": "Disagreement between two equal-token additions is evidence against token count alone being a complete explanation for that specific contrast; agreement does not prove length causes the result. Content, token identities, semantics and position differ; no natural-task or mechanism claim.",
+  "new_answers": 0,
+  "new_fits": 0,
+  "new_forwards": 13,
+  "new_independent_semantic_labels": 0,
+  "new_neutral_inputs": 12,
+  "original_bases": 6,
+  "raw_linear_scores_status": "posthoc_offline_exact_frozen_probe_calculation_no_new_fitting_or_threshold",
+  "source_archive_files": 59,
+  "source_live_files_matched": 59,
+  "source_live_files_missing": [],
+  "status": "completed_exposed_development_diagnostic_not_semantic_gold"
+}
