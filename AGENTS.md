@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-09（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新FaithEval元数据（2026-11-09）：用户要求直接开始下一步，完成[固定版本、匿名交集及排重边界](docs/review/2026-11-09-faitheval-metadata-v1/README.md)/[记录](docs/records/2026-11-09-faitheval-metadata.md)。I固定4a14e0e，2492行/2491唯一qid，1重复；C固定e29508d，1500行/1500唯一。两侧各一行且subset相同的qid交集785，七个非HotpotQA/NQ/TriviaQA子来源合计557；异进程SQLite独立聚合复算通过。仅远程范围读取qid/subset，不解析或保存正文/逐题ID，未重算整文件SHA；本地原original_id并非FaithEval qid，未证跨集或380无重叠，785/557不是有效样本数。许可、改造后语义和研究增量仍待核；无新样本、评审、前向或拟合，原门禁false、正式独立批准0、标签null、原拟合预算0、380封存，不自动扩样/重训/阈值搜索/patching。
+
 最新来源与可行性（2026-11-09）：用户要求直接完成三步，完成[公开来源、语义参照、资源与去留](docs/review/2026-11-09-probe-source-feasibility-v1/README.md)/[记录](docs/records/2026-11-09-probe-source-feasibility.md)。FaithEval不足2492/冲突1500，网页预览有至少两个跨卡同qid且论文报告三人多数审核；全量交集、每题排重、改造后S/I/C和两表达未验，代码Apache不代表数据/上游条款均已核实。ContextConflict有配对但许可未核清；RAGTruth是回答幻觉标签而非三状态证据标签。保留FaithEval作元数据可行性候选，确认实验/协议尚不就绪；39/80底题仅零失败、三类Bonferroni示意，非预算或门槛。未下载全量数据、选题、评分、前向或拟合；旧门禁false、独立批准0、标签null、原拟合预算0、380封存，不自动扩样/重训/阈值搜索/patching。
 
 最新研究去留（2026-11-09）：用户要求按计划直接执行，已完成[事实表、可证伪问题、逐篇近邻及去留](docs/review/2026-11-09-probe-research-decision-v1/README.md)/[记录](docs/records/2026-11-09-probe-research-decision.md)。原chat L28发布类别诊断为233/300（77.67%），80.67%为另一L24分类提示路由器。KBA已有同题三状态及提示稳健性，其自然域转移仅二分类；ContextConflict已有配对二分类probe，Hidden Commitment已有改写一致及顺序控制。潜在组合差异未证新颖，未暴露底题、独立可审计参照与预算尚未证明可行；保留有限测量问题、暂停创新/确认实验，不写或放行实验协议、不提供GPU命令。原门禁false、独立批准0、标签null、原拟合预算0、380封存；无新评审/前向/拟合，不自动扩样、重训、搜索阈值或patching。

@@ -1368,3 +1368,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 137. 2026-11-09：公开来源与研究可行性
 
 用户要求完成三步，[报告](review/2026-11-09-probe-source-feasibility-v1/README.md)/[记录](records/2026-11-09-probe-source-feasibility.md)比较FaithEval、ContextConflict、KBA和RAGTruth，评估改造后语义参照、独立性、题级统计及资源。FaithEval两卡预览至少两个同qid，论文报告多人验证；整体交集、排重、条款与五文档/改写参照尚未通过。39/80题仅零失败与Bonferroni数量示意，不是新预算或门槛；保留元数据核查候选、不启动确认。无全量下载、样本选择、新评审、前向或拟合，原门禁/预算/380封存不变。
+
+## 138. 2026-11-09：FaithEval固定版本元数据交集
+
+按用户要求直接开展[固定版本qid/subset计数](review/2026-11-09-faitheval-metadata-v1/README.md)/[记录](records/2026-11-09-faitheval-metadata.md)。I 2492行/2491唯一（1重复），C 1500行/1500唯一；两边各一行且同subset的交集785，其中七个非已知共享来源557；异进程SQLite独立聚合一致。远程范围只解析两列、未保存qid或文件，未对全文散列；旧original_id无可直接匹配的FaithEval qid，跨集及380重叠未知。无新样本、评审、前向或拟合；许可及语义未放行，原门禁、预算和380封存保持。

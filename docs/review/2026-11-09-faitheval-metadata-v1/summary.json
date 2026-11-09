@@ -1,0 +1,20 @@
+{
+  "status": "metadata_counts_only_no_sample_selection",
+  "sources": {
+    "I": {"dataset": "Salesforce/FaithEval-unanswerable-v1.0", "revision": "4a14e0e9860e270a8c9ff57c511821f4f50dce57", "rows": 2492, "unique_qids": 2491, "duplicate_qids": 1, "duplicate_rows_beyond_first": 1, "qids_with_multiple_subsets": 0, "rows_by_subset": {"BioASQ": 250, "DROP": 250, "HotpotQA": 250, "NaturalQuestionsShort": 250, "NewsQA": 250, "RACE": 250, "SQuAD": 250, "SearchQA": 250, "TextbookQA": 250, "TriviaQA-web": 242}},
+    "C": {"dataset": "Salesforce/FaithEval-inconsistent-v1.0", "revision": "e29508db3955db2c82a80a1f3c3aadc11f93fc3f", "rows": 1500, "unique_qids": 1500, "duplicate_qids": 0, "duplicate_rows_beyond_first": 0, "qids_with_multiple_subsets": 0, "rows_by_subset": {"BioASQ": 150, "DROP": 150, "HotpotQA": 150, "NaturalQuestionsShort": 150, "NewsQA": 150, "RACE": 150, "SQuAD": 150, "SearchQA": 150, "TextbookQA": 150, "TriviaQA-web": 150}}
+  },
+  "common_unique_qids": 785,
+  "common_no_shared_subset_qids": 0,
+  "common_strict_one_row_each_same_subset": 785,
+  "common_unresolved_or_duplicate_qids": 0,
+  "strict_by_subset": {"BioASQ": 76, "DROP": 71, "HotpotQA": 86, "NaturalQuestionsShort": 76, "NewsQA": 72, "RACE": 92, "SQuAD": 81, "SearchQA": 70, "TextbookQA": 95, "TriviaQA-web": 66},
+  "strict_nonshared_named_source_families": 557,
+  "nonshared_source_note": "Excludes three named overlapping source families, not proof of item-level separation or usability.",
+  "qid_or_source_rows_saved": false,
+  "text_columns_decoded": false,
+  "full_files_saved": false,
+  "full_file_sha256_verified": false,
+  "reference_or_semantics_verified": false,
+  "heldout_380_accessed": false
+}

@@ -2,6 +2,8 @@
 
 这个目录保存项目的持久实验记录、操作记录和交接快照。
 
+最新FaithEval元数据：[记录](2026-11-09-faitheval-metadata.md) / [固定版本与匿名交集](../review/2026-11-09-faitheval-metadata-v1/README.md)。I与C严格同qid同来源交集785，七个非已知共享来源557；仅元数据，未证明正文相同、语义有效、数据许可或跨集不重叠。
+
 最新来源与可行性：[记录](2026-11-09-probe-source-feasibility.md) / [四个候选来源、语义参照与成本](../review/2026-11-09-probe-source-feasibility-v1/README.md)。FaithEval预览有跨卡同qid且论文报告多人审核，但全量交集、条款、改造后参照与排重未核；保留元数据候选，不放行确认实验。
 
 最新研究去留：[记录](2026-11-09-probe-research-decision.md) / [一页事实表、研究问题和逐篇近邻](../review/2026-11-09-probe-research-decision-v1/README.md)。潜在组合差异与确认可行性尚未确立，保留有限问题、暂停确认实验及协议；chat L28原诊断为77.67%，不是另一L24路由器的80.67%。
