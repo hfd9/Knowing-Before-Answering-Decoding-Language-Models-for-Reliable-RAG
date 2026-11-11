@@ -1,0 +1,1368 @@
+{
+  "bases": 6,
+  "bridge": 1,
+  "independent_semantic_gold": false,
+  "inputs": 36,
+  "new_answers": 0,
+  "new_fits": 0,
+  "new_forwards": 37,
+  "pairs": [
+    {
+      "base": "novel01",
+      "class_same": false,
+      "left": {
+        "author_ref": "answer",
+        "id": "novel01_S_A",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5636288265461755,
+          "conflict": 0.434670188505947,
+          "refuse": 0.0017009849478774317
+        },
+        "tokens": 215
+      },
+      "right": {
+        "author_ref": "answer",
+        "id": "novel01_S_B",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.4975627449594075,
+          "conflict": 0.5001157490992872,
+          "refuse": 0.002321505941305262
+        },
+        "tokens": 217
+      },
+      "state": "S",
+      "type": "A-B"
+    },
+    {
+      "base": "novel01",
+      "class_same": true,
+      "left": {
+        "author_ref": "refuse",
+        "id": "novel01_I_A",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.477452497540287,
+          "conflict": 0.5069919233826573,
+          "refuse": 0.015555579077055697
+        },
+        "tokens": 215
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel01_I_B",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.44121469709498595,
+          "conflict": 0.551317651245189,
+          "refuse": 0.007467651659824899
+        },
+        "tokens": 216
+      },
+      "state": "I",
+      "type": "A-B"
+    },
+    {
+      "base": "novel01",
+      "class_same": true,
+      "left": {
+        "author_ref": "conflict",
+        "id": "novel01_C_A",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.006354188959134301,
+          "conflict": 0.967698453200995,
+          "refuse": 0.025947357839870736
+        },
+        "tokens": 219
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel01_C_B",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.00654682236538695,
+          "conflict": 0.963613395610971,
+          "refuse": 0.02983978202364212
+        },
+        "tokens": 223
+      },
+      "state": "C",
+      "type": "A-B"
+    },
+    {
+      "base": "novel01",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel01_S_A",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5636288265461755,
+          "conflict": 0.434670188505947,
+          "refuse": 0.0017009849478774317
+        },
+        "tokens": 215
+      },
+      "probability_difference": {
+        "answer": -0.08617632900588851,
+        "conflict": 0.07232173487671029,
+        "refuse": 0.013854594129178265
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel01_I_A",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.477452497540287,
+          "conflict": 0.5069919233826573,
+          "refuse": 0.015555579077055697
+        },
+        "tokens": 215
+      },
+      "type": "S-I",
+      "wording": "A"
+    },
+    {
+      "base": "novel01",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel01_S_A",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5636288265461755,
+          "conflict": 0.434670188505947,
+          "refuse": 0.0017009849478774317
+        },
+        "tokens": 215
+      },
+      "probability_difference": {
+        "answer": -0.5572746375870412,
+        "conflict": 0.5330282646950479,
+        "refuse": 0.024246372891993304
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel01_C_A",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.006354188959134301,
+          "conflict": 0.967698453200995,
+          "refuse": 0.025947357839870736
+        },
+        "tokens": 219
+      },
+      "type": "S-C",
+      "wording": "A"
+    },
+    {
+      "base": "novel01",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel01_S_B",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.4975627449594075,
+          "conflict": 0.5001157490992872,
+          "refuse": 0.002321505941305262
+        },
+        "tokens": 217
+      },
+      "probability_difference": {
+        "answer": -0.05634804786442155,
+        "conflict": 0.05120190214590181,
+        "refuse": 0.005146145718519637
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel01_I_B",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.44121469709498595,
+          "conflict": 0.551317651245189,
+          "refuse": 0.007467651659824899
+        },
+        "tokens": 216
+      },
+      "type": "S-I",
+      "wording": "B"
+    },
+    {
+      "base": "novel01",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel01_S_B",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.4975627449594075,
+          "conflict": 0.5001157490992872,
+          "refuse": 0.002321505941305262
+        },
+        "tokens": 217
+      },
+      "probability_difference": {
+        "answer": -0.49101592259402055,
+        "conflict": 0.4634976465116838,
+        "refuse": 0.02751827608233686
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel01_C_B",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.00654682236538695,
+          "conflict": 0.963613395610971,
+          "refuse": 0.02983978202364212
+        },
+        "tokens": 223
+      },
+      "type": "S-C",
+      "wording": "B"
+    },
+    {
+      "base": "novel02",
+      "class_same": false,
+      "left": {
+        "author_ref": "answer",
+        "id": "novel02_S_A",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.4062390995537604,
+          "conflict": 0.5910575556930548,
+          "refuse": 0.002703344753184804
+        },
+        "tokens": 214
+      },
+      "right": {
+        "author_ref": "answer",
+        "id": "novel02_S_B",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5389413018677219,
+          "conflict": 0.4602056405463312,
+          "refuse": 0.0008530575859469742
+        },
+        "tokens": 216
+      },
+      "state": "S",
+      "type": "A-B"
+    },
+    {
+      "base": "novel02",
+      "class_same": true,
+      "left": {
+        "author_ref": "refuse",
+        "id": "novel02_I_A",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.2797323926882745,
+          "conflict": 0.7120074879450858,
+          "refuse": 0.008260119366639637
+        },
+        "tokens": 214
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel02_I_B",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.36467423257600834,
+          "conflict": 0.6299144580226893,
+          "refuse": 0.005411309401302325
+        },
+        "tokens": 215
+      },
+      "state": "I",
+      "type": "A-B"
+    },
+    {
+      "base": "novel02",
+      "class_same": true,
+      "left": {
+        "author_ref": "conflict",
+        "id": "novel02_C_A",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.008675434441512458,
+          "conflict": 0.9836690423721179,
+          "refuse": 0.007655523186369634
+        },
+        "tokens": 216
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel02_C_B",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.012985805568359631,
+          "conflict": 0.9761223463029562,
+          "refuse": 0.010891848128684137
+        },
+        "tokens": 220
+      },
+      "state": "C",
+      "type": "A-B"
+    },
+    {
+      "base": "novel02",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel02_S_A",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.4062390995537604,
+          "conflict": 0.5910575556930548,
+          "refuse": 0.002703344753184804
+        },
+        "tokens": 214
+      },
+      "probability_difference": {
+        "answer": -0.12650670686548593,
+        "conflict": 0.12094993225203099,
+        "refuse": 0.0055567746134548325
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel02_I_A",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.2797323926882745,
+          "conflict": 0.7120074879450858,
+          "refuse": 0.008260119366639637
+        },
+        "tokens": 214
+      },
+      "type": "S-I",
+      "wording": "A"
+    },
+    {
+      "base": "novel02",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel02_S_A",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.4062390995537604,
+          "conflict": 0.5910575556930548,
+          "refuse": 0.002703344753184804
+        },
+        "tokens": 214
+      },
+      "probability_difference": {
+        "answer": -0.39756366511224794,
+        "conflict": 0.3926114866790631,
+        "refuse": 0.00495217843318483
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel02_C_A",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.008675434441512458,
+          "conflict": 0.9836690423721179,
+          "refuse": 0.007655523186369634
+        },
+        "tokens": 216
+      },
+      "type": "S-C",
+      "wording": "A"
+    },
+    {
+      "base": "novel02",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel02_S_B",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5389413018677219,
+          "conflict": 0.4602056405463312,
+          "refuse": 0.0008530575859469742
+        },
+        "tokens": 216
+      },
+      "probability_difference": {
+        "answer": -0.1742670692917136,
+        "conflict": 0.16970881747635813,
+        "refuse": 0.004558251815355351
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel02_I_B",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.36467423257600834,
+          "conflict": 0.6299144580226893,
+          "refuse": 0.005411309401302325
+        },
+        "tokens": 215
+      },
+      "type": "S-I",
+      "wording": "B"
+    },
+    {
+      "base": "novel02",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel02_S_B",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5389413018677219,
+          "conflict": 0.4602056405463312,
+          "refuse": 0.0008530575859469742
+        },
+        "tokens": 216
+      },
+      "probability_difference": {
+        "answer": -0.5259554962993623,
+        "conflict": 0.5159167057566251,
+        "refuse": 0.010038790542737163
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel02_C_B",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.012985805568359631,
+          "conflict": 0.9761223463029562,
+          "refuse": 0.010891848128684137
+        },
+        "tokens": 220
+      },
+      "type": "S-C",
+      "wording": "B"
+    },
+    {
+      "base": "novel03",
+      "class_same": true,
+      "left": {
+        "author_ref": "answer",
+        "id": "novel03_S_A",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5640175768190633,
+          "conflict": 0.4342657726432886,
+          "refuse": 0.0017166505376481768
+        },
+        "tokens": 220
+      },
+      "right": {
+        "author_ref": "answer",
+        "id": "novel03_S_B",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.6675049243775051,
+          "conflict": 0.3292451603718138,
+          "refuse": 0.003249915250681015
+        },
+        "tokens": 221
+      },
+      "state": "S",
+      "type": "A-B"
+    },
+    {
+      "base": "novel03",
+      "class_same": false,
+      "left": {
+        "author_ref": "refuse",
+        "id": "novel03_I_A",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.4596643709145436,
+          "conflict": 0.5085211941954418,
+          "refuse": 0.03181443489001462
+        },
+        "tokens": 217
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel03_I_B",
+        "matches_informed_author_ref": false,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5688772241185206,
+          "conflict": 0.41534310325009216,
+          "refuse": 0.01577967263138724
+        },
+        "tokens": 219
+      },
+      "state": "I",
+      "type": "A-B"
+    },
+    {
+      "base": "novel03",
+      "class_same": true,
+      "left": {
+        "author_ref": "conflict",
+        "id": "novel03_C_A",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.009515083561307232,
+          "conflict": 0.9710813863243063,
+          "refuse": 0.01940353011438657
+        },
+        "tokens": 226
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel03_C_B",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.01098799463702352,
+          "conflict": 0.9633052792721598,
+          "refuse": 0.025706726090816638
+        },
+        "tokens": 228
+      },
+      "state": "C",
+      "type": "A-B"
+    },
+    {
+      "base": "novel03",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel03_S_A",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5640175768190633,
+          "conflict": 0.4342657726432886,
+          "refuse": 0.0017166505376481768
+        },
+        "tokens": 220
+      },
+      "probability_difference": {
+        "answer": -0.10435320590451969,
+        "conflict": 0.07425542155215326,
+        "refuse": 0.030097784352366444
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel03_I_A",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.4596643709145436,
+          "conflict": 0.5085211941954418,
+          "refuse": 0.03181443489001462
+        },
+        "tokens": 217
+      },
+      "type": "S-I",
+      "wording": "A"
+    },
+    {
+      "base": "novel03",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel03_S_A",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5640175768190633,
+          "conflict": 0.4342657726432886,
+          "refuse": 0.0017166505376481768
+        },
+        "tokens": 220
+      },
+      "probability_difference": {
+        "answer": -0.554502493257756,
+        "conflict": 0.5368156136810177,
+        "refuse": 0.017686879576738392
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel03_C_A",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.009515083561307232,
+          "conflict": 0.9710813863243063,
+          "refuse": 0.01940353011438657
+        },
+        "tokens": 226
+      },
+      "type": "S-C",
+      "wording": "A"
+    },
+    {
+      "base": "novel03",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel03_S_B",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.6675049243775051,
+          "conflict": 0.3292451603718138,
+          "refuse": 0.003249915250681015
+        },
+        "tokens": 221
+      },
+      "probability_difference": {
+        "answer": -0.09862770025898449,
+        "conflict": 0.08609794287827838,
+        "refuse": 0.012529757380706224
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel03_I_B",
+        "matches_informed_author_ref": false,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5688772241185206,
+          "conflict": 0.41534310325009216,
+          "refuse": 0.01577967263138724
+        },
+        "tokens": 219
+      },
+      "type": "S-I",
+      "wording": "B"
+    },
+    {
+      "base": "novel03",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel03_S_B",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.6675049243775051,
+          "conflict": 0.3292451603718138,
+          "refuse": 0.003249915250681015
+        },
+        "tokens": 221
+      },
+      "probability_difference": {
+        "answer": -0.6565169297404816,
+        "conflict": 0.6340601189003461,
+        "refuse": 0.02245681084013562
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel03_C_B",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.01098799463702352,
+          "conflict": 0.9633052792721598,
+          "refuse": 0.025706726090816638
+        },
+        "tokens": 228
+      },
+      "type": "S-C",
+      "wording": "B"
+    },
+    {
+      "base": "novel04",
+      "class_same": true,
+      "left": {
+        "author_ref": "answer",
+        "id": "novel04_S_A",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5450906421704685,
+          "conflict": 0.45293077026554257,
+          "refuse": 0.001978587563988945
+        },
+        "tokens": 220
+      },
+      "right": {
+        "author_ref": "answer",
+        "id": "novel04_S_B",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.619026664281163,
+          "conflict": 0.37869189321695684,
+          "refuse": 0.002281442501880088
+        },
+        "tokens": 221
+      },
+      "state": "S",
+      "type": "A-B"
+    },
+    {
+      "base": "novel04",
+      "class_same": false,
+      "left": {
+        "author_ref": "refuse",
+        "id": "novel04_I_A",
+        "matches_informed_author_ref": false,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5306913527202701,
+          "conflict": 0.455441833962854,
+          "refuse": 0.01386681331687587
+        },
+        "tokens": 217
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel04_I_B",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.48259612871021124,
+          "conflict": 0.5086373668500136,
+          "refuse": 0.008766504439775174
+        },
+        "tokens": 220
+      },
+      "state": "I",
+      "type": "A-B"
+    },
+    {
+      "base": "novel04",
+      "class_same": true,
+      "left": {
+        "author_ref": "conflict",
+        "id": "novel04_C_A",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.008536548035807464,
+          "conflict": 0.967393051778042,
+          "refuse": 0.02407040018615044
+        },
+        "tokens": 229
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel04_C_B",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.026506879015045497,
+          "conflict": 0.9639753343996313,
+          "refuse": 0.009517786585323162
+        },
+        "tokens": 231
+      },
+      "state": "C",
+      "type": "A-B"
+    },
+    {
+      "base": "novel04",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel04_S_A",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5450906421704685,
+          "conflict": 0.45293077026554257,
+          "refuse": 0.001978587563988945
+        },
+        "tokens": 220
+      },
+      "probability_difference": {
+        "answer": -0.014399289450198416,
+        "conflict": 0.002511063697311411,
+        "refuse": 0.011888225752886925
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel04_I_A",
+        "matches_informed_author_ref": false,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5306913527202701,
+          "conflict": 0.455441833962854,
+          "refuse": 0.01386681331687587
+        },
+        "tokens": 217
+      },
+      "type": "S-I",
+      "wording": "A"
+    },
+    {
+      "base": "novel04",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel04_S_A",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5450906421704685,
+          "conflict": 0.45293077026554257,
+          "refuse": 0.001978587563988945
+        },
+        "tokens": 220
+      },
+      "probability_difference": {
+        "answer": -0.536554094134661,
+        "conflict": 0.5144622815124995,
+        "refuse": 0.022091812622161495
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel04_C_A",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.008536548035807464,
+          "conflict": 0.967393051778042,
+          "refuse": 0.02407040018615044
+        },
+        "tokens": 229
+      },
+      "type": "S-C",
+      "wording": "A"
+    },
+    {
+      "base": "novel04",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel04_S_B",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.619026664281163,
+          "conflict": 0.37869189321695684,
+          "refuse": 0.002281442501880088
+        },
+        "tokens": 221
+      },
+      "probability_difference": {
+        "answer": -0.1364305355709518,
+        "conflict": 0.12994547363305675,
+        "refuse": 0.0064850619378950865
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel04_I_B",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.48259612871021124,
+          "conflict": 0.5086373668500136,
+          "refuse": 0.008766504439775174
+        },
+        "tokens": 220
+      },
+      "type": "S-I",
+      "wording": "B"
+    },
+    {
+      "base": "novel04",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel04_S_B",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.619026664281163,
+          "conflict": 0.37869189321695684,
+          "refuse": 0.002281442501880088
+        },
+        "tokens": 221
+      },
+      "probability_difference": {
+        "answer": -0.5925197852661176,
+        "conflict": 0.5852834411826745,
+        "refuse": 0.007236344083443074
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel04_C_B",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.026506879015045497,
+          "conflict": 0.9639753343996313,
+          "refuse": 0.009517786585323162
+        },
+        "tokens": 231
+      },
+      "type": "S-C",
+      "wording": "B"
+    },
+    {
+      "base": "novel05",
+      "class_same": true,
+      "left": {
+        "author_ref": "answer",
+        "id": "novel05_S_A",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5494226602911054,
+          "conflict": 0.4493056376044388,
+          "refuse": 0.0012717021044557225
+        },
+        "tokens": 222
+      },
+      "right": {
+        "author_ref": "answer",
+        "id": "novel05_S_B",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.6269716585234192,
+          "conflict": 0.37134846750884876,
+          "refuse": 0.0016798739677320695
+        },
+        "tokens": 223
+      },
+      "state": "S",
+      "type": "A-B"
+    },
+    {
+      "base": "novel05",
+      "class_same": false,
+      "left": {
+        "author_ref": "refuse",
+        "id": "novel05_I_A",
+        "matches_informed_author_ref": false,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5379221969945812,
+          "conflict": 0.33465249803741226,
+          "refuse": 0.1274253049680065
+        },
+        "tokens": 216
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel05_I_B",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.36189545963994985,
+          "conflict": 0.5222620311059406,
+          "refuse": 0.1158425092541095
+        },
+        "tokens": 218
+      },
+      "state": "I",
+      "type": "A-B"
+    },
+    {
+      "base": "novel05",
+      "class_same": true,
+      "left": {
+        "author_ref": "conflict",
+        "id": "novel05_C_A",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.005894889086215859,
+          "conflict": 0.929388749336033,
+          "refuse": 0.06471636157775112
+        },
+        "tokens": 231
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel05_C_B",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.004332151023305446,
+          "conflict": 0.9052299868022409,
+          "refuse": 0.09043786217445367
+        },
+        "tokens": 233
+      },
+      "state": "C",
+      "type": "A-B"
+    },
+    {
+      "base": "novel05",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel05_S_A",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5494226602911054,
+          "conflict": 0.4493056376044388,
+          "refuse": 0.0012717021044557225
+        },
+        "tokens": 222
+      },
+      "probability_difference": {
+        "answer": -0.01150046329652421,
+        "conflict": -0.11465313956702655,
+        "refuse": 0.12615360286355076
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel05_I_A",
+        "matches_informed_author_ref": false,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5379221969945812,
+          "conflict": 0.33465249803741226,
+          "refuse": 0.1274253049680065
+        },
+        "tokens": 216
+      },
+      "type": "S-I",
+      "wording": "A"
+    },
+    {
+      "base": "novel05",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel05_S_A",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5494226602911054,
+          "conflict": 0.4493056376044388,
+          "refuse": 0.0012717021044557225
+        },
+        "tokens": 222
+      },
+      "probability_difference": {
+        "answer": -0.5435277712048896,
+        "conflict": 0.4800831117315942,
+        "refuse": 0.0634446594732954
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel05_C_A",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.005894889086215859,
+          "conflict": 0.929388749336033,
+          "refuse": 0.06471636157775112
+        },
+        "tokens": 231
+      },
+      "type": "S-C",
+      "wording": "A"
+    },
+    {
+      "base": "novel05",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel05_S_B",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.6269716585234192,
+          "conflict": 0.37134846750884876,
+          "refuse": 0.0016798739677320695
+        },
+        "tokens": 223
+      },
+      "probability_difference": {
+        "answer": -0.26507619888346934,
+        "conflict": 0.15091356359709185,
+        "refuse": 0.11416263528637742
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel05_I_B",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.36189545963994985,
+          "conflict": 0.5222620311059406,
+          "refuse": 0.1158425092541095
+        },
+        "tokens": 218
+      },
+      "type": "S-I",
+      "wording": "B"
+    },
+    {
+      "base": "novel05",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel05_S_B",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.6269716585234192,
+          "conflict": 0.37134846750884876,
+          "refuse": 0.0016798739677320695
+        },
+        "tokens": 223
+      },
+      "probability_difference": {
+        "answer": -0.6226395075001138,
+        "conflict": 0.5338815192933921,
+        "refuse": 0.0887579882067216
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel05_C_B",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.004332151023305446,
+          "conflict": 0.9052299868022409,
+          "refuse": 0.09043786217445367
+        },
+        "tokens": 233
+      },
+      "type": "S-C",
+      "wording": "B"
+    },
+    {
+      "base": "novel06",
+      "class_same": false,
+      "left": {
+        "author_ref": "answer",
+        "id": "novel06_S_A",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.3357069619754765,
+          "conflict": 0.6316862009792342,
+          "refuse": 0.03260683704528925
+        },
+        "tokens": 227
+      },
+      "right": {
+        "author_ref": "answer",
+        "id": "novel06_S_B",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5847257383233601,
+          "conflict": 0.41266311217163243,
+          "refuse": 0.002611149505007467
+        },
+        "tokens": 232
+      },
+      "state": "S",
+      "type": "A-B"
+    },
+    {
+      "base": "novel06",
+      "class_same": false,
+      "left": {
+        "author_ref": "refuse",
+        "id": "novel06_I_A",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.3680840586268624,
+          "conflict": 0.5955924901216625,
+          "refuse": 0.0363234512514752
+        },
+        "tokens": 228
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel06_I_B",
+        "matches_informed_author_ref": false,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5082505611232815,
+          "conflict": 0.4649889110438838,
+          "refuse": 0.026760527832834727
+        },
+        "tokens": 229
+      },
+      "state": "I",
+      "type": "A-B"
+    },
+    {
+      "base": "novel06",
+      "class_same": true,
+      "left": {
+        "author_ref": "conflict",
+        "id": "novel06_C_A",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.009037431968248364,
+          "conflict": 0.9825162352067156,
+          "refuse": 0.008446332825035954
+        },
+        "tokens": 229
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel06_C_B",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.012070604455282798,
+          "conflict": 0.9748334492744903,
+          "refuse": 0.013095946270226885
+        },
+        "tokens": 239
+      },
+      "state": "C",
+      "type": "A-B"
+    },
+    {
+      "base": "novel06",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel06_S_A",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.3357069619754765,
+          "conflict": 0.6316862009792342,
+          "refuse": 0.03260683704528925
+        },
+        "tokens": 227
+      },
+      "probability_difference": {
+        "answer": 0.032377096651385884,
+        "conflict": -0.03609371085757174,
+        "refuse": 0.0037166142061859503
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel06_I_A",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.3680840586268624,
+          "conflict": 0.5955924901216625,
+          "refuse": 0.0363234512514752
+        },
+        "tokens": 228
+      },
+      "type": "S-I",
+      "wording": "A"
+    },
+    {
+      "base": "novel06",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel06_S_A",
+        "matches_informed_author_ref": false,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.3357069619754765,
+          "conflict": 0.6316862009792342,
+          "refuse": 0.03260683704528925
+        },
+        "tokens": 227
+      },
+      "probability_difference": {
+        "answer": -0.32666953000722815,
+        "conflict": 0.3508300342274814,
+        "refuse": -0.024160504220253298
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel06_C_A",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.009037431968248364,
+          "conflict": 0.9825162352067156,
+          "refuse": 0.008446332825035954
+        },
+        "tokens": 229
+      },
+      "type": "S-C",
+      "wording": "A"
+    },
+    {
+      "base": "novel06",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel06_S_B",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5847257383233601,
+          "conflict": 0.41266311217163243,
+          "refuse": 0.002611149505007467
+        },
+        "tokens": 232
+      },
+      "probability_difference": {
+        "answer": -0.07647517720007857,
+        "conflict": 0.05232579887225136,
+        "refuse": 0.02414937832782726
+      },
+      "right": {
+        "author_ref": "refuse",
+        "id": "novel06_I_B",
+        "matches_informed_author_ref": false,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5082505611232815,
+          "conflict": 0.4649889110438838,
+          "refuse": 0.026760527832834727
+        },
+        "tokens": 229
+      },
+      "type": "S-I",
+      "wording": "B"
+    },
+    {
+      "base": "novel06",
+      "left": {
+        "author_ref": "answer",
+        "id": "novel06_S_B",
+        "matches_informed_author_ref": true,
+        "pred": "answer",
+        "probs": {
+          "answer": 0.5847257383233601,
+          "conflict": 0.41266311217163243,
+          "refuse": 0.002611149505007467
+        },
+        "tokens": 232
+      },
+      "probability_difference": {
+        "answer": -0.5726551338680772,
+        "conflict": 0.5621703371028579,
+        "refuse": 0.010484796765219418
+      },
+      "right": {
+        "author_ref": "conflict",
+        "id": "novel06_C_B",
+        "matches_informed_author_ref": true,
+        "pred": "conflict",
+        "probs": {
+          "answer": 0.012070604455282798,
+          "conflict": 0.9748334492744903,
+          "refuse": 0.013095946270226885
+        },
+        "tokens": 239
+      },
+      "type": "S-C",
+      "wording": "B"
+    }
+  ],
+  "status": "technical_prefill_complete_informed_development_only"
+}

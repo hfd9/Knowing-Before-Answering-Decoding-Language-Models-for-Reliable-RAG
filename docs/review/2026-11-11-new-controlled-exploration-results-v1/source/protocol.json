@@ -1,0 +1,282 @@
+{
+  "analysis": "per base S/I/C A/B: 18 expression pairs, 12 S-I and 12 S-C; descriptive only",
+  "bridge_first": "bridge_support06_D1",
+  "bridge_tolerances": {
+    "max_layer_relative_l2": 0.02,
+    "max_probability_absolute_error": 0.01
+  },
+  "dependencies": {
+    "code/prompts.py": "bedd7b758ef6cfe117580d3fc29e133f1343830f88be71243f8c07e6a893f7c8",
+    "configs/local.env": "0d62a5eea40dc8464f135ba88da937b37c4dc2a9a8ab5eec5f74a40e636cdcc9",
+    "docs/review/2026-11-06-explanation-scope-cpu-preflight-v1/relation-reference-snapshot.json": "504b4da5f0c4e51cfdffaa54129e55c0a3b433f37e387d286c21ad65f4d7c1f5",
+    "docs/review/2026-11-11-new-controlled-exploration-v1/author-review.json": "7ecffbb03f0695f36240b3fada34a37502ada6e5400e60c284bbd476c09571fb",
+    "docs/review/2026-11-11-new-controlled-exploration-v1/material-seal.json": "ba1fa13aac094cfd29ed4e0387117b6923db8eee66c2b99823d65455f411b32a",
+    "docs/review/2026-11-11-new-controlled-exploration-v1/materials.json": "4b4b2263d62d3bc014b7243441c463e68acffaf9963929b5233c0def8f282183",
+    "prompts/baseline_prompts.json": "48075d1187b8e0331b295d0e4b46409642bcf7ef803aaf3b885dc10ac97f1a79",
+    "prompts/classification_semantic_v1.json": "3306d6aee2be2125cc2150f1047201e4788d9bfe5201e876210d0265914f839d",
+    "prompts/controlled_evidence_pilot_v1.json": "1f71f400352a5fadf1f3c070e1d22ca701452c488756df4b4146d1720d83d437",
+    "prompts/new_controlled_probe_20261111_v1.json": "cb5a55b56b9f9a6d2f6975f6152ef15228d4412c727d010be58f157008ff578f",
+    "prompts/probe_document_factors_v1.json": "0f42a1b44df4573eb56be2a0020412ca735ea1a8e335e681fb4a27746b1ac079",
+    "prompts/probe_input_shift_v1.json": "76d9de36415c9b72672541042f458d3cd758ae50ac1aa05e8e4e41af9016e050",
+    "prompts/probe_support_expression_v1.json": "2f3f18f8cd0ed5d507daff6e176f43b5d2c116dfb40a7b44616235c35bf1fea6",
+    "runs/qwen2.5-3b-controlled-evidence-pilot-v1/free_answer/predictions.json": "d240a5a8f321c2a0dbefbc7c620407b74db7992705158bac491eecc4ff8ab699",
+    "runs/qwen2.5-3b-controlled-evidence-pilot-v1/materials/inputs.json": "78d7fddc57d6b5bb143d580e7aa3fbbcca5b53f793955bd5d02d1c6b5176e60c",
+    "runs/qwen2.5-3b-controlled-evidence-pilot-v1/protocol.json": "98650b290d29779242cb4727e43a1625d5fe187bae275c9ed2fb8bdf445baf6f",
+    "runs/qwen2.5-3b-free-answer-study/chat/probe/probe.json": "fcd01efc19334be52854c021baec9dfa6480377fe4f15a76135b980820691350",
+    "runs/qwen2.5-3b-free-answer-study/chat/probe/probe.pkl": "db6033b84f1fcd30e5e2e31ce4beb262a76920cc06811c57900ad14b8d40858d",
+    "runs/qwen2.5-3b-free-answer-study/chat/train/states.json": "2c22a8f43ab0b6c46ac1ec675dcad2274379e9836a8aeabcdf2c9bdef7ae1e86",
+    "runs/qwen2.5-3b-free-answer-study/chat/val/states.json": "79c45e55ccff6602915d72c890c9fadc01496d811342f3cc5db22158aebf1949",
+    "runs/qwen2.5-3b-free-answer-study/protocol.json": "893af4b195ab42c4fa3c2a670da022e7fc422a6537506671600c9c50f949c3f0",
+    "runs/qwen2.5-3b-probe-document-factors-v1/materials/inputs.json": "d3f29602f54161d3fc431562e629610237e86ed826e7114966f4630dd50552c9",
+    "runs/qwen2.5-3b-probe-document-factors-v1/protocol.json": "6f1aaddfc5872a26ee38f931be40fb895d2d7c9c2331d6654a0cfd8f5f977846",
+    "runs/qwen2.5-3b-probe-document-factors-v1/states.json": "47459cd18d1ec06e406296ce3b5f33569f9413b3bdf0a06f40f79e981956a5a8",
+    "runs/qwen2.5-3b-probe-input-shift-v1/materials/inputs.json": "2167a101853a64f5a25b8820bb0f4a5d428353ab3f67d9dcb49193409f57a199",
+    "runs/qwen2.5-3b-probe-input-shift-v1/protocol.json": "e514970336594349b6e0bbd9280facc8a3b17210cd149f7d519909a778d34d71",
+    "runs/qwen2.5-3b-probe-input-shift-v1/states.json": "32b61d16269a523a2f613e2d407aabb37c5226f3234147cc39b9a1977e903c90",
+    "runs/qwen2.5-3b-probe-support-expression-v1/materials/inputs.json": "6b1ccde474325eddaa69b35fc97f9501140610230f75126ac4a2a49815698ca1",
+    "runs/qwen2.5-3b-probe-support-expression-v1/protocol.json": "705e3c885a1a9b63c17af44df45c61ac35b925d4646da2633b3639a09a446fe9",
+    "runs/qwen2.5-3b-probe-support-expression-v1/states.json": "92fa24966be6154edbcc63f090efbc6a97e95991e4bd19b283818e6b5d113d16",
+    "runs/qwen2.5-3b-small/data/instances_train.jsonl": "15494aaed6335f294b9d88befcdc88ff6d90c6555a8d89d87d4efe1ff0230492",
+    "runs/qwen2.5-3b-small/data/instances_val.jsonl": "18a0e6817fbbc3b0f9a89e029209221e97f6406a3b6c7ecb88de61161cb095bb",
+    "scripts/analyze_prompt_baseline.py": "7a95b7d4487cac73d5bb20e53e9cfcaa6ad69399e5fe69484633c187eed0e020",
+    "scripts/classification_prompt_search.py": "a3738c2d77412aa20c35c992a847b3a5ed0386bc154d728c19966111f9ec44e2",
+    "scripts/classification_semantic_baseline.py": "01e1d8c03e7503d984b1b12272c790d1ea3c8ef3a82f61195e16833abc36d53d",
+    "scripts/controlled_evidence_materials.py": "e5853f240d35499e5c2e0b61f13f83e5d00add42726cb357e8be748a33f08b4d",
+    "scripts/controlled_evidence_pilot.py": "b3a98124d1312309ac889905d8b4a36b96e682a0e16bc94804a025e93c68f61e",
+    "scripts/evidence_experiment.py": "019af81ffcfe108b155e6e061569d7d1c1fc17d3b072ad436d78defa74aac225",
+    "scripts/free_answer_review.py": "9ad214955fc1b1db35d4b2b5f027721b74ccaf8a735027c20ceb0895b6068882",
+    "scripts/free_answer_study.py": "a253f0abb8eee9aec8c122c373cd47dc60671bdc68aaaf181cf5cdc8594c5939",
+    "scripts/new_controlled_probe_20261111.py": "1e8eb6574891c149078650ecde236d655680dfda87dfe5bf453005096dcb8ead",
+    "scripts/new_controlled_probe_materials_20261111.py": "4ef4717a5c66bf4fc5b1aac662f67689a40f592fb26837eea6a6103e236d2963",
+    "scripts/probe_document_factors.py": "eb9c2b74610ba1bcb69f842f1a2394a2cf05f1282f159af614c1440e59c0828b",
+    "scripts/probe_input_shift.py": "8ecbc24221a73fd36ed10da133fe4871cd8264b58541499747fefc762a09dbb8",
+    "scripts/probe_support_expression.py": "03dae8bbc72fdd33914631d9765a5878f40549074c13d8580878e4956f3d5f43",
+    "scripts/prompt_baseline.py": "2966151480873b1775aa1d275f804544959f377587840fc36f51ff1d209aed3c",
+    "scripts/run_controlled_evidence_pilot.sh": "a0c29a02caba307b587b4233700d259a147489c0eb2b582e9101c818f0b993ec",
+    "scripts/run_controlled_evidence_pilot_review.sh": "d7ffe5c15a375b3e364c0c37a04dc9078c06b89b0d6f53a29da89be9a2f645f9",
+    "scripts/run_probe_document_factors.sh": "c05b7dc5056ae015336ed30fa7562a34838e779ea9e048686ef7eaeb580d20d2",
+    "scripts/run_probe_document_factors_review.sh": "c9dd8431bc75387bc2503ccd1a652730000b4da737906642898a514f2f04b8ec",
+    "scripts/run_probe_input_shift.sh": "cf0137b1dc53e26554de4b71f31e547a260dec5cc9625f307bae6b42bb7afeab",
+    "scripts/run_probe_input_shift_review.sh": "32558acf494f43042b85b66076e89afc7c58d0b971c3312ff8f5438a39bd1e9a",
+    "scripts/run_probe_support_expression.sh": "d7e4c6f6f4ba7cec873e1e9b1ca3dfcd9df24a9eb76886e2fb91056c4c30607e",
+    "scripts/run_probe_support_expression_review.sh": "ce2cd7cf19b9211b0f938cc07840469a11c55ad9dbcd20d8ce238d7c4c3b6b1e",
+    "scripts/small_repro.py": "3302a541d04cfde3a29e663f747ad093dac8893b85f6607c5fb16333edf457fd",
+    "scripts/verify_controlled_evidence_pilot.py": "e2c3c9f1af59f62f2f17d12eb6ac469ef83126352b241c833d1d1723b05393f5",
+    "scripts/verify_new_controlled_probe_materials_20261111.py": "ed10f52c0dccba26909bfe9d2544a97c88c18a1e06d6b1d72879e3d084bcd0f7"
+  },
+  "gate": "new user-operated exploratory path only; original v1 and E1-r1 unchanged",
+  "held_out_380_access": false,
+  "identities": {
+    "bridge_support06_D1": {
+      "input_token_ids_sha256": "a7c632144e9b751352a1f0589e4325ba7e3eecdd018b9429fb038f5d07b4a370",
+      "input_tokens": 2945,
+      "prompt_sha256": "3451d81aff8e8dbc8023240f8ec909fe812705c2d1d4b943e1aa05883dfc83a4"
+    },
+    "novel01_C_A": {
+      "input_token_ids_sha256": "616d7a9483616bbe6092c8661656e48d57b76fbaebc8456f4c6ab2c7f0653d8c",
+      "input_tokens": 219,
+      "prompt_sha256": "9e4766f474f5cdc876195a3c90668254e22dc606f4c999dcac17668e40a7afac"
+    },
+    "novel01_C_B": {
+      "input_token_ids_sha256": "72eb4c09035626678d7a1b2d51b89e988ed571b4721f0a7417f6c680c47d387c",
+      "input_tokens": 223,
+      "prompt_sha256": "41305813673c4133d4869cdddac44f0d6586e633ec2ec2e806353ee3b34cca1a"
+    },
+    "novel01_I_A": {
+      "input_token_ids_sha256": "5a48d89b67769624a8ce99e3e15458443e3830e1039017df05e724c64393957c",
+      "input_tokens": 215,
+      "prompt_sha256": "d6fa970816fd7d011cda902e81f18dcaa39570025f76a8b173614557e3790bee"
+    },
+    "novel01_I_B": {
+      "input_token_ids_sha256": "5e77313d11481976506a5afadb1c71df39f27df4fcbcc810609ec16cdc8ea242",
+      "input_tokens": 216,
+      "prompt_sha256": "8b98f34238efcb75255ce9166c3c212d4f49e8972f86b1fca5fd4352f63848dc"
+    },
+    "novel01_S_A": {
+      "input_token_ids_sha256": "3b994146d11b4709b8861a8e8933fe83c096338e741d5d5a7c1b0ed2ddb4f17f",
+      "input_tokens": 215,
+      "prompt_sha256": "2eb833bd564f24f9846a4dd08dd1c9ce365f06fb7598fbc5138f9312b87d19fc"
+    },
+    "novel01_S_B": {
+      "input_token_ids_sha256": "ec51b1b79737143a6a047d1edbbca34e89237c81d94ecf5dc3862770d23c5cb3",
+      "input_tokens": 217,
+      "prompt_sha256": "1fcc7c0be048b29f6ab5d91046c5a50cdbf8bbb43f33fdebf4bb2384b88b4bcd"
+    },
+    "novel02_C_A": {
+      "input_token_ids_sha256": "b2bc01b62bb3c12293fa683b5b62d3e1b66bc70a1ccc07be01386424a8532cde",
+      "input_tokens": 216,
+      "prompt_sha256": "09d43178f9c1acb7a37cb5ffebb72eced1f48076a1e2e3bd2c3bd60c6dd34b92"
+    },
+    "novel02_C_B": {
+      "input_token_ids_sha256": "b2808ad38d221009bc8873cf253b8f49e9d060a83b3fd7e8fde108ac3cfb032d",
+      "input_tokens": 220,
+      "prompt_sha256": "1dd583529a494b6fb4954a5ad80ba2635b3b9494de52bdcbcf2e72fcfa412f93"
+    },
+    "novel02_I_A": {
+      "input_token_ids_sha256": "35c7d439dca7d6ad0d1953aab9abd4638cfabeea0a944c9c0c68036bfc110340",
+      "input_tokens": 214,
+      "prompt_sha256": "938d1dc7e2368df4b2555b010193c3efc478c1468129d11dfaf967dd3de0f440"
+    },
+    "novel02_I_B": {
+      "input_token_ids_sha256": "58844acadebbff44f64533b3f4a10bd0d3aff9e28311e19f3246ec0bcbac8b3d",
+      "input_tokens": 215,
+      "prompt_sha256": "767cde689ff3dd5cdf4dd01e8a2faa8b305f09646ef94294f36736f57b2a5ed3"
+    },
+    "novel02_S_A": {
+      "input_token_ids_sha256": "39939313d3ea1fc5a94fbc40543427c5399cf1191d3d608c7184e6009ff628db",
+      "input_tokens": 214,
+      "prompt_sha256": "35afba6b02a143571f7ee0baf0b5d92fb24322a52fb8d51cf8c165afa2e44ff5"
+    },
+    "novel02_S_B": {
+      "input_token_ids_sha256": "dd60e49dff894e722c69411f2cf4224d6f2694bce1adbcec3fb00eca2efd2f2a",
+      "input_tokens": 216,
+      "prompt_sha256": "3d9eff0be64d85547d5d52a2ad88518141b3cc44cae322513d20de4b0aa9505b"
+    },
+    "novel03_C_A": {
+      "input_token_ids_sha256": "81703e1a04ef9f230fcc48394ec79e1f5a21986267ecc4fda7650ec5a2838def",
+      "input_tokens": 226,
+      "prompt_sha256": "6893fa5786fd6cba58214afc42128b0ba24041f24b4bbcc8c762a3f91a4c8899"
+    },
+    "novel03_C_B": {
+      "input_token_ids_sha256": "bdc64d19d20b91eb8f2d4fe8c980bb7887e950e907975b17f73dc732158b0f13",
+      "input_tokens": 228,
+      "prompt_sha256": "39cb554062e68effe9489e8d311c087aec89f8e944974e8ce4790f8811881ce2"
+    },
+    "novel03_I_A": {
+      "input_token_ids_sha256": "c80af496549a5bb2c19e24855d8522f90a2b01e1a6556b891cb38e63f49ee34b",
+      "input_tokens": 217,
+      "prompt_sha256": "1a1beb58dde8584332c415bbcb3c2edccf2ad37fb8b5ce2307bd98166309185b"
+    },
+    "novel03_I_B": {
+      "input_token_ids_sha256": "9b59891b1735155d80bf7a2ca624955c73cbc4cd797390422e9d1fc182bb9601",
+      "input_tokens": 219,
+      "prompt_sha256": "a109751bd5ad64f426d444a77162cd9bd5511e2541fb3b2519bd09b3fbd2ef60"
+    },
+    "novel03_S_A": {
+      "input_token_ids_sha256": "6207a6d2e4972a100df58b66012f14904d0bbce0168cb3cca2cd4a850ce46fe0",
+      "input_tokens": 220,
+      "prompt_sha256": "819213ac9f7bb12a473c2d9f5a6d895bcb929810372ff8dc2d21580093699dc2"
+    },
+    "novel03_S_B": {
+      "input_token_ids_sha256": "4bb7e558309c84542aa3f66a606fbaa9a1c719c3bdbca835a714fec413312930",
+      "input_tokens": 221,
+      "prompt_sha256": "c680a25afcf2d272d16aff7e58efdceab084c8f17c8f243bf95f1d9c1fbbcd87"
+    },
+    "novel04_C_A": {
+      "input_token_ids_sha256": "7d273eca113c8fbef8cb1757300e2fb86a00bf7d6589696f6219e5789dc82b4b",
+      "input_tokens": 229,
+      "prompt_sha256": "578fc66c462e1b380039689577ac7b88d4e5e3eab3de93349e1ccd4433665589"
+    },
+    "novel04_C_B": {
+      "input_token_ids_sha256": "34267b7a0b66c0dbd750d6ee9a5aad2fef241787d6446f0109d04750837d5087",
+      "input_tokens": 231,
+      "prompt_sha256": "2cf1e0086c8b458d3f4b9239cd2e26db991b3564bfa601855406f08f78f80109"
+    },
+    "novel04_I_A": {
+      "input_token_ids_sha256": "cdd752452cb1a0c2a68c48dad5e1c8f91abb4be392dcf94b1b165214d00ffde5",
+      "input_tokens": 217,
+      "prompt_sha256": "9add3c5ea7e1c7e961f18c90e26b55f1b3a6219d31a072c5b974de025e939747"
+    },
+    "novel04_I_B": {
+      "input_token_ids_sha256": "73e0010d28f4c3ab231a5ac7397d67692beca54e9560dcd65e8f1a8bd4c59d25",
+      "input_tokens": 220,
+      "prompt_sha256": "f119e3d2db5b233af59a41993a13633ea9eef6a863bdb30d94d7484327cf7550"
+    },
+    "novel04_S_A": {
+      "input_token_ids_sha256": "b3055cf4323c78caf1551bf4132590b3a5f5d99c8605a41d76baa4b4ac6e665e",
+      "input_tokens": 220,
+      "prompt_sha256": "afe57a9ce3ad0667458b73b5f1ec8a6dbd5ad4a96cc93d1a2b59c80fe6000b85"
+    },
+    "novel04_S_B": {
+      "input_token_ids_sha256": "3c62f76418fc27340a0ed56ed01eff3a2d36c14f350eb6a6eef1392c9fde9203",
+      "input_tokens": 221,
+      "prompt_sha256": "b06711a28d0eccd075788b19880ba5dd2966411221dab0dbe04269cc6a59b0cc"
+    },
+    "novel05_C_A": {
+      "input_token_ids_sha256": "abd26041c1fc1dcc895ceff55125709b508f7251c76ef38617c71dc6013ca925",
+      "input_tokens": 231,
+      "prompt_sha256": "f59f65a1b0319a4ea75b20f7150793e2768aaf04fb8387f4ba07682a260493e5"
+    },
+    "novel05_C_B": {
+      "input_token_ids_sha256": "8b3024f763787d88d99a44858978011ae30d037c6120d22ba2ab583713ba41d7",
+      "input_tokens": 233,
+      "prompt_sha256": "f0231e82307455c3806a03dc678a8a0ff594912d9f654b60ed1dded7cad2c847"
+    },
+    "novel05_I_A": {
+      "input_token_ids_sha256": "2b2204976508fcf2834e6052580a8350ce6e4b2f895c28afef31fcde41bc2435",
+      "input_tokens": 216,
+      "prompt_sha256": "be71336ec9fc53863b4c7d2fe30337037f01ff8b3c3655c7a682b4cee54e4ad2"
+    },
+    "novel05_I_B": {
+      "input_token_ids_sha256": "97dd8c4f7951d9c864cf759876fac19252f0f40489e35f283b259bdac5f0aa9e",
+      "input_tokens": 218,
+      "prompt_sha256": "08df55be0aae77ce4c6e77537f8300b6667ea4fb9184bdd4f4dc1feeb58366ca"
+    },
+    "novel05_S_A": {
+      "input_token_ids_sha256": "b2a5d855218e5ac4d28486071e6f077c93d863fa6efeb47a9aaccf79ea1537bf",
+      "input_tokens": 222,
+      "prompt_sha256": "dd728c2759dc09f74a40138893fc5afb2b0773ce0135490065f69bae96b76e38"
+    },
+    "novel05_S_B": {
+      "input_token_ids_sha256": "8fd9b726914f0f9306b4d5b6a594816e3072c37a9e3145f1603358066f8dc9ff",
+      "input_tokens": 223,
+      "prompt_sha256": "1964eb18a0c3154fdb2c17c0f01887e5b06c056338d1ff578afdda4eb0bae158"
+    },
+    "novel06_C_A": {
+      "input_token_ids_sha256": "3ce8d9f027af4f4f87aa1c7ebbfc8d52051bba5590693766e328fd53107fe4df",
+      "input_tokens": 229,
+      "prompt_sha256": "344ed9c54adbaa4d38f8e8f1689ea968ff02f77c2c0936462527f79612262557"
+    },
+    "novel06_C_B": {
+      "input_token_ids_sha256": "61a8fed4516b8516c9deee793551ff4ac269e0328d522dd741ad5db216c24f43",
+      "input_tokens": 239,
+      "prompt_sha256": "26780ed7c9a862e49db740b3305a776b747c4885081baa78c7eceb723f970ca2"
+    },
+    "novel06_I_A": {
+      "input_token_ids_sha256": "a12b75d29725b5c3747b2972a209ba9be08ab4e8934f1df2e0330e4437ae467e",
+      "input_tokens": 228,
+      "prompt_sha256": "71d2aae72bd22515e0bc3437f0de71e6ffe7971723d8fccc9590f4b381b0e214"
+    },
+    "novel06_I_B": {
+      "input_token_ids_sha256": "1fb856e6c44eecaae1fff33a9390aa95f731b524ad5fa80c0941b1988cd6d6cd",
+      "input_tokens": 229,
+      "prompt_sha256": "860dd9488c4345dbb8b3e3c17f7c9cbdc5cd4ceb137e2bccdbad8b9da1a42c43"
+    },
+    "novel06_S_A": {
+      "input_token_ids_sha256": "69b231f8e350568ff2387154c1060915f831bcdc73a005850c5acd40989715d9",
+      "input_tokens": 227,
+      "prompt_sha256": "2284b8bed39b438171587c4f4eced0a932f9c85e4bc4efce3a3176dadf43aa81"
+    },
+    "novel06_S_B": {
+      "input_token_ids_sha256": "95ce60379377acd5aaad44c7749f353e4e93d686cae9c375d45b8b94d6aca6ee",
+      "input_tokens": 232,
+      "prompt_sha256": "4867ed33a5245cfdd8490ae71d74a804b9f5287fd1b56adf30446c6ec57cfa07"
+    }
+  },
+  "model": "/large_disk/wf/研究代码/RAG/OpenDecoder/checkpoint/Qwen2.5-3B-Instruct",
+  "model_files_sha256": {
+    "config.json": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+    "generation_config.json": "ea35dfb6fc5051b01114f9b995820d55dab01ed33ee490f6378b442af82c09f9",
+    "model-00001-of-00002.safetensors": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2",
+    "model-00002-of-00002.safetensors": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d",
+    "model.safetensors.index.json": "bc8aaa0c87d4335177e01c765f1de0db81661c67c1a72fbfb0d521b09f5ddc56",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+  },
+  "new_answers": 0,
+  "new_bases": 6,
+  "new_fits": 0,
+  "new_forwards": 37,
+  "new_inputs": 36,
+  "operator": "user",
+  "reference": "informed author assessment, not independent gold",
+  "runtime_versions": {
+    "numpy": "1.26.4",
+    "scikit-learn": "1.5.2",
+    "torch": "2.5.1+cu121",
+    "transformers": "4.56.2"
+  },
+  "schema_version": 1,
+  "source_probe_sha256": "db6033b84f1fcd30e5e2e31ce4beb262a76920cc06811c57900ad14b8d40858d",
+  "task": "informed_controlled_development_not_confirmation"
+}
