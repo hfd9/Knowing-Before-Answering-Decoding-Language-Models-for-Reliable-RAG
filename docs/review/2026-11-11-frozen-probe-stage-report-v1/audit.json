@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "local_links_checked": 32,
+  "checks": "transfer, binding, neutral, CLI, new probe and E1 selected counts; all references exist",
+  "limitations": "Checks selected counts and paths, not semantic accuracy, sample independence, source entirety or runtime provenance.",
+  "report_sha256": "accd394e65da574c46c7604b6460e4c9d023ab6dfdc0f8cd8c41574c5a9179af",
+  "source_sha256": {
+    "docs/review/2026-11-09-probe-measurement-scope-decision-v1/measurement-summary.csv": "67ba622de7d0203c9127bf972a530adcba617d6835445a2778b34f71de138a17",
+    "docs/review/2026-11-09-probe-neutral-control-results-v1/summary.json": "6ba27f293793d5d64c7b725a70cb29dfeeb85736a353f4dce1a00717a7d988c1",
+    "docs/review/2026-11-09-cli-probe-comparison-v1/summary.json": "81c402009f49ac565bc373500c4af3a3421bc643133a947246f36d2435e3d0ef",
+    "docs/review/2026-11-11-new-controlled-exploration-results-v1/source/states.json": "ffcd7b94e045a537107cf0c5f2c680f7e52b51a14bee5691e1186c98a9e8af56",
+    "docs/review/2026-11-11-controlled-probe-interpretation-v1/pairs.csv": "7932a017dc8a27ae4d73c68ec5ab3c7353ed9feeb679c428af90ea2bd9228b1b",
+    "docs/review/2026-11-07-e1-user-results-v1/analysis-v2/summary.json": "91d5c5d777a81cc3f3fe12c287f0807ebf721148d5b74263dc2a09436defd036",
+    "docs/review/2026-11-09-probe-research-decision-v1/README.md": "2cee5a181849453f9224bdd581d5bf6f5969031a3e0f59abf9c1cb35b0917150",
+    "docs/records/2026-11-11-faitheval-four-step.md": "822b6a6ea9410fc9a396da3399d3659e2fedda394c5ae9961c75bc853df74c96",
+    "docs/review/2026-11-09-probe-measurement-scope-decision-v1/paired-summary.csv": "3497e4cb14f62677ad0bc1dd46e3a638bfab50bf9ffd817975e4e7d66ea674aa"
+  }
+}
