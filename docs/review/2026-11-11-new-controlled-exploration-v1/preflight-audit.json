@@ -1,0 +1,49 @@
+{
+  "checks": {
+    "idempotent_prepare": {
+      "exit_code": 0,
+      "expected_result": true,
+      "seconds": 1.636,
+      "stderr": "",
+      "stdout": "{\"status\": \"prepared_not_started\", \"new_inputs\": 36, \"bridge\": 1, \"forwards\": 37, \"GPU_accessed\": false}"
+    },
+    "independent_material_and_overlap": {
+      "exit_code": 0,
+      "expected_result": true,
+      "seconds": 1.898,
+      "stderr": "",
+      "stdout": "{\"author_review_sha256\": \"7ecffbb03f0695f36240b3fada34a37502ada6e5400e60c284bbd476c09571fb\", \"bases\": 6, \"document_exact_matches\": 0, \"input_slots\": 180, \"inputs\": 36, \"material_sha256\": \"4b4b2263d62d3bc014b7243441c463e68acffaf9963929b5233c0def8f282183\", \"max_tokens\": 239, \"min_tokens\": 214, \"new_unique_documents\": 60, \"new_unique_documents_under_16_tokens\": 55, \"overlap_scope\": \"old train200 val95 diagnostic100 transfer30 only; no sealed 380, old remainder or pretraining\", \"question_exact_matches\": 0, \"question_jaccard_ge_0_8\": 0, \"status\": \"passed_structural_informed_not_semantic_gold\", \"total_tokens\": 7996}"
+    },
+    "independent_preflight": {
+      "exit_code": 0,
+      "expected_result": true,
+      "seconds": 1.605,
+      "stderr": "",
+      "stdout": "{\"bridge\": 1, \"dependencies\": 57, \"gpu_accessed\": false, \"inputs\": 36, \"max_tokens\": 2945, \"model_weights_rehashed\": false, \"prompt_token_identities_checked\": 37, \"protocol_sha256\": \"7df8d7d05a758f86bb0c7de762cc7cf6bb26953f8f382c7fbc76f60a456ecec7\", \"status\": \"passed_cpu_preflight_prepared_not_started\", \"total_tokens\": 10941}"
+    },
+    "material_replay": {
+      "exit_code": 0,
+      "expected_result": true,
+      "seconds": 0.023,
+      "stderr": "",
+      "stdout": "{\"status\": \"authored_informed_reference_only\", \"bases\": 6, \"inputs\": 36, \"slots\": 180, \"materials_sha256\": \"4b4b2263d62d3bc014b7243441c463e68acffaf9963929b5233c0def8f282183\", \"review_sha256\": \"7ecffbb03f0695f36240b3fada34a37502ada6e5400e60c284bbd476c09571fb\"}"
+    },
+    "missing_operator_guard": {
+      "exit_code": 1,
+      "expected_result": true,
+      "seconds": 0.065,
+      "stderr": "Traceback (most recent call last):\n  File \"/large_disk/wf/研究代码/Knowing-Before-Answering-Decoding-Language-Models-for-Reliable-RAG/scripts/new_controlled_probe_20261111.py\", line 213, in <module>\n    if __name__=='__main__': main()\n                             ^^^^^^\n  File \"/large_disk/wf/研究代码/Knowing-Before-Answering-Decoding-Language-Models-for-Reliable-RAG/scripts/new_controlled_probe_20261111.py\", line 201, in main\n    require(args.stage!='collect' or args.operator=='user','collection operator must be user')\n  File \"/large_disk/wf/研究代码/Knowing-Before-Answering-Decoding-Language-Models-for-Reliable-RAG/scripts/controlled_evidence_materials.py\", line 18, in require\n    raise ValueError(message)\nValueError: collection operator must be user",
+      "stdout": ""
+    },
+    "synthetic_failure_tests": {
+      "exit_code": 0,
+      "expected_result": true,
+      "seconds": 0.08,
+      "stderr": "........\n----------------------------------------------------------------------\nRan 8 tests in 0.002s\n\nOK",
+      "stdout": ""
+    }
+  },
+  "gpu_accessed": false,
+  "heldout_380_accessed": false,
+  "new_forward_count": 0
+}

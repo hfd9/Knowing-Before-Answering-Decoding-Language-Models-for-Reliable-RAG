@@ -1,0 +1,181 @@
+{
+  "version": "1.0",
+  "task": "informed_controlled_probe_development",
+  "disclosure": "Six fictional author-created scenarios; informed exploratory references, not independent semantic gold. No world facts are asserted.",
+  "scenarios": [
+    {
+      "id": "novel01",
+      "relation": "one assigned location for one instrument on one day",
+      "entity": "instrument Tovan",
+      "field": "assigned room",
+      "condition": "Friday inspection",
+      "value": "north studio",
+      "alternate": "east studio",
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "support": [
+        "The Friday inspection schedule assigns instrument Tovan to the north studio.",
+        "For Friday's inspection, instrument Tovan is scheduled in the north studio."
+      ],
+      "missing": [
+        "The Friday inspection schedule lists instrument Tovan and its inspection lead.",
+        "Instrument Tovan appears on Friday's inspection schedule with its inspection lead."
+      ],
+      "conflict": [
+        "The Friday inspection schedule assigns instrument Tovan to the east studio.",
+        "For Friday's inspection, instrument Tovan is scheduled in the east studio."
+      ],
+      "neutral": "This schedule entry uses the standard archive format.",
+      "background": [
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "review": "The target is Tovan's Friday room. The lead and studio descriptions do not determine a room. North and east are distinct unique rooms for the same inspection, and neither copy has priority."
+    },
+    {
+      "id": "novel02",
+      "relation": "one mode assigned to one device for one session",
+      "entity": "device Ornel",
+      "field": "signal mode",
+      "condition": "session four",
+      "value": "pulse mode",
+      "alternate": "sweep mode",
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "support": [
+        "In session four, device Ornel is assigned pulse mode.",
+        "Device Ornel's assigned signal mode for session four is pulse mode."
+      ],
+      "missing": [
+        "The session four sheet lists device Ornel and its operator.",
+        "Device Ornel appears on the session four sheet alongside its operator."
+      ],
+      "conflict": [
+        "In session four, device Ornel is assigned sweep mode.",
+        "Device Ornel's assigned signal mode for session four is sweep mode."
+      ],
+      "neutral": "The session sheet is stored in the equipment binder.",
+      "background": [
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "review": "The target is Ornel's session-four mode. Operator and binder location give no mode. Pulse and sweep are different unique modes under the shared session rule; neither sheet is preferred."
+    },
+    {
+      "id": "novel03",
+      "relation": "one destination on a named route date",
+      "entity": "ferry Lomis",
+      "field": "destination",
+      "condition": "autumn route",
+      "value": "Reva quay",
+      "alternate": "Darin quay",
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "support": [
+        "The autumn route list gives ferry Lomis the destination Reva quay.",
+        "On the autumn route, ferry Lomis is bound for Reva quay."
+      ],
+      "missing": [
+        "The autumn route list includes ferry Lomis and its pilot.",
+        "Ferry Lomis and its pilot are listed for the autumn route."
+      ],
+      "conflict": [
+        "The autumn route list gives ferry Lomis the destination Darin quay.",
+        "On the autumn route, ferry Lomis is bound for Darin quay."
+      ],
+      "neutral": "The route list is printed on a single page.",
+      "background": [
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "review": "The question asks for Lomis's autumn destination. The pilot, print format and generic quay properties do not select one. Reva and Darin are distinct destinations for the same route; neither copy resolves them."
+    },
+    {
+      "id": "novel04",
+      "relation": "one named recipe finish",
+      "entity": "vessel design Neral",
+      "field": "glaze finish",
+      "condition": "spring catalog",
+      "value": "matte ivory",
+      "alternate": "gloss cobalt",
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "support": [
+        "The spring catalog specifies matte ivory as the glaze finish for vessel design Neral.",
+        "In the spring catalog, vessel design Neral's specified glaze finish is matte ivory."
+      ],
+      "missing": [
+        "The spring catalog lists vessel design Neral and the designer's name.",
+        "Vessel design Neral is in the spring catalog together with its designer's name."
+      ],
+      "conflict": [
+        "The spring catalog specifies gloss cobalt as the glaze finish for vessel design Neral.",
+        "In the spring catalog, vessel design Neral's specified glaze finish is gloss cobalt."
+      ],
+      "neutral": "The catalog record has a standard item number.",
+      "background": [
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "review": "The target is Neral's finish in the spring catalog, not its designer or number. Matte ivory and gloss cobalt are different finishes assigned to the same design under a single-finish rule with equal copies."
+    },
+    {
+      "id": "novel05",
+      "relation": "one starting time for one event",
+      "entity": "Kedrin rehearsal",
+      "field": "start time",
+      "condition": "Tuesday",
+      "value": "14:10",
+      "alternate": "15:20",
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "support": [
+        "The Tuesday schedule sets the Kedrin rehearsal start time at 14:10.",
+        "On Tuesday, the Kedrin rehearsal is scheduled to start at 14:10."
+      ],
+      "missing": [
+        "The Tuesday schedule lists the Kedrin rehearsal and its coordinator.",
+        "On Tuesday's schedule, the Kedrin rehearsal appears with its coordinator."
+      ],
+      "conflict": [
+        "The Tuesday schedule sets the Kedrin rehearsal start time at 15:20.",
+        "On Tuesday, the Kedrin rehearsal is scheduled to start at 15:20."
+      ],
+      "neutral": "The Tuesday schedule is filed in the front office.",
+      "background": [
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "review": "The requested field is the Tuesday start time. Coordinator and filing place supply no time. 14:10 and 15:20 are incompatible start times for that event, and the no-update rule removes temporal priority."
+    },
+    {
+      "id": "novel06",
+      "relation": "one storage class for one archive box",
+      "entity": "archive box Uren",
+      "field": "storage class",
+      "condition": "winter inventory",
+      "value": "dry storage",
+      "alternate": "cold storage",
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "support": [
+        "The winter inventory assigns archive box Uren to dry storage.",
+        "In the winter inventory, archive box Uren's assigned storage class is dry storage."
+      ],
+      "missing": [
+        "The winter inventory lists archive box Uren and its custodian.",
+        "Archive box Uren appears in the winter inventory alongside its custodian."
+      ],
+      "conflict": [
+        "The winter inventory assigns archive box Uren to cold storage.",
+        "In the winter inventory, archive box Uren's assigned storage class is cold storage."
+      ],
+      "neutral": "The winter inventory is kept as a paper register.",
+      "background": [
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "review": "The target is Uren's assigned winter storage class. Custodian and register placement do not determine it. Dry storage and cold storage are named as distinct single classes for the same box and inventory; neither copy has priority."
+    }
+  ]
+}
