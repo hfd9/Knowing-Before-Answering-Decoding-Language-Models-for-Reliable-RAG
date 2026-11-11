@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-09（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新来源与研究增量核查（2026-11-11）：[报告](docs/review/2026-11-11-source-seal-increment-v1/README.md)/[记录](docs/records/2026-11-11-source-seal-increment.md)。按实际用途细分许可，380受控正文访问未获既有规则放行、碰撞unknown；TextbookQA公开许可描述冲突。SciFact仓库分项许可可追溯但摘要独立权利、固定数据版本、三状态映射与排重均未闭合，仅作线索；候选问题可证伪但论文实质增量尚未成立。未下载数据、选题、评分或用GPU，原门禁预算封存不变。
+
 最新进展回顾（2026-11-11）：按用户要求回顾上午背景恢复、FaithEval主要聚合复算与冻结probe结论整理，见[记录](docs/records/2026-11-11-morning-summary.md)。只读既有记录与Git，研究停止点、门禁及预算不变。
 
 最新研究结论整理（2026-11-11）：[可交付综合](docs/review/2026-11-11-frozen-probe-synthesis-v1/README.md)/[记录](docs/records/2026-11-11-frozen-probe-synthesis.md)，分开迁移、绑定、等token、CLI选例与E1的分母及参照，保留方向性响应与三分类失配、非独立及混杂限制。FaithEval确认分支仍暂停；门禁、预算及380封存不变。本轮仅整理既有产物，无新评分、前向或GPU。

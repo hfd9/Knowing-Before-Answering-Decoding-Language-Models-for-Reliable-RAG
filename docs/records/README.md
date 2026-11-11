@@ -1,6 +1,8 @@
 # 实验与动作记录索引
 
 
+最新来源与增量核查：[记录](2026-11-11-source-seal-increment.md) / [报告](../review/2026-11-11-source-seal-increment-v1/README.md)。具体用途、封存规则、SciFact线索和可证伪问题；关键依赖仍未闭合。
+
 最新上午进展回顾：[记录](2026-11-11-morning-summary.md)。仅核对既有记录与Git。
 
 最新研究结论整理：[记录](2026-11-11-frozen-probe-synthesis.md) / [综合报告](../review/2026-11-11-frozen-probe-synthesis-v1/README.md)。整理既有证据与限制，不新增实验。
