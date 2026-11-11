@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-09（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新参照与资源核查（2026-11-11）：[报告](docs/review/2026-11-11-reference-budget-increment-v1/README.md)/[记录](docs/records/2026-11-11-reference-budget-increment.md)。仅查CLI版本/帮助与历史证据，未新启动评审；提出但未采纳90%联合成功下限，按二项假设计算39/80底题精度及审核工作量。新增ESB五级证据行为近邻；独立参照、实际资源、容差和研究增量仍未落实，暂停确认材料。无新样本、GPU或380正文访问；原门禁预算不变。
+
 最新原创材料可行性（2026-11-11）：[报告](docs/review/2026-11-11-original-material-feasibility-v1/README.md)/[记录](docs/records/2026-11-11-original-material-feasibility.md)。候选冻结probe问题可证伪，但原创材料局限于合成分布，评审资源、独立参照、用途容差、预算及实质增量未成立；暂停构造新确认材料，保留综合报告。未启动新评审或创建题目，不访问380/GPU；旧门禁、预算不变。
 
 最新SciFact可行性（2026-11-11）：[报告](docs/review/2026-11-11-scifact-feasibility-v1/README.md)/[记录](docs/records/2026-11-11-scifact-feasibility.md)。只读HEAD定位latest当前S3版本并确认指定版本HEAD可访问，未下载或计算SHA；原论文明确原SciFact同主张无同时支持/反驳摘要，单摘要标注不等于五文档三状态，摘要独立内容权利仍待核。决定不作为直接三状态确认集，保留主张验证资料；无新样本/评分/GPU，门禁预算及380封存不变。

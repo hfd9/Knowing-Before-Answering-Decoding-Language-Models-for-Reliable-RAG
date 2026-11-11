@@ -1416,3 +1416,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 149. 2026-11-11：原创受控材料可行性
 
 [报告](review/2026-11-11-original-material-feasibility-v1/README.md)/[记录](records/2026-11-11-original-material-feasibility.md)比较现有缓存、评审证据和近邻；独立参照、用途容差、预算及实质增量尚未成立，暂停新确认材料。无新评审、样本或GPU。
+
+## 150. 2026-11-11：参照、容差资源与近邻核查
+
+[报告](review/2026-11-11-reference-budget-increment-v1/README.md)/[记录](records/2026-11-11-reference-budget-increment.md)核查CLI能力和历史证据、计算候选90%标准下的精度与审核次数，并补查ESB行为近邻；独立参照及资源仍未落实，无新实验。

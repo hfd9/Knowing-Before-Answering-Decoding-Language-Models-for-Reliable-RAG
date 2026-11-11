@@ -1,6 +1,8 @@
 # 实验与动作记录索引
 
 
+最新参照、资源与近邻核查：[记录](2026-11-11-reference-budget-increment.md) / [报告](../review/2026-11-11-reference-budget-increment-v1/README.md)。提出未采纳的容差示意，独立参照和资源仍未落实。
+
 最新原创材料可行性：[记录](2026-11-11-original-material-feasibility.md) / [报告](../review/2026-11-11-original-material-feasibility-v1/README.md)。纸面判断后暂停新确认材料，保留已有探索成果。
 
 最新SciFact可行性：[记录](2026-11-11-scifact-feasibility.md) / [报告](../review/2026-11-11-scifact-feasibility-v1/README.md)。定位S3版本元数据，原三状态语义不匹配；未下载样本。
