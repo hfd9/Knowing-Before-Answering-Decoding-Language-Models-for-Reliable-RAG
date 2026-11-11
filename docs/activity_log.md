@@ -1396,3 +1396,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 144. 2026-11-11：FaithEval四步核查及去留
 
 [记录](records/2026-11-11-faitheval-four-step.md)：条款再核未闭合；真实数据主要聚合独立实现复算通过但共用读取和规范化；380碰撞unknown，按停止条件暂停确认分支，无新GPU或评分。
+
+## 145. 2026-11-11：冻结probe研究结论整理
+
+[综合报告](review/2026-11-11-frozen-probe-synthesis-v1/README.md)及[记录](records/2026-11-11-frozen-probe-synthesis.md)分列已有迁移、绑定、等token、CLI及E1的结果与限制，保留FaithEval停止点；无新实验或GPU。
