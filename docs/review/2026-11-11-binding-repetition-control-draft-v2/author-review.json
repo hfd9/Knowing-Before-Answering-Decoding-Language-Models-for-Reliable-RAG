@@ -1,0 +1,1507 @@
+{
+  "author_has_seen_previous_probe_results": true,
+  "formal_labels": null,
+  "items": [
+    {
+      "assigned_target_values": [
+        "north studio"
+      ],
+      "author_reason": "Both assignments bind the target to the same value; slot 3 defines the distinct entries.",
+      "evidence": [
+        {
+          "quote": "For Friday inspection, the assigned room for instrument Tovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding Friday inspection, the assigned room for instrument Tovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+          "slot": 2
+        },
+        {
+          "quote": "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another. For this register, instrument Tovan and instrument Rovan are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The inspection lead for instrument Tovan is Mara.",
+          "slot": 4
+        },
+        {
+          "quote": "The studios contain separate instrument workbenches.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel01_S_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "instrument Rovan",
+      "possible_values": [
+        "north studio",
+        "east studio"
+      ],
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Friday inspection",
+        "entity": "instrument Tovan",
+        "field": "assigned room"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "north studio"
+      ],
+      "author_reason": "Both assignments bind the target to the same value; slot 3 defines the distinct entries.",
+      "evidence": [
+        {
+          "quote": "Regarding Friday inspection, the assigned room for instrument Tovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+          "slot": 1
+        },
+        {
+          "quote": "For Friday inspection, the assigned room for instrument Tovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+          "slot": 2
+        },
+        {
+          "quote": "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another. For this register, instrument Tovan and instrument Rovan are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The inspection lead for instrument Tovan is Mara.",
+          "slot": 4
+        },
+        {
+          "quote": "The studios contain separate instrument workbenches.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel01_S_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "instrument Rovan",
+      "possible_values": [
+        "north studio",
+        "east studio"
+      ],
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Friday inspection",
+        "entity": "instrument Tovan",
+        "field": "assigned room"
+      }
+    },
+    {
+      "assigned_target_values": [],
+      "author_reason": "Both assignments bind the other entry; the target is mentioned but its value is not assigned. The two listed values are possibilities, not target assignments.",
+      "evidence": [
+        {
+          "quote": "For Friday inspection, the assigned room for instrument Rovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding Friday inspection, the assigned room for instrument Rovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+          "slot": 2
+        },
+        {
+          "quote": "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another. For this register, instrument Tovan and instrument Rovan are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The inspection lead for instrument Tovan is Mara.",
+          "slot": 4
+        },
+        {
+          "quote": "The studios contain separate instrument workbenches.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel01_I_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "instrument Rovan",
+      "possible_values": [
+        "north studio",
+        "east studio"
+      ],
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Friday inspection",
+        "entity": "instrument Tovan",
+        "field": "assigned room"
+      }
+    },
+    {
+      "assigned_target_values": [],
+      "author_reason": "Both assignments bind the other entry; the target is mentioned but its value is not assigned. The two listed values are possibilities, not target assignments.",
+      "evidence": [
+        {
+          "quote": "Regarding Friday inspection, the assigned room for instrument Rovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+          "slot": 1
+        },
+        {
+          "quote": "For Friday inspection, the assigned room for instrument Rovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+          "slot": 2
+        },
+        {
+          "quote": "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another. For this register, instrument Tovan and instrument Rovan are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The inspection lead for instrument Tovan is Mara.",
+          "slot": 4
+        },
+        {
+          "quote": "The studios contain separate instrument workbenches.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel01_I_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "instrument Rovan",
+      "possible_values": [
+        "north studio",
+        "east studio"
+      ],
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Friday inspection",
+        "entity": "instrument Tovan",
+        "field": "assigned room"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "north studio",
+        "east studio"
+      ],
+      "author_reason": "The two assignments bind the target under the same condition to different listed values; slot 3 gives a single-value rule and no priority.",
+      "evidence": [
+        {
+          "quote": "For Friday inspection, the assigned room for instrument Tovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding Friday inspection, the assigned room for instrument Tovan is east studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+          "slot": 2
+        },
+        {
+          "quote": "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another. For this register, instrument Tovan and instrument Rovan are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The inspection lead for instrument Tovan is Mara.",
+          "slot": 4
+        },
+        {
+          "quote": "The studios contain separate instrument workbenches.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel01_C_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "instrument Rovan",
+      "possible_values": [
+        "north studio",
+        "east studio"
+      ],
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Friday inspection",
+        "entity": "instrument Tovan",
+        "field": "assigned room"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "north studio",
+        "east studio"
+      ],
+      "author_reason": "The two assignments bind the target under the same condition to different listed values; slot 3 gives a single-value rule and no priority.",
+      "evidence": [
+        {
+          "quote": "Regarding Friday inspection, the assigned room for instrument Tovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+          "slot": 1
+        },
+        {
+          "quote": "For Friday inspection, the assigned room for instrument Tovan is east studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+          "slot": 2
+        },
+        {
+          "quote": "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another. For this register, instrument Tovan and instrument Rovan are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The inspection lead for instrument Tovan is Mara.",
+          "slot": 4
+        },
+        {
+          "quote": "The studios contain separate instrument workbenches.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel01_C_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "instrument Rovan",
+      "possible_values": [
+        "north studio",
+        "east studio"
+      ],
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Friday inspection",
+        "entity": "instrument Tovan",
+        "field": "assigned room"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "pulse mode"
+      ],
+      "author_reason": "Both assignments bind the target to the same value; slot 3 defines the distinct entries.",
+      "evidence": [
+        {
+          "quote": "For session four, the signal mode for device Ornel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding session four, the signal mode for device Ornel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+          "slot": 2
+        },
+        {
+          "quote": "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence. For this register, device Ornel and device Vernel are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "For session four, the operator of Ornel is Ilen.",
+          "slot": 4
+        },
+        {
+          "quote": "The equipment binder is kept at the service counter.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel02_S_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "device Vernel",
+      "possible_values": [
+        "pulse mode",
+        "sweep mode"
+      ],
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "session four",
+        "entity": "device Ornel",
+        "field": "signal mode"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "pulse mode"
+      ],
+      "author_reason": "Both assignments bind the target to the same value; slot 3 defines the distinct entries.",
+      "evidence": [
+        {
+          "quote": "Regarding session four, the signal mode for device Ornel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+          "slot": 1
+        },
+        {
+          "quote": "For session four, the signal mode for device Ornel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+          "slot": 2
+        },
+        {
+          "quote": "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence. For this register, device Ornel and device Vernel are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "For session four, the operator of Ornel is Ilen.",
+          "slot": 4
+        },
+        {
+          "quote": "The equipment binder is kept at the service counter.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel02_S_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "device Vernel",
+      "possible_values": [
+        "pulse mode",
+        "sweep mode"
+      ],
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "session four",
+        "entity": "device Ornel",
+        "field": "signal mode"
+      }
+    },
+    {
+      "assigned_target_values": [],
+      "author_reason": "Both assignments bind the other entry; the target is mentioned but its value is not assigned. The two listed values are possibilities, not target assignments.",
+      "evidence": [
+        {
+          "quote": "For session four, the signal mode for device Vernel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding session four, the signal mode for device Vernel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+          "slot": 2
+        },
+        {
+          "quote": "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence. For this register, device Ornel and device Vernel are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "For session four, the operator of Ornel is Ilen.",
+          "slot": 4
+        },
+        {
+          "quote": "The equipment binder is kept at the service counter.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel02_I_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "device Vernel",
+      "possible_values": [
+        "pulse mode",
+        "sweep mode"
+      ],
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "session four",
+        "entity": "device Ornel",
+        "field": "signal mode"
+      }
+    },
+    {
+      "assigned_target_values": [],
+      "author_reason": "Both assignments bind the other entry; the target is mentioned but its value is not assigned. The two listed values are possibilities, not target assignments.",
+      "evidence": [
+        {
+          "quote": "Regarding session four, the signal mode for device Vernel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+          "slot": 1
+        },
+        {
+          "quote": "For session four, the signal mode for device Vernel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+          "slot": 2
+        },
+        {
+          "quote": "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence. For this register, device Ornel and device Vernel are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "For session four, the operator of Ornel is Ilen.",
+          "slot": 4
+        },
+        {
+          "quote": "The equipment binder is kept at the service counter.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel02_I_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "device Vernel",
+      "possible_values": [
+        "pulse mode",
+        "sweep mode"
+      ],
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "session four",
+        "entity": "device Ornel",
+        "field": "signal mode"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "pulse mode",
+        "sweep mode"
+      ],
+      "author_reason": "The two assignments bind the target under the same condition to different listed values; slot 3 gives a single-value rule and no priority.",
+      "evidence": [
+        {
+          "quote": "For session four, the signal mode for device Ornel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding session four, the signal mode for device Ornel is sweep mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+          "slot": 2
+        },
+        {
+          "quote": "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence. For this register, device Ornel and device Vernel are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "For session four, the operator of Ornel is Ilen.",
+          "slot": 4
+        },
+        {
+          "quote": "The equipment binder is kept at the service counter.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel02_C_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "device Vernel",
+      "possible_values": [
+        "pulse mode",
+        "sweep mode"
+      ],
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "session four",
+        "entity": "device Ornel",
+        "field": "signal mode"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "pulse mode",
+        "sweep mode"
+      ],
+      "author_reason": "The two assignments bind the target under the same condition to different listed values; slot 3 gives a single-value rule and no priority.",
+      "evidence": [
+        {
+          "quote": "Regarding session four, the signal mode for device Ornel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+          "slot": 1
+        },
+        {
+          "quote": "For session four, the signal mode for device Ornel is sweep mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+          "slot": 2
+        },
+        {
+          "quote": "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence. For this register, device Ornel and device Vernel are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "For session four, the operator of Ornel is Ilen.",
+          "slot": 4
+        },
+        {
+          "quote": "The equipment binder is kept at the service counter.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel02_C_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "device Vernel",
+      "possible_values": [
+        "pulse mode",
+        "sweep mode"
+      ],
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "session four",
+        "entity": "device Ornel",
+        "field": "signal mode"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "Reva quay"
+      ],
+      "author_reason": "Both assignments bind the target to the same value; slot 3 defines the distinct entries.",
+      "evidence": [
+        {
+          "quote": "For autumn route, the destination for ferry Lomis is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding autumn route, the destination for ferry Lomis is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+          "slot": 2
+        },
+        {
+          "quote": "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative. For this register, ferry Lomis and ferry Lomir are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The pilot of ferry Lomis on the autumn route is Sen.",
+          "slot": 4
+        },
+        {
+          "quote": "Both quays have a covered waiting area.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel03_S_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "ferry Lomir",
+      "possible_values": [
+        "Reva quay",
+        "Darin quay"
+      ],
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "autumn route",
+        "entity": "ferry Lomis",
+        "field": "destination"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "Reva quay"
+      ],
+      "author_reason": "Both assignments bind the target to the same value; slot 3 defines the distinct entries.",
+      "evidence": [
+        {
+          "quote": "Regarding autumn route, the destination for ferry Lomis is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+          "slot": 1
+        },
+        {
+          "quote": "For autumn route, the destination for ferry Lomis is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+          "slot": 2
+        },
+        {
+          "quote": "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative. For this register, ferry Lomis and ferry Lomir are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The pilot of ferry Lomis on the autumn route is Sen.",
+          "slot": 4
+        },
+        {
+          "quote": "Both quays have a covered waiting area.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel03_S_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "ferry Lomir",
+      "possible_values": [
+        "Reva quay",
+        "Darin quay"
+      ],
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "autumn route",
+        "entity": "ferry Lomis",
+        "field": "destination"
+      }
+    },
+    {
+      "assigned_target_values": [],
+      "author_reason": "Both assignments bind the other entry; the target is mentioned but its value is not assigned. The two listed values are possibilities, not target assignments.",
+      "evidence": [
+        {
+          "quote": "For autumn route, the destination for ferry Lomir is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding autumn route, the destination for ferry Lomir is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+          "slot": 2
+        },
+        {
+          "quote": "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative. For this register, ferry Lomis and ferry Lomir are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The pilot of ferry Lomis on the autumn route is Sen.",
+          "slot": 4
+        },
+        {
+          "quote": "Both quays have a covered waiting area.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel03_I_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "ferry Lomir",
+      "possible_values": [
+        "Reva quay",
+        "Darin quay"
+      ],
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "autumn route",
+        "entity": "ferry Lomis",
+        "field": "destination"
+      }
+    },
+    {
+      "assigned_target_values": [],
+      "author_reason": "Both assignments bind the other entry; the target is mentioned but its value is not assigned. The two listed values are possibilities, not target assignments.",
+      "evidence": [
+        {
+          "quote": "Regarding autumn route, the destination for ferry Lomir is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+          "slot": 1
+        },
+        {
+          "quote": "For autumn route, the destination for ferry Lomir is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+          "slot": 2
+        },
+        {
+          "quote": "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative. For this register, ferry Lomis and ferry Lomir are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The pilot of ferry Lomis on the autumn route is Sen.",
+          "slot": 4
+        },
+        {
+          "quote": "Both quays have a covered waiting area.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel03_I_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "ferry Lomir",
+      "possible_values": [
+        "Reva quay",
+        "Darin quay"
+      ],
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "autumn route",
+        "entity": "ferry Lomis",
+        "field": "destination"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "Reva quay",
+        "Darin quay"
+      ],
+      "author_reason": "The two assignments bind the target under the same condition to different listed values; slot 3 gives a single-value rule and no priority.",
+      "evidence": [
+        {
+          "quote": "For autumn route, the destination for ferry Lomis is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding autumn route, the destination for ferry Lomis is Darin quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+          "slot": 2
+        },
+        {
+          "quote": "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative. For this register, ferry Lomis and ferry Lomir are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The pilot of ferry Lomis on the autumn route is Sen.",
+          "slot": 4
+        },
+        {
+          "quote": "Both quays have a covered waiting area.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel03_C_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "ferry Lomir",
+      "possible_values": [
+        "Reva quay",
+        "Darin quay"
+      ],
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "autumn route",
+        "entity": "ferry Lomis",
+        "field": "destination"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "Reva quay",
+        "Darin quay"
+      ],
+      "author_reason": "The two assignments bind the target under the same condition to different listed values; slot 3 gives a single-value rule and no priority.",
+      "evidence": [
+        {
+          "quote": "Regarding autumn route, the destination for ferry Lomis is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+          "slot": 1
+        },
+        {
+          "quote": "For autumn route, the destination for ferry Lomis is Darin quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+          "slot": 2
+        },
+        {
+          "quote": "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative. For this register, ferry Lomis and ferry Lomir are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The pilot of ferry Lomis on the autumn route is Sen.",
+          "slot": 4
+        },
+        {
+          "quote": "Both quays have a covered waiting area.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel03_C_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "ferry Lomir",
+      "possible_values": [
+        "Reva quay",
+        "Darin quay"
+      ],
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "autumn route",
+        "entity": "ferry Lomis",
+        "field": "destination"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "matte ivory"
+      ],
+      "author_reason": "Both assignments bind the target to the same value; slot 3 defines the distinct entries.",
+      "evidence": [
+        {
+          "quote": "For spring catalog, the glaze finish for vessel design Neral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding spring catalog, the glaze finish for vessel design Neral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+          "slot": 2
+        },
+        {
+          "quote": "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status. For this register, vessel design Neral and vessel design Meral are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The designer of vessel design Neral is Vesa.",
+          "slot": 4
+        },
+        {
+          "quote": "Each vessel design has a catalog item number.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel04_S_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "vessel design Meral",
+      "possible_values": [
+        "matte ivory",
+        "gloss ivory"
+      ],
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "spring catalog",
+        "entity": "vessel design Neral",
+        "field": "glaze finish"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "matte ivory"
+      ],
+      "author_reason": "Both assignments bind the target to the same value; slot 3 defines the distinct entries.",
+      "evidence": [
+        {
+          "quote": "Regarding spring catalog, the glaze finish for vessel design Neral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+          "slot": 1
+        },
+        {
+          "quote": "For spring catalog, the glaze finish for vessel design Neral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+          "slot": 2
+        },
+        {
+          "quote": "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status. For this register, vessel design Neral and vessel design Meral are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The designer of vessel design Neral is Vesa.",
+          "slot": 4
+        },
+        {
+          "quote": "Each vessel design has a catalog item number.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel04_S_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "vessel design Meral",
+      "possible_values": [
+        "matte ivory",
+        "gloss ivory"
+      ],
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "spring catalog",
+        "entity": "vessel design Neral",
+        "field": "glaze finish"
+      }
+    },
+    {
+      "assigned_target_values": [],
+      "author_reason": "Both assignments bind the other entry; the target is mentioned but its value is not assigned. The two listed values are possibilities, not target assignments.",
+      "evidence": [
+        {
+          "quote": "For spring catalog, the glaze finish for vessel design Meral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding spring catalog, the glaze finish for vessel design Meral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+          "slot": 2
+        },
+        {
+          "quote": "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status. For this register, vessel design Neral and vessel design Meral are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The designer of vessel design Neral is Vesa.",
+          "slot": 4
+        },
+        {
+          "quote": "Each vessel design has a catalog item number.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel04_I_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "vessel design Meral",
+      "possible_values": [
+        "matte ivory",
+        "gloss ivory"
+      ],
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "spring catalog",
+        "entity": "vessel design Neral",
+        "field": "glaze finish"
+      }
+    },
+    {
+      "assigned_target_values": [],
+      "author_reason": "Both assignments bind the other entry; the target is mentioned but its value is not assigned. The two listed values are possibilities, not target assignments.",
+      "evidence": [
+        {
+          "quote": "Regarding spring catalog, the glaze finish for vessel design Meral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+          "slot": 1
+        },
+        {
+          "quote": "For spring catalog, the glaze finish for vessel design Meral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+          "slot": 2
+        },
+        {
+          "quote": "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status. For this register, vessel design Neral and vessel design Meral are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The designer of vessel design Neral is Vesa.",
+          "slot": 4
+        },
+        {
+          "quote": "Each vessel design has a catalog item number.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel04_I_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "vessel design Meral",
+      "possible_values": [
+        "matte ivory",
+        "gloss ivory"
+      ],
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "spring catalog",
+        "entity": "vessel design Neral",
+        "field": "glaze finish"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "matte ivory",
+        "gloss ivory"
+      ],
+      "author_reason": "The two assignments bind the target under the same condition to different listed values; slot 3 gives a single-value rule and no priority.",
+      "evidence": [
+        {
+          "quote": "For spring catalog, the glaze finish for vessel design Neral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding spring catalog, the glaze finish for vessel design Neral is gloss ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+          "slot": 2
+        },
+        {
+          "quote": "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status. For this register, vessel design Neral and vessel design Meral are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The designer of vessel design Neral is Vesa.",
+          "slot": 4
+        },
+        {
+          "quote": "Each vessel design has a catalog item number.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel04_C_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "vessel design Meral",
+      "possible_values": [
+        "matte ivory",
+        "gloss ivory"
+      ],
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "spring catalog",
+        "entity": "vessel design Neral",
+        "field": "glaze finish"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "matte ivory",
+        "gloss ivory"
+      ],
+      "author_reason": "The two assignments bind the target under the same condition to different listed values; slot 3 gives a single-value rule and no priority.",
+      "evidence": [
+        {
+          "quote": "Regarding spring catalog, the glaze finish for vessel design Neral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+          "slot": 1
+        },
+        {
+          "quote": "For spring catalog, the glaze finish for vessel design Neral is gloss ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+          "slot": 2
+        },
+        {
+          "quote": "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status. For this register, vessel design Neral and vessel design Meral are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The designer of vessel design Neral is Vesa.",
+          "slot": 4
+        },
+        {
+          "quote": "Each vessel design has a catalog item number.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel04_C_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "vessel design Meral",
+      "possible_values": [
+        "matte ivory",
+        "gloss ivory"
+      ],
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "spring catalog",
+        "entity": "vessel design Neral",
+        "field": "glaze finish"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "14:10"
+      ],
+      "author_reason": "Both assignments bind the target to the same value; slot 3 defines the distinct entries.",
+      "evidence": [
+        {
+          "quote": "For Tuesday, the start time for Kedrin rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding Tuesday, the start time for Kedrin rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+          "slot": 2
+        },
+        {
+          "quote": "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another. For this register, Kedrin rehearsal and Kedren rehearsal are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The coordinator of the Kedrin rehearsal is Nevi.",
+          "slot": 4
+        },
+        {
+          "quote": "The front office stores the weekly schedule.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel05_S_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "Kedren rehearsal",
+      "possible_values": [
+        "14:10",
+        "15:20"
+      ],
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Tuesday",
+        "entity": "Kedrin rehearsal",
+        "field": "start time"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "14:10"
+      ],
+      "author_reason": "Both assignments bind the target to the same value; slot 3 defines the distinct entries.",
+      "evidence": [
+        {
+          "quote": "Regarding Tuesday, the start time for Kedrin rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+          "slot": 1
+        },
+        {
+          "quote": "For Tuesday, the start time for Kedrin rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+          "slot": 2
+        },
+        {
+          "quote": "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another. For this register, Kedrin rehearsal and Kedren rehearsal are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The coordinator of the Kedrin rehearsal is Nevi.",
+          "slot": 4
+        },
+        {
+          "quote": "The front office stores the weekly schedule.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel05_S_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "Kedren rehearsal",
+      "possible_values": [
+        "14:10",
+        "15:20"
+      ],
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Tuesday",
+        "entity": "Kedrin rehearsal",
+        "field": "start time"
+      }
+    },
+    {
+      "assigned_target_values": [],
+      "author_reason": "Both assignments bind the other entry; the target is mentioned but its value is not assigned. The two listed values are possibilities, not target assignments.",
+      "evidence": [
+        {
+          "quote": "For Tuesday, the start time for Kedren rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding Tuesday, the start time for Kedren rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+          "slot": 2
+        },
+        {
+          "quote": "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another. For this register, Kedrin rehearsal and Kedren rehearsal are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The coordinator of the Kedrin rehearsal is Nevi.",
+          "slot": 4
+        },
+        {
+          "quote": "The front office stores the weekly schedule.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel05_I_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "Kedren rehearsal",
+      "possible_values": [
+        "14:10",
+        "15:20"
+      ],
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Tuesday",
+        "entity": "Kedrin rehearsal",
+        "field": "start time"
+      }
+    },
+    {
+      "assigned_target_values": [],
+      "author_reason": "Both assignments bind the other entry; the target is mentioned but its value is not assigned. The two listed values are possibilities, not target assignments.",
+      "evidence": [
+        {
+          "quote": "Regarding Tuesday, the start time for Kedren rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+          "slot": 1
+        },
+        {
+          "quote": "For Tuesday, the start time for Kedren rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+          "slot": 2
+        },
+        {
+          "quote": "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another. For this register, Kedrin rehearsal and Kedren rehearsal are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The coordinator of the Kedrin rehearsal is Nevi.",
+          "slot": 4
+        },
+        {
+          "quote": "The front office stores the weekly schedule.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel05_I_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "Kedren rehearsal",
+      "possible_values": [
+        "14:10",
+        "15:20"
+      ],
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Tuesday",
+        "entity": "Kedrin rehearsal",
+        "field": "start time"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "14:10",
+        "15:20"
+      ],
+      "author_reason": "The two assignments bind the target under the same condition to different listed values; slot 3 gives a single-value rule and no priority.",
+      "evidence": [
+        {
+          "quote": "For Tuesday, the start time for Kedrin rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding Tuesday, the start time for Kedrin rehearsal is 15:20. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+          "slot": 2
+        },
+        {
+          "quote": "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another. For this register, Kedrin rehearsal and Kedren rehearsal are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The coordinator of the Kedrin rehearsal is Nevi.",
+          "slot": 4
+        },
+        {
+          "quote": "The front office stores the weekly schedule.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel05_C_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "Kedren rehearsal",
+      "possible_values": [
+        "14:10",
+        "15:20"
+      ],
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Tuesday",
+        "entity": "Kedrin rehearsal",
+        "field": "start time"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "14:10",
+        "15:20"
+      ],
+      "author_reason": "The two assignments bind the target under the same condition to different listed values; slot 3 gives a single-value rule and no priority.",
+      "evidence": [
+        {
+          "quote": "Regarding Tuesday, the start time for Kedrin rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+          "slot": 1
+        },
+        {
+          "quote": "For Tuesday, the start time for Kedrin rehearsal is 15:20. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+          "slot": 2
+        },
+        {
+          "quote": "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another. For this register, Kedrin rehearsal and Kedren rehearsal are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The coordinator of the Kedrin rehearsal is Nevi.",
+          "slot": 4
+        },
+        {
+          "quote": "The front office stores the weekly schedule.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel05_C_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "Kedren rehearsal",
+      "possible_values": [
+        "14:10",
+        "15:20"
+      ],
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Tuesday",
+        "entity": "Kedrin rehearsal",
+        "field": "start time"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "dry storage"
+      ],
+      "author_reason": "Both assignments bind the target to the same value; slot 3 defines the distinct entries.",
+      "evidence": [
+        {
+          "quote": "For winter inventory, the storage class for archive box Uren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding winter inventory, the storage class for archive box Uren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+          "slot": 2
+        },
+        {
+          "quote": "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority. For this register, archive box Uren and archive box Vuren are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The custodian of archive box Uren is Osin.",
+          "slot": 4
+        },
+        {
+          "quote": "The paper register is kept at the archive desk.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel06_S_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "archive box Vuren",
+      "possible_values": [
+        "dry storage",
+        "cold storage"
+      ],
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "winter inventory",
+        "entity": "archive box Uren",
+        "field": "storage class"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "dry storage"
+      ],
+      "author_reason": "Both assignments bind the target to the same value; slot 3 defines the distinct entries.",
+      "evidence": [
+        {
+          "quote": "Regarding winter inventory, the storage class for archive box Uren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+          "slot": 1
+        },
+        {
+          "quote": "For winter inventory, the storage class for archive box Uren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+          "slot": 2
+        },
+        {
+          "quote": "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority. For this register, archive box Uren and archive box Vuren are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The custodian of archive box Uren is Osin.",
+          "slot": 4
+        },
+        {
+          "quote": "The paper register is kept at the archive desk.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel06_S_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "archive box Vuren",
+      "possible_values": [
+        "dry storage",
+        "cold storage"
+      ],
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "winter inventory",
+        "entity": "archive box Uren",
+        "field": "storage class"
+      }
+    },
+    {
+      "assigned_target_values": [],
+      "author_reason": "Both assignments bind the other entry; the target is mentioned but its value is not assigned. The two listed values are possibilities, not target assignments.",
+      "evidence": [
+        {
+          "quote": "For winter inventory, the storage class for archive box Vuren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding winter inventory, the storage class for archive box Vuren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+          "slot": 2
+        },
+        {
+          "quote": "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority. For this register, archive box Uren and archive box Vuren are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The custodian of archive box Uren is Osin.",
+          "slot": 4
+        },
+        {
+          "quote": "The paper register is kept at the archive desk.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel06_I_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "archive box Vuren",
+      "possible_values": [
+        "dry storage",
+        "cold storage"
+      ],
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "winter inventory",
+        "entity": "archive box Uren",
+        "field": "storage class"
+      }
+    },
+    {
+      "assigned_target_values": [],
+      "author_reason": "Both assignments bind the other entry; the target is mentioned but its value is not assigned. The two listed values are possibilities, not target assignments.",
+      "evidence": [
+        {
+          "quote": "Regarding winter inventory, the storage class for archive box Vuren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+          "slot": 1
+        },
+        {
+          "quote": "For winter inventory, the storage class for archive box Vuren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+          "slot": 2
+        },
+        {
+          "quote": "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority. For this register, archive box Uren and archive box Vuren are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The custodian of archive box Uren is Osin.",
+          "slot": 4
+        },
+        {
+          "quote": "The paper register is kept at the archive desk.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel06_I_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "archive box Vuren",
+      "possible_values": [
+        "dry storage",
+        "cold storage"
+      ],
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "winter inventory",
+        "entity": "archive box Uren",
+        "field": "storage class"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "dry storage",
+        "cold storage"
+      ],
+      "author_reason": "The two assignments bind the target under the same condition to different listed values; slot 3 gives a single-value rule and no priority.",
+      "evidence": [
+        {
+          "quote": "For winter inventory, the storage class for archive box Uren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding winter inventory, the storage class for archive box Uren is cold storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+          "slot": 2
+        },
+        {
+          "quote": "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority. For this register, archive box Uren and archive box Vuren are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The custodian of archive box Uren is Osin.",
+          "slot": 4
+        },
+        {
+          "quote": "The paper register is kept at the archive desk.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel06_C_A",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "archive box Vuren",
+      "possible_values": [
+        "dry storage",
+        "cold storage"
+      ],
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "winter inventory",
+        "entity": "archive box Uren",
+        "field": "storage class"
+      }
+    },
+    {
+      "assigned_target_values": [
+        "dry storage",
+        "cold storage"
+      ],
+      "author_reason": "The two assignments bind the target under the same condition to different listed values; slot 3 gives a single-value rule and no priority.",
+      "evidence": [
+        {
+          "quote": "Regarding winter inventory, the storage class for archive box Uren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+          "slot": 1
+        },
+        {
+          "quote": "For winter inventory, the storage class for archive box Uren is cold storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+          "slot": 2
+        },
+        {
+          "quote": "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority. For this register, archive box Uren and archive box Vuren are distinct entries. The two listed options are distinct values.",
+          "slot": 3
+        },
+        {
+          "quote": "The custodian of archive box Uren is Osin.",
+          "slot": 4
+        },
+        {
+          "quote": "The paper register is kept at the archive desk.",
+          "slot": 5
+        }
+      ],
+      "id": "bind_novel06_C_B",
+      "limits": "Possible value mentions are not assignments to the target; literal checks do not prove absence of indirect inference.",
+      "other_entity": "archive box Vuren",
+      "possible_values": [
+        "dry storage",
+        "cold storage"
+      ],
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "winter inventory",
+        "entity": "archive box Uren",
+        "field": "storage class"
+      }
+    }
+  ],
+  "status": "informed_author_draft_not_independent_gold"
+}

@@ -1,0 +1,42 @@
+{
+  "alternate_value_overrides": {
+    "novel04": "gloss ivory"
+  },
+  "author_review_sha256": "a84881e2f00285e1ae45c91e2af33322852b668e41e27f59ad9e5d5601a0d7c8",
+  "comparisons": {
+    "S-C": {
+      "equal_token": 12,
+      "identical_jaccard": 12,
+      "max_abs_jaccard_delta": 0.0,
+      "pairs": 12
+    },
+    "S-I": {
+      "equal_token": 12,
+      "identical_jaccard": 0,
+      "max_abs_jaccard_delta": 0.0026315789473684292,
+      "pairs": 12
+    }
+  },
+  "existing_exposed_bases": 6,
+  "independent_approvals": 0,
+  "materials_sha256": "55338648c08608a8d44f027fe8509827d055b9e98000b8865e964b44a91c2655",
+  "new_fits": 0,
+  "new_forwards": 0,
+  "new_inputs": 36,
+  "pair_metrics_sha256": "625d3c4f7fb52692f2f804e3fbedc56548860114cf2be911ebf41cd7e365c93a",
+  "selected_other_entities": {
+    "novel01": "instrument Rovan",
+    "novel02": "device Vernel",
+    "novel03": "ferry Lomir",
+    "novel04": "vessel design Meral",
+    "novel05": "Kedren rehearsal",
+    "novel06": "archive box Vuren"
+  },
+  "selection_disclosure": "After seeing previous results, candidate names for novel03 and novel05 and candidate alternate values for novel04 were tested against tokenizer lengths; no new model or probe outputs were observed.",
+  "source_sha256": {
+    "docs/review/2026-11-11-new-controlled-exploration-v1/materials.json": "4b4b2263d62d3bc014b7243441c463e68acffaf9963929b5233c0def8f282183",
+    "prompts/new_controlled_probe_20261111_v1.json": "cb5a55b56b9f9a6d2f6975f6152ef15228d4412c727d010be58f157008ff578f"
+  },
+  "status": "cpu_draft_only_no_gpu_release",
+  "tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+}
