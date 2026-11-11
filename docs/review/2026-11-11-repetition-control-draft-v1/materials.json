@@ -1,0 +1,761 @@
+{
+  "rows": [
+    {
+      "docs": [
+        "The Friday inspection schedule assigns instrument Tovan to the north studio.",
+        "For Friday's inspection, instrument Tovan is scheduled in the north studio.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "document_level": "S",
+      "id": "rep_novel01_S_A",
+      "identity": {
+        "input_token_ids_sha256": "91364dada58ea3e34e35b58174e4088eb044a55612b00715aec3668e00edae66",
+        "input_tokens": 221,
+        "prompt_sha256": "ec46164b0bb8ec909167365a8f548d9611f087f66b9cf07aa1f3c3cfa1d3be0b"
+      },
+      "original_id": "novel01",
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.4666666666666667,
+      "source_original_id": "novel01_S_A"
+    },
+    {
+      "docs": [
+        "For Friday's inspection, instrument Tovan is scheduled in the north studio.",
+        "The Friday inspection schedule assigns instrument Tovan to the north studio.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "document_level": "S",
+      "id": "rep_novel01_S_B",
+      "identity": {
+        "input_token_ids_sha256": "4f12225939d89c959a22d7fcfcff664a779858213d878c273c8dc0a86b75f752",
+        "input_tokens": 221,
+        "prompt_sha256": "80350e214174822bd3ca22a8d8e038bba9e01283bf5b3923385015a81287fdab"
+      },
+      "original_id": "novel01",
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.4666666666666667,
+      "source_original_id": "novel01_S_B"
+    },
+    {
+      "docs": [
+        "The Friday inspection schedule lists instrument Tovan and its inspection lead.",
+        "Instrument Tovan appears on Friday's inspection schedule with its inspection lead.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "document_level": "I",
+      "id": "rep_novel01_I_A",
+      "identity": {
+        "input_token_ids_sha256": "7f76d9d0cf90d3f9cbb4dcc7e4116708bc03aed1eeb1cb0cd8dfbf5580c73585",
+        "input_tokens": 220,
+        "prompt_sha256": "d8d08ee76ae8b18db0d63dbd3dbda1798a5a9b71c7187887a13b7cbb1038f4b1"
+      },
+      "original_id": "novel01",
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.5,
+      "source_original_id": "novel01_I_A"
+    },
+    {
+      "docs": [
+        "Instrument Tovan appears on Friday's inspection schedule with its inspection lead.",
+        "The Friday inspection schedule lists instrument Tovan and its inspection lead.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "document_level": "I",
+      "id": "rep_novel01_I_B",
+      "identity": {
+        "input_token_ids_sha256": "c5ba0e2438a3d9d28d4792f14051a9d5cc3c689f439a946fdfb07441d4f54828",
+        "input_tokens": 220,
+        "prompt_sha256": "348eea0a10f56c0e4c5a41c57ac43417d502ff298fa00bdd46f51b6ef498971b"
+      },
+      "original_id": "novel01",
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.5,
+      "source_original_id": "novel01_I_B"
+    },
+    {
+      "docs": [
+        "The Friday inspection schedule assigns instrument Tovan to the north studio.",
+        "For Friday's inspection, instrument Tovan is scheduled in the east studio.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "document_level": "C",
+      "id": "rep_novel01_C_A",
+      "identity": {
+        "input_token_ids_sha256": "8abec6630e198c644c2650a86df5d687c679a8447a3945d46797716e7b50c275",
+        "input_tokens": 221,
+        "prompt_sha256": "6488683c340bf4c02da9dd62bf4d95299379bf7f8a87b2b5aa8fcd38fa84747c"
+      },
+      "original_id": "novel01",
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.375,
+      "source_original_id": "novel01_C_A"
+    },
+    {
+      "docs": [
+        "For Friday's inspection, instrument Tovan is scheduled in the north studio.",
+        "The Friday inspection schedule assigns instrument Tovan to the east studio.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "document_level": "C",
+      "id": "rep_novel01_C_B",
+      "identity": {
+        "input_token_ids_sha256": "8e5bf168cb709cdc3764e763b5faafbf99ae27be51dba4fe09212b0be63fffac",
+        "input_tokens": 221,
+        "prompt_sha256": "1aaff7cb09717c4c16322a316bef61411efb6290078e7e304a20716aea615cfe"
+      },
+      "original_id": "novel01",
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.375,
+      "source_original_id": "novel01_C_B"
+    },
+    {
+      "docs": [
+        "In session four, device Ornel is assigned pulse mode.",
+        "Device Ornel's assigned signal mode for session four is pulse mode.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "document_level": "S",
+      "id": "rep_novel02_S_A",
+      "identity": {
+        "input_token_ids_sha256": "e86ca77674c171b47b39ed501b792db965c1d97f67e640a9e405e736513cda2d",
+        "input_tokens": 218,
+        "prompt_sha256": "dd79a8e6c8664d50f96aa57e86fd46faf1392f40557bba8e71e32cb61a1facdf"
+      },
+      "original_id": "novel02",
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.6666666666666666,
+      "source_original_id": "novel02_S_A"
+    },
+    {
+      "docs": [
+        "Device Ornel's assigned signal mode for session four is pulse mode.",
+        "In session four, device Ornel is assigned pulse mode.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "document_level": "S",
+      "id": "rep_novel02_S_B",
+      "identity": {
+        "input_token_ids_sha256": "e2bb09bbfd5637cfb1aa6be28a37addf5e7b45822f88c34e935efb55fbb2cc3b",
+        "input_tokens": 218,
+        "prompt_sha256": "b0b5f8a3a9e8fc161b5cf985ae39ad7595ec302f60413bd16b0cd891d010344b"
+      },
+      "original_id": "novel02",
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.6666666666666666,
+      "source_original_id": "novel02_S_B"
+    },
+    {
+      "docs": [
+        "The session four sheet lists device Ornel and its operator.",
+        "Device Ornel appears on the session four sheet alongside its operator.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "document_level": "I",
+      "id": "rep_novel02_I_A",
+      "identity": {
+        "input_token_ids_sha256": "248d40c5c385deccb12de4bae8179fdb997a63b288672ee0ad2cc163a89d13f7",
+        "input_tokens": 217,
+        "prompt_sha256": "4893e6b9ba9ccbd8e6633bc831f897616eb53cebad3ffa8710f9b063b7760d42"
+      },
+      "original_id": "novel02",
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.6153846153846154,
+      "source_original_id": "novel02_I_A"
+    },
+    {
+      "docs": [
+        "Device Ornel appears on the session four sheet alongside its operator.",
+        "The session four sheet lists device Ornel and its operator.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "document_level": "I",
+      "id": "rep_novel02_I_B",
+      "identity": {
+        "input_token_ids_sha256": "5b53194561f5f42ba2876cd69026baae807366d06a30c6f3690e04508829f7c8",
+        "input_tokens": 217,
+        "prompt_sha256": "858f507b1fd4388747398c93479f7e0796af3df62a60bd1c92ef2e2d7e356ad4"
+      },
+      "original_id": "novel02",
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.6153846153846154,
+      "source_original_id": "novel02_I_B"
+    },
+    {
+      "docs": [
+        "In session four, device Ornel is assigned pulse mode.",
+        "Device Ornel's assigned signal mode for session four is sweep mode.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "document_level": "C",
+      "id": "rep_novel02_C_A",
+      "identity": {
+        "input_token_ids_sha256": "1bc3d37a5622a8ac572d4bf52709070487d24a45001302d62ac8d452929640b5",
+        "input_tokens": 218,
+        "prompt_sha256": "f242c35ea37835a8a9b0ca727010f942fb29a95a8997c814772a8405f8e1f032"
+      },
+      "original_id": "novel02",
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.5384615384615384,
+      "source_original_id": "novel02_C_A"
+    },
+    {
+      "docs": [
+        "Device Ornel's assigned signal mode for session four is pulse mode.",
+        "In session four, device Ornel is assigned sweep mode.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "document_level": "C",
+      "id": "rep_novel02_C_B",
+      "identity": {
+        "input_token_ids_sha256": "412b4756d082ef66e5d1d7024eff793f7b8fc13b2add9066c676687033f85f55",
+        "input_tokens": 218,
+        "prompt_sha256": "c3329004b1b2d4d6413a591ba3b70622231ec761f3d150dbcae574eb3496c529"
+      },
+      "original_id": "novel02",
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.5384615384615384,
+      "source_original_id": "novel02_C_B"
+    },
+    {
+      "docs": [
+        "The autumn route list gives ferry Lomis the destination Reva quay.",
+        "On the autumn route, ferry Lomis is bound for Reva quay.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "document_level": "S",
+      "id": "rep_novel03_S_A",
+      "identity": {
+        "input_token_ids_sha256": "b26bb9fdf9fe59d9649119cd1c0ef2a7d42d5d2662c2d15a95921a42051b7588",
+        "input_tokens": 227,
+        "prompt_sha256": "7b1e163b095829e36f45a28deced38d71958817cc7aa369530cc382dece52f0b"
+      },
+      "original_id": "novel03",
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.5,
+      "source_original_id": "novel03_S_A"
+    },
+    {
+      "docs": [
+        "On the autumn route, ferry Lomis is bound for Reva quay.",
+        "The autumn route list gives ferry Lomis the destination Reva quay.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "document_level": "S",
+      "id": "rep_novel03_S_B",
+      "identity": {
+        "input_token_ids_sha256": "1de00c0b7131637279d4cb218290998dace0e12fd658a910bf6358993c0a9b00",
+        "input_tokens": 227,
+        "prompt_sha256": "87e1bdd8294652e3def222b84a6ec78ec0c6d2e769d1f668be707edd4fc97bcb"
+      },
+      "original_id": "novel03",
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.5,
+      "source_original_id": "novel03_S_B"
+    },
+    {
+      "docs": [
+        "The autumn route list includes ferry Lomis and its pilot.",
+        "Ferry Lomis and its pilot are listed for the autumn route.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "document_level": "I",
+      "id": "rep_novel03_I_A",
+      "identity": {
+        "input_token_ids_sha256": "a4eafa4684cff236804661dd390178ff0cb96722a13a396e347c5ccf781a9696",
+        "input_tokens": 222,
+        "prompt_sha256": "d27139c7c9a80e7cc9de0716e53d154fb548b148ddf12ca4c6b976322e4a3688"
+      },
+      "original_id": "novel03",
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.6153846153846154,
+      "source_original_id": "novel03_I_A"
+    },
+    {
+      "docs": [
+        "Ferry Lomis and its pilot are listed for the autumn route.",
+        "The autumn route list includes ferry Lomis and its pilot.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "document_level": "I",
+      "id": "rep_novel03_I_B",
+      "identity": {
+        "input_token_ids_sha256": "c3222cf2fc17f416fcb213ac2c4f905a41a005bd4ab93e1c98d008c5c17f5390",
+        "input_tokens": 222,
+        "prompt_sha256": "e7ffed8f96598f371268e952e7b473cb11578bac9fd4874eb08d778eeb4197f9"
+      },
+      "original_id": "novel03",
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.6153846153846154,
+      "source_original_id": "novel03_I_B"
+    },
+    {
+      "docs": [
+        "The autumn route list gives ferry Lomis the destination Reva quay.",
+        "On the autumn route, ferry Lomis is bound for Darin quay.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "document_level": "C",
+      "id": "rep_novel03_C_A",
+      "identity": {
+        "input_token_ids_sha256": "ad3b7fe05d5f8cad09df8359c1516f3e91098fb2c0915ee7f23826ffa9077945",
+        "input_tokens": 227,
+        "prompt_sha256": "077494321c144b0db108913c119504e57ebb3f7b56aa1912adafaa37a95b9d09"
+      },
+      "original_id": "novel03",
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.4,
+      "source_original_id": "novel03_C_A"
+    },
+    {
+      "docs": [
+        "On the autumn route, ferry Lomis is bound for Reva quay.",
+        "The autumn route list gives ferry Lomis the destination Darin quay.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "document_level": "C",
+      "id": "rep_novel03_C_B",
+      "identity": {
+        "input_token_ids_sha256": "e769be0322785c26dc386c27574cb6909fda6d0b10718c6b6236c0fbdca51b4e",
+        "input_tokens": 227,
+        "prompt_sha256": "f55c4e1bf1a87c717ddefb0097a34167680681604e05e41ffac5e3160385eabb"
+      },
+      "original_id": "novel03",
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.4,
+      "source_original_id": "novel03_C_B"
+    },
+    {
+      "docs": [
+        "The spring catalog specifies matte ivory as the glaze finish for vessel design Neral.",
+        "In the spring catalog, vessel design Neral's specified glaze finish is matte ivory.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "document_level": "S",
+      "id": "rep_novel04_S_A",
+      "identity": {
+        "input_token_ids_sha256": "611a87d61e8a6ea7fb151b9c13c26823698a09535d36ecfcc8c9b3c5e6c4fb80",
+        "input_tokens": 229,
+        "prompt_sha256": "812264aaf73527512d187b87a567754cf23e4bdad70f575b7f657a5cfef39b72"
+      },
+      "original_id": "novel04",
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.5882352941176471,
+      "source_original_id": "novel04_S_A"
+    },
+    {
+      "docs": [
+        "In the spring catalog, vessel design Neral's specified glaze finish is matte ivory.",
+        "The spring catalog specifies matte ivory as the glaze finish for vessel design Neral.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "document_level": "S",
+      "id": "rep_novel04_S_B",
+      "identity": {
+        "input_token_ids_sha256": "1726a0a23a9625c9008d689939f53c1fe0d6792181b5aa6df9072840a5056aae",
+        "input_tokens": 229,
+        "prompt_sha256": "f1f637b1ba10ef1b3e3bb02f92003cec94c0a1ff1f73795548827b3abf150f57"
+      },
+      "original_id": "novel04",
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.5882352941176471,
+      "source_original_id": "novel04_S_B"
+    },
+    {
+      "docs": [
+        "The spring catalog lists vessel design Neral and the designer's name.",
+        "Vessel design Neral is in the spring catalog together with its designer's name.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "document_level": "I",
+      "id": "rep_novel04_I_A",
+      "identity": {
+        "input_token_ids_sha256": "1ecb8777d754c016ad05517ae4eedae4c83e06822cfef4f8f8e3ab08e6e1c7ed",
+        "input_tokens": 225,
+        "prompt_sha256": "2fd4e4630a898df351f33348da5278b076cbbabdf98dcdb8ddf1237d6a1201fb"
+      },
+      "original_id": "novel04",
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.5625,
+      "source_original_id": "novel04_I_A"
+    },
+    {
+      "docs": [
+        "Vessel design Neral is in the spring catalog together with its designer's name.",
+        "The spring catalog lists vessel design Neral and the designer's name.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "document_level": "I",
+      "id": "rep_novel04_I_B",
+      "identity": {
+        "input_token_ids_sha256": "a90983acf5cc514c326527c070edb305a279df5e5fd04a013558fb4e9cc2505b",
+        "input_tokens": 225,
+        "prompt_sha256": "f07bad2dd5aa0f0692bfdbfd79a1474bb0c5df3c9108f340615916f561b09735"
+      },
+      "original_id": "novel04",
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.5625,
+      "source_original_id": "novel04_I_B"
+    },
+    {
+      "docs": [
+        "The spring catalog specifies matte ivory as the glaze finish for vessel design Neral.",
+        "In the spring catalog, vessel design Neral's specified glaze finish is gloss cobalt.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "document_level": "C",
+      "id": "rep_novel04_C_A",
+      "identity": {
+        "input_token_ids_sha256": "45ac9dd6a322f10a3626f7418d7f61e0ed33f310edcb4522f280ae63791d11e3",
+        "input_tokens": 230,
+        "prompt_sha256": "595b78babd2e435391b0e1f1f0b1f624c0cb29efff23d95e855fb5a0f7a7835d"
+      },
+      "original_id": "novel04",
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.42105263157894735,
+      "source_original_id": "novel04_C_A"
+    },
+    {
+      "docs": [
+        "In the spring catalog, vessel design Neral's specified glaze finish is matte ivory.",
+        "The spring catalog specifies gloss cobalt as the glaze finish for vessel design Neral.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "document_level": "C",
+      "id": "rep_novel04_C_B",
+      "identity": {
+        "input_token_ids_sha256": "ae8a085dd524de65c1f71e0d8758d7514b9edc3e2203f258ed29ef3793210c38",
+        "input_tokens": 230,
+        "prompt_sha256": "e62762f938fbf7239f08fa03b326aa391850cbdeaabee1229e222da15559403d"
+      },
+      "original_id": "novel04",
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.42105263157894735,
+      "source_original_id": "novel04_C_B"
+    },
+    {
+      "docs": [
+        "The Tuesday schedule sets the Kedrin rehearsal start time at 14:10.",
+        "On Tuesday, the Kedrin rehearsal is scheduled to start at 14:10.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "document_level": "S",
+      "id": "rep_novel05_S_A",
+      "identity": {
+        "input_token_ids_sha256": "8ca001e0bc7c9fd4fc3e8950a75b4f6987e79a99c6c842d85be2cba3e00945eb",
+        "input_tokens": 232,
+        "prompt_sha256": "bc88967c8c86d0e7cd80f0b631483f511f4ce8d605ed4ef85dd3bbb302c11e92"
+      },
+      "original_id": "novel05",
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.5333333333333333,
+      "source_original_id": "novel05_S_A"
+    },
+    {
+      "docs": [
+        "On Tuesday, the Kedrin rehearsal is scheduled to start at 14:10.",
+        "The Tuesday schedule sets the Kedrin rehearsal start time at 14:10.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "document_level": "S",
+      "id": "rep_novel05_S_B",
+      "identity": {
+        "input_token_ids_sha256": "0e518f244628e83775c9bff5cc520e0f59f9d857773349422d06615e67057264",
+        "input_tokens": 232,
+        "prompt_sha256": "a4effb5452ef68fe964dfdcccf5b8f02711de72d6ba452d673741c1ef9cfd881"
+      },
+      "original_id": "novel05",
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.5333333333333333,
+      "source_original_id": "novel05_S_B"
+    },
+    {
+      "docs": [
+        "The Tuesday schedule lists the Kedrin rehearsal and its coordinator.",
+        "On Tuesday's schedule, the Kedrin rehearsal appears with its coordinator.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "document_level": "I",
+      "id": "rep_novel05_I_A",
+      "identity": {
+        "input_token_ids_sha256": "19036c67abfcfc2dd69c8a3a85529d89b93e693e1e0f7be5a8b8727e97bc117f",
+        "input_tokens": 221,
+        "prompt_sha256": "a9eeaace881d06d4e51005edeb488376fac6abfc27897f80856ebecc9b4b32d6"
+      },
+      "original_id": "novel05",
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.5384615384615384,
+      "source_original_id": "novel05_I_A"
+    },
+    {
+      "docs": [
+        "On Tuesday's schedule, the Kedrin rehearsal appears with its coordinator.",
+        "The Tuesday schedule lists the Kedrin rehearsal and its coordinator.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "document_level": "I",
+      "id": "rep_novel05_I_B",
+      "identity": {
+        "input_token_ids_sha256": "d5915dbba92d2b600f3caafacf2faee21dfd4ce77010922ebd3114ff7819a39f",
+        "input_tokens": 221,
+        "prompt_sha256": "ee8483890079fcc681e526794d6af78df43c7dd00790374f445c80e312092f3e"
+      },
+      "original_id": "novel05",
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.5384615384615384,
+      "source_original_id": "novel05_I_B"
+    },
+    {
+      "docs": [
+        "The Tuesday schedule sets the Kedrin rehearsal start time at 14:10.",
+        "On Tuesday, the Kedrin rehearsal is scheduled to start at 15:20.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "document_level": "C",
+      "id": "rep_novel05_C_A",
+      "identity": {
+        "input_token_ids_sha256": "3f1f5c6bec89544ce9b8059183bb14731bef95301ea4d92091c6ca2ebb37a344",
+        "input_tokens": 232,
+        "prompt_sha256": "9cef8d477894fe9f37bc091ed106a18af4e55dfb5d1fe983bca5dc793faa90a3"
+      },
+      "original_id": "novel05",
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.35294117647058826,
+      "source_original_id": "novel05_C_A"
+    },
+    {
+      "docs": [
+        "On Tuesday, the Kedrin rehearsal is scheduled to start at 14:10.",
+        "The Tuesday schedule sets the Kedrin rehearsal start time at 15:20.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "document_level": "C",
+      "id": "rep_novel05_C_B",
+      "identity": {
+        "input_token_ids_sha256": "71c94f1ff71422091870d6c2118a282d4b441475cebe802c5ed4869888b7323a",
+        "input_tokens": 232,
+        "prompt_sha256": "a5368edb88e8ade944898dd6918b0e260427848a7e6f9921fb3a67be6aa00c83"
+      },
+      "original_id": "novel05",
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.35294117647058826,
+      "source_original_id": "novel05_C_B"
+    },
+    {
+      "docs": [
+        "The winter inventory assigns archive box Uren to dry storage.",
+        "In the winter inventory, archive box Uren's assigned storage class is dry storage.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "document_level": "S",
+      "id": "rep_novel06_S_A",
+      "identity": {
+        "input_token_ids_sha256": "1fa4a6b1e9e395d5a140fade41dbd5ede76d3bc538848367c1d1f852a7bb1bb0",
+        "input_tokens": 234,
+        "prompt_sha256": "d423ebbcd08d5a3d47b6a8e24ca45dc40f7474cb33a4a9c47a0621f3081f1e28"
+      },
+      "original_id": "novel06",
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.5333333333333333,
+      "source_original_id": "novel06_S_A"
+    },
+    {
+      "docs": [
+        "In the winter inventory, archive box Uren's assigned storage class is dry storage.",
+        "The winter inventory assigns archive box Uren to dry storage.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "document_level": "S",
+      "id": "rep_novel06_S_B",
+      "identity": {
+        "input_token_ids_sha256": "cdc8ca5dd47bac7662efa6a6fd2aab7e9241ac080c0acd25fc4c5134bd1b68cc",
+        "input_tokens": 234,
+        "prompt_sha256": "0aba6fa37fc16d8a1f536dc412e5ea55261ae7ba1f08988a721f2a26ece05d40"
+      },
+      "original_id": "novel06",
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.5333333333333333,
+      "source_original_id": "novel06_S_B"
+    },
+    {
+      "docs": [
+        "The winter inventory lists archive box Uren and its custodian.",
+        "Archive box Uren appears in the winter inventory alongside its custodian.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "document_level": "I",
+      "id": "rep_novel06_I_A",
+      "identity": {
+        "input_token_ids_sha256": "b77b626c65f18b04ca1d101298e7e0461a815e1c4437840255f621d01b59864c",
+        "input_tokens": 232,
+        "prompt_sha256": "de0d4340a3a72ffa5b27eb04a727714d6ec33458c12a3186310bff4f936d58fb"
+      },
+      "original_id": "novel06",
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.6153846153846154,
+      "source_original_id": "novel06_I_A"
+    },
+    {
+      "docs": [
+        "Archive box Uren appears in the winter inventory alongside its custodian.",
+        "The winter inventory lists archive box Uren and its custodian.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "document_level": "I",
+      "id": "rep_novel06_I_B",
+      "identity": {
+        "input_token_ids_sha256": "d8b5a58450c42125078e3cc27ba3da1645fe5a8ce108f6e08009308ef9470e1c",
+        "input_tokens": 232,
+        "prompt_sha256": "ca84d920eab7ebcf13c6a3f393182c73f726b05fd9ba0605362a8dc65dcd77a5"
+      },
+      "original_id": "novel06",
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.6153846153846154,
+      "source_original_id": "novel06_I_B"
+    },
+    {
+      "docs": [
+        "The winter inventory assigns archive box Uren to dry storage.",
+        "In the winter inventory, archive box Uren's assigned storage class is cold storage.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "document_level": "C",
+      "id": "rep_novel06_C_A",
+      "identity": {
+        "input_token_ids_sha256": "92f2c18247b3760fb7758cbcf5f385ea902fe26d494ca910b408d9619128ff24",
+        "input_tokens": 234,
+        "prompt_sha256": "3090ba011b10383a4d51956818b668eb24f298e7ca35d27f779c99dbbeb4cd06"
+      },
+      "original_id": "novel06",
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "question_level": "A",
+      "slot12_word_jaccard": 0.4375,
+      "source_original_id": "novel06_C_A"
+    },
+    {
+      "docs": [
+        "In the winter inventory, archive box Uren's assigned storage class is dry storage.",
+        "The winter inventory assigns archive box Uren to cold storage.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "document_level": "C",
+      "id": "rep_novel06_C_B",
+      "identity": {
+        "input_token_ids_sha256": "ee4ccf35be0531beb50459258a00f505d456794902dded8167d814311a641cd5",
+        "input_tokens": 234,
+        "prompt_sha256": "c45eb6a5a8402fd020c6d11eff6a5cecacc172698205911ea257e58b6215adc6"
+      },
+      "original_id": "novel06",
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "question_level": "B",
+      "slot12_word_jaccard": 0.4375,
+      "source_original_id": "novel06_C_B"
+    }
+  ],
+  "status": "post_result_informed_cpu_draft_no_collection"
+}

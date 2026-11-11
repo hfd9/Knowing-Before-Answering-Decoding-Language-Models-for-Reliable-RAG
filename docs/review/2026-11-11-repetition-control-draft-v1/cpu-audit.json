@@ -1,0 +1,53 @@
+{
+  "author_review_sha256": "49165bfed4ec1c24fdaf9c7098497e1c255c605bb1e9164df085644e2b49268c",
+  "bases": 6,
+  "comparisons": {
+    "S-C": {
+      "n": 12,
+      "token_delta_max": 1,
+      "token_delta_min": 0,
+      "token_equal": 10
+    },
+    "S-I": {
+      "n": 12,
+      "token_delta_max": -1,
+      "token_delta_min": -11,
+      "token_equal": 0
+    }
+  },
+  "existing_bases_exposed": true,
+  "independent_approvals": 0,
+  "inputs": 36,
+  "materials_sha256": "c7c6810f3b47924aeb16d10a4cbb14fbb66ddaf9c296a1c41afd91d1880e6e13",
+  "new_fits": 0,
+  "new_model_forwards": 0,
+  "overlap": {
+    "C": {
+      "max": 0.5384615384615384,
+      "mean": 0.420825891085179,
+      "min": 0.35294117647058826,
+      "n": 12
+    },
+    "I": {
+      "max": 0.6153846153846154,
+      "mean": 0.5745192307692308,
+      "min": 0.5,
+      "n": 12
+    },
+    "S": {
+      "max": 0.6666666666666666,
+      "mean": 0.5480392156862746,
+      "min": 0.4666666666666667,
+      "n": 12
+    }
+  },
+  "pair_metrics_sha256": "6dea6f419205521de0d68961e125a7359b8f149b62d0f0c29824ed942c1f7e8f",
+  "pairs": 24,
+  "slots": 180,
+  "source_sha256": {
+    "docs/review/2026-11-11-new-controlled-exploration-v1/materials.json": "4b4b2263d62d3bc014b7243441c463e68acffaf9963929b5233c0def8f282183",
+    "prompts/new_controlled_probe_20261111_v1.json": "cb5a55b56b9f9a6d2f6975f6152ef15228d4412c727d010be58f157008ff578f"
+  },
+  "status": "cpu_draft_only_no_gpu_release",
+  "tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+}

@@ -1,0 +1,1411 @@
+{
+  "author_has_seen_original_probe_results": true,
+  "formal_labels": null,
+  "items": [
+    {
+      "author_reason": "The target is Tovan's Friday room. The lead and studio descriptions do not determine a room. North and east are distinct unique rooms for the same inspection, and neither copy has priority.",
+      "evidence": [
+        {
+          "quote": "The Friday inspection schedule assigns instrument Tovan to the north studio.",
+          "slot": 1
+        },
+        {
+          "quote": "For Friday's inspection, instrument Tovan is scheduled in the north studio.",
+          "slot": 2
+        },
+        {
+          "quote": "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+          "slot": 3
+        },
+        {
+          "quote": "The inspection lead for instrument Tovan is Mara.",
+          "slot": 4
+        },
+        {
+          "quote": "The studios contain separate instrument workbenches.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel01_S_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "answer",
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Friday inspection",
+        "entity": "instrument Tovan",
+        "field": "assigned room"
+      },
+      "values": [
+        "north studio"
+      ]
+    },
+    {
+      "author_reason": "The target is Tovan's Friday room. The lead and studio descriptions do not determine a room. North and east are distinct unique rooms for the same inspection, and neither copy has priority.",
+      "evidence": [
+        {
+          "quote": "For Friday's inspection, instrument Tovan is scheduled in the north studio.",
+          "slot": 1
+        },
+        {
+          "quote": "The Friday inspection schedule assigns instrument Tovan to the north studio.",
+          "slot": 2
+        },
+        {
+          "quote": "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+          "slot": 3
+        },
+        {
+          "quote": "The inspection lead for instrument Tovan is Mara.",
+          "slot": 4
+        },
+        {
+          "quote": "The studios contain separate instrument workbenches.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel01_S_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "answer",
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Friday inspection",
+        "entity": "instrument Tovan",
+        "field": "assigned room"
+      },
+      "values": [
+        "north studio"
+      ]
+    },
+    {
+      "author_reason": "The target is Tovan's Friday room. The lead and studio descriptions do not determine a room. North and east are distinct unique rooms for the same inspection, and neither copy has priority.",
+      "evidence": [
+        {
+          "quote": "The Friday inspection schedule lists instrument Tovan and its inspection lead.",
+          "slot": 1
+        },
+        {
+          "quote": "Instrument Tovan appears on Friday's inspection schedule with its inspection lead.",
+          "slot": 2
+        },
+        {
+          "quote": "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+          "slot": 3
+        },
+        {
+          "quote": "The inspection lead for instrument Tovan is Mara.",
+          "slot": 4
+        },
+        {
+          "quote": "The studios contain separate instrument workbenches.",
+          "slot": 5
+        }
+      ],
+      "hypothetical_distinct_values_not_in_input": [
+        "north studio",
+        "east studio"
+      ],
+      "id": "rep_novel01_I_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "refuse",
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Friday inspection",
+        "entity": "instrument Tovan",
+        "field": "assigned room"
+      },
+      "values": []
+    },
+    {
+      "author_reason": "The target is Tovan's Friday room. The lead and studio descriptions do not determine a room. North and east are distinct unique rooms for the same inspection, and neither copy has priority.",
+      "evidence": [
+        {
+          "quote": "Instrument Tovan appears on Friday's inspection schedule with its inspection lead.",
+          "slot": 1
+        },
+        {
+          "quote": "The Friday inspection schedule lists instrument Tovan and its inspection lead.",
+          "slot": 2
+        },
+        {
+          "quote": "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+          "slot": 3
+        },
+        {
+          "quote": "The inspection lead for instrument Tovan is Mara.",
+          "slot": 4
+        },
+        {
+          "quote": "The studios contain separate instrument workbenches.",
+          "slot": 5
+        }
+      ],
+      "hypothetical_distinct_values_not_in_input": [
+        "north studio",
+        "east studio"
+      ],
+      "id": "rep_novel01_I_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "refuse",
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Friday inspection",
+        "entity": "instrument Tovan",
+        "field": "assigned room"
+      },
+      "values": []
+    },
+    {
+      "author_reason": "The target is Tovan's Friday room. The lead and studio descriptions do not determine a room. North and east are distinct unique rooms for the same inspection, and neither copy has priority.",
+      "evidence": [
+        {
+          "quote": "The Friday inspection schedule assigns instrument Tovan to the north studio.",
+          "slot": 1
+        },
+        {
+          "quote": "For Friday's inspection, instrument Tovan is scheduled in the east studio.",
+          "slot": 2
+        },
+        {
+          "quote": "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+          "slot": 3
+        },
+        {
+          "quote": "The inspection lead for instrument Tovan is Mara.",
+          "slot": 4
+        },
+        {
+          "quote": "The studios contain separate instrument workbenches.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel01_C_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "conflict",
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Friday inspection",
+        "entity": "instrument Tovan",
+        "field": "assigned room"
+      },
+      "values": [
+        "north studio",
+        "east studio"
+      ]
+    },
+    {
+      "author_reason": "The target is Tovan's Friday room. The lead and studio descriptions do not determine a room. North and east are distinct unique rooms for the same inspection, and neither copy has priority.",
+      "evidence": [
+        {
+          "quote": "For Friday's inspection, instrument Tovan is scheduled in the north studio.",
+          "slot": 1
+        },
+        {
+          "quote": "The Friday inspection schedule assigns instrument Tovan to the east studio.",
+          "slot": 2
+        },
+        {
+          "quote": "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+          "slot": 3
+        },
+        {
+          "quote": "The inspection lead for instrument Tovan is Mara.",
+          "slot": 4
+        },
+        {
+          "quote": "The studios contain separate instrument workbenches.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel01_C_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "conflict",
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Friday inspection",
+        "entity": "instrument Tovan",
+        "field": "assigned room"
+      },
+      "values": [
+        "north studio",
+        "east studio"
+      ]
+    },
+    {
+      "author_reason": "The target is Ornel's session-four mode. Operator and binder location give no mode. Pulse and sweep are different unique modes under the shared session rule; neither sheet is preferred.",
+      "evidence": [
+        {
+          "quote": "In session four, device Ornel is assigned pulse mode.",
+          "slot": 1
+        },
+        {
+          "quote": "Device Ornel's assigned signal mode for session four is pulse mode.",
+          "slot": 2
+        },
+        {
+          "quote": "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+          "slot": 3
+        },
+        {
+          "quote": "For session four, the operator of Ornel is Ilen.",
+          "slot": 4
+        },
+        {
+          "quote": "The equipment binder is kept at the service counter.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel02_S_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "answer",
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "session four",
+        "entity": "device Ornel",
+        "field": "signal mode"
+      },
+      "values": [
+        "pulse mode"
+      ]
+    },
+    {
+      "author_reason": "The target is Ornel's session-four mode. Operator and binder location give no mode. Pulse and sweep are different unique modes under the shared session rule; neither sheet is preferred.",
+      "evidence": [
+        {
+          "quote": "Device Ornel's assigned signal mode for session four is pulse mode.",
+          "slot": 1
+        },
+        {
+          "quote": "In session four, device Ornel is assigned pulse mode.",
+          "slot": 2
+        },
+        {
+          "quote": "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+          "slot": 3
+        },
+        {
+          "quote": "For session four, the operator of Ornel is Ilen.",
+          "slot": 4
+        },
+        {
+          "quote": "The equipment binder is kept at the service counter.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel02_S_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "answer",
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "session four",
+        "entity": "device Ornel",
+        "field": "signal mode"
+      },
+      "values": [
+        "pulse mode"
+      ]
+    },
+    {
+      "author_reason": "The target is Ornel's session-four mode. Operator and binder location give no mode. Pulse and sweep are different unique modes under the shared session rule; neither sheet is preferred.",
+      "evidence": [
+        {
+          "quote": "The session four sheet lists device Ornel and its operator.",
+          "slot": 1
+        },
+        {
+          "quote": "Device Ornel appears on the session four sheet alongside its operator.",
+          "slot": 2
+        },
+        {
+          "quote": "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+          "slot": 3
+        },
+        {
+          "quote": "For session four, the operator of Ornel is Ilen.",
+          "slot": 4
+        },
+        {
+          "quote": "The equipment binder is kept at the service counter.",
+          "slot": 5
+        }
+      ],
+      "hypothetical_distinct_values_not_in_input": [
+        "pulse mode",
+        "sweep mode"
+      ],
+      "id": "rep_novel02_I_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "refuse",
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "session four",
+        "entity": "device Ornel",
+        "field": "signal mode"
+      },
+      "values": []
+    },
+    {
+      "author_reason": "The target is Ornel's session-four mode. Operator and binder location give no mode. Pulse and sweep are different unique modes under the shared session rule; neither sheet is preferred.",
+      "evidence": [
+        {
+          "quote": "Device Ornel appears on the session four sheet alongside its operator.",
+          "slot": 1
+        },
+        {
+          "quote": "The session four sheet lists device Ornel and its operator.",
+          "slot": 2
+        },
+        {
+          "quote": "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+          "slot": 3
+        },
+        {
+          "quote": "For session four, the operator of Ornel is Ilen.",
+          "slot": 4
+        },
+        {
+          "quote": "The equipment binder is kept at the service counter.",
+          "slot": 5
+        }
+      ],
+      "hypothetical_distinct_values_not_in_input": [
+        "pulse mode",
+        "sweep mode"
+      ],
+      "id": "rep_novel02_I_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "refuse",
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "session four",
+        "entity": "device Ornel",
+        "field": "signal mode"
+      },
+      "values": []
+    },
+    {
+      "author_reason": "The target is Ornel's session-four mode. Operator and binder location give no mode. Pulse and sweep are different unique modes under the shared session rule; neither sheet is preferred.",
+      "evidence": [
+        {
+          "quote": "In session four, device Ornel is assigned pulse mode.",
+          "slot": 1
+        },
+        {
+          "quote": "Device Ornel's assigned signal mode for session four is sweep mode.",
+          "slot": 2
+        },
+        {
+          "quote": "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+          "slot": 3
+        },
+        {
+          "quote": "For session four, the operator of Ornel is Ilen.",
+          "slot": 4
+        },
+        {
+          "quote": "The equipment binder is kept at the service counter.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel02_C_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "conflict",
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "session four",
+        "entity": "device Ornel",
+        "field": "signal mode"
+      },
+      "values": [
+        "pulse mode",
+        "sweep mode"
+      ]
+    },
+    {
+      "author_reason": "The target is Ornel's session-four mode. Operator and binder location give no mode. Pulse and sweep are different unique modes under the shared session rule; neither sheet is preferred.",
+      "evidence": [
+        {
+          "quote": "Device Ornel's assigned signal mode for session four is pulse mode.",
+          "slot": 1
+        },
+        {
+          "quote": "In session four, device Ornel is assigned sweep mode.",
+          "slot": 2
+        },
+        {
+          "quote": "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+          "slot": 3
+        },
+        {
+          "quote": "For session four, the operator of Ornel is Ilen.",
+          "slot": 4
+        },
+        {
+          "quote": "The equipment binder is kept at the service counter.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel02_C_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "conflict",
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "session four",
+        "entity": "device Ornel",
+        "field": "signal mode"
+      },
+      "values": [
+        "pulse mode",
+        "sweep mode"
+      ]
+    },
+    {
+      "author_reason": "The question asks for Lomis's autumn destination. The pilot, print format and generic quay properties do not select one. Reva and Darin are distinct destinations for the same route; neither copy resolves them.",
+      "evidence": [
+        {
+          "quote": "The autumn route list gives ferry Lomis the destination Reva quay.",
+          "slot": 1
+        },
+        {
+          "quote": "On the autumn route, ferry Lomis is bound for Reva quay.",
+          "slot": 2
+        },
+        {
+          "quote": "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+          "slot": 3
+        },
+        {
+          "quote": "The pilot of ferry Lomis on the autumn route is Sen.",
+          "slot": 4
+        },
+        {
+          "quote": "Both quays have a covered waiting area.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel03_S_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "answer",
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "autumn route",
+        "entity": "ferry Lomis",
+        "field": "destination"
+      },
+      "values": [
+        "Reva quay"
+      ]
+    },
+    {
+      "author_reason": "The question asks for Lomis's autumn destination. The pilot, print format and generic quay properties do not select one. Reva and Darin are distinct destinations for the same route; neither copy resolves them.",
+      "evidence": [
+        {
+          "quote": "On the autumn route, ferry Lomis is bound for Reva quay.",
+          "slot": 1
+        },
+        {
+          "quote": "The autumn route list gives ferry Lomis the destination Reva quay.",
+          "slot": 2
+        },
+        {
+          "quote": "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+          "slot": 3
+        },
+        {
+          "quote": "The pilot of ferry Lomis on the autumn route is Sen.",
+          "slot": 4
+        },
+        {
+          "quote": "Both quays have a covered waiting area.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel03_S_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "answer",
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "autumn route",
+        "entity": "ferry Lomis",
+        "field": "destination"
+      },
+      "values": [
+        "Reva quay"
+      ]
+    },
+    {
+      "author_reason": "The question asks for Lomis's autumn destination. The pilot, print format and generic quay properties do not select one. Reva and Darin are distinct destinations for the same route; neither copy resolves them.",
+      "evidence": [
+        {
+          "quote": "The autumn route list includes ferry Lomis and its pilot.",
+          "slot": 1
+        },
+        {
+          "quote": "Ferry Lomis and its pilot are listed for the autumn route.",
+          "slot": 2
+        },
+        {
+          "quote": "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+          "slot": 3
+        },
+        {
+          "quote": "The pilot of ferry Lomis on the autumn route is Sen.",
+          "slot": 4
+        },
+        {
+          "quote": "Both quays have a covered waiting area.",
+          "slot": 5
+        }
+      ],
+      "hypothetical_distinct_values_not_in_input": [
+        "Reva quay",
+        "Darin quay"
+      ],
+      "id": "rep_novel03_I_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "refuse",
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "autumn route",
+        "entity": "ferry Lomis",
+        "field": "destination"
+      },
+      "values": []
+    },
+    {
+      "author_reason": "The question asks for Lomis's autumn destination. The pilot, print format and generic quay properties do not select one. Reva and Darin are distinct destinations for the same route; neither copy resolves them.",
+      "evidence": [
+        {
+          "quote": "Ferry Lomis and its pilot are listed for the autumn route.",
+          "slot": 1
+        },
+        {
+          "quote": "The autumn route list includes ferry Lomis and its pilot.",
+          "slot": 2
+        },
+        {
+          "quote": "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+          "slot": 3
+        },
+        {
+          "quote": "The pilot of ferry Lomis on the autumn route is Sen.",
+          "slot": 4
+        },
+        {
+          "quote": "Both quays have a covered waiting area.",
+          "slot": 5
+        }
+      ],
+      "hypothetical_distinct_values_not_in_input": [
+        "Reva quay",
+        "Darin quay"
+      ],
+      "id": "rep_novel03_I_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "refuse",
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "autumn route",
+        "entity": "ferry Lomis",
+        "field": "destination"
+      },
+      "values": []
+    },
+    {
+      "author_reason": "The question asks for Lomis's autumn destination. The pilot, print format and generic quay properties do not select one. Reva and Darin are distinct destinations for the same route; neither copy resolves them.",
+      "evidence": [
+        {
+          "quote": "The autumn route list gives ferry Lomis the destination Reva quay.",
+          "slot": 1
+        },
+        {
+          "quote": "On the autumn route, ferry Lomis is bound for Darin quay.",
+          "slot": 2
+        },
+        {
+          "quote": "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+          "slot": 3
+        },
+        {
+          "quote": "The pilot of ferry Lomis on the autumn route is Sen.",
+          "slot": 4
+        },
+        {
+          "quote": "Both quays have a covered waiting area.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel03_C_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "conflict",
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "autumn route",
+        "entity": "ferry Lomis",
+        "field": "destination"
+      },
+      "values": [
+        "Reva quay",
+        "Darin quay"
+      ]
+    },
+    {
+      "author_reason": "The question asks for Lomis's autumn destination. The pilot, print format and generic quay properties do not select one. Reva and Darin are distinct destinations for the same route; neither copy resolves them.",
+      "evidence": [
+        {
+          "quote": "On the autumn route, ferry Lomis is bound for Reva quay.",
+          "slot": 1
+        },
+        {
+          "quote": "The autumn route list gives ferry Lomis the destination Darin quay.",
+          "slot": 2
+        },
+        {
+          "quote": "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+          "slot": 3
+        },
+        {
+          "quote": "The pilot of ferry Lomis on the autumn route is Sen.",
+          "slot": 4
+        },
+        {
+          "quote": "Both quays have a covered waiting area.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel03_C_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "conflict",
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "autumn route",
+        "entity": "ferry Lomis",
+        "field": "destination"
+      },
+      "values": [
+        "Reva quay",
+        "Darin quay"
+      ]
+    },
+    {
+      "author_reason": "The target is Neral's finish in the spring catalog, not its designer or number. Matte ivory and gloss cobalt are different finishes assigned to the same design under a single-finish rule with equal copies.",
+      "evidence": [
+        {
+          "quote": "The spring catalog specifies matte ivory as the glaze finish for vessel design Neral.",
+          "slot": 1
+        },
+        {
+          "quote": "In the spring catalog, vessel design Neral's specified glaze finish is matte ivory.",
+          "slot": 2
+        },
+        {
+          "quote": "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+          "slot": 3
+        },
+        {
+          "quote": "The designer of vessel design Neral is Vesa.",
+          "slot": 4
+        },
+        {
+          "quote": "Each vessel design has a catalog item number.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel04_S_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "answer",
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "spring catalog",
+        "entity": "vessel design Neral",
+        "field": "glaze finish"
+      },
+      "values": [
+        "matte ivory"
+      ]
+    },
+    {
+      "author_reason": "The target is Neral's finish in the spring catalog, not its designer or number. Matte ivory and gloss cobalt are different finishes assigned to the same design under a single-finish rule with equal copies.",
+      "evidence": [
+        {
+          "quote": "In the spring catalog, vessel design Neral's specified glaze finish is matte ivory.",
+          "slot": 1
+        },
+        {
+          "quote": "The spring catalog specifies matte ivory as the glaze finish for vessel design Neral.",
+          "slot": 2
+        },
+        {
+          "quote": "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+          "slot": 3
+        },
+        {
+          "quote": "The designer of vessel design Neral is Vesa.",
+          "slot": 4
+        },
+        {
+          "quote": "Each vessel design has a catalog item number.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel04_S_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "answer",
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "spring catalog",
+        "entity": "vessel design Neral",
+        "field": "glaze finish"
+      },
+      "values": [
+        "matte ivory"
+      ]
+    },
+    {
+      "author_reason": "The target is Neral's finish in the spring catalog, not its designer or number. Matte ivory and gloss cobalt are different finishes assigned to the same design under a single-finish rule with equal copies.",
+      "evidence": [
+        {
+          "quote": "The spring catalog lists vessel design Neral and the designer's name.",
+          "slot": 1
+        },
+        {
+          "quote": "Vessel design Neral is in the spring catalog together with its designer's name.",
+          "slot": 2
+        },
+        {
+          "quote": "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+          "slot": 3
+        },
+        {
+          "quote": "The designer of vessel design Neral is Vesa.",
+          "slot": 4
+        },
+        {
+          "quote": "Each vessel design has a catalog item number.",
+          "slot": 5
+        }
+      ],
+      "hypothetical_distinct_values_not_in_input": [
+        "matte ivory",
+        "gloss cobalt"
+      ],
+      "id": "rep_novel04_I_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "refuse",
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "spring catalog",
+        "entity": "vessel design Neral",
+        "field": "glaze finish"
+      },
+      "values": []
+    },
+    {
+      "author_reason": "The target is Neral's finish in the spring catalog, not its designer or number. Matte ivory and gloss cobalt are different finishes assigned to the same design under a single-finish rule with equal copies.",
+      "evidence": [
+        {
+          "quote": "Vessel design Neral is in the spring catalog together with its designer's name.",
+          "slot": 1
+        },
+        {
+          "quote": "The spring catalog lists vessel design Neral and the designer's name.",
+          "slot": 2
+        },
+        {
+          "quote": "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+          "slot": 3
+        },
+        {
+          "quote": "The designer of vessel design Neral is Vesa.",
+          "slot": 4
+        },
+        {
+          "quote": "Each vessel design has a catalog item number.",
+          "slot": 5
+        }
+      ],
+      "hypothetical_distinct_values_not_in_input": [
+        "matte ivory",
+        "gloss cobalt"
+      ],
+      "id": "rep_novel04_I_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "refuse",
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "spring catalog",
+        "entity": "vessel design Neral",
+        "field": "glaze finish"
+      },
+      "values": []
+    },
+    {
+      "author_reason": "The target is Neral's finish in the spring catalog, not its designer or number. Matte ivory and gloss cobalt are different finishes assigned to the same design under a single-finish rule with equal copies.",
+      "evidence": [
+        {
+          "quote": "The spring catalog specifies matte ivory as the glaze finish for vessel design Neral.",
+          "slot": 1
+        },
+        {
+          "quote": "In the spring catalog, vessel design Neral's specified glaze finish is gloss cobalt.",
+          "slot": 2
+        },
+        {
+          "quote": "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+          "slot": 3
+        },
+        {
+          "quote": "The designer of vessel design Neral is Vesa.",
+          "slot": 4
+        },
+        {
+          "quote": "Each vessel design has a catalog item number.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel04_C_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "conflict",
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "spring catalog",
+        "entity": "vessel design Neral",
+        "field": "glaze finish"
+      },
+      "values": [
+        "matte ivory",
+        "gloss cobalt"
+      ]
+    },
+    {
+      "author_reason": "The target is Neral's finish in the spring catalog, not its designer or number. Matte ivory and gloss cobalt are different finishes assigned to the same design under a single-finish rule with equal copies.",
+      "evidence": [
+        {
+          "quote": "In the spring catalog, vessel design Neral's specified glaze finish is matte ivory.",
+          "slot": 1
+        },
+        {
+          "quote": "The spring catalog specifies gloss cobalt as the glaze finish for vessel design Neral.",
+          "slot": 2
+        },
+        {
+          "quote": "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+          "slot": 3
+        },
+        {
+          "quote": "The designer of vessel design Neral is Vesa.",
+          "slot": 4
+        },
+        {
+          "quote": "Each vessel design has a catalog item number.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel04_C_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "conflict",
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "spring catalog",
+        "entity": "vessel design Neral",
+        "field": "glaze finish"
+      },
+      "values": [
+        "matte ivory",
+        "gloss cobalt"
+      ]
+    },
+    {
+      "author_reason": "The requested field is the Tuesday start time. Coordinator and filing place supply no time. 14:10 and 15:20 are incompatible start times for that event, and the no-update rule removes temporal priority.",
+      "evidence": [
+        {
+          "quote": "The Tuesday schedule sets the Kedrin rehearsal start time at 14:10.",
+          "slot": 1
+        },
+        {
+          "quote": "On Tuesday, the Kedrin rehearsal is scheduled to start at 14:10.",
+          "slot": 2
+        },
+        {
+          "quote": "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+          "slot": 3
+        },
+        {
+          "quote": "The coordinator of the Kedrin rehearsal is Nevi.",
+          "slot": 4
+        },
+        {
+          "quote": "The front office stores the weekly schedule.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel05_S_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "answer",
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Tuesday",
+        "entity": "Kedrin rehearsal",
+        "field": "start time"
+      },
+      "values": [
+        "14:10"
+      ]
+    },
+    {
+      "author_reason": "The requested field is the Tuesday start time. Coordinator and filing place supply no time. 14:10 and 15:20 are incompatible start times for that event, and the no-update rule removes temporal priority.",
+      "evidence": [
+        {
+          "quote": "On Tuesday, the Kedrin rehearsal is scheduled to start at 14:10.",
+          "slot": 1
+        },
+        {
+          "quote": "The Tuesday schedule sets the Kedrin rehearsal start time at 14:10.",
+          "slot": 2
+        },
+        {
+          "quote": "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+          "slot": 3
+        },
+        {
+          "quote": "The coordinator of the Kedrin rehearsal is Nevi.",
+          "slot": 4
+        },
+        {
+          "quote": "The front office stores the weekly schedule.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel05_S_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "answer",
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Tuesday",
+        "entity": "Kedrin rehearsal",
+        "field": "start time"
+      },
+      "values": [
+        "14:10"
+      ]
+    },
+    {
+      "author_reason": "The requested field is the Tuesday start time. Coordinator and filing place supply no time. 14:10 and 15:20 are incompatible start times for that event, and the no-update rule removes temporal priority.",
+      "evidence": [
+        {
+          "quote": "The Tuesday schedule lists the Kedrin rehearsal and its coordinator.",
+          "slot": 1
+        },
+        {
+          "quote": "On Tuesday's schedule, the Kedrin rehearsal appears with its coordinator.",
+          "slot": 2
+        },
+        {
+          "quote": "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+          "slot": 3
+        },
+        {
+          "quote": "The coordinator of the Kedrin rehearsal is Nevi.",
+          "slot": 4
+        },
+        {
+          "quote": "The front office stores the weekly schedule.",
+          "slot": 5
+        }
+      ],
+      "hypothetical_distinct_values_not_in_input": [
+        "14:10",
+        "15:20"
+      ],
+      "id": "rep_novel05_I_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "refuse",
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Tuesday",
+        "entity": "Kedrin rehearsal",
+        "field": "start time"
+      },
+      "values": []
+    },
+    {
+      "author_reason": "The requested field is the Tuesday start time. Coordinator and filing place supply no time. 14:10 and 15:20 are incompatible start times for that event, and the no-update rule removes temporal priority.",
+      "evidence": [
+        {
+          "quote": "On Tuesday's schedule, the Kedrin rehearsal appears with its coordinator.",
+          "slot": 1
+        },
+        {
+          "quote": "The Tuesday schedule lists the Kedrin rehearsal and its coordinator.",
+          "slot": 2
+        },
+        {
+          "quote": "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+          "slot": 3
+        },
+        {
+          "quote": "The coordinator of the Kedrin rehearsal is Nevi.",
+          "slot": 4
+        },
+        {
+          "quote": "The front office stores the weekly schedule.",
+          "slot": 5
+        }
+      ],
+      "hypothetical_distinct_values_not_in_input": [
+        "14:10",
+        "15:20"
+      ],
+      "id": "rep_novel05_I_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "refuse",
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Tuesday",
+        "entity": "Kedrin rehearsal",
+        "field": "start time"
+      },
+      "values": []
+    },
+    {
+      "author_reason": "The requested field is the Tuesday start time. Coordinator and filing place supply no time. 14:10 and 15:20 are incompatible start times for that event, and the no-update rule removes temporal priority.",
+      "evidence": [
+        {
+          "quote": "The Tuesday schedule sets the Kedrin rehearsal start time at 14:10.",
+          "slot": 1
+        },
+        {
+          "quote": "On Tuesday, the Kedrin rehearsal is scheduled to start at 15:20.",
+          "slot": 2
+        },
+        {
+          "quote": "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+          "slot": 3
+        },
+        {
+          "quote": "The coordinator of the Kedrin rehearsal is Nevi.",
+          "slot": 4
+        },
+        {
+          "quote": "The front office stores the weekly schedule.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel05_C_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "conflict",
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Tuesday",
+        "entity": "Kedrin rehearsal",
+        "field": "start time"
+      },
+      "values": [
+        "14:10",
+        "15:20"
+      ]
+    },
+    {
+      "author_reason": "The requested field is the Tuesday start time. Coordinator and filing place supply no time. 14:10 and 15:20 are incompatible start times for that event, and the no-update rule removes temporal priority.",
+      "evidence": [
+        {
+          "quote": "On Tuesday, the Kedrin rehearsal is scheduled to start at 14:10.",
+          "slot": 1
+        },
+        {
+          "quote": "The Tuesday schedule sets the Kedrin rehearsal start time at 15:20.",
+          "slot": 2
+        },
+        {
+          "quote": "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+          "slot": 3
+        },
+        {
+          "quote": "The coordinator of the Kedrin rehearsal is Nevi.",
+          "slot": 4
+        },
+        {
+          "quote": "The front office stores the weekly schedule.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel05_C_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "conflict",
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "Tuesday",
+        "entity": "Kedrin rehearsal",
+        "field": "start time"
+      },
+      "values": [
+        "14:10",
+        "15:20"
+      ]
+    },
+    {
+      "author_reason": "The target is Uren's assigned winter storage class. Custodian and register placement do not determine it. Dry storage and cold storage are named as distinct single classes for the same box and inventory; neither copy has priority.",
+      "evidence": [
+        {
+          "quote": "The winter inventory assigns archive box Uren to dry storage.",
+          "slot": 1
+        },
+        {
+          "quote": "In the winter inventory, archive box Uren's assigned storage class is dry storage.",
+          "slot": 2
+        },
+        {
+          "quote": "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+          "slot": 3
+        },
+        {
+          "quote": "The custodian of archive box Uren is Osin.",
+          "slot": 4
+        },
+        {
+          "quote": "The paper register is kept at the archive desk.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel06_S_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "answer",
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "winter inventory",
+        "entity": "archive box Uren",
+        "field": "storage class"
+      },
+      "values": [
+        "dry storage"
+      ]
+    },
+    {
+      "author_reason": "The target is Uren's assigned winter storage class. Custodian and register placement do not determine it. Dry storage and cold storage are named as distinct single classes for the same box and inventory; neither copy has priority.",
+      "evidence": [
+        {
+          "quote": "In the winter inventory, archive box Uren's assigned storage class is dry storage.",
+          "slot": 1
+        },
+        {
+          "quote": "The winter inventory assigns archive box Uren to dry storage.",
+          "slot": 2
+        },
+        {
+          "quote": "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+          "slot": 3
+        },
+        {
+          "quote": "The custodian of archive box Uren is Osin.",
+          "slot": 4
+        },
+        {
+          "quote": "The paper register is kept at the archive desk.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel06_S_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "answer",
+      "state": "S",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "winter inventory",
+        "entity": "archive box Uren",
+        "field": "storage class"
+      },
+      "values": [
+        "dry storage"
+      ]
+    },
+    {
+      "author_reason": "The target is Uren's assigned winter storage class. Custodian and register placement do not determine it. Dry storage and cold storage are named as distinct single classes for the same box and inventory; neither copy has priority.",
+      "evidence": [
+        {
+          "quote": "The winter inventory lists archive box Uren and its custodian.",
+          "slot": 1
+        },
+        {
+          "quote": "Archive box Uren appears in the winter inventory alongside its custodian.",
+          "slot": 2
+        },
+        {
+          "quote": "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+          "slot": 3
+        },
+        {
+          "quote": "The custodian of archive box Uren is Osin.",
+          "slot": 4
+        },
+        {
+          "quote": "The paper register is kept at the archive desk.",
+          "slot": 5
+        }
+      ],
+      "hypothetical_distinct_values_not_in_input": [
+        "dry storage",
+        "cold storage"
+      ],
+      "id": "rep_novel06_I_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "refuse",
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "winter inventory",
+        "entity": "archive box Uren",
+        "field": "storage class"
+      },
+      "values": []
+    },
+    {
+      "author_reason": "The target is Uren's assigned winter storage class. Custodian and register placement do not determine it. Dry storage and cold storage are named as distinct single classes for the same box and inventory; neither copy has priority.",
+      "evidence": [
+        {
+          "quote": "Archive box Uren appears in the winter inventory alongside its custodian.",
+          "slot": 1
+        },
+        {
+          "quote": "The winter inventory lists archive box Uren and its custodian.",
+          "slot": 2
+        },
+        {
+          "quote": "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+          "slot": 3
+        },
+        {
+          "quote": "The custodian of archive box Uren is Osin.",
+          "slot": 4
+        },
+        {
+          "quote": "The paper register is kept at the archive desk.",
+          "slot": 5
+        }
+      ],
+      "hypothetical_distinct_values_not_in_input": [
+        "dry storage",
+        "cold storage"
+      ],
+      "id": "rep_novel06_I_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "refuse",
+      "state": "I",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "winter inventory",
+        "entity": "archive box Uren",
+        "field": "storage class"
+      },
+      "values": []
+    },
+    {
+      "author_reason": "The target is Uren's assigned winter storage class. Custodian and register placement do not determine it. Dry storage and cold storage are named as distinct single classes for the same box and inventory; neither copy has priority.",
+      "evidence": [
+        {
+          "quote": "The winter inventory assigns archive box Uren to dry storage.",
+          "slot": 1
+        },
+        {
+          "quote": "In the winter inventory, archive box Uren's assigned storage class is cold storage.",
+          "slot": 2
+        },
+        {
+          "quote": "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+          "slot": 3
+        },
+        {
+          "quote": "The custodian of archive box Uren is Osin.",
+          "slot": 4
+        },
+        {
+          "quote": "The paper register is kept at the archive desk.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel06_C_A",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "conflict",
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "winter inventory",
+        "entity": "archive box Uren",
+        "field": "storage class"
+      },
+      "values": [
+        "dry storage",
+        "cold storage"
+      ]
+    },
+    {
+      "author_reason": "The target is Uren's assigned winter storage class. Custodian and register placement do not determine it. Dry storage and cold storage are named as distinct single classes for the same box and inventory; neither copy has priority.",
+      "evidence": [
+        {
+          "quote": "In the winter inventory, archive box Uren's assigned storage class is dry storage.",
+          "slot": 1
+        },
+        {
+          "quote": "The winter inventory assigns archive box Uren to cold storage.",
+          "slot": 2
+        },
+        {
+          "quote": "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+          "slot": 3
+        },
+        {
+          "quote": "The custodian of archive box Uren is Osin.",
+          "slot": 4
+        },
+        {
+          "quote": "The paper register is kept at the archive desk.",
+          "slot": 5
+        }
+      ],
+      "id": "rep_novel06_C_B",
+      "limits": "all five slots retained for review; lexical identity does not certify semantics",
+      "proposed_probe_class": "conflict",
+      "state": "C",
+      "status": "informed_author_draft_not_independent_gold",
+      "target": {
+        "condition": "winter inventory",
+        "entity": "archive box Uren",
+        "field": "storage class"
+      },
+      "values": [
+        "dry storage",
+        "cold storage"
+      ]
+    }
+  ],
+  "status": "informed_author_draft_not_independent_gold"
+}

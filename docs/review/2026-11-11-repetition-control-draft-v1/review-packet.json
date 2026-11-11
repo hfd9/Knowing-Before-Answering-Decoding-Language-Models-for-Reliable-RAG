@@ -1,0 +1,402 @@
+{
+  "instruction": "For each question and all five documents, identify the target and evidence; decide whether it is supported, insufficient, conflicting, or unknown; cite exact passages with slot numbers and explain inferences. Record ambiguity. Do not infer or report any probe prediction.",
+  "items": [
+    {
+      "docs": [
+        "On Tuesday, the Kedrin rehearsal is scheduled to start at 14:10.",
+        "The Tuesday schedule sets the Kedrin rehearsal start time at 15:20.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "review_id": "R0c3ba65d96acbfc3"
+    },
+    {
+      "docs": [
+        "The Friday inspection schedule assigns instrument Tovan to the north studio.",
+        "For Friday's inspection, instrument Tovan is scheduled in the east studio.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "review_id": "R59c6e314e60817ab"
+    },
+    {
+      "docs": [
+        "In the winter inventory, archive box Uren's assigned storage class is dry storage.",
+        "The winter inventory assigns archive box Uren to dry storage.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "review_id": "R8e66dfcbca8b71f9"
+    },
+    {
+      "docs": [
+        "On the autumn route, ferry Lomis is bound for Reva quay.",
+        "The autumn route list gives ferry Lomis the destination Reva quay.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "review_id": "R8fdf674a03ed71de"
+    },
+    {
+      "docs": [
+        "On Tuesday's schedule, the Kedrin rehearsal appears with its coordinator.",
+        "The Tuesday schedule lists the Kedrin rehearsal and its coordinator.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "review_id": "R9ba927c5bfee5eb4"
+    },
+    {
+      "docs": [
+        "The Friday inspection schedule lists instrument Tovan and its inspection lead.",
+        "Instrument Tovan appears on Friday's inspection schedule with its inspection lead.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "review_id": "Rde60479334a5ce3b"
+    },
+    {
+      "docs": [
+        "Ferry Lomis and its pilot are listed for the autumn route.",
+        "The autumn route list includes ferry Lomis and its pilot.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "review_id": "Rc98149e7a2e264db"
+    },
+    {
+      "docs": [
+        "The Friday inspection schedule assigns instrument Tovan to the north studio.",
+        "For Friday's inspection, instrument Tovan is scheduled in the north studio.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "review_id": "Rb54468fc68d0d6a0"
+    },
+    {
+      "docs": [
+        "The spring catalog lists vessel design Neral and the designer's name.",
+        "Vessel design Neral is in the spring catalog together with its designer's name.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "review_id": "R971a3ed42a8645d8"
+    },
+    {
+      "docs": [
+        "In the spring catalog, vessel design Neral's specified glaze finish is matte ivory.",
+        "The spring catalog specifies gloss cobalt as the glaze finish for vessel design Neral.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "review_id": "Rd42c86a8669142b4"
+    },
+    {
+      "docs": [
+        "The autumn route list gives ferry Lomis the destination Reva quay.",
+        "On the autumn route, ferry Lomis is bound for Darin quay.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "review_id": "R5a422e7c31ce74ba"
+    },
+    {
+      "docs": [
+        "For Friday's inspection, instrument Tovan is scheduled in the north studio.",
+        "The Friday inspection schedule assigns instrument Tovan to the east studio.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "review_id": "Re94fac5f92ffef55"
+    },
+    {
+      "docs": [
+        "Vessel design Neral is in the spring catalog together with its designer's name.",
+        "The spring catalog lists vessel design Neral and the designer's name.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "review_id": "R26e336b711a8dfc4"
+    },
+    {
+      "docs": [
+        "The Tuesday schedule lists the Kedrin rehearsal and its coordinator.",
+        "On Tuesday's schedule, the Kedrin rehearsal appears with its coordinator.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "review_id": "Rb9bd7507821db368"
+    },
+    {
+      "docs": [
+        "On the autumn route, ferry Lomis is bound for Reva quay.",
+        "The autumn route list gives ferry Lomis the destination Darin quay.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "review_id": "R3e29de55fde239d5"
+    },
+    {
+      "docs": [
+        "The Tuesday schedule sets the Kedrin rehearsal start time at 14:10.",
+        "On Tuesday, the Kedrin rehearsal is scheduled to start at 14:10.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "review_id": "R2a8d7c773e7f7c01"
+    },
+    {
+      "docs": [
+        "The spring catalog specifies matte ivory as the glaze finish for vessel design Neral.",
+        "In the spring catalog, vessel design Neral's specified glaze finish is gloss cobalt.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "review_id": "R8c17f720728fbc60"
+    },
+    {
+      "docs": [
+        "In session four, device Ornel is assigned pulse mode.",
+        "Device Ornel's assigned signal mode for session four is pulse mode.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "review_id": "Rcefd5e243e0cfd80"
+    },
+    {
+      "docs": [
+        "On Tuesday, the Kedrin rehearsal is scheduled to start at 14:10.",
+        "The Tuesday schedule sets the Kedrin rehearsal start time at 14:10.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "review_id": "Rc6a1e1bfcccb9d65"
+    },
+    {
+      "docs": [
+        "Device Ornel's assigned signal mode for session four is pulse mode.",
+        "In session four, device Ornel is assigned sweep mode.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "review_id": "R7dc083709df4cff1"
+    },
+    {
+      "docs": [
+        "The autumn route list gives ferry Lomis the destination Reva quay.",
+        "On the autumn route, ferry Lomis is bound for Reva quay.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "review_id": "R31fc44665ac3f56f"
+    },
+    {
+      "docs": [
+        "For Friday's inspection, instrument Tovan is scheduled in the north studio.",
+        "The Friday inspection schedule assigns instrument Tovan to the north studio.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "review_id": "Rc58197eaf74accbe"
+    },
+    {
+      "docs": [
+        "The autumn route list includes ferry Lomis and its pilot.",
+        "Ferry Lomis and its pilot are listed for the autumn route.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "review_id": "Rb2990253219abfc3"
+    },
+    {
+      "docs": [
+        "The Tuesday schedule sets the Kedrin rehearsal start time at 14:10.",
+        "On Tuesday, the Kedrin rehearsal is scheduled to start at 15:20.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "review_id": "Rc0c38c11c1c1e2b7"
+    },
+    {
+      "docs": [
+        "The spring catalog specifies matte ivory as the glaze finish for vessel design Neral.",
+        "In the spring catalog, vessel design Neral's specified glaze finish is matte ivory.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "review_id": "R0794078d2e60b6ae"
+    },
+    {
+      "docs": [
+        "The winter inventory assigns archive box Uren to dry storage.",
+        "In the winter inventory, archive box Uren's assigned storage class is cold storage.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "review_id": "Re36c1b73e655afd2"
+    },
+    {
+      "docs": [
+        "Device Ornel appears on the session four sheet alongside its operator.",
+        "The session four sheet lists device Ornel and its operator.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "review_id": "Rc3ea55b6e1cf0f0a"
+    },
+    {
+      "docs": [
+        "Archive box Uren appears in the winter inventory alongside its custodian.",
+        "The winter inventory lists archive box Uren and its custodian.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "review_id": "R7397c04bcd5d0d9f"
+    },
+    {
+      "docs": [
+        "In the winter inventory, archive box Uren's assigned storage class is dry storage.",
+        "The winter inventory assigns archive box Uren to cold storage.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "review_id": "R8560cc413b57149d"
+    },
+    {
+      "docs": [
+        "In session four, device Ornel is assigned pulse mode.",
+        "Device Ornel's assigned signal mode for session four is sweep mode.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "review_id": "Raa6936b48ef47728"
+    },
+    {
+      "docs": [
+        "Device Ornel's assigned signal mode for session four is pulse mode.",
+        "In session four, device Ornel is assigned pulse mode.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "review_id": "Ra24430055bb27169"
+    },
+    {
+      "docs": [
+        "Instrument Tovan appears on Friday's inspection schedule with its inspection lead.",
+        "The Friday inspection schedule lists instrument Tovan and its inspection lead.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "review_id": "R2cfcf17243347ea1"
+    },
+    {
+      "docs": [
+        "The winter inventory assigns archive box Uren to dry storage.",
+        "In the winter inventory, archive box Uren's assigned storage class is dry storage.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "review_id": "R925c3eb7bb5d4de6"
+    },
+    {
+      "docs": [
+        "The session four sheet lists device Ornel and its operator.",
+        "Device Ornel appears on the session four sheet alongside its operator.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "review_id": "Raa25a91d0f269c64"
+    },
+    {
+      "docs": [
+        "In the spring catalog, vessel design Neral's specified glaze finish is matte ivory.",
+        "The spring catalog specifies matte ivory as the glaze finish for vessel design Neral.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "review_id": "R0b54f52e3eb05b23"
+    },
+    {
+      "docs": [
+        "The winter inventory lists archive box Uren and its custodian.",
+        "Archive box Uren appears in the winter inventory alongside its custodian.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "review_id": "R25beb572124b3287"
+    }
+  ],
+  "purpose": "unscored review packet for already exposed development materials; not independent certification"
+}

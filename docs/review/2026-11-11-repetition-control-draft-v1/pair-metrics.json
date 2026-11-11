@@ -1,0 +1,338 @@
+{
+  "comparisons": {
+    "S-C": {
+      "n": 12,
+      "token_delta_max": 1,
+      "token_delta_min": 0,
+      "token_equal": 10
+    },
+    "S-I": {
+      "n": 12,
+      "token_delta_max": -1,
+      "token_delta_min": -11,
+      "token_equal": 0
+    }
+  },
+  "overlap": {
+    "C": {
+      "max": 0.5384615384615384,
+      "mean": 0.420825891085179,
+      "min": 0.35294117647058826,
+      "n": 12
+    },
+    "I": {
+      "max": 0.6153846153846154,
+      "mean": 0.5745192307692308,
+      "min": 0.5,
+      "n": 12
+    },
+    "S": {
+      "max": 0.6666666666666666,
+      "mean": 0.5480392156862746,
+      "min": 0.4666666666666667,
+      "n": 12
+    }
+  },
+  "pairs": [
+    {
+      "base": "novel01",
+      "changed_slots": [
+        2
+      ],
+      "comparison": "S-C",
+      "jaccard_delta": -0.09166666666666667,
+      "left": "rep_novel01_S_A",
+      "right": "rep_novel01_C_A",
+      "token_delta": 0,
+      "wording": "A"
+    },
+    {
+      "base": "novel01",
+      "changed_slots": [
+        1,
+        2
+      ],
+      "comparison": "S-I",
+      "jaccard_delta": 0.033333333333333326,
+      "left": "rep_novel01_S_A",
+      "right": "rep_novel01_I_A",
+      "token_delta": -1,
+      "wording": "A"
+    },
+    {
+      "base": "novel01",
+      "changed_slots": [
+        2
+      ],
+      "comparison": "S-C",
+      "jaccard_delta": -0.09166666666666667,
+      "left": "rep_novel01_S_B",
+      "right": "rep_novel01_C_B",
+      "token_delta": 0,
+      "wording": "B"
+    },
+    {
+      "base": "novel01",
+      "changed_slots": [
+        1,
+        2
+      ],
+      "comparison": "S-I",
+      "jaccard_delta": 0.033333333333333326,
+      "left": "rep_novel01_S_B",
+      "right": "rep_novel01_I_B",
+      "token_delta": -1,
+      "wording": "B"
+    },
+    {
+      "base": "novel02",
+      "changed_slots": [
+        2
+      ],
+      "comparison": "S-C",
+      "jaccard_delta": -0.1282051282051282,
+      "left": "rep_novel02_S_A",
+      "right": "rep_novel02_C_A",
+      "token_delta": 0,
+      "wording": "A"
+    },
+    {
+      "base": "novel02",
+      "changed_slots": [
+        1,
+        2
+      ],
+      "comparison": "S-I",
+      "jaccard_delta": -0.05128205128205121,
+      "left": "rep_novel02_S_A",
+      "right": "rep_novel02_I_A",
+      "token_delta": -1,
+      "wording": "A"
+    },
+    {
+      "base": "novel02",
+      "changed_slots": [
+        2
+      ],
+      "comparison": "S-C",
+      "jaccard_delta": -0.1282051282051282,
+      "left": "rep_novel02_S_B",
+      "right": "rep_novel02_C_B",
+      "token_delta": 0,
+      "wording": "B"
+    },
+    {
+      "base": "novel02",
+      "changed_slots": [
+        1,
+        2
+      ],
+      "comparison": "S-I",
+      "jaccard_delta": -0.05128205128205121,
+      "left": "rep_novel02_S_B",
+      "right": "rep_novel02_I_B",
+      "token_delta": -1,
+      "wording": "B"
+    },
+    {
+      "base": "novel03",
+      "changed_slots": [
+        2
+      ],
+      "comparison": "S-C",
+      "jaccard_delta": -0.09999999999999998,
+      "left": "rep_novel03_S_A",
+      "right": "rep_novel03_C_A",
+      "token_delta": 0,
+      "wording": "A"
+    },
+    {
+      "base": "novel03",
+      "changed_slots": [
+        1,
+        2
+      ],
+      "comparison": "S-I",
+      "jaccard_delta": 0.11538461538461542,
+      "left": "rep_novel03_S_A",
+      "right": "rep_novel03_I_A",
+      "token_delta": -5,
+      "wording": "A"
+    },
+    {
+      "base": "novel03",
+      "changed_slots": [
+        2
+      ],
+      "comparison": "S-C",
+      "jaccard_delta": -0.09999999999999998,
+      "left": "rep_novel03_S_B",
+      "right": "rep_novel03_C_B",
+      "token_delta": 0,
+      "wording": "B"
+    },
+    {
+      "base": "novel03",
+      "changed_slots": [
+        1,
+        2
+      ],
+      "comparison": "S-I",
+      "jaccard_delta": 0.11538461538461542,
+      "left": "rep_novel03_S_B",
+      "right": "rep_novel03_I_B",
+      "token_delta": -5,
+      "wording": "B"
+    },
+    {
+      "base": "novel04",
+      "changed_slots": [
+        2
+      ],
+      "comparison": "S-C",
+      "jaccard_delta": -0.16718266253869973,
+      "left": "rep_novel04_S_A",
+      "right": "rep_novel04_C_A",
+      "token_delta": 1,
+      "wording": "A"
+    },
+    {
+      "base": "novel04",
+      "changed_slots": [
+        1,
+        2
+      ],
+      "comparison": "S-I",
+      "jaccard_delta": -0.02573529411764708,
+      "left": "rep_novel04_S_A",
+      "right": "rep_novel04_I_A",
+      "token_delta": -4,
+      "wording": "A"
+    },
+    {
+      "base": "novel04",
+      "changed_slots": [
+        2
+      ],
+      "comparison": "S-C",
+      "jaccard_delta": -0.16718266253869973,
+      "left": "rep_novel04_S_B",
+      "right": "rep_novel04_C_B",
+      "token_delta": 1,
+      "wording": "B"
+    },
+    {
+      "base": "novel04",
+      "changed_slots": [
+        1,
+        2
+      ],
+      "comparison": "S-I",
+      "jaccard_delta": -0.02573529411764708,
+      "left": "rep_novel04_S_B",
+      "right": "rep_novel04_I_B",
+      "token_delta": -4,
+      "wording": "B"
+    },
+    {
+      "base": "novel05",
+      "changed_slots": [
+        2
+      ],
+      "comparison": "S-C",
+      "jaccard_delta": -0.18039215686274507,
+      "left": "rep_novel05_S_A",
+      "right": "rep_novel05_C_A",
+      "token_delta": 0,
+      "wording": "A"
+    },
+    {
+      "base": "novel05",
+      "changed_slots": [
+        1,
+        2
+      ],
+      "comparison": "S-I",
+      "jaccard_delta": 0.00512820512820511,
+      "left": "rep_novel05_S_A",
+      "right": "rep_novel05_I_A",
+      "token_delta": -11,
+      "wording": "A"
+    },
+    {
+      "base": "novel05",
+      "changed_slots": [
+        2
+      ],
+      "comparison": "S-C",
+      "jaccard_delta": -0.18039215686274507,
+      "left": "rep_novel05_S_B",
+      "right": "rep_novel05_C_B",
+      "token_delta": 0,
+      "wording": "B"
+    },
+    {
+      "base": "novel05",
+      "changed_slots": [
+        1,
+        2
+      ],
+      "comparison": "S-I",
+      "jaccard_delta": 0.00512820512820511,
+      "left": "rep_novel05_S_B",
+      "right": "rep_novel05_I_B",
+      "token_delta": -11,
+      "wording": "B"
+    },
+    {
+      "base": "novel06",
+      "changed_slots": [
+        2
+      ],
+      "comparison": "S-C",
+      "jaccard_delta": -0.09583333333333333,
+      "left": "rep_novel06_S_A",
+      "right": "rep_novel06_C_A",
+      "token_delta": 0,
+      "wording": "A"
+    },
+    {
+      "base": "novel06",
+      "changed_slots": [
+        1,
+        2
+      ],
+      "comparison": "S-I",
+      "jaccard_delta": 0.08205128205128209,
+      "left": "rep_novel06_S_A",
+      "right": "rep_novel06_I_A",
+      "token_delta": -2,
+      "wording": "A"
+    },
+    {
+      "base": "novel06",
+      "changed_slots": [
+        2
+      ],
+      "comparison": "S-C",
+      "jaccard_delta": -0.09583333333333333,
+      "left": "rep_novel06_S_B",
+      "right": "rep_novel06_C_B",
+      "token_delta": 0,
+      "wording": "B"
+    },
+    {
+      "base": "novel06",
+      "changed_slots": [
+        1,
+        2
+      ],
+      "comparison": "S-I",
+      "jaccard_delta": 0.08205128205128209,
+      "left": "rep_novel06_S_B",
+      "right": "rep_novel06_I_B",
+      "token_delta": -2,
+      "wording": "B"
+    }
+  ]
+}
