@@ -1400,3 +1400,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 145. 2026-11-11：冻结probe研究结论整理
 
 [综合报告](review/2026-11-11-frozen-probe-synthesis-v1/README.md)及[记录](records/2026-11-11-frozen-probe-synthesis.md)分列已有迁移、绑定、等token、CLI及E1的结果与限制，保留FaithEval停止点；无新实验或GPU。
+
+## 146. 2026-11-11：上午进展回顾
+
+只读回顾背景恢复、FaithEval主要聚合复算和probe研究结论整理；详见[记录](records/2026-11-11-morning-summary.md)。研究停止点及预算不变。

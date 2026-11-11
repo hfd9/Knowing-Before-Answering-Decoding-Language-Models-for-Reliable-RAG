@@ -1,6 +1,8 @@
 # 实验与动作记录索引
 
 
+最新上午进展回顾：[记录](2026-11-11-morning-summary.md)。仅核对既有记录与Git。
+
 最新研究结论整理：[记录](2026-11-11-frozen-probe-synthesis.md) / [综合报告](../review/2026-11-11-frozen-probe-synthesis-v1/README.md)。整理既有证据与限制，不新增实验。
 
 最新四步核查：[记录](2026-11-11-faitheval-four-step.md)。真实文档主要聚合复算通过；来源用途和380碰撞仍未闭合，停止确认分支。
