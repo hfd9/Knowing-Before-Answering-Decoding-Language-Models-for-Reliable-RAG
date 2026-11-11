@@ -1,6 +1,8 @@
 # 实验与动作记录索引
 
 
+最新原创材料可行性：[记录](2026-11-11-original-material-feasibility.md) / [报告](../review/2026-11-11-original-material-feasibility-v1/README.md)。纸面判断后暂停新确认材料，保留已有探索成果。
+
 最新SciFact可行性：[记录](2026-11-11-scifact-feasibility.md) / [报告](../review/2026-11-11-scifact-feasibility-v1/README.md)。定位S3版本元数据，原三状态语义不匹配；未下载样本。
 
 最新来源与增量核查：[记录](2026-11-11-source-seal-increment.md) / [报告](../review/2026-11-11-source-seal-increment-v1/README.md)。具体用途、封存规则、SciFact线索和可证伪问题；关键依赖仍未闭合。

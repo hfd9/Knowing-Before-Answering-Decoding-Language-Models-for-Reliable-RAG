@@ -3,6 +3,8 @@
 本文件供新会话中的助手快速恢复背景。更新时间：2026-11-09（Asia/Shanghai）。
 路径均相对项目根目录；具体运行状态以用户最新消息和实际产物为准。
 
+最新原创材料可行性（2026-11-11）：[报告](docs/review/2026-11-11-original-material-feasibility-v1/README.md)/[记录](docs/records/2026-11-11-original-material-feasibility.md)。候选冻结probe问题可证伪，但原创材料局限于合成分布，评审资源、独立参照、用途容差、预算及实质增量未成立；暂停构造新确认材料，保留综合报告。未启动新评审或创建题目，不访问380/GPU；旧门禁、预算不变。
+
 最新SciFact可行性（2026-11-11）：[报告](docs/review/2026-11-11-scifact-feasibility-v1/README.md)/[记录](docs/records/2026-11-11-scifact-feasibility.md)。只读HEAD定位latest当前S3版本并确认指定版本HEAD可访问，未下载或计算SHA；原论文明确原SciFact同主张无同时支持/反驳摘要，单摘要标注不等于五文档三状态，摘要独立内容权利仍待核。决定不作为直接三状态确认集，保留主张验证资料；无新样本/评分/GPU，门禁预算及380封存不变。
 
 最新来源与研究增量核查（2026-11-11）：[报告](docs/review/2026-11-11-source-seal-increment-v1/README.md)/[记录](docs/records/2026-11-11-source-seal-increment.md)。按实际用途细分许可，380受控正文访问未获既有规则放行、碰撞unknown；TextbookQA公开许可描述冲突。SciFact仓库分项许可可追溯但摘要独立权利、固定数据版本、三状态映射与排重均未闭合，仅作线索；候选问题可证伪但论文实质增量尚未成立。未下载数据、选题、评分或用GPU，原门禁预算封存不变。

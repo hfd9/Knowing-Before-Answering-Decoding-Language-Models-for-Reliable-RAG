@@ -1412,3 +1412,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 148. 2026-11-11：SciFact替代来源可行性
 
 [报告](review/2026-11-11-scifact-feasibility-v1/README.md)/[记录](records/2026-11-11-scifact-feasibility.md)：限定HEAD确认数据包版本元数据，论文说明原集同主张无双向标注；权利及任务语义不支持直接作为确认集。未下载样本、评分或GPU。
+
+## 149. 2026-11-11：原创受控材料可行性
+
+[报告](review/2026-11-11-original-material-feasibility-v1/README.md)/[记录](records/2026-11-11-original-material-feasibility.md)比较现有缓存、评审证据和近邻；独立参照、用途容差、预算及实质增量尚未成立，暂停新确认材料。无新评审、样本或GPU。
