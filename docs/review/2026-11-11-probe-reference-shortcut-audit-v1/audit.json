@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "method": "lowercase ASCII alphanumeric unigram set Jaccard between slots 1 and 2",
+  "timing": "post-hoc, slots selected after observing construction",
+  "groups": {
+    "S": {
+      "n": 12,
+      "min": 0.05263157894736842,
+      "mean": 0.16050169336740544,
+      "max": 0.25
+    },
+    "I": {
+      "n": 12,
+      "min": 0.05555555555555555,
+      "mean": 0.15417250233426705,
+      "max": 0.21428571428571427
+    },
+    "C": {
+      "n": 12,
+      "min": 0.6923076923076923,
+      "mean": 0.7928696303696304,
+      "max": 0.8571428571428571
+    }
+  },
+  "paired_differences": {
+    "C_minus_S": {
+      "n": 12,
+      "positive": 12,
+      "min": 0.5048076923076923,
+      "max": 0.7935222672064777
+    },
+    "C_minus_I": {
+      "n": 12,
+      "positive": 12,
+      "min": 0.478021978021978,
+      "max": 0.7905982905982906
+    }
+  },
+  "no_fit_or_threshold": true,
+  "source_sha256": {
+    "docs/review/2026-11-11-new-controlled-exploration-v1/materials.json": "4b4b2263d62d3bc014b7243441c463e68acffaf9963929b5233c0def8f282183",
+    "docs/review/2026-11-11-new-controlled-exploration-v1/material-seal.json": "ba1fa13aac094cfd29ed4e0387117b6923db8eee66c2b99823d65455f411b32a",
+    "docs/review/2026-11-11-new-controlled-exploration-results-v1/source/states.json": "ffcd7b94e045a537107cf0c5f2c680f7e52b51a14bee5691e1186c98a9e8af56"
+  },
+  "rows_sha256": "83abf64f144b3b862f2aef73a23da01a96c013753c3430444699b54119f4a565",
+  "limits": "6 related bases, author-constructed states; not held-out classifier accuracy, no causal inference"
+}
