@@ -1408,3 +1408,7 @@ public输入/回答分两阶段ZIP，保留完整原问答和五文档，空白�
 ## 147. 2026-11-11：来源用途、封存规则与研究增量
 
 [报告](review/2026-11-11-source-seal-increment-v1/README.md)/[记录](records/2026-11-11-source-seal-increment.md)细化用途、核查封存访问并比较近邻；SciFact仅为来源线索，许可/语义/排重未闭合，TextbookQA许可描述有冲突。未新增样本、评分或GPU。
+
+## 148. 2026-11-11：SciFact替代来源可行性
+
+[报告](review/2026-11-11-scifact-feasibility-v1/README.md)/[记录](records/2026-11-11-scifact-feasibility.md)：限定HEAD确认数据包版本元数据，论文说明原集同主张无双向标注；权利及任务语义不支持直接作为确认集。未下载样本、评分或GPU。

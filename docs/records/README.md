@@ -1,6 +1,8 @@
 # 实验与动作记录索引
 
 
+最新SciFact可行性：[记录](2026-11-11-scifact-feasibility.md) / [报告](../review/2026-11-11-scifact-feasibility-v1/README.md)。定位S3版本元数据，原三状态语义不匹配；未下载样本。
+
 最新来源与增量核查：[记录](2026-11-11-source-seal-increment.md) / [报告](../review/2026-11-11-source-seal-increment-v1/README.md)。具体用途、封存规则、SciFact线索和可证伪问题；关键依赖仍未闭合。
 
 最新上午进展回顾：[记录](2026-11-11-morning-summary.md)。仅核对既有记录与Git。
