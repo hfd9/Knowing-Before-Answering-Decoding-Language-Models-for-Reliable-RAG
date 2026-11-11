@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "inputs": 36,
+  "author_records": 36,
+  "citations_matched": 72,
+  "comparisons": {
+    "S-I:1": 12,
+    "S-C:2": 12,
+    "A-B-S:1": 6,
+    "A-B-I:1": 6,
+    "A-B-C:1,2": 6
+  },
+  "author_materials_sha256": "7ecffbb03f0695f36240b3fada34a37502ada6e5400e60c284bbd476c09571fb",
+  "inputs_sha256": "4b4b2263d62d3bc014b7243441c463e68acffaf9963929b5233c0def8f282183",
+  "seal_sha256": "ba1fa13aac094cfd29ed4e0387117b6923db8eee66c2b99823d65455f411b32a",
+  "limit": "quotation and edit identity do not prove entailment, absence of inference, semantic equivalence, gold labels or independence"
+}
