@@ -1,0 +1,644 @@
+{
+  "additional_reviewers": 0,
+  "counts": {
+    "different": 0,
+    "same": 18,
+    "unknown": 0
+  },
+  "pair_map_sha256": "d7f035e55e2923b5f0a7712244f52016edde212ad49dd6d83189b4777d807de7",
+  "records": [
+    {
+      "author_state": "S",
+      "base": "novel04",
+      "left_evidence": [
+        {
+          "quote": "For spring catalog, the glaze finish for vessel design Neral is matte ivory.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding spring catalog, the glaze finish for vessel design Neral is matte ivory.",
+          "slot": 2
+        },
+        {
+          "quote": "The spring catalog specifies exactly one glaze finish per vessel design.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "P5a8a1e02f9dd5776",
+      "reason": "左右均询问春季目录中Neral的釉面，且均有两条记录将matte ivory指定给Neral，证据充分。两份记录的次序交换，没有改变对象、取值或时间条件。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding spring catalog, the glaze finish for vessel design Neral is matte ivory.",
+          "slot": 1
+        },
+        {
+          "quote": "For spring catalog, the glaze finish for vessel design Neral is matte ivory.",
+          "slot": 2
+        },
+        {
+          "quote": "The spring catalog specifies exactly one glaze finish per vessel design.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "C",
+      "base": "novel02",
+      "left_evidence": [
+        {
+          "quote": "For session four, the signal mode for device Ornel is pulse mode.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding session four, the signal mode for device Ornel is sweep mode.",
+          "slot": 2
+        },
+        {
+          "quote": "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "Pf28bd44b17bae00c",
+      "reason": "左右均询问Ornel在第四场次的信号模式，均有pulse mode和sweep mode两条互斥记录，且每场次只能指定一种模式、副本没有优先级。措辞变化没有改变对象、取值或场次，双方均存在无法消解的冲突。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding session four, the signal mode for device Ornel is pulse mode.",
+          "slot": 1
+        },
+        {
+          "quote": "For session four, the signal mode for device Ornel is sweep mode.",
+          "slot": 2
+        },
+        {
+          "quote": "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "I",
+      "base": "novel06",
+      "left_evidence": [
+        {
+          "quote": "For winter inventory, the storage class for archive box Vuren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding winter inventory, the storage class for archive box Vuren is dry storage.",
+          "slot": 2
+        },
+        {
+          "quote": "For this register, archive box Uren and archive box Vuren are distinct entries.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "P07b519cf58387fa5",
+      "reason": "左右均询问冬季清单中Uren的类别，但均只将dry storage指定给不同条目Vuren，没有指定Uren的类别，因此证据不足。Uren为dry storage或cold storage都与文档相容。两份记录的次序交换，没有改变对象绑定或时间条件。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding winter inventory, the storage class for archive box Vuren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+          "slot": 1
+        },
+        {
+          "quote": "For winter inventory, the storage class for archive box Vuren is dry storage.",
+          "slot": 2
+        },
+        {
+          "quote": "For this register, archive box Uren and archive box Vuren are distinct entries.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "C",
+      "base": "novel04",
+      "left_evidence": [
+        {
+          "quote": "For spring catalog, the glaze finish for vessel design Neral is matte ivory.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding spring catalog, the glaze finish for vessel design Neral is gloss ivory.",
+          "slot": 2
+        },
+        {
+          "quote": "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "P7546b956bbd9b4c1",
+      "reason": "左右均询问春季目录中Neral的釉面，均有matte ivory和gloss ivory两条互斥记录，且每个设计只有一种釉面、副本地位相同。措辞变化没有改变对象、取值或时间条件，双方均存在无法消解的冲突。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding spring catalog, the glaze finish for vessel design Neral is matte ivory.",
+          "slot": 1
+        },
+        {
+          "quote": "For spring catalog, the glaze finish for vessel design Neral is gloss ivory.",
+          "slot": 2
+        },
+        {
+          "quote": "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "C",
+      "base": "novel05",
+      "left_evidence": [
+        {
+          "quote": "For Tuesday, the start time for Kedrin rehearsal is 14:10.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding Tuesday, the start time for Kedrin rehearsal is 15:20.",
+          "slot": 2
+        },
+        {
+          "quote": "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "P46e1f83511905391",
+      "reason": "左右均询问Kedrin周二的开始时间，均有14:10和15:20两条互斥记录。每场排练只有一个开始时间，且没有副本是另一份的更新或更正。措辞变化没有改变对象、取值或星期，双方均存在无法消解的冲突。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding Tuesday, the start time for Kedrin rehearsal is 14:10.",
+          "slot": 1
+        },
+        {
+          "quote": "For Tuesday, the start time for Kedrin rehearsal is 15:20.",
+          "slot": 2
+        },
+        {
+          "quote": "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "S",
+      "base": "novel03",
+      "left_evidence": [
+        {
+          "quote": "For autumn route, the destination for ferry Lomis is Reva quay.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding autumn route, the destination for ferry Lomis is Reva quay.",
+          "slot": 2
+        },
+        {
+          "quote": "Each ferry has exactly one destination on the autumn route.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "P547decf019038f4e",
+      "reason": "左右均询问Lomis在秋季航线的目的地，且均有两条记录将Reva quay指定给Lomis，证据充分。两份记录的次序交换，没有改变对象、取值或时间条件。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding autumn route, the destination for ferry Lomis is Reva quay.",
+          "slot": 1
+        },
+        {
+          "quote": "For autumn route, the destination for ferry Lomis is Reva quay.",
+          "slot": 2
+        },
+        {
+          "quote": "Each ferry has exactly one destination on the autumn route.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "C",
+      "base": "novel03",
+      "left_evidence": [
+        {
+          "quote": "For autumn route, the destination for ferry Lomis is Reva quay.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding autumn route, the destination for ferry Lomis is Darin quay.",
+          "slot": 2
+        },
+        {
+          "quote": "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "P9e28f02df8fca278",
+      "reason": "左右均询问Lomis在秋季航线的目的地，均有Reva quay和Darin quay两条互斥记录。每艘渡轮恰有一个目的地，且没有权威副本，因此双方均存在无法消解的冲突。措辞变化没有改变对象、取值或时间条件。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding autumn route, the destination for ferry Lomis is Reva quay.",
+          "slot": 1
+        },
+        {
+          "quote": "For autumn route, the destination for ferry Lomis is Darin quay.",
+          "slot": 2
+        },
+        {
+          "quote": "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "S",
+      "base": "novel05",
+      "left_evidence": [
+        {
+          "quote": "For Tuesday, the start time for Kedrin rehearsal is 14:10.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding Tuesday, the start time for Kedrin rehearsal is 14:10.",
+          "slot": 2
+        },
+        {
+          "quote": "The Tuesday schedule gives each rehearsal exactly one start time.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "P7c27401265573f58",
+      "reason": "左右均询问Kedrin周二的开始时间，两侧均有两条记录将其定为14:10，证据充分。两份记录的次序交换，没有改变对象、取值或星期。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding Tuesday, the start time for Kedrin rehearsal is 14:10.",
+          "slot": 1
+        },
+        {
+          "quote": "For Tuesday, the start time for Kedrin rehearsal is 14:10.",
+          "slot": 2
+        },
+        {
+          "quote": "The Tuesday schedule gives each rehearsal exactly one start time.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "S",
+      "base": "novel01",
+      "left_evidence": [
+        {
+          "quote": "For Friday inspection, the assigned room for instrument Tovan is north studio.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding Friday inspection, the assigned room for instrument Tovan is north studio.",
+          "slot": 2
+        },
+        {
+          "quote": "For the Friday inspection, each instrument has exactly one assigned room.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "Pe0dea7b8b4733005",
+      "reason": "左右均询问Tovan在周五检查中被分配的房间，两侧均有两条记录指定north studio，证据充分。两份记录的次序交换，没有改变对象、取值或检查条件。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding Friday inspection, the assigned room for instrument Tovan is north studio.",
+          "slot": 1
+        },
+        {
+          "quote": "For Friday inspection, the assigned room for instrument Tovan is north studio.",
+          "slot": 2
+        },
+        {
+          "quote": "For the Friday inspection, each instrument has exactly one assigned room.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "I",
+      "base": "novel02",
+      "left_evidence": [
+        {
+          "quote": "For session four, the signal mode for device Vernel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding session four, the signal mode for device Vernel is pulse mode.",
+          "slot": 2
+        },
+        {
+          "quote": "For this register, device Ornel and device Vernel are distinct entries.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "P997000f6ca1e3bea",
+      "reason": "左右均询问Ornel在第四场次的模式，但均只将pulse mode指定给不同条目Vernel，没有指定Ornel的模式，因此双方证据均不足。Ornel的模式为pulse mode或sweep mode都与文档相容。两份记录的次序交换，没有改变对象绑定或场次。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding session four, the signal mode for device Vernel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+          "slot": 1
+        },
+        {
+          "quote": "For session four, the signal mode for device Vernel is pulse mode.",
+          "slot": 2
+        },
+        {
+          "quote": "For this register, device Ornel and device Vernel are distinct entries.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "I",
+      "base": "novel03",
+      "left_evidence": [
+        {
+          "quote": "For autumn route, the destination for ferry Lomir is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding autumn route, the destination for ferry Lomir is Reva quay.",
+          "slot": 2
+        },
+        {
+          "quote": "For this register, ferry Lomis and ferry Lomir are distinct entries.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "P62ede968bbffab5f",
+      "reason": "左右均询问Lomis在秋季航线的目的地，但均只将Reva quay指定给不同条目Lomir，没有指定Lomis的目的地，因此双方证据均不足。Lomis的目的地为Reva quay或Darin quay都与文档相容。两份记录的次序交换，没有改变对象绑定或时间条件。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding autumn route, the destination for ferry Lomir is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+          "slot": 1
+        },
+        {
+          "quote": "For autumn route, the destination for ferry Lomir is Reva quay.",
+          "slot": 2
+        },
+        {
+          "quote": "For this register, ferry Lomis and ferry Lomir are distinct entries.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "I",
+      "base": "novel05",
+      "left_evidence": [
+        {
+          "quote": "For Tuesday, the start time for Kedren rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding Tuesday, the start time for Kedren rehearsal is 14:10.",
+          "slot": 2
+        },
+        {
+          "quote": "For this register, Kedrin rehearsal and Kedren rehearsal are distinct entries.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "P0a612cc227881ff6",
+      "reason": "左右均询问Kedrin周二的开始时间，但均只将14:10指定给不同条目Kedren，没有指定Kedrin的时间，因此双方证据均不足。Kedrin在14:10或15:20开始都与文档相容。两份记录的次序交换，没有改变对象绑定或星期。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding Tuesday, the start time for Kedren rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+          "slot": 1
+        },
+        {
+          "quote": "For Tuesday, the start time for Kedren rehearsal is 14:10.",
+          "slot": 2
+        },
+        {
+          "quote": "For this register, Kedrin rehearsal and Kedren rehearsal are distinct entries.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "S",
+      "base": "novel02",
+      "left_evidence": [
+        {
+          "quote": "For session four, the signal mode for device Ornel is pulse mode.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding session four, the signal mode for device Ornel is pulse mode.",
+          "slot": 2
+        },
+        {
+          "quote": "Each device has exactly one assigned signal mode per session.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "P8a147bfb689a184b",
+      "reason": "左右均询问Ornel在第四场次的信号模式，两侧均将pulse mode指定给Ornel，证据充分。两份记录的次序交换，没有改变对象、取值或场次。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding session four, the signal mode for device Ornel is pulse mode.",
+          "slot": 1
+        },
+        {
+          "quote": "For session four, the signal mode for device Ornel is pulse mode.",
+          "slot": 2
+        },
+        {
+          "quote": "Each device has exactly one assigned signal mode per session.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "I",
+      "base": "novel01",
+      "left_evidence": [
+        {
+          "quote": "For Friday inspection, the assigned room for instrument Rovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding Friday inspection, the assigned room for instrument Rovan is north studio.",
+          "slot": 2
+        },
+        {
+          "quote": "For this register, instrument Tovan and instrument Rovan are distinct entries.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "Pa511e8d4ed0b1624",
+      "reason": "左右均询问Tovan在周五检查中被分配的房间，但均只将north studio指定给不同条目Rovan，没有指定Tovan的房间，因此双方证据均不足。Tovan被指定到north studio或east studio都与文档相容。两份记录的次序交换，没有改变对象绑定或检查条件。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding Friday inspection, the assigned room for instrument Rovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+          "slot": 1
+        },
+        {
+          "quote": "For Friday inspection, the assigned room for instrument Rovan is north studio.",
+          "slot": 2
+        },
+        {
+          "quote": "For this register, instrument Tovan and instrument Rovan are distinct entries.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "C",
+      "base": "novel06",
+      "left_evidence": [
+        {
+          "quote": "For winter inventory, the storage class for archive box Uren is dry storage.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding winter inventory, the storage class for archive box Uren is cold storage.",
+          "slot": 2
+        },
+        {
+          "quote": "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "P6ad0fc5be2f5537c",
+      "reason": "左右均询问冬季清单中Uren的储存类别，均有dry storage和cold storage两条互斥记录。每箱只有一个类别，且副本没有优先级，因此双方均存在无法消解的冲突。措辞变化没有改变对象、取值或时间条件。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding winter inventory, the storage class for archive box Uren is dry storage.",
+          "slot": 1
+        },
+        {
+          "quote": "For winter inventory, the storage class for archive box Uren is cold storage.",
+          "slot": 2
+        },
+        {
+          "quote": "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "C",
+      "base": "novel01",
+      "left_evidence": [
+        {
+          "quote": "For Friday inspection, the assigned room for instrument Tovan is north studio.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding Friday inspection, the assigned room for instrument Tovan is east studio.",
+          "slot": 2
+        },
+        {
+          "quote": "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "P7be94719e8fc8a96",
+      "reason": "左右均询问Tovan在周五检查中被分配的房间，均有north studio和east studio两条互斥记录。每件仪器只有一个指定房间，且副本没有优先级，因此双方均存在无法消解的冲突。措辞变化没有改变对象、取值或检查条件。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding Friday inspection, the assigned room for instrument Tovan is north studio.",
+          "slot": 1
+        },
+        {
+          "quote": "For Friday inspection, the assigned room for instrument Tovan is east studio.",
+          "slot": 2
+        },
+        {
+          "quote": "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "I",
+      "base": "novel04",
+      "left_evidence": [
+        {
+          "quote": "For spring catalog, the glaze finish for vessel design Meral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding spring catalog, the glaze finish for vessel design Meral is matte ivory.",
+          "slot": 2
+        },
+        {
+          "quote": "For this register, vessel design Neral and vessel design Meral are distinct entries.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "Pd92c9e5c8b2e8e6d",
+      "reason": "左右均询问春季目录中Neral的釉面，但均只将matte ivory指定给不同条目Meral，没有指定Neral的釉面，因此双方证据均不足。Neral的釉面为matte ivory或gloss ivory都与文档相容。两份记录的次序交换，没有改变对象绑定或时间条件。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding spring catalog, the glaze finish for vessel design Meral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+          "slot": 1
+        },
+        {
+          "quote": "For spring catalog, the glaze finish for vessel design Meral is matte ivory.",
+          "slot": 2
+        },
+        {
+          "quote": "For this register, vessel design Neral and vessel design Meral are distinct entries.",
+          "slot": 3
+        }
+      ]
+    },
+    {
+      "author_state": "S",
+      "base": "novel06",
+      "left_evidence": [
+        {
+          "quote": "For winter inventory, the storage class for archive box Uren is dry storage.",
+          "slot": 1
+        },
+        {
+          "quote": "Regarding winter inventory, the storage class for archive box Uren is dry storage.",
+          "slot": 2
+        },
+        {
+          "quote": "Each archive box has exactly one assigned storage class in the winter inventory.",
+          "slot": 3
+        }
+      ],
+      "pair_id": "Pf994c98a7bd02b0f",
+      "reason": "左右均询问冬季清单中Uren的储存类别，两侧均将dry storage指定给Uren，证据充分。两份记录的次序交换，没有改变对象、取值或时间条件。",
+      "relation": "same",
+      "right_evidence": [
+        {
+          "quote": "Regarding winter inventory, the storage class for archive box Uren is dry storage.",
+          "slot": 1
+        },
+        {
+          "quote": "For winter inventory, the storage class for archive box Uren is dry storage.",
+          "slot": 2
+        },
+        {
+          "quote": "Each archive box has exactly one assigned storage class in the winter inventory.",
+          "slot": 3
+        }
+      ]
+    }
+  ],
+  "reviewers": 1,
+  "seal_sha256": "0e693124ee2f04372684e3708558efc6a3dc1a8ef5e6a2d71a96157778973538",
+  "status": "connected_after_pair_seal"
+}

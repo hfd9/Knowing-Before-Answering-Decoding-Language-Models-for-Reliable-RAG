@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "inputs": 36,
+  "state_matches": 36,
+  "explicit_value_matches": 24,
+  "I_possible_values_match": 12,
+  "reviewer_pairs_same": 18,
+  "single_input_quote_occurrences": 180,
+  "pair_quote_occurrences": 108,
+  "reviewers": 1,
+  "formal_approvals": 0,
+  "reconnect_events": [
+    {
+      "event": "response-5",
+      "message": "Reconnecting... 2/5 (request timed out)"
+    },
+    {
+      "event": "response-5",
+      "message": "Reconnecting... 3/5 (request timed out)"
+    },
+    {
+      "event": "pair-response-1",
+      "message": "Reconnecting... 2/5 (request timed out)"
+    },
+    {
+      "event": "pair-response-1",
+      "message": "Reconnecting... 3/5 (request timed out)"
+    }
+  ],
+  "usage_events_reported": [
+    {
+      "event": "exposure",
+      "input_tokens": 14545,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 174,
+      "reasoning_output_tokens": 62
+    },
+    {
+      "event": "response-1",
+      "input_tokens": 30597,
+      "cached_input_tokens": 14592,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2381,
+      "reasoning_output_tokens": 90
+    },
+    {
+      "event": "response-2",
+      "input_tokens": 50194,
+      "cached_input_tokens": 32640,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4163,
+      "reasoning_output_tokens": 90
+    },
+    {
+      "event": "response-3",
+      "input_tokens": 72880,
+      "cached_input_tokens": 53888,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6165,
+      "reasoning_output_tokens": 90
+    },
+    {
+      "event": "response-4",
+      "input_tokens": 98849,
+      "cached_input_tokens": 78336,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 8129,
+      "reasoning_output_tokens": 90
+    },
+    {
+      "event": "response-5",
+      "input_tokens": 128080,
+      "cached_input_tokens": 106112,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 10284,
+      "reasoning_output_tokens": 90
+    },
+    {
+      "event": "response-6",
+      "input_tokens": 160766,
+      "cached_input_tokens": 137344,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 12180,
+      "reasoning_output_tokens": 90
+    },
+    {
+      "event": "pair-response-1",
+      "input_tokens": 197654,
+      "cached_input_tokens": 171776,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 13922,
+      "reasoning_output_tokens": 90
+    },
+    {
+      "event": "pair-response-2",
+      "input_tokens": 238549,
+      "cached_input_tokens": 210176,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 15731,
+      "reasoning_output_tokens": 90
+    },
+    {
+      "event": "pair-response-3",
+      "input_tokens": 283576,
+      "cached_input_tokens": 252672,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 17544,
+      "reasoning_output_tokens": 90
+    }
+  ],
+  "limits": "Usage may be cumulative; do not sum events or infer billing. Replay and literal citations do not certify semantic truth, hidden context, reviewer independence, or billing"
+}

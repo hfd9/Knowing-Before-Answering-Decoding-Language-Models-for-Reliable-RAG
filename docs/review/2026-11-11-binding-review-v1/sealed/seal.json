@@ -1,0 +1,115 @@
+{
+  "status": "sealed_before_author_mapping",
+  "sealed_at_utc": "2026-11-11T08:38:24.442674+00:00",
+  "thread_id": "01a1c9b4-f172-76c3-8013-b35cf9afad75",
+  "reviewers": 1,
+  "batches": 6,
+  "reviewed_inputs": 36,
+  "verified_quote_occurrences": 180,
+  "observable_tool_calls": 0,
+  "independent_private_context_certified": false,
+  "formal_approval": 0,
+  "files_sha256": {
+    "review-packet.json": "a5b8800359a75be0d77dae0dd520937939b6277ac6201c38003262f146d08896",
+    "exposure.jsonl": "83126e032747a8cd36a22518ec6ca454437be63dae1e665e70f29d7011d00324",
+    "batch-manifest.json": "49e313a928045d179c1397a23b25093929fd9b4c93aca7d746f71f1417a11c98",
+    "batch-1.txt": "489232be81feb3823bfb0af86936b355360de114f4ba4e8926d6f4c0adbd513b",
+    "response-1.jsonl": "c2841bf3a9ea4114abf85b1e5e0e03bfed1a37d254499a7c7a17776ca81aa147",
+    "batch-2.txt": "0a3ebbd2dddf79f63df5468064c1396f2563d0c4945b5f743f4932dfe0bab49f",
+    "response-2.jsonl": "07a283749812610a092cb56efd8e6035a63bfbe01c5d39840e5066c850e027a7",
+    "batch-3.txt": "87bc42422942f97099a97c58a3ff503f380c993ef5513e06682b1ba4c8df6570",
+    "response-3.jsonl": "b63feedb39d1fb3324d4b1590cd45477e9313c1b08931f2cd579e7adcf3abf9c",
+    "batch-4.txt": "3c3e2cbf552e1547a26e7d1c2c0da1f25b5b204056e505e0879e2ba52d6c8ae0",
+    "response-4.jsonl": "bb8f6fc87ffc005ad431f46a2fe444a2c532b4ab126e03539f6eda02e154e2c3",
+    "batch-5.txt": "cea4fbc547e0aeb8f0a4a88b530190eb5c1da4af2ece7ca7b279547bab237a41",
+    "response-5.jsonl": "5224bc3cd82e336ac6b26280d071d43c1f6cbdf6332397879d6e248b03e0fc7e",
+    "batch-6.txt": "b12e5b707b2b59a2a0b6c15c91bc00a88a2622b4a877bfa220963ad90f760362",
+    "response-6.jsonl": "4251408fade8e88dee6137cc3cbb90e507276ee40e022ebdfafdcffd39b72c3c"
+  },
+  "public_packet_checks": [
+    {
+      "status": "passed_public_packet_check",
+      "batch": 1,
+      "items": 6,
+      "quotes": 30,
+      "states": {
+        "answerable": 3,
+        "insufficient": 3,
+        "conflicting": 0,
+        "unknown": 0
+      },
+      "tool_use_observed": false,
+      "semantic_truth_or_private_context_certified": false
+    },
+    {
+      "status": "passed_public_packet_check",
+      "batch": 2,
+      "items": 6,
+      "quotes": 30,
+      "states": {
+        "answerable": 3,
+        "insufficient": 0,
+        "conflicting": 3,
+        "unknown": 0
+      },
+      "tool_use_observed": false,
+      "semantic_truth_or_private_context_certified": false
+    },
+    {
+      "status": "passed_public_packet_check",
+      "batch": 3,
+      "items": 6,
+      "quotes": 30,
+      "states": {
+        "answerable": 2,
+        "insufficient": 2,
+        "conflicting": 2,
+        "unknown": 0
+      },
+      "tool_use_observed": false,
+      "semantic_truth_or_private_context_certified": false
+    },
+    {
+      "status": "passed_public_packet_check",
+      "batch": 4,
+      "items": 6,
+      "quotes": 30,
+      "states": {
+        "answerable": 2,
+        "insufficient": 2,
+        "conflicting": 2,
+        "unknown": 0
+      },
+      "tool_use_observed": false,
+      "semantic_truth_or_private_context_certified": false
+    },
+    {
+      "status": "passed_public_packet_check",
+      "batch": 5,
+      "items": 6,
+      "quotes": 30,
+      "states": {
+        "answerable": 1,
+        "insufficient": 4,
+        "conflicting": 1,
+        "unknown": 0
+      },
+      "tool_use_observed": false,
+      "semantic_truth_or_private_context_certified": false
+    },
+    {
+      "status": "passed_public_packet_check",
+      "batch": 6,
+      "items": 6,
+      "quotes": 30,
+      "states": {
+        "answerable": 1,
+        "insufficient": 1,
+        "conflicting": 4,
+        "unknown": 0
+      },
+      "tool_use_observed": false,
+      "semantic_truth_or_private_context_certified": false
+    }
+  ]
+}

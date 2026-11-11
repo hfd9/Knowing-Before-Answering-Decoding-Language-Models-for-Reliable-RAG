@@ -1,0 +1,57 @@
+{
+  "status": "pair_followup_sealed_before_pair_mapping",
+  "sealed_at_utc": "2026-11-11T08:46:44.880819+00:00",
+  "initial_seal_sha256": "6b8a9100659f232b2386bbd2dbe2f416b174fa33cb498419604b99400913d397",
+  "thread_id": "01a1c9b4-f172-76c3-8013-b35cf9afad75",
+  "reviewers": 1,
+  "additional_reviewers": 0,
+  "pairs": 18,
+  "files_sha256": {
+    "pair-manifest.json": "d2e7049d6a28c7732c78994f654c30a3856cfda59e67719f4c16dc96fee02d3d",
+    "pair-batch-1.txt": "b2d1a219898be64797e5e18a6a420720941ccd923219d6c2c5e6d5757c425218",
+    "pair-response-1.jsonl": "2113a47866d25aced5bae7c1b87d3e4f5f9a38d5de48c19d1aabd11b2cbae1bc",
+    "pair-batch-2.txt": "c73d3aaf13c800d27fcb52b96f62bb6dab82db416a80515addd905696aae6988",
+    "pair-response-2.jsonl": "3dc06ea7046643c5bb23e17bc242e5616701e6ebed7177dbbc0f17e79c890e52",
+    "pair-batch-3.txt": "60b0d379d59842e0b1fc9a29676fc28e9cc5f3d3935e18ccc50793d41d46661f",
+    "pair-response-3.jsonl": "635f58524e4363c6940cc6246d36fc3808660ec1c77584704431029139579c38"
+  },
+  "public_pair_checks": [
+    {
+      "status": "passed_pair_public_check",
+      "batch": 1,
+      "pairs": 6,
+      "citation_occurrences": 36,
+      "relations": {
+        "same": 6,
+        "different": 0,
+        "unknown": 0
+      },
+      "semantic_truth_or_private_context_certified": false
+    },
+    {
+      "status": "passed_pair_public_check",
+      "batch": 2,
+      "pairs": 6,
+      "citation_occurrences": 36,
+      "relations": {
+        "same": 6,
+        "different": 0,
+        "unknown": 0
+      },
+      "semantic_truth_or_private_context_certified": false
+    },
+    {
+      "status": "passed_pair_public_check",
+      "batch": 3,
+      "pairs": 6,
+      "citation_occurrences": 36,
+      "relations": {
+        "same": 6,
+        "different": 0,
+        "unknown": 0
+      },
+      "semantic_truth_or_private_context_certified": false
+    }
+  ],
+  "limits": "same session after individual judgments; grouping delivered; private context not certified"
+}

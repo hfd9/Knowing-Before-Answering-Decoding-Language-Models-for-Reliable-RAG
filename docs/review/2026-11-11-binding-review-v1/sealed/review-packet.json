@@ -1,0 +1,402 @@
+{
+  "instruction": "For each question and all five documents, identify the target and evidence; decide whether it is supported, insufficient, conflicting, or unknown; cite exact passages with slot numbers and explain inferences. Record ambiguity. Do not infer or report any probe prediction.",
+  "items": [
+    {
+      "docs": [
+        "Regarding autumn route, the destination for ferry Lomir is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+        "For autumn route, the destination for ferry Lomir is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative. For this register, ferry Lomis and ferry Lomir are distinct entries. The two listed options are distinct values.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "review_id": "Rc63c3d56035a5cab"
+    },
+    {
+      "docs": [
+        "Regarding winter inventory, the storage class for archive box Uren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+        "For winter inventory, the storage class for archive box Uren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority. For this register, archive box Uren and archive box Vuren are distinct entries. The two listed options are distinct values.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "review_id": "Rcea41822dac2baaa"
+    },
+    {
+      "docs": [
+        "For spring catalog, the glaze finish for vessel design Neral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+        "Regarding spring catalog, the glaze finish for vessel design Neral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status. For this register, vessel design Neral and vessel design Meral are distinct entries. The two listed options are distinct values.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "review_id": "R1f85060cee476d98"
+    },
+    {
+      "docs": [
+        "Regarding spring catalog, the glaze finish for vessel design Neral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+        "For spring catalog, the glaze finish for vessel design Neral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status. For this register, vessel design Neral and vessel design Meral are distinct entries. The two listed options are distinct values.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "review_id": "R1467ce7e423b21f6"
+    },
+    {
+      "docs": [
+        "Regarding Tuesday, the start time for Kedren rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+        "For Tuesday, the start time for Kedren rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another. For this register, Kedrin rehearsal and Kedren rehearsal are distinct entries. The two listed options are distinct values.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "review_id": "Rb8b23aff0fa0f68d"
+    },
+    {
+      "docs": [
+        "Regarding winter inventory, the storage class for archive box Vuren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+        "For winter inventory, the storage class for archive box Vuren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority. For this register, archive box Uren and archive box Vuren are distinct entries. The two listed options are distinct values.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "review_id": "R9b3f7d11d3594308"
+    },
+    {
+      "docs": [
+        "For winter inventory, the storage class for archive box Uren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+        "Regarding winter inventory, the storage class for archive box Uren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority. For this register, archive box Uren and archive box Vuren are distinct entries. The two listed options are distinct values.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "review_id": "Rcb7d436ef94788a1"
+    },
+    {
+      "docs": [
+        "Regarding Friday inspection, the assigned room for instrument Tovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+        "For Friday inspection, the assigned room for instrument Tovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another. For this register, instrument Tovan and instrument Rovan are distinct entries. The two listed options are distinct values.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "review_id": "R3e461389c99ccb2a"
+    },
+    {
+      "docs": [
+        "Regarding Tuesday, the start time for Kedrin rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+        "For Tuesday, the start time for Kedrin rehearsal is 15:20. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another. For this register, Kedrin rehearsal and Kedren rehearsal are distinct entries. The two listed options are distinct values.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "review_id": "R6011989034e7024d"
+    },
+    {
+      "docs": [
+        "For Tuesday, the start time for Kedrin rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+        "Regarding Tuesday, the start time for Kedrin rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another. For this register, Kedrin rehearsal and Kedren rehearsal are distinct entries. The two listed options are distinct values.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "review_id": "Rcbcc3786b6c9cd0a"
+    },
+    {
+      "docs": [
+        "For Tuesday, the start time for Kedrin rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+        "Regarding Tuesday, the start time for Kedrin rehearsal is 15:20. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another. For this register, Kedrin rehearsal and Kedren rehearsal are distinct entries. The two listed options are distinct values.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "review_id": "R8730e112385dc342"
+    },
+    {
+      "docs": [
+        "Regarding winter inventory, the storage class for archive box Uren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+        "For winter inventory, the storage class for archive box Uren is cold storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority. For this register, archive box Uren and archive box Vuren are distinct entries. The two listed options are distinct values.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "review_id": "R3c4414f71a1919c2"
+    },
+    {
+      "docs": [
+        "For autumn route, the destination for ferry Lomis is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+        "Regarding autumn route, the destination for ferry Lomis is Darin quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative. For this register, ferry Lomis and ferry Lomir are distinct entries. The two listed options are distinct values.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "review_id": "R224dbb7901c194b0"
+    },
+    {
+      "docs": [
+        "Regarding session four, the signal mode for device Ornel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+        "For session four, the signal mode for device Ornel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence. For this register, device Ornel and device Vernel are distinct entries. The two listed options are distinct values.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "review_id": "Rb6828b772c4f2ae8"
+    },
+    {
+      "docs": [
+        "For winter inventory, the storage class for archive box Vuren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+        "Regarding winter inventory, the storage class for archive box Vuren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority. For this register, archive box Uren and archive box Vuren are distinct entries. The two listed options are distinct values.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "review_id": "R180ad71c30b9e2ea"
+    },
+    {
+      "docs": [
+        "Regarding spring catalog, the glaze finish for vessel design Meral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+        "For spring catalog, the glaze finish for vessel design Meral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status. For this register, vessel design Neral and vessel design Meral are distinct entries. The two listed options are distinct values.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "review_id": "Rf5c099735b1ae56e"
+    },
+    {
+      "docs": [
+        "For autumn route, the destination for ferry Lomis is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+        "Regarding autumn route, the destination for ferry Lomis is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative. For this register, ferry Lomis and ferry Lomir are distinct entries. The two listed options are distinct values.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "review_id": "R37bbb7b285a13915"
+    },
+    {
+      "docs": [
+        "Regarding spring catalog, the glaze finish for vessel design Neral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+        "For spring catalog, the glaze finish for vessel design Neral is gloss ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status. For this register, vessel design Neral and vessel design Meral are distinct entries. The two listed options are distinct values.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "review_id": "Rbd162b51bb0e0268"
+    },
+    {
+      "docs": [
+        "For Friday inspection, the assigned room for instrument Tovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+        "Regarding Friday inspection, the assigned room for instrument Tovan is east studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another. For this register, instrument Tovan and instrument Rovan are distinct entries. The two listed options are distinct values.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "review_id": "R5fbae7f4f61ddfa2"
+    },
+    {
+      "docs": [
+        "For Friday inspection, the assigned room for instrument Tovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+        "Regarding Friday inspection, the assigned room for instrument Tovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another. For this register, instrument Tovan and instrument Rovan are distinct entries. The two listed options are distinct values.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "review_id": "R5e8aa963a4c350e7"
+    },
+    {
+      "docs": [
+        "Regarding autumn route, the destination for ferry Lomis is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+        "For autumn route, the destination for ferry Lomis is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative. For this register, ferry Lomis and ferry Lomir are distinct entries. The two listed options are distinct values.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "review_id": "R849ffc35c8a23075"
+    },
+    {
+      "docs": [
+        "Regarding autumn route, the destination for ferry Lomis is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+        "For autumn route, the destination for ferry Lomis is Darin quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative. For this register, ferry Lomis and ferry Lomir are distinct entries. The two listed options are distinct values.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "review_id": "Rde8c27e44b2bb6ce"
+    },
+    {
+      "docs": [
+        "For autumn route, the destination for ferry Lomir is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+        "Regarding autumn route, the destination for ferry Lomir is Reva quay. The record also mentions ferry Lomis. Possible destination values include Reva quay and Darin quay.",
+        "Each ferry has exactly one destination on the autumn route. No route-list copy is designated authoritative. For this register, ferry Lomis and ferry Lomir are distinct entries. The two listed options are distinct values.",
+        "The pilot of ferry Lomis on the autumn route is Sen.",
+        "Both quays have a covered waiting area."
+      ],
+      "question": "What is ferry Lomis's destination on the autumn route?",
+      "review_id": "Re9c7bbb01413f18c"
+    },
+    {
+      "docs": [
+        "For session four, the signal mode for device Vernel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+        "Regarding session four, the signal mode for device Vernel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence. For this register, device Ornel and device Vernel are distinct entries. The two listed options are distinct values.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "review_id": "Rabce39250974c389"
+    },
+    {
+      "docs": [
+        "Regarding session four, the signal mode for device Vernel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+        "For session four, the signal mode for device Vernel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence. For this register, device Ornel and device Vernel are distinct entries. The two listed options are distinct values.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "review_id": "Rcbbd5b98ef999588"
+    },
+    {
+      "docs": [
+        "For Friday inspection, the assigned room for instrument Rovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+        "Regarding Friday inspection, the assigned room for instrument Rovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another. For this register, instrument Tovan and instrument Rovan are distinct entries. The two listed options are distinct values.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "review_id": "R3f7e6de457e64eaf"
+    },
+    {
+      "docs": [
+        "For Tuesday, the start time for Kedren rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+        "Regarding Tuesday, the start time for Kedren rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another. For this register, Kedrin rehearsal and Kedren rehearsal are distinct entries. The two listed options are distinct values.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "review_id": "R07d57d413facf5cb"
+    },
+    {
+      "docs": [
+        "Regarding Friday inspection, the assigned room for instrument Rovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+        "For Friday inspection, the assigned room for instrument Rovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another. For this register, instrument Tovan and instrument Rovan are distinct entries. The two listed options are distinct values.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "review_id": "Rf3e282a53301291b"
+    },
+    {
+      "docs": [
+        "For spring catalog, the glaze finish for vessel design Neral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+        "Regarding spring catalog, the glaze finish for vessel design Neral is gloss ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status. For this register, vessel design Neral and vessel design Meral are distinct entries. The two listed options are distinct values.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "review_id": "R02ec110b5fcac45a"
+    },
+    {
+      "docs": [
+        "Regarding Tuesday, the start time for Kedrin rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+        "For Tuesday, the start time for Kedrin rehearsal is 14:10. The record also mentions Kedrin rehearsal. Possible start time values include 14:10 and 15:20.",
+        "The Tuesday schedule gives each rehearsal exactly one start time. No copy is an update or correction of another. For this register, Kedrin rehearsal and Kedren rehearsal are distinct entries. The two listed options are distinct values.",
+        "The coordinator of the Kedrin rehearsal is Nevi.",
+        "The front office stores the weekly schedule."
+      ],
+      "question": "At what time does the Kedrin rehearsal start on Tuesday?",
+      "review_id": "R0edcfce3aa68ec0d"
+    },
+    {
+      "docs": [
+        "For winter inventory, the storage class for archive box Uren is dry storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+        "Regarding winter inventory, the storage class for archive box Uren is cold storage. The record also mentions archive box Uren. Possible storage class values include dry storage and cold storage.",
+        "Each archive box has exactly one assigned storage class in the winter inventory. Different storage-class names denote distinct classes, and neither inventory copy has priority. For this register, archive box Uren and archive box Vuren are distinct entries. The two listed options are distinct values.",
+        "The custodian of archive box Uren is Osin.",
+        "The paper register is kept at the archive desk."
+      ],
+      "question": "Which storage class is assigned to archive box Uren in the winter inventory?",
+      "review_id": "R140dd2af2f8d54d1"
+    },
+    {
+      "docs": [
+        "Regarding Friday inspection, the assigned room for instrument Tovan is north studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+        "For Friday inspection, the assigned room for instrument Tovan is east studio. The record also mentions instrument Tovan. Possible assigned room values include north studio and east studio.",
+        "For the Friday inspection, each instrument has exactly one assigned room. No schedule copy has priority over another. For this register, instrument Tovan and instrument Rovan are distinct entries. The two listed options are distinct values.",
+        "The inspection lead for instrument Tovan is Mara.",
+        "The studios contain separate instrument workbenches."
+      ],
+      "question": "For the Friday inspection, which room is instrument Tovan assigned to?",
+      "review_id": "R1abd9c18341ef834"
+    },
+    {
+      "docs": [
+        "For spring catalog, the glaze finish for vessel design Meral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+        "Regarding spring catalog, the glaze finish for vessel design Meral is matte ivory. The record also mentions vessel design Neral. Possible glaze finish values include matte ivory and gloss ivory.",
+        "The spring catalog specifies exactly one glaze finish per vessel design. Its catalog copies have equal status. For this register, vessel design Neral and vessel design Meral are distinct entries. The two listed options are distinct values.",
+        "The designer of vessel design Neral is Vesa.",
+        "Each vessel design has a catalog item number."
+      ],
+      "question": "Which glaze finish does the spring catalog specify for vessel design Neral?",
+      "review_id": "R6a315290b2431d64"
+    },
+    {
+      "docs": [
+        "For session four, the signal mode for device Ornel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+        "Regarding session four, the signal mode for device Ornel is sweep mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence. For this register, device Ornel and device Vernel are distinct entries. The two listed options are distinct values.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "review_id": "R54432510a45710c4"
+    },
+    {
+      "docs": [
+        "For session four, the signal mode for device Ornel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+        "Regarding session four, the signal mode for device Ornel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence. For this register, device Ornel and device Vernel are distinct entries. The two listed options are distinct values.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "review_id": "Rfe1aef7c0e8f0cdf"
+    },
+    {
+      "docs": [
+        "Regarding session four, the signal mode for device Ornel is pulse mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+        "For session four, the signal mode for device Ornel is sweep mode. The record also mentions device Ornel. Possible signal mode values include pulse mode and sweep mode.",
+        "Each device has exactly one assigned signal mode per session. Neither sheet copy takes precedence. For this register, device Ornel and device Vernel are distinct entries. The two listed options are distinct values.",
+        "For session four, the operator of Ornel is Ilen.",
+        "The equipment binder is kept at the service counter."
+      ],
+      "question": "Which signal mode is assigned to device Ornel for session four?",
+      "review_id": "Rda9edc59cff1d443"
+    }
+  ],
+  "purpose": "unscored review packet for already exposed development materials; not independent certification"
+}
