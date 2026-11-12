@@ -1,0 +1,77 @@
+{
+  "total": 144,
+  "technical_complete": 138,
+  "technical_failures": 6,
+  "counts": {
+    "determinate": {
+      "assertion": {
+        "correct": 16,
+        "unknown": 3,
+        "technical_missing": 1,
+        "overreserve": 1,
+        "wrong": 3
+      },
+      "candidate": {
+        "correct": 17,
+        "wrong": 5,
+        "overreserve": 2
+      }
+    },
+    "split": {
+      "assertion": {
+        "unsupported_choice": 10,
+        "unknown": 1,
+        "correct": 1
+      },
+      "candidate": {
+        "correct": 2,
+        "unsupported_choice": 10
+      }
+    },
+    "single": {
+      "single_a": {
+        "correct": 28,
+        "unknown": 1,
+        "technical_missing": 4,
+        "wrong": 3
+      },
+      "single_b": {
+        "correct": 30,
+        "unknown": 2,
+        "technical_missing": 1,
+        "wrong": 3
+      }
+    }
+  },
+  "determinate_pair_transitions_candidate_to_assertion": {
+    "correct->correct": 13,
+    "correct->overreserve": 1,
+    "correct->technical_missing": 1,
+    "correct->unknown": 2,
+    "overreserve->correct": 2,
+    "wrong->correct": 1,
+    "wrong->unknown": 1,
+    "wrong->wrong": 3
+  },
+  "determinate_by_family": {
+    "数值比较": {
+      "questions": 12,
+      "candidate_correct_assertion_overreserve": 0,
+      "assertion_correct_candidate_overreserve": 1
+    },
+    "类别规则": {
+      "questions": 12,
+      "candidate_correct_assertion_overreserve": 1,
+      "assertion_correct_candidate_overreserve": 1
+    }
+  },
+  "posthoc_both_singles_correct": {
+    "questions": 18,
+    "candidate_correct_assertion_overreserve": 0,
+    "assertion_correct_candidate_overreserve": 1
+  },
+  "source_file_count": 295,
+  "manual_review_informed_not_independent": true,
+  "judgments_sha256": "803cbb06e6a6271b22bd90d39ccf4b5877b02917dc4f76c4df857dee10ec557d",
+  "key_sha256": "088bf3a2cbbb880840cb287b3c3c5470c8873d026e21c3baae5aef393067b95e"
+}
