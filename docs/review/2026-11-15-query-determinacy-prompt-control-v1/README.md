@@ -26,9 +26,9 @@
 确认 GPU 0 没有其他计算任务后，在项目机器执行：
 
 ```sh
-cd '/large_disk/wf/研究代码/Knowing-Before-Answering-Decoding-Language-Models-for-Reliable-RAG' && CUDA_VISIBLE_DEVICES=0 /large_disk/wf/miniconda3/envs/kba-rag/bin/python scripts/query_determinacy_prompt_control.py collect
+sh prompt_control.sh
 ```
 
-入口检查可见设备、bf16、计算进程和模型指纹，不构成独占预约。完成或报错后告知助手；助手先检查两次运行记录、清单与token，再按评分合同逐条判断并比较，不将缺失计作拒答或正确。新运行输出在 `runs/qwen2.5-3b-query-determinacy-prompt-control-v1/`，默认不随Git备份。
+此短命令从项目根目录执行；[启动脚本](../../../prompt_control.sh)将GPU设为0，并传入 `collect` 参数。用户先前两次粘贴时将 `collect` 拆成新命令，均在参数检查退出，事后 inspect 为0 attempts/records；不需要清理或重新准备。入口检查可见设备、bf16、计算进程和模型指纹，不构成独占预约。完成或报错后告知助手；助手先检查两次运行记录、清单与token，再按评分合同逐条判断并比较，不将缺失计作拒答或正确。新运行输出在 `runs/qwen2.5-3b-query-determinacy-prompt-control-v1/`，默认不随Git备份。
 
 本轮无新GPU/前向、回答或评分；原v1/E1-r1门禁false、正式独立批准0、正式标签null、原拟合预算0、380正文封存。用户此前允许开发性推进不等于原门禁或确认实验放行。
