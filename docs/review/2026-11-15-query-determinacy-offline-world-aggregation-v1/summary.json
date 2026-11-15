@@ -1,0 +1,92 @@
+{
+  "decompose": {
+    "alternatives": {
+      "correct": 19,
+      "overreserve": 3,
+      "unknown": 2
+    },
+    "combined": {
+      "correct": 19,
+      "technical_missing": 3,
+      "unknown": 2
+    },
+    "planned_questions": 24,
+    "same": {
+      "alternatives": {
+        "correct": 12,
+        "overreserve": 3,
+        "unknown": 1
+      },
+      "combined": {
+        "correct": 12,
+        "technical_missing": 2,
+        "unknown": 2
+      },
+      "sources": {
+        "correct": 15,
+        "overreserve": 1
+      }
+    },
+    "sources": {
+      "correct": 19,
+      "overreserve": 1,
+      "unknown": 1,
+      "unsupported_choice": 3
+    },
+    "split": {
+      "alternatives": {
+        "correct": 7,
+        "unknown": 1
+      },
+      "combined": {
+        "correct": 7,
+        "technical_missing": 1
+      },
+      "sources": {
+        "correct": 4,
+        "unknown": 1,
+        "unsupported_choice": 3
+      }
+    }
+  },
+  "plain": {
+    "alternatives": {
+      "correct": 14,
+      "overreserve": 10
+    },
+    "combined": {
+      "correct": 23,
+      "wrong": 1
+    },
+    "planned_questions": 24,
+    "same": {
+      "alternatives": {
+        "correct": 6,
+        "overreserve": 10
+      },
+      "combined": {
+        "correct": 15,
+        "wrong": 1
+      },
+      "sources": {
+        "correct": 5,
+        "overreserve": 11
+      }
+    },
+    "sources": {
+      "correct": 13,
+      "overreserve": 11
+    },
+    "split": {
+      "alternatives": {
+        "correct": 8
+      },
+      "combined": {
+        "correct": 8
+      },
+      "sources": {
+        "correct": 8
+      }
+    }
+  }
+}

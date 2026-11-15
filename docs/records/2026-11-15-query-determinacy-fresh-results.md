@@ -1,5 +1,7 @@
 # 2026-11-15：新底题192条开发结果
 
+后续更正：`G04_split_dual_alternatives__decompose` 的条件分支错误，原U应改X；逐值分歧汇总由12U/3N/1X改为11U/3N/2X，旧逐项文件保留，见[更正与来源对照](2026-11-15-query-determinacy-source-order-results.md)。
+
 记录时间与时区：2026-11-15，Asia/Shanghai。状态：用户生成完成、知情复核完成；用户运行GPU，助手核验和评分。
 
 用户报告结束；实际inspect 192 attempts/records、189完整EOS、3截断/凭据，按预定策略继续且未重答，前4技术smoke通过。生成耗时合计246.43秒、首末保存间478.98秒，不含加载、不认证GPU独占。评分前封存manifest、192 attempt、192 record和3凭据共388文件，复验现场与原始字节哈希一致。

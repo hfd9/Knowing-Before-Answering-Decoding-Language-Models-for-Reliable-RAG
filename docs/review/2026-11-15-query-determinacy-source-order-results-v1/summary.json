@@ -1,0 +1,94 @@
+{
+  "cases": {
+    "F01": {
+      "family": "number",
+      "original_alternatives": "U",
+      "original_sources": "U",
+      "swap_labels": "U",
+      "swap_order": "U"
+    },
+    "F02": {
+      "family": "number",
+      "original_alternatives": "U",
+      "original_sources": "U",
+      "swap_labels": "U",
+      "swap_order": "U"
+    },
+    "F03": {
+      "family": "number",
+      "original_alternatives": "U",
+      "original_sources": "U",
+      "swap_labels": "U",
+      "swap_order": "U"
+    },
+    "F04": {
+      "family": "number",
+      "original_alternatives": "U",
+      "original_sources": "U",
+      "swap_labels": "U",
+      "swap_order": "U"
+    },
+    "G01": {
+      "family": "category",
+      "original_alternatives": "U",
+      "original_sources": "N",
+      "swap_labels": "X",
+      "swap_order": "U"
+    },
+    "G02": {
+      "family": "category",
+      "original_alternatives": "U",
+      "original_sources": "X",
+      "swap_labels": "T",
+      "swap_order": "X"
+    },
+    "G03": {
+      "family": "category",
+      "original_alternatives": "U",
+      "original_sources": "N",
+      "swap_labels": "N",
+      "swap_order": "U"
+    },
+    "G04": {
+      "family": "category",
+      "original_alternatives": "X",
+      "original_sources": "N",
+      "swap_labels": "X",
+      "swap_order": "X"
+    }
+  },
+  "counts": {
+    "category/original_alternatives": {
+      "U": 3,
+      "X": 1
+    },
+    "category/original_sources": {
+      "N": 3,
+      "X": 1
+    },
+    "category/swap_labels": {
+      "N": 1,
+      "T": 1,
+      "X": 2
+    },
+    "category/swap_order": {
+      "U": 2,
+      "X": 2
+    },
+    "number/original_alternatives": {
+      "U": 4
+    },
+    "number/original_sources": {
+      "U": 4
+    },
+    "number/swap_labels": {
+      "U": 4
+    },
+    "number/swap_order": {
+      "U": 4
+    }
+  },
+  "new_source_files": 34,
+  "old_source_files": 388,
+  "prior_correction_count": 1
+}

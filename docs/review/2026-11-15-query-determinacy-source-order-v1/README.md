@@ -1,5 +1,7 @@
 # 查询可判定性：来源标签与显示顺序开发对照
 
+> **结果后的参照更正：** 原4个代码分歧双候选回答中，有1个虽最终声称不确定但条件分支错误，原U应改X；修正后为3U/1X，详见[结果与更正](../2026-11-15-query-determinacy-source-order-results-v1/README.md)。本文件以下是运行前的历史快照。
+
 2026-11-15，Asia/Shanghai。状态：`prepared_not_started`，16计划、0 attempts、0回答。用户授权持续探索；这是看过[新题结果](../2026-11-15-query-determinacy-fresh-results-v1/README.md)后对同一批已暴露材料的事后定向开发对照，不是独立确认或整体能力测试。
 
 ## 要解决的问题
