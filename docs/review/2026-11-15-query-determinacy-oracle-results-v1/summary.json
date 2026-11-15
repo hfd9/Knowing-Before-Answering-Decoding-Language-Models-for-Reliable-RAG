@@ -1,0 +1,53 @@
+{
+  "category/same": {
+    "combined": {
+      "correct": 10,
+      "overreserve": 2
+    },
+    "dual_alternatives": {
+      "overreserve": 12
+    },
+    "dual_sources": {
+      "overreserve": 12
+    },
+    "n": 12
+  },
+  "category/split": {
+    "combined": {
+      "correct": 6
+    },
+    "dual_alternatives": {
+      "correct": 6
+    },
+    "dual_sources": {
+      "correct": 6
+    },
+    "n": 6
+  },
+  "number/same": {
+    "combined": {
+      "correct": 11,
+      "overreserve": 1
+    },
+    "dual_alternatives": {
+      "correct": 3,
+      "overreserve": 9
+    },
+    "dual_sources": {
+      "overreserve": 12
+    },
+    "n": 12
+  },
+  "number/split": {
+    "combined": {
+      "correct": 6
+    },
+    "dual_alternatives": {
+      "correct": 6
+    },
+    "dual_sources": {
+      "correct": 6
+    },
+    "n": 6
+  }
+}
