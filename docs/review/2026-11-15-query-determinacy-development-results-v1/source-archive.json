@@ -1,0 +1,730 @@
+{
+  "description": "Exact raw UTF-8 bytes for the 145 local run files, retained before scoring",
+  "files": [
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/manifest.json",
+      "sha256": "7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5",
+      "raw_utf8": "{\n  \"count\": 72,\n  \"failure_policy\": \"smoke failure stops; later technical failure saved and skipped without retry; structural failure stops\",\n  \"generation\": {\n    \"attention\": \"sdpa\",\n    \"do_sample\": false,\n    \"dtype\": \"bfloat16\",\n    \"eos_token_ids\": [\n      151645,\n      151643\n    ],\n    \"max_new_tokens\": 384,\n    \"num_beams\": 1,\n    \"use_cache\": true\n  },\n  \"implementation_sha256\": {\n    \"scripts/query_determinacy_dev_audit.py\": \"2036d5aed344b4ffb46bbafb93282dc113eddf1a66580601c9bbd3836d0e3aa9\",\n    \"scripts/query_determinacy_dev_run.py\": \"483eafcb1cec1ebd7b3a9a76521f0e7bd37b6a47b715a673cb40a51902eb5899\",\n    \"scripts/query_determinacy_material_audit.py\": \"949c014f21848d2aaa49810f69285414c043d34165dde1bdf24642a4ba4a97ae\",\n    \"scripts/query_determinacy_pilot.py\": \"4779c9e90ad5ad63b4028e7b48c3c66db47f28753b1858aef14a8ba77431999a\",\n    \"scripts/query_determinacy_unattempted_v3.py\": \"2c267ebd24621c6bd46d87622f47024153c113fcc610c87cdc41fb8148b9d203\",\n    \"scripts/query_determinacy_unattempted_v4.py\": \"41b67de81c5c0ffd8bc7738eae7d2f2016a8e5d0fd77ac402332bf7f74f57a0f\"\n  },\n  \"items\": [\n    {\n      \"id\": \"N02_same_yes_single_a\",\n      \"input_tokens\": 79,\n      \"prompt_sha256\": \"a1b6fc9c19e1d1ad4a022198ead04d44a0fa21801dbd155d045a5109094473ea\",\n      \"rendered_sha256\": \"5dbd1eff751f8c2729875f45dbaf7791b8373c9218885d7a2d963e6f23814efc\",\n      \"token_ids_sha256\": \"ec653bc49576eb31fa7e51bfbb0d1f8829225af06a7b355ec2b28dcca4bc1341\"\n    },\n    {\n      \"id\": \"C03_split_single_b\",\n      \"input_tokens\": 80,\n      \"prompt_sha256\": \"f3bd5fc9f58c33069e88448ec157e395457feb67017acc61d215cf746571ccbd\",\n      \"rendered_sha256\": \"f0ada932d6bd7bc0ae882de5d01cce11a151967a333b2c7018b7b63fbce2a3d9\",\n      \"token_ids_sha256\": \"c967b081ebad6d6e54ab5bdfe35e0b3d076155bc02ba60a5e5161e69fcaf8afe\"\n    },\n    {\n      \"id\": \"N01_split_dual_sources\",\n      \"input_tokens\": 112,\n      \"prompt_sha256\": \"5d0e5e88a57e84d6c68a13d446579ea0196f968dcb807b2004c56160aba1d683\",\n      \"rendered_sha256\": \"721008cad3a93cf3021a6c7855297057d988d31c22be27fefdadb0b7405a1571\",\n      \"token_ids_sha256\": \"a11d99750fdcf6791ab09156961b0a0566605cf789498707186e88cd61979e55\"\n    },\n    {\n      \"id\": \"C02_same_no_dual_alternatives\",\n      \"input_tokens\": 106,\n      \"prompt_sha256\": \"9f4e97a330b54b7c1abf76b1b7614c046af8b0977b79527cf440b41eaa653199\",\n      \"rendered_sha256\": \"7e0359a8c854ce25f31b0e518aeb0107cfb28b766e88fa052c16ad48747ef06e\",\n      \"token_ids_sha256\": \"de9e8b1108448b3940b572744f52eb289f0882b1799f4e4fe6c082169cfe85fc\"\n    },\n    {\n      \"id\": \"C02_split_dual_alternatives\",\n      \"input_tokens\": 102,\n      \"prompt_sha256\": \"309282dce750f5cc54a9381a796c02c1b913ac956008967e05c04951a398da01\",\n      \"rendered_sha256\": \"18aeb83d6369f5d6d677faa09249ca260bc8028fa7d514a040bb5326f42ee303\",\n      \"token_ids_sha256\": \"cbeb5798a8b65fef38e0055654b50c95de05b21ae90ef3a0d4ca8bbebb8e5c37\"\n    },\n    {\n      \"id\": \"N01_same_no_dual_alternatives\",\n      \"input_tokens\": 104,\n      \"prompt_sha256\": \"17424dc788aa77d924a5ba7a7297465ef71ea776fea35561943d911460f612d9\",\n      \"rendered_sha256\": \"5bf4abd99811ea6981e6cbc488b209d793ada93837e1d7ffe3e65d1904453df8\",\n      \"token_ids_sha256\": \"e1eb4549fe1014b551f98ebd3a6e0fb14e0f9875bdda6202bdf41eb16116c60f\"\n    },\n    {\n      \"id\": \"C03_same_yes_single_b\",\n      \"input_tokens\": 84,\n      \"prompt_sha256\": \"8bec9a8091330fe580a93eb97c3a86c6623875686ee6011326f4541134682c37\",\n      \"rendered_sha256\": \"89b4c597f1f4d784da1f5bff01b14e11548c0017441dd60b5744bc3db62a2a44\",\n      \"token_ids_sha256\": \"ead131f4fbb681eaa1a37d2cc424bc57b62ea1743982542fe622a3abf45ab2ea\"\n    },\n    {\n      \"id\": \"C02_same_yes_dual_alternatives\",\n      \"input_tokens\": 106,\n      \"prompt_sha256\": \"22a62e2ddd58323389af26585a0494a37909acecfb4b118dcf82903fd6310769\",\n      \"rendered_sha256\": \"26251c0881c65358436f9e00dfd6f9f5a69868dccb65c0243d472b1f69479b2d\",\n      \"token_ids_sha256\": \"40d13d48e95326b7c1bab6089aaff6ad7a3d87489c86008a0fef0abaf772568f\"\n    },\n    {\n      \"id\": \"N01_same_yes_dual_sources\",\n      \"input_tokens\": 111,\n      \"prompt_sha256\": \"c146b464146b01cb720c90c17da98792cbf9f2668d6c88316f90680e3291ee90\",\n      \"rendered_sha256\": \"13df2951451490520043f653b3552e18d963ccbb09ba00f578ed7ac21be8b5a7\",\n      \"token_ids_sha256\": \"c9c0d0a8856f53dad980fd731ad3950c2e566b98dcecf240dcebda6af8940ea6\"\n    },\n    {\n      \"id\": \"C03_split_dual_alternatives\",\n      \"input_tokens\": 102,\n      \"prompt_sha256\": \"78e4af1f67ba717526b2724deefc9b3edd290d88eb9085fb4680203036021fed\",\n      \"rendered_sha256\": \"966de173e9e7c3db47644972832bbb62e95e85280306f1831b1ed745c653487c\",\n      \"token_ids_sha256\": \"f59436efe63830b33200ed5f639a692c60c04999ddc401ca21b7f24a37e1cfa1\"\n    },\n    {\n      \"id\": \"N01_same_yes_dual_alternatives\",\n      \"input_tokens\": 103,\n      \"prompt_sha256\": \"d24f8f074e7b3ff7f18d697c211a352b4fc9f2ed3ae0a7303faf048fbecc577c\",\n      \"rendered_sha256\": \"c32ec661a9a2b575f33e27dae8ebfc1ed9af8e66b71e46e3136ea17c64c5e230\",\n      \"token_ids_sha256\": \"ed5a1ec0226673cb95b30f233a2500bdc8d209ed7d1545a469e911804ac8c051\"\n    },\n    {\n      \"id\": \"N03_split_single_b\",\n      \"input_tokens\": 79,\n      \"prompt_sha256\": \"4b129c33a43d1cbfeeb326150ac16becf4ef7f2ce90557c268490aac2263a03c\",\n      \"rendered_sha256\": \"2c9417ecbb6e00988d06c5fa75a3e1ada2e1bab2436c670e7147028a88339837\",\n      \"token_ids_sha256\": \"e046f5437729a4af03c60e8a346ffbd659bf25bd1a1915217b5578e7029d8648\"\n    },\n    {\n      \"id\": \"C01_same_yes_dual_sources\",\n      \"input_tokens\": 115,\n      \"prompt_sha256\": \"7c9a752323d3d84dbd5df1e6365fdb08d90c1729bfa75f4c2a0d5c180e085e26\",\n      \"rendered_sha256\": \"e2ad965f41c341f3bcc8670c6d612500a45c894caf76a996994f3dc5247244b7\",\n      \"token_ids_sha256\": \"3adbd1ba843fa81bb9b81571c059636971a36497c13f5e9800f7201c12ba4d69\"\n    },\n    {\n      \"id\": \"N02_same_no_single_a\",\n      \"input_tokens\": 79,\n      \"prompt_sha256\": \"2a864f430c6e5c2e1b378f45ffed56281f695c423e53e1e4df8b57cc5712151f\",\n      \"rendered_sha256\": \"b7807c7a5a1bfc5ca725d21fa8bde5b32136b9239cc45ec99320900b63e3fe5a\",\n      \"token_ids_sha256\": \"bcc3d0b7764d4acc85c040c00ae282f8232da439f327e56ada96f1c2a5461b8a\"\n    },\n    {\n      \"id\": \"C01_same_no_single_b\",\n      \"input_tokens\": 84,\n      \"prompt_sha256\": \"4bf5d42fa5a0a7008de3cd08b82d984714b10df31de1429081396834f25ae9dc\",\n      \"rendered_sha256\": \"02e6d0f5f4c72dde5282327078f2f6b330b0df1c1504755d56c46010805828e2\",\n      \"token_ids_sha256\": \"1d3de65bc9622d58c097aa9faf1a0b9ad83658351fdfc7a28badaaa9dbe93f27\"\n    },\n    {\n      \"id\": \"N03_same_no_dual_sources\",\n      \"input_tokens\": 112,\n      \"prompt_sha256\": \"6c6c448fe285a09b6dd21bd6281bfbd8abf7e78b607f356db10700bcf4c542d5\",\n      \"rendered_sha256\": \"d0ea7e817bcd0c1b306419594bbf9f7f71c78ec873dc828a46822ec5364df3a9\",\n      \"token_ids_sha256\": \"f9ae10e871243357657ca76f048fdb0ad0d8a9e8326350f75d744a8942271cdc\"\n    },\n    {\n      \"id\": \"C02_same_no_dual_sources\",\n      \"input_tokens\": 115,\n      \"prompt_sha256\": \"f4e81ba7a7950d985d83259996a6fff1266779de2d17d7eb787ebb126c87023e\",\n      \"rendered_sha256\": \"9b5a76a2dbac1301e329b2b189b929993329c196f09888890a02c04dbab50ee8\",\n      \"token_ids_sha256\": \"7dd249e03c2a287587739a65af4fc184504349acf7d5dd8380a464cf9117cc53\"\n    },\n    {\n      \"id\": \"C03_same_no_dual_alternatives\",\n      \"input_tokens\": 106,\n      \"prompt_sha256\": \"574d91ab82ae578f5f31cb784aa5af26882174c00b1d4785e8409dc46ae12d36\",\n      \"rendered_sha256\": \"c6e3be652d93d5f21d280f09e7e3f019929edbeb8c2f174d27e08fe7d73cd3ae\",\n      \"token_ids_sha256\": \"a8e48a72cb0831277e45a5228385f40d087ee6e3f35b5420ea81e77758dd2ef0\"\n    },\n    {\n      \"id\": \"N02_same_yes_single_b\",\n      \"input_tokens\": 79,\n      \"prompt_sha256\": \"86f5503e359f75d675a28396c02d93afe00746848fb3dd7a341014b17ca9bcd6\",\n      \"rendered_sha256\": \"a3066ca8fac61c663539f7ac5d6af56e9ea49ca2bee02ba86759c57dc4d0521e\",\n      \"token_ids_sha256\": \"cb421b6ad6c3906a5720afa023e8d64c88c8eef5b87a0c76a461360b25c11fb1\"\n    },\n    {\n      \"id\": \"C03_same_yes_dual_alternatives\",\n      \"input_tokens\": 106,\n      \"prompt_sha256\": \"c7335c71ffe9a98c7bbe51ab83cf8808ac62a9d157972db2f523db5b8773c05f\",\n      \"rendered_sha256\": \"93b5dc7e1477a679aebfb8b3ab574a2d327529a19174f1acb26d6c06e31512aa\",\n      \"token_ids_sha256\": \"8f3de5f26fa375d70321f29fdd3589ca7a2410a7a8048ba38c729078533165dc\"\n    },\n    {\n      \"id\": \"N02_split_dual_alternatives\",\n      \"input_tokens\": 104,\n      \"prompt_sha256\": \"9f7fc29e49cf0777ca94c066c4c9bc1b1341294a6f470750dc3ce5b22a5714f4\",\n      \"rendered_sha256\": \"0a1e2938d3fbb303bef1690de847e05b2d9c7d2046f415e2678211ce5be80db6\",\n      \"token_ids_sha256\": \"ff576b0e45ec1fc8317984d9dbe719e6de204d99d502183da6eb1bbbe267addb\"\n    },\n    {\n      \"id\": \"N01_split_single_a\",\n      \"input_tokens\": 79,\n      \"prompt_sha256\": \"d6f6abae9474d7e4e39eb59216d321c28cf32b1414595f4c6b78252ded1e4e00\",\n      \"rendered_sha256\": \"67a0719d5ade422460e235102d6af62c65b31e19541328f8281bec77f5ffb488\",\n      \"token_ids_sha256\": \"c26731548563b70c24acf5a14ab88b48d7759b2e8f04d58ac7b521db7e8a1659\"\n    },\n    {\n      \"id\": \"C01_same_no_dual_alternatives\",\n      \"input_tokens\": 106,\n      \"prompt_sha256\": \"a3adee4a3890cc73631ef3ae7d646ee05497abbcf8dd345f49c6c64e7f700e8a\",\n      \"rendered_sha256\": \"7b1edb1a3ca81092c67ea18bfec35f27c174822328562fd75a707db832b8e0a3\",\n      \"token_ids_sha256\": \"0f508b8ff917ca278119d1c831577e7bdd3ce87cd9a9f261b73696685b8e842d\"\n    },\n    {\n      \"id\": \"N02_same_yes_dual_alternatives\",\n      \"input_tokens\": 104,\n      \"prompt_sha256\": \"feab26de7d6adc7ce88e77898f3c3db5f4572ca1f41d6ebd2e00a95d6ce642df\",\n      \"rendered_sha256\": \"7b849d165e91ba5a2295d71ce651ab922e694ef4bdb1e3d0f7107791ed8e1d39\",\n      \"token_ids_sha256\": \"979de2b0c4c80314bf22dde667a23e8b042d79319bb9c02f4329c306896ea2f0\"\n    },\n    {\n      \"id\": \"N01_same_no_single_b\",\n      \"input_tokens\": 79,\n      \"prompt_sha256\": \"73ad350724ff914851272285e265e76a1be12576d70ecba4735bf4e4175b11fb\",\n      \"rendered_sha256\": \"a8aa7f615fccccfdbe9f6efd2b950ea4ce237c677314d4879ac44538b0469f53\",\n      \"token_ids_sha256\": \"7ce13be07ccd2adec56b3439865687a22009ee1077d107de8ffc0a5b6cd26ad9\"\n    },\n    {\n      \"id\": \"N03_same_yes_dual_sources\",\n      \"input_tokens\": 112,\n      \"prompt_sha256\": \"95d253cb82666654aa4a06915f06834cb03d9e1eef01e33b5108d8527331ebc4\",\n      \"rendered_sha256\": \"50f05b75d14d8b1080b41599458fab82ad83dfc9ed8bf811603b3c0432c05d29\",\n      \"token_ids_sha256\": \"5f5685b5920aa50594fb5a9ac2f39617d25f2e8e700cfc150788ecd8fc1f4ecc\"\n    },\n    {\n      \"id\": \"C03_same_yes_single_a\",\n      \"input_tokens\": 84,\n      \"prompt_sha256\": \"350563b4de2778bcf0200611bd3f8a8a0bc16f9976da54ec3a4408592deadddc\",\n      \"rendered_sha256\": \"a815b98aac988ee4f60b7e0421c749e175d6cec0d875e4d84515ae21b893a4de\",\n      \"token_ids_sha256\": \"8460e45fba65f6ed489832579a4b4f07531f990bb5cd577c1e858d743b657534\"\n    },\n    {\n      \"id\": \"N03_same_no_single_a\",\n      \"input_tokens\": 79,\n      \"prompt_sha256\": \"be04b838a4447c4ea63da248bc55b00f0f2ee19c0255d11ede784b640552e3d7\",\n      \"rendered_sha256\": \"43afc9f37449727a1f70a1db36b8ee79f909ab268cc971ad61c64004f7a256f3\",\n      \"token_ids_sha256\": \"f101ef482907724c58b31eec56647223c69993e6378c986b568b15605801f8d3\"\n    },\n    {\n      \"id\": \"C02_same_no_single_a\",\n      \"input_tokens\": 84,\n      \"prompt_sha256\": \"4bc727c63d6dbb90fff95855dbb4fa4b593222f39d5d2bb0401f363921811d53\",\n      \"rendered_sha256\": \"4a99cc93cc997bb9f4bb6c3de6933ce6e812045cf10021b757ba367a91d83cba\",\n      \"token_ids_sha256\": \"c76dd133b96cb454595c702f3095ec8af0615391bdfb1626fe215e14b27931fa\"\n    },\n    {\n      \"id\": \"C01_split_dual_sources\",\n      \"input_tokens\": 111,\n      \"prompt_sha256\": \"a99804ed967123a670f62d6ce70719b95795f02a0756bbb6c28903bd22da0de9\",\n      \"rendered_sha256\": \"0f8c01649b38442cba1a42704089aa8341145245a41e1c9ae3ad04daf9399097\",\n      \"token_ids_sha256\": \"26a44271119454f822828a3dbbbc3ee03a64218eceb6f44cce1c156e3dd28a16\"\n    },\n    {\n      \"id\": \"N03_same_yes_dual_alternatives\",\n      \"input_tokens\": 104,\n      \"prompt_sha256\": \"23d83e5dc3c3276aaed56940cea7e1cd91a8016541827eb1c0213f180bc04a1c\",\n      \"rendered_sha256\": \"873d2a61d768a43689e08877cb3d0f100c9a9db5f1708189aa7dd214ade7e1c5\",\n      \"token_ids_sha256\": \"5b2f98d1c7b6e92116e9a4fdfa495f07c67f784946088ca6ea466e3eb20a120f\"\n    },\n    {\n      \"id\": \"C01_same_yes_single_a\",\n      \"input_tokens\": 84,\n      \"prompt_sha256\": \"1eff1a56dbaeebb0d826cc01868f66a9cbbb11910675d6960d584152ea9fdfaf\",\n      \"rendered_sha256\": \"fec74a518da996fc832bb09ee25b250c28ed4d53c8227f3a9515a8b59e1e19be\",\n      \"token_ids_sha256\": \"3d8058df51458d274815b7fd560c4dca2e4193ff9ab6b8964163fba3aabc0940\"\n    },\n    {\n      \"id\": \"N02_same_no_dual_alternatives\",\n      \"input_tokens\": 104,\n      \"prompt_sha256\": \"5f89cbdf8ecab285125332a37b4e43cebccd5489f548b285914feb24867b9cf0\",\n      \"rendered_sha256\": \"4aa1c6318af202e6c32bcce2cfb2607f13dad7e31e1f985861a71fbc8b4ff5a2\",\n      \"token_ids_sha256\": \"29694d2a3dc8b3b80843e588279fbd72a0147d45e96fabb43c6bcbcdb8e4b2d2\"\n    },\n    {\n      \"id\": \"C03_same_yes_dual_sources\",\n      \"input_tokens\": 115,\n      \"prompt_sha256\": \"b8b16379f65c36b8a1981d1a4fd7e84e258b9eb53bc75b7ec9ee6fed7836d5ad\",\n      \"rendered_sha256\": \"898c202285b061c92ea4cbca69c71ca80cb0f57885f792b17011b0dfe7becee2\",\n      \"token_ids_sha256\": \"d3daa21bb1261d28dc7cbb0a183dfb1de3a1724bea4fac71a4de6abd7015d6c8\"\n    },\n    {\n      \"id\": \"C03_split_single_a\",\n      \"input_tokens\": 80,\n      \"prompt_sha256\": \"144fcb9c18d8fcbea84a89e79d88084f7f99c87327822921c06dc44346cc06a2\",\n      \"rendered_sha256\": \"73925708618702006fdf433543bfb0ba9fb549a320d0416d4771a5df8a2cd134\",\n      \"token_ids_sha256\": \"8830fb077547182d34489e07e635988e3bbeda50707f89229e5fc1e0331a4d2f\"\n    },\n    {\n      \"id\": \"N01_same_yes_single_b\",\n      \"input_tokens\": 78,\n      \"prompt_sha256\": \"21cb3746a346811c7f660de750383af6f0fef4b7e54abf28dc5886c6f214c412\",\n      \"rendered_sha256\": \"9bad95c04c114c7138d7ac9b1cfdb71080d19849f9f0ed972a4e0278f89d2b5b\",\n      \"token_ids_sha256\": \"d9c7a646327d5aad20a9a183d7f22eb1d7555a93a169cf2db7b1c75b62ac93bb\"\n    },\n    {\n      \"id\": \"N03_same_no_single_b\",\n      \"input_tokens\": 79,\n      \"prompt_sha256\": \"45a0f4ebb9100e8f32a92ab5ce1ff747c922825c3d2948979eeef64e36e6f966\",\n      \"rendered_sha256\": \"22f5d9ea9e6898a845e880cf69aac862e61ea5f6ec6fb39964139e4ee9f0f014\",\n      \"token_ids_sha256\": \"89abf13d2b00f5ebeb9e57c7cd6b3587cf578e64e3a676a711facf8d89ccf501\"\n    },\n    {\n      \"id\": \"N01_split_dual_alternatives\",\n      \"input_tokens\": 104,\n      \"prompt_sha256\": \"a62dacdb9fcdb2ac88df4eef745dfc1b7f7bb971c13f5a93e31c8b252e5fb7b1\",\n      \"rendered_sha256\": \"09775a53fb899d0cf5574f4556f24f4d80fdd75c0529fbeabf0da29d9ca2f2ab\",\n      \"token_ids_sha256\": \"1dab50f641d68068009cf4235adb860ba52ce3246b6b31be83f4d52a3eacbee4\"\n    },\n    {\n      \"id\": \"N02_split_dual_sources\",\n      \"input_tokens\": 112,\n      \"prompt_sha256\": \"ca31d85f8469fb82e2f33a3d6147f92d1a6722ccdb81537331ea76dd5ef994d4\",\n      \"rendered_sha256\": \"4c7ca351160dc32ba35d8dce15ff06dd2ef4ca99144e305efe30894a4f3c09a2\",\n      \"token_ids_sha256\": \"50280aae4f8f019a68b0239f6be31b3af9839ca4ce30b25d33e4f8d98b84281f\"\n    },\n    {\n      \"id\": \"N01_same_yes_single_a\",\n      \"input_tokens\": 78,\n      \"prompt_sha256\": \"7626246f2c476548611003fa20303ddf42681d3f57296bdb1ed7338bacbfc2b1\",\n      \"rendered_sha256\": \"42d6cda71c2627454f749d4055294e248e606953cf709259ee745c5eb2cd553b\",\n      \"token_ids_sha256\": \"a6e840b607220d172f5e097ad5ff3b71d3fefaf404115ef594eef11f91781bfd\"\n    },\n    {\n      \"id\": \"N03_same_no_dual_alternatives\",\n      \"input_tokens\": 104,\n      \"prompt_sha256\": \"360209abfa3da321b4a3ba2542100bab66f99c9c72779456e4c3672a6b8e3ff0\",\n      \"rendered_sha256\": \"0379c6725dd67a0dbe9ec7953b29bee685ac5b0ffe3670f5799286ed52ca580f\",\n      \"token_ids_sha256\": \"2d116600de69a4f8dca12b31a4bb0aa3a529e4a9110db63f85984db4f87d4d3b\"\n    },\n    {\n      \"id\": \"C02_same_yes_single_a\",\n      \"input_tokens\": 84,\n      \"prompt_sha256\": \"cd47e5d3421cb7389185d8477ef12fb511a35da23a7a961f5eaf8fd891b011b8\",\n      \"rendered_sha256\": \"ded2e6c65e83ded3dd3581612b26d99643bdeab3cb60459d58157aed611ab210\",\n      \"token_ids_sha256\": \"6d63019c2257643466291e14576f84fb4d7f23ac00e24a17648abde476ff509c\"\n    },\n    {\n      \"id\": \"N02_same_no_single_b\",\n      \"input_tokens\": 79,\n      \"prompt_sha256\": \"b3a0c6a0167804cd0117e67ac8779452a3e0ea31fc21e7daf8a9dd035501fa40\",\n      \"rendered_sha256\": \"bc9e81dca8118107bb29e29304e07f830a2608a6dd9fe5ba7312d01afdefe55a\",\n      \"token_ids_sha256\": \"f9de125a2d0dc3497feb4172cc004a187e65ae641ac44613d86c9d801727a926\"\n    },\n    {\n      \"id\": \"N03_split_dual_alternatives\",\n      \"input_tokens\": 104,\n      \"prompt_sha256\": \"6e1e00858eed882abf1ef8e7052a51ab403238e8f30bb750b234f110d16a69aa\",\n      \"rendered_sha256\": \"70932340abee2cdd75766cf897759bdbc3a14099bdffe3d65312f0babc9908e9\",\n      \"token_ids_sha256\": \"d287810cd42e2ce4e9a8f7befb2fbe90dc22f1a46ea4bdd1e8e3af60aacaddc7\"\n    },\n    {\n      \"id\": \"C01_same_no_dual_sources\",\n      \"input_tokens\": 115,\n      \"prompt_sha256\": \"2e731d2c779dfb745e9f802dc36d38709295834082de63a4416380dc62509669\",\n      \"rendered_sha256\": \"799558c3cd7709e234526217a025c5a37d39f57c55ae9754bd44cf9de488de67\",\n      \"token_ids_sha256\": \"93675a09a11ce85db3329807b7e6b55a37f11297a8b574c06f04a5b27034edcf\"\n    },\n    {\n      \"id\": \"N03_split_single_a\",\n      \"input_tokens\": 79,\n      \"prompt_sha256\": \"7fb46c1f42446357ac9edfb331315404bbb2e0c676379e67a2fc724d46d30f12\",\n      \"rendered_sha256\": \"e2cd906e8d7e8b4abdb2d8f822bcb93e2f7240668ac53d9486f999a07b174d7c\",\n      \"token_ids_sha256\": \"563a6042af2b797fd349a1db6dde9da2ba49980df4eed849fb26da628b80373f\"\n    },\n    {\n      \"id\": \"C03_same_no_single_a\",\n      \"input_tokens\": 84,\n      \"prompt_sha256\": \"050be03f670c963d5c3fdff814ffec47042b83408d41024cfee22cdc4f62c44e\",\n      \"rendered_sha256\": \"f4bc3697729a8e68774c41625b21d58bd2b2d16936b6ba4a6a21d2bb0a9a7f71\",\n      \"token_ids_sha256\": \"66a29012e190eca209576c7834ab909560681a37649c15b0a75dd9cabc4bcb13\"\n    },\n    {\n      \"id\": \"N01_same_no_single_a\",\n      \"input_tokens\": 79,\n      \"prompt_sha256\": \"bd38fc5199435963cd55eb474d9f878b899edea7a993d04f8c8d988cbab19596\",\n      \"rendered_sha256\": \"29fa1401a7040bba76e9d59f4987d37ead5f33fb39a0d32ff9589af18a5a90fb\",\n      \"token_ids_sha256\": \"13e799d86eae80c9a80e5b7a3403d7e5484f9d8ec3656e861661a55516e20550\"\n    },\n    {\n      \"id\": \"N02_same_no_dual_sources\",\n      \"input_tokens\": 112,\n      \"prompt_sha256\": \"e566902bd447ed6ee5c8e3b098daa37fcd749784c85f6865532d440e026056df\",\n      \"rendered_sha256\": \"25b3798718e2977e500f24729cd1356a6c25227df92cb353c642b3071108f9f0\",\n      \"token_ids_sha256\": \"d95d548c4d23078490469458caa3cab3d42cc2424d1a1f45c239e61876e598f8\"\n    },\n    {\n      \"id\": \"C01_same_yes_single_b\",\n      \"input_tokens\": 84,\n      \"prompt_sha256\": \"1962b49ff07d6cf88244197c1c1a6c26fb778daf3c2cb098a48f1411929eb827\",\n      \"rendered_sha256\": \"d7e9db5e87439f7b7863fd66decfbca9f20f5e5cb5c77373dbbe152b0120e3a1\",\n      \"token_ids_sha256\": \"987f95b842f2bdf98fc43a5979d3e5fa7e4530f371a749fe35ac547b1144054b\"\n    },\n    {\n      \"id\": \"C03_split_dual_sources\",\n      \"input_tokens\": 111,\n      \"prompt_sha256\": \"9c3c42c160ea40fe61132be49bb5ad3c65124e8338418d774899385cb1360603\",\n      \"rendered_sha256\": \"a03d3d488ec786aa81ddb8e92ef2cd06631d8baa00e2bd79da4dc8d41b52fe00\",\n      \"token_ids_sha256\": \"6373d1af546c8dc19f0ea32b5298230088611c9975decd3d465624a31fa9eea4\"\n    },\n    {\n      \"id\": \"C03_same_no_dual_sources\",\n      \"input_tokens\": 115,\n      \"prompt_sha256\": \"998f14c976ea8c83547d64a728606c1bf7f4897ea9ce163a10ed13b4585ad4ff\",\n      \"rendered_sha256\": \"c9e9bcc4779f59ef454f41578a04ea718312e278be553ab18c81fa6c9010e5df\",\n      \"token_ids_sha256\": \"baafbabb9be17d5fc68ff26345e05a8ffdd78d6489fb44ccbf6ff6e482cc68c1\"\n    },\n    {\n      \"id\": \"N01_same_no_dual_sources\",\n      \"input_tokens\": 112,\n      \"prompt_sha256\": \"ef07ea645cab0686617ef357193a81d9d238e603de0298ea6fa06b2443417419\",\n      \"rendered_sha256\": \"0c75b5c2da8a7fb40e6c8d7b18c79e78a38f8e1e0d99e8f4d3ae2a2d2a485c73\",\n      \"token_ids_sha256\": \"0bb10eed214edfa038319d0ee3aa898c9dc0451c90730bcf55f8d29e4389bd9b\"\n    },\n    {\n      \"id\": \"C02_same_no_single_b\",\n      \"input_tokens\": 84,\n      \"prompt_sha256\": \"ac4f89ca9829d48070af59ab24b8fe78f073589be365f4a6cf3e7cc3f0788b30\",\n      \"rendered_sha256\": \"b8db984db97e5a56f1aa541890f2378f920ec68baa5a883b252dd35e0bf7a445\",\n      \"token_ids_sha256\": \"7093fd961c80c9c053be34fef5188be639b3ae97590cecfb0756c42f5af1404c\"\n    },\n    {\n      \"id\": \"C02_same_yes_single_b\",\n      \"input_tokens\": 84,\n      \"prompt_sha256\": \"6e5bd48fb3b18ece6d3e82e3bf5ab7b42fd5dd6efa13b1a89aabb6ffc04b6338\",\n      \"rendered_sha256\": \"689fdb3dfaf7edbb67d8f43d6292373946549e905acd9c8a273b9cd3af75e424\",\n      \"token_ids_sha256\": \"0738f689470d2432c9196736d94218633c7f4a5eff557955f84174b36e026e7d\"\n    },\n    {\n      \"id\": \"C02_split_dual_sources\",\n      \"input_tokens\": 111,\n      \"prompt_sha256\": \"63730388e6385e3294637b5b6cb0718f754d3ee623971a6ce562f1f3c006ca09\",\n      \"rendered_sha256\": \"d758cabb5ee945c27c06963e7989fcac37a227225120d1320b3bf7d7ebb364b6\",\n      \"token_ids_sha256\": \"ff7a4973e1d814fea1ea3c53bbf87f64433cb925e2f6938999da973976fdb114\"\n    },\n    {\n      \"id\": \"N03_split_dual_sources\",\n      \"input_tokens\": 112,\n      \"prompt_sha256\": \"7194e2a96d593a23540fafad84ba97cf7c97b233208b898ff893cacec09921d2\",\n      \"rendered_sha256\": \"1f61b4af078c2de1f2eea836b7a07946a233c52ee2aa81439256beb0a3260fd4\",\n      \"token_ids_sha256\": \"fee42022713410dd298d1f38abdd535f65e81d181ed1ce89c01cd2431771f8cf\"\n    },\n    {\n      \"id\": \"N03_same_yes_single_b\",\n      \"input_tokens\": 79,\n      \"prompt_sha256\": \"8243b3f3ed3932e7187d48b9322cc315027b7eb9946c77aa289979cdfdde99de\",\n      \"rendered_sha256\": \"43313682219bdff002fb8229d6616158ee73dffb2b107d113a688b48a30f7513\",\n      \"token_ids_sha256\": \"5232befba281351c4d33445b9abcad1e3b7205c5129a6e61737735e0a83516c5\"\n    },\n    {\n      \"id\": \"C03_same_no_single_b\",\n      \"input_tokens\": 84,\n      \"prompt_sha256\": \"f61d4715e22944aa9fab5b59a0559bebf54ea3d72f48a052d9d136b93431f9c8\",\n      \"rendered_sha256\": \"22b1a6cb6f70c550a1c1dd33195908ffd164fedd365ca142ee9dbd7ed8b474ea\",\n      \"token_ids_sha256\": \"d066eae1cb2ee5c88c2b8371fa5f16c6abe001b4618da1d9c58e2c2d33535991\"\n    },\n    {\n      \"id\": \"C01_split_single_a\",\n      \"input_tokens\": 80,\n      \"prompt_sha256\": \"72ed23d7fd09b8fe325bc25f36a14f92061dca90f1a7e74d33bb2fb0542c3c8a\",\n      \"rendered_sha256\": \"bca4f7c810ada86083ddd907ff6ec8580dfe065de7ded2d6b8398289743d83d4\",\n      \"token_ids_sha256\": \"c85a09506236cd81600bfd8e9a736484c68c48a439e13578ded911ebbb4808ba\"\n    },\n    {\n      \"id\": \"C02_split_single_a\",\n      \"input_tokens\": 80,\n      \"prompt_sha256\": \"8ec74a8addc2dc745cbd6e738e2eda6321615b69578d2509d819adb9b36bf741\",\n      \"rendered_sha256\": \"08b61bf8cbff92257160ee1e1f62ad4fcb38526b28f0788024d27ba23c32f2cd\",\n      \"token_ids_sha256\": \"57c5858dfd85e561c29ce3ba68f1d782637a38fd4f8e68ee6ff007890107d4c6\"\n    },\n    {\n      \"id\": \"N02_same_yes_dual_sources\",\n      \"input_tokens\": 112,\n      \"prompt_sha256\": \"6ebbfc7b731c68c1e18939173cf414470ca63e76e4b1cd31aaff558ac8072a0c\",\n      \"rendered_sha256\": \"2005ea529e4b764482289dc1000850aba92418c782b06e681daf176313ff69df\",\n      \"token_ids_sha256\": \"01af642737fd9f4f8a7e1dcf7ee96a55e5894e6f0e0312a6ac6afb0c86ed6a54\"\n    },\n    {\n      \"id\": \"N01_split_single_b\",\n      \"input_tokens\": 79,\n      \"prompt_sha256\": \"8379e11dd416477a3fb13d57e805d1f1ee5c371851e567c2aae100b2a3908301\",\n      \"rendered_sha256\": \"f9144499d2a99e4d20c99c2d413aa65aa4c869dbb16d43dbb4296658b6983bd9\",\n      \"token_ids_sha256\": \"240973ba505bc6f573fda6525de2e3f863ce8751e43b54ea056a66b71793e836\"\n    },\n    {\n      \"id\": \"N02_split_single_b\",\n      \"input_tokens\": 79,\n      \"prompt_sha256\": \"6a1d43ae097019c0ef6af90f0d981fceb604d6eac78b4937dd1109f7f43e8211\",\n      \"rendered_sha256\": \"69a541049f32534b7cfc0d4d98c3f5fcfb422dc38c4db017d2afce457deab930\",\n      \"token_ids_sha256\": \"776045e3a77d193482f2a99b5f57078eaa7e3466369221aad04b7c4842d73630\"\n    },\n    {\n      \"id\": \"C01_split_single_b\",\n      \"input_tokens\": 80,\n      \"prompt_sha256\": \"3099f0c361c7556a160a427a5a1f4406bdfcc036f181d0c482e4806be8ff6aa4\",\n      \"rendered_sha256\": \"4b0e70f7fb5afda5a1cee914ae8d6fbc2cd0530a3cb5401cbd86acbfd3b28308\",\n      \"token_ids_sha256\": \"0fe8af500ebb34b11eb42cb8fdf5f3f0bd92cc1f0fa46395e59dbfffbb02df32\"\n    },\n    {\n      \"id\": \"N02_split_single_a\",\n      \"input_tokens\": 79,\n      \"prompt_sha256\": \"a576be95d6b044d2236c57993ecb98927f6d18238dc7d0ab102e10a9f24df4b0\",\n      \"rendered_sha256\": \"c1caa02a13f5eaeaf9801549ea57c2163c6c18f4c83592e6b8954172e57e2552\",\n      \"token_ids_sha256\": \"5f064b685fead6ee36c8b06bc4759b6fed57336b1f1a3f4a8ea44617a29184c5\"\n    },\n    {\n      \"id\": \"C02_split_single_b\",\n      \"input_tokens\": 80,\n      \"prompt_sha256\": \"580257108c577c8def1945055379f96e10bcd908fa386c279cf36276a12e07ab\",\n      \"rendered_sha256\": \"7b0ebf18b24f21c3b460f23f3d991ec0afe2560dc89c88f70a2925042865e47e\",\n      \"token_ids_sha256\": \"3ecfb5a56fee732c95f8774ac5c340247963c5b64b7b444f88603af7a496340d\"\n    },\n    {\n      \"id\": \"C01_split_dual_alternatives\",\n      \"input_tokens\": 102,\n      \"prompt_sha256\": \"fcdd5cfc1814852f7ec6bd2091a36075e129bfd6146c80d799960fd62e1c23dd\",\n      \"rendered_sha256\": \"5b0a22860dc7119c8245c0504cb4424428282b6cfb555286a3ed397b4f89360d\",\n      \"token_ids_sha256\": \"e801a77ceaad06368b300eb173ad2930a8e7fdc575ba4f1b7430a0982f22c500\"\n    },\n    {\n      \"id\": \"C01_same_yes_dual_alternatives\",\n      \"input_tokens\": 106,\n      \"prompt_sha256\": \"f5703c8c4d77b0c51caef7bdf020f4e8651afd7a1f17855edc641cdea69a25a0\",\n      \"rendered_sha256\": \"529a40dea8741e0eeb12cfed76d01edb66649d788752b523849634f92c6ee861\",\n      \"token_ids_sha256\": \"cc6cc6efc170fd4993cd3529898cb7d2e92812ceba76b9b3ad07a7876fe02c46\"\n    },\n    {\n      \"id\": \"C01_same_no_single_a\",\n      \"input_tokens\": 84,\n      \"prompt_sha256\": \"8b079bb8a90d19d80b7166165042e9f968706235920647cb2757572d2473496e\",\n      \"rendered_sha256\": \"2448af5eb6c5cac927f17053fc0f695bcc9e5c1877168fa401d3004e910bf110\",\n      \"token_ids_sha256\": \"7a892df1dde9fbfdcfbfc8cc2b665af0b58fe7d5bcb5009870d4b46ccf6ab673\"\n    },\n    {\n      \"id\": \"C02_same_yes_dual_sources\",\n      \"input_tokens\": 115,\n      \"prompt_sha256\": \"b680cf0f3aba0d7bab1d0e8f1e2005d2bae52909939ce6d052b1e9791598f71e\",\n      \"rendered_sha256\": \"101ac5bfa5d1e03ec2aaca2586a003617966a97bbfb51c0a18b02ad1cfb61b20\",\n      \"token_ids_sha256\": \"047959fd9da63d038b506b64bd2d12c14c6139c9acdf103be0f837b51996b3da\"\n    },\n    {\n      \"id\": \"N03_same_yes_single_a\",\n      \"input_tokens\": 79,\n      \"prompt_sha256\": \"c58e33d45d8457ff69fb6423a0a53e9ec2b11b838e3b8d5f8628b191cae837fa\",\n      \"rendered_sha256\": \"af303fbc4ca6be7cd3d829ebc560e14b81c883ae808edff18e536ce2e879443e\",\n      \"token_ids_sha256\": \"1d76226521f47b9cbcd2bf64b8e4d40b898fbc02137cbe6143e4635b724281fa\"\n    }\n  ],\n  \"material_sha256\": \"e7ebfe398e24521d5c5a47e37731109246fd5191df8a9938dd759200c62e78b8\",\n  \"model\": \"/large_disk/wf/研究代码/RAG/OpenDecoder/checkpoint/Qwen2.5-3B-Instruct\",\n  \"model_files_sha256\": {\n    \"config.json\": \"eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b\",\n    \"generation_config.json\": \"ea35dfb6fc5051b01114f9b995820d55dab01ed33ee490f6378b442af82c09f9\",\n    \"model-00001-of-00002.safetensors\": \"67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2\",\n    \"model-00002-of-00002.safetensors\": \"a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d\",\n    \"model.safetensors.index.json\": \"bc8aaa0c87d4335177e01c765f1de0db81661c67c1a72fbfb0d521b09f5ddc56\",\n    \"tokenizer.json\": \"c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539\",\n    \"tokenizer_config.json\": \"5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583\"\n  },\n  \"reference_sha256\": \"504b4da5f0c4e51cfdffaa54129e55c0a3b433f37e387d286c21ad65f4d7c1f5\",\n  \"schema\": \"query_determinacy_development_v1\",\n  \"seed\": 19517,\n  \"semantic_review_completed\": false,\n  \"smoke_count\": 4,\n  \"versions\": {\n    \"torch\": \"2.5.1+cu121\",\n    \"transformers\": \"4.56.2\"\n  }\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/000.json",
+      "sha256": "62af4d5400ddd1f5d1e9ee304e5e69cebc3f027ac8b4ac1561f78d4c84cf9030",
+      "raw_utf8": "{\n  \"id\": \"N02_same_yes_single_a\",\n  \"index\": 0,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/001.json",
+      "sha256": "19c324c824c8eda4ed34f0816d0f131ef71dd3947089c246bc4dd421fa7b1d56",
+      "raw_utf8": "{\n  \"id\": \"C03_split_single_b\",\n  \"index\": 1,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/002.json",
+      "sha256": "aeaaf6df610865578e23b90f1cbeb5b58fbacb84104af3bfc64228341180c49f",
+      "raw_utf8": "{\n  \"id\": \"N01_split_dual_sources\",\n  \"index\": 2,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/003.json",
+      "sha256": "27d65afe911c39dbeb2930e7e2cbf7811dab2174914f16a93cc2561bb1e0ba9e",
+      "raw_utf8": "{\n  \"id\": \"C02_same_no_dual_alternatives\",\n  \"index\": 3,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/004.json",
+      "sha256": "be81e83f4153efb674ea6a98951fe4191d9bf43278cb07db18cf98055b74fb3d",
+      "raw_utf8": "{\n  \"id\": \"C02_split_dual_alternatives\",\n  \"index\": 4,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/005.json",
+      "sha256": "efcd76cccc41cd2845cc0874293db8d449c1d8f01c3407db80cf1c9d1bb45f47",
+      "raw_utf8": "{\n  \"id\": \"N01_same_no_dual_alternatives\",\n  \"index\": 5,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/006.json",
+      "sha256": "9975cd05fbadb0c1846aa771d6fb5448f86c9012ca72e9ca7611c3c70413eb80",
+      "raw_utf8": "{\n  \"id\": \"C03_same_yes_single_b\",\n  \"index\": 6,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/007.json",
+      "sha256": "c6d64d7302731e45bbf0484883dc29c1c690904fe3e6c17b4c081453355d59b8",
+      "raw_utf8": "{\n  \"id\": \"C02_same_yes_dual_alternatives\",\n  \"index\": 7,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/008.json",
+      "sha256": "30af280a583ec56e7b9627cc65e0470a9f32ff033a9e083c54d2e4975a3a6a38",
+      "raw_utf8": "{\n  \"id\": \"N01_same_yes_dual_sources\",\n  \"index\": 8,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/009.json",
+      "sha256": "7671815bef30a4b1d624fb9ac5d69a89c953d12be3b9f9ab4960c8c8c233f519",
+      "raw_utf8": "{\n  \"id\": \"C03_split_dual_alternatives\",\n  \"index\": 9,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/010.json",
+      "sha256": "8aff0fca3a529cb2b193efea38dea5dcce999d3f3c721fb6f13b052c11a4c3fc",
+      "raw_utf8": "{\n  \"id\": \"N01_same_yes_dual_alternatives\",\n  \"index\": 10,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/011.json",
+      "sha256": "1f05ac8aa843d0a15c66d2e2a38b98013ee295d9a5248f657bfd54114e8d689d",
+      "raw_utf8": "{\n  \"id\": \"N03_split_single_b\",\n  \"index\": 11,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/012.json",
+      "sha256": "a398f6cfce29464ea5a231c1728d96bcc14c4f9a6a93bb38f22533802338bf02",
+      "raw_utf8": "{\n  \"id\": \"C01_same_yes_dual_sources\",\n  \"index\": 12,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/013.json",
+      "sha256": "1fc21f6bf69c2bfd0a9e5d9a40b46e94c358991d4277fb164eec19a8cafedd77",
+      "raw_utf8": "{\n  \"id\": \"N02_same_no_single_a\",\n  \"index\": 13,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/014.json",
+      "sha256": "e653bcebc1d3c79753afe7e961204b88fedee172ed40a124c6f9bf8fb91b1a23",
+      "raw_utf8": "{\n  \"id\": \"C01_same_no_single_b\",\n  \"index\": 14,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/015.json",
+      "sha256": "3dc40d1c23cbaad420fdc65e303e7d7d0cc5858a41b4390368ccef5edfd8736e",
+      "raw_utf8": "{\n  \"id\": \"N03_same_no_dual_sources\",\n  \"index\": 15,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/016.json",
+      "sha256": "f68650dfc6388f2db23db309cea7aa4daf0595e78ebae20d1c087ed09c51defd",
+      "raw_utf8": "{\n  \"id\": \"C02_same_no_dual_sources\",\n  \"index\": 16,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/017.json",
+      "sha256": "fb97678bc634326ca5205803386c8da639a1ef0e03b74758b1bbae94c91f614b",
+      "raw_utf8": "{\n  \"id\": \"C03_same_no_dual_alternatives\",\n  \"index\": 17,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/018.json",
+      "sha256": "37309e2b5c8edfc32735ca1a918c15f495c0cd20bc81f895a69d01356bdd8754",
+      "raw_utf8": "{\n  \"id\": \"N02_same_yes_single_b\",\n  \"index\": 18,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/019.json",
+      "sha256": "176e81bb2f2262ee3cceb466eaa3505137ac62943c6fc0d27bc4c34981ebdaf7",
+      "raw_utf8": "{\n  \"id\": \"C03_same_yes_dual_alternatives\",\n  \"index\": 19,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/020.json",
+      "sha256": "f1518841f7a267c7b96d4c1fe719046f15fa821b474e7d07186b1261bc365c5e",
+      "raw_utf8": "{\n  \"id\": \"N02_split_dual_alternatives\",\n  \"index\": 20,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/021.json",
+      "sha256": "36776e53f4975f8c73a3366a56902c7f666c61cf55007eb32b2060ca286753d8",
+      "raw_utf8": "{\n  \"id\": \"N01_split_single_a\",\n  \"index\": 21,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/022.json",
+      "sha256": "8bf75f65546355190a326953751854c87622e4b2b8c82efca3b70b55eb5ae007",
+      "raw_utf8": "{\n  \"id\": \"C01_same_no_dual_alternatives\",\n  \"index\": 22,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/023.json",
+      "sha256": "4969e039d711efdc21d0c3a1fd2211239fe2572ae16edee9c65b8fc19736bb42",
+      "raw_utf8": "{\n  \"id\": \"N02_same_yes_dual_alternatives\",\n  \"index\": 23,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/024.json",
+      "sha256": "b2b79f6e0cde9db32154376406bb74d7f312d8f59d0f1253d9e3f70d150dd8d0",
+      "raw_utf8": "{\n  \"id\": \"N01_same_no_single_b\",\n  \"index\": 24,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/025.json",
+      "sha256": "7481c316c4e874ce38db4688a8681a22423cd43f5d562a988075b79c4e6b85b9",
+      "raw_utf8": "{\n  \"id\": \"N03_same_yes_dual_sources\",\n  \"index\": 25,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/026.json",
+      "sha256": "24da04893306deeac457e31f7f50494f33fb60316b13676d497de073fda578ec",
+      "raw_utf8": "{\n  \"id\": \"C03_same_yes_single_a\",\n  \"index\": 26,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/027.json",
+      "sha256": "866d5c987859b9b4df7d4ceb22ea941a66319f116b29c212f554c01d6d5f479b",
+      "raw_utf8": "{\n  \"id\": \"N03_same_no_single_a\",\n  \"index\": 27,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/028.json",
+      "sha256": "df363916263cb33cf67353a1cc0310300cc4a2bf7402d04af8468857ce906c50",
+      "raw_utf8": "{\n  \"id\": \"C02_same_no_single_a\",\n  \"index\": 28,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/029.json",
+      "sha256": "c1a61d33bbc6a87813b35d5e5bc84ab8c54190b785e669f6dd0873fadfe9a986",
+      "raw_utf8": "{\n  \"id\": \"C01_split_dual_sources\",\n  \"index\": 29,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/030.json",
+      "sha256": "5da0a5ca21492265acc3a32c2268c0954f00efa5c760a6523e47889f65a6d0d3",
+      "raw_utf8": "{\n  \"id\": \"N03_same_yes_dual_alternatives\",\n  \"index\": 30,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/031.json",
+      "sha256": "2ef4660a9610c64951a3cbb567cb59c8422f99a7a239a63ce1cb917853531944",
+      "raw_utf8": "{\n  \"id\": \"C01_same_yes_single_a\",\n  \"index\": 31,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/032.json",
+      "sha256": "66427d9d6a316944bc2133892ccf4ad146b5a171443752c8c5be13d3ac70f029",
+      "raw_utf8": "{\n  \"id\": \"N02_same_no_dual_alternatives\",\n  \"index\": 32,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/033.json",
+      "sha256": "6933417f6b401e2b576239a30628301bb4db01ccffa4ca249b7aaab3a1c6e35d",
+      "raw_utf8": "{\n  \"id\": \"C03_same_yes_dual_sources\",\n  \"index\": 33,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/034.json",
+      "sha256": "dbeca7d4a08b35691cd7fdecfd5305888d375e33ab580962fcaa0e0ba9a588ec",
+      "raw_utf8": "{\n  \"id\": \"C03_split_single_a\",\n  \"index\": 34,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/035.json",
+      "sha256": "ab8117d9dfd276d1ccc5589e4c91500e4fd3ca84fb8de614ec7a58ad84f5521e",
+      "raw_utf8": "{\n  \"id\": \"N01_same_yes_single_b\",\n  \"index\": 35,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/036.json",
+      "sha256": "59f37588d7085b72f5bc19b2efa178c947bbeeb410e368c1e5ba5be3add4b6c1",
+      "raw_utf8": "{\n  \"id\": \"N03_same_no_single_b\",\n  \"index\": 36,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/037.json",
+      "sha256": "13d1a61ca68a92ff63667e5312a28bb9f4f93df1feb800d93ba2f2169c760a01",
+      "raw_utf8": "{\n  \"id\": \"N01_split_dual_alternatives\",\n  \"index\": 37,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/038.json",
+      "sha256": "64b43bf604453066f6ac4f1fc4023553e478565a83296c2a8fc8ed5d3fe611e7",
+      "raw_utf8": "{\n  \"id\": \"N02_split_dual_sources\",\n  \"index\": 38,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/039.json",
+      "sha256": "ffb40fff9584379cf7c8ac1f6629f8d2305d9dee81964bb923aec54bed1c7a10",
+      "raw_utf8": "{\n  \"id\": \"N01_same_yes_single_a\",\n  \"index\": 39,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/040.json",
+      "sha256": "fddd8cf18e19877a57469c2e1881233ab5816c410c7620e1105a0e5191119675",
+      "raw_utf8": "{\n  \"id\": \"N03_same_no_dual_alternatives\",\n  \"index\": 40,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/041.json",
+      "sha256": "ab2eb3b4403eb308048f92fedc0bebb5b3cb7d964d17a572b17823bf2cf7db24",
+      "raw_utf8": "{\n  \"id\": \"C02_same_yes_single_a\",\n  \"index\": 41,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/042.json",
+      "sha256": "1a15fea1d252c189600aa7036189935f6581dfefcadd50f847e165f809e2807c",
+      "raw_utf8": "{\n  \"id\": \"N02_same_no_single_b\",\n  \"index\": 42,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/043.json",
+      "sha256": "f7781c600390c2c8b597d987d1c580bcc6db0e67d72387f9ed7a7b0a89d32ff0",
+      "raw_utf8": "{\n  \"id\": \"N03_split_dual_alternatives\",\n  \"index\": 43,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/044.json",
+      "sha256": "2c2a07a51177477ee542a3e9cb03239f966c402dbc33a8b176baaf94a03fc647",
+      "raw_utf8": "{\n  \"id\": \"C01_same_no_dual_sources\",\n  \"index\": 44,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/045.json",
+      "sha256": "69707c03c89b05212369355569533b2dce107d1be72943ad455bf7a22ca3cf50",
+      "raw_utf8": "{\n  \"id\": \"N03_split_single_a\",\n  \"index\": 45,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/046.json",
+      "sha256": "97223fe309ae535f448e53fa4d865bd6a0612246e0587aff1a0178fe7486e9dd",
+      "raw_utf8": "{\n  \"id\": \"C03_same_no_single_a\",\n  \"index\": 46,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/047.json",
+      "sha256": "a0547822c35d2e9d12f50dff55333bdda82cec83f5eaca186bc761f90f2ada9c",
+      "raw_utf8": "{\n  \"id\": \"N01_same_no_single_a\",\n  \"index\": 47,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/048.json",
+      "sha256": "4c24fcb19845a8e6c13cbd00f097f8e4f450f7a800527f82ea63ebd2585a077e",
+      "raw_utf8": "{\n  \"id\": \"N02_same_no_dual_sources\",\n  \"index\": 48,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/049.json",
+      "sha256": "69a77e2bcc3061914afe78e790b6e09835a3e0349ad7d98e2e07087029079415",
+      "raw_utf8": "{\n  \"id\": \"C01_same_yes_single_b\",\n  \"index\": 49,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/050.json",
+      "sha256": "a217498a430c50bb9373cdc8225074f7ffb09447ae58f0013b206d174cd9319e",
+      "raw_utf8": "{\n  \"id\": \"C03_split_dual_sources\",\n  \"index\": 50,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/051.json",
+      "sha256": "78fc3e1350cc635f82510a57ac802b856ac6dfe806cbc67c40b1169d16f13379",
+      "raw_utf8": "{\n  \"id\": \"C03_same_no_dual_sources\",\n  \"index\": 51,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/052.json",
+      "sha256": "e6bcef08ad5941f846b8f69bbdbb53ab4e0c72bd58568bb2070741e32ff6e212",
+      "raw_utf8": "{\n  \"id\": \"N01_same_no_dual_sources\",\n  \"index\": 52,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/053.json",
+      "sha256": "db768cad6061a300f8cb65c8064b4eca28695e56928ff4d80a0b38bd86debbc8",
+      "raw_utf8": "{\n  \"id\": \"C02_same_no_single_b\",\n  \"index\": 53,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/054.json",
+      "sha256": "252773990c1199f495cac5ba1ad46482a152366f20330bcd7a164268be7429c4",
+      "raw_utf8": "{\n  \"id\": \"C02_same_yes_single_b\",\n  \"index\": 54,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/055.json",
+      "sha256": "ab415350402f4ccbf0d213eb9c4b78b1b6ca553ffe21cfc2a046fed51092ad90",
+      "raw_utf8": "{\n  \"id\": \"C02_split_dual_sources\",\n  \"index\": 55,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/056.json",
+      "sha256": "2905c2c8b0db5b2a9b6305fd31f95418c9e2b02dc597497cf34fcd4509c638fc",
+      "raw_utf8": "{\n  \"id\": \"N03_split_dual_sources\",\n  \"index\": 56,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/057.json",
+      "sha256": "695b3c48fdc7942d0d95fdf6e62d49183069a2b31af4b7797646263e7989e360",
+      "raw_utf8": "{\n  \"id\": \"N03_same_yes_single_b\",\n  \"index\": 57,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/058.json",
+      "sha256": "6d7ba78ea8377a8532d5b3bd64adb6e25c91cd5ca4266a59d42083a96f5ac8fe",
+      "raw_utf8": "{\n  \"id\": \"C03_same_no_single_b\",\n  \"index\": 58,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/059.json",
+      "sha256": "08ad1784d3bfd733dbc97523b6b692b01763157a3b1850a7af7a69db0e74d5ec",
+      "raw_utf8": "{\n  \"id\": \"C01_split_single_a\",\n  \"index\": 59,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/060.json",
+      "sha256": "907163000db1b18aa63bb10625beb4a44671f251154c129b4da83fef129be341",
+      "raw_utf8": "{\n  \"id\": \"C02_split_single_a\",\n  \"index\": 60,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/061.json",
+      "sha256": "4c9acea62b27e60b3ee75992c096d208cbd302315c072e4a9707e2f6504bbefe",
+      "raw_utf8": "{\n  \"id\": \"N02_same_yes_dual_sources\",\n  \"index\": 61,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/062.json",
+      "sha256": "b294cdbd41a782005e37896074e02b999034fbe21c4617fd738e27c91b7bde09",
+      "raw_utf8": "{\n  \"id\": \"N01_split_single_b\",\n  \"index\": 62,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/063.json",
+      "sha256": "861a355e6b45b38c5942ae8d4725e4efe84cc7a74ad2b81fc4d17535ce8930cd",
+      "raw_utf8": "{\n  \"id\": \"N02_split_single_b\",\n  \"index\": 63,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/064.json",
+      "sha256": "324f36eabdc0b4a4e013ebb2d2f409b1a32a61a477f5f6a7c5a29a30b6391085",
+      "raw_utf8": "{\n  \"id\": \"C01_split_single_b\",\n  \"index\": 64,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/065.json",
+      "sha256": "6b2d80283413dcf17cb091c0db39522b47952cca6578c50dc082cd82de9d3f5f",
+      "raw_utf8": "{\n  \"id\": \"N02_split_single_a\",\n  \"index\": 65,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/066.json",
+      "sha256": "b116d26363565a828ac68cd60837655d5ddae8e07cf73f153647b8b5c46f44ac",
+      "raw_utf8": "{\n  \"id\": \"C02_split_single_b\",\n  \"index\": 66,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/067.json",
+      "sha256": "a0ac7cd2c5b537ff9d6b057d85ba2b01c4bc4bafa76da0714a32da258ac8abdb",
+      "raw_utf8": "{\n  \"id\": \"C01_split_dual_alternatives\",\n  \"index\": 67,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/068.json",
+      "sha256": "60e0e2194fc00425cc2a5509400371267e8f664df3f3f22b7f62b88ee60a0350",
+      "raw_utf8": "{\n  \"id\": \"C01_same_yes_dual_alternatives\",\n  \"index\": 68,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/069.json",
+      "sha256": "97619cdf554ff37ea6e021e87bd9b1f0e3f4ea3d146341545eed435e8e9f9cb5",
+      "raw_utf8": "{\n  \"id\": \"C01_same_no_single_a\",\n  \"index\": 69,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/070.json",
+      "sha256": "3cdd876fc2e9e74b88255161cf8da45a5bfd8dcfbd03383a40e9ebacbdb2ae95",
+      "raw_utf8": "{\n  \"id\": \"C02_same_yes_dual_sources\",\n  \"index\": 70,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/attempts/071.json",
+      "sha256": "33f41ccd420ea703a19589da1e433e05d0274cc73629f8d5adfdf47b22e51078",
+      "raw_utf8": "{\n  \"id\": \"N03_same_yes_single_a\",\n  \"index\": 71,\n  \"manifest_sha256\": \"7309be6174b484ccd9307a7f369d1cc67777b5a2643bebadba01b01b3cdf86a5\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/000.json",
+      "sha256": "60a519510e627a2eca167e5b8c732b1ab9f499b132241194f123aaaae104413a",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"62af4d5400ddd1f5d1e9ee304e5e69cebc3f027ac8b4ac1561f78d4c84cf9030\",\n  \"completed_at\": \"2026-11-15T02:49:16.552458+00:00\",\n  \"elapsed_seconds\": 0.47021623607724905,\n  \"generated_token_ids\": [\n    20412,\n    9370,\n    3837,\n    99487,\n    111944,\n    17,\n    22,\n    107043,\n    16,\n    18,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"e1dbed8ed2547bde6c37f44e362939b648317544f14d8959cd032391a2df2763\",\n  \"id\": \"N02_same_yes_single_a\",\n  \"index\": 0,\n  \"output\": \"是的，这个数值27大于13。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/001.json",
+      "sha256": "8564b686e256264d32ed430432048e3425ec19340e9ce290b62ad25f95d68b02",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"19c324c824c8eda4ed34f0816d0f131ef71dd3947089c246bc4dd421fa7b1d56\",\n  \"completed_at\": \"2026-11-15T02:49:16.996908+00:00\",\n  \"elapsed_seconds\": 0.2606431310996413,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    99660,\n    38035,\n    101379,\n    40814,\n    65577,\n    9370,\n    107975,\n    20412,\n    2073,\n    100410,\n    33590,\n    104610,\n    2073,\n    57811,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"da86ad8e1e0c4e4b0e46eaef70fa7b05f53a184a61fd26952d452fbd66ec2ff4\",\n  \"id\": \"C03_split_single_b\",\n  \"index\": 1,\n  \"output\": \"无法唯一确定。银色徽记记录的类别是“川”，而不是“山”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/002.json",
+      "sha256": "a6d898200c101449b9f382f4a2968d2ba02989281260e2b6e84d000afa20d590",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"aeaaf6df610865578e23b90f1cbeb5b58fbacb84104af3bfc64228341180c49f\",\n  \"completed_at\": \"2026-11-15T02:49:17.744807+00:00\",\n  \"elapsed_seconds\": 0.4973162692040205,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    111944,\n    64471,\n    107043,\n    16,\n    21,\n    1773,\n    99519,\n    99487,\n    111944,\n    104560,\n    16,\n    17,\n    18947,\n    75317,\n    3837,\n    74763,\n    104560,\n    17,\n    15,\n    18947,\n    75317,\n    3837,\n    16,\n    17,\n    110089,\n    16,\n    21,\n    3837,\n    68536,\n    17,\n    15,\n    107043,\n    16,\n    21,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"5946db1c33ce3969c004dc29657db73bfce918e1d9d4e42c8d6c2a7217a45000\",\n  \"id\": \"N01_split_dual_sources\",\n  \"index\": 2,\n  \"output\": \"无法唯一确定这个数值是否大于16。因为这个数值可能是12个单位，也可能是20个单位，12小于16，而20大于16。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/003.json",
+      "sha256": "b3ae5ca5a065e6cd6b182e38daa522a762004a05550617b95be4f6d36ab5691c",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"27d65afe911c39dbeb2930e7e2cbf7811dab2174914f16a93cc2561bb1e0ba9e\",\n  \"completed_at\": \"2026-11-15T02:49:18.833607+00:00\",\n  \"elapsed_seconds\": 0.6172598646953702,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    33872,\n    29635,\n    15946,\n    91680,\n    104496,\n    2073,\n    77419,\n    854,\n    57191,\n    2073,\n    99718,\n    854,\n    100369,\n    87267,\n    9370,\n    107975,\n    3837,\n    80443,\n    109361,\n    2073,\n    9754,\n    854,\n    57191,\n    2073,\n    8903,\n    33590,\n    101886,\n    101068,\n    104317,\n    120844,\n    118840,\n    101379,\n    40814,\n    65577,\n    9370,\n    107975,\n    64471,\n    100409,\n    2073,\n    9754,\n    854,\n    57191,\n    2073,\n    8903,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"c293f2df43cfd49276d40961db23246fa273c0fd9effb666a4818b3eb1e9f475\",\n  \"id\": \"C02_same_no_dual_alternatives\",\n  \"index\": 3,\n  \"output\": \"无法唯一确定。题设中只提到“星”或“云”两个可能的类别，没有提及“月”或“日”，因此无法判断琥珀徽记记录的类别是否属于“月”或“日”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/004.json",
+      "sha256": "aaf8b678212b2f4567304f62c369d007a07f48e484605c5e52326a0a0815d261",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"be81e83f4153efb674ea6a98951fe4191d9bf43278cb07db18cf98055b74fb3d\",\n  \"completed_at\": \"2026-11-15T02:49:19.584515+00:00\",\n  \"elapsed_seconds\": 0.14366663014516234,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    107975,\n    64471,\n    17714,\n    2073,\n    99718,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"8f24b6eb695ba5ad7a27ff9144f93ca55f9bac061d69dd6f72230a2d1a6a5dbc\",\n  \"id\": \"C02_split_dual_alternatives\",\n  \"index\": 4,\n  \"output\": \"无法唯一确定这个类别是否为“云”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/005.json",
+      "sha256": "7aba0ad6fe0d0196305159e63e21224ccf18406c41be19b5effa459b1c1c94f9",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"efcd76cccc41cd2845cc0874293db8d449c1d8f01c3407db80cf1c9d1bb45f47\",\n  \"completed_at\": \"2026-11-15T02:49:20.293011+00:00\",\n  \"elapsed_seconds\": 0.545105759985745,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    100345,\n    33872,\n    29635,\n    3837,\n    99467,\n    38035,\n    109300,\n    65577,\n    9370,\n    111944,\n    104560,\n    16,\n    17,\n    18947,\n    75317,\n    57191,\n    17,\n    15,\n    18947,\n    75317,\n    3837,\n    80443,\n    92894,\n    27369,\n    73670,\n    108568,\n    114173,\n    99559,\n    3837,\n    101886,\n    101068,\n    60610,\n    75882,\n    111944,\n    64471,\n    107043,\n    17,\n    19,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"2828c2511a2b16e511cfb626e17c02fe964ac92be7182cfafff38f7be8c95292\",\n  \"id\": \"N01_same_no_dual_alternatives\",\n  \"index\": 5,\n  \"output\": \"无法唯一确定。根据题设，青色容器记录的数值可能是12个单位或20个单位，没有其他信息可以区分这两种情况，因此无法确定该数值是否大于24。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/006.json",
+      "sha256": "339046ece1ad74e91990eb8ebc776a15a4c641e1271729899785d0df70220312",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"9975cd05fbadb0c1846aa771d6fb5448f86c9012ca72e9ca7611c3c70413eb80\",\n  \"completed_at\": \"2026-11-15T02:49:21.507884+00:00\",\n  \"elapsed_seconds\": 0.6925747990608215,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    99660,\n    38035,\n    101379,\n    40814,\n    65577,\n    9370,\n    107975,\n    20412,\n    2073,\n    100410,\n    33590,\n    77288,\n    2073,\n    100410,\n    854,\n    118033,\n    63367,\n    30540,\n    103274,\n    3837,\n    104047,\n    63367,\n    30540,\n    111282,\n    29991,\n    3837,\n    29524,\n    102110,\n    117399,\n    1773,\n    101886,\n    3837,\n    99373,\n    100284,\n    2073,\n    100410,\n    854,\n    100147,\n    107975,\n    101068,\n    100692,\n    99652,\n    64471,\n    100409,\n    2073,\n    57811,\n    854,\n    57191,\n    2073,\n    100410,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"0bd9ccad027b01a08ed61b50e8e451d1cfabf20759479d34a24d8ca6444905b5\",\n  \"id\": \"C03_same_yes_single_b\",\n  \"index\": 6,\n  \"output\": \"无法唯一确定。银色徽记记录的类别是“川”，但“川”既可以指代河流，也可以指代地形名称，如四川盆地。因此，仅凭“川”这一类别无法明确它是否属于“山”或“川”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/007.json",
+      "sha256": "e9f3364c85d85aef1f122ab2f9848d071729193b436c45c487368d8f3d3d8906",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"c6d64d7302731e45bbf0484883dc29c1c690904fe3e6c17b4c081453355d59b8\",\n  \"completed_at\": \"2026-11-15T02:49:22.339986+00:00\",\n  \"elapsed_seconds\": 0.19166883686557412,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    107975,\n    64471,\n    100409,\n    2073,\n    99718,\n    854,\n    57191,\n    2073,\n    77419,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"a4c983c12561df76416a4feea5577f33656f54269d94ffc717a6652b6926941e\",\n  \"id\": \"C02_same_yes_dual_alternatives\",\n  \"index\": 7,\n  \"output\": \"无法唯一确定这个类别是否属于“云”或“星”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/008.json",
+      "sha256": "7e429f23669eab1cebc873039bd049effeab476ecb9becc09e994e3f5eae3243",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"30af280a583ec56e7b9627cc65e0470a9f32ff033a9e083c54d2e4975a3a6a38\",\n  \"completed_at\": \"2026-11-15T02:49:23.209177+00:00\",\n  \"elapsed_seconds\": 0.6769933789037168,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    111944,\n    64471,\n    107043,\n    23,\n    1773,\n    99519,\n    100345,\n    33872,\n    29635,\n    3837,\n    99487,\n    111944,\n    104560,\n    16,\n    17,\n    18947,\n    75317,\n    3837,\n    74763,\n    104560,\n    17,\n    15,\n    18947,\n    75317,\n    3837,\n    68536,\n    17,\n    15,\n    107043,\n    23,\n    3837,\n    16,\n    17,\n    74763,\n    107043,\n    23,\n    1773,\n    101886,\n    3837,\n    101068,\n    99373,\n    100284,\n    104728,\n    27369,\n    104317,\n    111944,\n    64471,\n    107043,\n    23,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"5ef514cd51001c5eb5a011d147ae62a1dd159bd256ebe88d7cde234ec7a53378\",\n  \"id\": \"N01_same_yes_dual_sources\",\n  \"index\": 8,\n  \"output\": \"无法唯一确定这个数值是否大于8。因为根据题设，这个数值可能是12个单位，也可能是20个单位，而20大于8，12也大于8。因此，无法仅凭现有信息判断数值是否大于8。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/009.json",
+      "sha256": "86d47ed0a4d930b772dab9d1d28a7262a10d4977f6eda8b65683e19a7fe5dc94",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"7671815bef30a4b1d624fb9ac5d69a89c953d12be3b9f9ab4960c8c8c233f519\",\n  \"completed_at\": \"2026-11-15T02:49:23.999472+00:00\",\n  \"elapsed_seconds\": 0.14278425509110093,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    107975,\n    64471,\n    17714,\n    2073,\n    57811,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"9bfb72c11bd17b5e1308ee8fc9f44382830b5c19701e5f0323b3b21e4db25b41\",\n  \"id\": \"C03_split_dual_alternatives\",\n  \"index\": 9,\n  \"output\": \"无法唯一确定这个类别是否为“山”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/010.json",
+      "sha256": "447f6d3d86cfbc50c4073bf45a625ceecd23ec98e49c0363e84684ac51eac0e4",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"8aff0fca3a529cb2b193efea38dea5dcce999d3f3c721fb6f13b052c11a4c3fc\",\n  \"completed_at\": \"2026-11-15T02:49:24.776701+00:00\",\n  \"elapsed_seconds\": 0.6296752919442952,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    100345,\n    33872,\n    29635,\n    3837,\n    99467,\n    38035,\n    109300,\n    65577,\n    9370,\n    111944,\n    104560,\n    16,\n    17,\n    18947,\n    75317,\n    57191,\n    17,\n    15,\n    18947,\n    75317,\n    3837,\n    90919,\n    16,\n    17,\n    110089,\n    23,\n    3837,\n    68536,\n    17,\n    15,\n    107043,\n    23,\n    1773,\n    101886,\n    3837,\n    101068,\n    99373,\n    100284,\n    99487,\n    27369,\n    104317,\n    111944,\n    64471,\n    107043,\n    23,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"a2d4b8706e48d78a4e5e9cf64b0a1ea4cbc4c19fd0756ec630a6ddbb657f1cb8\",\n  \"id\": \"N01_same_yes_dual_alternatives\",\n  \"index\": 10,\n  \"output\": \"无法唯一确定。根据题设，青色容器记录的数值可能是12个单位或20个单位，其中12小于8，而20大于8。因此，无法仅凭这个信息判断数值是否大于8。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/011.json",
+      "sha256": "6f104773ea09265d0f9d7c65c8bc6433c713d477787452ea823ab586ff1e895b",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"1f05ac8aa843d0a15c66d2e2a38b98013ee295d9a5248f657bfd54114e8d689d\",\n  \"completed_at\": \"2026-11-15T02:49:25.540523+00:00\",\n  \"elapsed_seconds\": 0.15589541010558605,\n  \"generated_token_ids\": [\n    20412,\n    9370,\n    3837,\n    99487,\n    111944,\n    19,\n    17,\n    107043,\n    18,\n    23,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"4ce37420cac25d357b5960f31465eb681a796f4270877548b807085818ccb86f\",\n  \"id\": \"N03_split_single_b\",\n  \"index\": 11,\n  \"output\": \"是的，这个数值42大于38。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/012.json",
+      "sha256": "19bf6faad91c59f83bf67ed2cc6accf3f995ab98683a54efb99af7e22a2222d2",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"a398f6cfce29464ea5a231c1728d96bcc14c4f9a6a93bb38f22533802338bf02\",\n  \"completed_at\": \"2026-11-15T02:49:26.026449+00:00\",\n  \"elapsed_seconds\": 0.3254578090272844,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    107975,\n    64471,\n    100409,\n    2073,\n    100180,\n    854,\n    57191,\n    2073,\n    102045,\n    33590,\n    99519,\n    100345,\n    33872,\n    29635,\n    27369,\n    3837,\n    101441,\n    99559,\n    101103,\n    87267,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"91d035b68e8d0a66629fdaec34a75bcc9b8bf7edd6f635bcd01cbd506998b086\",\n  \"id\": \"C01_same_yes_dual_sources\",\n  \"index\": 12,\n  \"output\": \"无法唯一确定这个类别是否属于“松”或“竹”，因为根据题设信息，两种情况都有可能。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/013.json",
+      "sha256": "33572c4787b165e8a938b0ba075a24f45a67dcf6463ab6a47247a5fcf9527269",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"1fc21f6bf69c2bfd0a9e5d9a40b46e94c358991d4277fb164eec19a8cafedd77\",\n  \"completed_at\": \"2026-11-15T02:49:26.666893+00:00\",\n  \"elapsed_seconds\": 0.32626862498000264,\n  \"generated_token_ids\": [\n    99487,\n    111944,\n    105378,\n    34204,\n    18,\n    16,\n    3837,\n    99519,\n    17,\n    22,\n    110089,\n    18,\n    16,\n    1773,\n    101886,\n    3837,\n    73670,\n    60610,\n    99487,\n    111944,\n    105378,\n    34204,\n    18,\n    16,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"cd9e04373a0e80c6463107a0ce1e075e71a6d1ab0456fe921d8f5928ff792b13\",\n  \"id\": \"N02_same_no_single_a\",\n  \"index\": 13,\n  \"output\": \"这个数值不大于31，因为27小于31。因此，可以确定这个数值不大于31。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/014.json",
+      "sha256": "898a2b429881615b79a8cd54fb1bf3fc546204ff49c6b2f19f5b8c28e8620379",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"e653bcebc1d3c79753afe7e961204b88fedee172ed40a124c6f9bf8fb91b1a23\",\n  \"completed_at\": \"2026-11-15T02:49:27.277799+00:00\",\n  \"elapsed_seconds\": 0.2900551501661539,\n  \"generated_token_ids\": [\n    99467,\n    38035,\n    101379,\n    40814,\n    65577,\n    9370,\n    107975,\n    20412,\n    2073,\n    102045,\n    33590,\n    101886,\n    99487,\n    107975,\n    115084,\n    2073,\n    100711,\n    854,\n    57191,\n    2073,\n    99533,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"ad88a880e3b472d79535cafc08ec9844a58e00998fd3c63cd5eb2e5a787f4f02\",\n  \"id\": \"C01_same_no_single_b\",\n  \"index\": 14,\n  \"output\": \"青色徽记记录的类别是“竹”，因此这个类别不属于“梅”或“兰”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/015.json",
+      "sha256": "020995738c047067d2a7a9e9fe6f9cc8df32c2fe8a3b2a6c00f75f9e30ccace4",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"3dc40d1c23cbaad420fdc65e303e7d7d0cc5858a41b4390368ccef5edfd8736e\",\n  \"completed_at\": \"2026-11-15T02:49:28.069919+00:00\",\n  \"elapsed_seconds\": 0.4968724278733134,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    111944,\n    64471,\n    107043,\n    19,\n    21,\n    1773,\n    99519,\n    99487,\n    111944,\n    104560,\n    18,\n    19,\n    18947,\n    75317,\n    3837,\n    74763,\n    104560,\n    19,\n    17,\n    18947,\n    75317,\n    3837,\n    18,\n    19,\n    110089,\n    19,\n    21,\n    3837,\n    68536,\n    19,\n    17,\n    107043,\n    19,\n    21,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"d874a442ef80f3e261fedb79165f4a9f030e1928c47f6f3ebf282e24613d8091\",\n  \"id\": \"N03_same_no_dual_sources\",\n  \"index\": 15,\n  \"output\": \"无法唯一确定这个数值是否大于46。因为这个数值可能是34个单位，也可能是42个单位，34小于46，而42大于46。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/016.json",
+      "sha256": "a5ab0609f28359469a12c1dd9cb69fec11a5155ddaa067c6479a2bc0bfce81cf",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"f68650dfc6388f2db23db309cea7aa4daf0595e78ebae20d1c087ed09c51defd\",\n  \"completed_at\": \"2026-11-15T02:49:29.232711+00:00\",\n  \"elapsed_seconds\": 0.6787158637307584,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    107975,\n    64471,\n    100409,\n    2073,\n    9754,\n    854,\n    57191,\n    2073,\n    8903,\n    33590,\n    99519,\n    100345,\n    33872,\n    29635,\n    103008,\n    27369,\n    3837,\n    101111,\n    100043,\n    33108,\n    101111,\n    100916,\n    71268,\n    87267,\n    88991,\n    3837,\n    68536,\n    104017,\n    101127,\n    24641,\n    75882,\n    107975,\n    17714,\n    2073,\n    77419,\n    854,\n    33108,\n    2073,\n    99718,\n    33590,\n    57218,\n    2073,\n    9754,\n    854,\n    33108,\n    2073,\n    8903,\n    854,\n    107173,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"233671a58311bf5833d505a725d52c21cd33c2b63ec683967b21ac6a1cc5282c\",\n  \"id\": \"C02_same_no_dual_sources\",\n  \"index\": 16,\n  \"output\": \"无法唯一确定这个类别是否属于“月”或“日”，因为根据题设提供的信息，资料甲和资料乙都可能正确，而它们分别称该类别为“星”和“云”，与“月”和“日”无关。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/017.json",
+      "sha256": "b50798242c29bba521f2967e3037e0148c362e0595b28e37ba1e3dd80cff09a5",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"fb97678bc634326ca5205803386c8da639a1ef0e03b74758b1bbae94c91f614b\",\n  \"completed_at\": \"2026-11-15T02:49:30.472923+00:00\",\n  \"elapsed_seconds\": 0.5822589825838804,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    33872,\n    29635,\n    15946,\n    91680,\n    104257,\n    2073,\n    57811,\n    854,\n    57191,\n    2073,\n    100410,\n    854,\n    100369,\n    87267,\n    9370,\n    107975,\n    3837,\n    80443,\n    101888,\n    2073,\n    99463,\n    854,\n    57191,\n    2073,\n    55135,\n    97907,\n    27369,\n    3837,\n    101886,\n    101068,\n    104317,\n    75882,\n    107975,\n    64471,\n    100409,\n    2073,\n    99463,\n    854,\n    57191,\n    2073,\n    55135,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"78a7f2e28c0624cd23f29788cc42409fa0b2adee3e8525badbd654e311e33c86\",\n  \"id\": \"C03_same_no_dual_alternatives\",\n  \"index\": 17,\n  \"output\": \"无法唯一确定。题设中只提供了“山”或“川”两个可能的类别，没有关于“林”或“海”的信息，因此无法判断该类别是否属于“林”或“海”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/018.json",
+      "sha256": "c4d272e4b08702ee17a3dd2902bbdd6d389d453c0080735ea788abed43c5c9e1",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"37309e2b5c8edfc32735ca1a918c15f495c0cd20bc81f895a69d01356bdd8754\",\n  \"completed_at\": \"2026-11-15T02:49:31.286371+00:00\",\n  \"elapsed_seconds\": 0.1563155660405755,\n  \"generated_token_ids\": [\n    20412,\n    9370,\n    3837,\n    99487,\n    111944,\n    16,\n    22,\n    107043,\n    16,\n    18,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"2f9f287f00f8e816fe9c754ad5cf60d4c2f119679c8d8601727adfe7435e2e07\",\n  \"id\": \"N02_same_yes_single_b\",\n  \"index\": 18,\n  \"output\": \"是的，这个数值17大于13。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/019.json",
+      "sha256": "3feadd5a257dc151b157a05a7b30cebb95e32bc960269dca65b4aaa492a9ceca",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"176e81bb2f2262ee3cceb466eaa3505137ac62943c6fc0d27bc4c34981ebdaf7\",\n  \"completed_at\": \"2026-11-15T02:49:31.664582+00:00\",\n  \"elapsed_seconds\": 0.1921526249498129,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    107975,\n    64471,\n    100409,\n    2073,\n    57811,\n    854,\n    57191,\n    2073,\n    100410,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"b2e9a148e5b941dc254a3e34c2a1fe733abf07221736cadb1f5a51588d9bb2ef\",\n  \"id\": \"C03_same_yes_dual_alternatives\",\n  \"index\": 19,\n  \"output\": \"无法唯一确定这个类别是否属于“山”或“川”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/020.json",
+      "sha256": "79cf62f0d51168ef1a2e544435ad324db3d2839e667266afebceb8b9eaa37b1c",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"f1518841f7a267c7b96d4c1fe719046f15fa821b474e7d07186b1261bc365c5e\",\n  \"completed_at\": \"2026-11-15T02:49:32.360175+00:00\",\n  \"elapsed_seconds\": 0.4730325718410313,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    100345,\n    33872,\n    29635,\n    3837,\n    99487,\n    111944,\n    104560,\n    16,\n    22,\n    18947,\n    75317,\n    57191,\n    17,\n    22,\n    18947,\n    75317,\n    3837,\n    100369,\n    25511,\n    15946,\n    101103,\n    87267,\n    107043,\n    17,\n    17,\n    3837,\n    103943,\n    87267,\n    105378,\n    34204,\n    17,\n    17,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"e535a129b73a98230d99e33dc3421363e6a42379a2ba1cf3103639d5d8f06bbe\",\n  \"id\": \"N02_split_dual_alternatives\",\n  \"index\": 20,\n  \"output\": \"无法唯一确定。根据题设，这个数值可能是17个单位或27个单位，两个值中都有可能大于22，也有可能不大于22。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/021.json",
+      "sha256": "95ab443197bcc01e54b11648e96dae21e9c38fc5ab2cdd7af548625322c83713",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"36776e53f4975f8c73a3366a56902c7f666c61cf55007eb32b2060ca286753d8\",\n  \"completed_at\": \"2026-11-15T02:49:33.141165+00:00\",\n  \"elapsed_seconds\": 0.2845214679837227,\n  \"generated_token_ids\": [\n    99487,\n    111944,\n    105378,\n    34204,\n    16,\n    21,\n    3837,\n    108884,\n    99250,\n    108140,\n    17714,\n    16,\n    17,\n    18947,\n    75317,\n    3837,\n    102068,\n    110089,\n    16,\n    21,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"9bfc92aeebec0b7be2e245551c4f1fff30809fba8aeb29f02c50f14b08cdb4e0\",\n  \"id\": \"N01_split_single_a\",\n  \"index\": 21,\n  \"output\": \"这个数值不大于16，因为它被假设为12个单位，确实小于16。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/022.json",
+      "sha256": "20a9de54c40985496449eada2f4e810012045da6f663a182e6ad1e7ddf22c7ae",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"8bf75f65546355190a326953751854c87622e4b2b8c82efca3b70b55eb5ae007\",\n  \"completed_at\": \"2026-11-15T02:49:34.003786+00:00\",\n  \"elapsed_seconds\": 0.5583956502377987,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    33872,\n    29635,\n    15946,\n    91680,\n    104496,\n    107975,\n    108534,\n    87267,\n    9370,\n    25511,\n    36987,\n    100180,\n    854,\n    57191,\n    2073,\n    102045,\n    33590,\n    80443,\n    109361,\n    2073,\n    100711,\n    854,\n    57191,\n    2073,\n    99533,\n    33590,\n    101886,\n    101068,\n    60610,\n    75882,\n    107975,\n    64471,\n    100409,\n    2073,\n    100711,\n    854,\n    57191,\n    2073,\n    99533,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"6020c78cc5c6c4fe8b718c521553946ba482c14b0af7869a4f5394c7936ffa70\",\n  \"id\": \"C01_same_no_dual_alternatives\",\n  \"index\": 22,\n  \"output\": \"无法唯一确定。题设中只提到类别有两个可能的值：“松”或“竹”，没有提及“梅”或“兰”，因此无法确定该类别是否属于“梅”或“兰”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/023.json",
+      "sha256": "149e884090edb3f07272afcba8bbf99a260f582d638252ef4cb512004542aabe",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"4969e039d711efdc21d0c3a1fd2211239fe2572ae16edee9c65b8fc19736bb42\",\n  \"completed_at\": \"2026-11-15T02:49:35.006105+00:00\",\n  \"elapsed_seconds\": 0.473057032097131,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    100345,\n    33872,\n    29635,\n    3837,\n    99487,\n    111944,\n    104560,\n    16,\n    22,\n    18947,\n    75317,\n    57191,\n    17,\n    22,\n    18947,\n    75317,\n    3837,\n    100369,\n    25511,\n    15946,\n    101103,\n    87267,\n    107043,\n    16,\n    18,\n    3837,\n    103943,\n    87267,\n    105378,\n    34204,\n    16,\n    18,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"2644626f2ee7c6140274f496e265555ad123f3f4d1d78f3833324704ee036435\",\n  \"id\": \"N02_same_yes_dual_alternatives\",\n  \"index\": 23,\n  \"output\": \"无法唯一确定。根据题设，这个数值可能是17个单位或27个单位，两个值中都有可能大于13，也有可能不大于13。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/024.json",
+      "sha256": "c875a19836ef4cf0719ea0030d8983e3dc1ff1218f7908bb10ee12e255aa28bf",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"b2b79f6e0cde9db32154376406bb74d7f312d8f59d0f1253d9e3f70d150dd8d0\",\n  \"completed_at\": \"2026-11-15T02:49:35.905686+00:00\",\n  \"elapsed_seconds\": 0.4247198821976781,\n  \"generated_token_ids\": [\n    99487,\n    111944,\n    105378,\n    34204,\n    17,\n    19,\n    3837,\n    99519,\n    111944,\n    60610,\n    17714,\n    17,\n    15,\n    18947,\n    75317,\n    3837,\n    17,\n    15,\n    110089,\n    17,\n    19,\n    1773,\n    101886,\n    3837,\n    73670,\n    60610,\n    99487,\n    111944,\n    105378,\n    34204,\n    17,\n    19,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"0365b36f905b8e8d475e7c372a99766e465f866e40c850e7b11bf288b2b4fee6\",\n  \"id\": \"N01_same_no_single_b\",\n  \"index\": 24,\n  \"output\": \"这个数值不大于24，因为数值确定为20个单位，20小于24。因此，可以确定这个数值不大于24。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/025.json",
+      "sha256": "7d95171515c3c046f4a7dd8d50f1b9cf3a91650660b0a39d988d06cd7202553a",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"7481c316c4e874ce38db4688a8681a22423cd43f5d562a988075b79c4e6b85b9\",\n  \"completed_at\": \"2026-11-15T02:49:36.814577+00:00\",\n  \"elapsed_seconds\": 0.5092218019999564,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    111944,\n    64471,\n    107043,\n    18,\n    15,\n    3837,\n    99519,\n    75882,\n    111944,\n    104560,\n    18,\n    19,\n    18947,\n    75317,\n    3837,\n    74763,\n    104560,\n    19,\n    17,\n    18947,\n    75317,\n    3837,\n    68536,\n    19,\n    17,\n    107043,\n    18,\n    15,\n    3837,\n    18,\n    19,\n    105378,\n    34204,\n    18,\n    15,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"5176eae0a550629eb356e9ff2827c27d6b1ad1feaec3818bb7647006494efec5\",\n  \"id\": \"N03_same_yes_dual_sources\",\n  \"index\": 25,\n  \"output\": \"无法唯一确定这个数值是否大于30，因为该数值可能是34个单位，也可能是42个单位，而42大于30，34不大于30。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/026.json",
+      "sha256": "34d01f0f82eba5f879ed874600d9150b1ca6afc1581ab70bfe611a8eedca9d2b",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"24da04893306deeac457e31f7f50494f33fb60316b13676d497de073fda578ec\",\n  \"completed_at\": \"2026-11-15T02:49:37.589078+00:00\",\n  \"elapsed_seconds\": 0.3028067578561604,\n  \"generated_token_ids\": [\n    99487,\n    107975,\n    99250,\n    60610,\n    17714,\n    2073,\n    57811,\n    33590,\n    101886,\n    99652,\n    100409,\n    2073,\n    57811,\n    854,\n    107975,\n    3837,\n    77288,\n    115084,\n    2073,\n    100410,\n    854,\n    107975,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"68bb98379b656c516dd92652c56229bd5ddfdf0aaadfc61e1a255dd02f0af6f8\",\n  \"id\": \"C03_same_yes_single_a\",\n  \"index\": 26,\n  \"output\": \"这个类别被确定为“山”，因此它属于“山”类别，但不属于“川”类别。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/027.json",
+      "sha256": "be9a7d317f02018d0c2240a836f938ce9ad1a7328e7720e8989ab404f765b81b",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"866d5c987859b9b4df7d4ceb22ea941a66319f116b29c212f554c01d6d5f479b\",\n  \"completed_at\": \"2026-11-15T02:49:38.164921+00:00\",\n  \"elapsed_seconds\": 0.2671692189760506,\n  \"generated_token_ids\": [\n    99487,\n    111944,\n    105378,\n    34204,\n    19,\n    21,\n    3837,\n    108884,\n    99250,\n    108140,\n    17714,\n    18,\n    19,\n    18947,\n    75317,\n    3837,\n    110089,\n    19,\n    21,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"a6c7fc095175186b78ef1b61125c466dbb2d105ccfa180eea222539e77e2527d\",\n  \"id\": \"N03_same_no_single_a\",\n  \"index\": 27,\n  \"output\": \"这个数值不大于46，因为它被假设为34个单位，小于46。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/028.json",
+      "sha256": "29e363d46ddb358dd22c6f09ec89220c71e3955953280bd88aceb8b36d90813e",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"df363916263cb33cf67353a1cc0310300cc4a2bf7402d04af8468857ce906c50\",\n  \"completed_at\": \"2026-11-15T02:49:38.613622+00:00\",\n  \"elapsed_seconds\": 0.18035727506503463,\n  \"generated_token_ids\": [\n    99487,\n    107975,\n    2073,\n    99718,\n    854,\n    115084,\n    2073,\n    9754,\n    854,\n    57191,\n    2073,\n    8903,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"448faa76a20f6166d455082189ab29580fa6bfeec271d12690ffba5c66cc4d24\",\n  \"id\": \"C02_same_no_single_a\",\n  \"index\": 28,\n  \"output\": \"这个类别“云”不属于“月”或“日”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/029.json",
+      "sha256": "d2ea290b607c59663481c3606deb20cdaffacd4a685c69b3a2ec48c9771702a9",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"c1a61d33bbc6a87813b35d5e5bc84ab8c54190b785e669f6dd0873fadfe9a986\",\n  \"completed_at\": \"2026-11-15T02:49:39.535482+00:00\",\n  \"elapsed_seconds\": 0.7410538191907108,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    107975,\n    64471,\n    17714,\n    2073,\n    100180,\n    55807,\n    33872,\n    29635,\n    15946,\n    104496,\n    101441,\n    101111,\n    3837,\n    104191,\n    24641,\n    41146,\n    17714,\n    2073,\n    100180,\n    33590,\n    100266,\n    69442,\n    24641,\n    41146,\n    17714,\n    2073,\n    102045,\n    33590,\n    100136,\n    80443,\n    92894,\n    27369,\n    73670,\n    108568,\n    99459,\n    69442,\n    101111,\n    88991,\n    1773,\n    101886,\n    3837,\n    100345,\n    104728,\n    27369,\n    3837,\n    107975,\n    104560,\n    2073,\n    100180,\n    854,\n    74763,\n    104560,\n    2073,\n    102045,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"d256567d80b29fb139c8ec076047e23b3e0c820a6219ac9e7b980cb0e18ffd14\",\n  \"id\": \"C01_split_dual_sources\",\n  \"index\": 29,\n  \"output\": \"无法唯一确定这个类别是否为“松”。题设中提到两种资料，一份称其为“松”，另一份称其为“竹”，且没有其他信息可以区分哪份资料正确。因此，根据现有信息，类别可能是“松”也可能是“竹”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/030.json",
+      "sha256": "c0782257a5db23d04b0e0c76a512ace1cea5c43b40e0693e4f15cf7d84079840",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"5da0a5ca21492265acc3a32c2268c0954f00efa5c760a6523e47889f65a6d0d3\",\n  \"completed_at\": \"2026-11-15T02:49:40.710176+00:00\",\n  \"elapsed_seconds\": 0.4739860431291163,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    100345,\n    33872,\n    29635,\n    3837,\n    99487,\n    111944,\n    104560,\n    18,\n    19,\n    18947,\n    75317,\n    57191,\n    19,\n    17,\n    18947,\n    75317,\n    3837,\n    100369,\n    25511,\n    15946,\n    101103,\n    87267,\n    107043,\n    18,\n    15,\n    3837,\n    103943,\n    87267,\n    105378,\n    34204,\n    18,\n    15,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"880b46ee7ff1ca2ad3abac2743fbcab075dc7da3d2c81510832ec8a2dba4bef1\",\n  \"id\": \"N03_same_yes_dual_alternatives\",\n  \"index\": 30,\n  \"output\": \"无法唯一确定。根据题设，这个数值可能是34个单位或42个单位，两个值中都有可能大于30，也有可能不大于30。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/031.json",
+      "sha256": "c030de23f536b5000be5038a1d8533a6525acfacdf7109d53f4fbaa2fbe7bd24",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"2ef4660a9610c64951a3cbb567cb59c8422f99a7a239a63ce1cb917853531944\",\n  \"completed_at\": \"2026-11-15T02:49:41.634848+00:00\",\n  \"elapsed_seconds\": 0.4144417140632868,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    99519,\n    106367,\n    15946,\n    91680,\n    104496,\n    99467,\n    38035,\n    101379,\n    40814,\n    65577,\n    9370,\n    107975,\n    17714,\n    2073,\n    100180,\n    33590,\n    77288,\n    80443,\n    100692,\n    66394,\n    64471,\n    102945,\n    34187,\n    2073,\n    102045,\n    97907,\n    103026,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"7674d87e426d16538b061a32b15aa54d54140f7a13078799599b146d164f97e3\",\n  \"id\": \"C01_same_yes_single_a\",\n  \"index\": 31,\n  \"output\": \"无法唯一确定。因为题目中只提到青色徽记记录的类别为“松”，但没有明确说明是否排除了“竹”的可能性。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/032.json",
+      "sha256": "8518b0f7ce8d10081ad3b6fb7f8850a71dbf3fb880aa7de22dc77a3392cf21a6",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"66427d9d6a316944bc2133892ccf4ad146b5a171443752c8c5be13d3ac70f029\",\n  \"completed_at\": \"2026-11-15T02:49:42.685926+00:00\",\n  \"elapsed_seconds\": 0.6241756179369986,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    100345,\n    33872,\n    29635,\n    3837,\n    99487,\n    111944,\n    104560,\n    16,\n    22,\n    18947,\n    75317,\n    57191,\n    17,\n    22,\n    18947,\n    75317,\n    3837,\n    90919,\n    16,\n    22,\n    110089,\n    18,\n    16,\n    3837,\n    68536,\n    17,\n    22,\n    107043,\n    18,\n    16,\n    1773,\n    101886,\n    3837,\n    101068,\n    99373,\n    100284,\n    104728,\n    27369,\n    104317,\n    111944,\n    64471,\n    107043,\n    18,\n    16,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"e6df059e0849dd7d602fd11b3adf07c70c14e306d684a96ba69e0b0699778627\",\n  \"id\": \"N02_same_no_dual_alternatives\",\n  \"index\": 32,\n  \"output\": \"无法唯一确定。根据题设，这个数值可能是17个单位或27个单位，其中17小于31，而27大于31。因此，无法仅凭现有信息判断数值是否大于31。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/033.json",
+      "sha256": "7acdc65c95f812255a4204050f7484d4e44e7acff08860b7292a1aa829655d83",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"6933417f6b401e2b576239a30628301bb4db01ccffa4ca249b7aaab3a1c6e35d\",\n  \"completed_at\": \"2026-11-15T02:49:43.683823+00:00\",\n  \"elapsed_seconds\": 0.3270690022036433,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    107975,\n    64471,\n    100409,\n    2073,\n    57811,\n    854,\n    57191,\n    2073,\n    100410,\n    33590,\n    99519,\n    100345,\n    33872,\n    29635,\n    27369,\n    3837,\n    101441,\n    99559,\n    101103,\n    87267,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"0f859fbed430580a5edeff5fb0ed5c07a3871605391b3162672f95a52cc4284d\",\n  \"id\": \"C03_same_yes_dual_sources\",\n  \"index\": 33,\n  \"output\": \"无法唯一确定这个类别是否属于“山”或“川”，因为根据题设信息，两种情况都有可能。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/034.json",
+      "sha256": "4ba5b4d0d92b941e00dc25c1f00560cc6345231590304d4beba80db26aa273a9",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"dbeca7d4a08b35691cd7fdecfd5305888d375e33ab580962fcaa0e0ba9a588ec\",\n  \"completed_at\": \"2026-11-15T02:49:44.097267+00:00\",\n  \"elapsed_seconds\": 0.10818092385306954,\n  \"generated_token_ids\": [\n    99487,\n    107975,\n    60610,\n    17714,\n    2073,\n    57811,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"76550e9704df66ebcb8025d2ba4174d86a64c693b473183068b7ae7f327757cc\",\n  \"id\": \"C03_split_single_a\",\n  \"index\": 34,\n  \"output\": \"这个类别确定为“山”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/035.json",
+      "sha256": "b4c86e37ae6810eab7f3fcd67d172ff9090e79cbb7f8bd55dc04805ea4ac4319",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"ab8117d9dfd276d1ccc5589e4c91500e4fd3ca84fb8de614ec7a58ad84f5521e\",\n  \"completed_at\": \"2026-11-15T02:49:44.415765+00:00\",\n  \"elapsed_seconds\": 0.20586708607152104,\n  \"generated_token_ids\": [\n    99487,\n    111944,\n    17,\n    15,\n    107043,\n    23,\n    3837,\n    99999,\n    73670,\n    60610,\n    105226,\n    107043,\n    23,\n    9370,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"fcc8bb89b717c652dd7a2193d5d64076d9d838f682ed8438afe5b92ffe360779\",\n  \"id\": \"N01_same_yes_single_b\",\n  \"index\": 35,\n  \"output\": \"这个数值20大于8，所以可以确定它是大于8的。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/036.json",
+      "sha256": "3318652d244ddfc5a2bc6de630b744856bd845df543e27f1d0c195880f7affe3",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"59f37588d7085b72f5bc19b2efa178c947bbeeb410e368c1e5ba5be3add4b6c1\",\n  \"completed_at\": \"2026-11-15T02:49:44.813178+00:00\",\n  \"elapsed_seconds\": 0.19315812829881907,\n  \"generated_token_ids\": [\n    99487,\n    111944,\n    105378,\n    34204,\n    19,\n    21,\n    3837,\n    99519,\n    19,\n    17,\n    110089,\n    19,\n    21,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"f03169e62af1c8fe5fd4d64681c800b5329071d707ac38305152956c36ef02a0\",\n  \"id\": \"N03_same_no_single_b\",\n  \"index\": 36,\n  \"output\": \"这个数值不大于46，因为42小于46。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/037.json",
+      "sha256": "3551b19c277ccd92ebf2b5236e11cd7e88875f03317925d50b7486d75cd37b3c",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"13d1a61ca68a92ff63667e5312a28bb9f4f93df1feb800d93ba2f2169c760a01\",\n  \"completed_at\": \"2026-11-15T02:49:45.711046+00:00\",\n  \"elapsed_seconds\": 0.7182957199402153,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    100345,\n    33872,\n    29635,\n    3837,\n    99467,\n    38035,\n    109300,\n    65577,\n    9370,\n    111944,\n    104560,\n    16,\n    17,\n    18947,\n    75317,\n    57191,\n    17,\n    15,\n    18947,\n    75317,\n    3837,\n    105932,\n    111944,\n    15946,\n    3837,\n    16,\n    17,\n    110089,\n    16,\n    21,\n    3837,\n    68536,\n    17,\n    15,\n    107043,\n    16,\n    21,\n    1773,\n    101886,\n    3837,\n    101068,\n    99373,\n    100284,\n    89012,\n    22382,\n    27369,\n    104317,\n    111944,\n    64471,\n    107043,\n    16,\n    21,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"22e0ca2b377107a93ebb2b428b383098386a769774818ea6bed11f9bec8cfbb8\",\n  \"id\": \"N01_split_dual_alternatives\",\n  \"index\": 37,\n  \"output\": \"无法唯一确定。根据题设，青色容器记录的数值可能是12个单位或20个单位，这两个数值中，12小于16，而20大于16。因此，无法仅凭给定信息判断数值是否大于16。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/038.json",
+      "sha256": "ee982055cb149dd99179a9f475a6f5fc31d37c4a736dc5b676afe7da6d6161b9",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"64b43bf604453066f6ac4f1fc4023553e478565a83296c2a8fc8ed5d3fe611e7\",\n  \"completed_at\": \"2026-11-15T02:49:46.898382+00:00\",\n  \"elapsed_seconds\": 0.5106757190078497,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    111944,\n    64471,\n    107043,\n    17,\n    17,\n    1773,\n    99519,\n    99487,\n    111944,\n    104560,\n    16,\n    22,\n    18947,\n    75317,\n    3837,\n    74763,\n    104560,\n    17,\n    22,\n    18947,\n    75317,\n    3837,\n    16,\n    22,\n    105378,\n    34204,\n    17,\n    17,\n    3837,\n    77288,\n    17,\n    22,\n    107043,\n    17,\n    17,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"372ccf2aa6d1302d2c67942b76db1a74a9fa9a0f2070459842bc94d3a7644a9e\",\n  \"id\": \"N02_split_dual_sources\",\n  \"index\": 38,\n  \"output\": \"无法唯一确定这个数值是否大于22。因为这个数值可能是17个单位，也可能是27个单位，17不大于22，但27大于22。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/039.json",
+      "sha256": "756e624d5534bcaf35c70e7ed169cbadf34cb98719349ce725944cef9d772595",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"ffb40fff9584379cf7c8ac1f6629f8d2305d9dee81964bb923aec54bed1c7a10\",\n  \"completed_at\": \"2026-11-15T02:49:47.513242+00:00\",\n  \"elapsed_seconds\": 0.12090711714699864,\n  \"generated_token_ids\": [\n    99487,\n    111944,\n    16,\n    17,\n    102068,\n    107043,\n    23,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"4461e60541d1a94a3e7b5e9e08e0ce07b04ef3a986f7d97775484264f950c9cc\",\n  \"id\": \"N01_same_yes_single_a\",\n  \"index\": 39,\n  \"output\": \"这个数值12确实大于8。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/040.json",
+      "sha256": "fd856c622fb9338b4ae4f19081b091cbbaf58342c8f0245ed06493bb9f179a67",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"fddd8cf18e19877a57469c2e1881233ab5816c410c7620e1105a0e5191119675\",\n  \"completed_at\": \"2026-11-15T02:49:48.038801+00:00\",\n  \"elapsed_seconds\": 0.38899565301835537,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    100345,\n    33872,\n    29635,\n    3837,\n    99487,\n    111944,\n    104560,\n    18,\n    19,\n    18947,\n    75317,\n    57191,\n    19,\n    17,\n    18947,\n    75317,\n    3837,\n    101886,\n    101068,\n    60610,\n    99652,\n    64471,\n    107043,\n    19,\n    21,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"b6217dc30631de3883d1a5a925eff746098bc7a7b9900daa8296f0e9ad57adff\",\n  \"id\": \"N03_same_no_dual_alternatives\",\n  \"index\": 40,\n  \"output\": \"无法唯一确定。根据题设，这个数值可能是34个单位或42个单位，因此无法确定它是否大于46。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/041.json",
+      "sha256": "90066247d0c9677e01697f3c321ffd7b8955b562b0f446126a3018231181b04f",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"ab2eb3b4403eb308048f92fedc0bebb5b3cb7d964d17a572b17823bf2cf7db24\",\n  \"completed_at\": \"2026-11-15T02:49:49.268749+00:00\",\n  \"elapsed_seconds\": 0.8544886745512486,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    99519,\n    106367,\n    15946,\n    91680,\n    104496,\n    120844,\n    118840,\n    101379,\n    40814,\n    65577,\n    9370,\n    107975,\n    20412,\n    2073,\n    99718,\n    33590,\n    77288,\n    80443,\n    100692,\n    66394,\n    99487,\n    107975,\n    64471,\n    91572,\n    100409,\n    2073,\n    99718,\n    854,\n    33108,\n    2073,\n    77419,\n    854,\n    102069,\n    9370,\n    92894,\n    107975,\n    3837,\n    100631,\n    64471,\n    99373,\n    100409,\n    2073,\n    99718,\n    55807,\n    101886,\n    3837,\n    99373,\n    100284,\n    89012,\n    22382,\n    27369,\n    101068,\n    104317,\n    99487,\n    107975,\n    64471,\n    100409,\n    2073,\n    99718,\n    854,\n    57191,\n    2073,\n    77419,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"61379909d525bde1aaa3c55f847383032418a9340a4fef7225f36fea10466b0e\",\n  \"id\": \"C02_same_yes_single_a\",\n  \"index\": 41,\n  \"output\": \"无法唯一确定。因为题目中只提到琥珀徽记记录的类别是“云”，但没有明确说明这个类别是否同时属于“云”和“星”之外的其他类别，或者是否仅属于“云”。因此，仅凭给定信息无法判断这个类别是否属于“云”或“星”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/042.json",
+      "sha256": "9bc653865189b515eb9a37a6ddeca16025d7bec93b3c7eea1b54a3b061f68c25",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"1a15fea1d252c189600aa7036189935f6581dfefcadd50f847e165f809e2807c\",\n  \"completed_at\": \"2026-11-15T02:49:50.450522+00:00\",\n  \"elapsed_seconds\": 0.27946349093690515,\n  \"generated_token_ids\": [\n    99487,\n    111944,\n    16,\n    22,\n    105378,\n    34204,\n    18,\n    16,\n    3837,\n    101886,\n    99744,\n    107043,\n    18,\n    16,\n    1773,\n    98237,\n    99534,\n    102104,\n    5122,\n    32376,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"0b5538c70dcae72a6da21acf78a35359f41710a099bfa27e28fc0a2a866af387\",\n  \"id\": \"N02_same_no_single_b\",\n  \"index\": 42,\n  \"output\": \"这个数值17不大于31，因此也不大于31。简短回答：否。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/043.json",
+      "sha256": "2cf2e4c946dca42ca7ee3c87f6b2b46c529246001d924f0587fbec7b754b6961",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"f7781c600390c2c8b597d987d1c580bcc6db0e67d72387f9ed7a7b0a89d32ff0\",\n  \"completed_at\": \"2026-11-15T02:49:51.246347+00:00\",\n  \"elapsed_seconds\": 0.4736563339829445,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    100345,\n    33872,\n    29635,\n    3837,\n    99487,\n    111944,\n    104560,\n    18,\n    19,\n    18947,\n    75317,\n    57191,\n    19,\n    17,\n    18947,\n    75317,\n    3837,\n    100369,\n    25511,\n    15946,\n    101103,\n    87267,\n    107043,\n    18,\n    23,\n    3837,\n    103943,\n    87267,\n    105378,\n    34204,\n    18,\n    23,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"6dd91be082f3c5651547205e3d2f913315d7ab5e79eef88026e80971ebff2116\",\n  \"id\": \"N03_split_dual_alternatives\",\n  \"index\": 43,\n  \"output\": \"无法唯一确定。根据题设，这个数值可能是34个单位或42个单位，两个值中都有可能大于38，也有可能不大于38。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/044.json",
+      "sha256": "ea99dddbd8ac70df99b7ad5b79194bcca9e5e6477b143cc4f82d6b5bbd2e5472",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"2c2a07a51177477ee542a3e9cb03239f966c402dbc33a8b176baaf94a03fc647\",\n  \"completed_at\": \"2026-11-15T02:49:52.295166+00:00\",\n  \"elapsed_seconds\": 0.5703946650028229,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    107975,\n    64471,\n    100409,\n    2073,\n    100711,\n    854,\n    57191,\n    2073,\n    99533,\n    33590,\n    99519,\n    100345,\n    33872,\n    29635,\n    3837,\n    101111,\n    100043,\n    33108,\n    101111,\n    100916,\n    104257,\n    101441,\n    87267,\n    9370,\n    107975,\n    2073,\n    100180,\n    854,\n    33108,\n    2073,\n    102045,\n    33590,\n    80443,\n    92894,\n    27369,\n    73670,\n    108568,\n    104673,\n    101111,\n    88991,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"1fa0baa1fd2731dc3a590f5bf29870f303e66b1e2c4900587d6253f2693216fe\",\n  \"id\": \"C01_same_no_dual_sources\",\n  \"index\": 44,\n  \"output\": \"无法唯一确定这个类别是否属于“梅”或“兰”，因为根据题设，资料甲和资料乙提供了两种可能的类别“松”和“竹”，没有其他信息可以区分哪个资料正确。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/045.json",
+      "sha256": "25b6ab2f6fcca41011e690cac44238e56d0db22975bb51a0ead0df8f3bd98811",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"69707c03c89b05212369355569533b2dce107d1be72943ad455bf7a22ca3cf50\",\n  \"completed_at\": \"2026-11-15T02:49:53.073578+00:00\",\n  \"elapsed_seconds\": 0.24196372088044882,\n  \"generated_token_ids\": [\n    99487,\n    111944,\n    105378,\n    34204,\n    18,\n    23,\n    3837,\n    99519,\n    105226,\n    18,\n    19,\n    18947,\n    75317,\n    3837,\n    110089,\n    18,\n    23,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"735b45689b50c1ea5755b64238a60ea6088955a9ee164ac08b81e5bad75c5486\",\n  \"id\": \"N03_split_single_a\",\n  \"index\": 45,\n  \"output\": \"这个数值不大于38，因为它是34个单位，小于38。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/046.json",
+      "sha256": "d9e06f3d82843979d04f288c578a042cca7c0e4edfdebae44414a5deb1c76cb3",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"97223fe309ae535f448e53fa4d865bd6a0612246e0587aff1a0178fe7486e9dd\",\n  \"completed_at\": \"2026-11-15T02:49:53.535367+00:00\",\n  \"elapsed_seconds\": 0.18131194496527314,\n  \"generated_token_ids\": [\n    99487,\n    107975,\n    2073,\n    57811,\n    854,\n    115084,\n    2073,\n    99463,\n    854,\n    57191,\n    2073,\n    55135,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"97f43ad5ecf54513d5b733811033aa16a34e4a09347a775d33ee48c9ccf49615\",\n  \"id\": \"C03_same_no_single_a\",\n  \"index\": 46,\n  \"output\": \"这个类别“山”不属于“林”或“海”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/047.json",
+      "sha256": "c99a0b2813eecf1b09eb48009685952e226aeec963ea419e74120b127858ad17",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"a0547822c35d2e9d12f50dff55333bdda82cec83f5eaca186bc761f90f2ada9c\",\n  \"completed_at\": \"2026-11-15T02:49:54.039865+00:00\",\n  \"elapsed_seconds\": 0.3024503020569682,\n  \"generated_token_ids\": [\n    99487,\n    111944,\n    105378,\n    34204,\n    17,\n    19,\n    3837,\n    108884,\n    99250,\n    108140,\n    17714,\n    16,\n    17,\n    18947,\n    75317,\n    3837,\n    68536,\n    16,\n    17,\n    110089,\n    17,\n    19,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"34cd3fe3239e78c9d8e1a75aa40b26ffd79bb4522d9162ebbc7557a9a3cdad38\",\n  \"id\": \"N01_same_no_single_a\",\n  \"index\": 47,\n  \"output\": \"这个数值不大于24，因为它被假设为12个单位，而12小于24。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/048.json",
+      "sha256": "3ec2076c5058754abfb450e580c526193916449c7eabdaeed2c2d182a080878c",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"4c24fcb19845a8e6c13cbd00f097f8e4f450f7a800527f82ea63ebd2585a077e\",\n  \"completed_at\": \"2026-11-15T02:49:54.932042+00:00\",\n  \"elapsed_seconds\": 0.5689906012266874,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    111944,\n    64471,\n    107043,\n    18,\n    16,\n    1773,\n    99519,\n    100345,\n    33872,\n    29635,\n    3837,\n    99487,\n    111944,\n    104560,\n    16,\n    22,\n    18947,\n    75317,\n    3837,\n    74763,\n    104560,\n    17,\n    22,\n    18947,\n    75317,\n    3837,\n    68536,\n    16,\n    22,\n    105378,\n    34204,\n    18,\n    16,\n    3837,\n    77288,\n    17,\n    22,\n    107043,\n    18,\n    16,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"96fac6b2fdf0b34049344d255cd0752f9361c526fbc2c515b2ddc3902f023fe0\",\n  \"id\": \"N02_same_no_dual_sources\",\n  \"index\": 48,\n  \"output\": \"无法唯一确定这个数值是否大于31。因为根据题设，这个数值可能是17个单位，也可能是27个单位，而17不大于31，但27大于31。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/049.json",
+      "sha256": "05f6477de7b0b70cde557ae8f997323060c08b70a91cb5d80434c8c7920346c2",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"69a77e2bcc3061914afe78e790b6e09835a3e0349ad7d98e2e07087029079415\",\n  \"completed_at\": \"2026-11-15T02:49:56.081955+00:00\",\n  \"elapsed_seconds\": 0.583828650880605,\n  \"generated_token_ids\": [\n    99487,\n    107975,\n    2073,\n    102045,\n    854,\n    115084,\n    2073,\n    100180,\n    33590,\n    99519,\n    99467,\n    38035,\n    101379,\n    40814,\n    65577,\n    9370,\n    107975,\n    20412,\n    2073,\n    102045,\n    33590,\n    104610,\n    2073,\n    100180,\n    55807,\n    101886,\n    3837,\n    101068,\n    60610,\n    99652,\n    64471,\n    100409,\n    2073,\n    100180,\n    33590,\n    99519,\n    106367,\n    15946,\n    100692,\n    103988,\n    41146,\n    107975,\n    17714,\n    2073,\n    102045,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"b6c76711827494629b586dfa3a493b954cdb842dc5e88347da666b12fe2be8ec\",\n  \"id\": \"C01_same_yes_single_b\",\n  \"index\": 49,\n  \"output\": \"这个类别“竹”不属于“松”，因为青色徽记记录的类别是“竹”，而不是“松”。因此，无法确定它是否属于“松”，因为题目中明确指出其类别为“竹”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/050.json",
+      "sha256": "11b2c2c9d639c8eae359c9f3245dcf9ce59147ee12be6a3249afd3fddbc74cfa",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"a217498a430c50bb9373cdc8225074f7ffb09447ae58f0013b206d174cd9319e\",\n  \"completed_at\": \"2026-11-15T02:49:56.803960+00:00\",\n  \"elapsed_seconds\": 0.14296150486916304,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    107975,\n    64471,\n    17714,\n    2073,\n    57811,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"9bfb72c11bd17b5e1308ee8fc9f44382830b5c19701e5f0323b3b21e4db25b41\",\n  \"id\": \"C03_split_dual_sources\",\n  \"index\": 50,\n  \"output\": \"无法唯一确定这个类别是否为“山”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/051.json",
+      "sha256": "543dcbb04abcb1186c973a83ff2c41b09c5439b7f6d464d5992b290a68bdcc73",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"78fc3e1350cc635f82510a57ac802b856ac6dfe806cbc67c40b1169d16f13379\",\n  \"completed_at\": \"2026-11-15T02:49:57.592027+00:00\",\n  \"elapsed_seconds\": 0.6061280490830541,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    107975,\n    64471,\n    100409,\n    2073,\n    99463,\n    854,\n    57191,\n    2073,\n    55135,\n    33590,\n    99519,\n    100345,\n    33872,\n    29635,\n    103008,\n    27369,\n    3837,\n    100369,\n    101111,\n    15946,\n    101127,\n    104496,\n    9370,\n    107975,\n    17714,\n    2073,\n    57811,\n    854,\n    33108,\n    2073,\n    100410,\n    33590,\n    68536,\n    105932,\n    109487,\n    100486,\n    100630,\n    2073,\n    99463,\n    854,\n    57191,\n    2073,\n    55135,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"a46c368991f215665982a8c3698a587aa0f0012f7cd2be7f061a0cb5e56f8696\",\n  \"id\": \"C03_same_no_dual_sources\",\n  \"index\": 51,\n  \"output\": \"无法唯一确定这个类别是否属于“林”或“海”，因为根据题设提供的信息，两个资料中分别提到的类别为“山”和“川”，而这两个选项都不包括“林”或“海”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/052.json",
+      "sha256": "89591a091d250de394bb2dc6a49af5b319a819be44006669d90d78a84d08f00b",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"e6bcef08ad5941f846b8f69bbdbb53ab4e0c72bd58568bb2070741e32ff6e212\",\n  \"completed_at\": \"2026-11-15T02:49:58.750496+00:00\",\n  \"elapsed_seconds\": 0.5576057564467192,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    111944,\n    64471,\n    107043,\n    17,\n    19,\n    1773,\n    99519,\n    100267,\n    99559,\n    104560,\n    16,\n    17,\n    18947,\n    75317,\n    3837,\n    74763,\n    104560,\n    17,\n    15,\n    18947,\n    75317,\n    3837,\n    16,\n    17,\n    18947,\n    75317,\n    105378,\n    34204,\n    17,\n    19,\n    3837,\n    68536,\n    17,\n    15,\n    18947,\n    75317,\n    107043,\n    17,\n    19,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"33667af1980b5c9af86d9392a1c9635e061163c269718f732d654dfbe3bb15a9\",\n  \"id\": \"N01_same_no_dual_sources\",\n  \"index\": 52,\n  \"output\": \"无法唯一确定这个数值是否大于24。因为真实情况可能是12个单位，也可能是20个单位，12个单位不大于24，而20个单位大于24。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/053.json",
+      "sha256": "9cd12afbbd80268d2823402b055ec2c144f5af5c0209812dc6516e64aa73bfc4",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"db768cad6061a300f8cb65c8064b4eca28695e56928ff4d80a0b38bd86debbc8\",\n  \"completed_at\": \"2026-11-15T02:49:59.770318+00:00\",\n  \"elapsed_seconds\": 0.412759592756629,\n  \"generated_token_ids\": [\n    99487,\n    107975,\n    2073,\n    77419,\n    854,\n    115084,\n    2073,\n    9754,\n    854,\n    57191,\n    2073,\n    8903,\n    55807,\n    99519,\n    2073,\n    77419,\n    854,\n    33108,\n    2073,\n    9754,\n    854,\n    91956,\n    8903,\n    854,\n    20412,\n    101970,\n    107975,\n    3837,\n    80443,\n    102298,\n    100145,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"d11634108862d1bc2e7494b127ee496e8d9f9b752c3d90d5fe164b21681e6ae3\",\n  \"id\": \"C02_same_no_single_b\",\n  \"index\": 53,\n  \"output\": \"这个类别“星”不属于“月”或“日”。因为“星”和“月”、“日”是不同的类别，没有包含关系。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/054.json",
+      "sha256": "544da2e321b9375e7584a06da0b0b3116f5288f0739911b78daa490c53fd6135",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"252773990c1199f495cac5ba1ad46482a152366f20330bcd7a164268be7429c4\",\n  \"completed_at\": \"2026-11-15T02:50:00.575920+00:00\",\n  \"elapsed_seconds\": 0.4254241487942636,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    1773,\n    99519,\n    106367,\n    15946,\n    91680,\n    66394,\n    120844,\n    118840,\n    101379,\n    40814,\n    65577,\n    9370,\n    107975,\n    60610,\n    17714,\n    2073,\n    77419,\n    33590,\n    77288,\n    80443,\n    100692,\n    66394,\n    99487,\n    107975,\n    64471,\n    74763,\n    100409,\n    2073,\n    99718,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"e2d2d5a47e94b65310da0d6262c8f80f2feda8215fe5dda45ed85c6cbcf65034\",\n  \"id\": \"C02_same_yes_single_b\",\n  \"index\": 54,\n  \"output\": \"无法唯一确定。因为题目中只说明琥珀徽记记录的类别确定为“星”，但没有明确说明这个类别是否也属于“云”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/055.json",
+      "sha256": "0bad5d32fa22853b9904c8d6e9435bcba4693d6507be008576b8618067e7362a",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"ab415350402f4ccbf0d213eb9c4b78b1b6ca553ffe21cfc2a046fed51092ad90\",\n  \"completed_at\": \"2026-11-15T02:50:01.462599+00:00\",\n  \"elapsed_seconds\": 0.4605558807961643,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    107975,\n    64471,\n    17714,\n    2073,\n    99718,\n    55807,\n    100345,\n    33872,\n    29635,\n    27369,\n    3837,\n    101441,\n    99559,\n    101103,\n    87267,\n    3837,\n    91676,\n    104560,\n    2073,\n    77419,\n    33590,\n    74763,\n    104560,\n    2073,\n    99718,\n    55807,\n    80443,\n    92894,\n    27369,\n    111279,\n    108568,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"c437df2cac0f5ab9deb837eb64502e11238efb0806ce41e6703a0cc60051bbda\",\n  \"id\": \"C02_split_dual_sources\",\n  \"index\": 55,\n  \"output\": \"无法唯一确定这个类别是否为“云”。根据题设信息，两种情况都有可能，即可能是“星”，也可能是“云”。没有其他信息可供区分。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/056.json",
+      "sha256": "2655e77da2e4241fa8b105ac968dc817ff3d5a924eb03bbc1fae98d08c729b13",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"2905c2c8b0db5b2a9b6305fd31f95418c9e2b02dc597497cf34fcd4509c638fc\",\n  \"completed_at\": \"2026-11-15T02:50:02.415583+00:00\",\n  \"elapsed_seconds\": 0.5080133746378124,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    111944,\n    64471,\n    107043,\n    18,\n    23,\n    1773,\n    99519,\n    99487,\n    111944,\n    104560,\n    18,\n    19,\n    18947,\n    75317,\n    3837,\n    74763,\n    104560,\n    19,\n    17,\n    18947,\n    75317,\n    3837,\n    68536,\n    19,\n    17,\n    107043,\n    18,\n    23,\n    3837,\n    18,\n    19,\n    105378,\n    34204,\n    18,\n    23,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"62f828c225b704b3537baebaf77c48751d076ec8f004b755a69c835311534d7a\",\n  \"id\": \"N03_split_dual_sources\",\n  \"index\": 56,\n  \"output\": \"无法唯一确定这个数值是否大于38。因为这个数值可能是34个单位，也可能是42个单位，而42大于38，34不大于38。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/057.json",
+      "sha256": "5609a30cffd7726f231ceaa46b6fa375a2cfcc37b49bc50ab8ec37d79862015d",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"695b3c48fdc7942d0d95fdf6e62d49183069a2b31af4b7797646263e7989e360\",\n  \"completed_at\": \"2026-11-15T02:50:03.050341+00:00\",\n  \"elapsed_seconds\": 0.15611700620502234,\n  \"generated_token_ids\": [\n    20412,\n    9370,\n    3837,\n    99487,\n    111944,\n    19,\n    17,\n    107043,\n    18,\n    15,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"ee7a92b613d526d0b06caa1b8e3378e0dddcd49f401fc3170ee76a047f9f013a\",\n  \"id\": \"N03_same_yes_single_b\",\n  \"index\": 57,\n  \"output\": \"是的，这个数值42大于30。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/058.json",
+      "sha256": "4ad62c6d729966d48c305493107f352c8081befffe6fb3864e9063173f2fed0c",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"6d7ba78ea8377a8532d5b3bd64adb6e25c91cd5ca4266a59d42083a96f5ac8fe\",\n  \"completed_at\": \"2026-11-15T02:50:03.393335+00:00\",\n  \"elapsed_seconds\": 0.1805358463898301,\n  \"generated_token_ids\": [\n    99487,\n    107975,\n    2073,\n    100410,\n    854,\n    115084,\n    2073,\n    99463,\n    854,\n    57191,\n    2073,\n    55135,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"696330f9fde70b73f8f8ce5d8e59230795e0e38eb70723fc6c28f13e83cac004\",\n  \"id\": \"C03_same_no_single_b\",\n  \"index\": 58,\n  \"output\": \"这个类别“川”不属于“林”或“海”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/059.json",
+      "sha256": "96b99a07747186db55f7fb5a7604fe8a5eb3aabb7deba803a214c07d4899fa6d",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"08ad1784d3bfd733dbc97523b6b692b01763157a3b1850a7af7a69db0e74d5ec\",\n  \"completed_at\": \"2026-11-15T02:50:03.672241+00:00\",\n  \"elapsed_seconds\": 0.09544100100174546,\n  \"generated_token_ids\": [\n    99487,\n    107975,\n    20412,\n    2073,\n    100180,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"bb9d723d9ac78d2e70cb9fd4c1c8821d79e021ec3526bebd35355dcc869f2f3e\",\n  \"id\": \"C01_split_single_a\",\n  \"index\": 59,\n  \"output\": \"这个类别是“松”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/060.json",
+      "sha256": "b6fcb1a23f68f84a414416507a16fcfffe9b6de53444a0f65dd3c8e659158544",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"907163000db1b18aa63bb10625beb4a44671f251154c129b4da83fef129be341\",\n  \"completed_at\": \"2026-11-15T02:50:03.871589+00:00\",\n  \"elapsed_seconds\": 0.09558485401794314,\n  \"generated_token_ids\": [\n    99487,\n    107975,\n    20412,\n    2073,\n    99718,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"d3fc73bf538ea288ac03ef92fd826d757a3c0b8728e4170b00dba0c0a3cf02aa\",\n  \"id\": \"C02_split_single_a\",\n  \"index\": 60,\n  \"output\": \"这个类别是“云”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/061.json",
+      "sha256": "e8f8b8b20215620b79bc425bb1b11b0eb1e2279482849071f37369590be648c4",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"4c9acea62b27e60b3ee75992c096d208cbd302315c072e4a9707e2f6504bbefe\",\n  \"completed_at\": \"2026-11-15T02:50:04.541451+00:00\",\n  \"elapsed_seconds\": 0.5210105939768255,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    111944,\n    64471,\n    107043,\n    16,\n    18,\n    1773,\n    99519,\n    62244,\n    111944,\n    17714,\n    16,\n    22,\n    18947,\n    75317,\n    95053,\n    107043,\n    16,\n    18,\n    24968,\n    62244,\n    111944,\n    17714,\n    17,\n    22,\n    18947,\n    75317,\n    95053,\n    74763,\n    107043,\n    16,\n    18,\n    1773,\n    101441,\n    99559,\n    101103,\n    87267,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"44832f3b275cb6d44662364e51c7054c1018f1c56351f409afe2d59fd47fea8a\",\n  \"id\": \"N02_same_yes_dual_sources\",\n  \"index\": 61,\n  \"output\": \"无法唯一确定这个数值是否大于13。因为如果数值为17个单位，则大于13；如果数值为27个单位，则也大于13。两种情况都有可能。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/062.json",
+      "sha256": "3f4d1ac6edc2f4ad20c587161bf2c844de465a6c2ceeab2b8ef6888dbdfa225e",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"b294cdbd41a782005e37896074e02b999034fbe21c4617fd738e27c91b7bde09\",\n  \"completed_at\": \"2026-11-15T02:50:05.244847+00:00\",\n  \"elapsed_seconds\": 0.20437434781342745,\n  \"generated_token_ids\": [\n    99487,\n    111944,\n    17,\n    15,\n    107043,\n    16,\n    21,\n    3837,\n    99999,\n    20412,\n    107043,\n    16,\n    21,\n    9370,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"75158045f015df9b3a073613ee6cf970628e1523e399575e6a3636c8cb682065\",\n  \"id\": \"N01_split_single_b\",\n  \"index\": 62,\n  \"output\": \"这个数值20大于16，所以是大于16的。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/063.json",
+      "sha256": "7a298fe6e8644f424d7a788e171e20a6ebf2bd5af9f13034603a09585f736351",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"861a355e6b45b38c5942ae8d4725e4efe84cc7a74ad2b81fc4d17535ce8930cd\",\n  \"completed_at\": \"2026-11-15T02:50:05.721438+00:00\",\n  \"elapsed_seconds\": 0.2528146770782769,\n  \"generated_token_ids\": [\n    99487,\n    111944,\n    105378,\n    34204,\n    17,\n    17,\n    3837,\n    108884,\n    60610,\n    17714,\n    16,\n    22,\n    18947,\n    75317,\n    3837,\n    110089,\n    17,\n    17,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"1b3d2742f1f9881a9889646a86d01b23a3c25b7a1a8e5b822f436cd1c03c7327\",\n  \"id\": \"N02_split_single_b\",\n  \"index\": 63,\n  \"output\": \"这个数值不大于22，因为它确定为17个单位，小于22。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/064.json",
+      "sha256": "bc84a3f7990236ecd265adb442b53ac95ed59b5de9493621263c511e41c933e4",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"324f36eabdc0b4a4e013ebb2d2f409b1a32a61a477f5f6a7c5a29a30b6391085\",\n  \"completed_at\": \"2026-11-15T02:50:06.142256+00:00\",\n  \"elapsed_seconds\": 0.1442039138637483,\n  \"generated_token_ids\": [\n    99487,\n    107975,\n    99520,\n    2073,\n    100180,\n    33590,\n    103955,\n    2073,\n    102045,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"b9fcb1e8d635d1043f4d7207046d505af3be4d9f6359adb943b45074fb471e93\",\n  \"id\": \"C01_split_single_b\",\n  \"index\": 64,\n  \"output\": \"这个类别不是“松”，而是“竹”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/065.json",
+      "sha256": "67291fb22fedb5cbe0eb86ca110031d8ab2cd6de5a135c381ef1843dbb1c49b2",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"6b2d80283413dcf17cb091c0db39522b47952cca6578c50dc082cd82de9d3f5f\",\n  \"completed_at\": \"2026-11-15T02:50:06.449902+00:00\",\n  \"elapsed_seconds\": 0.1560032251290977,\n  \"generated_token_ids\": [\n    20412,\n    9370,\n    3837,\n    99487,\n    111944,\n    17,\n    22,\n    107043,\n    17,\n    17,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"a781dcf7d38317cbec92b646ba5897ceb4901154740506203049f0a774931c95\",\n  \"id\": \"N02_split_single_a\",\n  \"index\": 65,\n  \"output\": \"是的，这个数值27大于22。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/066.json",
+      "sha256": "cbc792f0d107dd52591f680653432e1b436bf579cf5cd7518a46603a2d77d8df",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"b116d26363565a828ac68cd60837655d5ddae8e07cf73f153647b8b5c46f44ac\",\n  \"completed_at\": \"2026-11-15T02:50:07.000401+00:00\",\n  \"elapsed_seconds\": 0.38879844872280955,\n  \"generated_token_ids\": [\n    99487,\n    107975,\n    99520,\n    2073,\n    99718,\n    55807,\n    100345,\n    33872,\n    29635,\n    3837,\n    120844,\n    118840,\n    101379,\n    40814,\n    65577,\n    9370,\n    107975,\n    60610,\n    17714,\n    2073,\n    77419,\n    33590,\n    101886,\n    73670,\n    60610,\n    99652,\n    99520,\n    2073,\n    99718,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"79a0a4d500ec13ad8e7459c35bf115d4bf05a7cf14734aafe347373c6330de14\",\n  \"id\": \"C02_split_single_b\",\n  \"index\": 66,\n  \"output\": \"这个类别不是“云”。根据题设，琥珀徽记记录的类别确定为“星”，因此可以确定它不是“云”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/067.json",
+      "sha256": "92f543b4ef168bbf044bc6375ef3fbc3c6524206dd9a04c68bff5f7aa9cb13e7",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"a0ac7cd2c5b537ff9d6b057d85ba2b01c4bc4bafa76da0714a32da258ac8abdb\",\n  \"completed_at\": \"2026-11-15T02:50:07.501373+00:00\",\n  \"elapsed_seconds\": 0.14269372075796127,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    107975,\n    64471,\n    17714,\n    2073,\n    100180,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"02c052c0d47d036fff9aee0dbd19a7025f00e8238777b5b46cce3f732ffe5674\",\n  \"id\": \"C01_split_dual_alternatives\",\n  \"index\": 67,\n  \"output\": \"无法唯一确定这个类别是否为“松”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/068.json",
+      "sha256": "43a66e40c50b610acb4b753967f71f20c99a7592b96b635d854080d908558037",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"60e0e2194fc00425cc2a5509400371267e8f664df3f3f22b7f62b88ee60a0350\",\n  \"completed_at\": \"2026-11-15T02:50:07.848607+00:00\",\n  \"elapsed_seconds\": 0.19135344494134188,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    107975,\n    64471,\n    100409,\n    2073,\n    100180,\n    854,\n    57191,\n    2073,\n    102045,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"afaaef87c352c9dd67ced0dff338524dd751cb60c2c0a8fe29647850b5340dfc\",\n  \"id\": \"C01_same_yes_dual_alternatives\",\n  \"index\": 68,\n  \"output\": \"无法唯一确定这个类别是否属于“松”或“竹”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/069.json",
+      "sha256": "de9e3a12e3dfd7beb2beb711e3141b15403ff57b077b0a603ec469d83da42c86",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"97619cdf554ff37ea6e021e87bd9b1f0e3f4ea3d146341545eed435e8e9f9cb5\",\n  \"completed_at\": \"2026-11-15T02:50:08.344990+00:00\",\n  \"elapsed_seconds\": 0.30267174495384097,\n  \"generated_token_ids\": [\n    99467,\n    38035,\n    101379,\n    40814,\n    65577,\n    9370,\n    107975,\n    60610,\n    17714,\n    2073,\n    100180,\n    33590,\n    101886,\n    99487,\n    107975,\n    115084,\n    2073,\n    100711,\n    854,\n    57191,\n    2073,\n    99533,\n    55807,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"0b5b9ab35d717b2a0dd5e340262726479ed998ab51ede009a97a0894ea2e2906\",\n  \"id\": \"C01_same_no_single_a\",\n  \"index\": 69,\n  \"output\": \"青色徽记记录的类别确定为“松”，因此这个类别不属于“梅”或“兰”。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/070.json",
+      "sha256": "8ecab15db02fa4562cca47ef7af9c7f82cbe7b34428d7a8241510ee4d62ba38b",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"3cdd876fc2e9e74b88255161cf8da45a5bfd8dcfbd03383a40e9ebacbdb2ae95\",\n  \"completed_at\": \"2026-11-15T02:50:09.086404+00:00\",\n  \"elapsed_seconds\": 0.4229931589215994,\n  \"generated_token_ids\": [\n    101068,\n    102157,\n    60610,\n    99487,\n    107975,\n    64471,\n    100409,\n    2073,\n    99718,\n    854,\n    57191,\n    2073,\n    77419,\n    33590,\n    99519,\n    100369,\n    101111,\n    103008,\n    27369,\n    71268,\n    104560,\n    105045,\n    3837,\n    80443,\n    92894,\n    27369,\n    36407,\n    108568,\n    104673,\n    101111,\n    33126,\n    102188,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"e73265a38dfb431442d77f4c20308e1628c93f714bc0bed5e24c82cc63e9552e\",\n  \"id\": \"C02_same_yes_dual_sources\",\n  \"index\": 70,\n  \"output\": \"无法唯一确定这个类别是否属于“云”或“星”，因为两个资料提供的信息都可能是正确的，没有其他信息来区分哪个资料更准确。\"\n}\n"
+    },
+    {
+      "path": "runs/qwen2.5-3b-query-determinacy-development-v1/records/071.json",
+      "sha256": "0d768dc8e9756b17d4f908bce2257f5f327f7421b10e6859772170b8126b2c01",
+      "raw_utf8": "{\n  \"attempt_sha256\": \"33f41ccd420ea703a19589da1e433e05d0274cc73629f8d5adfdf47b22e51078\",\n  \"completed_at\": \"2026-11-15T02:50:09.698566+00:00\",\n  \"elapsed_seconds\": 0.15598354022949934,\n  \"generated_token_ids\": [\n    20412,\n    9370,\n    3837,\n    99487,\n    111944,\n    18,\n    19,\n    107043,\n    18,\n    15,\n    1773,\n    151645\n  ],\n  \"generated_token_ids_sha256\": \"6012e08ee470a10cad95302862b412c33199506b4af8ad3ee919ca5133c956e2\",\n  \"id\": \"N03_same_yes_single_a\",\n  \"index\": 71,\n  \"output\": \"是的，这个数值34大于30。\"\n}\n"
+    }
+  ]
+}

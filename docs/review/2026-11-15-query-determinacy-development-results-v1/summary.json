@@ -1,0 +1,133 @@
+{
+  "by_condition": {
+    "dual_alternatives": {
+      "correct": 6,
+      "overreserve": 12
+    },
+    "dual_sources": {
+      "correct": 6,
+      "overreserve": 12
+    },
+    "single_a": {
+      "correct": 16,
+      "overreserve": 2
+    },
+    "single_b": {
+      "correct": 14,
+      "overreserve": 2,
+      "unknown": 2
+    }
+  },
+  "cells": {
+    "dual_alternatives/category/same_no": {
+      "overreserve": 3
+    },
+    "dual_alternatives/category/same_yes": {
+      "overreserve": 3
+    },
+    "dual_alternatives/category/split": {
+      "correct": 3
+    },
+    "dual_alternatives/number/same_no": {
+      "overreserve": 3
+    },
+    "dual_alternatives/number/same_yes": {
+      "overreserve": 3
+    },
+    "dual_alternatives/number/split": {
+      "correct": 3
+    },
+    "dual_sources/category/same_no": {
+      "overreserve": 3
+    },
+    "dual_sources/category/same_yes": {
+      "overreserve": 3
+    },
+    "dual_sources/category/split": {
+      "correct": 3
+    },
+    "dual_sources/number/same_no": {
+      "overreserve": 3
+    },
+    "dual_sources/number/same_yes": {
+      "overreserve": 3
+    },
+    "dual_sources/number/split": {
+      "correct": 3
+    },
+    "single_a/category/same_no": {
+      "correct": 3
+    },
+    "single_a/category/same_yes": {
+      "correct": 1,
+      "overreserve": 2
+    },
+    "single_a/category/split": {
+      "correct": 3
+    },
+    "single_a/number/same_no": {
+      "correct": 3
+    },
+    "single_a/number/same_yes": {
+      "correct": 3
+    },
+    "single_a/number/split": {
+      "correct": 3
+    },
+    "single_b/category/same_no": {
+      "correct": 3
+    },
+    "single_b/category/same_yes": {
+      "overreserve": 2,
+      "unknown": 1
+    },
+    "single_b/category/split": {
+      "correct": 2,
+      "unknown": 1
+    },
+    "single_b/number/same_no": {
+      "correct": 3
+    },
+    "single_b/number/same_yes": {
+      "correct": 3
+    },
+    "single_b/number/split": {
+      "correct": 3
+    }
+  },
+  "dual_by_reference": {
+    "dual_alternatives/determinate": {
+      "overreserve": 12
+    },
+    "dual_alternatives/split": {
+      "correct": 6
+    },
+    "dual_sources/determinate": {
+      "overreserve": 12
+    },
+    "dual_sources/split": {
+      "correct": 6
+    }
+  },
+  "explanation_flags": {
+    "ambiguous_world_mapping": 2,
+    "not_fully_audited": 62,
+    "wrong_numeric_comparison": 8
+  },
+  "pair_transitions": {
+    "correct->correct": 6,
+    "overreserve->overreserve": 12
+  },
+  "rows": 72,
+  "single_by_family": {
+    "category": {
+      "correct": 12,
+      "overreserve": 4,
+      "unknown": 2
+    },
+    "number": {
+      "correct": 18
+    }
+  },
+  "source_count": 145
+}
