@@ -1,0 +1,111 @@
+{
+  "groups": {
+    "decompose/category/dual_determinate": {
+      "counts": {
+        "correct": 16
+      },
+      "n": 16
+    },
+    "decompose/category/dual_split": {
+      "counts": {
+        "correct": 4,
+        "unknown": 1,
+        "unsupported_choice": 3
+      },
+      "n": 8
+    },
+    "decompose/category/single": {
+      "counts": {
+        "correct": 24
+      },
+      "n": 24
+    },
+    "decompose/number/dual_determinate": {
+      "counts": {
+        "correct": 11,
+        "overreserve": 4,
+        "unknown": 1
+      },
+      "n": 16
+    },
+    "decompose/number/dual_split": {
+      "counts": {
+        "correct": 8
+      },
+      "n": 8
+    },
+    "decompose/number/single": {
+      "counts": {
+        "correct": 19,
+        "overreserve": 1,
+        "technical_missing": 3,
+        "unknown": 1
+      },
+      "n": 24
+    },
+    "plain/category/dual_determinate": {
+      "counts": {
+        "correct": 4,
+        "overreserve": 12
+      },
+      "n": 16
+    },
+    "plain/category/dual_split": {
+      "counts": {
+        "correct": 8
+      },
+      "n": 8
+    },
+    "plain/category/single": {
+      "counts": {
+        "correct": 24
+      },
+      "n": 24
+    },
+    "plain/number/dual_determinate": {
+      "counts": {
+        "correct": 7,
+        "overreserve": 9
+      },
+      "n": 16
+    },
+    "plain/number/dual_split": {
+      "counts": {
+        "correct": 8
+      },
+      "n": 8
+    },
+    "plain/number/single": {
+      "counts": {
+        "correct": 22,
+        "wrong": 2
+      },
+      "n": 24
+    }
+  },
+  "pair_transitions_plain_to_decompose": {
+    "dual_determinate": {
+      "correct->correct": 8,
+      "correct->overreserve": 2,
+      "correct->unknown": 1,
+      "overreserve->correct": 19,
+      "overreserve->overreserve": 2
+    },
+    "dual_split": {
+      "correct->correct": 12,
+      "correct->unknown": 1,
+      "correct->unsupported_choice": 3
+    },
+    "single": {
+      "correct->correct": 41,
+      "correct->overreserve": 1,
+      "correct->technical_missing": 3,
+      "correct->unknown": 1,
+      "wrong->correct": 2
+    }
+  },
+  "paired_inputs": 96,
+  "review_rows": 192,
+  "source_files": 388,
+  "technical_failures": 3
+}
