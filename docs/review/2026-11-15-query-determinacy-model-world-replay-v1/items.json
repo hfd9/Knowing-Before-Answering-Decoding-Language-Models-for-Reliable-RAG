@@ -1,0 +1,1919 @@
+[
+  {
+    "branch_codes": [
+      "Y",
+      "N"
+    ],
+    "branch_ids": [
+      "H01_same_yes_single_a__format",
+      "H01_same_yes_single_b__format"
+    ],
+    "case": "H01",
+    "combined": "U",
+    "combined_class": "overreserve",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H01_same_yes_dual_sources__format",
+    "predicted_values": [
+      "13",
+      "21"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "H01__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "N"
+    ],
+    "branch_ids": [
+      "H01_same_yes_single_a__format",
+      "H01_same_yes_single_b__format"
+    ],
+    "case": "H01",
+    "combined": "U",
+    "combined_class": "overreserve",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H01_same_yes_dual_alternatives__format",
+    "predicted_values": [
+      "13",
+      "21"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "H01__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "H01_same_no_single_a__format",
+      "H01_same_no_single_b__format"
+    ],
+    "case": "H01",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H01_same_no_dual_sources__format",
+    "predicted_values": [
+      "13",
+      "21"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "H01__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "H01_same_no_single_a__format",
+      "H01_same_no_single_b__format"
+    ],
+    "case": "H01",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H01_same_no_dual_alternatives__format",
+    "predicted_values": [
+      "13",
+      "21"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "H01__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "H01_split_single_a__format",
+      "H01_split_single_b__format"
+    ],
+    "case": "H01",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "number",
+    "id": "H01_split_dual_sources__format",
+    "predicted_values": [
+      "13",
+      "21"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "H01__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "H01_split_single_a__format",
+      "H01_split_single_b__format"
+    ],
+    "case": "H01",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "number",
+    "id": "H01_split_dual_alternatives__format",
+    "predicted_values": [
+      "13",
+      "21"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "H01__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "H02_same_yes_single_b__format",
+      "H02_same_yes_single_a__format"
+    ],
+    "case": "H02",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H02_same_yes_dual_sources__format",
+    "predicted_values": [
+      "26",
+      "38"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "H02__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "H02_same_yes_single_b__format",
+      "H02_same_yes_single_a__format"
+    ],
+    "case": "H02",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "Y",
+    "direct_class": "correct",
+    "family": "number",
+    "id": "H02_same_yes_dual_alternatives__format",
+    "predicted_values": [
+      "26",
+      "38"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "H02__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "H02_same_no_single_b__format",
+      "H02_same_no_single_a__format"
+    ],
+    "case": "H02",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H02_same_no_dual_sources__format",
+    "predicted_values": [
+      "26",
+      "38"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "H02__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "H02_same_no_single_b__format",
+      "H02_same_no_single_a__format"
+    ],
+    "case": "H02",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H02_same_no_dual_alternatives__format",
+    "predicted_values": [
+      "26",
+      "38"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "H02__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "H02_split_single_b__format",
+      "H02_split_single_a__format"
+    ],
+    "case": "H02",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "number",
+    "id": "H02_split_dual_sources__format",
+    "predicted_values": [
+      "26",
+      "38"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "H02__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "H02_split_single_b__format",
+      "H02_split_single_a__format"
+    ],
+    "case": "H02",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "number",
+    "id": "H02_split_dual_alternatives__format",
+    "predicted_values": [
+      "26",
+      "38"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "H02__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "H03_same_yes_single_a__format",
+      "H03_same_yes_single_b__format"
+    ],
+    "case": "H03",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H03_same_yes_dual_sources__format",
+    "predicted_values": [
+      "47",
+      "55"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "H03__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "H03_same_yes_single_a__format",
+      "H03_same_yes_single_b__format"
+    ],
+    "case": "H03",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "Y",
+    "direct_class": "correct",
+    "family": "number",
+    "id": "H03_same_yes_dual_alternatives__format",
+    "predicted_values": [
+      "47",
+      "55"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "H03__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "H03_same_no_single_a__format",
+      "H03_same_no_single_b__format"
+    ],
+    "case": "H03",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H03_same_no_dual_sources__format",
+    "predicted_values": [
+      "47",
+      "55"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "H03__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "H03_same_no_single_a__format",
+      "H03_same_no_single_b__format"
+    ],
+    "case": "H03",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H03_same_no_dual_alternatives__format",
+    "predicted_values": [
+      "47",
+      "55"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "H03__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "H03_split_single_a__format",
+      "H03_split_single_b__format"
+    ],
+    "case": "H03",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "number",
+    "id": "H03_split_dual_sources__format",
+    "predicted_values": [
+      "47",
+      "55"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "H03__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "H03_split_single_a__format",
+      "H03_split_single_b__format"
+    ],
+    "case": "H03",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "number",
+    "id": "H03_split_dual_alternatives__format",
+    "predicted_values": [
+      "47",
+      "55"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "H03__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "H04_same_yes_single_b__format",
+      "H04_same_yes_single_a__format"
+    ],
+    "case": "H04",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H04_same_yes_dual_sources__format",
+    "predicted_values": [
+      "50",
+      "62"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "H04__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "H04_same_yes_single_b__format",
+      "H04_same_yes_single_a__format"
+    ],
+    "case": "H04",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H04_same_yes_dual_alternatives__format",
+    "predicted_values": [
+      "50",
+      "62"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "H04__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "H04_same_no_single_b__format",
+      "H04_same_no_single_a__format"
+    ],
+    "case": "H04",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H04_same_no_dual_sources__format",
+    "predicted_values": [
+      "50",
+      "62"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "H04__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "H04_same_no_single_b__format",
+      "H04_same_no_single_a__format"
+    ],
+    "case": "H04",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H04_same_no_dual_alternatives__format",
+    "predicted_values": [
+      "50",
+      "62"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "H04__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "H04_split_single_b__format",
+      "H04_split_single_a__format"
+    ],
+    "case": "H04",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "number",
+    "id": "H04_split_dual_sources__format",
+    "predicted_values": [
+      "50",
+      "62"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "H04__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "H04_split_single_b__format",
+      "H04_split_single_a__format"
+    ],
+    "case": "H04",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "number",
+    "id": "H04_split_dual_alternatives__format",
+    "predicted_values": [
+      "50",
+      "62"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "H04__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [],
+    "branch_ids": [],
+    "case": "H05",
+    "combined": "X",
+    "combined_class": "invalid_or_unresolved",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H05_same_yes_dual_sources__format",
+    "predicted_values": null,
+    "query": "same_yes",
+    "reason": "extraction_invalid",
+    "reference": "Y",
+    "world_extraction_id": "H05__dual_sources__extract",
+    "world_parse": "invalid"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "H05_same_yes_single_a__format",
+      "H05_same_yes_single_b__format"
+    ],
+    "case": "H05",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "Y",
+    "direct_class": "correct",
+    "family": "number",
+    "id": "H05_same_yes_dual_alternatives__format",
+    "predicted_values": [
+      "71",
+      "81"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "H05__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [],
+    "branch_ids": [],
+    "case": "H05",
+    "combined": "X",
+    "combined_class": "invalid_or_unresolved",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H05_same_no_dual_sources__format",
+    "predicted_values": null,
+    "query": "same_no",
+    "reason": "extraction_invalid",
+    "reference": "N",
+    "world_extraction_id": "H05__dual_sources__extract",
+    "world_parse": "invalid"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "H05_same_no_single_a__format",
+      "H05_same_no_single_b__format"
+    ],
+    "case": "H05",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H05_same_no_dual_alternatives__format",
+    "predicted_values": [
+      "71",
+      "81"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "H05__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [],
+    "branch_ids": [],
+    "case": "H05",
+    "combined": "X",
+    "combined_class": "invalid_or_unresolved",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "number",
+    "id": "H05_split_dual_sources__format",
+    "predicted_values": null,
+    "query": "split",
+    "reason": "extraction_invalid",
+    "reference": "U",
+    "world_extraction_id": "H05__dual_sources__extract",
+    "world_parse": "invalid"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "H05_split_single_a__format",
+      "H05_split_single_b__format"
+    ],
+    "case": "H05",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "number",
+    "id": "H05_split_dual_alternatives__format",
+    "predicted_values": [
+      "71",
+      "81"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "H05__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "H06_same_yes_single_b__format",
+      "H06_same_yes_single_a__format"
+    ],
+    "case": "H06",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H06_same_yes_dual_sources__format",
+    "predicted_values": [
+      "84",
+      "94"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "H06__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "H06_same_yes_single_b__format",
+      "H06_same_yes_single_a__format"
+    ],
+    "case": "H06",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H06_same_yes_dual_alternatives__format",
+    "predicted_values": [
+      "84",
+      "94"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "H06__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "H06_same_no_single_b__format",
+      "H06_same_no_single_a__format"
+    ],
+    "case": "H06",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H06_same_no_dual_sources__format",
+    "predicted_values": [
+      "84",
+      "94"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "H06__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "H06_same_no_single_b__format",
+      "H06_same_no_single_a__format"
+    ],
+    "case": "H06",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "number",
+    "id": "H06_same_no_dual_alternatives__format",
+    "predicted_values": [
+      "84",
+      "94"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "H06__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "H06_split_single_b__format",
+      "H06_split_single_a__format"
+    ],
+    "case": "H06",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "number",
+    "id": "H06_split_dual_sources__format",
+    "predicted_values": [
+      "84",
+      "94"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "H06__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "H06_split_single_b__format",
+      "H06_split_single_a__format"
+    ],
+    "case": "H06",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "number",
+    "id": "H06_split_dual_alternatives__format",
+    "predicted_values": [
+      "84",
+      "94"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "H06__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "K01_same_yes_single_a__format",
+      "K01_same_yes_single_b__format"
+    ],
+    "case": "K01",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K01_same_yes_dual_sources__format",
+    "predicted_values": [
+      "A1",
+      "B2"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "K01__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "K01_same_yes_single_a__format",
+      "K01_same_yes_single_b__format"
+    ],
+    "case": "K01",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K01_same_yes_dual_alternatives__format",
+    "predicted_values": [
+      "A1",
+      "B2"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "K01__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "K01_same_no_single_a__format",
+      "K01_same_no_single_b__format"
+    ],
+    "case": "K01",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K01_same_no_dual_sources__format",
+    "predicted_values": [
+      "A1",
+      "B2"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "K01__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "K01_same_no_single_a__format",
+      "K01_same_no_single_b__format"
+    ],
+    "case": "K01",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K01_same_no_dual_alternatives__format",
+    "predicted_values": [
+      "A1",
+      "B2"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "K01__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "N"
+    ],
+    "branch_ids": [
+      "K01_split_single_a__format",
+      "K01_split_single_b__format"
+    ],
+    "case": "K01",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "category",
+    "id": "K01_split_dual_sources__format",
+    "predicted_values": [
+      "A1",
+      "B2"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "K01__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "N"
+    ],
+    "branch_ids": [
+      "K01_split_single_a__format",
+      "K01_split_single_b__format"
+    ],
+    "case": "K01",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "category",
+    "id": "K01_split_dual_alternatives__format",
+    "predicted_values": [
+      "A1",
+      "B2"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "K01__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "K02_same_yes_single_a__format",
+      "K02_same_yes_single_b__format"
+    ],
+    "case": "K02",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K02_same_yes_dual_sources__format",
+    "predicted_values": [
+      "E5",
+      "F6"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "K02__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "K02_same_yes_single_b__format",
+      "K02_same_yes_single_a__format"
+    ],
+    "case": "K02",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K02_same_yes_dual_alternatives__format",
+    "predicted_values": [
+      "F6",
+      "E5"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "K02__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "K02_same_no_single_a__format",
+      "K02_same_no_single_b__format"
+    ],
+    "case": "K02",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K02_same_no_dual_sources__format",
+    "predicted_values": [
+      "E5",
+      "F6"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "K02__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "K02_same_no_single_b__format",
+      "K02_same_no_single_a__format"
+    ],
+    "case": "K02",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K02_same_no_dual_alternatives__format",
+    "predicted_values": [
+      "F6",
+      "E5"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "K02__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "N"
+    ],
+    "branch_ids": [
+      "K02_split_single_a__format",
+      "K02_split_single_b__format"
+    ],
+    "case": "K02",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "category",
+    "id": "K02_split_dual_sources__format",
+    "predicted_values": [
+      "E5",
+      "F6"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "K02__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "K02_split_single_b__format",
+      "K02_split_single_a__format"
+    ],
+    "case": "K02",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "category",
+    "id": "K02_split_dual_alternatives__format",
+    "predicted_values": [
+      "F6",
+      "E5"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "K02__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "K03_same_yes_single_a__format",
+      "K03_same_yes_single_b__format"
+    ],
+    "case": "K03",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K03_same_yes_dual_sources__format",
+    "predicted_values": [
+      "J1",
+      "K2"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "K03__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "K03_same_yes_single_a__format",
+      "K03_same_yes_single_b__format"
+    ],
+    "case": "K03",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K03_same_yes_dual_alternatives__format",
+    "predicted_values": [
+      "J1",
+      "K2"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "K03__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "K03_same_no_single_a__format",
+      "K03_same_no_single_b__format"
+    ],
+    "case": "K03",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K03_same_no_dual_sources__format",
+    "predicted_values": [
+      "J1",
+      "K2"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "K03__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "K03_same_no_single_a__format",
+      "K03_same_no_single_b__format"
+    ],
+    "case": "K03",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K03_same_no_dual_alternatives__format",
+    "predicted_values": [
+      "J1",
+      "K2"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "K03__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "N"
+    ],
+    "branch_ids": [
+      "K03_split_single_a__format",
+      "K03_split_single_b__format"
+    ],
+    "case": "K03",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "category",
+    "id": "K03_split_dual_sources__format",
+    "predicted_values": [
+      "J1",
+      "K2"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "K03__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "N"
+    ],
+    "branch_ids": [
+      "K03_split_single_a__format",
+      "K03_split_single_b__format"
+    ],
+    "case": "K03",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "category",
+    "id": "K03_split_dual_alternatives__format",
+    "predicted_values": [
+      "J1",
+      "K2"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "K03__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "N"
+    ],
+    "branch_ids": [
+      "K04_same_yes_single_b__format",
+      "K04_same_yes_single_a__format"
+    ],
+    "case": "K04",
+    "combined": "U",
+    "combined_class": "overreserve",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K04_same_yes_dual_sources__format",
+    "predicted_values": [
+      "P6",
+      "N5"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "K04__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "N"
+    ],
+    "branch_ids": [
+      "K04_same_yes_single_b__format",
+      "K04_same_yes_single_a__format"
+    ],
+    "case": "K04",
+    "combined": "U",
+    "combined_class": "overreserve",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K04_same_yes_dual_alternatives__format",
+    "predicted_values": [
+      "P6",
+      "N5"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "K04__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "K04_same_no_single_b__format",
+      "K04_same_no_single_a__format"
+    ],
+    "case": "K04",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K04_same_no_dual_sources__format",
+    "predicted_values": [
+      "P6",
+      "N5"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "K04__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "K04_same_no_single_b__format",
+      "K04_same_no_single_a__format"
+    ],
+    "case": "K04",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K04_same_no_dual_alternatives__format",
+    "predicted_values": [
+      "P6",
+      "N5"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "K04__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "K04_split_single_b__format",
+      "K04_split_single_a__format"
+    ],
+    "case": "K04",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "category",
+    "id": "K04_split_dual_sources__format",
+    "predicted_values": [
+      "P6",
+      "N5"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "K04__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "K04_split_single_b__format",
+      "K04_split_single_a__format"
+    ],
+    "case": "K04",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "category",
+    "id": "K04_split_dual_alternatives__format",
+    "predicted_values": [
+      "P6",
+      "N5"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "K04__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "K05_same_yes_single_a__format",
+      "K05_same_yes_single_b__format"
+    ],
+    "case": "K05",
+    "combined": "U",
+    "combined_class": "overreserve",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K05_same_yes_dual_sources__format",
+    "predicted_values": [
+      "S1",
+      "T2"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "K05__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "K05_same_yes_single_a__format",
+      "K05_same_yes_single_b__format"
+    ],
+    "case": "K05",
+    "combined": "U",
+    "combined_class": "overreserve",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K05_same_yes_dual_alternatives__format",
+    "predicted_values": [
+      "S1",
+      "T2"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "K05__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "K05_same_no_single_a__format",
+      "K05_same_no_single_b__format"
+    ],
+    "case": "K05",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K05_same_no_dual_sources__format",
+    "predicted_values": [
+      "S1",
+      "T2"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "K05__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "K05_same_no_single_a__format",
+      "K05_same_no_single_b__format"
+    ],
+    "case": "K05",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K05_same_no_dual_alternatives__format",
+    "predicted_values": [
+      "S1",
+      "T2"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "K05__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "N"
+    ],
+    "branch_ids": [
+      "K05_split_single_a__format",
+      "K05_split_single_b__format"
+    ],
+    "case": "K05",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "category",
+    "id": "K05_split_dual_sources__format",
+    "predicted_values": [
+      "S1",
+      "T2"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "K05__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "N"
+    ],
+    "branch_ids": [
+      "K05_split_single_a__format",
+      "K05_split_single_b__format"
+    ],
+    "case": "K05",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "category",
+    "id": "K05_split_dual_alternatives__format",
+    "predicted_values": [
+      "S1",
+      "T2"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "K05__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "K06_same_yes_single_b__format",
+      "K06_same_yes_single_a__format"
+    ],
+    "case": "K06",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K06_same_yes_dual_sources__format",
+    "predicted_values": [
+      "Y6",
+      "X5"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "K06__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "Y",
+      "Y"
+    ],
+    "branch_ids": [
+      "K06_same_yes_single_b__format",
+      "K06_same_yes_single_a__format"
+    ],
+    "case": "K06",
+    "combined": "Y",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K06_same_yes_dual_alternatives__format",
+    "predicted_values": [
+      "Y6",
+      "X5"
+    ],
+    "query": "same_yes",
+    "reason": "cached_branches",
+    "reference": "Y",
+    "world_extraction_id": "K06__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "K06_same_no_single_b__format",
+      "K06_same_no_single_a__format"
+    ],
+    "case": "K06",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K06_same_no_dual_sources__format",
+    "predicted_values": [
+      "Y6",
+      "X5"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "K06__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "N"
+    ],
+    "branch_ids": [
+      "K06_same_no_single_b__format",
+      "K06_same_no_single_a__format"
+    ],
+    "case": "K06",
+    "combined": "N",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "overreserve",
+    "family": "category",
+    "id": "K06_same_no_dual_alternatives__format",
+    "predicted_values": [
+      "Y6",
+      "X5"
+    ],
+    "query": "same_no",
+    "reason": "cached_branches",
+    "reference": "N",
+    "world_extraction_id": "K06__dual_alternatives__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "K06_split_single_b__format",
+      "K06_split_single_a__format"
+    ],
+    "case": "K06",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_sources",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "category",
+    "id": "K06_split_dual_sources__format",
+    "predicted_values": [
+      "Y6",
+      "X5"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "K06__dual_sources__extract",
+    "world_parse": "parsed"
+  },
+  {
+    "branch_codes": [
+      "N",
+      "Y"
+    ],
+    "branch_ids": [
+      "K06_split_single_b__format",
+      "K06_split_single_a__format"
+    ],
+    "case": "K06",
+    "combined": "U",
+    "combined_class": "correct",
+    "condition": "dual_alternatives",
+    "direct": "U",
+    "direct_class": "correct",
+    "family": "category",
+    "id": "K06_split_dual_alternatives__format",
+    "predicted_values": [
+      "Y6",
+      "X5"
+    ],
+    "query": "split",
+    "reason": "cached_branches",
+    "reference": "U",
+    "world_extraction_id": "K06__dual_alternatives__extract",
+    "world_parse": "parsed"
+  }
+]

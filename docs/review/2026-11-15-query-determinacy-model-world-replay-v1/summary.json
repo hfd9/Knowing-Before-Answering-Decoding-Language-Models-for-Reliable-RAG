@@ -1,0 +1,32 @@
+{
+  "dual_alternatives": {
+    "combined": {
+      "correct": 33,
+      "overreserve": 3
+    },
+    "direct": {
+      "correct": 15,
+      "overreserve": 21
+    },
+    "n": 36,
+    "pipeline_reason": {
+      "cached_branches": 36
+    }
+  },
+  "dual_sources": {
+    "combined": {
+      "correct": 30,
+      "invalid_or_unresolved": 3,
+      "overreserve": 3
+    },
+    "direct": {
+      "correct": 12,
+      "overreserve": 24
+    },
+    "n": 36,
+    "pipeline_reason": {
+      "cached_branches": 33,
+      "extraction_invalid": 3
+    }
+  }
+}

@@ -1,0 +1,290 @@
+[
+  {
+    "case": "H01",
+    "classification": "exact_order",
+    "condition": "dual_alternatives",
+    "family": "number",
+    "id": "H01__dual_alternatives__extract",
+    "output": "[\"13\",\"21\"]",
+    "reference": [
+      "13",
+      "21"
+    ]
+  },
+  {
+    "case": "H01",
+    "classification": "exact_order",
+    "condition": "dual_sources",
+    "family": "number",
+    "id": "H01__dual_sources__extract",
+    "output": "[\"13\",\"21\"]",
+    "reference": [
+      "13",
+      "21"
+    ]
+  },
+  {
+    "case": "H02",
+    "classification": "exact_order",
+    "condition": "dual_alternatives",
+    "family": "number",
+    "id": "H02__dual_alternatives__extract",
+    "output": "[\"26\", \"38\"]",
+    "reference": [
+      "26",
+      "38"
+    ]
+  },
+  {
+    "case": "H02",
+    "classification": "exact_order",
+    "condition": "dual_sources",
+    "family": "number",
+    "id": "H02__dual_sources__extract",
+    "output": "[\"26\",\"38\"]",
+    "reference": [
+      "26",
+      "38"
+    ]
+  },
+  {
+    "case": "H03",
+    "classification": "exact_order",
+    "condition": "dual_alternatives",
+    "family": "number",
+    "id": "H03__dual_alternatives__extract",
+    "output": "[\"47\",\"55\"]",
+    "reference": [
+      "47",
+      "55"
+    ]
+  },
+  {
+    "case": "H03",
+    "classification": "exact_order",
+    "condition": "dual_sources",
+    "family": "number",
+    "id": "H03__dual_sources__extract",
+    "output": "[\"47\",\"55\"]",
+    "reference": [
+      "47",
+      "55"
+    ]
+  },
+  {
+    "case": "H04",
+    "classification": "exact_order",
+    "condition": "dual_alternatives",
+    "family": "number",
+    "id": "H04__dual_alternatives__extract",
+    "output": "[\"50\", \"62\"]",
+    "reference": [
+      "50",
+      "62"
+    ]
+  },
+  {
+    "case": "H04",
+    "classification": "exact_order",
+    "condition": "dual_sources",
+    "family": "number",
+    "id": "H04__dual_sources__extract",
+    "output": "[\"50\",\"62\"]",
+    "reference": [
+      "50",
+      "62"
+    ]
+  },
+  {
+    "case": "H05",
+    "classification": "exact_order",
+    "condition": "dual_alternatives",
+    "family": "number",
+    "id": "H05__dual_alternatives__extract",
+    "output": "[\"71\", \"81\"]",
+    "reference": [
+      "71",
+      "81"
+    ]
+  },
+  {
+    "case": "H05",
+    "classification": "invalid",
+    "condition": "dual_sources",
+    "family": "number",
+    "id": "H05__dual_sources__extract",
+    "output": "[71,81]",
+    "reference": [
+      "71",
+      "81"
+    ]
+  },
+  {
+    "case": "H06",
+    "classification": "exact_order",
+    "condition": "dual_alternatives",
+    "family": "number",
+    "id": "H06__dual_alternatives__extract",
+    "output": "[\"84\", \"94\"]",
+    "reference": [
+      "84",
+      "94"
+    ]
+  },
+  {
+    "case": "H06",
+    "classification": "exact_order",
+    "condition": "dual_sources",
+    "family": "number",
+    "id": "H06__dual_sources__extract",
+    "output": "[\"84\",\"94\"]",
+    "reference": [
+      "84",
+      "94"
+    ]
+  },
+  {
+    "case": "K01",
+    "classification": "exact_order",
+    "condition": "dual_alternatives",
+    "family": "category",
+    "id": "K01__dual_alternatives__extract",
+    "output": "[\"A1\",\"B2\"]",
+    "reference": [
+      "A1",
+      "B2"
+    ]
+  },
+  {
+    "case": "K01",
+    "classification": "exact_order",
+    "condition": "dual_sources",
+    "family": "category",
+    "id": "K01__dual_sources__extract",
+    "output": "[\"A1\",\"B2\"]",
+    "reference": [
+      "A1",
+      "B2"
+    ]
+  },
+  {
+    "case": "K02",
+    "classification": "exact_order",
+    "condition": "dual_alternatives",
+    "family": "category",
+    "id": "K02__dual_alternatives__extract",
+    "output": "[\"F6\",\"E5\"]",
+    "reference": [
+      "F6",
+      "E5"
+    ]
+  },
+  {
+    "case": "K02",
+    "classification": "correct_reversed",
+    "condition": "dual_sources",
+    "family": "category",
+    "id": "K02__dual_sources__extract",
+    "output": "[\"E5\",\"F6\"]",
+    "reference": [
+      "F6",
+      "E5"
+    ]
+  },
+  {
+    "case": "K03",
+    "classification": "exact_order",
+    "condition": "dual_alternatives",
+    "family": "category",
+    "id": "K03__dual_alternatives__extract",
+    "output": "[\"J1\", \"K2\"]",
+    "reference": [
+      "J1",
+      "K2"
+    ]
+  },
+  {
+    "case": "K03",
+    "classification": "exact_order",
+    "condition": "dual_sources",
+    "family": "category",
+    "id": "K03__dual_sources__extract",
+    "output": "[\"J1\",\"K2\"]",
+    "reference": [
+      "J1",
+      "K2"
+    ]
+  },
+  {
+    "case": "K04",
+    "classification": "exact_order",
+    "condition": "dual_alternatives",
+    "family": "category",
+    "id": "K04__dual_alternatives__extract",
+    "output": "[\"P6\",\"N5\"]",
+    "reference": [
+      "P6",
+      "N5"
+    ]
+  },
+  {
+    "case": "K04",
+    "classification": "exact_order",
+    "condition": "dual_sources",
+    "family": "category",
+    "id": "K04__dual_sources__extract",
+    "output": "[\"P6\",\"N5\"]",
+    "reference": [
+      "P6",
+      "N5"
+    ]
+  },
+  {
+    "case": "K05",
+    "classification": "exact_order",
+    "condition": "dual_alternatives",
+    "family": "category",
+    "id": "K05__dual_alternatives__extract",
+    "output": "[\"S1\", \"T2\"]",
+    "reference": [
+      "S1",
+      "T2"
+    ]
+  },
+  {
+    "case": "K05",
+    "classification": "exact_order",
+    "condition": "dual_sources",
+    "family": "category",
+    "id": "K05__dual_sources__extract",
+    "output": "[\"S1\", \"T2\"]",
+    "reference": [
+      "S1",
+      "T2"
+    ]
+  },
+  {
+    "case": "K06",
+    "classification": "exact_order",
+    "condition": "dual_alternatives",
+    "family": "category",
+    "id": "K06__dual_alternatives__extract",
+    "output": "[\"Y6\",\"X5\"]",
+    "reference": [
+      "Y6",
+      "X5"
+    ]
+  },
+  {
+    "case": "K06",
+    "classification": "exact_order",
+    "condition": "dual_sources",
+    "family": "category",
+    "id": "K06__dual_sources__extract",
+    "output": "[\"Y6\", \"X5\"]",
+    "reference": [
+      "Y6",
+      "X5"
+    ]
+  }
+]
