@@ -1,0 +1,32 @@
+{
+  "independent_count": "passed",
+  "matched_old_items": 72,
+  "old_to_paraphrase": {
+    "dual_sources": {
+      "direct": {
+        "overreserve -> overreserve": 24,
+        "correct -> correct": 12
+      },
+      "combined": {
+        "overreserve -> invalid_or_unresolved": 1,
+        "correct -> invalid_or_unresolved": 5,
+        "correct -> correct": 25,
+        "invalid_or_unresolved -> correct": 3,
+        "overreserve -> overreserve": 2
+      }
+    },
+    "dual_alternatives": {
+      "direct": {
+        "overreserve -> overreserve": 21,
+        "correct -> correct": 13,
+        "correct -> overreserve": 2
+      },
+      "combined": {
+        "overreserve -> invalid_or_unresolved": 1,
+        "correct -> invalid_or_unresolved": 2,
+        "correct -> correct": 31,
+        "overreserve -> overreserve": 2
+      }
+    }
+  }
+}

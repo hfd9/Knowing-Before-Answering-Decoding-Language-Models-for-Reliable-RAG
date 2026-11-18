@@ -1,0 +1,377 @@
+[
+  {
+    "case": "H01",
+    "condition": "dual_sources",
+    "id": "H01__dual_sources__extract__paraphrase",
+    "output": "[13,21]",
+    "parse_status": "invalid",
+    "parsed": null,
+    "reference": [
+      "13",
+      "21"
+    ],
+    "score": "invalid"
+  },
+  {
+    "case": "H01",
+    "condition": "dual_alternatives",
+    "id": "H01__dual_alternatives__extract__paraphrase",
+    "output": "[13,21]",
+    "parse_status": "invalid",
+    "parsed": null,
+    "reference": [
+      "13",
+      "21"
+    ],
+    "score": "invalid"
+  },
+  {
+    "case": "H02",
+    "condition": "dual_sources",
+    "id": "H02__dual_sources__extract__paraphrase",
+    "output": "[\"26\",\"38\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "26",
+      "38"
+    ],
+    "reference": [
+      "26",
+      "38"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "H02",
+    "condition": "dual_alternatives",
+    "id": "H02__dual_alternatives__extract__paraphrase",
+    "output": "[\"26\",\"38\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "26",
+      "38"
+    ],
+    "reference": [
+      "26",
+      "38"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "H03",
+    "condition": "dual_sources",
+    "id": "H03__dual_sources__extract__paraphrase",
+    "output": "[\"47\", \"55\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "47",
+      "55"
+    ],
+    "reference": [
+      "47",
+      "55"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "H03",
+    "condition": "dual_alternatives",
+    "id": "H03__dual_alternatives__extract__paraphrase",
+    "output": "[\"47\",\"55\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "47",
+      "55"
+    ],
+    "reference": [
+      "47",
+      "55"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "H04",
+    "condition": "dual_sources",
+    "id": "H04__dual_sources__extract__paraphrase",
+    "output": "[50,62]",
+    "parse_status": "invalid",
+    "parsed": null,
+    "reference": [
+      "50",
+      "62"
+    ],
+    "score": "invalid"
+  },
+  {
+    "case": "H04",
+    "condition": "dual_alternatives",
+    "id": "H04__dual_alternatives__extract__paraphrase",
+    "output": "[\"50\", \"62\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "50",
+      "62"
+    ],
+    "reference": [
+      "50",
+      "62"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "H05",
+    "condition": "dual_sources",
+    "id": "H05__dual_sources__extract__paraphrase",
+    "output": "[\"71\",\"81\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "71",
+      "81"
+    ],
+    "reference": [
+      "71",
+      "81"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "H05",
+    "condition": "dual_alternatives",
+    "id": "H05__dual_alternatives__extract__paraphrase",
+    "output": "[\"71\",\"81\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "71",
+      "81"
+    ],
+    "reference": [
+      "71",
+      "81"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "H06",
+    "condition": "dual_sources",
+    "id": "H06__dual_sources__extract__paraphrase",
+    "output": "[\"84\", \"94\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "84",
+      "94"
+    ],
+    "reference": [
+      "84",
+      "94"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "H06",
+    "condition": "dual_alternatives",
+    "id": "H06__dual_alternatives__extract__paraphrase",
+    "output": "[\"84\",\"94\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "84",
+      "94"
+    ],
+    "reference": [
+      "84",
+      "94"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "K01",
+    "condition": "dual_sources",
+    "id": "K01__dual_sources__extract__paraphrase",
+    "output": "[\"A1\",\"B2\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "A1",
+      "B2"
+    ],
+    "reference": [
+      "A1",
+      "B2"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "K01",
+    "condition": "dual_alternatives",
+    "id": "K01__dual_alternatives__extract__paraphrase",
+    "output": "[\"A1\",\"B2\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "A1",
+      "B2"
+    ],
+    "reference": [
+      "A1",
+      "B2"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "K02",
+    "condition": "dual_sources",
+    "id": "K02__dual_sources__extract__paraphrase",
+    "output": "[\"F6\",\"E5\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "F6",
+      "E5"
+    ],
+    "reference": [
+      "F6",
+      "E5"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "K02",
+    "condition": "dual_alternatives",
+    "id": "K02__dual_alternatives__extract__paraphrase",
+    "output": "[\"F6\",\"E5\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "F6",
+      "E5"
+    ],
+    "reference": [
+      "F6",
+      "E5"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "K03",
+    "condition": "dual_sources",
+    "id": "K03__dual_sources__extract__paraphrase",
+    "output": "[\"J1\",\"K2\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "J1",
+      "K2"
+    ],
+    "reference": [
+      "J1",
+      "K2"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "K03",
+    "condition": "dual_alternatives",
+    "id": "K03__dual_alternatives__extract__paraphrase",
+    "output": "[\"J1\",\"K2\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "J1",
+      "K2"
+    ],
+    "reference": [
+      "J1",
+      "K2"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "K04",
+    "condition": "dual_sources",
+    "id": "K04__dual_sources__extract__paraphrase",
+    "output": "[\"P6\",\"N5\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "P6",
+      "N5"
+    ],
+    "reference": [
+      "P6",
+      "N5"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "K04",
+    "condition": "dual_alternatives",
+    "id": "K04__dual_alternatives__extract__paraphrase",
+    "output": "[\"P6\",\"N5\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "P6",
+      "N5"
+    ],
+    "reference": [
+      "P6",
+      "N5"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "K05",
+    "condition": "dual_sources",
+    "id": "K05__dual_sources__extract__paraphrase",
+    "output": "[\"S1\",\"T2\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "S1",
+      "T2"
+    ],
+    "reference": [
+      "S1",
+      "T2"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "K05",
+    "condition": "dual_alternatives",
+    "id": "K05__dual_alternatives__extract__paraphrase",
+    "output": "[\"S1\",\"T2\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "S1",
+      "T2"
+    ],
+    "reference": [
+      "S1",
+      "T2"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "K06",
+    "condition": "dual_sources",
+    "id": "K06__dual_sources__extract__paraphrase",
+    "output": "[\"Y6\",\"X5\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "Y6",
+      "X5"
+    ],
+    "reference": [
+      "Y6",
+      "X5"
+    ],
+    "score": "exact_order"
+  },
+  {
+    "case": "K06",
+    "condition": "dual_alternatives",
+    "id": "K06__dual_alternatives__extract__paraphrase",
+    "output": "[\"Y6\",\"X5\"]",
+    "parse_status": "parsed",
+    "parsed": [
+      "Y6",
+      "X5"
+    ],
+    "reference": [
+      "Y6",
+      "X5"
+    ],
+    "score": "exact_order"
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "by_condition": {
+    "dual_alternatives": {
+      "combined": {
+        "correct": 31,
+        "invalid_or_unresolved": 3,
+        "overreserve": 2
+      },
+      "direct": {
+        "correct": 13,
+        "overreserve": 23
+      },
+      "n": 36,
+      "paired_direct_to_combined": {
+        "correct -> correct": 12,
+        "correct -> invalid_or_unresolved": 1,
+        "overreserve -> correct": 19,
+        "overreserve -> invalid_or_unresolved": 2,
+        "overreserve -> overreserve": 2
+      },
+      "reason": {
+        "cached_branches": 33,
+        "extraction_invalid": 3
+      }
+    },
+    "dual_sources": {
+      "combined": {
+        "correct": 28,
+        "invalid_or_unresolved": 6,
+        "overreserve": 2
+      },
+      "direct": {
+        "correct": 12,
+        "overreserve": 24
+      },
+      "n": 36,
+      "paired_direct_to_combined": {
+        "correct -> correct": 10,
+        "correct -> invalid_or_unresolved": 2,
+        "overreserve -> correct": 18,
+        "overreserve -> invalid_or_unresolved": 4,
+        "overreserve -> overreserve": 2
+      },
+      "reason": {
+        "cached_branches": 30,
+        "extraction_invalid": 6
+      }
+    }
+  },
+  "by_condition_query": {
+    "dual_alternatives/same_no": {
+      "combined": {
+        "correct": 11,
+        "invalid_or_unresolved": 1
+      },
+      "direct": {
+        "overreserve": 12
+      },
+      "n": 12
+    },
+    "dual_alternatives/same_yes": {
+      "combined": {
+        "correct": 9,
+        "invalid_or_unresolved": 1,
+        "overreserve": 2
+      },
+      "direct": {
+        "correct": 1,
+        "overreserve": 11
+      },
+      "n": 12
+    },
+    "dual_alternatives/split": {
+      "combined": {
+        "correct": 11,
+        "invalid_or_unresolved": 1
+      },
+      "direct": {
+        "correct": 12
+      },
+      "n": 12
+    },
+    "dual_sources/same_no": {
+      "combined": {
+        "correct": 10,
+        "invalid_or_unresolved": 2
+      },
+      "direct": {
+        "overreserve": 12
+      },
+      "n": 12
+    },
+    "dual_sources/same_yes": {
+      "combined": {
+        "correct": 8,
+        "invalid_or_unresolved": 2,
+        "overreserve": 2
+      },
+      "direct": {
+        "overreserve": 12
+      },
+      "n": 12
+    },
+    "dual_sources/split": {
+      "combined": {
+        "correct": 10,
+        "invalid_or_unresolved": 2
+      },
+      "direct": {
+        "correct": 12
+      },
+      "n": 12
+    }
+  },
+  "extraction": {
+    "dual_alternatives": {
+      "counts": {
+        "exact_order": 11,
+        "invalid": 1
+      },
+      "n": 12
+    },
+    "dual_sources": {
+      "counts": {
+        "exact_order": 10,
+        "invalid": 2
+      },
+      "n": 12
+    }
+  }
+}
