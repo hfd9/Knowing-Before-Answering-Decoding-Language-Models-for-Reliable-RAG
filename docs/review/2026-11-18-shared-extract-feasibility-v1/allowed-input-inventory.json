@@ -1,0 +1,83 @@
+{
+  "files": [
+    {
+      "path": "docs/查询可判定性_探索先导包/prompts.jsonl",
+      "sha256": "8eee52a6b7d6dfc43e82d34877db727bc7b1824bdfdcba94eb4ad0e48a5848f1",
+      "rows": 144,
+      "rows_with_explicit_question_line": 144
+    },
+    {
+      "path": "docs/review/2026-11-15-query-determinacy-development-v1/material.jsonl",
+      "sha256": "e7ebfe398e24521d5c5a47e37731109246fd5191df8a9938dd759200c62e78b8",
+      "rows": 72,
+      "rows_with_explicit_question_line": 72
+    },
+    {
+      "path": "docs/review/2026-11-15-query-determinacy-prompt-control-v1/material.jsonl",
+      "sha256": "3b09e21e479c1eef41e40468a0f6ce0759db8b9699b1aebb8f59dbdfe2336eb6",
+      "rows": 144,
+      "rows_with_explicit_question_line": 144
+    },
+    {
+      "path": "docs/review/2026-11-15-query-determinacy-fresh-dev-v1/material.jsonl",
+      "sha256": "8c7f20f7eba4121a227453e06ab004e6acf00706e67275e1e96b932f787de0f7",
+      "rows": 192,
+      "rows_with_explicit_question_line": 192
+    },
+    {
+      "path": "docs/review/2026-11-15-query-determinacy-source-order-v1/material.jsonl",
+      "sha256": "aad84709eb89094b12292fee79303c2ea756ea6e0357604e7c850ab7bac0c99b",
+      "rows": 16,
+      "rows_with_explicit_question_line": 16
+    },
+    {
+      "path": "docs/review/2026-11-15-query-determinacy-oracle-dev-v1/material.jsonl",
+      "sha256": "84b874841c0a79f1c05af9eb45dd960feb0bb33d0d020252fd99edd104fae681",
+      "rows": 144,
+      "rows_with_explicit_question_line": 144
+    },
+    {
+      "path": "docs/review/2026-11-15-query-determinacy-world-extract-dev-v1/material.jsonl",
+      "sha256": "3bbd42ebc8eefd705d47f9e361bc82bfc0d55d3e325c28afe0e50c188e68a229",
+      "rows": 24,
+      "rows_with_explicit_question_line": 0
+    },
+    {
+      "path": "docs/review/2026-11-17-query-determinacy-paraphrase-dev-v1/material.jsonl",
+      "sha256": "10ce7ee87f026f6abde7a2eaaad581b7a2cf759ef5d0164c2c5e2de7d45e6c62",
+      "rows": 96,
+      "rows_with_explicit_question_line": 72
+    }
+  ],
+  "total_rows": 832,
+  "distinct_exact_prompts": 832,
+  "distinct_exact_question_lines": 110,
+  "previous_question_groups": {
+    "train200": {
+      "rows": 600,
+      "bases": 200,
+      "sha256": "15494aaed6335f294b9d88befcdc88ff6d90c6555a8d89d87d4efe1ff0230492",
+      "unique_normalized_questions": 200
+    },
+    "val95": {
+      "rows": 285,
+      "bases": 95,
+      "sha256": "18a0e6817fbbc3b0f9a89e029209221e97f6406a3b6c7ecb88de61161cb095bb",
+      "unique_normalized_questions": 95
+    },
+    "diagnostic100": {
+      "rows": 300,
+      "bases": 100,
+      "sha256": "4ea8fc8d08b1b34e441297319cd4693d2dd6a9976835e5e5f9c1564980667a94",
+      "unique_normalized_questions": 100
+    },
+    "transfer30": {
+      "rows": 30,
+      "bases": 30,
+      "sha256": "561f491e734447b6d71490ed739c6d7afca9a14d06a0aa043958b8d9331e4ac8",
+      "unique_normalized_questions": 30
+    }
+  },
+  "scope": "explicit local inputs and sampled prior question groups; no candidate comparisons; no held-out 380",
+  "warning": "row counts are not unique base counts or evidence of model/pretraining exposure"
+}
