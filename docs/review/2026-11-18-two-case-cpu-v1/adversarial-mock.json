@@ -1,0 +1,591 @@
+{
+  "cases": {
+    "D7M4": {
+      "calls": [
+        {
+          "request": {
+            "background_id": "D7M4",
+            "evidence": "虚构设备的某次校准只记录一个整数读数。来源甲写：这次校准的读数是34单位。来源乙写：这次校准的读数是58单位。两份记录针对同一设备、同一时刻，记录互不一致。题设规定真实读数恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。",
+            "kind": "direct",
+            "question": "该次校准读数是否超过45单位？",
+            "question_id": "p4",
+            "values": null
+          },
+          "response": {
+            "output": "{\"final\": \"U\", \"worlds\": [{\"value\": \"34\", \"answer\": \"Y\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}, {\"value\": \"58\", \"answer\": \"N\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "D7M4",
+            "evidence": "虚构设备的某次校准只记录一个整数读数。来源甲写：这次校准的读数是34单位。来源乙写：这次校准的读数是58单位。两份记录针对同一设备、同一时刻，记录互不一致。题设规定真实读数恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。",
+            "kind": "direct",
+            "question": "该次校准读数是否低于20单位？",
+            "question_id": "q8",
+            "values": null
+          },
+          "response": {
+            "output": "{\"final\": \"N\", \"worlds\": [{\"value\": \"34\", \"answer\": \"N\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}, {\"value\": \"58\", \"answer\": \"N\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "D7M4",
+            "evidence": "虚构设备的某次校准只记录一个整数读数。来源甲写：这次校准的读数是34单位。来源乙写：这次校准的读数是58单位。两份记录针对同一设备、同一时刻，记录互不一致。题设规定真实读数恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。",
+            "kind": "direct",
+            "question": "该次校准读数是否超过30单位？",
+            "question_id": "r2",
+            "values": null
+          },
+          "response": {
+            "output": "{\"final\": \"Y\", \"worlds\": [{\"value\": \"34\", \"answer\": \"Y\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}, {\"value\": \"58\", \"answer\": \"Y\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "D7M4",
+            "evidence": "虚构设备的某次校准只记录一个整数读数。来源甲写：这次校准的读数是34单位。来源乙写：这次校准的读数是58单位。两份记录针对同一设备、同一时刻，记录互不一致。题设规定真实读数恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。",
+            "kind": "extract",
+            "question": null,
+            "question_id": null,
+            "values": null
+          },
+          "response": {
+            "output": "[\"34\", \"58\"]",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "D7M4",
+            "evidence": "虚构设备的某次校准只记录一个整数读数。来源甲写：这次校准的读数是34单位。来源乙写：这次校准的读数是58单位。两份记录针对同一设备、同一时刻，记录互不一致。题设规定真实读数恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。",
+            "kind": "joint",
+            "question": "该次校准读数是否超过45单位？",
+            "question_id": "p4",
+            "values": [
+              "34",
+              "58"
+            ]
+          },
+          "response": {
+            "output": "{\"final\": \"U\", \"worlds\": [{\"value\": \"34\", \"answer\": \"Y\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}, {\"value\": \"58\", \"answer\": \"N\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "D7M4",
+            "evidence": "虚构设备的某次校准只记录一个整数读数。来源甲写：这次校准的读数是34单位。来源乙写：这次校准的读数是58单位。两份记录针对同一设备、同一时刻，记录互不一致。题设规定真实读数恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。",
+            "kind": "branch",
+            "question": "该次校准读数是否超过45单位？",
+            "question_id": "p4",
+            "values": [
+              "34"
+            ]
+          },
+          "response": {
+            "output": "{\"value\": \"34\", \"answer\": \"Y\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "D7M4",
+            "evidence": "虚构设备的某次校准只记录一个整数读数。来源甲写：这次校准的读数是34单位。来源乙写：这次校准的读数是58单位。两份记录针对同一设备、同一时刻，记录互不一致。题设规定真实读数恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。",
+            "kind": "branch",
+            "question": "该次校准读数是否超过45单位？",
+            "question_id": "p4",
+            "values": [
+              "58"
+            ]
+          },
+          "response": {
+            "output": "{\"value\": \"58\", \"answer\": \"N\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "D7M4",
+            "evidence": "虚构设备的某次校准只记录一个整数读数。来源甲写：这次校准的读数是34单位。来源乙写：这次校准的读数是58单位。两份记录针对同一设备、同一时刻，记录互不一致。题设规定真实读数恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。",
+            "kind": "joint",
+            "question": "该次校准读数是否低于20单位？",
+            "question_id": "q8",
+            "values": [
+              "34",
+              "58"
+            ]
+          },
+          "response": {
+            "output": "{\"final\": \"N\", \"worlds\": [{\"value\": \"34\", \"answer\": \"N\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}, {\"value\": \"58\", \"answer\": \"N\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "D7M4",
+            "evidence": "虚构设备的某次校准只记录一个整数读数。来源甲写：这次校准的读数是34单位。来源乙写：这次校准的读数是58单位。两份记录针对同一设备、同一时刻，记录互不一致。题设规定真实读数恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。",
+            "kind": "branch",
+            "question": "该次校准读数是否低于20单位？",
+            "question_id": "q8",
+            "values": [
+              "34"
+            ]
+          },
+          "response": {
+            "output": "{\"value\": \"34\", \"answer\": \"N\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "D7M4",
+            "evidence": "虚构设备的某次校准只记录一个整数读数。来源甲写：这次校准的读数是34单位。来源乙写：这次校准的读数是58单位。两份记录针对同一设备、同一时刻，记录互不一致。题设规定真实读数恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。",
+            "kind": "branch",
+            "question": "该次校准读数是否低于20单位？",
+            "question_id": "q8",
+            "values": [
+              "58"
+            ]
+          },
+          "response": {
+            "output": "{\"value\": \"58\", \"answer\": \"N\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "D7M4",
+            "evidence": "虚构设备的某次校准只记录一个整数读数。来源甲写：这次校准的读数是34单位。来源乙写：这次校准的读数是58单位。两份记录针对同一设备、同一时刻，记录互不一致。题设规定真实读数恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。",
+            "kind": "joint",
+            "question": "该次校准读数是否超过30单位？",
+            "question_id": "r2",
+            "values": [
+              "34",
+              "58"
+            ]
+          },
+          "response": {
+            "output": "{\"final\": \"Y\", \"worlds\": [{\"value\": \"34\", \"answer\": \"Y\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}, {\"value\": \"58\", \"answer\": \"Y\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "D7M4",
+            "evidence": "虚构设备的某次校准只记录一个整数读数。来源甲写：这次校准的读数是34单位。来源乙写：这次校准的读数是58单位。两份记录针对同一设备、同一时刻，记录互不一致。题设规定真实读数恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。",
+            "kind": "branch",
+            "question": "该次校准读数是否超过30单位？",
+            "question_id": "r2",
+            "values": [
+              "34"
+            ]
+          },
+          "response": {
+            "output": "{\"value\": \"34\", \"answer\": \"Y\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "D7M4",
+            "evidence": "虚构设备的某次校准只记录一个整数读数。来源甲写：这次校准的读数是34单位。来源乙写：这次校准的读数是58单位。两份记录针对同一设备、同一时刻，记录互不一致。题设规定真实读数恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。",
+            "kind": "branch",
+            "question": "该次校准读数是否超过30单位？",
+            "question_id": "r2",
+            "values": [
+              "58"
+            ]
+          },
+          "response": {
+            "output": "{\"value\": \"58\", \"answer\": \"Y\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}",
+            "status": "complete"
+          }
+        }
+      ],
+      "direct": {
+        "p4": {
+          "output": "{\"final\": \"U\", \"worlds\": [{\"value\": \"34\", \"answer\": \"Y\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}, {\"value\": \"58\", \"answer\": \"N\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}]}",
+          "status": "complete"
+        },
+        "q8": {
+          "output": "{\"final\": \"N\", \"worlds\": [{\"value\": \"34\", \"answer\": \"N\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}, {\"value\": \"58\", \"answer\": \"N\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}]}",
+          "status": "complete"
+        },
+        "r2": {
+          "output": "{\"final\": \"Y\", \"worlds\": [{\"value\": \"34\", \"answer\": \"Y\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}, {\"value\": \"58\", \"answer\": \"Y\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}]}",
+          "status": "complete"
+        }
+      },
+      "downstream": {
+        "p4": {
+          "branches": [
+            {
+              "output": "{\"value\": \"34\", \"answer\": \"Y\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}",
+              "status": "complete"
+            },
+            {
+              "output": "{\"value\": \"58\", \"answer\": \"N\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}",
+              "status": "complete"
+            }
+          ],
+          "joint": {
+            "output": "{\"final\": \"U\", \"worlds\": [{\"value\": \"34\", \"answer\": \"Y\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}, {\"value\": \"58\", \"answer\": \"N\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}]}",
+            "status": "complete"
+          },
+          "status": "attempted"
+        },
+        "q8": {
+          "branches": [
+            {
+              "output": "{\"value\": \"34\", \"answer\": \"N\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}",
+              "status": "complete"
+            },
+            {
+              "output": "{\"value\": \"58\", \"answer\": \"N\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}",
+              "status": "complete"
+            }
+          ],
+          "joint": {
+            "output": "{\"final\": \"N\", \"worlds\": [{\"value\": \"34\", \"answer\": \"N\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}, {\"value\": \"58\", \"answer\": \"N\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}]}",
+            "status": "complete"
+          },
+          "status": "attempted"
+        },
+        "r2": {
+          "branches": [
+            {
+              "output": "{\"value\": \"34\", \"answer\": \"Y\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}",
+              "status": "complete"
+            },
+            {
+              "output": "{\"value\": \"58\", \"answer\": \"Y\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}",
+              "status": "complete"
+            }
+          ],
+          "joint": {
+            "output": "{\"final\": \"Y\", \"worlds\": [{\"value\": \"34\", \"answer\": \"Y\", \"citations\": [\"来源甲写：这次校准的读数是34单位。\"]}, {\"value\": \"58\", \"answer\": \"Y\", \"citations\": [\"来源乙写：这次校准的读数是58单位。\"]}]}",
+            "status": "complete"
+          },
+          "status": "attempted"
+        }
+      },
+      "extraction": {
+        "parsed": {
+          "status": "parsed",
+          "types": [
+            "string",
+            "string"
+          ],
+          "values": [
+            "34",
+            "58"
+          ]
+        },
+        "raw": {
+          "output": "[\"34\", \"58\"]",
+          "status": "complete"
+        }
+      }
+    },
+    "N3K6": {
+      "calls": [
+        {
+          "request": {
+            "background_id": "N3K6",
+            "evidence": "虚构零件的某次检测只确定一个类别代码。来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。两份记录针对同一零件、同一时刻，记录互不一致。题设规定真实代码恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。规则表明确：VX3适合干燥运输，适合室内储存，不适合水下使用；LM7不适合干燥运输，适合室内储存，不适合水下使用。",
+            "kind": "direct",
+            "question": "按规则表，该零件是否适合水下使用？",
+            "question_id": "s9",
+            "values": null
+          },
+          "response": {
+            "output": "{\"final\": \"N\", \"worlds\": [{\"value\": \"VX3\", \"answer\": \"N\", \"citations\": [\"来源甲写：本次检测代码是VX3。\", \"VX3适合干燥运输，适合室内储存，不适合水下使用\"]}, {\"value\": \"LM7\", \"answer\": \"N\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "N3K6",
+            "evidence": "虚构零件的某次检测只确定一个类别代码。来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。两份记录针对同一零件、同一时刻，记录互不一致。题设规定真实代码恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。规则表明确：VX3适合干燥运输，适合室内储存，不适合水下使用；LM7不适合干燥运输，适合室内储存，不适合水下使用。",
+            "kind": "direct",
+            "question": "按规则表，该零件是否适合干燥运输？",
+            "question_id": "t1",
+            "values": null
+          },
+          "response": {
+            "output": "{\"final\": \"U\", \"worlds\": [{\"value\": \"VX3\", \"answer\": \"Y\", \"citations\": [\"来源甲写：本次检测代码是VX3。\", \"VX3适合干燥运输，适合室内储存，不适合水下使用\"]}, {\"value\": \"LM7\", \"answer\": \"N\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "N3K6",
+            "evidence": "虚构零件的某次检测只确定一个类别代码。来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。两份记录针对同一零件、同一时刻，记录互不一致。题设规定真实代码恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。规则表明确：VX3适合干燥运输，适合室内储存，不适合水下使用；LM7不适合干燥运输，适合室内储存，不适合水下使用。",
+            "kind": "direct",
+            "question": "按规则表，该零件是否适合室内储存？",
+            "question_id": "u5",
+            "values": null
+          },
+          "response": {
+            "output": "{\"final\": \"Y\", \"worlds\": [{\"value\": \"VX3\", \"answer\": \"Y\", \"citations\": [\"来源乙写：本次检测代码是LM7。\"]}, {\"value\": \"LM7\", \"answer\": \"Y\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "N3K6",
+            "evidence": "虚构零件的某次检测只确定一个类别代码。来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。两份记录针对同一零件、同一时刻，记录互不一致。题设规定真实代码恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。规则表明确：VX3适合干燥运输，适合室内储存，不适合水下使用；LM7不适合干燥运输，适合室内储存，不适合水下使用。",
+            "kind": "extract",
+            "question": null,
+            "question_id": null,
+            "values": null
+          },
+          "response": {
+            "output": "[\"VX3\", \"LM7\"]",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "N3K6",
+            "evidence": "虚构零件的某次检测只确定一个类别代码。来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。两份记录针对同一零件、同一时刻，记录互不一致。题设规定真实代码恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。规则表明确：VX3适合干燥运输，适合室内储存，不适合水下使用；LM7不适合干燥运输，适合室内储存，不适合水下使用。",
+            "kind": "joint",
+            "question": "按规则表，该零件是否适合水下使用？",
+            "question_id": "s9",
+            "values": [
+              "VX3",
+              "LM7"
+            ]
+          },
+          "response": {
+            "output": "{\"final\": \"N\", \"worlds\": [{\"value\": \"VX3\", \"answer\": \"N\", \"citations\": [\"来源甲写：本次检测代码是VX3。\", \"VX3适合干燥运输，适合室内储存，不适合水下使用\"]}, {\"value\": \"LM7\", \"answer\": \"N\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "N3K6",
+            "evidence": "虚构零件的某次检测只确定一个类别代码。来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。两份记录针对同一零件、同一时刻，记录互不一致。题设规定真实代码恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。规则表明确：VX3适合干燥运输，适合室内储存，不适合水下使用；LM7不适合干燥运输，适合室内储存，不适合水下使用。",
+            "kind": "branch",
+            "question": "按规则表，该零件是否适合水下使用？",
+            "question_id": "s9",
+            "values": [
+              "VX3"
+            ]
+          },
+          "response": {
+            "output": "{\"value\": \"VX3\", \"answer\": \"N\", \"citations\": [\"来源甲写：本次检测代码是VX3。\", \"VX3适合干燥运输，适合室内储存，不适合水下使用\"]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "N3K6",
+            "evidence": "虚构零件的某次检测只确定一个类别代码。来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。两份记录针对同一零件、同一时刻，记录互不一致。题设规定真实代码恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。规则表明确：VX3适合干燥运输，适合室内储存，不适合水下使用；LM7不适合干燥运输，适合室内储存，不适合水下使用。",
+            "kind": "branch",
+            "question": "按规则表，该零件是否适合水下使用？",
+            "question_id": "s9",
+            "values": [
+              "LM7"
+            ]
+          },
+          "response": {
+            "output": "{\"value\": \"LM7\", \"answer\": \"N\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "N3K6",
+            "evidence": "虚构零件的某次检测只确定一个类别代码。来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。两份记录针对同一零件、同一时刻，记录互不一致。题设规定真实代码恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。规则表明确：VX3适合干燥运输，适合室内储存，不适合水下使用；LM7不适合干燥运输，适合室内储存，不适合水下使用。",
+            "kind": "joint",
+            "question": "按规则表，该零件是否适合干燥运输？",
+            "question_id": "t1",
+            "values": [
+              "VX3",
+              "LM7"
+            ]
+          },
+          "response": {
+            "output": "{\"final\": \"U\", \"worlds\": [{\"value\": \"VX3\", \"answer\": \"Y\", \"citations\": [\"来源甲写：本次检测代码是VX3。\", \"VX3适合干燥运输，适合室内储存，不适合水下使用\"]}, {\"value\": \"LM7\", \"answer\": \"N\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "N3K6",
+            "evidence": "虚构零件的某次检测只确定一个类别代码。来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。两份记录针对同一零件、同一时刻，记录互不一致。题设规定真实代码恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。规则表明确：VX3适合干燥运输，适合室内储存，不适合水下使用；LM7不适合干燥运输，适合室内储存，不适合水下使用。",
+            "kind": "branch",
+            "question": "按规则表，该零件是否适合干燥运输？",
+            "question_id": "t1",
+            "values": [
+              "VX3"
+            ]
+          },
+          "response": {
+            "output": "{\"value\": \"VX3\", \"answer\": \"Y\", \"citations\": [\"来源甲写：本次检测代码是VX3。\", \"VX3适合干燥运输，适合室内储存，不适合水下使用\"]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "N3K6",
+            "evidence": "虚构零件的某次检测只确定一个类别代码。来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。两份记录针对同一零件、同一时刻，记录互不一致。题设规定真实代码恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。规则表明确：VX3适合干燥运输，适合室内储存，不适合水下使用；LM7不适合干燥运输，适合室内储存，不适合水下使用。",
+            "kind": "branch",
+            "question": "按规则表，该零件是否适合干燥运输？",
+            "question_id": "t1",
+            "values": [
+              "LM7"
+            ]
+          },
+          "response": {
+            "output": "{\"value\": \"LM7\", \"answer\": \"N\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "N3K6",
+            "evidence": "虚构零件的某次检测只确定一个类别代码。来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。两份记录针对同一零件、同一时刻，记录互不一致。题设规定真实代码恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。规则表明确：VX3适合干燥运输，适合室内储存，不适合水下使用；LM7不适合干燥运输，适合室内储存，不适合水下使用。",
+            "kind": "joint",
+            "question": "按规则表，该零件是否适合室内储存？",
+            "question_id": "u5",
+            "values": [
+              "VX3",
+              "LM7"
+            ]
+          },
+          "response": {
+            "output": "{\"final\": \"Y\", \"worlds\": [{\"value\": \"VX3\", \"answer\": \"Y\", \"citations\": [\"来源乙写：本次检测代码是LM7。\"]}, {\"value\": \"LM7\", \"answer\": \"Y\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "N3K6",
+            "evidence": "虚构零件的某次检测只确定一个类别代码。来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。两份记录针对同一零件、同一时刻，记录互不一致。题设规定真实代码恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。规则表明确：VX3适合干燥运输，适合室内储存，不适合水下使用；LM7不适合干燥运输，适合室内储存，不适合水下使用。",
+            "kind": "branch",
+            "question": "按规则表，该零件是否适合室内储存？",
+            "question_id": "u5",
+            "values": [
+              "VX3"
+            ]
+          },
+          "response": {
+            "output": "{\"value\": \"VX3\", \"answer\": \"Y\", \"citations\": [\"来源乙写：本次检测代码是LM7。\"]}",
+            "status": "complete"
+          }
+        },
+        {
+          "request": {
+            "background_id": "N3K6",
+            "evidence": "虚构零件的某次检测只确定一个类别代码。来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。两份记录针对同一零件、同一时刻，记录互不一致。题设规定真实代码恰为这两个记录值之一，两种情况均有可能，现有材料不能确定哪条记录正确。规则表明确：VX3适合干燥运输，适合室内储存，不适合水下使用；LM7不适合干燥运输，适合室内储存，不适合水下使用。",
+            "kind": "branch",
+            "question": "按规则表，该零件是否适合室内储存？",
+            "question_id": "u5",
+            "values": [
+              "LM7"
+            ]
+          },
+          "response": {
+            "output": "{\"value\": \"LM7\", \"answer\": \"Y\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}",
+            "status": "complete"
+          }
+        }
+      ],
+      "direct": {
+        "s9": {
+          "output": "{\"final\": \"N\", \"worlds\": [{\"value\": \"VX3\", \"answer\": \"N\", \"citations\": [\"来源甲写：本次检测代码是VX3。\", \"VX3适合干燥运输，适合室内储存，不适合水下使用\"]}, {\"value\": \"LM7\", \"answer\": \"N\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}]}",
+          "status": "complete"
+        },
+        "t1": {
+          "output": "{\"final\": \"U\", \"worlds\": [{\"value\": \"VX3\", \"answer\": \"Y\", \"citations\": [\"来源甲写：本次检测代码是VX3。\", \"VX3适合干燥运输，适合室内储存，不适合水下使用\"]}, {\"value\": \"LM7\", \"answer\": \"N\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}]}",
+          "status": "complete"
+        },
+        "u5": {
+          "output": "{\"final\": \"Y\", \"worlds\": [{\"value\": \"VX3\", \"answer\": \"Y\", \"citations\": [\"来源乙写：本次检测代码是LM7。\"]}, {\"value\": \"LM7\", \"answer\": \"Y\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}]}",
+          "status": "complete"
+        }
+      },
+      "downstream": {
+        "s9": {
+          "branches": [
+            {
+              "output": "{\"value\": \"VX3\", \"answer\": \"N\", \"citations\": [\"来源甲写：本次检测代码是VX3。\", \"VX3适合干燥运输，适合室内储存，不适合水下使用\"]}",
+              "status": "complete"
+            },
+            {
+              "output": "{\"value\": \"LM7\", \"answer\": \"N\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}",
+              "status": "complete"
+            }
+          ],
+          "joint": {
+            "output": "{\"final\": \"N\", \"worlds\": [{\"value\": \"VX3\", \"answer\": \"N\", \"citations\": [\"来源甲写：本次检测代码是VX3。\", \"VX3适合干燥运输，适合室内储存，不适合水下使用\"]}, {\"value\": \"LM7\", \"answer\": \"N\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}]}",
+            "status": "complete"
+          },
+          "status": "attempted"
+        },
+        "t1": {
+          "branches": [
+            {
+              "output": "{\"value\": \"VX3\", \"answer\": \"Y\", \"citations\": [\"来源甲写：本次检测代码是VX3。\", \"VX3适合干燥运输，适合室内储存，不适合水下使用\"]}",
+              "status": "complete"
+            },
+            {
+              "output": "{\"value\": \"LM7\", \"answer\": \"N\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}",
+              "status": "complete"
+            }
+          ],
+          "joint": {
+            "output": "{\"final\": \"U\", \"worlds\": [{\"value\": \"VX3\", \"answer\": \"Y\", \"citations\": [\"来源甲写：本次检测代码是VX3。\", \"VX3适合干燥运输，适合室内储存，不适合水下使用\"]}, {\"value\": \"LM7\", \"answer\": \"N\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}]}",
+            "status": "complete"
+          },
+          "status": "attempted"
+        },
+        "u5": {
+          "branches": [
+            {
+              "output": "{\"value\": \"VX3\", \"answer\": \"Y\", \"citations\": [\"来源乙写：本次检测代码是LM7。\"]}",
+              "status": "complete"
+            },
+            {
+              "output": "{\"value\": \"LM7\", \"answer\": \"Y\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}",
+              "status": "complete"
+            }
+          ],
+          "joint": {
+            "output": "{\"final\": \"Y\", \"worlds\": [{\"value\": \"VX3\", \"answer\": \"Y\", \"citations\": [\"来源乙写：本次检测代码是LM7。\"]}, {\"value\": \"LM7\", \"answer\": \"Y\", \"citations\": [\"来源乙写：本次检测代码是LM7。\", \"LM7不适合干燥运输，适合室内储存，不适合水下使用\"]}]}",
+            "status": "complete"
+          },
+          "status": "attempted"
+        }
+      },
+      "extraction": {
+        "parsed": {
+          "status": "parsed",
+          "types": [
+            "string",
+            "string"
+          ],
+          "values": [
+            "VX3",
+            "LM7"
+          ]
+        },
+        "raw": {
+          "output": "[\"VX3\", \"LM7\"]",
+          "status": "complete"
+        }
+      }
+    }
+  },
+  "mode": "adversarial",
+  "model_calls": 0,
+  "public_sha256": "eefe5e608f889fd2223da7fa318943b90a2ffd739cd1ad88f3d0ef0a1495c9c5",
+  "schema": "two_world_cpu_mock_results_v1",
+  "simulated_calls": 26
+}

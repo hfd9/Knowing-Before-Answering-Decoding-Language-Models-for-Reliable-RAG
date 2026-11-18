@@ -1,0 +1,91 @@
+{
+  "background_references": 2829,
+  "cases": [
+    {
+      "background": {
+        "counts": {
+          "comparisons": 2829,
+          "short": 0
+        },
+        "manual_review_required": false,
+        "match_fingerprints": [],
+        "matched_groups": {}
+      },
+      "case": "D7M4",
+      "questions": {
+        "p4": {
+          "counts": {
+            "comparisons": 535,
+            "short": 535
+          },
+          "manual_review_required": true,
+          "match_fingerprints": [],
+          "matched_groups": {}
+        },
+        "q8": {
+          "counts": {
+            "comparisons": 535,
+            "short": 535
+          },
+          "manual_review_required": true,
+          "match_fingerprints": [],
+          "matched_groups": {}
+        },
+        "r2": {
+          "counts": {
+            "comparisons": 535,
+            "short": 535
+          },
+          "manual_review_required": true,
+          "match_fingerprints": [],
+          "matched_groups": {}
+        }
+      }
+    },
+    {
+      "background": {
+        "counts": {
+          "comparisons": 2829,
+          "short": 0
+        },
+        "manual_review_required": false,
+        "match_fingerprints": [],
+        "matched_groups": {}
+      },
+      "case": "N3K6",
+      "questions": {
+        "s9": {
+          "counts": {
+            "comparisons": 535,
+            "short": 535
+          },
+          "manual_review_required": true,
+          "match_fingerprints": [],
+          "matched_groups": {}
+        },
+        "t1": {
+          "counts": {
+            "comparisons": 535,
+            "short": 535
+          },
+          "manual_review_required": true,
+          "match_fingerprints": [],
+          "matched_groups": {}
+        },
+        "u5": {
+          "counts": {
+            "comparisons": 535,
+            "short": 535
+          },
+          "manual_review_required": true,
+          "match_fingerprints": [],
+          "matched_groups": {}
+        }
+      }
+    }
+  ],
+  "limits": "Only explicit previous allowlist; short includes unknown; no held-out 380 or pretraining; flags are not semantic judgments.",
+  "public_sha256": "eefe5e608f889fd2223da7fa318943b90a2ffd739cd1ad88f3d0ef0a1495c9c5",
+  "question_references": 535,
+  "schema": "pilot_overlap_triage_v1"
+}

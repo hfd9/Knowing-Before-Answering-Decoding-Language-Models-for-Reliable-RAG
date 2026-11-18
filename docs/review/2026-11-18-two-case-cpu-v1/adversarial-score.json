@@ -1,0 +1,470 @@
+{
+  "mode": "adversarial",
+  "reference_sha256": "99c65a841a686835d73f7325e7a77f9495aeba8dcc87ebc2d0496e5d251ab75d",
+  "result_sha256": "1033564d9eafb90dc4e99ad7bea11272a5fd69e61c99c4c3c542fc4f114c7271",
+  "rows": [
+    {
+      "branch": {
+        "all_evidence_ok": true,
+        "all_worlds_correct": false,
+        "correct_and_supported": false,
+        "final": "U",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "Y",
+            "answer_correct": false,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": false
+          },
+          {
+            "answer": "N",
+            "answer_correct": false,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": false
+          }
+        ]
+      },
+      "case": "D7M4",
+      "direct": {
+        "all_evidence_ok": true,
+        "all_worlds_correct": false,
+        "correct_and_supported": false,
+        "final": "U",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "Y",
+            "answer_correct": false,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": false
+          },
+          {
+            "answer": "N",
+            "answer_correct": false,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": false
+          }
+        ]
+      },
+      "joint": {
+        "all_evidence_ok": true,
+        "all_worlds_correct": false,
+        "correct_and_supported": false,
+        "final": "U",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "Y",
+            "answer_correct": false,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": false
+          },
+          {
+            "answer": "N",
+            "answer_correct": false,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": false
+          }
+        ]
+      },
+      "question": "p4",
+      "reference": "U"
+    },
+    {
+      "branch": {
+        "all_evidence_ok": true,
+        "all_worlds_correct": true,
+        "correct_and_supported": true,
+        "final": "N",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          },
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          }
+        ]
+      },
+      "case": "D7M4",
+      "direct": {
+        "all_evidence_ok": true,
+        "all_worlds_correct": true,
+        "correct_and_supported": true,
+        "final": "N",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          },
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          }
+        ]
+      },
+      "joint": {
+        "all_evidence_ok": true,
+        "all_worlds_correct": true,
+        "correct_and_supported": true,
+        "final": "N",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          },
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          }
+        ]
+      },
+      "question": "q8",
+      "reference": "N"
+    },
+    {
+      "branch": {
+        "all_evidence_ok": true,
+        "all_worlds_correct": true,
+        "correct_and_supported": true,
+        "final": "Y",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          },
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          }
+        ]
+      },
+      "case": "D7M4",
+      "direct": {
+        "all_evidence_ok": true,
+        "all_worlds_correct": true,
+        "correct_and_supported": true,
+        "final": "Y",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          },
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          }
+        ]
+      },
+      "joint": {
+        "all_evidence_ok": true,
+        "all_worlds_correct": true,
+        "correct_and_supported": true,
+        "final": "Y",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          },
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          }
+        ]
+      },
+      "question": "r2",
+      "reference": "Y"
+    },
+    {
+      "branch": {
+        "all_evidence_ok": true,
+        "all_worlds_correct": true,
+        "correct_and_supported": true,
+        "final": "N",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          },
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          }
+        ]
+      },
+      "case": "N3K6",
+      "direct": {
+        "all_evidence_ok": true,
+        "all_worlds_correct": true,
+        "correct_and_supported": true,
+        "final": "N",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          },
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          }
+        ]
+      },
+      "joint": {
+        "all_evidence_ok": true,
+        "all_worlds_correct": true,
+        "correct_and_supported": true,
+        "final": "N",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          },
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          }
+        ]
+      },
+      "question": "s9",
+      "reference": "N"
+    },
+    {
+      "branch": {
+        "all_evidence_ok": true,
+        "all_worlds_correct": true,
+        "correct_and_supported": true,
+        "final": "U",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          },
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          }
+        ]
+      },
+      "case": "N3K6",
+      "direct": {
+        "all_evidence_ok": true,
+        "all_worlds_correct": true,
+        "correct_and_supported": true,
+        "final": "U",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          },
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          }
+        ]
+      },
+      "joint": {
+        "all_evidence_ok": true,
+        "all_worlds_correct": true,
+        "correct_and_supported": true,
+        "final": "U",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          },
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          }
+        ]
+      },
+      "question": "t1",
+      "reference": "U"
+    },
+    {
+      "branch": {
+        "all_evidence_ok": false,
+        "all_worlds_correct": true,
+        "correct_and_supported": false,
+        "final": "Y",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": false,
+            "status": "scored",
+            "supported_correct": false
+          },
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          }
+        ]
+      },
+      "case": "N3K6",
+      "direct": {
+        "all_evidence_ok": false,
+        "all_worlds_correct": true,
+        "correct_and_supported": false,
+        "final": "Y",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": false,
+            "status": "scored",
+            "supported_correct": false
+          },
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          }
+        ]
+      },
+      "joint": {
+        "all_evidence_ok": false,
+        "all_worlds_correct": true,
+        "correct_and_supported": false,
+        "final": "Y",
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": false,
+            "status": "scored",
+            "supported_correct": false
+          },
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": true,
+            "status": "scored",
+            "supported_correct": true
+          }
+        ]
+      },
+      "question": "u5",
+      "reference": "Y"
+    }
+  ],
+  "simulated_calls": 26
+}

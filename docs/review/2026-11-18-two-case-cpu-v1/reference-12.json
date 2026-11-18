@@ -1,0 +1,474 @@
+{
+  "author_review": "知情作者判断，非独立金标准；两值穷尽依赖题设明示，不是来源真实性结论。",
+  "cases": {
+    "B6Q9": {
+      "questions": {
+        "Q4fd7040211c7": {
+          "final": "U",
+          "rationale": "分别比较26、64与45。",
+          "world_answers": [
+            "N",
+            "Y"
+          ]
+        },
+        "Qb06174d1170f": {
+          "final": "N",
+          "rationale": "分别比较26、64与81。",
+          "world_answers": [
+            "N",
+            "N"
+          ]
+        },
+        "Qc1f6ef67b6fe": {
+          "final": "Y",
+          "rationale": "分别比较26、64与15。",
+          "world_answers": [
+            "Y",
+            "Y"
+          ]
+        }
+      },
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构电缆的标记长度是26厘米。",
+          "value": "26"
+        },
+        {
+          "source_quote": "来源乙写：虚构电缆的标记长度是64厘米。",
+          "value": "64"
+        }
+      ]
+    },
+    "D7M4": {
+      "questions": {
+        "p4": {
+          "final": "U",
+          "rationale": "34不超过45；58超过45。",
+          "world_answers": [
+            "N",
+            "Y"
+          ]
+        },
+        "q8": {
+          "final": "N",
+          "rationale": "34和58均不低于20。",
+          "world_answers": [
+            "N",
+            "N"
+          ]
+        },
+        "r2": {
+          "final": "Y",
+          "rationale": "34和58均超过30。",
+          "world_answers": [
+            "Y",
+            "Y"
+          ]
+        }
+      },
+      "worlds": [
+        {
+          "source_quote": "来源甲写：这次校准的读数是34单位。",
+          "value": "34"
+        },
+        {
+          "source_quote": "来源乙写：这次校准的读数是58单位。",
+          "value": "58"
+        }
+      ]
+    },
+    "F2J8": {
+      "questions": {
+        "Q248108a91de9": {
+          "final": "U",
+          "rationale": "分别比较83、35与57。",
+          "world_answers": [
+            "Y",
+            "N"
+          ]
+        },
+        "Q7dd874403a40": {
+          "final": "Y",
+          "rationale": "分别比较83、35与21。",
+          "world_answers": [
+            "Y",
+            "Y"
+          ]
+        },
+        "Q80bd78da4f6b": {
+          "final": "N",
+          "rationale": "分别比较83、35与99。",
+          "world_answers": [
+            "N",
+            "N"
+          ]
+        }
+      },
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构装箱批次的板片数量是83片。",
+          "value": "83"
+        },
+        {
+          "source_quote": "来源乙写：虚构装箱批次的板片数量是35片。",
+          "value": "35"
+        }
+      ]
+    },
+    "H5P3": {
+      "questions": {
+        "Q29f7cad44a62": {
+          "final": "N",
+          "rationale": "分别比较42、76与94。",
+          "world_answers": [
+            "N",
+            "N"
+          ]
+        },
+        "Qa8e3cfa7bc15": {
+          "final": "U",
+          "rationale": "分别比较42、76与60。",
+          "world_answers": [
+            "N",
+            "Y"
+          ]
+        },
+        "Qd055faa54da3": {
+          "final": "Y",
+          "rationale": "分别比较42、76与31。",
+          "world_answers": [
+            "Y",
+            "Y"
+          ]
+        }
+      },
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构反应室的加热时长是42分钟。",
+          "value": "42"
+        },
+        {
+          "source_quote": "来源乙写：虚构反应室的加热时长是76分钟。",
+          "value": "76"
+        }
+      ]
+    },
+    "J8E4": {
+      "questions": {
+        "Q8b12e9d2bd75": {
+          "final": "U",
+          "rationale": "分别依据C18与D63的快速拆封规则。",
+          "world_answers": [
+            "Y",
+            "N"
+          ]
+        },
+        "Q9da64ae48867": {
+          "final": "Y",
+          "rationale": "分别依据C18与D63的隔热存储规则。",
+          "world_answers": [
+            "Y",
+            "Y"
+          ]
+        },
+        "Qa398b10830bc": {
+          "final": "N",
+          "rationale": "分别依据C18与D63的高压浸泡规则。",
+          "world_answers": [
+            "N",
+            "N"
+          ]
+        }
+      },
+      "worlds": [
+        {
+          "rule_quote": "C18适合隔热存储，不适合高压浸泡，适合快速拆封",
+          "source_quote": "来源甲写：虚构元件的本次包装代码是C18。",
+          "value": "C18"
+        },
+        {
+          "rule_quote": "D63适合隔热存储，不适合高压浸泡，不适合快速拆封",
+          "source_quote": "来源乙写：虚构元件的本次包装代码是D63。",
+          "value": "D63"
+        }
+      ]
+    },
+    "N3K6": {
+      "questions": {
+        "s9": {
+          "final": "N",
+          "rationale": "两代码均不适合水下使用。",
+          "world_answers": [
+            "N",
+            "N"
+          ]
+        },
+        "t1": {
+          "final": "U",
+          "rationale": "规则表明VX3适合、LM7不适合干燥运输。",
+          "world_answers": [
+            "Y",
+            "N"
+          ]
+        },
+        "u5": {
+          "final": "Y",
+          "rationale": "两代码均适合室内储存。",
+          "world_answers": [
+            "Y",
+            "Y"
+          ]
+        }
+      },
+      "worlds": [
+        {
+          "rule_quote": "VX3适合干燥运输，适合室内储存，不适合水下使用",
+          "source_quote": "来源甲写：本次检测代码是VX3。",
+          "value": "VX3"
+        },
+        {
+          "rule_quote": "LM7不适合干燥运输，适合室内储存，不适合水下使用",
+          "source_quote": "来源乙写：本次检测代码是LM7。",
+          "value": "LM7"
+        }
+      ]
+    },
+    "P7S6": {
+      "questions": {
+        "Q29d044a01e59": {
+          "final": "Y",
+          "rationale": "分别依据E29与F74的遮光保存规则。",
+          "world_answers": [
+            "Y",
+            "Y"
+          ]
+        },
+        "Q8f4919aab38c": {
+          "final": "U",
+          "rationale": "分别依据E29与F74的常温陈列规则。",
+          "world_answers": [
+            "Y",
+            "N"
+          ]
+        },
+        "Qd03182f65eb0": {
+          "final": "N",
+          "rationale": "分别依据E29与F74的明火烘烤规则。",
+          "world_answers": [
+            "N",
+            "N"
+          ]
+        }
+      },
+      "worlds": [
+        {
+          "rule_quote": "E29适合遮光保存，不适合明火烘烤，适合常温陈列",
+          "source_quote": "来源甲写：虚构容器的本次保护代码是E29。",
+          "value": "E29"
+        },
+        {
+          "rule_quote": "F74适合遮光保存，不适合明火烘烤，不适合常温陈列",
+          "source_quote": "来源乙写：虚构容器的本次保护代码是F74。",
+          "value": "F74"
+        }
+      ]
+    },
+    "R8C2": {
+      "questions": {
+        "Q2eb2ca868dfe": {
+          "final": "U",
+          "rationale": "分别比较17、43与29。",
+          "world_answers": [
+            "N",
+            "Y"
+          ]
+        },
+        "Q464536cbcb89": {
+          "final": "Y",
+          "rationale": "分别比较17、43与8。",
+          "world_answers": [
+            "Y",
+            "Y"
+          ]
+        },
+        "Qb94dd189efdf": {
+          "final": "N",
+          "rationale": "分别比较17、43与60。",
+          "world_answers": [
+            "N",
+            "N"
+          ]
+        }
+      },
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构储罐的单次补水量是17升。",
+          "value": "17"
+        },
+        {
+          "source_quote": "来源乙写：虚构储罐的单次补水量是43升。",
+          "value": "43"
+        }
+      ]
+    },
+    "T4L7": {
+      "questions": {
+        "Q832e4c745ca7": {
+          "final": "N",
+          "rationale": "分别比较72、28与90。",
+          "world_answers": [
+            "N",
+            "N"
+          ]
+        },
+        "Q9753e6be1942": {
+          "final": "U",
+          "rationale": "分别比较72、28与50。",
+          "world_answers": [
+            "Y",
+            "N"
+          ]
+        },
+        "Qbe055040b7f9": {
+          "final": "Y",
+          "rationale": "分别比较72、28与16。",
+          "world_answers": [
+            "Y",
+            "Y"
+          ]
+        }
+      },
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构转盘的单次转速是72转。",
+          "value": "72"
+        },
+        {
+          "source_quote": "来源乙写：虚构转盘的单次转速是28转。",
+          "value": "28"
+        }
+      ]
+    },
+    "V5D2": {
+      "questions": {
+        "Q2b4a81d5ee9e": {
+          "final": "U",
+          "rationale": "分别依据G31与H86的折叠收纳规则。",
+          "world_answers": [
+            "Y",
+            "N"
+          ]
+        },
+        "Q7a2ef5d3d6bc": {
+          "final": "N",
+          "rationale": "分别依据G31与H86的水下存放规则。",
+          "world_answers": [
+            "N",
+            "N"
+          ]
+        },
+        "Qb96d8299c930": {
+          "final": "Y",
+          "rationale": "分别依据G31与H86的防震运输规则。",
+          "world_answers": [
+            "Y",
+            "Y"
+          ]
+        }
+      },
+      "worlds": [
+        {
+          "rule_quote": "G31适合防震运输，不适合水下存放，适合折叠收纳",
+          "source_quote": "来源甲写：虚构样盒的本次运输代码是G31。",
+          "value": "G31"
+        },
+        {
+          "rule_quote": "H86适合防震运输，不适合水下存放，不适合折叠收纳",
+          "source_quote": "来源乙写：虚构样盒的本次运输代码是H86。",
+          "value": "H86"
+        }
+      ]
+    },
+    "W2A8": {
+      "questions": {
+        "Q0c0517b66a14": {
+          "final": "Y",
+          "rationale": "分别依据A42与B57的密封防尘规则。",
+          "world_answers": [
+            "Y",
+            "Y"
+          ]
+        },
+        "Q38bf177f88cd": {
+          "final": "N",
+          "rationale": "分别依据A42与B57的露天堆放规则。",
+          "world_answers": [
+            "N",
+            "N"
+          ]
+        },
+        "Qe834c7610fab": {
+          "final": "U",
+          "rationale": "分别依据A42与B57的短途运输规则。",
+          "world_answers": [
+            "Y",
+            "N"
+          ]
+        }
+      },
+      "worlds": [
+        {
+          "rule_quote": "A42适合密封防尘，不适合露天堆放，适合短途运输",
+          "source_quote": "来源甲写：虚构货箱的本次封装代码是A42。",
+          "value": "A42"
+        },
+        {
+          "rule_quote": "B57适合密封防尘，不适合露天堆放，不适合短途运输",
+          "source_quote": "来源乙写：虚构货箱的本次封装代码是B57。",
+          "value": "B57"
+        }
+      ]
+    },
+    "Y4N8": {
+      "questions": {
+        "Q59fab6873aa3": {
+          "final": "N",
+          "rationale": "分别依据J47与K92的直接冲洗规则。",
+          "world_answers": [
+            "N",
+            "N"
+          ]
+        },
+        "Q82739e1f7d9b": {
+          "final": "U",
+          "rationale": "分别依据J47与K92的悬挂陈列规则。",
+          "world_answers": [
+            "Y",
+            "N"
+          ]
+        },
+        "Qc280b8a63337": {
+          "final": "Y",
+          "rationale": "分别依据J47与K92的室内存放规则。",
+          "world_answers": [
+            "Y",
+            "Y"
+          ]
+        }
+      },
+      "worlds": [
+        {
+          "rule_quote": "J47适合室内存放，不适合直接冲洗，适合悬挂陈列",
+          "source_quote": "来源甲写：虚构展品的本次安放代码是J47。",
+          "value": "J47"
+        },
+        {
+          "rule_quote": "K92适合室内存放，不适合直接冲洗，不适合悬挂陈列",
+          "source_quote": "来源乙写：虚构展品的本次安放代码是K92。",
+          "value": "K92"
+        }
+      ]
+    }
+  },
+  "schema": "two_world_development12_reference_v1"
+}

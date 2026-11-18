@@ -1,0 +1,28 @@
+{
+  "schema": "two_world_development_reference_v1",
+  "author_review": "知情作者判断，非独立金标准；两值穷尽依赖题设明示，不是来源真实性结论。",
+  "cases": {
+    "D7M4": {
+      "worlds": [
+        {"value": "34", "source_quote": "来源甲写：这次校准的读数是34单位。"},
+        {"value": "58", "source_quote": "来源乙写：这次校准的读数是58单位。"}
+      ],
+      "questions": {
+        "p4": {"world_answers": ["N", "Y"], "final": "U", "rationale": "34不超过45；58超过45。"},
+        "q8": {"world_answers": ["N", "N"], "final": "N", "rationale": "34和58均不低于20。"},
+        "r2": {"world_answers": ["Y", "Y"], "final": "Y", "rationale": "34和58均超过30。"}
+      }
+    },
+    "N3K6": {
+      "worlds": [
+        {"value": "VX3", "source_quote": "来源甲写：本次检测代码是VX3。", "rule_quote": "VX3适合干燥运输，适合室内储存，不适合水下使用"},
+        {"value": "LM7", "source_quote": "来源乙写：本次检测代码是LM7。", "rule_quote": "LM7不适合干燥运输，适合室内储存，不适合水下使用"}
+      ],
+      "questions": {
+        "s9": {"world_answers": ["N", "N"], "final": "N", "rationale": "两代码均不适合水下使用。"},
+        "t1": {"world_answers": ["Y", "N"], "final": "U", "rationale": "规则表明VX3适合、LM7不适合干燥运输。"},
+        "u5": {"world_answers": ["Y", "Y"], "final": "Y", "rationale": "两代码均适合室内储存。"}
+      }
+    }
+  }
+}
