@@ -1,0 +1,103 @@
+{
+  "branches": [
+    {
+      "expected": "Y",
+      "id": "K04_same_yes_single_a__format",
+      "output": "否",
+      "prompt": "以下是虚构情境，请仅依据题设回答。\n代码是单个原子标签；不同代码互不相同，不存在包含或同义关系。假设虚构样本K04的记录代码确定为“N5”。\n问题：该代码是否在集合{“N5”，“P6”}中？\n请仅输出一个答案：是、否或无法确定。"
+    },
+    {
+      "expected": "Y",
+      "id": "K04_same_yes_single_b__format",
+      "output": "是",
+      "prompt": "以下是虚构情境，请仅依据题设回答。\n代码是单个原子标签；不同代码互不相同，不存在包含或同义关系。假设虚构样本K04的记录代码确定为“P6”。\n问题：该代码是否在集合{“N5”，“P6”}中？\n请仅输出一个答案：是、否或无法确定。"
+    },
+    {
+      "expected": "Y",
+      "id": "K05_same_yes_single_a__format",
+      "output": "否",
+      "prompt": "以下是虚构情境，请仅依据题设回答。\n代码是单个原子标签；不同代码互不相同，不存在包含或同义关系。假设虚构样本K05的记录代码确定为“S1”。\n问题：该代码是否在集合{“S1”，“T2”}中？\n请仅输出一个答案：是、否或无法确定。"
+    },
+    {
+      "expected": "Y",
+      "id": "K05_same_yes_single_b__format",
+      "output": "是",
+      "prompt": "以下是虚构情境，请仅依据题设回答。\n代码是单个原子标签；不同代码互不相同，不存在包含或同义关系。假设虚构样本K05的记录代码确定为“T2”。\n问题：该代码是否在集合{“S1”，“T2”}中？\n请仅输出一个答案：是、否或无法确定。"
+    }
+  ],
+  "extraction_failures": [
+    {
+      "case": "H01",
+      "condition": "dual_sources",
+      "id": "H01__dual_sources__extract__paraphrase",
+      "output": "[13,21]",
+      "parse_status": "invalid",
+      "parsed": null,
+      "reference": [
+        "13",
+        "21"
+      ],
+      "score": "invalid"
+    },
+    {
+      "case": "H01",
+      "condition": "dual_alternatives",
+      "id": "H01__dual_alternatives__extract__paraphrase",
+      "output": "[13,21]",
+      "parse_status": "invalid",
+      "parsed": null,
+      "reference": [
+        "13",
+        "21"
+      ],
+      "score": "invalid"
+    },
+    {
+      "case": "H04",
+      "condition": "dual_sources",
+      "id": "H04__dual_sources__extract__paraphrase",
+      "output": "[50,62]",
+      "parse_status": "invalid",
+      "parsed": null,
+      "reference": [
+        "50",
+        "62"
+      ],
+      "score": "invalid"
+    }
+  ],
+  "remaining": [
+    {
+      "branch_codes": [
+        "Y",
+        "N"
+      ],
+      "id": "K04_same_yes_dual_sources__format__paraphrase",
+      "reference": "Y"
+    },
+    {
+      "branch_codes": [
+        "Y",
+        "N"
+      ],
+      "id": "K04_same_yes_dual_alternatives__format__paraphrase",
+      "reference": "Y"
+    },
+    {
+      "branch_codes": [
+        "N",
+        "Y"
+      ],
+      "id": "K05_same_yes_dual_sources__format__paraphrase",
+      "reference": "Y"
+    },
+    {
+      "branch_codes": [
+        "N",
+        "Y"
+      ],
+      "id": "K05_same_yes_dual_alternatives__format__paraphrase",
+      "reference": "Y"
+    }
+  ]
+}
