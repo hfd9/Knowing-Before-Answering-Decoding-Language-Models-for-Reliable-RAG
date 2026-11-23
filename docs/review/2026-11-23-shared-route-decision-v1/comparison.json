@@ -1,0 +1,907 @@
+{
+  "costs": {
+    "branch": {
+      "input_tokens": 3535,
+      "model_calls": 14,
+      "output_tokens": 93,
+      "reasoning_calls": 12
+    },
+    "direct": {
+      "input_tokens": 1594,
+      "model_calls": 6,
+      "output_tokens": 92,
+      "reasoning_calls": 6
+    },
+    "joint": {
+      "input_tokens": 2013,
+      "model_calls": 8,
+      "output_tokens": 107,
+      "reasoning_calls": 6
+    },
+    "program": {
+      "input_tokens": 380,
+      "model_calls": 2,
+      "output_tokens": 27,
+      "reasoning_calls": 0
+    }
+  },
+  "new_model_calls": 0,
+  "rows": [
+    {
+      "case": "D7M4",
+      "question": "p4",
+      "reference": {
+        "final": "U",
+        "rationale": "34不超过45；58超过45。",
+        "world_answers": [
+          "N",
+          "Y"
+        ]
+      },
+      "routes": {
+        "branch": {
+          "correct_and_supported": false,
+          "final": "Y",
+          "readable": true,
+          "unknown_world": false,
+          "unsupported_split_choice": true,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "58"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": true
+        },
+        "direct": {
+          "correct_and_supported": false,
+          "final": "U",
+          "readable": true,
+          "unknown_world": false,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "58"
+            }
+          ],
+          "worlds_correct_evidence_failed": true,
+          "wrong_world": false
+        },
+        "joint": {
+          "correct_and_supported": false,
+          "final": "U",
+          "readable": true,
+          "unknown_world": false,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "58"
+            }
+          ],
+          "worlds_correct_evidence_failed": true,
+          "wrong_world": false
+        },
+        "program": {
+          "bound_from_actual_extraction": [
+            "S1",
+            "S2"
+          ],
+          "correct_and_supported": true,
+          "final": "U",
+          "status": "compared",
+          "unknown_world": false,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "58"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": false
+        }
+      }
+    },
+    {
+      "case": "D7M4",
+      "question": "q8",
+      "reference": {
+        "final": "N",
+        "rationale": "34和58均不低于20。",
+        "world_answers": [
+          "N",
+          "N"
+        ]
+      },
+      "routes": {
+        "branch": {
+          "correct_and_supported": false,
+          "final": "Y",
+          "readable": true,
+          "unknown_world": false,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "Y",
+              "correct": false,
+              "evidence_ids": [
+                "S2"
+              ],
+              "evidence_status": "contradicts",
+              "slot": "S2",
+              "value": "58"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": true
+        },
+        "direct": {
+          "correct_and_supported": false,
+          "final": null,
+          "readable": true,
+          "unknown_world": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "X",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "58"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": false
+        },
+        "joint": {
+          "correct_and_supported": false,
+          "final": null,
+          "readable": true,
+          "unknown_world": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "X",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "58"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": false
+        },
+        "program": {
+          "bound_from_actual_extraction": [
+            "S1",
+            "S2"
+          ],
+          "correct_and_supported": true,
+          "final": "N",
+          "status": "compared",
+          "unknown_world": false,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "58"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": false
+        }
+      }
+    },
+    {
+      "case": "D7M4",
+      "question": "r2",
+      "reference": {
+        "final": "Y",
+        "rationale": "34和58均超过30。",
+        "world_answers": [
+          "Y",
+          "Y"
+        ]
+      },
+      "routes": {
+        "branch": {
+          "correct_and_supported": false,
+          "final": "Y",
+          "readable": true,
+          "unknown_world": false,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "58"
+            }
+          ],
+          "worlds_correct_evidence_failed": true,
+          "wrong_world": false
+        },
+        "direct": {
+          "correct_and_supported": false,
+          "final": "U",
+          "readable": true,
+          "unknown_world": false,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "N",
+              "correct": false,
+              "evidence_ids": [
+                "S1",
+                "S2"
+              ],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "58"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": true
+        },
+        "joint": {
+          "correct_and_supported": false,
+          "final": "U",
+          "readable": true,
+          "unknown_world": false,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "N",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "58"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": true
+        },
+        "program": {
+          "bound_from_actual_extraction": [
+            "S1",
+            "S2"
+          ],
+          "correct_and_supported": true,
+          "final": "Y",
+          "status": "compared",
+          "unknown_world": false,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "58"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": false
+        }
+      }
+    },
+    {
+      "case": "N3K6",
+      "question": "s9",
+      "reference": {
+        "final": "N",
+        "rationale": "两代码均不适合水下使用。",
+        "world_answers": [
+          "N",
+          "N"
+        ]
+      },
+      "routes": {
+        "branch": {
+          "correct_and_supported": false,
+          "final": null,
+          "readable": true,
+          "unknown_world": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "X",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "X",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": false
+        },
+        "direct": {
+          "correct_and_supported": false,
+          "final": "U",
+          "readable": true,
+          "unknown_world": false,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": false,
+              "evidence_ids": [
+                "S1",
+                "R1"
+              ],
+              "evidence_status": "contradicts",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S2",
+                "R2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": true
+        },
+        "joint": {
+          "correct_and_supported": false,
+          "final": null,
+          "readable": true,
+          "unknown_world": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "X",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S1",
+                "R1"
+              ],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": false
+        },
+        "program": {
+          "bound_from_actual_extraction": [
+            "S1",
+            "S2"
+          ],
+          "correct_and_supported": true,
+          "final": "N",
+          "status": "compared",
+          "unknown_world": false,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S1",
+                "R1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S2",
+                "R2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": false
+        }
+      }
+    },
+    {
+      "case": "N3K6",
+      "question": "t1",
+      "reference": {
+        "final": "U",
+        "rationale": "规则表明VX3适合、LM7不适合干燥运输。",
+        "world_answers": [
+          "Y",
+          "N"
+        ]
+      },
+      "routes": {
+        "branch": {
+          "correct_and_supported": false,
+          "final": null,
+          "readable": true,
+          "unknown_world": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S1",
+                "R1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "X",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": false
+        },
+        "direct": {
+          "correct_and_supported": true,
+          "final": "U",
+          "readable": true,
+          "unknown_world": false,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S1",
+                "R1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S2",
+                "R2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": false
+        },
+        "joint": {
+          "correct_and_supported": false,
+          "final": null,
+          "readable": true,
+          "unknown_world": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "X",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S2",
+                "R2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": false
+        },
+        "program": {
+          "bound_from_actual_extraction": [
+            "S1",
+            "S2"
+          ],
+          "correct_and_supported": true,
+          "final": "U",
+          "status": "compared",
+          "unknown_world": false,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S1",
+                "R1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S2",
+                "R2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": false
+        }
+      }
+    },
+    {
+      "case": "N3K6",
+      "question": "u5",
+      "reference": {
+        "final": "Y",
+        "rationale": "两代码均适合室内储存。",
+        "world_answers": [
+          "Y",
+          "Y"
+        ]
+      },
+      "routes": {
+        "branch": {
+          "correct_and_supported": false,
+          "final": null,
+          "readable": true,
+          "unknown_world": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "X",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": false
+        },
+        "direct": {
+          "correct_and_supported": false,
+          "final": "U",
+          "readable": true,
+          "unknown_world": false,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S1",
+                "R1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "N",
+              "correct": false,
+              "evidence_ids": [
+                "S2",
+                "R2"
+              ],
+              "evidence_status": "contradicts",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": true
+        },
+        "joint": {
+          "correct_and_supported": false,
+          "final": "U",
+          "readable": true,
+          "unknown_world": false,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S1",
+                "R1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "N",
+              "correct": false,
+              "evidence_ids": [
+                "S2",
+                "R2"
+              ],
+              "evidence_status": "contradicts",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": true
+        },
+        "program": {
+          "bound_from_actual_extraction": [
+            "S1",
+            "S2"
+          ],
+          "correct_and_supported": true,
+          "final": "Y",
+          "status": "compared",
+          "unknown_world": false,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S1",
+                "R1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S2",
+                "R2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ],
+          "worlds_correct_evidence_failed": false,
+          "wrong_world": false
+        }
+      }
+    }
+  ],
+  "source_audit_sha256": "577123f9dbf7e6eb24a40ffb5c52bb94bae29c90daa9f320bbadbfb8a8eb61d6",
+  "source_seal_sha256": "8d3f255c245ba5ecaa60fa5d64eb8bbc86755afba2686b73ca85d6507a56bb58",
+  "totals": {
+    "branch": {
+      "correct_and_supported": 0,
+      "final_correct": 1,
+      "planned": 6,
+      "unknown_world": 3,
+      "unresolved": 3,
+      "unsupported_split_choice": 1,
+      "worlds_correct_evidence_failed": 1,
+      "wrong_world": 2
+    },
+    "direct": {
+      "correct_and_supported": 1,
+      "final_correct": 2,
+      "planned": 6,
+      "unknown_world": 1,
+      "unresolved": 1,
+      "unsupported_split_choice": 0,
+      "worlds_correct_evidence_failed": 1,
+      "wrong_world": 3
+    },
+    "joint": {
+      "correct_and_supported": 0,
+      "final_correct": 1,
+      "planned": 6,
+      "unknown_world": 3,
+      "unresolved": 3,
+      "unsupported_split_choice": 0,
+      "worlds_correct_evidence_failed": 1,
+      "wrong_world": 2
+    },
+    "program": {
+      "correct_and_supported": 6,
+      "final_correct": 6,
+      "planned": 6,
+      "unknown_world": 0,
+      "unresolved": 0,
+      "unsupported_split_choice": 0,
+      "worlds_correct_evidence_failed": 0,
+      "wrong_world": 0
+    }
+  }
+}
