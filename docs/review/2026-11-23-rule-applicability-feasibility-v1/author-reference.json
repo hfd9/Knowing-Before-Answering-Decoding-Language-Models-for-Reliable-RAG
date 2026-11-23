@@ -1,0 +1,19 @@
+{
+  "note": "知情作者参照。normalization 是从 F1 读出的事实；不当作自动抽取结果。",
+  "scope": {
+    "a": {"normalization": {"first": "青栎", "second": "霁蓝", "same": true}, "final": "Y", "proof": "台账把两个登记名明确指向同一件，R3 覆盖 R2。"},
+    "b": {"normalization": {"first": "青栎", "second": "霁蓝", "same": false}, "final": "U", "proof": "台账明确是两件，R3 不适用，W2 依据 R2 不准入。"}
+  },
+  "date": {
+    "a": {"normalization": {"date": "2030-06-15"}, "final": "Y", "proof": "日期压在含当天的边界上，R3 适用。"},
+    "b": {"normalization": {"date": "2030-06-14"}, "final": "U", "proof": "日期早于边界一天，W2 依据 R2 不准入。"}
+  },
+  "delegation": {
+    "a": {"normalization": {"from": "馆务组", "to": "布展组"}, "final": "Y", "proof": "授权者和受权者分别匹配 R3。"},
+    "b": {"normalization": {"from": "布展组", "to": "馆务组"}, "final": "U", "proof": "唯一授权的方向相反，W2 依据 R2 不准入。"}
+  },
+  "delegation_rephrased": {
+    "a": {"normalization": {"from": "馆务组", "to": "布展组"}, "final": "Y", "proof": "替馆务组签发的主体是布展组，按 R3 的定义，授权方向为馆务组到布展组。"},
+    "b": {"normalization": {"from": "布展组", "to": "馆务组"}, "final": "U", "proof": "替布展组签发的主体是馆务组，唯一授权方向相反。"}
+  }
+}

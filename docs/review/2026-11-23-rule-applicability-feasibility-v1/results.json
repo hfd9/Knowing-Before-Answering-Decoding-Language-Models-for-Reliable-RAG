@@ -1,0 +1,732 @@
+{
+  "author_reference_sha256": "a2b1de1454006dfe5ef002e502583336efd82d4486e304ae42453db3929236fa",
+  "metrics": {
+    "given_normalized_fact": {
+      "cases": 8,
+      "matches_author": 8,
+      "unresolved": 0,
+      "wrong_determinate_or_split": 0
+    },
+    "initial": {
+      "cases": 8,
+      "matches_author": 6,
+      "unresolved": 2,
+      "wrong_determinate_or_split": 0
+    },
+    "with_proxy": {
+      "cases": 8,
+      "matches_author": 8,
+      "unresolved": 0,
+      "wrong_determinate_or_split": 0
+    }
+  },
+  "pair_checks": [
+    {
+      "kind": "scope",
+      "pair": "scope",
+      "rephrases": null,
+      "same_bag_of_characters": false
+    },
+    {
+      "kind": "date",
+      "pair": "date",
+      "rephrases": null,
+      "same_bag_of_characters": false
+    },
+    {
+      "kind": "delegation",
+      "pair": "delegation",
+      "rephrases": null,
+      "same_bag_of_characters": true
+    },
+    {
+      "kind": "delegation",
+      "pair": "delegation_rephrased",
+      "rephrases": "delegation",
+      "same_bag_of_characters": true
+    }
+  ],
+  "public_sha256": "4e07f3de8bdf507daf8e6731246e862cb4f9a8e7990013b35f035a95ce98a2d2",
+  "rows": [
+    {
+      "author_final": "Y",
+      "author_proof": "台账把两个登记名明确指向同一件，R3 覆盖 R2。",
+      "fact": "台账记载：「青栎」和「霁蓝」是同一件物品的两个登记名。",
+      "given_normalized_fact": {
+        "exception_applies": true,
+        "final": "Y",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "Y",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R3"
+          }
+        }
+      },
+      "initial": {
+        "exception_applies": true,
+        "final": "Y",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "Y",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R3"
+          }
+        }
+      },
+      "initial_fact": {
+        "first": "青栎",
+        "same": true,
+        "second": "霁蓝"
+      },
+      "pair": "scope",
+      "variant": "a",
+      "with_proxy": {
+        "exception_applies": true,
+        "final": "Y",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "Y",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R3"
+          }
+        }
+      },
+      "with_proxy_fact": {
+        "first": "青栎",
+        "same": true,
+        "second": "霁蓝"
+      }
+    },
+    {
+      "author_final": "U",
+      "author_proof": "台账明确是两件，R3 不适用，W2 依据 R2 不准入。",
+      "fact": "台账记载：「青栎」和「霁蓝」是两件不同物品的登记名。",
+      "given_normalized_fact": {
+        "exception_applies": false,
+        "final": "U",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "N",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R2"
+          }
+        }
+      },
+      "initial": {
+        "exception_applies": false,
+        "final": "U",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "N",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R2"
+          }
+        }
+      },
+      "initial_fact": {
+        "first": "青栎",
+        "same": false,
+        "second": "霁蓝"
+      },
+      "pair": "scope",
+      "variant": "b",
+      "with_proxy": {
+        "exception_applies": false,
+        "final": "U",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "N",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R2"
+          }
+        }
+      },
+      "with_proxy_fact": {
+        "first": "青栎",
+        "same": false,
+        "second": "霁蓝"
+      }
+    },
+    {
+      "author_final": "Y",
+      "author_proof": "日期压在含当天的边界上，R3 适用。",
+      "fact": "本件于2030年6月15日完成核验。",
+      "given_normalized_fact": {
+        "exception_applies": true,
+        "final": "Y",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "Y",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R3"
+          }
+        }
+      },
+      "initial": {
+        "exception_applies": true,
+        "final": "Y",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "Y",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R3"
+          }
+        }
+      },
+      "initial_fact": {
+        "date": "2030-06-15"
+      },
+      "pair": "date",
+      "variant": "a",
+      "with_proxy": {
+        "exception_applies": true,
+        "final": "Y",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "Y",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R3"
+          }
+        }
+      },
+      "with_proxy_fact": {
+        "date": "2030-06-15"
+      }
+    },
+    {
+      "author_final": "U",
+      "author_proof": "日期早于边界一天，W2 依据 R2 不准入。",
+      "fact": "本件于2030年6月14日完成核验。",
+      "given_normalized_fact": {
+        "exception_applies": false,
+        "final": "U",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "N",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R2"
+          }
+        }
+      },
+      "initial": {
+        "exception_applies": false,
+        "final": "U",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "N",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R2"
+          }
+        }
+      },
+      "initial_fact": {
+        "date": "2030-06-14"
+      },
+      "pair": "date",
+      "variant": "b",
+      "with_proxy": {
+        "exception_applies": false,
+        "final": "U",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "N",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R2"
+          }
+        }
+      },
+      "with_proxy_fact": {
+        "date": "2030-06-14"
+      }
+    },
+    {
+      "author_final": "Y",
+      "author_proof": "授权者和受权者分别匹配 R3。",
+      "fact": "馆务组授权布展组为本件签发豁免。",
+      "given_normalized_fact": {
+        "exception_applies": true,
+        "final": "Y",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "Y",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R3"
+          }
+        }
+      },
+      "initial": {
+        "exception_applies": true,
+        "final": "Y",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "Y",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R3"
+          }
+        }
+      },
+      "initial_fact": {
+        "from": "馆务组",
+        "to": "布展组"
+      },
+      "pair": "delegation",
+      "variant": "a",
+      "with_proxy": {
+        "exception_applies": true,
+        "final": "Y",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "Y",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R3"
+          }
+        }
+      },
+      "with_proxy_fact": {
+        "from": "馆务组",
+        "to": "布展组"
+      }
+    },
+    {
+      "author_final": "U",
+      "author_proof": "唯一授权的方向相反，W2 依据 R2 不准入。",
+      "fact": "布展组授权馆务组为本件签发豁免。",
+      "given_normalized_fact": {
+        "exception_applies": false,
+        "final": "U",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "N",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R2"
+          }
+        }
+      },
+      "initial": {
+        "exception_applies": false,
+        "final": "U",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "N",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R2"
+          }
+        }
+      },
+      "initial_fact": {
+        "from": "布展组",
+        "to": "馆务组"
+      },
+      "pair": "delegation",
+      "variant": "b",
+      "with_proxy": {
+        "exception_applies": false,
+        "final": "U",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "N",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R2"
+          }
+        }
+      },
+      "with_proxy_fact": {
+        "from": "布展组",
+        "to": "馆务组"
+      }
+    },
+    {
+      "author_final": "Y",
+      "author_proof": "替馆务组签发的主体是布展组，按 R3 的定义，授权方向为馆务组到布展组。",
+      "fact": "这次能替馆务组为本件签发豁免的是布展组。",
+      "given_normalized_fact": {
+        "exception_applies": true,
+        "final": "Y",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "Y",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R3"
+          }
+        }
+      },
+      "initial": {
+        "exception_applies": null,
+        "final": null,
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "X",
+            "evidence": [],
+            "rule": null
+          }
+        }
+      },
+      "initial_fact": null,
+      "pair": "delegation_rephrased",
+      "variant": "a",
+      "with_proxy": {
+        "exception_applies": true,
+        "final": "Y",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "Y",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R3"
+          }
+        }
+      },
+      "with_proxy_fact": {
+        "from": "馆务组",
+        "to": "布展组"
+      }
+    },
+    {
+      "author_final": "U",
+      "author_proof": "替布展组签发的主体是馆务组，唯一授权方向相反。",
+      "fact": "这次能替布展组为本件签发豁免的是馆务组。",
+      "given_normalized_fact": {
+        "exception_applies": false,
+        "final": "U",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "N",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R2"
+          }
+        }
+      },
+      "initial": {
+        "exception_applies": null,
+        "final": null,
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "X",
+            "evidence": [],
+            "rule": null
+          }
+        }
+      },
+      "initial_fact": null,
+      "pair": "delegation_rephrased",
+      "variant": "b",
+      "with_proxy": {
+        "exception_applies": false,
+        "final": "U",
+        "worlds": {
+          "W1": {
+            "answer": "Y",
+            "evidence": [
+              "W1",
+              "R1"
+            ],
+            "rule": "R1"
+          },
+          "W2": {
+            "answer": "N",
+            "evidence": [
+              "W2",
+              "R2",
+              "R3",
+              "F1"
+            ],
+            "rule": "R2"
+          }
+        }
+      },
+      "with_proxy_fact": {
+        "from": "布展组",
+        "to": "馆务组"
+      }
+    }
+  ]
+}
