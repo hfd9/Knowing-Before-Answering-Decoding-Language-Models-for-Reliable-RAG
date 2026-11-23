@@ -1,0 +1,1163 @@
+{
+  "actual_call_seconds": 2.791420692577958,
+  "actual_eos": 8,
+  "actual_input_tokens": 2208,
+  "actual_output_tokens": 177,
+  "device": {
+    "device_name": "NVIDIA GeForce RTX 3090",
+    "free_mib": 24246,
+    "gpu_name": "NVIDIA GeForce RTX 3090",
+    "torch_cuda": "12.1",
+    "visible_device_count": 1
+  },
+  "frozen_score": {
+    "blocked": false,
+    "costs_by_case": {
+      "D7M4": {
+        "branch": {
+          "attempted_calls": 1,
+          "call_seconds_sum": 0.1814323179423809,
+          "input_tokens": 174,
+          "output_tokens": 13,
+          "planned_calls": 7,
+          "skipped": 6
+        },
+        "direct": {
+          "attempted_calls": 3,
+          "call_seconds_sum": 1.4368164045736194,
+          "input_tokens": 867,
+          "output_tokens": 78,
+          "planned_calls": 3,
+          "skipped": 0
+        },
+        "joint": {
+          "attempted_calls": 1,
+          "call_seconds_sum": 0.1814323179423809,
+          "input_tokens": 174,
+          "output_tokens": 13,
+          "planned_calls": 4,
+          "skipped": 3
+        }
+      },
+      "N3K6": {
+        "branch": {
+          "attempted_calls": 1,
+          "call_seconds_sum": 0.1973993112333119,
+          "input_tokens": 206,
+          "output_tokens": 14,
+          "planned_calls": 7,
+          "skipped": 6
+        },
+        "direct": {
+          "attempted_calls": 3,
+          "call_seconds_sum": 0.975772658828646,
+          "input_tokens": 961,
+          "output_tokens": 72,
+          "planned_calls": 3,
+          "skipped": 0
+        },
+        "joint": {
+          "attempted_calls": 1,
+          "call_seconds_sum": 0.1973993112333119,
+          "input_tokens": 206,
+          "output_tokens": 14,
+          "planned_calls": 4,
+          "skipped": 3
+        }
+      }
+    },
+    "extractions": {
+      "D7M4": {
+        "matches_reference": null,
+        "status": "invalid",
+        "types": null,
+        "values": null
+      },
+      "N3K6": {
+        "matches_reference": null,
+        "status": "invalid",
+        "types": null,
+        "values": null
+      }
+    },
+    "method_totals": {
+      "branch": {
+        "correct_and_supported": 0,
+        "planned": 6,
+        "readable": 0,
+        "same_answer_correct_and_supported": 0,
+        "same_answer_planned": 4,
+        "split_answer_planned": 2,
+        "unresolved": 6,
+        "unsupported_split_choice": 0
+      },
+      "direct": {
+        "correct_and_supported": 0,
+        "planned": 6,
+        "readable": 0,
+        "same_answer_correct_and_supported": 0,
+        "same_answer_planned": 4,
+        "split_answer_planned": 2,
+        "unresolved": 6,
+        "unsupported_split_choice": 0
+      },
+      "joint": {
+        "correct_and_supported": 0,
+        "planned": 6,
+        "readable": 0,
+        "same_answer_correct_and_supported": 0,
+        "same_answer_planned": 4,
+        "split_answer_planned": 2,
+        "unresolved": 6,
+        "unsupported_split_choice": 0
+      }
+    },
+    "planned_slots": 26,
+    "reference_sha256": "99c65a841a686835d73f7325e7a77f9495aeba8dcc87ebc2d0496e5d251ab75d",
+    "rows": [
+      {
+        "case": "D7M4",
+        "methods": {
+          "branch": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [],
+            "merged_world_labels": null,
+            "parts": [
+              "skipped_extract",
+              "skipped_extract"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          },
+          "direct": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [
+              "invalid world row"
+            ],
+            "merged_world_labels": null,
+            "parts": [
+              "format_invalid"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          },
+          "joint": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [],
+            "merged_world_labels": null,
+            "parts": [
+              "skipped_extract"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          }
+        },
+        "question": "p4",
+        "reference": {
+          "final": "U",
+          "rationale": "34不超过45；58超过45。",
+          "world_answers": [
+            "N",
+            "Y"
+          ]
+        }
+      },
+      {
+        "case": "D7M4",
+        "methods": {
+          "branch": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [],
+            "merged_world_labels": null,
+            "parts": [
+              "skipped_extract",
+              "skipped_extract"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          },
+          "direct": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [
+              "wrong line count"
+            ],
+            "merged_world_labels": null,
+            "parts": [
+              "format_invalid"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          },
+          "joint": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [],
+            "merged_world_labels": null,
+            "parts": [
+              "skipped_extract"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          }
+        },
+        "question": "q8",
+        "reference": {
+          "final": "N",
+          "rationale": "34和58均不低于20。",
+          "world_answers": [
+            "N",
+            "N"
+          ]
+        }
+      },
+      {
+        "case": "D7M4",
+        "methods": {
+          "branch": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [],
+            "merged_world_labels": null,
+            "parts": [
+              "skipped_extract",
+              "skipped_extract"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          },
+          "direct": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [
+              "invalid world row"
+            ],
+            "merged_world_labels": null,
+            "parts": [
+              "format_invalid"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          },
+          "joint": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [],
+            "merged_world_labels": null,
+            "parts": [
+              "skipped_extract"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          }
+        },
+        "question": "r2",
+        "reference": {
+          "final": "Y",
+          "rationale": "34和58均超过30。",
+          "world_answers": [
+            "Y",
+            "Y"
+          ]
+        }
+      },
+      {
+        "case": "N3K6",
+        "methods": {
+          "branch": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [],
+            "merged_world_labels": null,
+            "parts": [
+              "skipped_extract",
+              "skipped_extract"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          },
+          "direct": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [
+              "invalid world row"
+            ],
+            "merged_world_labels": null,
+            "parts": [
+              "format_invalid"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          },
+          "joint": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [],
+            "merged_world_labels": null,
+            "parts": [
+              "skipped_extract"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          }
+        },
+        "question": "s9",
+        "reference": {
+          "final": "N",
+          "rationale": "两代码均不适合水下使用。",
+          "world_answers": [
+            "N",
+            "N"
+          ]
+        }
+      },
+      {
+        "case": "N3K6",
+        "methods": {
+          "branch": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [],
+            "merged_world_labels": null,
+            "parts": [
+              "skipped_extract",
+              "skipped_extract"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          },
+          "direct": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [
+              "invalid world row"
+            ],
+            "merged_world_labels": null,
+            "parts": [
+              "format_invalid"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          },
+          "joint": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [],
+            "merged_world_labels": null,
+            "parts": [
+              "skipped_extract"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          }
+        },
+        "question": "t1",
+        "reference": {
+          "final": "U",
+          "rationale": "规则表明VX3适合、LM7不适合干燥运输。",
+          "world_answers": [
+            "Y",
+            "N"
+          ]
+        }
+      },
+      {
+        "case": "N3K6",
+        "methods": {
+          "branch": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [],
+            "merged_world_labels": null,
+            "parts": [
+              "skipped_extract",
+              "skipped_extract"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          },
+          "direct": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [
+              "invalid world row"
+            ],
+            "merged_world_labels": null,
+            "parts": [
+              "format_invalid"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          },
+          "joint": {
+            "correct_and_supported": false,
+            "evidence_implies": null,
+            "extraction_binding_ok": null,
+            "final": null,
+            "final_correct": null,
+            "final_matches_merge": null,
+            "format_errors": [],
+            "merged_world_labels": null,
+            "parts": [
+              "skipped_extract"
+            ],
+            "readable": false,
+            "reference_candidates_ok": null,
+            "resolved": false,
+            "unsupported_split_choice": false,
+            "worlds": []
+          }
+        },
+        "question": "u5",
+        "reference": {
+          "final": "Y",
+          "rationale": "两代码均适合室内储存。",
+          "world_answers": [
+            "Y",
+            "Y"
+          ]
+        }
+      }
+    ],
+    "scored_slots": 26,
+    "seal_sha256": "e7d2827b25f92bf9a125eb1ce62839f119d410fe904277c70e32b506c4390b83"
+  },
+  "numeric_diagnostic": [
+    {
+      "as_run": {
+        "final": null,
+        "matches_author_reference": null,
+        "status": "unresolved"
+      },
+      "case": "D7M4",
+      "fence_removed_counterfactual": {
+        "final": "U",
+        "matches_author_reference": true,
+        "status": "compared",
+        "worlds": [
+          {
+            "answer": "N",
+            "source_id": "S1",
+            "value": "34"
+          },
+          {
+            "answer": "Y",
+            "source_id": "S2",
+            "value": "58"
+          }
+        ]
+      },
+      "question": "p4",
+      "reference": {
+        "final": "U",
+        "rationale": "34不超过45；58超过45。",
+        "world_answers": [
+          "N",
+          "Y"
+        ]
+      },
+      "text": "该次校准读数是否超过45单位？"
+    },
+    {
+      "as_run": {
+        "final": null,
+        "matches_author_reference": null,
+        "status": "unresolved"
+      },
+      "case": "D7M4",
+      "fence_removed_counterfactual": {
+        "final": "N",
+        "matches_author_reference": true,
+        "status": "compared",
+        "worlds": [
+          {
+            "answer": "N",
+            "source_id": "S1",
+            "value": "34"
+          },
+          {
+            "answer": "N",
+            "source_id": "S2",
+            "value": "58"
+          }
+        ]
+      },
+      "question": "q8",
+      "reference": {
+        "final": "N",
+        "rationale": "34和58均不低于20。",
+        "world_answers": [
+          "N",
+          "N"
+        ]
+      },
+      "text": "该次校准读数是否低于20单位？"
+    },
+    {
+      "as_run": {
+        "final": null,
+        "matches_author_reference": null,
+        "status": "unresolved"
+      },
+      "case": "D7M4",
+      "fence_removed_counterfactual": {
+        "final": "Y",
+        "matches_author_reference": true,
+        "status": "compared",
+        "worlds": [
+          {
+            "answer": "Y",
+            "source_id": "S1",
+            "value": "34"
+          },
+          {
+            "answer": "Y",
+            "source_id": "S2",
+            "value": "58"
+          }
+        ]
+      },
+      "question": "r2",
+      "reference": {
+        "final": "Y",
+        "rationale": "34和58均超过30。",
+        "world_answers": [
+          "Y",
+          "Y"
+        ]
+      },
+      "text": "该次校准读数是否超过30单位？"
+    }
+  ],
+  "preflight_to_last_slot_seconds": 7.641109,
+  "score_sha256": "c606ff308d4f3a1be443042c27e2cbec91743946775a653dd13d708558f831e4",
+  "seal_sha256": "e7d2827b25f92bf9a125eb1ce62839f119d410fe904277c70e32b506c4390b83",
+  "slot_counts": {
+    "complete": 8,
+    "skipped_extract": 18
+  },
+  "slots": [
+    {
+      "branch": null,
+      "case": "D7M4",
+      "elapsed_seconds": 0.7111616879701614,
+      "eos": true,
+      "frozen_format_error": "invalid world row",
+      "index": 0,
+      "input_tokens": 289,
+      "kind": "direct",
+      "output": "W=45|N|-  \nW=34|N|,S1  \nF=U",
+      "output_tokens": 23,
+      "question": "p4",
+      "status": "complete",
+      "visible_final": "U",
+      "visible_world_labels": [
+        [
+          "45",
+          "N"
+        ],
+        [
+          "34",
+          "N"
+        ]
+      ]
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "elapsed_seconds": 0.36925345472991467,
+      "eos": true,
+      "frozen_format_error": "wrong line count",
+      "index": 1,
+      "input_tokens": 289,
+      "kind": "direct",
+      "output": "W=17|N|-  \nW=34|N|,S1|Rule1-2\n\nF=U",
+      "output_tokens": 28,
+      "question": "q8",
+      "status": "complete",
+      "visible_final": "U",
+      "visible_world_labels": [
+        [
+          "17",
+          "N"
+        ],
+        [
+          "34",
+          "N"
+        ]
+      ]
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "elapsed_seconds": 0.35640126187354326,
+      "eos": true,
+      "frozen_format_error": "invalid world row",
+      "index": 2,
+      "input_tokens": 289,
+      "kind": "direct",
+      "output": "W=34|N|-  \nW=58|Y|S1,S2,规则1  \nF=U",
+      "output_tokens": 27,
+      "question": "r2",
+      "status": "complete",
+      "visible_final": "U",
+      "visible_world_labels": [
+        [
+          "34",
+          "N"
+        ],
+        [
+          "58",
+          "Y"
+        ]
+      ]
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "elapsed_seconds": 0.1814323179423809,
+      "eos": true,
+      "fenced_extraction_diagnostic": {
+        "status": "parsed",
+        "types": [
+          "string",
+          "string"
+        ],
+        "values": [
+          "34",
+          "58"
+        ]
+      },
+      "frozen_extraction": {
+        "status": "invalid",
+        "types": null,
+        "values": null
+      },
+      "index": 3,
+      "input_tokens": 174,
+      "kind": "extract",
+      "output": "```json\n[\"34\", \"58\"]\n```",
+      "output_tokens": 13,
+      "question": null,
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "elapsed_seconds": 3.17208468914032e-05,
+      "eos": false,
+      "index": 4,
+      "input_tokens": null,
+      "kind": "joint",
+      "output": "",
+      "output_tokens": null,
+      "question": "p4",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": 0,
+      "case": "D7M4",
+      "elapsed_seconds": 2.6339665055274963e-05,
+      "eos": false,
+      "index": 5,
+      "input_tokens": null,
+      "kind": "branch",
+      "output": "",
+      "output_tokens": null,
+      "question": "p4",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": 1,
+      "case": "D7M4",
+      "elapsed_seconds": 3.709271550178528e-05,
+      "eos": false,
+      "index": 6,
+      "input_tokens": null,
+      "kind": "branch",
+      "output": "",
+      "output_tokens": null,
+      "question": "p4",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "elapsed_seconds": 3.4879427403211594e-05,
+      "eos": false,
+      "index": 7,
+      "input_tokens": null,
+      "kind": "joint",
+      "output": "",
+      "output_tokens": null,
+      "question": "q8",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": 0,
+      "case": "D7M4",
+      "elapsed_seconds": 0.00011465279385447502,
+      "eos": false,
+      "index": 8,
+      "input_tokens": null,
+      "kind": "branch",
+      "output": "",
+      "output_tokens": null,
+      "question": "q8",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": 1,
+      "case": "D7M4",
+      "elapsed_seconds": 8.981814607977867e-05,
+      "eos": false,
+      "index": 9,
+      "input_tokens": null,
+      "kind": "branch",
+      "output": "",
+      "output_tokens": null,
+      "question": "q8",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "elapsed_seconds": 0.00010802270844578743,
+      "eos": false,
+      "index": 10,
+      "input_tokens": null,
+      "kind": "joint",
+      "output": "",
+      "output_tokens": null,
+      "question": "r2",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": 0,
+      "case": "D7M4",
+      "elapsed_seconds": 8.965609595179558e-05,
+      "eos": false,
+      "index": 11,
+      "input_tokens": null,
+      "kind": "branch",
+      "output": "",
+      "output_tokens": null,
+      "question": "r2",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": 1,
+      "case": "D7M4",
+      "elapsed_seconds": 0.00011936575174331665,
+      "eos": false,
+      "index": 12,
+      "input_tokens": null,
+      "kind": "branch",
+      "output": "",
+      "output_tokens": null,
+      "question": "r2",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "elapsed_seconds": 0.3435988309793174,
+      "eos": true,
+      "frozen_format_error": "invalid world row",
+      "index": 13,
+      "input_tokens": 321,
+      "kind": "direct",
+      "output": "W=1|N|-  \nW=2|N|,R2|S2-  \nF=U",
+      "output_tokens": 25,
+      "question": "s9",
+      "status": "complete",
+      "visible_final": "U",
+      "visible_world_labels": [
+        [
+          "1",
+          "N"
+        ],
+        [
+          "2",
+          "N"
+        ]
+      ]
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "elapsed_seconds": 0.3083685738965869,
+      "eos": true,
+      "frozen_format_error": "invalid world row",
+      "index": 14,
+      "input_tokens": 320,
+      "kind": "direct",
+      "output": "W=1|N|-  \nW=2|N|,R2,2  \nF=U",
+      "output_tokens": 23,
+      "question": "t1",
+      "status": "complete",
+      "visible_final": "U",
+      "visible_world_labels": [
+        [
+          "1",
+          "N"
+        ],
+        [
+          "2",
+          "N"
+        ]
+      ]
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "elapsed_seconds": 0.3238052539527416,
+      "eos": true,
+      "frozen_format_error": "invalid world row",
+      "index": 15,
+      "input_tokens": 320,
+      "kind": "direct",
+      "output": "W=1|Y|-  \nW=2|Y|,S1|R1|  \nF=U",
+      "output_tokens": 24,
+      "question": "u5",
+      "status": "complete",
+      "visible_final": "U",
+      "visible_world_labels": [
+        [
+          "1",
+          "Y"
+        ],
+        [
+          "2",
+          "Y"
+        ]
+      ]
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "elapsed_seconds": 0.1973993112333119,
+      "eos": true,
+      "fenced_extraction_diagnostic": {
+        "status": "parsed",
+        "types": [
+          "string",
+          "string"
+        ],
+        "values": [
+          "VX3",
+          "LM7"
+        ]
+      },
+      "frozen_extraction": {
+        "status": "invalid",
+        "types": null,
+        "values": null
+      },
+      "index": 16,
+      "input_tokens": 206,
+      "kind": "extract",
+      "output": "```json\n[\"VX3\", \"LM7\"]\n```",
+      "output_tokens": 14,
+      "question": null,
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "elapsed_seconds": 3.541633486747742e-05,
+      "eos": false,
+      "index": 17,
+      "input_tokens": null,
+      "kind": "joint",
+      "output": "",
+      "output_tokens": null,
+      "question": "s9",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": 0,
+      "case": "N3K6",
+      "elapsed_seconds": 5.045812577009201e-05,
+      "eos": false,
+      "index": 18,
+      "input_tokens": null,
+      "kind": "branch",
+      "output": "",
+      "output_tokens": null,
+      "question": "s9",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": 1,
+      "case": "N3K6",
+      "elapsed_seconds": 4.8842281103134155e-05,
+      "eos": false,
+      "index": 19,
+      "input_tokens": null,
+      "kind": "branch",
+      "output": "",
+      "output_tokens": null,
+      "question": "s9",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "elapsed_seconds": 9.874813258647919e-05,
+      "eos": false,
+      "index": 20,
+      "input_tokens": null,
+      "kind": "joint",
+      "output": "",
+      "output_tokens": null,
+      "question": "t1",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": 0,
+      "case": "N3K6",
+      "elapsed_seconds": 4.35318797826767e-05,
+      "eos": false,
+      "index": 21,
+      "input_tokens": null,
+      "kind": "branch",
+      "output": "",
+      "output_tokens": null,
+      "question": "t1",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": 1,
+      "case": "N3K6",
+      "elapsed_seconds": 3.574695438146591e-05,
+      "eos": false,
+      "index": 22,
+      "input_tokens": null,
+      "kind": "branch",
+      "output": "",
+      "output_tokens": null,
+      "question": "t1",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "elapsed_seconds": 8.466513827443123e-05,
+      "eos": false,
+      "index": 23,
+      "input_tokens": null,
+      "kind": "joint",
+      "output": "",
+      "output_tokens": null,
+      "question": "u5",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": 0,
+      "case": "N3K6",
+      "elapsed_seconds": 8.418969810009003e-05,
+      "eos": false,
+      "index": 24,
+      "input_tokens": null,
+      "kind": "branch",
+      "output": "",
+      "output_tokens": null,
+      "question": "u5",
+      "status": "skipped_extract"
+    },
+    {
+      "branch": 1,
+      "case": "N3K6",
+      "elapsed_seconds": 6.251595914363861e-05,
+      "eos": false,
+      "index": 25,
+      "input_tokens": null,
+      "kind": "branch",
+      "output": "",
+      "output_tokens": null,
+      "question": "u5",
+      "status": "skipped_extract"
+    }
+  ],
+  "source_sha256": {
+    "attempts/0000.json": "e121f7a40f94f7011a193f5ec9b1c4df6f9b85344c2ae4bc009823398b4655f5",
+    "attempts/0001.json": "d829017e777a805f863913f0b598bf677bbc91fe944c29f9c2363763fa728f1d",
+    "attempts/0002.json": "23df615a0adedefe0c036149dce68ee3d8c6fb9b1742dc6de8217bb7e32a2f49",
+    "attempts/0003.json": "0893fdd663c3368c7a1ceef5e26d93615fafc9cc773a2df63a04ac834d040886",
+    "attempts/0004.json": "7fbb3a9ef4e2a7acf4591606ff4ac1cde836f9a279ceb4992045140567361579",
+    "attempts/0005.json": "35bb3dd53422a3a93305f705bc7fdb149c7c33040d339a0e9505764a8fa5f7ce",
+    "attempts/0006.json": "31e7684bd44004813cb0a1cbecdd0ddf0a388fe3a4c913892c7717b5c7ddf509",
+    "attempts/0007.json": "82ef30e884bf54771115dccf4ffceb30936a8270ac313e884439413c0aa913ca",
+    "attempts/0008.json": "319045cd9596e277ad5f43fba4cadeae766d512aaa9bcbbf4b3024dcdb9d0251",
+    "attempts/0009.json": "d594f408140615a7a1d61c5c83830325007e084dc2e595e98765386c71325e6c",
+    "attempts/0010.json": "04df417bcb6065550611bf4e222a739283547818b38f93872d80740474ff9141",
+    "attempts/0011.json": "bce8944450de08986aac59e4bc11932c57ee0928c144ff10474f53f20e1ca01f",
+    "attempts/0012.json": "eafd74944cf3fd4145277800b21cc35830edca14fba95640f63daa89d692d281",
+    "attempts/0013.json": "4d982a015f4003c37208cf740dcb6cec16b10de60423584a2718d44b386d59ad",
+    "attempts/0014.json": "581dec5c961e6c8997e189a6de0de3016befb351180c497f430fb16c057ef2a5",
+    "attempts/0015.json": "d532f9d7f31281337516054ab50c3d55c5d075d3ca9ee1e46368a435bcef87b2",
+    "attempts/0016.json": "cc50e7227aa90fe3635c9c4fac08c133b8bd43dc3878b7f359bab755f7e18399",
+    "attempts/0017.json": "5b4e8881689429262e98e88420fa4d0ed3bdf43df42a3fc57987f129fdea85b0",
+    "attempts/0018.json": "ddbf4ff179449f70fc18c1364b8462d388e3070f81d91dd0e0f7e0108a5a1335",
+    "attempts/0019.json": "32261eb59112c18d888cd7b2fc0f0e84998506d3da7181adc00edd568437f65e",
+    "attempts/0020.json": "527b56df082a6da1df6689e11425357657ddcc31684d142a76e82efc0f7adbaa",
+    "attempts/0021.json": "fb2b481c47b0b30d1f0db8e699c13204e89970b71f853ec6ee35e24300f8303e",
+    "attempts/0022.json": "79f77a3553e61b914aed678436e73c48cfdd9d0c1dfc06028d4e7b8893812ea0",
+    "attempts/0023.json": "30bb2c3a38b2d8c0c9008477eea563e34643646b763477ca3e96ae5de8536ade",
+    "attempts/0024.json": "dd6bc1a97fc3882ff2ef8cdba0bd00ec6565b40fb1dc976e0e2316e6c68f4ac0",
+    "attempts/0025.json": "49dd44bb143626c0e10a03fc14916ea238ca2f6481b303d9fc87d34edeab95ee",
+    "manifest.json": "cf3da82567c387946a3f137a3370c0fc1ffcf321b146a7c71aec6045a4e57a0c",
+    "preflights/0000.json": "954929c3f716f1c5658fde1d7809a966db1784a35a3e0bd5ba21e4f88a05c236",
+    "public.json": "8eb0185eafaa8fbb1ce084bc49708781f9f25229f8b7ba06c4e0662af00f9771",
+    "records/0000.json": "e2bca6f05f3fcc7f29fb350432fc279841dcfa190e13d3a57799772ae7b202e0",
+    "records/0001.json": "bc7996291c0169a88ee3efd04ea5b32e230afb7dee9a1f0fbc49c0ff974f0e34",
+    "records/0002.json": "8e75c32d0cf3a8d4df39515e57b9bda6c50cb47d470e33bb5341ee3d32998947",
+    "records/0003.json": "894e14ca8938b6c98e069c4cc14f1a2888eea034e11f5e81b4ab393f583d0fe7",
+    "records/0004.json": "3e73dfb206c50bd7c557ab1f1b419397ae5ef881b11d07532824385e323d6ba4",
+    "records/0005.json": "a14799f31a11f6cd0a34d8c7108bea33ea7b947c7dd245ae763422a1686af304",
+    "records/0006.json": "8798c45409f5c754871c053d01965eef65a2734a2d9166552f88de731d801df6",
+    "records/0007.json": "0c57995f9f21dbd68b5024dea9b03b79c875fe4efb21666513c085a4370f56a0",
+    "records/0008.json": "9bf001d4d20e57bb061e3e94a78b9b196e767996983218996f9d6e2f6869c2ab",
+    "records/0009.json": "386b720a8f2b0fb898c090b6a18664e3aec6fc9f408c709fba378bef768b74b8",
+    "records/0010.json": "e8cfc4b9e8446a7d3e9ccfef8d027349fd9546ec81c36dac9ff583ea7fbe6a9e",
+    "records/0011.json": "95e31c8dc42ce2e388c4c92b09d03cbf689d8524f5902aca2a75c127a8994b6b",
+    "records/0012.json": "4beee194a07161045add3b040d280118b51115e9ff999e6b31099781b8c633ff",
+    "records/0013.json": "e2115fabdb4d3ad1664732f6932f303baec46483f777cc347dc0a0b0d38c55e8",
+    "records/0014.json": "06d341cc8dd2c8062ec76c55965543c9bbcb1920b0fe993531df85556dfb5c6e",
+    "records/0015.json": "5998493572262840a67f657fd015913ffeb039c5fb47ff1f6cb605e7866bd483",
+    "records/0016.json": "b3564698513255f1009c76ed0f0f37956c96a18f5848bab504d45b41f6d55eda",
+    "records/0017.json": "61035cc22684371dda4e28b6b4a305baf465d935836db61767f4b3520ecc40ac",
+    "records/0018.json": "835ad5ca3b9299155078356dc6b7f7b1c446487e644f472b7858f37a1e424438",
+    "records/0019.json": "a64126fd5d8fa700827a442398d88e16df2b5ffd7a30fae5b484795ffa2ac241",
+    "records/0020.json": "e82c057aee7b581bc0949ad975134ce01cd57a6bb89db3e8329babe3a9b5957f",
+    "records/0021.json": "b597e643277630e62921a7f8b6c83680e729f318bb6914035f99378e606b09c0",
+    "records/0022.json": "27d45e30e7a0a65e66081069bda1dafb7edb7ca67fd04a7d67119c1a20468ada",
+    "records/0023.json": "59f8d1f7d36176e38a64935b97d5d0d4fbea3aef3394135e678befbb71b39fb2",
+    "records/0024.json": "89cb7a8939be5a08ef7194cc8afac578728dface4c2a86acd96297b9721ee5ea",
+    "records/0025.json": "5811a981497055eef34006acc74ae1eadc1f859c1f1bc2cc207ace3db1dc11a3"
+  }
+}
