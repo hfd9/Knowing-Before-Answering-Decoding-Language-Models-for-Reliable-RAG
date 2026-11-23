@@ -1,0 +1,328 @@
+{
+  "evidence_map": {
+    "D7M4": {
+      "S1": {
+        "end_byte": 107,
+        "start_byte": 57,
+        "text": "来源甲写：这次校准的读数是34单位。"
+      },
+      "S2": {
+        "end_byte": 157,
+        "start_byte": 107,
+        "text": "来源乙写：这次校准的读数是58单位。"
+      }
+    },
+    "N3K6": {
+      "R1": {
+        "end_byte": 423,
+        "start_byte": 357,
+        "text": "VX3适合干燥运输，适合室内储存，不适合水下使用"
+      },
+      "R2": {
+        "end_byte": 495,
+        "start_byte": 426,
+        "text": "LM7不适合干燥运输，适合室内储存，不适合水下使用"
+      },
+      "S1": {
+        "end_byte": 99,
+        "start_byte": 57,
+        "text": "来源甲写：本次检测代码是VX3。"
+      },
+      "S2": {
+        "end_byte": 141,
+        "start_byte": 99,
+        "text": "来源乙写：本次检测代码是LM7。"
+      }
+    }
+  },
+  "purpose": "CPU tokenizer rehearsal using old observed extraction to build example dynamic prompts",
+  "release_sha256": "8bdb3a6ce29be5eac25849c4a5a9cd4ed01d5a507530e248bfb24c816fec2425",
+  "slots": [
+    {
+      "branch": null,
+      "case": "D7M4",
+      "index": 0,
+      "input_token_ids_sha256": "3ec74be50b683ba376863d69e17874471adb873e3da8889c195dc4e1db39e04c",
+      "input_tokens": 289,
+      "kind": "direct",
+      "prompt_sha256": "8702e6466b10fbc2bec3d599e5153b665e4828b60f358340c01ee4d76a1ecca2",
+      "question": "p4",
+      "rendered_sha256": "8e4bf8ca71c9edb7b93104d9cd7e518ab35765a3ec4c29f60e94bed06c26c794"
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "index": 1,
+      "input_token_ids_sha256": "d4768f6ee88995c8236e513fe645b9642f697498f98d640099ab28dc87e289a0",
+      "input_tokens": 289,
+      "kind": "direct",
+      "prompt_sha256": "a97eef4c1a9b0d3f8f96d30475db4eae5b4cd78bd347efbec4d383a0fa7de4b5",
+      "question": "q8",
+      "rendered_sha256": "3c3bfda7185435895b25fc6f6f9a1f87da3e83fddcab76b4dc00d0c25ca7ab4d"
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "index": 2,
+      "input_token_ids_sha256": "b36f5141de89ac2aac58b5434282d9c9dd120f592a75cc13f80e62a6056ca7a7",
+      "input_tokens": 289,
+      "kind": "direct",
+      "prompt_sha256": "6fe2ad90b5a42fb1431d91884a2b528f86eb4cbee80a3bcbf5056dafa4faca4a",
+      "question": "r2",
+      "rendered_sha256": "d47d0bfabdcc072415948919bd514dd14f6303c9291f57aebd0515c1959cbd1d"
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "index": 3,
+      "input_token_ids_sha256": "575817baaafbe66b861f6d200eaa00b7e4ef5a5af09587c36a06f3ec2f10a5fd",
+      "input_tokens": 174,
+      "kind": "extract",
+      "prompt_sha256": "dc37d82a353ddef5e0468383c4dff496b8a9c195821c3c9b7232536d60d31a3c",
+      "question": null,
+      "rendered_sha256": "5b36bcd4efa8081b9a80fac1d773a67ca05d31d1b83d78b3551be3e099700738"
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "index": 4,
+      "input_token_ids_sha256": "49350cc09bd54713d99d7a8d96689c0760afbc024d6bbeeba984697b1c0e0ff1",
+      "input_tokens": 298,
+      "kind": "joint",
+      "prompt_sha256": "46ccd87ae13e68ef8fead3bf171673662ba6c2729e0d2efa60cd647d0f13c312",
+      "question": "p4",
+      "rendered_sha256": "175b03d740e2faa7f940246edc338dcd352453d2b2497c97195381f6a2448111"
+    },
+    {
+      "branch": 0,
+      "case": "D7M4",
+      "index": 5,
+      "input_token_ids_sha256": "eabed5b8e38d0d199d26ceb519a545c0cd4d9508fac7ff8af2b1f5cce096a106",
+      "input_tokens": 262,
+      "kind": "branch",
+      "prompt_sha256": "6c2bb50fc9e84b12ec21386319b3a9096d85ddf78b41809e5fac685f066a1db2",
+      "question": "p4",
+      "rendered_sha256": "7d03f8b7ea7a5d2ef45ede6e3b19a115babbd6144950ec580ee7a861ac35113d"
+    },
+    {
+      "branch": 1,
+      "case": "D7M4",
+      "index": 6,
+      "input_token_ids_sha256": "c4dcf2329bd64a0fdbdb2b9bc9c52cffa2b262cc981c08833675fc49f8e510a2",
+      "input_tokens": 262,
+      "kind": "branch",
+      "prompt_sha256": "72b90f31b7779bc4887b3f9c1dac8c41771fb6ee584f0ec463b2afacbaa95d71",
+      "question": "p4",
+      "rendered_sha256": "2702599910f542c40d2daca1aa06c4b90271019438bbf0f504e6924d09b5393c"
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "index": 7,
+      "input_token_ids_sha256": "581604baef0523f5c31de20de47c05155e41b3d29dad6cd116e98717cf68f043",
+      "input_tokens": 298,
+      "kind": "joint",
+      "prompt_sha256": "26bfa1767564aa75781a1e06668d049aad416414f7b3432b6e26715ae2aedc57",
+      "question": "q8",
+      "rendered_sha256": "cc7973a968cff51246baa318528273b080e2eec7638a6a00268a03ef7b9de60a"
+    },
+    {
+      "branch": 0,
+      "case": "D7M4",
+      "index": 8,
+      "input_token_ids_sha256": "b8f30d1ae56e406fcf90163a6de54c5a283df5cdec6529e442614253e1dd640b",
+      "input_tokens": 262,
+      "kind": "branch",
+      "prompt_sha256": "33003538930ec2957c70867893bd6b020e9f6e38cbbadd31ecf112cbc16a72fd",
+      "question": "q8",
+      "rendered_sha256": "6c75b8056caf4292a47b1e1c44c13de47cdc069fde224246d7673fc941b05326"
+    },
+    {
+      "branch": 1,
+      "case": "D7M4",
+      "index": 9,
+      "input_token_ids_sha256": "fc20843239f99df83a58a276916525453361751a450ff42750bc01bac0580dfd",
+      "input_tokens": 262,
+      "kind": "branch",
+      "prompt_sha256": "4449f984d6fafe212337f1e5685ff16ec89a1686f3fa62f46feceac095830fe7",
+      "question": "q8",
+      "rendered_sha256": "1fd2bd2496edfb9483fbb81238f15fc06f71710cad760e912acce827dfba392c"
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "index": 10,
+      "input_token_ids_sha256": "ab9735fb826ff7a91bf5997a1ff0e25f41f9edcac5b727b30a90cfd1637dad92",
+      "input_tokens": 298,
+      "kind": "joint",
+      "prompt_sha256": "40edb420c7271fa6ecd71e899fe6dd488f51d36663c66c95371875fa40dcbd45",
+      "question": "r2",
+      "rendered_sha256": "84b6978addc0901086ec1350f3f1ec3628917822a1346e0a990ce7a1b76beeb9"
+    },
+    {
+      "branch": 0,
+      "case": "D7M4",
+      "index": 11,
+      "input_token_ids_sha256": "29777afc4b7f3b627bb938467de5d3b47bbca684a14f22af846b8669dc466a2d",
+      "input_tokens": 262,
+      "kind": "branch",
+      "prompt_sha256": "05f8098358ed2de241cd3d2e7c9db85bdfe1d77c92e704016d9751d13305a5c1",
+      "question": "r2",
+      "rendered_sha256": "e541b6f2421f58fa9d545393e80b3c459f0c8bb0bd09baa7998aa49c0b4c4fa5"
+    },
+    {
+      "branch": 1,
+      "case": "D7M4",
+      "index": 12,
+      "input_token_ids_sha256": "f3ae1d1896d3ffb48f800d8bae01e054494c3a48c06cd02f6530414b6c1502fc",
+      "input_tokens": 262,
+      "kind": "branch",
+      "prompt_sha256": "dd4db8781cbb0071d65ac941c66f818457549d7be1d59aa0f87cddd3c2063a37",
+      "question": "r2",
+      "rendered_sha256": "d76ffeeab852228826e7beb35ec8b0906899209043e9a674b17d5b02eec19fba"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "index": 13,
+      "input_token_ids_sha256": "3a15b6a0cd696447c803cf2da9aa6d79ef611f8c244b1391ddba477fd72db14e",
+      "input_tokens": 321,
+      "kind": "direct",
+      "prompt_sha256": "0bdd89d0263d8b1a60a00fb326292f3ce75884db6b4f65ddd6ba78d9a06cef75",
+      "question": "s9",
+      "rendered_sha256": "4df7eba9e5f790fe26f09f61a323c65299087f315128f2ae1df9fef39aea226b"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "index": 14,
+      "input_token_ids_sha256": "1d9ffcb215d0f59235aa1c685e2a901b2af72ebf737b54a5afcadb590077aa41",
+      "input_tokens": 320,
+      "kind": "direct",
+      "prompt_sha256": "a7df90b06fe2b5c1e49723d65a150a927e9e7ca7469ecc145ab84677604bde02",
+      "question": "t1",
+      "rendered_sha256": "d68f2d10d4dae3d73da73ca0c2f1f4ef6974484a4155624ab339e70de2bcf476"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "index": 15,
+      "input_token_ids_sha256": "a0ac7ea129f9899c32ddd5257b838a180d52ffd93039cbb02db84809fa385efa",
+      "input_tokens": 320,
+      "kind": "direct",
+      "prompt_sha256": "bcd1cd5987db33a916f2e2446f3766b78d3d0e83ea545c56d4eb59dab3c157f5",
+      "question": "u5",
+      "rendered_sha256": "310beaf9da3588fa5278ee6c0cc2cb7d5f23395464840fffece130c45ed75144"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "index": 16,
+      "input_token_ids_sha256": "3fbf792760b7c92ddc7d2b1c1a84450d16963a3030d04b82c87cade4acf61fc4",
+      "input_tokens": 206,
+      "kind": "extract",
+      "prompt_sha256": "eb01aac35433a138a55c84a3c5431a9837c6d93c3b0a29cfee2174ac57047fd1",
+      "question": null,
+      "rendered_sha256": "3889e9abaab09bf8f26e9e80e86e43bf25c451d7e661396f27ffb6e5c3036494"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "index": 17,
+      "input_token_ids_sha256": "8ccef8d401b3136eb6cf60e40f9a70df1b3c1597a45e2d8c812aca2478331832",
+      "input_tokens": 331,
+      "kind": "joint",
+      "prompt_sha256": "83fc4cf2702e46571369d081d69628e573d4ab201309ded57c4012604496f655",
+      "question": "s9",
+      "rendered_sha256": "bd7a4a5c60cc023d55ae0ff97b6eebd7d3f83c74aaea534a972d36d5f3e8c2fa"
+    },
+    {
+      "branch": 0,
+      "case": "N3K6",
+      "index": 18,
+      "input_token_ids_sha256": "3ad7a04403b44826ea330af5689e1c559fbc60f59253871d4a18e2966e5f908a",
+      "input_tokens": 295,
+      "kind": "branch",
+      "prompt_sha256": "6f8ab3adaaf170adbba7e9d531495573b80ac408561e5579ed4406a0fe0e9de6",
+      "question": "s9",
+      "rendered_sha256": "2726cb387e2969d3b9fa5822d9ecf1c7c01df208cb58cac06c17ec0d45650e99"
+    },
+    {
+      "branch": 1,
+      "case": "N3K6",
+      "index": 19,
+      "input_token_ids_sha256": "c1b4ed69d23732dd5c565268bdee4052cf17d15af62a7aac084c7ef02505c9a4",
+      "input_tokens": 294,
+      "kind": "branch",
+      "prompt_sha256": "65989baafc31cacf4111fd14c2a7f81821d463880eff0c3d06aa123c8589be0c",
+      "question": "s9",
+      "rendered_sha256": "1db0f827e2b16755a9a89ef32dd15845d296fe6e95edcdc8ac47b3822cf13574"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "index": 20,
+      "input_token_ids_sha256": "cf83bf27fff712ed964f04e9d169f7ee73a2caf5c3be5c122e5b63f1d8eba0af",
+      "input_tokens": 330,
+      "kind": "joint",
+      "prompt_sha256": "7b544eeb3883c1df19d476a4239aeb6d015bfbc1c05808411b640ec1c08bde9c",
+      "question": "t1",
+      "rendered_sha256": "9a1e67e5f1d428833d2181e45e254a2a3ad161aaaab60273bbf356a95e25e934"
+    },
+    {
+      "branch": 0,
+      "case": "N3K6",
+      "index": 21,
+      "input_token_ids_sha256": "3bd396d86bb8549e63ba5aeb8b75a4746e380f5a4deafaa83bd26cf7b492d479",
+      "input_tokens": 294,
+      "kind": "branch",
+      "prompt_sha256": "d92fe10a4a9e8a362111631882e2e74b90e2ab7aab32d222daf14d1a24c4b6b0",
+      "question": "t1",
+      "rendered_sha256": "2e1a41649a1b1e79b53c1407873dd49b98fdf6149641a2244b1e0850be5513f8"
+    },
+    {
+      "branch": 1,
+      "case": "N3K6",
+      "index": 22,
+      "input_token_ids_sha256": "015aba4d358111836d0a51bffa9a33d32e0cf7e96f5a35e18a4ea61923fcc41a",
+      "input_tokens": 293,
+      "kind": "branch",
+      "prompt_sha256": "6fbbfb75b65a36cf479c43d65aef1629712669081c9f7e4bc120cb3f1cee7a78",
+      "question": "t1",
+      "rendered_sha256": "90704d0693de4a678359480189ba0a40906d931549242a67bdb3793e5e78def3"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "index": 23,
+      "input_token_ids_sha256": "e12d5c040eeb7d1bf8e4e370c2a1356041580b96c9f25ae2e1935c95c6d2531b",
+      "input_tokens": 330,
+      "kind": "joint",
+      "prompt_sha256": "c2915ba57671b71e54c49b60e9fc5297209f2c6511bd7850d85f891056e2cdf5",
+      "question": "u5",
+      "rendered_sha256": "6b84cf95d18811e35d48c374c9c47f08e99aea84b4fd22e4d748ec293461d2c6"
+    },
+    {
+      "branch": 0,
+      "case": "N3K6",
+      "index": 24,
+      "input_token_ids_sha256": "35bca9b2c78d18b8eaec766c90ec73ea6a6fc616ecba761790ffc7762dc4866d",
+      "input_tokens": 294,
+      "kind": "branch",
+      "prompt_sha256": "7e98b41fdc5b5907aa33a5f315711086e587143bfa15d741ee2967e32a092fdb",
+      "question": "u5",
+      "rendered_sha256": "15aae581852ba6be879b8e2d068887000bb1d2d75ea91e9603b7d1cbabdd112e"
+    },
+    {
+      "branch": 1,
+      "case": "N3K6",
+      "index": 25,
+      "input_token_ids_sha256": "1b620839212f20edaf7a0a93e567630503912f7cc660dfa1b4bd934404f6b300",
+      "input_tokens": 293,
+      "kind": "branch",
+      "prompt_sha256": "23330109880cec1d1b0da18096fc9ae98cdc0ef039aeba34ca24535d6d3706dc",
+      "question": "u5",
+      "rendered_sha256": "166b30358424d2f8e54f7861e10a6774181102beae5f51513a9f9f231be88101"
+    }
+  ]
+}
