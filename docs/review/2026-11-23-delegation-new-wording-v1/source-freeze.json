@@ -1,0 +1,47 @@
+{
+  "decision": {
+    "coverage_for_this_batch": "All new paraphrases strict-grounded, all boundary controls unresolved.",
+    "coverage_gap": "Report strict counts and F1/R3 missing for any determinate-reference item returning X.",
+    "expansion_requested": false,
+    "false_unique": "Report all expected U or X that return Y or N, prioritizing the exact triggering text."
+  },
+  "design": {
+    "boundary_controls": [
+      "revoked_grant",
+      "unspecified_direction",
+      "missing_priority",
+      "conflicting_grants"
+    ],
+    "directions": [
+      "match",
+      "reverse"
+    ],
+    "roots": {
+      "N01": [
+        "F1"
+      ],
+      "N02": [
+        "R3"
+      ],
+      "N03": [
+        "F1",
+        "R3"
+      ],
+      "N04": [
+        "F1",
+        "R3"
+      ]
+    },
+    "wordings": [
+      "supported_form",
+      "new_paraphrase"
+    ]
+  },
+  "frozen_at": "2026-11-23T20:15:58+08:00",
+  "snapshot_commit": "028309998dc74ebc2ae5bb7b9014f152ce9898f4",
+  "source_sha256": {
+    "scripts/query_determinacy_delegation.py": "f9aa54a4a0d44a4647e5f602dc3308cfe9e5272bb5ba4d97c28258ff369e6349",
+    "scripts/query_determinacy_delegation_source.py": "080a5db6aa53a7674eb295e1822a77393413f024016eab5a3159ee1c0062c635",
+    "scripts/query_determinacy_rule_applicability.py": "3c4884efd7db7566378471fbde916a81e9e258908483a8e21d3fff1b33c2c6c3"
+  }
+}
