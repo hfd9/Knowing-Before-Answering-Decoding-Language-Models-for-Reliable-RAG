@@ -1,0 +1,706 @@
+{
+  "q0be4b7ff7c2d": {
+    "direction": "reverse",
+    "family": "H2",
+    "result": {
+      "final": "U",
+      "worlds": {
+        "W1": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3",
+            "F1"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3"
+          ],
+          "rule": "R2"
+        }
+      }
+    },
+    "root": "H03",
+    "structure": {
+      "exception": {
+        "answer": "Y",
+        "grantor": "汇编组",
+        "overrides": "R1",
+        "recipient": "用印组"
+      },
+      "grant": {
+        "grantor": "用印组",
+        "recipient": "汇编组"
+      }
+    },
+    "wording": 1
+  },
+  "q0c970a5c4772": {
+    "direction": "reverse",
+    "family": "H2",
+    "result": {
+      "final": "U",
+      "worlds": {
+        "W1": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3",
+            "F1"
+          ],
+          "rule": "R2"
+        }
+      }
+    },
+    "root": "H04",
+    "structure": {
+      "exception": {
+        "answer": "N",
+        "grantor": "校印组",
+        "overrides": "R2",
+        "recipient": "值签组"
+      },
+      "grant": {
+        "grantor": "值签组",
+        "recipient": "校印组"
+      }
+    },
+    "wording": 2
+  },
+  "q19745a05a955": {
+    "direction": "match",
+    "family": "H1",
+    "result": {
+      "final": "Y",
+      "worlds": {
+        "W1": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "Y",
+          "applies": true,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3",
+            "F1"
+          ],
+          "rule": "R3"
+        }
+      }
+    },
+    "root": "H02",
+    "structure": {
+      "exception": {
+        "answer": "Y",
+        "grantor": "编目组",
+        "overrides": "R2",
+        "recipient": "札记组"
+      },
+      "grant": {
+        "grantor": "编目组",
+        "recipient": "札记组"
+      }
+    },
+    "wording": 1
+  },
+  "q1d39c35f29ea": {
+    "direction": "match",
+    "family": "H2",
+    "result": {
+      "final": "Y",
+      "worlds": {
+        "W1": {
+          "answer": "Y",
+          "applies": true,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3",
+            "F1"
+          ],
+          "rule": "R3"
+        },
+        "W2": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3"
+          ],
+          "rule": "R2"
+        }
+      }
+    },
+    "root": "H03",
+    "structure": {
+      "exception": {
+        "answer": "Y",
+        "grantor": "汇编组",
+        "overrides": "R1",
+        "recipient": "用印组"
+      },
+      "grant": {
+        "grantor": "汇编组",
+        "recipient": "用印组"
+      }
+    },
+    "wording": 2
+  },
+  "q3ed36c270dfe": {
+    "direction": "reverse",
+    "family": "H1",
+    "result": {
+      "final": "U",
+      "worlds": {
+        "W1": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3",
+            "F1"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3"
+          ],
+          "rule": "R2"
+        }
+      }
+    },
+    "root": "H01",
+    "structure": {
+      "exception": {
+        "answer": "N",
+        "grantor": "抄录组",
+        "overrides": "R1",
+        "recipient": "核字组"
+      },
+      "grant": {
+        "grantor": "核字组",
+        "recipient": "抄录组"
+      }
+    },
+    "wording": 1
+  },
+  "q430cb98c871d": {
+    "direction": "reverse",
+    "family": "H2",
+    "result": {
+      "final": "U",
+      "worlds": {
+        "W1": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3",
+            "F1"
+          ],
+          "rule": "R2"
+        }
+      }
+    },
+    "root": "H04",
+    "structure": {
+      "exception": {
+        "answer": "N",
+        "grantor": "校印组",
+        "overrides": "R2",
+        "recipient": "值签组"
+      },
+      "grant": {
+        "grantor": "值签组",
+        "recipient": "校印组"
+      }
+    },
+    "wording": 1
+  },
+  "q9b8d8be27d8c": {
+    "direction": "reverse",
+    "family": "H1",
+    "result": {
+      "final": "U",
+      "worlds": {
+        "W1": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3",
+            "F1"
+          ],
+          "rule": "R2"
+        }
+      }
+    },
+    "root": "H02",
+    "structure": {
+      "exception": {
+        "answer": "Y",
+        "grantor": "编目组",
+        "overrides": "R2",
+        "recipient": "札记组"
+      },
+      "grant": {
+        "grantor": "札记组",
+        "recipient": "编目组"
+      }
+    },
+    "wording": 1
+  },
+  "qac3a422dfdaf": {
+    "direction": "match",
+    "family": "H1",
+    "result": {
+      "final": "N",
+      "worlds": {
+        "W1": {
+          "answer": "N",
+          "applies": true,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3",
+            "F1"
+          ],
+          "rule": "R3"
+        },
+        "W2": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3"
+          ],
+          "rule": "R2"
+        }
+      }
+    },
+    "root": "H01",
+    "structure": {
+      "exception": {
+        "answer": "N",
+        "grantor": "抄录组",
+        "overrides": "R1",
+        "recipient": "核字组"
+      },
+      "grant": {
+        "grantor": "抄录组",
+        "recipient": "核字组"
+      }
+    },
+    "wording": 2
+  },
+  "qb65c47531846": {
+    "direction": "reverse",
+    "family": "H2",
+    "result": {
+      "final": "U",
+      "worlds": {
+        "W1": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3",
+            "F1"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3"
+          ],
+          "rule": "R2"
+        }
+      }
+    },
+    "root": "H03",
+    "structure": {
+      "exception": {
+        "answer": "Y",
+        "grantor": "汇编组",
+        "overrides": "R1",
+        "recipient": "用印组"
+      },
+      "grant": {
+        "grantor": "用印组",
+        "recipient": "汇编组"
+      }
+    },
+    "wording": 2
+  },
+  "qc32be6529541": {
+    "direction": "reverse",
+    "family": "H1",
+    "result": {
+      "final": "U",
+      "worlds": {
+        "W1": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3",
+            "F1"
+          ],
+          "rule": "R2"
+        }
+      }
+    },
+    "root": "H02",
+    "structure": {
+      "exception": {
+        "answer": "Y",
+        "grantor": "编目组",
+        "overrides": "R2",
+        "recipient": "札记组"
+      },
+      "grant": {
+        "grantor": "札记组",
+        "recipient": "编目组"
+      }
+    },
+    "wording": 2
+  },
+  "qc7b9e2495760": {
+    "direction": "match",
+    "family": "H1",
+    "result": {
+      "final": "Y",
+      "worlds": {
+        "W1": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "Y",
+          "applies": true,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3",
+            "F1"
+          ],
+          "rule": "R3"
+        }
+      }
+    },
+    "root": "H02",
+    "structure": {
+      "exception": {
+        "answer": "Y",
+        "grantor": "编目组",
+        "overrides": "R2",
+        "recipient": "札记组"
+      },
+      "grant": {
+        "grantor": "编目组",
+        "recipient": "札记组"
+      }
+    },
+    "wording": 2
+  },
+  "qca955c4e8f53": {
+    "direction": "match",
+    "family": "H2",
+    "result": {
+      "final": "N",
+      "worlds": {
+        "W1": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "N",
+          "applies": true,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3",
+            "F1"
+          ],
+          "rule": "R3"
+        }
+      }
+    },
+    "root": "H04",
+    "structure": {
+      "exception": {
+        "answer": "N",
+        "grantor": "校印组",
+        "overrides": "R2",
+        "recipient": "值签组"
+      },
+      "grant": {
+        "grantor": "校印组",
+        "recipient": "值签组"
+      }
+    },
+    "wording": 1
+  },
+  "qd7ac04e3d27c": {
+    "direction": "match",
+    "family": "H2",
+    "result": {
+      "final": "Y",
+      "worlds": {
+        "W1": {
+          "answer": "Y",
+          "applies": true,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3",
+            "F1"
+          ],
+          "rule": "R3"
+        },
+        "W2": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3"
+          ],
+          "rule": "R2"
+        }
+      }
+    },
+    "root": "H03",
+    "structure": {
+      "exception": {
+        "answer": "Y",
+        "grantor": "汇编组",
+        "overrides": "R1",
+        "recipient": "用印组"
+      },
+      "grant": {
+        "grantor": "汇编组",
+        "recipient": "用印组"
+      }
+    },
+    "wording": 1
+  },
+  "qdfdb9dd03565": {
+    "direction": "match",
+    "family": "H2",
+    "result": {
+      "final": "N",
+      "worlds": {
+        "W1": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "N",
+          "applies": true,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3",
+            "F1"
+          ],
+          "rule": "R3"
+        }
+      }
+    },
+    "root": "H04",
+    "structure": {
+      "exception": {
+        "answer": "N",
+        "grantor": "校印组",
+        "overrides": "R2",
+        "recipient": "值签组"
+      },
+      "grant": {
+        "grantor": "校印组",
+        "recipient": "值签组"
+      }
+    },
+    "wording": 2
+  },
+  "qe813097269fc": {
+    "direction": "reverse",
+    "family": "H1",
+    "result": {
+      "final": "U",
+      "worlds": {
+        "W1": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3",
+            "F1"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3"
+          ],
+          "rule": "R2"
+        }
+      }
+    },
+    "root": "H01",
+    "structure": {
+      "exception": {
+        "answer": "N",
+        "grantor": "抄录组",
+        "overrides": "R1",
+        "recipient": "核字组"
+      },
+      "grant": {
+        "grantor": "核字组",
+        "recipient": "抄录组"
+      }
+    },
+    "wording": 2
+  },
+  "qff72d82ac115": {
+    "direction": "match",
+    "family": "H1",
+    "result": {
+      "final": "N",
+      "worlds": {
+        "W1": {
+          "answer": "N",
+          "applies": true,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3",
+            "F1"
+          ],
+          "rule": "R3"
+        },
+        "W2": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3"
+          ],
+          "rule": "R2"
+        }
+      }
+    },
+    "root": "H01",
+    "structure": {
+      "exception": {
+        "answer": "N",
+        "grantor": "抄录组",
+        "overrides": "R1",
+        "recipient": "核字组"
+      },
+      "grant": {
+        "grantor": "抄录组",
+        "recipient": "核字组"
+      }
+    },
+    "wording": 1
+  }
+}

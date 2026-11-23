@@ -1,0 +1,354 @@
+{
+  "q18b052177f76": {
+    "direction": "match",
+    "family": "D",
+    "result": {
+      "final": "N",
+      "worlds": {
+        "W1": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "N",
+          "applies": true,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3",
+            "F1"
+          ],
+          "rule": "R3"
+        }
+      }
+    },
+    "root": "D02",
+    "structure": {
+      "exception": {
+        "answer": "N",
+        "grantor": "函件组",
+        "overrides": "R2",
+        "recipient": "封存组"
+      },
+      "grant": {
+        "grantor": "函件组",
+        "recipient": "封存组"
+      }
+    },
+    "wording": 1
+  },
+  "q426834201953": {
+    "direction": "reverse",
+    "family": "D",
+    "result": {
+      "final": "U",
+      "worlds": {
+        "W1": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3",
+            "F1"
+          ],
+          "rule": "R2"
+        }
+      }
+    },
+    "root": "D01",
+    "structure": {
+      "exception": {
+        "answer": "Y",
+        "grantor": "展务组",
+        "overrides": "R2",
+        "recipient": "票签组"
+      },
+      "grant": {
+        "grantor": "票签组",
+        "recipient": "展务组"
+      }
+    },
+    "wording": 1
+  },
+  "q6ae70222f98d": {
+    "direction": "reverse",
+    "family": "D",
+    "result": {
+      "final": "U",
+      "worlds": {
+        "W1": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3",
+            "F1"
+          ],
+          "rule": "R2"
+        }
+      }
+    },
+    "root": "D01",
+    "structure": {
+      "exception": {
+        "answer": "Y",
+        "grantor": "展务组",
+        "overrides": "R2",
+        "recipient": "票签组"
+      },
+      "grant": {
+        "grantor": "票签组",
+        "recipient": "展务组"
+      }
+    },
+    "wording": 2
+  },
+  "q7be90cdf4a64": {
+    "direction": "reverse",
+    "family": "D",
+    "result": {
+      "final": "U",
+      "worlds": {
+        "W1": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3",
+            "F1"
+          ],
+          "rule": "R2"
+        }
+      }
+    },
+    "root": "D02",
+    "structure": {
+      "exception": {
+        "answer": "N",
+        "grantor": "函件组",
+        "overrides": "R2",
+        "recipient": "封存组"
+      },
+      "grant": {
+        "grantor": "封存组",
+        "recipient": "函件组"
+      }
+    },
+    "wording": 2
+  },
+  "q7cd1b60a7454": {
+    "direction": "match",
+    "family": "D",
+    "result": {
+      "final": "N",
+      "worlds": {
+        "W1": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "N",
+          "applies": true,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3",
+            "F1"
+          ],
+          "rule": "R3"
+        }
+      }
+    },
+    "root": "D02",
+    "structure": {
+      "exception": {
+        "answer": "N",
+        "grantor": "函件组",
+        "overrides": "R2",
+        "recipient": "封存组"
+      },
+      "grant": {
+        "grantor": "函件组",
+        "recipient": "封存组"
+      }
+    },
+    "wording": 2
+  },
+  "q9315ae81e1b1": {
+    "direction": "match",
+    "family": "D",
+    "result": {
+      "final": "Y",
+      "worlds": {
+        "W1": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "Y",
+          "applies": true,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3",
+            "F1"
+          ],
+          "rule": "R3"
+        }
+      }
+    },
+    "root": "D01",
+    "structure": {
+      "exception": {
+        "answer": "Y",
+        "grantor": "展务组",
+        "overrides": "R2",
+        "recipient": "票签组"
+      },
+      "grant": {
+        "grantor": "展务组",
+        "recipient": "票签组"
+      }
+    },
+    "wording": 2
+  },
+  "qd201e0451c73": {
+    "direction": "reverse",
+    "family": "D",
+    "result": {
+      "final": "U",
+      "worlds": {
+        "W1": {
+          "answer": "N",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3",
+            "F1"
+          ],
+          "rule": "R2"
+        }
+      }
+    },
+    "root": "D02",
+    "structure": {
+      "exception": {
+        "answer": "N",
+        "grantor": "函件组",
+        "overrides": "R2",
+        "recipient": "封存组"
+      },
+      "grant": {
+        "grantor": "封存组",
+        "recipient": "函件组"
+      }
+    },
+    "wording": 1
+  },
+  "qefcac13bb8c9": {
+    "direction": "match",
+    "family": "D",
+    "result": {
+      "final": "Y",
+      "worlds": {
+        "W1": {
+          "answer": "Y",
+          "applies": false,
+          "evidence": [
+            "W1",
+            "R1",
+            "R3"
+          ],
+          "rule": "R1"
+        },
+        "W2": {
+          "answer": "Y",
+          "applies": true,
+          "evidence": [
+            "W2",
+            "R2",
+            "R3",
+            "F1"
+          ],
+          "rule": "R3"
+        }
+      }
+    },
+    "root": "D01",
+    "structure": {
+      "exception": {
+        "answer": "Y",
+        "grantor": "展务组",
+        "overrides": "R2",
+        "recipient": "票签组"
+      },
+      "grant": {
+        "grantor": "展务组",
+        "recipient": "票签组"
+      }
+    },
+    "wording": 1
+  }
+}

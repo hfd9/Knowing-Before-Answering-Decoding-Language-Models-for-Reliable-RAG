@@ -1,0 +1,5 @@
+{
+  "common": "根据所给材料判断本件是否准入。W1、W2 是地位相同的两份来源，分别假设其中一份记录正确。F1 是两种假设下都有效的共同登记，列出了本件完整的授权关系。R1、R2 为默认条款，R3 为例外条款。Y 表示准入，N 表示不准入。",
+  "extract": "仅提取 R3 所需的授权方向、例外结论及优先于的默认条款，以及 F1 登记的授权方向。每个方向的 grantor 为授权方、recipient 为受权方，逐字使用材料中的组名。只输出一个 JSON 对象，顶层键为 exception 和 grant。exception 的键为 grantor、recipient、answer、overrides，answer 为 Y 或 N，overrides 为 R1 或 R2。grant 的键为 grantor 和 recipient。无法确定其中一组字段时，该组整体写 null。不要自行求值。",
+  "direct": "先提取 R3 所需的授权方向、例外结论及优先于的默认条款，以及 F1 登记的授权方向。分别按 W1 和 W2 判断 R3 是否适用及最终准入结论。只输出一个 JSON 对象，顶层键为 structure、worlds、final。structure 有 exception 和 grant 两个键。exception 的键为 grantor、recipient、answer、overrides，grant 的键为 grantor 和 recipient；grantor 为授权方，recipient 为受权方，逐字使用材料中的组名；answer 为 Y 或 N，overrides 为 R1 或 R2。无法确定其中一组字段时，该组整体写 null。worlds 的键为 W1、W2，每项的键为 applies、rule、answer、evidence。applies 表示 R3 是否适用（true、false 或 null），rule 为决定性条款的 ID 或 null，answer 为 Y、N 或 X（无法判定），evidence 为推出该世界结论所需的记录和条款 ID 数组。final 为两边共同的 Y 或 N、两边确定而异答时的 U，或至少一边无法判定时的 X。"
+}
