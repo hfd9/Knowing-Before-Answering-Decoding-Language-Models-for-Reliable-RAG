@@ -1,0 +1,1180 @@
+{
+  "call_seconds_sum": 19.740737271960825,
+  "descriptive_label_check": [
+    {
+      "case": "D7M4",
+      "methods": {
+        "branch": {
+          "raw_final": "U",
+          "raw_world_answers": [
+            "N",
+            "Y"
+          ]
+        },
+        "direct": {
+          "raw_final": "Y",
+          "raw_world_answers": [
+            "N",
+            "Y"
+          ]
+        },
+        "joint": {
+          "raw_final": "Y",
+          "raw_world_answers": [
+            "N",
+            "Y"
+          ]
+        }
+      },
+      "question": "p4",
+      "reference": {
+        "final": "U",
+        "rationale": "34不超过45；58超过45。",
+        "world_answers": [
+          "N",
+          "Y"
+        ]
+      }
+    },
+    {
+      "case": "D7M4",
+      "methods": {
+        "branch": {
+          "raw_final": "N",
+          "raw_world_answers": [
+            "N",
+            "N"
+          ]
+        },
+        "direct": {
+          "raw_final": "U",
+          "raw_world_answers": [
+            "N",
+            "N"
+          ]
+        },
+        "joint": {
+          "raw_final": "U",
+          "raw_world_answers": [
+            "N",
+            "Y"
+          ]
+        }
+      },
+      "question": "q8",
+      "reference": {
+        "final": "N",
+        "rationale": "34和58均不低于20。",
+        "world_answers": [
+          "N",
+          "N"
+        ]
+      }
+    },
+    {
+      "case": "D7M4",
+      "methods": {
+        "branch": {
+          "raw_final": "U",
+          "raw_world_answers": [
+            "N",
+            "Y"
+          ]
+        },
+        "direct": {
+          "raw_final": "Y",
+          "raw_world_answers": [
+            "N",
+            "Y"
+          ]
+        },
+        "joint": {
+          "raw_final": "Y",
+          "raw_world_answers": [
+            "N",
+            "Y"
+          ]
+        }
+      },
+      "question": "r2",
+      "reference": {
+        "final": "Y",
+        "rationale": "34和58均超过30。",
+        "world_answers": [
+          "Y",
+          "Y"
+        ]
+      }
+    },
+    {
+      "case": "N3K6",
+      "methods": {
+        "branch": {
+          "raw_final": "N",
+          "raw_world_answers": [
+            "N",
+            "N"
+          ]
+        },
+        "direct": {
+          "raw_final": "U",
+          "raw_world_answers": [
+            "N",
+            "N"
+          ]
+        },
+        "joint": {
+          "raw_final": "U",
+          "raw_world_answers": [
+            "N",
+            "N"
+          ]
+        }
+      },
+      "question": "s9",
+      "reference": {
+        "final": "N",
+        "rationale": "两代码均不适合水下使用。",
+        "world_answers": [
+          "N",
+          "N"
+        ]
+      }
+    },
+    {
+      "case": "N3K6",
+      "methods": {
+        "branch": {
+          "raw_final": "N",
+          "raw_world_answers": [
+            "N",
+            "N"
+          ]
+        },
+        "direct": {
+          "raw_final": "U",
+          "raw_world_answers": [
+            "N",
+            "Y"
+          ]
+        },
+        "joint": {
+          "raw_final": "U",
+          "raw_world_answers": [
+            "N",
+            "Y"
+          ]
+        }
+      },
+      "question": "t1",
+      "reference": {
+        "final": "U",
+        "rationale": "规则表明VX3适合、LM7不适合干燥运输。",
+        "world_answers": [
+          "Y",
+          "N"
+        ]
+      }
+    },
+    {
+      "case": "N3K6",
+      "methods": {
+        "branch": {
+          "raw_final": "Y",
+          "raw_world_answers": [
+            "Y",
+            "Y"
+          ]
+        },
+        "direct": {
+          "raw_final": "Y",
+          "raw_world_answers": [
+            "Y",
+            "Y"
+          ]
+        },
+        "joint": {
+          "raw_final": "U",
+          "raw_world_answers": [
+            "N",
+            "Y"
+          ]
+        }
+      },
+      "question": "u5",
+      "reference": {
+        "final": "Y",
+        "rationale": "两代码均适合室内储存。",
+        "world_answers": [
+          "Y",
+          "Y"
+        ]
+      }
+    }
+  ],
+  "development_choice": {
+    "reason": "unscored_or_missing",
+    "status": "no_conclusion"
+  },
+  "device": {
+    "device_name": "NVIDIA GeForce RTX 3090",
+    "free_mib": 24246,
+    "gpu_name": "NVIDIA GeForce RTX 3090",
+    "torch_cuda": "12.1",
+    "visible_device_count": 1
+  },
+  "eos_count": 26,
+  "executed_count": 26,
+  "extractions_exact": 2,
+  "first_to_last_record_seconds": 17.653679,
+  "frozen_score_rows": [
+    {
+      "branch": {
+        "all_evidence_ok": null,
+        "all_worlds_correct": null,
+        "correct_and_supported": false,
+        "final": "U",
+        "final_consistent_with_worlds": null,
+        "final_correct": true,
+        "status": "unresolved",
+        "worlds": [
+          {
+            "answer": "N",
+            "answer_correct": false,
+            "evidence_ok": false,
+            "valid": false,
+            "value": "34"
+          },
+          {
+            "answer": "Y",
+            "answer_correct": false,
+            "evidence_ok": false,
+            "valid": false,
+            "value": "58"
+          }
+        ]
+      },
+      "case": "D7M4",
+      "direct": {
+        "all_evidence_ok": null,
+        "all_worlds_correct": null,
+        "correct_and_supported": false,
+        "final": null,
+        "final_consistent_with_worlds": null,
+        "final_correct": null,
+        "status": "unresolved",
+        "worlds": []
+      },
+      "extracted": [
+        "34",
+        "58"
+      ],
+      "extraction_correct": true,
+      "extraction_status": "parsed",
+      "joint": {
+        "all_evidence_ok": null,
+        "all_worlds_correct": null,
+        "correct_and_supported": false,
+        "final": null,
+        "final_consistent_with_worlds": null,
+        "final_correct": null,
+        "status": "unresolved",
+        "worlds": []
+      },
+      "question": "p4",
+      "reference_final": "U"
+    },
+    {
+      "branch": {
+        "all_evidence_ok": null,
+        "all_worlds_correct": null,
+        "correct_and_supported": false,
+        "final": "N",
+        "final_consistent_with_worlds": null,
+        "final_correct": true,
+        "status": "unresolved",
+        "worlds": [
+          {
+            "answer": "N",
+            "answer_correct": false,
+            "evidence_ok": false,
+            "valid": false,
+            "value": "34"
+          },
+          {
+            "answer": "N",
+            "answer_correct": false,
+            "evidence_ok": false,
+            "valid": false,
+            "value": "58"
+          }
+        ]
+      },
+      "case": "D7M4",
+      "direct": {
+        "all_evidence_ok": null,
+        "all_worlds_correct": null,
+        "correct_and_supported": false,
+        "final": null,
+        "final_consistent_with_worlds": null,
+        "final_correct": null,
+        "status": "unresolved",
+        "worlds": []
+      },
+      "extracted": [
+        "34",
+        "58"
+      ],
+      "extraction_correct": true,
+      "extraction_status": "parsed",
+      "joint": {
+        "all_evidence_ok": null,
+        "all_worlds_correct": null,
+        "correct_and_supported": false,
+        "final": "U",
+        "final_consistent_with_worlds": null,
+        "final_correct": false,
+        "status": "unresolved",
+        "worlds": [
+          {
+            "answer": "N",
+            "answer_correct": false,
+            "evidence_ok": false,
+            "valid": false,
+            "value": "34"
+          },
+          {
+            "answer": "Y",
+            "answer_correct": false,
+            "evidence_ok": false,
+            "valid": false,
+            "value": "58"
+          }
+        ]
+      },
+      "question": "q8",
+      "reference_final": "N"
+    },
+    {
+      "branch": {
+        "all_evidence_ok": null,
+        "all_worlds_correct": null,
+        "correct_and_supported": false,
+        "final": "U",
+        "final_consistent_with_worlds": null,
+        "final_correct": false,
+        "status": "unresolved",
+        "worlds": [
+          {
+            "answer": "N",
+            "answer_correct": false,
+            "evidence_ok": false,
+            "valid": false,
+            "value": "34"
+          },
+          {
+            "answer": "Y",
+            "answer_correct": false,
+            "evidence_ok": false,
+            "valid": false,
+            "value": "58"
+          }
+        ]
+      },
+      "case": "D7M4",
+      "direct": {
+        "all_evidence_ok": null,
+        "all_worlds_correct": null,
+        "correct_and_supported": false,
+        "final": null,
+        "final_consistent_with_worlds": null,
+        "final_correct": null,
+        "status": "unresolved",
+        "worlds": []
+      },
+      "extracted": [
+        "34",
+        "58"
+      ],
+      "extraction_correct": true,
+      "extraction_status": "parsed",
+      "joint": {
+        "all_evidence_ok": null,
+        "all_worlds_correct": null,
+        "correct_and_supported": false,
+        "final": null,
+        "final_consistent_with_worlds": null,
+        "final_correct": null,
+        "status": "unresolved",
+        "worlds": []
+      },
+      "question": "r2",
+      "reference_final": "Y"
+    },
+    {
+      "branch": {
+        "all_evidence_ok": false,
+        "all_worlds_correct": true,
+        "correct_and_supported": false,
+        "final": "N",
+        "final_consistent_with_worlds": true,
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": false,
+            "valid": true,
+            "value": "VX3"
+          },
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": false,
+            "valid": true,
+            "value": "LM7"
+          }
+        ]
+      },
+      "case": "N3K6",
+      "direct": {
+        "all_evidence_ok": null,
+        "all_worlds_correct": null,
+        "correct_and_supported": false,
+        "final": null,
+        "final_consistent_with_worlds": null,
+        "final_correct": null,
+        "status": "unresolved",
+        "worlds": []
+      },
+      "extracted": [
+        "VX3",
+        "LM7"
+      ],
+      "extraction_correct": true,
+      "extraction_status": "parsed",
+      "joint": {
+        "all_evidence_ok": null,
+        "all_worlds_correct": null,
+        "correct_and_supported": false,
+        "final": null,
+        "final_consistent_with_worlds": null,
+        "final_correct": null,
+        "status": "unresolved",
+        "worlds": []
+      },
+      "question": "s9",
+      "reference_final": "N"
+    },
+    {
+      "branch": {
+        "all_evidence_ok": false,
+        "all_worlds_correct": false,
+        "correct_and_supported": false,
+        "final": "N",
+        "final_consistent_with_worlds": true,
+        "final_correct": false,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "N",
+            "answer_correct": false,
+            "evidence_ok": false,
+            "valid": true,
+            "value": "VX3"
+          },
+          {
+            "answer": "N",
+            "answer_correct": true,
+            "evidence_ok": false,
+            "valid": true,
+            "value": "LM7"
+          }
+        ]
+      },
+      "case": "N3K6",
+      "direct": {
+        "all_evidence_ok": null,
+        "all_worlds_correct": null,
+        "correct_and_supported": false,
+        "final": null,
+        "final_consistent_with_worlds": null,
+        "final_correct": null,
+        "status": "unresolved",
+        "worlds": []
+      },
+      "extracted": [
+        "VX3",
+        "LM7"
+      ],
+      "extraction_correct": true,
+      "extraction_status": "parsed",
+      "joint": {
+        "all_evidence_ok": null,
+        "all_worlds_correct": null,
+        "correct_and_supported": false,
+        "final": null,
+        "final_consistent_with_worlds": null,
+        "final_correct": null,
+        "status": "unresolved",
+        "worlds": []
+      },
+      "question": "t1",
+      "reference_final": "U"
+    },
+    {
+      "branch": {
+        "all_evidence_ok": false,
+        "all_worlds_correct": true,
+        "correct_and_supported": false,
+        "final": "Y",
+        "final_consistent_with_worlds": true,
+        "final_correct": true,
+        "status": "scored",
+        "worlds": [
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": false,
+            "valid": true,
+            "value": "VX3"
+          },
+          {
+            "answer": "Y",
+            "answer_correct": true,
+            "evidence_ok": false,
+            "valid": true,
+            "value": "LM7"
+          }
+        ]
+      },
+      "case": "N3K6",
+      "direct": {
+        "all_evidence_ok": null,
+        "all_worlds_correct": null,
+        "correct_and_supported": false,
+        "final": null,
+        "final_consistent_with_worlds": null,
+        "final_correct": null,
+        "status": "unresolved",
+        "worlds": []
+      },
+      "extracted": [
+        "VX3",
+        "LM7"
+      ],
+      "extraction_correct": true,
+      "extraction_status": "parsed",
+      "joint": {
+        "all_evidence_ok": null,
+        "all_worlds_correct": null,
+        "correct_and_supported": false,
+        "final": "U",
+        "final_consistent_with_worlds": null,
+        "final_correct": false,
+        "status": "unresolved",
+        "worlds": [
+          {
+            "answer": "N",
+            "answer_correct": false,
+            "evidence_ok": false,
+            "valid": false,
+            "value": "VX3"
+          },
+          {
+            "answer": "Y",
+            "answer_correct": false,
+            "evidence_ok": false,
+            "valid": false,
+            "value": "LM7"
+          }
+        ]
+      },
+      "question": "u5",
+      "reference_final": "Y"
+    }
+  ],
+  "json_valid_by_kind": {
+    "branch": 12,
+    "direct": 0,
+    "extract": 2,
+    "joint": 2
+  },
+  "live_source_sha256": {
+    "attempts/0000.json": "69990a8be41d1e67793682c26fec2db7dbd8cc1ac6619b2059ff7ecad2dee16c",
+    "attempts/0001.json": "f00c163d7f031dadaa929dfd7fbd94c4912dc3e2a441dcea85cfdbe956acb761",
+    "attempts/0002.json": "2fa7213fa2bb44e5164648aec9d825e4c53fd17424ccb776eb742083a68bbf5f",
+    "attempts/0003.json": "c9157324a38ae1e986a4815e0c54c24f01eb26d8e3d7b8277a70519b84799e66",
+    "attempts/0004.json": "c5ac4cbf4691386673a46c6fefbc91229eba946ffa2c1fe3c0d60653529f02e1",
+    "attempts/0005.json": "e4c9f3e97d992189441efe0abfe6691ce99a2a268b7ae887d4174dd70dd9d1dd",
+    "attempts/0006.json": "a51b4bf08cf14863b1b50579b7ffa224d95558a685dbf80bd36271e8d65055fb",
+    "attempts/0007.json": "ee68f9079390820544a3e9f25590a5e587e066de94c1bf7b8e325facaafbad29",
+    "attempts/0008.json": "aa62706cbc2fd6840d874c3b7d5a095fdada63dbb5ec77d071445cff70c9df95",
+    "attempts/0009.json": "1e865dd6b16fd06a957d89a1423cb7d5a646864cc64a05d2e9af6bbd0a117d70",
+    "attempts/0010.json": "03c2cb7cc3912703019e42abb33f179e537002f3daa960cb45c8985fa0d4b2d3",
+    "attempts/0011.json": "22a51f9dcd98d7ff5de06f1dfdfbffaef71382555758a057d528e92082eaf90f",
+    "attempts/0012.json": "af5ae560388d55309213ad50c5cf4d962295da5f9e1807a0e6c427137a7f861f",
+    "attempts/0013.json": "619273d5026040c8662a81654385eab9589222c7fcf7db8bf3b9972943345461",
+    "attempts/0014.json": "3a42aeb7b9d1bd9b6c272b41c0881bc2ebe03a754a0e002b7527448248ba416b",
+    "attempts/0015.json": "00f42b57880d0148915c72264af22e4d095ce2273837025b3bb6af38f4ae7253",
+    "attempts/0016.json": "5ab1da26ad77b55688a3f09e1bce14e33562d2e3fd8b8b671d5b81e448a19ec9",
+    "attempts/0017.json": "c81f4962c82992799e95c3a501c574a69608ba0509aca4b72434dd415d1edcf4",
+    "attempts/0018.json": "ea895df13eb2857dfb46686d3d42a43f9219a6f9223640a18904f61e4fb536ef",
+    "attempts/0019.json": "4625e94722093caaf07e5c8c6d0202e7ba614e9d744331566b9ccf63b719fa96",
+    "attempts/0020.json": "d38743a23cd94032dbd7cd809af8cd9dc2ab9ce27f1f924fd1fbe1f6abed27fb",
+    "attempts/0021.json": "800905c3ee905c10f4d9d2e3745edc80320e8e903bc470bf0f0f6bbaad4fd424",
+    "attempts/0022.json": "a36eaceff5954437b1dbcd22a775d73e5304efcea44f54493e18c774ef3b914b",
+    "attempts/0023.json": "aaa6aa752059ed32b421956bf07c13d42268e8f1f9c54b0e213898926a56f21e",
+    "attempts/0024.json": "217d1ad90d08cff44df22632d31896d3042611dfa9b473bc8d02e98495e9dfcd",
+    "attempts/0025.json": "2c078c3d520899671feb0a80aea44d5d82e1d07e8e82d2c4bdcdd9382bc519e6",
+    "manifest.json": "b1cfeb5a6733ec743c14ba21ad4ddf6ff8063b9b6608623b9ba49ea96b1b936d",
+    "preflights/0000.json": "a5d6eef8bfdb2113593cb40f9c64f26e1af6b234686fa2e7971b74629ef976f2",
+    "public.json": "8eb0185eafaa8fbb1ce084bc49708781f9f25229f8b7ba06c4e0662af00f9771",
+    "records/0000.json": "e7e99dee2ddc2adfa72a10530e1d3a40dbcf4cd4446e565533d660833d9a41ed",
+    "records/0001.json": "5eadf4ab71b58a45b9fd0669213ee02f11ef799e7d0477c45e674136fd575dca",
+    "records/0002.json": "2a91f782ba075911f96447e9340ecb16c5d290dc82b6a115a7783487a18d6399",
+    "records/0003.json": "8d3e8729e74c254d6b2f45a2f4c0ab481b0aa995c85ccc316d9aaa902734db9a",
+    "records/0004.json": "d0a7e8740d4c419d4329b7ac646e4454017662cd8d45893cefb459610f914a62",
+    "records/0005.json": "ffc1eff8d8359c13a479855e624757515267475d740ced99058cdf12df17cb03",
+    "records/0006.json": "6d4605fd2e39a8a1c303acaba1741594e891fa4863b270b4e802267feef8d033",
+    "records/0007.json": "3130d537174ad7d70885551050acda2163222479fdf0723ee29b17700a78b9d9",
+    "records/0008.json": "958010743a2e0cd4ff1074e74e55d7681d5e44ff26c272df31d891ff64bed7ae",
+    "records/0009.json": "dd55fcef6e01ba53840096b3838e71d5c9d6457744f2756bc0b6218678b4075c",
+    "records/0010.json": "bf5925db4df1b27547d25101d869d175fc1e1819ea99c1251e734f93b2b6b8f4",
+    "records/0011.json": "186237258d946b7e1cf5b12d0ebf299851ce4e3f9c4e3655cc714ab727a4594a",
+    "records/0012.json": "d67bf728c6c89762e27ac15485224c9085adb845d1bae0515d8f1dca6bfaf2f2",
+    "records/0013.json": "7d5581023f62dc6d4c75254a4c34a38e9fc24e74dcb1d6d58233b7885c3349e1",
+    "records/0014.json": "f24f9e1f95c7394ec76a21620ee2c9f3f1b75704f128aac034aa55c6746f4955",
+    "records/0015.json": "d6ccd886567f6a7af2a271ac110c4b11a3f2c81cd6dc9e5cd4d17912c841a6c8",
+    "records/0016.json": "109a4b991d315d90aa9e7d2e3e815ae119d6e9d685b1e54fe8eb8518476977e2",
+    "records/0017.json": "f10908ba82192609595c7b3409735f4487df42ae5629e24fa4367a2c8f00fbeb",
+    "records/0018.json": "cf25d7773d71abddc5c27ba416976ff717a294e8d972a318df0560630639a820",
+    "records/0019.json": "da790ae007d87487814affb3699cd3365b0aed681fbd5a8e3d94777a8fc358ad",
+    "records/0020.json": "e53d2ce8658757a297c57cedb9c5e3a316c6064544e34cc51fdc17ccba775721",
+    "records/0021.json": "a6915dea9ae90b428bd3992c5406a04aca9d2ac1dc0e588ecc10ded6dc5a6a17",
+    "records/0022.json": "fc5a8367f4307c03880a48754b4e623d4b3c764ecde1881a32523a768f17a5ab",
+    "records/0023.json": "fe2b94a6f09eff1e2c25ca4208d79c260384084ed5a428fed2de3a9f6b9d14a5",
+    "records/0024.json": "7351f3e7ff10a8adab125f0295faf1fca06afd9c469d07a9d6ea9bf7b0566698",
+    "records/0025.json": "1b0407cb7369366b63e621cfd38689b42ac90a169e7b1b6fa9b92d0e83a5a891"
+  },
+  "outputs": [
+    {
+      "branch": null,
+      "case": "D7M4",
+      "citation_types_if_json_valid": [],
+      "elapsed_seconds": 2.8917520428076386,
+      "eos": true,
+      "index": 0,
+      "input_tokens": 334,
+      "json_valid": false,
+      "kind": "direct",
+      "output": "{\"final\":\"Y\",\"worlds\":[{\"value\":\"34单位\",\"answer\":\"N\",\"citations\":\"来源甲写：这次校准的读数是34单位。\"},{\"value\":\"58单位\",\"answer\":\"Y\",\"citations\":\"来源乙写：这次校准的读数是58单位。\"}}]",
+      "output_tokens": 68,
+      "question": "p4",
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "citation_types_if_json_valid": [],
+      "elapsed_seconds": 0.8692940422333777,
+      "eos": true,
+      "index": 1,
+      "input_tokens": 334,
+      "json_valid": false,
+      "kind": "direct",
+      "output": "{\"final\":\"U\",\"worlds\":[{\"value\":\"34单位\",\"answer\":\"N\",\"citations\":\"来源甲写：这次校准的读数是34单位。\"},{\"value\":\"58单位\",\"answer\":\"N\",\"citations\":\"来源乙写：这次校准的读数是58单位。\"}}]",
+      "output_tokens": 68,
+      "question": "q8",
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "citation_types_if_json_valid": [],
+      "elapsed_seconds": 0.8637818438000977,
+      "eos": true,
+      "index": 2,
+      "input_tokens": 334,
+      "json_valid": false,
+      "kind": "direct",
+      "output": "{\"final\":\"Y\",\"worlds\":[{\"value\":\"34单位\",\"answer\":\"N\",\"citations\":\"来源甲写：这次校准的读数是34单位。\"},{\"value\":\"58单位\",\"answer\":\"Y\",\"citations\":\"来源乙写：这次校准的读数是58单位。\"}}]",
+      "output_tokens": 68,
+      "question": "r2",
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "citation_types_if_json_valid": [],
+      "elapsed_seconds": 0.17819667188450694,
+      "eos": true,
+      "index": 3,
+      "input_tokens": 178,
+      "json_valid": true,
+      "kind": "extract",
+      "output": "[\"34\", \"58\"]",
+      "output_tokens": 9,
+      "question": null,
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "citation_types_if_json_valid": [],
+      "elapsed_seconds": 0.8387964782305062,
+      "eos": true,
+      "index": 4,
+      "input_tokens": 349,
+      "json_valid": false,
+      "kind": "joint",
+      "output": "{\"final\":\"Y\",\"worlds\":[{\"value\":\"34\",\"answer\":\"N\",\"citations\":\"来源甲写：这次校准的读数是34单位。\"},{\"value\":\"58\",\"answer\":\"Y\",\"citations\":\"来源乙写：这次校准的读数是58单位。\"}}]",
+      "output_tokens": 66,
+      "question": "p4",
+      "status": "complete"
+    },
+    {
+      "branch": 0,
+      "case": "D7M4",
+      "citation_types_if_json_valid": [
+        "str"
+      ],
+      "elapsed_seconds": 0.3916822886094451,
+      "eos": true,
+      "index": 5,
+      "input_tokens": 292,
+      "json_valid": true,
+      "kind": "branch",
+      "output": "{\"value\":\"34\",\"answer\":\"N\",\"citations\":\"来源甲写：这次校准的读数是34单位。\"}",
+      "output_tokens": 30,
+      "question": "p4",
+      "status": "complete"
+    },
+    {
+      "branch": 1,
+      "case": "D7M4",
+      "citation_types_if_json_valid": [
+        "str"
+      ],
+      "elapsed_seconds": 0.3919850420206785,
+      "eos": true,
+      "index": 6,
+      "input_tokens": 292,
+      "json_valid": true,
+      "kind": "branch",
+      "output": "{\"value\":\"58\",\"answer\":\"Y\",\"citations\":\"来源乙写：这次校准的读数是58单位。\"}",
+      "output_tokens": 30,
+      "question": "p4",
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "citation_types_if_json_valid": [
+        "str",
+        "str"
+      ],
+      "elapsed_seconds": 0.8397828210145235,
+      "eos": true,
+      "index": 7,
+      "input_tokens": 349,
+      "json_valid": true,
+      "kind": "joint",
+      "output": "{\"final\":\"U\",\"worlds\":[{\"value\":\"34\",\"answer\":\"N\",\"citations\":\"来源甲写：这次校准的读数是34单位。\"},{\"value\":\"58\",\"answer\":\"Y\",\"citations\":\"来源乙写：这次校准的读数是58单位。\"}]}",
+      "output_tokens": 66,
+      "question": "q8",
+      "status": "complete"
+    },
+    {
+      "branch": 0,
+      "case": "D7M4",
+      "citation_types_if_json_valid": [
+        "str"
+      ],
+      "elapsed_seconds": 0.39327338989824057,
+      "eos": true,
+      "index": 8,
+      "input_tokens": 292,
+      "json_valid": true,
+      "kind": "branch",
+      "output": "{\"value\":\"34\",\"answer\":\"N\",\"citations\":\"来源甲写：这次校准的读数是34单位。\"}",
+      "output_tokens": 30,
+      "question": "q8",
+      "status": "complete"
+    },
+    {
+      "branch": 1,
+      "case": "D7M4",
+      "citation_types_if_json_valid": [
+        "str"
+      ],
+      "elapsed_seconds": 0.42798765003681183,
+      "eos": true,
+      "index": 9,
+      "input_tokens": 292,
+      "json_valid": true,
+      "kind": "branch",
+      "output": "{\"value\":\"58\",\"answer\":\"N\",\"citations\":\"材料中冲突来源同时保留；两种可能性由题设规定，不可自行排除。\"}",
+      "output_tokens": 33,
+      "question": "q8",
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "citation_types_if_json_valid": [],
+      "elapsed_seconds": 0.8364867940545082,
+      "eos": true,
+      "index": 10,
+      "input_tokens": 349,
+      "json_valid": false,
+      "kind": "joint",
+      "output": "{\"final\":\"Y\",\"worlds\":[{\"value\":\"34\",\"answer\":\"N\",\"citations\":\"来源甲写：这次校准的读数是34单位。\"},{\"value\":\"58\",\"answer\":\"Y\",\"citations\":\"来源乙写：这次校准的读数是58单位。\"}}]",
+      "output_tokens": 66,
+      "question": "r2",
+      "status": "complete"
+    },
+    {
+      "branch": 0,
+      "case": "D7M4",
+      "citation_types_if_json_valid": [
+        "str"
+      ],
+      "elapsed_seconds": 0.393299981020391,
+      "eos": true,
+      "index": 11,
+      "input_tokens": 292,
+      "json_valid": true,
+      "kind": "branch",
+      "output": "{\"value\":\"34\",\"answer\":\"N\",\"citations\":\"来源甲写：这次校准的读数是34单位。\"}",
+      "output_tokens": 30,
+      "question": "r2",
+      "status": "complete"
+    },
+    {
+      "branch": 1,
+      "case": "D7M4",
+      "citation_types_if_json_valid": [
+        "str"
+      ],
+      "elapsed_seconds": 0.4184926236048341,
+      "eos": true,
+      "index": 12,
+      "input_tokens": 292,
+      "json_valid": true,
+      "kind": "branch",
+      "output": "{\"value\":\"58\",\"answer\":\"Y\",\"citations\":\"材料中来源乙写：这次校准的读数是58单位。\"}",
+      "output_tokens": 32,
+      "question": "r2",
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "citation_types_if_json_valid": [],
+      "elapsed_seconds": 1.0475931391119957,
+      "eos": true,
+      "index": 13,
+      "input_tokens": 358,
+      "json_valid": false,
+      "kind": "direct",
+      "output": "{\"final\":\"U\",\"worlds\":[{\"value\":\"VX3\",\"answer\":\"N\",\"citations\":\"来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。\"},{\"value\":\"LM7\",\"answer\":\"N\",\"citations\":\"来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。\"}}]",
+      "output_tokens": 83,
+      "question": "s9",
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "citation_types_if_json_valid": [],
+      "elapsed_seconds": 1.2819522130303085,
+      "eos": true,
+      "index": 14,
+      "input_tokens": 357,
+      "json_valid": false,
+      "kind": "direct",
+      "output": "{\"final\":\"U\",\"worlds\":[{\"value\":\"VX3\",\"answer\":\"N\",\"citations\":\"来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。\"},{\"value\":\"LM7\",\"answer\":\"Y\",\"citations\":\"来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。规则表明确：LM7不适合干燥运输，适合室内储存，不适合水下使用。\"}}]",
+      "output_tokens": 102,
+      "question": "t1",
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "citation_types_if_json_valid": [],
+      "elapsed_seconds": 1.0505307638086379,
+      "eos": true,
+      "index": 15,
+      "input_tokens": 357,
+      "json_valid": false,
+      "kind": "direct",
+      "output": "{\"final\":\"Y\",\"worlds\":[{\"value\":\"VX3\",\"answer\":\"Y\",\"citations\":\"来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。\"},{\"value\":\"LM7\",\"answer\":\"Y\",\"citations\":\"来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。\"}}]",
+      "output_tokens": 83,
+      "question": "u5",
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "citation_types_if_json_valid": [],
+      "elapsed_seconds": 0.1567948367446661,
+      "eos": true,
+      "index": 16,
+      "input_tokens": 202,
+      "json_valid": true,
+      "kind": "extract",
+      "output": "[\"VX3\", \"LM7\"]",
+      "output_tokens": 10,
+      "question": null,
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "citation_types_if_json_valid": [],
+      "elapsed_seconds": 1.0476033687591553,
+      "eos": true,
+      "index": 17,
+      "input_tokens": 374,
+      "json_valid": false,
+      "kind": "joint",
+      "output": "{\"final\":\"U\",\"worlds\":[{\"value\":\"VX3\",\"answer\":\"N\",\"citations\":\"来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。\"},{\"value\":\"LM7\",\"answer\":\"N\",\"citations\":\"来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。\"}}]",
+      "output_tokens": 83,
+      "question": "s9",
+      "status": "complete"
+    },
+    {
+      "branch": 0,
+      "case": "N3K6",
+      "citation_types_if_json_valid": [
+        "list"
+      ],
+      "elapsed_seconds": 0.5162266800180078,
+      "eos": true,
+      "index": 18,
+      "input_tokens": 317,
+      "json_valid": true,
+      "kind": "branch",
+      "output": "{\"value\":\"VX3\",\"answer\":\"N\",\"citations\":[\"来源甲写：本次检测代码是VX3。\",\"规则表：VX3不适合水下使用。\"]}",
+      "output_tokens": 40,
+      "question": "s9",
+      "status": "complete"
+    },
+    {
+      "branch": 1,
+      "case": "N3K6",
+      "citation_types_if_json_valid": [
+        "list"
+      ],
+      "elapsed_seconds": 0.39388334518298507,
+      "eos": true,
+      "index": 19,
+      "input_tokens": 316,
+      "json_valid": true,
+      "kind": "branch",
+      "output": "{\"value\":\"LM7\",\"answer\":\"N\",\"citations\":[\"本次检测代码是LM7。\",\"LM7不适合水下使用。\"]}",
+      "output_tokens": 30,
+      "question": "s9",
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "citation_types_if_json_valid": [],
+      "elapsed_seconds": 1.278459195047617,
+      "eos": true,
+      "index": 20,
+      "input_tokens": 373,
+      "json_valid": false,
+      "kind": "joint",
+      "output": "{\"final\":\"U\",\"worlds\":[{\"value\":\"VX3\",\"answer\":\"N\",\"citations\":\"来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。\"},{\"value\":\"LM7\",\"answer\":\"Y\",\"citations\":\"来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。规则表明确：LM7不适合干燥运输，适合室内储存，不适合水下使用。\"}}]",
+      "output_tokens": 102,
+      "question": "t1",
+      "status": "complete"
+    },
+    {
+      "branch": 0,
+      "case": "N3K6",
+      "citation_types_if_json_valid": [
+        "list"
+      ],
+      "elapsed_seconds": 0.6148134092800319,
+      "eos": true,
+      "index": 21,
+      "input_tokens": 316,
+      "json_valid": true,
+      "kind": "branch",
+      "output": "{\"value\":\"VX3\",\"answer\":\"N\",\"citations\":[\"来源甲写：本次检测代码是VX3。\",\"规则表：VX3适合干燥运输，适合室内储存，不适合水下使用。\"]}",
+      "output_tokens": 48,
+      "question": "t1",
+      "status": "complete"
+    },
+    {
+      "branch": 1,
+      "case": "N3K6",
+      "citation_types_if_json_valid": [
+        "list"
+      ],
+      "elapsed_seconds": 0.4934860561043024,
+      "eos": true,
+      "index": 22,
+      "input_tokens": 315,
+      "json_valid": true,
+      "kind": "branch",
+      "output": "{\"value\":\"LM7\",\"answer\":\"N\",\"citations\":[\"本次检测代码是LM7。\",\"LM7不适合干燥运输，适合室内储存，不适合水下使用。\"]}",
+      "output_tokens": 38,
+      "question": "t1",
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "citation_types_if_json_valid": [
+        "str",
+        "str"
+      ],
+      "elapsed_seconds": 1.2701152632944286,
+      "eos": true,
+      "index": 23,
+      "input_tokens": 373,
+      "json_valid": true,
+      "kind": "joint",
+      "output": "{\"final\":\"U\",\"worlds\":[{\"value\":\"VX3\",\"answer\":\"N\",\"citations\":\"来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。\"},{\"value\":\"LM7\",\"answer\":\"Y\",\"citations\":\"来源甲写：本次检测代码是VX3。来源乙写：本次检测代码是LM7。\",\"rules\":\"LM7不适合干燥运输，适合室内储存，不适合水下使用.\"}]}",
+      "output_tokens": 101,
+      "question": "u5",
+      "status": "complete"
+    },
+    {
+      "branch": 0,
+      "case": "N3K6",
+      "citation_types_if_json_valid": [
+        "list"
+      ],
+      "elapsed_seconds": 0.44661089638248086,
+      "eos": true,
+      "index": 24,
+      "input_tokens": 316,
+      "json_valid": true,
+      "kind": "branch",
+      "output": "{\"value\":\"VX3\",\"answer\":\"Y\",\"citations\":[\"来源甲写：本次检测代码是VX3\",\"VX3适合室内储存\"]}",
+      "output_tokens": 34,
+      "question": "u5",
+      "status": "complete"
+    },
+    {
+      "branch": 1,
+      "case": "N3K6",
+      "citation_types_if_json_valid": [
+        "list"
+      ],
+      "elapsed_seconds": 0.4078564359806478,
+      "eos": true,
+      "index": 25,
+      "input_tokens": 315,
+      "json_valid": true,
+      "kind": "branch",
+      "output": "{\"value\":\"LM7\",\"answer\":\"Y\",\"citations\":[\"来源乙写：本次检测代码是LM7\",\"LM7适合室内储存\"]}",
+      "output_tokens": 31,
+      "question": "u5",
+      "status": "complete"
+    }
+  ],
+  "preflight_to_last_record_seconds": 23.324702,
+  "route_costs": [
+    {
+      "call_seconds_sum": 4.624827928841114,
+      "case": "D7M4",
+      "executed_calls": 3,
+      "input_tokens": 1002,
+      "journal_slots": 3,
+      "output_tokens": 204,
+      "planned_calls": 3,
+      "route": "direct",
+      "skipped_extract": 0
+    },
+    {
+      "call_seconds_sum": 2.693262765184045,
+      "case": "D7M4",
+      "executed_calls": 4,
+      "input_tokens": 1225,
+      "journal_slots": 4,
+      "output_tokens": 207,
+      "planned_calls": 4,
+      "route": "joint",
+      "skipped_extract": 0
+    },
+    {
+      "call_seconds_sum": 2.594917647074908,
+      "case": "D7M4",
+      "executed_calls": 7,
+      "input_tokens": 1930,
+      "journal_slots": 7,
+      "output_tokens": 194,
+      "planned_calls": 7,
+      "route": "branch",
+      "skipped_extract": 0
+    },
+    {
+      "call_seconds_sum": 3.380076115950942,
+      "case": "N3K6",
+      "executed_calls": 3,
+      "input_tokens": 1072,
+      "journal_slots": 3,
+      "output_tokens": 268,
+      "planned_calls": 3,
+      "route": "direct",
+      "skipped_extract": 0
+    },
+    {
+      "call_seconds_sum": 3.752972663845867,
+      "case": "N3K6",
+      "executed_calls": 4,
+      "input_tokens": 1322,
+      "journal_slots": 4,
+      "output_tokens": 296,
+      "planned_calls": 4,
+      "route": "joint",
+      "skipped_extract": 0
+    },
+    {
+      "call_seconds_sum": 3.029671659693122,
+      "case": "N3K6",
+      "executed_calls": 7,
+      "input_tokens": 2097,
+      "journal_slots": 7,
+      "output_tokens": 231,
+      "planned_calls": 7,
+      "route": "branch",
+      "skipped_extract": 0
+    }
+  ],
+  "route_counts": {
+    "branch": {
+      "raw_final_matches": 4,
+      "raw_split_yes_or_no": 1,
+      "raw_world_matches": 10,
+      "strict_scored": 3,
+      "strict_supported_correct": 0
+    },
+    "direct": {
+      "raw_final_matches": 3,
+      "raw_split_yes_or_no": 1,
+      "raw_world_matches": 9,
+      "strict_scored": 0,
+      "strict_supported_correct": 0
+    },
+    "joint": {
+      "raw_final_matches": 2,
+      "raw_split_yes_or_no": 1,
+      "raw_world_matches": 7,
+      "strict_scored": 0,
+      "strict_supported_correct": 0
+    }
+  },
+  "score_sha256": "a1142012fbe56509cbeabad474b451544d5d54ed2ebe46e9687927c324165cb3",
+  "seal_sha256": "c1ffe2f73e3d2a6b1b62dbf519d8b7e0f16bb3872f12d5b9ddf4bf8ae02dadb1",
+  "slot_count": 26,
+  "total_input_tokens": 8268,
+  "total_output_tokens": 1381
+}
