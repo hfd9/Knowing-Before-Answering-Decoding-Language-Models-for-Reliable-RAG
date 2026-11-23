@@ -1,0 +1,1433 @@
+{
+  "call_seconds": 174.16587442532182,
+  "model_calls": 26,
+  "questions": [
+    {
+      "case": "D7M4",
+      "methods": {
+        "branch": {
+          "correct_and_supported": false,
+          "final": "Y",
+          "readable": true,
+          "unsupported_split_choice": true,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "58"
+            }
+          ]
+        },
+        "direct": {
+          "correct_and_supported": false,
+          "final": "U",
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "58"
+            }
+          ]
+        },
+        "joint": {
+          "correct_and_supported": false,
+          "final": "U",
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "58"
+            }
+          ]
+        },
+        "numeric_baseline": {
+          "correct_and_supported": true,
+          "final": "U",
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "58"
+            }
+          ]
+        }
+      },
+      "question": "p4",
+      "reference": {
+        "final": "U",
+        "rationale": "34不超过45；58超过45。",
+        "world_answers": [
+          "N",
+          "Y"
+        ]
+      }
+    },
+    {
+      "case": "D7M4",
+      "methods": {
+        "branch": {
+          "correct_and_supported": false,
+          "final": "Y",
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "Y",
+              "correct": false,
+              "evidence_ids": [
+                "S2"
+              ],
+              "evidence_status": "contradicts",
+              "slot": "S2",
+              "value": "58"
+            }
+          ]
+        },
+        "direct": {
+          "correct_and_supported": false,
+          "final": null,
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "X",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "58"
+            }
+          ]
+        },
+        "joint": {
+          "correct_and_supported": false,
+          "final": null,
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "X",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "58"
+            }
+          ]
+        },
+        "numeric_baseline": {
+          "correct_and_supported": true,
+          "final": "N",
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "58"
+            }
+          ]
+        }
+      },
+      "question": "q8",
+      "reference": {
+        "final": "N",
+        "rationale": "34和58均不低于20。",
+        "world_answers": [
+          "N",
+          "N"
+        ]
+      }
+    },
+    {
+      "case": "D7M4",
+      "methods": {
+        "branch": {
+          "correct_and_supported": false,
+          "final": "Y",
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "58"
+            }
+          ]
+        },
+        "direct": {
+          "correct_and_supported": false,
+          "final": "U",
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "N",
+              "correct": false,
+              "evidence_ids": [
+                "S1",
+                "S2"
+              ],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "58"
+            }
+          ]
+        },
+        "joint": {
+          "correct_and_supported": false,
+          "final": "U",
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "N",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "58"
+            }
+          ]
+        },
+        "numeric_baseline": {
+          "correct_and_supported": true,
+          "final": "Y",
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "34"
+            },
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "58"
+            }
+          ]
+        }
+      },
+      "question": "r2",
+      "reference": {
+        "final": "Y",
+        "rationale": "34和58均超过30。",
+        "world_answers": [
+          "Y",
+          "Y"
+        ]
+      }
+    },
+    {
+      "case": "N3K6",
+      "methods": {
+        "branch": {
+          "correct_and_supported": false,
+          "final": null,
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "X",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "X",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ]
+        },
+        "direct": {
+          "correct_and_supported": false,
+          "final": "U",
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": false,
+              "evidence_ids": [
+                "S1",
+                "R1"
+              ],
+              "evidence_status": "contradicts",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S2",
+                "R2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ]
+        },
+        "joint": {
+          "correct_and_supported": false,
+          "final": null,
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "X",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S1",
+                "R1"
+              ],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ]
+        }
+      },
+      "question": "s9",
+      "reference": {
+        "final": "N",
+        "rationale": "两代码均不适合水下使用。",
+        "world_answers": [
+          "N",
+          "N"
+        ]
+      }
+    },
+    {
+      "case": "N3K6",
+      "methods": {
+        "branch": {
+          "correct_and_supported": false,
+          "final": null,
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S1",
+                "R1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "X",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ]
+        },
+        "direct": {
+          "correct_and_supported": true,
+          "final": "U",
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S1",
+                "R1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S2",
+                "R2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ]
+        },
+        "joint": {
+          "correct_and_supported": false,
+          "final": null,
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "X",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "N",
+              "correct": true,
+              "evidence_ids": [
+                "S2",
+                "R2"
+              ],
+              "evidence_status": "supports",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ]
+        }
+      },
+      "question": "t1",
+      "reference": {
+        "final": "U",
+        "rationale": "规则表明VX3适合、LM7不适合干燥运输。",
+        "world_answers": [
+          "Y",
+          "N"
+        ]
+      }
+    },
+    {
+      "case": "N3K6",
+      "methods": {
+        "branch": {
+          "correct_and_supported": false,
+          "final": null,
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "X",
+              "correct": false,
+              "evidence_ids": [],
+              "evidence_status": "missing_or_wrong",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ]
+        },
+        "direct": {
+          "correct_and_supported": false,
+          "final": "U",
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S1",
+                "R1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "N",
+              "correct": false,
+              "evidence_ids": [
+                "S2",
+                "R2"
+              ],
+              "evidence_status": "contradicts",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ]
+        },
+        "joint": {
+          "correct_and_supported": false,
+          "final": "U",
+          "readable": true,
+          "unsupported_split_choice": false,
+          "worlds": [
+            {
+              "answer": "Y",
+              "correct": true,
+              "evidence_ids": [
+                "S1",
+                "R1"
+              ],
+              "evidence_status": "supports",
+              "slot": "S1",
+              "value": "VX3"
+            },
+            {
+              "answer": "N",
+              "correct": false,
+              "evidence_ids": [
+                "S2",
+                "R2"
+              ],
+              "evidence_status": "contradicts",
+              "slot": "S2",
+              "value": "LM7"
+            }
+          ]
+        }
+      },
+      "question": "u5",
+      "reference": {
+        "final": "Y",
+        "rationale": "两代码均适合室内储存。",
+        "world_answers": [
+          "Y",
+          "Y"
+        ]
+      }
+    }
+  ],
+  "records": [
+    {
+      "branch": null,
+      "case": "D7M4",
+      "eos": true,
+      "index": 0,
+      "input_tokens": 250,
+      "kind": "direct",
+      "output": "S1=N|-\nS2=Y|S2",
+      "output_tokens": 12,
+      "question": "p4",
+      "seconds": 7.772686471231282,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "N",
+          "evidence_ids": [],
+          "slot": "S1",
+          "value": "34"
+        },
+        {
+          "answer": "Y",
+          "evidence_ids": [
+            "S2"
+          ],
+          "slot": "S2",
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "eos": true,
+      "index": 1,
+      "input_tokens": 250,
+      "kind": "direct",
+      "output": "S1=N|-\nS2=X|-",
+      "output_tokens": 10,
+      "question": "q8",
+      "seconds": 6.640483628027141,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "N",
+          "evidence_ids": [],
+          "slot": "S1",
+          "value": "34"
+        },
+        {
+          "answer": "X",
+          "evidence_ids": [],
+          "slot": "S2",
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "eos": true,
+      "index": 2,
+      "input_tokens": 250,
+      "kind": "direct",
+      "output": "S1=Y|S1\nS2=N|S1,S2",
+      "output_tokens": 16,
+      "question": "r2",
+      "seconds": 9.598315571900457,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "Y",
+          "evidence_ids": [
+            "S1"
+          ],
+          "slot": "S1",
+          "value": "34"
+        },
+        {
+          "answer": "N",
+          "evidence_ids": [
+            "S1",
+            "S2"
+          ],
+          "slot": "S2",
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "bound_source_slots": [
+        "S1",
+        "S2"
+      ],
+      "branch": null,
+      "case": "D7M4",
+      "eos": true,
+      "extraction": {
+        "encoding": "single_json_fence",
+        "status": "parsed",
+        "types": [
+          "string",
+          "string"
+        ],
+        "values": [
+          "34",
+          "58"
+        ]
+      },
+      "index": 3,
+      "input_tokens": 174,
+      "kind": "extract",
+      "output": "```json\n[\"34\", \"58\"]\n```",
+      "output_tokens": 13,
+      "question": null,
+      "seconds": 7.61636077798903,
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "eos": true,
+      "index": 4,
+      "input_tokens": 256,
+      "kind": "joint",
+      "output": "S1=N|-\nS2=Y|S2",
+      "output_tokens": 12,
+      "question": "p4",
+      "seconds": 7.746975148096681,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "N",
+          "evidence_ids": [],
+          "slot": "S1",
+          "value": "34"
+        },
+        {
+          "answer": "Y",
+          "evidence_ids": [
+            "S2"
+          ],
+          "slot": "S2",
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "branch": 0,
+      "case": "D7M4",
+      "eos": true,
+      "index": 5,
+      "input_tokens": 247,
+      "kind": "branch",
+      "output": "S1=Y|-",
+      "output_tokens": 5,
+      "question": "p4",
+      "seconds": 4.20197715330869,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "Y",
+          "evidence_ids": [],
+          "slot": "S1",
+          "value": "34"
+        }
+      ]
+    },
+    {
+      "branch": 1,
+      "case": "D7M4",
+      "eos": true,
+      "index": 6,
+      "input_tokens": 247,
+      "kind": "branch",
+      "output": "S2=Y|-",
+      "output_tokens": 5,
+      "question": "p4",
+      "seconds": 4.189487997908145,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "Y",
+          "evidence_ids": [],
+          "slot": "S2",
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "eos": true,
+      "index": 7,
+      "input_tokens": 256,
+      "kind": "joint",
+      "output": "S1=N|-\nS2=X|-",
+      "output_tokens": 10,
+      "question": "q8",
+      "seconds": 6.799592189956456,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "N",
+          "evidence_ids": [],
+          "slot": "S1",
+          "value": "34"
+        },
+        {
+          "answer": "X",
+          "evidence_ids": [],
+          "slot": "S2",
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "branch": 0,
+      "case": "D7M4",
+      "eos": true,
+      "index": 8,
+      "input_tokens": 247,
+      "kind": "branch",
+      "output": "S1=Y|-",
+      "output_tokens": 5,
+      "question": "q8",
+      "seconds": 4.1014499752782285,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "Y",
+          "evidence_ids": [],
+          "slot": "S1",
+          "value": "34"
+        }
+      ]
+    },
+    {
+      "branch": 1,
+      "case": "D7M4",
+      "eos": true,
+      "index": 9,
+      "input_tokens": 247,
+      "kind": "branch",
+      "output": "S2=Y|S2",
+      "output_tokens": 7,
+      "question": "q8",
+      "seconds": 5.161026939749718,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "Y",
+          "evidence_ids": [
+            "S2"
+          ],
+          "slot": "S2",
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "branch": null,
+      "case": "D7M4",
+      "eos": true,
+      "index": 10,
+      "input_tokens": 256,
+      "kind": "joint",
+      "output": "S1=N|-\nS2=Y|S2",
+      "output_tokens": 12,
+      "question": "r2",
+      "seconds": 7.757171081379056,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "N",
+          "evidence_ids": [],
+          "slot": "S1",
+          "value": "34"
+        },
+        {
+          "answer": "Y",
+          "evidence_ids": [
+            "S2"
+          ],
+          "slot": "S2",
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "branch": 0,
+      "case": "D7M4",
+      "eos": true,
+      "index": 11,
+      "input_tokens": 247,
+      "kind": "branch",
+      "output": "S1=Y|-",
+      "output_tokens": 5,
+      "question": "r2",
+      "seconds": 4.170557856094092,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "Y",
+          "evidence_ids": [],
+          "slot": "S1",
+          "value": "34"
+        }
+      ]
+    },
+    {
+      "branch": 1,
+      "case": "D7M4",
+      "eos": true,
+      "index": 12,
+      "input_tokens": 247,
+      "kind": "branch",
+      "output": "S2=Y|-",
+      "output_tokens": 5,
+      "question": "r2",
+      "seconds": 4.164990008343011,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "Y",
+          "evidence_ids": [],
+          "slot": "S2",
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "eos": true,
+      "index": 13,
+      "input_tokens": 282,
+      "kind": "direct",
+      "output": "S1=Y|S1,R1\nS2=N|S2,R2",
+      "output_tokens": 18,
+      "question": "s9",
+      "seconds": 10.60021823598072,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "Y",
+          "evidence_ids": [
+            "S1",
+            "R1"
+          ],
+          "slot": "S1",
+          "value": "VX3"
+        },
+        {
+          "answer": "N",
+          "evidence_ids": [
+            "S2",
+            "R2"
+          ],
+          "slot": "S2",
+          "value": "LM7"
+        }
+      ]
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "eos": true,
+      "index": 14,
+      "input_tokens": 281,
+      "kind": "direct",
+      "output": "S1=Y|S1,R1\nS2=N|S2,R2",
+      "output_tokens": 18,
+      "question": "t1",
+      "seconds": 10.618524168618023,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "Y",
+          "evidence_ids": [
+            "S1",
+            "R1"
+          ],
+          "slot": "S1",
+          "value": "VX3"
+        },
+        {
+          "answer": "N",
+          "evidence_ids": [
+            "S2",
+            "R2"
+          ],
+          "slot": "S2",
+          "value": "LM7"
+        }
+      ]
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "eos": true,
+      "index": 15,
+      "input_tokens": 281,
+      "kind": "direct",
+      "output": "S1=Y|S1,R1\nS2=N|S2,R2",
+      "output_tokens": 18,
+      "question": "u5",
+      "seconds": 10.629243931733072,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "Y",
+          "evidence_ids": [
+            "S1",
+            "R1"
+          ],
+          "slot": "S1",
+          "value": "VX3"
+        },
+        {
+          "answer": "N",
+          "evidence_ids": [
+            "S2",
+            "R2"
+          ],
+          "slot": "S2",
+          "value": "LM7"
+        }
+      ]
+    },
+    {
+      "bound_source_slots": [
+        "S1",
+        "S2"
+      ],
+      "branch": null,
+      "case": "N3K6",
+      "eos": true,
+      "extraction": {
+        "encoding": "single_json_fence",
+        "status": "parsed",
+        "types": [
+          "string",
+          "string"
+        ],
+        "values": [
+          "VX3",
+          "LM7"
+        ]
+      },
+      "index": 16,
+      "input_tokens": 206,
+      "kind": "extract",
+      "output": "```json\n[\"VX3\", \"LM7\"]\n```",
+      "output_tokens": 14,
+      "question": null,
+      "seconds": 8.1116675096564,
+      "status": "complete"
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "eos": true,
+      "index": 17,
+      "input_tokens": 289,
+      "kind": "joint",
+      "output": "S1=X|-\nS2=N|S1,R1",
+      "output_tokens": 14,
+      "question": "s9",
+      "seconds": 8.512693983968347,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "X",
+          "evidence_ids": [],
+          "slot": "S1",
+          "value": "VX3"
+        },
+        {
+          "answer": "N",
+          "evidence_ids": [
+            "S1",
+            "R1"
+          ],
+          "slot": "S2",
+          "value": "LM7"
+        }
+      ]
+    },
+    {
+      "branch": 0,
+      "case": "N3K6",
+      "eos": true,
+      "index": 18,
+      "input_tokens": 280,
+      "kind": "branch",
+      "output": "S1=X|-",
+      "output_tokens": 5,
+      "question": "s9",
+      "seconds": 4.11071460833773,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "X",
+          "evidence_ids": [],
+          "slot": "S1",
+          "value": "VX3"
+        }
+      ]
+    },
+    {
+      "branch": 1,
+      "case": "N3K6",
+      "eos": true,
+      "index": 19,
+      "input_tokens": 279,
+      "kind": "branch",
+      "output": "S2=X|-",
+      "output_tokens": 5,
+      "question": "s9",
+      "seconds": 4.15262258797884,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "X",
+          "evidence_ids": [],
+          "slot": "S2",
+          "value": "LM7"
+        }
+      ]
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "eos": true,
+      "index": 20,
+      "input_tokens": 288,
+      "kind": "joint",
+      "output": "S1=X|-\nS2=N|S2,R2",
+      "output_tokens": 14,
+      "question": "t1",
+      "seconds": 8.55381895788014,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "X",
+          "evidence_ids": [],
+          "slot": "S1",
+          "value": "VX3"
+        },
+        {
+          "answer": "N",
+          "evidence_ids": [
+            "S2",
+            "R2"
+          ],
+          "slot": "S2",
+          "value": "LM7"
+        }
+      ]
+    },
+    {
+      "branch": 0,
+      "case": "N3K6",
+      "eos": true,
+      "index": 21,
+      "input_tokens": 279,
+      "kind": "branch",
+      "output": "S1=Y|S1,R1",
+      "output_tokens": 9,
+      "question": "t1",
+      "seconds": 5.987870784010738,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "Y",
+          "evidence_ids": [
+            "S1",
+            "R1"
+          ],
+          "slot": "S1",
+          "value": "VX3"
+        }
+      ]
+    },
+    {
+      "branch": 1,
+      "case": "N3K6",
+      "eos": true,
+      "index": 22,
+      "input_tokens": 278,
+      "kind": "branch",
+      "output": "S2=X|-",
+      "output_tokens": 5,
+      "question": "t1",
+      "seconds": 4.111226128414273,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "X",
+          "evidence_ids": [],
+          "slot": "S2",
+          "value": "LM7"
+        }
+      ]
+    },
+    {
+      "branch": null,
+      "case": "N3K6",
+      "eos": true,
+      "index": 23,
+      "input_tokens": 288,
+      "kind": "joint",
+      "output": "S1=Y|S1,R1\nS2=N|S2,R2",
+      "output_tokens": 18,
+      "question": "u5",
+      "seconds": 10.572296255733818,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "Y",
+          "evidence_ids": [
+            "S1",
+            "R1"
+          ],
+          "slot": "S1",
+          "value": "VX3"
+        },
+        {
+          "answer": "N",
+          "evidence_ids": [
+            "S2",
+            "R2"
+          ],
+          "slot": "S2",
+          "value": "LM7"
+        }
+      ]
+    },
+    {
+      "branch": 0,
+      "case": "N3K6",
+      "eos": true,
+      "index": 24,
+      "input_tokens": 279,
+      "kind": "branch",
+      "output": "S1=Y|-",
+      "output_tokens": 5,
+      "question": "u5",
+      "seconds": 4.17361339693889,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "Y",
+          "evidence_ids": [],
+          "slot": "S1",
+          "value": "VX3"
+        }
+      ]
+    },
+    {
+      "branch": 1,
+      "case": "N3K6",
+      "eos": true,
+      "index": 25,
+      "input_tokens": 278,
+      "kind": "branch",
+      "output": "S2=X|-",
+      "output_tokens": 5,
+      "question": "u5",
+      "seconds": 4.11028907680884,
+      "status": "complete",
+      "worlds": [
+        {
+          "answer": "X",
+          "evidence_ids": [],
+          "slot": "S2",
+          "value": "LM7"
+        }
+      ]
+    }
+  ],
+  "seal_sha256": "8d3f255c245ba5ecaa60fa5d64eb8bbc86755afba2686b73ca85d6507a56bb58",
+  "slot_counts": {
+    "complete": 26
+  },
+  "source_sha256": {
+    "0000.attempt.json": "ec22e17c05d56b1ec672b944916ef7efd717015f09d317cb3fab802e96e2c85d",
+    "0000.record.json": "e935ff4c49eaf6ae397dd888f1792774b37e4580d8ec3fecd81edccd8031be20",
+    "0001.attempt.json": "592fc1c456ee6566a4d3be5cb6c816911fcd75a83f629826bb06453225d54f97",
+    "0001.record.json": "0ffc2f28539529c1445ae51a164d4eb46c33bd8302aa29eea4fe093e87eda86d",
+    "0002.attempt.json": "8977c5a57ee049e7c68b0c6e38a4e18775eb4decd737a27fdcde26bff4a7abc8",
+    "0002.record.json": "14c8931c75a7b632b301966abae31ded51429f17bd63606b760128fea1e1d1a1",
+    "0003.attempt.json": "a3360e3e6881a9d8269e4b123e579b3538b874ae0cbca0a7ea1836b627163d7d",
+    "0003.record.json": "fddd7bff99aba117fc6a749f98f7afbcdab284a48e93f6dc6562725a7873db04",
+    "0004.attempt.json": "57b3119d2e4ca7948b494135ad9751d4ed2562213181aee826278e40098c7610",
+    "0004.record.json": "435e44edcc4b62ee36d9872ef628c05022af489695dd6d3e54fe36707cefd442",
+    "0005.attempt.json": "ff3d63469f8b62192288ab2329e9b26e229b2c4d841eadad7c1017a3cae6d1f0",
+    "0005.record.json": "862b06f85a42cf737c0d0832837068f61997215d98b043bb6a23d9535ae3f88b",
+    "0006.attempt.json": "f47b1c3462afc9ad2ab7ff972a02e1a1ab7ecf421054596c381b8e0d6b1f238a",
+    "0006.record.json": "342f88db75ec11cb78c34ebe8c6c21d71f9beef908e2dac9a0c4fd5818f2efc7",
+    "0007.attempt.json": "836415a426f61d72c1a304d526d84e04449b1dbcda0c80a90c07c60232413a31",
+    "0007.record.json": "00d0240cf074b8422f62dd5ca0f0523794e906815cf2bcba3907cf832d75e621",
+    "0008.attempt.json": "a9f943f8bcf594f175e06814163189d146807751bbcf6146c221edc420c24ca2",
+    "0008.record.json": "65f1dc1c58ddff206fd1cf87162eff5716ae653755a789c74dda894a2b12562c",
+    "0009.attempt.json": "85ded71ade7bca1828d2e610a442b4d8ab685d9dcebfa40f6fbd229271e9159b",
+    "0009.record.json": "8e6a77f2ceceecdebc94bfd2d47f3d64a3b1246cc2fc349d832ab8a0e7fc2d14",
+    "0010.attempt.json": "25dd0168ac2484e64fe5c85087e472c640020926b37ff6eca55f330ec97a29e6",
+    "0010.record.json": "5dd923f8577f006196acdef359fd23061239ccb0d426b783600327c8fff58b24",
+    "0011.attempt.json": "6dad5c54eebb1b78ec47da7ee89699c1cc6db8d6197a1845d2a4156f187dbf47",
+    "0011.record.json": "f54d05fc8c8d6afc35c9618a124626221ca00c2f86004b3dfe6e0d8fc6e10762",
+    "0012.attempt.json": "d6d99ecc3488f2fed5f5a3049df99f13baf152d3a367403c9dd2ef93d7132881",
+    "0012.record.json": "1cea944f910e1109a73231bfe73eace75836f207c2da1b59013575a70ad7c566",
+    "0013.attempt.json": "70c79c721cf0694a45d4481e3e5248c8032ad22ae6f992c748089716433aee20",
+    "0013.record.json": "1ba14601112f8eafe3ba1b525b62e73235f03a61f09b93dfab5858c8358d4588",
+    "0014.attempt.json": "8f1f5f0bdd2c2f43c68076f09d849c0d457d866d5684f15c296ef56aa810e04b",
+    "0014.record.json": "674852b92378573d55ce7896b7d452c49a02d034cbb4ffa209c2d583a62214b8",
+    "0015.attempt.json": "ac0ae4ca7ef2c61ccde11f8e5c043313b8a1889e7c5beda1ed106bd999132e30",
+    "0015.record.json": "2ce527f6ee2bc177de978b20894382f9806e7ac1f026de3cf70551cca390132a",
+    "0016.attempt.json": "43cd392575fc2632f721d6eb1572ee0215a9c1a8664833284a3a20641fb93d79",
+    "0016.record.json": "c7029f9e52f60e8c7865acc50c703bc7ee7dbc518e3e97a2737ca8b39973c35a",
+    "0017.attempt.json": "8ccb523fd7900d8d3e7569217bb141c4389a3741d78e2593211eb29428b8f761",
+    "0017.record.json": "13a09c8b99ac2f50c6ce8059f77b5e436750e74f593c1df61d7433aa13672385",
+    "0018.attempt.json": "f5c9ccb16dfbcaf6e78431f78aca7418bf89b794c2f945401527aadcc29f53a1",
+    "0018.record.json": "8044a88656c6d4406684e12cf9babbe9645092dfc9fe80bb02e3746e75c83d81",
+    "0019.attempt.json": "8c876de386a6bdabe46b1c648569093d4f75b40f9768d5bb241b9441252162cb",
+    "0019.record.json": "3f83ce05f1769661c0b4fecf9d38e8293c594ef764edd8e128577ea42a86dd32",
+    "0020.attempt.json": "47384149313d255e5d5e4c3fad0484fdcb404c7f6f7bc0fd22c93650e950a6b3",
+    "0020.record.json": "02c52cd8274de51c5c68ac914d97fdeafc07141523e4655848832542a23a52fd",
+    "0021.attempt.json": "f8369525472d3c2f421fe91415475a5f5474d7aedc3e81c7dedda4b26295772c",
+    "0021.record.json": "8c43d5f96ee983e676315577fd61ad8ce99d324f4195a4d28fb9a8c644209b3c",
+    "0022.attempt.json": "162dced644f72a907351b1ef96e07b97801a69f1aa8711d47fa2e2674f31741a",
+    "0022.record.json": "509f89b39dff0f87416c1985f3a9eeb95053272c6ac59ffb4a8725d619e4525a",
+    "0023.attempt.json": "428f205c341866fcc9024f2cb21721ea5f674b0f0f6f52bccc419ac976d74676",
+    "0023.record.json": "41ed234c58e2f561f42c91b2d17901bf45bb76043c8ae1429e0f812898164145",
+    "0024.attempt.json": "810e1feab223ff0ddc5bb61684bd440511b2ad3b11691202347b45ee44ca4dd5",
+    "0024.record.json": "eca20d45bbb45506b2fc543718989140f1408c5df50225bc7cbeb292d0862383",
+    "0025.attempt.json": "ddadacc7bfbf84739fc0db239527d761b2953d5d595779cb62ecc9f0b3d03fe9",
+    "0025.record.json": "47ebc4b20550ca17254c8a4324c9cc66ed18c7ea1a067fe56b257dd3eec6dc08",
+    "manifest.json": "15861c442ba2a23ecc9ad1631d4d23cd7388a935be4ac0dbd35e7b7eb7d85476",
+    "seal.json": "8d3f255c245ba5ecaa60fa5d64eb8bbc86755afba2686b73ca85d6507a56bb58",
+    "seal.sha256": "ab4a773a1edc19ec09fab881bc80c1323f80e005cc46b81e8ac2dde3b7967458"
+  },
+  "totals": {
+    "branch": {
+      "correct_and_supported": 0,
+      "final_correct": 1,
+      "planned": 6,
+      "readable": 6,
+      "resolved": 3,
+      "unsupported_split_choice": 1,
+      "worlds_correct": 1
+    },
+    "direct": {
+      "correct_and_supported": 1,
+      "final_correct": 2,
+      "planned": 6,
+      "readable": 6,
+      "resolved": 5,
+      "unsupported_split_choice": 0,
+      "worlds_correct": 2
+    },
+    "joint": {
+      "correct_and_supported": 0,
+      "final_correct": 1,
+      "planned": 6,
+      "readable": 6,
+      "resolved": 3,
+      "unsupported_split_choice": 0,
+      "worlds_correct": 1
+    },
+    "numeric_baseline": {
+      "correct_and_supported": 3,
+      "final_correct": 3,
+      "planned": 3,
+      "readable": 3,
+      "resolved": 3,
+      "unsupported_split_choice": 0,
+      "worlds_correct": 3
+    }
+  }
+}
