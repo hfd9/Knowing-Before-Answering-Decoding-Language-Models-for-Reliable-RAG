@@ -1,0 +1,1299 @@
+{
+  "check_counts": {
+    "confirmed": 6,
+    "roles_reversed": 10
+  },
+  "development_correct_grounded": 8,
+  "directions_correct": 16,
+  "original_seal_sha256": "1aed49811d51df50ae14f6c2c39be5a655e6f102ad89fcc591373260b066e2ff",
+  "rows": {
+    "q0be4b7ff7c2d": {
+      "both_from_source": {
+        "correct_grounded": true,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "expanded_check": "roles_reversed",
+      "f1_from_source": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "f1_verified": {
+        "correct_grounded": false,
+        "final": "X",
+        "unfounded_unique": false
+      },
+      "model_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "汇编组",
+          "overrides": "R1",
+          "recipient": "用印组"
+        },
+        "grant": {
+          "grantor": "汇编组",
+          "recipient": "用印组"
+        }
+      },
+      "original": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "original_check": "f1_unrecognized",
+      "reference_final": "U",
+      "root": "H03",
+      "source_structure": {
+        "exception": {
+          "answer": "Y",
+          "grantor": "汇编组",
+          "overrides": "R1",
+          "recipient": "用印组"
+        },
+        "grant": {
+          "grantor": "用印组",
+          "recipient": "汇编组"
+        }
+      },
+      "wording": 1
+    },
+    "q0c970a5c4772": {
+      "both_from_source": {
+        "correct_grounded": true,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "expanded_check": "roles_reversed",
+      "f1_from_source": {
+        "correct_grounded": true,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "f1_verified": {
+        "correct_grounded": false,
+        "final": "X",
+        "unfounded_unique": false
+      },
+      "model_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "校印组",
+          "overrides": "R2",
+          "recipient": "值签组"
+        },
+        "grant": {
+          "grantor": "校印组",
+          "recipient": "值签组"
+        }
+      },
+      "original": {
+        "correct_grounded": false,
+        "final": "N",
+        "unfounded_unique": true
+      },
+      "original_check": "f1_unrecognized",
+      "reference_final": "U",
+      "root": "H04",
+      "source_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "校印组",
+          "overrides": "R2",
+          "recipient": "值签组"
+        },
+        "grant": {
+          "grantor": "值签组",
+          "recipient": "校印组"
+        }
+      },
+      "wording": 2
+    },
+    "q19745a05a955": {
+      "both_from_source": {
+        "correct_grounded": true,
+        "final": "Y",
+        "unfounded_unique": false
+      },
+      "expanded_check": "confirmed",
+      "f1_from_source": {
+        "correct_grounded": true,
+        "final": "Y",
+        "unfounded_unique": false
+      },
+      "f1_verified": {
+        "correct_grounded": true,
+        "final": "Y",
+        "unfounded_unique": false
+      },
+      "model_structure": {
+        "exception": {
+          "answer": "Y",
+          "grantor": "编目组",
+          "overrides": "R2",
+          "recipient": "札记组"
+        },
+        "grant": {
+          "grantor": "编目组",
+          "recipient": "札记组"
+        }
+      },
+      "original": {
+        "correct_grounded": true,
+        "final": "Y",
+        "unfounded_unique": false
+      },
+      "original_check": "confirmed",
+      "reference_final": "Y",
+      "root": "H02",
+      "source_structure": {
+        "exception": {
+          "answer": "Y",
+          "grantor": "编目组",
+          "overrides": "R2",
+          "recipient": "札记组"
+        },
+        "grant": {
+          "grantor": "编目组",
+          "recipient": "札记组"
+        }
+      },
+      "wording": 1
+    },
+    "q1d39c35f29ea": {
+      "both_from_source": {
+        "correct_grounded": true,
+        "final": "Y",
+        "unfounded_unique": false
+      },
+      "expanded_check": "roles_reversed",
+      "f1_from_source": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "f1_verified": {
+        "correct_grounded": false,
+        "final": "X",
+        "unfounded_unique": false
+      },
+      "model_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "用印组",
+          "overrides": "R1",
+          "recipient": "汇编组"
+        },
+        "grant": {
+          "grantor": "用印组",
+          "recipient": "汇编组"
+        }
+      },
+      "original": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "original_check": "f1_unrecognized",
+      "reference_final": "Y",
+      "root": "H03",
+      "source_structure": {
+        "exception": {
+          "answer": "Y",
+          "grantor": "汇编组",
+          "overrides": "R1",
+          "recipient": "用印组"
+        },
+        "grant": {
+          "grantor": "汇编组",
+          "recipient": "用印组"
+        }
+      },
+      "wording": 2
+    },
+    "q3ed36c270dfe": {
+      "both_from_source": {
+        "correct_grounded": true,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "expanded_check": "confirmed",
+      "f1_from_source": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "f1_verified": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "model_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "抄录组",
+          "overrides": "R2",
+          "recipient": "核字组"
+        },
+        "grant": {
+          "grantor": "核字组",
+          "recipient": "抄录组"
+        }
+      },
+      "original": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "original_check": "confirmed",
+      "reference_final": "U",
+      "root": "H01",
+      "source_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "抄录组",
+          "overrides": "R1",
+          "recipient": "核字组"
+        },
+        "grant": {
+          "grantor": "核字组",
+          "recipient": "抄录组"
+        }
+      },
+      "wording": 1
+    },
+    "q430cb98c871d": {
+      "both_from_source": {
+        "correct_grounded": true,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "expanded_check": "roles_reversed",
+      "f1_from_source": {
+        "correct_grounded": true,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "f1_verified": {
+        "correct_grounded": false,
+        "final": "X",
+        "unfounded_unique": false
+      },
+      "model_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "校印组",
+          "overrides": "R2",
+          "recipient": "值签组"
+        },
+        "grant": {
+          "grantor": "校印组",
+          "recipient": "值签组"
+        }
+      },
+      "original": {
+        "correct_grounded": false,
+        "final": "N",
+        "unfounded_unique": true
+      },
+      "original_check": "f1_unrecognized",
+      "reference_final": "U",
+      "root": "H04",
+      "source_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "校印组",
+          "overrides": "R2",
+          "recipient": "值签组"
+        },
+        "grant": {
+          "grantor": "值签组",
+          "recipient": "校印组"
+        }
+      },
+      "wording": 1
+    },
+    "q9b8d8be27d8c": {
+      "both_from_source": {
+        "correct_grounded": true,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "expanded_check": "roles_reversed",
+      "f1_from_source": {
+        "correct_grounded": true,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "f1_verified": {
+        "correct_grounded": false,
+        "final": "X",
+        "unfounded_unique": false
+      },
+      "model_structure": {
+        "exception": {
+          "answer": "Y",
+          "grantor": "编目组",
+          "overrides": "R2",
+          "recipient": "札记组"
+        },
+        "grant": {
+          "grantor": "编目组",
+          "recipient": "札记组"
+        }
+      },
+      "original": {
+        "correct_grounded": false,
+        "final": "Y",
+        "unfounded_unique": true
+      },
+      "original_check": "roles_reversed",
+      "reference_final": "U",
+      "root": "H02",
+      "source_structure": {
+        "exception": {
+          "answer": "Y",
+          "grantor": "编目组",
+          "overrides": "R2",
+          "recipient": "札记组"
+        },
+        "grant": {
+          "grantor": "札记组",
+          "recipient": "编目组"
+        }
+      },
+      "wording": 1
+    },
+    "qac3a422dfdaf": {
+      "both_from_source": {
+        "correct_grounded": true,
+        "final": "N",
+        "unfounded_unique": false
+      },
+      "expanded_check": "roles_reversed",
+      "f1_from_source": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "f1_verified": {
+        "correct_grounded": false,
+        "final": "X",
+        "unfounded_unique": false
+      },
+      "model_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "核字组",
+          "overrides": "R2",
+          "recipient": "抄录组"
+        },
+        "grant": {
+          "grantor": "核字组",
+          "recipient": "抄录组"
+        }
+      },
+      "original": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "original_check": "f1_unrecognized",
+      "reference_final": "N",
+      "root": "H01",
+      "source_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "抄录组",
+          "overrides": "R1",
+          "recipient": "核字组"
+        },
+        "grant": {
+          "grantor": "抄录组",
+          "recipient": "核字组"
+        }
+      },
+      "wording": 2
+    },
+    "qb65c47531846": {
+      "both_from_source": {
+        "correct_grounded": true,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "expanded_check": "roles_reversed",
+      "f1_from_source": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "f1_verified": {
+        "correct_grounded": false,
+        "final": "X",
+        "unfounded_unique": false
+      },
+      "model_structure": {
+        "exception": {
+          "answer": "Y",
+          "grantor": "汇编组",
+          "overrides": "R2",
+          "recipient": "用印组"
+        },
+        "grant": {
+          "grantor": "汇编组",
+          "recipient": "用印组"
+        }
+      },
+      "original": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "original_check": "f1_unrecognized",
+      "reference_final": "U",
+      "root": "H03",
+      "source_structure": {
+        "exception": {
+          "answer": "Y",
+          "grantor": "汇编组",
+          "overrides": "R1",
+          "recipient": "用印组"
+        },
+        "grant": {
+          "grantor": "用印组",
+          "recipient": "汇编组"
+        }
+      },
+      "wording": 2
+    },
+    "qc32be6529541": {
+      "both_from_source": {
+        "correct_grounded": true,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "expanded_check": "roles_reversed",
+      "f1_from_source": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "f1_verified": {
+        "correct_grounded": false,
+        "final": "X",
+        "unfounded_unique": false
+      },
+      "model_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "札记组",
+          "overrides": "R2",
+          "recipient": "编目组"
+        },
+        "grant": {
+          "grantor": "编目组",
+          "recipient": "札记组"
+        }
+      },
+      "original": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "original_check": "f1_unrecognized",
+      "reference_final": "U",
+      "root": "H02",
+      "source_structure": {
+        "exception": {
+          "answer": "Y",
+          "grantor": "编目组",
+          "overrides": "R2",
+          "recipient": "札记组"
+        },
+        "grant": {
+          "grantor": "札记组",
+          "recipient": "编目组"
+        }
+      },
+      "wording": 2
+    },
+    "qc7b9e2495760": {
+      "both_from_source": {
+        "correct_grounded": true,
+        "final": "Y",
+        "unfounded_unique": false
+      },
+      "expanded_check": "confirmed",
+      "f1_from_source": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "f1_verified": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "model_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "编目组",
+          "overrides": "R2",
+          "recipient": "札记组"
+        },
+        "grant": {
+          "grantor": "编目组",
+          "recipient": "札记组"
+        }
+      },
+      "original": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "original_check": "f1_unrecognized",
+      "reference_final": "Y",
+      "root": "H02",
+      "source_structure": {
+        "exception": {
+          "answer": "Y",
+          "grantor": "编目组",
+          "overrides": "R2",
+          "recipient": "札记组"
+        },
+        "grant": {
+          "grantor": "编目组",
+          "recipient": "札记组"
+        }
+      },
+      "wording": 2
+    },
+    "qca955c4e8f53": {
+      "both_from_source": {
+        "correct_grounded": true,
+        "final": "N",
+        "unfounded_unique": false
+      },
+      "expanded_check": "confirmed",
+      "f1_from_source": {
+        "correct_grounded": true,
+        "final": "N",
+        "unfounded_unique": false
+      },
+      "f1_verified": {
+        "correct_grounded": true,
+        "final": "N",
+        "unfounded_unique": false
+      },
+      "model_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "校印组",
+          "overrides": "R2",
+          "recipient": "值签组"
+        },
+        "grant": {
+          "grantor": "校印组",
+          "recipient": "值签组"
+        }
+      },
+      "original": {
+        "correct_grounded": true,
+        "final": "N",
+        "unfounded_unique": false
+      },
+      "original_check": "f1_unrecognized",
+      "reference_final": "N",
+      "root": "H04",
+      "source_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "校印组",
+          "overrides": "R2",
+          "recipient": "值签组"
+        },
+        "grant": {
+          "grantor": "校印组",
+          "recipient": "值签组"
+        }
+      },
+      "wording": 1
+    },
+    "qd7ac04e3d27c": {
+      "both_from_source": {
+        "correct_grounded": true,
+        "final": "Y",
+        "unfounded_unique": false
+      },
+      "expanded_check": "confirmed",
+      "f1_from_source": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "f1_verified": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "model_structure": {
+        "exception": {
+          "answer": "Y",
+          "grantor": "汇编组",
+          "overrides": "R2",
+          "recipient": "用印组"
+        },
+        "grant": {
+          "grantor": "汇编组",
+          "recipient": "用印组"
+        }
+      },
+      "original": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "original_check": "f1_unrecognized",
+      "reference_final": "Y",
+      "root": "H03",
+      "source_structure": {
+        "exception": {
+          "answer": "Y",
+          "grantor": "汇编组",
+          "overrides": "R1",
+          "recipient": "用印组"
+        },
+        "grant": {
+          "grantor": "汇编组",
+          "recipient": "用印组"
+        }
+      },
+      "wording": 1
+    },
+    "qdfdb9dd03565": {
+      "both_from_source": {
+        "correct_grounded": true,
+        "final": "N",
+        "unfounded_unique": false
+      },
+      "expanded_check": "roles_reversed",
+      "f1_from_source": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "f1_verified": {
+        "correct_grounded": false,
+        "final": "X",
+        "unfounded_unique": false
+      },
+      "model_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "值签组",
+          "overrides": "R2",
+          "recipient": "校印组"
+        },
+        "grant": {
+          "grantor": "值签组",
+          "recipient": "校印组"
+        }
+      },
+      "original": {
+        "correct_grounded": false,
+        "final": "N",
+        "unfounded_unique": false
+      },
+      "original_check": "f1_unrecognized",
+      "reference_final": "N",
+      "root": "H04",
+      "source_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "校印组",
+          "overrides": "R2",
+          "recipient": "值签组"
+        },
+        "grant": {
+          "grantor": "校印组",
+          "recipient": "值签组"
+        }
+      },
+      "wording": 2
+    },
+    "qe813097269fc": {
+      "both_from_source": {
+        "correct_grounded": true,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "expanded_check": "roles_reversed",
+      "f1_from_source": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "f1_verified": {
+        "correct_grounded": false,
+        "final": "X",
+        "unfounded_unique": false
+      },
+      "model_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "核字组",
+          "overrides": "R2",
+          "recipient": "抄录组"
+        },
+        "grant": {
+          "grantor": "抄录组",
+          "recipient": "核字组"
+        }
+      },
+      "original": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "original_check": "f1_unrecognized",
+      "reference_final": "U",
+      "root": "H01",
+      "source_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "抄录组",
+          "overrides": "R1",
+          "recipient": "核字组"
+        },
+        "grant": {
+          "grantor": "核字组",
+          "recipient": "抄录组"
+        }
+      },
+      "wording": 2
+    },
+    "qff72d82ac115": {
+      "both_from_source": {
+        "correct_grounded": true,
+        "final": "N",
+        "unfounded_unique": false
+      },
+      "expanded_check": "confirmed",
+      "f1_from_source": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "f1_verified": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "model_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "抄录组",
+          "overrides": "R2",
+          "recipient": "核字组"
+        },
+        "grant": {
+          "grantor": "抄录组",
+          "recipient": "核字组"
+        }
+      },
+      "original": {
+        "correct_grounded": false,
+        "final": "U",
+        "unfounded_unique": false
+      },
+      "original_check": "confirmed",
+      "reference_final": "N",
+      "root": "H01",
+      "source_structure": {
+        "exception": {
+          "answer": "N",
+          "grantor": "抄录组",
+          "overrides": "R1",
+          "recipient": "核字组"
+        },
+        "grant": {
+          "grantor": "抄录组",
+          "recipient": "核字组"
+        }
+      },
+      "wording": 1
+    }
+  },
+  "rules_correct": 16,
+  "summary": {
+    "both_from_source": {
+      "correct_grounded": 16,
+      "invalid": [],
+      "roots": {
+        "H01": {
+          "all_correct_grounded": true,
+          "direction_expected_transition": [
+            true,
+            true
+          ],
+          "direction_pairs": [
+            true,
+            true
+          ],
+          "family": "H1",
+          "wording_changed_answer": [
+            false,
+            false
+          ],
+          "wording_pairs": [
+            true,
+            true
+          ]
+        },
+        "H02": {
+          "all_correct_grounded": true,
+          "direction_expected_transition": [
+            true,
+            true
+          ],
+          "direction_pairs": [
+            true,
+            true
+          ],
+          "family": "H1",
+          "wording_changed_answer": [
+            false,
+            false
+          ],
+          "wording_pairs": [
+            true,
+            true
+          ]
+        },
+        "H03": {
+          "all_correct_grounded": true,
+          "direction_expected_transition": [
+            true,
+            true
+          ],
+          "direction_pairs": [
+            true,
+            true
+          ],
+          "family": "H2",
+          "wording_changed_answer": [
+            false,
+            false
+          ],
+          "wording_pairs": [
+            true,
+            true
+          ]
+        },
+        "H04": {
+          "all_correct_grounded": true,
+          "direction_expected_transition": [
+            true,
+            true
+          ],
+          "direction_pairs": [
+            true,
+            true
+          ],
+          "family": "H2",
+          "wording_changed_answer": [
+            false,
+            false
+          ],
+          "wording_pairs": [
+            true,
+            true
+          ]
+        }
+      },
+      "unfounded_unique": [],
+      "unresolved": []
+    },
+    "f1_from_source": {
+      "correct_grounded": 5,
+      "invalid": [],
+      "roots": {
+        "H01": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            false,
+            false
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "H1",
+          "wording_changed_answer": [
+            false,
+            false
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        },
+        "H02": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            true,
+            false
+          ],
+          "direction_pairs": [
+            true,
+            false
+          ],
+          "family": "H1",
+          "wording_changed_answer": [
+            true,
+            false
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        },
+        "H03": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            false,
+            false
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "H2",
+          "wording_changed_answer": [
+            false,
+            false
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        },
+        "H04": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            true,
+            false
+          ],
+          "direction_pairs": [
+            true,
+            false
+          ],
+          "family": "H2",
+          "wording_changed_answer": [
+            true,
+            false
+          ],
+          "wording_pairs": [
+            false,
+            true
+          ]
+        }
+      },
+      "unfounded_unique": [],
+      "unresolved": []
+    },
+    "f1_verified": {
+      "correct_grounded": 2,
+      "invalid": [],
+      "roots": {
+        "H01": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            false,
+            null
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "H1",
+          "wording_changed_answer": [
+            null,
+            null
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        },
+        "H02": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            null,
+            null
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "H1",
+          "wording_changed_answer": [
+            true,
+            null
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        },
+        "H03": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            null,
+            null
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "H2",
+          "wording_changed_answer": [
+            null,
+            null
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        },
+        "H04": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            null,
+            null
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "H2",
+          "wording_changed_answer": [
+            null,
+            null
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        }
+      },
+      "unfounded_unique": [],
+      "unresolved": [
+        "q0be4b7ff7c2d",
+        "q0c970a5c4772",
+        "q1d39c35f29ea",
+        "q430cb98c871d",
+        "q9b8d8be27d8c",
+        "qac3a422dfdaf",
+        "qb65c47531846",
+        "qc32be6529541",
+        "qdfdb9dd03565",
+        "qe813097269fc"
+      ]
+    },
+    "original_extraction": {
+      "correct_grounded": 2,
+      "invalid": [],
+      "roots": {
+        "H01": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            false,
+            false
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "H1",
+          "wording_changed_answer": [
+            false,
+            false
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        },
+        "H02": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            false,
+            false
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "H1",
+          "wording_changed_answer": [
+            true,
+            true
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        },
+        "H03": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            false,
+            false
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "H2",
+          "wording_changed_answer": [
+            false,
+            false
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        },
+        "H04": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            false,
+            false
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "H2",
+          "wording_changed_answer": [
+            false,
+            false
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        }
+      },
+      "unfounded_unique": [
+        "q0c970a5c4772",
+        "q430cb98c871d",
+        "q9b8d8be27d8c"
+      ],
+      "unresolved": []
+    },
+    "original_f1_gate": {
+      "correct_grounded": 1,
+      "invalid": [],
+      "roots": {
+        "H01": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            false,
+            null
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "H1",
+          "wording_changed_answer": [
+            null,
+            null
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        },
+        "H02": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            null,
+            null
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "H1",
+          "wording_changed_answer": [
+            null,
+            null
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        },
+        "H03": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            null,
+            null
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "H2",
+          "wording_changed_answer": [
+            null,
+            null
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        },
+        "H04": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            null,
+            null
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "H2",
+          "wording_changed_answer": [
+            null,
+            null
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        }
+      },
+      "unfounded_unique": [],
+      "unresolved": [
+        "q0be4b7ff7c2d",
+        "q0c970a5c4772",
+        "q1d39c35f29ea",
+        "q430cb98c871d",
+        "q9b8d8be27d8c",
+        "qac3a422dfdaf",
+        "qb65c47531846",
+        "qc32be6529541",
+        "qc7b9e2495760",
+        "qca955c4e8f53",
+        "qd7ac04e3d27c",
+        "qdfdb9dd03565",
+        "qe813097269fc"
+      ]
+    }
+  }
+}
