@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
-"""Journaled shared-extraction development runner. Real collection is locked pending review.
-
-The scheduler accepts public data only. Tests inject a CPU backend; the Qwen
-adapter below is real but the command-line collection gate is deliberately closed.
-"""
+"""Journaled shared-extraction runner for a released two-case user GPU pilot."""
 import argparse
 from contextlib import contextmanager
 from datetime import datetime, timezone
@@ -11,14 +7,15 @@ import fcntl
 import hashlib
 import importlib.metadata
 import json
+import math
 import os
 from pathlib import Path
 import subprocess
+import sys
 import time
 
 import query_determinacy_extract_v2 as extract
 
-LIVE_GATE = False
 SCHEMA = 'shared_live_development_v1'
 MAX_NEW_TOKENS = 512
 ROOT = Path(__file__).resolve().parents[1]
@@ -27,6 +24,14 @@ PILOT_PUBLIC = ROOT / 'docs/review/2026-11-18-two-case-cpu-v1/public.json'
 MODEL_REFERENCE = ROOT / 'docs/review/2026-11-06-explanation-scope-cpu-preflight-v1/relation-reference-snapshot.json'
 CONTRACT = ROOT / 'docs/review/2026-11-23-shared-live-preparation-v1/protocol.md'
 SCORER = ROOT / 'scripts/query_determinacy_shared_score.py'
+RELEASE = ROOT / 'docs/review/2026-11-23-shared-pilot-release-v1/release.json'
+PILOT_RUN = ROOT / 'runs/qwen2.5-3b-query-determinacy-shared-pilot-v1'
+PILOT_CASES = ['D7M4', 'N3K6']
+PILOT_SLOTS = 26
+PILOT_MODE = 'user_gpu_pilot_only'
+GENERATION = {'max_new_tokens': MAX_NEW_TOKENS, 'do_sample': False, 'num_beams': 1,
+              'device': 'cuda:0', 'dtype': 'bfloat16', 'attention': 'sdpa', 'use_cache': True,
+              'logits_to_keep': 1}
 
 
 def encode(obj):
@@ -95,7 +100,9 @@ def prompt(kind, case, question, values=None, branch=None):
         return base + ('\n提取冲突来源针对同一字段的两个不同候选值。只输出JSON数组，'
                        '保留原始数字或代码，不输出解释。')
     base += '\n问题：' + question['text']
-    world = '{"value":"候选值","answer":"Y或N","citations":["材料中的原文"]}'
+    world = '{"value":"候选值","answer":"填写单个字母","citations":["材料中的原文"]}'
+    citation_rule = ('每支answer只能填Y或N，value必须是字符串。citations逐字复制该值对应的完整来源句（含来源名和句号）；'
+                     '如有规则表，另复制该代码对应的整条规则，从代码开始，保留内部标点，不包含分隔符或末尾句号。')
     if kind == 'direct':
         task = '\n先从材料找出两个候选并逐一在假设该值成立时判断，比较两个答案。'
     elif kind == 'joint':
@@ -103,13 +110,12 @@ def prompt(kind, case, question, values=None, branch=None):
     elif kind == 'branch':
         return (base + '\n上一步抽取得到一个待检验的候选：' + json.dumps(values[branch], ensure_ascii=False)
                 + '。只在这个值成立的临时假设下回答；这不是已确认事实。'
-                  '\n只输出一个JSON对象，格式为' + world + '。'
-                  'citations逐字引用材料中与该值及判断相关的原文。')
+                  '\n只输出一个JSON对象，结构示例：' + world + '。' + citation_rule)
     else:
         raise ValueError('unknown kind')
-    return (base + task + '\n如果两支均为是，最终为Y；均为否，最终为N；一是一个否为U。'
-            '只输出JSON对象：{"final":"Y或N或U","worlds":[' + world + ',' + world + ']}。'
-            'citations逐字引用材料中支持各分支的原文。')
+    return (base + task + '\n如果两支均为是，最终填Y；均为否填N；一是一个否填U。'
+            '只输出JSON对象，结构示例：{"final":"填写单个字母","worlds":[' + world + ',' + world + ']}。'
+            + citation_rule)
 
 
 def init_run(run, public, extra=None):
@@ -125,7 +131,7 @@ def init_run(run, public, extra=None):
     manifest = {'schema': SCHEMA, 'public_sha256': sha(data), 'slots': len(slots(public)),
                 'runner_sha256': hash_file(Path(__file__)), 'parser_sha256': hash_file(Path(extract.__file__)),
                 'scorer_sha256': hash_file(SCORER), 'contract_sha256': hash_file(CONTRACT),
-                'generation': {'max_new_tokens': MAX_NEW_TOKENS, 'do_sample': False}, 'extra': extra or {}}
+                'generation': GENERATION, 'extra': extra or {}}
     write_new(run / 'manifest.json', encode(manifest))
     return manifest
 
@@ -156,6 +162,7 @@ def load_run(run):
             or manifest.get('parser_sha256') != hash_file(Path(extract.__file__))
             or manifest.get('scorer_sha256') != hash_file(SCORER)
             or manifest.get('contract_sha256') != hash_file(CONTRACT)
+            or manifest.get('generation') != GENERATION
             or manifest.get('slots') != len(slots(public))):
         raise ValueError('manifest, public input or implementation changed')
     return manifest, public
@@ -169,7 +176,16 @@ def replay(run):
         raise ValueError('unfinished or extra attempt; preserve and stop')
     extracted, prior, technical_failure = {}, [], False
     manifest_hash = hash_file(run/'manifest.json')
+    real = manifest['extra'].get('mode') == PILOT_MODE
+    tokenizer = None
+    if real:
+        validate_pilot_binding(run, manifest, public)
+        if records:
+            tokenizer = load_tokenizer()
+        check_preflights(run, manifest_hash, len(records))
     for i, (ap, rp) in enumerate(zip(attempts, records)):
+        if technical_failure:
+            raise ValueError('record follows a terminal technical failure')
         name = f'{i:04d}.json'
         if ap.name != name or rp.name != name or ap.is_symlink() or rp.is_symlink():
             raise ValueError('journal prefix invalid')
@@ -197,9 +213,14 @@ def replay(run):
             raise ValueError('invalid complete output')
         if record.get('output_sha256') != sha(record.get('output', '').encode()):
             raise ValueError('record output hash mismatch')
+        seconds = record.get('elapsed_seconds')
+        if type(seconds) not in (int, float) or not math.isfinite(seconds) or seconds < 0:
+            raise ValueError('invalid call duration')
         for token_field in ('input_token_ids', 'generated_token_ids'):
             if token_field in record and record.get(token_field + '_sha256') != sha(encode(record[token_field])):
                 raise ValueError('record token hash mismatch')
+        if real and status in ('complete', 'empty', 'truncated'):
+            verify_tokens(tokenizer, rendered, record, manifest['extra']['environment'])
         if kind == 'extract':
             extracted[case['id']] = extract.parse(record.get('output', ''), case['domain'], status == 'complete')
         if status in ('truncated', 'empty', 'technical_failure'):
@@ -257,6 +278,8 @@ def collect(run, backend=None, preflight=None, backend_factory=None):
                 if token_field in record:
                     record[token_field + '_sha256'] = sha(encode(record[token_field]))
             write_new(rp, encode(record))
+            if state['manifest']['extra'].get('mode') == PILOT_MODE:
+                print(f'{i + 1}/{len(sequence)} {case["id"]} {kind}: {record["status"]}', flush=True)
             if kind == 'extract':
                 state['extracted'][case['id']] = extract.parse(record['output'], case['domain'], record['status'] == 'complete')
             if result['status'] in ('truncated', 'empty', 'technical_failure'):
@@ -264,13 +287,45 @@ def collect(run, backend=None, preflight=None, backend_factory=None):
         return replay(run)
 
 
+def load_tokenizer():
+    from transformers import AutoTokenizer
+    return AutoTokenizer.from_pretrained(str(MODEL), local_files_only=True)
+
+
+def tokenize(tokenizer, text):
+    rendered = tokenizer.apply_chat_template([{'role': 'user', 'content': text}], tokenize=False,
+                                             add_generation_prompt=True)
+    return rendered, tokenizer(rendered, add_special_tokens=False, truncation=False)['input_ids']
+
+
+def output_status(raw, generated, eos):
+    if not raw.strip():
+        return 'empty'
+    return 'complete' if generated and generated[-1] in eos else 'truncated'
+
+
+def verify_tokens(tokenizer, prompt_text, record, environment):
+    rendered, ids = tokenize(tokenizer, prompt_text)
+    generated = record.get('generated_token_ids')
+    eos = environment['eos_token_ids']
+    if (record.get('rendered_prompt') != rendered or record.get('input_token_ids') != ids
+            or record.get('input_tokens') != len(ids) or len(ids) + MAX_NEW_TOKENS > environment['context_tokens']
+            or not isinstance(generated, list) or len(generated) > MAX_NEW_TOKENS
+            or any(type(t) is not int or not 0 <= t < len(tokenizer) for t in generated)
+            or any(t in eos for t in generated[:-1]) or record.get('output_tokens') != len(generated)):
+        raise ValueError('real journal token or prompt mismatch')
+    raw = tokenizer.decode(generated, skip_special_tokens=True)
+    if record['output'] != raw or record['status'] != output_status(raw, generated, eos):
+        raise ValueError('real journal decoded output or EOS mismatch')
+
+
 class QwenBackend:
     """User-executed adapter; construction accesses CUDA and requires prior device review."""
     def __init__(self):
         import torch
-        from transformers import AutoModelForCausalLM, AutoTokenizer, GenerationConfig
+        from transformers import AutoModelForCausalLM, GenerationConfig
         self.torch = torch
-        self.tok = AutoTokenizer.from_pretrained(str(MODEL), local_files_only=True)
+        self.tok = load_tokenizer()
         self.model = AutoModelForCausalLM.from_pretrained(str(MODEL), local_files_only=True,
                       dtype=torch.bfloat16, device_map={'': 0}, attn_implementation='sdpa').eval()
         self.model.requires_grad_(False)
@@ -282,8 +337,7 @@ class QwenBackend:
 
     def __call__(self, text, _attempt):
         torch = self.torch
-        rendered = self.tok.apply_chat_template([{'role': 'user', 'content': text}], tokenize=False, add_generation_prompt=True)
-        ids = self.tok(rendered, add_special_tokens=False, truncation=False)['input_ids']
+        rendered, ids = tokenize(self.tok, text)
         if len(ids) + MAX_NEW_TOKENS > self.model.config.max_position_embeddings:
             raise ValueError('context limit exceeded')
         tensors = torch.tensor([ids], dtype=torch.long, device='cuda:0')
@@ -296,7 +350,7 @@ class QwenBackend:
             raise ValueError('output prefix mismatch')
         generated = output[0, len(ids):].tolist()
         raw = self.tok.decode(generated, skip_special_tokens=True)
-        status = 'empty' if not raw.strip() else 'complete' if generated and generated[-1] in self.eos else 'truncated'
+        status = output_status(raw, generated, self.eos)
         return {'status': status, 'output': raw, 'input_tokens': len(ids), 'output_tokens': len(generated),
                 'rendered_prompt': rendered, 'input_token_ids': ids, 'generated_token_ids': generated}
 
@@ -311,60 +365,107 @@ def environment_snapshot():
     actual = {name: hash_file(MODEL/name) for name in expected}
     if actual != expected:
         raise ValueError('model files changed')
+    versions = {x: importlib.metadata.version(x) for x in ('torch', 'transformers', 'accelerate', 'tokenizers', 'safetensors')}
+    if any(versions[x] != snapshot['runtime_versions'][x] for x in ('torch', 'transformers')):
+        raise ValueError('use the pinned kba-rag runtime')
+    eos = json.loads((MODEL / 'generation_config.json').read_bytes())['eos_token_id']
+    eos = eos if isinstance(eos, list) else [eos]
+    if eos != snapshot['eos_token_ids']:
+        raise ValueError('EOS configuration differs from pinned model snapshot')
     return {'model': str(MODEL), 'model_reference_sha256': sha(raw), 'model_files_sha256': actual,
-            'versions': {x: importlib.metadata.version(x) for x in ('torch', 'transformers')},
-            'context_tokens': snapshot['context_tokens']}
+            'versions': versions, 'context_tokens': snapshot['context_tokens'], 'eos_token_ids': eos}
 
 
 def verify_device():
-    if os.environ.get('CUDA_VISIBLE_DEVICES', '0') != '0':
-        raise ValueError('only physical GPU 0 is permitted by this candidate configuration')
-    info = subprocess.run(['nvidia-smi', '-i', '0', '--query-gpu=uuid,name,memory.total,memory.used',
-                           '--format=csv,noheader'], text=True, capture_output=True, check=True).stdout.strip()
-    processes = subprocess.run(['nvidia-smi', '-i', '0', '--query-compute-apps=pid,process_name,used_memory',
-                                '--format=csv,noheader'], text=True, capture_output=True, check=True).stdout.strip()
-    if not info or processes:
-        raise ValueError('GPU not identifiable or has active compute processes')
+    info = subprocess.run(['nvidia-smi', '-i', '0', '--query-gpu=uuid,name,memory.free',
+                           '--format=csv,noheader,nounits'], text=True, capture_output=True, check=True,
+                          timeout=15).stdout.strip()
+    uuid, name, free = (field.strip() for field in info.split(','))
+    if not uuid.startswith('GPU-') or int(free) < 10 * 1024:
+        raise ValueError('GPU 0 needs at least 10 GiB free VRAM for the engineering pilot')
+    processes = subprocess.run(['nvidia-smi', '-i', uuid, '--query-compute-apps=pid,process_name,used_memory',
+                                '--format=csv,noheader'], text=True, capture_output=True, check=True,
+                               timeout=15).stdout.strip()
+    if processes:
+        raise ValueError('GPU 0 has active compute processes')
+    os.environ['CUDA_VISIBLE_DEVICES'] = uuid
     import torch
     if not torch.cuda.is_available() or torch.cuda.device_count() != 1 or not torch.cuda.is_bf16_supported():
         raise ValueError('one visible CUDA device with bfloat16 required')
-    return {'nvidia_smi_gpu': info, 'compute_processes': processes,
+    return {'gpu_uuid': uuid, 'gpu_name': name, 'free_mib': int(free),
             'torch_cuda': torch.version.cuda, 'device_name': torch.cuda.get_device_name(0),
             'visible_device_count': torch.cuda.device_count()}
 
 
-def require_live_gate():
-    if not LIVE_GATE:
-        raise ValueError('real collection gate closed; review and release required')
+def pilot_files():
+    paths = (PILOT_PUBLIC, Path(__file__).resolve(), Path(extract.__file__).resolve(), SCORER, CONTRACT,
+             MODEL_REFERENCE, ROOT / 'shared_pilot.sh')
+    return {str(p.relative_to(ROOT)): hash_file(p) for p in paths}
+
+
+def read_pilot_release(run):
+    if run.absolute() != PILOT_RUN or run.is_symlink() or run.parent.resolve() != PILOT_RUN.parent:
+        raise ValueError('use the fixed two-case pilot run directory')
+    if not RELEASE.is_file() or RELEASE.is_symlink():
+        raise ValueError('two-case release missing')
+    raw = RELEASE.read_bytes()
+    release = json.loads(raw)
+    if (release.get('schema') != 'shared_live_pilot_release_v1' or release.get('collection_allowed') is not True
+            or release.get('executor') != 'user' or release.get('case_ids') != PILOT_CASES
+            or release.get('slots') != PILOT_SLOTS or release.get('files_sha256') != pilot_files()):
+        raise ValueError('two-case release or frozen inputs changed')
+    return release, sha(raw)
+
+
+def validate_pilot_binding(run, manifest, public):
+    release, digest = read_pilot_release(run)
+    if ([c['id'] for c in public['cases']] != PILOT_CASES or public != json.loads(PILOT_PUBLIC.read_bytes())
+            or manifest['slots'] != PILOT_SLOTS
+            or manifest['extra'] != {'mode': PILOT_MODE, 'release_sha256': digest,
+                                     'environment': release['environment']}):
+        raise ValueError('pilot release binding mismatch')
+    return release
+
+
+def check_preflights(run, manifest_hash, records):
+    entries = sorted((run / 'preflights').iterdir())
+    if records and not entries:
+        raise ValueError('device preflight missing')
+    starts = []
+    for index, path in enumerate(entries):
+        if path.is_symlink() or path.name != f'{index:04d}.json':
+            raise ValueError('invalid device preflight journal')
+        data = json.loads(path.read_bytes())
+        start = data.get('starting_slot')
+        if (data.get('manifest_sha256') != manifest_hash or type(start) is not int
+                or not 0 <= start <= records or (starts and start < starts[-1])):
+            raise ValueError('invalid device preflight binding')
+        starts.append(start)
+    if starts and starts[0] != 0:
+        raise ValueError('initial device preflight missing')
+    return len(entries)
 
 
 def prepare_live(run):
-    require_live_gate()
-    raw = PILOT_PUBLIC.read_bytes()
-    public = json.loads(raw)
-    if len(validate_public(public)) != 2:
-        raise ValueError('only two-case engineering pilot is permitted')
-    env = environment_snapshot()
-    return init_run(run, public, {'mode': 'user_gpu_pilot_only', 'source_public_sha256': sha(raw), 'environment': env})
+    release, digest = read_pilot_release(run)
+    public = json.loads(PILOT_PUBLIC.read_bytes())
+    if [c['id'] for c in validate_public(public)] != PILOT_CASES or len(slots(public)) != PILOT_SLOTS:
+        raise ValueError('only the released two-case schedule is permitted')
+    return init_run(run, public, {'mode': PILOT_MODE, 'release_sha256': digest, 'environment': release['environment']})
 
 
 def collect_live(run):
-    require_live_gate()
     def preflight(state):
-        extra = state['manifest']['extra']
-        if extra.get('mode') != 'user_gpu_pilot_only' or extra.get('source_public_sha256') != hash_file(PILOT_PUBLIC):
-            raise ValueError('pilot release binding mismatch')
-        if extra.get('environment') != environment_snapshot():
-            raise ValueError('runtime environment changed')
+        release = validate_pilot_binding(run, state['manifest'], state['public'])
         if state['count'] < state['total']:
+            if release['environment'] != environment_snapshot():
+                raise ValueError('runtime environment changed')
             device = verify_device()
-            directory = run / 'preflights'
-            existing = sorted(directory.iterdir())
-            if any(p.is_symlink() or p.name != f'{i:04d}.json' for i, p in enumerate(existing)):
-                raise ValueError('invalid device preflight journal')
-            write_new(directory / f'{len(existing):04d}.json', encode({
+            manifest_hash = hash_file(run/'manifest.json')
+            index = check_preflights(run, manifest_hash, state['count'])
+            write_new(run / 'preflights' / f'{index:04d}.json', encode({
                 'device': device, 'checked_at': datetime.now(timezone.utc).isoformat(),
-                'starting_slot': state['count'], 'manifest_sha256': hash_file(run/'manifest.json')}))
+                'starting_slot': state['count'], 'manifest_sha256': manifest_hash}))
     # Hold the run lock across preflight, loading, and every scheduled call.
     return collect(run, preflight=preflight, backend_factory=QwenBackend)
 
@@ -373,18 +474,26 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('stage', choices=('inspect', 'prepare', 'collect'))
     parser.add_argument('run', type=Path)
+    parser.add_argument('--user-executed', action='store_true')
     args = parser.parse_args()
-    if args.stage in ('prepare', 'collect'):
-        # Gate is code-closed before model, device, run creation or mutation.
-        if not LIVE_GATE:
-            raise SystemExit('STOP: real collection gate closed; review and release required')
-        result = prepare_live(args.run) if args.stage == 'prepare' else collect_live(args.run)
-        print(json.dumps({'state': 'prepared' if args.stage == 'prepare' else 'complete',
-                          'count': result.get('count', 0)}, ensure_ascii=False))
-        return
-    with locked(args.run):
-        state = replay(args.run)
-    print(json.dumps({'count': state['count'], 'total': state['total'], 'blocked': state['blocked']}, ensure_ascii=False))
+    try:
+        if args.stage != 'inspect':
+            if not args.user_executed:
+                raise ValueError('GPU pilot requires --user-executed')
+            read_pilot_release(args.run)
+            if args.stage == 'prepare':
+                prepare_live(args.run)
+                print(f'Prepared {PILOT_SLOTS} slots.', flush=True)
+                return
+            state = collect_live(args.run)
+        else:
+            with locked(args.run):
+                state = replay(args.run)
+        print(json.dumps({'count': state['count'], 'total': state['total'], 'blocked': state['blocked']},
+                         ensure_ascii=False))
+    except (OSError, ValueError, RuntimeError, subprocess.SubprocessError) as error:
+        print(f'STOP: {error}. Keep the run directory and report the error.', file=sys.stderr)
+        raise SystemExit(2) from error
 
 
 if __name__ == '__main__':

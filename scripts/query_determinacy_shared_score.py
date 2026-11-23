@@ -138,6 +138,11 @@ def score(sealed, seal_sha, reference, reference_sha):
         raise ValueError('invalid seal')
     public = data['public']
     live.validate_public(public)
+    extra = data['manifest']['extra']
+    if extra.get('mode') == live.PILOT_MODE:
+        release, release_digest = live.read_pilot_release(live.PILOT_RUN)
+        if extra.get('release_sha256') != release_digest or reference_sha != release['scoring_reference_sha256']:
+            raise ValueError('pilot seal or scoring reference does not match release')
     raw_ref = reference.read_bytes()
     if live.sha(raw_ref) != reference_sha:
         raise ValueError('reference hash mismatch')

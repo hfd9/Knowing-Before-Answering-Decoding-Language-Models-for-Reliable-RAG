@@ -188,12 +188,53 @@ class SharedLiveTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'manifest'):
             live.replay(self.run)
 
-    def test_real_cli_closed_before_directory_creation(self):
+    def test_real_cli_rejects_missing_user_flag_and_wrong_directory(self):
         missing = self.root/'must-not-exist'
         p = subprocess.run([sys.executable, str(ROOT/'scripts/query_determinacy_shared_live.py'), 'collect', str(missing)], text=True, capture_output=True)
         self.assertNotEqual(p.returncode, 0)
-        self.assertIn('gate closed', p.stderr)
+        self.assertIn('requires --user-executed', p.stderr)
+        p = subprocess.run([sys.executable, str(ROOT/'scripts/query_determinacy_shared_live.py'),
+                            'prepare', str(missing), '--user-executed'], text=True, capture_output=True)
+        self.assertNotEqual(p.returncode, 0)
+        self.assertIn('fixed two-case pilot run directory', p.stderr)
         self.assertFalse(missing.exists())
+
+    def test_released_entry_runs_with_fake_device_and_replays_tokens(self):
+        run = self.root / 'pilot'
+        env = json.loads(live.RELEASE.read_bytes())['environment']
+        eos = env['eos_token_ids'][0]
+        class Tokenizer:
+            def __len__(self): return max(env['eos_token_ids']) + 1
+            def apply_chat_template(self, messages, **kwargs): return messages[0]['content'] + '\nrendered'
+            def __call__(self, *args, **kwargs): return {'input_ids': [10, 11]}
+            def decode(self, *args, **kwargs): return '[]'
+        tok = Tokenizer()
+        def fake_backend(text, _attempt):
+            rendered, ids = live.tokenize(tok, text)
+            return {'status': 'complete', 'output': '[]', 'input_tokens': len(ids), 'output_tokens': 2,
+                    'rendered_prompt': rendered, 'input_token_ids': ids, 'generated_token_ids': [20, eos]}
+        with patch.object(live, 'PILOT_RUN', run), patch.object(live, 'environment_snapshot', return_value=env), \
+                patch.object(live, 'verify_device', return_value={'gpu_uuid': 'GPU-fixture'}) as device, \
+                patch.object(live, 'QwenBackend', return_value=fake_backend), patch.object(live, 'load_tokenizer', return_value=tok):
+            live.prepare_live(run)
+            device.assert_not_called()
+            result = live.collect_live(run)
+            self.assertEqual((result['count'], result['total']), (26, 26))
+            self.assertEqual(sum(e['record']['status'] == 'skipped_extract' for e in result['entries']), 18)
+            sealed = self.root / 'pilot-seal.json'
+            seal_hash = scorer.seal(run, sealed)
+            with self.assertRaisesRegex(ValueError, 'scoring reference does not match release'):
+                scorer.score(sealed, seal_hash, self.root / 'missing', '0' * 64)
+            self.assertEqual(scorer.score(sealed, seal_hash, REF, REF_SHA)['count_planned_questions'], 6)
+            self.assertEqual(live.collect_live(run)['count'], 26)
+            device.assert_called_once()
+            record_path = run / 'records/0000.json'
+            row = json.loads(record_path.read_bytes())
+            row['input_token_ids'] = [99, 11]
+            row['input_token_ids_sha256'] = live.sha(live.encode(row['input_token_ids']))
+            record_path.write_bytes(live.encode(row))
+            with self.assertRaisesRegex(ValueError, 'token or prompt mismatch'):
+                live.replay(run)
 
     def test_reject_reference_fields_in_public(self):
         value = copy.deepcopy(PUBLIC); value['cases'][0]['reference'] = 'Y'

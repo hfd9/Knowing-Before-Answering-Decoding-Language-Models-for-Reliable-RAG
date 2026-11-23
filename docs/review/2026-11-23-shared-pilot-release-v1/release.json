@@ -1,0 +1,46 @@
+{
+  "case_ids": [
+    "D7M4",
+    "N3K6"
+  ],
+  "collection_allowed": true,
+  "environment": {
+    "context_tokens": 32768,
+    "eos_token_ids": [
+      151645,
+      151643
+    ],
+    "model": "/large_disk/wf/研究代码/RAG/OpenDecoder/checkpoint/Qwen2.5-3B-Instruct",
+    "model_files_sha256": {
+      "config.json": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+      "generation_config.json": "ea35dfb6fc5051b01114f9b995820d55dab01ed33ee490f6378b442af82c09f9",
+      "model-00001-of-00002.safetensors": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2",
+      "model-00002-of-00002.safetensors": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d",
+      "model.safetensors.index.json": "bc8aaa0c87d4335177e01c765f1de0db81661c67c1a72fbfb0d521b09f5ddc56",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    },
+    "model_reference_sha256": "504b4da5f0c4e51cfdffaa54129e55c0a3b433f37e387d286c21ad65f4d7c1f5",
+    "versions": {
+      "accelerate": "1.10.1",
+      "safetensors": "0.6.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.5.1+cu121",
+      "transformers": "4.56.2"
+    }
+  },
+  "executor": "user",
+  "files_sha256": {
+    "docs/review/2026-11-06-explanation-scope-cpu-preflight-v1/relation-reference-snapshot.json": "504b4da5f0c4e51cfdffaa54129e55c0a3b433f37e387d286c21ad65f4d7c1f5",
+    "docs/review/2026-11-18-two-case-cpu-v1/public.json": "eefe5e608f889fd2223da7fa318943b90a2ffd739cd1ad88f3d0ef0a1495c9c5",
+    "docs/review/2026-11-23-shared-live-preparation-v1/protocol.md": "c02cfbdd159ed5cf24545e1e504d93260365c8bf73f147f2567828a98bffc756",
+    "scripts/query_determinacy_extract_v2.py": "c1fe453a29bb564c492a234f6136494bdb1820c90b3c580f7c20087c713b002b",
+    "scripts/query_determinacy_shared_live.py": "710d511fa90b07aab4c26d70c02d56dd938205f2f37cbae46d3d7c866cde65c3",
+    "scripts/query_determinacy_shared_score.py": "f1ab8d2ab4b31d63a74fc9ab17eb7a68edfb6c517ee4559f11e7b084ccd064d1",
+    "shared_pilot.sh": "aa332e95d7822a0e04ccfc8963681e5dbb7cdfbf8304f8f01a3a53b0269dee04"
+  },
+  "schema": "shared_live_pilot_release_v1",
+  "scoring_reference_sha256": "99c65a841a686835d73f7325e7a77f9495aeba8dcc87ebc2d0496e5d251ab75d",
+  "slots": 26,
+  "use": "informed two-case engineering pilot"
+}
