@@ -1,0 +1,1605 @@
+{
+  "interface_ready": true,
+  "rows": {
+    "direct": {
+      "q18b052177f76": {
+        "correct_grounded": false,
+        "final": "X",
+        "result": {
+          "final": "X",
+          "worlds": {
+            "W1": {
+              "answer": "X",
+              "applies": null,
+              "evidence": [],
+              "rule": "R3"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": true,
+              "evidence": [
+                "R3"
+              ],
+              "rule": "R3"
+            }
+          }
+        },
+        "status": "unresolved",
+        "structure": {
+          "exception": {
+            "answer": "N",
+            "grantor": "函件组",
+            "overrides": "R1",
+            "recipient": "封存组"
+          },
+          "grant": {
+            "grantor": "函件组",
+            "recipient": "封存组"
+          }
+        },
+        "structure_correct": {
+          "exception": false,
+          "grant": true
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": false,
+            "applies": false,
+            "evidence": false,
+            "rule": false
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": false,
+            "rule": true
+          }
+        }
+      },
+      "q426834201953": {
+        "correct_grounded": false,
+        "final": "X",
+        "result": {
+          "final": "X",
+          "worlds": {
+            "W1": {
+              "answer": "Y",
+              "applies": true,
+              "evidence": [
+                "R3",
+                "F1"
+              ],
+              "rule": "R3"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": false,
+              "evidence": [],
+              "rule": null
+            }
+          }
+        },
+        "status": "unresolved",
+        "structure": {
+          "exception": {
+            "answer": "Y",
+            "grantor": "展务组",
+            "overrides": "R2",
+            "recipient": "票签组"
+          },
+          "grant": {
+            "grantor": "展务组",
+            "recipient": "票签组"
+          }
+        },
+        "structure_correct": {
+          "exception": true,
+          "grant": false
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": false,
+            "evidence": false,
+            "rule": false
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": false,
+            "rule": false
+          }
+        }
+      },
+      "q6ae70222f98d": {
+        "correct_grounded": false,
+        "final": "X",
+        "result": {
+          "final": "X",
+          "worlds": {
+            "W1": {
+              "answer": "Y",
+              "applies": true,
+              "evidence": [
+                "F1",
+                "R3"
+              ],
+              "rule": "R3"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": false,
+              "evidence": [],
+              "rule": null
+            }
+          }
+        },
+        "status": "unresolved",
+        "structure": {
+          "exception": {
+            "answer": "Y",
+            "grantor": "票签组",
+            "overrides": "R2",
+            "recipient": "展务组"
+          },
+          "grant": {
+            "grantor": "展务组",
+            "recipient": "票签组"
+          }
+        },
+        "structure_correct": {
+          "exception": false,
+          "grant": false
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": false,
+            "evidence": false,
+            "rule": false
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": false,
+            "rule": false
+          }
+        }
+      },
+      "q7be90cdf4a64": {
+        "correct_grounded": false,
+        "final": "X",
+        "result": {
+          "final": "X",
+          "worlds": {
+            "W1": {
+              "answer": "X",
+              "applies": null,
+              "evidence": [],
+              "rule": "R3"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": true,
+              "evidence": [
+                "R3"
+              ],
+              "rule": "R3"
+            }
+          }
+        },
+        "status": "unresolved",
+        "structure": {
+          "exception": {
+            "answer": "N",
+            "grantor": "封存组",
+            "overrides": "R1",
+            "recipient": "函件组"
+          },
+          "grant": {
+            "grantor": "函件组",
+            "recipient": "封存组"
+          }
+        },
+        "structure_correct": {
+          "exception": false,
+          "grant": false
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": false,
+            "applies": false,
+            "evidence": false,
+            "rule": false
+          },
+          "W2": {
+            "answer": false,
+            "applies": false,
+            "evidence": false,
+            "rule": false
+          }
+        }
+      },
+      "q7cd1b60a7454": {
+        "correct_grounded": false,
+        "final": "X",
+        "result": {
+          "final": "X",
+          "worlds": {
+            "W1": {
+              "answer": "X",
+              "applies": null,
+              "evidence": [],
+              "rule": "R3"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": true,
+              "evidence": [
+                "R3"
+              ],
+              "rule": "R3"
+            }
+          }
+        },
+        "status": "unresolved",
+        "structure": {
+          "exception": {
+            "answer": "N",
+            "grantor": "封存组",
+            "overrides": "R2",
+            "recipient": "函件组"
+          },
+          "grant": {
+            "grantor": "封存组",
+            "recipient": "函件组"
+          }
+        },
+        "structure_correct": {
+          "exception": false,
+          "grant": false
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": false,
+            "applies": false,
+            "evidence": false,
+            "rule": false
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": false,
+            "rule": true
+          }
+        }
+      },
+      "q9315ae81e1b1": {
+        "correct_grounded": false,
+        "final": "X",
+        "result": {
+          "final": "X",
+          "worlds": {
+            "W1": {
+              "answer": "Y",
+              "applies": true,
+              "evidence": [
+                "F1",
+                "R3"
+              ],
+              "rule": "R3"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": false,
+              "evidence": [],
+              "rule": null
+            }
+          }
+        },
+        "status": "unresolved",
+        "structure": {
+          "exception": {
+            "answer": "Y",
+            "grantor": "票签组",
+            "overrides": "R2",
+            "recipient": "展务组"
+          },
+          "grant": {
+            "grantor": "票签组",
+            "recipient": "展务组"
+          }
+        },
+        "structure_correct": {
+          "exception": false,
+          "grant": false
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": false,
+            "evidence": false,
+            "rule": false
+          },
+          "W2": {
+            "answer": false,
+            "applies": false,
+            "evidence": false,
+            "rule": false
+          }
+        }
+      },
+      "qd201e0451c73": {
+        "correct_grounded": false,
+        "final": "X",
+        "result": {
+          "final": "X",
+          "worlds": {
+            "W1": {
+              "answer": "X",
+              "applies": null,
+              "evidence": [],
+              "rule": "R3"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": true,
+              "evidence": [
+                "R3"
+              ],
+              "rule": "R3"
+            }
+          }
+        },
+        "status": "unresolved",
+        "structure": {
+          "exception": {
+            "answer": "N",
+            "grantor": "封存组",
+            "overrides": "R1",
+            "recipient": "函件组"
+          },
+          "grant": {
+            "grantor": "封存组",
+            "recipient": "函件组"
+          }
+        },
+        "structure_correct": {
+          "exception": false,
+          "grant": true
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": false,
+            "applies": false,
+            "evidence": false,
+            "rule": false
+          },
+          "W2": {
+            "answer": false,
+            "applies": false,
+            "evidence": false,
+            "rule": false
+          }
+        }
+      },
+      "qefcac13bb8c9": {
+        "correct_grounded": false,
+        "final": "Y",
+        "result": {
+          "final": "Y",
+          "worlds": {
+            "W1": {
+              "answer": "Y",
+              "applies": true,
+              "evidence": [
+                "R3",
+                "F1"
+              ],
+              "rule": "R3"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": false,
+              "evidence": [],
+              "rule": null
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "Y",
+            "grantor": "展务组",
+            "overrides": "R2",
+            "recipient": "票签组"
+          },
+          "grant": {
+            "grantor": "展务组",
+            "recipient": "票签组"
+          }
+        },
+        "structure_correct": {
+          "exception": true,
+          "grant": true
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": false,
+            "evidence": false,
+            "rule": false
+          },
+          "W2": {
+            "answer": false,
+            "applies": false,
+            "evidence": false,
+            "rule": false
+          }
+        }
+      }
+    },
+    "extract": {
+      "q18b052177f76": {
+        "correct_grounded": true,
+        "final": "N",
+        "result": {
+          "final": "N",
+          "worlds": {
+            "W1": {
+              "answer": "N",
+              "applies": false,
+              "evidence": [
+                "W1",
+                "R1",
+                "R3"
+              ],
+              "rule": "R1"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": true,
+              "evidence": [
+                "W2",
+                "R2",
+                "R3",
+                "F1"
+              ],
+              "rule": "R3"
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "N",
+            "grantor": "函件组",
+            "overrides": "R2",
+            "recipient": "封存组"
+          },
+          "grant": {
+            "grantor": "函件组",
+            "recipient": "封存组"
+          }
+        },
+        "structure_correct": {
+          "exception": true,
+          "grant": true
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          }
+        }
+      },
+      "q426834201953": {
+        "correct_grounded": false,
+        "final": "U",
+        "result": {
+          "final": "U",
+          "worlds": {
+            "W1": {
+              "answer": "Y",
+              "applies": false,
+              "evidence": [
+                "W1",
+                "R1",
+                "R3"
+              ],
+              "rule": "R1"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": true,
+              "evidence": [
+                "W2",
+                "R2",
+                "R3",
+                "F1"
+              ],
+              "rule": "R3"
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "N",
+            "grantor": "票签组",
+            "overrides": "R2",
+            "recipient": "展务组"
+          },
+          "grant": {
+            "grantor": "票签组",
+            "recipient": "展务组"
+          }
+        },
+        "structure_correct": {
+          "exception": false,
+          "grant": true
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          },
+          "W2": {
+            "answer": true,
+            "applies": false,
+            "evidence": true,
+            "rule": false
+          }
+        }
+      },
+      "q6ae70222f98d": {
+        "correct_grounded": false,
+        "final": "U",
+        "result": {
+          "final": "U",
+          "worlds": {
+            "W1": {
+              "answer": "Y",
+              "applies": false,
+              "evidence": [
+                "W1",
+                "R1",
+                "R3"
+              ],
+              "rule": "R1"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": false,
+              "evidence": [
+                "W2",
+                "R2",
+                "R3",
+                "F1"
+              ],
+              "rule": "R2"
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "N",
+            "grantor": "票签组",
+            "overrides": "R2",
+            "recipient": "展务组"
+          },
+          "grant": {
+            "grantor": "展务组",
+            "recipient": "票签组"
+          }
+        },
+        "structure_correct": {
+          "exception": false,
+          "grant": false
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          }
+        }
+      },
+      "q7be90cdf4a64": {
+        "correct_grounded": false,
+        "final": "U",
+        "result": {
+          "final": "U",
+          "worlds": {
+            "W1": {
+              "answer": "N",
+              "applies": false,
+              "evidence": [
+                "W1",
+                "R1",
+                "R3"
+              ],
+              "rule": "R1"
+            },
+            "W2": {
+              "answer": "Y",
+              "applies": false,
+              "evidence": [
+                "W2",
+                "R2",
+                "R3",
+                "F1"
+              ],
+              "rule": "R2"
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "N",
+            "grantor": "封存组",
+            "overrides": "R2",
+            "recipient": "函件组"
+          },
+          "grant": {
+            "grantor": "函件组",
+            "recipient": "封存组"
+          }
+        },
+        "structure_correct": {
+          "exception": false,
+          "grant": false
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          }
+        }
+      },
+      "q7cd1b60a7454": {
+        "correct_grounded": false,
+        "final": "N",
+        "result": {
+          "final": "N",
+          "worlds": {
+            "W1": {
+              "answer": "N",
+              "applies": false,
+              "evidence": [
+                "W1",
+                "R1",
+                "R3"
+              ],
+              "rule": "R1"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": true,
+              "evidence": [
+                "W2",
+                "R2",
+                "R3",
+                "F1"
+              ],
+              "rule": "R3"
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "N",
+            "grantor": "封存组",
+            "overrides": "R2",
+            "recipient": "函件组"
+          },
+          "grant": {
+            "grantor": "封存组",
+            "recipient": "函件组"
+          }
+        },
+        "structure_correct": {
+          "exception": false,
+          "grant": false
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          }
+        }
+      },
+      "q9315ae81e1b1": {
+        "correct_grounded": false,
+        "final": "Y",
+        "result": {
+          "final": "Y",
+          "worlds": {
+            "W1": {
+              "answer": "Y",
+              "applies": false,
+              "evidence": [
+                "W1",
+                "R1",
+                "R3"
+              ],
+              "rule": "R1"
+            },
+            "W2": {
+              "answer": "Y",
+              "applies": true,
+              "evidence": [
+                "W2",
+                "R2",
+                "R3",
+                "F1"
+              ],
+              "rule": "R3"
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "Y",
+            "grantor": "票签组",
+            "overrides": "R2",
+            "recipient": "展务组"
+          },
+          "grant": {
+            "grantor": "票签组",
+            "recipient": "展务组"
+          }
+        },
+        "structure_correct": {
+          "exception": false,
+          "grant": false
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          }
+        }
+      },
+      "qd201e0451c73": {
+        "correct_grounded": false,
+        "final": "N",
+        "result": {
+          "final": "N",
+          "worlds": {
+            "W1": {
+              "answer": "N",
+              "applies": false,
+              "evidence": [
+                "W1",
+                "R1",
+                "R3"
+              ],
+              "rule": "R1"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": true,
+              "evidence": [
+                "W2",
+                "R2",
+                "R3",
+                "F1"
+              ],
+              "rule": "R3"
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "N",
+            "grantor": "封存组",
+            "overrides": "R2",
+            "recipient": "函件组"
+          },
+          "grant": {
+            "grantor": "封存组",
+            "recipient": "函件组"
+          }
+        },
+        "structure_correct": {
+          "exception": false,
+          "grant": true
+        },
+        "unfounded_unique": true,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          },
+          "W2": {
+            "answer": false,
+            "applies": false,
+            "evidence": true,
+            "rule": false
+          }
+        }
+      },
+      "qefcac13bb8c9": {
+        "correct_grounded": false,
+        "final": "U",
+        "result": {
+          "final": "U",
+          "worlds": {
+            "W1": {
+              "answer": "Y",
+              "applies": false,
+              "evidence": [
+                "W1",
+                "R1",
+                "R3"
+              ],
+              "rule": "R1"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": true,
+              "evidence": [
+                "W2",
+                "R2",
+                "R3",
+                "F1"
+              ],
+              "rule": "R3"
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "N",
+            "grantor": "展务组",
+            "overrides": "R2",
+            "recipient": "票签组"
+          },
+          "grant": {
+            "grantor": "展务组",
+            "recipient": "票签组"
+          }
+        },
+        "structure_correct": {
+          "exception": false,
+          "grant": true
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          },
+          "W2": {
+            "answer": false,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          }
+        }
+      }
+    },
+    "parser": {
+      "q18b052177f76": {
+        "correct_grounded": true,
+        "final": "N",
+        "result": {
+          "final": "N",
+          "worlds": {
+            "W1": {
+              "answer": "N",
+              "applies": false,
+              "evidence": [
+                "W1",
+                "R1",
+                "R3"
+              ],
+              "rule": "R1"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": true,
+              "evidence": [
+                "W2",
+                "R2",
+                "R3",
+                "F1"
+              ],
+              "rule": "R3"
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "N",
+            "grantor": "函件组",
+            "overrides": "R2",
+            "recipient": "封存组"
+          },
+          "grant": {
+            "grantor": "函件组",
+            "recipient": "封存组"
+          }
+        },
+        "structure_correct": {
+          "exception": true,
+          "grant": true
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          }
+        }
+      },
+      "q426834201953": {
+        "correct_grounded": true,
+        "final": "U",
+        "result": {
+          "final": "U",
+          "worlds": {
+            "W1": {
+              "answer": "Y",
+              "applies": false,
+              "evidence": [
+                "W1",
+                "R1",
+                "R3"
+              ],
+              "rule": "R1"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": false,
+              "evidence": [
+                "W2",
+                "R2",
+                "R3",
+                "F1"
+              ],
+              "rule": "R2"
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "Y",
+            "grantor": "展务组",
+            "overrides": "R2",
+            "recipient": "票签组"
+          },
+          "grant": {
+            "grantor": "票签组",
+            "recipient": "展务组"
+          }
+        },
+        "structure_correct": {
+          "exception": true,
+          "grant": true
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          }
+        }
+      },
+      "q6ae70222f98d": {
+        "correct_grounded": true,
+        "final": "U",
+        "result": {
+          "final": "U",
+          "worlds": {
+            "W1": {
+              "answer": "Y",
+              "applies": false,
+              "evidence": [
+                "W1",
+                "R1",
+                "R3"
+              ],
+              "rule": "R1"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": false,
+              "evidence": [
+                "W2",
+                "R2",
+                "R3",
+                "F1"
+              ],
+              "rule": "R2"
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "Y",
+            "grantor": "展务组",
+            "overrides": "R2",
+            "recipient": "票签组"
+          },
+          "grant": {
+            "grantor": "票签组",
+            "recipient": "展务组"
+          }
+        },
+        "structure_correct": {
+          "exception": true,
+          "grant": true
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          }
+        }
+      },
+      "q7be90cdf4a64": {
+        "correct_grounded": true,
+        "final": "U",
+        "result": {
+          "final": "U",
+          "worlds": {
+            "W1": {
+              "answer": "N",
+              "applies": false,
+              "evidence": [
+                "W1",
+                "R1",
+                "R3"
+              ],
+              "rule": "R1"
+            },
+            "W2": {
+              "answer": "Y",
+              "applies": false,
+              "evidence": [
+                "W2",
+                "R2",
+                "R3",
+                "F1"
+              ],
+              "rule": "R2"
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "N",
+            "grantor": "函件组",
+            "overrides": "R2",
+            "recipient": "封存组"
+          },
+          "grant": {
+            "grantor": "封存组",
+            "recipient": "函件组"
+          }
+        },
+        "structure_correct": {
+          "exception": true,
+          "grant": true
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          }
+        }
+      },
+      "q7cd1b60a7454": {
+        "correct_grounded": true,
+        "final": "N",
+        "result": {
+          "final": "N",
+          "worlds": {
+            "W1": {
+              "answer": "N",
+              "applies": false,
+              "evidence": [
+                "W1",
+                "R1",
+                "R3"
+              ],
+              "rule": "R1"
+            },
+            "W2": {
+              "answer": "N",
+              "applies": true,
+              "evidence": [
+                "W2",
+                "R2",
+                "R3",
+                "F1"
+              ],
+              "rule": "R3"
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "N",
+            "grantor": "函件组",
+            "overrides": "R2",
+            "recipient": "封存组"
+          },
+          "grant": {
+            "grantor": "函件组",
+            "recipient": "封存组"
+          }
+        },
+        "structure_correct": {
+          "exception": true,
+          "grant": true
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          }
+        }
+      },
+      "q9315ae81e1b1": {
+        "correct_grounded": true,
+        "final": "Y",
+        "result": {
+          "final": "Y",
+          "worlds": {
+            "W1": {
+              "answer": "Y",
+              "applies": false,
+              "evidence": [
+                "W1",
+                "R1",
+                "R3"
+              ],
+              "rule": "R1"
+            },
+            "W2": {
+              "answer": "Y",
+              "applies": true,
+              "evidence": [
+                "W2",
+                "R2",
+                "R3",
+                "F1"
+              ],
+              "rule": "R3"
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "Y",
+            "grantor": "展务组",
+            "overrides": "R2",
+            "recipient": "票签组"
+          },
+          "grant": {
+            "grantor": "展务组",
+            "recipient": "票签组"
+          }
+        },
+        "structure_correct": {
+          "exception": true,
+          "grant": true
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          }
+        }
+      },
+      "qd201e0451c73": {
+        "correct_grounded": true,
+        "final": "U",
+        "result": {
+          "final": "U",
+          "worlds": {
+            "W1": {
+              "answer": "N",
+              "applies": false,
+              "evidence": [
+                "W1",
+                "R1",
+                "R3"
+              ],
+              "rule": "R1"
+            },
+            "W2": {
+              "answer": "Y",
+              "applies": false,
+              "evidence": [
+                "W2",
+                "R2",
+                "R3",
+                "F1"
+              ],
+              "rule": "R2"
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "N",
+            "grantor": "函件组",
+            "overrides": "R2",
+            "recipient": "封存组"
+          },
+          "grant": {
+            "grantor": "封存组",
+            "recipient": "函件组"
+          }
+        },
+        "structure_correct": {
+          "exception": true,
+          "grant": true
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          }
+        }
+      },
+      "qefcac13bb8c9": {
+        "correct_grounded": true,
+        "final": "Y",
+        "result": {
+          "final": "Y",
+          "worlds": {
+            "W1": {
+              "answer": "Y",
+              "applies": false,
+              "evidence": [
+                "W1",
+                "R1",
+                "R3"
+              ],
+              "rule": "R1"
+            },
+            "W2": {
+              "answer": "Y",
+              "applies": true,
+              "evidence": [
+                "W2",
+                "R2",
+                "R3",
+                "F1"
+              ],
+              "rule": "R3"
+            }
+          }
+        },
+        "status": "answered",
+        "structure": {
+          "exception": {
+            "answer": "Y",
+            "grantor": "展务组",
+            "overrides": "R2",
+            "recipient": "票签组"
+          },
+          "grant": {
+            "grantor": "展务组",
+            "recipient": "票签组"
+          }
+        },
+        "structure_correct": {
+          "exception": true,
+          "grant": true
+        },
+        "unfounded_unique": false,
+        "world_correct": {
+          "W1": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          },
+          "W2": {
+            "answer": true,
+            "applies": true,
+            "evidence": true,
+            "rule": true
+          }
+        }
+      }
+    }
+  },
+  "seal_sha256": "977a9f66edfd9b29978f122deff9d718948ff80bffcb5c877b11acb16e673a3d",
+  "split": "dev",
+  "summary": {
+    "direct": {
+      "correct_grounded": 0,
+      "invalid": [],
+      "roots": {
+        "D01": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            null,
+            null
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "D",
+          "wording_changed_answer": [
+            null,
+            null
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        },
+        "D02": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            null,
+            null
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "D",
+          "wording_changed_answer": [
+            null,
+            null
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        }
+      },
+      "unfounded_unique": [],
+      "unresolved": [
+        "q18b052177f76",
+        "q426834201953",
+        "q6ae70222f98d",
+        "q7be90cdf4a64",
+        "q7cd1b60a7454",
+        "q9315ae81e1b1",
+        "qd201e0451c73"
+      ]
+    },
+    "extract": {
+      "correct_grounded": 1,
+      "invalid": [],
+      "roots": {
+        "D01": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            false,
+            true
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "D",
+          "wording_changed_answer": [
+            true,
+            false
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        },
+        "D02": {
+          "all_correct_grounded": false,
+          "direction_expected_transition": [
+            false,
+            true
+          ],
+          "direction_pairs": [
+            false,
+            false
+          ],
+          "family": "D",
+          "wording_changed_answer": [
+            false,
+            true
+          ],
+          "wording_pairs": [
+            false,
+            false
+          ]
+        }
+      },
+      "unfounded_unique": [
+        "qd201e0451c73"
+      ],
+      "unresolved": []
+    },
+    "parser": {
+      "correct_grounded": 8,
+      "invalid": [],
+      "roots": {
+        "D01": {
+          "all_correct_grounded": true,
+          "direction_expected_transition": [
+            true,
+            true
+          ],
+          "direction_pairs": [
+            true,
+            true
+          ],
+          "family": "D",
+          "wording_changed_answer": [
+            false,
+            false
+          ],
+          "wording_pairs": [
+            true,
+            true
+          ]
+        },
+        "D02": {
+          "all_correct_grounded": true,
+          "direction_expected_transition": [
+            true,
+            true
+          ],
+          "direction_pairs": [
+            true,
+            true
+          ],
+          "family": "D",
+          "wording_changed_answer": [
+            false,
+            false
+          ],
+          "wording_pairs": [
+            true,
+            true
+          ]
+        }
+      },
+      "unfounded_unique": [],
+      "unresolved": []
+    }
+  }
+}
