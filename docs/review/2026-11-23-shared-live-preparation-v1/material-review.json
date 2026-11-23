@@ -1,0 +1,1213 @@
+{
+  "limits": "Same informed author; explicit exhaustiveness is a premise; substring citation is not semantic proof; short comparisons, 380, other history and pretraining remain unknown.",
+  "overlap_sha256": "4bca24760dc1b6643e71c0042a0317a22bba548ace4a9d347e8cf6a409562478",
+  "public_sha256": "f4617dbe9e052fed57cff7986bee8dcdb3dab8025deaa033a419b4c1a8026faf",
+  "reference_sha256": "d6a27b81c4288ff49c1fa83a075b11dd4d4935cc6a97c300264f91d38896c93e",
+  "restricted_verification": {
+    "cases": 12,
+    "families": {
+      "identifier": 6,
+      "integer": 6
+    },
+    "finals": {
+      "N": 12,
+      "U": 12,
+      "Y": 12
+    },
+    "note": "restricted parser and author materials; not independent semantic review",
+    "public_sha256": "f4617dbe9e052fed57cff7986bee8dcdb3dab8025deaa033a419b4c1a8026faf",
+    "questions": 36,
+    "reference_sha256": "d6a27b81c4288ff49c1fa83a075b11dd4d4935cc6a97c300264f91d38896c93e"
+  },
+  "rows": [
+    {
+      "author_rationale": "34不超过45；58超过45。",
+      "case": "D7M4",
+      "domain": "integer",
+      "final": "U",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "p4",
+      "question_text": "该次校准读数是否超过45单位？",
+      "world_answers": [
+        "N",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：这次校准的读数是34单位。",
+          "value": "34"
+        },
+        {
+          "source_quote": "来源乙写：这次校准的读数是58单位。",
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "author_rationale": "34和58均不低于20。",
+      "case": "D7M4",
+      "domain": "integer",
+      "final": "N",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "q8",
+      "question_text": "该次校准读数是否低于20单位？",
+      "world_answers": [
+        "N",
+        "N"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：这次校准的读数是34单位。",
+          "value": "34"
+        },
+        {
+          "source_quote": "来源乙写：这次校准的读数是58单位。",
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "author_rationale": "34和58均超过30。",
+      "case": "D7M4",
+      "domain": "integer",
+      "final": "Y",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "r2",
+      "question_text": "该次校准读数是否超过30单位？",
+      "world_answers": [
+        "Y",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：这次校准的读数是34单位。",
+          "value": "34"
+        },
+        {
+          "source_quote": "来源乙写：这次校准的读数是58单位。",
+          "value": "58"
+        }
+      ]
+    },
+    {
+      "author_rationale": "两代码均不适合水下使用。",
+      "case": "N3K6",
+      "domain": "identifier",
+      "final": "N",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "s9",
+      "question_text": "按规则表，该零件是否适合水下使用？",
+      "world_answers": [
+        "N",
+        "N"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "VX3适合干燥运输，适合室内储存，不适合水下使用",
+          "source_quote": "来源甲写：本次检测代码是VX3。",
+          "value": "VX3"
+        },
+        {
+          "rule_quote": "LM7不适合干燥运输，适合室内储存，不适合水下使用",
+          "source_quote": "来源乙写：本次检测代码是LM7。",
+          "value": "LM7"
+        }
+      ]
+    },
+    {
+      "author_rationale": "规则表明VX3适合、LM7不适合干燥运输。",
+      "case": "N3K6",
+      "domain": "identifier",
+      "final": "U",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "t1",
+      "question_text": "按规则表，该零件是否适合干燥运输？",
+      "world_answers": [
+        "Y",
+        "N"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "VX3适合干燥运输，适合室内储存，不适合水下使用",
+          "source_quote": "来源甲写：本次检测代码是VX3。",
+          "value": "VX3"
+        },
+        {
+          "rule_quote": "LM7不适合干燥运输，适合室内储存，不适合水下使用",
+          "source_quote": "来源乙写：本次检测代码是LM7。",
+          "value": "LM7"
+        }
+      ]
+    },
+    {
+      "author_rationale": "两代码均适合室内储存。",
+      "case": "N3K6",
+      "domain": "identifier",
+      "final": "Y",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "u5",
+      "question_text": "按规则表，该零件是否适合室内储存？",
+      "world_answers": [
+        "Y",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "VX3适合干燥运输，适合室内储存，不适合水下使用",
+          "source_quote": "来源甲写：本次检测代码是VX3。",
+          "value": "VX3"
+        },
+        {
+          "rule_quote": "LM7不适合干燥运输，适合室内储存，不适合水下使用",
+          "source_quote": "来源乙写：本次检测代码是LM7。",
+          "value": "LM7"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别比较17、43与29。",
+      "case": "R8C2",
+      "domain": "integer",
+      "final": "U",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 107
+      },
+      "question": "Q2eb2ca868dfe",
+      "question_text": "虚构储罐的单次补水量是否超过29升？",
+      "world_answers": [
+        "N",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构储罐的单次补水量是17升。",
+          "value": "17"
+        },
+        {
+          "source_quote": "来源乙写：虚构储罐的单次补水量是43升。",
+          "value": "43"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别比较17、43与8。",
+      "case": "R8C2",
+      "domain": "integer",
+      "final": "Y",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 107
+      },
+      "question": "Q464536cbcb89",
+      "question_text": "虚构储罐的单次补水量是否超过8升？",
+      "world_answers": [
+        "Y",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构储罐的单次补水量是17升。",
+          "value": "17"
+        },
+        {
+          "source_quote": "来源乙写：虚构储罐的单次补水量是43升。",
+          "value": "43"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别比较17、43与60。",
+      "case": "R8C2",
+      "domain": "integer",
+      "final": "N",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 107
+      },
+      "question": "Qb94dd189efdf",
+      "question_text": "虚构储罐的单次补水量是否超过60升？",
+      "world_answers": [
+        "N",
+        "N"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构储罐的单次补水量是17升。",
+          "value": "17"
+        },
+        {
+          "source_quote": "来源乙写：虚构储罐的单次补水量是43升。",
+          "value": "43"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别比较72、28与90。",
+      "case": "T4L7",
+      "domain": "integer",
+      "final": "N",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 107
+      },
+      "question": "Q832e4c745ca7",
+      "question_text": "虚构转盘的单次转速是否超过90转？",
+      "world_answers": [
+        "N",
+        "N"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构转盘的单次转速是72转。",
+          "value": "72"
+        },
+        {
+          "source_quote": "来源乙写：虚构转盘的单次转速是28转。",
+          "value": "28"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别比较72、28与50。",
+      "case": "T4L7",
+      "domain": "integer",
+      "final": "U",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 107
+      },
+      "question": "Q9753e6be1942",
+      "question_text": "虚构转盘的单次转速是否超过50转？",
+      "world_answers": [
+        "Y",
+        "N"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构转盘的单次转速是72转。",
+          "value": "72"
+        },
+        {
+          "source_quote": "来源乙写：虚构转盘的单次转速是28转。",
+          "value": "28"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别比较72、28与16。",
+      "case": "T4L7",
+      "domain": "integer",
+      "final": "Y",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 107
+      },
+      "question": "Qbe055040b7f9",
+      "question_text": "虚构转盘的单次转速是否超过16转？",
+      "world_answers": [
+        "Y",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构转盘的单次转速是72转。",
+          "value": "72"
+        },
+        {
+          "source_quote": "来源乙写：虚构转盘的单次转速是28转。",
+          "value": "28"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别比较26、64与45。",
+      "case": "B6Q9",
+      "domain": "integer",
+      "final": "U",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 107
+      },
+      "question": "Q4fd7040211c7",
+      "question_text": "虚构电缆的标记长度是否超过45厘米？",
+      "world_answers": [
+        "N",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构电缆的标记长度是26厘米。",
+          "value": "26"
+        },
+        {
+          "source_quote": "来源乙写：虚构电缆的标记长度是64厘米。",
+          "value": "64"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别比较26、64与81。",
+      "case": "B6Q9",
+      "domain": "integer",
+      "final": "N",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 107
+      },
+      "question": "Qb06174d1170f",
+      "question_text": "虚构电缆的标记长度是否超过81厘米？",
+      "world_answers": [
+        "N",
+        "N"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构电缆的标记长度是26厘米。",
+          "value": "26"
+        },
+        {
+          "source_quote": "来源乙写：虚构电缆的标记长度是64厘米。",
+          "value": "64"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别比较26、64与15。",
+      "case": "B6Q9",
+      "domain": "integer",
+      "final": "Y",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 107
+      },
+      "question": "Qc1f6ef67b6fe",
+      "question_text": "虚构电缆的标记长度是否超过15厘米？",
+      "world_answers": [
+        "Y",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构电缆的标记长度是26厘米。",
+          "value": "26"
+        },
+        {
+          "source_quote": "来源乙写：虚构电缆的标记长度是64厘米。",
+          "value": "64"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别比较83、35与57。",
+      "case": "F2J8",
+      "domain": "integer",
+      "final": "U",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 107
+      },
+      "question": "Q248108a91de9",
+      "question_text": "虚构装箱批次的板片数量是否超过57片？",
+      "world_answers": [
+        "Y",
+        "N"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构装箱批次的板片数量是83片。",
+          "value": "83"
+        },
+        {
+          "source_quote": "来源乙写：虚构装箱批次的板片数量是35片。",
+          "value": "35"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别比较83、35与21。",
+      "case": "F2J8",
+      "domain": "integer",
+      "final": "Y",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 107
+      },
+      "question": "Q7dd874403a40",
+      "question_text": "虚构装箱批次的板片数量是否超过21片？",
+      "world_answers": [
+        "Y",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构装箱批次的板片数量是83片。",
+          "value": "83"
+        },
+        {
+          "source_quote": "来源乙写：虚构装箱批次的板片数量是35片。",
+          "value": "35"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别比较83、35与99。",
+      "case": "F2J8",
+      "domain": "integer",
+      "final": "N",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 107
+      },
+      "question": "Q80bd78da4f6b",
+      "question_text": "虚构装箱批次的板片数量是否超过99片？",
+      "world_answers": [
+        "N",
+        "N"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构装箱批次的板片数量是83片。",
+          "value": "83"
+        },
+        {
+          "source_quote": "来源乙写：虚构装箱批次的板片数量是35片。",
+          "value": "35"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别比较42、76与94。",
+      "case": "H5P3",
+      "domain": "integer",
+      "final": "N",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 107
+      },
+      "question": "Q29f7cad44a62",
+      "question_text": "虚构反应室的加热时长是否超过94分钟？",
+      "world_answers": [
+        "N",
+        "N"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构反应室的加热时长是42分钟。",
+          "value": "42"
+        },
+        {
+          "source_quote": "来源乙写：虚构反应室的加热时长是76分钟。",
+          "value": "76"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别比较42、76与60。",
+      "case": "H5P3",
+      "domain": "integer",
+      "final": "U",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 107
+      },
+      "question": "Qa8e3cfa7bc15",
+      "question_text": "虚构反应室的加热时长是否超过60分钟？",
+      "world_answers": [
+        "N",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构反应室的加热时长是42分钟。",
+          "value": "42"
+        },
+        {
+          "source_quote": "来源乙写：虚构反应室的加热时长是76分钟。",
+          "value": "76"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别比较42、76与31。",
+      "case": "H5P3",
+      "domain": "integer",
+      "final": "Y",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 107
+      },
+      "question": "Qd055faa54da3",
+      "question_text": "虚构反应室的加热时长是否超过31分钟？",
+      "world_answers": [
+        "Y",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "source_quote": "来源甲写：虚构反应室的加热时长是42分钟。",
+          "value": "42"
+        },
+        {
+          "source_quote": "来源乙写：虚构反应室的加热时长是76分钟。",
+          "value": "76"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别依据A42与B57的密封防尘规则。",
+      "case": "W2A8",
+      "domain": "identifier",
+      "final": "Y",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "Q0c0517b66a14",
+      "question_text": "按规则表，该对象是否适合密封防尘？",
+      "world_answers": [
+        "Y",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "A42适合密封防尘，不适合露天堆放，适合短途运输",
+          "source_quote": "来源甲写：虚构货箱的本次封装代码是A42。",
+          "value": "A42"
+        },
+        {
+          "rule_quote": "B57适合密封防尘，不适合露天堆放，不适合短途运输",
+          "source_quote": "来源乙写：虚构货箱的本次封装代码是B57。",
+          "value": "B57"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别依据A42与B57的露天堆放规则。",
+      "case": "W2A8",
+      "domain": "identifier",
+      "final": "N",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "Q38bf177f88cd",
+      "question_text": "按规则表，该对象是否适合露天堆放？",
+      "world_answers": [
+        "N",
+        "N"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "A42适合密封防尘，不适合露天堆放，适合短途运输",
+          "source_quote": "来源甲写：虚构货箱的本次封装代码是A42。",
+          "value": "A42"
+        },
+        {
+          "rule_quote": "B57适合密封防尘，不适合露天堆放，不适合短途运输",
+          "source_quote": "来源乙写：虚构货箱的本次封装代码是B57。",
+          "value": "B57"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别依据A42与B57的短途运输规则。",
+      "case": "W2A8",
+      "domain": "identifier",
+      "final": "U",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "Qe834c7610fab",
+      "question_text": "按规则表，该对象是否适合短途运输？",
+      "world_answers": [
+        "Y",
+        "N"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "A42适合密封防尘，不适合露天堆放，适合短途运输",
+          "source_quote": "来源甲写：虚构货箱的本次封装代码是A42。",
+          "value": "A42"
+        },
+        {
+          "rule_quote": "B57适合密封防尘，不适合露天堆放，不适合短途运输",
+          "source_quote": "来源乙写：虚构货箱的本次封装代码是B57。",
+          "value": "B57"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别依据C18与D63的快速拆封规则。",
+      "case": "J8E4",
+      "domain": "identifier",
+      "final": "U",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "Q8b12e9d2bd75",
+      "question_text": "按规则表，该对象是否适合快速拆封？",
+      "world_answers": [
+        "N",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "C18适合隔热存储，不适合高压浸泡，不适合快速拆封",
+          "source_quote": "来源甲写：虚构元件的本次包装代码是C18。",
+          "value": "C18"
+        },
+        {
+          "rule_quote": "D63适合隔热存储，不适合高压浸泡，适合快速拆封",
+          "source_quote": "来源乙写：虚构元件的本次包装代码是D63。",
+          "value": "D63"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别依据C18与D63的隔热存储规则。",
+      "case": "J8E4",
+      "domain": "identifier",
+      "final": "Y",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "Q9da64ae48867",
+      "question_text": "按规则表，该对象是否适合隔热存储？",
+      "world_answers": [
+        "Y",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "C18适合隔热存储，不适合高压浸泡，不适合快速拆封",
+          "source_quote": "来源甲写：虚构元件的本次包装代码是C18。",
+          "value": "C18"
+        },
+        {
+          "rule_quote": "D63适合隔热存储，不适合高压浸泡，适合快速拆封",
+          "source_quote": "来源乙写：虚构元件的本次包装代码是D63。",
+          "value": "D63"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别依据C18与D63的高压浸泡规则。",
+      "case": "J8E4",
+      "domain": "identifier",
+      "final": "N",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "Qa398b10830bc",
+      "question_text": "按规则表，该对象是否适合高压浸泡？",
+      "world_answers": [
+        "N",
+        "N"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "C18适合隔热存储，不适合高压浸泡，不适合快速拆封",
+          "source_quote": "来源甲写：虚构元件的本次包装代码是C18。",
+          "value": "C18"
+        },
+        {
+          "rule_quote": "D63适合隔热存储，不适合高压浸泡，适合快速拆封",
+          "source_quote": "来源乙写：虚构元件的本次包装代码是D63。",
+          "value": "D63"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别依据E29与F74的遮光保存规则。",
+      "case": "P7S6",
+      "domain": "identifier",
+      "final": "Y",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "Q29d044a01e59",
+      "question_text": "按规则表，该对象是否适合遮光保存？",
+      "world_answers": [
+        "Y",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "E29适合遮光保存，不适合明火烘烤，适合常温陈列",
+          "source_quote": "来源甲写：虚构容器的本次保护代码是E29。",
+          "value": "E29"
+        },
+        {
+          "rule_quote": "F74适合遮光保存，不适合明火烘烤，不适合常温陈列",
+          "source_quote": "来源乙写：虚构容器的本次保护代码是F74。",
+          "value": "F74"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别依据E29与F74的常温陈列规则。",
+      "case": "P7S6",
+      "domain": "identifier",
+      "final": "U",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "Q8f4919aab38c",
+      "question_text": "按规则表，该对象是否适合常温陈列？",
+      "world_answers": [
+        "Y",
+        "N"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "E29适合遮光保存，不适合明火烘烤，适合常温陈列",
+          "source_quote": "来源甲写：虚构容器的本次保护代码是E29。",
+          "value": "E29"
+        },
+        {
+          "rule_quote": "F74适合遮光保存，不适合明火烘烤，不适合常温陈列",
+          "source_quote": "来源乙写：虚构容器的本次保护代码是F74。",
+          "value": "F74"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别依据E29与F74的明火烘烤规则。",
+      "case": "P7S6",
+      "domain": "identifier",
+      "final": "N",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "Qd03182f65eb0",
+      "question_text": "按规则表，该对象是否适合明火烘烤？",
+      "world_answers": [
+        "N",
+        "N"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "E29适合遮光保存，不适合明火烘烤，适合常温陈列",
+          "source_quote": "来源甲写：虚构容器的本次保护代码是E29。",
+          "value": "E29"
+        },
+        {
+          "rule_quote": "F74适合遮光保存，不适合明火烘烤，不适合常温陈列",
+          "source_quote": "来源乙写：虚构容器的本次保护代码是F74。",
+          "value": "F74"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别依据G31与H86的折叠收纳规则。",
+      "case": "V5D2",
+      "domain": "identifier",
+      "final": "U",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "Q2b4a81d5ee9e",
+      "question_text": "按规则表，该对象是否适合折叠收纳？",
+      "world_answers": [
+        "N",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "G31适合防震运输，不适合水下存放，不适合折叠收纳",
+          "source_quote": "来源甲写：虚构样盒的本次运输代码是G31。",
+          "value": "G31"
+        },
+        {
+          "rule_quote": "H86适合防震运输，不适合水下存放，适合折叠收纳",
+          "source_quote": "来源乙写：虚构样盒的本次运输代码是H86。",
+          "value": "H86"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别依据G31与H86的水下存放规则。",
+      "case": "V5D2",
+      "domain": "identifier",
+      "final": "N",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "Q7a2ef5d3d6bc",
+      "question_text": "按规则表，该对象是否适合水下存放？",
+      "world_answers": [
+        "N",
+        "N"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "G31适合防震运输，不适合水下存放，不适合折叠收纳",
+          "source_quote": "来源甲写：虚构样盒的本次运输代码是G31。",
+          "value": "G31"
+        },
+        {
+          "rule_quote": "H86适合防震运输，不适合水下存放，适合折叠收纳",
+          "source_quote": "来源乙写：虚构样盒的本次运输代码是H86。",
+          "value": "H86"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别依据G31与H86的防震运输规则。",
+      "case": "V5D2",
+      "domain": "identifier",
+      "final": "Y",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "Qb96d8299c930",
+      "question_text": "按规则表，该对象是否适合防震运输？",
+      "world_answers": [
+        "Y",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "G31适合防震运输，不适合水下存放，不适合折叠收纳",
+          "source_quote": "来源甲写：虚构样盒的本次运输代码是G31。",
+          "value": "G31"
+        },
+        {
+          "rule_quote": "H86适合防震运输，不适合水下存放，适合折叠收纳",
+          "source_quote": "来源乙写：虚构样盒的本次运输代码是H86。",
+          "value": "H86"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别依据J47与K92的直接冲洗规则。",
+      "case": "Y4N8",
+      "domain": "identifier",
+      "final": "N",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "Q59fab6873aa3",
+      "question_text": "按规则表，该对象是否适合直接冲洗？",
+      "world_answers": [
+        "N",
+        "N"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "J47适合室内存放，不适合直接冲洗，适合悬挂陈列",
+          "source_quote": "来源甲写：虚构展品的本次安放代码是J47。",
+          "value": "J47"
+        },
+        {
+          "rule_quote": "K92适合室内存放，不适合直接冲洗，不适合悬挂陈列",
+          "source_quote": "来源乙写：虚构展品的本次安放代码是K92。",
+          "value": "K92"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别依据J47与K92的悬挂陈列规则。",
+      "case": "Y4N8",
+      "domain": "identifier",
+      "final": "U",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "Q82739e1f7d9b",
+      "question_text": "按规则表，该对象是否适合悬挂陈列？",
+      "world_answers": [
+        "Y",
+        "N"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "J47适合室内存放，不适合直接冲洗，适合悬挂陈列",
+          "source_quote": "来源甲写：虚构展品的本次安放代码是J47。",
+          "value": "J47"
+        },
+        {
+          "rule_quote": "K92适合室内存放，不适合直接冲洗，不适合悬挂陈列",
+          "source_quote": "来源乙写：虚构展品的本次安放代码是K92。",
+          "value": "K92"
+        }
+      ]
+    },
+    {
+      "author_rationale": "分别依据J47与K92的室内存放规则。",
+      "case": "Y4N8",
+      "domain": "identifier",
+      "final": "Y",
+      "independent_semantic_review": false,
+      "overlap_short_approximation": "unknown",
+      "prior_background_counts": {
+        "comparisons": 2829,
+        "short": 0
+      },
+      "prior_question_counts": {
+        "comparisons": 535,
+        "short": 535
+      },
+      "question": "Qc280b8a63337",
+      "question_text": "按规则表，该对象是否适合室内存放？",
+      "world_answers": [
+        "Y",
+        "Y"
+      ],
+      "worlds": [
+        {
+          "rule_quote": "J47适合室内存放，不适合直接冲洗，适合悬挂陈列",
+          "source_quote": "来源甲写：虚构展品的本次安放代码是J47。",
+          "value": "J47"
+        },
+        {
+          "rule_quote": "K92适合室内存放，不适合直接冲洗，不适合悬挂陈列",
+          "source_quote": "来源乙写：虚构展品的本次安放代码是K92。",
+          "value": "K92"
+        }
+      ]
+    }
+  ],
+  "schema": "shared_material_review_v1"
+}
