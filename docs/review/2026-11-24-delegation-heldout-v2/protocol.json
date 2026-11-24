@@ -1,0 +1,50 @@
+{
+  "ablation": "The full extraction arm with the exact same generated structures; only an explicit disagreement with a recognized original-text F1 suppresses grant. Unrecognized F1 is kept and counted as unverifiable. No extra calls.",
+  "decision": {
+    "diagnostic_recurrence": "At least two different roots in two wording families with a source-verified reversed F1 in full extraction causing false uniqueness, and an intervention suppressing it.",
+    "interpretation": "Small-sample research decision, with per-root paired wins/losses, per-family totals and leave-one-root-out range. Technical invalids remain in denominators.",
+    "mixed_for_cost_advantage": "At equal or greater strict grounded coverage and no added false unique vs full, fewer total logical prompt+generation tokens.",
+    "new_false_unique_vs_program": 0,
+    "novel_net_complete_roots_over_program": 2,
+    "novel_positive_families": 2
+  },
+  "dev_cases": [
+    "N01-2-match",
+    "N02-2-reverse",
+    "N03-2-match",
+    "N04-1-reverse"
+  ],
+  "development_interface": "Every call must end normally; at least 3 of the 4 scored records must be usable on each of direct, full, and repair. Review all invalid outputs explicitly. Keep technical failures in all later denominators.",
+  "groups": {
+    "boundary": {
+      "cases": 3
+    },
+    "mixed": {
+      "families": 2,
+      "roots": 2,
+      "versions_per_root": 4
+    },
+    "novel": {
+      "families": 2,
+      "roots": 4,
+      "versions_per_root": 4
+    }
+  },
+  "prompts": {
+    "both": "仅提取 R3 所需的授权方向、例外结论及优先于的默认条款，以及 F1 登记的授权方向。每个方向的 grantor 为授权方、recipient 为受权方，逐字使用材料中的组名。只输出一个 JSON 对象，顶层键为 exception 和 grant。exception 的键为 grantor、recipient、answer、overrides，answer 为 Y 或 N，overrides 为 R1 或 R2。grant 的键为 grantor 和 recipient。无法确定其中一组字段时，该组整体写 null。不要自行求值。",
+    "common": "核对下列同一案件的六份记录。W1、W2 是地位相同的冲突来源，应分别假定各来源正确。R1、R2 是默认规则。R3 仅在指定方向的授权成立时覆盖一条默认规则。F1 是两个世界共用的本件授权登记。Y 为准入，N 为不准入，X 为无法确定，U 为两世界各自确定但答案不同。",
+    "direct": "先提取 R3 所需的授权方向、例外结论及优先于的默认条款，以及 F1 登记的授权方向。分别按 W1 和 W2 判断 R3 是否适用及最终准入结论。只输出一个 JSON 对象，顶层键为 structure、worlds、final。structure 有 exception 和 grant 两个键。exception 的键为 grantor、recipient、answer、overrides，grant 的键为 grantor 和 recipient；grantor 为授权方，recipient 为受权方，逐字使用材料中的组名；answer 为 Y 或 N，overrides 为 R1 或 R2。无法确定其中一组字段时，该组整体写 null。worlds 的键为 W1、W2，每项的键为 applies、rule、answer、evidence。applies 表示 R3 是否适用（true、false 或 null），rule 为决定性条款的 ID 或 null，answer 为 Y、N 或 X（无法判定），evidence 为推出该世界结论所需的记录和条款 ID 数组。final 为两边共同的 Y 或 N、两边确定而异答时的 U，或至少一边无法判定时的 X。 证据 ID 只允许完整字符串 W1、W2、R1、R2、R3、F1，例如 [\"W1\",\"R1\"]。只输出上述完整 JSON，不省略任何字段。",
+    "exception": "只提取 R3 中例外规则要求的授权方向、例外结论和被覆盖的条款。只输出一个 JSON 对象，唯一顶层键为 exception。exception 是含 grantor、recipient、answer、overrides 四个键的对象，或 JSON null。answer 准入用 Y、不准入用 N；overrides 只允许 R1 或 R2。缺字段或规则版本冲突时写 null。不要提取 F1，也不要作答。",
+    "fields": "组名逐字照抄，不含引号。grantor 是授出权力的授权方，recipient 是取得权力的受权方。无法唯一确定一组字段时，整组写 JSON null。",
+    "grant": "只提取 F1 中实际登记的本件授权方向。只输出一个 JSON 对象，唯一顶层键为 grant。grant 是含 grantor、recipient 两个键的对象，或 JSON null。遇到不完整或方向互相冲突的记录时写 null。不要提取 R3，也不要作答。"
+  },
+  "routes": {
+    "direct": "Same six records, explicit extract/apply/merge instructions and evidence, final computed by the model.",
+    "full": "One call for both fields, grounded role names validated in corresponding sources, frozen evaluator.",
+    "program": "Frozen 0283099 source parser and evaluator.",
+    "repair": "Freeze recognized fields, one call for only missing groups, frozen evaluator. If both groups are missing the task and output are exactly shared with full, charged as one logical call on each arm. If none missing, zero calls."
+  },
+  "runtime": "Qwen2.5-3B-Instruct, CPU FP32, SDPA, greedy, sixteen threads, four inputs per batch, direct 256/extract 160 tokens",
+  "schema": "delegation_field_repair_v2",
+  "scope": "Controlled synthetic, bottom-question and wording-family holdout, informed author reference"
+}

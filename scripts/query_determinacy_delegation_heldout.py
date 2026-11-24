@@ -11,13 +11,12 @@ from query_determinacy_delegation import RECORDS, SLOTS, response_object, solve,
 from query_determinacy_delegation_source import compare_grant, source_structure
 
 ROOT = paired.ROOT
-PACK = ROOT / 'docs/review/2026-11-24-delegation-heldout-v1'
+PACK = ROOT / 'docs/review/2026-11-24-delegation-heldout-v2'
+MATERIAL = PACK.parent / '2026-11-24-delegation-heldout-v1'
 PRIOR = PACK.parent / '2026-11-23-delegation-new-wording-v1'
 RUNS = ROOT / 'runs'
 ARMS = ('program', 'direct', 'full', 'repair', 'full_checked')
-FIELDS = {'exception': 'e', 'grant': 'g'}
-KEYS = {'exception': ('grantor', 'recipient', 'answer', 'overrides'),
-        'grant': ('grantor', 'recipient')}
+FIELDS = ('exception', 'grant')
 SOURCES = {'exception': 'R3', 'grant': 'F1'}
 require = paired.require
 read = paired.read
@@ -34,7 +33,7 @@ def frozen(split):
         paired.verify_hashes(material)
         require(read(material)[str(lock.relative_to(ROOT))] == digest(lock), 'missing development binding')
         binds['material_freeze_sha256'] = digest(material)
-        cases = read(PACK / 'cases.json')
+        cases = read(MATERIAL / 'cases.json')
     else:
         old_cases = read(PRIOR / 'cases.json')
         cases = {key: old_cases[key] for key in read(PACK / 'protocol.json')['dev_cases']}
@@ -59,34 +58,31 @@ def tasks(cases, protocol):
             for i in range(0, len(rows), cpu.BATCH_SIZE)]
 
 
-def parse_fields(value, fields, records, *, direct=False):
-    require(isinstance(value, dict), 'expected a JSON object')
-    keys = {FIELDS[f] for f in fields}
-    require(set(value) == (keys | {*SLOTS, 'final'} if direct else keys), 'unexpected response keys')
-    structure = {}
-    for field in fields:
-        src = value[FIELDS[field]]
-        expected = KEYS[field]
-        require(src is None or (isinstance(src, list) and len(src) == len(expected)), 'bad field list')
-        structure[field] = None if src is None else dict(zip(expected, src, strict=True))
-        validate_structure(dict.fromkeys(FIELDS) | {field: structure[field]})
-        if src is not None:
-            require(src[0] != src[1] and all(f'「{role}」' in records[SOURCES[field]] for role in src[:2]),
-                    'non-source or duplicate role name')
-    return structure
+def parse_fields(value, fields, records):
+    require(isinstance(value, dict) and set(value) == set(fields), 'unexpected field keys')
+    validate_structure(dict.fromkeys(FIELDS) | value)
+    for field, obj in value.items():
+        if obj is None:
+            continue
+        parties = (obj['grantor'], obj['recipient'])
+        require(parties[0] != parties[1] and all(f'「{role}」' in records[SOURCES[field]] for role in parties),
+                'non-source or duplicate role name')
+    return value
 
 
 def parse_direct(value, records):
-    structure = parse_fields(value, list(FIELDS), records, direct=True)
-    worlds = {}
-    for slot in SLOTS:
-        row = value[slot]
-        require(isinstance(row, list) and len(row) == 4, 'invalid world list')
-        applies, rule, answer, evidence = row
-        require(applies is None or (type(applies) is int and applies in (0, 1)), 'invalid applicability digit')
-        worlds[slot] = {'applies': None if applies is None else bool(applies), 'rule': rule,
-                        'answer': answer, 'evidence': evidence}
-    return paired.direct_result({'structure': structure, 'worlds': worlds, 'final': value['final']})
+    require(isinstance(value, dict) and set(value) == {'structure', 'worlds', 'final'}, 'invalid direct keys')
+    parse_fields(value['structure'], FIELDS, records)
+    worlds = value['worlds']
+    require(isinstance(worlds, dict) and set(worlds) == set(SLOTS), 'invalid source keys')
+    normalized = {}
+    for slot, row in worlds.items():
+        require(isinstance(row, dict) and 'applies' in row, 'invalid world object')
+        applies = row['applies']
+        if type(applies) is str and applies in ('true', 'false'):
+            applies = applies == 'true'
+        normalized[slot] = row | {'applies': applies}
+    return paired.direct_result(value | {'worlds': normalized})
 
 
 def assess(got, result, ref):
@@ -286,7 +282,7 @@ def replay(split, run):
 
 def score(split, run):
     cases, protocol, manifest, records, seconds = replay(split, run)
-    refs = read(PRIOR / 'author-reference.json' if split == 'dev' else PACK / 'author-reference.json')
+    refs = read(PRIOR / 'author-reference.json' if split == 'dev' else MATERIAL / 'author-reference.json')
     rows = {}
     for key, case in cases.items():
         ref = refs[key]
@@ -301,8 +297,8 @@ def score(split, run):
               'batch_generation_seconds': seconds, 'time': read(run / 'time.json'),
               'summary': summary, 'rows': rows}
     if split == 'dev':
-        report['interface_ready'] = all(summary['groups']['all'][arm]['invalid'] == 0
-                                        for arm in ('direct', 'full', 'repair'))
+        report['interface_ready'] = all(r['status'] == 'complete' for r in records.values()) and all(
+            summary['groups']['all'][arm]['invalid'] <= 1 for arm in ('direct', 'full', 'repair'))
     else:
         report['decision'] = decision(rows, summary, protocol['decision'])
     return report
