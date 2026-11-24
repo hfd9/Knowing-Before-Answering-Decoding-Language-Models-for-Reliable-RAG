@@ -11,8 +11,9 @@ from query_determinacy_delegation import RECORDS, SLOTS, response_object, solve,
 from query_determinacy_delegation_source import compare_grant, source_structure
 
 ROOT = paired.ROOT
-PACK = ROOT / 'docs/review/2026-11-24-delegation-heldout-v2'
+PACK = ROOT / 'docs/review/2026-11-24-delegation-heldout-v3'
 MATERIAL = PACK.parent / '2026-11-24-delegation-heldout-v1'
+SECOND_DEVELOPMENT = PACK.parent / '2026-11-24-delegation-heldout-v2'
 PRIOR = PACK.parent / '2026-11-23-delegation-new-wording-v1'
 RUNS = ROOT / 'runs'
 ARMS = ('program', 'direct', 'full', 'repair', 'full_checked')
@@ -46,14 +47,15 @@ def tasks(cases, protocol):
     for key, records in sorted(cases.items()):
         base = source_structure(records)
         missing = [field for field in FIELDS if base[field] is None]
-        common = [instructions['common'], *(f'[{name}] {records[name]}' for name in RECORDS), instructions['fields']]
+        common = [instructions['common'], *(f'[{name}] {records[name]}' for name in RECORDS)]
         for arm, route, request, fields in (
             ('direct', 'direct', 'direct', list(FIELDS)),
             ('extract', 'extract', 'both', list(FIELDS)),
             *((('repair', 'extract', missing[0], missing),) if len(missing) == 1 else ()),
         ):
             plan[arm].append({'case': key, 'arm': arm, 'route': route, 'fields': fields,
-                              'prompt': '\n'.join([*common, instructions[request]])})
+                              'prompt': '\n'.join([*common, *([] if arm == 'direct' else [instructions['fields']]),
+                                                   instructions[request]])})
     return [(arm, rows[i:i + cpu.BATCH_SIZE]) for arm, rows in plan.items()
             for i in range(0, len(rows), cpu.BATCH_SIZE)]
 
@@ -70,9 +72,8 @@ def parse_fields(value, fields, records):
     return value
 
 
-def parse_direct(value, records):
-    require(isinstance(value, dict) and set(value) == {'structure', 'worlds', 'final'}, 'invalid direct keys')
-    parse_fields(value['structure'], FIELDS, records)
+def parse_direct(value):
+    require(isinstance(value, dict) and set(value) == {'worlds', 'final'}, 'invalid direct keys')
     worlds = value['worlds']
     require(isinstance(worlds, dict) and set(worlds) == set(SLOTS), 'invalid source keys')
     normalized = {}
@@ -82,12 +83,16 @@ def parse_direct(value, records):
         if type(applies) is str and applies in ('true', 'false'):
             applies = applies == 'true'
         normalized[slot] = row | {'applies': applies}
-    return paired.direct_result(value | {'worlds': normalized})
+        if row.get('answer') == 'X' and 'evidence' in row and row['evidence'] is None:
+            normalized[slot]['evidence'] = []
+    _, result = paired.direct_result(value | {'worlds': normalized, 'structure': dict.fromkeys(FIELDS)})
+    return None, result
 
 
 def assess(got, result, ref):
     return {'structure': got, 'result': result, 'final': result['final'], 'invalid': None,
-            'strict': got == ref['structure'] and result['final'] == ref['result']['final']
+            'structure_exact': None if got is None else got == ref['structure'],
+            'strict': result['final'] == ref['result']['final']
             and all(
                 all(result['worlds'][slot][field] == ref['result']['worlds'][slot][field]
                     for field in ('applies', 'rule', 'answer'))
@@ -103,13 +108,14 @@ def score_call(row, records, ref, base=None):
             explicit_final = raw['final']
         require(row['status'] == 'complete', row['status'])
         if row['arm'] == 'direct':
-            got, result = parse_direct(raw, records)
+            got, result = parse_direct(raw)
         else:
             got = (base or {}) | parse_fields(raw, row['fields'], records)
             result = solve(records, got)
         scored = assess(got, result, ref)
     except (KeyError, TypeError, ValueError) as error:
-        scored = {'structure': None, 'result': None, 'final': explicit_final, 'invalid': str(error), 'strict': False}
+        scored = {'structure': None, 'result': None, 'final': explicit_final, 'invalid': str(error),
+                  'strict': False, 'structure_exact': None}
     return scored | {'calls': 1, 'input_tokens': len(row['input_token_ids']),
                      'output_tokens': len(row['generated_token_ids'])}
 
@@ -216,15 +222,38 @@ def decision(rows, summary, policy):
             'causal_verified_reversal_roots': sorted({r['root'] for r in recurs})}
 
 
-def collect(split, run, dev):
+def reuse_development(run, environment):
+    saved = read(run / 'manifest.json')
+    require(saved['split'] == 'dev' and saved['environment'] == environment
+            and saved['generation'] == cpu.GENERATION, 'second development environment differs')
+    seal = read(run / 'seal.json')
+    original = read(SECOND_DEVELOPMENT / 'dev-results.json')
+    seal_hash = digest(run / 'seal.json')
+    require(seal_hash == original['seal_sha256'], 'second development seal changed')
+    for name, sha in seal.items():
+        require(digest(run / name) == sha, 'second development file changed')
+    reuse = {}
+    for name in sorted(seal):
+        if not name.endswith('.record.json'):
+            continue
+        for row in read(run / name)['records']:
+            if row['arm'] != 'direct':
+                reuse[row['arm'], row['case']] = row
+    return reuse, seal_hash
+
+
+def collect(split, run, dev, previous):
     cases, protocol, binds = frozen(split)
     plan = tasks(cases, protocol)
     environment = local.environment_snapshot()
+    reuse = {}
     if split == 'heldout':
         report = score('dev', dev)
         require(report['interface_ready'], 'development interface is not ready')
         require(report['environment'] == environment, 'model/runtime changed since development')
         binds['dev_seal_sha256'] = report['seal_sha256']
+    else:
+        reuse, binds['reused_dev_seal_sha256'] = reuse_development(previous, environment)
     run.mkdir(mode=0o700)
     started = monotonic()
     write(run / 'manifest.json', {'split': split, 'generation': cpu.GENERATION,
@@ -234,11 +263,19 @@ def collect(split, run, dev):
     call_count = sum(len(batch) for _, batch in plan)
     for index, (arm, batch) in enumerate(plan):
         write(run / f'{index:03d}.attempt.json', batch)
-        records, seconds = backend.generate(batch)
+        if split == 'dev' and arm != 'direct':
+            records = [reuse[arm, task['case']] for task in batch]
+            require(all(all(row[key] == value for key, value in task.items())
+                        for row, task in zip(records, batch, strict=True)), 'changed prompt for reused development call')
+            seconds, reused = 0, True
+        else:
+            records, seconds = backend.generate(batch)
+            reused = False
         require(len(batch) == len(records), 'bad batch count')
-        write(run / f'{index:03d}.record.json', {'records': records, 'seconds': seconds})
+        write(run / f'{index:03d}.record.json', {'records': records, 'seconds': seconds, 'reused': reused})
         done += len(batch)
-        print(f'{done}/{call_count} {arm} {"/".join(r["status"] for r in records)} {seconds:.1f}s', flush=True)
+        print(f'{done}/{call_count} {arm} {"/".join(r["status"] for r in records)} {seconds:.1f}s'
+              f'{" reused" if reused else ""}', flush=True)
     write(run / 'time.json', {'wall_seconds_after_environment_check': monotonic() - started})
     write(run / 'seal.json', {path.name: digest(path) for path in sorted(run.iterdir()) if path.is_file()})
 
@@ -254,15 +291,19 @@ def replay(split, run):
         require(digest(run / filename) == expected_digest, f'sealed file changed: {filename}')
     manifest = read(run / 'manifest.json')
     require(manifest['split'] == split and manifest['generation'] == cpu.GENERATION, 'manifest mismatch')
-    require(set(manifest['binds']) == set(binds) | ({'dev_seal_sha256'} if split == 'heldout' else set())
+    require(set(manifest['binds']) == set(binds) | ({'dev_seal_sha256'} if split == 'heldout'
+                                                  else {'reused_dev_seal_sha256'})
             and all(manifest['binds'][k] == v for k, v in binds.items()), 'frozen bindings changed')
     eos = manifest['environment']['eos_token_ids']
     tokenizer = local.load_tokenizer()
     records = {}
     seconds = Counter()
+    reused_count = 0
     for index, (arm, batch) in enumerate(plan):
         require(batch == read(run / f'{index:03d}.attempt.json'), 'different scheduled prompts')
         saved = read(run / f'{index:03d}.record.json')
+        require(saved['reused'] is (split == 'dev' and arm != 'direct'), 'invalid replay provenance')
+        reused_count += len(batch) if saved['reused'] else 0
         seconds[arm] += saved['seconds']
         for task, row in zip(batch, saved['records'], strict=True):
             require(all(row[k] == v for k, v in task.items()), 'different generation target')
@@ -277,11 +318,11 @@ def replay(split, run):
             require(row['output'] == raw and row['status'] == local.output_status(raw, tokens, eos),
                     'different decoded output')
             records[arm, task['case']] = row
-    return cases, protocol, manifest, records, dict(seconds)
+    return cases, protocol, manifest, records, dict(seconds), reused_count
 
 
 def score(split, run):
-    cases, protocol, manifest, records, seconds = replay(split, run)
+    cases, protocol, manifest, records, seconds, reused_count = replay(split, run)
     refs = read(PRIOR / 'author-reference.json' if split == 'dev' else MATERIAL / 'author-reference.json')
     rows = {}
     for key, case in cases.items():
@@ -293,12 +334,16 @@ def score(split, run):
     summary = summarize(rows)
     report = {'seal_sha256': digest(run / 'seal.json'), 'environment': manifest['environment'],
               'dev_seal_sha256': manifest['binds'].get('dev_seal_sha256'),
-              'physical_calls': len(records), 'generation_statuses': dict(Counter(r['status'] for r in records.values())),
+              'reused_dev_seal_sha256': manifest['binds'].get('reused_dev_seal_sha256'),
+              'physical_calls': len(records) - reused_count, 'reused_calls': reused_count,
+              'generation_statuses': dict(Counter(r['status'] for r in records.values())),
               'batch_generation_seconds': seconds, 'time': read(run / 'time.json'),
               'summary': summary, 'rows': rows}
     if split == 'dev':
-        report['interface_ready'] = all(r['status'] == 'complete' for r in records.values()) and all(
-            summary['groups']['all'][arm]['invalid'] <= 1 for arm in ('direct', 'full', 'repair'))
+        report['direct_fully_scorable'] = 4 - summary['groups']['all']['direct']['invalid']
+        report['interface_ready'] = (all(r['status'] == 'complete' for r in records.values())
+                                     and sum(row['arms']['direct']['final'] is not None for row in rows.values()) >= 3
+                                     and all(summary['groups']['all'][arm]['invalid'] <= 1 for arm in ('full', 'repair')))
     else:
         report['decision'] = decision(rows, summary, protocol['decision'])
     return report
@@ -310,12 +355,14 @@ def main():
     cli.add_argument('split', choices=('dev', 'heldout'))
     cli.add_argument('run', type=Path)
     cli.add_argument('--dev', type=Path)
+    cli.add_argument('--previous', type=Path)
     cli.add_argument('--report', type=Path)
     args = cli.parse_args()
     if args.stage == 'collect':
-        require(args.run.parent.resolve() == RUNS and (args.split != 'heldout' or args.dev is not None),
-                'use a new local run directory and sealed dev run')
-        collect(args.split, args.run, args.dev)
+        dependency = args.dev if args.split == 'heldout' else args.previous
+        require(args.run.parent.resolve() == RUNS and dependency is not None,
+                'use a new local run directory and the preceding sealed development run')
+        collect(args.split, args.run, args.dev, args.previous)
     else:
         report = score(args.split, args.run)
         if args.report:
