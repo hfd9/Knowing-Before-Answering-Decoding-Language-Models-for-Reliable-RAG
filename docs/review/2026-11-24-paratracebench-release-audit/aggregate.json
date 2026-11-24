@@ -1,0 +1,156 @@
+{
+  "case_inventories": {
+    "controlled": {
+      "cases": 140,
+      "distinct_query_strings": 5,
+      "expected_status": {
+        "accepted": 40,
+        "both": 35,
+        "rejected": 35,
+        "undecidable": 30
+      },
+      "path": "data/controlled/paratracebench_controlled_140.jsonl",
+      "provenance_source": {
+        "synthetic_anonymized_repository_payload": 140
+      },
+      "sha256": "06b39f17824edd73df014faaca3046e56fa219fe869c31d61849f7ce6fb05df6",
+      "source_doc_ids_per_case": {
+        "1": 140
+      },
+      "visible_query_and_ordered_evidence": {
+        "all_digits": {
+          "distinct": 10,
+          "groups_with_multiple_statuses": 10
+        },
+        "anonymous_case_tag_only": {
+          "distinct": 48,
+          "groups_with_multiple_statuses": 8
+        },
+        "exact": {
+          "distinct": 140,
+          "groups_with_multiple_statuses": 0
+        }
+      }
+    },
+    "external": {
+      "cases": 567,
+      "distinct_query_strings": 5,
+      "expected_status": {
+        "accepted": 112,
+        "both": 113,
+        "rejected": 171,
+        "undecidable": 171
+      },
+      "path": "data/external/paratracebench_external_567.jsonl",
+      "provenance_source": {
+        "synthetic_anonymized_repository_payload": 567
+      },
+      "sha256": "b4a14e10167f8b69bf35bcabbb4b6759a456b71c67189396ddd5862460a86b05",
+      "source_doc_ids_per_case": {
+        "1": 567
+      },
+      "visible_query_and_ordered_evidence": {
+        "all_digits": {
+          "distinct": 10,
+          "groups_with_multiple_statuses": 10
+        },
+        "anonymous_case_tag_only": {
+          "distinct": 61,
+          "groups_with_multiple_statuses": 31
+        },
+        "exact": {
+          "distinct": 567,
+          "groups_with_multiple_statuses": 0
+        }
+      }
+    }
+  },
+  "cross_split_shared_visible_input_keys": {
+    "all_digits": 10,
+    "anonymous_case_tag_only": 48,
+    "exact": 60,
+    "exact_shared_with_different_status": 39,
+    "exact_shared_with_same_status": 21
+  },
+  "output_inventory": {
+    "b1_citation_only": {
+      "counts": {
+        "ASA_correct": 167,
+        "BRA_correct": 52,
+        "BRA_den": 178,
+        "CLA_correct": 50,
+        "CLA_den": 414,
+        "NER_correct": 186,
+        "NER_den": 414,
+        "PHA_correct": 23,
+        "PHA_den": 214,
+        "n": 567
+      },
+      "distinct_answer_strings": 4,
+      "output_sha256": "ff2e1bb338d6e0cf80b4383f5bdb81fe79ded45354b6c2739e57054703424a01",
+      "published_integer_count_differences": {},
+      "raw_and_normalized_bytes_identical": true
+    },
+    "b2_self_check": {
+      "counts": {
+        "ASA_correct": 324,
+        "BRA_correct": 102,
+        "BRA_den": 178,
+        "CLA_correct": 194,
+        "CLA_den": 414,
+        "NER_correct": 278,
+        "NER_den": 414,
+        "PHA_correct": 78,
+        "PHA_den": 214,
+        "n": 567
+      },
+      "distinct_answer_strings": 4,
+      "output_sha256": "7f8136b8287669298126c9e21670ea601408203b0840eaf7a065c2f48a62f5ba",
+      "published_integer_count_differences": {},
+      "raw_and_normalized_bytes_identical": true
+    },
+    "b3_structured_extraction": {
+      "counts": {
+        "ASA_correct": 416,
+        "BRA_correct": 126,
+        "BRA_den": 178,
+        "CLA_correct": 272,
+        "CLA_den": 414,
+        "NER_correct": 327,
+        "NER_den": 414,
+        "PHA_correct": 133,
+        "PHA_den": 214,
+        "n": 567
+      },
+      "distinct_answer_strings": 4,
+      "output_sha256": "e716d3e01c8c2da27e195f3dd27e9d6be2d2c27c71c92ddef949f2978e444198",
+      "published_integer_count_differences": {},
+      "raw_and_normalized_bytes_identical": true
+    },
+    "b4_trace_based": {
+      "counts": {
+        "ASA_correct": 486,
+        "BRA_correct": 149,
+        "BRA_den": 178,
+        "CLA_correct": 354,
+        "CLA_den": 414,
+        "NER_correct": 390,
+        "NER_den": 414,
+        "PHA_correct": 180,
+        "PHA_den": 214,
+        "n": 567
+      },
+      "distinct_answer_strings": 4,
+      "fields_exactly_matching_case_reference": {
+        "conflicts": 567,
+        "extracted_facts": 567,
+        "extracted_rules": 567,
+        "priorities": 567
+      },
+      "output_sha256": "0f598f1d65b107576ad6200801368b7846ce20921b268936b495b00c33be68a6",
+      "published_integer_count_differences": {},
+      "raw_and_normalized_bytes_identical": true
+    }
+  },
+  "revision": "f9cbea4eccaf492a2d27afbf7a1d02533ff566bd"
+}
