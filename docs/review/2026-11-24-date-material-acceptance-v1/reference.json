@@ -1,0 +1,95 @@
+{
+  "provision": "12 CFR 1026.3(b)(1), Supplement I comments 3(b)-3 and 3(b)-5.i",
+  "operative_event": "Consummation (when the borrower becomes contractually obligated under 12 CFR 1026.2(a)(13)); the full extension occurs that same day by stipulation.",
+  "allowed_date_range_inclusive": [
+    "2024-12-31",
+    "2025-01-01"
+  ],
+  "option_amounts_usd": {
+    "A": 75000,
+    "B": 70000
+  },
+  "versions": {
+    "E2": {
+      "comment": "3(b)-3.xv",
+      "effective_from": "2024-01-01",
+      "applies_through": "2024-12-31",
+      "threshold_usd": 69500,
+      "quote": "From January 1, 2024, through December 31, 2024, the threshold amount is $69,500.",
+      "federal_register_doc": "2023-25048"
+    },
+    "E3": {
+      "comment": "3(b)-3.xvi",
+      "effective_from": "2025-01-01",
+      "applies_through": "2025-12-31",
+      "threshold_usd": 71900,
+      "quote": "From January 1, 2025, through December 31, 2025, the threshold amount is $71,900.",
+      "federal_register_doc": "2024-23275"
+    }
+  },
+  "cases": {
+    "R01": {
+      "option": "A",
+      "event_date": "2024-12-31",
+      "action": "answer",
+      "answer": true,
+      "evidence": [
+        "E1",
+        "E2"
+      ]
+    },
+    "R02": {
+      "option": "A",
+      "event_date": "2025-01-01",
+      "action": "answer",
+      "answer": true,
+      "evidence": [
+        "E1",
+        "E3"
+      ]
+    },
+    "R03": {
+      "option": "A",
+      "event_date": null,
+      "action": "answer",
+      "answer": true,
+      "evidence": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
+    "R04": {
+      "option": "B",
+      "event_date": "2024-12-31",
+      "action": "answer",
+      "answer": true,
+      "evidence": [
+        "E1",
+        "E2"
+      ]
+    },
+    "R05": {
+      "option": "B",
+      "event_date": "2025-01-01",
+      "action": "answer",
+      "answer": false,
+      "evidence": [
+        "E1",
+        "E3"
+      ]
+    },
+    "R06": {
+      "option": "B",
+      "event_date": null,
+      "action": "ask_date",
+      "answer": null,
+      "evidence": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "example": "On which day did the borrower become contractually bound to the loan, December 31, 2024 or January 1, 2025?"
+    }
+  }
+}
