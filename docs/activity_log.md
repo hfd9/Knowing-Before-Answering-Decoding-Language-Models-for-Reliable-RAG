@@ -6,6 +6,8 @@
 
 ## 当前交接摘要
 
+- 2026-11-24 [日期材料验收计划评价](records/2026-11-24-date-material-acceptance-plan-assessment.md)明确一对真实版本的覆盖、六格逐版参照和澄清比较，补查 Ask, Relax, or Act?。本轮仅评价计划及查证来源。
+
 - 2026-11-24 [上午工作汇总](records/2026-11-24-morning-summary.md)核对七个已提交步骤、89 次 CPU 生成和复用口径，记录授权方向停止与日期材料候选。本次仅查看既有归档并复算总量。
 
 - 2026-11-24 完成[ParaTraceBench 公开发行包复算](records/2026-11-24-paratracebench-release-audit.md)。受控与外部跨集合 60 个逐字同输入中有 39 个不同状态，外部四路线聚合吻合；公开包排除为自然独立留出集。版本日期材料作为新线索。
