@@ -1,0 +1,508 @@
+{
+  "evaluator": "informed assistant, existing author reference",
+  "first_turn": {
+    "ask_if_missing": {
+      "R01": {
+        "action": "unresolved",
+        "answer": null,
+        "cited_evidence": [
+          "E2",
+          "E3"
+        ],
+        "date_request": "none",
+        "rationale": "误称给出的年度门槛没有覆盖已知的 2024-12-31。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      },
+      "R02": {
+        "action": "unresolved",
+        "answer": null,
+        "cited_evidence": [
+          "E2",
+          "E3"
+        ],
+        "date_request": "none",
+        "rationale": "误称给出的年度门槛没有覆盖已知的 2025-01-01。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      },
+      "R03": {
+        "action": "ask_date",
+        "answer": null,
+        "cited_evidence": [],
+        "date_request": "operative_date",
+        "rationale": "询问成立日，但两个可能日期的参照答案一致。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      },
+      "R04": {
+        "action": "answer",
+        "answer": false,
+        "cited_evidence": [
+          "E2",
+          "E3"
+        ],
+        "date_request": "none",
+        "rationale": "已写金额超过旧门槛，结论却为不豁免。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      },
+      "R05": {
+        "action": "answer",
+        "answer": false,
+        "cited_evidence": [
+          "E2",
+          "E3"
+        ],
+        "date_request": "none",
+        "rationale": "正确否定金额豁免，证据列未含 E1，且附了旧版 E2。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      },
+      "R06": {
+        "action": "ask_date",
+        "answer": null,
+        "cited_evidence": [],
+        "date_request": "operative_date",
+        "rationale": "明确询问借款人在哪一天受合同约束。",
+        "strict_pass": true,
+        "unsupported_unique": false
+      }
+    },
+    "by_version": {
+      "R01": {
+        "action": "answer",
+        "answer": false,
+        "cited_evidence": [
+          "E1",
+          "E2"
+        ],
+        "date_request": "none",
+        "rationale": "旧日分支引文集合通过，但否定豁免的结论错误。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      },
+      "R02": {
+        "action": "unresolved",
+        "answer": null,
+        "cited_evidence": [],
+        "date_request": "none",
+        "rationale": "新日分支结论正确，因同时引用旧版 E2 被拦截。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      },
+      "R03": {
+        "action": "unresolved",
+        "answer": null,
+        "cited_evidence": [],
+        "date_request": "none",
+        "rationale": "两个分支结论均正确，新日引文多 E2，程序返回未解决。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      },
+      "R04": {
+        "action": "answer",
+        "answer": false,
+        "cited_evidence": [
+          "E1",
+          "E2"
+        ],
+        "date_request": "none",
+        "rationale": "旧日分支引文集合通过，但否定豁免的结论错误。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      },
+      "R05": {
+        "action": "unresolved",
+        "answer": null,
+        "cited_evidence": [],
+        "date_request": "none",
+        "rationale": "新日分支结论正确，因同时引用旧版 E2 被拦截。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      },
+      "R06": {
+        "action": "unresolved",
+        "answer": null,
+        "cited_evidence": [],
+        "date_request": "none",
+        "rationale": "旧日分支结论错误，新日多引 E2 被拦截，未追问成立日。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      }
+    },
+    "direct": {
+      "R01": {
+        "action": "unresolved",
+        "answer": null,
+        "cited_evidence": [
+          "E2",
+          "E3"
+        ],
+        "date_request": "none",
+        "rationale": "误称给出的年度门槛没有覆盖已知的 2024-12-31。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      },
+      "R02": {
+        "action": "unresolved",
+        "answer": null,
+        "cited_evidence": [
+          "E2",
+          "E3"
+        ],
+        "date_request": "none",
+        "rationale": "误称给出的年度门槛没有覆盖已知的 2025-01-01。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      },
+      "R03": {
+        "action": "request_applicable_year",
+        "answer": null,
+        "cited_evidence": [
+          "E2",
+          "E3"
+        ],
+        "date_request": "indirect_year",
+        "rationale": "要求确定适用年份。贷款金额超过两个门槛，缺日期不阻碍作答。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      },
+      "R04": {
+        "action": "answer",
+        "answer": false,
+        "cited_evidence": [
+          "E2",
+          "E3"
+        ],
+        "date_request": "none",
+        "rationale": "已写金额超过旧门槛，结论却为不豁免。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      },
+      "R05": {
+        "action": "answer",
+        "answer": false,
+        "cited_evidence": [
+          "E2",
+          "E3"
+        ],
+        "date_request": "none",
+        "rationale": "正确否定金额豁免，证据列未含 E1，且附了旧版 E2。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      },
+      "R06": {
+        "action": "incorrect_conditional",
+        "answer": null,
+        "cited_evidence": [],
+        "date_request": "indirect_year",
+        "rationale": "要求确定适用年份，未问决定版本的成立日，同时将两条条件结论写反。",
+        "strict_pass": false,
+        "unsupported_unique": false
+      }
+    }
+  },
+  "follow_up": {
+    "ask_if_missing": {
+      "2024-12-31": {
+        "action": "answer",
+        "answer": false,
+        "cited_evidence": [
+          "E2"
+        ],
+        "explicit_question_before_date": true,
+        "rationale": "误称 70,000 不超过 69,500，给出错误唯一结论。",
+        "strict_pass": false
+      },
+      "2025-01-01": {
+        "action": "answer",
+        "answer": false,
+        "cited_evidence": [
+          "E2",
+          "E3"
+        ],
+        "explicit_question_before_date": true,
+        "rationale": "金额比较和结论正确，漏 E1 并附 E2。",
+        "strict_pass": false
+      }
+    },
+    "by_version": {
+      "2024-12-31": {
+        "action": "answer",
+        "answer": false,
+        "cited_evidence": [
+          "E1",
+          "E2"
+        ],
+        "explicit_question_before_date": false,
+        "rationale": "分支引文适用，错误给出不豁免。",
+        "strict_pass": false
+      },
+      "2025-01-01": {
+        "action": "unresolved",
+        "answer": null,
+        "cited_evidence": [],
+        "explicit_question_before_date": false,
+        "rationale": "分支错误给出豁免，且多引旧版 E2，程序返回未解决。",
+        "strict_pass": false
+      }
+    },
+    "direct": {
+      "2024-12-31": {
+        "action": "answer",
+        "answer": false,
+        "cited_evidence": [
+          "E1",
+          "E2"
+        ],
+        "explicit_question_before_date": false,
+        "rationale": "引 E1、E2，并写出金额超过旧门槛，但结论为不豁免。",
+        "strict_pass": false
+      },
+      "2025-01-01": {
+        "action": "answer",
+        "answer": false,
+        "cited_evidence": [
+          "E2",
+          "E3"
+        ],
+        "explicit_question_before_date": false,
+        "rationale": "结论极性正确，但反写金额与新门槛比较，漏 E1 并附 E2。",
+        "strict_pass": false
+      }
+    }
+  },
+  "input_tokens": 10372,
+  "material": "2026-11-24-date-material-acceptance-v1",
+  "model_batch_seconds": 366.59,
+  "output_tokens_including_eos": 1154,
+  "physical_calls": 20,
+  "raw_seal_sha256": "d865bbe30f99370df8f4c1d6fa507fa8fa3c2d775917008163491ff1ed31c303",
+  "reference_sha256": "960e08e16d275e99ab20fe86be5abed7d454d4fc9f489de4f09ce758276f1a09",
+  "summary": {
+    "ask_if_missing": {
+      "first_dated_polarity_correct": 1,
+      "first_strict": 1,
+      "follow_polarity_correct": 1,
+      "follow_strict": 0,
+      "input_tokens": 2860,
+      "model_calls": 6,
+      "output_tokens_including_eos": 428,
+      "same_answer_unnecessary_date_request": true,
+      "varying_answer_operative_date_request": true,
+      "varying_answer_unsupported_unique": false
+    },
+    "by_version": {
+      "first_dated_polarity_correct": 0,
+      "first_strict": 0,
+      "follow_polarity_correct": 0,
+      "follow_strict": 0,
+      "input_tokens": 5358,
+      "model_calls": 10,
+      "output_tokens_including_eos": 250,
+      "same_answer_unnecessary_date_request": false,
+      "varying_answer_operative_date_request": false,
+      "varying_answer_unsupported_unique": false
+    },
+    "direct": {
+      "first_dated_polarity_correct": 1,
+      "first_strict": 0,
+      "follow_polarity_correct": 1,
+      "follow_strict": 0,
+      "input_tokens": 3978,
+      "model_calls": 8,
+      "output_tokens_including_eos": 733,
+      "same_answer_unnecessary_date_request": true,
+      "varying_answer_operative_date_request": false,
+      "varying_answer_unsupported_unique": false
+    }
+  },
+  "version_calls": [
+    {
+      "accepted_by_aggregation": true,
+      "case": "R01",
+      "cited_evidence": [
+        "E1",
+        "E2"
+      ],
+      "expected_answer": true,
+      "expected_evidence": [
+        "E1",
+        "E2"
+      ],
+      "raw_answer": false,
+      "raw_answer_correct": false,
+      "strict_pass": false,
+      "supplied_date": "2024-12-31",
+      "turn": 1
+    },
+    {
+      "accepted_by_aggregation": false,
+      "case": "R02",
+      "cited_evidence": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "expected_answer": true,
+      "expected_evidence": [
+        "E1",
+        "E3"
+      ],
+      "raw_answer": true,
+      "raw_answer_correct": true,
+      "strict_pass": false,
+      "supplied_date": "2025-01-01",
+      "turn": 1
+    },
+    {
+      "accepted_by_aggregation": true,
+      "case": "R03",
+      "cited_evidence": [
+        "E1",
+        "E2"
+      ],
+      "expected_answer": true,
+      "expected_evidence": [
+        "E1",
+        "E2"
+      ],
+      "raw_answer": true,
+      "raw_answer_correct": true,
+      "strict_pass": true,
+      "supplied_date": "2024-12-31",
+      "turn": 1
+    },
+    {
+      "accepted_by_aggregation": false,
+      "case": "R03",
+      "cited_evidence": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "expected_answer": true,
+      "expected_evidence": [
+        "E1",
+        "E3"
+      ],
+      "raw_answer": true,
+      "raw_answer_correct": true,
+      "strict_pass": false,
+      "supplied_date": "2025-01-01",
+      "turn": 1
+    },
+    {
+      "accepted_by_aggregation": true,
+      "case": "R04",
+      "cited_evidence": [
+        "E1",
+        "E2"
+      ],
+      "expected_answer": true,
+      "expected_evidence": [
+        "E1",
+        "E2"
+      ],
+      "raw_answer": false,
+      "raw_answer_correct": false,
+      "strict_pass": false,
+      "supplied_date": "2024-12-31",
+      "turn": 1
+    },
+    {
+      "accepted_by_aggregation": false,
+      "case": "R05",
+      "cited_evidence": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "expected_answer": false,
+      "expected_evidence": [
+        "E1",
+        "E3"
+      ],
+      "raw_answer": false,
+      "raw_answer_correct": true,
+      "strict_pass": false,
+      "supplied_date": "2025-01-01",
+      "turn": 1
+    },
+    {
+      "accepted_by_aggregation": true,
+      "case": "R06",
+      "cited_evidence": [
+        "E1",
+        "E2"
+      ],
+      "expected_answer": true,
+      "expected_evidence": [
+        "E1",
+        "E2"
+      ],
+      "raw_answer": false,
+      "raw_answer_correct": false,
+      "strict_pass": false,
+      "supplied_date": "2024-12-31",
+      "turn": 1
+    },
+    {
+      "accepted_by_aggregation": false,
+      "case": "R06",
+      "cited_evidence": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "expected_answer": false,
+      "expected_evidence": [
+        "E1",
+        "E3"
+      ],
+      "raw_answer": false,
+      "raw_answer_correct": true,
+      "strict_pass": false,
+      "supplied_date": "2025-01-01",
+      "turn": 1
+    },
+    {
+      "accepted_by_aggregation": true,
+      "case": "R06",
+      "cited_evidence": [
+        "E1",
+        "E2"
+      ],
+      "expected_answer": true,
+      "expected_evidence": [
+        "E1",
+        "E2"
+      ],
+      "raw_answer": false,
+      "raw_answer_correct": false,
+      "strict_pass": false,
+      "supplied_date": "2024-12-31",
+      "turn": 2
+    },
+    {
+      "accepted_by_aggregation": false,
+      "case": "R06",
+      "cited_evidence": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "expected_answer": false,
+      "expected_evidence": [
+        "E1",
+        "E3"
+      ],
+      "raw_answer": true,
+      "raw_answer_correct": false,
+      "strict_pass": false,
+      "supplied_date": "2025-01-01",
+      "turn": 2
+    }
+  ]
+}
