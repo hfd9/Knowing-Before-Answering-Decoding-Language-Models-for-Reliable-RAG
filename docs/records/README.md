@@ -1,5 +1,7 @@
 # 实验与动作记录索引
 
+最新背景恢复（2026-11-24）见[恢复记录](2026-11-24-context-restored.md)和[11 月 23 日晚间汇总](2026-11-23-evening-summary.md)。授权方向配对诊断及冻结解析器措辞检验已完成，支持句式内保留工程基线，原剩余十题暂停。
+
 
 最新参照、资源与近邻核查：[记录](2026-11-11-reference-budget-increment.md) / [报告](../review/2026-11-11-reference-budget-increment-v1/README.md)。提出未采纳的容差示意，独立参照和资源仍未落实。
 
