@@ -1,0 +1,551 @@
+{
+  "cross_rule": [
+    {
+      "amount": 32400,
+      "dated": [
+        {
+          "action": "answer",
+          "answer": true,
+          "branches": [
+            {
+              "amount": 32400,
+              "answer": true,
+              "comparison": "<=",
+              "evidence": [
+                "A1",
+                "A24"
+              ],
+              "from": "2024-12-31",
+              "threshold": 32400,
+              "through": "2024-12-31"
+            }
+          ],
+          "evidence": [
+            "A1",
+            "A24"
+          ]
+        },
+        {
+          "action": "answer",
+          "answer": true,
+          "branches": [
+            {
+              "amount": 32400,
+              "answer": true,
+              "comparison": "<=",
+              "evidence": [
+                "A1",
+                "A25"
+              ],
+              "from": "2025-01-01",
+              "threshold": 33500,
+              "through": "2025-01-01"
+            }
+          ],
+          "evidence": [
+            "A1",
+            "A25"
+          ]
+        }
+      ],
+      "merged": {
+        "action": "answer",
+        "answer": true,
+        "branches": [
+          {
+            "amount": 32400,
+            "answer": true,
+            "comparison": "<=",
+            "evidence": [
+              "A1",
+              "A24"
+            ],
+            "from": "2024-12-31",
+            "threshold": 32400,
+            "through": "2024-12-31"
+          },
+          {
+            "amount": 32400,
+            "answer": true,
+            "comparison": "<=",
+            "evidence": [
+              "A1",
+              "A25"
+            ],
+            "from": "2025-01-01",
+            "threshold": 33500,
+            "through": "2025-01-01"
+          }
+        ],
+        "evidence": [
+          "A1",
+          "A24",
+          "A25"
+        ]
+      },
+      "wrong_comparator": {
+        "action": "answer",
+        "answer": false,
+        "branches": [
+          {
+            "amount": 32400,
+            "answer": false,
+            "comparison": ">",
+            "evidence": [
+              "A1",
+              "A24"
+            ],
+            "from": "2024-12-31",
+            "threshold": 32400,
+            "through": "2024-12-31"
+          },
+          {
+            "amount": 32400,
+            "answer": false,
+            "comparison": ">",
+            "evidence": [
+              "A1",
+              "A25"
+            ],
+            "from": "2025-01-01",
+            "threshold": 33500,
+            "through": "2025-01-01"
+          }
+        ],
+        "evidence": [
+          "A1",
+          "A24",
+          "A25"
+        ]
+      }
+    },
+    {
+      "amount": 32401,
+      "dated": [
+        {
+          "action": "answer",
+          "answer": false,
+          "branches": [
+            {
+              "amount": 32401,
+              "answer": false,
+              "comparison": "<=",
+              "evidence": [
+                "A1",
+                "A24"
+              ],
+              "from": "2024-12-31",
+              "threshold": 32400,
+              "through": "2024-12-31"
+            }
+          ],
+          "evidence": [
+            "A1",
+            "A24"
+          ]
+        },
+        {
+          "action": "answer",
+          "answer": true,
+          "branches": [
+            {
+              "amount": 32401,
+              "answer": true,
+              "comparison": "<=",
+              "evidence": [
+                "A1",
+                "A25"
+              ],
+              "from": "2025-01-01",
+              "threshold": 33500,
+              "through": "2025-01-01"
+            }
+          ],
+          "evidence": [
+            "A1",
+            "A25"
+          ]
+        }
+      ],
+      "merged": {
+        "action": "ask_date",
+        "answer": null,
+        "ask_event": "consummation",
+        "branches": [
+          {
+            "amount": 32401,
+            "answer": false,
+            "comparison": "<=",
+            "evidence": [
+              "A1",
+              "A24"
+            ],
+            "from": "2024-12-31",
+            "threshold": 32400,
+            "through": "2024-12-31"
+          },
+          {
+            "amount": 32401,
+            "answer": true,
+            "comparison": "<=",
+            "evidence": [
+              "A1",
+              "A25"
+            ],
+            "from": "2025-01-01",
+            "threshold": 33500,
+            "through": "2025-01-01"
+          }
+        ],
+        "evidence": [
+          "A1",
+          "A24",
+          "A25"
+        ]
+      },
+      "wrong_comparator": {
+        "action": "ask_date",
+        "answer": null,
+        "ask_event": "consummation",
+        "branches": [
+          {
+            "amount": 32401,
+            "answer": true,
+            "comparison": ">",
+            "evidence": [
+              "A1",
+              "A24"
+            ],
+            "from": "2024-12-31",
+            "threshold": 32400,
+            "through": "2024-12-31"
+          },
+          {
+            "amount": 32401,
+            "answer": false,
+            "comparison": ">",
+            "evidence": [
+              "A1",
+              "A25"
+            ],
+            "from": "2025-01-01",
+            "threshold": 33500,
+            "through": "2025-01-01"
+          }
+        ],
+        "evidence": [
+          "A1",
+          "A24",
+          "A25"
+        ]
+      }
+    },
+    {
+      "amount": 33500,
+      "dated": [
+        {
+          "action": "answer",
+          "answer": false,
+          "branches": [
+            {
+              "amount": 33500,
+              "answer": false,
+              "comparison": "<=",
+              "evidence": [
+                "A1",
+                "A24"
+              ],
+              "from": "2024-12-31",
+              "threshold": 32400,
+              "through": "2024-12-31"
+            }
+          ],
+          "evidence": [
+            "A1",
+            "A24"
+          ]
+        },
+        {
+          "action": "answer",
+          "answer": true,
+          "branches": [
+            {
+              "amount": 33500,
+              "answer": true,
+              "comparison": "<=",
+              "evidence": [
+                "A1",
+                "A25"
+              ],
+              "from": "2025-01-01",
+              "threshold": 33500,
+              "through": "2025-01-01"
+            }
+          ],
+          "evidence": [
+            "A1",
+            "A25"
+          ]
+        }
+      ],
+      "merged": {
+        "action": "ask_date",
+        "answer": null,
+        "ask_event": "consummation",
+        "branches": [
+          {
+            "amount": 33500,
+            "answer": false,
+            "comparison": "<=",
+            "evidence": [
+              "A1",
+              "A24"
+            ],
+            "from": "2024-12-31",
+            "threshold": 32400,
+            "through": "2024-12-31"
+          },
+          {
+            "amount": 33500,
+            "answer": true,
+            "comparison": "<=",
+            "evidence": [
+              "A1",
+              "A25"
+            ],
+            "from": "2025-01-01",
+            "threshold": 33500,
+            "through": "2025-01-01"
+          }
+        ],
+        "evidence": [
+          "A1",
+          "A24",
+          "A25"
+        ]
+      },
+      "wrong_comparator": {
+        "action": "ask_date",
+        "answer": null,
+        "ask_event": "consummation",
+        "branches": [
+          {
+            "amount": 33500,
+            "answer": true,
+            "comparison": ">",
+            "evidence": [
+              "A1",
+              "A24"
+            ],
+            "from": "2024-12-31",
+            "threshold": 32400,
+            "through": "2024-12-31"
+          },
+          {
+            "amount": 33500,
+            "answer": false,
+            "comparison": ">",
+            "evidence": [
+              "A1",
+              "A25"
+            ],
+            "from": "2025-01-01",
+            "threshold": 33500,
+            "through": "2025-01-01"
+          }
+        ],
+        "evidence": [
+          "A1",
+          "A24",
+          "A25"
+        ]
+      }
+    },
+    {
+      "amount": 33501,
+      "dated": [
+        {
+          "action": "answer",
+          "answer": false,
+          "branches": [
+            {
+              "amount": 33501,
+              "answer": false,
+              "comparison": "<=",
+              "evidence": [
+                "A1",
+                "A24"
+              ],
+              "from": "2024-12-31",
+              "threshold": 32400,
+              "through": "2024-12-31"
+            }
+          ],
+          "evidence": [
+            "A1",
+            "A24"
+          ]
+        },
+        {
+          "action": "answer",
+          "answer": false,
+          "branches": [
+            {
+              "amount": 33501,
+              "answer": false,
+              "comparison": "<=",
+              "evidence": [
+                "A1",
+                "A25"
+              ],
+              "from": "2025-01-01",
+              "threshold": 33500,
+              "through": "2025-01-01"
+            }
+          ],
+          "evidence": [
+            "A1",
+            "A25"
+          ]
+        }
+      ],
+      "merged": {
+        "action": "answer",
+        "answer": false,
+        "branches": [
+          {
+            "amount": 33501,
+            "answer": false,
+            "comparison": "<=",
+            "evidence": [
+              "A1",
+              "A24"
+            ],
+            "from": "2024-12-31",
+            "threshold": 32400,
+            "through": "2024-12-31"
+          },
+          {
+            "amount": 33501,
+            "answer": false,
+            "comparison": "<=",
+            "evidence": [
+              "A1",
+              "A25"
+            ],
+            "from": "2025-01-01",
+            "threshold": 33500,
+            "through": "2025-01-01"
+          }
+        ],
+        "evidence": [
+          "A1",
+          "A24",
+          "A25"
+        ]
+      },
+      "wrong_comparator": {
+        "action": "answer",
+        "answer": true,
+        "branches": [
+          {
+            "amount": 33501,
+            "answer": true,
+            "comparison": ">",
+            "evidence": [
+              "A1",
+              "A24"
+            ],
+            "from": "2024-12-31",
+            "threshold": 32400,
+            "through": "2024-12-31"
+          },
+          {
+            "amount": 33501,
+            "answer": true,
+            "comparison": ">",
+            "evidence": [
+              "A1",
+              "A25"
+            ],
+            "from": "2025-01-01",
+            "threshold": 33500,
+            "through": "2025-01-01"
+          }
+        ],
+        "evidence": [
+          "A1",
+          "A24",
+          "A25"
+        ]
+      }
+    }
+  ],
+  "old_regression": {
+    "R01": {
+      "action": "answer",
+      "answer": true,
+      "evidence": [
+        "E1",
+        "E2"
+      ]
+    },
+    "R02": {
+      "action": "answer",
+      "answer": true,
+      "evidence": [
+        "E1",
+        "E3"
+      ]
+    },
+    "R03": {
+      "action": "answer",
+      "answer": true,
+      "evidence": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
+    "R04": {
+      "action": "answer",
+      "answer": true,
+      "evidence": [
+        "E1",
+        "E2"
+      ]
+    },
+    "R05": {
+      "action": "answer",
+      "answer": false,
+      "evidence": [
+        "E1",
+        "E3"
+      ]
+    },
+    "R06": {
+      "action": "ask_date",
+      "answer": null,
+      "evidence": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    }
+  },
+  "sha256": {
+    "docs/review/2026-11-24-date-cross-rule-v1/hpml-rule.json": "86763102d015b55a81c3787f9ccce197c71e8ed8703f8b3e8e32966153f0b85e",
+    "docs/review/2026-11-24-date-cross-rule-v1/replay.py": "f28e158e899d984e733c12628c89a4a64d78ef685e8ace5a0e5618debf7701b1",
+    "docs/review/2026-11-24-date-material-acceptance-v1/inputs.json": "49f898f24d7abe8e4cedbd82991947f314321664e30edcb0d61556b1c9725477",
+    "docs/review/2026-11-24-date-material-acceptance-v1/reference.json": "960e08e16d275e99ab20fe86be5abed7d454d4fc9f489de4f09ce758276f1a09",
+    "scripts/query_determinacy_date_diagnostic.py": "38f373d5f7ee0a950777567a9323ce6f24e176ed75b7da07b7fc3c21eab7b1b8",
+    "scripts/query_determinacy_threshold_versions.py": "12b2b07151be5571174dfa3943adb82d8a35e575a7fc5c297748159421aa3371"
+  },
+  "summary": {
+    "dated_strict": 8,
+    "merged_strict": 4,
+    "original_strict": 6,
+    "wrong_comparator_action_matches": 4,
+    "wrong_comparator_branch_matches": 0
+  }
+}

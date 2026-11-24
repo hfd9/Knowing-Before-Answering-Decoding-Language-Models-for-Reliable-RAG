@@ -1,0 +1,20 @@
+{
+  "provision": "12 CFR 1026.35(c)(2)(ii), Supplement I comments 35(c)(2)(ii)-3.xi, 3.xii and 4",
+  "comparison": "<=",
+  "operative_event": "consummation",
+  "evidence_id": "A1",
+  "scope": "Only the amount exemption in paragraph (c)(2)(ii), conditional on an already identified higher-priced mortgage loan. Use the amount of credit extended at consummation. No conclusion about separate appraisal exemptions or whether an appraisal is actually required.",
+  "allowed_range": ["2024-12-31", "2025-01-01"],
+  "versions": [
+    {"valid_from": "2024-01-01", "valid_through": "2024-12-31", "threshold": 32400, "evidence_id": "A24"},
+    {"valid_from": "2025-01-01", "valid_through": "2025-12-31", "threshold": 33500, "evidence_id": "A25"}
+  ],
+  "sources": {
+    "A1": [
+      "https://www.govinfo.gov/content/pkg/CFR-2024-title12-vol9/xhtml/CFR-2024-title12-vol9-part1026.html",
+      "https://www.govinfo.gov/content/pkg/CFR-2025-title12-vol9/xhtml/CFR-2025-title12-vol9-part1026.html"
+    ],
+    "A24": ["https://www.govinfo.gov/content/pkg/FR-2023-11-29/pdf/2023-25047.pdf"],
+    "A25": ["https://www.govinfo.gov/content/pkg/FR-2024-10-15/pdf/2024-23277.pdf"]
+  }
+}
