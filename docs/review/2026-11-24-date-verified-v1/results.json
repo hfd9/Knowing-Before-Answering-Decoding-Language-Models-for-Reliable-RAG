@@ -1,0 +1,540 @@
+{
+  "archived_calls": 20,
+  "evidence_only_r06": {
+    "action": "unresolved",
+    "answer": null,
+    "branches": [],
+    "evidence": [],
+    "issues": [
+      {
+        "code": "conclusion_does_not_match_rule",
+        "date": "2024-12-31"
+      }
+    ],
+    "reason": "unverified_branches"
+  },
+  "first": {
+    "R01": {
+      "original_claims": [
+        {
+          "answer": false,
+          "date": "2024-12-31",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        }
+      ],
+      "source_decision": {
+        "action": "answer",
+        "answer": true,
+        "branches": [
+          {
+            "amount": 75000,
+            "answer": true,
+            "comparator": ">",
+            "date": "2024-12-31",
+            "evidence": [
+              "E1",
+              "E2"
+            ],
+            "matched_versions": [
+              "E2"
+            ],
+            "option": "A",
+            "threshold": 69500,
+            "valid_from": "2024-01-01",
+            "valid_through": "2024-12-31"
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2"
+        ]
+      },
+      "verified_archive": {
+        "action": "unresolved",
+        "answer": null,
+        "branches": [],
+        "evidence": [],
+        "issues": [
+          {
+            "code": "conclusion_does_not_match_rule",
+            "date": "2024-12-31"
+          }
+        ],
+        "reason": "unverified_branches"
+      },
+      "verified_computed_branches": "answer"
+    },
+    "R02": {
+      "original_claims": [
+        {
+          "answer": true,
+          "date": "2025-01-01",
+          "evidence": [
+            "E1",
+            "E2",
+            "E3"
+          ]
+        }
+      ],
+      "source_decision": {
+        "action": "answer",
+        "answer": true,
+        "branches": [
+          {
+            "amount": 75000,
+            "answer": true,
+            "comparator": ">",
+            "date": "2025-01-01",
+            "evidence": [
+              "E1",
+              "E3"
+            ],
+            "matched_versions": [
+              "E3"
+            ],
+            "option": "A",
+            "threshold": 71900,
+            "valid_from": "2025-01-01",
+            "valid_through": "2025-12-31"
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E3"
+        ]
+      },
+      "verified_archive": {
+        "action": "unresolved",
+        "answer": null,
+        "branches": [],
+        "evidence": [],
+        "issues": [
+          {
+            "code": "evidence_does_not_match_date",
+            "date": "2025-01-01"
+          }
+        ],
+        "reason": "unverified_branches"
+      },
+      "verified_computed_branches": "answer"
+    },
+    "R03": {
+      "original_claims": [
+        {
+          "answer": true,
+          "date": "2024-12-31",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "answer": true,
+          "date": "2025-01-01",
+          "evidence": [
+            "E1",
+            "E2",
+            "E3"
+          ]
+        }
+      ],
+      "source_decision": {
+        "action": "answer",
+        "answer": true,
+        "branches": [
+          {
+            "amount": 75000,
+            "answer": true,
+            "comparator": ">",
+            "date": "2024-12-31",
+            "evidence": [
+              "E1",
+              "E2"
+            ],
+            "matched_versions": [
+              "E2"
+            ],
+            "option": "A",
+            "threshold": 69500,
+            "valid_from": "2024-01-01",
+            "valid_through": "2024-12-31"
+          },
+          {
+            "amount": 75000,
+            "answer": true,
+            "comparator": ">",
+            "date": "2025-01-01",
+            "evidence": [
+              "E1",
+              "E3"
+            ],
+            "matched_versions": [
+              "E3"
+            ],
+            "option": "A",
+            "threshold": 71900,
+            "valid_from": "2025-01-01",
+            "valid_through": "2025-12-31"
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2",
+          "E3"
+        ]
+      },
+      "verified_archive": {
+        "action": "unresolved",
+        "answer": null,
+        "branches": [],
+        "evidence": [],
+        "issues": [
+          {
+            "code": "evidence_does_not_match_date",
+            "date": "2025-01-01"
+          }
+        ],
+        "reason": "unverified_branches"
+      },
+      "verified_computed_branches": "answer"
+    },
+    "R04": {
+      "original_claims": [
+        {
+          "answer": false,
+          "date": "2024-12-31",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        }
+      ],
+      "source_decision": {
+        "action": "answer",
+        "answer": true,
+        "branches": [
+          {
+            "amount": 70000,
+            "answer": true,
+            "comparator": ">",
+            "date": "2024-12-31",
+            "evidence": [
+              "E1",
+              "E2"
+            ],
+            "matched_versions": [
+              "E2"
+            ],
+            "option": "B",
+            "threshold": 69500,
+            "valid_from": "2024-01-01",
+            "valid_through": "2024-12-31"
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2"
+        ]
+      },
+      "verified_archive": {
+        "action": "unresolved",
+        "answer": null,
+        "branches": [],
+        "evidence": [],
+        "issues": [
+          {
+            "code": "conclusion_does_not_match_rule",
+            "date": "2024-12-31"
+          }
+        ],
+        "reason": "unverified_branches"
+      },
+      "verified_computed_branches": "answer"
+    },
+    "R05": {
+      "original_claims": [
+        {
+          "answer": false,
+          "date": "2025-01-01",
+          "evidence": [
+            "E1",
+            "E2",
+            "E3"
+          ]
+        }
+      ],
+      "source_decision": {
+        "action": "answer",
+        "answer": false,
+        "branches": [
+          {
+            "amount": 70000,
+            "answer": false,
+            "comparator": ">",
+            "date": "2025-01-01",
+            "evidence": [
+              "E1",
+              "E3"
+            ],
+            "matched_versions": [
+              "E3"
+            ],
+            "option": "B",
+            "threshold": 71900,
+            "valid_from": "2025-01-01",
+            "valid_through": "2025-12-31"
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E3"
+        ]
+      },
+      "verified_archive": {
+        "action": "unresolved",
+        "answer": null,
+        "branches": [],
+        "evidence": [],
+        "issues": [
+          {
+            "code": "evidence_does_not_match_date",
+            "date": "2025-01-01"
+          }
+        ],
+        "reason": "unverified_branches"
+      },
+      "verified_computed_branches": "answer"
+    },
+    "R06": {
+      "original_claims": [
+        {
+          "answer": false,
+          "date": "2024-12-31",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        },
+        {
+          "answer": false,
+          "date": "2025-01-01",
+          "evidence": [
+            "E1",
+            "E2",
+            "E3"
+          ]
+        }
+      ],
+      "source_decision": {
+        "action": "ask_date",
+        "answer": null,
+        "branches": [
+          {
+            "amount": 70000,
+            "answer": true,
+            "comparator": ">",
+            "date": "2024-12-31",
+            "evidence": [
+              "E1",
+              "E2"
+            ],
+            "matched_versions": [
+              "E2"
+            ],
+            "option": "B",
+            "threshold": 69500,
+            "valid_from": "2024-01-01",
+            "valid_through": "2024-12-31"
+          },
+          {
+            "amount": 70000,
+            "answer": false,
+            "comparator": ">",
+            "date": "2025-01-01",
+            "evidence": [
+              "E1",
+              "E3"
+            ],
+            "matched_versions": [
+              "E3"
+            ],
+            "option": "B",
+            "threshold": 71900,
+            "valid_from": "2025-01-01",
+            "valid_through": "2025-12-31"
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "question": "On which day did the borrower become contractually bound, 2024-12-31 or 2025-01-01?"
+      },
+      "verified_archive": {
+        "action": "unresolved",
+        "answer": null,
+        "branches": [],
+        "evidence": [],
+        "issues": [
+          {
+            "code": "conclusion_does_not_match_rule",
+            "date": "2024-12-31"
+          },
+          {
+            "code": "evidence_does_not_match_date",
+            "date": "2025-01-01"
+          }
+        ],
+        "reason": "unverified_branches"
+      },
+      "verified_computed_branches": "ask_date"
+    }
+  },
+  "follow": {
+    "2024-12-31": {
+      "original_claims": [
+        {
+          "answer": false,
+          "date": "2024-12-31",
+          "evidence": [
+            "E1",
+            "E2"
+          ]
+        }
+      ],
+      "source_decision": {
+        "action": "answer",
+        "answer": true,
+        "branches": [
+          {
+            "amount": 70000,
+            "answer": true,
+            "comparator": ">",
+            "date": "2024-12-31",
+            "evidence": [
+              "E1",
+              "E2"
+            ],
+            "matched_versions": [
+              "E2"
+            ],
+            "option": "B",
+            "threshold": 69500,
+            "valid_from": "2024-01-01",
+            "valid_through": "2024-12-31"
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2"
+        ]
+      },
+      "verified_archive": {
+        "action": "unresolved",
+        "answer": null,
+        "branches": [],
+        "evidence": [],
+        "issues": [
+          {
+            "code": "conclusion_does_not_match_rule",
+            "date": "2024-12-31"
+          }
+        ],
+        "reason": "unverified_branches"
+      },
+      "verified_computed_branches": "answer"
+    },
+    "2025-01-01": {
+      "original_claims": [
+        {
+          "answer": true,
+          "date": "2025-01-01",
+          "evidence": [
+            "E1",
+            "E2",
+            "E3"
+          ]
+        }
+      ],
+      "source_decision": {
+        "action": "answer",
+        "answer": false,
+        "branches": [
+          {
+            "amount": 70000,
+            "answer": false,
+            "comparator": ">",
+            "date": "2025-01-01",
+            "evidence": [
+              "E1",
+              "E3"
+            ],
+            "matched_versions": [
+              "E3"
+            ],
+            "option": "B",
+            "threshold": 71900,
+            "valid_from": "2025-01-01",
+            "valid_through": "2025-12-31"
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E3"
+        ]
+      },
+      "verified_archive": {
+        "action": "unresolved",
+        "answer": null,
+        "branches": [],
+        "evidence": [],
+        "issues": [
+          {
+            "code": "evidence_does_not_match_date",
+            "date": "2025-01-01"
+          },
+          {
+            "code": "conclusion_does_not_match_rule",
+            "date": "2025-01-01"
+          }
+        ],
+        "reason": "unverified_branches"
+      },
+      "verified_computed_branches": "answer"
+    }
+  },
+  "source_sha256": {
+    "docs/review/2026-11-24-date-clarification-pilot-v1/raw.zip": "c7dac3fa8659419755fc31f853005171d7c2bf19b21ebd236ad22d401a03ba5a",
+    "docs/review/2026-11-24-date-material-acceptance-v1/inputs.json": "49f898f24d7abe8e4cedbd82991947f314321664e30edcb0d61556b1c9725477",
+    "docs/review/2026-11-24-date-material-acceptance-v1/reference.json": "960e08e16d275e99ab20fe86be5abed7d454d4fc9f489de4f09ce758276f1a09",
+    "docs/review/2026-11-24-date-verified-v1/replay.py": "6e366d86b0d22341cbc6b00bbb79b94ef2f7aad3fa0a5ebe734ac7add9c17b68",
+    "scripts/query_determinacy_date_diagnostic.py": "38f373d5f7ee0a950777567a9323ce6f24e176ed75b7da07b7fc3c21eab7b1b8",
+    "scripts/query_determinacy_date_verified.py": "c3661093fb2fb363b6f6944b9c6d39b4ae49980d8100226e261cf31c9ff00f66"
+  },
+  "summary": {
+    "first": {
+      "archive_strict": 0,
+      "archived_branches": 8,
+      "groups": 6,
+      "issues": {
+        "conclusion_does_not_match_rule": 3,
+        "evidence_does_not_match_date": 4
+      },
+      "source_strict": 6
+    },
+    "follow": {
+      "archive_strict": 0,
+      "archived_branches": 2,
+      "groups": 2,
+      "issues": {
+        "conclusion_does_not_match_rule": 2,
+        "evidence_does_not_match_date": 1
+      },
+      "source_strict": 2
+    }
+  }
+}
