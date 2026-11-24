@@ -1,0 +1,460 @@
+{
+  "calls": 12,
+  "input_tokens": 6320,
+  "output_tokens": 644,
+  "rows": {
+    "direct": {
+      "A1": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2024-12-31",
+              true,
+              [
+                "E1",
+                "E2",
+                "E4",
+                "F1"
+              ]
+            ],
+            [
+              "2025-01-01",
+              true,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "issue": "invalid action",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      },
+      "A2": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": "consummation",
+          "branches": [
+            [
+              "2024-12-31",
+              false,
+              [
+                "E1",
+                "E2",
+                "E4",
+                "F1"
+              ]
+            ],
+            [
+              "2025-01-01",
+              true,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ASK_DATE"
+        },
+        "issue": "invalid action",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      },
+      "A3": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2025-01-01",
+              true,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "issue": "invalid action",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      },
+      "G1": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2024-12-31",
+              true,
+              [
+                "E1",
+                "E2",
+                "E4",
+                "F1"
+              ]
+            ],
+            [
+              "2025-01-01",
+              true,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "issue": "invalid action",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      },
+      "G2": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": "consummation",
+          "branches": [
+            [
+              "2024-12-31",
+              true,
+              [
+                "E1",
+                "E2",
+                "E4",
+                "F1"
+              ]
+            ],
+            [
+              "2025-01-01",
+              false,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ASK_DATE"
+        },
+        "issue": "invalid action",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      },
+      "G3": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2025-01-01",
+              false,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_N"
+        },
+        "issue": "invalid action",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      }
+    },
+    "extract": {
+      "A1": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2024-12-31",
+              true,
+              [
+                "E1",
+                "E2",
+                "E4",
+                "F1"
+              ]
+            ],
+            [
+              "2025-01-01",
+              true,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "issue": "invalid extracted field rows",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      },
+      "A2": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": "consummation",
+          "branches": [
+            [
+              "2024-12-31",
+              false,
+              [
+                "E1",
+                "E2",
+                "E4",
+                "F1"
+              ]
+            ],
+            [
+              "2025-01-01",
+              true,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ASK_DATE"
+        },
+        "issue": "invalid extracted field rows",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      },
+      "A3": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2025-01-01",
+              true,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "issue": "invalid extracted field rows",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      },
+      "G1": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2024-12-31",
+              true,
+              [
+                "E1",
+                "E2",
+                "E4",
+                "F1"
+              ]
+            ],
+            [
+              "2025-01-01",
+              true,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "issue": "invalid extracted field rows",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      },
+      "G2": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": "consummation",
+          "branches": [
+            [
+              "2024-12-31",
+              true,
+              [
+                "E1",
+                "E2",
+                "E4",
+                "F1"
+              ]
+            ],
+            [
+              "2025-01-01",
+              false,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ASK_DATE"
+        },
+        "issue": "invalid extracted field rows",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      },
+      "G3": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2025-01-01",
+              false,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_N"
+        },
+        "issue": "invalid extracted field rows",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      }
+    }
+  },
+  "seal_sha256": "9a658c5b58525aff70d3ada1ecf59c883de5bf242abd35b00f0c51fc38bc2bd9",
+  "seconds": 210.88,
+  "status": {
+    "complete": 12
+  },
+  "summary": {
+    "direct": {
+      "action_exact": 0,
+      "invalid": 6,
+      "strict": 0,
+      "unresolved": 0,
+      "wrong_unique_on_varying": 0
+    },
+    "extract": {
+      "action_exact": 0,
+      "invalid": 6,
+      "strict": 0,
+      "unresolved": 0,
+      "wrong_unique_on_varying": 0
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "profiles": {
+    "general": {
+      "rule": [">", "consummation", "E1"],
+      "versions": [["2024-01-01", "2024-12-31", 69500, "E2"], ["2025-01-01", "2025-12-31", 71900, "E3"]],
+      "sources": {
+        "E1": "https://www.govinfo.gov/content/pkg/CFR-2024-title12-vol9/xhtml/CFR-2024-title12-vol9-part1026.html",
+        "E2": "https://www.govinfo.gov/content/pkg/FR-2023-11-29/pdf/2023-25048.pdf",
+        "E3": "https://www.govinfo.gov/content/pkg/FR-2024-10-15/html/2024-23275.htm",
+        "E4": "https://www.govinfo.gov/content/pkg/CFR-2024-title12-vol9/xhtml/CFR-2024-title12-vol9-part1026.html"
+      }
+    },
+    "appraisal": {
+      "rule": ["<=", "consummation", "E1"],
+      "versions": [["2024-01-01", "2024-12-31", 32400, "E2"], ["2025-01-01", "2025-12-31", 33500, "E3"]],
+      "sources": {
+        "E1": "https://www.govinfo.gov/content/pkg/CFR-2025-title12-vol9/xhtml/CFR-2025-title12-vol9-part1026.html",
+        "E2": "https://www.govinfo.gov/content/pkg/FR-2023-11-29/pdf/2023-25047.pdf",
+        "E3": "https://www.govinfo.gov/content/pkg/FR-2024-10-15/pdf/2024-23277.pdf",
+        "E4": "https://www.govinfo.gov/content/pkg/CFR-2025-title12-vol9/xhtml/CFR-2025-title12-vol9-part1026-subpartE.html"
+      }
+    }
+  },
+  "range": ["2024-12-31", "2025-01-01"],
+  "scope_evidence": ["E4", "F1"],
+  "cases": {
+    "G1": {"amount": 75000, "date": null, "scope": true, "answers": [true, true]},
+    "G2": {"amount": 70000, "date": null, "scope": true, "answers": [true, false]},
+    "G3": {"amount": 70000, "date": "2025-01-01", "scope": true, "answers": [false]},
+    "A1": {"amount": 32400, "date": null, "scope": true, "answers": [true, true]},
+    "A2": {"amount": 33500, "date": null, "scope": true, "answers": [false, true]},
+    "A3": {"amount": 33500, "date": "2025-01-01", "scope": true, "answers": [true]}
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "A1": {
+    "note": "截至截断点已写两日均满足，却把比较对象写成日期与金额。提及两年度解释，但未逐支绑定。",
+    "observed": {
+      "ask_event": null,
+      "branches": [
+        [
+          "2024-12-31",
+          true,
+          []
+        ],
+        [
+          "2025-01-01",
+          true,
+          []
+        ]
+      ],
+      "tag": "ANSWER_Y"
+    },
+    "output_sha256": "0b964dc354ecb61ea769d262aa8e233358177d26d68f6d937804956ee12c3872"
+  },
+  "A2": {
+    "note": "将每年的阈值与它自身作比较，忽略案情金额 33,500，误得旧日豁免及无依据的唯一结论。",
+    "observed": {
+      "ask_event": null,
+      "branches": [
+        [
+          "2024-12-31",
+          true,
+          []
+        ],
+        [
+          "2025-01-01",
+          true,
+          []
+        ]
+      ],
+      "tag": "ANSWER_Y"
+    },
+    "output_sha256": "246388ed871fb55dcfa935b1838da23993b781ea417ad8c688d210b6af4d9029"
+  },
+  "A3": {
+    "note": "明确新日时答复符合，引用 E3、E4、F1，漏掉比较符所属的 E1。",
+    "observed": {
+      "ask_event": null,
+      "branches": [
+        [
+          "2025-01-01",
+          true,
+          [
+            "E3",
+            "E4",
+            "F1"
+          ]
+        ]
+      ],
+      "tag": "ANSWER_Y"
+    },
+    "output_sha256": "da6396c8283dfe5aca9b5b487ef3030ea2495c1d0d1db11186e233adf399625d"
+  },
+  "G1": {
+    "note": "动作与两日结论方向正确。新日却误称 71,900 高于 75,000，两支未给明确的证据编号或逐支出处。",
+    "observed": {
+      "ask_event": null,
+      "branches": [
+        [
+          "2024-12-31",
+          true,
+          []
+        ],
+        [
+          "2025-01-01",
+          true,
+          []
+        ]
+      ],
+      "tag": "ANSWER_Y"
+    },
+    "output_sha256": "c0aa5460c87c0facb7a684ea47f12f9de35995934aeaac1a8f0a778ed3b75a6b"
+  },
+  "G2": {
+    "note": "新日明写 71,900 高于 70,000，却给豁免并合并为唯一答案。未给逐支依据。",
+    "observed": {
+      "ask_event": null,
+      "branches": [
+        [
+          "2024-12-31",
+          true,
+          []
+        ],
+        [
+          "2025-01-01",
+          true,
+          []
+        ]
+      ],
+      "tag": "ANSWER_Y"
+    },
+    "output_sha256": "b19f88709252492272c13a37e0bf356c4255c563a3b88fb157bd59d61544d0d7"
+  },
+  "G3": {
+    "note": "已识别成立日为 2025-01-01，并正确写出 70,000 低于 71,900，但给豁免。另讨论了排除的旧日且写反。",
+    "observed": {
+      "ask_event": null,
+      "branches": [
+        [
+          "2025-01-01",
+          true,
+          []
+        ]
+      ],
+      "tag": "ANSWER_Y"
+    },
+    "output_sha256": "1cbb79e2ded220a67bf84f671a8f1a5cda38f747c92d60f52b0bc4bc1f41fa01"
+  }
+}

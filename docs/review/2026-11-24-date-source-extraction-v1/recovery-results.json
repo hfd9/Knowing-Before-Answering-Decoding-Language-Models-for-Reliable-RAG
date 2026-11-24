@@ -1,0 +1,531 @@
+{
+  "calls": 12,
+  "input_tokens": 5618,
+  "output_tokens": 2534,
+  "rows": {
+    "direct": {
+      "A1": {
+        "checks": {
+          "action_exact": true,
+          "selected_action": "ANSWER_Y",
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2024-12-31",
+              true,
+              [
+                "E1",
+                "E2",
+                "E4",
+                "F1"
+              ]
+            ],
+            [
+              "2025-01-01",
+              true,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "issue": "truncated",
+        "outcome": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2024-12-31",
+              true,
+              []
+            ],
+            [
+              "2025-01-01",
+              true,
+              []
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "status": "truncated"
+      },
+      "A2": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": "ANSWER_Y",
+          "strict": false,
+          "wrong_unique_on_varying": true
+        },
+        "expected": {
+          "ask_event": "consummation",
+          "branches": [
+            [
+              "2024-12-31",
+              false,
+              [
+                "E1",
+                "E2",
+                "E4",
+                "F1"
+              ]
+            ],
+            [
+              "2025-01-01",
+              true,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ASK_DATE"
+        },
+        "issue": null,
+        "outcome": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2024-12-31",
+              true,
+              []
+            ],
+            [
+              "2025-01-01",
+              true,
+              []
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "status": "complete"
+      },
+      "A3": {
+        "checks": {
+          "action_exact": true,
+          "selected_action": "ANSWER_Y",
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2025-01-01",
+              true,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "issue": null,
+        "outcome": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2025-01-01",
+              true,
+              [
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "status": "complete"
+      },
+      "G1": {
+        "checks": {
+          "action_exact": true,
+          "selected_action": "ANSWER_Y",
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2024-12-31",
+              true,
+              [
+                "E1",
+                "E2",
+                "E4",
+                "F1"
+              ]
+            ],
+            [
+              "2025-01-01",
+              true,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "issue": null,
+        "outcome": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2024-12-31",
+              true,
+              []
+            ],
+            [
+              "2025-01-01",
+              true,
+              []
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "status": "complete"
+      },
+      "G2": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": "ANSWER_Y",
+          "strict": false,
+          "wrong_unique_on_varying": true
+        },
+        "expected": {
+          "ask_event": "consummation",
+          "branches": [
+            [
+              "2024-12-31",
+              true,
+              [
+                "E1",
+                "E2",
+                "E4",
+                "F1"
+              ]
+            ],
+            [
+              "2025-01-01",
+              false,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ASK_DATE"
+        },
+        "issue": null,
+        "outcome": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2024-12-31",
+              true,
+              []
+            ],
+            [
+              "2025-01-01",
+              true,
+              []
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "status": "complete"
+      },
+      "G3": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": "ANSWER_Y",
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2025-01-01",
+              false,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_N"
+        },
+        "issue": null,
+        "outcome": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2025-01-01",
+              true,
+              []
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "status": "complete"
+      }
+    },
+    "extract": {
+      "A1": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2024-12-31",
+              true,
+              [
+                "E1",
+                "E2",
+                "E4",
+                "F1"
+              ]
+            ],
+            [
+              "2025-01-01",
+              true,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "issue": "invalid amount",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      },
+      "A2": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": "consummation",
+          "branches": [
+            [
+              "2024-12-31",
+              false,
+              [
+                "E1",
+                "E2",
+                "E4",
+                "F1"
+              ]
+            ],
+            [
+              "2025-01-01",
+              true,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ASK_DATE"
+        },
+        "issue": "invalid amount",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      },
+      "A3": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2025-01-01",
+              true,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "issue": "invalid amount",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      },
+      "G1": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2024-12-31",
+              true,
+              [
+                "E1",
+                "E2",
+                "E4",
+                "F1"
+              ]
+            ],
+            [
+              "2025-01-01",
+              true,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_Y"
+        },
+        "issue": "unknown required JSON value",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      },
+      "G2": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": "consummation",
+          "branches": [
+            [
+              "2024-12-31",
+              true,
+              [
+                "E1",
+                "E2",
+                "E4",
+                "F1"
+              ]
+            ],
+            [
+              "2025-01-01",
+              false,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ASK_DATE"
+        },
+        "issue": "unknown required JSON value",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      },
+      "G3": {
+        "checks": {
+          "action_exact": false,
+          "selected_action": null,
+          "strict": false,
+          "wrong_unique_on_varying": false
+        },
+        "expected": {
+          "ask_event": null,
+          "branches": [
+            [
+              "2025-01-01",
+              false,
+              [
+                "E1",
+                "E3",
+                "E4",
+                "F1"
+              ]
+            ]
+          ],
+          "tag": "ANSWER_N"
+        },
+        "issue": "unknown required JSON value",
+        "outcome": {
+          "tag": null
+        },
+        "status": "complete"
+      }
+    }
+  },
+  "seal_sha256": "7d6cb3ae72a3cf4db9c9f57d4e3fb5949fd38ca97b17c734f9561b9afa67e3be",
+  "seconds": 1192.35,
+  "status": {
+    "complete": 11,
+    "truncated": 1
+  },
+  "summary": {
+    "direct": {
+      "action_exact": 3,
+      "invalid": 1,
+      "strict": 0,
+      "wrong_unique_on_varying": 2
+    },
+    "extract": {
+      "action_exact": 0,
+      "invalid": 6,
+      "strict": 0,
+      "wrong_unique_on_varying": 0
+    }
+  }
+}
