@@ -1,0 +1,1473 @@
+{
+  "first_interventions": {
+    "R01": {
+      "answer_only": {
+        "action": "answer",
+        "answer": true,
+        "branch_strict": 1,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2"
+        ],
+        "output": "YES. Evidence: E1, E2.",
+        "strict_pass": true,
+        "wrong_unique": false
+      },
+      "both": {
+        "action": "answer",
+        "answer": true,
+        "branch_strict": 1,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2"
+        ],
+        "output": "YES. Evidence: E1, E2.",
+        "strict_pass": true,
+        "wrong_unique": false
+      },
+      "evidence_only": {
+        "action": "answer",
+        "answer": false,
+        "branch_strict": 0,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": false,
+            "answer_correct": false,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2"
+        ],
+        "output": "NO. Evidence: E1, E2.",
+        "strict_pass": false,
+        "wrong_unique": false
+      },
+      "original": {
+        "action": "answer",
+        "answer": false,
+        "branch_strict": 0,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": false,
+            "answer_correct": false,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2"
+        ],
+        "output": "NO. Evidence: E1, E2.",
+        "strict_pass": false,
+        "wrong_unique": false
+      }
+    },
+    "R02": {
+      "answer_only": {
+        "action": "unresolved",
+        "answer": null,
+        "branch_strict": 0,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": false,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": false,
+            "evidence": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [],
+        "output": "Unresolved: a version-specific conclusion and its evidence could not be established.",
+        "strict_pass": false,
+        "wrong_unique": false
+      },
+      "both": {
+        "action": "answer",
+        "answer": true,
+        "branch_strict": 1,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E3"
+        ],
+        "output": "YES. Evidence: E1, E3.",
+        "strict_pass": true,
+        "wrong_unique": false
+      },
+      "evidence_only": {
+        "action": "answer",
+        "answer": true,
+        "branch_strict": 1,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E3"
+        ],
+        "output": "YES. Evidence: E1, E3.",
+        "strict_pass": true,
+        "wrong_unique": false
+      },
+      "original": {
+        "action": "unresolved",
+        "answer": null,
+        "branch_strict": 0,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": false,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": false,
+            "evidence": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [],
+        "output": "Unresolved: a version-specific conclusion and its evidence could not be established.",
+        "strict_pass": false,
+        "wrong_unique": false
+      }
+    },
+    "R03": {
+      "answer_only": {
+        "action": "unresolved",
+        "answer": null,
+        "branch_strict": 1,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "accepted_by_frozen_aggregate": false,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": false,
+            "evidence": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [],
+        "output": "Unresolved: a version-specific conclusion and its evidence could not be established.",
+        "strict_pass": false,
+        "wrong_unique": false
+      },
+      "both": {
+        "action": "answer",
+        "answer": true,
+        "branch_strict": 2,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "output": "YES. Evidence: E1, E2, E3.",
+        "strict_pass": true,
+        "wrong_unique": false
+      },
+      "evidence_only": {
+        "action": "answer",
+        "answer": true,
+        "branch_strict": 2,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "output": "YES. Evidence: E1, E2, E3.",
+        "strict_pass": true,
+        "wrong_unique": false
+      },
+      "original": {
+        "action": "unresolved",
+        "answer": null,
+        "branch_strict": 1,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "accepted_by_frozen_aggregate": false,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": false,
+            "evidence": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [],
+        "output": "Unresolved: a version-specific conclusion and its evidence could not be established.",
+        "strict_pass": false,
+        "wrong_unique": false
+      }
+    },
+    "R04": {
+      "answer_only": {
+        "action": "answer",
+        "answer": true,
+        "branch_strict": 1,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2"
+        ],
+        "output": "YES. Evidence: E1, E2.",
+        "strict_pass": true,
+        "wrong_unique": false
+      },
+      "both": {
+        "action": "answer",
+        "answer": true,
+        "branch_strict": 1,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2"
+        ],
+        "output": "YES. Evidence: E1, E2.",
+        "strict_pass": true,
+        "wrong_unique": false
+      },
+      "evidence_only": {
+        "action": "answer",
+        "answer": false,
+        "branch_strict": 0,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": false,
+            "answer_correct": false,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2"
+        ],
+        "output": "NO. Evidence: E1, E2.",
+        "strict_pass": false,
+        "wrong_unique": false
+      },
+      "original": {
+        "action": "answer",
+        "answer": false,
+        "branch_strict": 0,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": false,
+            "answer_correct": false,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2"
+        ],
+        "output": "NO. Evidence: E1, E2.",
+        "strict_pass": false,
+        "wrong_unique": false
+      }
+    },
+    "R05": {
+      "answer_only": {
+        "action": "unresolved",
+        "answer": null,
+        "branch_strict": 0,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": false,
+            "answer": false,
+            "answer_correct": true,
+            "date_bound_evidence": false,
+            "evidence": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [],
+        "output": "Unresolved: a version-specific conclusion and its evidence could not be established.",
+        "strict_pass": false,
+        "wrong_unique": false
+      },
+      "both": {
+        "action": "answer",
+        "answer": false,
+        "branch_strict": 1,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": false,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E3"
+        ],
+        "output": "NO. Evidence: E1, E3.",
+        "strict_pass": true,
+        "wrong_unique": false
+      },
+      "evidence_only": {
+        "action": "answer",
+        "answer": false,
+        "branch_strict": 1,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": false,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E3"
+        ],
+        "output": "NO. Evidence: E1, E3.",
+        "strict_pass": true,
+        "wrong_unique": false
+      },
+      "original": {
+        "action": "unresolved",
+        "answer": null,
+        "branch_strict": 0,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": false,
+            "answer": false,
+            "answer_correct": true,
+            "date_bound_evidence": false,
+            "evidence": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [],
+        "output": "Unresolved: a version-specific conclusion and its evidence could not be established.",
+        "strict_pass": false,
+        "wrong_unique": false
+      }
+    },
+    "R06": {
+      "answer_only": {
+        "action": "unresolved",
+        "answer": null,
+        "branch_strict": 1,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "accepted_by_frozen_aggregate": false,
+            "answer": false,
+            "answer_correct": true,
+            "date_bound_evidence": false,
+            "evidence": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [],
+        "output": "Unresolved: a version-specific conclusion and its evidence could not be established.",
+        "strict_pass": false,
+        "wrong_unique": false
+      },
+      "both": {
+        "action": "ask_date",
+        "answer": null,
+        "branch_strict": 2,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": false,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "output": "2024-12-31: YES (E1, E2). 2025-01-01: NO (E1, E3). On which day did the borrower become contractually bound to the loan: December 31, 2024 or January 1, 2025?",
+        "strict_pass": true,
+        "wrong_unique": false
+      },
+      "evidence_only": {
+        "action": "answer",
+        "answer": false,
+        "branch_strict": 1,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": false,
+            "answer_correct": false,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": false,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2",
+          "E3"
+        ],
+        "output": "NO. Evidence: E1, E2, E3.",
+        "strict_pass": false,
+        "wrong_unique": true
+      },
+      "original": {
+        "action": "unresolved",
+        "answer": null,
+        "branch_strict": 0,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": false,
+            "answer_correct": false,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          },
+          {
+            "accepted_by_frozen_aggregate": false,
+            "answer": false,
+            "answer_correct": true,
+            "date_bound_evidence": false,
+            "evidence": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [],
+        "output": "Unresolved: a version-specific conclusion and its evidence could not be established.",
+        "strict_pass": false,
+        "wrong_unique": false
+      }
+    }
+  },
+  "follow_interventions": {
+    "2024-12-31": {
+      "answer_only": {
+        "action": "answer",
+        "answer": true,
+        "branch_strict": 1,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2"
+        ],
+        "output": "YES. Evidence: E1, E2.",
+        "strict_pass": true,
+        "wrong_unique": false
+      },
+      "both": {
+        "action": "answer",
+        "answer": true,
+        "branch_strict": 1,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2"
+        ],
+        "output": "YES. Evidence: E1, E2.",
+        "strict_pass": true,
+        "wrong_unique": false
+      },
+      "evidence_only": {
+        "action": "answer",
+        "answer": false,
+        "branch_strict": 0,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": false,
+            "answer_correct": false,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2"
+        ],
+        "output": "NO. Evidence: E1, E2.",
+        "strict_pass": false,
+        "wrong_unique": false
+      },
+      "original": {
+        "action": "answer",
+        "answer": false,
+        "branch_strict": 0,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": false,
+            "answer_correct": false,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E2"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E2"
+        ],
+        "output": "NO. Evidence: E1, E2.",
+        "strict_pass": false,
+        "wrong_unique": false
+      }
+    },
+    "2025-01-01": {
+      "answer_only": {
+        "action": "unresolved",
+        "answer": null,
+        "branch_strict": 0,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": false,
+            "answer": false,
+            "answer_correct": true,
+            "date_bound_evidence": false,
+            "evidence": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [],
+        "output": "Unresolved: a version-specific conclusion and its evidence could not be established.",
+        "strict_pass": false,
+        "wrong_unique": false
+      },
+      "both": {
+        "action": "answer",
+        "answer": false,
+        "branch_strict": 1,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": false,
+            "answer_correct": true,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E3"
+        ],
+        "output": "NO. Evidence: E1, E3.",
+        "strict_pass": true,
+        "wrong_unique": false
+      },
+      "evidence_only": {
+        "action": "answer",
+        "answer": true,
+        "branch_strict": 0,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": true,
+            "answer": true,
+            "answer_correct": false,
+            "date_bound_evidence": true,
+            "evidence": [
+              "E1",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [
+          "E1",
+          "E3"
+        ],
+        "output": "YES. Evidence: E1, E3.",
+        "strict_pass": false,
+        "wrong_unique": false
+      },
+      "original": {
+        "action": "unresolved",
+        "answer": null,
+        "branch_strict": 0,
+        "branches": [
+          {
+            "accepted_by_frozen_aggregate": false,
+            "answer": true,
+            "answer_correct": false,
+            "date_bound_evidence": false,
+            "evidence": [
+              "E1",
+              "E2",
+              "E3"
+            ]
+          }
+        ],
+        "evidence": [],
+        "output": "Unresolved: a version-specific conclusion and its evidence could not be established.",
+        "strict_pass": false,
+        "wrong_unique": false
+      }
+    }
+  },
+  "public_first": {
+    "R01": {
+      "action": "answer",
+      "answer": true,
+      "branches": [
+        {
+          "amount": 75000,
+          "answer": true,
+          "comparator": ">",
+          "date": "2024-12-31",
+          "evidence": [
+            "E1",
+            "E2"
+          ],
+          "matched_versions": [
+            "E2"
+          ],
+          "option": "A",
+          "threshold": 69500,
+          "valid_from": "2024-01-01",
+          "valid_through": "2024-12-31"
+        }
+      ],
+      "evidence": [
+        "E1",
+        "E2"
+      ]
+    },
+    "R02": {
+      "action": "answer",
+      "answer": true,
+      "branches": [
+        {
+          "amount": 75000,
+          "answer": true,
+          "comparator": ">",
+          "date": "2025-01-01",
+          "evidence": [
+            "E1",
+            "E3"
+          ],
+          "matched_versions": [
+            "E3"
+          ],
+          "option": "A",
+          "threshold": 71900,
+          "valid_from": "2025-01-01",
+          "valid_through": "2025-12-31"
+        }
+      ],
+      "evidence": [
+        "E1",
+        "E3"
+      ]
+    },
+    "R03": {
+      "action": "answer",
+      "answer": true,
+      "branches": [
+        {
+          "amount": 75000,
+          "answer": true,
+          "comparator": ">",
+          "date": "2024-12-31",
+          "evidence": [
+            "E1",
+            "E2"
+          ],
+          "matched_versions": [
+            "E2"
+          ],
+          "option": "A",
+          "threshold": 69500,
+          "valid_from": "2024-01-01",
+          "valid_through": "2024-12-31"
+        },
+        {
+          "amount": 75000,
+          "answer": true,
+          "comparator": ">",
+          "date": "2025-01-01",
+          "evidence": [
+            "E1",
+            "E3"
+          ],
+          "matched_versions": [
+            "E3"
+          ],
+          "option": "A",
+          "threshold": 71900,
+          "valid_from": "2025-01-01",
+          "valid_through": "2025-12-31"
+        }
+      ],
+      "evidence": [
+        "E1",
+        "E2",
+        "E3"
+      ]
+    },
+    "R04": {
+      "action": "answer",
+      "answer": true,
+      "branches": [
+        {
+          "amount": 70000,
+          "answer": true,
+          "comparator": ">",
+          "date": "2024-12-31",
+          "evidence": [
+            "E1",
+            "E2"
+          ],
+          "matched_versions": [
+            "E2"
+          ],
+          "option": "B",
+          "threshold": 69500,
+          "valid_from": "2024-01-01",
+          "valid_through": "2024-12-31"
+        }
+      ],
+      "evidence": [
+        "E1",
+        "E2"
+      ]
+    },
+    "R05": {
+      "action": "answer",
+      "answer": false,
+      "branches": [
+        {
+          "amount": 70000,
+          "answer": false,
+          "comparator": ">",
+          "date": "2025-01-01",
+          "evidence": [
+            "E1",
+            "E3"
+          ],
+          "matched_versions": [
+            "E3"
+          ],
+          "option": "B",
+          "threshold": 71900,
+          "valid_from": "2025-01-01",
+          "valid_through": "2025-12-31"
+        }
+      ],
+      "evidence": [
+        "E1",
+        "E3"
+      ]
+    },
+    "R06": {
+      "action": "ask_date",
+      "answer": null,
+      "branches": [
+        {
+          "amount": 70000,
+          "answer": true,
+          "comparator": ">",
+          "date": "2024-12-31",
+          "evidence": [
+            "E1",
+            "E2"
+          ],
+          "matched_versions": [
+            "E2"
+          ],
+          "option": "B",
+          "threshold": 69500,
+          "valid_from": "2024-01-01",
+          "valid_through": "2024-12-31"
+        },
+        {
+          "amount": 70000,
+          "answer": false,
+          "comparator": ">",
+          "date": "2025-01-01",
+          "evidence": [
+            "E1",
+            "E3"
+          ],
+          "matched_versions": [
+            "E3"
+          ],
+          "option": "B",
+          "threshold": 71900,
+          "valid_from": "2025-01-01",
+          "valid_through": "2025-12-31"
+        }
+      ],
+      "evidence": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "question": "On which day did the borrower become contractually bound, 2024-12-31 or 2025-01-01?"
+    }
+  },
+  "public_follow": {
+    "2024-12-31": {
+      "action": "answer",
+      "answer": true,
+      "branches": [
+        {
+          "amount": 70000,
+          "answer": true,
+          "comparator": ">",
+          "date": "2024-12-31",
+          "evidence": [
+            "E1",
+            "E2"
+          ],
+          "matched_versions": [
+            "E2"
+          ],
+          "option": "B",
+          "threshold": 69500,
+          "valid_from": "2024-01-01",
+          "valid_through": "2024-12-31"
+        }
+      ],
+      "evidence": [
+        "E1",
+        "E2"
+      ]
+    },
+    "2025-01-01": {
+      "action": "answer",
+      "answer": false,
+      "branches": [
+        {
+          "amount": 70000,
+          "answer": false,
+          "comparator": ">",
+          "date": "2025-01-01",
+          "evidence": [
+            "E1",
+            "E3"
+          ],
+          "matched_versions": [
+            "E3"
+          ],
+          "option": "B",
+          "threshold": 71900,
+          "valid_from": "2025-01-01",
+          "valid_through": "2025-12-31"
+        }
+      ],
+      "evidence": [
+        "E1",
+        "E3"
+      ]
+    }
+  },
+  "raw_call_count": 20,
+  "raw_calls": [
+    {
+      "actual_evidence": [
+        "E2",
+        "E3"
+      ],
+      "case": "R01",
+      "date": null,
+      "method": "direct",
+      "turn": 1
+    },
+    {
+      "actual_evidence": [
+        "E2",
+        "E3"
+      ],
+      "case": "R02",
+      "date": null,
+      "method": "direct",
+      "turn": 1
+    },
+    {
+      "actual_evidence": [
+        "E2",
+        "E3"
+      ],
+      "case": "R03",
+      "date": null,
+      "method": "direct",
+      "turn": 1
+    },
+    {
+      "actual_evidence": [
+        "E2",
+        "E3"
+      ],
+      "case": "R04",
+      "date": null,
+      "method": "direct",
+      "turn": 1
+    },
+    {
+      "actual_evidence": [
+        "E2",
+        "E3"
+      ],
+      "case": "R05",
+      "date": null,
+      "method": "direct",
+      "turn": 1
+    },
+    {
+      "actual_evidence": [],
+      "case": "R06",
+      "date": null,
+      "method": "direct",
+      "turn": 1
+    },
+    {
+      "actual_evidence": [
+        "E1",
+        "E2"
+      ],
+      "case": "R01",
+      "date": "2024-12-31",
+      "method": "by_version",
+      "observed_branch": {
+        "accepted_by_frozen_aggregate": true,
+        "answer": false,
+        "answer_correct": false,
+        "date_bound_evidence": true,
+        "evidence": [
+          "E1",
+          "E2"
+        ]
+      },
+      "turn": 1
+    },
+    {
+      "actual_evidence": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "case": "R02",
+      "date": "2025-01-01",
+      "method": "by_version",
+      "observed_branch": {
+        "accepted_by_frozen_aggregate": false,
+        "answer": true,
+        "answer_correct": true,
+        "date_bound_evidence": false,
+        "evidence": [
+          "E1",
+          "E2",
+          "E3"
+        ]
+      },
+      "turn": 1
+    },
+    {
+      "actual_evidence": [
+        "E1",
+        "E2"
+      ],
+      "case": "R03",
+      "date": "2024-12-31",
+      "method": "by_version",
+      "observed_branch": {
+        "accepted_by_frozen_aggregate": true,
+        "answer": true,
+        "answer_correct": true,
+        "date_bound_evidence": true,
+        "evidence": [
+          "E1",
+          "E2"
+        ]
+      },
+      "turn": 1
+    },
+    {
+      "actual_evidence": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "case": "R03",
+      "date": "2025-01-01",
+      "method": "by_version",
+      "observed_branch": {
+        "accepted_by_frozen_aggregate": false,
+        "answer": true,
+        "answer_correct": true,
+        "date_bound_evidence": false,
+        "evidence": [
+          "E1",
+          "E2",
+          "E3"
+        ]
+      },
+      "turn": 1
+    },
+    {
+      "actual_evidence": [
+        "E1",
+        "E2"
+      ],
+      "case": "R04",
+      "date": "2024-12-31",
+      "method": "by_version",
+      "observed_branch": {
+        "accepted_by_frozen_aggregate": true,
+        "answer": false,
+        "answer_correct": false,
+        "date_bound_evidence": true,
+        "evidence": [
+          "E1",
+          "E2"
+        ]
+      },
+      "turn": 1
+    },
+    {
+      "actual_evidence": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "case": "R05",
+      "date": "2025-01-01",
+      "method": "by_version",
+      "observed_branch": {
+        "accepted_by_frozen_aggregate": false,
+        "answer": false,
+        "answer_correct": true,
+        "date_bound_evidence": false,
+        "evidence": [
+          "E1",
+          "E2",
+          "E3"
+        ]
+      },
+      "turn": 1
+    },
+    {
+      "actual_evidence": [
+        "E1",
+        "E2"
+      ],
+      "case": "R06",
+      "date": "2024-12-31",
+      "method": "by_version",
+      "observed_branch": {
+        "accepted_by_frozen_aggregate": true,
+        "answer": false,
+        "answer_correct": false,
+        "date_bound_evidence": true,
+        "evidence": [
+          "E1",
+          "E2"
+        ]
+      },
+      "turn": 1
+    },
+    {
+      "actual_evidence": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "case": "R06",
+      "date": "2025-01-01",
+      "method": "by_version",
+      "observed_branch": {
+        "accepted_by_frozen_aggregate": false,
+        "answer": false,
+        "answer_correct": true,
+        "date_bound_evidence": false,
+        "evidence": [
+          "E1",
+          "E2",
+          "E3"
+        ]
+      },
+      "turn": 1
+    },
+    {
+      "actual_evidence": [
+        "E1",
+        "E2"
+      ],
+      "case": "R06",
+      "date": "2024-12-31",
+      "method": "direct",
+      "turn": 2
+    },
+    {
+      "actual_evidence": [
+        "E2",
+        "E3"
+      ],
+      "case": "R06",
+      "date": "2025-01-01",
+      "method": "direct",
+      "turn": 2
+    },
+    {
+      "actual_evidence": [
+        "E2"
+      ],
+      "case": "R06",
+      "date": "2024-12-31",
+      "method": "ask_if_missing",
+      "turn": 2
+    },
+    {
+      "actual_evidence": [
+        "E2",
+        "E3"
+      ],
+      "case": "R06",
+      "date": "2025-01-01",
+      "method": "ask_if_missing",
+      "turn": 2
+    },
+    {
+      "actual_evidence": [
+        "E1",
+        "E2"
+      ],
+      "case": "R06",
+      "date": "2024-12-31",
+      "method": "by_version",
+      "observed_branch": {
+        "accepted_by_frozen_aggregate": true,
+        "answer": false,
+        "answer_correct": false,
+        "date_bound_evidence": true,
+        "evidence": [
+          "E1",
+          "E2"
+        ]
+      },
+      "turn": 2
+    },
+    {
+      "actual_evidence": [
+        "E1",
+        "E2",
+        "E3"
+      ],
+      "case": "R06",
+      "date": "2025-01-01",
+      "method": "by_version",
+      "observed_branch": {
+        "accepted_by_frozen_aggregate": false,
+        "answer": true,
+        "answer_correct": false,
+        "date_bound_evidence": false,
+        "evidence": [
+          "E1",
+          "E2",
+          "E3"
+        ]
+      },
+      "turn": 2
+    }
+  ],
+  "sha256": {
+    "docs/review/2026-11-24-date-clarification-pilot-v1/raw.zip": "c7dac3fa8659419755fc31f853005171d7c2bf19b21ebd236ad22d401a03ba5a",
+    "docs/review/2026-11-24-date-material-acceptance-v1/inputs.json": "49f898f24d7abe8e4cedbd82991947f314321664e30edcb0d61556b1c9725477",
+    "docs/review/2026-11-24-date-material-acceptance-v1/reference.json": "960e08e16d275e99ab20fe86be5abed7d454d4fc9f489de4f09ce758276f1a09",
+    "scripts/query_determinacy_date_diagnostic.py": "38f373d5f7ee0a950777567a9323ce6f24e176ed75b7da07b7fc3c21eab7b1b8",
+    "scripts/query_determinacy_date_pilot.py": "f86053fb33f500e09dd8e036e785c6ac33417d5f71b68b4e46e2fbd1961138c4"
+  },
+  "summary": {
+    "first": {
+      "answer_only": {
+        "branch_strict": 4,
+        "strict_pass": 2,
+        "wrong_unique": 0
+      },
+      "both": {
+        "branch_strict": 8,
+        "strict_pass": 6,
+        "wrong_unique": 0
+      },
+      "evidence_only": {
+        "branch_strict": 5,
+        "strict_pass": 3,
+        "wrong_unique": 1
+      },
+      "original": {
+        "branch_strict": 1,
+        "strict_pass": 0,
+        "wrong_unique": 0
+      }
+    },
+    "follow": {
+      "answer_only": {
+        "branch_strict": 1,
+        "strict_pass": 1,
+        "wrong_unique": 0
+      },
+      "both": {
+        "branch_strict": 2,
+        "strict_pass": 2,
+        "wrong_unique": 0
+      },
+      "evidence_only": {
+        "branch_strict": 0,
+        "strict_pass": 0,
+        "wrong_unique": 0
+      },
+      "original": {
+        "branch_strict": 0,
+        "strict_pass": 0,
+        "wrong_unique": 0
+      }
+    }
+  }
+}
