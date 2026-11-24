@@ -1,0 +1,34 @@
+{
+  "schema": "delegation_field_repair_v1",
+  "scope": "Controlled synthetic, bottom-question and wording-family holdout, informed author reference",
+  "dev_cases": ["N01-2-match", "N02-2-reverse", "N03-2-match", "N04-1-reverse"],
+  "groups": {
+    "novel": {"roots": 4, "families": 2, "versions_per_root": 4},
+    "mixed": {"roots": 2, "families": 2, "versions_per_root": 4},
+    "boundary": {"cases": 3}
+  },
+  "runtime": "Qwen2.5-3B-Instruct, CPU FP32, SDPA, greedy, sixteen threads, four inputs per batch, direct 256/extract 160 tokens",
+  "routes": {
+    "program": "Frozen 0283099 source parser and evaluator.",
+    "direct": "Same six records, explicit extract/apply/merge instructions and evidence, final computed by the model.",
+    "full": "One call for both fields, grounded role names validated in corresponding sources, frozen evaluator.",
+    "repair": "Freeze recognized fields, one call for only missing groups, frozen evaluator. If both groups are missing the task and output are exactly shared with full, charged as one logical call on each arm. If none missing, zero calls."
+  },
+  "ablation": "The full extraction arm with the exact same generated structures; only an explicit disagreement with a recognized original-text F1 suppresses grant. Unrecognized F1 is kept and counted as unverifiable. No extra calls.",
+  "decision": {
+    "novel_net_complete_roots_over_program": 2,
+    "novel_positive_families": 2,
+    "new_false_unique_vs_program": 0,
+    "mixed_for_cost_advantage": "At equal or greater strict grounded coverage and no added false unique vs full, fewer total logical prompt+generation tokens.",
+    "diagnostic_recurrence": "At least two different roots in two wording families with a source-verified reversed F1 in full extraction causing false uniqueness, and an intervention suppressing it.",
+    "interpretation": "Small-sample research decision, with per-root paired wins/losses, per-family totals and leave-one-root-out range. Technical invalids remain in denominators."
+  },
+  "prompts": {
+    "common": "核对下列同一案件的六份记录。W1、W2 是地位相同的冲突来源，应分别假定各来源正确。R1、R2 是默认规则。R3 仅在指定方向的授权成立时覆盖一条默认规则。F1 是两个世界共用的本件授权登记。Y 为准入，N 为不准入，X 为无法确定，U 为两世界各自确定但答案不同。",
+    "fields": "提取组名时逐字照抄，不含引号。授权方是授出权力者，受权方是取得权力者。e 表示 R3，顺序为 [授权方,受权方,例外结论 Y 或 N,被覆盖条款 R1 或 R2]。g 表示 F1，顺序为 [授权方,受权方]。字段无法唯一确定时写 JSON null。",
+    "direct": "先落实授权的方向和覆盖关系，再分别求两个世界。每个世界输出 [R3是否适用,决定性条款,答案,证据ID数组]。适用性只用数字 1、0 或 null，条款用字符串或 null。证据用字符串 ID，如 [\"W1\",\"R1\"]。世界答案为 Y、N 或 X。两世界确定且同答取该值，确定且异答取 U，任一未知取 X。只输出一个 JSON 对象，键依次为 e、g、W1、W2、final。不要复制示例中的 ID 作为答案。",
+    "both": "只提取 e、g 两组字段，不求答案。只输出一个 JSON 对象，键为 e、g。",
+    "grant": "只补 g，忽略其他输出字段，不求答案。只输出形如 {\"g\": [授权方,受权方]} 的一个 JSON 对象，组名须为 JSON 字符串。",
+    "exception": "只补 e，忽略其他输出字段，不求答案。只输出形如 {\"e\": [授权方,受权方,例外结论,被覆盖条款]} 的一个 JSON 对象，内容须为 JSON 字符串。"
+  }
+}

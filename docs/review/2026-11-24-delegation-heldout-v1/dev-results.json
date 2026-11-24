@@ -1,0 +1,1212 @@
+{
+  "batch_generation_seconds": {
+    "direct": 75.55769874108955,
+    "extract": 33.67839238606393,
+    "repair": 16.996973099652678
+  },
+  "dev_seal_sha256": null,
+  "environment": {
+    "context_tokens": 32768,
+    "eos_token_ids": [
+      151645,
+      151643
+    ],
+    "model": "/large_disk/wf/研究代码/RAG/OpenDecoder/checkpoint/Qwen2.5-3B-Instruct",
+    "model_files_sha256": {
+      "config.json": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+      "generation_config.json": "ea35dfb6fc5051b01114f9b995820d55dab01ed33ee490f6378b442af82c09f9",
+      "model-00001-of-00002.safetensors": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2",
+      "model-00002-of-00002.safetensors": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d",
+      "model.safetensors.index.json": "bc8aaa0c87d4335177e01c765f1de0db81661c67c1a72fbfb0d521b09f5ddc56",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    },
+    "model_reference_sha256": "504b4da5f0c4e51cfdffaa54129e55c0a3b433f37e387d286c21ad65f4d7c1f5",
+    "versions": {
+      "accelerate": "1.10.1",
+      "safetensors": "0.6.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.5.1+cu121",
+      "transformers": "4.56.2"
+    }
+  },
+  "generation_statuses": {
+    "complete": 10
+  },
+  "interface_ready": false,
+  "physical_calls": 10,
+  "rows": {
+    "N01-2-match": {
+      "actual_f1_reversed": false,
+      "arms": {
+        "direct": {
+          "calls": 1,
+          "clear_unresolved": false,
+          "correct_x": false,
+          "false_unique": false,
+          "final": null,
+          "input_tokens": 476,
+          "invalid": "bad field list",
+          "output_tokens": 98,
+          "result": null,
+          "strict": false,
+          "structure": null
+        },
+        "full": {
+          "calls": 1,
+          "clear_unresolved": false,
+          "correct_x": false,
+          "false_unique": false,
+          "final": null,
+          "input_tokens": 373,
+          "invalid": "invalid exception conclusion or priority",
+          "output_tokens": 36,
+          "result": null,
+          "strict": false,
+          "structure": null
+        },
+        "full_checked": {
+          "calls": 1,
+          "clear_unresolved": false,
+          "correct_x": false,
+          "false_unique": false,
+          "final": null,
+          "input_tokens": 373,
+          "invalid": "invalid exception conclusion or priority",
+          "output_tokens": 36,
+          "result": null,
+          "strict": false,
+          "structure": null
+        },
+        "program": {
+          "calls": 0,
+          "clear_unresolved": true,
+          "correct_x": false,
+          "false_unique": false,
+          "final": "X",
+          "input_tokens": 0,
+          "invalid": null,
+          "output_tokens": 0,
+          "result": {
+            "final": "X",
+            "worlds": {
+              "W1": {
+                "answer": "X",
+                "applies": null,
+                "evidence": [],
+                "rule": null
+              },
+              "W2": {
+                "answer": "N",
+                "applies": false,
+                "evidence": [
+                  "W2",
+                  "R2",
+                  "R3"
+                ],
+                "rule": "R2"
+              }
+            }
+          },
+          "strict": false,
+          "structure": {
+            "exception": {
+              "answer": "N",
+              "grantor": "凭证组",
+              "overrides": "R1",
+              "recipient": "案签组"
+            },
+            "grant": null
+          }
+        },
+        "repair": {
+          "calls": 1,
+          "clear_unresolved": false,
+          "correct_x": false,
+          "false_unique": false,
+          "final": "N",
+          "input_tokens": 389,
+          "invalid": null,
+          "output_tokens": 13,
+          "result": {
+            "final": "N",
+            "worlds": {
+              "W1": {
+                "answer": "N",
+                "applies": true,
+                "evidence": [
+                  "W1",
+                  "R1",
+                  "R3",
+                  "F1"
+                ],
+                "rule": "R3"
+              },
+              "W2": {
+                "answer": "N",
+                "applies": false,
+                "evidence": [
+                  "W2",
+                  "R2",
+                  "R3"
+                ],
+                "rule": "R2"
+              }
+            }
+          },
+          "strict": true,
+          "structure": {
+            "exception": {
+              "answer": "N",
+              "grantor": "凭证组",
+              "overrides": "R1",
+              "recipient": "案签组"
+            },
+            "grant": {
+              "grantor": "凭证组",
+              "recipient": "案签组"
+            }
+          }
+        }
+      },
+      "expected": "N",
+      "f1_verification": "invalid_extraction",
+      "family": "development",
+      "group": "dev",
+      "missing": [
+        "grant"
+      ],
+      "root": "N01",
+      "structure_ref_exception_matches_full": false
+    },
+    "N02-2-reverse": {
+      "actual_f1_reversed": true,
+      "arms": {
+        "direct": {
+          "calls": 1,
+          "clear_unresolved": false,
+          "correct_x": false,
+          "false_unique": false,
+          "final": "U",
+          "input_tokens": 484,
+          "invalid": "invalid exception roles",
+          "output_tokens": 86,
+          "result": null,
+          "strict": false,
+          "structure": null
+        },
+        "full": {
+          "calls": 1,
+          "clear_unresolved": false,
+          "correct_x": false,
+          "false_unique": true,
+          "final": "Y",
+          "input_tokens": 381,
+          "invalid": null,
+          "output_tokens": 38,
+          "result": {
+            "final": "Y",
+            "worlds": {
+              "W1": {
+                "answer": "Y",
+                "applies": true,
+                "evidence": [
+                  "W1",
+                  "R1",
+                  "R3",
+                  "F1"
+                ],
+                "rule": "R3"
+              },
+              "W2": {
+                "answer": "Y",
+                "applies": false,
+                "evidence": [
+                  "W2",
+                  "R2",
+                  "R3"
+                ],
+                "rule": "R2"
+              }
+            }
+          },
+          "strict": false,
+          "structure": {
+            "exception": {
+              "answer": "Y",
+              "grantor": "声录组",
+              "overrides": "R1",
+              "recipient": "索签组"
+            },
+            "grant": {
+              "grantor": "声录组",
+              "recipient": "索签组"
+            }
+          }
+        },
+        "full_checked": {
+          "calls": 1,
+          "clear_unresolved": true,
+          "correct_x": false,
+          "false_unique": false,
+          "final": "X",
+          "input_tokens": 381,
+          "invalid": null,
+          "output_tokens": 38,
+          "result": {
+            "final": "X",
+            "worlds": {
+              "W1": {
+                "answer": "X",
+                "applies": null,
+                "evidence": [],
+                "rule": null
+              },
+              "W2": {
+                "answer": "Y",
+                "applies": false,
+                "evidence": [
+                  "W2",
+                  "R2",
+                  "R3"
+                ],
+                "rule": "R2"
+              }
+            }
+          },
+          "strict": false,
+          "structure": {
+            "exception": {
+              "answer": "Y",
+              "grantor": "声录组",
+              "overrides": "R1",
+              "recipient": "索签组"
+            },
+            "grant": null
+          }
+        },
+        "program": {
+          "calls": 0,
+          "clear_unresolved": true,
+          "correct_x": false,
+          "false_unique": false,
+          "final": "X",
+          "input_tokens": 0,
+          "invalid": null,
+          "output_tokens": 0,
+          "result": {
+            "final": "X",
+            "worlds": {
+              "W1": {
+                "answer": "X",
+                "applies": null,
+                "evidence": [],
+                "rule": null
+              },
+              "W2": {
+                "answer": "X",
+                "applies": null,
+                "evidence": [],
+                "rule": null
+              }
+            }
+          },
+          "strict": false,
+          "structure": {
+            "exception": null,
+            "grant": {
+              "grantor": "索签组",
+              "recipient": "声录组"
+            }
+          }
+        },
+        "repair": {
+          "calls": 1,
+          "clear_unresolved": false,
+          "correct_x": false,
+          "false_unique": false,
+          "final": null,
+          "input_tokens": 403,
+          "invalid": "invalid exception conclusion or priority",
+          "output_tokens": 20,
+          "result": null,
+          "strict": false,
+          "structure": null
+        }
+      },
+      "expected": "U",
+      "f1_verification": "roles_reversed",
+      "family": "development",
+      "group": "dev",
+      "missing": [
+        "exception"
+      ],
+      "root": "N02",
+      "structure_ref_exception_matches_full": true
+    },
+    "N03-2-match": {
+      "actual_f1_reversed": true,
+      "arms": {
+        "direct": {
+          "calls": 1,
+          "clear_unresolved": false,
+          "correct_x": false,
+          "false_unique": false,
+          "final": "U",
+          "input_tokens": 493,
+          "invalid": "bad field list",
+          "output_tokens": 96,
+          "result": null,
+          "strict": false,
+          "structure": null
+        },
+        "full": {
+          "calls": 1,
+          "clear_unresolved": false,
+          "correct_x": false,
+          "false_unique": false,
+          "final": "U",
+          "input_tokens": 390,
+          "invalid": null,
+          "output_tokens": 38,
+          "result": {
+            "final": "U",
+            "worlds": {
+              "W1": {
+                "answer": "N",
+                "applies": false,
+                "evidence": [
+                  "W1",
+                  "R1",
+                  "R3"
+                ],
+                "rule": "R1"
+              },
+              "W2": {
+                "answer": "Y",
+                "applies": false,
+                "evidence": [
+                  "W2",
+                  "R2",
+                  "R3",
+                  "F1"
+                ],
+                "rule": "R2"
+              }
+            }
+          },
+          "strict": false,
+          "structure": {
+            "exception": {
+              "answer": "N",
+              "grantor": "光校组",
+              "overrides": "R2",
+              "recipient": "档匣组"
+            },
+            "grant": {
+              "grantor": "档匣组",
+              "recipient": "光校组"
+            }
+          }
+        },
+        "full_checked": {
+          "calls": 1,
+          "clear_unresolved": false,
+          "correct_x": false,
+          "false_unique": false,
+          "final": "U",
+          "input_tokens": 390,
+          "invalid": null,
+          "output_tokens": 38,
+          "result": {
+            "final": "U",
+            "worlds": {
+              "W1": {
+                "answer": "N",
+                "applies": false,
+                "evidence": [
+                  "W1",
+                  "R1",
+                  "R3"
+                ],
+                "rule": "R1"
+              },
+              "W2": {
+                "answer": "Y",
+                "applies": false,
+                "evidence": [
+                  "W2",
+                  "R2",
+                  "R3",
+                  "F1"
+                ],
+                "rule": "R2"
+              }
+            }
+          },
+          "strict": false,
+          "structure": {
+            "exception": {
+              "answer": "N",
+              "grantor": "光校组",
+              "overrides": "R2",
+              "recipient": "档匣组"
+            },
+            "grant": {
+              "grantor": "档匣组",
+              "recipient": "光校组"
+            }
+          }
+        },
+        "program": {
+          "calls": 0,
+          "clear_unresolved": true,
+          "correct_x": false,
+          "false_unique": false,
+          "final": "X",
+          "input_tokens": 0,
+          "invalid": null,
+          "output_tokens": 0,
+          "result": {
+            "final": "X",
+            "worlds": {
+              "W1": {
+                "answer": "X",
+                "applies": null,
+                "evidence": [],
+                "rule": null
+              },
+              "W2": {
+                "answer": "X",
+                "applies": null,
+                "evidence": [],
+                "rule": null
+              }
+            }
+          },
+          "strict": false,
+          "structure": {
+            "exception": null,
+            "grant": null
+          }
+        },
+        "repair": {
+          "calls": 1,
+          "clear_unresolved": false,
+          "correct_x": false,
+          "false_unique": false,
+          "final": "U",
+          "input_tokens": 390,
+          "invalid": null,
+          "output_tokens": 38,
+          "result": {
+            "final": "U",
+            "worlds": {
+              "W1": {
+                "answer": "N",
+                "applies": false,
+                "evidence": [
+                  "W1",
+                  "R1",
+                  "R3"
+                ],
+                "rule": "R1"
+              },
+              "W2": {
+                "answer": "Y",
+                "applies": false,
+                "evidence": [
+                  "W2",
+                  "R2",
+                  "R3",
+                  "F1"
+                ],
+                "rule": "R2"
+              }
+            }
+          },
+          "strict": false,
+          "structure": {
+            "exception": {
+              "answer": "N",
+              "grantor": "光校组",
+              "overrides": "R2",
+              "recipient": "档匣组"
+            },
+            "grant": {
+              "grantor": "档匣组",
+              "recipient": "光校组"
+            }
+          }
+        }
+      },
+      "expected": "N",
+      "f1_verification": "f1_unrecognized",
+      "family": "development",
+      "group": "dev",
+      "missing": [
+        "grant",
+        "exception"
+      ],
+      "root": "N03",
+      "structure_ref_exception_matches_full": true
+    },
+    "N04-1-reverse": {
+      "actual_f1_reversed": true,
+      "arms": {
+        "direct": {
+          "calls": 1,
+          "clear_unresolved": false,
+          "correct_x": false,
+          "false_unique": false,
+          "final": null,
+          "input_tokens": 483,
+          "invalid": "bad field list",
+          "output_tokens": 83,
+          "result": null,
+          "strict": false,
+          "structure": null
+        },
+        "full": {
+          "calls": 1,
+          "clear_unresolved": false,
+          "correct_x": false,
+          "false_unique": true,
+          "final": "Y",
+          "input_tokens": 380,
+          "invalid": null,
+          "output_tokens": 38,
+          "result": {
+            "final": "Y",
+            "worlds": {
+              "W1": {
+                "answer": "Y",
+                "applies": false,
+                "evidence": [
+                  "W1",
+                  "R1",
+                  "R3"
+                ],
+                "rule": "R1"
+              },
+              "W2": {
+                "answer": "Y",
+                "applies": true,
+                "evidence": [
+                  "W2",
+                  "R2",
+                  "R3",
+                  "F1"
+                ],
+                "rule": "R3"
+              }
+            }
+          },
+          "strict": false,
+          "structure": {
+            "exception": {
+              "answer": "Y",
+              "grantor": "函审组",
+              "overrides": "R2",
+              "recipient": "签存组"
+            },
+            "grant": {
+              "grantor": "函审组",
+              "recipient": "签存组"
+            }
+          }
+        },
+        "full_checked": {
+          "calls": 1,
+          "clear_unresolved": true,
+          "correct_x": false,
+          "false_unique": false,
+          "final": "X",
+          "input_tokens": 380,
+          "invalid": null,
+          "output_tokens": 38,
+          "result": {
+            "final": "X",
+            "worlds": {
+              "W1": {
+                "answer": "Y",
+                "applies": false,
+                "evidence": [
+                  "W1",
+                  "R1",
+                  "R3"
+                ],
+                "rule": "R1"
+              },
+              "W2": {
+                "answer": "X",
+                "applies": null,
+                "evidence": [],
+                "rule": null
+              }
+            }
+          },
+          "strict": false,
+          "structure": {
+            "exception": {
+              "answer": "Y",
+              "grantor": "函审组",
+              "overrides": "R2",
+              "recipient": "签存组"
+            },
+            "grant": null
+          }
+        },
+        "program": {
+          "calls": 0,
+          "clear_unresolved": false,
+          "correct_x": false,
+          "false_unique": false,
+          "final": "U",
+          "input_tokens": 0,
+          "invalid": null,
+          "output_tokens": 0,
+          "result": {
+            "final": "U",
+            "worlds": {
+              "W1": {
+                "answer": "Y",
+                "applies": false,
+                "evidence": [
+                  "W1",
+                  "R1",
+                  "R3"
+                ],
+                "rule": "R1"
+              },
+              "W2": {
+                "answer": "N",
+                "applies": false,
+                "evidence": [
+                  "W2",
+                  "R2",
+                  "R3",
+                  "F1"
+                ],
+                "rule": "R2"
+              }
+            }
+          },
+          "strict": true,
+          "structure": {
+            "exception": {
+              "answer": "Y",
+              "grantor": "函审组",
+              "overrides": "R2",
+              "recipient": "签存组"
+            },
+            "grant": {
+              "grantor": "签存组",
+              "recipient": "函审组"
+            }
+          }
+        },
+        "repair": {
+          "calls": 0,
+          "clear_unresolved": false,
+          "correct_x": false,
+          "false_unique": false,
+          "final": "U",
+          "input_tokens": 0,
+          "invalid": null,
+          "output_tokens": 0,
+          "result": {
+            "final": "U",
+            "worlds": {
+              "W1": {
+                "answer": "Y",
+                "applies": false,
+                "evidence": [
+                  "W1",
+                  "R1",
+                  "R3"
+                ],
+                "rule": "R1"
+              },
+              "W2": {
+                "answer": "N",
+                "applies": false,
+                "evidence": [
+                  "W2",
+                  "R2",
+                  "R3",
+                  "F1"
+                ],
+                "rule": "R2"
+              }
+            }
+          },
+          "strict": true,
+          "structure": {
+            "exception": {
+              "answer": "Y",
+              "grantor": "函审组",
+              "overrides": "R2",
+              "recipient": "签存组"
+            },
+            "grant": {
+              "grantor": "签存组",
+              "recipient": "函审组"
+            }
+          }
+        }
+      },
+      "expected": "U",
+      "f1_verification": "roles_reversed",
+      "family": "development",
+      "group": "dev",
+      "missing": [],
+      "root": "N04",
+      "structure_ref_exception_matches_full": true
+    }
+  },
+  "seal_sha256": "f4c87033cd8a27936a2f0ba7466b3426202aa73fd892d381143ef6fd8dc0f7a5",
+  "summary": {
+    "f1_status_counts": {
+      "f1_unrecognized": 1,
+      "invalid_extraction": 1,
+      "roles_reversed": 2
+    },
+    "families": {
+      "development": {
+        "direct": {
+          "calls": 4,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 1936,
+          "invalid": 4,
+          "n": 4,
+          "output_tokens": 363,
+          "strict": 0
+        },
+        "full": {
+          "calls": 4,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 2,
+          "input_tokens": 1524,
+          "invalid": 1,
+          "n": 4,
+          "output_tokens": 150,
+          "strict": 0
+        },
+        "full_checked": {
+          "calls": 4,
+          "clear_unresolved": 2,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 1524,
+          "invalid": 1,
+          "n": 4,
+          "output_tokens": 150,
+          "strict": 0
+        },
+        "program": {
+          "calls": 0,
+          "clear_unresolved": 3,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 0,
+          "invalid": 0,
+          "n": 4,
+          "output_tokens": 0,
+          "strict": 1
+        },
+        "repair": {
+          "calls": 3,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 1182,
+          "invalid": 1,
+          "n": 4,
+          "output_tokens": 71,
+          "strict": 2
+        }
+      }
+    },
+    "groups": {
+      "all": {
+        "direct": {
+          "calls": 4,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 1936,
+          "invalid": 4,
+          "n": 4,
+          "output_tokens": 363,
+          "strict": 0
+        },
+        "full": {
+          "calls": 4,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 2,
+          "input_tokens": 1524,
+          "invalid": 1,
+          "n": 4,
+          "output_tokens": 150,
+          "strict": 0
+        },
+        "full_checked": {
+          "calls": 4,
+          "clear_unresolved": 2,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 1524,
+          "invalid": 1,
+          "n": 4,
+          "output_tokens": 150,
+          "strict": 0
+        },
+        "program": {
+          "calls": 0,
+          "clear_unresolved": 3,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 0,
+          "invalid": 0,
+          "n": 4,
+          "output_tokens": 0,
+          "strict": 1
+        },
+        "repair": {
+          "calls": 3,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 1182,
+          "invalid": 1,
+          "n": 4,
+          "output_tokens": 71,
+          "strict": 2
+        }
+      },
+      "dev": {
+        "direct": {
+          "calls": 4,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 1936,
+          "invalid": 4,
+          "n": 4,
+          "output_tokens": 363,
+          "strict": 0
+        },
+        "full": {
+          "calls": 4,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 2,
+          "input_tokens": 1524,
+          "invalid": 1,
+          "n": 4,
+          "output_tokens": 150,
+          "strict": 0
+        },
+        "full_checked": {
+          "calls": 4,
+          "clear_unresolved": 2,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 1524,
+          "invalid": 1,
+          "n": 4,
+          "output_tokens": 150,
+          "strict": 0
+        },
+        "program": {
+          "calls": 0,
+          "clear_unresolved": 3,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 0,
+          "invalid": 0,
+          "n": 4,
+          "output_tokens": 0,
+          "strict": 1
+        },
+        "repair": {
+          "calls": 3,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 1182,
+          "invalid": 1,
+          "n": 4,
+          "output_tokens": 71,
+          "strict": 2
+        }
+      }
+    },
+    "roots": {
+      "N01": {
+        "direct": {
+          "calls": 1,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 476,
+          "invalid": 1,
+          "n": 1,
+          "output_tokens": 98,
+          "strict": 0
+        },
+        "family": "development",
+        "full": {
+          "calls": 1,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 373,
+          "invalid": 1,
+          "n": 1,
+          "output_tokens": 36,
+          "strict": 0
+        },
+        "full_checked": {
+          "calls": 1,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 373,
+          "invalid": 1,
+          "n": 1,
+          "output_tokens": 36,
+          "strict": 0
+        },
+        "group": "dev",
+        "program": {
+          "calls": 0,
+          "clear_unresolved": 1,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 0,
+          "invalid": 0,
+          "n": 1,
+          "output_tokens": 0,
+          "strict": 0
+        },
+        "repair": {
+          "calls": 1,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 389,
+          "invalid": 0,
+          "n": 1,
+          "output_tokens": 13,
+          "strict": 1
+        }
+      },
+      "N02": {
+        "direct": {
+          "calls": 1,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 484,
+          "invalid": 1,
+          "n": 1,
+          "output_tokens": 86,
+          "strict": 0
+        },
+        "family": "development",
+        "full": {
+          "calls": 1,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 1,
+          "input_tokens": 381,
+          "invalid": 0,
+          "n": 1,
+          "output_tokens": 38,
+          "strict": 0
+        },
+        "full_checked": {
+          "calls": 1,
+          "clear_unresolved": 1,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 381,
+          "invalid": 0,
+          "n": 1,
+          "output_tokens": 38,
+          "strict": 0
+        },
+        "group": "dev",
+        "program": {
+          "calls": 0,
+          "clear_unresolved": 1,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 0,
+          "invalid": 0,
+          "n": 1,
+          "output_tokens": 0,
+          "strict": 0
+        },
+        "repair": {
+          "calls": 1,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 403,
+          "invalid": 1,
+          "n": 1,
+          "output_tokens": 20,
+          "strict": 0
+        }
+      },
+      "N03": {
+        "direct": {
+          "calls": 1,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 493,
+          "invalid": 1,
+          "n": 1,
+          "output_tokens": 96,
+          "strict": 0
+        },
+        "family": "development",
+        "full": {
+          "calls": 1,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 390,
+          "invalid": 0,
+          "n": 1,
+          "output_tokens": 38,
+          "strict": 0
+        },
+        "full_checked": {
+          "calls": 1,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 390,
+          "invalid": 0,
+          "n": 1,
+          "output_tokens": 38,
+          "strict": 0
+        },
+        "group": "dev",
+        "program": {
+          "calls": 0,
+          "clear_unresolved": 1,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 0,
+          "invalid": 0,
+          "n": 1,
+          "output_tokens": 0,
+          "strict": 0
+        },
+        "repair": {
+          "calls": 1,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 390,
+          "invalid": 0,
+          "n": 1,
+          "output_tokens": 38,
+          "strict": 0
+        }
+      },
+      "N04": {
+        "direct": {
+          "calls": 1,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 483,
+          "invalid": 1,
+          "n": 1,
+          "output_tokens": 83,
+          "strict": 0
+        },
+        "family": "development",
+        "full": {
+          "calls": 1,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 1,
+          "input_tokens": 380,
+          "invalid": 0,
+          "n": 1,
+          "output_tokens": 38,
+          "strict": 0
+        },
+        "full_checked": {
+          "calls": 1,
+          "clear_unresolved": 1,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 380,
+          "invalid": 0,
+          "n": 1,
+          "output_tokens": 38,
+          "strict": 0
+        },
+        "group": "dev",
+        "program": {
+          "calls": 0,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 0,
+          "invalid": 0,
+          "n": 1,
+          "output_tokens": 0,
+          "strict": 1
+        },
+        "repair": {
+          "calls": 0,
+          "clear_unresolved": 0,
+          "correct_x": 0,
+          "false_unique": 0,
+          "input_tokens": 0,
+          "invalid": 0,
+          "n": 1,
+          "output_tokens": 0,
+          "strict": 1
+        }
+      }
+    },
+    "verification_transitions": [
+      {
+        "after": "X",
+        "before": "Y",
+        "blocked_false_unique": true,
+        "case": "N02-2-reverse",
+        "lost_strict": false,
+        "recovered_strict": false,
+        "verification": "roles_reversed"
+      },
+      {
+        "after": "X",
+        "before": "Y",
+        "blocked_false_unique": true,
+        "case": "N04-1-reverse",
+        "lost_strict": false,
+        "recovered_strict": false,
+        "verification": "roles_reversed"
+      }
+    ]
+  },
+  "time": {
+    "wall_seconds_after_environment_check": 129.29143943684176
+  }
+}
