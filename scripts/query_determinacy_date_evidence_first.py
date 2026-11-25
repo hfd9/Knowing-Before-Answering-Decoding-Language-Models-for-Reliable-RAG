@@ -18,8 +18,9 @@ import query_determinacy_threshold_versions as kernel
 
 local = pilot.local
 ROOT = local.ROOT
-PACK = ROOT / 'docs/review/2026-11-25-date-evidence-first-v3'
+PACK = ROOT / 'docs/review/2026-11-25-date-evidence-first-v4'
 DEVELOPMENT = ROOT / 'docs/review/2026-11-25-date-evidence-first-v1'
+ANNOTATED_DEVELOPMENT = ROOT / 'docs/review/2026-11-25-date-evidence-first-v3'
 DEV_SOURCE = ROOT / 'docs/review/2026-11-24-date-source-extraction-v1'
 LETTERS = 'ABCD'
 BATCH = 4
@@ -126,9 +127,9 @@ def extraction_picks(rows, case_groups):
         for group in groups:
             if group in conditions:
                 continue
-            scores = [choice_scores(by_id[f'{group}/{rotation}']) for rotation in range(len(SCOPE))]
-            combined = {'choices': list(SCOPE), 'scores': [sum(row[value] for row in scores) for value in SCOPE]}
-            conditions[group] = best(combined)
+            votes = Counter(best(by_id[f'{group}/{rotation}']) for rotation in range(len(SCOPE)))
+            winner, count = votes.most_common(1)[0]
+            conditions[group] = winner if count > len(SCOPE) // 2 else 'unknown'
         claims = [conditions[group] for group in groups]
         picks[f'{case_id}/scope'] = 'no' if 'no' in claims else 'unknown' if 'unknown' in claims else 'yes'
     return picks, conditions
@@ -282,7 +283,10 @@ def contract(split):
 
 
 def material(split, kind):
-    directory = DEVELOPMENT if (split, kind) == ('dev', 'reference') else PACK
+    if split == 'dev':
+        directory = DEVELOPMENT if kind == 'reference' else ANNOTATED_DEVELOPMENT
+    else:
+        directory = PACK
     return directory / f'{split}-{kind}.json'
 
 
@@ -361,7 +365,24 @@ def verify(run):
             'scope_conditions': conditions, 'model_choices': len(token_counts), 'input_tokens': sum(token_counts),
             'seconds': round(sum(seconds), 2),
             'case_count': len(rows), 'counts': counts, 'field_counts': dict(field_counts),
+            'behavior': behavior(reference, rows),
             'passes': counts['strict'] == len(rows), 'rows': rows}
+
+
+def behavior(reference, rows):
+    same, varying, dated = [], [], []
+    for case_id, row in rows.items():
+        gold = row['expected']['tag']
+        actual = (row['outcome'] or {}).get('tag')
+        if reference['cases'][case_id]['fields']['date'] is not None:
+            dated.append(row['checks']['outcome'])
+        elif gold == 'ASK_DATE':
+            varying.append(actual in ('ANSWER_Y', 'ANSWER_N'))
+        elif gold in ('ANSWER_Y', 'ANSWER_N'):
+            same.append(actual == 'ASK_DATE')
+    return {'unnecessary_ask_on_same': [sum(same), len(same)],
+            'wrong_unique_on_varying': [sum(varying), len(varying)],
+            'correct_grounded_on_dated': [sum(dated), len(dated)]}
 
 
 def verify_freeze():

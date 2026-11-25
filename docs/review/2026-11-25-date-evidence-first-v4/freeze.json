@@ -1,0 +1,42 @@
+{
+  "archive_sha256": "d2615c048c7357b9c1ce88e87d2c309d7ce9a04b7eda231711c171df1209534d",
+  "contract": {
+    "docs/review/2026-11-24-date-source-extraction-v1/public.json": "71f281386de6f2cc1a858e78bb96138f077a9253a23a5b425144994a7147860c",
+    "docs/review/2026-11-24-date-source-extraction-v1/reference.json": "94eaf0f126e656ff30326d1e4cff9efd1fdc237b1e4dd339426ccbe29f4f2df4",
+    "docs/review/2026-11-25-date-evidence-first-v1/dev-reference.json": "09fd0cc851ccf85bf44b748e0d28ca9a083a656717de7f63dc197da6d5d817db",
+    "docs/review/2026-11-25-date-evidence-first-v3/dev-public.json": "71deb4f7b6be93e3e1d62ef7ea6487674cd643057c0f95216d21ae3f8e3b1adb",
+    "docs/review/2026-11-25-date-evidence-first-v4/protocol.md": "e2b7afb0a6f152ea48cd2f4e558845988d8d63cdf618462080895ce94787b73e",
+    "scripts/query_determinacy_date_evidence_first.py": "0ba479351fe6bbef0fd34e5eccd404aa463872a6683887e2c4509578ce176c4f",
+    "scripts/query_determinacy_date_pilot.py": "f86053fb33f500e09dd8e036e785c6ac33417d5f71b68b4e46e2fbd1961138c4",
+    "scripts/query_determinacy_delegation_collect.py": "b0689f5cc650eec595f2e55696fa44dd913a4e7be0d613212efd73542159be32",
+    "scripts/query_determinacy_shared_live.py": "710d511fa90b07aab4c26d70c02d56dd938205f2f37cbae46d3d7c866cde65c3",
+    "scripts/query_determinacy_threshold_versions.py": "12b2b07151be5571174dfa3943adb82d8a35e575a7fc5c297748159421aa3371"
+  },
+  "environment": {
+    "context_tokens": 32768,
+    "eos_token_ids": [
+      151645,
+      151643
+    ],
+    "model": "/large_disk/wf/研究代码/RAG/OpenDecoder/checkpoint/Qwen2.5-3B-Instruct",
+    "model_files_sha256": {
+      "config.json": "eed00b17e22553979d090fa492e587e92885e328914c8e0b0b78f0a0d3576b3b",
+      "generation_config.json": "ea35dfb6fc5051b01114f9b995820d55dab01ed33ee490f6378b442af82c09f9",
+      "model-00001-of-00002.safetensors": "67347b23fb4165b652eb6611f5e1f2a06dfcddba8e909df1b2b0b1857bee06c2",
+      "model-00002-of-00002.safetensors": "a40d941d0e7e0b966ad8b62bb6d6b7c88cce1299197b599d9d0a4ce59aabfc1d",
+      "model.safetensors.index.json": "bc8aaa0c87d4335177e01c765f1de0db81661c67c1a72fbfb0d521b09f5ddc56",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    },
+    "model_reference_sha256": "504b4da5f0c4e51cfdffaa54129e55c0a3b433f37e387d286c21ad65f4d7c1f5",
+    "versions": {
+      "accelerate": "1.10.1",
+      "safetensors": "0.6.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.5.1+cu121",
+      "transformers": "4.56.2"
+    }
+  },
+  "result_sha256": "80ad2157d313e39c7979cc9172ad6f05a2b265763d7c4a58b6f0881c4cc2dc23",
+  "utc": "2026-11-25T02:11:35.720484+00:00"
+}
