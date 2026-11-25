@@ -1,0 +1,475 @@
+{
+  "exposed_holdout_36": {
+    "detail": {
+      "spouse": {
+        "assigned": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E1",
+          "scope": "E3"
+        },
+        "cases": 6,
+        "conflict": false,
+        "correct": true,
+        "reference": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E1",
+          "scope": "E3"
+        },
+        "top": {
+          "rule": "E1",
+          "scope": "E3"
+        }
+      },
+      "spouse_overlap": {
+        "assigned": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E1",
+          "scope": "E3"
+        },
+        "cases": 6,
+        "conflict": true,
+        "correct": true,
+        "reference": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E1",
+          "scope": "E3"
+        },
+        "top": {
+          "rule": "E1",
+          "scope": "E1"
+        }
+      },
+      "spouse_separate": {
+        "assigned": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E1",
+          "scope": "E3"
+        },
+        "cases": 6,
+        "conflict": true,
+        "correct": true,
+        "reference": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E1",
+          "scope": "E3"
+        },
+        "top": {
+          "rule": "E1",
+          "scope": "E1"
+        }
+      },
+      "ssa": {
+        "assigned": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "cases": 6,
+        "conflict": true,
+        "correct": false,
+        "reference": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E4",
+          "scope": "E2"
+        },
+        "top": {
+          "rule": "E4",
+          "scope": "E4"
+        }
+      },
+      "ssa_overlap": {
+        "assigned": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "cases": 6,
+        "conflict": true,
+        "correct": false,
+        "reference": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E4",
+          "scope": "E2"
+        },
+        "top": {
+          "rule": "E4",
+          "scope": "E4"
+        }
+      },
+      "ssa_separate": {
+        "assigned": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E4",
+          "scope": "E2"
+        },
+        "cases": 6,
+        "conflict": true,
+        "correct": true,
+        "reference": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E4",
+          "scope": "E2"
+        },
+        "top": {
+          "rule": "E4",
+          "scope": "E4"
+        }
+      }
+    },
+    "failures": {},
+    "profiles": 6,
+    "stats": {
+      "accepted_cases": 6,
+      "accepted_correct_cases": 6,
+      "conflict_correct": 3,
+      "conflict_wrong": 2,
+      "no_conflict_correct": 1,
+      "withheld_cases": 30
+    }
+  },
+  "permutation_24": {
+    "detail": {
+      "estate_both_order1": {
+        "assigned": {
+          "earlier": "E3",
+          "later": "E1",
+          "rule": "E4",
+          "scope": "E2"
+        },
+        "cases": 6,
+        "conflict": true,
+        "correct": true,
+        "reference": {
+          "earlier": "E3",
+          "later": "E1",
+          "rule": "E4",
+          "scope": "E2"
+        },
+        "top": {
+          "rule": "E4",
+          "scope": "E4"
+        }
+      },
+      "estate_both_order2": {
+        "assigned": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        },
+        "cases": 6,
+        "conflict": true,
+        "correct": true,
+        "reference": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        },
+        "top": {
+          "rule": "E3",
+          "scope": "E3"
+        }
+      },
+      "rule504_both_order1": {
+        "assigned": {
+          "earlier": "E2",
+          "later": "E4",
+          "rule": "E1",
+          "scope": "E3"
+        },
+        "cases": 6,
+        "conflict": true,
+        "correct": true,
+        "reference": {
+          "earlier": "E2",
+          "later": "E4",
+          "rule": "E1",
+          "scope": "E3"
+        },
+        "top": {
+          "rule": "E3",
+          "scope": "E3"
+        }
+      },
+      "rule504_both_order2": {
+        "assigned": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "cases": 6,
+        "conflict": false,
+        "correct": true,
+        "reference": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "top": {
+          "rule": "E2",
+          "scope": "E4"
+        }
+      }
+    },
+    "failures": {},
+    "profiles": 4,
+    "stats": {
+      "accepted_cases": 6,
+      "accepted_correct_cases": 6,
+      "conflict_correct": 3,
+      "no_conflict_correct": 1,
+      "withheld_cases": 18
+    }
+  },
+  "prior_12": {
+    "detail": {
+      "estate_both": {
+        "assigned": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "cases": 6,
+        "conflict": true,
+        "correct": true,
+        "reference": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "top": {
+          "rule": "E2",
+          "scope": "E2"
+        }
+      },
+      "rule504_both": {
+        "assigned": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        },
+        "cases": 6,
+        "conflict": false,
+        "correct": true,
+        "reference": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        },
+        "top": {
+          "rule": "E3",
+          "scope": "E1"
+        }
+      }
+    },
+    "failures": {},
+    "profiles": 2,
+    "stats": {
+      "accepted_cases": 6,
+      "accepted_correct_cases": 6,
+      "conflict_correct": 1,
+      "no_conflict_correct": 1,
+      "withheld_cases": 6
+    }
+  },
+  "prior_48": {
+    "detail": {
+      "estate": {
+        "assigned": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "cases": 6,
+        "conflict": false,
+        "correct": true,
+        "reference": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "top": {
+          "rule": "E2",
+          "scope": "E4"
+        }
+      },
+      "estate_amount": {
+        "assigned": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "cases": 6,
+        "conflict": true,
+        "correct": true,
+        "reference": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "top": {
+          "rule": "E2",
+          "scope": "E2"
+        }
+      },
+      "estate_both": {
+        "assigned": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "cases": 6,
+        "conflict": true,
+        "correct": true,
+        "reference": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "top": {
+          "rule": "E2",
+          "scope": "E2"
+        }
+      },
+      "estate_dates": {
+        "assigned": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "cases": 6,
+        "conflict": false,
+        "correct": true,
+        "reference": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "top": {
+          "rule": "E2",
+          "scope": "E4"
+        }
+      },
+      "rule504": {
+        "assigned": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        },
+        "cases": 6,
+        "conflict": false,
+        "correct": true,
+        "reference": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        },
+        "top": {
+          "rule": "E3",
+          "scope": "E1"
+        }
+      },
+      "rule504_amount": {
+        "assigned": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        },
+        "cases": 6,
+        "conflict": true,
+        "correct": true,
+        "reference": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        },
+        "top": {
+          "rule": "E3",
+          "scope": "E3"
+        }
+      },
+      "rule504_both": {
+        "assigned": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        },
+        "cases": 6,
+        "conflict": false,
+        "correct": true,
+        "reference": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        },
+        "top": {
+          "rule": "E3",
+          "scope": "E1"
+        }
+      },
+      "rule504_dates": {
+        "assigned": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        },
+        "cases": 6,
+        "conflict": false,
+        "correct": true,
+        "reference": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        },
+        "top": {
+          "rule": "E3",
+          "scope": "E1"
+        }
+      }
+    },
+    "failures": {},
+    "profiles": 8,
+    "stats": {
+      "accepted_cases": 30,
+      "accepted_correct_cases": 30,
+      "conflict_correct": 3,
+      "no_conflict_correct": 5,
+      "withheld_cases": 18
+    }
+  }
+}
