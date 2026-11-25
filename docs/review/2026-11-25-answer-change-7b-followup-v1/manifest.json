@@ -1,0 +1,48 @@
+{
+  "code_sha256": "b9feb65dd820b0800b2361ac900123983d56d3a2949aab8c8677a1140ede5db0",
+  "context": 32768,
+  "first_code_sha256": "a8828d7d884354f002db9ef2b8732b9061b32e3b843786d04211dad354453ad4",
+  "first_environment_versions": {
+    "accelerate": "1.10.1",
+    "safetensors": "0.6.2",
+    "tokenizers": "0.22.2",
+    "torch": "2.5.1+cu121",
+    "transformers": "4.56.2"
+  },
+  "first_manifest_sha256": "ae3086044a4519ca0deb3ae41b579dabe356294c97391b1f622d90056ab87886",
+  "first_model_files_sha256": {
+    "config.json": "7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c",
+    "generation_config.json": "3a8f9087e486054c8a4a08dae2e5a3ba62e23da212b5b8c08bc42cb983c3459f",
+    "model-00001-of-00004.safetensors": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7",
+    "model-00002-of-00004.safetensors": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185",
+    "model-00003-of-00004.safetensors": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5",
+    "model-00004-of-00004.safetensors": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd",
+    "model.safetensors.index.json": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+  },
+  "first_seal_sha256": "2d4a48a111903ea7ed90ad594792817af086b2ec179858b623b7708dcb7bb1c5",
+  "input_tokens": {
+    "spouse-D0/by_version/2024-12-31": 847,
+    "spouse-D0/by_version/2025-01-01": 847,
+    "spouse-D0/direct/2024-12-31": 950,
+    "spouse-D0/direct/2025-01-01": 950,
+    "spouse-S0/by_version/2024-12-31": 818,
+    "spouse-S0/by_version/2025-01-01": 818,
+    "spouse-S0/direct/2024-12-31": 776,
+    "spouse-S0/direct/2025-01-01": 776,
+    "ssa-D0/by_version/2024-12-31": 731,
+    "ssa-D0/by_version/2025-01-01": 731,
+    "ssa-D0/direct/2024-12-31": 941,
+    "ssa-D0/direct/2025-01-01": 941,
+    "ssa-S0/by_version/2024-12-31": 772,
+    "ssa-S0/by_version/2025-01-01": 772,
+    "ssa-S0/direct/2024-12-31": 621,
+    "ssa-S0/direct/2025-01-01": 621
+  },
+  "max_new_tokens": 512,
+  "operator": "user",
+  "plan_sha256": "082f30338235cab0516a99738a9def346da691a8614fbed846d44ca3df8f39f9",
+  "purpose": "exposed unsolicited-date stress test",
+  "status": "prepared_not_started"
+}

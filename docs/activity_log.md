@@ -6,6 +6,8 @@
 
 ## 当前交接摘要
 
+- 2026-11-25 准备[7B 主动补日期第二轮](records/2026-11-25-answer-change-followup-ready.md)：首轮未直接追问，16 条独立分支真实 tokenizer 前缀检查和 10 项 CPU 测试通过，等待用户执行 GPU。
+
 - 2026-11-25 用户完成[7B 已暴露材料开发检查](records/2026-11-25-answer-change-7b-results.md)。8 条 EOS 且技术核验通过；赠与直接异答条件结论正确但引文不完整，逐版赠与两题数值比较错误。知情小样本，非独立留出。
 
 - 2026-11-25 完成[7B 已暴露材料开发性接口准备](records/2026-11-25-answer-change-7b-development.md)。四题八次提示、真实 tokenizer 与模型文件哈希复核、六项 CPU 测试通过；用户 GPU 入口已准备，尚未运行。
