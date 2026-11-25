@@ -1,0 +1,122 @@
+[
+  {
+    "case": "ssa-S0",
+    "id": "ssa-S0/direct",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts and facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Do the employee's countable average monthly earnings exceed the applicable nonblind SGA guideline?\n\n[F1] Case facts: The worker is a nonblind employee. The countable earnings already reflect applicable adjustments. The countable average monthly earnings for the month containing the work are $1,621. The only possible work dates are 2024-12-31 and 2025-01-01.\n\nEvidence:\n[E1] For the study window only, coverage from 2024-12-31 through 2024-12-31. The threshold for this version is $1,550.\n[E2] The test is for a nonblind employee and uses countable average monthly earnings. It concerns the earnings guideline alone and assumes the earnings have already been computed with applicable adjustments.\n[E3] For the study window only, coverage from 2025-01-01 through 2025-01-01. The threshold for this version is $1,620.\n[E4] For the month containing the work, the nonblind employee countable earnings indicate substantial gainful activity under this monthly guideline if the countable average monthly amount is more than the guideline applicable for that calendar year.\n\nAuthor-prepared scope statements (derived from [E2]):\n- The worker is a nonblind employee.\n- The countable earnings already reflect applicable adjustments.\n\nIf a unique answer depends on the missing event date, you may either ask for the date or provide complete date-conditional conclusions.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+        "role": "user"
+      }
+    ],
+    "route": "direct"
+  },
+  {
+    "case": "ssa-S0",
+    "id": "ssa-S0/by_version",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts and facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Do the employee's countable average monthly earnings exceed the applicable nonblind SGA guideline?\n\n[F1] Case facts: The worker is a nonblind employee. The countable earnings already reflect applicable adjustments. The countable average monthly earnings for the month containing the work are $1,621. The only possible work dates are 2024-12-31 and 2025-01-01.\n\nEvidence:\n[E1] For the study window only, coverage from 2024-12-31 through 2024-12-31. The threshold for this version is $1,550.\n[E2] The test is for a nonblind employee and uses countable average monthly earnings. It concerns the earnings guideline alone and assumes the earnings have already been computed with applicable adjustments.\n[E3] For the study window only, coverage from 2025-01-01 through 2025-01-01. The threshold for this version is $1,620.\n[E4] For the month containing the work, the nonblind employee countable earnings indicate substantial gainful activity under this monthly guideline if the countable average monthly amount is more than the guideline applicable for that calendar year.\n\nAuthor-prepared scope statements (derived from [E2]):\n- The worker is a nonblind employee.\n- The countable earnings already reflect applicable adjustments.\n\nIf a unique answer depends on the missing event date, you may either ask for the date or provide complete date-conditional conclusions.\n\nFirst state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+        "role": "user"
+      }
+    ],
+    "route": "by_version"
+  },
+  {
+    "case": "ssa-D0",
+    "id": "ssa-D0/direct",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts and facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Do the employee's countable average monthly earnings exceed the applicable nonblind SGA guideline?\n\n[F1] Case facts: The worker is a nonblind employee. The countable earnings already reflect applicable adjustments. The countable average monthly earnings for the month containing the work are $1,620. The only possible work dates are 2024-12-31 and 2025-01-01.\n\nEvidence:\n[E1] For the study window only, coverage from 2024-12-31 through 2024-12-31. The threshold for this version is $1,550.\n[E2] The test is for a nonblind employee and uses countable average monthly earnings. It concerns the earnings guideline alone and assumes the earnings have already been computed with applicable adjustments.\n[E3] For the study window only, coverage from 2025-01-01 through 2025-01-01. The threshold for this version is $1,620.\n[E4] For the month containing the work, the nonblind employee countable earnings indicate substantial gainful activity under this monthly guideline if the countable average monthly amount is more than the guideline applicable for that calendar year.\n\nAuthor-prepared scope statements (derived from [E2]):\n- The worker is a nonblind employee.\n- The countable earnings already reflect applicable adjustments.\n\nIf a unique answer depends on the missing event date, you may either ask for the date or provide complete date-conditional conclusions.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+        "role": "user"
+      }
+    ],
+    "route": "direct"
+  },
+  {
+    "case": "ssa-D0",
+    "id": "ssa-D0/by_version",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts and facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Do the employee's countable average monthly earnings exceed the applicable nonblind SGA guideline?\n\n[F1] Case facts: The worker is a nonblind employee. The countable earnings already reflect applicable adjustments. The countable average monthly earnings for the month containing the work are $1,620. The only possible work dates are 2024-12-31 and 2025-01-01.\n\nEvidence:\n[E1] For the study window only, coverage from 2024-12-31 through 2024-12-31. The threshold for this version is $1,550.\n[E2] The test is for a nonblind employee and uses countable average monthly earnings. It concerns the earnings guideline alone and assumes the earnings have already been computed with applicable adjustments.\n[E3] For the study window only, coverage from 2025-01-01 through 2025-01-01. The threshold for this version is $1,620.\n[E4] For the month containing the work, the nonblind employee countable earnings indicate substantial gainful activity under this monthly guideline if the countable average monthly amount is more than the guideline applicable for that calendar year.\n\nAuthor-prepared scope statements (derived from [E2]):\n- The worker is a nonblind employee.\n- The countable earnings already reflect applicable adjustments.\n\nIf a unique answer depends on the missing event date, you may either ask for the date or provide complete date-conditional conclusions.\n\nFirst state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+        "role": "user"
+      }
+    ],
+    "route": "by_version"
+  },
+  {
+    "case": "spouse-S0",
+    "id": "spouse-S0/direct",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts and facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Is the entire gift within the annual exclusion for gifts to a noncitizen spouse?\n\n[F1] Case facts: The recipient is the donor's spouse and is not a United States citizen. The gift is a present interest. The gift satisfies the other relevant conditions for the spousal exclusion. The donor has no other gifts to this spouse in either calendar year. The value of the gift is $185,000. The only possible gift dates are 2024-12-31 and 2025-01-01.\n\nEvidence:\n[E1] For a present-interest gift to a noncitizen spouse that otherwise qualifies, compare the donor's total gifts to that spouse for the calendar year of the gift with the applicable annual exclusion. The whole amount fits when it is not more than that exclusion.\n[E2] For the study window only, coverage from 2025-01-01 through 2025-01-01. The threshold for this version is $190,000.\n[E3] The donee is the donor's spouse and is not a United States citizen. The gift is a present interest and satisfies the relevant conditions for the spousal exclusion. This question concerns only the annual exclusion for that spouse.\n[E4] For the study window only, coverage from 2024-12-31 through 2024-12-31. The threshold for this version is $185,000.\n\nAuthor-prepared scope statements (derived from [E3]):\n- The recipient is the donor's spouse and is not a United States citizen.\n- The gift is a present interest.\n- The gift satisfies the other relevant conditions for the spousal exclusion.\n\nIf a unique answer depends on the missing event date, you may either ask for the date or provide complete date-conditional conclusions.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+        "role": "user"
+      }
+    ],
+    "route": "direct"
+  },
+  {
+    "case": "spouse-S0",
+    "id": "spouse-S0/by_version",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts and facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Is the entire gift within the annual exclusion for gifts to a noncitizen spouse?\n\n[F1] Case facts: The recipient is the donor's spouse and is not a United States citizen. The gift is a present interest. The gift satisfies the other relevant conditions for the spousal exclusion. The donor has no other gifts to this spouse in either calendar year. The value of the gift is $185,000. The only possible gift dates are 2024-12-31 and 2025-01-01.\n\nEvidence:\n[E1] For a present-interest gift to a noncitizen spouse that otherwise qualifies, compare the donor's total gifts to that spouse for the calendar year of the gift with the applicable annual exclusion. The whole amount fits when it is not more than that exclusion.\n[E2] For the study window only, coverage from 2025-01-01 through 2025-01-01. The threshold for this version is $190,000.\n[E3] The donee is the donor's spouse and is not a United States citizen. The gift is a present interest and satisfies the relevant conditions for the spousal exclusion. This question concerns only the annual exclusion for that spouse.\n[E4] For the study window only, coverage from 2024-12-31 through 2024-12-31. The threshold for this version is $185,000.\n\nAuthor-prepared scope statements (derived from [E3]):\n- The recipient is the donor's spouse and is not a United States citizen.\n- The gift is a present interest.\n- The gift satisfies the other relevant conditions for the spousal exclusion.\n\nIf a unique answer depends on the missing event date, you may either ask for the date or provide complete date-conditional conclusions.\n\nFirst state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+        "role": "user"
+      }
+    ],
+    "route": "by_version"
+  },
+  {
+    "case": "spouse-D0",
+    "id": "spouse-D0/direct",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts and facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Is the entire gift within the annual exclusion for gifts to a noncitizen spouse?\n\n[F1] Case facts: The recipient is the donor's spouse and is not a United States citizen. The gift is a present interest. The gift satisfies the other relevant conditions for the spousal exclusion. The donor has no other gifts to this spouse in either calendar year. The value of the gift is $190,000. The only possible gift dates are 2024-12-31 and 2025-01-01.\n\nEvidence:\n[E1] For a present-interest gift to a noncitizen spouse that otherwise qualifies, compare the donor's total gifts to that spouse for the calendar year of the gift with the applicable annual exclusion. The whole amount fits when it is not more than that exclusion.\n[E2] For the study window only, coverage from 2025-01-01 through 2025-01-01. The threshold for this version is $190,000.\n[E3] The donee is the donor's spouse and is not a United States citizen. The gift is a present interest and satisfies the relevant conditions for the spousal exclusion. This question concerns only the annual exclusion for that spouse.\n[E4] For the study window only, coverage from 2024-12-31 through 2024-12-31. The threshold for this version is $185,000.\n\nAuthor-prepared scope statements (derived from [E3]):\n- The recipient is the donor's spouse and is not a United States citizen.\n- The gift is a present interest.\n- The gift satisfies the other relevant conditions for the spousal exclusion.\n\nIf a unique answer depends on the missing event date, you may either ask for the date or provide complete date-conditional conclusions.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+        "role": "user"
+      }
+    ],
+    "route": "direct"
+  },
+  {
+    "case": "spouse-D0",
+    "id": "spouse-D0/by_version",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts and facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Is the entire gift within the annual exclusion for gifts to a noncitizen spouse?\n\n[F1] Case facts: The recipient is the donor's spouse and is not a United States citizen. The gift is a present interest. The gift satisfies the other relevant conditions for the spousal exclusion. The donor has no other gifts to this spouse in either calendar year. The value of the gift is $190,000. The only possible gift dates are 2024-12-31 and 2025-01-01.\n\nEvidence:\n[E1] For a present-interest gift to a noncitizen spouse that otherwise qualifies, compare the donor's total gifts to that spouse for the calendar year of the gift with the applicable annual exclusion. The whole amount fits when it is not more than that exclusion.\n[E2] For the study window only, coverage from 2025-01-01 through 2025-01-01. The threshold for this version is $190,000.\n[E3] The donee is the donor's spouse and is not a United States citizen. The gift is a present interest and satisfies the relevant conditions for the spousal exclusion. This question concerns only the annual exclusion for that spouse.\n[E4] For the study window only, coverage from 2024-12-31 through 2024-12-31. The threshold for this version is $185,000.\n\nAuthor-prepared scope statements (derived from [E3]):\n- The recipient is the donor's spouse and is not a United States citizen.\n- The gift is a present interest.\n- The gift satisfies the other relevant conditions for the spousal exclusion.\n\nIf a unique answer depends on the missing event date, you may either ask for the date or provide complete date-conditional conclusions.\n\nFirst state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+        "role": "user"
+      }
+    ],
+    "route": "by_version"
+  }
+]
