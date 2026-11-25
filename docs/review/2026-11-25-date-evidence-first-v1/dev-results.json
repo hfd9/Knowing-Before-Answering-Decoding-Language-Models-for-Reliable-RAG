@@ -1,0 +1,977 @@
+{
+  "case_count": 20,
+  "counts": {
+    "action": 0,
+    "branches": 0,
+    "fields": 0,
+    "outcome": 0,
+    "strict": 0
+  },
+  "field_counts": {},
+  "input_tokens": 7547,
+  "locations": {
+    "appraisal": {
+      "earlier": "E2",
+      "later": "E3",
+      "rule": "E1",
+      "scope": "E1"
+    },
+    "general": {
+      "earlier": "E2",
+      "later": "E3",
+      "rule": "E1",
+      "scope": "E1"
+    }
+  },
+  "model_choices": 30,
+  "passes": false,
+  "picks": {
+    "A1/scope": "yes",
+    "A2/scope": "yes",
+    "A3/scope": "unknown",
+    "AB1E/scope": "yes",
+    "AB1H/scope": "yes",
+    "AB1L/scope": "yes",
+    "AB2E/scope": "yes",
+    "AB2H/scope": "yes",
+    "AB2L/scope": "yes",
+    "G1/scope": "unknown",
+    "G2/scope": "unknown",
+    "G3/scope": "no",
+    "GB1E/scope": "yes",
+    "GB1H/scope": "yes",
+    "GB1L/scope": "yes",
+    "GB2E/scope": "unknown",
+    "GB2H/scope": "yes",
+    "GB2L/scope": "yes",
+    "GS0/scope": "unknown",
+    "GSU/scope": "unknown",
+    "appraisal/comparison": "<=",
+    "general/comparison": ">"
+  },
+  "rows": {
+    "A1": {
+      "category": "original",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "A2": {
+      "category": "original",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": "consummation",
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "A3": {
+      "category": "original",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "AB1E": {
+      "category": "boundary",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "AB1H": {
+      "category": "boundary",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": "consummation",
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "AB1L": {
+      "category": "boundary",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "AB2E": {
+      "category": "boundary",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": "consummation",
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "AB2H": {
+      "category": "boundary",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "AB2L": {
+      "category": "boundary",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": "consummation",
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "G1": {
+      "category": "original",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "G2": {
+      "category": "original",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": "consummation",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "G3": {
+      "category": "original",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "GB1E": {
+      "category": "boundary",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "GB1H": {
+      "category": "boundary",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": "consummation",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "GB1L": {
+      "category": "boundary",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "GB2E": {
+      "category": "boundary",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": "consummation",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "GB2H": {
+      "category": "boundary",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "GB2L": {
+      "category": "boundary",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": "consummation",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "GS0": {
+      "category": "scope_control",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "rule_outside_scope",
+        "tag": "UNRESOLVED"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    },
+    "GSU": {
+      "category": "scope_control",
+      "checks": {
+        "action": false,
+        "branches": false,
+        "fields": false,
+        "outcome": false,
+        "strict": false
+      },
+      "error": "unresolved or non-distinct evidence roles",
+      "expected": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "scope_not_established",
+        "tag": "UNRESOLVED"
+      },
+      "field_checks": {
+        "amount": false,
+        "date": false,
+        "fact_evidence": false,
+        "range": false,
+        "rule": false,
+        "scope": false,
+        "scope_evidence": false,
+        "versions": false
+      },
+      "fields": null,
+      "outcome": null
+    }
+  },
+  "seal_sha256": "d473a27ab5c0683177c8aeb5d40c4bf2256939c0c86f749853b670aa29325c2e",
+  "seconds": 62.63,
+  "split": "dev"
+}
