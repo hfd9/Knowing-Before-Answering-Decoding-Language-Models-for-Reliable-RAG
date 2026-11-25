@@ -1,0 +1,962 @@
+{
+  "cases": {
+    "estate_both_order1-D0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 13990000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "death",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "estate_both_order1-D1": {
+      "category": "dated",
+      "fields": {
+        "amount": 13990000,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "estate_both_order1-D2": {
+      "category": "dated",
+      "fields": {
+        "amount": 13990000,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            false,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "estate_both_order1-S0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 13990001,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "estate_both_order1-S1": {
+      "category": "dated",
+      "fields": {
+        "amount": 13990001,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "estate_both_order1-S2": {
+      "category": "dated",
+      "fields": {
+        "amount": 13990001,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "estate_both_order2-D0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 13990000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E1",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "death",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "estate_both_order2-D1": {
+      "category": "dated",
+      "fields": {
+        "amount": 13990000,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E1",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "estate_both_order2-D2": {
+      "category": "dated",
+      "fields": {
+        "amount": 13990000,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E1",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            false,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "estate_both_order2-S0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 13990001,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E1",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "estate_both_order2-S1": {
+      "category": "dated",
+      "fields": {
+        "amount": 13990001,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E1",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "estate_both_order2-S2": {
+      "category": "dated",
+      "fields": {
+        "amount": 13990001,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E1",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "rule504_both_order1-D0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 10000000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "sale",
+        "branches": [
+          [
+            "2021-03-14",
+            false,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ],
+          [
+            "2021-03-15",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "rule504_both_order1-D1": {
+      "category": "dated",
+      "fields": {
+        "amount": 10000000,
+        "date": "2021-03-14",
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2021-03-14",
+            false,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "rule504_both_order1-D2": {
+      "category": "dated",
+      "fields": {
+        "amount": 10000000,
+        "date": "2021-03-15",
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2021-03-15",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "rule504_both_order1-S0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 5000000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2021-03-14",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ],
+          [
+            "2021-03-15",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "rule504_both_order1-S1": {
+      "category": "dated",
+      "fields": {
+        "amount": 5000000,
+        "date": "2021-03-14",
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2021-03-14",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "rule504_both_order1-S2": {
+      "category": "dated",
+      "fields": {
+        "amount": 5000000,
+        "date": "2021-03-15",
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2021-03-15",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "rule504_both_order2-D0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 10000000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E4",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "sale",
+        "branches": [
+          [
+            "2021-03-14",
+            false,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2021-03-15",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "rule504_both_order2-D1": {
+      "category": "dated",
+      "fields": {
+        "amount": 10000000,
+        "date": "2021-03-14",
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E4",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2021-03-14",
+            false,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "rule504_both_order2-D2": {
+      "category": "dated",
+      "fields": {
+        "amount": 10000000,
+        "date": "2021-03-15",
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E4",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2021-03-15",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "rule504_both_order2-S0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 5000000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E4",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2021-03-14",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2021-03-15",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "rule504_both_order2-S1": {
+      "category": "dated",
+      "fields": {
+        "amount": 5000000,
+        "date": "2021-03-14",
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E4",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2021-03-14",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "rule504_both_order2-S2": {
+      "category": "dated",
+      "fields": {
+        "amount": 5000000,
+        "date": "2021-03-15",
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E4",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2021-03-15",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    }
+  },
+  "profiles": {
+    "estate_both_order1": {
+      "rule": [
+        ">",
+        "death",
+        "E4"
+      ],
+      "versions": [
+        [
+          "2024-12-31",
+          "2024-12-31",
+          13610000,
+          "E3"
+        ],
+        [
+          "2025-01-01",
+          "2025-01-01",
+          13990000,
+          "E1"
+        ]
+      ]
+    },
+    "estate_both_order2": {
+      "rule": [
+        ">",
+        "death",
+        "E3"
+      ],
+      "versions": [
+        [
+          "2024-12-31",
+          "2024-12-31",
+          13610000,
+          "E4"
+        ],
+        [
+          "2025-01-01",
+          "2025-01-01",
+          13990000,
+          "E2"
+        ]
+      ]
+    },
+    "rule504_both_order1": {
+      "rule": [
+        "<=",
+        "sale",
+        "E1"
+      ],
+      "versions": [
+        [
+          "2021-03-14",
+          "2021-03-14",
+          5000000,
+          "E2"
+        ],
+        [
+          "2021-03-15",
+          "2021-03-15",
+          10000000,
+          "E4"
+        ]
+      ]
+    },
+    "rule504_both_order2": {
+      "rule": [
+        "<=",
+        "sale",
+        "E2"
+      ],
+      "versions": [
+        [
+          "2021-03-14",
+          "2021-03-14",
+          5000000,
+          "E1"
+        ],
+        [
+          "2021-03-15",
+          "2021-03-15",
+          10000000,
+          "E3"
+        ]
+      ]
+    }
+  }
+}

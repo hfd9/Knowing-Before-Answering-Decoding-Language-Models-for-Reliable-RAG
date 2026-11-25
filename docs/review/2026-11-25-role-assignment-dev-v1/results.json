@@ -1,0 +1,2579 @@
+{
+  "candidate_sha256": "795f396034d3fbe41efd6a9b577b2355e16abc4c9f2052baa7fd33f502f63f54",
+  "controls": {
+    "label_reassignment": "passed",
+    "missing_versions": "passed",
+    "overlapping_versions": "passed",
+    "score_tie": "passed",
+    "three_disjoint_candidates": {
+      "earlier": "E1",
+      "later": "E3",
+      "rule": "E2",
+      "scope": "E4"
+    }
+  },
+  "results": {
+    "ambiguous": {
+      "cases": 12,
+      "locations": {
+        "estate_both": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "rule504_both": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        }
+      },
+      "rows": {
+        "estate_both-D0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": "death",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ASK_DATE"
+          }
+        },
+        "estate_both-D1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate_both-D2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_N"
+          }
+        },
+        "estate_both-S0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate_both-S1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate_both-S2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504_both-D0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": "sale",
+            "branches": [
+              [
+                "2021-03-14",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ASK_DATE"
+          }
+        },
+        "rule504_both-D1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-14",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_N"
+          }
+        },
+        "rule504_both-D2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504_both-S0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-14",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504_both-S1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-14",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504_both-S2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        }
+      },
+      "saved_choices_reused": 17,
+      "strict": 12
+    },
+    "original": {
+      "cases": 48,
+      "locations": {
+        "estate": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "estate_amount": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "estate_both": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "estate_dates": {
+          "earlier": "E1",
+          "later": "E3",
+          "rule": "E2",
+          "scope": "E4"
+        },
+        "rule504": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        },
+        "rule504_amount": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        },
+        "rule504_both": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        },
+        "rule504_dates": {
+          "earlier": "E4",
+          "later": "E2",
+          "rule": "E3",
+          "scope": "E1"
+        }
+      },
+      "rows": {
+        "estate-D0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": "death",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ASK_DATE"
+          }
+        },
+        "estate-D1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate-D2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_N"
+          }
+        },
+        "estate-S0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate-S1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate-S2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate_amount-D0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": "death",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ASK_DATE"
+          }
+        },
+        "estate_amount-D1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate_amount-D2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_N"
+          }
+        },
+        "estate_amount-S0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate_amount-S1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate_amount-S2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate_both-D0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": "death",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ASK_DATE"
+          }
+        },
+        "estate_both-D1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate_both-D2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_N"
+          }
+        },
+        "estate_both-S0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate_both-S1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate_both-S2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate_dates-D0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": "death",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ASK_DATE"
+          }
+        },
+        "estate_dates-D1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate_dates-D2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_N"
+          }
+        },
+        "estate_dates-S0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate_dates-S1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "estate_dates-S2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E2",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504-D0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": "sale",
+            "branches": [
+              [
+                "2021-03-14",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ASK_DATE"
+          }
+        },
+        "rule504-D1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-14",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_N"
+          }
+        },
+        "rule504-D2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504-S0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-14",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504-S1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-14",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504-S2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504_amount-D0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": "sale",
+            "branches": [
+              [
+                "2021-03-14",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ASK_DATE"
+          }
+        },
+        "rule504_amount-D1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-14",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_N"
+          }
+        },
+        "rule504_amount-D2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504_amount-S0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-14",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504_amount-S1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-14",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504_amount-S2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504_both-D0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": "sale",
+            "branches": [
+              [
+                "2021-03-14",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ASK_DATE"
+          }
+        },
+        "rule504_both-D1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-14",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_N"
+          }
+        },
+        "rule504_both-D2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504_both-S0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-14",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504_both-S1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-14",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504_both-S2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504_dates-D0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": "sale",
+            "branches": [
+              [
+                "2021-03-14",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ASK_DATE"
+          }
+        },
+        "rule504_dates-D1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-14",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_N"
+          }
+        },
+        "rule504_dates-D2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504_dates-S0": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-14",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504_dates-S1": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-14",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        },
+        "rule504_dates-S2": {
+          "checks": {
+            "action": true,
+            "branches": true,
+            "fields": true,
+            "outcome": true,
+            "strict": true
+          },
+          "field_checks": {
+            "amount": true,
+            "comparison": true,
+            "date": true,
+            "event": true,
+            "fact_evidence": true,
+            "range": true,
+            "rule": true,
+            "rule_id": true,
+            "scope": true,
+            "scope_evidence": true,
+            "versions": true
+          },
+          "outcome": {
+            "ask_event": null,
+            "branches": [
+              [
+                "2021-03-15",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E3",
+                  "F1"
+                ]
+              ]
+            ],
+            "tag": "ANSWER_Y"
+          }
+        }
+      },
+      "saved_choices_reused": 68,
+      "strict": 48
+    }
+  },
+  "source_sha256": {
+    "ambiguous": "20b10f370116a1aad73d9f5fbea60278252e320699de1bc4f22114fd97373a78",
+    "original": "80fb2c65c8177a81c6491d97f0308a635ad311d105dcb1704b0c507e00a1afd9"
+  }
+}
