@@ -1,0 +1,1173 @@
+{
+  "by_profile": {
+    "spouse": {
+      "action": 6,
+      "by_category": {
+        "dated": [
+          4,
+          4
+        ],
+        "same_missing": [
+          1,
+          1
+        ],
+        "varying_missing": [
+          1,
+          1
+        ]
+      },
+      "cases": 6,
+      "dated_grounded": [
+        4,
+        4
+      ],
+      "dates": {
+        "conclusion": 8,
+        "evidence": 8,
+        "joint": 8,
+        "total": 8
+      },
+      "scope_wrong_unique": [
+        0,
+        0
+      ],
+      "strict": 6,
+      "unnecessary_ask_on_same": [
+        0,
+        1
+      ],
+      "wrong_unique_on_varying": [
+        0,
+        1
+      ]
+    },
+    "spouse_overlap": {
+      "action": 0,
+      "by_category": {
+        "dated": [
+          0,
+          4
+        ],
+        "same_missing": [
+          0,
+          1
+        ],
+        "varying_missing": [
+          0,
+          1
+        ]
+      },
+      "cases": 6,
+      "dated_grounded": [
+        0,
+        4
+      ],
+      "dates": {
+        "conclusion": 0,
+        "evidence": 0,
+        "joint": 0,
+        "total": 8
+      },
+      "scope_wrong_unique": [
+        0,
+        0
+      ],
+      "strict": 0,
+      "unnecessary_ask_on_same": [
+        0,
+        1
+      ],
+      "wrong_unique_on_varying": [
+        0,
+        1
+      ]
+    },
+    "spouse_separate": {
+      "action": 0,
+      "by_category": {
+        "dated": [
+          0,
+          4
+        ],
+        "same_missing": [
+          0,
+          1
+        ],
+        "varying_missing": [
+          0,
+          1
+        ]
+      },
+      "cases": 6,
+      "dated_grounded": [
+        0,
+        4
+      ],
+      "dates": {
+        "conclusion": 0,
+        "evidence": 0,
+        "joint": 0,
+        "total": 8
+      },
+      "scope_wrong_unique": [
+        0,
+        0
+      ],
+      "strict": 0,
+      "unnecessary_ask_on_same": [
+        0,
+        1
+      ],
+      "wrong_unique_on_varying": [
+        0,
+        1
+      ]
+    },
+    "ssa": {
+      "action": 0,
+      "by_category": {
+        "dated": [
+          0,
+          4
+        ],
+        "same_missing": [
+          0,
+          1
+        ],
+        "varying_missing": [
+          0,
+          1
+        ]
+      },
+      "cases": 6,
+      "dated_grounded": [
+        0,
+        4
+      ],
+      "dates": {
+        "conclusion": 0,
+        "evidence": 0,
+        "joint": 0,
+        "total": 8
+      },
+      "scope_wrong_unique": [
+        0,
+        0
+      ],
+      "strict": 0,
+      "unnecessary_ask_on_same": [
+        0,
+        1
+      ],
+      "wrong_unique_on_varying": [
+        0,
+        1
+      ]
+    },
+    "ssa_overlap": {
+      "action": 0,
+      "by_category": {
+        "dated": [
+          0,
+          4
+        ],
+        "same_missing": [
+          0,
+          1
+        ],
+        "varying_missing": [
+          0,
+          1
+        ]
+      },
+      "cases": 6,
+      "dated_grounded": [
+        0,
+        4
+      ],
+      "dates": {
+        "conclusion": 0,
+        "evidence": 0,
+        "joint": 0,
+        "total": 8
+      },
+      "scope_wrong_unique": [
+        0,
+        0
+      ],
+      "strict": 0,
+      "unnecessary_ask_on_same": [
+        0,
+        1
+      ],
+      "wrong_unique_on_varying": [
+        0,
+        1
+      ]
+    },
+    "ssa_separate": {
+      "action": 0,
+      "by_category": {
+        "dated": [
+          0,
+          4
+        ],
+        "same_missing": [
+          0,
+          1
+        ],
+        "varying_missing": [
+          0,
+          1
+        ]
+      },
+      "cases": 6,
+      "dated_grounded": [
+        0,
+        4
+      ],
+      "dates": {
+        "conclusion": 0,
+        "evidence": 0,
+        "joint": 0,
+        "total": 8
+      },
+      "scope_wrong_unique": [
+        0,
+        0
+      ],
+      "strict": 0,
+      "unnecessary_ask_on_same": [
+        0,
+        1
+      ],
+      "wrong_unique_on_varying": [
+        0,
+        1
+      ]
+    }
+  },
+  "cases": {
+    "spouse-D0": {
+      "category": "varying_missing",
+      "checks": {
+        "action": true,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": true,
+            "evidence": true
+          },
+          "2025-01-01": {
+            "conclusion": true,
+            "evidence": true
+          }
+        },
+        "strict": true
+      },
+      "outcome": {
+        "ask_event": "gift",
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      },
+      "profile": "spouse",
+      "tag": "ASK_DATE"
+    },
+    "spouse-D1": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": true,
+            "evidence": true
+          }
+        },
+        "strict": true
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      },
+      "profile": "spouse",
+      "tag": "ANSWER_N"
+    },
+    "spouse-D2": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "dates": {
+          "2025-01-01": {
+            "conclusion": true,
+            "evidence": true
+          }
+        },
+        "strict": true
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "profile": "spouse",
+      "tag": "ANSWER_Y"
+    },
+    "spouse-S0": {
+      "category": "same_missing",
+      "checks": {
+        "action": true,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": true,
+            "evidence": true
+          },
+          "2025-01-01": {
+            "conclusion": true,
+            "evidence": true
+          }
+        },
+        "strict": true
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "profile": "spouse",
+      "tag": "ANSWER_Y"
+    },
+    "spouse-S1": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": true,
+            "evidence": true
+          }
+        },
+        "strict": true
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "profile": "spouse",
+      "tag": "ANSWER_Y"
+    },
+    "spouse-S2": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "dates": {
+          "2025-01-01": {
+            "conclusion": true,
+            "evidence": true
+          }
+        },
+        "strict": true
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "profile": "spouse",
+      "tag": "ANSWER_Y"
+    },
+    "spouse_overlap-D0": {
+      "category": "varying_missing",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          },
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "spouse_overlap",
+      "tag": "UNRESOLVED"
+    },
+    "spouse_overlap-D1": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "spouse_overlap",
+      "tag": "UNRESOLVED"
+    },
+    "spouse_overlap-D2": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "spouse_overlap",
+      "tag": "UNRESOLVED"
+    },
+    "spouse_overlap-S0": {
+      "category": "same_missing",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          },
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "spouse_overlap",
+      "tag": "UNRESOLVED"
+    },
+    "spouse_overlap-S1": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "spouse_overlap",
+      "tag": "UNRESOLVED"
+    },
+    "spouse_overlap-S2": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "spouse_overlap",
+      "tag": "UNRESOLVED"
+    },
+    "spouse_separate-D0": {
+      "category": "varying_missing",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          },
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "spouse_separate",
+      "tag": "UNRESOLVED"
+    },
+    "spouse_separate-D1": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "spouse_separate",
+      "tag": "UNRESOLVED"
+    },
+    "spouse_separate-D2": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "spouse_separate",
+      "tag": "UNRESOLVED"
+    },
+    "spouse_separate-S0": {
+      "category": "same_missing",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          },
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "spouse_separate",
+      "tag": "UNRESOLVED"
+    },
+    "spouse_separate-S1": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "spouse_separate",
+      "tag": "UNRESOLVED"
+    },
+    "spouse_separate-S2": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "spouse_separate",
+      "tag": "UNRESOLVED"
+    },
+    "ssa-D0": {
+      "category": "varying_missing",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          },
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": null,
+      "profile": "ssa",
+      "tag": null
+    },
+    "ssa-D1": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": null,
+      "profile": "ssa",
+      "tag": null
+    },
+    "ssa-D2": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": null,
+      "profile": "ssa",
+      "tag": null
+    },
+    "ssa-S0": {
+      "category": "same_missing",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          },
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": null,
+      "profile": "ssa",
+      "tag": null
+    },
+    "ssa-S1": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": null,
+      "profile": "ssa",
+      "tag": null
+    },
+    "ssa-S2": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": null,
+      "profile": "ssa",
+      "tag": null
+    },
+    "ssa_overlap-D0": {
+      "category": "varying_missing",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          },
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "ssa_overlap",
+      "tag": "UNRESOLVED"
+    },
+    "ssa_overlap-D1": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "ssa_overlap",
+      "tag": "UNRESOLVED"
+    },
+    "ssa_overlap-D2": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "ssa_overlap",
+      "tag": "UNRESOLVED"
+    },
+    "ssa_overlap-S0": {
+      "category": "same_missing",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          },
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "ssa_overlap",
+      "tag": "UNRESOLVED"
+    },
+    "ssa_overlap-S1": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "ssa_overlap",
+      "tag": "UNRESOLVED"
+    },
+    "ssa_overlap-S2": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "ssa_overlap",
+      "tag": "UNRESOLVED"
+    },
+    "ssa_separate-D0": {
+      "category": "varying_missing",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          },
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "ssa_separate",
+      "tag": "UNRESOLVED"
+    },
+    "ssa_separate-D1": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "ssa_separate",
+      "tag": "UNRESOLVED"
+    },
+    "ssa_separate-D2": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "ssa_separate",
+      "tag": "UNRESOLVED"
+    },
+    "ssa_separate-S0": {
+      "category": "same_missing",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          },
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "ssa_separate",
+      "tag": "UNRESOLVED"
+    },
+    "ssa_separate-S1": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2024-12-31": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "ssa_separate",
+      "tag": "UNRESOLVED"
+    },
+    "ssa_separate-S2": {
+      "category": "dated",
+      "checks": {
+        "action": false,
+        "dates": {
+          "2025-01-01": {
+            "conclusion": false,
+            "evidence": false
+          }
+        },
+        "strict": false
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "version_shape_ambiguous",
+        "tag": "UNRESOLVED"
+      },
+      "profile": "ssa_separate",
+      "tag": "UNRESOLVED"
+    }
+  },
+  "failures": {
+    "spouse_overlap": "version shape ambiguous",
+    "spouse_separate": "version shape ambiguous",
+    "ssa_overlap": "version shape ambiguous",
+    "ssa_separate": "version shape ambiguous"
+  },
+  "locations": {
+    "spouse": {
+      "earlier": "E4",
+      "later": "E2",
+      "rule": "E1",
+      "scope": "E3"
+    },
+    "ssa": {
+      "earlier": "E1",
+      "later": "E3",
+      "rule": "E2",
+      "scope": "E4"
+    }
+  },
+  "main_archive_sha256": "6d43364019cefce12cbd7510f3bff1161cba119aa45c8d490fe7589961f75aba",
+  "reused_choices": 11,
+  "sources": {
+    "docs/review/2026-11-25-role-assignment-holdout-v1/compare.py": "767bc8c504ad98d45c939e0deeb605e4f0bba9a4ef6ba48d9cde7ba28e5e6b66",
+    "scripts/query_determinacy_typed_holdout.py": "8e0d8612616414a969e0551a1319c638771e7e91fe95722a9a7edb1f0e161b31"
+  },
+  "summary": {
+    "action": 6,
+    "by_category": {
+      "dated": [
+        4,
+        24
+      ],
+      "same_missing": [
+        1,
+        6
+      ],
+      "varying_missing": [
+        1,
+        6
+      ]
+    },
+    "cases": 36,
+    "dated_grounded": [
+      4,
+      24
+    ],
+    "dates": {
+      "conclusion": 8,
+      "evidence": 8,
+      "joint": 8,
+      "total": 48
+    },
+    "scope_wrong_unique": [
+      0,
+      0
+    ],
+    "strict": 6,
+    "unnecessary_ask_on_same": [
+      0,
+      6
+    ],
+    "wrong_unique_on_varying": [
+      0,
+      6
+    ]
+  }
+}

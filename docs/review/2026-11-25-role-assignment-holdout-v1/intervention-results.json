@@ -1,0 +1,3547 @@
+{
+  "actual": {
+    "spouse": {
+      "earlier": "E4",
+      "later": "E2",
+      "rule": "E1",
+      "scope": "E3"
+    },
+    "spouse_overlap": {
+      "earlier": "E4",
+      "later": "E2",
+      "rule": "E1",
+      "scope": "E3"
+    },
+    "spouse_separate": {
+      "earlier": "E4",
+      "later": "E2",
+      "rule": "E1",
+      "scope": "E3"
+    },
+    "ssa": {
+      "earlier": "E1",
+      "later": "E3",
+      "rule": "E2",
+      "scope": "E4"
+    },
+    "ssa_overlap": {
+      "earlier": "E1",
+      "later": "E3",
+      "rule": "E2",
+      "scope": "E4"
+    },
+    "ssa_separate": {
+      "earlier": "E1",
+      "later": "E3",
+      "rule": "E4",
+      "scope": "E2"
+    }
+  },
+  "cases": 36,
+  "input_tokens": 2290,
+  "new_choices": 14,
+  "repaired": {
+    "spouse": {
+      "earlier": "E4",
+      "later": "E2",
+      "rule": "E1",
+      "scope": "E3"
+    },
+    "spouse_overlap": {
+      "earlier": "E4",
+      "later": "E2",
+      "rule": "E1",
+      "scope": "E3"
+    },
+    "spouse_separate": {
+      "earlier": "E4",
+      "later": "E2",
+      "rule": "E1",
+      "scope": "E3"
+    },
+    "ssa": {
+      "earlier": "E1",
+      "later": "E3",
+      "rule": "E4",
+      "scope": "E2"
+    },
+    "ssa_overlap": {
+      "earlier": "E1",
+      "later": "E3",
+      "rule": "E4",
+      "scope": "E2"
+    },
+    "ssa_separate": {
+      "earlier": "E1",
+      "later": "E3",
+      "rule": "E4",
+      "scope": "E2"
+    }
+  },
+  "reused_choices": 37,
+  "rows": {
+    "spouse-D0": {
+      "category": "varying_missing",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": "gift",
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 190000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": "gift",
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "spouse-D1": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 190000,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "spouse-D2": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 190000,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse-S0": {
+      "category": "same_missing",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 185000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse-S1": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 185000,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse-S2": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 185000,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse_overlap-D0": {
+      "category": "varying_missing",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": "gift",
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 190000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": "gift",
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "spouse_overlap-D1": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 190000,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "spouse_overlap-D2": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 190000,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse_overlap-S0": {
+      "category": "same_missing",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 185000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse_overlap-S1": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 185000,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse_overlap-S2": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 185000,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse_separate-D0": {
+      "category": "varying_missing",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": "gift",
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 190000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": "gift",
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "spouse_separate-D1": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 190000,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "spouse_separate-D2": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 190000,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse_separate-S0": {
+      "category": "same_missing",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 185000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse_separate-S1": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 185000,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse_separate-S2": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 185000,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          "<=",
+          "gift",
+          "E1"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            185000,
+            "E4"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            190000,
+            "E2"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa-D0": {
+      "category": "varying_missing",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": "work",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1620,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": "work",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "ssa-D1": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1620,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa-D2": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1620,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "ssa-S0": {
+      "category": "same_missing",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1621,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa-S1": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1621,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa-S2": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1621,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa_overlap-D0": {
+      "category": "varying_missing",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": "work",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1620,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": "work",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "ssa_overlap-D1": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1620,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa_overlap-D2": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1620,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "ssa_overlap-S0": {
+      "category": "same_missing",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1621,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa_overlap-S1": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1621,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa_overlap-S2": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1621,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa_separate-D0": {
+      "category": "varying_missing",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": "work",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1620,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": "work",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "ssa_separate-D1": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1620,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa_separate-D2": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1620,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "ssa_separate-S0": {
+      "category": "same_missing",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1621,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa_separate-S1": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1621,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa_separate-S2": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 1621,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "rule": [
+          ">",
+          "work",
+          "E4"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2024-12-31",
+            "2024-12-31",
+            1550,
+            "E1"
+          ],
+          [
+            "2025-01-01",
+            "2025-01-01",
+            1620,
+            "E3"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    }
+  },
+  "scope_conditions": {
+    "scope/spouse-S0/0": "yes",
+    "scope/spouse-S0/1": "yes",
+    "scope/spouse-S0/2": "yes",
+    "scope/spouse_overlap-S0/0": "yes",
+    "scope/spouse_overlap-S0/1": "yes",
+    "scope/spouse_overlap-S0/2": "yes",
+    "scope/spouse_separate-S0/0": "yes",
+    "scope/spouse_separate-S0/1": "yes",
+    "scope/spouse_separate-S0/2": "yes",
+    "scope/ssa-S0/0": "yes",
+    "scope/ssa-S0/1": "yes",
+    "scope/ssa_overlap-S0/0": "yes",
+    "scope/ssa_overlap-S0/1": "yes",
+    "scope/ssa_separate-S0/0": "yes",
+    "scope/ssa_separate-S0/1": "yes"
+  },
+  "seconds": 83.1,
+  "strict": 36
+}

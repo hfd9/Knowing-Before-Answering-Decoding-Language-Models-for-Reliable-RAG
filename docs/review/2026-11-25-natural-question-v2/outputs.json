@@ -1,0 +1,33 @@
+{
+  "records": [
+    {
+      "case": "original",
+      "generated_tokens": 33,
+      "output": "{\n  \"action\": \"ASK\",\n  \"branches\": [[\"2023-10-01\", null, [\"E1\"]]]\n}",
+      "output_sha256": "43abcbce7cd63c5065fb13de272f44ada3e0b0d0c72d919ac0b00aca4aabd9a5",
+      "status": "complete"
+    },
+    {
+      "case": "old",
+      "generated_tokens": 33,
+      "output": "[\"2024-12-30\", \"ASK\", [\"E1\", \"E2\", \"E3\", \"F1\"]]]",
+      "output_sha256": "2f0676b8e18f2c033c96da4fa193a526d41846aa7439913d065aeab7926e77ec",
+      "status": "complete"
+    },
+    {
+      "case": "new",
+      "generated_tokens": 33,
+      "output": "[\"2024-12-30\", \"ASK\", [\"E1\", \"E2\", \"E3\", \"F1\"]>]",
+      "output_sha256": "2c2093ebf378fbd02f33ccfa6705d2f5e340a9334f9644ab6eadb918ac465c75",
+      "status": "complete"
+    },
+    {
+      "case": "missing",
+      "generated_tokens": 67,
+      "output": "[\"2024-12-30\", \"ASK\", [\"E1\", \"E2\", \"E3\", \"F1\", \"치과의원 또는 한의원에 대한 2024-12-30 이전의 규정 내용을 확인할 필요가 있다.\"]]",
+      "output_sha256": "92da229ead89f4e473d9ae74f741caa2e29e1782127a1e7b98504affa8f75a45",
+      "status": "complete"
+    }
+  ],
+  "seconds": 65.60130739305168
+}
