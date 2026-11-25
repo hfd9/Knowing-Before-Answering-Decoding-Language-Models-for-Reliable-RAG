@@ -1,0 +1,245 @@
+{
+  "cases": {
+    "HD0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 400000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2019-10-08",
+          "2019-10-09"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "transaction",
+        "branches": [
+          [
+            "2019-10-08",
+            false,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ],
+          [
+            "2019-10-09",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "HD1": {
+      "category": "dated",
+      "fields": {
+        "amount": 400000,
+        "date": "2019-10-08",
+        "fact_evidence": "F1",
+        "range": [
+          "2019-10-08",
+          "2019-10-09"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2019-10-08",
+            false,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "HD2": {
+      "category": "dated",
+      "fields": {
+        "amount": 400000,
+        "date": "2019-10-09",
+        "fact_evidence": "F1",
+        "range": [
+          "2019-10-08",
+          "2019-10-09"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2019-10-09",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "HS0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 250000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2019-10-08",
+          "2019-10-09"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2019-10-08",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ],
+          [
+            "2019-10-09",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "HS1": {
+      "category": "dated",
+      "fields": {
+        "amount": 250000,
+        "date": "2019-10-08",
+        "fact_evidence": "F1",
+        "range": [
+          "2019-10-08",
+          "2019-10-09"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2019-10-08",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "HS2": {
+      "category": "dated",
+      "fields": {
+        "amount": 250000,
+        "date": "2019-10-09",
+        "fact_evidence": "F1",
+        "range": [
+          "2019-10-08",
+          "2019-10-09"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2019-10-09",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    }
+  },
+  "profiles": {
+    "occ_residential_appraisal": {
+      "rule": [
+        "<=",
+        "transaction",
+        "E3"
+      ],
+      "versions": [
+        [
+          "2019-10-08",
+          "2019-10-08",
+          250000,
+          "E1"
+        ],
+        [
+          "2019-10-09",
+          "2019-10-09",
+          400000,
+          "E4"
+        ]
+      ]
+    }
+  }
+}

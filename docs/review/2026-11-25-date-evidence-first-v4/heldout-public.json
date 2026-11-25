@@ -1,0 +1,58 @@
+{
+  "cases": [
+    {
+      "facts": "An OCC-regulated lender makes a new mortgage loan secured by one residential property with one to four units. The entire loan principal is $250,000. The only possible transaction dates are October 8, 2019 and October 9, 2019.",
+      "id": "HS0",
+      "profile": "occ_residential_appraisal"
+    },
+    {
+      "facts": "An OCC-regulated lender makes a new mortgage loan secured by one residential property with one to four units. The entire loan principal is $250,000. The only possible transaction dates are October 8, 2019 and October 9, 2019. The transaction took place on October 8, 2019.",
+      "id": "HS1",
+      "profile": "occ_residential_appraisal"
+    },
+    {
+      "facts": "An OCC-regulated lender makes a new mortgage loan secured by one residential property with one to four units. The entire loan principal is $250,000. The only possible transaction dates are October 8, 2019 and October 9, 2019. The transaction took place on October 9, 2019.",
+      "id": "HS2",
+      "profile": "occ_residential_appraisal"
+    },
+    {
+      "facts": "An OCC-regulated lender makes a new mortgage loan secured by one residential property with one to four units. The entire loan principal is $400,000. The only possible transaction dates are October 8, 2019 and October 9, 2019.",
+      "id": "HD0",
+      "profile": "occ_residential_appraisal"
+    },
+    {
+      "facts": "An OCC-regulated lender makes a new mortgage loan secured by one residential property with one to four units. The entire loan principal is $400,000. The only possible transaction dates are October 8, 2019 and October 9, 2019. The transaction took place on October 8, 2019.",
+      "id": "HD1",
+      "profile": "occ_residential_appraisal"
+    },
+    {
+      "facts": "An OCC-regulated lender makes a new mortgage loan secured by one residential property with one to four units. The entire loan principal is $400,000. The only possible transaction dates are October 8, 2019 and October 9, 2019. The transaction took place on October 9, 2019.",
+      "id": "HD2",
+      "profile": "occ_residential_appraisal"
+    }
+  ],
+  "profiles": {
+    "occ_residential_appraisal": {
+      "evidence": {
+        "E1": "Prior OCC version, test-window coverage from 2019-10-08 through 2019-10-08. The applicable dollar threshold is $250,000.",
+        "E2": "Scope summary: the case concerns a new loan from an OCC-regulated lender, secured by one residential property with one to four units. For a loan, use the principal as the transaction value.",
+        "E3": "Common comparison in both versions of the amount exception: the transaction qualifies under the amount test when its transaction value is at or below the applicable threshold.",
+        "E4": "Amended OCC version, test-window coverage from 2019-10-09 through 2019-10-09. The applicable dollar threshold is $400,000."
+      },
+      "question": "Does the loan meet the amount exception under 12 CFR 34.43(a)(1)?",
+      "scope_claims": {
+        "claims": [
+          {
+            "quote": "from an OCC-regulated lender",
+            "statement": "The lender is regulated by the OCC."
+          },
+          {
+            "quote": "secured by one residential property with one to four units",
+            "statement": "The loan is secured by one residential property with one to four units."
+          }
+        ],
+        "source": "E2"
+      }
+    }
+  }
+}

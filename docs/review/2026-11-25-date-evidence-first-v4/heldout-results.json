@@ -1,0 +1,640 @@
+{
+  "behavior": {
+    "correct_grounded_on_dated": [
+      4,
+      4
+    ],
+    "unnecessary_ask_on_same": [
+      0,
+      1
+    ],
+    "wrong_unique_on_varying": [
+      0,
+      1
+    ]
+  },
+  "case_count": 6,
+  "counts": {
+    "action": 6,
+    "branches": 6,
+    "fields": 6,
+    "outcome": 6,
+    "strict": 6
+  },
+  "field_counts": {
+    "amount": 6,
+    "comparison": 6,
+    "date": 6,
+    "event": 6,
+    "fact_evidence": 6,
+    "range": 6,
+    "rule": 6,
+    "rule_id": 6,
+    "scope": 6,
+    "scope_evidence": 6,
+    "versions": 6
+  },
+  "input_tokens": 2210,
+  "locations": {
+    "occ_residential_appraisal": {
+      "earlier": "E1",
+      "later": "E4",
+      "rule": "E3",
+      "scope": "E2"
+    }
+  },
+  "model_choices": 11,
+  "passes": true,
+  "picks": {
+    "HD0/scope": "yes",
+    "HD1/scope": "yes",
+    "HD2/scope": "yes",
+    "HS0/scope": "yes",
+    "HS1/scope": "yes",
+    "HS2/scope": "yes",
+    "occ_residential_appraisal/comparison": "<="
+  },
+  "rows": {
+    "HD0": {
+      "category": "varying_missing",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": "transaction",
+        "branches": [
+          [
+            "2019-10-08",
+            false,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ],
+          [
+            "2019-10-09",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 400000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2019-10-08",
+          "2019-10-09"
+        ],
+        "rule": [
+          "<=",
+          "transaction",
+          "E3"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2019-10-08",
+            "2019-10-08",
+            250000,
+            "E1"
+          ],
+          [
+            "2019-10-09",
+            "2019-10-09",
+            400000,
+            "E4"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": "transaction",
+        "branches": [
+          [
+            "2019-10-08",
+            false,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ],
+          [
+            "2019-10-09",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "HD1": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2019-10-08",
+            false,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 400000,
+        "date": "2019-10-08",
+        "fact_evidence": "F1",
+        "range": [
+          "2019-10-08",
+          "2019-10-09"
+        ],
+        "rule": [
+          "<=",
+          "transaction",
+          "E3"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2019-10-08",
+            "2019-10-08",
+            250000,
+            "E1"
+          ],
+          [
+            "2019-10-09",
+            "2019-10-09",
+            400000,
+            "E4"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2019-10-08",
+            false,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "HD2": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2019-10-09",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 400000,
+        "date": "2019-10-09",
+        "fact_evidence": "F1",
+        "range": [
+          "2019-10-08",
+          "2019-10-09"
+        ],
+        "rule": [
+          "<=",
+          "transaction",
+          "E3"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2019-10-08",
+            "2019-10-08",
+            250000,
+            "E1"
+          ],
+          [
+            "2019-10-09",
+            "2019-10-09",
+            400000,
+            "E4"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2019-10-09",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "HS0": {
+      "category": "same_missing",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2019-10-08",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ],
+          [
+            "2019-10-09",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 250000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2019-10-08",
+          "2019-10-09"
+        ],
+        "rule": [
+          "<=",
+          "transaction",
+          "E3"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2019-10-08",
+            "2019-10-08",
+            250000,
+            "E1"
+          ],
+          [
+            "2019-10-09",
+            "2019-10-09",
+            400000,
+            "E4"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2019-10-08",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ],
+          [
+            "2019-10-09",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "HS1": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2019-10-08",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 250000,
+        "date": "2019-10-08",
+        "fact_evidence": "F1",
+        "range": [
+          "2019-10-08",
+          "2019-10-09"
+        ],
+        "rule": [
+          "<=",
+          "transaction",
+          "E3"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2019-10-08",
+            "2019-10-08",
+            250000,
+            "E1"
+          ],
+          [
+            "2019-10-09",
+            "2019-10-09",
+            400000,
+            "E4"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2019-10-08",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "HS2": {
+      "category": "dated",
+      "checks": {
+        "action": true,
+        "branches": true,
+        "fields": true,
+        "outcome": true,
+        "strict": true
+      },
+      "error": null,
+      "expected": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2019-10-09",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      },
+      "field_checks": {
+        "amount": true,
+        "comparison": true,
+        "date": true,
+        "event": true,
+        "fact_evidence": true,
+        "range": true,
+        "rule": true,
+        "rule_id": true,
+        "scope": true,
+        "scope_evidence": true,
+        "versions": true
+      },
+      "fields": {
+        "amount": 250000,
+        "date": "2019-10-09",
+        "fact_evidence": "F1",
+        "range": [
+          "2019-10-08",
+          "2019-10-09"
+        ],
+        "rule": [
+          "<=",
+          "transaction",
+          "E3"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ],
+        "versions": [
+          [
+            "2019-10-08",
+            "2019-10-08",
+            250000,
+            "E1"
+          ],
+          [
+            "2019-10-09",
+            "2019-10-09",
+            400000,
+            "E4"
+          ]
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2019-10-09",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    }
+  },
+  "scope_conditions": {
+    "scope/HS0/0": "yes",
+    "scope/HS0/1": "yes"
+  },
+  "seal_sha256": "5dae88bbbf8390bfde20c87c80aecd8b964dfa96f6ad8f69daa37d96d9b5eedf",
+  "seconds": 18.31,
+  "split": "heldout"
+}
