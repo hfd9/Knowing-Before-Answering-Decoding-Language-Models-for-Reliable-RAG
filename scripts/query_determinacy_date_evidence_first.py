@@ -18,7 +18,7 @@ import query_determinacy_threshold_versions as kernel
 
 local = pilot.local
 ROOT = local.ROOT
-PACK = ROOT / 'docs/review/2026-11-25-date-evidence-first-v2'
+PACK = ROOT / 'docs/review/2026-11-25-date-evidence-first-v3'
 DEVELOPMENT = ROOT / 'docs/review/2026-11-25-date-evidence-first-v1'
 DEV_SOURCE = ROOT / 'docs/review/2026-11-24-date-source-extraction-v1'
 LETTERS = 'ABCD'
@@ -26,6 +26,7 @@ BATCH = 4
 DAY_PATTERN = (r'\b(?:\d{4}-\d{2}-\d{2}|(?:January|February|March|April|May|June|July|August|September|'
                r'October|November|December) \d{1,2}, \d{4})\b')
 MONEY_PATTERN = r'\$(\d{1,3}(?:,\d{3})+|\d+)(?![\d,]|\.\d)'
+WINDOW_PATTERN = r'\b(?:the )?only possible ([a-z -]+?) dates are ([^.]+)\.'
 LOCATE = {
     'rule': 'Which excerpt states how the transaction amount is compared with the applicable threshold?',
     'scope': 'Which excerpt tells you the type or status of loan or transaction covered by the rule? '
@@ -39,9 +40,9 @@ COMPARISON = {
     'unknown': 'Neither comparison is stated in the quoted source.',
 }
 SCOPE = {
-    'yes': 'The case facts affirm all the stated scope conditions for applying this amount test.',
-    'no': 'The case facts affirmatively contradict a stated scope condition.',
-    'unknown': 'A required scope condition is neither affirmed nor contradicted by the case facts.',
+    'yes': 'Entailed. The case facts support the statement.',
+    'no': 'Contradicted. The case facts support the opposite of the statement.',
+    'unknown': 'Undetermined. The case facts do not say whether the statement is true.',
 }
 require = pilot.require
 
@@ -76,12 +77,17 @@ def selections(public, rows):
             rankings.append((sum(scores[f'{name}/{role}'][tag] for role, tag in roles.items()), roles))
         rankings.sort(key=lambda row: row[0], reverse=True)
         require(rankings[0][0] > rankings[1][0], 'tied joint evidence locations')
-        located[name] = rankings[0][1]
+        roles = rankings[0][1]
+        intervals = {tag: parse_days(profile['evidence'][tag]) for tag in (roles['earlier'], roles['later'])}
+        if all(len(days) == 2 for days in intervals.values()):
+            roles['earlier'], roles['later'] = sorted(intervals, key=lambda tag: intervals[tag][0])
+        located[name] = roles
     return located
 
 
 def extract_plan(public, located):
     tasks = []
+    groups, case_groups = {}, {}
     for name, profile in public['profiles'].items():
         rule_id = located[name]['rule']
         tasks.append(choice(f'{name}/comparison', f'[{rule_id}] {profile["evidence"][rule_id]}',
@@ -90,13 +96,42 @@ def extract_plan(public, located):
         name = case['profile']
         scope_id = located[name]['scope']
         source = public['profiles'][name]['evidence'][scope_id]
-        context = f'[{scope_id}] Rule scope: {source}\n[F1] Case facts: {case["facts"]}'
-        tasks.append(choice(f'{case["id"]}/scope', context,
-                            'Does the text establish that the case meets the rule scope? Check each stated scope '
-                            'condition against the case facts. Ignore the amount and the date. A contradicted '
-                            'condition makes the case out of scope. If any required condition is unstated and '
-                            'none is contradicted, the scope is unknown. Do not assume missing facts.', SCOPE))
-    return tasks
+        annotated = public['profiles'][name]['scope_claims']
+        claims = annotated['claims']
+        if not claims or annotated['source'] != scope_id or not all(claim['quote'] in source for claim in claims):
+            continue
+        facts = re.split(WINDOW_PATTERN, case['facts'], maxsplit=1, flags=re.I)[0].strip()
+        facts = re.sub(MONEY_PATTERN, 'AMOUNT', facts)
+        key = (name, facts)
+        if key not in groups:
+            groups[key] = []
+            for index, claim in enumerate(claims):
+                base = f'scope/{case["id"]}/{index}'
+                groups[key].append(base)
+                context = f'[F1] Case facts: {facts}\nStatement to check: {claim["statement"]}'
+                for rotation in range(len(SCOPE)):
+                    tasks.append(choice(f'{base}/{rotation}', context,
+                                        'What do the case facts alone say about this one statement? '
+                                        'Treat a missing fact as unknown. Treat an explicit opposite as contradicted.',
+                                        SCOPE, rotation))
+        case_groups[case['id']] = groups[key]
+    return tasks, case_groups
+
+
+def extraction_picks(rows, case_groups):
+    by_id = {row['id']: row for row in rows}
+    picks = {key: best(row) for key, row in by_id.items() if key.endswith('/comparison')}
+    conditions = {}
+    for case_id, groups in case_groups.items():
+        for group in groups:
+            if group in conditions:
+                continue
+            scores = [choice_scores(by_id[f'{group}/{rotation}']) for rotation in range(len(SCOPE))]
+            combined = {'choices': list(SCOPE), 'scores': [sum(row[value] for row in scores) for value in SCOPE]}
+            conditions[group] = best(combined)
+        claims = [conditions[group] for group in groups]
+        picks[f'{case_id}/scope'] = 'no' if 'no' in claims else 'unknown' if 'unknown' in claims else 'yes'
+    return picks, conditions
 
 
 def parse_days(text):
@@ -125,7 +160,7 @@ def rule_fields(profile, ids, comparison):
 
 
 def fact_fields(facts, rule_text):
-    window = re.search(r'\b(?:the )?only possible ([a-z -]+?) dates are ([^.]+)\.', facts, re.I)
+    window = re.search(WINDOW_PATTERN, facts, re.I)
     require(window is not None, 'case has no explicit admissible date window')
     event, date_list = window.groups()
     event = event.lower()
@@ -247,7 +282,7 @@ def contract(split):
 
 
 def material(split, kind):
-    directory = DEVELOPMENT if split == 'dev' else PACK
+    directory = DEVELOPMENT if (split, kind) == ('dev', 'reference') else PACK
     return directory / f'{split}-{kind}.json'
 
 
@@ -277,7 +312,8 @@ def collect(split, run):
         return results
 
     located = selections(public, execute('locate', locate_plan(public)))
-    execute('extract', extract_plan(public, located))
+    plan, _ = extract_plan(public, located)
+    execute('extract', plan)
     pilot.write(run / 'seal.json', {path.name: local.hash_file(path) for path in sorted(run.iterdir())})
 
 
@@ -314,14 +350,16 @@ def verify(run):
         return scored
 
     located = selections(public, replay('locate', locate_plan(public)))
-    picked = {row['id']: best(row) for row in replay('extract', extract_plan(public, located))}
+    plan, case_groups = extract_plan(public, located)
+    picked, conditions = extraction_picks(replay('extract', plan), case_groups)
     require(seen == set(seal), 'archive has unplanned batches')
     rows = judge(public, reference, located, picked)
     counts = {key: sum(row['checks'][key] for row in rows.values())
               for key in ('fields', 'action', 'branches', 'outcome', 'strict')}
     field_counts = Counter(key for row in rows.values() for key, valid in row['field_checks'].items() if valid)
     return {'split': split, 'seal_sha256': local.hash_file(run / 'seal.json'), 'locations': located, 'picks': picked,
-            'model_choices': len(token_counts), 'input_tokens': sum(token_counts), 'seconds': round(sum(seconds), 2),
+            'scope_conditions': conditions, 'model_choices': len(token_counts), 'input_tokens': sum(token_counts),
+            'seconds': round(sum(seconds), 2),
             'case_count': len(rows), 'counts': counts, 'field_counts': dict(field_counts),
             'passes': counts['strict'] == len(rows), 'rows': rows}
 
