@@ -3,6 +3,7 @@
 import argparse
 from collections import Counter
 from datetime import date, datetime, timedelta, timezone
+from itertools import permutations
 from math import isfinite
 from pathlib import Path
 import re
@@ -17,16 +18,18 @@ import query_determinacy_threshold_versions as kernel
 
 local = pilot.local
 ROOT = local.ROOT
-PACK = ROOT / 'docs/review/2026-11-25-date-evidence-first-v1'
+PACK = ROOT / 'docs/review/2026-11-25-date-evidence-first-v2'
+DEVELOPMENT = ROOT / 'docs/review/2026-11-25-date-evidence-first-v1'
 DEV_SOURCE = ROOT / 'docs/review/2026-11-24-date-source-extraction-v1'
-LETTERS = 'ABCDE'
+LETTERS = 'ABCD'
 BATCH = 4
 DAY_PATTERN = (r'\b(?:\d{4}-\d{2}-\d{2}|(?:January|February|March|April|May|June|July|August|September|'
                r'October|November|December) \d{1,2}, \d{4})\b')
 MONEY_PATTERN = r'\$(\d{1,3}(?:,\d{3})+|\d+)(?![\d,]|\.\d)'
 LOCATE = {
     'rule': 'Which excerpt states how the transaction amount is compared with the applicable threshold?',
-    'scope': 'Which excerpt gives the eligibility conditions for applying the amount test to the type of transaction?',
+    'scope': 'Which excerpt tells you the type or status of loan or transaction covered by the rule? '
+             'Identify the eligibility passage whose conditions can be checked against case facts.',
     'earlier': 'Which excerpt states the dollar threshold and date interval for the earlier of the two versions?',
     'later': 'Which excerpt states the dollar threshold and date interval for the later of the two versions?',
 }
@@ -56,35 +59,43 @@ def locate_plan(public):
     tasks = []
     for name, profile in public['profiles'].items():
         items = sorted(profile['evidence'].items())
-        context = '\n'.join(f'[{key}] {value}' for key, value in items)
-        choices = {key: f'Excerpt {key}.' for key, _ in items} | {'unknown': 'None of these excerpts.'}
-        require(len(choices) <= len(LETTERS), 'too many evidence candidates')
+        choices = {key: f'[{key}] {text}' for key, text in items}
+        require(len(choices) == len(LOCATE), 'expected four distinct evidence excerpts')
         for index, (role, question) in enumerate(LOCATE.items()):
-            tasks.append(choice(f'{name}/{role}', context, question, choices, index))
+            tasks.append(choice(f'{name}/{role}', profile['question'], question, choices, index))
     return tasks
 
 
-def selections(public, picked):
-    return {name: {role: picked[f'{name}/{role}'] for role in LOCATE} for name in public['profiles']}
+def selections(public, rows):
+    scores = {row['id']: choice_scores(row) for row in rows}
+    located = {}
+    for name, profile in public['profiles'].items():
+        rankings = []
+        for assignment in permutations(sorted(profile['evidence'])):
+            roles = dict(zip(LOCATE, assignment, strict=True))
+            rankings.append((sum(scores[f'{name}/{role}'][tag] for role, tag in roles.items()), roles))
+        rankings.sort(key=lambda row: row[0], reverse=True)
+        require(rankings[0][0] > rankings[1][0], 'tied joint evidence locations')
+        located[name] = rankings[0][1]
+    return located
 
 
 def extract_plan(public, located):
     tasks = []
     for name, profile in public['profiles'].items():
         rule_id = located[name]['rule']
-        if rule_id != 'unknown':
-            tasks.append(choice(f'{name}/comparison', f'[{rule_id}] {profile["evidence"][rule_id]}',
-                                'What amount comparison does this excerpt require?', COMPARISON))
+        tasks.append(choice(f'{name}/comparison', f'[{rule_id}] {profile["evidence"][rule_id]}',
+                            'What amount comparison does this excerpt require?', COMPARISON))
     for case in public['cases']:
         name = case['profile']
         scope_id = located[name]['scope']
-        if scope_id == 'unknown':
-            continue
         source = public['profiles'][name]['evidence'][scope_id]
         context = f'[{scope_id}] Rule scope: {source}\n[F1] Case facts: {case["facts"]}'
         tasks.append(choice(f'{case["id"]}/scope', context,
-                            'Does this case meet the rule scope? Set aside the amount and date tests. '
-                            'A condition must be supported by the case facts.', SCOPE))
+                            'Does the text establish that the case meets the rule scope? Check each stated scope '
+                            'condition against the case facts. Ignore the amount and the date. A contradicted '
+                            'condition makes the case out of scope. If any required condition is unstated and '
+                            'none is contradicted, the scope is unknown. Do not assume missing facts.', SCOPE))
     return tasks
 
 
@@ -211,18 +222,23 @@ def choice_tokens(tokenizer):
     return [token[0] for token in tokens]
 
 
-def best(row):
+def choice_scores(row):
     scores = row['scores']
     require(len(scores) == len(row['choices']) and all(isfinite(score) for score in scores), 'bad choice scores')
-    maximum = max(scores)
-    require(scores.count(maximum) == 1, 'tied choice scores')
-    return row['choices'][scores.index(maximum)]
+    return dict(zip(row['choices'], scores, strict=True))
+
+
+def best(row):
+    scores = choice_scores(row)
+    highest = max(scores, key=scores.get)
+    require(list(scores.values()).count(scores[highest]) == 1, 'tied choice scores')
+    return highest
 
 
 def contract(split):
     paths = [Path(__file__), Path(kernel.__file__), Path(pilot.__file__), Path(local.__file__),
-             ROOT / 'scripts/query_determinacy_delegation_collect.py', PACK / 'protocol.md', PACK / f'{split}-public.json',
-             PACK / f'{split}-reference.json']
+             ROOT / 'scripts/query_determinacy_delegation_collect.py', PACK / 'protocol.md',
+             material(split, 'public'), material(split, 'reference')]
     if split == 'dev':
         paths.extend(DEV_SOURCE / name for name in ('public.json', 'reference.json'))
     else:
@@ -230,10 +246,15 @@ def contract(split):
     return {str(path.relative_to(ROOT)): local.hash_file(path) for path in paths}
 
 
+def material(split, kind):
+    directory = DEVELOPMENT if split == 'dev' else PACK
+    return directory / f'{split}-{kind}.json'
+
+
 def collect(split, run):
     if split == 'heldout':
         verify_freeze()
-    public = pilot.read(PACK / f'{split}-public.json')
+    public = pilot.read(material(split, 'public'))
     environment = local.environment_snapshot()
     if split == 'heldout':
         require(environment == pilot.read(PACK / 'freeze.json')['environment'], 'runtime changed after freeze')
@@ -253,7 +274,7 @@ def collect(split, run):
             results.extend(rows)
             print(phase, offset + len(tasks), len(plan), f'{seconds:.2f}s',
                   ' '.join(f'{row["id"]}={best(row)}' for row in rows), flush=True)
-        return {row['id']: best(row) for row in results}
+        return results
 
     located = selections(public, execute('locate', locate_plan(public)))
     execute('extract', extract_plan(public, located))
@@ -269,13 +290,13 @@ def verify(run):
     seal = pilot.read(run / 'seal.json')
     require(set(seal) | {'seal.json'} == {path.name for path in run.iterdir()}, 'unexpected archive membership')
     require(all(local.hash_file(run / name) == sha for name, sha in seal.items()), 'archive content changed')
-    public = pilot.read(PACK / f'{split}-public.json')
-    reference = pilot.read(PACK / f'{split}-reference.json')
+    public = pilot.read(material(split, 'public'))
+    reference = pilot.read(material(split, 'reference'))
     tokenizer = local.load_tokenizer()
     token_counts, seconds, seen = [], [], {'manifest.json'}
 
     def replay(phase, plan):
-        picked = {}
+        scored = []
         for offset in range(0, len(plan), BATCH):
             prefix = f'{phase}-{offset:02d}'
             attempt, record = (f'{prefix}.{name}.json' for name in ('attempt', 'record'))
@@ -289,11 +310,11 @@ def verify(run):
                 ids = local.tokenize(tokenizer, row['prompt'])[1]
                 require(ids == row['input_token_ids'], 'prompt token IDs differ')
                 token_counts.append(len(ids))
-                picked[row['id']] = best(row)
-        return picked
+                scored.append(row)
+        return scored
 
     located = selections(public, replay('locate', locate_plan(public)))
-    picked = replay('extract', extract_plan(public, located))
+    picked = {row['id']: best(row) for row in replay('extract', extract_plan(public, located))}
     require(seen == set(seal), 'archive has unplanned batches')
     rows = judge(public, reference, located, picked)
     counts = {key: sum(row['checks'][key] for row in rows.values())
