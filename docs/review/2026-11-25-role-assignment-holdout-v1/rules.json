@@ -1,0 +1,34 @@
+[
+  {
+    "id":"ssa",
+    "law":"SSA POMS DI 10501.015(B), nonblind employee countable earnings",
+    "event":"work",
+    "effective":"2025-01-01",
+    "limits":[1550,1620],
+    "comparison":">",
+    "labels":["E4","E2","E1","E3"],
+    "question":"Do the employee's countable average monthly earnings exceed the applicable nonblind SGA guideline?",
+    "rule":"For the month containing the work, the nonblind employee countable earnings indicate substantial gainful activity under this monthly guideline if the countable average monthly amount is more than the guideline applicable for that calendar year.",
+    "scope":"The test is for a nonblind employee and uses countable average monthly earnings. It concerns the earnings guideline alone and assumes the earnings have already been computed with applicable adjustments.",
+    "claims":[["nonblind employee","The worker is a nonblind employee."],["earnings have already been computed with applicable adjustments","The countable earnings already reflect applicable adjustments."]],
+    "facts":"The worker is a nonblind employee. The countable earnings already reflect applicable adjustments. The countable average monthly earnings for the month containing the work are {amount}.",
+    "cases":[[1621,[true,true]],[1620,[true,false]]],
+    "sources":["https://secure.ssa.gov/apps10/poms.nsf/lnx/0410501015%21opendocument","https://www.ssa.gov/news/en/cola/factsheets/2025.html"]
+  },
+  {
+    "id":"spouse",
+    "law":"26 USC 2523(i)(2), noncitizen spouse annual exclusion",
+    "event":"gift",
+    "effective":"2025-01-01",
+    "limits":[185000,190000],
+    "comparison":"<=",
+    "labels":["E1","E3","E4","E2"],
+    "question":"Is the entire gift within the annual exclusion for gifts to a noncitizen spouse?",
+    "rule":"For a present-interest gift to a noncitizen spouse that otherwise qualifies, compare the donor's total gifts to that spouse for the calendar year of the gift with the applicable annual exclusion. The whole amount fits when it is not more than that exclusion.",
+    "scope":"The donee is the donor's spouse and is not a United States citizen. The gift is a present interest and satisfies the relevant conditions for the spousal exclusion. This question concerns only the annual exclusion for that spouse.",
+    "claims":[["donee is the donor's spouse and is not a United States citizen","The recipient is the donor's spouse and is not a United States citizen."],["gift is a present interest","The gift is a present interest."],["satisfies the relevant conditions for the spousal exclusion","The gift satisfies the other relevant conditions for the spousal exclusion."]],
+    "facts":"The recipient is the donor's spouse and is not a United States citizen. The gift is a present interest. The gift satisfies the other relevant conditions for the spousal exclusion. The donor has no other gifts to this spouse in either calendar year. The value of the gift is {amount}.",
+    "cases":[[185000,[true,true]],[190000,[false,true]]],
+    "sources":["https://www.irs.gov/irb/2023-48_IRB","https://www.irs.gov/irb/2024-45_IRB","https://www.irs.gov/instructions/i709"]
+  }
+]

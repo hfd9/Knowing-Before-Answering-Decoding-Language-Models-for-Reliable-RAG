@@ -1,0 +1,1440 @@
+{
+  "cases": {
+    "spouse-D0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 190000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "gift",
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "spouse-D1": {
+      "category": "dated",
+      "fields": {
+        "amount": 190000,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "spouse-D2": {
+      "category": "dated",
+      "fields": {
+        "amount": 190000,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse-S0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 185000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse-S1": {
+      "category": "dated",
+      "fields": {
+        "amount": 185000,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse-S2": {
+      "category": "dated",
+      "fields": {
+        "amount": 185000,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse_overlap-D0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 190000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "gift",
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "spouse_overlap-D1": {
+      "category": "dated",
+      "fields": {
+        "amount": 190000,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "spouse_overlap-D2": {
+      "category": "dated",
+      "fields": {
+        "amount": 190000,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse_overlap-S0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 185000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse_overlap-S1": {
+      "category": "dated",
+      "fields": {
+        "amount": 185000,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse_overlap-S2": {
+      "category": "dated",
+      "fields": {
+        "amount": 185000,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse_separate-D0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 190000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "gift",
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "spouse_separate-D1": {
+      "category": "dated",
+      "fields": {
+        "amount": 190000,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "spouse_separate-D2": {
+      "category": "dated",
+      "fields": {
+        "amount": 190000,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse_separate-S0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 185000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse_separate-S1": {
+      "category": "dated",
+      "fields": {
+        "amount": 185000,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "spouse_separate-S2": {
+      "category": "dated",
+      "fields": {
+        "amount": 185000,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa-D0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 1620,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "work",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "ssa-D1": {
+      "category": "dated",
+      "fields": {
+        "amount": 1620,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa-D2": {
+      "category": "dated",
+      "fields": {
+        "amount": 1620,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "ssa-S0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 1621,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa-S1": {
+      "category": "dated",
+      "fields": {
+        "amount": 1621,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa-S2": {
+      "category": "dated",
+      "fields": {
+        "amount": 1621,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa_overlap-D0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 1620,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "work",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "ssa_overlap-D1": {
+      "category": "dated",
+      "fields": {
+        "amount": 1620,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa_overlap-D2": {
+      "category": "dated",
+      "fields": {
+        "amount": 1620,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "ssa_overlap-S0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 1621,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa_overlap-S1": {
+      "category": "dated",
+      "fields": {
+        "amount": 1621,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa_overlap-S2": {
+      "category": "dated",
+      "fields": {
+        "amount": 1621,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa_separate-D0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 1620,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "work",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "ssa_separate-D1": {
+      "category": "dated",
+      "fields": {
+        "amount": 1620,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa_separate-D2": {
+      "category": "dated",
+      "fields": {
+        "amount": 1620,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "ssa_separate-S0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 1621,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa_separate-S1": {
+      "category": "dated",
+      "fields": {
+        "amount": 1621,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "ssa_separate-S2": {
+      "category": "dated",
+      "fields": {
+        "amount": 1621,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    }
+  },
+  "profiles": {
+    "spouse": {
+      "rule": [
+        "<=",
+        "gift",
+        "E1"
+      ],
+      "versions": [
+        [
+          "2024-12-31",
+          "2024-12-31",
+          185000,
+          "E4"
+        ],
+        [
+          "2025-01-01",
+          "2025-01-01",
+          190000,
+          "E2"
+        ]
+      ]
+    },
+    "spouse_overlap": {
+      "rule": [
+        "<=",
+        "gift",
+        "E1"
+      ],
+      "versions": [
+        [
+          "2024-12-31",
+          "2024-12-31",
+          185000,
+          "E4"
+        ],
+        [
+          "2025-01-01",
+          "2025-01-01",
+          190000,
+          "E2"
+        ]
+      ]
+    },
+    "spouse_separate": {
+      "rule": [
+        "<=",
+        "gift",
+        "E1"
+      ],
+      "versions": [
+        [
+          "2024-12-31",
+          "2024-12-31",
+          185000,
+          "E4"
+        ],
+        [
+          "2025-01-01",
+          "2025-01-01",
+          190000,
+          "E2"
+        ]
+      ]
+    },
+    "ssa": {
+      "rule": [
+        ">",
+        "work",
+        "E4"
+      ],
+      "versions": [
+        [
+          "2024-12-31",
+          "2024-12-31",
+          1550,
+          "E1"
+        ],
+        [
+          "2025-01-01",
+          "2025-01-01",
+          1620,
+          "E3"
+        ]
+      ]
+    },
+    "ssa_overlap": {
+      "rule": [
+        ">",
+        "work",
+        "E4"
+      ],
+      "versions": [
+        [
+          "2024-12-31",
+          "2024-12-31",
+          1550,
+          "E1"
+        ],
+        [
+          "2025-01-01",
+          "2025-01-01",
+          1620,
+          "E3"
+        ]
+      ]
+    },
+    "ssa_separate": {
+      "rule": [
+        ">",
+        "work",
+        "E4"
+      ],
+      "versions": [
+        [
+          "2024-12-31",
+          "2024-12-31",
+          1550,
+          "E1"
+        ],
+        [
+          "2025-01-01",
+          "2025-01-01",
+          1620,
+          "E3"
+        ]
+      ]
+    }
+  }
+}
