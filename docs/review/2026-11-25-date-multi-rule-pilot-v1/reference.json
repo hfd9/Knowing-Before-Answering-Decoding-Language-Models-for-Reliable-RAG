@@ -1,0 +1,1532 @@
+{
+  "cases": {
+    "checks-D0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 6725,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2025-06-30",
+          "2025-07-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "deposit",
+        "branches": [
+          [
+            "2025-06-30",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-07-01",
+            false,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "checks-D1": {
+      "category": "dated",
+      "fields": {
+        "amount": 6725,
+        "date": "2025-06-30",
+        "fact_evidence": "F1",
+        "range": [
+          "2025-06-30",
+          "2025-07-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-06-30",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "checks-D2": {
+      "category": "dated",
+      "fields": {
+        "amount": 6725,
+        "date": "2025-07-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2025-06-30",
+          "2025-07-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-07-01",
+            false,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "checks-N": {
+      "category": "scope_outside",
+      "fields": {
+        "amount": 6726,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2025-06-30",
+          "2025-07-01"
+        ],
+        "scope": false,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "rule_outside_scope",
+        "tag": "UNRESOLVED"
+      }
+    },
+    "checks-S0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 6726,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2025-06-30",
+          "2025-07-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-06-30",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-07-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "checks-S1": {
+      "category": "dated",
+      "fields": {
+        "amount": 6726,
+        "date": "2025-06-30",
+        "fact_evidence": "F1",
+        "range": [
+          "2025-06-30",
+          "2025-07-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-06-30",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "checks-S2": {
+      "category": "dated",
+      "fields": {
+        "amount": 6726,
+        "date": "2025-07-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2025-06-30",
+          "2025-07-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-07-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "checks-U": {
+      "category": "scope_unknown",
+      "fields": {
+        "amount": 6726,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2025-06-30",
+          "2025-07-01"
+        ],
+        "scope": null,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "scope_not_established",
+        "tag": "UNRESOLVED"
+      }
+    },
+    "crowd-D0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 5000000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E1",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "sale",
+        "branches": [
+          [
+            "2021-03-14",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2021-03-15",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "crowd-D1": {
+      "category": "dated",
+      "fields": {
+        "amount": 5000000,
+        "date": "2021-03-14",
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E1",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2021-03-14",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "crowd-D2": {
+      "category": "dated",
+      "fields": {
+        "amount": 5000000,
+        "date": "2021-03-15",
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E1",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2021-03-15",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "crowd-S0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 1070000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E1",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2021-03-14",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2021-03-15",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "crowd-S1": {
+      "category": "dated",
+      "fields": {
+        "amount": 1070000,
+        "date": "2021-03-14",
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E1",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2021-03-14",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "crowd-S2": {
+      "category": "dated",
+      "fields": {
+        "amount": 1070000,
+        "date": "2021-03-15",
+        "fact_evidence": "F1",
+        "range": [
+          "2021-03-14",
+          "2021-03-15"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E1",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2021-03-15",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "diversity-D0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 75000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "1997-01-16",
+          "1997-01-17"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "filing",
+        "branches": [
+          [
+            "1997-01-16",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "1997-01-17",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "diversity-D1": {
+      "category": "dated",
+      "fields": {
+        "amount": 75000,
+        "date": "1997-01-16",
+        "fact_evidence": "F1",
+        "range": [
+          "1997-01-16",
+          "1997-01-17"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "1997-01-16",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "diversity-D2": {
+      "category": "dated",
+      "fields": {
+        "amount": 75000,
+        "date": "1997-01-17",
+        "fact_evidence": "F1",
+        "range": [
+          "1997-01-16",
+          "1997-01-17"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "1997-01-17",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "diversity-S0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 75001,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "1997-01-16",
+          "1997-01-17"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "1997-01-16",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "1997-01-17",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "diversity-S1": {
+      "category": "dated",
+      "fields": {
+        "amount": 75001,
+        "date": "1997-01-16",
+        "fact_evidence": "F1",
+        "range": [
+          "1997-01-16",
+          "1997-01-17"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "1997-01-16",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "diversity-S2": {
+      "category": "dated",
+      "fields": {
+        "amount": 75001,
+        "date": "1997-01-17",
+        "fact_evidence": "F1",
+        "range": [
+          "1997-01-16",
+          "1997-01-17"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "1997-01-17",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "far-D0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 350000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2025-09-30",
+          "2025-10-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E4",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "solicitation",
+        "branches": [
+          [
+            "2025-09-30",
+            false,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-10-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "far-D1": {
+      "category": "dated",
+      "fields": {
+        "amount": 350000,
+        "date": "2025-09-30",
+        "fact_evidence": "F1",
+        "range": [
+          "2025-09-30",
+          "2025-10-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E4",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-09-30",
+            false,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "far-D2": {
+      "category": "dated",
+      "fields": {
+        "amount": 350000,
+        "date": "2025-10-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2025-09-30",
+          "2025-10-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E4",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-10-01",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "far-S0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 350001,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2025-09-30",
+          "2025-10-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E4",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-09-30",
+            false,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-10-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "far-S1": {
+      "category": "dated",
+      "fields": {
+        "amount": 350001,
+        "date": "2025-09-30",
+        "fact_evidence": "F1",
+        "range": [
+          "2025-09-30",
+          "2025-10-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E4",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-09-30",
+            false,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "far-S2": {
+      "category": "dated",
+      "fields": {
+        "amount": 350001,
+        "date": "2025-10-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2025-09-30",
+          "2025-10-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E4",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-10-01",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "gift-D0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 19000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "gift",
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "gift-D1": {
+      "category": "dated",
+      "fields": {
+        "amount": 19000,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "gift-D2": {
+      "category": "dated",
+      "fields": {
+        "amount": 19000,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "gift-N": {
+      "category": "scope_outside",
+      "fields": {
+        "amount": 18000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": false,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "rule_outside_scope",
+        "tag": "UNRESOLVED"
+      }
+    },
+    "gift-S0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 18000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "gift-S1": {
+      "category": "dated",
+      "fields": {
+        "amount": 18000,
+        "date": "2024-12-31",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E2",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "gift-S2": {
+      "category": "dated",
+      "fields": {
+        "amount": 18000,
+        "date": "2025-01-01",
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "gift-U": {
+      "category": "scope_unknown",
+      "fields": {
+        "amount": 18000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2024-12-31",
+          "2025-01-01"
+        ],
+        "scope": null,
+        "scope_evidence": [
+          "E2",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [],
+        "reason": "scope_not_established",
+        "tag": "UNRESOLVED"
+      }
+    },
+    "hsr-D0": {
+      "category": "varying_missing",
+      "fields": {
+        "amount": 126400000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2025-02-20",
+          "2025-02-21"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": "closing",
+        "branches": [
+          [
+            "2025-02-20",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ],
+          [
+            "2025-02-21",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ASK_DATE"
+      }
+    },
+    "hsr-D1": {
+      "category": "dated",
+      "fields": {
+        "amount": 126400000,
+        "date": "2025-02-20",
+        "fact_evidence": "F1",
+        "range": [
+          "2025-02-20",
+          "2025-02-21"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-02-20",
+            true,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_Y"
+      }
+    },
+    "hsr-D2": {
+      "category": "dated",
+      "fields": {
+        "amount": 126400000,
+        "date": "2025-02-21",
+        "fact_evidence": "F1",
+        "range": [
+          "2025-02-20",
+          "2025-02-21"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-02-21",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "hsr-S0": {
+      "category": "same_missing",
+      "fields": {
+        "amount": 119500000,
+        "date": null,
+        "fact_evidence": "F1",
+        "range": [
+          "2025-02-20",
+          "2025-02-21"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-02-20",
+            false,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ],
+          [
+            "2025-02-21",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "hsr-S1": {
+      "category": "dated",
+      "fields": {
+        "amount": 119500000,
+        "date": "2025-02-20",
+        "fact_evidence": "F1",
+        "range": [
+          "2025-02-20",
+          "2025-02-21"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-02-20",
+            false,
+            [
+              "E1",
+              "E2",
+              "E3",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    },
+    "hsr-S2": {
+      "category": "dated",
+      "fields": {
+        "amount": 119500000,
+        "date": "2025-02-21",
+        "fact_evidence": "F1",
+        "range": [
+          "2025-02-20",
+          "2025-02-21"
+        ],
+        "scope": true,
+        "scope_evidence": [
+          "E3",
+          "F1"
+        ]
+      },
+      "outcome": {
+        "ask_event": null,
+        "branches": [
+          [
+            "2025-02-21",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "tag": "ANSWER_N"
+      }
+    }
+  },
+  "profiles": {
+    "checks": {
+      "rule": [
+        ">",
+        "deposit",
+        "E2"
+      ],
+      "versions": [
+        [
+          "2025-06-30",
+          "2025-06-30",
+          5525,
+          "E4"
+        ],
+        [
+          "2025-07-01",
+          "2025-07-01",
+          6725,
+          "E1"
+        ]
+      ]
+    },
+    "crowd": {
+      "rule": [
+        "<=",
+        "sale",
+        "E4"
+      ],
+      "versions": [
+        [
+          "2021-03-14",
+          "2021-03-14",
+          1070000,
+          "E3"
+        ],
+        [
+          "2021-03-15",
+          "2021-03-15",
+          5000000,
+          "E2"
+        ]
+      ]
+    },
+    "diversity": {
+      "rule": [
+        ">",
+        "filing",
+        "E4"
+      ],
+      "versions": [
+        [
+          "1997-01-16",
+          "1997-01-16",
+          50000,
+          "E1"
+        ],
+        [
+          "1997-01-17",
+          "1997-01-17",
+          75000,
+          "E3"
+        ]
+      ]
+    },
+    "far": {
+      "rule": [
+        "<=",
+        "solicitation",
+        "E2"
+      ],
+      "versions": [
+        [
+          "2025-09-30",
+          "2025-09-30",
+          250000,
+          "E1"
+        ],
+        [
+          "2025-10-01",
+          "2025-10-01",
+          350000,
+          "E3"
+        ]
+      ]
+    },
+    "gift": {
+      "rule": [
+        "<=",
+        "gift",
+        "E3"
+      ],
+      "versions": [
+        [
+          "2024-12-31",
+          "2024-12-31",
+          18000,
+          "E4"
+        ],
+        [
+          "2025-01-01",
+          "2025-01-01",
+          19000,
+          "E1"
+        ]
+      ]
+    },
+    "hsr": {
+      "rule": [
+        ">",
+        "closing",
+        "E1"
+      ],
+      "versions": [
+        [
+          "2025-02-20",
+          "2025-02-20",
+          119500000,
+          "E2"
+        ],
+        [
+          "2025-02-21",
+          "2025-02-21",
+          126400000,
+          "E4"
+        ]
+      ]
+    }
+  }
+}
