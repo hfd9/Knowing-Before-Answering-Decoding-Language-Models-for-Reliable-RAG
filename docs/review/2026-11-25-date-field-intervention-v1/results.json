@@ -1,0 +1,4187 @@
+{
+  "source_archive_sha256": "73bce0d4a84f3ead4c6d04ed618ce0a454de667b5ae595c5846b313c062d2188",
+  "money_unit": "whole USD, fixed by the archived extraction interface",
+  "scenario_fields": {
+    "original": [],
+    "scope_only": [
+      "scope"
+    ],
+    "all_evidence_only": [
+      "rule_id",
+      "scope_ids",
+      "fact_id",
+      "version_id_2024",
+      "version_id_2025"
+    ],
+    "scope_and_evidence": [
+      "scope",
+      "rule_id",
+      "scope_ids",
+      "fact_id",
+      "version_id_2024",
+      "version_id_2025"
+    ],
+    "scope_evidence_comparison": [
+      "scope",
+      "rule_id",
+      "scope_ids",
+      "fact_id",
+      "version_id_2024",
+      "version_id_2025",
+      "comparison"
+    ],
+    "scope_evidence_amount": [
+      "scope",
+      "rule_id",
+      "scope_ids",
+      "fact_id",
+      "version_id_2024",
+      "version_id_2025",
+      "amount"
+    ],
+    "scope_evidence_range": [
+      "scope",
+      "rule_id",
+      "scope_ids",
+      "fact_id",
+      "version_id_2024",
+      "version_id_2025",
+      "first",
+      "last"
+    ],
+    "scope_evidence_comparison_amount": [
+      "scope",
+      "rule_id",
+      "scope_ids",
+      "fact_id",
+      "version_id_2024",
+      "version_id_2025",
+      "comparison",
+      "amount"
+    ],
+    "all_fields": [
+      "scope",
+      "comparison",
+      "event",
+      "amount",
+      "first",
+      "last",
+      "date",
+      "rule_id",
+      "scope_ids",
+      "fact_id",
+      "valid_from_2024",
+      "valid_through_2024",
+      "threshold_2024",
+      "version_id_2024",
+      "valid_from_2025",
+      "valid_through_2025",
+      "threshold_2025",
+      "version_id_2025"
+    ]
+  },
+  "scenarios": {
+    "original": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "scope_only": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "all_evidence_only": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 6,
+      "stages": {
+        "unresolved": 3,
+        "parse": 3
+      }
+    },
+    "scope_and_evidence": {
+      "strict": 3,
+      "action_type_correct": 3,
+      "action_exact": 3,
+      "wrong_unique": 0,
+      "conclusions_correct": 5,
+      "evidence_correct": 5,
+      "reference_branches": 10,
+      "role_bindings_correct": 6,
+      "stages": {
+        "decision": 3,
+        "parse": 3
+      }
+    },
+    "scope_evidence_comparison": {
+      "strict": 3,
+      "action_type_correct": 3,
+      "action_exact": 3,
+      "wrong_unique": 0,
+      "conclusions_correct": 5,
+      "evidence_correct": 5,
+      "reference_branches": 10,
+      "role_bindings_correct": 6,
+      "stages": {
+        "decision": 3,
+        "parse": 3
+      }
+    },
+    "scope_evidence_amount": {
+      "strict": 3,
+      "action_type_correct": 3,
+      "action_exact": 3,
+      "wrong_unique": 0,
+      "conclusions_correct": 5,
+      "evidence_correct": 5,
+      "reference_branches": 10,
+      "role_bindings_correct": 6,
+      "stages": {
+        "decision": 3,
+        "parse": 3
+      }
+    },
+    "scope_evidence_range": {
+      "strict": 3,
+      "action_type_correct": 3,
+      "action_exact": 3,
+      "wrong_unique": 0,
+      "conclusions_correct": 5,
+      "evidence_correct": 5,
+      "reference_branches": 10,
+      "role_bindings_correct": 6,
+      "stages": {
+        "decision": 3,
+        "parse": 3
+      }
+    },
+    "scope_evidence_comparison_amount": {
+      "strict": 4,
+      "action_type_correct": 4,
+      "action_exact": 4,
+      "wrong_unique": 0,
+      "conclusions_correct": 6,
+      "evidence_correct": 6,
+      "reference_branches": 10,
+      "role_bindings_correct": 6,
+      "stages": {
+        "decision": 4,
+        "solve": 2
+      }
+    },
+    "all_fields": {
+      "strict": 6,
+      "action_type_correct": 6,
+      "action_exact": 6,
+      "wrong_unique": 0,
+      "conclusions_correct": 10,
+      "evidence_correct": 10,
+      "reference_branches": 10,
+      "role_bindings_correct": 6,
+      "stages": {
+        "decision": 6
+      }
+    }
+  },
+  "single_field": {
+    "scope": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "comparison": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "event": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "amount": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "first": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "last": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "date": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "rule_id": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "scope_ids": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "fact_id": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "valid_from_2024": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "valid_through_2024": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "threshold_2024": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "version_id_2024": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "valid_from_2025": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "valid_through_2025": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "threshold_2025": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    },
+    "version_id_2025": {
+      "strict": 0,
+      "action_type_correct": 0,
+      "action_exact": 0,
+      "wrong_unique": 0,
+      "conclusions_correct": 0,
+      "evidence_correct": 0,
+      "reference_branches": 10,
+      "role_bindings_correct": 0,
+      "stages": {
+        "parse": 6
+      }
+    }
+  },
+  "cases": {
+    "G1": {
+      "profile": "general",
+      "output_sha256": "3fb9bdaaacc1ed024126fdbd2261611f4fc74b4834b893c5139b360aaeb2f008",
+      "expected": {
+        "tag": "ANSWER_Y",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "ask_event": null
+      },
+      "fields": {
+        "scope": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": true
+        },
+        "comparison": {
+          "status": "correct",
+          "present": true,
+          "observed": ">",
+          "reference": ">"
+        },
+        "event": {
+          "status": "correct",
+          "present": true,
+          "observed": "consummation",
+          "reference": "consummation"
+        },
+        "amount": {
+          "status": "correct",
+          "present": true,
+          "observed": 75000,
+          "reference": 75000
+        },
+        "first": {
+          "status": "correct",
+          "present": true,
+          "observed": "2024-12-31",
+          "reference": "2024-12-31"
+        },
+        "last": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-01-01",
+          "reference": "2025-01-01"
+        },
+        "date": {
+          "status": "correct",
+          "present": true,
+          "observed": null,
+          "reference": null
+        },
+        "rule_id": {
+          "status": "wrong",
+          "present": true,
+          "observed": "1026.3(b)",
+          "reference": "E1"
+        },
+        "scope_ids": {
+          "status": "missing",
+          "present": true,
+          "observed": [],
+          "reference": [
+            "E4",
+            "F1"
+          ]
+        },
+        "fact_id": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": "F1"
+        },
+        "valid_from_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": "2024-01-01",
+          "reference": "2024-01-01"
+        },
+        "valid_through_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": "2024-12-31",
+          "reference": "2024-12-31"
+        },
+        "threshold_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": 69500,
+          "reference": 69500
+        },
+        "version_id_2024": {
+          "status": "wrong",
+          "present": true,
+          "observed": "3(b)-3.xv",
+          "reference": "E2"
+        },
+        "valid_from_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-01-01",
+          "reference": "2025-01-01"
+        },
+        "valid_through_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-12-31",
+          "reference": "2025-12-31"
+        },
+        "threshold_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": 71900,
+          "reference": 71900
+        },
+        "version_id_2025": {
+          "status": "wrong",
+          "present": true,
+          "observed": "3(b)-3.xvi",
+          "reference": "E3"
+        }
+      },
+      "scenarios": {
+        "original": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "scope_only": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "all_evidence_only": {
+          "stage": "unresolved",
+          "error": null,
+          "outcome": {
+            "tag": "UNRESOLVED",
+            "branches": [],
+            "ask_event": null,
+            "reason": "scope_not_established"
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": "UNRESOLVED"
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_and_evidence": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ANSWER_Y",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": null
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ANSWER_Y"
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": true,
+              "evidence": true
+            },
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_comparison": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ANSWER_Y",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": null
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ANSWER_Y"
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": true,
+              "evidence": true
+            },
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_amount": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ANSWER_Y",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": null
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ANSWER_Y"
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": true,
+              "evidence": true
+            },
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_range": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ANSWER_Y",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": null
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ANSWER_Y"
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": true,
+              "evidence": true
+            },
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_comparison_amount": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ANSWER_Y",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": null
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ANSWER_Y"
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": true,
+              "evidence": true
+            },
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        },
+        "all_fields": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ANSWER_Y",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": null
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ANSWER_Y"
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": true,
+              "evidence": true
+            },
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        }
+      },
+      "single_field": {
+        "scope": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "rule_id": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "scope_ids": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "fact_id": {
+          "stage": "parse",
+          "error": "invalid evidence IDs",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "version_id_2024": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "version_id_2025": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        }
+      },
+      "subsets_tested": 64,
+      "strict_subsets": 1,
+      "minimal_strict_subsets": [
+        [
+          "scope",
+          "rule_id",
+          "scope_ids",
+          "fact_id",
+          "version_id_2024",
+          "version_id_2025"
+        ]
+      ]
+    },
+    "G2": {
+      "profile": "general",
+      "output_sha256": "1698e065b11991c39327931546ddb40b84ee158fbc30645e9e65598e976f173d",
+      "expected": {
+        "tag": "ASK_DATE",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "ask_event": "consummation"
+      },
+      "fields": {
+        "scope": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": true
+        },
+        "comparison": {
+          "status": "correct",
+          "present": true,
+          "observed": ">",
+          "reference": ">"
+        },
+        "event": {
+          "status": "correct",
+          "present": true,
+          "observed": "consummation",
+          "reference": "consummation"
+        },
+        "amount": {
+          "status": "correct",
+          "present": true,
+          "observed": 70000,
+          "reference": 70000
+        },
+        "first": {
+          "status": "correct",
+          "present": true,
+          "observed": "2024-12-31",
+          "reference": "2024-12-31"
+        },
+        "last": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-01-01",
+          "reference": "2025-01-01"
+        },
+        "date": {
+          "status": "correct",
+          "present": true,
+          "observed": null,
+          "reference": null
+        },
+        "rule_id": {
+          "status": "wrong",
+          "present": true,
+          "observed": "1026.3(b)",
+          "reference": "E1"
+        },
+        "scope_ids": {
+          "status": "missing",
+          "present": true,
+          "observed": [],
+          "reference": [
+            "E4",
+            "F1"
+          ]
+        },
+        "fact_id": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": "F1"
+        },
+        "valid_from_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": "2024-01-01",
+          "reference": "2024-01-01"
+        },
+        "valid_through_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": "2024-12-31",
+          "reference": "2024-12-31"
+        },
+        "threshold_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": 69500,
+          "reference": 69500
+        },
+        "version_id_2024": {
+          "status": "wrong",
+          "present": true,
+          "observed": "3(b)-3.xv",
+          "reference": "E2"
+        },
+        "valid_from_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-01-01",
+          "reference": "2025-01-01"
+        },
+        "valid_through_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-12-31",
+          "reference": "2025-12-31"
+        },
+        "threshold_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": 71900,
+          "reference": 71900
+        },
+        "version_id_2025": {
+          "status": "wrong",
+          "present": true,
+          "observed": "3(b)-3.xvi",
+          "reference": "E3"
+        }
+      },
+      "scenarios": {
+        "original": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "scope_only": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "all_evidence_only": {
+          "stage": "unresolved",
+          "error": null,
+          "outcome": {
+            "tag": "UNRESOLVED",
+            "branches": [],
+            "ask_event": null,
+            "reason": "scope_not_established"
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": "UNRESOLVED"
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_and_evidence": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ASK_DATE",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": "consummation"
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ASK_DATE"
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": true,
+              "evidence": true
+            },
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_comparison": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ASK_DATE",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": "consummation"
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ASK_DATE"
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": true,
+              "evidence": true
+            },
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_amount": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ASK_DATE",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": "consummation"
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ASK_DATE"
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": true,
+              "evidence": true
+            },
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_range": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ASK_DATE",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": "consummation"
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ASK_DATE"
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": true,
+              "evidence": true
+            },
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_comparison_amount": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ASK_DATE",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": "consummation"
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ASK_DATE"
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": true,
+              "evidence": true
+            },
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        },
+        "all_fields": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ASK_DATE",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": "consummation"
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ASK_DATE"
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": true,
+              "evidence": true
+            },
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        }
+      },
+      "single_field": {
+        "scope": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "rule_id": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "scope_ids": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "fact_id": {
+          "stage": "parse",
+          "error": "invalid evidence IDs",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "version_id_2024": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "version_id_2025": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        }
+      },
+      "subsets_tested": 64,
+      "strict_subsets": 1,
+      "minimal_strict_subsets": [
+        [
+          "scope",
+          "rule_id",
+          "scope_ids",
+          "fact_id",
+          "version_id_2024",
+          "version_id_2025"
+        ]
+      ]
+    },
+    "G3": {
+      "profile": "general",
+      "output_sha256": "a30b2ce67000155e3eb12bac1c93c0563f12c14b8aa3f81cbb85de1993feaa95",
+      "expected": {
+        "tag": "ANSWER_N",
+        "branches": [
+          [
+            "2025-01-01",
+            false,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "ask_event": null
+      },
+      "fields": {
+        "scope": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": true
+        },
+        "comparison": {
+          "status": "correct",
+          "present": true,
+          "observed": ">",
+          "reference": ">"
+        },
+        "event": {
+          "status": "correct",
+          "present": true,
+          "observed": "consummation",
+          "reference": "consummation"
+        },
+        "amount": {
+          "status": "correct",
+          "present": true,
+          "observed": 70000,
+          "reference": 70000
+        },
+        "first": {
+          "status": "wrong",
+          "present": true,
+          "observed": "2025-01-01",
+          "reference": "2024-12-31"
+        },
+        "last": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-01-01",
+          "reference": "2025-01-01"
+        },
+        "date": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-01-01",
+          "reference": "2025-01-01"
+        },
+        "rule_id": {
+          "status": "wrong",
+          "present": true,
+          "observed": "1026.3(b)",
+          "reference": "E1"
+        },
+        "scope_ids": {
+          "status": "missing",
+          "present": true,
+          "observed": [],
+          "reference": [
+            "E4",
+            "F1"
+          ]
+        },
+        "fact_id": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": "F1"
+        },
+        "valid_from_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": "2024-01-01",
+          "reference": "2024-01-01"
+        },
+        "valid_through_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": "2024-12-31",
+          "reference": "2024-12-31"
+        },
+        "threshold_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": 69500,
+          "reference": 69500
+        },
+        "version_id_2024": {
+          "status": "wrong",
+          "present": true,
+          "observed": "3(b)-3.xv",
+          "reference": "E2"
+        },
+        "valid_from_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-01-01",
+          "reference": "2025-01-01"
+        },
+        "valid_through_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-12-31",
+          "reference": "2025-12-31"
+        },
+        "threshold_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": 71900,
+          "reference": 71900
+        },
+        "version_id_2025": {
+          "status": "wrong",
+          "present": true,
+          "observed": "3(b)-3.xvi",
+          "reference": "E3"
+        }
+      },
+      "scenarios": {
+        "original": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "scope_only": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "all_evidence_only": {
+          "stage": "unresolved",
+          "error": null,
+          "outcome": {
+            "tag": "UNRESOLVED",
+            "branches": [],
+            "ask_event": null,
+            "reason": "scope_not_established"
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": "UNRESOLVED"
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_and_evidence": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ANSWER_N",
+            "branches": [
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": null
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ANSWER_N"
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_comparison": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ANSWER_N",
+            "branches": [
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": null
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ANSWER_N"
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_amount": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ANSWER_N",
+            "branches": [
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": null
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ANSWER_N"
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_range": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ANSWER_N",
+            "branches": [
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": null
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ANSWER_N"
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_comparison_amount": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ANSWER_N",
+            "branches": [
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": null
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ANSWER_N"
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        },
+        "all_fields": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ANSWER_N",
+            "branches": [
+              [
+                "2025-01-01",
+                false,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": null
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ANSWER_N"
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        }
+      },
+      "single_field": {
+        "scope": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "first": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "rule_id": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "scope_ids": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "fact_id": {
+          "stage": "parse",
+          "error": "invalid evidence IDs",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "version_id_2024": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "version_id_2025": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        }
+      },
+      "subsets_tested": 128,
+      "strict_subsets": 2,
+      "minimal_strict_subsets": [
+        [
+          "scope",
+          "rule_id",
+          "scope_ids",
+          "fact_id",
+          "version_id_2024",
+          "version_id_2025"
+        ]
+      ]
+    },
+    "A1": {
+      "profile": "appraisal",
+      "output_sha256": "7ee9d395b2d580d86f85b362e4fbf01e10731c21d602932ff1d9ca17ca19bae1",
+      "expected": {
+        "tag": "ANSWER_Y",
+        "branches": [
+          [
+            "2024-12-31",
+            true,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "ask_event": null
+      },
+      "fields": {
+        "scope": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": true
+        },
+        "comparison": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": "<="
+        },
+        "event": {
+          "status": "correct",
+          "present": true,
+          "observed": "consummation",
+          "reference": "consummation"
+        },
+        "amount": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": 32400
+        },
+        "first": {
+          "status": "wrong",
+          "present": true,
+          "observed": "2024-01-01",
+          "reference": "2024-12-31"
+        },
+        "last": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-01-01",
+          "reference": "2025-01-01"
+        },
+        "date": {
+          "status": "correct",
+          "present": true,
+          "observed": null,
+          "reference": null
+        },
+        "rule_id": {
+          "status": "wrong",
+          "present": true,
+          "observed": "12 CFR 1026.35(c)(2)(ii)",
+          "reference": "E1"
+        },
+        "scope_ids": {
+          "status": "missing",
+          "present": true,
+          "observed": [],
+          "reference": [
+            "E4",
+            "F1"
+          ]
+        },
+        "fact_id": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": "F1"
+        },
+        "valid_from_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": "2024-01-01",
+          "reference": "2024-01-01"
+        },
+        "valid_through_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": "2024-12-31",
+          "reference": "2024-12-31"
+        },
+        "threshold_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": 32400,
+          "reference": 32400
+        },
+        "version_id_2024": {
+          "status": "missing",
+          "present": false,
+          "observed": null,
+          "reference": "E2"
+        },
+        "valid_from_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-01-01",
+          "reference": "2025-01-01"
+        },
+        "valid_through_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-12-31",
+          "reference": "2025-12-31"
+        },
+        "threshold_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": 33500,
+          "reference": 33500
+        },
+        "version_id_2025": {
+          "status": "missing",
+          "present": false,
+          "observed": null,
+          "reference": "E3"
+        }
+      },
+      "scenarios": {
+        "original": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "scope_only": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "all_evidence_only": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_and_evidence": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_comparison": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_amount": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_range": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_comparison_amount": {
+          "stage": "solve",
+          "error": "branch exceeds fixture day",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "all_fields": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ANSWER_Y",
+            "branches": [
+              [
+                "2024-12-31",
+                true,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": null
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ANSWER_Y"
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": true,
+              "evidence": true
+            },
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        }
+      },
+      "single_field": {
+        "scope": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "comparison": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "amount": {
+          "stage": "parse",
+          "error": "invalid version fields",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "first": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "rule_id": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "scope_ids": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "fact_id": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "version_id_2024": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "version_id_2025": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        }
+      },
+      "subsets_tested": 512,
+      "strict_subsets": 1,
+      "minimal_strict_subsets": [
+        [
+          "scope",
+          "comparison",
+          "amount",
+          "first",
+          "rule_id",
+          "scope_ids",
+          "fact_id",
+          "version_id_2024",
+          "version_id_2025"
+        ]
+      ]
+    },
+    "A2": {
+      "profile": "appraisal",
+      "output_sha256": "7ee9d395b2d580d86f85b362e4fbf01e10731c21d602932ff1d9ca17ca19bae1",
+      "expected": {
+        "tag": "ASK_DATE",
+        "branches": [
+          [
+            "2024-12-31",
+            false,
+            [
+              "E1",
+              "E2",
+              "E4",
+              "F1"
+            ]
+          ],
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "ask_event": "consummation"
+      },
+      "fields": {
+        "scope": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": true
+        },
+        "comparison": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": "<="
+        },
+        "event": {
+          "status": "correct",
+          "present": true,
+          "observed": "consummation",
+          "reference": "consummation"
+        },
+        "amount": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": 33500
+        },
+        "first": {
+          "status": "wrong",
+          "present": true,
+          "observed": "2024-01-01",
+          "reference": "2024-12-31"
+        },
+        "last": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-01-01",
+          "reference": "2025-01-01"
+        },
+        "date": {
+          "status": "correct",
+          "present": true,
+          "observed": null,
+          "reference": null
+        },
+        "rule_id": {
+          "status": "wrong",
+          "present": true,
+          "observed": "12 CFR 1026.35(c)(2)(ii)",
+          "reference": "E1"
+        },
+        "scope_ids": {
+          "status": "missing",
+          "present": true,
+          "observed": [],
+          "reference": [
+            "E4",
+            "F1"
+          ]
+        },
+        "fact_id": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": "F1"
+        },
+        "valid_from_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": "2024-01-01",
+          "reference": "2024-01-01"
+        },
+        "valid_through_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": "2024-12-31",
+          "reference": "2024-12-31"
+        },
+        "threshold_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": 32400,
+          "reference": 32400
+        },
+        "version_id_2024": {
+          "status": "missing",
+          "present": false,
+          "observed": null,
+          "reference": "E2"
+        },
+        "valid_from_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-01-01",
+          "reference": "2025-01-01"
+        },
+        "valid_through_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-12-31",
+          "reference": "2025-12-31"
+        },
+        "threshold_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": 33500,
+          "reference": 33500
+        },
+        "version_id_2025": {
+          "status": "missing",
+          "present": false,
+          "observed": null,
+          "reference": "E3"
+        }
+      },
+      "scenarios": {
+        "original": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "scope_only": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "all_evidence_only": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_and_evidence": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_comparison": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_amount": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_range": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_comparison_amount": {
+          "stage": "solve",
+          "error": "branch exceeds fixture day",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "all_fields": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ASK_DATE",
+            "branches": [
+              [
+                "2024-12-31",
+                false,
+                [
+                  "E1",
+                  "E2",
+                  "E4",
+                  "F1"
+                ]
+              ],
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": "consummation"
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ASK_DATE"
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": true,
+              "evidence": true
+            },
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        }
+      },
+      "single_field": {
+        "scope": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "comparison": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "amount": {
+          "stage": "parse",
+          "error": "invalid version fields",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "first": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "rule_id": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "scope_ids": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "fact_id": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "version_id_2024": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "version_id_2025": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2024-12-31": {
+              "conclusion": false,
+              "evidence": false
+            },
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        }
+      },
+      "subsets_tested": 512,
+      "strict_subsets": 1,
+      "minimal_strict_subsets": [
+        [
+          "scope",
+          "comparison",
+          "amount",
+          "first",
+          "rule_id",
+          "scope_ids",
+          "fact_id",
+          "version_id_2024",
+          "version_id_2025"
+        ]
+      ]
+    },
+    "A3": {
+      "profile": "appraisal",
+      "output_sha256": "7de431df44f84990fbeb4b084ad740a85c52426415712a0aee74541681a543e2",
+      "expected": {
+        "tag": "ANSWER_Y",
+        "branches": [
+          [
+            "2025-01-01",
+            true,
+            [
+              "E1",
+              "E3",
+              "E4",
+              "F1"
+            ]
+          ]
+        ],
+        "ask_event": null
+      },
+      "fields": {
+        "scope": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": true
+        },
+        "comparison": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": "<="
+        },
+        "event": {
+          "status": "correct",
+          "present": true,
+          "observed": "consummation",
+          "reference": "consummation"
+        },
+        "amount": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": 33500
+        },
+        "first": {
+          "status": "wrong",
+          "present": true,
+          "observed": "2024-01-01",
+          "reference": "2024-12-31"
+        },
+        "last": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-01-01",
+          "reference": "2025-01-01"
+        },
+        "date": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-01-01",
+          "reference": "2025-01-01"
+        },
+        "rule_id": {
+          "status": "wrong",
+          "present": true,
+          "observed": "12 CFR 1026.35(c)(2)(ii)",
+          "reference": "E1"
+        },
+        "scope_ids": {
+          "status": "missing",
+          "present": true,
+          "observed": [],
+          "reference": [
+            "E4",
+            "F1"
+          ]
+        },
+        "fact_id": {
+          "status": "missing",
+          "present": true,
+          "observed": null,
+          "reference": "F1"
+        },
+        "valid_from_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": "2024-01-01",
+          "reference": "2024-01-01"
+        },
+        "valid_through_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": "2024-12-31",
+          "reference": "2024-12-31"
+        },
+        "threshold_2024": {
+          "status": "correct",
+          "present": true,
+          "observed": 32400,
+          "reference": 32400
+        },
+        "version_id_2024": {
+          "status": "missing",
+          "present": false,
+          "observed": null,
+          "reference": "E2"
+        },
+        "valid_from_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-01-01",
+          "reference": "2025-01-01"
+        },
+        "valid_through_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": "2025-12-31",
+          "reference": "2025-12-31"
+        },
+        "threshold_2025": {
+          "status": "correct",
+          "present": true,
+          "observed": 33500,
+          "reference": 33500
+        },
+        "version_id_2025": {
+          "status": "missing",
+          "present": false,
+          "observed": null,
+          "reference": "E3"
+        }
+      },
+      "scenarios": {
+        "original": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "scope_only": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "all_evidence_only": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_and_evidence": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_comparison": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_amount": {
+          "stage": "parse",
+          "error": "unknown required JSON value",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_range": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": true
+        },
+        "scope_evidence_comparison_amount": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ANSWER_Y",
+            "branches": [
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": null
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ANSWER_Y"
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        },
+        "all_fields": {
+          "stage": "decision",
+          "error": null,
+          "outcome": {
+            "tag": "ANSWER_Y",
+            "branches": [
+              [
+                "2025-01-01",
+                true,
+                [
+                  "E1",
+                  "E3",
+                  "E4",
+                  "F1"
+                ]
+              ]
+            ],
+            "ask_event": null
+          },
+          "grade": {
+            "strict": true,
+            "action_exact": true,
+            "wrong_unique_on_varying": false,
+            "selected_action": "ANSWER_Y"
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": true,
+              "evidence": true
+            }
+          },
+          "action_type_correct": true,
+          "role_bindings_correct": true
+        }
+      },
+      "single_field": {
+        "scope": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "comparison": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "amount": {
+          "stage": "parse",
+          "error": "invalid version fields",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "first": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "rule_id": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "scope_ids": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "fact_id": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "version_id_2024": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        },
+        "version_id_2025": {
+          "stage": "parse",
+          "error": "invalid amount",
+          "outcome": {
+            "tag": null
+          },
+          "grade": {
+            "strict": false,
+            "action_exact": false,
+            "wrong_unique_on_varying": false,
+            "selected_action": null
+          },
+          "by_date": {
+            "2025-01-01": {
+              "conclusion": false,
+              "evidence": false
+            }
+          },
+          "action_type_correct": false,
+          "role_bindings_correct": false
+        }
+      },
+      "subsets_tested": 512,
+      "strict_subsets": 2,
+      "minimal_strict_subsets": [
+        [
+          "scope",
+          "comparison",
+          "amount",
+          "rule_id",
+          "scope_ids",
+          "fact_id",
+          "version_id_2024",
+          "version_id_2025"
+        ]
+      ]
+    }
+  }
+}
