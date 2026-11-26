@@ -1,0 +1,84 @@
+{
+  "cases": [
+    {
+      "messages": [
+        {
+          "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+          "role": "system"
+        },
+        {
+          "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,600 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is 2024-01-01.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+          "role": "user"
+        }
+      ],
+      "review_id": "R4B504EDCE554"
+    },
+    {
+      "messages": [
+        {
+          "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+          "role": "system"
+        },
+        {
+          "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,950 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is 2025-01-01.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+          "role": "user"
+        }
+      ],
+      "review_id": "R4CB841BB49A1"
+    },
+    {
+      "messages": [
+        {
+          "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+          "role": "system"
+        },
+        {
+          "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,600 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is 2025-01-01.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+          "role": "user"
+        }
+      ],
+      "review_id": "R7DCDB561D641"
+    },
+    {
+      "messages": [
+        {
+          "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+          "role": "system"
+        },
+        {
+          "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,950 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is not provided.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+          "role": "user"
+        }
+      ],
+      "review_id": "RD27AF961332B"
+    },
+    {
+      "messages": [
+        {
+          "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+          "role": "system"
+        },
+        {
+          "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,600 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is not provided.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+          "role": "user"
+        }
+      ],
+      "review_id": "RF04CCC0103B9"
+    },
+    {
+      "messages": [
+        {
+          "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+          "role": "system"
+        },
+        {
+          "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,950 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is 2024-01-01.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+          "role": "user"
+        }
+      ],
+      "review_id": "RF3B3ABB6CA2C"
+    }
+  ],
+  "purpose": "input_only_task_interpretation_not_legal_gold",
+  "version": 1
+}
