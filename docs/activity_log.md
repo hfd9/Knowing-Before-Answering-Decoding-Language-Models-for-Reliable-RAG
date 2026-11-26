@@ -6,6 +6,8 @@
 
 ## 当前交接摘要
 
+- 2026-11-26 完成[参照可判定性及来源用途决策表](records/2026-11-26-reference-source-decision-sheet.md)，四类状态分开记录；未重查上游或新增独立复核。
+
 - 2026-11-26 提出[评分聚合候选方案](records/2026-11-26-scoring-aggregation-proposal.md)，新增仅处理合成标签的沙箱，37 项相关 CPU 测试通过；无真实复核，协议未冻结。
 
 - 2026-11-26 完成[合成评分边界与来源合同草案](records/2026-11-26-synthetic-scoring-source-contract.md)；未发现真实 IRS 输入复核，v2 未冻结。
