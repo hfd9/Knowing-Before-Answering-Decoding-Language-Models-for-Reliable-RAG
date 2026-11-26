@@ -1,6 +1,6 @@
 # 两条新规则的 7B 首轮开发采集
 
-状态：`prepared_not_started`。本包固定[选择前协议](../2026-11-26-new-rule-development-protocol-v1/protocol.md)及[作者材料和来源](../2026-11-26-new-rule-materials-v1/README.md)，并不改变原确认门禁或把材料变成独立法律参照。两条规则在协议固定后选取，但一旦查看输出即为开发材料，不再作后续未见规则留出。
+准备时状态：`prepared_not_started`。用户已完成 24 条，技术核验与知情评分见[首轮结果](../2026-11-26-two-rule-7b-first-results-v1/README.md)，本包无需重跑。本包固定[选择前协议](../2026-11-26-new-rule-development-protocol-v1/protocol.md)及[作者材料和来源](../2026-11-26-new-rule-materials-v1/README.md)，并不改变原确认门禁或把材料变成独立法律参照。两条规则在协议固定后选取，现已查看输出，为开发材料，不再作后续未见规则留出。
 
 ## 输入及检查
 
