@@ -6,6 +6,8 @@
 
 ## 当前交接摘要
 
+- 2026-11-26 完成[7B 主动补日期第二轮核验](records/2026-11-26-answer-change-followup-results.md)。用户运行 16 条全部 EOS；知情内容评分直接 8/8、逐版 5/8、两矛盾一 unknown；旧严格引用 ID 集合均未匹配，语义充分性未独立复核。
+
 - 2026-11-25 准备[7B 主动补日期第二轮](records/2026-11-25-answer-change-followup-ready.md)：首轮未直接追问，16 条独立分支真实 tokenizer 前缀检查和 10 项 CPU 测试通过，等待用户执行 GPU。
 
 - 2026-11-25 用户完成[7B 已暴露材料开发检查](records/2026-11-25-answer-change-7b-results.md)。8 条 EOS 且技术核验通过；赠与直接异答条件结论正确但引文不完整，逐版赠与两题数值比较错误。知情小样本，非独立留出。

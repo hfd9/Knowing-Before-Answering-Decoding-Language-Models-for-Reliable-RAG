@@ -1,6 +1,6 @@
 # 7B 主动补充日期：已暴露材料开发包
 
-状态：`prepared_not_started`。承接[已核验首轮](../2026-11-25-answer-change-7b-results-v1/README.md)：8 条回答均未向用户直接追问日期。此处由用户主动提供日期，不能用于计算追问后正确率；真实有效追问分母为 0，指标未定义。
+准备时状态：`prepared_not_started`。用户随后完成 16 条，已核验并知情评分，见[结果](../2026-11-25-answer-change-7b-followup-results-v1/README.md)；本包无需重跑。承接[已核验首轮](../2026-11-25-answer-change-7b-results-v1/README.md)：8 条回答均未向用户直接追问日期。此处由用户主动提供日期，不能用于计算追问后正确率；真实有效追问分母为 0，指标未定义。
 
 ## 内容与边界
 

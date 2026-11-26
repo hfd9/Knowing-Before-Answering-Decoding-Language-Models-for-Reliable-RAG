@@ -1,0 +1,17 @@
+case,route,date,reference,content,missing_ids,reason
+ssa-S0,direct,2024-12-31,Y,Y,E2,结论明确正确
+ssa-S0,direct,2025-01-01,Y,Y,E2,结论明确正确
+ssa-S0,by_version,2024-12-31,Y,Y,E4|F1,结论明确正确
+ssa-S0,by_version,2025-01-01,Y,Y,E2|F1,结论明确正确
+ssa-D0,direct,2024-12-31,Y,Y,E4|F1,结论明确正确
+ssa-D0,direct,2025-01-01,N,N,E2|E4|F1,明确等于且不超过
+ssa-D0,by_version,2024-12-31,Y,Y,E4|F1,结论明确正确
+ssa-D0,by_version,2025-01-01,N,U,E2|F1,明确数值相等但未明确回答是否超过
+spouse-S0,direct,2024-12-31,Y,Y,E1|E3|F1,结论明确正确
+spouse-S0,direct,2025-01-01,Y,Y,E1|E3|F1,结论明确正确
+spouse-S0,by_version,2024-12-31,Y,Y,E1|E3|F1,结论明确正确
+spouse-S0,by_version,2025-01-01,Y,C,E1|E3|F1,先说不在后说在
+spouse-D0,direct,2024-12-31,N,N,E1|E3|F1,结论明确正确
+spouse-D0,direct,2025-01-01,Y,Y,E1|E3|F1,结论明确正确
+spouse-D0,by_version,2024-12-31,N,C,F1,先说在后说不在
+spouse-D0,by_version,2025-01-01,Y,Y,E1|E3|F1,结论明确正确
