@@ -1,0 +1,9 @@
+rule,scenario,route,material_text_sufficient_conditionally,old_content,new_content,both_date_content_correct,known_whole_reply_and_date_citation,missing_content,missing_failure_type,notes
+adviser_aum,same,direct,yes_with_author_metadata,correct,correct,yes,no,invalid,invented_date,旧日期回答只引用新版本E2
+adviser_aum,same,by_version,yes_with_author_metadata,correct,correct,yes,no,correct,none,新日期回答误称日期缺失且旧日分支错误
+adviser_aum,different,direct,yes_with_author_metadata,contradiction,contradiction,no,no,correct,none,两个明确日期回答各含相反结论
+adviser_aum,different,by_version,yes_with_author_metadata,incorrect,incorrect,no,no,incorrect,wrong_branches,两版本方向反转
+eitc_investment,same,direct,yes_with_author_metadata,correct,correct,yes,yes,invalid,invented_date,缺日期回答假定旧年但结论恰为同答
+eitc_investment,same,by_version,yes_with_author_metadata,incorrect,incorrect,no,no,incorrect,wrong_branch,相等与大于比较错误
+eitc_investment,different,direct,yes_with_author_metadata,correct,correct,yes,yes,invalid,invented_date_and_one_branch,缺日期回答假定旧年并只给旧分支
+eitc_investment,different,by_version,yes_with_author_metadata,incorrect,incorrect,no,no,incorrect,wrong_branches,两版本方向反转
