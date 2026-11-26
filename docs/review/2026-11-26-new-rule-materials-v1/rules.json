@@ -1,0 +1,41 @@
+{
+  "status": "author_development_draft_not_independently_reviewed",
+  "rules": [
+    {
+      "id": "adviser_aum",
+      "question": "Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.",
+      "event": "advisory contract signing",
+      "facts_template": "A natural person enters a new advisory contract. Immediately after entering, the person has ${amount:,} managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives.",
+      "old_date": "2021-08-15",
+      "new_date": "2021-08-16",
+      "comparison": ">=",
+      "old_threshold": 1000000,
+      "new_threshold": 1100000,
+      "same_amount": 1100000,
+      "different_amount": 1050000,
+      "evidence": [
+        {"id": "E1", "source_id": "sec2016", "excerpt": "immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser"},
+        {"id": "E2", "source_id": "sec2021", "excerpt": "immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser"}
+      ],
+      "metadata": "Author-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition."
+    },
+    {
+      "id": "eitc_investment",
+      "question": "Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.",
+      "event": "taxable year beginning",
+      "facts_template": "A taxpayer has ${amount:,} of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met.",
+      "old_date": "2024-01-01",
+      "new_date": "2025-01-01",
+      "comparison": ">",
+      "old_threshold": 11600,
+      "new_threshold": 11950,
+      "same_amount": 11600,
+      "different_amount": 11950,
+      "evidence": [
+        {"id": "E1", "source_id": "irs2024", "excerpt": "the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600"},
+        {"id": "E2", "source_id": "irs2025", "excerpt": "the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950"}
+      ],
+      "metadata": "Author-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation."
+    }
+  ]
+}

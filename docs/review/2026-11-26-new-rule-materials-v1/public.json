@@ -1,0 +1,269 @@
+{
+  "cases": [
+    {
+      "event": "advisory contract signing",
+      "evidence": [
+        {
+          "excerpt": "immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser",
+          "id": "E1",
+          "source_id": "sec2016"
+        },
+        {
+          "excerpt": "immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser",
+          "id": "E2",
+          "source_id": "sec2021"
+        }
+      ],
+      "facts_and_date_status": "A natural person enters a new advisory contract. Immediately after entering, the person has $1,100,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is not provided.",
+      "id": "adviser_aum/same/missing",
+      "metadata": "Author-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.",
+      "new_date": "2021-08-16",
+      "old_date": "2021-08-15",
+      "question": "Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.",
+      "rule_id": "adviser_aum"
+    },
+    {
+      "event": "advisory contract signing",
+      "evidence": [
+        {
+          "excerpt": "immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser",
+          "id": "E1",
+          "source_id": "sec2016"
+        },
+        {
+          "excerpt": "immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser",
+          "id": "E2",
+          "source_id": "sec2021"
+        }
+      ],
+      "facts_and_date_status": "A natural person enters a new advisory contract. Immediately after entering, the person has $1,100,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is 2021-08-15.",
+      "id": "adviser_aum/same/old",
+      "metadata": "Author-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.",
+      "new_date": "2021-08-16",
+      "old_date": "2021-08-15",
+      "question": "Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.",
+      "rule_id": "adviser_aum"
+    },
+    {
+      "event": "advisory contract signing",
+      "evidence": [
+        {
+          "excerpt": "immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser",
+          "id": "E1",
+          "source_id": "sec2016"
+        },
+        {
+          "excerpt": "immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser",
+          "id": "E2",
+          "source_id": "sec2021"
+        }
+      ],
+      "facts_and_date_status": "A natural person enters a new advisory contract. Immediately after entering, the person has $1,100,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is 2021-08-16.",
+      "id": "adviser_aum/same/new",
+      "metadata": "Author-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.",
+      "new_date": "2021-08-16",
+      "old_date": "2021-08-15",
+      "question": "Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.",
+      "rule_id": "adviser_aum"
+    },
+    {
+      "event": "advisory contract signing",
+      "evidence": [
+        {
+          "excerpt": "immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser",
+          "id": "E1",
+          "source_id": "sec2016"
+        },
+        {
+          "excerpt": "immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser",
+          "id": "E2",
+          "source_id": "sec2021"
+        }
+      ],
+      "facts_and_date_status": "A natural person enters a new advisory contract. Immediately after entering, the person has $1,050,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is not provided.",
+      "id": "adviser_aum/different/missing",
+      "metadata": "Author-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.",
+      "new_date": "2021-08-16",
+      "old_date": "2021-08-15",
+      "question": "Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.",
+      "rule_id": "adviser_aum"
+    },
+    {
+      "event": "advisory contract signing",
+      "evidence": [
+        {
+          "excerpt": "immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser",
+          "id": "E1",
+          "source_id": "sec2016"
+        },
+        {
+          "excerpt": "immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser",
+          "id": "E2",
+          "source_id": "sec2021"
+        }
+      ],
+      "facts_and_date_status": "A natural person enters a new advisory contract. Immediately after entering, the person has $1,050,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is 2021-08-15.",
+      "id": "adviser_aum/different/old",
+      "metadata": "Author-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.",
+      "new_date": "2021-08-16",
+      "old_date": "2021-08-15",
+      "question": "Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.",
+      "rule_id": "adviser_aum"
+    },
+    {
+      "event": "advisory contract signing",
+      "evidence": [
+        {
+          "excerpt": "immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser",
+          "id": "E1",
+          "source_id": "sec2016"
+        },
+        {
+          "excerpt": "immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser",
+          "id": "E2",
+          "source_id": "sec2021"
+        }
+      ],
+      "facts_and_date_status": "A natural person enters a new advisory contract. Immediately after entering, the person has $1,050,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is 2021-08-16.",
+      "id": "adviser_aum/different/new",
+      "metadata": "Author-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.",
+      "new_date": "2021-08-16",
+      "old_date": "2021-08-15",
+      "question": "Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.",
+      "rule_id": "adviser_aum"
+    },
+    {
+      "event": "taxable year beginning",
+      "evidence": [
+        {
+          "excerpt": "the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600",
+          "id": "E1",
+          "source_id": "irs2024"
+        },
+        {
+          "excerpt": "the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950",
+          "id": "E2",
+          "source_id": "irs2025"
+        }
+      ],
+      "facts_and_date_status": "A taxpayer has $11,600 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is not provided.",
+      "id": "eitc_investment/same/missing",
+      "metadata": "Author-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.",
+      "new_date": "2025-01-01",
+      "old_date": "2024-01-01",
+      "question": "Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.",
+      "rule_id": "eitc_investment"
+    },
+    {
+      "event": "taxable year beginning",
+      "evidence": [
+        {
+          "excerpt": "the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600",
+          "id": "E1",
+          "source_id": "irs2024"
+        },
+        {
+          "excerpt": "the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950",
+          "id": "E2",
+          "source_id": "irs2025"
+        }
+      ],
+      "facts_and_date_status": "A taxpayer has $11,600 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is 2024-01-01.",
+      "id": "eitc_investment/same/old",
+      "metadata": "Author-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.",
+      "new_date": "2025-01-01",
+      "old_date": "2024-01-01",
+      "question": "Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.",
+      "rule_id": "eitc_investment"
+    },
+    {
+      "event": "taxable year beginning",
+      "evidence": [
+        {
+          "excerpt": "the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600",
+          "id": "E1",
+          "source_id": "irs2024"
+        },
+        {
+          "excerpt": "the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950",
+          "id": "E2",
+          "source_id": "irs2025"
+        }
+      ],
+      "facts_and_date_status": "A taxpayer has $11,600 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is 2025-01-01.",
+      "id": "eitc_investment/same/new",
+      "metadata": "Author-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.",
+      "new_date": "2025-01-01",
+      "old_date": "2024-01-01",
+      "question": "Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.",
+      "rule_id": "eitc_investment"
+    },
+    {
+      "event": "taxable year beginning",
+      "evidence": [
+        {
+          "excerpt": "the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600",
+          "id": "E1",
+          "source_id": "irs2024"
+        },
+        {
+          "excerpt": "the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950",
+          "id": "E2",
+          "source_id": "irs2025"
+        }
+      ],
+      "facts_and_date_status": "A taxpayer has $11,950 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is not provided.",
+      "id": "eitc_investment/different/missing",
+      "metadata": "Author-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.",
+      "new_date": "2025-01-01",
+      "old_date": "2024-01-01",
+      "question": "Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.",
+      "rule_id": "eitc_investment"
+    },
+    {
+      "event": "taxable year beginning",
+      "evidence": [
+        {
+          "excerpt": "the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600",
+          "id": "E1",
+          "source_id": "irs2024"
+        },
+        {
+          "excerpt": "the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950",
+          "id": "E2",
+          "source_id": "irs2025"
+        }
+      ],
+      "facts_and_date_status": "A taxpayer has $11,950 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is 2024-01-01.",
+      "id": "eitc_investment/different/old",
+      "metadata": "Author-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.",
+      "new_date": "2025-01-01",
+      "old_date": "2024-01-01",
+      "question": "Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.",
+      "rule_id": "eitc_investment"
+    },
+    {
+      "event": "taxable year beginning",
+      "evidence": [
+        {
+          "excerpt": "the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600",
+          "id": "E1",
+          "source_id": "irs2024"
+        },
+        {
+          "excerpt": "the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950",
+          "id": "E2",
+          "source_id": "irs2025"
+        }
+      ],
+      "facts_and_date_status": "A taxpayer has $11,950 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is 2025-01-01.",
+      "id": "eitc_investment/different/new",
+      "metadata": "Author-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.",
+      "new_date": "2025-01-01",
+      "old_date": "2024-01-01",
+      "question": "Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.",
+      "rule_id": "eitc_investment"
+    }
+  ],
+  "status": "author_development_draft_not_independently_reviewed"
+}

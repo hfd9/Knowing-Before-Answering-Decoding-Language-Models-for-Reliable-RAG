@@ -1,0 +1,117 @@
+{
+  "cases": {
+    "adviser_aum/different/missing": {
+      "amount": 1050000,
+      "branches": {
+        "2021-08-15": true,
+        "2021-08-16": false
+      },
+      "category": "different",
+      "event_date": null,
+      "independently_reviewed": false
+    },
+    "adviser_aum/different/new": {
+      "amount": 1050000,
+      "branches": {
+        "2021-08-16": false
+      },
+      "category": "different",
+      "event_date": "2021-08-16",
+      "independently_reviewed": false
+    },
+    "adviser_aum/different/old": {
+      "amount": 1050000,
+      "branches": {
+        "2021-08-15": true
+      },
+      "category": "different",
+      "event_date": "2021-08-15",
+      "independently_reviewed": false
+    },
+    "adviser_aum/same/missing": {
+      "amount": 1100000,
+      "branches": {
+        "2021-08-15": true,
+        "2021-08-16": true
+      },
+      "category": "same",
+      "event_date": null,
+      "independently_reviewed": false
+    },
+    "adviser_aum/same/new": {
+      "amount": 1100000,
+      "branches": {
+        "2021-08-16": true
+      },
+      "category": "same",
+      "event_date": "2021-08-16",
+      "independently_reviewed": false
+    },
+    "adviser_aum/same/old": {
+      "amount": 1100000,
+      "branches": {
+        "2021-08-15": true
+      },
+      "category": "same",
+      "event_date": "2021-08-15",
+      "independently_reviewed": false
+    },
+    "eitc_investment/different/missing": {
+      "amount": 11950,
+      "branches": {
+        "2024-01-01": true,
+        "2025-01-01": false
+      },
+      "category": "different",
+      "event_date": null,
+      "independently_reviewed": false
+    },
+    "eitc_investment/different/new": {
+      "amount": 11950,
+      "branches": {
+        "2025-01-01": false
+      },
+      "category": "different",
+      "event_date": "2025-01-01",
+      "independently_reviewed": false
+    },
+    "eitc_investment/different/old": {
+      "amount": 11950,
+      "branches": {
+        "2024-01-01": true
+      },
+      "category": "different",
+      "event_date": "2024-01-01",
+      "independently_reviewed": false
+    },
+    "eitc_investment/same/missing": {
+      "amount": 11600,
+      "branches": {
+        "2024-01-01": false,
+        "2025-01-01": false
+      },
+      "category": "same",
+      "event_date": null,
+      "independently_reviewed": false
+    },
+    "eitc_investment/same/new": {
+      "amount": 11600,
+      "branches": {
+        "2025-01-01": false
+      },
+      "category": "same",
+      "event_date": "2025-01-01",
+      "independently_reviewed": false
+    },
+    "eitc_investment/same/old": {
+      "amount": 11600,
+      "branches": {
+        "2024-01-01": false
+      },
+      "category": "same",
+      "event_date": "2024-01-01",
+      "independently_reviewed": false
+    }
+  },
+  "status": "informed_author_not_legal_gold"
+}
