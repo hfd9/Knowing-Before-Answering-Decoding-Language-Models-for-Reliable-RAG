@@ -1,0 +1,362 @@
+[
+  {
+    "case": "adviser_aum/same/missing",
+    "id": "adviser_aum/same/missing/direct",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.\n\n[F1] Case facts: A natural person enters a new advisory contract. Immediately after entering, the person has $1,100,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is not provided.\n\nThe possible event dates for this task are 2021-08-15 and 2021-08-16 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser\"\n[E2] Official-source excerpt: \"immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser\"\n\nAuthor-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+        "role": "user"
+      }
+    ],
+    "route": "direct"
+  },
+  {
+    "case": "adviser_aum/same/missing",
+    "id": "adviser_aum/same/missing/by_version",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.\n\n[F1] Case facts: A natural person enters a new advisory contract. Immediately after entering, the person has $1,100,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is not provided.\n\nThe possible event dates for this task are 2021-08-15 and 2021-08-16 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser\"\n[E2] Official-source excerpt: \"immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser\"\n\nAuthor-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nFirst state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+        "role": "user"
+      }
+    ],
+    "route": "by_version"
+  },
+  {
+    "case": "adviser_aum/same/old",
+    "id": "adviser_aum/same/old/direct",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.\n\n[F1] Case facts: A natural person enters a new advisory contract. Immediately after entering, the person has $1,100,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is 2021-08-15.\n\nThe possible event dates for this task are 2021-08-15 and 2021-08-16 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser\"\n[E2] Official-source excerpt: \"immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser\"\n\nAuthor-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+        "role": "user"
+      }
+    ],
+    "route": "direct"
+  },
+  {
+    "case": "adviser_aum/same/old",
+    "id": "adviser_aum/same/old/by_version",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.\n\n[F1] Case facts: A natural person enters a new advisory contract. Immediately after entering, the person has $1,100,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is 2021-08-15.\n\nThe possible event dates for this task are 2021-08-15 and 2021-08-16 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser\"\n[E2] Official-source excerpt: \"immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser\"\n\nAuthor-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nFirst state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+        "role": "user"
+      }
+    ],
+    "route": "by_version"
+  },
+  {
+    "case": "adviser_aum/same/new",
+    "id": "adviser_aum/same/new/direct",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.\n\n[F1] Case facts: A natural person enters a new advisory contract. Immediately after entering, the person has $1,100,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is 2021-08-16.\n\nThe possible event dates for this task are 2021-08-15 and 2021-08-16 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser\"\n[E2] Official-source excerpt: \"immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser\"\n\nAuthor-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+        "role": "user"
+      }
+    ],
+    "route": "direct"
+  },
+  {
+    "case": "adviser_aum/same/new",
+    "id": "adviser_aum/same/new/by_version",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.\n\n[F1] Case facts: A natural person enters a new advisory contract. Immediately after entering, the person has $1,100,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is 2021-08-16.\n\nThe possible event dates for this task are 2021-08-15 and 2021-08-16 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser\"\n[E2] Official-source excerpt: \"immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser\"\n\nAuthor-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nFirst state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+        "role": "user"
+      }
+    ],
+    "route": "by_version"
+  },
+  {
+    "case": "adviser_aum/different/missing",
+    "id": "adviser_aum/different/missing/direct",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.\n\n[F1] Case facts: A natural person enters a new advisory contract. Immediately after entering, the person has $1,050,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is not provided.\n\nThe possible event dates for this task are 2021-08-15 and 2021-08-16 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser\"\n[E2] Official-source excerpt: \"immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser\"\n\nAuthor-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+        "role": "user"
+      }
+    ],
+    "route": "direct"
+  },
+  {
+    "case": "adviser_aum/different/missing",
+    "id": "adviser_aum/different/missing/by_version",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.\n\n[F1] Case facts: A natural person enters a new advisory contract. Immediately after entering, the person has $1,050,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is not provided.\n\nThe possible event dates for this task are 2021-08-15 and 2021-08-16 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser\"\n[E2] Official-source excerpt: \"immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser\"\n\nAuthor-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nFirst state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+        "role": "user"
+      }
+    ],
+    "route": "by_version"
+  },
+  {
+    "case": "adviser_aum/different/old",
+    "id": "adviser_aum/different/old/direct",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.\n\n[F1] Case facts: A natural person enters a new advisory contract. Immediately after entering, the person has $1,050,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is 2021-08-15.\n\nThe possible event dates for this task are 2021-08-15 and 2021-08-16 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser\"\n[E2] Official-source excerpt: \"immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser\"\n\nAuthor-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+        "role": "user"
+      }
+    ],
+    "route": "direct"
+  },
+  {
+    "case": "adviser_aum/different/old",
+    "id": "adviser_aum/different/old/by_version",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.\n\n[F1] Case facts: A natural person enters a new advisory contract. Immediately after entering, the person has $1,050,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is 2021-08-15.\n\nThe possible event dates for this task are 2021-08-15 and 2021-08-16 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser\"\n[E2] Official-source excerpt: \"immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser\"\n\nAuthor-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nFirst state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+        "role": "user"
+      }
+    ],
+    "route": "by_version"
+  },
+  {
+    "case": "adviser_aum/different/new",
+    "id": "adviser_aum/different/new/direct",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.\n\n[F1] Case facts: A natural person enters a new advisory contract. Immediately after entering, the person has $1,050,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is 2021-08-16.\n\nThe possible event dates for this task are 2021-08-15 and 2021-08-16 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser\"\n[E2] Official-source excerpt: \"immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser\"\n\nAuthor-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+        "role": "user"
+      }
+    ],
+    "route": "direct"
+  },
+  {
+    "case": "adviser_aum/different/new",
+    "id": "adviser_aum/different/new/by_version",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the client meet the assets-under-management threshold condition of the qualified-client rule? Answer only this specific condition, not other possible ways to qualify.\n\n[F1] Case facts: A natural person enters a new advisory contract. Immediately after entering, the person has $1,050,000 managed by that adviser. Consider only the assets-under-management condition; do not determine qualification under other alternatives. The advisory contract signing date is 2021-08-16.\n\nThe possible event dates for this task are 2021-08-15 and 2021-08-16 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"immediately after entering into the contract has at least $1,000,000 under the management of the investment adviser\"\n[E2] Official-source excerpt: \"immediately after entering into the contract has at least $1,100,000 under the management of the investment adviser\"\n\nAuthor-prepared version metadata: E1 applies to a new contract on 2021-08-15; E2 applies to a new contract on 2021-08-16. The task considers only these two dates and only the assets-under-management condition.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nFirst state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+        "role": "user"
+      }
+    ],
+    "route": "by_version"
+  },
+  {
+    "case": "eitc_investment/same/missing",
+    "id": "eitc_investment/same/missing/direct",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,600 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is not provided.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+        "role": "user"
+      }
+    ],
+    "route": "direct"
+  },
+  {
+    "case": "eitc_investment/same/missing",
+    "id": "eitc_investment/same/missing/by_version",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,600 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is not provided.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nFirst state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+        "role": "user"
+      }
+    ],
+    "route": "by_version"
+  },
+  {
+    "case": "eitc_investment/same/old",
+    "id": "eitc_investment/same/old/direct",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,600 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is 2024-01-01.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+        "role": "user"
+      }
+    ],
+    "route": "direct"
+  },
+  {
+    "case": "eitc_investment/same/old",
+    "id": "eitc_investment/same/old/by_version",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,600 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is 2024-01-01.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nFirst state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+        "role": "user"
+      }
+    ],
+    "route": "by_version"
+  },
+  {
+    "case": "eitc_investment/same/new",
+    "id": "eitc_investment/same/new/direct",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,600 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is 2025-01-01.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+        "role": "user"
+      }
+    ],
+    "route": "direct"
+  },
+  {
+    "case": "eitc_investment/same/new",
+    "id": "eitc_investment/same/new/by_version",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,600 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is 2025-01-01.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nFirst state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+        "role": "user"
+      }
+    ],
+    "route": "by_version"
+  },
+  {
+    "case": "eitc_investment/different/missing",
+    "id": "eitc_investment/different/missing/direct",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,950 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is not provided.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+        "role": "user"
+      }
+    ],
+    "route": "direct"
+  },
+  {
+    "case": "eitc_investment/different/missing",
+    "id": "eitc_investment/different/missing/by_version",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,950 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is not provided.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nFirst state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+        "role": "user"
+      }
+    ],
+    "route": "by_version"
+  },
+  {
+    "case": "eitc_investment/different/old",
+    "id": "eitc_investment/different/old/direct",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,950 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is 2024-01-01.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+        "role": "user"
+      }
+    ],
+    "route": "direct"
+  },
+  {
+    "case": "eitc_investment/different/old",
+    "id": "eitc_investment/different/old/by_version",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,950 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is 2024-01-01.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nFirst state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+        "role": "user"
+      }
+    ],
+    "route": "by_version"
+  },
+  {
+    "case": "eitc_investment/different/new",
+    "id": "eitc_investment/different/new/direct",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,950 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is 2025-01-01.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nAnswer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+        "role": "user"
+      }
+    ],
+    "route": "direct"
+  },
+  {
+    "case": "eitc_investment/different/new",
+    "id": "eitc_investment/different/new/by_version",
+    "messages": [
+      {
+        "content": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+        "role": "system"
+      },
+      {
+        "content": "Question: Does the investment-income limitation alone disallow the earned income tax credit? Answer only this condition, not whether the taxpayer otherwise qualifies for the credit.\n\n[F1] Case facts: A taxpayer has $11,950 of aggregate investment income counted for the stated limitation in the hypothetical taxable year. Consider only whether this income disallows the credit under that limitation; do not determine whether other credit conditions are met. The taxable year beginning date is 2025-01-01.\n\nThe possible event dates for this task are 2024-01-01 and 2025-01-01 only.\n\nEvidence and version metadata:\n[E1] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,600\"\n[E2] Official-source excerpt: \"the earned income tax credit is not allowed under § 32(i) if the aggregate amount of certain investment income exceeds $11,950\"\n\nAuthor-prepared version metadata: E1 applies to taxable years beginning in 2024; E2 applies to taxable years beginning in 2025. The task considers only a taxable year beginning on 2024-01-01 or 2025-01-01 and only the investment-income limitation.\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.\n\nFirst state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+        "role": "user"
+      }
+    ],
+    "route": "by_version"
+  }
+]
