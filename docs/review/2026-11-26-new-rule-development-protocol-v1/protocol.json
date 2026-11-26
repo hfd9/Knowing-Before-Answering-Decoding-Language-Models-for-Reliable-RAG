@@ -1,0 +1,32 @@
+{
+  "status": "design_frozen_before_material_selection_not_collection_release",
+  "purpose": "two_exposed_after_run_development_rules",
+  "model": "Qwen2.5-7B-Instruct",
+  "model_reference": "docs/review/2026-11-25-answer-change-7b-development-v1/manifest.json",
+  "rule_count": 2,
+  "scenarios": [
+    ["same", "missing"],
+    ["same", "old"],
+    ["same", "new"],
+    ["different", "missing"],
+    ["different", "old"],
+    ["different", "new"]
+  ],
+  "routes": ["direct", "by_version"],
+  "max_new_tokens": 768,
+  "do_sample": false,
+  "num_beams": 1,
+  "dtype": "bfloat16",
+  "max_first_turn_calls": 24,
+  "max_followup_calls": 16,
+  "scope_source_label_explicitly_supplied": false,
+  "system": "Use only the supplied excerpts, version metadata, and case facts. Cite evidence IDs. Do not invent evidence or facts. If evidence is insufficient, say so.",
+  "common": "Question: {question}\n\n[F1] Case facts: {facts_and_date_status}\n\nThe possible event dates for this task are {old_date} and {new_date} only.\n\nEvidence and version metadata:\n{source_excerpts_and_explicitly_attributed_metadata}\n\nIf the event date is not given and no unconditional unique answer is justified, you may ask for the event date or give complete date-conditional conclusions. If it is given, answer for that date.",
+  "direct": "Answer the user question using the supplied evidence and possible dates. Explain and cite the evidence for your answer. If there is no unconditional unique conclusion, respond usefully as allowed by the question.",
+  "by_version": "First state the applicable dates, conclusion for the case, and supporting evidence IDs separately for each relevant version in the possible date range. Then compare those conclusions and answer the user question. If a version or scope is missing or unclear, say so rather than guessing.",
+  "followup": "The {event} date is {date}. Please answer the original question for that date and cite evidence IDs.",
+  "followup_trigger": "explicit_event_date_request_only",
+  "fail_handling": "preserve_attempt_stop_no_automatic_retry",
+  "new_rule_collection_release": false,
+  "old_gate_changed": false
+}
