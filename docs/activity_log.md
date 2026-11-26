@@ -6,6 +6,8 @@
 
 ## 当前交接摘要
 
+- 2026-11-26 完成[合成评分边界与来源合同草案](records/2026-11-26-synthetic-scoring-source-contract.md)；未发现真实 IRS 输入复核，v2 未冻结。
+
 - 2026-11-26 完成[多规则 v2 草案冻结前核查](records/2026-11-26-comparison-v2-pre-freeze-audit.md)。区分已写口径与仍待落实的引用、独立复核及 8–12 规则实现；未选择新规则或运行模型。
 
 - 2026-11-26 按用户要求记录后续恢复顺序，并准备[IRS 两组候选的输入优先复核包](records/2026-11-26-irs-input-review-packet.md)。六份输入与两阶段接收工具已 CPU 检查；尚无真实复核。
