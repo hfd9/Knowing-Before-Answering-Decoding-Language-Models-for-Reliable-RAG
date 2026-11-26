@@ -11,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 import answer_change_irs_independent_packet as p
 import answer_change_irs_review_intake as m
+import answer_change_irs_stage2_intake as s
 
 
 class IntakeTests(unittest.TestCase):
@@ -124,11 +125,66 @@ class IntakeTests(unittest.TestCase):
                 self.assertEqual(len(stage2['cases']), 6)
                 self.assertEqual(len(stage2['review_form']), 6)
                 self.assertEqual({r['model_output'] for r in stage2['cases']}, {'private output'})
+                s.prepare()
+                review2 = json.loads((run / 'stage2-review-template.json').read_bytes())
+                review2.update(reviewer='synthetic', reviewed_at='2026-11-26T12:00:00+08:00',
+                               exposure_and_role='fixture; prior exposure unknown')
+                for row in review2['cases']:
+                    for field in s.FIELDS:
+                        row[field] = 'unknown'
+                    row['supporting_output_quotes'] = []
+                    row['uncertainty_or_notes'] = 'synthetic unknown'
+                review2['cases'][0]['claims_actual_date'] = 'yes'
+                review2['cases'][0]['supporting_output_quotes'] = ['private output']
+                review2_path = root / 'stage2-submitted.json'
+                review2_path.write_bytes(p.encode(review2))
+                s.seal(review2_path)
+                s.verify()
+                with self.assertRaisesRegex(ValueError, 'exists'):
+                    s.seal(review2_path)
+                original_stage2 = (run / 'stage2.json').read_bytes()
+                changed = json.loads(original_stage2)
+                changed['cases'][0]['model_output'] = 'tampered output'
+                (run / 'stage2.json').write_bytes(p.encode(changed))
+                with self.assertRaisesRegex(ValueError, 'output mismatch'):
+                    s.verify()
+                (run / 'stage2.json').write_bytes(original_stage2)
+                (run / 'stage2-review' / 'review.json').write_text('{}')
+                with self.assertRaisesRegex(ValueError, 'review seal mismatch'):
+                    s.verify()
                 with self.assertRaisesRegex(ValueError, 'intake exists'):
                     m.seal(submitted)
                 (run / 'review.json').write_text('{}')
                 with self.assertRaisesRegex(ValueError, 'seal mismatch'):
                     m.connect()
+                with self.assertRaisesRegex(ValueError, 'first-stage seal mismatch'):
+                    s.verify()
+
+    def test_stage2_rejects_missing_evidence_invalid_time_and_ids(self):
+        stage = {'cases': [{'review_id': 'R1', 'model_output': 'Given 2024, yes.'}],
+                 'review_form': [{'review_id': 'R1', **{k: None for k in s.FIELDS},
+                                  'supporting_output_quotes': None, 'uncertainty_or_notes': None}]}
+        review = s.make_template(stage)
+        review.update(reviewer='synthetic', reviewed_at='2026-11-26T12:00:00+08:00',
+                      exposure_and_role='synthetic')
+        row = review['cases'][0]
+        row.update({k: 'unknown' for k in s.FIELDS})
+        row.update(supporting_output_quotes=[], uncertainty_or_notes='unknown')
+        self.assertTrue(s.validate(review, stage))
+        row['claims_actual_date'] = 'yes'
+        with self.assertRaisesRegex(ValueError, 'needs output quote'):
+            s.validate(review, stage)
+        row['supporting_output_quotes'] = ['invented']
+        with self.assertRaisesRegex(ValueError, 'quote not in output'):
+            s.validate(review, stage)
+        row['supporting_output_quotes'] = ['Given 2024']
+        review['reviewed_at'] = '2026-11-26T12:00:00'
+        with self.assertRaisesRegex(ValueError, 'requires timezone'):
+            s.validate(review, stage)
+        review['reviewed_at'] = '2026-11-26T12:00:00+08:00'
+        row['review_id'] = 'R2'
+        with self.assertRaisesRegex(ValueError, 'IDs differ'):
+            s.validate(review, stage)
 
 
 if __name__ == '__main__':

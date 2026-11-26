@@ -7,11 +7,12 @@
 1. 输入复核者先按 [public 说明](public/README.md)完成六条输入，保留真实身份角色或一致别名、背景、时间、先前接触及对材料的疑问；只看输入时可以做题目内推理，不能把它称作完整税法验证。
 2. 协调者先执行 `seal`，保留原始字节及 seal；再执行 `connect`。不要修改复核原件、输入包、映射或归档。若发生错误，保留现场查明，不覆盖。
 3. 第二阶段评审逐条查看各 ID 的实际输入、第一阶段已封存的参照与关联的完整模型回答；记录评审者、时间及新增暴露。`stage2.json` 中输出与空白 `review_form` 只是工作副本；空白内容不是评分。原件不能被改写。
-4. 完成后另存带评审者和时间的第二阶段原始文件，人工计算文件 SHA-256，并记录对应首阶段 seal 和 `stage2.json` 的 SHA-256。现有工具**尚未实现第二阶段提交的自动校验或封存**，不要把手工哈希或表格完整性称作独立认证。不得将包含私人身份的复核材料自动提交公开仓库。
+4. 输入复核与模型输出的绑定核验通过后，运行 `python3 scripts/answer_change_irs_stage2_intake.py prepare` 生成 `runs/answer-change-irs-review-intake-v1/stage2-review-template.json`。评审者另存填写结果，保留身份或一致别名、带时区时间与接触／角色自述，不得将私人身份自动提交公开仓库。
+5. 实际收到结果后，运行 `python3 scripts/answer_change_irs_stage2_intake.py seal /path/to/completed-stage2-review.json`，再用 `python3 scripts/answer_change_irs_stage2_intake.py verify` 重放；原始字节及 seal 在被 Git 忽略的 `runs/answer-change-irs-review-intake-v1/stage2-review/`。既有文件或目录不会覆盖；异常时保留现场。哈希和表格完整性不证明评审独立、内容语义正确或未受暴露影响；哈希也不是第三方签名或可信时间戳。
 
 ## 逐条审阅要点
 
-对每条 ID，引用回答中的确切短片段及位置，写明判断依据和不确定性；字段与 `stage2.json` 的工作表对应，但其值域尚未固定，使用 `yes/no/unknown` 等需要另行在记录中定义，不能称已通过程序校验。
+对每条 ID，引用回答中的确切短片段及位置，写明判断依据和不确定性。五个观察字段使用 `yes/no/unknown/not_applicable`；`conditional_branches` 表示回答是否出现条件分支，具体各分支内容、完整性及正确性写在 notes，不能由 yes 自动推得。`supporting_output_quotes` 为原回答连续片段的字符串数组；任一观察为 yes 时至少一条，无法判断可为 `[]`；`uncertainty_or_notes` 填非空理由。程序检查字段、ID、时区及片段字面存在，不判断该引用是否支持所选标签。
 
 | 字段 | 判断内容及边界 |
 | --- | --- |
